@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-03-16T14:27:54.316644+00:00",
+  "updated_at": "2026-03-16T14:29:51.551354+00:00",
   "stats": {
-    "total": 36,
+    "total": 37,
     "wins": 0,
     "losses": 0,
-    "active": 0,
+    "active": 1,
     "winrate": 0
   },
   "trade_stats": {
@@ -19,7 +19,29 @@
     "label": "Extreme Fear",
     "emoji": "😱"
   },
-  "signals": [],
+  "signals": [
+    {
+      "id": 75,
+      "symbol": "HYPEUSDT",
+      "direction": "LONG",
+      "entry": 38.854,
+      "tp1": 40.010857,
+      "tp2": 41.167714,
+      "sl": 38.07692,
+      "strength": 48,
+      "reasons": [
+        "MACD выше сигнала",
+        "Цена > EMA20 > EMA50 ↑",
+        "Объём x1.6 (повышенный)",
+        "Стакан: перевес bid (+0.19)",
+        "МТФ: 15m, 1h, 4h согласны",
+        "🌍 Европа | 3/4 ТФ согласны"
+      ],
+      "news": null,
+      "created_at": "2026-03-16 14:29:14",
+      "status": "ACTIVE"
+    }
+  ],
   "history": [
     {
       "symbol": "XRPUSDT",
