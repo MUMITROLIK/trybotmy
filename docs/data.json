@@ -1,11 +1,18 @@
 {
-  "updated_at": "2026-03-16T09:27:11.702723+00:00",
+  "updated_at": "2026-03-16T09:29:11.478225+00:00",
   "stats": {
     "total": 38,
     "wins": 6,
     "losses": 11,
     "active": 21,
     "winrate": 35.3
+  },
+  "trade_stats": {
+    "open": 0,
+    "wins": 0,
+    "losses": 0,
+    "total_pnl": 0,
+    "winrate": 0
   },
   "fear_greed": {
     "value": 23,
@@ -648,5 +655,7 @@
         "BB ниже середины"
       ]
     }
-  ]
+  ],
+  "trades_open": [],
+  "trades_history": []
 }
