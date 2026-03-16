@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-16T17:30:06.910260+00:00",
+  "updated_at": "2026-03-16T17:32:44.457587+00:00",
   "stats": {
     "total": 48,
     "wins": 0,
@@ -8,11 +8,11 @@
     "winrate": 0.0
   },
   "trade_stats": {
-    "open": 15,
-    "wins": 3,
+    "open": 14,
+    "wins": 4,
     "losses": 4,
-    "total_pnl": -5.11,
-    "winrate": 42.9
+    "total_pnl": -0.83,
+    "winrate": 50.0
   },
   "fear_greed": {
     "value": 23,
@@ -708,26 +708,6 @@
       ]
     },
     {
-      "id": 21,
-      "symbol": "ZECUSDT",
-      "direction": "LONG",
-      "entry": 240.92,
-      "tp1": 250.402857,
-      "tp2": 259.885714,
-      "sl": 235.230286,
-      "strength": 56,
-      "taken_at": "2026-03-16 16:54:52",
-      "status": "OPEN",
-      "reasons": [
-        "Цена > EMA20 > EMA50 ↑",
-        "Объём x2.3 🔥",
-        "Стакан: bid (+0.10)",
-        "МТФ: 5m, 15m, 4h согласны",
-        "Taker: покупатели доминируют (1.36) ↑ 🟢",
-        "🌎 Америка | 3/4 ТФ согласны"
-      ]
-    },
-    {
       "id": 22,
       "symbol": "SIRENUSDT",
       "direction": "LONG",
@@ -751,6 +731,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "ZECUSDT",
+      "direction": "LONG",
+      "entry": 240.92,
+      "tp1": 250.402857,
+      "tp2": 259.885714,
+      "sl": 251.695,
+      "strength": 56,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 4.28,
+      "close_price": 251.235,
+      "taken_at": "2026-03-16 16:54:52",
+      "closed_at": "2026-03-16 17:32:10"
+    },
     {
       "symbol": "BCHUSDT",
       "direction": "LONG",
