@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-03-16T09:22:03.734416+00:00",
+  "updated_at": "2026-03-16T09:23:48.521378+00:00",
   "stats": {
     "total": 38,
-    "wins": 5,
-    "losses": 10,
-    "active": 23,
-    "winrate": 33.3
+    "wins": 6,
+    "losses": 11,
+    "active": 21,
+    "winrate": 35.3
   },
   "fear_greed": {
     "value": 23,
@@ -100,24 +100,6 @@
       "status": "ACTIVE"
     },
     {
-      "id": 7,
-      "symbol": "TAOUSDT",
-      "direction": "LONG",
-      "entry": 274.12,
-      "tp1": 279.6024,
-      "tp2": 285.0848,
-      "sl": 268.6376,
-      "strength": 31,
-      "reasons": [
-        "RSI=44 (нейтральный↓)",
-        "MACD бычий (hist=0.02578)",
-        "BB ниже середины"
-      ],
-      "news": null,
-      "created_at": "2026-03-16 08:09:39",
-      "status": "ACTIVE"
-    },
-    {
       "id": 9,
       "symbol": "ZECUSDT",
       "direction": "LONG",
@@ -187,24 +169,6 @@
       ],
       "news": null,
       "created_at": "2026-03-16 08:09:45",
-      "status": "ACTIVE"
-    },
-    {
-      "id": 16,
-      "symbol": "CUSDT",
-      "direction": "LONG",
-      "entry": 0.06946,
-      "tp1": 0.070911,
-      "tp2": 0.072361,
-      "sl": 0.068009,
-      "strength": 18,
-      "reasons": [
-        "MACD бычий (hist=0.00042)",
-        "Цена выше EMA20",
-        "📰 Bitcoin set for best week since September 2025 as correlation wit..."
-      ],
-      "news": "Bitcoin set for best week since September 2025 as correlation with tech stocks weakens",
-      "created_at": "2026-03-16 08:09:47",
       "status": "ACTIVE"
     },
     {
@@ -559,6 +523,22 @@
       ]
     },
     {
+      "symbol": "CUSDT",
+      "direction": "LONG",
+      "entry": 0.06946,
+      "tp1": 0.070911,
+      "tp2": 0.072361,
+      "sl": 0.068009,
+      "strength": 18,
+      "status": "SL",
+      "created_at": "2026-03-16 08:09:47",
+      "reasons": [
+        "MACD бычий (hist=0.00042)",
+        "Цена выше EMA20",
+        "📰 Bitcoin set for best week since September 2025 as correlation wit..."
+      ]
+    },
+    {
       "symbol": "REZUSDT",
       "direction": "LONG",
       "entry": 0.003873,
@@ -650,6 +630,22 @@
       "reasons": [
         "Цена > EMA20 > EMA50",
         "Стакан: перевес bid (+0.09)"
+      ]
+    },
+    {
+      "symbol": "TAOUSDT",
+      "direction": "LONG",
+      "entry": 274.12,
+      "tp1": 279.6024,
+      "tp2": 285.0848,
+      "sl": 268.6376,
+      "strength": 31,
+      "status": "TP1",
+      "created_at": "2026-03-16 08:09:39",
+      "reasons": [
+        "RSI=44 (нейтральный↓)",
+        "MACD бычий (hist=0.02578)",
+        "BB ниже середины"
       ]
     }
   ]
