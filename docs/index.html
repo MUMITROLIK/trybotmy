@@ -689,11 +689,20 @@ const mono = n => {
   return v.toExponential(2);
 };
 const sc = s => s >= 75 ? '#00ff9d' : s >= 55 ? '#ffe500' : '#3d6fff';
+
+// Парсим дату как UTC (SQLite datetime('now') пишет без 'Z', браузер читает как local)
+const parseUTC = iso => {
+  if (!iso) return new Date(0);
+  // Если нет timezone суффикса — добавляем Z чтобы браузер понял UTC
+  const s = iso.endsWith('Z') || iso.includes('+') ? iso : iso + 'Z';
+  return new Date(s);
+};
+
 const ago = iso => {
-  const d = Math.floor((Date.now()-new Date(iso))/1000);
-  if (d<60)   return d+'с';
-  if (d<3600) return Math.floor(d/60)+'м';
-  return Math.floor(d/3600)+'ч';
+  const d = Math.floor((Date.now() - parseUTC(iso)) / 1000);
+  if (d < 60)   return d + 'с';
+  if (d < 3600) return Math.floor(d / 60) + 'м';
+  return Math.floor(d / 3600) + 'ч';
 };
 
 const MAX_TRADE_HOURS = 8;
@@ -701,7 +710,7 @@ let _allTrades = [];
 
 function tradeDuration(iso) {
   if (!iso) return '';
-  const secs = Math.floor((Date.now() - new Date(iso)) / 1000);
+  const secs = Math.floor((Date.now() - parseUTC(iso)) / 1000);
   const h = Math.floor(secs / 3600);
   const m = Math.floor((secs % 3600) / 60);
   const pct = Math.min(100, Math.round((secs / (MAX_TRADE_HOURS * 3600)) * 100));
@@ -712,7 +721,7 @@ function tradeDuration(iso) {
 }
 function tradeAgeColor(iso) {
   if (!iso) return 'var(--muted)';
-  const h = (Date.now() - new Date(iso)) / 3600000;
+  const h = (Date.now() - parseUTC(iso)) / 3600000;
   if (h >= MAX_TRADE_HOURS) return 'var(--red)';
   if (h >= MAX_TRADE_HOURS * 0.75) return 'var(--yellow)';
   return 'var(--muted)';
