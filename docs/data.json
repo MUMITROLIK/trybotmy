@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-03-16T08:56:35.577225+00:00",
+  "updated_at": "2026-03-16T08:58:19.203505+00:00",
   "stats": {
     "total": 38,
     "wins": 4,
-    "losses": 9,
-    "active": 25,
-    "winrate": 30.8
+    "losses": 10,
+    "active": 24,
+    "winrate": 28.6
   },
   "fear_greed": {
     "value": 23,
@@ -311,24 +311,6 @@
       "status": "ACTIVE"
     },
     {
-      "id": 29,
-      "symbol": "FILUSDT",
-      "direction": "LONG",
-      "entry": 0.959,
-      "tp1": 0.97818,
-      "tp2": 0.99736,
-      "sl": 0.93982,
-      "strength": 31,
-      "reasons": [
-        "MACD бычий (hist=0.00121)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: давление покупки (+0.20)"
-      ],
-      "news": null,
-      "created_at": "2026-03-16 08:09:59",
-      "status": "ACTIVE"
-    },
-    {
       "id": 32,
       "symbol": "UNIUSDT",
       "direction": "LONG",
@@ -481,6 +463,22 @@
         "MACD медвежий (hist=-0.00003)",
         "Цена < EMA20 < EMA50",
         "Стакан: давление продажи (-0.23)"
+      ]
+    },
+    {
+      "symbol": "FILUSDT",
+      "direction": "LONG",
+      "entry": 0.959,
+      "tp1": 0.97818,
+      "tp2": 0.99736,
+      "sl": 0.93982,
+      "strength": 31,
+      "status": "SL",
+      "created_at": "2026-03-16 08:09:59",
+      "reasons": [
+        "MACD бычий (hist=0.00121)",
+        "Цена > EMA20 > EMA50",
+        "Стакан: давление покупки (+0.20)"
       ]
     },
     {
