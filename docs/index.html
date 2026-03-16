@@ -1011,59 +1011,6 @@ function handleSkip(sym, dir) {
 }
 
 // ── Trade management ──────────────────────────────────────────────────────────
-function toggleEditEntry(tradeId, currentEntry) {
-  const row = $('editrow_' + tradeId);
-  if (!row) return;
-  const visible = row.classList.contains('visible');
-  row.classList.toggle('visible', !visible);
-  if (!visible) {
-    const inp = $('editinput_' + tradeId);
-    if (inp) { inp.value = currentEntry; inp.focus(); inp.select(); }
-  }
-}
-function cancelEditEntry(tradeId) {
-  const row = $('editrow_' + tradeId);
-  if (row) row.classList.remove('visible');
-}
-function confirmEditEntry(tradeId) {
-  const inp = $('editinput_' + tradeId);
-  if (!inp) return;
-  const newEntry = parseFloat(inp.value);
-  if (!newEntry || isNaN(newEntry)) return;
-  const entryEl = $('tentry_' + tradeId);
-  if (entryEl) entryEl.textContent = mono(newEntry);
-  sendBotCommand(`/setentry_${tradeId}_${newEntry}`);
-  cancelEditEntry(tradeId);
-}
-function closeTrade(tradeId, symbol, direction) {
-  if (!confirm(`Закрыть ${symbol} ${direction} по рынку?`)) return;
-  const card = $('tc_' + tradeId);
-  if (card) { card.style.opacity = '.4'; card.style.transition = 'opacity .3s'; }
-  sendBotCommand(`/closetrade_${tradeId}`);
-  setTimeout(loadData, 3000);
-}
-function sendBotCommand(command) {
-  navigator.clipboard?.writeText(command).then(() => {
-    showToast(`📋 Скопировано!\nОтправь боту в Telegram:\n${command}`);
-  }).catch(() => showToast(`Отправь боту: ${command}`));
-}
-function showToast(msg) {
-  let t = $('toast');
-  if (!t) {
-    t = document.createElement('div');
-    t.id = 'toast';
-    t.style.cssText = `position:fixed;bottom:24px;left:50%;transform:translateX(-50%);
-      background:var(--surface2);border:1px solid var(--cyan);color:var(--text);
-      padding:12px 20px;border-radius:8px;font-family:'JetBrains Mono',monospace;
-      font-size:11px;z-index:9999;max-width:340px;text-align:center;
-      white-space:pre-line;box-shadow:0 4px 24px rgba(0,0,0,.6);`;
-    document.body.appendChild(t);
-  }
-  t.textContent = msg;
-  t.style.display = 'block';
-  clearTimeout(t._timer);
-  t._timer = setTimeout(() => { t.style.display = 'none'; }, 4000);
-}
 
 // ── History ───────────────────────────────────────────────────────────────────
 let _history = [];
@@ -1159,14 +1106,8 @@ function renderTrades(trades, stats) {
           Взята: ${ago(t.taken_at)} назад &nbsp;·&nbsp;
           <span id="ttimer_${t.id}" style="color:${tradeAgeColor(t.taken_at)}">${tradeDuration(t.taken_at)}</span>
         </div>
-        <div class="edit-entry-row" id="editrow_${t.id}">
-          <input class="edit-entry-input" id="editinput_${t.id}" type="number" step="any" value="${t.entry}">
-          <button class="btn-edit-confirm" onclick="confirmEditEntry(${t.id})">✓ OK</button>
-          <button class="btn-edit-confirm" onclick="cancelEditEntry(${t.id})" style="border-color:var(--border2);color:var(--muted)">✕</button>
-        </div>
-        <div class="trade-actions">
-          <button class="btn-trade-action" onclick="toggleEditEntry(${t.id}, ${t.entry})">✏ Изменить вход</button>
-          <button class="btn-trade-action btn-trade-close" onclick="closeTrade(${t.id}, '${t.symbol}', '${t.direction}')">✕ Закрыть</button>
+        <div style="font-family:'JetBrains Mono',monospace;font-size:9px;color:var(--muted);margin-top:8px;text-align:center;padding:6px;border:1px solid var(--border);border-radius:5px">
+          ✏️ Управление позицией — через /positions в Telegram боте
         </div>
       </div>
     </div>`;
