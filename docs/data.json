@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-03-16T12:03:55.047197+00:00",
+  "updated_at": "2026-03-16T12:05:41.358269+00:00",
   "stats": {
     "total": 8,
     "wins": 0,
     "losses": 0,
-    "active": 3,
+    "active": 2,
     "winrate": 0
   },
   "trade_stats": {
@@ -20,26 +20,6 @@
     "emoji": "😱"
   },
   "signals": [
-    {
-      "id": 44,
-      "symbol": "HYPEUSDT",
-      "direction": "LONG",
-      "entry": 39.528,
-      "tp1": 40.697857,
-      "tp2": 41.867714,
-      "sl": 38.73744,
-      "strength": 48,
-      "reasons": [
-        "MACD бычий momentum",
-        "Цена > EMA20 > EMA50 ↑",
-        "Объём x1.6 (повышенный)",
-        "МТФ: 5m, 1h, 4h согласны",
-        "🌍 Европа | 3/4 ТФ согласны"
-      ],
-      "news": null,
-      "created_at": "2026-03-16 11:55:19",
-      "status": "ACTIVE"
-    },
     {
       "id": 45,
       "symbol": "RIVERUSDT",
@@ -87,6 +67,24 @@
     }
   ],
   "history": [
+    {
+      "symbol": "HYPEUSDT",
+      "direction": "LONG",
+      "entry": 39.528,
+      "tp1": 40.697857,
+      "tp2": 41.867714,
+      "sl": 38.73744,
+      "strength": 48,
+      "status": "EXPIRED",
+      "created_at": "2026-03-16 11:55:19",
+      "reasons": [
+        "MACD бычий momentum",
+        "Цена > EMA20 > EMA50 ↑",
+        "Объём x1.6 (повышенный)",
+        "МТФ: 5m, 1h, 4h согласны",
+        "🌍 Европа | 3/4 ТФ согласны"
+      ]
+    },
     {
       "symbol": "NEARUSDT",
       "direction": "LONG",
