@@ -358,7 +358,7 @@ main { padding: 24px 40px; max-width: 1600px; margin: 0 auto; }
   color: var(--green);
   border: 1px solid rgba(0,255,157,.2);
   border-radius: 6px;
-  background: rgba(0,255,157,.05);
+  background: rgba(0,255,157,.04);
 }
 .btn-skip {
   font-family: 'JetBrains Mono', monospace;
@@ -702,6 +702,50 @@ const ago = iso => {
   if (d<3600) return Math.floor(d/60)+'м';
   return Math.floor(d/3600)+'ч';
 };
+
+// ── Trade duration helpers ─────────────────────────────────────────────────
+const MAX_TRADE_HOURS = 8;
+let _allTrades = [];
+
+function tradeDuration(iso) {
+  if (!iso) return '';
+  const secs = Math.floor((Date.now() - new Date(iso)) / 1000);
+  const h = Math.floor(secs / 3600);
+  const m = Math.floor((secs % 3600) / 60);
+  const pct = Math.min(100, Math.round((secs / (MAX_TRADE_HOURS * 3600)) * 100));
+  const label = h > 0 ? `${h}ч ${m}м` : `${m}м`;
+  if (h >= MAX_TRADE_HOURS) return `⏰ ТАЙМАУТ (${label})`;
+  if (pct >= 75) return `⚠️ ${label} · ${pct}% лимита`;
+  return `⏱ ${label} в сделке`;
+}
+function tradeAgeColor(iso) {
+  if (!iso) return 'var(--muted)';
+  const h = (Date.now() - new Date(iso)) / 3600000;
+  if (h >= MAX_TRADE_HOURS) return 'var(--red)';
+  if (h >= MAX_TRADE_HOURS * 0.75) return 'var(--yellow)';
+  return 'var(--muted)';
+}
+
+// Длительность сделки в формате "1ч 23м" с предупреждением о таймауте
+const MAX_TRADE_HOURS = 8;
+function tradeDuration(iso) {
+  if (!iso) return '';
+  const secs = Math.floor((Date.now() - new Date(iso)) / 1000);
+  const h = Math.floor(secs / 3600);
+  const m = Math.floor((secs % 3600) / 60);
+  const pct = Math.min(100, Math.round((secs / (MAX_TRADE_HOURS * 3600)) * 100));
+  const label = h > 0 ? `${h}ч ${m}м` : `${m}м`;
+  if (h >= MAX_TRADE_HOURS) return `⏰ ТАЙМАУТ (${label})`;
+  if (pct >= 75) return `⚠️ ${label} (${pct}% таймаута)`;
+  return `⏱ ${label} в сделке`;
+}
+function tradeAgeColor(iso) {
+  if (!iso) return 'var(--muted)';
+  const h = (Date.now() - new Date(iso)) / 3600000;
+  if (h >= MAX_TRADE_HOURS) return 'var(--red)';
+  if (h >= MAX_TRADE_HOURS * 0.75) return 'var(--yellow)';
+  return 'var(--muted)';
+}
 const CHART_OPTS = {
   layout:{background:{type:'solid',color:'#10101f'},textColor:'#4a4a7a'},
   grid:{vertLines:{color:'#1c1c35'},horzLines:{color:'#1c1c35'}},
@@ -840,13 +884,13 @@ function handleOverlayClick(e) {
 // ── Accepted signals ──────────────────────────────────────────────────────────
 const taken = new Map();
 
-// Синхронизируем taken с реальными открытыми сделками из data.json
-// Это главный фикс: если сделка взята через Telegram — сайт тоже это знает
+// Синхронизация с реальными открытыми сделками из data.json
+// Если взял через Telegram — при следующем обновлении сайт это увидит
 function syncTakenFromTrades(openTrades) {
   openTrades.forEach(t => {
     const key = t.symbol + '_' + t.direction;
     if (!taken.has(key)) {
-      taken.set(key, { dir: t.direction, entry: t.entry, fromServer: true });
+      taken.set(key, { dir: t.direction, entry: t.entry });
     }
   });
 }
@@ -856,7 +900,7 @@ function isTaken(sym, dir) {
 }
 
 function takeSignal(sym, dir, entry) {
-  taken.set(sym + '_' + dir, {dir, entry});
+  taken.set(sym + '_' + dir, { dir, entry });
   renderTaken();
 }
 function skipSignal(sym, dir) {
@@ -870,8 +914,7 @@ function renderTaken() {
   bar.classList.add('has-items');
   list.innerHTML = [...taken.entries()].map(([key, {dir, entry}]) => {
     const sym = key.split('_')[0];
-    return `
-    <div class="taken-item">
+    return `<div class="taken-item">
       <span class="taken-sym">${sym}</span>
       <span class="taken-dir ${dir.toLowerCase()}">${dir}</span>
       <span style="color:var(--muted);font-size:10px">${mono(entry)}</span>
@@ -909,12 +952,11 @@ function renderSignals(sigs) {
     const tags = (s.reasons||[]).slice(0,5).map(r=>`<span class="tag">${r}</span>`).join('');
     const clr  = sc(s.strength);
     const alreadyTaken = isTaken(s.symbol, s.direction);
-    // Если сделка уже взята — показываем карточку в затухшем виде без кнопок
-    const cardOpacity = alreadyTaken ? 'opacity:.45;pointer-events:none' : '';
-    const actionBlock = alreadyTaken
+    const cardStyle    = alreadyTaken ? 'opacity:.4;pointer-events:none' : '';
+    const actionBlock  = alreadyTaken
       ? `<div class="sig-taken-label">✅ ВЗЯТА — отслеживается в позициях</div>`
       : `<div class="sig-actions">
-          <button class="btn-take" id="btntake_${s.symbol}_${s.direction}" onclick="handleTake('${s.symbol}','${s.direction}',${s.entry})">
+          <button class="btn-take" onclick="handleTake('${s.symbol}','${s.direction}',${s.entry})">
             ▸ ВЗЯТЬ СДЕЛКУ
           </button>
           <button class="btn-skip" onclick="handleSkip('${s.symbol}','${s.direction}')">
@@ -922,7 +964,7 @@ function renderSignals(sigs) {
           </button>
         </div>`;
     return `
-    <div class="sig-card ${lg?'long':'short'}" id="sc_${s.symbol}_${s.direction}" style="${cardOpacity}">
+    <div class="sig-card ${lg?'long':'short'}" id="sc_${s.symbol}_${s.direction}" style="${cardStyle}">
       <div class="sig-top" onclick="openChartByIdx(${i})">
         <span class="sig-symbol">${s.symbol}</span>
         <span class="sig-badge ${lg?'long':'short'}">${s.direction} ${lg?'↑':'↓'}</span>
@@ -959,14 +1001,13 @@ function openChartByIdx(i) {
 
 function handleTake(sym, dir, entry) {
   takeSignal(sym, dir, entry);
-  // Перерисовываем карточку сигнала — убираем кнопки, показываем статус
-  renderSignals(_allSignals);
+  renderSignals(_allSignals); // перерисовываем — кнопки исчезнут
 }
 
 function handleSkip(sym, dir) {
   skipSignal(sym, dir);
   const card = $('sc_'+sym+'_'+dir);
-  if (card) { card.style.opacity = '.2'; card.style.transition = 'opacity .4s'; }
+  if (card) { card.style.opacity = '.15'; card.style.transition = 'opacity .4s'; }
 }
 
 let _history = [];
@@ -1048,6 +1089,10 @@ function renderTrades(trades, stats) {
         <div class="tags">${tags}</div>
         <div style="font-family:'JetBrains Mono',monospace;font-size:9px;color:var(--muted);margin-top:6px">
           Взята: ${ago(t.taken_at)} назад
+          &nbsp;·&nbsp;
+          <span id="ttimer_${t.id}" style="color:${tradeAgeColor(t.taken_at)}">
+            ${tradeDuration(t.taken_at)}
+          </span>
         </div>
       </div>
     </div>`;
@@ -1142,7 +1187,8 @@ async function loadData() {
     $('s-winrate').textContent = st.winrate!=null ? st.winrate+'%' : '—';
     renderFG(d.fear_greed);
     const openTrades = d.trades_open||[];
-    syncTakenFromTrades(openTrades);  // сначала синхронизируем взятые сделки
+    _allTrades = openTrades;
+    syncTakenFromTrades(openTrades);
     renderSignals(d.signals||[]);
     renderHistory(d.history||[]);
     renderTrades(openTrades, d.trade_stats);
@@ -1157,6 +1203,30 @@ async function loadData() {
 // ── Init ──────────────────────────────────────────────────────────────────────
 initBtcChart();
 loadBtcCandles();
+
+// Обновляем таймеры сделок каждые 30 секунд без перезагрузки страницы
+setInterval(() => {
+  _allTrades.forEach(t => {
+    const el = $('ttimer_' + t.id);
+    if (el && t.taken_at) {
+      el.textContent = tradeDuration(t.taken_at);
+      el.style.color = tradeAgeColor(t.taken_at);
+    }
+  });
+}, 30000);
+
+// Обновляем таймеры сделок каждые 30 секунд
+setInterval(() => {
+  document.querySelectorAll('[id^="ttimer_"]').forEach(el => {
+    const tradeId = el.id.replace('ttimer_', '');
+    // Ищем taken_at в глобальных данных
+    const trade = (_allTrades || []).find(t => String(t.id) === String(tradeId));
+    if (trade && trade.taken_at) {
+      el.textContent = tradeDuration(trade.taken_at);
+      el.style.color = tradeAgeColor(trade.taken_at);
+    }
+  });
+}, 30000);
 connectBtcWs();
 loadData();
 setInterval(loadBtcCandles, 60000);
