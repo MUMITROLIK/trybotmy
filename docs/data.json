@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-16T20:33:27.998605+00:00",
+  "updated_at": "2026-03-16T20:35:37.768373+00:00",
   "stats": {
     "total": 48,
     "wins": 0,
@@ -8,11 +8,11 @@
     "winrate": 0.0
   },
   "trade_stats": {
-    "open": 8,
+    "open": 7,
     "wins": 8,
-    "losses": 6,
-    "total_pnl": 5.62,
-    "winrate": 57.1
+    "losses": 7,
+    "total_pnl": 5.03,
+    "winrate": 53.3
   },
   "fear_greed": {
     "value": 23,
@@ -414,26 +414,6 @@
   ],
   "trades_open": [
     {
-      "id": 6,
-      "symbol": "BNBUSDT",
-      "direction": "LONG",
-      "entry": 679.86,
-      "tp1": 693.4572,
-      "tp2": 707.0544,
-      "sl": 666.2628,
-      "strength": 50,
-      "taken_at": "2026-03-16 12:35:05",
-      "status": "OPEN",
-      "reasons": [
-        "Цена > EMA20 > EMA50 ↑",
-        "Объём x1.9 (повышенный)",
-        "Стакан: перевес bid (+0.23)",
-        "МТФ: все 4 ТФ согласны ✅✅",
-        "Taker: смещается к покупкам (1.14)",
-        "🌍 Европа | 4/4 ТФ согласны"
-      ]
-    },
-    {
       "id": 7,
       "symbol": "BTCUSDT",
       "direction": "LONG",
@@ -580,6 +560,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "BNBUSDT",
+      "direction": "LONG",
+      "entry": 679.86,
+      "tp1": 693.4572,
+      "tp2": 707.0544,
+      "sl": 666.2628,
+      "strength": 50,
+      "status": "TIMEOUT",
+      "pnl_pct": -0.59,
+      "close_price": 675.825,
+      "taken_at": "2026-03-16 12:35:05",
+      "closed_at": "2026-03-16 20:35:19"
+    },
     {
       "symbol": "FILUSDT",
       "direction": "LONG",
