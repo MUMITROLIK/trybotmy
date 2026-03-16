@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-16T21:14:54.353995+00:00",
+  "updated_at": "2026-03-16T21:50:32.985413+00:00",
   "stats": {
     "total": 48,
     "wins": 0,
@@ -8,11 +8,11 @@
     "winrate": 0.0
   },
   "trade_stats": {
-    "open": 6,
-    "wins": 9,
+    "open": 1,
+    "wins": 14,
     "losses": 7,
-    "total_pnl": 5.33,
-    "winrate": 56.2
+    "total_pnl": 11.55,
+    "winrate": 66.7
   },
   "fear_greed": {
     "value": 23,
@@ -414,109 +414,6 @@
   ],
   "trades_open": [
     {
-      "id": 8,
-      "symbol": "APRUSDT",
-      "direction": "LONG",
-      "entry": 0.17553,
-      "tp1": 0.189572,
-      "tp2": 0.201859,
-      "sl": 0.168509,
-      "strength": 54,
-      "taken_at": "2026-03-16 13:15:34",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий momentum",
-        "Цена > EMA20 > EMA50 ↑",
-        "Объём x1.6 (повышенный)",
-        "МТФ: 5m, 15m, 1h согласны",
-        "Taker: покупатели доминируют (1.34)",
-        "🌍 Европа | 3/4 ТФ согласны"
-      ]
-    },
-    {
-      "id": 10,
-      "symbol": "LTCUSDT",
-      "direction": "LONG",
-      "entry": 58.09,
-      "tp1": 59.2518,
-      "tp2": 60.4136,
-      "sl": 56.9282,
-      "strength": 57,
-      "taken_at": "2026-03-16 13:38:47",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий momentum",
-        "Цена > EMA20 > EMA50 ↑",
-        "Объём x1.6 (повышенный)",
-        "МТФ: все 4 ТФ согласны ✅✅",
-        "Taker: покупатели доминируют (1.36) ↑ 🟢",
-        "🌍 Европа | 4/4 ТФ согласны"
-      ]
-    },
-    {
-      "id": 11,
-      "symbol": "DOGEUSDT",
-      "direction": "LONG",
-      "entry": 0.10125,
-      "tp1": 0.104301,
-      "tp2": 0.107353,
-      "sl": 0.099225,
-      "strength": 63,
-      "taken_at": "2026-03-16 13:39:56",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий momentum",
-        "Цена > EMA20 > EMA50 ↑",
-        "Объём x1.8 (повышенный)",
-        "Стакан: перевес bid (+0.16)",
-        "МТФ: все 4 ТФ согласны ✅✅",
-        "Taker: покупатели доминируют (1.26) ↑ 🟢",
-        "FR сменил знак → потенциальный разворот",
-        "🌍 Европа | 4/4 ТФ согласны"
-      ]
-    },
-    {
-      "id": 12,
-      "symbol": "SUIUSDT",
-      "direction": "LONG",
-      "entry": 1.0555,
-      "tp1": 1.087971,
-      "tp2": 1.120443,
-      "sl": 1.03439,
-      "strength": 52,
-      "taken_at": "2026-03-16 13:41:53",
-      "status": "OPEN",
-      "reasons": [
-        "MACD выше сигнала",
-        "Цена > EMA20 > EMA50 ↑",
-        "Объём x2.2 🔥",
-        "Стакан: перевес bid (+0.21)",
-        "МТФ: 15m, 1h, 4h согласны",
-        "FR сменил знак → потенциальный разворот",
-        "🌍 Европа | 3/4 ТФ согласны"
-      ]
-    },
-    {
-      "id": 14,
-      "symbol": "AAVEUSDT",
-      "direction": "LONG",
-      "entry": 121.07,
-      "tp1": 124.25,
-      "tp2": 127.43,
-      "sl": 118.6486,
-      "strength": 63,
-      "taken_at": "2026-03-16 13:45:20",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий momentum",
-        "Цена > EMA20 > EMA50 ↑",
-        "Объём x3.6 🔥🔥",
-        "МТФ: все 4 ТФ согласны ✅✅",
-        "L/S: топ-трейдеры в лонге (1.34)",
-        "🌍 Европа | 4/4 ТФ согласны"
-      ]
-    },
-    {
       "id": 15,
       "symbol": "UNIUSDT",
       "direction": "LONG",
@@ -539,6 +436,76 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "AAVEUSDT",
+      "direction": "LONG",
+      "entry": 121.07,
+      "tp1": 124.25,
+      "tp2": 127.43,
+      "sl": 118.6486,
+      "strength": 63,
+      "status": "TIMEOUT",
+      "pnl_pct": 1.5,
+      "close_price": 122.88,
+      "taken_at": "2026-03-16 13:45:20",
+      "closed_at": "2026-03-16 21:49:25"
+    },
+    {
+      "symbol": "SUIUSDT",
+      "direction": "LONG",
+      "entry": 1.0555,
+      "tp1": 1.087971,
+      "tp2": 1.120443,
+      "sl": 1.03439,
+      "strength": 52,
+      "status": "TIMEOUT",
+      "pnl_pct": 0.9,
+      "close_price": 1.0650499999999998,
+      "taken_at": "2026-03-16 13:41:53",
+      "closed_at": "2026-03-16 21:49:25"
+    },
+    {
+      "symbol": "DOGEUSDT",
+      "direction": "LONG",
+      "entry": 0.10125,
+      "tp1": 0.104301,
+      "tp2": 0.107353,
+      "sl": 0.099225,
+      "strength": 63,
+      "status": "TIMEOUT",
+      "pnl_pct": 0.28,
+      "close_price": 0.101535,
+      "taken_at": "2026-03-16 13:39:56",
+      "closed_at": "2026-03-16 21:49:25"
+    },
+    {
+      "symbol": "LTCUSDT",
+      "direction": "LONG",
+      "entry": 58.09,
+      "tp1": 59.2518,
+      "tp2": 60.4136,
+      "sl": 56.9282,
+      "strength": 57,
+      "status": "TIMEOUT",
+      "pnl_pct": 1.11,
+      "close_price": 58.735,
+      "taken_at": "2026-03-16 13:38:47",
+      "closed_at": "2026-03-16 21:49:25"
+    },
+    {
+      "symbol": "APRUSDT",
+      "direction": "LONG",
+      "entry": 0.17553,
+      "tp1": 0.189572,
+      "tp2": 0.201859,
+      "sl": 0.168509,
+      "strength": 54,
+      "status": "TIMEOUT",
+      "pnl_pct": 2.43,
+      "close_price": 0.1798,
+      "taken_at": "2026-03-16 13:15:34",
+      "closed_at": "2026-03-16 21:49:21"
+    },
     {
       "symbol": "BTCUSDT",
       "direction": "LONG",
