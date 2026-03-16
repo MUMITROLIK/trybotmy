@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-03-16T08:36:45.801532+00:00",
+  "updated_at": "2026-03-16T08:56:35.577225+00:00",
   "stats": {
     "total": 38,
-    "wins": 3,
-    "losses": 6,
-    "active": 29,
-    "winrate": 33.3
+    "wins": 4,
+    "losses": 9,
+    "active": 25,
+    "winrate": 30.8
   },
   "fear_greed": {
     "value": 23,
@@ -100,23 +100,6 @@
       "status": "ACTIVE"
     },
     {
-      "id": 6,
-      "symbol": "DOGEUSDT",
-      "direction": "LONG",
-      "entry": 0.1027,
-      "tp1": 0.104754,
-      "tp2": 0.106808,
-      "sl": 0.100646,
-      "strength": 10,
-      "reasons": [
-        "Цена > EMA20 > EMA50",
-        "Стакан: перевес bid (+0.09)"
-      ],
-      "news": null,
-      "created_at": "2026-03-16 08:09:39",
-      "status": "ACTIVE"
-    },
-    {
       "id": 7,
       "symbol": "TAOUSDT",
       "direction": "LONG",
@@ -132,24 +115,6 @@
       ],
       "news": null,
       "created_at": "2026-03-16 08:09:39",
-      "status": "ACTIVE"
-    },
-    {
-      "id": 8,
-      "symbol": "1000PEPEUSDT",
-      "direction": "LONG",
-      "entry": 0.0040554,
-      "tp1": 0.004137,
-      "tp2": 0.004218,
-      "sl": 0.003974,
-      "strength": 25,
-      "reasons": [
-        "MACD бычий (hist=0.00002)",
-        "Цена > EMA20 > EMA50",
-        "Объём x1.2"
-      ],
-      "news": null,
-      "created_at": "2026-03-16 08:09:40",
       "status": "ACTIVE"
     },
     {
@@ -260,23 +225,6 @@
       "status": "ACTIVE"
     },
     {
-      "id": 18,
-      "symbol": "SUIUSDT",
-      "direction": "LONG",
-      "entry": 1.0763,
-      "tp1": 1.097826,
-      "tp2": 1.119352,
-      "sl": 1.054774,
-      "strength": 25,
-      "reasons": [
-        "MACD бычий (hist=0.00065)",
-        "Цена > EMA20 > EMA50"
-      ],
-      "news": null,
-      "created_at": "2026-03-16 08:09:48",
-      "status": "ACTIVE"
-    },
-    {
       "id": 20,
       "symbol": "LINKUSDT",
       "direction": "LONG",
@@ -378,24 +326,6 @@
       ],
       "news": null,
       "created_at": "2026-03-16 08:09:59",
-      "status": "ACTIVE"
-    },
-    {
-      "id": 30,
-      "symbol": "PIXELUSDT",
-      "direction": "SHORT",
-      "entry": 0.011327,
-      "tp1": 0.0111,
-      "tp2": 0.010874,
-      "sl": 0.011554,
-      "strength": 26,
-      "reasons": [
-        "MACD медвежий (hist=-0.00003)",
-        "Цена < EMA20 < EMA50",
-        "Стакан: давление продажи (-0.23)"
-      ],
-      "news": null,
-      "created_at": "2026-03-16 08:10:00",
       "status": "ACTIVE"
     },
     {
@@ -538,6 +468,22 @@
       ]
     },
     {
+      "symbol": "PIXELUSDT",
+      "direction": "SHORT",
+      "entry": 0.011327,
+      "tp1": 0.0111,
+      "tp2": 0.010874,
+      "sl": 0.011554,
+      "strength": 26,
+      "status": "TP1",
+      "created_at": "2026-03-16 08:10:00",
+      "reasons": [
+        "MACD медвежий (hist=-0.00003)",
+        "Цена < EMA20 < EMA50",
+        "Стакан: давление продажи (-0.23)"
+      ]
+    },
+    {
       "symbol": "APRUSDT",
       "direction": "LONG",
       "entry": 0.16666,
@@ -617,6 +563,21 @@
       ]
     },
     {
+      "symbol": "SUIUSDT",
+      "direction": "LONG",
+      "entry": 1.0763,
+      "tp1": 1.097826,
+      "tp2": 1.119352,
+      "sl": 1.054774,
+      "strength": 25,
+      "status": "SL",
+      "created_at": "2026-03-16 08:09:48",
+      "reasons": [
+        "MACD бычий (hist=0.00065)",
+        "Цена > EMA20 > EMA50"
+      ]
+    },
+    {
       "symbol": "REZUSDT",
       "direction": "LONG",
       "entry": 0.003873,
@@ -662,6 +623,37 @@
       "reasons": [
         "MACD бычий (hist=0.00005)",
         "Цена выше EMA20"
+      ]
+    },
+    {
+      "symbol": "1000PEPEUSDT",
+      "direction": "LONG",
+      "entry": 0.0040554,
+      "tp1": 0.004137,
+      "tp2": 0.004218,
+      "sl": 0.003974,
+      "strength": 25,
+      "status": "SL",
+      "created_at": "2026-03-16 08:09:40",
+      "reasons": [
+        "MACD бычий (hist=0.00002)",
+        "Цена > EMA20 > EMA50",
+        "Объём x1.2"
+      ]
+    },
+    {
+      "symbol": "DOGEUSDT",
+      "direction": "LONG",
+      "entry": 0.1027,
+      "tp1": 0.104754,
+      "tp2": 0.106808,
+      "sl": 0.100646,
+      "strength": 10,
+      "status": "SL",
+      "created_at": "2026-03-16 08:09:39",
+      "reasons": [
+        "Цена > EMA20 > EMA50",
+        "Стакан: перевес bid (+0.09)"
       ]
     }
   ]
