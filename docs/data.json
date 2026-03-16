@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-03-16T13:44:05.911296+00:00",
+  "updated_at": "2026-03-16T13:45:51.943085+00:00",
   "stats": {
     "total": 32,
     "wins": 0,
     "losses": 0,
-    "active": 13,
+    "active": 12,
     "winrate": 0
   },
   "trade_stats": {
-    "open": 11,
+    "open": 12,
     "wins": 1,
     "losses": 1,
     "total_pnl": 0.63,
@@ -20,27 +20,6 @@
     "emoji": "😱"
   },
   "signals": [
-    {
-      "id": 58,
-      "symbol": "SOLUSDT",
-      "direction": "LONG",
-      "entry": 94.81,
-      "tp1": 97.008571,
-      "tp2": 99.207143,
-      "sl": 92.9138,
-      "strength": 58,
-      "reasons": [
-        "MACD бычий momentum",
-        "Цена > EMA20 > EMA50 ↑",
-        "Объём x2.4 🔥",
-        "МТФ: все 4 ТФ согласны ✅✅",
-        "Taker: смещается к покупкам (0.87)",
-        "🌍 Европа | 4/4 ТФ согласны"
-      ],
-      "news": null,
-      "created_at": "2026-03-16 13:34:18",
-      "status": "ACTIVE"
-    },
     {
       "id": 59,
       "symbol": "XRPUSDT",
@@ -298,6 +277,25 @@
     }
   ],
   "history": [
+    {
+      "symbol": "SOLUSDT",
+      "direction": "LONG",
+      "entry": 94.81,
+      "tp1": 97.008571,
+      "tp2": 99.207143,
+      "sl": 92.9138,
+      "strength": 58,
+      "status": "EXPIRED",
+      "created_at": "2026-03-16 13:34:18",
+      "reasons": [
+        "MACD бычий momentum",
+        "Цена > EMA20 > EMA50 ↑",
+        "Объём x2.4 🔥",
+        "МТФ: все 4 ТФ согласны ✅✅",
+        "Taker: смещается к покупкам (0.87)",
+        "🌍 Европа | 4/4 ТФ согласны"
+      ]
+    },
     {
       "symbol": "APRUSDT",
       "direction": "LONG",
@@ -897,6 +895,26 @@
         "Стакан: давление покупки (+0.37)",
         "МТФ: 15m, 1h, 4h согласны",
         "🌍 Европа | 3/4 ТФ согласны"
+      ]
+    },
+    {
+      "id": 14,
+      "symbol": "AAVEUSDT",
+      "direction": "LONG",
+      "entry": 121.07,
+      "tp1": 124.25,
+      "tp2": 127.43,
+      "sl": 118.6486,
+      "strength": 63,
+      "taken_at": "2026-03-16 13:45:20",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий momentum",
+        "Цена > EMA20 > EMA50 ↑",
+        "Объём x3.6 🔥🔥",
+        "МТФ: все 4 ТФ согласны ✅✅",
+        "L/S: топ-трейдеры в лонге (1.34)",
+        "🌍 Европа | 4/4 ТФ согласны"
       ]
     }
   ],
