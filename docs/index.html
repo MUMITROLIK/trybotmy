@@ -726,26 +726,6 @@ function tradeAgeColor(iso) {
   return 'var(--muted)';
 }
 
-// Длительность сделки в формате "1ч 23м" с предупреждением о таймауте
-const MAX_TRADE_HOURS = 8;
-function tradeDuration(iso) {
-  if (!iso) return '';
-  const secs = Math.floor((Date.now() - new Date(iso)) / 1000);
-  const h = Math.floor(secs / 3600);
-  const m = Math.floor((secs % 3600) / 60);
-  const pct = Math.min(100, Math.round((secs / (MAX_TRADE_HOURS * 3600)) * 100));
-  const label = h > 0 ? `${h}ч ${m}м` : `${m}м`;
-  if (h >= MAX_TRADE_HOURS) return `⏰ ТАЙМАУТ (${label})`;
-  if (pct >= 75) return `⚠️ ${label} (${pct}% таймаута)`;
-  return `⏱ ${label} в сделке`;
-}
-function tradeAgeColor(iso) {
-  if (!iso) return 'var(--muted)';
-  const h = (Date.now() - new Date(iso)) / 3600000;
-  if (h >= MAX_TRADE_HOURS) return 'var(--red)';
-  if (h >= MAX_TRADE_HOURS * 0.75) return 'var(--yellow)';
-  return 'var(--muted)';
-}
 const CHART_OPTS = {
   layout:{background:{type:'solid',color:'#10101f'},textColor:'#4a4a7a'},
   grid:{vertLines:{color:'#1c1c35'},horzLines:{color:'#1c1c35'}},
@@ -1215,18 +1195,6 @@ setInterval(() => {
   });
 }, 30000);
 
-// Обновляем таймеры сделок каждые 30 секунд
-setInterval(() => {
-  document.querySelectorAll('[id^="ttimer_"]').forEach(el => {
-    const tradeId = el.id.replace('ttimer_', '');
-    // Ищем taken_at в глобальных данных
-    const trade = (_allTrades || []).find(t => String(t.id) === String(tradeId));
-    if (trade && trade.taken_at) {
-      el.textContent = tradeDuration(trade.taken_at);
-      el.style.color = tradeAgeColor(trade.taken_at);
-    }
-  });
-}, 30000);
 connectBtcWs();
 loadData();
 setInterval(loadBtcCandles, 60000);

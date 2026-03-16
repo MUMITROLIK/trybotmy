@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-03-16T11:43:53.101032+00:00",
+  "updated_at": "2026-03-16T11:45:14.511820+00:00",
   "stats": {
-    "total": 4,
+    "total": 5,
     "wins": 0,
     "losses": 0,
-    "active": 0,
+    "active": 1,
     "winrate": 0
   },
   "trade_stats": {
@@ -19,7 +19,31 @@
     "label": "Extreme Fear",
     "emoji": "😱"
   },
-  "signals": [],
+  "signals": [
+    {
+      "id": 43,
+      "symbol": "NEARUSDT",
+      "direction": "LONG",
+      "entry": 1.393,
+      "tp1": 1.435571,
+      "tp2": 1.478143,
+      "sl": 1.36514,
+      "strength": 50,
+      "reasons": [
+        "MACD выше сигнала",
+        "Цена > EMA20 > EMA50 ↑",
+        "Объём x1.5 (повышенный)",
+        "Стакан: bid (+0.06)",
+        "МТФ: 15m, 1h, 4h согласны",
+        "OI растёт +1.2% + цена ↑",
+        "FR сменил знак → потенциальный разворот",
+        "🌍 Европа | 3/4 ТФ согласны"
+      ],
+      "news": null,
+      "created_at": "2026-03-16 11:44:55",
+      "status": "ACTIVE"
+    }
+  ],
   "history": [
     {
       "symbol": "BCHUSDT",
