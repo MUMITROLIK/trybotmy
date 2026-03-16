@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-03-16T13:47:40.412610+00:00",
+  "updated_at": "2026-03-16T13:49:29.988806+00:00",
   "stats": {
     "total": 32,
     "wins": 0,
     "losses": 0,
-    "active": 10,
+    "active": 8,
     "winrate": 0
   },
   "trade_stats": {
@@ -20,50 +20,6 @@
     "emoji": "😱"
   },
   "signals": [
-    {
-      "id": 61,
-      "symbol": "ETHUSDT",
-      "direction": "LONG",
-      "entry": 2293.06,
-      "tp1": 2353.742857,
-      "tp2": 2414.425714,
-      "sl": 2247.1988,
-      "strength": 57,
-      "reasons": [
-        "MACD выше сигнала",
-        "Цена > EMA20 > EMA50 ↑",
-        "Объём x1.7 (повышенный)",
-        "📰 CoinDesk 20 performance update: Ethereum (ETH) price jumps 8.8%, ...",
-        "МТФ: все 4 ТФ согласны ✅✅",
-        "OI растёт +4.7% + цена ↑",
-        "Taker: смещается к покупкам (0.98)",
-        "🌍 Европа | 4/4 ТФ согласны"
-      ],
-      "news": "CoinDesk 20 performance update: Ethereum (ETH) price jumps 8.8%, leading index higher",
-      "created_at": "2026-03-16 13:37:51",
-      "status": "ACTIVE"
-    },
-    {
-      "id": 62,
-      "symbol": "LTCUSDT",
-      "direction": "LONG",
-      "entry": 58.09,
-      "tp1": 59.2518,
-      "tp2": 60.4136,
-      "sl": 56.9282,
-      "strength": 57,
-      "reasons": [
-        "MACD бычий momentum",
-        "Цена > EMA20 > EMA50 ↑",
-        "Объём x1.6 (повышенный)",
-        "МТФ: все 4 ТФ согласны ✅✅",
-        "Taker: покупатели доминируют (1.36) ↑ 🟢",
-        "🌍 Европа | 4/4 ТФ согласны"
-      ],
-      "news": null,
-      "created_at": "2026-03-16 13:38:30",
-      "status": "ACTIVE"
-    },
     {
       "id": 63,
       "symbol": "DOGEUSDT",
@@ -237,6 +193,46 @@
     }
   ],
   "history": [
+    {
+      "symbol": "LTCUSDT",
+      "direction": "LONG",
+      "entry": 58.09,
+      "tp1": 59.2518,
+      "tp2": 60.4136,
+      "sl": 56.9282,
+      "strength": 57,
+      "status": "EXPIRED",
+      "created_at": "2026-03-16 13:38:30",
+      "reasons": [
+        "MACD бычий momentum",
+        "Цена > EMA20 > EMA50 ↑",
+        "Объём x1.6 (повышенный)",
+        "МТФ: все 4 ТФ согласны ✅✅",
+        "Taker: покупатели доминируют (1.36) ↑ 🟢",
+        "🌍 Европа | 4/4 ТФ согласны"
+      ]
+    },
+    {
+      "symbol": "ETHUSDT",
+      "direction": "LONG",
+      "entry": 2293.06,
+      "tp1": 2353.742857,
+      "tp2": 2414.425714,
+      "sl": 2247.1988,
+      "strength": 57,
+      "status": "EXPIRED",
+      "created_at": "2026-03-16 13:37:51",
+      "reasons": [
+        "MACD выше сигнала",
+        "Цена > EMA20 > EMA50 ↑",
+        "Объём x1.7 (повышенный)",
+        "📰 CoinDesk 20 performance update: Ethereum (ETH) price jumps 8.8%, ...",
+        "МТФ: все 4 ТФ согласны ✅✅",
+        "OI растёт +4.7% + цена ↑",
+        "Taker: смещается к покупкам (0.98)",
+        "🌍 Европа | 4/4 ТФ согласны"
+      ]
+    },
     {
       "symbol": "LINKUSDT",
       "direction": "LONG",
@@ -582,44 +578,6 @@
         "OI растёт +1.2% + цена ↑",
         "FR сменил знак → потенциальный разворот",
         "🌍 Европа | 3/4 ТФ согласны"
-      ]
-    },
-    {
-      "symbol": "BCHUSDT",
-      "direction": "LONG",
-      "entry": 473.6,
-      "tp1": 483.072,
-      "tp2": 492.544,
-      "sl": 464.128,
-      "strength": 61,
-      "status": "EXPIRED",
-      "created_at": "2026-03-16 11:14:21",
-      "reasons": [
-        "MACD выше сигнала",
-        "Цена > EMA20 > EMA50 ↑",
-        "Объём x2.6 🔥",
-        "МТФ: все 4 ТФ согласны ✅✅",
-        "Taker: покупатели доминируют (1.86) ↑ 🟢",
-        "FR сменил знак → потенциальный разворот",
-        "🌍 Европа | 4/4 ТФ согласны"
-      ]
-    },
-    {
-      "symbol": "ZECUSDT",
-      "direction": "LONG",
-      "entry": 231.5,
-      "tp1": 240.245714,
-      "tp2": 248.991429,
-      "sl": 226.252571,
-      "strength": 51,
-      "status": "EXPIRED",
-      "created_at": "2026-03-16 11:14:00",
-      "reasons": [
-        "Цена > EMA20 > EMA50 ↑",
-        "Объём x1.5 (повышенный)",
-        "МТФ: все 4 ТФ согласны ✅✅",
-        "Taker: покупатели доминируют (1.42) ↑ 🟢",
-        "🌍 Европа | 4/4 ТФ согласны"
       ]
     }
   ],
