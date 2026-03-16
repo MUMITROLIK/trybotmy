@@ -1,48 +1,27 @@
 {
-  "updated_at": "2026-03-16T17:02:18.132637+00:00",
+  "updated_at": "2026-03-16T17:04:33.611163+00:00",
   "stats": {
     "total": 47,
     "wins": 0,
     "losses": 1,
-    "active": 2,
+    "active": 0,
     "winrate": 0.0
   },
   "trade_stats": {
     "open": 15,
-    "wins": 1,
+    "wins": 3,
     "losses": 4,
-    "total_pnl": -3.04,
-    "winrate": 12.5
+    "total_pnl": -5.11,
+    "winrate": 42.9
   },
   "fear_greed": {
     "value": 23,
     "label": "Extreme Fear",
     "emoji": "😱"
   },
-  "signals": [
+  "signals": [],
+  "history": [
     {
-      "id": 84,
-      "symbol": "ZECUSDT",
-      "direction": "LONG",
-      "entry": 240.92,
-      "tp1": 250.402857,
-      "tp2": 259.885714,
-      "sl": 235.230286,
-      "strength": 56,
-      "reasons": [
-        "Цена > EMA20 > EMA50 ↑",
-        "Объём x2.3 🔥",
-        "Стакан: bid (+0.10)",
-        "МТФ: 5m, 15m, 4h согласны",
-        "Taker: покупатели доминируют (1.36) ↑ 🟢",
-        "🌎 Америка | 3/4 ТФ согласны"
-      ],
-      "news": null,
-      "created_at": "2026-03-16 16:53:57",
-      "status": "ACTIVE"
-    },
-    {
-      "id": 85,
       "symbol": "SIRENUSDT",
       "direction": "LONG",
       "entry": 0.53098,
@@ -50,6 +29,8 @@
       "tp2": 0.610627,
       "sl": 0.509741,
       "strength": 52,
+      "status": "EXPIRED",
+      "created_at": "2026-03-16 16:54:15",
       "reasons": [
         "RSI=19 (экстремальная перепроданность)",
         "BB нижняя зона (-26%)",
@@ -59,13 +40,27 @@
         "МТФ: 1h, 4h согласны",
         "OI падает (шорты закрываются)",
         "Taker: смещается к покупкам (0.93)"
-      ],
-      "news": null,
-      "created_at": "2026-03-16 16:54:15",
-      "status": "ACTIVE"
-    }
-  ],
-  "history": [
+      ]
+    },
+    {
+      "symbol": "ZECUSDT",
+      "direction": "LONG",
+      "entry": 240.92,
+      "tp1": 250.402857,
+      "tp2": 259.885714,
+      "sl": 235.230286,
+      "strength": 56,
+      "status": "EXPIRED",
+      "created_at": "2026-03-16 16:53:57",
+      "reasons": [
+        "Цена > EMA20 > EMA50 ↑",
+        "Объём x2.3 🔥",
+        "Стакан: bid (+0.10)",
+        "МТФ: 5m, 15m, 4h согласны",
+        "Taker: покупатели доминируют (1.36) ↑ 🟢",
+        "🌎 Америка | 3/4 ТФ согласны"
+      ]
+    },
     {
       "symbol": "SIRENUSDT",
       "direction": "LONG",
@@ -415,44 +410,6 @@
         "FR сменил знак → потенциальный разворот",
         "🌍 Европа | 3/4 ТФ согласны"
       ]
-    },
-    {
-      "symbol": "ZECUSDT",
-      "direction": "LONG",
-      "entry": 233.65,
-      "tp1": 242.075714,
-      "tp2": 250.501429,
-      "sl": 228.594571,
-      "strength": 49,
-      "status": "EXPIRED",
-      "created_at": "2026-03-16 13:41:38",
-      "reasons": [
-        "Цена > EMA20 > EMA50 ↑",
-        "Объём x1.7 (повышенный)",
-        "Стакан: давление покупки (+0.36)",
-        "МТФ: 5m, 15m, 4h согласны",
-        "🌍 Европа | 3/4 ТФ согласны"
-      ]
-    },
-    {
-      "symbol": "UNIUSDT",
-      "direction": "LONG",
-      "entry": 4.126,
-      "tp1": 4.250857,
-      "tp2": 4.375714,
-      "sl": 4.04348,
-      "strength": 56,
-      "status": "EXPIRED",
-      "created_at": "2026-03-16 13:40:15",
-      "reasons": [
-        "MACD кроссовер ↑",
-        "Цена > EMA20 > EMA50 ↑",
-        "Объём x1.7 (повышенный)",
-        "МТФ: все 4 ТФ согласны ✅✅",
-        "L/S: топ-трейдеры в лонге (1.64)",
-        "FR сменил знак → потенциальный разворот",
-        "🌍 Европа | 4/4 ТФ согласны"
-      ]
     }
   ],
   "trades_open": [
@@ -692,10 +649,10 @@
       "entry": 0.2395,
       "tp1": 0.2544,
       "tp2": 0.2693,
-      "sl": 0.23056,
+      "sl": 0.2395,
       "strength": 62,
       "taken_at": "2026-03-16 16:29:38",
-      "status": "OPEN",
+      "status": "TP1_HIT",
       "reasons": [
         "MACD бычий momentum",
         "Цена > EMA20 > EMA50 ↑",
@@ -772,23 +729,25 @@
   ],
   "trades_history": [
     {
-      "symbol": "XRPUSDT",
+      "symbol": "BCHUSDT",
       "direction": "LONG",
-      "entry": 1.4785,
-      "tp1": 1.509,
-      "sl": 1.4785,
-      "strength": 57,
-      "status": "TP1_HIT",
-      "pnl_pct": 2.07,
-      "close_price": null,
-      "taken_at": "2026-03-16 13:58:08",
-      "closed_at": null
+      "entry": 473.6,
+      "tp1": 483.072,
+      "tp2": 492.544,
+      "sl": 464.128,
+      "strength": 61,
+      "status": "MANUAL",
+      "pnl_pct": 1.08,
+      "close_price": 478.7,
+      "taken_at": "2026-03-16 11:14:28",
+      "closed_at": "2026-03-16 16:52:11"
     },
     {
       "symbol": "TRUMPUSDT",
       "direction": "LONG",
       "entry": 3.8,
       "tp1": 4.008571,
+      "tp2": 4.217143,
       "sl": 3.674857,
       "strength": 60,
       "status": "MANUAL",
@@ -802,6 +761,7 @@
       "direction": "LONG",
       "entry": 0.002098,
       "tp1": 0.002169,
+      "tp2": 0.00224,
       "sl": 0.002055,
       "strength": 53,
       "status": "SL",
@@ -815,6 +775,7 @@
       "direction": "LONG",
       "entry": 94.81,
       "tp1": 97.008571,
+      "tp2": 99.207143,
       "sl": 92.9138,
       "strength": 58,
       "status": "SL",
@@ -824,10 +785,25 @@
       "closed_at": "2026-03-16 14:30:28"
     },
     {
+      "symbol": "DOTUSDT",
+      "direction": "LONG",
+      "entry": 1.615,
+      "tp1": 1.681286,
+      "tp2": 1.747571,
+      "sl": 1.575229,
+      "strength": 55,
+      "status": "SL",
+      "pnl_pct": -2.57,
+      "close_price": 1.5735000000000001,
+      "taken_at": "2026-03-16 11:10:44",
+      "closed_at": "2026-03-16 14:30:26"
+    },
+    {
       "symbol": "RIVERUSDT",
       "direction": "LONG",
       "entry": 25.188,
       "tp1": 26.866286,
+      "tp2": 28.544571,
       "sl": 24.181029,
       "strength": 61,
       "status": "SL",
@@ -837,23 +813,11 @@
       "closed_at": "2026-03-16 13:06:39"
     },
     {
-      "symbol": "BCHUSDT",
-      "direction": "LONG",
-      "entry": 473.6,
-      "tp1": 483.072,
-      "sl": 464.128,
-      "strength": 61,
-      "status": "MANUAL",
-      "pnl_pct": 1.08,
-      "close_price": 478.7,
-      "taken_at": "2026-03-16 11:14:28",
-      "closed_at": "2026-03-16 16:52:11"
-    },
-    {
       "symbol": "FETUSDT",
       "direction": "LONG",
       "entry": 0.2161,
       "tp1": 0.226243,
+      "tp2": 0.236386,
       "sl": 0.210014,
       "strength": 55,
       "status": "TP1",
@@ -861,19 +825,6 @@
       "close_price": 0.22655,
       "taken_at": "2026-03-16 11:12:55",
       "closed_at": "2026-03-16 12:18:21"
-    },
-    {
-      "symbol": "DOTUSDT",
-      "direction": "LONG",
-      "entry": 1.615,
-      "tp1": 1.681286,
-      "sl": 1.575229,
-      "strength": 55,
-      "status": "SL",
-      "pnl_pct": -2.57,
-      "close_price": 1.5735000000000001,
-      "taken_at": "2026-03-16 11:10:44",
-      "closed_at": "2026-03-16 14:30:26"
     }
   ]
 }

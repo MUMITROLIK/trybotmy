@@ -1161,16 +1161,43 @@ function updateTradePnl(trade, currentPrice) {
 // ── Trade history ─────────────────────────────────────────────────────────────
 function renderTradeHistory(hist) {
   const tb = $('tradeHistBody');
-  if (!hist || !hist.length) return;
-  tb.innerHTML = hist.map(r => {
+  if (!hist || !hist.length) {
+    tb.innerHTML = '<tr><td colspan="7" class="empty-state">Нет закрытых сделок</td></tr>';
+    return;
+  }
+
+  // Сортируем по closed_at DESC (последние закрытые вверху)
+  const sorted = [...hist].sort((a, b) => {
+    const ta = parseUTC(a.closed_at || a.taken_at);
+    const tb2 = parseUTC(b.closed_at || b.taken_at);
+    return tb2 - ta;
+  });
+
+  tb.innerHTML = sorted.map(r => {
     const lg  = r.direction === 'LONG';
     const pnl = r.pnl_pct || 0;
     const st  = r.status?.toUpperCase();
-    const badge = (st==='TP1'||st==='TP2') ? `<span class="bdg tp">${st}</span>`
-                : st==='SL'                ? `<span class="bdg sl">SL</span>`
-                : st==='TIMEOUT'           ? `<span class="bdg exp">⏰</span>`
-                : st==='MANUAL'            ? `<span class="bdg exp">✋</span>`
-                : `<span class="bdg exp">—</span>`;
+
+    // Умные значки: MANUAL и TIMEOUT окрашиваем по P&L
+    let badge;
+    if (st === 'TP1' || st === 'TP2') {
+      badge = `<span class="bdg tp">${st}</span>`;
+    } else if (st === 'SL') {
+      badge = `<span class="bdg sl">SL</span>`;
+    } else if (st === 'SL_AFTER_TP1') {
+      badge = `<span class="bdg tp">TP1+</span>`;  // достигли TP1, закрылись в безубыток
+    } else if (st === 'TIMEOUT') {
+      badge = pnl >= 0
+        ? `<span class="bdg tp">⏰+</span>`
+        : `<span class="bdg sl">⏰</span>`;
+    } else if (st === 'MANUAL') {
+      badge = pnl >= 0
+        ? `<span class="bdg tp">✋+</span>`
+        : `<span class="bdg sl">✋</span>`;
+    } else {
+      badge = `<span class="bdg exp">—</span>`;
+    }
+
     return `<tr>
       <td style="font-weight:700;color:var(--cyan)">${r.symbol}</td>
       <td><span class="bdg ${lg?'long':'short'}">${r.direction}</span></td>
