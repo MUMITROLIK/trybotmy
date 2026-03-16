@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-16T18:24:55.122775+00:00",
+  "updated_at": "2026-03-16T18:26:49.921227+00:00",
   "stats": {
     "total": 48,
     "wins": 0,
@@ -8,11 +8,11 @@
     "winrate": 0.0
   },
   "trade_stats": {
-    "open": 12,
-    "wins": 5,
+    "open": 10,
+    "wins": 7,
     "losses": 5,
-    "total_pnl": -1.58,
-    "winrate": 50.0
+    "total_pnl": 5.39,
+    "winrate": 58.3
   },
   "fear_greed": {
     "value": 23,
@@ -601,48 +601,6 @@
       ]
     },
     {
-      "id": 16,
-      "symbol": "ETHUSDT",
-      "direction": "LONG",
-      "entry": 2277.75,
-      "tp1": 2339.154286,
-      "tp2": 2400.558571,
-      "sl": 2232.195,
-      "strength": 55,
-      "taken_at": "2026-03-16 13:54:18",
-      "status": "OPEN",
-      "reasons": [
-        "MACD выше сигнала",
-        "Цена > EMA20 > EMA50 ↑",
-        "Объём x1.5 (повышенный)",
-        "📰 CoinDesk 20 performance update: Ethereum (ETH) price jumps 8.8%, ...",
-        "МТФ: 1h, 4h согласны",
-        "OI растёт +4.7% + цена ↑",
-        "Taker: покупатели доминируют (1.33) ↑ 🟢"
-      ]
-    },
-    {
-      "id": 18,
-      "symbol": "XRPUSDT",
-      "direction": "LONG",
-      "entry": 1.4785,
-      "tp1": 1.509,
-      "tp2": 1.5395,
-      "sl": 1.4785,
-      "strength": 57,
-      "taken_at": "2026-03-16 13:58:08",
-      "status": "TP1_HIT",
-      "reasons": [
-        "MACD выше сигнала",
-        "Цена > EMA20 > EMA50 ↑",
-        "Объём x2.1 🔥",
-        "Стакан: bid (+0.10)",
-        "МТФ: все 4 ТФ согласны ✅✅",
-        "Taker: смещается к покупкам (1.04)",
-        "🌍 Европа | 4/4 ТФ согласны"
-      ]
-    },
-    {
       "id": 20,
       "symbol": "FILUSDT",
       "direction": "LONG",
@@ -665,6 +623,34 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "XRPUSDT",
+      "direction": "LONG",
+      "entry": 1.4785,
+      "tp1": 1.509,
+      "tp2": 1.5395,
+      "sl": 1.4785,
+      "strength": 57,
+      "status": "TP2",
+      "pnl_pct": 4.28,
+      "close_price": 1.54175,
+      "taken_at": "2026-03-16 13:58:08",
+      "closed_at": "2026-03-16 18:26:19"
+    },
+    {
+      "symbol": "ETHUSDT",
+      "direction": "LONG",
+      "entry": 2277.75,
+      "tp1": 2339.154286,
+      "tp2": 2400.558571,
+      "sl": 2339.205,
+      "strength": 55,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 2.69,
+      "close_price": 2339.025,
+      "taken_at": "2026-03-16 13:54:18",
+      "closed_at": "2026-03-16 18:25:15"
+    },
     {
       "symbol": "FETUSDT",
       "direction": "LONG",
