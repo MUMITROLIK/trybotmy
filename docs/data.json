@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-03-16T13:55:04.241599+00:00",
+  "updated_at": "2026-03-16T13:56:52.371099+00:00",
   "stats": {
-    "total": 34,
+    "total": 35,
     "wins": 0,
     "losses": 0,
-    "active": 2,
+    "active": 3,
     "winrate": 0
   },
   "trade_stats": {
-    "open": 14,
+    "open": 15,
     "wins": 1,
     "losses": 1,
     "total_pnl": 0.63,
@@ -62,6 +62,29 @@
       ],
       "news": "CoinDesk 20 performance update: Ethereum (ETH) price jumps 8.8%, leading index higher",
       "created_at": "2026-03-16 13:54:12",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 73,
+      "symbol": "TRUMPUSDT",
+      "direction": "LONG",
+      "entry": 3.8,
+      "tp1": 4.008571,
+      "tp2": 4.217143,
+      "sl": 3.674857,
+      "strength": 60,
+      "reasons": [
+        "RSI=29 (перепроданность)",
+        "BB нижняя зона (-7%)",
+        "EMA20 > EMA50",
+        "Объём x3.0 🔥🔥",
+        "Стакан: перевес bid (+0.13)",
+        "МТФ: 1h, 4h согласны",
+        "Taker: покупатели доминируют (1.63) ↑ 🟢",
+        "L/S: топ-трейдеры в лонге (1.47)"
+      ],
+      "news": null,
+      "created_at": "2026-03-16 13:56:20",
       "status": "ACTIVE"
     }
   ],
@@ -740,6 +763,28 @@
         "МТФ: 1h, 4h согласны",
         "OI растёт +4.7% + цена ↑",
         "Taker: покупатели доминируют (1.33) ↑ 🟢"
+      ]
+    },
+    {
+      "id": 17,
+      "symbol": "TRUMPUSDT",
+      "direction": "LONG",
+      "entry": 3.8,
+      "tp1": 4.008571,
+      "tp2": 4.217143,
+      "sl": 3.674857,
+      "strength": 60,
+      "taken_at": "2026-03-16 13:56:26",
+      "status": "OPEN",
+      "reasons": [
+        "RSI=29 (перепроданность)",
+        "BB нижняя зона (-7%)",
+        "EMA20 > EMA50",
+        "Объём x3.0 🔥🔥",
+        "Стакан: перевес bid (+0.13)",
+        "МТФ: 1h, 4h согласны",
+        "Taker: покупатели доминируют (1.63) ↑ 🟢",
+        "L/S: топ-трейдеры в лонге (1.47)"
       ]
     }
   ],
