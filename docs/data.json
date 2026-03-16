@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-03-16T11:21:18.578390+00:00",
+  "updated_at": "2026-03-16T11:23:04.441025+00:00",
   "stats": {
     "total": 4,
     "wins": 0,
     "losses": 0,
-    "active": 3,
+    "active": 2,
     "winrate": 0
   },
   "trade_stats": {
@@ -20,27 +20,6 @@
     "emoji": "😱"
   },
   "signals": [
-    {
-      "id": 40,
-      "symbol": "FETUSDT",
-      "direction": "LONG",
-      "entry": 0.2161,
-      "tp1": 0.226243,
-      "tp2": 0.236386,
-      "sl": 0.210014,
-      "strength": 55,
-      "reasons": [
-        "MACD бычий momentum",
-        "Цена > EMA20 > EMA50 ↑",
-        "Объём x1.9 (повышенный)",
-        "МТФ: все 4 ТФ согласны ✅✅",
-        "Taker: покупатели доминируют (1.15)",
-        "🌍 Европа | 4/4 ТФ согласны"
-      ],
-      "news": null,
-      "created_at": "2026-03-16 11:12:44",
-      "status": "ACTIVE"
-    },
     {
       "id": 41,
       "symbol": "ZECUSDT",
@@ -85,6 +64,25 @@
     }
   ],
   "history": [
+    {
+      "symbol": "FETUSDT",
+      "direction": "LONG",
+      "entry": 0.2161,
+      "tp1": 0.226243,
+      "tp2": 0.236386,
+      "sl": 0.210014,
+      "strength": 55,
+      "status": "EXPIRED",
+      "created_at": "2026-03-16 11:12:44",
+      "reasons": [
+        "MACD бычий momentum",
+        "Цена > EMA20 > EMA50 ↑",
+        "Объём x1.9 (повышенный)",
+        "МТФ: все 4 ТФ согласны ✅✅",
+        "Taker: покупатели доминируют (1.15)",
+        "🌍 Европа | 4/4 ТФ согласны"
+      ]
+    },
     {
       "symbol": "DOTUSDT",
       "direction": "LONG",
