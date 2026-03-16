@@ -8,15 +8,15 @@
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Outfit:wght@300;400;600;800;900&display=swap" rel="stylesheet">
 <style>
 :root {
-  --bg:       #080810;
-  --bg2:      #0d0d1a;
-  --surface:  #10101f;
-  --surface2: #14142a;
-  --border:   #1c1c35;
-  --border2:  #252545;
+  --bg:       #000000;
+  --bg2:      #050505;
+  --surface:  #0a0a0a;
+  --surface2: #0f0f0f;
+  --border:   #1a1a1a;
+  --border2: #252525;
   --text:     #dde0ff;
   --muted:    #4a4a7a;
-  --dim:      #2a2a50;
+  --dim:      #222222;
   --cyan:     #00e5ff;
   --green:    #00ff9d;
   --red:      #ff2d6b;
@@ -508,7 +508,7 @@ tr:hover td { background: rgba(255,255,255,.015); }
 <div class="app">
   <header>
     <div class="logo">
-      <div class="logo-icon">⚡</div>
+      <div class="logo-icon" style="font-size:11px;letter-spacing:-1px;font-weight:900;color:#000">FT</div>
       FUTURES<span style="color:var(--text);opacity:.4">/</span>TERMINAL
     </div>
     <div class="header-right">
@@ -791,20 +791,24 @@ function renderFG(fg) {
 }
 
 // ── Signals render ────────────────────────────────────────────────────────────
+// Store signals globally for click access
+let _allSignals = [];
+
 function renderSignals(sigs) {
+  _allSignals = sigs;
   const el = $('signalsGrid');
   if (!sigs.length) {
     el.innerHTML = '<div class="empty-state">🔍 Нет активных сигналов · Бот сканирует рынок</div>';
     return;
   }
-  el.innerHTML = sigs.map(s => {
+  el.innerHTML = sigs.map((s,i) => {
     const lg   = s.direction === 'LONG';
     const tags = (s.reasons||[]).slice(0,5).map(r=>`<span class="tag">${r}</span>`).join('');
     const clr  = sc(s.strength);
     const isTaken = taken.has(s.symbol);
     return `
     <div class="sig-card ${lg?'long':'short'}" id="sc_${s.symbol}">
-      <div class="sig-top" onclick="openChart('${s.symbol}',${JSON.stringify(s).replace(/\\/g,'\\\\').replace(/'/g,"\\'")})">
+      <div class="sig-top" onclick="openChartByIdx(${i})">
         <span class="sig-symbol">${s.symbol}</span>
         <span class="sig-badge ${lg?'long':'short'}">${s.direction} ${lg?'↑':'↓'}</span>
       </div>
@@ -822,32 +826,52 @@ function renderSignals(sigs) {
         <div class="tags">${tags}</div>
         ${s.news?`<div class="sig-news">📰 ${s.news.slice(0,100)}</div>`:''}
         <div class="sig-actions">
-          <button class="btn-take" onclick="takeSignal('${s.symbol}','${s.direction}',${s.entry});this.textContent='✓ ВЗЯТА';this.disabled=true">
+          <button class="btn-take" id="btntake_${s.symbol}" onclick="handleTake('${s.symbol}','${s.direction}',${s.entry})">
             ${isTaken?'✓ ВЗЯТА':'▸ ВЗЯТЬ СДЕЛКУ'}
           </button>
-          <button class="btn-skip" onclick="skipSignal('${s.symbol}');document.getElementById('sc_${s.symbol}').style.opacity='.3'">
+          <button class="btn-skip" onclick="handleSkip('${s.symbol}')">
             ✕ ПРОПУСТИТЬ
           </button>
         </div>
       </div>
       <div class="sig-time">
         <span>${ago(s.created_at)} назад</span>
-        <span class="chart-hint" onclick="openChart('${s.symbol}',${JSON.stringify(s).replace(/\\/g,'\\\\').replace(/'/g,"\\'")})">↗ ГРАФИК</span>
+        <span class="chart-hint" onclick="openChartByIdx(${i})">↗ ГРАФИК</span>
       </div>
     </div>`;
   }).join('');
 }
 
+function openChartByIdx(i) {
+  const s = _allSignals[i];
+  if (s) openChart(s.symbol, s);
+}
+
+function handleTake(sym, dir, entry) {
+  takeSignal(sym, dir, entry);
+  const btn = $('btntake_'+sym);
+  if (btn) { btn.textContent = '✓ ВЗЯТА'; btn.disabled = true; }
+}
+
+function handleSkip(sym) {
+  skipSignal(sym);
+  const card = $('sc_'+sym);
+  if (card) card.style.opacity = '.3';
+}
+
+let _history = [];
+
 function renderHistory(h) {
+  _history = h;
   const tb = $('histBody');
   if (!h.length) return;
-  tb.innerHTML = h.map(r => {
+  tb.innerHTML = h.map((r,i) => {
     const lg = r.direction==='LONG';
     const st = r.status.toUpperCase();
     const b  = (st==='TP1'||st==='TP2') ? `<span class="bdg tp">${st}</span>`
              : st==='SL' ? `<span class="bdg sl">SL</span>`
              : `<span class="bdg exp">—</span>`;
-    return `<tr onclick="openChart('${r.symbol}',${JSON.stringify(r).replace(/'/g,"&apos;")})" style="cursor:pointer">
+    return `<tr onclick="openHistChart(${i})" style="cursor:pointer">
       <td style="font-weight:700;color:var(--cyan)">${r.symbol}</td>
       <td><span class="bdg ${lg?'long':'short'}">${r.direction}</span></td>
       <td>${mono(r.entry)}</td>
@@ -858,6 +882,11 @@ function renderHistory(h) {
       <td style="color:var(--muted)">${ago(r.created_at)}</td>
     </tr>`;
   }).join('');
+}
+
+function openHistChart(i) {
+  const r = _history[i];
+  if (r) openChart(r.symbol, r);
 }
 
 // ── Data fetch ────────────────────────────────────────────────────────────────
