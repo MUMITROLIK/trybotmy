@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-16T21:52:42.508386+00:00",
+  "updated_at": "2026-03-16T21:54:51.319642+00:00",
   "stats": {
     "total": 48,
     "wins": 0,
@@ -8,11 +8,11 @@
     "winrate": 0.0
   },
   "trade_stats": {
-    "open": 1,
-    "wins": 14,
+    "open": 0,
+    "wins": 15,
     "losses": 7,
-    "total_pnl": 11.55,
-    "winrate": 66.7
+    "total_pnl": 13.17,
+    "winrate": 68.2
   },
   "fear_greed": {
     "value": 23,
@@ -412,9 +412,9 @@
       ]
     }
   ],
-  "trades_open": [
+  "trades_open": [],
+  "trades_history": [
     {
-      "id": 15,
       "symbol": "UNIUSDT",
       "direction": "LONG",
       "entry": 4.103,
@@ -422,20 +422,12 @@
       "tp2": 4.356714,
       "sl": 4.02094,
       "strength": 53,
+      "status": "TIMEOUT",
+      "pnl_pct": 1.62,
+      "close_price": 4.169499999999999,
       "taken_at": "2026-03-16 13:53:11",
-      "status": "OPEN",
-      "reasons": [
-        "Цена > EMA20 > EMA50 ↑",
-        "Объём x1.6 (повышенный)",
-        "МТФ: все 4 ТФ согласны ✅✅",
-        "Taker: покупатели доминируют (1.40) ↑ 🟢",
-        "L/S: топ-трейдеры в лонге (1.64)",
-        "FR сменил знак → потенциальный разворот",
-        "🌍 Европа | 4/4 ТФ согласны"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-16 21:53:11"
+    },
     {
       "symbol": "AAVEUSDT",
       "direction": "LONG",
