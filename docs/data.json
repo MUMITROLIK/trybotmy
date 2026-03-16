@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-03-16T17:24:23.835130+00:00",
+  "updated_at": "2026-03-16T17:26:19.082114+00:00",
   "stats": {
-    "total": 47,
+    "total": 48,
     "wins": 0,
     "losses": 1,
-    "active": 0,
+    "active": 1,
     "winrate": 0.0
   },
   "trade_stats": {
@@ -19,7 +19,30 @@
     "label": "Extreme Fear",
     "emoji": "😱"
   },
-  "signals": [],
+  "signals": [
+    {
+      "id": 86,
+      "symbol": "RIVERUSDT",
+      "direction": "LONG",
+      "entry": 22.536,
+      "tp1": 24.33888,
+      "tp2": 25.9164,
+      "sl": 21.63456,
+      "strength": 52,
+      "reasons": [
+        "BB отскок от нижней полосы ↑",
+        "EMA20 > EMA50",
+        "Объём x1.5 (повышенный)",
+        "Стакан: давление покупки (+0.42)",
+        "МТФ: 1h, 4h согласны",
+        "OI падает (шорты закрываются)",
+        "Taker: покупатели доминируют (1.31)"
+      ],
+      "news": null,
+      "created_at": "2026-03-16 17:25:37",
+      "status": "ACTIVE"
+    }
+  ],
   "history": [
     {
       "symbol": "SIRENUSDT",
