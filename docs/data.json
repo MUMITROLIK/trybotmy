@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-03-16T09:13:29.658711+00:00",
+  "updated_at": "2026-03-16T09:15:14.429743+00:00",
   "stats": {
     "total": 38,
-    "wins": 4,
+    "wins": 5,
     "losses": 10,
-    "active": 24,
-    "winrate": 28.6
+    "active": 23,
+    "winrate": 33.3
   },
   "fear_greed": {
     "value": 23,
@@ -184,23 +184,6 @@
         "MACD бычий (hist=0.07722)",
         "Цена > EMA20 > EMA50",
         "Объём x1.3"
-      ],
-      "news": null,
-      "created_at": "2026-03-16 08:09:45",
-      "status": "ACTIVE"
-    },
-    {
-      "id": 14,
-      "symbol": "THEUSDT",
-      "direction": "SHORT",
-      "entry": 0.2129,
-      "tp1": 0.208642,
-      "tp2": 0.204384,
-      "sl": 0.217158,
-      "strength": 20,
-      "reasons": [
-        "MACD медвежий (hist=-0.00015)",
-        "Цена < EMA20 < EMA50"
       ],
       "news": null,
       "created_at": "2026-03-16 08:09:45",
@@ -606,6 +589,21 @@
         "Цена > EMA20 > EMA50",
         "Стакан: давление покупки (+0.12)",
         "📰 Bitcoin briefly tops $74,000 as ether, sol, ada gains as much as ..."
+      ]
+    },
+    {
+      "symbol": "THEUSDT",
+      "direction": "SHORT",
+      "entry": 0.2129,
+      "tp1": 0.208642,
+      "tp2": 0.204384,
+      "sl": 0.217158,
+      "strength": 20,
+      "status": "TP1",
+      "created_at": "2026-03-16 08:09:45",
+      "reasons": [
+        "MACD медвежий (hist=-0.00015)",
+        "Цена < EMA20 < EMA50"
       ]
     },
     {
