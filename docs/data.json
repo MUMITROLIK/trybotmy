@@ -1,27 +1,27 @@
 {
-  "updated_at": "2026-03-16T17:34:38.395232+00:00",
+  "updated_at": "2026-03-16T17:36:30.871144+00:00",
   "stats": {
     "total": 48,
     "wins": 0,
     "losses": 1,
-    "active": 1,
+    "active": 0,
     "winrate": 0.0
   },
   "trade_stats": {
-    "open": 14,
+    "open": 13,
     "wins": 4,
-    "losses": 4,
-    "total_pnl": -0.83,
-    "winrate": 50.0
+    "losses": 5,
+    "total_pnl": -5.0,
+    "winrate": 44.4
   },
   "fear_greed": {
     "value": 23,
     "label": "Extreme Fear",
     "emoji": "😱"
   },
-  "signals": [
+  "signals": [],
+  "history": [
     {
-      "id": 86,
       "symbol": "RIVERUSDT",
       "direction": "LONG",
       "entry": 22.536,
@@ -29,6 +29,8 @@
       "tp2": 25.9164,
       "sl": 21.63456,
       "strength": 52,
+      "status": "EXPIRED",
+      "created_at": "2026-03-16 17:25:37",
       "reasons": [
         "BB отскок от нижней полосы ↑",
         "EMA20 > EMA50",
@@ -37,13 +39,8 @@
         "МТФ: 1h, 4h согласны",
         "OI падает (шорты закрываются)",
         "Taker: покупатели доминируют (1.31)"
-      ],
-      "news": null,
-      "created_at": "2026-03-16 17:25:37",
-      "status": "ACTIVE"
-    }
-  ],
-  "history": [
+      ]
+    },
     {
       "symbol": "SIRENUSDT",
       "direction": "LONG",
@@ -413,26 +410,6 @@
         "МТФ: 15m, 1h, 4h согласны",
         "🌍 Европа | 3/4 ТФ согласны"
       ]
-    },
-    {
-      "symbol": "SUIUSDT",
-      "direction": "LONG",
-      "entry": 1.0555,
-      "tp1": 1.087971,
-      "tp2": 1.120443,
-      "sl": 1.03439,
-      "strength": 52,
-      "status": "EXPIRED",
-      "created_at": "2026-03-16 13:41:48",
-      "reasons": [
-        "MACD выше сигнала",
-        "Цена > EMA20 > EMA50 ↑",
-        "Объём x2.2 🔥",
-        "Стакан: перевес bid (+0.21)",
-        "МТФ: 15m, 1h, 4h согласны",
-        "FR сменил знак → потенциальный разворот",
-        "🌍 Европа | 3/4 ТФ согласны"
-      ]
     }
   ],
   "trades_open": [
@@ -706,9 +683,10 @@
         "L/S: топ-трейдеры в лонге (1.24)",
         "🌎 Америка | 3/4 ТФ согласны"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 22,
       "symbol": "SIRENUSDT",
       "direction": "LONG",
       "entry": 0.53098,
@@ -716,21 +694,12 @@
       "tp2": 0.610627,
       "sl": 0.509741,
       "strength": 52,
+      "status": "SL",
+      "pnl_pct": -4.17,
+      "close_price": 0.508815,
       "taken_at": "2026-03-16 16:55:01",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=19 (экстремальная перепроданность)",
-        "BB нижняя зона (-26%)",
-        "EMA20 > EMA50",
-        "Объём x2.6 🔥",
-        "Стакан: перевес bid (+0.16)",
-        "МТФ: 1h, 4h согласны",
-        "OI падает (шорты закрываются)",
-        "Taker: смещается к покупкам (0.93)"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-16 17:35:51"
+    },
     {
       "symbol": "ZECUSDT",
       "direction": "LONG",
