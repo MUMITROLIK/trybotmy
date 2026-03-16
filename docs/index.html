@@ -1137,24 +1137,58 @@ function startTradeWs(trades) {
 }
 
 function updateTradePnl(trade, currentPrice) {
-  const entry = trade.entry_price || trade.entry;
+  const entry  = trade.entry_price || trade.entry;
+  const tp1    = trade.tp1;
+  const tp2    = trade.tp2;
+  const tp1Hit = trade.status === 'TP1_HIT';
+
   if (!entry || !currentPrice) return;
+
   const pnl = trade.direction === 'LONG'
     ? (currentPrice - entry) / entry * 100
     : (entry - currentPrice) / entry * 100;
+
   const pEl = $('tprice_' + trade.id);
   const nEl = $('tpnl_'   + trade.id);
   const bEl = $('tbar_'   + trade.id);
+
   if (pEl) pEl.textContent = mono(currentPrice);
   if (nEl) {
     nEl.textContent = (pnl >= 0 ? '+' : '') + pnl.toFixed(2) + '%';
     nEl.className   = 'p-val ' + (pnl >= 0 ? 'pnl-positive' : 'pnl-negative');
   }
+
   if (bEl) {
-    const range = Math.abs(trade.tp1 - entry) || entry * 0.02;
-    const pct   = Math.max(0, Math.min(100, 50 + (pnl / (range / entry * 100)) * 50));
-    bEl.style.width      = pct + '%';
-    bEl.style.background = pnl >= 0 ? 'var(--green)' : 'var(--red)';
+    if (tp1Hit && tp2 && tp1) {
+      // ── Фаза 2: TP1 достигнут — полоска идёт от TP1 к TP2 ──────────────
+      // Полоска начинается с 30% (уже в профите) и идёт до 100%
+      const rangeTP = Math.abs(tp2 - tp1) || tp1 * 0.02;
+      const progress = trade.direction === 'LONG'
+        ? (currentPrice - tp1) / rangeTP
+        : (tp1 - currentPrice) / rangeTP;
+      const pct = Math.max(0, Math.min(100, 30 + progress * 70));
+
+      // Градиент: золотой → зелёный по мере приближения к TP2
+      const ratio    = Math.max(0, Math.min(1, progress));
+      const r        = Math.round(255 * (1 - ratio) + 0 * ratio);
+      const g        = Math.round(229 * (1 - ratio) + 255 * ratio);
+      const b        = Math.round(0   * (1 - ratio) + 157 * ratio);
+      const barColor = `rgb(${r},${g},${b})`;
+
+      bEl.style.width      = pct + '%';
+      bEl.style.background = barColor;
+      bEl.style.boxShadow  = `0 0 8px ${barColor}55`;
+
+    } else {
+      // ── Фаза 1: обычная полоска от entry до TP1 ──────────────────────────
+      const range = Math.abs(tp1 - entry) || entry * 0.02;
+      const pct   = Math.max(0, Math.min(100, 50 + (pnl / (range / entry * 100)) * 50));
+      const color = pnl >= 0 ? 'var(--green)' : 'var(--red)';
+
+      bEl.style.width      = pct + '%';
+      bEl.style.background = color;
+      bEl.style.boxShadow  = pnl >= 0 ? '0 0 6px rgba(0,255,157,.4)' : '0 0 6px rgba(255,45,107,.4)';
+    }
   }
 }
 
