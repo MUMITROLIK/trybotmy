@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-16T18:42:35.005501+00:00",
+  "updated_at": "2026-03-16T18:44:26.712190+00:00",
   "stats": {
     "total": 48,
     "wins": 0,
@@ -8,11 +8,11 @@
     "winrate": 0.0
   },
   "trade_stats": {
-    "open": 10,
+    "open": 9,
     "wins": 7,
-    "losses": 5,
-    "total_pnl": 5.39,
-    "winrate": 58.3
+    "losses": 6,
+    "total_pnl": 1.78,
+    "winrate": 53.8
   },
   "fear_greed": {
     "value": 23,
@@ -414,28 +414,6 @@
   ],
   "trades_open": [
     {
-      "id": 4,
-      "symbol": "TAOUSDT",
-      "direction": "LONG",
-      "entry": 287.33,
-      "tp1": 302.25,
-      "tp2": 317.17,
-      "sl": 278.378,
-      "strength": 54,
-      "taken_at": "2026-03-16 12:09:53",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий momentum",
-        "Цена > EMA20 > EMA50 ↑",
-        "Объём x1.6 (повышенный)",
-        "Стакан: bid (+0.06)",
-        "МТФ: 15m, 1h, 4h согласны",
-        "Taker: смещается к покупкам (1.13)",
-        "FR сменил знак → потенциальный разворот",
-        "🌍 Европа | 3/4 ТФ согласны"
-      ]
-    },
-    {
       "id": 6,
       "symbol": "BNBUSDT",
       "direction": "LONG",
@@ -623,6 +601,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "TAOUSDT",
+      "direction": "LONG",
+      "entry": 287.33,
+      "tp1": 302.25,
+      "tp2": 317.17,
+      "sl": 278.378,
+      "strength": 54,
+      "status": "SL",
+      "pnl_pct": -3.61,
+      "close_price": 276.945,
+      "taken_at": "2026-03-16 12:09:53",
+      "closed_at": "2026-03-16 18:43:43"
+    },
     {
       "symbol": "XRPUSDT",
       "direction": "LONG",
