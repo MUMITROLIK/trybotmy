@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-16T13:06:32.624620+00:00",
+  "updated_at": "2026-03-16T13:08:17.687012+00:00",
   "stats": {
     "total": 18,
     "wins": 0,
@@ -8,11 +8,11 @@
     "winrate": 0
   },
   "trade_stats": {
-    "open": 6,
+    "open": 5,
     "wins": 1,
-    "losses": 0,
-    "total_pnl": 4.84,
-    "winrate": 100.0
+    "losses": 1,
+    "total_pnl": 0.63,
+    "winrate": 50.0
   },
   "fear_greed": {
     "value": 23,
@@ -440,27 +440,6 @@
       ]
     },
     {
-      "id": 5,
-      "symbol": "RIVERUSDT",
-      "direction": "LONG",
-      "entry": 25.188,
-      "tp1": 26.866286,
-      "tp2": 28.544571,
-      "sl": 24.181029,
-      "strength": 61,
-      "taken_at": "2026-03-16 12:11:42",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий momentum",
-        "Цена > EMA20 > EMA50 ↑",
-        "Объём x1.6 (повышенный)",
-        "МТФ: 15m, 1h, 4h согласны",
-        "OI растёт +7.7% + цена ↑",
-        "Taker: покупатели доминируют (1.20) ↑ 🟢",
-        "🌍 Европа | 3/4 ТФ согласны"
-      ]
-    },
-    {
       "id": 6,
       "symbol": "BNBUSDT",
       "direction": "LONG",
@@ -503,6 +482,19 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "RIVERUSDT",
+      "direction": "LONG",
+      "entry": 25.188,
+      "tp1": 26.866286,
+      "sl": 24.181029,
+      "strength": 61,
+      "status": "SL",
+      "pnl_pct": -4.21,
+      "close_price": 24.1265,
+      "taken_at": "2026-03-16 12:11:42",
+      "closed_at": "2026-03-16 13:06:39"
+    },
     {
       "symbol": "FETUSDT",
       "direction": "LONG",
