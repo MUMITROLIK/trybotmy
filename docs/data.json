@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-03-16T12:17:16.035069+00:00",
+  "updated_at": "2026-03-16T12:19:03.312190+00:00",
   "stats": {
     "total": 13,
     "wins": 0,
     "losses": 0,
-    "active": 5,
+    "active": 4,
     "winrate": 0
   },
   "trade_stats": {
-    "open": 5,
-    "wins": 0,
+    "open": 4,
+    "wins": 1,
     "losses": 0,
-    "total_pnl": 0,
-    "winrate": 0
+    "total_pnl": 4.84,
+    "winrate": 100.0
   },
   "fear_greed": {
     "value": 23,
@@ -20,27 +20,6 @@
     "emoji": "😱"
   },
   "signals": [
-    {
-      "id": 47,
-      "symbol": "ETHUSDT",
-      "direction": "LONG",
-      "entry": 2276.12,
-      "tp1": 2336.118571,
-      "tp2": 2396.117143,
-      "sl": 2230.5976,
-      "strength": 49,
-      "reasons": [
-        "MACD выше сигнала",
-        "Цена > EMA20 > EMA50 ↑",
-        "Объём x1.9 (повышенный)",
-        "МТФ: 5m, 1h, 4h согласны",
-        "OI растёт +1.9% + цена ↑",
-        "🌍 Европа | 3/4 ТФ согласны"
-      ],
-      "news": null,
-      "created_at": "2026-03-16 12:07:52",
-      "status": "ACTIVE"
-    },
     {
       "id": 48,
       "symbol": "TAOUSDT",
@@ -129,6 +108,25 @@
     }
   ],
   "history": [
+    {
+      "symbol": "ETHUSDT",
+      "direction": "LONG",
+      "entry": 2276.12,
+      "tp1": 2336.118571,
+      "tp2": 2396.117143,
+      "sl": 2230.5976,
+      "strength": 49,
+      "status": "EXPIRED",
+      "created_at": "2026-03-16 12:07:52",
+      "reasons": [
+        "MACD выше сигнала",
+        "Цена > EMA20 > EMA50 ↑",
+        "Объём x1.9 (повышенный)",
+        "МТФ: 5m, 1h, 4h согласны",
+        "OI растёт +1.9% + цена ↑",
+        "🌍 Европа | 3/4 ТФ согласны"
+      ]
+    },
     {
       "symbol": "FETUSDT",
       "direction": "LONG",
@@ -312,26 +310,6 @@
       ]
     },
     {
-      "id": 2,
-      "symbol": "FETUSDT",
-      "direction": "LONG",
-      "entry": 0.2161,
-      "tp1": 0.226243,
-      "tp2": 0.236386,
-      "sl": 0.210014,
-      "strength": 55,
-      "taken_at": "2026-03-16 11:12:55",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий momentum",
-        "Цена > EMA20 > EMA50 ↑",
-        "Объём x1.9 (повышенный)",
-        "МТФ: все 4 ТФ согласны ✅✅",
-        "Taker: покупатели доминируют (1.15)",
-        "🌍 Европа | 4/4 ТФ согласны"
-      ]
-    },
-    {
       "id": 3,
       "symbol": "BCHUSDT",
       "direction": "LONG",
@@ -396,5 +374,19 @@
       ]
     }
   ],
-  "trades_history": []
+  "trades_history": [
+    {
+      "symbol": "FETUSDT",
+      "direction": "LONG",
+      "entry": 0.2161,
+      "tp1": 0.226243,
+      "sl": 0.210014,
+      "strength": 55,
+      "status": "TP1",
+      "pnl_pct": 4.84,
+      "close_price": 0.22655,
+      "taken_at": "2026-03-16 11:12:55",
+      "closed_at": "2026-03-16 12:18:21"
+    }
+  ]
 }
