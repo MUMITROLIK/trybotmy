@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-03-16T14:42:17.460590+00:00",
+  "updated_at": "2026-03-16T14:44:42.397815+00:00",
   "stats": {
-    "total": 40,
+    "total": 42,
     "wins": 0,
     "losses": 0,
-    "active": 3,
+    "active": 5,
     "winrate": 0
   },
   "trade_stats": {
@@ -78,6 +78,49 @@
       ],
       "news": "Solana Eyes Key $100 Resistance as Institutional ETF Demand Signals Accumulation Phase",
       "created_at": "2026-03-16 14:41:24",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 79,
+      "symbol": "HYPEUSDT",
+      "direction": "LONG",
+      "entry": 38.479,
+      "tp1": 39.679429,
+      "tp2": 40.879857,
+      "sl": 37.70942,
+      "strength": 48,
+      "reasons": [
+        "MACD выше сигнала",
+        "Цена > EMA20 > EMA50 ↑",
+        "Объём x2.2 🔥",
+        "МТФ: 15m, 1h, 4h согласны",
+        "🌍 Европа | 3/4 ТФ согласны"
+      ],
+      "news": null,
+      "created_at": "2026-03-16 14:43:45",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 80,
+      "symbol": "NEARUSDT",
+      "direction": "LONG",
+      "entry": 1.41,
+      "tp1": 1.457429,
+      "tp2": 1.504857,
+      "sl": 1.381543,
+      "strength": 54,
+      "reasons": [
+        "MACD выше сигнала",
+        "Цена > EMA20 > EMA50 ↑",
+        "Объём x1.6 (повышенный)",
+        "Стакан: перевес bid (+0.12)",
+        "МТФ: все 4 ТФ согласны ✅✅",
+        "OI растёт +1.8% + цена ↑",
+        "FR сменил знак → потенциальный разворот",
+        "🌍 Европа | 4/4 ТФ согласны"
+      ],
+      "news": null,
+      "created_at": "2026-03-16 14:44:03",
       "status": "ACTIVE"
     }
   ],
