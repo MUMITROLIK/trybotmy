@@ -347,6 +347,19 @@ main { padding: 24px 40px; max-width: 1600px; margin: 0 auto; }
   color: var(--green);
 }
 .btn-take:hover { background: rgba(0,255,157,.2); box-shadow: var(--green-glow); }
+
+.sig-taken-label {
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: var(--green);
+  border: 1px solid rgba(0,255,157,.2);
+  border-radius: 6px;
+  background: rgba(0,255,157,.05);
+}
 .btn-skip {
   font-family: 'JetBrains Mono', monospace;
   font-size: 10px; font-weight: 700; letter-spacing: 2px;
@@ -827,12 +840,27 @@ function handleOverlayClick(e) {
 // ── Accepted signals ──────────────────────────────────────────────────────────
 const taken = new Map();
 
+// Синхронизируем taken с реальными открытыми сделками из data.json
+// Это главный фикс: если сделка взята через Telegram — сайт тоже это знает
+function syncTakenFromTrades(openTrades) {
+  openTrades.forEach(t => {
+    const key = t.symbol + '_' + t.direction;
+    if (!taken.has(key)) {
+      taken.set(key, { dir: t.direction, entry: t.entry, fromServer: true });
+    }
+  });
+}
+
+function isTaken(sym, dir) {
+  return taken.has(sym + '_' + dir);
+}
+
 function takeSignal(sym, dir, entry) {
-  taken.set(sym, {dir, entry});
+  taken.set(sym + '_' + dir, {dir, entry});
   renderTaken();
 }
-function skipSignal(sym) {
-  taken.delete(sym);
+function skipSignal(sym, dir) {
+  taken.delete(sym + '_' + dir);
   renderTaken();
 }
 function renderTaken() {
@@ -840,13 +868,15 @@ function renderTaken() {
   const list = $('takenList');
   if (!taken.size) { bar.classList.remove('has-items'); return; }
   bar.classList.add('has-items');
-  list.innerHTML = [...taken.entries()].map(([sym, {dir, entry}]) => `
+  list.innerHTML = [...taken.entries()].map(([key, {dir, entry}]) => {
+    const sym = key.split('_')[0];
+    return `
     <div class="taken-item">
       <span class="taken-sym">${sym}</span>
       <span class="taken-dir ${dir.toLowerCase()}">${dir}</span>
       <span style="color:var(--muted);font-size:10px">${mono(entry)}</span>
-    </div>
-  `).join('');
+    </div>`;
+  }).join('');
 }
 
 // ── Fear & Greed ──────────────────────────────────────────────────────────────
@@ -878,9 +908,21 @@ function renderSignals(sigs) {
     const lg   = s.direction === 'LONG';
     const tags = (s.reasons||[]).slice(0,5).map(r=>`<span class="tag">${r}</span>`).join('');
     const clr  = sc(s.strength);
-    const isTaken = taken.has(s.symbol);
+    const alreadyTaken = isTaken(s.symbol, s.direction);
+    // Если сделка уже взята — показываем карточку в затухшем виде без кнопок
+    const cardOpacity = alreadyTaken ? 'opacity:.45;pointer-events:none' : '';
+    const actionBlock = alreadyTaken
+      ? `<div class="sig-taken-label">✅ ВЗЯТА — отслеживается в позициях</div>`
+      : `<div class="sig-actions">
+          <button class="btn-take" id="btntake_${s.symbol}_${s.direction}" onclick="handleTake('${s.symbol}','${s.direction}',${s.entry})">
+            ▸ ВЗЯТЬ СДЕЛКУ
+          </button>
+          <button class="btn-skip" onclick="handleSkip('${s.symbol}','${s.direction}')">
+            ✕ ПРОПУСТИТЬ
+          </button>
+        </div>`;
     return `
-    <div class="sig-card ${lg?'long':'short'}" id="sc_${s.symbol}">
+    <div class="sig-card ${lg?'long':'short'}" id="sc_${s.symbol}_${s.direction}" style="${cardOpacity}">
       <div class="sig-top" onclick="openChartByIdx(${i})">
         <span class="sig-symbol">${s.symbol}</span>
         <span class="sig-badge ${lg?'long':'short'}">${s.direction} ${lg?'↑':'↓'}</span>
@@ -898,20 +940,15 @@ function renderSignals(sigs) {
         </div>
         <div class="tags">${tags}</div>
         ${s.news?`<div class="sig-news">📰 ${s.news.slice(0,100)}</div>`:''}
-        <div class="sig-actions">
-          <button class="btn-take" id="btntake_${s.symbol}" onclick="handleTake('${s.symbol}','${s.direction}',${s.entry})">
-            ${isTaken?'✓ ВЗЯТА':'▸ ВЗЯТЬ СДЕЛКУ'}
-          </button>
-          <button class="btn-skip" onclick="handleSkip('${s.symbol}')">
-            ✕ ПРОПУСТИТЬ
-          </button>
-        </div>
+        ${actionBlock}
       </div>
       <div class="sig-time">
         <span>${ago(s.created_at)} назад</span>
         <span class="chart-hint" onclick="openChartByIdx(${i})">↗ ГРАФИК</span>
       </div>
     </div>`;
+  }).join('');
+}
   }).join('');
 }
 
@@ -922,14 +959,14 @@ function openChartByIdx(i) {
 
 function handleTake(sym, dir, entry) {
   takeSignal(sym, dir, entry);
-  const btn = $('btntake_'+sym);
-  if (btn) { btn.textContent = '✓ ВЗЯТА'; btn.disabled = true; }
+  // Перерисовываем карточку сигнала — убираем кнопки, показываем статус
+  renderSignals(_allSignals);
 }
 
-function handleSkip(sym) {
-  skipSignal(sym);
-  const card = $('sc_'+sym);
-  if (card) card.style.opacity = '.3';
+function handleSkip(sym, dir) {
+  skipSignal(sym, dir);
+  const card = $('sc_'+sym+'_'+dir);
+  if (card) { card.style.opacity = '.2'; card.style.transition = 'opacity .4s'; }
 }
 
 let _history = [];
@@ -1104,9 +1141,11 @@ async function loadData() {
     $('s-losses').textContent  = st.losses??'—';
     $('s-winrate').textContent = st.winrate!=null ? st.winrate+'%' : '—';
     renderFG(d.fear_greed);
+    const openTrades = d.trades_open||[];
+    syncTakenFromTrades(openTrades);  // сначала синхронизируем взятые сделки
     renderSignals(d.signals||[]);
     renderHistory(d.history||[]);
-    renderTrades(d.trades_open||[], d.trade_stats);
+    renderTrades(openTrades, d.trade_stats);
     renderTradeHistory(d.trades_history||[]);
     const dt = new Date(d.updated_at);
     $('last-update').textContent = dt.toLocaleTimeString('ru-RU');
