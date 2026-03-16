@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-16T20:37:46.143540+00:00",
+  "updated_at": "2026-03-16T20:39:55.973710+00:00",
   "stats": {
     "total": 48,
     "wins": 0,
@@ -8,11 +8,11 @@
     "winrate": 0.0
   },
   "trade_stats": {
-    "open": 7,
-    "wins": 8,
+    "open": 6,
+    "wins": 9,
     "losses": 7,
-    "total_pnl": 5.03,
-    "winrate": 53.3
+    "total_pnl": 5.33,
+    "winrate": 56.2
   },
   "fear_greed": {
     "value": 23,
@@ -414,27 +414,6 @@
   ],
   "trades_open": [
     {
-      "id": 7,
-      "symbol": "BTCUSDT",
-      "direction": "LONG",
-      "entry": 73774.1,
-      "tp1": 75249.582,
-      "tp2": 76725.064,
-      "sl": 72298.618,
-      "strength": 57,
-      "taken_at": "2026-03-16 12:37:46",
-      "status": "OPEN",
-      "reasons": [
-        "MACD выше сигнала",
-        "Цена > EMA20 > EMA50 ↑",
-        "Объём x1.5 (повышенный)",
-        "📰 Michael Saylor's Strategy made another huge buy of bitcoin, addin...",
-        "МТФ: все 4 ТФ согласны ✅✅",
-        "Taker: покупатели доминируют (1.36) ↑ 🟢",
-        "🌍 Европа | 4/4 ТФ согласны"
-      ]
-    },
-    {
       "id": 8,
       "symbol": "APRUSDT",
       "direction": "LONG",
@@ -560,6 +539,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "BTCUSDT",
+      "direction": "LONG",
+      "entry": 73774.1,
+      "tp1": 75249.582,
+      "tp2": 76725.064,
+      "sl": 72298.618,
+      "strength": 57,
+      "status": "TIMEOUT",
+      "pnl_pct": 0.3,
+      "close_price": 73992.05,
+      "taken_at": "2026-03-16 12:37:46",
+      "closed_at": "2026-03-16 20:37:54"
+    },
     {
       "symbol": "BNBUSDT",
       "direction": "LONG",
