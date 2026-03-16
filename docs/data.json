@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-03-16T16:52:40.551030+00:00",
+  "updated_at": "2026-03-16T16:54:33.566832+00:00",
   "stats": {
-    "total": 45,
+    "total": 47,
     "wins": 0,
     "losses": 1,
-    "active": 0,
+    "active": 2,
     "winrate": 0.0
   },
   "trade_stats": {
@@ -19,7 +19,52 @@
     "label": "Extreme Fear",
     "emoji": "😱"
   },
-  "signals": [],
+  "signals": [
+    {
+      "id": 84,
+      "symbol": "ZECUSDT",
+      "direction": "LONG",
+      "entry": 240.92,
+      "tp1": 250.402857,
+      "tp2": 259.885714,
+      "sl": 235.230286,
+      "strength": 56,
+      "reasons": [
+        "Цена > EMA20 > EMA50 ↑",
+        "Объём x2.3 🔥",
+        "Стакан: bid (+0.10)",
+        "МТФ: 5m, 15m, 4h согласны",
+        "Taker: покупатели доминируют (1.36) ↑ 🟢",
+        "🌎 Америка | 3/4 ТФ согласны"
+      ],
+      "news": null,
+      "created_at": "2026-03-16 16:53:57",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 85,
+      "symbol": "SIRENUSDT",
+      "direction": "LONG",
+      "entry": 0.53098,
+      "tp1": 0.573458,
+      "tp2": 0.610627,
+      "sl": 0.509741,
+      "strength": 52,
+      "reasons": [
+        "RSI=19 (экстремальная перепроданность)",
+        "BB нижняя зона (-26%)",
+        "EMA20 > EMA50",
+        "Объём x2.6 🔥",
+        "Стакан: перевес bid (+0.16)",
+        "МТФ: 1h, 4h согласны",
+        "OI падает (шорты закрываются)",
+        "Taker: смещается к покупкам (0.93)"
+      ],
+      "news": null,
+      "created_at": "2026-03-16 16:54:15",
+      "status": "ACTIVE"
+    }
+  ],
   "history": [
     {
       "symbol": "SIRENUSDT",
