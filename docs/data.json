@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-03-16T14:40:15.017916+00:00",
+  "updated_at": "2026-03-16T14:42:17.460590+00:00",
   "stats": {
-    "total": 39,
+    "total": 40,
     "wins": 0,
     "losses": 0,
-    "active": 2,
+    "active": 3,
     "winrate": 0
   },
   "trade_stats": {
@@ -57,6 +57,27 @@
       ],
       "news": null,
       "created_at": "2026-03-16 14:39:56",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 78,
+      "symbol": "SOLUSDT",
+      "direction": "LONG",
+      "entry": 92.63,
+      "tp1": 94.997143,
+      "tp2": 97.364286,
+      "sl": 90.7774,
+      "strength": 49,
+      "reasons": [
+        "Цена > EMA20 > EMA50 ↑",
+        "Объём x2.5 🔥",
+        "Стакан: перевес bid (+0.14)",
+        "📰 Solana Eyes Key $100 Resistance as Institutional ETF Demand Signa...",
+        "МТФ: 15m, 1h, 4h согласны",
+        "🌍 Европа | 3/4 ТФ согласны"
+      ],
+      "news": "Solana Eyes Key $100 Resistance as Institutional ETF Demand Signals Accumulation Phase",
+      "created_at": "2026-03-16 14:41:24",
       "status": "ACTIVE"
     }
   ],
