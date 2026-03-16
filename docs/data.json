@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-03-16T12:54:21.031597+00:00",
+  "updated_at": "2026-03-16T12:56:06.616654+00:00",
   "stats": {
     "total": 18,
     "wins": 0,
     "losses": 0,
-    "active": 2,
+    "active": 0,
     "winrate": 0
   },
   "trade_stats": {
@@ -19,9 +19,28 @@
     "label": "Extreme Fear",
     "emoji": "😱"
   },
-  "signals": [
+  "signals": [],
+  "history": [
     {
-      "id": 55,
+      "symbol": "SOLUSDT",
+      "direction": "LONG",
+      "entry": 93.82,
+      "tp1": 96.064286,
+      "tp2": 98.308571,
+      "sl": 91.9436,
+      "strength": 51,
+      "status": "EXPIRED",
+      "created_at": "2026-03-16 12:44:44",
+      "reasons": [
+        "MACD выше сигнала",
+        "Цена > EMA20 > EMA50 ↑",
+        "Объём x1.5 (повышенный)",
+        "МТФ: 15m, 1h, 4h согласны",
+        "Taker: покупатели доминируют (1.21) ↑ 🟢",
+        "🌍 Европа | 3/4 ТФ согласны"
+      ]
+    },
+    {
       "symbol": "ETHUSDT",
       "direction": "LONG",
       "entry": 2282.89,
@@ -29,6 +48,8 @@
       "tp2": 2405.741429,
       "sl": 2237.2322,
       "strength": 60,
+      "status": "EXPIRED",
+      "created_at": "2026-03-16 12:44:41",
       "reasons": [
         "MACD выше сигнала",
         "Цена > EMA20 > EMA50 ↑",
@@ -37,34 +58,8 @@
         "OI растёт +1.9% + цена ↑",
         "Taker: покупатели доминируют (1.53) ↑ 🟢",
         "🌍 Европа | 4/4 ТФ согласны"
-      ],
-      "news": null,
-      "created_at": "2026-03-16 12:44:41",
-      "status": "ACTIVE"
+      ]
     },
-    {
-      "id": 56,
-      "symbol": "SOLUSDT",
-      "direction": "LONG",
-      "entry": 93.82,
-      "tp1": 96.064286,
-      "tp2": 98.308571,
-      "sl": 91.9436,
-      "strength": 51,
-      "reasons": [
-        "MACD выше сигнала",
-        "Цена > EMA20 > EMA50 ↑",
-        "Объём x1.5 (повышенный)",
-        "МТФ: 15m, 1h, 4h согласны",
-        "Taker: покупатели доминируют (1.21) ↑ 🟢",
-        "🌍 Европа | 3/4 ТФ согласны"
-      ],
-      "news": null,
-      "created_at": "2026-03-16 12:44:44",
-      "status": "ACTIVE"
-    }
-  ],
-  "history": [
     {
       "symbol": "BTCUSDT",
       "direction": "LONG",
