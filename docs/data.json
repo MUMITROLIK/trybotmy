@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-03-16T12:36:36.093491+00:00",
+  "updated_at": "2026-03-16T12:38:20.406779+00:00",
   "stats": {
-    "total": 15,
+    "total": 16,
     "wins": 0,
     "losses": 0,
     "active": 2,
     "winrate": 0
   },
   "trade_stats": {
-    "open": 5,
+    "open": 6,
     "wins": 1,
     "losses": 0,
     "total_pnl": 4.84,
@@ -20,26 +20,6 @@
     "emoji": "😱"
   },
   "signals": [
-    {
-      "id": 52,
-      "symbol": "LINKUSDT",
-      "direction": "LONG",
-      "entry": 9.738,
-      "tp1": 10.003429,
-      "tp2": 10.268857,
-      "sl": 9.54324,
-      "strength": 46,
-      "reasons": [
-        "MACD выше сигнала",
-        "Цена > EMA20 > EMA50 ↑",
-        "Объём x1.7 (повышенный)",
-        "МТФ: все 4 ТФ согласны ✅✅",
-        "🌍 Европа | 4/4 ТФ согласны"
-      ],
-      "news": null,
-      "created_at": "2026-03-16 12:27:31",
-      "status": "ACTIVE"
-    },
     {
       "id": 53,
       "symbol": "BNBUSDT",
@@ -60,9 +40,49 @@
       "news": null,
       "created_at": "2026-03-16 12:29:04",
       "status": "ACTIVE"
+    },
+    {
+      "id": 54,
+      "symbol": "BTCUSDT",
+      "direction": "LONG",
+      "entry": 73774.1,
+      "tp1": 75249.582,
+      "tp2": 76725.064,
+      "sl": 72298.618,
+      "strength": 57,
+      "reasons": [
+        "MACD выше сигнала",
+        "Цена > EMA20 > EMA50 ↑",
+        "Объём x1.5 (повышенный)",
+        "📰 Michael Saylor's Strategy made another huge buy of bitcoin, addin...",
+        "МТФ: все 4 ТФ согласны ✅✅",
+        "Taker: покупатели доминируют (1.36) ↑ 🟢",
+        "🌍 Европа | 4/4 ТФ согласны"
+      ],
+      "news": "Michael Saylor's Strategy made another huge buy of bitcoin, adding $1.57 billion worth last week",
+      "created_at": "2026-03-16 12:37:39",
+      "status": "ACTIVE"
     }
   ],
   "history": [
+    {
+      "symbol": "LINKUSDT",
+      "direction": "LONG",
+      "entry": 9.738,
+      "tp1": 10.003429,
+      "tp2": 10.268857,
+      "sl": 9.54324,
+      "strength": 46,
+      "status": "EXPIRED",
+      "created_at": "2026-03-16 12:27:31",
+      "reasons": [
+        "MACD выше сигнала",
+        "Цена > EMA20 > EMA50 ↑",
+        "Объём x1.7 (повышенный)",
+        "МТФ: все 4 ТФ согласны ✅✅",
+        "🌍 Европа | 4/4 ТФ согласны"
+      ]
+    },
     {
       "symbol": "BNBUSDT",
       "direction": "LONG",
@@ -423,6 +443,27 @@
         "Стакан: перевес bid (+0.23)",
         "МТФ: все 4 ТФ согласны ✅✅",
         "Taker: смещается к покупкам (1.14)",
+        "🌍 Европа | 4/4 ТФ согласны"
+      ]
+    },
+    {
+      "id": 7,
+      "symbol": "BTCUSDT",
+      "direction": "LONG",
+      "entry": 73774.1,
+      "tp1": 75249.582,
+      "tp2": 76725.064,
+      "sl": 72298.618,
+      "strength": 57,
+      "taken_at": "2026-03-16 12:37:46",
+      "status": "OPEN",
+      "reasons": [
+        "MACD выше сигнала",
+        "Цена > EMA20 > EMA50 ↑",
+        "Объём x1.5 (повышенный)",
+        "📰 Michael Saylor's Strategy made another huge buy of bitcoin, addin...",
+        "МТФ: все 4 ТФ согласны ✅✅",
+        "Taker: покупатели доминируют (1.36) ↑ 🟢",
         "🌍 Европа | 4/4 ТФ согласны"
       ]
     }
