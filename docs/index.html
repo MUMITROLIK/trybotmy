@@ -347,12 +347,6 @@ main { padding: 24px 40px; max-width: 1600px; margin: 0 auto; }
   color: var(--green);
 }
 .btn-take:hover { background: rgba(0,255,157,.2); box-shadow: var(--green-glow); }
-.sig-taken-label {
-  width: 100%; padding: 10px 0; text-align: center;
-  font-size: 11px; font-weight: 700; letter-spacing: 1.5px;
-  color: var(--green); border: 1px solid rgba(0,255,157,.2);
-  border-radius: 6px; background: rgba(0,255,157,.04);
-}
 .btn-skip {
   font-family: 'JetBrains Mono', monospace;
   font-size: 10px; font-weight: 700; letter-spacing: 2px;
@@ -463,7 +457,6 @@ tr:hover td { background: rgba(255,255,255,.015); }
 }
 .trade-card.long  { border-left: 2px solid var(--green); }
 .trade-card.short { border-left: 2px solid var(--red); }
-.trade-card.tp1-hit { border-left: 2px solid var(--yellow); }
 .trade-pnl-bar {
   height: 3px; background: var(--dim); overflow: hidden;
 }
@@ -472,54 +465,6 @@ tr:hover td { background: rgba(255,255,255,.015); }
 }
 .pnl-positive { color: var(--green); }
 .pnl-negative { color: var(--red); }
-
-/* TP/SL уровни на карточке позиции */
-.trade-levels {
-  display: flex; gap: 6px; flex-wrap: wrap; margin: 8px 0 4px;
-}
-.trade-lvl {
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 9px; padding: 3px 7px; border-radius: 4px;
-  border: 1px solid var(--border2);
-}
-.trade-lvl.tp1 { color: var(--green);  border-color: rgba(0,255,157,.25); }
-.trade-lvl.tp2 { color: var(--cyan);   border-color: rgba(0,229,255,.25); }
-.trade-lvl.sl  { color: var(--red);    border-color: rgba(255,45,107,.25); }
-.trade-lvl.tp1-hit { color: var(--yellow); border-color: rgba(255,229,0,.3); background: rgba(255,229,0,.07); }
-
-/* Кнопки действий на позиции */
-.trade-actions {
-  display: flex; gap: 6px; margin-top: 8px;
-}
-.btn-trade-action {
-  flex: 1; padding: 7px 0; border-radius: 6px; border: 1px solid var(--border2);
-  background: var(--surface2); color: var(--muted);
-  font-family: 'JetBrains Mono', monospace; font-size: 9px;
-  letter-spacing: 1px; cursor: pointer; transition: all .15s;
-  text-transform: uppercase;
-}
-.btn-trade-action:hover { color: var(--text); border-color: var(--cyan); }
-.btn-trade-close { border-color: rgba(255,45,107,.3); color: var(--red); }
-.btn-trade-close:hover { background: rgba(255,45,107,.12); border-color: var(--red); color: var(--text); }
-
-/* Редактирование входа */
-.edit-entry-row {
-  display: none; align-items: center; gap: 6px; margin-top: 6px;
-}
-.edit-entry-row.visible { display: flex; }
-.edit-entry-input {
-  flex: 1; background: var(--surface2); border: 1px solid var(--cyan);
-  color: var(--text); border-radius: 6px; padding: 6px 8px;
-  font-family: 'JetBrains Mono', monospace; font-size: 12px;
-}
-.edit-entry-input:focus { outline: none; box-shadow: 0 0 0 2px rgba(0,229,255,.2); }
-.btn-edit-confirm {
-  padding: 6px 12px; border-radius: 6px; border: 1px solid var(--cyan);
-  background: rgba(0,229,255,.1); color: var(--cyan);
-  font-family: 'JetBrains Mono', monospace; font-size: 9px; cursor: pointer;
-}
-.btn-edit-confirm:hover { background: rgba(0,229,255,.2); }
-
 
 .empty-state {
   padding: 60px; text-align: center;
@@ -558,6 +503,56 @@ tr:hover td { background: rgba(255,255,255,.015); }
   .fg-card { grid-column:1/-1; flex-direction:row; align-items:center; gap:16px; }
   .sig-prices { grid-template-columns:repeat(2,1fr); }
 }
+
+/* ── New: taken label, trade levels, edit entry, action buttons ── */
+.sig-taken-label {
+  width:100%; padding:10px 0; text-align:center;
+  font-size:11px; font-weight:700; letter-spacing:1.5px;
+  color:var(--green); border:1px solid rgba(0,255,157,.2);
+  border-radius:6px; background:rgba(0,255,157,.04);
+}
+.trade-card.tp1-hit { border-left:2px solid var(--yellow); }
+.trade-levels {
+  display:flex; gap:6px; flex-wrap:wrap; margin:8px 0 4px;
+}
+.trade-lvl {
+  font-family:'JetBrains Mono',monospace;
+  font-size:9px; padding:3px 7px; border-radius:4px;
+  border:1px solid var(--border2);
+}
+.trade-lvl.tp1     { color:var(--green); border-color:rgba(0,255,157,.25); }
+.trade-lvl.tp2     { color:var(--cyan);  border-color:rgba(0,229,255,.25); }
+.trade-lvl.sl      { color:var(--red);   border-color:rgba(255,45,107,.25); }
+.trade-lvl.tp1-hit { color:var(--yellow); border-color:rgba(255,229,0,.3); background:rgba(255,229,0,.07); }
+.trade-actions {
+  display:flex; gap:6px; margin-top:8px;
+}
+.btn-trade-action {
+  flex:1; padding:7px 0; border-radius:6px; border:1px solid var(--border2);
+  background:var(--surface2); color:var(--muted);
+  font-family:'JetBrains Mono',monospace; font-size:9px;
+  letter-spacing:1px; cursor:pointer; transition:all .15s;
+  text-transform:uppercase;
+}
+.btn-trade-action:hover { color:var(--text); border-color:var(--cyan); }
+.btn-trade-close { border-color:rgba(255,45,107,.3); color:var(--red); }
+.btn-trade-close:hover { background:rgba(255,45,107,.12); border-color:var(--red); color:var(--text); }
+.edit-entry-row {
+  display:none; align-items:center; gap:6px; margin-top:6px;
+}
+.edit-entry-row.visible { display:flex; }
+.edit-entry-input {
+  flex:1; background:var(--surface2); border:1px solid var(--cyan);
+  color:var(--text); border-radius:6px; padding:6px 8px;
+  font-family:'JetBrains Mono',monospace; font-size:12px;
+}
+.edit-entry-input:focus { outline:none; box-shadow:0 0 0 2px rgba(0,229,255,.2); }
+.btn-edit-confirm {
+  padding:6px 12px; border-radius:6px; border:1px solid var(--cyan);
+  background:rgba(0,229,255,.1); color:var(--cyan);
+  font-family:'JetBrains Mono',monospace; font-size:9px; cursor:pointer;
+}
+.btn-edit-confirm:hover { background:rgba(0,229,255,.2); }
 </style>
 </head>
 <body>
@@ -721,6 +716,7 @@ tr:hover td { background: rgba(255,255,255,.015); }
         <tbody id="histBody"><tr><td colspan="8" class="empty-state">Нет данных</td></tr></tbody>
       </table>
     </div>
+    </div><!-- /page-sig-history -->
   </main>
 </div>
 
@@ -739,14 +735,12 @@ const mono = n => {
 };
 const sc = s => s >= 75 ? '#00ff9d' : s >= 55 ? '#ffe500' : '#3d6fff';
 
-// Парсим дату как UTC (SQLite datetime('now') пишет без 'Z', браузер читает как local)
+// UTC date parser — SQLite datetime('now') writes without 'Z', browser reads as local
 const parseUTC = iso => {
   if (!iso) return new Date(0);
-  // Если нет timezone суффикса — добавляем Z чтобы браузер понял UTC
   const s = iso.endsWith('Z') || iso.includes('+') ? iso : iso + 'Z';
   return new Date(s);
 };
-
 const ago = iso => {
   const d = Math.floor((Date.now() - parseUTC(iso)) / 1000);
   if (d < 60)   return d + 'с';
@@ -784,13 +778,12 @@ const CHART_OPTS = {
   timeScale:{borderColor:'#1c1c35',timeVisible:true,secondsVisible:false},
 };
 
-// ── BTC Candle Chart ──────────────────────────────────────────────────────────
+// ── BTC Chart ─────────────────────────────────────────────────────────────────
 let btcChart = null, btcSeries = null, btcTF = '1m', btcWs = null;
-let btcLastCandle = null;
 
 function initBtcChart() {
   const wrap = $('btcChartWrap');
-  btcChart = LightweightCharts.createChart(wrap, {...CHART_OPTS, width:wrap.clientWidth, height:240});
+  btcChart  = LightweightCharts.createChart(wrap, {...CHART_OPTS, width:wrap.clientWidth, height:240});
   btcSeries = btcChart.addCandlestickSeries({
     upColor:'#00ff9d', downColor:'#ff2d6b',
     borderUpColor:'#00ff9d', borderDownColor:'#ff2d6b',
@@ -804,30 +797,28 @@ async function loadBtcCandles() {
     const r = await fetch(`https://fapi.binance.com/fapi/v1/klines?symbol=BTCUSDT&interval=${btcTF}&limit=100`);
     const raw = await r.json();
     const candles = raw.map(d => ({
-      time: Math.floor(d[0]/1000),
-      open: parseFloat(d[1]), high: parseFloat(d[2]),
-      low:  parseFloat(d[3]), close:parseFloat(d[4])
+      time:Math.floor(d[0]/1000), open:parseFloat(d[1]),
+      high:parseFloat(d[2]), low:parseFloat(d[3]), close:parseFloat(d[4])
     }));
     btcSeries.setData(candles);
-    btcLastCandle = candles[candles.length-1];
     updateBtcHeader(candles);
   } catch(e) { console.error('BTC candles:', e); }
 }
 
 function updateBtcHeader(candles) {
-  const last  = candles[candles.length-1].close;
+  const last = candles[candles.length-1].close;
   const first = candles[0].close;
-  const pct   = ((last-first)/first*100).toFixed(2);
-  const up    = last >= first;
+  const pct = ((last-first)/first*100).toFixed(2);
+  const up  = last >= first;
   $('btcPriceBig').textContent = '$' + last.toLocaleString('ru',{minimumFractionDigits:2});
   $('hBtcPrice').textContent   = '$' + last.toLocaleString('ru',{minimumFractionDigits:2});
   const chgEl = $('btcChgBig');
-  chgEl.textContent = (up?'+':'')+pct+'%';
+  chgEl.textContent  = (up?'+':'')+pct+'%';
   chgEl.style.background = up ? 'rgba(0,255,157,.12)' : 'rgba(255,45,107,.12)';
   chgEl.style.color      = up ? '#00ff9d' : '#ff2d6b';
   const hChg = $('hBtcChg');
-  hChg.textContent = (up?'+':'')+pct+'%';
-  hChg.className = 'chg '+(up?'up':'down');
+  hChg.textContent  = (up?'+':'')+pct+'%';
+  hChg.className    = 'chg '+(up?'up':'down');
 }
 
 function setBtcTF(tf) {
@@ -839,19 +830,17 @@ function setBtcTF(tf) {
 
 function connectBtcWs() {
   if (btcWs) btcWs.close();
-  const stream = `btcusdt@kline_${btcTF}`;
-  btcWs = new WebSocket(`wss://fstream.binance.com/ws/${stream}`);
+  btcWs = new WebSocket(`wss://fstream.binance.com/ws/btcusdt@kline_${btcTF}`);
   btcWs.onmessage = e => {
     const d = JSON.parse(e.data).k;
     if (!d || !btcSeries) return;
-    const candle = {
-      time: Math.floor(d.t/1000),
-      open: parseFloat(d.o), high: parseFloat(d.h),
-      low:  parseFloat(d.l), close:parseFloat(d.c)
-    };
-    btcSeries.update(candle);
-    $('btcPriceBig').textContent = '$' + parseFloat(d.c).toLocaleString('ru',{minimumFractionDigits:2});
-    $('hBtcPrice').textContent   = '$' + parseFloat(d.c).toLocaleString('ru',{minimumFractionDigits:2});
+    btcSeries.update({
+      time:Math.floor(d.t/1000), open:parseFloat(d.o),
+      high:parseFloat(d.h), low:parseFloat(d.l), close:parseFloat(d.c)
+    });
+    const p = '$'+parseFloat(d.c).toLocaleString('ru',{minimumFractionDigits:2});
+    $('btcPriceBig').textContent = p;
+    $('hBtcPrice').textContent   = p;
   };
   btcWs.onclose = () => setTimeout(connectBtcWs, 3000);
 }
@@ -868,8 +857,7 @@ async function openChart(sym, signal) {
       <div class="ms-item"><div class="ms-l">Вход</div><div class="ms-v">${mono(signal.entry)}</div></div>
       <div class="ms-item"><div class="ms-l">TP1</div><div class="ms-v" style="color:var(--green)">${mono(signal.tp1)}</div></div>
       <div class="ms-item"><div class="ms-l">TP2</div><div class="ms-v" style="color:var(--green)">${mono(signal.tp2)}</div></div>
-      <div class="ms-item"><div class="ms-l">SL</div><div class="ms-v" style="color:var(--red)">${mono(signal.sl)}</div></div>
-    `;
+      <div class="ms-item"><div class="ms-l">SL</div><div class="ms-v" style="color:var(--red)">${mono(signal.sl)}</div></div>`;
   }
   await loadModalCandles();
 }
@@ -878,7 +866,6 @@ async function loadModalCandles() {
   const wrap = $('modalChartWrap');
   wrap.innerHTML = '';
   if (mChart) { mChart.remove(); mChart = null; }
-
   mChart  = LightweightCharts.createChart(wrap, {...CHART_OPTS, width:wrap.clientWidth, height:300});
   mSeries = mChart.addCandlestickSeries({
     upColor:'#00ff9d', downColor:'#ff2d6b',
@@ -889,9 +876,8 @@ async function loadModalCandles() {
     const r = await fetch(`https://fapi.binance.com/fapi/v1/klines?symbol=${mSym}&interval=${mTF}&limit=100`);
     const raw = await r.json();
     mSeries.setData(raw.map(d => ({
-      time: Math.floor(d[0]/1000),
-      open: parseFloat(d[1]), high: parseFloat(d[2]),
-      low:  parseFloat(d[3]), close:parseFloat(d[4])
+      time:Math.floor(d[0]/1000), open:parseFloat(d[1]),
+      high:parseFloat(d[2]), low:parseFloat(d[3]), close:parseFloat(d[4])
     })));
   } catch(e) {}
 }
@@ -902,7 +888,6 @@ function setModalTF(tf) {
     b.classList.toggle('active', b.textContent.trim() === tf.toUpperCase()));
   loadModalCandles();
 }
-
 function closeModal() {
   $('modal').classList.remove('open');
   if (mChart) { mChart.remove(); mChart = null; }
@@ -911,17 +896,16 @@ function handleOverlayClick(e) {
   if (e.target === $('modal')) closeModal();
 }
 
-// ── Accepted signals ──────────────────────────────────────────────────────────
+// ── Taken signals ─────────────────────────────────────────────────────────────
 const taken = new Map();
 
 function syncTakenFromTrades(openTrades) {
   openTrades.forEach(t => {
     const key = t.symbol + '_' + t.direction;
-    if (!taken.has(key)) taken.set(key, { dir: t.direction, entry: t.entry });
+    if (!taken.has(key)) taken.set(key, {dir:t.direction, entry:t.entry});
   });
 }
 function isTaken(sym, dir) { return taken.has(sym + '_' + dir); }
-
 function takeSignal(sym, dir, entry) {
   taken.set(sym + '_' + dir, {dir, entry});
   renderTaken();
@@ -959,8 +943,7 @@ function renderFG(fg) {
   $('fg-val').style.color = color;
 }
 
-// ── Signals render ────────────────────────────────────────────────────────────
-// Store signals globally for click access
+// ── Signals ───────────────────────────────────────────────────────────────────
 let _allSignals = [];
 
 function renderSignals(sigs) {
@@ -971,12 +954,12 @@ function renderSignals(sigs) {
     return;
   }
   el.innerHTML = sigs.map((s,i) => {
-    const lg   = s.direction === 'LONG';
+    const lg  = s.direction === 'LONG';
     const tags = (s.reasons||[]).slice(0,5).map(r=>`<span class="tag">${r}</span>`).join('');
     const clr  = sc(s.strength);
     const alreadyTaken = isTaken(s.symbol, s.direction);
-    const cardStyle = alreadyTaken ? 'opacity:.4;pointer-events:none' : '';
-    const actionBlock = alreadyTaken
+    const cardStyle    = alreadyTaken ? 'opacity:.4;pointer-events:none' : '';
+    const actionBlock  = alreadyTaken
       ? `<div class="sig-taken-label">✅ ВЗЯТА — отслеживается в позициях</div>`
       : `<div class="sig-actions">
           <button class="btn-take" onclick="handleTake('${s.symbol}','${s.direction}',${s.entry})">▸ ВЗЯТЬ СДЕЛКУ</button>
@@ -1019,87 +1002,61 @@ function openChartByIdx(i) {
 function handleTake(sym, dir, entry) {
   takeSignal(sym, dir, entry);
   renderSignals(_allSignals);
-  // Быстрое обновление — не ждём 30 секунд
   setTimeout(loadData, 2000);
 }
-
 function handleSkip(sym, dir) {
   skipSignal(sym, dir);
   const card = $('sc_'+sym+'_'+dir);
   if (card) { card.style.opacity = '.15'; card.style.transition = 'opacity .4s'; }
 }
 
-// ── Управление позициями ──────────────────────────────────────────────────────
-
+// ── Trade management ──────────────────────────────────────────────────────────
 function toggleEditEntry(tradeId, currentEntry) {
   const row = $('editrow_' + tradeId);
   if (!row) return;
-  const isVisible = row.classList.contains('visible');
-  row.classList.toggle('visible', !isVisible);
-  if (!isVisible) {
+  const visible = row.classList.contains('visible');
+  row.classList.toggle('visible', !visible);
+  if (!visible) {
     const inp = $('editinput_' + tradeId);
     if (inp) { inp.value = currentEntry; inp.focus(); inp.select(); }
   }
 }
-
 function cancelEditEntry(tradeId) {
   const row = $('editrow_' + tradeId);
   if (row) row.classList.remove('visible');
 }
-
 function confirmEditEntry(tradeId) {
   const inp = $('editinput_' + tradeId);
   if (!inp) return;
   const newEntry = parseFloat(inp.value);
   if (!newEntry || isNaN(newEntry)) return;
-
-  // Обновляем локально сразу
   const entryEl = $('tentry_' + tradeId);
   if (entryEl) entryEl.textContent = mono(newEntry);
-
-  // Обновляем через Telegram Bot API — отправляем команду боту
-  // Бот получит /setentry_{id}_{price} и обновит БД
   sendBotCommand(`/setentry_${tradeId}_${newEntry}`);
   cancelEditEntry(tradeId);
 }
-
 function closeTrade(tradeId, symbol, direction) {
   if (!confirm(`Закрыть ${symbol} ${direction} по рынку?`)) return;
-
-  // Визуально помечаем карточку
   const card = $('tc_' + tradeId);
   if (card) { card.style.opacity = '.4'; card.style.transition = 'opacity .3s'; }
-
-  // Отправляем команду боту
   sendBotCommand(`/closetrade_${tradeId}`);
-
-  // Обновляем данные через 3 секунды
   setTimeout(loadData, 3000);
 }
-
-// Отправка команды боту через публичный webhook
-// Бот должен слушать эти команды через CommandHandler
 function sendBotCommand(command) {
-  // Используем Telegram sendMessage через Bot API
-  // Токен не храним на фронте — бот сам обрабатывает команды из чата
-  // Просто копируем в буфер и показываем подсказку
   navigator.clipboard?.writeText(command).then(() => {
-    showToast(`Команда скопирована: ${command}\nОтправь её в бот в Telegram`);
-  }).catch(() => {
-    showToast(`Отправь боту: ${command}`);
-  });
+    showToast(`📋 Скопировано!\nОтправь боту в Telegram:\n${command}`);
+  }).catch(() => showToast(`Отправь боту: ${command}`));
 }
-
 function showToast(msg) {
   let t = $('toast');
   if (!t) {
     t = document.createElement('div');
     t.id = 'toast';
     t.style.cssText = `position:fixed;bottom:24px;left:50%;transform:translateX(-50%);
-      background:var(--surface2);border:1px solid var(--border2);color:var(--text);
-      padding:10px 18px;border-radius:8px;font-family:'JetBrains Mono',monospace;
-      font-size:11px;z-index:9999;max-width:320px;text-align:center;
-      white-space:pre-line;box-shadow:0 4px 24px rgba(0,0,0,.5);`;
+      background:var(--surface2);border:1px solid var(--cyan);color:var(--text);
+      padding:12px 20px;border-radius:8px;font-family:'JetBrains Mono',monospace;
+      font-size:11px;z-index:9999;max-width:340px;text-align:center;
+      white-space:pre-line;box-shadow:0 4px 24px rgba(0,0,0,.6);`;
     document.body.appendChild(t);
   }
   t.textContent = msg;
@@ -1108,15 +1065,15 @@ function showToast(msg) {
   t._timer = setTimeout(() => { t.style.display = 'none'; }, 4000);
 }
 
+// ── History ───────────────────────────────────────────────────────────────────
 let _history = [];
-
 function renderHistory(h) {
   _history = h;
   const tb = $('histBody');
   if (!h.length) return;
   tb.innerHTML = h.map((r,i) => {
     const lg = r.direction==='LONG';
-    const st = r.status.toUpperCase();
+    const st = r.status?.toUpperCase();
     const b  = (st==='TP1'||st==='TP2') ? `<span class="bdg tp">${st}</span>`
              : st==='SL' ? `<span class="bdg sl">SL</span>`
              : `<span class="bdg exp">—</span>`;
@@ -1132,12 +1089,10 @@ function renderHistory(h) {
     </tr>`;
   }).join('');
 }
-
 function openHistChart(i) {
   const r = _history[i];
   if (r) openChart(r.symbol, r);
 }
-
 
 // ── Tabs ──────────────────────────────────────────────────────────────────────
 function switchTab(tab) {
@@ -1150,38 +1105,39 @@ function switchTab(tab) {
 
 // ── Trades render ─────────────────────────────────────────────────────────────
 function renderTrades(trades, stats) {
-  // Stats
-  const ts = stats || {};
-  $('t-open').textContent    = ts.open    ?? trades.length;
-  $('t-wins').textContent    = ts.wins    ?? '—';
-  $('t-losses').textContent  = ts.losses  ?? '—';
-  $('t-pnl').textContent     = ts.total_pnl != null ? (ts.total_pnl >= 0 ? '+' : '') + ts.total_pnl + '%' : '+0.00%';
-  $('t-pnl').style.color     = (ts.total_pnl ?? 0) >= 0 ? 'var(--green)' : 'var(--red)';
+  if (stats) {
+    $('ts-open').textContent   = stats.open ?? '—';
+    $('ts-wins').textContent   = stats.wins ?? '—';
+    $('ts-losses').textContent = stats.losses ?? '—';
+    const pnl    = stats.total_pnl ?? 0;
+    const pnlEl  = $('ts-pnl');
+    if (pnlEl) {
+      pnlEl.textContent = (pnl >= 0 ? '+' : '') + pnl.toFixed(2) + '%';
+      pnlEl.className   = 'stat-value ' + (pnl >= 0 ? 'c-green' : 'c-red');
+    }
+  }
 
   const el = $('tradesGrid');
-  if (!trades.length) {
-    el.innerHTML = '<div class="empty-state">📭 Нет открытых позиций</div>';
+  if (!trades || !trades.length) {
+    el.innerHTML = '<div class="empty-state">📭 Нет открытых позиций<br><span style="font-size:10px;opacity:.5">Нажми «Взять» в сигнале</span></div>';
     startTradeWs([]);
     return;
   }
 
   el.innerHTML = trades.map(t => {
-    const lg       = t.direction === 'LONG';
-    const tags     = (t.reasons||[]).slice(0,3).map(r=>`<span class="tag">${r}</span>`).join('');
-    const tp1Hit   = t.status === 'TP1_HIT';
-    const cardCls  = tp1Hit ? 'tp1-hit' : (lg ? 'long' : 'short');
-
-    // TP/SL уровни
-    const tp1Lbl = tp1Hit
+    const lg     = t.direction === 'LONG';
+    const tags   = (t.reasons||[]).slice(0,3).map(r=>`<span class="tag">${r}</span>`).join('');
+    const tp1Hit = t.status === 'TP1_HIT';
+    const cardCls = tp1Hit ? 'tp1-hit' : (lg ? 'long' : 'short');
+    const tp1Lbl  = tp1Hit
       ? `<span class="trade-lvl tp1-hit">✅ TP1 ${mono(t.tp1)}</span>`
       : `<span class="trade-lvl tp1">TP1 ${mono(t.tp1)}</span>`;
-    const levels = `
-      <div class="trade-levels">
-        ${tp1Lbl}
-        <span class="trade-lvl tp2">TP2 ${mono(t.tp2)}</span>
-        <span class="trade-lvl sl">SL ${mono(t.sl)}</span>
-        ${tp1Hit ? '<span class="trade-lvl tp1-hit">🔒 SL → безубыток</span>' : ''}
-      </div>`;
+    const levels = `<div class="trade-levels">
+      ${tp1Lbl}
+      <span class="trade-lvl tp2">TP2 ${mono(t.tp2)}</span>
+      <span class="trade-lvl sl">SL ${mono(t.sl)}</span>
+      ${tp1Hit ? '<span class="trade-lvl tp1-hit">🔒 SL → безубыток</span>' : ''}
+    </div>`;
 
     return `
     <div class="trade-card ${cardCls}" id="tc_${t.id}">
@@ -1190,10 +1146,7 @@ function renderTrades(trades, stats) {
         <span class="sig-badge ${lg?'long':'short'}">${t.direction} ${lg?'↑':'↓'}</span>
       </div>
       <div class="sig-prices">
-        <div class="price-cell">
-          <div class="p-lbl">ВХОД</div>
-          <div class="p-val" id="tentry_${t.id}">${mono(t.entry)}</div>
-        </div>
+        <div class="price-cell"><div class="p-lbl">ВХОД</div><div class="p-val" id="tentry_${t.id}">${mono(t.entry)}</div></div>
         <div class="price-cell"><div class="p-lbl">ТЕКУЩАЯ</div><div class="p-val" id="tprice_${t.id}">...</div></div>
         <div class="price-cell"><div class="p-lbl">P&L</div><div class="p-val" id="tpnl_${t.id}">...</div></div>
         <div class="price-cell"><div class="p-lbl">SL</div><div class="p-val sl" id="tsl_${t.id}">${mono(t.sl)}</div></div>
@@ -1206,14 +1159,11 @@ function renderTrades(trades, stats) {
           Взята: ${ago(t.taken_at)} назад &nbsp;·&nbsp;
           <span id="ttimer_${t.id}" style="color:${tradeAgeColor(t.taken_at)}">${tradeDuration(t.taken_at)}</span>
         </div>
-        <!-- Редактирование входа -->
         <div class="edit-entry-row" id="editrow_${t.id}">
-          <input class="edit-entry-input" id="editinput_${t.id}"
-            type="number" step="any" placeholder="${t.entry}" value="${t.entry}">
+          <input class="edit-entry-input" id="editinput_${t.id}" type="number" step="any" value="${t.entry}">
           <button class="btn-edit-confirm" onclick="confirmEditEntry(${t.id})">✓ OK</button>
           <button class="btn-edit-confirm" onclick="cancelEditEntry(${t.id})" style="border-color:var(--border2);color:var(--muted)">✕</button>
         </div>
-        <!-- Кнопки действий -->
         <div class="trade-actions">
           <button class="btn-trade-action" onclick="toggleEditEntry(${t.id}, ${t.entry})">✏ Изменить вход</button>
           <button class="btn-trade-action btn-trade-close" onclick="closeTrade(${t.id}, '${t.symbol}', '${t.direction}')">✕ Закрыть</button>
@@ -1224,20 +1174,19 @@ function renderTrades(trades, stats) {
 
   startTradeWs(trades);
 }
-// ── Real-time P&L for open trades ─────────────────────────────────────────────
+
+// ── Real-time P&L ─────────────────────────────────────────────────────────────
 const tradeWsMap = new Map();
 
 function startTradeWs(trades) {
-  // Close old WS
   tradeWsMap.forEach(ws => ws.close());
   tradeWsMap.clear();
-
   trades.forEach(t => {
     if (tradeWsMap.has(t.symbol)) return;
     const ws = new WebSocket(`wss://fstream.binance.com/ws/${t.symbol.toLowerCase()}@bookTicker`);
     ws.onmessage = e => {
-      const d = JSON.parse(e.data);
-      const mid = (parseFloat(d.b)+parseFloat(d.a))/2;
+      const d   = JSON.parse(e.data);
+      const mid = (parseFloat(d.b) + parseFloat(d.a)) / 2;
       updateTradePnl(t, mid);
     };
     ws.onclose = () => tradeWsMap.delete(t.symbol);
@@ -1247,26 +1196,20 @@ function startTradeWs(trades) {
 
 function updateTradePnl(trade, currentPrice) {
   const entry = trade.entry_price || trade.entry;
-  const tp1   = trade.tp1;
-  const sl    = trade.sl;
   if (!entry || !currentPrice) return;
-
   const pnl = trade.direction === 'LONG'
     ? (currentPrice - entry) / entry * 100
     : (entry - currentPrice) / entry * 100;
-
   const pEl = $('tprice_' + trade.id);
   const nEl = $('tpnl_'   + trade.id);
   const bEl = $('tbar_'   + trade.id);
-
   if (pEl) pEl.textContent = mono(currentPrice);
   if (nEl) {
     nEl.textContent = (pnl >= 0 ? '+' : '') + pnl.toFixed(2) + '%';
     nEl.className   = 'p-val ' + (pnl >= 0 ? 'pnl-positive' : 'pnl-negative');
   }
   if (bEl) {
-    // Bar: 50% = neutral, 0-50 = loss side, 50-100 = profit side
-    const range = Math.abs(tp1 - entry) || entry * 0.02;
+    const range = Math.abs(trade.tp1 - entry) || entry * 0.02;
     const pct   = Math.max(0, Math.min(100, 50 + (pnl / (range / entry * 100)) * 50));
     bEl.style.width      = pct + '%';
     bEl.style.background = pnl >= 0 ? 'var(--green)' : 'var(--red)';
@@ -1282,7 +1225,9 @@ function renderTradeHistory(hist) {
     const pnl = r.pnl_pct || 0;
     const st  = r.status?.toUpperCase();
     const badge = (st==='TP1'||st==='TP2') ? `<span class="bdg tp">${st}</span>`
-                : st==='SL' ? `<span class="bdg sl">SL</span>`
+                : st==='SL'                ? `<span class="bdg sl">SL</span>`
+                : st==='TIMEOUT'           ? `<span class="bdg exp">⏰</span>`
+                : st==='MANUAL'            ? `<span class="bdg exp">✋</span>`
                 : `<span class="bdg exp">—</span>`;
     return `<tr>
       <td style="font-weight:700;color:var(--cyan)">${r.symbol}</td>
@@ -1291,7 +1236,7 @@ function renderTradeHistory(hist) {
       <td>${mono(r.close_price)}</td>
       <td class="${pnl>=0?'pnl-positive':'pnl-negative'}" style="font-weight:700">${(pnl>=0?'+':'')+pnl.toFixed(2)}%</td>
       <td>${badge}</td>
-      <td style="color:var(--muted)">${r.closed_at ? ago(r.closed_at)+'назад' : '—'}</td>
+      <td style="color:var(--muted)">${r.closed_at ? ago(r.closed_at)+' назад' : '—'}</td>
     </tr>`;
   }).join('');
 }
@@ -1299,26 +1244,27 @@ function renderTradeHistory(hist) {
 // ── Data fetch ────────────────────────────────────────────────────────────────
 async function loadData() {
   try {
-    const r = await fetch('./data.json?t='+Date.now());
+    const r = await fetch('./data.json?t=' + Date.now());
     if (!r.ok) throw new Error(r.status);
-    const d = await r.json();
-    const st = d.stats||{};
-    $('s-total').textContent   = st.total??'—';
-    $('s-wins').textContent    = st.wins??'—';
-    $('s-losses').textContent  = st.losses??'—';
-    $('s-winrate').textContent = st.winrate!=null ? st.winrate+'%' : '—';
+    const d  = await r.json();
+    const st = d.stats || {};
+    $('s-total').textContent   = st.total   ?? '—';
+    $('s-wins').textContent    = st.wins    ?? '—';
+    $('s-losses').textContent  = st.losses  ?? '—';
+    $('s-winrate').textContent = st.winrate != null ? st.winrate + '%' : '—';
     renderFG(d.fear_greed);
-    const openTrades = d.trades_open||[];
+    const openTrades = d.trades_open || [];
     _allTrades = openTrades;
     syncTakenFromTrades(openTrades);
-    renderSignals(d.signals||[]);
-    renderHistory(d.history||[]);
+    renderSignals(d.signals || []);
+    renderHistory(d.history || []);
     renderTrades(openTrades, d.trade_stats);
-    renderTradeHistory(d.trades_history||[]);
+    renderTradeHistory(d.trades_history || []);
     const dt = new Date(d.updated_at);
     $('last-update').textContent = dt.toLocaleTimeString('ru-RU');
   } catch(e) {
     $('last-update').textContent = 'ERR';
+    console.error('loadData:', e);
   }
 }
 
@@ -1338,6 +1284,7 @@ setInterval(() => {
     }
   });
 }, 30000);
+
 </script>
 </body>
 </html>
