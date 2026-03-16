@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-16T11:54:00.449827+00:00",
+  "updated_at": "2026-03-16T11:55:48.453060+00:00",
   "stats": {
-    "total": 5,
+    "total": 6,
     "wins": 0,
     "losses": 0,
     "active": 1,
@@ -21,7 +21,28 @@
   },
   "signals": [
     {
-      "id": 43,
+      "id": 44,
+      "symbol": "HYPEUSDT",
+      "direction": "LONG",
+      "entry": 39.528,
+      "tp1": 40.697857,
+      "tp2": 41.867714,
+      "sl": 38.73744,
+      "strength": 48,
+      "reasons": [
+        "MACD бычий momentum",
+        "Цена > EMA20 > EMA50 ↑",
+        "Объём x1.6 (повышенный)",
+        "МТФ: 5m, 1h, 4h согласны",
+        "🌍 Европа | 3/4 ТФ согласны"
+      ],
+      "news": null,
+      "created_at": "2026-03-16 11:55:19",
+      "status": "ACTIVE"
+    }
+  ],
+  "history": [
+    {
       "symbol": "NEARUSDT",
       "direction": "LONG",
       "entry": 1.393,
@@ -29,6 +50,8 @@
       "tp2": 1.478143,
       "sl": 1.36514,
       "strength": 50,
+      "status": "EXPIRED",
+      "created_at": "2026-03-16 11:44:55",
       "reasons": [
         "MACD выше сигнала",
         "Цена > EMA20 > EMA50 ↑",
@@ -38,13 +61,8 @@
         "OI растёт +1.2% + цена ↑",
         "FR сменил знак → потенциальный разворот",
         "🌍 Европа | 3/4 ТФ согласны"
-      ],
-      "news": null,
-      "created_at": "2026-03-16 11:44:55",
-      "status": "ACTIVE"
-    }
-  ],
-  "history": [
+      ]
+    },
     {
       "symbol": "BCHUSDT",
       "direction": "LONG",
