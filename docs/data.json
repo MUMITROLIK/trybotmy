@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-16T16:50:44.291544+00:00",
+  "updated_at": "2026-03-16T16:52:11.711973+00:00",
   "stats": {
     "total": 45,
     "wins": 0,
@@ -8,11 +8,11 @@
     "winrate": 0.0
   },
   "trade_stats": {
-    "open": 14,
+    "open": 13,
     "wins": 1,
     "losses": 4,
-    "total_pnl": -6.19,
-    "winrate": 16.7
+    "total_pnl": -5.11,
+    "winrate": 14.3
   },
   "fear_greed": {
     "value": 23,
@@ -412,27 +412,6 @@
   ],
   "trades_open": [
     {
-      "id": 3,
-      "symbol": "BCHUSDT",
-      "direction": "LONG",
-      "entry": 473.6,
-      "tp1": 483.072,
-      "tp2": 492.544,
-      "sl": 464.128,
-      "strength": 61,
-      "taken_at": "2026-03-16 11:14:28",
-      "status": "OPEN",
-      "reasons": [
-        "MACD выше сигнала",
-        "Цена > EMA20 > EMA50 ↑",
-        "Объём x2.6 🔥",
-        "МТФ: все 4 ТФ согласны ✅✅",
-        "Taker: покупатели доминируют (1.86) ↑ 🟢",
-        "FR сменил знак → потенциальный разворот",
-        "🌍 Европа | 4/4 ТФ согласны"
-      ]
-    },
-    {
       "id": 4,
       "symbol": "TAOUSDT",
       "direction": "LONG",
@@ -756,6 +735,19 @@
       "close_price": 24.1265,
       "taken_at": "2026-03-16 12:11:42",
       "closed_at": "2026-03-16 13:06:39"
+    },
+    {
+      "symbol": "BCHUSDT",
+      "direction": "LONG",
+      "entry": 473.6,
+      "tp1": 483.072,
+      "sl": 464.128,
+      "strength": 61,
+      "status": "MANUAL",
+      "pnl_pct": 1.08,
+      "close_price": 478.7,
+      "taken_at": "2026-03-16 11:14:28",
+      "closed_at": "2026-03-16 16:52:11"
     },
     {
       "symbol": "FETUSDT",
