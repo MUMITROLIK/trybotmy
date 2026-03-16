@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-16T16:55:02.212977+00:00",
+  "updated_at": "2026-03-16T16:56:23.707524+00:00",
   "stats": {
     "total": 47,
     "wins": 0,
@@ -11,8 +11,8 @@
     "open": 15,
     "wins": 1,
     "losses": 4,
-    "total_pnl": -5.11,
-    "winrate": 14.3
+    "total_pnl": -3.04,
+    "winrate": 12.5
   },
   "fear_greed": {
     "value": 23,
@@ -671,10 +671,10 @@
       "entry": 1.4785,
       "tp1": 1.509,
       "tp2": 1.5395,
-      "sl": 1.44893,
+      "sl": 1.4785,
       "strength": 57,
       "taken_at": "2026-03-16 13:58:08",
-      "status": "OPEN",
+      "status": "TP1_HIT",
       "reasons": [
         "MACD выше сигнала",
         "Цена > EMA20 > EMA50 ↑",
@@ -771,6 +771,19 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "XRPUSDT",
+      "direction": "LONG",
+      "entry": 1.4785,
+      "tp1": 1.509,
+      "sl": 1.4785,
+      "strength": 57,
+      "status": "TP1_HIT",
+      "pnl_pct": 2.07,
+      "close_price": null,
+      "taken_at": "2026-03-16 13:58:08",
+      "closed_at": null
+    },
     {
       "symbol": "TRUMPUSDT",
       "direction": "LONG",
