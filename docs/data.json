@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-16T14:29:51.551354+00:00",
+  "updated_at": "2026-03-16T14:31:50.578398+00:00",
   "stats": {
     "total": 37,
     "wins": 0,
@@ -8,11 +8,11 @@
     "winrate": 0
   },
   "trade_stats": {
-    "open": 16,
+    "open": 13,
     "wins": 1,
-    "losses": 1,
-    "total_pnl": 0.63,
-    "winrate": 50.0
+    "losses": 4,
+    "total_pnl": -6.19,
+    "winrate": 20.0
   },
   "fear_greed": {
     "value": 23,
@@ -435,28 +435,6 @@
   ],
   "trades_open": [
     {
-      "id": 1,
-      "symbol": "DOTUSDT",
-      "direction": "LONG",
-      "entry": 1.615,
-      "tp1": 1.681286,
-      "tp2": 1.747571,
-      "sl": 1.575229,
-      "strength": 55,
-      "taken_at": "2026-03-16 11:10:44",
-      "status": "OPEN",
-      "reasons": [
-        "MACD выше сигнала",
-        "Цена > EMA20 > EMA50 ↑",
-        "Объём x1.7 (повышенный)",
-        "МТФ: 5m, 1h, 4h согласны",
-        "Taker: покупатели доминируют (1.43) ↑ 🟢",
-        "L/S: топ-трейдеры в лонге (1.38)",
-        "FR сменил знак → потенциальный разворот",
-        "🌍 Европа | 3/4 ТФ согласны"
-      ]
-    },
-    {
       "id": 3,
       "symbol": "BCHUSDT",
       "direction": "LONG",
@@ -561,26 +539,6 @@
       ]
     },
     {
-      "id": 9,
-      "symbol": "SOLUSDT",
-      "direction": "LONG",
-      "entry": 94.81,
-      "tp1": 97.008571,
-      "tp2": 99.207143,
-      "sl": 92.9138,
-      "strength": 58,
-      "taken_at": "2026-03-16 13:34:24",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий momentum",
-        "Цена > EMA20 > EMA50 ↑",
-        "Объём x2.4 🔥",
-        "МТФ: все 4 ТФ согласны ✅✅",
-        "Taker: смещается к покупкам (0.87)",
-        "🌍 Европа | 4/4 ТФ согласны"
-      ]
-    },
-    {
       "id": 10,
       "symbol": "LTCUSDT",
       "direction": "LONG",
@@ -640,26 +598,6 @@
         "Стакан: перевес bid (+0.21)",
         "МТФ: 15m, 1h, 4h согласны",
         "FR сменил знак → потенциальный разворот",
-        "🌍 Европа | 3/4 ТФ согласны"
-      ]
-    },
-    {
-      "id": 13,
-      "symbol": "PUMPUSDT",
-      "direction": "LONG",
-      "entry": 0.002098,
-      "tp1": 0.002169,
-      "tp2": 0.00224,
-      "sl": 0.002055,
-      "strength": 53,
-      "taken_at": "2026-03-16 13:42:13",
-      "status": "OPEN",
-      "reasons": [
-        "MACD выше сигнала",
-        "Цена > EMA20 > EMA50 ↑",
-        "Объём x1.6 (повышенный)",
-        "Стакан: давление покупки (+0.37)",
-        "МТФ: 15m, 1h, 4h согласны",
         "🌍 Европа | 3/4 ТФ согласны"
       ]
     },
@@ -771,6 +709,32 @@
   ],
   "trades_history": [
     {
+      "symbol": "PUMPUSDT",
+      "direction": "LONG",
+      "entry": 0.002098,
+      "tp1": 0.002169,
+      "sl": 0.002055,
+      "strength": 53,
+      "status": "SL",
+      "pnl_pct": -2.12,
+      "close_price": 0.0020534999999999998,
+      "taken_at": "2026-03-16 13:42:13",
+      "closed_at": "2026-03-16 14:30:29"
+    },
+    {
+      "symbol": "SOLUSDT",
+      "direction": "LONG",
+      "entry": 94.81,
+      "tp1": 97.008571,
+      "sl": 92.9138,
+      "strength": 58,
+      "status": "SL",
+      "pnl_pct": -2.13,
+      "close_price": 92.795,
+      "taken_at": "2026-03-16 13:34:24",
+      "closed_at": "2026-03-16 14:30:28"
+    },
+    {
       "symbol": "RIVERUSDT",
       "direction": "LONG",
       "entry": 25.188,
@@ -795,6 +759,19 @@
       "close_price": 0.22655,
       "taken_at": "2026-03-16 11:12:55",
       "closed_at": "2026-03-16 12:18:21"
+    },
+    {
+      "symbol": "DOTUSDT",
+      "direction": "LONG",
+      "entry": 1.615,
+      "tp1": 1.681286,
+      "sl": 1.575229,
+      "strength": 55,
+      "status": "SL",
+      "pnl_pct": -2.57,
+      "close_price": 1.5735000000000001,
+      "taken_at": "2026-03-16 11:10:44",
+      "closed_at": "2026-03-16 14:30:26"
     }
   ]
 }
