@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-03-16T14:02:40.196292+00:00",
+  "updated_at": "2026-03-16T14:04:26.068368+00:00",
   "stats": {
     "total": 36,
     "wins": 0,
     "losses": 0,
-    "active": 4,
+    "active": 2,
     "winrate": 0
   },
   "trade_stats": {
@@ -20,50 +20,6 @@
     "emoji": "😱"
   },
   "signals": [
-    {
-      "id": 71,
-      "symbol": "UNIUSDT",
-      "direction": "LONG",
-      "entry": 4.103,
-      "tp1": 4.229857,
-      "tp2": 4.356714,
-      "sl": 4.02094,
-      "strength": 53,
-      "reasons": [
-        "Цена > EMA20 > EMA50 ↑",
-        "Объём x1.6 (повышенный)",
-        "МТФ: все 4 ТФ согласны ✅✅",
-        "Taker: покупатели доминируют (1.40) ↑ 🟢",
-        "L/S: топ-трейдеры в лонге (1.64)",
-        "FR сменил знак → потенциальный разворот",
-        "🌍 Европа | 4/4 ТФ согласны"
-      ],
-      "news": null,
-      "created_at": "2026-03-16 13:52:57",
-      "status": "ACTIVE"
-    },
-    {
-      "id": 72,
-      "symbol": "ETHUSDT",
-      "direction": "LONG",
-      "entry": 2277.75,
-      "tp1": 2339.154286,
-      "tp2": 2400.558571,
-      "sl": 2232.195,
-      "strength": 55,
-      "reasons": [
-        "MACD выше сигнала",
-        "Цена > EMA20 > EMA50 ↑",
-        "Объём x1.5 (повышенный)",
-        "📰 CoinDesk 20 performance update: Ethereum (ETH) price jumps 8.8%, ...",
-        "МТФ: 1h, 4h согласны",
-        "OI растёт +4.7% + цена ↑",
-        "Taker: покупатели доминируют (1.33) ↑ 🟢"
-      ],
-      "news": "CoinDesk 20 performance update: Ethereum (ETH) price jumps 8.8%, leading index higher",
-      "created_at": "2026-03-16 13:54:12",
-      "status": "ACTIVE"
-    },
     {
       "id": 73,
       "symbol": "TRUMPUSDT",
@@ -111,6 +67,46 @@
     }
   ],
   "history": [
+    {
+      "symbol": "ETHUSDT",
+      "direction": "LONG",
+      "entry": 2277.75,
+      "tp1": 2339.154286,
+      "tp2": 2400.558571,
+      "sl": 2232.195,
+      "strength": 55,
+      "status": "EXPIRED",
+      "created_at": "2026-03-16 13:54:12",
+      "reasons": [
+        "MACD выше сигнала",
+        "Цена > EMA20 > EMA50 ↑",
+        "Объём x1.5 (повышенный)",
+        "📰 CoinDesk 20 performance update: Ethereum (ETH) price jumps 8.8%, ...",
+        "МТФ: 1h, 4h согласны",
+        "OI растёт +4.7% + цена ↑",
+        "Taker: покупатели доминируют (1.33) ↑ 🟢"
+      ]
+    },
+    {
+      "symbol": "UNIUSDT",
+      "direction": "LONG",
+      "entry": 4.103,
+      "tp1": 4.229857,
+      "tp2": 4.356714,
+      "sl": 4.02094,
+      "strength": 53,
+      "status": "EXPIRED",
+      "created_at": "2026-03-16 13:52:57",
+      "reasons": [
+        "Цена > EMA20 > EMA50 ↑",
+        "Объём x1.6 (повышенный)",
+        "МТФ: все 4 ТФ согласны ✅✅",
+        "Taker: покупатели доминируют (1.40) ↑ 🟢",
+        "L/S: топ-трейдеры в лонге (1.64)",
+        "FR сменил знак → потенциальный разворот",
+        "🌍 Европа | 4/4 ТФ согласны"
+      ]
+    },
     {
       "symbol": "AAVEUSDT",
       "direction": "LONG",
@@ -456,42 +452,6 @@
         "МТФ: все 4 ТФ согласны ✅✅",
         "Taker: смещается к покупкам (1.14)",
         "🌍 Европа | 4/4 ТФ согласны"
-      ]
-    },
-    {
-      "symbol": "LINKUSDT",
-      "direction": "LONG",
-      "entry": 9.738,
-      "tp1": 10.003429,
-      "tp2": 10.268857,
-      "sl": 9.54324,
-      "strength": 46,
-      "status": "EXPIRED",
-      "created_at": "2026-03-16 12:27:31",
-      "reasons": [
-        "MACD выше сигнала",
-        "Цена > EMA20 > EMA50 ↑",
-        "Объём x1.7 (повышенный)",
-        "МТФ: все 4 ТФ согласны ✅✅",
-        "🌍 Европа | 4/4 ТФ согласны"
-      ]
-    },
-    {
-      "symbol": "BNBUSDT",
-      "direction": "LONG",
-      "entry": 678.34,
-      "tp1": 691.9068,
-      "tp2": 705.4736,
-      "sl": 664.7732,
-      "strength": 46,
-      "status": "EXPIRED",
-      "created_at": "2026-03-16 12:12:37",
-      "reasons": [
-        "Цена > EMA20 > EMA50 ↑",
-        "Объём x2.0 (повышенный)",
-        "Стакан: давление покупки (+0.36)",
-        "МТФ: 5m, 1h, 4h согласны",
-        "🌍 Европа | 3/4 ТФ согласны"
       ]
     }
   ],
