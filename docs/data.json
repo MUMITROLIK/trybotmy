@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-03-16T16:42:59.234530+00:00",
+  "updated_at": "2026-03-16T16:43:38.159122+00:00",
   "stats": {
     "total": 45,
     "wins": 0,
-    "losses": 0,
-    "active": 1,
-    "winrate": 0
+    "losses": 1,
+    "active": 0,
+    "winrate": 0.0
   },
   "trade_stats": {
     "open": 15,
@@ -19,9 +19,9 @@
     "label": "Extreme Fear",
     "emoji": "😱"
   },
-  "signals": [
+  "signals": [],
+  "history": [
     {
-      "id": 83,
       "symbol": "SIRENUSDT",
       "direction": "LONG",
       "entry": 0.5522,
@@ -29,6 +29,8 @@
       "tp2": 0.63503,
       "sl": 0.530112,
       "strength": 52,
+      "status": "SL",
+      "created_at": "2026-03-16 16:36:58",
       "reasons": [
         "RSI=22 (экстремальная перепроданность)",
         "BB нижняя зона (-16%)",
@@ -38,13 +40,8 @@
         "МТФ: 1h, 4h согласны",
         "OI падает (шорты закрываются)",
         "Taker: смещается к покупкам (1.04)"
-      ],
-      "news": null,
-      "created_at": "2026-03-16 16:36:58",
-      "status": "ACTIVE"
-    }
-  ],
-  "history": [
+      ]
+    },
     {
       "symbol": "FILUSDT",
       "direction": "LONG",
@@ -411,27 +408,6 @@
         "FR сменил знак → потенциальный разворот",
         "🌍 Европа | 4/4 ТФ согласны"
       ]
-    },
-    {
-      "symbol": "DOGEUSDT",
-      "direction": "LONG",
-      "entry": 0.10125,
-      "tp1": 0.104301,
-      "tp2": 0.107353,
-      "sl": 0.099225,
-      "strength": 63,
-      "status": "EXPIRED",
-      "created_at": "2026-03-16 13:39:45",
-      "reasons": [
-        "MACD бычий momentum",
-        "Цена > EMA20 > EMA50 ↑",
-        "Объём x1.8 (повышенный)",
-        "Стакан: перевес bid (+0.16)",
-        "МТФ: все 4 ТФ согласны ✅✅",
-        "Taker: покупатели доминируют (1.26) ↑ 🟢",
-        "FR сменил знак → потенциальный разворот",
-        "🌍 Европа | 4/4 ТФ согласны"
-      ]
     }
   ],
   "trades_open": [
@@ -732,7 +708,7 @@
       "id": 20,
       "symbol": "FILUSDT",
       "direction": "LONG",
-      "entry": 0.945,
+      "entry": 0.95,
       "tp1": 0.981571,
       "tp2": 1.018143,
       "sl": 0.923057,
