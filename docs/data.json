@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-16T19:08:10.863721+00:00",
+  "updated_at": "2026-03-16T19:10:07.076310+00:00",
   "stats": {
     "total": 48,
     "wins": 0,
@@ -8,11 +8,11 @@
     "winrate": 0.0
   },
   "trade_stats": {
-    "open": 9,
-    "wins": 7,
+    "open": 8,
+    "wins": 8,
     "losses": 6,
-    "total_pnl": 1.78,
-    "winrate": 53.8
+    "total_pnl": 5.62,
+    "winrate": 57.1
   },
   "fear_greed": {
     "value": 23,
@@ -577,30 +577,23 @@
         "FR сменил знак → потенциальный разворот",
         "🌍 Европа | 4/4 ТФ согласны"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 20,
       "symbol": "FILUSDT",
       "direction": "LONG",
       "entry": 0.95,
       "tp1": 0.981571,
       "tp2": 1.018143,
-      "sl": 0.9855345,
+      "sl": 0.9875285,
       "strength": 51,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 3.84,
+      "close_price": 0.9864999999999999,
       "taken_at": "2026-03-16 16:32:22",
-      "status": "TP1_HIT",
-      "reasons": [
-        "Цена > EMA20 > EMA50 ↑",
-        "Объём x1.5 (повышенный)",
-        "Стакан: перевес bid (+0.12)",
-        "МТФ: 5m, 15m, 4h согласны",
-        "Taker: смещается к покупкам (0.79)",
-        "L/S: топ-трейдеры в лонге (1.24)",
-        "🌎 Америка | 3/4 ТФ согласны"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-16 19:09:15"
+    },
     {
       "symbol": "TAOUSDT",
       "direction": "LONG",
