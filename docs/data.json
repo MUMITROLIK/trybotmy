@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-16T16:43:38.159122+00:00",
+  "updated_at": "2026-03-16T16:44:44.579406+00:00",
   "stats": {
     "total": 45,
     "wins": 0,
@@ -8,11 +8,11 @@
     "winrate": 0.0
   },
   "trade_stats": {
-    "open": 15,
+    "open": 14,
     "wins": 1,
     "losses": 4,
     "total_pnl": -6.19,
-    "winrate": 20.0
+    "winrate": 16.7
   },
   "fear_greed": {
     "value": 23,
@@ -641,28 +641,6 @@
       ]
     },
     {
-      "id": 17,
-      "symbol": "TRUMPUSDT",
-      "direction": "LONG",
-      "entry": 3.8,
-      "tp1": 4.008571,
-      "tp2": 4.217143,
-      "sl": 3.674857,
-      "strength": 60,
-      "taken_at": "2026-03-16 13:56:26",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=29 (перепроданность)",
-        "BB нижняя зона (-7%)",
-        "EMA20 > EMA50",
-        "Объём x3.0 🔥🔥",
-        "Стакан: перевес bid (+0.13)",
-        "МТФ: 1h, 4h согласны",
-        "Taker: покупатели доминируют (1.63) ↑ 🟢",
-        "L/S: топ-трейдеры в лонге (1.47)"
-      ]
-    },
-    {
       "id": 18,
       "symbol": "XRPUSDT",
       "direction": "LONG",
@@ -727,6 +705,19 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "TRUMPUSDT",
+      "direction": "LONG",
+      "entry": 3.8,
+      "tp1": 4.008571,
+      "sl": 3.674857,
+      "strength": 60,
+      "status": "MANUAL",
+      "pnl_pct": 0.0,
+      "close_price": 0.0,
+      "taken_at": "2026-03-16 13:56:26",
+      "closed_at": "2026-03-16 16:44:44"
+    },
     {
       "symbol": "PUMPUSDT",
       "direction": "LONG",
