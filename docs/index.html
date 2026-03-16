@@ -437,6 +437,35 @@ tr:hover td { background: rgba(255,255,255,.015); }
 .bdg.long  { color: var(--green); }
 .bdg.short { color: var(--red); }
 
+
+/* ── Tabs ────────────────────────────────────────────────────── */
+.tab-btn {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px; font-weight: 700; letter-spacing: 3px;
+  text-transform: uppercase;
+  background: transparent; border: none; border-bottom: 2px solid transparent;
+  color: var(--muted); padding: 10px 16px; cursor: pointer;
+  transition: all .2s; margin-bottom: -1px;
+}
+.tab-btn:hover { color: var(--text); }
+.tab-btn.active { color: var(--cyan); border-bottom-color: var(--cyan); }
+
+/* ── Trade card ──────────────────────────────────────────────── */
+.trade-card {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: 12px; overflow: hidden; position: relative;
+}
+.trade-card.long  { border-left: 2px solid var(--green); }
+.trade-card.short { border-left: 2px solid var(--red); }
+.trade-pnl-bar {
+  height: 3px; background: var(--dim); overflow: hidden;
+}
+.trade-pnl-fill {
+  height: 100%; transition: width .5s ease, background .5s;
+}
+.pnl-positive { color: var(--green); }
+.pnl-negative { color: var(--red); }
+
 .empty-state {
   padding: 60px; text-align: center;
   font-family: 'JetBrains Mono', monospace;
@@ -525,6 +554,15 @@ tr:hover td { background: rgba(255,255,255,.015); }
   </header>
 
   <main>
+    <!-- Tabs -->
+    <div style="display:flex;gap:4px;margin-bottom:20px;border-bottom:1px solid var(--border);padding-bottom:0">
+      <button class="tab-btn active" id="tab-signals" onclick="switchTab('signals')">СИГНАЛЫ</button>
+      <button class="tab-btn" id="tab-positions" onclick="switchTab('positions')">ПОЗИЦИИ</button>
+      <button class="tab-btn" id="tab-history" onclick="switchTab('history')">ИСТОРИЯ P&L</button>
+    </div>
+
+    <!-- ── ВКЛАДКА СИГНАЛЫ ── -->
+    <div id="page-signals">
     <!-- Stats -->
     <div class="top-row">
       <div class="stat-card">
@@ -582,6 +620,41 @@ tr:hover td { background: rgba(255,255,255,.015); }
       <div class="empty-state">Сканирование рынка...</div>
     </div>
 
+    </div><!-- /page-signals -->
+
+    <!-- ── ВКЛАДКА ПОЗИЦИИ ── -->
+    <div id="page-positions" style="display:none">
+      <div class="sec"><div class="sec-dot" style="background:var(--cyan)"></div>Открытые позиции · P&L в реальном времени</div>
+
+      <!-- Trade stats row -->
+      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:20px" id="tradeStatsRow">
+        <div class="stat-card"><div class="stat-label">Открытых</div><div class="stat-value c-cyan" id="ts-open">—</div></div>
+        <div class="stat-card"><div class="stat-label">Профит</div><div class="stat-value c-green" id="ts-wins">—</div></div>
+        <div class="stat-card"><div class="stat-label">Стоп</div><div class="stat-value c-red" id="ts-losses">—</div></div>
+        <div class="stat-card"><div class="stat-label">Суммарный P&L</div><div class="stat-value" id="ts-pnl">—</div></div>
+      </div>
+
+      <div class="signals-grid" id="tradesGrid">
+        <div class="empty-state">Нет открытых позиций<br><span style="font-size:10px;opacity:.5">Нажми «Взять» в сигнале чтобы добавить позицию</span></div>
+      </div>
+    </div><!-- /page-positions -->
+
+    <!-- ── ВКЛАДКА ИСТОРИЯ P&L ── -->
+    <div id="page-history" style="display:none">
+      <div class="sec"><div class="sec-dot" style="background:var(--muted)"></div>История взятых сделок</div>
+      <div class="hist-wrap">
+        <table>
+          <thead><tr>
+            <th>Монета</th><th>Тип</th><th>Вход</th><th>Закрыто</th>
+            <th>P&L</th><th>Результат</th><th>Время</th>
+          </tr></thead>
+          <tbody id="tradeHistBody"><tr><td colspan="7" class="empty-state">Нет закрытых сделок</td></tr></tbody>
+        </table>
+      </div>
+    </div><!-- /page-history -->
+
+    <!-- Signals history (hidden tab) -->
+    <div id="page-sig-history" style="display:none">
     <!-- History -->
     <div class="sec"><div class="sec-dot" style="background:var(--muted)"></div>История</div>
     <div class="hist-wrap">
@@ -889,6 +962,136 @@ function openHistChart(i) {
   if (r) openChart(r.symbol, r);
 }
 
+
+// ── Tabs ──────────────────────────────────────────────────────────────────────
+function switchTab(tab) {
+  ['signals','positions','history'].forEach(t => {
+    $('page-'+t).style.display = t === tab ? 'block' : 'none';
+    const btn = $('tab-'+t);
+    if (btn) btn.classList.toggle('active', t === tab);
+  });
+}
+
+// ── Trades render ─────────────────────────────────────────────────────────────
+function renderTrades(trades, stats) {
+  // Stats row
+  if (stats) {
+    $('ts-open').textContent    = stats.open ?? '—';
+    $('ts-wins').textContent    = stats.wins ?? '—';
+    $('ts-losses').textContent  = stats.losses ?? '—';
+    const pnl = stats.total_pnl ?? 0;
+    const pnlEl = $('ts-pnl');
+    pnlEl.textContent  = (pnl >= 0 ? '+' : '') + pnl.toFixed(2) + '%';
+    pnlEl.className    = 'stat-value ' + (pnl >= 0 ? 'c-green' : 'c-red');
+  }
+
+  const el = $('tradesGrid');
+  if (!trades || !trades.length) {
+    el.innerHTML = '<div class="empty-state">Нет открытых позиций<br><span style="font-size:10px;opacity:.5">Нажми «Взять сделку» в сигнале</span></div>';
+    return;
+  }
+
+  el.innerHTML = trades.map((t,i) => {
+    const lg   = t.direction === 'LONG';
+    const tags = (t.reasons||[]).slice(0,3).map(r=>`<span class="tag">${r}</span>`).join('');
+    return `
+    <div class="trade-card ${lg?'long':'short'}" id="tc_${t.id}">
+      <div class="sig-top">
+        <span class="sig-symbol">${t.symbol}</span>
+        <span class="sig-badge ${lg?'long':'short'}">${t.direction} ${lg?'↑':'↓'}</span>
+      </div>
+      <div class="sig-prices">
+        <div class="price-cell"><div class="p-lbl">ВХОД</div><div class="p-val">${mono(t.entry)}</div></div>
+        <div class="price-cell"><div class="p-lbl">ТЕКУЩАЯ</div><div class="p-val" id="tprice_${t.id}">...</div></div>
+        <div class="price-cell"><div class="p-lbl">P&L</div><div class="p-val" id="tpnl_${t.id}">...</div></div>
+        <div class="price-cell"><div class="p-lbl">SL</div><div class="p-val sl">${mono(t.sl)}</div></div>
+      </div>
+      <div class="trade-pnl-bar"><div class="trade-pnl-fill" id="tbar_${t.id}" style="width:50%;background:var(--muted)"></div></div>
+      <div class="sig-body">
+        <div class="tags">${tags}</div>
+        <div style="font-family:'JetBrains Mono',monospace;font-size:9px;color:var(--muted);margin-top:6px">
+          Взята: ${ago(t.taken_at)} назад
+        </div>
+      </div>
+    </div>`;
+  }).join('');
+
+  // Start real-time P&L updates via WebSocket
+  startTradeWs(trades);
+}
+
+// ── Real-time P&L for open trades ─────────────────────────────────────────────
+const tradeWsMap = new Map(); // symbol -> ws
+
+function startTradeWs(trades) {
+  // Close old WS
+  tradeWsMap.forEach(ws => ws.close());
+  tradeWsMap.clear();
+
+  trades.forEach(t => {
+    if (tradeWsMap.has(t.symbol)) return;
+    const ws = new WebSocket(`wss://fstream.binance.com/ws/${t.symbol.toLowerCase()}@bookTicker`);
+    ws.onmessage = e => {
+      const d = JSON.parse(e.data);
+      const mid = (parseFloat(d.b)+parseFloat(d.a))/2;
+      updateTradePnl(t, mid);
+    };
+    ws.onclose = () => tradeWsMap.delete(t.symbol);
+    tradeWsMap.set(t.symbol, ws);
+  });
+}
+
+function updateTradePnl(trade, currentPrice) {
+  const entry = trade.entry_price || trade.entry;
+  const tp1   = trade.tp1;
+  const sl    = trade.sl;
+  if (!entry || !currentPrice) return;
+
+  const pnl = trade.direction === 'LONG'
+    ? (currentPrice - entry) / entry * 100
+    : (entry - currentPrice) / entry * 100;
+
+  const pEl = $('tprice_' + trade.id);
+  const nEl = $('tpnl_'   + trade.id);
+  const bEl = $('tbar_'   + trade.id);
+
+  if (pEl) pEl.textContent = mono(currentPrice);
+  if (nEl) {
+    nEl.textContent = (pnl >= 0 ? '+' : '') + pnl.toFixed(2) + '%';
+    nEl.className   = 'p-val ' + (pnl >= 0 ? 'pnl-positive' : 'pnl-negative');
+  }
+  if (bEl) {
+    // Bar: 50% = neutral, 0-50 = loss side, 50-100 = profit side
+    const range = Math.abs(tp1 - entry) || entry * 0.02;
+    const pct   = Math.max(0, Math.min(100, 50 + (pnl / (range / entry * 100)) * 50));
+    bEl.style.width      = pct + '%';
+    bEl.style.background = pnl >= 0 ? 'var(--green)' : 'var(--red)';
+  }
+}
+
+// ── Trade history ─────────────────────────────────────────────────────────────
+function renderTradeHistory(hist) {
+  const tb = $('tradeHistBody');
+  if (!hist || !hist.length) return;
+  tb.innerHTML = hist.map(r => {
+    const lg  = r.direction === 'LONG';
+    const pnl = r.pnl_pct || 0;
+    const st  = r.status?.toUpperCase();
+    const badge = (st==='TP1'||st==='TP2') ? `<span class="bdg tp">${st}</span>`
+                : st==='SL' ? `<span class="bdg sl">SL</span>`
+                : `<span class="bdg exp">—</span>`;
+    return `<tr>
+      <td style="font-weight:700;color:var(--cyan)">${r.symbol}</td>
+      <td><span class="bdg ${lg?'long':'short'}">${r.direction}</span></td>
+      <td>${mono(r.entry)}</td>
+      <td>${mono(r.close_price)}</td>
+      <td class="${pnl>=0?'pnl-positive':'pnl-negative'}" style="font-weight:700">${(pnl>=0?'+':'')+pnl.toFixed(2)}%</td>
+      <td>${badge}</td>
+      <td style="color:var(--muted)">${r.closed_at ? ago(r.closed_at)+'назад' : '—'}</td>
+    </tr>`;
+  }).join('');
+}
+
 // ── Data fetch ────────────────────────────────────────────────────────────────
 async function loadData() {
   try {
@@ -903,6 +1106,8 @@ async function loadData() {
     renderFG(d.fear_greed);
     renderSignals(d.signals||[]);
     renderHistory(d.history||[]);
+    renderTrades(d.trades_open||[], d.trade_stats);
+    renderTradeHistory(d.trades_history||[]);
     const dt = new Date(d.updated_at);
     $('last-update').textContent = dt.toLocaleTimeString('ru-RU');
   } catch(e) {
