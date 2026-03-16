@@ -728,6 +728,7 @@ const $ = id => document.getElementById(id);
 const mono = n => {
   if (!n && n !== 0) return '—';
   const v = parseFloat(n);
+  if (v === 0) return '—';
   if (v >= 10000) return v.toLocaleString('ru',{minimumFractionDigits:2,maximumFractionDigits:2});
   if (v >= 1)     return v.toFixed(4);
   if (v >= 0.0001)return v.toFixed(6);
