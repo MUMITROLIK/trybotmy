@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-03-16T12:43:36.064249+00:00",
+  "updated_at": "2026-03-16T12:45:25.249067+00:00",
   "stats": {
-    "total": 16,
+    "total": 18,
     "wins": 0,
     "losses": 0,
-    "active": 1,
+    "active": 3,
     "winrate": 0
   },
   "trade_stats": {
@@ -40,6 +40,49 @@
       ],
       "news": "Michael Saylor's Strategy made another huge buy of bitcoin, adding $1.57 billion worth last week",
       "created_at": "2026-03-16 12:37:39",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 55,
+      "symbol": "ETHUSDT",
+      "direction": "LONG",
+      "entry": 2282.89,
+      "tp1": 2344.315714,
+      "tp2": 2405.741429,
+      "sl": 2237.2322,
+      "strength": 60,
+      "reasons": [
+        "MACD выше сигнала",
+        "Цена > EMA20 > EMA50 ↑",
+        "Объём x1.7 (повышенный)",
+        "МТФ: все 4 ТФ согласны ✅✅",
+        "OI растёт +1.9% + цена ↑",
+        "Taker: покупатели доминируют (1.53) ↑ 🟢",
+        "🌍 Европа | 4/4 ТФ согласны"
+      ],
+      "news": null,
+      "created_at": "2026-03-16 12:44:41",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 56,
+      "symbol": "SOLUSDT",
+      "direction": "LONG",
+      "entry": 93.82,
+      "tp1": 96.064286,
+      "tp2": 98.308571,
+      "sl": 91.9436,
+      "strength": 51,
+      "reasons": [
+        "MACD выше сигнала",
+        "Цена > EMA20 > EMA50 ↑",
+        "Объём x1.5 (повышенный)",
+        "МТФ: 15m, 1h, 4h согласны",
+        "Taker: покупатели доминируют (1.21) ↑ 🟢",
+        "🌍 Европа | 3/4 ТФ согласны"
+      ],
+      "news": null,
+      "created_at": "2026-03-16 12:44:44",
       "status": "ACTIVE"
     }
   ],
