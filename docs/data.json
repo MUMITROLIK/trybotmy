@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-16T17:49:37.460325+00:00",
+  "updated_at": "2026-03-16T17:50:51.345873+00:00",
   "stats": {
     "total": 48,
     "wins": 0,
@@ -8,11 +8,11 @@
     "winrate": 0.0
   },
   "trade_stats": {
-    "open": 13,
-    "wins": 4,
+    "open": 12,
+    "wins": 5,
     "losses": 5,
-    "total_pnl": -5.0,
-    "winrate": 44.4
+    "total_pnl": -1.58,
+    "winrate": 50.0
   },
   "fear_greed": {
     "value": 23,
@@ -643,27 +643,6 @@
       ]
     },
     {
-      "id": 19,
-      "symbol": "FETUSDT",
-      "direction": "LONG",
-      "entry": 0.2395,
-      "tp1": 0.2544,
-      "tp2": 0.2693,
-      "sl": 0.2395,
-      "strength": 62,
-      "taken_at": "2026-03-16 16:29:38",
-      "status": "TP1_HIT",
-      "reasons": [
-        "MACD бычий momentum",
-        "Цена > EMA20 > EMA50 ↑",
-        "Объём x1.5 (повышенный)",
-        "МТФ: все 4 ТФ согласны ✅✅",
-        "OI растёт +2.4% + цена ↑",
-        "Taker: покупатели доминируют (1.19) ↑ 🟢",
-        "🌎 Америка | 4/4 ТФ согласны"
-      ]
-    },
-    {
       "id": 20,
       "symbol": "FILUSDT",
       "direction": "LONG",
@@ -686,6 +665,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "FETUSDT",
+      "direction": "LONG",
+      "entry": 0.2395,
+      "tp1": 0.2544,
+      "tp2": 0.2693,
+      "sl": 0.2395,
+      "strength": 62,
+      "status": "MANUAL",
+      "pnl_pct": 3.42,
+      "close_price": 0.2477,
+      "taken_at": "2026-03-16 16:29:38",
+      "closed_at": "2026-03-16 17:50:50"
+    },
     {
       "symbol": "SIRENUSDT",
       "direction": "LONG",
