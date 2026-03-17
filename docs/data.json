@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T13:21:45.031048+00:00",
+  "updated_at": "2026-03-17T13:23:05.593426+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T13:21:03Z",
+    "last_ok": "2026-03-17T13:21:51Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,10 +10,10 @@
   },
   "stats": {
     "total": 258,
-    "wins": 24,
+    "wins": 25,
     "losses": 1,
-    "active": 12,
-    "winrate": 96.0
+    "active": 11,
+    "winrate": 96.2
   },
   "trade_stats": {
     "open": 79,
@@ -251,9 +251,10 @@
       "news": null,
       "created_at": "2026-03-17 13:12:49",
       "status": "ACTIVE"
-    },
+    }
+  ],
+  "history": [
     {
-      "id": 296,
       "symbol": "THEUSDT",
       "direction": "SHORT",
       "entry": 0.17644598,
@@ -261,6 +262,8 @@
       "tp2": 0.169388,
       "sl": 0.179975,
       "strength": 38,
+      "status": "TP1",
+      "created_at": "2026-03-17 13:21:42",
       "reasons": [
         "MACD медвежий (hist=-0.00035)",
         "Цена < EMA20 < EMA50",
@@ -268,13 +271,8 @@
         "МТФ: 5m, 15m, 4h согласны",
         "OI растёт +2.0% + цена ↓",
         "📌 Лимитный вход @ 0.176446 (откат к EMA20)"
-      ],
-      "news": null,
-      "created_at": "2026-03-17 13:21:42",
-      "status": "ACTIVE"
-    }
-  ],
-  "history": [
+      ]
+    },
     {
       "symbol": "BEATUSDT",
       "direction": "LONG",
@@ -628,23 +626,6 @@
         "BB нижняя зона (4%)",
         "Стакан: давление покупки (+0.24)",
         "CVD положительный (+0.3%)"
-      ]
-    },
-    {
-      "symbol": "ICPUSDT",
-      "direction": "LONG",
-      "entry": 2.715,
-      "tp1": 2.7693,
-      "tp2": 2.8236,
-      "sl": 2.6607,
-      "strength": 25,
-      "status": "EXPIRED",
-      "created_at": "2026-03-17 12:12:17",
-      "reasons": [
-        "MACD бычий (hist=0.00211)",
-        "Цена выше EMA20",
-        "МТФ: 5m, 1h, 4h согласны",
-        "CVD положительный (+1.9%)"
       ]
     }
   ],
@@ -2184,7 +2165,7 @@
       "entry": 0.7638,
       "tp1": 0.779076,
       "tp2": 0.794352,
-      "sl": 0.78269485,
+      "sl": 0.78807865,
       "strength": 36,
       "taken_at": "2026-03-17 13:18:01",
       "status": "TP1_HIT",
