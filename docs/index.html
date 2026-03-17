@@ -425,6 +425,9 @@ tr:hover td { background: rgba(255,255,255,.015); }
 .bdg {
   font-size: 9px; font-weight: 700; padding: 3px 8px;
   border-radius: 4px; letter-spacing: 1px; font-family: 'JetBrains Mono', monospace;
+  display: inline-block;
+  min-width: 44px;
+  text-align: center;
 }
 .bdg.tp  { background: rgba(0,255,157,.12); color: var(--green); }
 .bdg.sl  { background: rgba(255,45,107,.12); color: var(--red); }
@@ -739,7 +742,100 @@ function handleDataUpdate(data) {
   renderTrades(openTrades, data.trade_stats);
   renderTradeHistory(data.trades_history || []);
   
+  // realtime price/progress bars for open positions
+  startTradeWs(openTrades);
+
   setLiveStatus(true);
+}
+
+// ── Real-time prices for open trades (Binance WS) ─────────────────────────────
+const tradeWsMap = new Map();       // symbol -> ws
+const tradeBySymbol = new Map();    // symbol -> trades[]
+
+function startTradeWs(trades) {
+  tradeBySymbol.clear();
+  (trades || []).forEach(t => {
+    const sym = String(t.symbol || '').toUpperCase();
+    if (!sym) return;
+    if (!tradeBySymbol.has(sym)) tradeBySymbol.set(sym, []);
+    tradeBySymbol.get(sym).push(t);
+  });
+
+  // close old websockets
+  [...tradeWsMap.keys()].forEach(sym => {
+    if (!tradeBySymbol.has(sym)) {
+      try { tradeWsMap.get(sym).close(); } catch(e) {}
+      tradeWsMap.delete(sym);
+    }
+  });
+
+  // open missing websockets
+  [...tradeBySymbol.keys()].forEach(sym => {
+    if (tradeWsMap.has(sym)) return;
+    const ws = new WebSocket(`wss://fstream.binance.com/ws/${sym.toLowerCase()}@bookTicker`);
+    ws.onmessage = e => {
+      try {
+        const d = JSON.parse(e.data);
+        const bid = parseFloat(d.b || 0);
+        const ask = parseFloat(d.a || 0);
+        const mid = (bid + ask) / 2;
+        if (!mid) return;
+        (tradeBySymbol.get(sym) || []).forEach(t => updateTradeUI(t, mid));
+      } catch (err) {}
+    };
+    ws.onclose = () => tradeWsMap.delete(sym);
+    tradeWsMap.set(sym, ws);
+  });
+}
+
+function updateTradeUI(trade, price) {
+  if (!trade || !price) return;
+  const id = trade.id;
+  const entry = trade.entry_price || trade.entry;
+  const tp1 = trade.tp1;
+  const tp2 = trade.tp2;
+  const sl  = trade.sl;
+  if (!id || !entry || !tp1 || !sl) return;
+
+  const isLong = trade.direction === 'LONG';
+  const pnl = isLong ? (price - entry) / entry * 100 : (entry - price) / entry * 100;
+
+  const priceEl = document.getElementById('tprice_' + id);
+  const pnlEl   = document.getElementById('tpnl_' + id);
+  const barEl   = document.getElementById('tbar_' + id);
+
+  if (priceEl) priceEl.textContent = mono(price);
+  if (pnlEl) {
+    pnlEl.textContent = (pnl >= 0 ? '+' : '') + pnl.toFixed(2) + '%';
+    pnlEl.className = 'p-val ' + (pnl >= 0 ? 'pnl-positive' : 'pnl-negative');
+  }
+  if (!barEl) return;
+
+  // progress bar: 50% = entry, 0% = SL, 100% = TP (TP2 if TP1 already hit)
+  const tpRef = (trade.status === 'TP1_HIT' && tp2) ? tp2 : tp1;
+  const leftRange  = Math.abs(entry - sl) || (entry * 0.02);
+  const rightRange = Math.abs(tpRef - entry) || (entry * 0.02);
+
+  let pct = 50;
+  if (isLong) {
+    if (price < entry) pct = 50 - Math.min(1, Math.abs(entry - price) / leftRange) * 50;
+    else pct = 50 + Math.min(1, Math.abs(price - entry) / rightRange) * 50;
+  } else {
+    if (price > entry) pct = 50 - Math.min(1, Math.abs(price - entry) / leftRange) * 50;
+    else pct = 50 + Math.min(1, Math.abs(entry - price) / rightRange) * 50;
+  }
+
+  let color = 'var(--muted)';
+  if (pct > 52) color = 'var(--green)';
+  if (pct < 48) color = 'var(--red)';
+
+  barEl.style.width = Math.max(0, Math.min(100, pct)) + '%';
+  barEl.style.background = color;
+  barEl.style.boxShadow = color === 'var(--green)'
+    ? '0 0 6px rgba(0,255,157,.4)'
+    : color === 'var(--red)'
+      ? '0 0 6px rgba(255,45,107,.4)'
+      : 'none';
 }
 
 // ── Utils ──────────────────────────────────────────────────────────
@@ -1081,11 +1177,12 @@ function renderTrades(trades, stats) {
         <span class="sig-badge ${lg?'long':'short'}">${t.direction} ${lg?'↑':'↓'}</span>
       </div>
       <div class="sig-prices">
-        <div class="price-cell"><div class="p-lbl">ВХОД</div><div class="p-val">${mono(t.entry)}</div></div>
-        <div class="price-cell"><div class="p-lbl">ТЕКУЩАЯ</div><div class="p-val">—</div></div>
-        <div class="price-cell"><div class="p-lbl">P&L</div><div class="p-val">—</div></div>
+        <div class="price-cell"><div class="p-lbl">ВХОД</div><div class="p-val" id="tentry_${t.id}">${mono(t.entry)}</div></div>
+        <div class="price-cell"><div class="p-lbl">ТЕКУЩАЯ</div><div class="p-val" id="tprice_${t.id}">—</div></div>
+        <div class="price-cell"><div class="p-lbl">P&L</div><div class="p-val" id="tpnl_${t.id}">—</div></div>
         <div class="price-cell"><div class="p-lbl">SL</div><div class="p-val sl">${mono(t.sl)}</div></div>
       </div>
+      <div class="trade-pnl-bar"><div class="trade-pnl-fill" id="tbar_${t.id}" style="width:50%;background:var(--muted)"></div></div>
       <div class="sig-body">
         ${levels}
         <div class="tags">${tags}</div>
@@ -1110,16 +1207,15 @@ function renderTradeHistory(hist) {
   tb.innerHTML = sorted.map(r => {
     const lg  = r.direction === 'LONG';
     const pnl = r.pnl_pct || 0;
-    const st  = r.status?.toUpperCase();
+    const st  = String(r.status || r.target || '').toUpperCase();
 
     let badge;
-    if (st === 'TP1' || st === 'TP2') {
-      badge = `<span class="bdg tp">${st}</span>`;
-    } else if (st === 'SL') {
-      badge = `<span class="bdg sl">SL</span>`;
-    } else {
-      badge = `<span class="bdg exp">—</span>`;
-    }
+    if (st === 'TP1' || st === 'TP2') badge = `<span class="bdg tp">${st}</span>`;
+    else if (st === 'SL') badge = `<span class="bdg sl">SL</span>`;
+    else if (st === 'SL_AFTER_TP1') badge = `<span class="bdg tp">TP1+</span>`;
+    else if (st === 'TIMEOUT') badge = pnl >= 0 ? `<span class="bdg tp">⏰+</span>` : `<span class="bdg sl">⏰</span>`;
+    else if (st === 'MANUAL') badge = pnl >= 0 ? `<span class="bdg tp">✋+</span>` : `<span class="bdg sl">✋</span>`;
+    else badge = `<span class="bdg exp">${st || '—'}</span>`;
 
     return `<tr>
       <td style="font-weight:700;color:var(--cyan)">${r.symbol}</td>
