@@ -1,19 +1,19 @@
 {
-  "updated_at": "2026-03-17T09:43:51.552541+00:00",
+  "updated_at": "2026-03-17T09:44:25.002913+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T09:41:30Z",
-    "last_error": "fatal: unable to access 'https://github.com/MUMITROLIK/trybotmy.git/': Failed to connect to github.com port 443 after 21081 ms: Could not connect to server\n",
+    "last_ok": "2026-03-17T09:43:55Z",
+    "last_error": null,
     "min_push_interval_sec": 30
   },
   "stats": {
-    "total": 171,
+    "total": 172,
     "wins": 13,
     "losses": 1,
-    "active": 4,
+    "active": 5,
     "winrate": 92.9
   },
   "trade_stats": {
-    "open": 33,
+    "open": 34,
     "wins": 23,
     "losses": 7,
     "total_pnl": 57.55,
@@ -108,6 +108,26 @@
       ],
       "news": null,
       "created_at": "2026-03-17 09:40:19",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 210,
+      "symbol": "REZUSDT",
+      "direction": "SHORT",
+      "entry": 0.00365772,
+      "tp1": 0.003585,
+      "tp2": 0.003511,
+      "sl": 0.003731,
+      "strength": 32,
+      "reasons": [
+        "MACD медвежий (hist=-0.00000)",
+        "Цена < EMA20 < EMA50",
+        "Стакан: давление продажи (-0.12)",
+        "МТФ: 5m, 15m, 4h согласны",
+        "📌 Лимитный вход @ 0.00365772 (откат к EMA20)"
+      ],
+      "news": null,
+      "created_at": "2026-03-17 09:44:16",
       "status": "ACTIVE"
     }
   ],
@@ -947,25 +967,6 @@
       ]
     },
     {
-      "id": 54,
-      "symbol": "KITEUSDT",
-      "direction": "SHORT",
-      "entry": 0.20221,
-      "tp1": 0.1981658,
-      "tp2": 0.1941216,
-      "sl": 0.2062542,
-      "strength": 31,
-      "taken_at": "2026-03-17 09:15:14",
-      "status": "OPEN",
-      "reasons": [
-        "MACD медвежий (hist=-0.00029)",
-        "Цена < EMA20 < EMA50",
-        "Стакан: сильное давление продажи (-0.38)",
-        "МТФ: 5m, 15m согласны",
-        "📌 Лимитный вход @ 0.20439 (откат к EMA20)"
-      ]
-    },
-    {
       "id": 55,
       "symbol": "XAUUSDT",
       "direction": "SHORT",
@@ -1141,6 +1142,44 @@
         "BB верхняя полоса (пробой)",
         "Объём x2.6 🔥🔥",
         "OI падает (лонги закрываются)"
+      ]
+    },
+    {
+      "id": 64,
+      "symbol": "REZUSDT",
+      "direction": "SHORT",
+      "entry": 0.003597,
+      "tp1": 0.00352506,
+      "tp2": 0.00345312,
+      "sl": 0.00366894,
+      "strength": 32,
+      "taken_at": "2026-03-17 09:44:17",
+      "status": "OPEN",
+      "reasons": [
+        "MACD медвежий (hist=-0.00000)",
+        "Цена < EMA20 < EMA50",
+        "Стакан: давление продажи (-0.12)",
+        "МТФ: 5m, 15m, 4h согласны",
+        "📌 Лимитный вход @ 0.00365772 (откат к EMA20)"
+      ]
+    },
+    {
+      "id": 54,
+      "symbol": "KITEUSDT",
+      "direction": "SHORT",
+      "entry": 0.20221,
+      "tp1": 0.1981658,
+      "tp2": 0.1941216,
+      "sl": 0.198135,
+      "strength": 31,
+      "taken_at": "2026-03-17 09:15:14",
+      "status": "TP1_HIT",
+      "reasons": [
+        "MACD медвежий (hist=-0.00029)",
+        "Цена < EMA20 < EMA50",
+        "Стакан: сильное давление продажи (-0.38)",
+        "МТФ: 5m, 15m согласны",
+        "📌 Лимитный вход @ 0.20439 (откат к EMA20)"
       ]
     }
   ],
