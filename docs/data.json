@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T19:32:41.639019+00:00",
+  "updated_at": "2026-03-17T19:33:47.324200+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T19:31:41Z",
+    "last_ok": "2026-03-17T19:32:55Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -11,9 +11,9 @@
   "stats": {
     "total": 365,
     "wins": 99,
-    "losses": 17,
-    "active": 19,
-    "winrate": 85.3
+    "losses": 18,
+    "active": 18,
+    "winrate": 84.6
   },
   "trade_stats": {
     "open": 54,
@@ -216,26 +216,6 @@
       ],
       "news": null,
       "created_at": "2026-03-17 16:32:59",
-      "status": "ACTIVE"
-    },
-    {
-      "id": 374,
-      "symbol": "HYPEUSDT",
-      "direction": "SHORT",
-      "entry": 40.44898164,
-      "tp1": 39.640002,
-      "tp2": 38.831022,
-      "sl": 41.257961,
-      "strength": 27,
-      "reasons": [
-        "MACD медвежий (hist=-0.06239)",
-        "Цена < EMA20 < EMA50",
-        "МТФ: 5m, 15m согласны",
-        "CVD падает (-9.4%) — продажи усиливаются 📉",
-        "📌 Лимитный вход @ 40.449 (откат к EMA20)"
-      ],
-      "news": null,
-      "created_at": "2026-03-17 16:33:05",
       "status": "ACTIVE"
     },
     {
