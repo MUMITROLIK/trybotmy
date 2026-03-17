@@ -1,19 +1,19 @@
 {
-  "updated_at": "2026-03-17T11:13:06.943664+00:00",
+  "updated_at": "2026-03-17T11:14:10.544287+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T11:12:06Z",
+    "last_ok": "2026-03-17T11:13:10Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
   "stats": {
-    "total": 190,
+    "total": 191,
     "wins": 16,
     "losses": 1,
-    "active": 2,
+    "active": 3,
     "winrate": 94.1
   },
   "trade_stats": {
-    "open": 39,
+    "open": 40,
     "wins": 30,
     "losses": 13,
     "total_pnl": 62.94,
@@ -66,6 +66,27 @@
       ],
       "news": null,
       "created_at": "2026-03-17 11:12:01",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 229,
+      "symbol": "CFGUSDT",
+      "direction": "SHORT",
+      "entry": 0.1662,
+      "tp1": 0.160061,
+      "tp2": 0.153921,
+      "sl": 0.171111,
+      "strength": 37,
+      "reasons": [
+        "MACD медвежий (hist=-0.00007)",
+        "Цена < EMA20 < EMA50",
+        "МТФ: 5m, 15m, 4h согласны",
+        "OI растёт +21.1% + цена ↓",
+        "CVD отрицательный (-2.1%)",
+        "Shooting Star (1h) ⭐"
+      ],
+      "news": null,
+      "created_at": "2026-03-17 11:13:35",
       "status": "ACTIVE"
     }
   ],
@@ -1233,6 +1254,26 @@
         "МТФ: только 1 таймфрейм согласен",
         "OI растёт +4.8%",
         "CVD отрицательный (-0.7%)"
+      ]
+    },
+    {
+      "id": 83,
+      "symbol": "CFGUSDT",
+      "direction": "SHORT",
+      "entry": 0.1662,
+      "tp1": 0.160061,
+      "tp2": 0.153921,
+      "sl": 0.171111,
+      "strength": 37,
+      "taken_at": "2026-03-17 11:13:35",
+      "status": "OPEN",
+      "reasons": [
+        "MACD медвежий (hist=-0.00007)",
+        "Цена < EMA20 < EMA50",
+        "МТФ: 5m, 15m, 4h согласны",
+        "OI растёт +21.1% + цена ↓",
+        "CVD отрицательный (-2.1%)",
+        "Shooting Star (1h) ⭐"
       ]
     }
   ],
