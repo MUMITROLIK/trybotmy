@@ -1264,7 +1264,11 @@ async function loadData() {
     renderTrades(openTrades, d.trade_stats);
     renderTradeHistory(d.trades_history || []);
     const dt = new Date(d.updated_at);
-    $('last-update').textContent = dt.toLocaleTimeString('ru-RU');
+    const t = dt.toLocaleTimeString('ru-RU');
+    const ps = d.publish_status || {};
+    // Если в репо давно не пушилось — показываем причину (обычно DNS/нет интернета)
+    const err = ps.last_error ? (' · push err: ' + String(ps.last_error).slice(0, 60)) : '';
+    $('last-update').textContent = t + err;
   } catch(e) {
     $('last-update').textContent = 'ERR';
     console.error('loadData:', e);
