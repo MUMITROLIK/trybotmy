@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T12:38:12.192167+00:00",
+  "updated_at": "2026-03-17T12:38:51.068316+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T12:37:32Z",
+    "last_ok": "2026-03-17T12:38:18Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -12,15 +12,15 @@
     "total": 241,
     "wins": 18,
     "losses": 1,
-    "active": 5,
+    "active": 4,
     "winrate": 94.7
   },
   "trade_stats": {
-    "open": 80,
-    "wins": 36,
+    "open": 79,
+    "wins": 37,
     "losses": 17,
-    "total_pnl": 70.47,
-    "winrate": 67.9
+    "total_pnl": 72.43,
+    "winrate": 68.5
   },
   "fear_greed": {
     "value": 28,
@@ -28,26 +28,6 @@
     "emoji": "😨"
   },
   "signals": [
-    {
-      "id": 275,
-      "symbol": "LYNUSDT",
-      "direction": "SHORT",
-      "entry": 0.06369,
-      "tp1": 0.06189,
-      "tp2": 0.06009,
-      "sl": 0.06513,
-      "strength": 36,
-      "reasons": [
-        "RSI=73 (сильная перекупленность)",
-        "BB верхняя полоса (пробой)",
-        "EMA20 < EMA50",
-        "Объём x1.9 🔥",
-        "МТФ: 15m, 1h согласны"
-      ],
-      "news": null,
-      "created_at": "2026-03-17 12:28:36",
-      "status": "ACTIVE"
-    },
     {
       "id": 276,
       "symbol": "VIRTUALUSDT",
@@ -133,6 +113,24 @@
     }
   ],
   "history": [
+    {
+      "symbol": "LYNUSDT",
+      "direction": "SHORT",
+      "entry": 0.06369,
+      "tp1": 0.06189,
+      "tp2": 0.06009,
+      "sl": 0.06513,
+      "strength": 36,
+      "status": "EXPIRED",
+      "created_at": "2026-03-17 12:28:36",
+      "reasons": [
+        "RSI=73 (сильная перекупленность)",
+        "BB верхняя полоса (пробой)",
+        "EMA20 < EMA50",
+        "Объём x1.9 🔥",
+        "МТФ: 15m, 1h согласны"
+      ]
+    },
     {
       "symbol": "DEGOUSDT",
       "direction": "SHORT",
@@ -482,25 +480,6 @@
         "BB ниже середины",
         "МТФ: только 1 таймфрейм согласен",
         "CVD положительный (-8.8%)"
-      ]
-    },
-    {
-      "symbol": "PUMPUSDT",
-      "direction": "LONG",
-      "entry": 0.002074,
-      "tp1": 0.002115,
-      "tp2": 0.002157,
-      "sl": 0.002033,
-      "strength": 27,
-      "status": "EXPIRED",
-      "created_at": "2026-03-17 12:06:03",
-      "reasons": [
-        "RSI=43 (нейтральный↓)",
-        "MACD бычий (hist=0.00000)",
-        "BB ниже середины",
-        "Стакан: перевес bid (+0.06)",
-        "МТФ: 1h, 4h согласны",
-        "OI падает (шорты закрываются)"
       ]
     }
   ],
@@ -2051,9 +2030,10 @@
         "МТФ: только 1 таймфрейм согласен",
         "CVD положительный (-12.0%)"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 71,
       "symbol": "1000PEPEUSDT",
       "direction": "SHORT",
       "entry": 0.0037381,
@@ -2061,20 +2041,12 @@
       "tp2": 0.00358858,
       "sl": 0.00366105,
       "strength": 36,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 1.96,
+      "close_price": 0.00366475,
       "taken_at": "2026-03-17 10:17:13",
-      "status": "TP1_HIT",
-      "reasons": [
-        "MACD медвежий (hist=-0.00000)",
-        "Цена < EMA20 < EMA50",
-        "Стакан: сильное давление продажи (-0.27)",
-        "МТФ: 5m, 15m согласны",
-        "OI растёт +1.2% + цена ↓",
-        "BTC контекст: -1.6% за 12ч 📉",
-        "📌 Лимитный вход @ 0.00380168 (откат к EMA20)"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-17 12:38:18"
+    },
     {
       "symbol": "DOGEUSDT",
       "direction": "SHORT",
