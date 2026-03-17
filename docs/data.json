@@ -1,19 +1,19 @@
 {
-  "updated_at": "2026-03-17T10:28:11.090644+00:00",
+  "updated_at": "2026-03-17T10:29:13.514109+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T10:24:48Z",
-    "last_error": "fatal: unable to access 'https://github.com/MUMITROLIK/trybotmy.git/': Failed to connect to github.com port 443 after 21079 ms: Could not connect to server\n",
+    "last_ok": "2026-03-17T10:28:13Z",
+    "last_error": null,
     "min_push_interval_sec": 30
   },
   "stats": {
-    "total": 180,
+    "total": 183,
     "wins": 15,
     "losses": 1,
-    "active": 1,
+    "active": 4,
     "winrate": 93.8
   },
   "trade_stats": {
-    "open": 35,
+    "open": 38,
     "wins": 29,
     "losses": 8,
     "total_pnl": 71.52,
@@ -45,6 +45,70 @@
       ],
       "news": null,
       "created_at": "2026-03-17 10:20:51",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 219,
+      "symbol": "DOTUSDT",
+      "direction": "SHORT",
+      "entry": 1.609,
+      "tp1": 1.57682,
+      "tp2": 1.54464,
+      "sl": 1.64118,
+      "strength": 30,
+      "reasons": [
+        "RSI=59 (нейтральный↑)",
+        "MACD медвежий (hist=-0.00006)",
+        "BB выше середины",
+        "Цена ниже EMA20",
+        "МТФ: только 1 таймфрейм согласен",
+        "OI падает (лонги закрываются)",
+        "CVD отрицательный (-2.6%)"
+      ],
+      "news": null,
+      "created_at": "2026-03-17 10:28:44",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 220,
+      "symbol": "AAVEUSDT",
+      "direction": "SHORT",
+      "entry": 121.93,
+      "tp1": 119.4914,
+      "tp2": 117.0528,
+      "sl": 124.3686,
+      "strength": 32,
+      "reasons": [
+        "RSI=71 (сильная перекупленность)",
+        "BB верхняя полоса (пробой)",
+        "EMA20 < EMA50",
+        "Объём x2.3 🔥",
+        "МТФ: только 1 таймфрейм согласен"
+      ],
+      "news": null,
+      "created_at": "2026-03-17 10:29:04",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 221,
+      "symbol": "PIXELUSDT",
+      "direction": "SHORT",
+      "entry": 0.010066,
+      "tp1": 0.009819,
+      "tp2": 0.009571,
+      "sl": 0.010267,
+      "strength": 33,
+      "reasons": [
+        "RSI=60 (перекупленность)",
+        "BB выше середины",
+        "EMA20 < EMA50",
+        "Стакан: сильное давление продажи (-0.35)",
+        "МТФ: только 1 таймфрейм согласен",
+        "OI растёт +4.1% + цена ↓",
+        "Doji (1h) — нерешительность"
+      ],
+      "news": null,
+      "created_at": "2026-03-17 10:29:09",
       "status": "ACTIVE"
     }
   ],
@@ -1117,6 +1181,67 @@
         "CVD падает (-5.1%) — продажи усиливаются 📉",
         "BTC контекст: -1.5% за 12ч 📉",
         "📌 Лимитный вход @ 0.123769 (откат к EMA20)"
+      ]
+    },
+    {
+      "id": 73,
+      "symbol": "DOTUSDT",
+      "direction": "SHORT",
+      "entry": 1.609,
+      "tp1": 1.57682,
+      "tp2": 1.54464,
+      "sl": 1.64118,
+      "strength": 30,
+      "taken_at": "2026-03-17 10:28:45",
+      "status": "OPEN",
+      "reasons": [
+        "RSI=59 (нейтральный↑)",
+        "MACD медвежий (hist=-0.00006)",
+        "BB выше середины",
+        "Цена ниже EMA20",
+        "МТФ: только 1 таймфрейм согласен",
+        "OI падает (лонги закрываются)",
+        "CVD отрицательный (-2.6%)"
+      ]
+    },
+    {
+      "id": 74,
+      "symbol": "AAVEUSDT",
+      "direction": "SHORT",
+      "entry": 121.93,
+      "tp1": 119.4914,
+      "tp2": 117.0528,
+      "sl": 124.3686,
+      "strength": 32,
+      "taken_at": "2026-03-17 10:29:04",
+      "status": "OPEN",
+      "reasons": [
+        "RSI=71 (сильная перекупленность)",
+        "BB верхняя полоса (пробой)",
+        "EMA20 < EMA50",
+        "Объём x2.3 🔥",
+        "МТФ: только 1 таймфрейм согласен"
+      ]
+    },
+    {
+      "id": 75,
+      "symbol": "PIXELUSDT",
+      "direction": "SHORT",
+      "entry": 0.010066,
+      "tp1": 0.009819,
+      "tp2": 0.009571,
+      "sl": 0.010267,
+      "strength": 33,
+      "taken_at": "2026-03-17 10:29:09",
+      "status": "OPEN",
+      "reasons": [
+        "RSI=60 (перекупленность)",
+        "BB выше середины",
+        "EMA20 < EMA50",
+        "Стакан: сильное давление продажи (-0.35)",
+        "МТФ: только 1 таймфрейм согласен",
+        "OI растёт +4.1% + цена ↓",
+        "Doji (1h) — нерешительность"
       ]
     }
   ],
