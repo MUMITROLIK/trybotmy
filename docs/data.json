@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T17:09:40.083660+00:00",
+  "updated_at": "2026-03-17T17:10:13.387721+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T17:08:40Z",
+    "last_ok": "2026-03-17T17:09:45Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -16,12 +16,12 @@
     "winrate": 87.9
   },
   "trade_stats": {
-    "open": 56,
+    "open": 55,
     "pending": 62,
-    "wins": 81,
+    "wins": 82,
     "losses": 49,
-    "total_pnl": 88.16,
-    "winrate": 42.2
+    "total_pnl": 90.09,
+    "winrate": 42.5
   },
   "fear_greed": {
     "value": 28,
@@ -1576,26 +1576,6 @@
         "Стакан: давление покупки (+0.21)",
         "МТФ: 1h, 4h согласны",
         "CVD положительный (-6.9%)"
-      ]
-    },
-    {
-      "id": 132,
-      "symbol": "ZROUSDT",
-      "direction": "LONG",
-      "entry": 2.2681,
-      "tp1": 2.313462,
-      "tp2": 2.358824,
-      "sl": 2.222738,
-      "strength": 33,
-      "taken_at": "2026-03-17 12:34:51",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00392)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: давление покупки (+0.16)",
-        "МТФ: 15m, 1h, 4h согласны",
-        "CVD положительный (+0.6%)",
-        "📌 Лимитный вход @ 2.24962 (откат к EMA20)"
       ]
     },
     {
@@ -3316,6 +3296,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "ZROUSDT",
+      "direction": "LONG",
+      "entry": 2.2681,
+      "tp1": 2.313462,
+      "tp2": 2.358824,
+      "sl": 2.3141,
+      "strength": 33,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 1.93,
+      "close_price": 2.3119,
+      "taken_at": "2026-03-17 12:34:51",
+      "closed_at": "2026-03-17 17:10:13"
+    },
     {
       "symbol": "XLMUSDT",
       "direction": "SHORT",
