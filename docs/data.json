@@ -1,19 +1,19 @@
 {
-  "updated_at": "2026-03-17T09:57:20.666560+00:00",
+  "updated_at": "2026-03-17T09:58:24.955956+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T09:56:12Z",
+    "last_ok": "2026-03-17T09:57:24Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
   "stats": {
-    "total": 173,
+    "total": 174,
     "wins": 14,
     "losses": 1,
-    "active": 0,
+    "active": 1,
     "winrate": 93.3
   },
   "trade_stats": {
-    "open": 33,
+    "open": 34,
     "wins": 24,
     "losses": 8,
     "total_pnl": 57.29,
@@ -24,7 +24,27 @@
     "label": "Neutral",
     "emoji": "😐"
   },
-  "signals": [],
+  "signals": [
+    {
+      "id": 212,
+      "symbol": "POLYXUSDT",
+      "direction": "SHORT",
+      "entry": 0.05519,
+      "tp1": 0.052928,
+      "tp2": 0.050666,
+      "sl": 0.056999,
+      "strength": 34,
+      "reasons": [
+        "RSI=90 (сильная перекупленность)",
+        "BB верхняя полоса (пробой)",
+        "Объём x3.4 🔥🔥",
+        "OI растёт +8.2%"
+      ],
+      "news": null,
+      "created_at": "2026-03-17 09:57:28",
+      "status": "ACTIVE"
+    }
+  ],
   "history": [
     {
       "symbol": "KITEUSDT",
@@ -1049,6 +1069,24 @@
         "Стакан: давление продажи (-0.12)",
         "МТФ: 5m, 15m, 1h согласны",
         "📌 Лимитный вход @ 0.203082 (откат к EMA20)"
+      ]
+    },
+    {
+      "id": 66,
+      "symbol": "POLYXUSDT",
+      "direction": "SHORT",
+      "entry": 0.05519,
+      "tp1": 0.052928,
+      "tp2": 0.050666,
+      "sl": 0.056999,
+      "strength": 34,
+      "taken_at": "2026-03-17 09:57:33",
+      "status": "OPEN",
+      "reasons": [
+        "RSI=90 (сильная перекупленность)",
+        "BB верхняя полоса (пробой)",
+        "Объём x3.4 🔥🔥",
+        "OI растёт +8.2%"
       ]
     }
   ],

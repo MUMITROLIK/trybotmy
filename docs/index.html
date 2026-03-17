@@ -39,7 +39,6 @@ body {
   overflow-x: hidden;
 }
 
-/* Noise texture overlay */
 body::before {
   content: '';
   position: fixed; inset: 0; pointer-events: none; z-index: 0;
@@ -48,14 +47,12 @@ body::before {
   opacity: .4;
 }
 
-/* Scanlines */
 body::after {
   content: '';
   position: fixed; inset: 0; pointer-events: none; z-index: 0;
   background: repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,0,0,.05) 2px, rgba(0,0,0,.05) 4px);
 }
 
-/* Grid bg */
 .grid-bg {
   position: fixed; inset: 0; pointer-events: none; z-index: 0;
   background-image:
@@ -64,7 +61,6 @@ body::after {
   background-size: 60px 60px;
 }
 
-/* ── Header ─────────────────────────────────────────────────── */
 header {
   position: relative; z-index: 10;
   padding: 0 40px;
@@ -117,14 +113,16 @@ header {
   box-shadow: 0 0 8px var(--green);
   animation: blink 2s infinite;
 }
+.live-dot.disconnected {
+  background: var(--red);
+  box-shadow: 0 0 8px var(--red);
+}
 @keyframes blink { 0%,100%{opacity:1} 50%{opacity:.3} }
 
-/* ── Layout ─────────────────────────────────────────────────── */
 .app { position: relative; z-index: 1; }
 
 main { padding: 24px 40px; max-width: 1600px; margin: 0 auto; }
 
-/* ── Top row ─────────────────────────────────────────────────── */
 .top-row {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 180px;
@@ -162,7 +160,6 @@ main { padding: 24px 40px; max-width: 1600px; margin: 0 auto; }
 .stat-value.c-yellow{ color: var(--yellow); }
 .stat-value.c-cyan  { color: var(--cyan);   text-shadow: var(--cyan-glow); }
 
-/* Fear & Greed */
 .fg-card {
   background: var(--surface);
   border: 1px solid var(--border);
@@ -191,7 +188,6 @@ main { padding: 24px 40px; max-width: 1600px; margin: 0 auto; }
 }
 .fg-fill { height: 100%; border-radius: 2px; transition: width 1s ease; }
 
-/* ── Section title ────────────────────────────────────────────── */
 .sec {
   font-family: 'JetBrains Mono', monospace;
   font-size: 9px; letter-spacing: 4px;
@@ -202,7 +198,6 @@ main { padding: 24px 40px; max-width: 1600px; margin: 0 auto; }
 .sec::after { content: ''; flex: 1; height: 1px; background: var(--border); }
 .sec-dot { width: 6px; height: 6px; border-radius: 50%; }
 
-/* ── Chart card ───────────────────────────────────────────────── */
 .chart-card {
   background: var(--surface);
   border: 1px solid var(--border);
@@ -234,7 +229,6 @@ main { padding: 24px 40px; max-width: 1600px; margin: 0 auto; }
 }
 #btcChartWrap { padding: 4px; height: 240px; }
 
-/* ── Signals ──────────────────────────────────────────────────── */
 .signals-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
@@ -333,7 +327,6 @@ main { padding: 24px 40px; max-width: 1600px; margin: 0 auto; }
   border-left: 2px solid var(--dim); padding-left: 8px;
 }
 
-/* Accept/Reject buttons */
 .sig-actions {
   display: grid; grid-template-columns: 1fr 1fr;
   gap: 6px;
@@ -366,7 +359,6 @@ main { padding: 24px 40px; max-width: 1600px; margin: 0 auto; }
 }
 .chart-hint { color: var(--dim); font-size: 9px; }
 
-/* ── Modal ────────────────────────────────────────────────────── */
 .overlay {
   display: none; position: fixed; inset: 0;
   background: rgba(0,0,0,.85); z-index: 100;
@@ -408,7 +400,6 @@ main { padding: 24px 40px; max-width: 1600px; margin: 0 auto; }
 .ms-l { font-family: 'JetBrains Mono', monospace; font-size: 9px; letter-spacing: 2px; text-transform: uppercase; color: var(--muted); margin-bottom: 4px; }
 .ms-v { font-family: 'JetBrains Mono', monospace; font-size: 14px; font-weight: 700; }
 
-/* ── History ──────────────────────────────────────────────────── */
 .hist-wrap {
   background: var(--surface); border: 1px solid var(--border);
   border-radius: 12px; overflow: hidden; margin-bottom: 40px;
@@ -437,8 +428,6 @@ tr:hover td { background: rgba(255,255,255,.015); }
 .bdg.long  { color: var(--green); }
 .bdg.short { color: var(--red); }
 
-
-/* ── Tabs ────────────────────────────────────────────────────── */
 .tab-btn {
   font-family: 'JetBrains Mono', monospace;
   font-size: 10px; font-weight: 700; letter-spacing: 3px;
@@ -450,7 +439,6 @@ tr:hover td { background: rgba(255,255,255,.015); }
 .tab-btn:hover { color: var(--text); }
 .tab-btn.active { color: var(--cyan); border-bottom-color: var(--cyan); }
 
-/* ── Trade card ──────────────────────────────────────────────── */
 .trade-card {
   background: var(--surface); border: 1px solid var(--border);
   border-radius: 12px; overflow: hidden; position: relative;
@@ -472,7 +460,6 @@ tr:hover td { background: rgba(255,255,255,.015); }
   font-size: 11px; color: var(--muted); letter-spacing: 1px;
 }
 
-/* ── Accepted signals panel ────────────────────────────────────── */
 .taken-bar {
   position: fixed; bottom: 20px; right: 20px;
   background: var(--surface2); border: 1px solid var(--border2);
@@ -500,11 +487,10 @@ tr:hover td { background: rgba(255,255,255,.015); }
 @media(max-width:900px) {
   header,main { padding:14px 16px; }
   .top-row { grid-template-columns:repeat(2,1fr); }
-  .fg-card { grid-column:1/-1; flex-direction:row; align-items:center; gap:16px; }
+  .fg-card { grid-column:1/-1; }
   .sig-prices { grid-template-columns:repeat(2,1fr); }
 }
 
-/* ── New: taken label, trade levels, edit entry, action buttons ── */
 .sig-taken-label {
   width:100%; padding:10px 0; text-align:center;
   font-size:11px; font-weight:700; letter-spacing:1.5px;
@@ -524,47 +510,16 @@ tr:hover td { background: rgba(255,255,255,.015); }
 .trade-lvl.tp2     { color:var(--cyan);  border-color:rgba(0,229,255,.25); }
 .trade-lvl.sl      { color:var(--red);   border-color:rgba(255,45,107,.25); }
 .trade-lvl.tp1-hit { color:var(--yellow); border-color:rgba(255,229,0,.3); background:rgba(255,229,0,.07); }
-.trade-actions {
-  display:flex; gap:6px; margin-top:8px;
-}
-.btn-trade-action {
-  flex:1; padding:7px 0; border-radius:6px; border:1px solid var(--border2);
-  background:var(--surface2); color:var(--muted);
-  font-family:'JetBrains Mono',monospace; font-size:9px;
-  letter-spacing:1px; cursor:pointer; transition:all .15s;
-  text-transform:uppercase;
-}
-.btn-trade-action:hover { color:var(--text); border-color:var(--cyan); }
-.btn-trade-close { border-color:rgba(255,45,107,.3); color:var(--red); }
-.btn-trade-close:hover { background:rgba(255,45,107,.12); border-color:var(--red); color:var(--text); }
-.edit-entry-row {
-  display:none; align-items:center; gap:6px; margin-top:6px;
-}
-.edit-entry-row.visible { display:flex; }
-.edit-entry-input {
-  flex:1; background:var(--surface2); border:1px solid var(--cyan);
-  color:var(--text); border-radius:6px; padding:6px 8px;
-  font-family:'JetBrains Mono',monospace; font-size:12px;
-}
-.edit-entry-input:focus { outline:none; box-shadow:0 0 0 2px rgba(0,229,255,.2); }
-.btn-edit-confirm {
-  padding:6px 12px; border-radius:6px; border:1px solid var(--cyan);
-  background:rgba(0,229,255,.1); color:var(--cyan);
-  font-family:'JetBrains Mono',monospace; font-size:9px; cursor:pointer;
-}
-.btn-edit-confirm:hover { background:rgba(0,229,255,.2); }
 </style>
 </head>
 <body>
 <div class="grid-bg"></div>
 
-<!-- Accepted signals floating panel -->
 <div class="taken-bar" id="takenBar">
   <div class="taken-title">▸ Взятые сделки</div>
   <div class="taken-list" id="takenList"></div>
 </div>
 
-<!-- Modal -->
 <div class="overlay" id="modal" onclick="handleOverlayClick(event)">
   <div class="modal" id="modalInner">
     <div class="modal-head">
@@ -597,23 +552,20 @@ tr:hover td { background: rgba(255,255,255,.015); }
         <span class="chg" id="hBtcChg">—</span>
       </div>
       <div class="live-indicator">
-        <div class="live-dot"></div>
-        <span id="last-update">LIVE</span>
+        <div class="live-dot" id="liveDot"></div>
+        <span id="last-update">CONNECTING...</span>
       </div>
     </div>
   </header>
 
   <main>
-    <!-- Tabs -->
     <div style="display:flex;gap:4px;margin-bottom:20px;border-bottom:1px solid var(--border);padding-bottom:0">
       <button class="tab-btn active" id="tab-signals" onclick="switchTab('signals')">СИГНАЛЫ</button>
       <button class="tab-btn" id="tab-positions" onclick="switchTab('positions')">ПОЗИЦИИ</button>
       <button class="tab-btn" id="tab-history" onclick="switchTab('history')">ИСТОРИЯ P&L</button>
     </div>
 
-    <!-- ── ВКЛАДКА СИГНАЛЫ ── -->
     <div id="page-signals">
-    <!-- Stats -->
     <div class="top-row">
       <div class="stat-card">
         <div class="stat-label">Всего сигналов</div>
@@ -644,7 +596,6 @@ tr:hover td { background: rgba(255,255,255,.015); }
       </div>
     </div>
 
-    <!-- BTC Chart -->
     <div class="sec"><div class="sec-dot" style="background:var(--cyan)"></div>BTC/USDT · REAL-TIME</div>
     <div class="chart-card">
       <div class="chart-header">
@@ -664,19 +615,16 @@ tr:hover td { background: rgba(255,255,255,.015); }
       <div id="btcChartWrap"></div>
     </div>
 
-    <!-- Signals -->
     <div class="sec"><div class="sec-dot" style="background:var(--green)"></div>Активные сигналы</div>
     <div class="signals-grid" id="signalsGrid">
-      <div class="empty-state">Сканирование рынка...</div>
+      <div class="empty-state">Подключение к серверу...</div>
     </div>
 
-    </div><!-- /page-signals -->
+    </div>
 
-    <!-- ── ВКЛАДКА ПОЗИЦИИ ── -->
     <div id="page-positions" style="display:none">
       <div class="sec"><div class="sec-dot" style="background:var(--cyan)"></div>Открытые позиции · P&L в реальном времени</div>
 
-      <!-- Trade stats row -->
       <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:20px" id="tradeStatsRow">
         <div class="stat-card"><div class="stat-label">Открытых</div><div class="stat-value c-cyan" id="ts-open">—</div></div>
         <div class="stat-card"><div class="stat-label">Профит</div><div class="stat-value c-green" id="ts-wins">—</div></div>
@@ -685,11 +633,10 @@ tr:hover td { background: rgba(255,255,255,.015); }
       </div>
 
       <div class="signals-grid" id="tradesGrid">
-        <div class="empty-state">Нет открытых позиций<br><span style="font-size:10px;opacity:.5">Нажми «Взять» в сигнале чтобы добавить позицию</span></div>
+        <div class="empty-state">Нет открытых позиций</div>
       </div>
-    </div><!-- /page-positions -->
+    </div>
 
-    <!-- ── ВКЛАДКА ИСТОРИЯ P&L ── -->
     <div id="page-history" style="display:none">
       <div class="sec"><div class="sec-dot" style="background:var(--muted)"></div>История взятых сделок</div>
       <div class="hist-wrap">
@@ -701,29 +648,97 @@ tr:hover td { background: rgba(255,255,255,.015); }
           <tbody id="tradeHistBody"><tr><td colspan="7" class="empty-state">Нет закрытых сделок</td></tr></tbody>
         </table>
       </div>
-    </div><!-- /page-history -->
-
-    <!-- Signals history (hidden tab) -->
-    <div id="page-sig-history" style="display:none">
-    <!-- History -->
-    <div class="sec"><div class="sec-dot" style="background:var(--muted)"></div>История</div>
-    <div class="hist-wrap">
-      <table>
-        <thead><tr>
-          <th>Монета</th><th>Тип</th><th>Вход</th>
-          <th>TP1</th><th>SL</th><th>Сила</th><th>Результат</th><th>Время</th>
-        </tr></thead>
-        <tbody id="histBody"><tr><td colspan="8" class="empty-state">Нет данных</td></tr></tbody>
-      </table>
     </div>
-    </div><!-- /page-sig-history -->
   </main>
 </div>
 
-<!-- Lightweight Charts for candlesticks -->
 <script src="https://unpkg.com/lightweight-charts@4.1.3/dist/lightweight-charts.standalone.production.js"></script>
 <script>
-// ── Utils ─────────────────────────────────────────────────────────────────────
+// ── WebSocket подключение ─────────────────────────────────────────
+let ws = null;
+let reconnectAttempts = 0;
+const MAX_RECONNECT_ATTEMPTS = 50;
+const RECONNECT_DELAY = 3000;
+
+function initWebSocket() {
+  const protocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
+  const wsUrl = `${protocol}//${window.location.host}/ws`;
+  
+  console.log('🔌 Connecting to WebSocket:', wsUrl);
+  ws = new WebSocket(wsUrl);
+  
+  ws.onopen = () => {
+    console.log('✅ WebSocket connected');
+    setLiveStatus(true);
+    reconnectAttempts = 0;
+  };
+  
+  ws.onmessage = (event) => {
+    try {
+      const msg = JSON.parse(event.data);
+      if (msg.type === 'initial_data' || msg.type === 'data_update') {
+        console.log('📨 Data received from server');
+        handleDataUpdate(msg.data);
+      }
+    } catch (e) {
+      console.error('Parse error:', e);
+    }
+  };
+  
+  ws.onclose = () => {
+    console.log('❌ WebSocket disconnected');
+    setLiveStatus(false);
+    tryReconnect();
+  };
+  
+  ws.onerror = (error) => {
+    console.error('❌ WebSocket error:', error);
+    setLiveStatus(false);
+  };
+}
+
+function tryReconnect() {
+  if (reconnectAttempts < MAX_RECONNECT_ATTEMPTS) {
+    reconnectAttempts++;
+    console.log(`🔄 Reconnecting... (attempt ${reconnectAttempts})`);
+    setTimeout(initWebSocket, RECONNECT_DELAY);
+  } else {
+    console.error('❌ Max reconnect attempts reached');
+  }
+}
+
+function setLiveStatus(connected) {
+  const dot = document.getElementById('liveDot');
+  const lbl = document.getElementById('last-update');
+  if (connected) {
+    dot.classList.remove('disconnected');
+    lbl.textContent = 'LIVE';
+  } else {
+    dot.classList.add('disconnected');
+    lbl.textContent = 'RECONNECTING...';
+  }
+}
+
+function handleDataUpdate(data) {
+  const st = data.stats || {};
+  document.getElementById('s-total').textContent   = st.total   ?? '—';
+  document.getElementById('s-wins').textContent    = st.wins    ?? '—';
+  document.getElementById('s-losses').textContent  = st.losses  ?? '—';
+  document.getElementById('s-winrate').textContent = st.winrate != null ? st.winrate + '%' : '—';
+  
+  renderFG(data.fear_greed);
+  const openTrades = data.trades_open || [];
+  _allTrades = openTrades;
+  syncTakenFromTrades(openTrades);
+  renderSignals(data.signals || []);
+  renderHistory(data.history || []);
+  renderTrades(openTrades, data.trade_stats);
+  renderTradeHistory(data.trades_history || []);
+  
+  setLiveStatus(true);
+}
+
+// ── Utils ──────────────────────────────────────────────────────────
 const $ = id => document.getElementById(id);
 const mono = n => {
   if (!n && n !== 0) return '—';
@@ -736,7 +751,6 @@ const mono = n => {
 };
 const sc = s => s >= 75 ? '#00ff9d' : s >= 55 ? '#ffe500' : '#3d6fff';
 
-// UTC date parser — SQLite datetime('now') writes without 'Z', browser reads as local
 const parseUTC = iso => {
   if (!iso) return new Date(0);
   const s = iso.endsWith('Z') || iso.includes('+') ? iso : iso + 'Z';
@@ -751,6 +765,8 @@ const ago = iso => {
 
 const MAX_TRADE_HOURS = 8;
 let _allTrades = [];
+let _allSignals = [];
+let _history = [];
 
 function tradeDuration(iso) {
   if (!iso) return '';
@@ -763,6 +779,7 @@ function tradeDuration(iso) {
   if (pct >= 75) return `⚠️ ${label} · ${pct}% лимита`;
   return `⏱ ${label} в сделке`;
 }
+
 function tradeAgeColor(iso) {
   if (!iso) return 'var(--muted)';
   const h = (Date.now() - parseUTC(iso)) / 3600000;
@@ -779,7 +796,7 @@ const CHART_OPTS = {
   timeScale:{borderColor:'#1c1c35',timeVisible:true,secondsVisible:false},
 };
 
-// ── BTC Chart ─────────────────────────────────────────────────────────────────
+// ── BTC Chart ──────────────────────────────────────────────────────
 let btcChart = null, btcSeries = null, btcTF = '1m', btcWs = null;
 
 function initBtcChart() {
@@ -846,7 +863,7 @@ function connectBtcWs() {
   btcWs.onclose = () => setTimeout(connectBtcWs, 3000);
 }
 
-// ── Modal Chart ───────────────────────────────────────────────────────────────
+// ── Modal Chart ────────────────────────────────────────────────────
 let mChart = null, mSeries = null, mSym = null, mTF = '15m';
 
 async function openChart(sym, signal) {
@@ -897,7 +914,7 @@ function handleOverlayClick(e) {
   if (e.target === $('modal')) closeModal();
 }
 
-// ── Taken signals ─────────────────────────────────────────────────────────────
+// ── Taken signals ──────────────────────────────────────────────────
 const taken = new Map();
 
 function syncTakenFromTrades(openTrades) {
@@ -930,7 +947,7 @@ function renderTaken() {
   }).join('');
 }
 
-// ── Fear & Greed ──────────────────────────────────────────────────────────────
+// ── Fear & Greed ───────────────────────────────────────────────────
 function renderFG(fg) {
   if (!fg) return;
   const v = fg.value || 50;
@@ -944,9 +961,7 @@ function renderFG(fg) {
   $('fg-val').style.color = color;
 }
 
-// ── Signals ───────────────────────────────────────────────────────────────────
-let _allSignals = [];
-
+// ── Signals ────────────────────────────────────────────────────────
 function renderSignals(sigs) {
   _allSignals = sigs;
   const el = $('signalsGrid');
@@ -1003,7 +1018,6 @@ function openChartByIdx(i) {
 function handleTake(sym, dir, entry) {
   takeSignal(sym, dir, entry);
   renderSignals(_allSignals);
-  setTimeout(loadData, 2000);
 }
 function handleSkip(sym, dir) {
   skipSignal(sym, dir);
@@ -1011,38 +1025,14 @@ function handleSkip(sym, dir) {
   if (card) { card.style.opacity = '.15'; card.style.transition = 'opacity .4s'; }
 }
 
-// ── Trade management ──────────────────────────────────────────────────────────
-
-// ── History ───────────────────────────────────────────────────────────────────
-let _history = [];
+// ── History ────────────────────────────────────────────────────────
 function renderHistory(h) {
   _history = h;
-  const tb = $('histBody');
+  const tb = $('signalsGrid');
   if (!h.length) return;
-  tb.innerHTML = h.map((r,i) => {
-    const lg = r.direction==='LONG';
-    const st = r.status?.toUpperCase();
-    const b  = (st==='TP1'||st==='TP2') ? `<span class="bdg tp">${st}</span>`
-             : st==='SL' ? `<span class="bdg sl">SL</span>`
-             : `<span class="bdg exp">—</span>`;
-    return `<tr onclick="openHistChart(${i})" style="cursor:pointer">
-      <td style="font-weight:700;color:var(--cyan)">${r.symbol}</td>
-      <td><span class="bdg ${lg?'long':'short'}">${r.direction}</span></td>
-      <td>${mono(r.entry)}</td>
-      <td style="color:var(--green)">${mono(r.tp1)}</td>
-      <td style="color:var(--red)">${mono(r.sl)}</td>
-      <td style="color:${sc(r.strength)}">${r.strength}%</td>
-      <td>${b}</td>
-      <td style="color:var(--muted)">${ago(r.created_at)}</td>
-    </tr>`;
-  }).join('');
-}
-function openHistChart(i) {
-  const r = _history[i];
-  if (r) openChart(r.symbol, r);
 }
 
-// ── Tabs ──────────────────────────────────────────────────────────────────────
+// ── Tabs ───────────────────────────────────────────────────────────
 function switchTab(tab) {
   ['signals','positions','history'].forEach(t => {
     $('page-'+t).style.display = t === tab ? 'block' : 'none';
@@ -1051,7 +1041,7 @@ function switchTab(tab) {
   });
 }
 
-// ── Trades render ─────────────────────────────────────────────────────────────
+// ── Trades render ──────────────────────────────────────────────────
 function renderTrades(trades, stats) {
   if (stats) {
     $('ts-open').textContent   = stats.open ?? '—';
@@ -1067,132 +1057,39 @@ function renderTrades(trades, stats) {
 
   const el = $('tradesGrid');
   if (!trades || !trades.length) {
-    el.innerHTML = '<div class="empty-state">📭 Нет открытых позиций<br><span style="font-size:10px;opacity:.5">Нажми «Взять» в сигнале</span></div>';
-    startTradeWs([]);
+    el.innerHTML = '<div class="empty-state">📭 Нет открытых позиций</div>';
     return;
   }
 
   el.innerHTML = trades.map(t => {
     const lg     = t.direction === 'LONG';
     const tags   = (t.reasons||[]).slice(0,3).map(r=>`<span class="tag">${r}</span>`).join('');
-    const tp1Hit = t.status === 'TP1_HIT';
-    const cardCls = tp1Hit ? 'tp1-hit' : (lg ? 'long' : 'short');
-    const tp1Lbl  = tp1Hit
-      ? `<span class="trade-lvl tp1-hit">✅ TP1 ${mono(t.tp1)}</span>`
-      : `<span class="trade-lvl tp1">TP1 ${mono(t.tp1)}</span>`;
     const levels = `<div class="trade-levels">
-      ${tp1Lbl}
+      <span class="trade-lvl tp1">TP1 ${mono(t.tp1)}</span>
       <span class="trade-lvl tp2">TP2 ${mono(t.tp2)}</span>
       <span class="trade-lvl sl">SL ${mono(t.sl)}</span>
-      ${tp1Hit ? '<span class="trade-lvl tp1-hit">🔒 SL → TP1</span>' : ''}
     </div>`;
 
     return `
-    <div class="trade-card ${cardCls}" id="tc_${t.id}">
+    <div class="trade-card ${lg?'long':'short'}" id="tc_${t.id}">
       <div class="sig-top">
         <span class="sig-symbol">${t.symbol}</span>
         <span class="sig-badge ${lg?'long':'short'}">${t.direction} ${lg?'↑':'↓'}</span>
       </div>
       <div class="sig-prices">
-        <div class="price-cell"><div class="p-lbl">ВХОД</div><div class="p-val" id="tentry_${t.id}">${mono(t.entry)}</div></div>
-        <div class="price-cell"><div class="p-lbl">ТЕКУЩАЯ</div><div class="p-val" id="tprice_${t.id}">...</div></div>
-        <div class="price-cell"><div class="p-lbl">P&L</div><div class="p-val" id="tpnl_${t.id}">...</div></div>
-        <div class="price-cell"><div class="p-lbl">SL</div><div class="p-val sl" id="tsl_${t.id}">${mono(t.sl)}</div></div>
+        <div class="price-cell"><div class="p-lbl">ВХОД</div><div class="p-val">${mono(t.entry)}</div></div>
+        <div class="price-cell"><div class="p-lbl">ТЕКУЩАЯ</div><div class="p-val">—</div></div>
+        <div class="price-cell"><div class="p-lbl">P&L</div><div class="p-val">—</div></div>
+        <div class="price-cell"><div class="p-lbl">SL</div><div class="p-val sl">${mono(t.sl)}</div></div>
       </div>
-      <div class="trade-pnl-bar"><div class="trade-pnl-fill" id="tbar_${t.id}" style="width:50%;background:var(--muted)"></div></div>
       <div class="sig-body">
         ${levels}
         <div class="tags">${tags}</div>
-        <div style="font-family:'JetBrains Mono',monospace;font-size:9px;color:var(--muted);margin-top:6px">
-          Взята: ${ago(t.taken_at)} назад &nbsp;·&nbsp;
-          <span id="ttimer_${t.id}" style="color:${tradeAgeColor(t.taken_at)}">${tradeDuration(t.taken_at)}</span>
-        </div>
-        <div style="font-family:'JetBrains Mono',monospace;font-size:9px;color:var(--muted);margin-top:8px;text-align:center;padding:6px;border:1px solid var(--border);border-radius:5px">
-          ✏️ Управление позицией — через /positions в Telegram боте
-        </div>
       </div>
     </div>`;
   }).join('');
-
-  startTradeWs(trades);
 }
 
-// ── Real-time P&L ─────────────────────────────────────────────────────────────
-const tradeWsMap = new Map();
-
-function startTradeWs(trades) {
-  tradeWsMap.forEach(ws => ws.close());
-  tradeWsMap.clear();
-  trades.forEach(t => {
-    if (tradeWsMap.has(t.symbol)) return;
-    const ws = new WebSocket(`wss://fstream.binance.com/ws/${t.symbol.toLowerCase()}@bookTicker`);
-    ws.onmessage = e => {
-      const d   = JSON.parse(e.data);
-      const mid = (parseFloat(d.b) + parseFloat(d.a)) / 2;
-      updateTradePnl(t, mid);
-    };
-    ws.onclose = () => tradeWsMap.delete(t.symbol);
-    tradeWsMap.set(t.symbol, ws);
-  });
-}
-
-function updateTradePnl(trade, currentPrice) {
-  const entry  = trade.entry_price || trade.entry;
-  const tp1    = trade.tp1;
-  const tp2    = trade.tp2;
-  const tp1Hit = trade.status === 'TP1_HIT';
-
-  if (!entry || !currentPrice) return;
-
-  const pnl = trade.direction === 'LONG'
-    ? (currentPrice - entry) / entry * 100
-    : (entry - currentPrice) / entry * 100;
-
-  const pEl = $('tprice_' + trade.id);
-  const nEl = $('tpnl_'   + trade.id);
-  const bEl = $('tbar_'   + trade.id);
-
-  if (pEl) pEl.textContent = mono(currentPrice);
-  if (nEl) {
-    nEl.textContent = (pnl >= 0 ? '+' : '') + pnl.toFixed(2) + '%';
-    nEl.className   = 'p-val ' + (pnl >= 0 ? 'pnl-positive' : 'pnl-negative');
-  }
-
-  if (bEl) {
-    if (tp1Hit && tp2 && tp1) {
-      // ── Фаза 2: TP1 достигнут — полоска идёт от TP1 к TP2 ──────────────
-      // Полоска начинается с 30% (уже в профите) и идёт до 100%
-      const rangeTP = Math.abs(tp2 - tp1) || tp1 * 0.02;
-      const progress = trade.direction === 'LONG'
-        ? (currentPrice - tp1) / rangeTP
-        : (tp1 - currentPrice) / rangeTP;
-      const pct = Math.max(0, Math.min(100, 30 + progress * 70));
-
-      // Градиент: золотой → зелёный по мере приближения к TP2
-      const ratio    = Math.max(0, Math.min(1, progress));
-      const r        = Math.round(255 * (1 - ratio) + 0 * ratio);
-      const g        = Math.round(229 * (1 - ratio) + 255 * ratio);
-      const b        = Math.round(0   * (1 - ratio) + 157 * ratio);
-      const barColor = `rgb(${r},${g},${b})`;
-
-      bEl.style.width      = pct + '%';
-      bEl.style.background = barColor;
-      bEl.style.boxShadow  = `0 0 8px ${barColor}55`;
-
-    } else {
-      // ── Фаза 1: обычная полоска от entry до TP1 ──────────────────────────
-      const range = Math.abs(tp1 - entry) || entry * 0.02;
-      const pct   = Math.max(0, Math.min(100, 50 + (pnl / (range / entry * 100)) * 50));
-      const color = pnl >= 0 ? 'var(--green)' : 'var(--red)';
-
-      bEl.style.width      = pct + '%';
-      bEl.style.background = color;
-      bEl.style.boxShadow  = pnl >= 0 ? '0 0 6px rgba(0,255,157,.4)' : '0 0 6px rgba(255,45,107,.4)';
-    }
-  }
-}
-
-// ── Trade history ─────────────────────────────────────────────────────────────
 function renderTradeHistory(hist) {
   const tb = $('tradeHistBody');
   if (!hist || !hist.length) {
@@ -1200,7 +1097,6 @@ function renderTradeHistory(hist) {
     return;
   }
 
-  // Сортируем по closed_at DESC (последние закрытые вверху)
   const sorted = [...hist].sort((a, b) => {
     const ta = parseUTC(a.closed_at || a.taken_at);
     const tb2 = parseUTC(b.closed_at || b.taken_at);
@@ -1212,22 +1108,11 @@ function renderTradeHistory(hist) {
     const pnl = r.pnl_pct || 0;
     const st  = r.status?.toUpperCase();
 
-    // Умные значки: MANUAL и TIMEOUT окрашиваем по P&L
     let badge;
     if (st === 'TP1' || st === 'TP2') {
       badge = `<span class="bdg tp">${st}</span>`;
     } else if (st === 'SL') {
       badge = `<span class="bdg sl">SL</span>`;
-    } else if (st === 'SL_AFTER_TP1') {
-      badge = `<span class="bdg tp">TP1+</span>`;  // достигли TP1, закрылись в безубыток
-    } else if (st === 'TIMEOUT') {
-      badge = pnl >= 0
-        ? `<span class="bdg tp">⏰+</span>`
-        : `<span class="bdg sl">⏰</span>`;
-    } else if (st === 'MANUAL') {
-      badge = pnl >= 0
-        ? `<span class="bdg tp">✋+</span>`
-        : `<span class="bdg sl">✋</span>`;
     } else {
       badge = `<span class="bdg exp">—</span>`;
     }
@@ -1244,49 +1129,16 @@ function renderTradeHistory(hist) {
   }).join('');
 }
 
-// ── Data fetch ────────────────────────────────────────────────────────────────
-async function loadData() {
-  try {
-    const r = await fetch('./data.json?t=' + Date.now(), { cache: 'no-store' });
-    if (!r.ok) throw new Error(r.status);
-    const d  = await r.json();
-    const st = d.stats || {};
-    $('s-total').textContent   = st.total   ?? '—';
-    $('s-wins').textContent    = st.wins    ?? '—';
-    $('s-losses').textContent  = st.losses  ?? '—';
-    $('s-winrate').textContent = st.winrate != null ? st.winrate + '%' : '—';
-    renderFG(d.fear_greed);
-    const openTrades = d.trades_open || [];
-    _allTrades = openTrades;
-    syncTakenFromTrades(openTrades);
-    renderSignals(d.signals || []);
-    renderHistory(d.history || []);
-    renderTrades(openTrades, d.trade_stats);
-    renderTradeHistory(d.trades_history || []);
-    const dt = new Date(d.updated_at);
-    const t = dt.toLocaleTimeString('ru-RU');
-    const ps = d.publish_status || {};
-    // Если в репо давно не пушилось — показываем причину (обычно DNS/нет интернета)
-    const err = ps.last_error ? (' · push err: ' + String(ps.last_error).slice(0, 60)) : '';
-    $('last-update').textContent = t + err;
-  } catch(e) {
-    $('last-update').textContent = 'ERR';
-    console.error('loadData:', e);
-  }
-}
-
-// ── Init ──────────────────────────────────────────────────────────────────────
+// ── Init ───────────────────────────────────────────────────────────
 initBtcChart();
 loadBtcCandles();
 connectBtcWs();
-loadData();
+initWebSocket();
+
 setInterval(loadBtcCandles, 60000);
-// Чаще обновляем data.json, чтобы быстрее видеть взятые/закрытые сделки.
-// (Пуш в репо всё равно дебаунсится на стороне бота.)
-setInterval(loadData,       5000);
 setInterval(() => {
   _allTrades.forEach(t => {
-    const el = $('ttimer_' + t.id);
+    const el = document.getElementById('ttimer_' + t.id);
     if (el && t.taken_at) {
       el.textContent = tradeDuration(t.taken_at);
       el.style.color = tradeAgeColor(t.taken_at);
