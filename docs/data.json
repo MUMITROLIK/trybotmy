@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T20:13:10.880226+00:00",
+  "updated_at": "2026-03-17T20:14:15.905330+00:00",
   "publish_status": {
-    "last_ok": null,
+    "last_ok": "2026-03-17T20:13:15Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -16,12 +16,12 @@
     "winrate": 83.9
   },
   "trade_stats": {
-    "open": 27,
+    "open": 26,
     "pending": 15,
-    "wins": 107,
+    "wins": 108,
     "losses": 76,
-    "total_pnl": 95.48,
-    "winrate": 58.5
+    "total_pnl": 97.9,
+    "winrate": 58.7
   },
   "fear_greed": {
     "value": 28,
@@ -2252,9 +2252,10 @@
         "OI растёт +2.5% + цена ↑",
         "📌 Лимитный вход @ 0.520037 (откат к EMA20)"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 248,
       "symbol": "CFGUSDT",
       "direction": "SHORT",
       "entry": 0.15930219,
@@ -2262,20 +2263,12 @@
       "tp2": 0.150259,
       "sl": 0.15475,
       "strength": 49,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 2.42,
+      "close_price": 0.15545,
       "taken_at": "2026-03-17 19:22:00",
-      "status": "TP1_HIT",
-      "reasons": [
-        "MACD медвежий (hist=-0.00020)",
-        "Цена < EMA20 < EMA50",
-        "Стакан: давление продажи (-0.17)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +11.1% + цена ↓",
-        "CVD падает (-9.1%) — продажи усиливаются 📉",
-        "📌 Лимитный вход @ 0.159302 (откат к EMA20)"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-17 20:13:20"
+    },
     {
       "symbol": "CFGUSDT",
       "direction": "SHORT",
@@ -5055,20 +5048,6 @@
       "tp1": 0.034196,
       "tp2": 0.035465,
       "sl": 0.03191,
-      "strength": 46,
-      "status": "PENDING",
-      "pnl_pct": 0,
-      "close_price": null,
-      "taken_at": null,
-      "closed_at": null
-    },
-    {
-      "symbol": "TRIAUSDT",
-      "direction": "LONG",
-      "entry": 0.03302594,
-      "tp1": 0.034426,
-      "tp2": 0.035827,
-      "sl": 0.031906,
       "strength": 46,
       "status": "PENDING",
       "pnl_pct": 0,
