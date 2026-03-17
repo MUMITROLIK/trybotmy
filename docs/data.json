@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T11:59:39.778163+00:00",
+  "updated_at": "2026-03-17T12:00:44.010385+00:00",
   "publish_status": {
-    "last_ok": null,
+    "last_ok": "2026-03-17T11:59:44Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -9,18 +9,18 @@
     "auto_take": true
   },
   "stats": {
-    "total": 205,
+    "total": 209,
     "wins": 17,
     "losses": 1,
-    "active": 8,
+    "active": 12,
     "winrate": 94.4
   },
   "trade_stats": {
-    "open": 51,
+    "open": 55,
     "wins": 32,
-    "losses": 14,
-    "total_pnl": 68.05,
-    "winrate": 69.6
+    "losses": 13,
+    "total_pnl": 70.62,
+    "winrate": 71.1
   },
   "fear_greed": {
     "value": 28,
@@ -191,6 +191,86 @@
       ],
       "news": null,
       "created_at": "2026-03-17 11:56:06",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 244,
+      "symbol": "GUSDT",
+      "direction": "LONG",
+      "entry": 0.004647,
+      "tp1": 0.00474,
+      "tp2": 0.004833,
+      "sl": 0.004554,
+      "strength": 29,
+      "reasons": [
+        "RSI=35 (перепроданность)",
+        "MACD бычий (hist=0.00001)",
+        "BB ниже середины",
+        "МТФ: 1h, 4h согласны",
+        "OI падает (шорты закрываются)"
+      ],
+      "news": null,
+      "created_at": "2026-03-17 12:00:05",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 245,
+      "symbol": "ANIMEUSDT",
+      "direction": "LONG",
+      "entry": 0.006115,
+      "tp1": 0.006379,
+      "tp2": 0.006644,
+      "sl": 0.005903,
+      "strength": 30,
+      "reasons": [
+        "RSI=30 (перепроданность)",
+        "BB ниже середины",
+        "EMA20 > EMA50",
+        "МТФ: 15m, 1h, 4h согласны",
+        "CVD положительный (-0.4%)"
+      ],
+      "news": null,
+      "created_at": "2026-03-17 12:00:07",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 246,
+      "symbol": "TRUMPUSDT",
+      "direction": "LONG",
+      "entry": 3.711,
+      "tp1": 3.78522,
+      "tp2": 3.85944,
+      "sl": 3.63678,
+      "strength": 27,
+      "reasons": [
+        "RSI=41 (нейтральный↓)",
+        "MACD бычий (hist=0.00423)",
+        "BB ниже середины",
+        "МТФ: 5m, 4h согласны",
+        "CVD положительный (-1.7%)"
+      ],
+      "news": null,
+      "created_at": "2026-03-17 12:00:10",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 247,
+      "symbol": "SUIUSDT",
+      "direction": "LONG",
+      "entry": 1.0239,
+      "tp1": 1.044378,
+      "tp2": 1.064856,
+      "sl": 1.003422,
+      "strength": 28,
+      "reasons": [
+        "RSI=38 (перепроданность)",
+        "MACD бычий (hist=0.00076)",
+        "BB ниже середины",
+        "МТФ: только 1 таймфрейм согласен",
+        "CVD положительный (-5.5%)"
+      ],
+      "news": null,
+      "created_at": "2026-03-17 12:00:11",
       "status": "ACTIVE"
     }
   ],
@@ -1591,6 +1671,82 @@
         "CVD положительный (+1.5%)",
         "📌 Лимитный вход @ 41.0391 (откат к EMA20)"
       ]
+    },
+    {
+      "id": 98,
+      "symbol": "GUSDT",
+      "direction": "LONG",
+      "entry": 0.004647,
+      "tp1": 0.00474,
+      "tp2": 0.004833,
+      "sl": 0.004554,
+      "strength": 29,
+      "taken_at": "2026-03-17 12:00:05",
+      "status": "OPEN",
+      "reasons": [
+        "RSI=35 (перепроданность)",
+        "MACD бычий (hist=0.00001)",
+        "BB ниже середины",
+        "МТФ: 1h, 4h согласны",
+        "OI падает (шорты закрываются)"
+      ]
+    },
+    {
+      "id": 99,
+      "symbol": "ANIMEUSDT",
+      "direction": "LONG",
+      "entry": 0.006115,
+      "tp1": 0.006379,
+      "tp2": 0.006644,
+      "sl": 0.005903,
+      "strength": 30,
+      "taken_at": "2026-03-17 12:00:07",
+      "status": "OPEN",
+      "reasons": [
+        "RSI=30 (перепроданность)",
+        "BB ниже середины",
+        "EMA20 > EMA50",
+        "МТФ: 15m, 1h, 4h согласны",
+        "CVD положительный (-0.4%)"
+      ]
+    },
+    {
+      "id": 100,
+      "symbol": "TRUMPUSDT",
+      "direction": "LONG",
+      "entry": 3.711,
+      "tp1": 3.78522,
+      "tp2": 3.85944,
+      "sl": 3.63678,
+      "strength": 27,
+      "taken_at": "2026-03-17 12:00:10",
+      "status": "OPEN",
+      "reasons": [
+        "RSI=41 (нейтральный↓)",
+        "MACD бычий (hist=0.00423)",
+        "BB ниже середины",
+        "МТФ: 5m, 4h согласны",
+        "CVD положительный (-1.7%)"
+      ]
+    },
+    {
+      "id": 101,
+      "symbol": "SUIUSDT",
+      "direction": "LONG",
+      "entry": 1.0239,
+      "tp1": 1.044378,
+      "tp2": 1.064856,
+      "sl": 1.003422,
+      "strength": 28,
+      "taken_at": "2026-03-17 12:00:11",
+      "status": "OPEN",
+      "reasons": [
+        "RSI=38 (перепроданность)",
+        "MACD бычий (hist=0.00076)",
+        "BB ниже середины",
+        "МТФ: только 1 таймфрейм согласен",
+        "CVD положительный (-5.5%)"
+      ]
     }
   ],
   "trades_history": [
@@ -2195,20 +2351,6 @@
       "close_price": 92.795,
       "taken_at": "2026-03-16 13:34:24",
       "closed_at": "2026-03-16 14:30:28"
-    },
-    {
-      "symbol": "DOTUSDT",
-      "direction": "LONG",
-      "entry": 1.615,
-      "tp1": 1.681286,
-      "tp2": 1.747571,
-      "sl": 1.575229,
-      "strength": 55,
-      "status": "SL",
-      "pnl_pct": -2.57,
-      "close_price": 1.5735000000000001,
-      "taken_at": "2026-03-16 11:10:44",
-      "closed_at": "2026-03-16 14:30:26"
     },
     {
       "symbol": "RIVERUSDT",
