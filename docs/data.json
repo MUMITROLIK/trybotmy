@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T15:41:29.971673+00:00",
+  "updated_at": "2026-03-17T15:42:35.882428+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T15:40:52Z",
+    "last_ok": "2026-03-17T15:41:34Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,18 +10,18 @@
   },
   "stats": {
     "total": 298,
-    "wins": 52,
+    "wins": 54,
     "losses": 7,
-    "active": 18,
-    "winrate": 88.1
+    "active": 16,
+    "winrate": 88.5
   },
   "trade_stats": {
-    "open": 70,
+    "open": 69,
     "pending": 16,
     "wins": 65,
-    "losses": 39,
-    "total_pnl": 91.74,
-    "winrate": 54.2
+    "losses": 40,
+    "total_pnl": 88.66,
+    "winrate": 53.7
   },
   "fear_greed": {
     "value": 28,
@@ -258,27 +258,6 @@
       "status": "ACTIVE"
     },
     {
-      "id": 317,
-      "symbol": "LYNUSDT",
-      "direction": "SHORT",
-      "entry": 0.06069204,
-      "tp1": 0.058489,
-      "tp2": 0.056286,
-      "sl": 0.062454,
-      "strength": 30,
-      "reasons": [
-        "MACD медвежий (hist=-0.00043)",
-        "Цена < EMA20 < EMA50",
-        "МТФ: 5m, 15m согласны",
-        "CVD падает (-6.7%) — продажи усиливаются 📉",
-        "⚠️ Funding через 60м",
-        "📌 Лимитный вход @ 0.060692 (откат к EMA20)"
-      ],
-      "news": null,
-      "created_at": "2026-03-17 15:00:33",
-      "status": "ACTIVE"
-    },
-    {
       "id": 319,
       "symbol": "BEATUSDT",
       "direction": "SHORT",
@@ -366,29 +345,6 @@
       "status": "ACTIVE"
     },
     {
-      "id": 334,
-      "symbol": "HYPEUSDT",
-      "direction": "SHORT",
-      "entry": 40.72047028,
-      "tp1": 39.906061,
-      "tp2": 39.091651,
-      "sl": 41.53488,
-      "strength": 36,
-      "reasons": [
-        "MACD медвежий (hist=-0.11524)",
-        "Цена ниже EMA20",
-        "Стакан: сильное давление продажи (-0.43)",
-        "МТФ: только 1 таймфрейм согласен",
-        "OI растёт +1.9%",
-        "CVD падает (-7.1%) — продажи усиливаются 📉",
-        "⚠️ Funding через 34м",
-        "📌 Лимитный вход @ 40.7205 (откат к EMA20)"
-      ],
-      "news": null,
-      "created_at": "2026-03-17 15:26:22",
-      "status": "ACTIVE"
-    },
-    {
       "id": 335,
       "symbol": "OPNUSDT",
       "direction": "SHORT",
@@ -431,6 +387,27 @@
         "CVD положительный (-0.9%)",
         "⚠️ Funding через 31м",
         "📌 Лимитный вход @ 0.00592921 (откат к EMA20)"
+      ]
+    },
+    {
+      "symbol": "HYPEUSDT",
+      "direction": "SHORT",
+      "entry": 40.72047028,
+      "tp1": 39.906061,
+      "tp2": 39.091651,
+      "sl": 41.53488,
+      "strength": 36,
+      "status": "TP1",
+      "created_at": "2026-03-17 15:26:22",
+      "reasons": [
+        "MACD медвежий (hist=-0.11524)",
+        "Цена ниже EMA20",
+        "Стакан: сильное давление продажи (-0.43)",
+        "МТФ: только 1 таймфрейм согласен",
+        "OI растёт +1.9%",
+        "CVD падает (-7.1%) — продажи усиливаются 📉",
+        "⚠️ Funding через 34м",
+        "📌 Лимитный вход @ 40.7205 (откат к EMA20)"
       ]
     },
     {
@@ -673,6 +650,25 @@
       ]
     },
     {
+      "symbol": "LYNUSDT",
+      "direction": "SHORT",
+      "entry": 0.06069204,
+      "tp1": 0.058489,
+      "tp2": 0.056286,
+      "sl": 0.062454,
+      "strength": 30,
+      "status": "TP1",
+      "created_at": "2026-03-17 15:00:33",
+      "reasons": [
+        "MACD медвежий (hist=-0.00043)",
+        "Цена < EMA20 < EMA50",
+        "МТФ: 5m, 15m согласны",
+        "CVD падает (-6.7%) — продажи усиливаются 📉",
+        "⚠️ Funding через 60м",
+        "📌 Лимитный вход @ 0.060692 (откат к EMA20)"
+      ]
+    },
+    {
       "symbol": "XPLUSDT",
       "direction": "LONG",
       "entry": 0.11619036,
@@ -767,42 +763,6 @@
         "МТФ: 1h, 4h согласны",
         "CVD положительный (-1.8%)",
         "Doji (1h) — нерешительность"
-      ]
-    },
-    {
-      "symbol": "RIVERUSDT",
-      "direction": "SHORT",
-      "entry": 22.78052288,
-      "tp1": 21.92788,
-      "tp2": 21.075237,
-      "sl": 23.462637,
-      "strength": 32,
-      "status": "TP1",
-      "created_at": "2026-03-17 14:02:05",
-      "reasons": [
-        "MACD медвежий (hist=-0.12163)",
-        "EMA20 < EMA50 (death cross) 💀",
-        "МТФ: 5m, 15m, 1h согласны",
-        "CVD отрицательный (+3.1%)",
-        "📌 Лимитный вход @ 22.7805 (откат к EMA20)"
-      ]
-    },
-    {
-      "symbol": "XANUSDT",
-      "direction": "SHORT",
-      "entry": 0.01034505,
-      "tp1": 0.010138,
-      "tp2": 0.009931,
-      "sl": 0.010552,
-      "strength": 30,
-      "status": "TP1",
-      "created_at": "2026-03-17 13:50:18",
-      "reasons": [
-        "MACD медвежий (hist=-0.00000)",
-        "Цена < EMA20 < EMA50",
-        "МТФ: 5m, 15m согласны",
-        "CVD падает (-6.2%) — продажи усиливаются 📉",
-        "📌 Лимитный вход @ 0.010345 (откат к EMA20)"
       ]
     }
   ],
@@ -2017,25 +1977,6 @@
       ]
     },
     {
-      "id": 162,
-      "symbol": "RIVERUSDT",
-      "direction": "SHORT",
-      "entry": 22.051,
-      "tp1": 21.2262926,
-      "tp2": 20.3993801,
-      "sl": 22.7103249,
-      "strength": 32,
-      "taken_at": "2026-03-17 14:02:05",
-      "status": "OPEN",
-      "reasons": [
-        "MACD медвежий (hist=-0.12163)",
-        "EMA20 < EMA50 (death cross) 💀",
-        "МТФ: 5m, 15m, 1h согласны",
-        "CVD отрицательный (+3.1%)",
-        "📌 Лимитный вход @ 22.7805 (откат к EMA20)"
-      ]
-    },
-    {
       "id": 165,
       "symbol": "FILUSDT",
       "direction": "SHORT",
@@ -2516,6 +2457,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "RIVERUSDT",
+      "direction": "SHORT",
+      "entry": 22.051,
+      "tp1": 21.2262926,
+      "tp2": 20.3993801,
+      "sl": 22.7103249,
+      "strength": 32,
+      "status": "SL",
+      "pnl_pct": -3.08,
+      "close_price": 22.731,
+      "taken_at": "2026-03-17 14:02:05",
+      "closed_at": "2026-03-17 15:42:35"
+    },
     {
       "symbol": "FARTCOINUSDT",
       "direction": "LONG",
