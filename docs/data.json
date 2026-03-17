@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-03-17T09:46:16.648509+00:00",
+  "updated_at": "2026-03-17T09:47:40.136817+00:00",
   "publish_status": {
     "last_ok": "2026-03-17T09:43:55Z",
-    "last_error": "fatal: unable to access 'https://github.com/MUMITROLIK/trybotmy.git/': Failed to connect to github.com port 443 after 21069 ms: Could not connect to server\n",
+    "last_error": "fatal: unable to access 'https://github.com/MUMITROLIK/trybotmy.git/': Failed to connect to github.com port 443 after 22849 ms: Could not connect to server\n",
     "min_push_interval_sec": 30
   },
   "stats": {
     "total": 172,
     "wins": 13,
     "losses": 1,
-    "active": 4,
+    "active": 3,
     "winrate": 92.9
   },
   "trade_stats": {
@@ -25,28 +25,6 @@
     "emoji": "😐"
   },
   "signals": [
-    {
-      "id": 207,
-      "symbol": "TSLAUSDT",
-      "direction": "SHORT",
-      "entry": 395.16,
-      "tp1": 387.2568,
-      "tp2": 379.3536,
-      "sl": 403.0632,
-      "strength": 32,
-      "reasons": [
-        "RSI=64 (перекупленность)",
-        "BB верхняя зона (82%)",
-        "EMA20 < EMA50",
-        "Стакан: перевес ask (-0.05)",
-        "МТФ: только 1 таймфрейм согласен",
-        "OI растёт +1.3% + цена ↓",
-        "CVD отрицательный (-0.7%)"
-      ],
-      "news": null,
-      "created_at": "2026-03-17 09:37:00",
-      "status": "ACTIVE"
-    },
     {
       "id": 208,
       "symbol": "RIVERUSDT",
@@ -110,6 +88,26 @@
     }
   ],
   "history": [
+    {
+      "symbol": "TSLAUSDT",
+      "direction": "SHORT",
+      "entry": 395.16,
+      "tp1": 387.2568,
+      "tp2": 379.3536,
+      "sl": 403.0632,
+      "strength": 32,
+      "status": "EXPIRED",
+      "created_at": "2026-03-17 09:37:00",
+      "reasons": [
+        "RSI=64 (перекупленность)",
+        "BB верхняя зона (82%)",
+        "EMA20 < EMA50",
+        "Стакан: перевес ask (-0.05)",
+        "МТФ: только 1 таймфрейм согласен",
+        "OI растёт +1.3% + цена ↓",
+        "CVD отрицательный (-0.7%)"
+      ]
+    },
     {
       "symbol": "XAGUSDT",
       "direction": "SHORT",
@@ -476,25 +474,6 @@
         "МТФ: только 1 таймфрейм согласен",
         "OI падает (лонги закрываются)",
         "CVD падает (-8.3%) — продажи усиливаются 📉"
-      ]
-    },
-    {
-      "symbol": "1000BONKUSDT",
-      "direction": "SHORT",
-      "entry": 0.006518,
-      "tp1": 0.006388,
-      "tp2": 0.006257,
-      "sl": 0.006648,
-      "strength": 40,
-      "status": "EXPIRED",
-      "created_at": "2026-03-17 09:00:02",
-      "reasons": [
-        "RSI=71 (сильная перекупленность)",
-        "BB верхняя зона (97%)",
-        "EMA20 < EMA50",
-        "Объём x3.1 🔥🔥",
-        "МТФ: только 1 таймфрейм согласен",
-        "OI растёт +1.0% + цена ↓"
       ]
     }
   ],
