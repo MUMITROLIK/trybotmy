@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T22:31:25.291418+00:00",
+  "updated_at": "2026-03-17T22:32:26.135058+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T22:29:58Z",
+    "last_ok": "2026-03-17T22:31:30Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 390,
+    "total": 391,
     "wins": 110,
     "losses": 21,
-    "active": 16,
+    "active": 17,
     "winrate": 84.0
   },
   "trade_stats": {
-    "open": 12,
+    "open": 13,
     "pending": 11,
     "wins": 121,
     "losses": 84,
@@ -375,6 +375,28 @@
       ],
       "news": null,
       "created_at": "2026-03-17 22:31:12",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 429,
+      "symbol": "HUMAUSDT",
+      "direction": "LONG",
+      "entry": 0.01735,
+      "tp1": 0.017697,
+      "tp2": 0.018044,
+      "sl": 0.017003,
+      "strength": 41,
+      "reasons": [
+        "RSI=45 (нейтральный↓)",
+        "MACD бычий (hist=0.00004)",
+        "BB ниже середины",
+        "Стакан: сильное давление покупки (+0.52)",
+        "МТФ: 5m, 1h, 4h согласны",
+        "CVD положительный (-3.7%)",
+        "⚠️ Funding через 88м"
+      ],
+      "news": null,
+      "created_at": "2026-03-17 22:32:11",
       "status": "ACTIVE"
     }
   ],
@@ -1016,6 +1038,27 @@
         "CVD положительный (+3.5%)",
         "Doji (1h) — нерешительность",
         "⚠️ Funding через 89м"
+      ]
+    },
+    {
+      "id": 283,
+      "symbol": "HUMAUSDT",
+      "direction": "LONG",
+      "entry": 0.01735,
+      "tp1": 0.017697,
+      "tp2": 0.018044,
+      "sl": 0.017003,
+      "strength": 41,
+      "taken_at": "2026-03-17T22:32:11.974881",
+      "status": "OPEN",
+      "reasons": [
+        "RSI=45 (нейтральный↓)",
+        "MACD бычий (hist=0.00004)",
+        "BB ниже середины",
+        "Стакан: сильное давление покупки (+0.52)",
+        "МТФ: 5m, 1h, 4h согласны",
+        "CVD положительный (-3.7%)",
+        "⚠️ Funding через 88м"
       ]
     },
     {
