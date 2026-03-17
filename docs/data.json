@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T17:52:59.812860+00:00",
+  "updated_at": "2026-03-17T17:54:05.355188+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T17:52:32Z",
+    "last_ok": "2026-03-17T17:53:05Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -12,7 +12,7 @@
     "total": 361,
     "wins": 98,
     "losses": 14,
-    "active": 24,
+    "active": 23,
     "winrate": 87.5
   },
   "trade_stats": {
@@ -29,27 +29,6 @@
     "emoji": "😨"
   },
   "signals": [
-    {
-      "id": 306,
-      "symbol": "CRVUSDT",
-      "direction": "SHORT",
-      "entry": 0.25242364,
-      "tp1": 0.247375,
-      "tp2": 0.242327,
-      "sl": 0.257472,
-      "strength": 30,
-      "reasons": [
-        "MACD медвежий (hist=-0.00039)",
-        "Цена < EMA20 < EMA50",
-        "Объём x2.0 🔥",
-        "МТФ: 5m, 15m согласны",
-        "Doji (1h) — нерешительность",
-        "📌 Лимитный вход @ 0.252424 (откат к EMA20)"
-      ],
-      "news": null,
-      "created_at": "2026-03-17 13:53:10",
-      "status": "ACTIVE"
-    },
     {
       "id": 307,
       "symbol": "RVNUSDT",
