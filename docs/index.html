@@ -1489,13 +1489,23 @@ function switchTab(tab) {
 
 function renderLimits(trades, stats) {
   const cntEl = document.getElementById('ls-pending');
-  if (cntEl) cntEl.textContent = (stats && stats.pending != null) ? stats.pending : (trades ? trades.length : 0);
+  // Dedupe by symbol+direction (keep latest id)
+  const deduped = (() => {
+    const m = new Map();
+    (trades || []).forEach(t => {
+      const key = String(t.symbol || '') + '_' + String(t.direction || '');
+      const cur = m.get(key);
+      if (!cur || (t.id || 0) > (cur.id || 0)) m.set(key, t);
+    });
+    return [...m.values()];
+  })();
+  if (cntEl) cntEl.textContent = (stats && stats.pending != null) ? stats.pending : (deduped ? deduped.length : 0);
   const el = $('limitsGrid');
-  if (!trades || !trades.length) {
+  if (!deduped || !deduped.length) {
     el.innerHTML = '<div class="empty-state">⏳ Нет активных лимиток</div>';
     return;
   }
-  el.innerHTML = trades.map(t => {
+  el.innerHTML = deduped.map(t => {
     const lg = t.direction === 'LONG';
     const tags   = (t.reasons||[]).slice(0,4).map(r=>`<span class="tag">${r}</span>`).join('');
     return `
@@ -1522,7 +1532,7 @@ function renderLimits(trades, stats) {
   }).join('');
 
   // realtime prices ONLY when Limits tab is open
-  if (currentTab === 'limits') startLimitsWs(trades);
+  if (currentTab === 'limits') startLimitsWs(deduped);
 }
 
 // ── Trades render ──────────────────────────────────────────────────
