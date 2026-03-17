@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-17T00:10:35.053596+00:00",
+  "updated_at": "2026-03-17T00:12:42.088177+00:00",
   "stats": {
     "total": 48,
     "wins": 0,
@@ -15,9 +15,9 @@
     "winrate": 68.2
   },
   "fear_greed": {
-    "value": 23,
-    "label": "Extreme Fear",
-    "emoji": "😱"
+    "value": 28,
+    "label": "Fear",
+    "emoji": "😨"
   },
   "signals": [],
   "history": [
