@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T13:26:21.052996+00:00",
+  "updated_at": "2026-03-17T13:27:16.314702+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T13:25:21Z",
+    "last_ok": "2026-03-17T13:26:26Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -9,14 +9,14 @@
     "auto_take": true
   },
   "stats": {
-    "total": 259,
+    "total": 260,
     "wins": 26,
     "losses": 1,
-    "active": 11,
+    "active": 12,
     "winrate": 96.3
   },
   "trade_stats": {
-    "open": 79,
+    "open": 80,
     "wins": 50,
     "losses": 22,
     "total_pnl": 92.68,
@@ -250,6 +250,28 @@
       ],
       "news": null,
       "created_at": "2026-03-17 13:12:49",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 298,
+      "symbol": "TRIAUSDT",
+      "direction": "LONG",
+      "entry": 0.0313714,
+      "tp1": 0.032272,
+      "tp2": 0.033174,
+      "sl": 0.030651,
+      "strength": 53,
+      "reasons": [
+        "MACD бычий (hist=0.00020)",
+        "Цена > EMA20 > EMA50",
+        "Объём x4.6 🔥🔥🔥",
+        "МТФ: 5m, 15m, 4h согласны",
+        "CVD положительный (+5.0%)",
+        "Bullish Engulfing (1h) 🕯️",
+        "📌 Лимитный вход @ 0.0313714 (откат к EMA20)"
+      ],
+      "news": null,
+      "created_at": "2026-03-17 13:27:14",
       "status": "ACTIVE"
     }
   ],
@@ -2179,6 +2201,27 @@
         "МТФ: все 4 таймфрейма согласны ✅✅",
         "CVD положительный (+0.4%)",
         "📌 Лимитный вход @ 0.742328 (откат к EMA20)"
+      ]
+    },
+    {
+      "id": 152,
+      "symbol": "TRIAUSDT",
+      "direction": "LONG",
+      "entry": 0.03316,
+      "tp1": 0.03411169,
+      "tp2": 0.03506338,
+      "sl": 0.03239732,
+      "strength": 53,
+      "taken_at": "2026-03-17 13:27:15",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.00020)",
+        "Цена > EMA20 > EMA50",
+        "Объём x4.6 🔥🔥🔥",
+        "МТФ: 5m, 15m, 4h согласны",
+        "CVD положительный (+5.0%)",
+        "Bullish Engulfing (1h) 🕯️",
+        "📌 Лимитный вход @ 0.0313714 (откат к EMA20)"
       ]
     }
   ],
