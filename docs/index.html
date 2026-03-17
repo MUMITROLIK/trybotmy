@@ -747,6 +747,7 @@ let reconnectAttempts = 0;
 const MAX_RECONNECT_ATTEMPTS = 50;
 const RECONNECT_DELAY = 3000;
 let AUTO_TAKE = false;
+let currentTab = 'signals';
 
 function initWebSocket() {
   const protocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
@@ -832,8 +833,8 @@ function handleDataUpdate(data) {
   renderTrades(openTrades, data.trade_stats);
   renderTradeHistory(data.trades_history || []);
   
-  // realtime price/progress bars for open positions
-  startTradeWs(openTrades);
+  // realtime price/progress bars ONLY when Positions tab is open
+  if (currentTab === 'positions') startTradeWs(openTrades);
 
   setLiveStatus(true);
 }
@@ -852,6 +853,12 @@ async function pollDataFallback() {
 // ── Real-time prices for open trades (Binance WS) ─────────────────────────────
 let tradesWs = null;
 const tradeBySymbol = new Map();    // symbol -> trades[]
+
+function stopTradeWs() {
+  try { if (tradesWs) tradesWs.close(); } catch(e) {}
+  tradesWs = null;
+  tradeBySymbol.clear();
+}
 
 function startTradeWs(trades) {
   tradeBySymbol.clear();
@@ -1246,6 +1253,7 @@ function renderHistory(h) {
 
 // ── Tabs ───────────────────────────────────────────────────────────
 function switchTab(tab) {
+  currentTab = tab;
   ['signals','positions','history'].forEach(t => {
     const page = $('page-'+t);
     const btn  = $('tab-'+t);
@@ -1253,6 +1261,9 @@ function switchTab(tab) {
     if (!page) return;
     page.classList.toggle('active', t === tab);
   });
+  // Start/stop heavy realtime streams based on current tab
+  if (tab === 'positions') startTradeWs(_allTrades || []);
+  else stopTradeWs();
 }
 
 // ── Trades render ──────────────────────────────────────────────────
