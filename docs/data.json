@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T10:11:18.783293+00:00",
+  "updated_at": "2026-03-17T10:12:05.427877+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T10:10:18Z",
+    "last_ok": "2026-03-17T10:11:21Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -13,11 +13,11 @@
     "winrate": 93.8
   },
   "trade_stats": {
-    "open": 32,
-    "wins": 27,
+    "open": 31,
+    "wins": 28,
     "losses": 8,
-    "total_pnl": 65.81,
-    "winrate": 77.1
+    "total_pnl": 68.37,
+    "winrate": 77.8
   },
   "fear_greed": {
     "value": 50,
@@ -1002,9 +1002,10 @@
         "OI растёт +1.8% + цена ↓",
         "📌 Лимитный вход @ 0.304971 (откат к EMA20)"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 49,
       "symbol": "EIGENUSDT",
       "direction": "SHORT",
       "entry": 0.23142058,
@@ -1012,20 +1013,12 @@
       "tp2": 0.222164,
       "sl": 0.2250732,
       "strength": 35,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 2.56,
+      "close_price": 0.2255,
       "taken_at": "2026-03-17 09:09:46",
-      "status": "TP1_HIT",
-      "reasons": [
-        "MACD медвежий (hist=-0.00081)",
-        "Цена ниже EMA20",
-        "Стакан: давление продажи (-0.21)",
-        "МТФ: 5m, 1h согласны",
-        "OI падает (лонги закрываются)",
-        "CVD падает (-5.6%) — продажи усиливаются 📉",
-        "📌 Лимитный вход @ 0.231421 (откат к EMA20)"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-17 10:12:05"
+    },
     {
       "symbol": "POLYXUSDT",
       "direction": "SHORT",
