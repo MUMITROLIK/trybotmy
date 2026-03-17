@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T21:21:33.323659+00:00",
+  "updated_at": "2026-03-17T21:22:19.071703+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T21:20:33Z",
+    "last_ok": "2026-03-17T21:21:38Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,15 +10,15 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 373,
-    "wins": 104,
+    "total": 374,
+    "wins": 105,
     "losses": 20,
     "active": 9,
-    "winrate": 83.9
+    "winrate": 84.0
   },
   "trade_stats": {
     "open": 14,
-    "pending": 5,
+    "pending": 6,
     "wins": 116,
     "losses": 82,
     "total_pnl": 99.54,
@@ -228,6 +228,25 @@
     }
   ],
   "history": [
+    {
+      "symbol": "HYPERUSDT",
+      "direction": "LONG",
+      "entry": 0.10932167,
+      "tp1": 0.112247,
+      "tp2": 0.115172,
+      "sl": 0.106982,
+      "strength": 46,
+      "status": "TP1",
+      "created_at": "2026-03-17 21:21:43",
+      "reasons": [
+        "MACD бычий (hist=0.00037)",
+        "Цена > EMA20 > EMA50",
+        "Объём x3.2 🔥🔥",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "CVD положительный (-3.2%)",
+        "📌 Лимитный вход @ 0.109322 (откат к EMA20)"
+      ]
+    },
     {
       "symbol": "FARTCOINUSDT",
       "direction": "LONG",
@@ -596,26 +615,6 @@
         "OI растёт +5.5% + цена ↑",
         "CVD положительный (-0.5%)",
         "📌 Лимитный вход @ 0.00603279 (откат к EMA20)"
-      ]
-    },
-    {
-      "symbol": "CFGUSDT",
-      "direction": "SHORT",
-      "entry": 0.15977231,
-      "tp1": 0.155079,
-      "tp2": 0.150387,
-      "sl": 0.163527,
-      "strength": 49,
-      "status": "TP1",
-      "created_at": "2026-03-17 16:39:32",
-      "reasons": [
-        "MACD медвежий (hist=-0.00016)",
-        "Цена < EMA20 < EMA50",
-        "Стакан: давление продажи (-0.12)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +11.1% + цена ↓",
-        "CVD падает (-8.7%) — продажи усиливаются 📉",
-        "📌 Лимитный вход @ 0.159772 (откат к EMA20)"
       ]
     }
   ],
@@ -1008,9 +1007,43 @@
         "CVD положительный (+1.3%)",
         "📌 Лимитный вход @ 0.208856 (откат к EMA20)"
       ]
+    },
+    {
+      "id": 266,
+      "symbol": "HYPERUSDT",
+      "direction": "LONG",
+      "entry": 0.10932167,
+      "tp1": 0.112247,
+      "tp2": 0.115172,
+      "sl": 0.106982,
+      "strength": 46,
+      "taken_at": "2026-03-17T21:21:46.223300",
+      "status": "PENDING",
+      "reasons": [
+        "MACD бычий (hist=0.00037)",
+        "Цена > EMA20 > EMA50",
+        "Объём x3.2 🔥🔥",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "CVD положительный (-3.2%)",
+        "📌 Лимитный вход @ 0.109322 (откат к EMA20)"
+      ]
     }
   ],
   "trades_history": [
+    {
+      "symbol": "HYPERUSDT",
+      "direction": "LONG",
+      "entry": 0.10932167,
+      "tp1": 0.112247,
+      "tp2": 0.115172,
+      "sl": 0.106982,
+      "strength": 46,
+      "status": "PENDING",
+      "pnl_pct": 0,
+      "close_price": null,
+      "taken_at": "2026-03-17T21:21:46.223300",
+      "closed_at": null
+    },
     {
       "symbol": "FARTCOINUSDT",
       "direction": "LONG",
@@ -3796,20 +3829,6 @@
       "close_price": 0.09897500000000001,
       "taken_at": "2026-03-17 08:40:34",
       "closed_at": "2026-03-17 12:38:11"
-    },
-    {
-      "symbol": "ZECUSDT",
-      "direction": "LONG",
-      "entry": 272.58,
-      "tp1": 278.0316,
-      "tp2": 283.4832,
-      "sl": 267.1284,
-      "strength": 35,
-      "status": "SL",
-      "pnl_pct": -2.02,
-      "close_price": 267.085,
-      "taken_at": "2026-03-17 11:55:58",
-      "closed_at": "2026-03-17 12:36:22"
     }
   ]
 }
