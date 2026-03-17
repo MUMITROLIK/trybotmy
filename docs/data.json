@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T13:50:29.307034+00:00",
+  "updated_at": "2026-03-17T13:51:37.610854+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T13:50:03Z",
+    "last_ok": "2026-03-17T13:50:37Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -16,11 +16,11 @@
     "winrate": 90.9
   },
   "trade_stats": {
-    "open": 77,
+    "open": 75,
     "wins": 54,
-    "losses": 28,
-    "total_pnl": 90.82,
-    "winrate": 65.9
+    "losses": 30,
+    "total_pnl": 86.67,
+    "winrate": 64.3
   },
   "fear_greed": {
     "value": 28,
@@ -1299,26 +1299,6 @@
       ]
     },
     {
-      "id": 97,
-      "symbol": "HYPEUSDT",
-      "direction": "LONG",
-      "entry": 41.507,
-      "tp1": 42.33714,
-      "tp2": 43.16728,
-      "sl": 40.67686,
-      "strength": 36,
-      "taken_at": "2026-03-17 11:56:06",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.05816)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: давление покупки (+0.20)",
-        "МТФ: 5m, 15m, 4h согласны",
-        "CVD положительный (+1.5%)",
-        "📌 Лимитный вход @ 41.0391 (откат к EMA20)"
-      ]
-    },
-    {
       "id": 98,
       "symbol": "GUSDT",
       "direction": "LONG",
@@ -2068,26 +2048,6 @@
       ]
     },
     {
-      "id": 154,
-      "symbol": "XPLUSDT",
-      "direction": "LONG",
-      "entry": 0.1176,
-      "tp1": 0.119952,
-      "tp2": 0.122304,
-      "sl": 0.115248,
-      "strength": 31,
-      "taken_at": "2026-03-17 13:32:19",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00030)",
-        "Цена выше EMA20",
-        "Стакан: перевес bid (+0.05)",
-        "МТФ: 5m, 1h, 4h согласны",
-        "CVD положительный (+0.9%)",
-        "📌 Лимитный вход @ 0.11632 (откат к EMA20)"
-      ]
-    },
-    {
       "id": 155,
       "symbol": "HUMAUSDT",
       "direction": "SHORT",
@@ -2184,6 +2144,34 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "XPLUSDT",
+      "direction": "LONG",
+      "entry": 0.1176,
+      "tp1": 0.119952,
+      "tp2": 0.122304,
+      "sl": 0.115248,
+      "strength": 31,
+      "status": "SL",
+      "pnl_pct": -2.08,
+      "close_price": 0.11515,
+      "taken_at": "2026-03-17 13:32:19",
+      "closed_at": "2026-03-17 13:50:59"
+    },
+    {
+      "symbol": "HYPEUSDT",
+      "direction": "LONG",
+      "entry": 41.507,
+      "tp1": 42.33714,
+      "tp2": 43.16728,
+      "sl": 40.67686,
+      "strength": 36,
+      "status": "SL",
+      "pnl_pct": -2.07,
+      "close_price": 40.6485,
+      "taken_at": "2026-03-17 11:56:06",
+      "closed_at": "2026-03-17 13:50:56"
+    },
     {
       "symbol": "GRASSUSDT",
       "direction": "LONG",
