@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T21:35:41.760791+00:00",
+  "updated_at": "2026-03-17T21:36:12.257968+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T21:34:41Z",
+    "last_ok": "2026-03-17T21:35:46Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,15 +10,15 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 377,
+    "total": 379,
     "wins": 106,
     "losses": 20,
-    "active": 10,
+    "active": 12,
     "winrate": 84.1
   },
   "trade_stats": {
     "open": 16,
-    "pending": 7,
+    "pending": 9,
     "wins": 116,
     "losses": 82,
     "total_pnl": 99.54,
@@ -246,6 +246,50 @@
       ],
       "news": null,
       "created_at": "2026-03-17 21:27:36",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 416,
+      "symbol": "DASHUSDT",
+      "direction": "LONG",
+      "entry": 35.33483824,
+      "tp1": 36.041535,
+      "tp2": 36.748232,
+      "sl": 34.628141,
+      "strength": 42,
+      "reasons": [
+        "MACD бычий (hist=0.04631)",
+        "Цена > EMA20 > EMA50",
+        "Стакан: давление покупки (+0.22)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +1.2%",
+        "CVD положительный (+1.9%)",
+        "📌 Лимитный вход @ 35.3348 (откат к EMA20)"
+      ],
+      "news": null,
+      "created_at": "2026-03-17 21:35:51",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 417,
+      "symbol": "LITUSDT",
+      "direction": "LONG",
+      "entry": 1.26586677,
+      "tp1": 1.296188,
+      "tp2": 1.32651,
+      "sl": 1.240549,
+      "strength": 46,
+      "reasons": [
+        "MACD бычий (hist=0.00016)",
+        "Цена > EMA20 > EMA50",
+        "Стакан: перевес bid (+0.07)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +2.6% + цена ↑",
+        "CVD растёт (+6.7%) — покупки усиливаются 📈",
+        "📌 Лимитный вход @ 1.26587 (откат к EMA20)"
+      ],
+      "news": null,
+      "created_at": "2026-03-17 21:36:03",
       "status": "ACTIVE"
     }
   ],
@@ -1111,9 +1155,79 @@
         "CVD растёт (+6.5%) — покупки усиливаются 📈",
         "📌 Лимитный вход @ 0.00654345 (откат к EMA20)"
       ]
+    },
+    {
+      "id": 270,
+      "symbol": "DASHUSDT",
+      "direction": "LONG",
+      "entry": 35.33483824,
+      "tp1": 36.041535,
+      "tp2": 36.748232,
+      "sl": 34.628141,
+      "strength": 42,
+      "taken_at": "2026-03-17T21:35:51.782035",
+      "status": "PENDING",
+      "reasons": [
+        "MACD бычий (hist=0.04631)",
+        "Цена > EMA20 > EMA50",
+        "Стакан: давление покупки (+0.22)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +1.2%",
+        "CVD положительный (+1.9%)",
+        "📌 Лимитный вход @ 35.3348 (откат к EMA20)"
+      ]
+    },
+    {
+      "id": 271,
+      "symbol": "LITUSDT",
+      "direction": "LONG",
+      "entry": 1.26586677,
+      "tp1": 1.296188,
+      "tp2": 1.32651,
+      "sl": 1.240549,
+      "strength": 46,
+      "taken_at": "2026-03-17T21:36:03.591597",
+      "status": "PENDING",
+      "reasons": [
+        "MACD бычий (hist=0.00016)",
+        "Цена > EMA20 > EMA50",
+        "Стакан: перевес bid (+0.07)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +2.6% + цена ↑",
+        "CVD растёт (+6.7%) — покупки усиливаются 📈",
+        "📌 Лимитный вход @ 1.26587 (откат к EMA20)"
+      ]
     }
   ],
   "trades_history": [
+    {
+      "symbol": "LITUSDT",
+      "direction": "LONG",
+      "entry": 1.26586677,
+      "tp1": 1.296188,
+      "tp2": 1.32651,
+      "sl": 1.240549,
+      "strength": 46,
+      "status": "PENDING",
+      "pnl_pct": 0,
+      "close_price": null,
+      "taken_at": "2026-03-17T21:36:03.591597",
+      "closed_at": null
+    },
+    {
+      "symbol": "DASHUSDT",
+      "direction": "LONG",
+      "entry": 35.33483824,
+      "tp1": 36.041535,
+      "tp2": 36.748232,
+      "sl": 34.628141,
+      "strength": 42,
+      "status": "PENDING",
+      "pnl_pct": 0,
+      "close_price": null,
+      "taken_at": "2026-03-17T21:35:51.782035",
+      "closed_at": null
+    },
     {
       "symbol": "1000BONKUSDT",
       "direction": "LONG",
@@ -3885,34 +3999,6 @@
       "close_price": 0.003526,
       "taken_at": "2026-03-17 09:44:17",
       "closed_at": "2026-03-17 12:42:22"
-    },
-    {
-      "symbol": "DEGOUSDT",
-      "direction": "SHORT",
-      "entry": 1.0749,
-      "tp1": 1.03168902,
-      "tp2": 0.98847804,
-      "sl": 1.10951178,
-      "strength": 40,
-      "status": "SL",
-      "pnl_pct": -3.72,
-      "close_price": 1.1148500000000001,
-      "taken_at": "2026-03-17 12:28:07",
-      "closed_at": "2026-03-17 12:41:42"
-    },
-    {
-      "symbol": "1000PEPEUSDT",
-      "direction": "SHORT",
-      "entry": 0.0037381,
-      "tp1": 0.00366334,
-      "tp2": 0.00358858,
-      "sl": 0.00366105,
-      "strength": 36,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 1.96,
-      "close_price": 0.00366475,
-      "taken_at": "2026-03-17 10:17:13",
-      "closed_at": "2026-03-17 12:38:18"
     }
   ]
 }
