@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T19:24:02.560585+00:00",
+  "updated_at": "2026-03-17T19:25:07.694697+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T19:23:02Z",
+    "last_ok": "2026-03-17T19:24:07Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -12,7 +12,7 @@
     "total": 364,
     "wins": 99,
     "losses": 17,
-    "active": 19,
+    "active": 18,
     "winrate": 85.3
   },
   "trade_stats": {
@@ -29,27 +29,6 @@
     "emoji": "😨"
   },
   "signals": [
-    {
-      "id": 332,
-      "symbol": "PIXELUSDT",
-      "direction": "LONG",
-      "entry": 0.00964,
-      "tp1": 0.00984,
-      "tp2": 0.01004,
-      "sl": 0.009447,
-      "strength": 34,
-      "reasons": [
-        "RSI=22 (сильная перепроданность)",
-        "BB нижняя полоса (пробой)",
-        "Стакан: сильное давление покупки (+0.26)",
-        "МТФ: только 1 таймфрейм согласен",
-        "OI падает (шорты закрываются)",
-        "⚠️ Funding через 36м"
-      ],
-      "news": null,
-      "created_at": "2026-03-17 15:24:24",
-      "status": "ACTIVE"
-    },
     {
       "id": 337,
       "symbol": "XAGUSDT",
