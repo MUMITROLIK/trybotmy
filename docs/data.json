@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-03-17T09:44:25.002913+00:00",
+  "updated_at": "2026-03-17T09:44:55.241642+00:00",
   "publish_status": {
     "last_ok": "2026-03-17T09:43:55Z",
-    "last_error": null,
+    "last_error": "fatal: unable to access 'https://github.com/MUMITROLIK/trybotmy.git/': Failed to connect to github.com port 443 after 21047 ms: Could not connect to server\n",
     "min_push_interval_sec": 30
   },
   "stats": {
@@ -13,11 +13,11 @@
     "winrate": 92.9
   },
   "trade_stats": {
-    "open": 34,
-    "wins": 23,
+    "open": 33,
+    "wins": 24,
     "losses": 7,
-    "total_pnl": 57.55,
-    "winrate": 76.7
+    "total_pnl": 59.55,
+    "winrate": 77.4
   },
   "fear_greed": {
     "value": 50,
@@ -1162,9 +1162,10 @@
         "МТФ: 5m, 15m, 4h согласны",
         "📌 Лимитный вход @ 0.00365772 (откат к EMA20)"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 54,
       "symbol": "KITEUSDT",
       "direction": "SHORT",
       "entry": 0.20221,
@@ -1172,18 +1173,12 @@
       "tp2": 0.1941216,
       "sl": 0.198135,
       "strength": 31,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 2.0,
+      "close_price": 0.198175,
       "taken_at": "2026-03-17 09:15:14",
-      "status": "TP1_HIT",
-      "reasons": [
-        "MACD медвежий (hist=-0.00029)",
-        "Цена < EMA20 < EMA50",
-        "Стакан: сильное давление продажи (-0.38)",
-        "МТФ: 5m, 15m согласны",
-        "📌 Лимитный вход @ 0.20439 (откат к EMA20)"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-17 09:44:49"
+    },
     {
       "symbol": "ROBOUSDT",
       "direction": "SHORT",
