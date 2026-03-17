@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T16:46:10.123964+00:00",
+  "updated_at": "2026-03-17T16:47:14.938241+00:00",
   "publish_status": {
-    "last_ok": null,
+    "last_ok": "2026-03-17T16:46:14Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,18 +10,18 @@
   },
   "stats": {
     "total": 356,
-    "wins": 90,
+    "wins": 91,
     "losses": 11,
-    "active": 32,
-    "winrate": 89.1
+    "active": 30,
+    "winrate": 89.2
   },
   "trade_stats": {
-    "open": 64,
+    "open": 62,
     "pending": 63,
-    "wins": 74,
+    "wins": 76,
     "losses": 47,
-    "total_pnl": 91.05,
-    "winrate": 40.2
+    "total_pnl": 91.8,
+    "winrate": 40.9
   },
   "fear_greed": {
     "value": 28,
@@ -29,27 +29,6 @@
     "emoji": "😨"
   },
   "signals": [
-    {
-      "id": 281,
-      "symbol": "ZECUSDT",
-      "direction": "LONG",
-      "entry": 268.27,
-      "tp1": 273.6354,
-      "tp2": 279.0008,
-      "sl": 262.9046,
-      "strength": 28,
-      "reasons": [
-        "RSI=42 (нейтральный↓)",
-        "BB ниже середины",
-        "EMA20 > EMA50",
-        "Стакан: перевес bid (+0.08)",
-        "МТФ: 15m, 1h, 4h согласны",
-        "CVD положительный (+4.4%)"
-      ],
-      "news": null,
-      "created_at": "2026-03-17 12:46:57",
-      "status": "ACTIVE"
-    },
     {
       "id": 290,
       "symbol": "1000SHIBUSDT",
@@ -678,9 +657,10 @@
       "news": null,
       "created_at": "2026-03-17 16:45:15",
       "status": "ACTIVE"
-    },
+    }
+  ],
+  "history": [
     {
-      "id": 394,
       "symbol": "CFGUSDT",
       "direction": "SHORT",
       "entry": 0.15930219,
@@ -688,6 +668,8 @@
       "tp2": 0.150259,
       "sl": 0.162919,
       "strength": 49,
+      "status": "TP1",
+      "created_at": "2026-03-17 16:45:31",
       "reasons": [
         "MACD медвежий (hist=-0.00020)",
         "Цена < EMA20 < EMA50",
@@ -696,13 +678,8 @@
         "OI растёт +11.1% + цена ↓",
         "CVD падает (-9.1%) — продажи усиливаются 📉",
         "📌 Лимитный вход @ 0.159302 (откат к EMA20)"
-      ],
-      "news": null,
-      "created_at": "2026-03-17 16:45:31",
-      "status": "ACTIVE"
-    }
-  ],
-  "history": [
+      ]
+    },
     {
       "symbol": "ENSOUSDT",
       "direction": "SHORT",
@@ -1074,61 +1051,9 @@
         "CVD положительный (-0.5%)",
         "📌 Лимитный вход @ 0.00600047 (откат к EMA20)"
       ]
-    },
-    {
-      "symbol": "TRIAUSDT",
-      "direction": "LONG",
-      "entry": 0.03318968,
-      "tp1": 0.034622,
-      "tp2": 0.036055,
-      "sl": 0.032044,
-      "strength": 44,
-      "status": "TP1",
-      "created_at": "2026-03-17 16:22:55",
-      "reasons": [
-        "MACD бычий (hist=0.00022)",
-        "Цена > EMA20 > EMA50",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +14.0% + цена ↑",
-        "CVD растёт (+6.3%) — покупки усиливаются 📈",
-        "📌 Лимитный вход @ 0.0331897 (откат к EMA20)"
-      ]
     }
   ],
   "trades_open": [
-    {
-      "id": 33,
-      "symbol": "BNXUSDT",
-      "direction": "SHORT",
-      "entry": 2.0,
-      "tp1": 1.96,
-      "tp2": 1.92,
-      "sl": 2.04,
-      "strength": 23,
-      "taken_at": "2026-03-17 08:45:50",
-      "status": "OPEN",
-      "reasons": [
-        "BB верхняя полоса (пробой)",
-        "МТФ: все 4 таймфрейма согласны ✅✅"
-      ]
-    },
-    {
-      "id": 34,
-      "symbol": "BNBUSDT",
-      "direction": "SHORT",
-      "entry": 675.56,
-      "tp1": 662.0488,
-      "tp2": 648.5376,
-      "sl": 689.0712,
-      "strength": 11,
-      "taken_at": "2026-03-17 08:45:51",
-      "status": "OPEN",
-      "reasons": [
-        "BB выше середины",
-        "Цена < EMA20 < EMA50",
-        "CVD отрицательный (-1.7%)"
-      ]
-    },
     {
       "id": 35,
       "symbol": "SOLUSDT",
@@ -3654,6 +3579,34 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "BNBUSDT",
+      "direction": "SHORT",
+      "entry": 675.56,
+      "tp1": 662.0488,
+      "tp2": 648.5376,
+      "sl": 689.0712,
+      "strength": 11,
+      "status": "TIMEOUT",
+      "pnl_pct": 0.75,
+      "close_price": 670.465,
+      "taken_at": "2026-03-17 08:45:51",
+      "closed_at": "2026-03-17 16:46:20"
+    },
+    {
+      "symbol": "BNXUSDT",
+      "direction": "SHORT",
+      "entry": 2.0,
+      "tp1": 1.96,
+      "tp2": 1.92,
+      "sl": 2.04,
+      "strength": 23,
+      "status": "TIMEOUT",
+      "pnl_pct": 0,
+      "close_price": 2.0,
+      "taken_at": "2026-03-17 08:45:50",
+      "closed_at": "2026-03-17 16:46:18"
+    },
     {
       "symbol": "CRCLUSDT",
       "direction": "SHORT",
