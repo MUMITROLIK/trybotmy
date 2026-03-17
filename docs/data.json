@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T17:15:46.615764+00:00",
+  "updated_at": "2026-03-17T17:16:17.717569+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T17:14:46Z",
+    "last_ok": "2026-03-17T17:15:51Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -16,8 +16,8 @@
     "winrate": 87.0
   },
   "trade_stats": {
-    "open": 55,
-    "pending": 16,
+    "open": 56,
+    "pending": 15,
     "wins": 82,
     "losses": 50,
     "total_pnl": 87.88,
@@ -1860,6 +1860,25 @@
       ]
     },
     {
+      "id": 196,
+      "symbol": "FETUSDT",
+      "direction": "SHORT",
+      "entry": 0.2318242,
+      "tp1": 0.226842,
+      "tp2": 0.22186,
+      "sl": 0.236461,
+      "strength": 27,
+      "taken_at": "2026-03-17 17:16:04",
+      "status": "OPEN",
+      "reasons": [
+        "MACD медвежий (hist=-0.00034)",
+        "Цена < EMA20 < EMA50",
+        "МТФ: 5m, 15m согласны",
+        "CVD падает (-5.0%) — продажи усиливаются 📉",
+        "📌 Лимитный вход @ 0.231824 (откат к EMA20)"
+      ]
+    },
+    {
       "id": 205,
       "symbol": "XANUSDT",
       "direction": "SHORT",
@@ -2392,25 +2411,6 @@
         "CVD растёт (+5.9%) — покупки усиливаются 📈",
         "Doji (1h) — нерешительность",
         "📌 Лимитный вход @ 0.0329259 (откат к EMA20)"
-      ]
-    },
-    {
-      "id": 196,
-      "symbol": "FETUSDT",
-      "direction": "SHORT",
-      "entry": 0.2318242,
-      "tp1": 0.226842,
-      "tp2": 0.22186,
-      "sl": 0.236461,
-      "strength": 27,
-      "taken_at": null,
-      "status": "PENDING",
-      "reasons": [
-        "MACD медвежий (hist=-0.00034)",
-        "Цена < EMA20 < EMA50",
-        "МТФ: 5m, 15m согласны",
-        "CVD падает (-5.0%) — продажи усиливаются 📉",
-        "📌 Лимитный вход @ 0.231824 (откат к EMA20)"
       ]
     },
     {
@@ -5365,20 +5365,6 @@
       "tp2": 0.035465,
       "sl": 0.03191,
       "strength": 46,
-      "status": "PENDING",
-      "pnl_pct": 0,
-      "close_price": null,
-      "taken_at": null,
-      "closed_at": null
-    },
-    {
-      "symbol": "FETUSDT",
-      "direction": "SHORT",
-      "entry": 0.2318242,
-      "tp1": 0.226842,
-      "tp2": 0.22186,
-      "sl": 0.236461,
-      "strength": 27,
       "status": "PENDING",
       "pnl_pct": 0,
       "close_price": null,
