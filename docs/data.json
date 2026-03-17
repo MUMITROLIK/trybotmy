@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T23:22:07.415876+00:00",
+  "updated_at": "2026-03-17T23:23:12.112258+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T23:21:40Z",
+    "last_ok": "2026-03-17T23:22:12Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -12,17 +12,17 @@
   "stats": {
     "total": 399,
     "wins": 112,
-    "losses": 23,
-    "active": 20,
-    "winrate": 83.0
+    "losses": 24,
+    "active": 19,
+    "winrate": 82.4
   },
   "trade_stats": {
-    "open": 20,
+    "open": 19,
     "pending": 2,
     "wins": 121,
-    "losses": 86,
-    "total_pnl": 106.8,
-    "winrate": 58.5
+    "losses": 87,
+    "total_pnl": 104.62,
+    "winrate": 58.2
   },
   "fear_greed": {
     "value": 28,
@@ -359,28 +359,6 @@
       "status": "ACTIVE"
     },
     {
-      "id": 432,
-      "symbol": "ANIMEUSDT",
-      "direction": "LONG",
-      "entry": 0.005765,
-      "tp1": 0.00588,
-      "tp2": 0.005996,
-      "sl": 0.00565,
-      "strength": 40,
-      "reasons": [
-        "RSI=37 (перепроданность)",
-        "MACD бычий (hist=0.00000)",
-        "BB нижняя зона (16%)",
-        "Стакан: давление покупки (+0.24)",
-        "МТФ: 1h, 4h согласны",
-        "CVD положительный (-0.4%)",
-        "⚠️ Funding через 79м"
-      ],
-      "news": null,
-      "created_at": "2026-03-17 22:41:26",
-      "status": "ACTIVE"
-    },
-    {
       "id": 433,
       "symbol": "CRVUSDT",
       "direction": "LONG",
@@ -490,6 +468,26 @@
         "CVD положительный (+0.3%)",
         "⚠️ Funding через 45м",
         "📌 Лимитный вход @ 0.00698903 (откат к EMA20)"
+      ]
+    },
+    {
+      "symbol": "ANIMEUSDT",
+      "direction": "LONG",
+      "entry": 0.005765,
+      "tp1": 0.00588,
+      "tp2": 0.005996,
+      "sl": 0.00565,
+      "strength": 40,
+      "status": "SL",
+      "created_at": "2026-03-17 22:41:26",
+      "reasons": [
+        "RSI=37 (перепроданность)",
+        "MACD бычий (hist=0.00000)",
+        "BB нижняя зона (16%)",
+        "Стакан: давление покупки (+0.24)",
+        "МТФ: 1h, 4h согласны",
+        "CVD положительный (-0.4%)",
+        "⚠️ Funding через 79м"
       ]
     },
     {
@@ -845,25 +843,6 @@
         "OI растёт +12.8% + цена ↑",
         "Doji (1h) — нерешительность"
       ]
-    },
-    {
-      "symbol": "ZECUSDT",
-      "direction": "LONG",
-      "entry": 270.0346493,
-      "tp1": 275.435342,
-      "tp2": 280.836035,
-      "sl": 264.633956,
-      "strength": 47,
-      "status": "TP1",
-      "created_at": "2026-03-17 17:48:11",
-      "reasons": [
-        "MACD бычий (hist=0.68925)",
-        "EMA20 > EMA50 (golden cross) 🌟",
-        "Стакан: сильное давление покупки (+0.40)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "Bullish Engulfing (1h) 🕯️",
-        "📌 Лимитный вход @ 270.035 (откат к EMA20)"
-      ]
     }
   ],
   "trades_open": [
@@ -1197,27 +1176,6 @@
       ]
     },
     {
-      "id": 286,
-      "symbol": "ANIMEUSDT",
-      "direction": "LONG",
-      "entry": 0.005765,
-      "tp1": 0.00588,
-      "tp2": 0.005996,
-      "sl": 0.00565,
-      "strength": 40,
-      "taken_at": "2026-03-17T22:41:26.925027",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=37 (перепроданность)",
-        "MACD бычий (hist=0.00000)",
-        "BB нижняя зона (16%)",
-        "Стакан: давление покупки (+0.24)",
-        "МТФ: 1h, 4h согласны",
-        "CVD положительный (-0.4%)",
-        "⚠️ Funding через 79м"
-      ]
-    },
-    {
       "id": 287,
       "symbol": "CRVUSDT",
       "direction": "LONG",
@@ -1326,6 +1284,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "ANIMEUSDT",
+      "direction": "LONG",
+      "entry": 0.005765,
+      "tp1": 0.00588,
+      "tp2": 0.005996,
+      "sl": 0.00565,
+      "strength": 40,
+      "status": "SL",
+      "pnl_pct": -2.18,
+      "close_price": 0.0056395,
+      "taken_at": "2026-03-17T22:41:26.925027",
+      "closed_at": "2026-03-17 23:22:27"
+    },
     {
       "symbol": "BEATUSDT",
       "direction": "LONG",
@@ -4111,20 +4083,6 @@
       "close_price": 0.11745,
       "taken_at": "2026-03-17 12:08:49",
       "closed_at": "2026-03-17 13:31:49"
-    },
-    {
-      "symbol": "ASTERUSDT",
-      "direction": "LONG",
-      "entry": 0.7638,
-      "tp1": 0.779076,
-      "tp2": 0.794352,
-      "sl": 0.78807865,
-      "strength": 36,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 3.16,
-      "close_price": 0.78795,
-      "taken_at": "2026-03-17 13:18:01",
-      "closed_at": "2026-03-17 13:23:35"
     }
   ]
 }
