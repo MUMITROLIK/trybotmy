@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T20:06:20.491647+00:00",
+  "updated_at": "2026-03-17T20:07:26.025145+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T20:05:20Z",
+    "last_ok": "2026-03-17T20:06:26Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -16,12 +16,12 @@
     "winrate": 83.9
   },
   "trade_stats": {
-    "open": 36,
+    "open": 35,
     "pending": 15,
-    "wins": 100,
+    "wins": 101,
     "losses": 73,
-    "total_pnl": 83.33,
-    "winrate": 57.8
+    "total_pnl": 83.8,
+    "winrate": 58.0
   },
   "fear_greed": {
     "value": 28,
@@ -699,25 +699,6 @@
     }
   ],
   "trades_open": [
-    {
-      "id": 111,
-      "symbol": "DASHUSDT",
-      "direction": "SHORT",
-      "entry": 35.14,
-      "tp1": 34.4372,
-      "tp2": 33.7344,
-      "sl": 35.8428,
-      "strength": 32,
-      "taken_at": "2026-03-17 12:06:22",
-      "status": "OPEN",
-      "reasons": [
-        "MACD медвежий (hist=-0.00701)",
-        "Цена < EMA20 < EMA50",
-        "Стакан: давление продажи (-0.12)",
-        "МТФ: 5m, 15m согласны",
-        "CVD отрицательный (-4.2%)"
-      ]
-    },
     {
       "id": 114,
       "symbol": "HBARUSDT",
@@ -2437,6 +2418,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "DASHUSDT",
+      "direction": "SHORT",
+      "entry": 35.14,
+      "tp1": 34.4372,
+      "tp2": 33.7344,
+      "sl": 35.8428,
+      "strength": 32,
+      "status": "TIMEOUT",
+      "pnl_pct": 0.47,
+      "close_price": 34.974999999999994,
+      "taken_at": "2026-03-17 12:06:22",
+      "closed_at": "2026-03-17 20:06:32"
+    },
     {
       "symbol": "PUMPUSDT",
       "direction": "LONG",
@@ -5216,20 +5211,6 @@
       "tp1": 0.034566,
       "tp2": 0.035978,
       "sl": 0.032024,
-      "strength": 45,
-      "status": "PENDING",
-      "pnl_pct": 0,
-      "close_price": null,
-      "taken_at": null,
-      "closed_at": null
-    },
-    {
-      "symbol": "VANRYUSDT",
-      "direction": "LONG",
-      "entry": 0.00599761,
-      "tp1": 0.00626,
-      "tp2": 0.006522,
-      "sl": 0.005788,
       "strength": 45,
       "status": "PENDING",
       "pnl_pct": 0,
