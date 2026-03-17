@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T12:17:28.265021+00:00",
+  "updated_at": "2026-03-17T12:18:32.932105+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T12:16:24Z",
+    "last_ok": "2026-03-17T12:17:32Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -9,14 +9,14 @@
     "auto_take": true
   },
   "stats": {
-    "total": 232,
+    "total": 233,
     "wins": 17,
     "losses": 1,
-    "active": 13,
+    "active": 14,
     "winrate": 94.4
   },
   "trade_stats": {
-    "open": 77,
+    "open": 78,
     "wins": 32,
     "losses": 15,
     "total_pnl": 66.01,
@@ -294,6 +294,25 @@
       ],
       "news": null,
       "created_at": "2026-03-17 12:16:15",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 271,
+      "symbol": "FETUSDT",
+      "direction": "LONG",
+      "entry": 0.2275,
+      "tp1": 0.233039,
+      "tp2": 0.238579,
+      "sl": 0.22295,
+      "strength": 34,
+      "reasons": [
+        "RSI=29 (сильная перепроданность)",
+        "BB нижняя полоса (пробой)",
+        "EMA20 > EMA50",
+        "МТФ: 15m, 1h, 4h согласны"
+      ],
+      "news": null,
+      "created_at": "2026-03-17 12:17:50",
       "status": "ACTIVE"
     }
   ],
@@ -2186,6 +2205,24 @@
         "BB ниже середины",
         "Стакан: перевес bid (+0.06)",
         "CVD положительный (-11.8%)"
+      ]
+    },
+    {
+      "id": 125,
+      "symbol": "FETUSDT",
+      "direction": "LONG",
+      "entry": 0.2275,
+      "tp1": 0.233039,
+      "tp2": 0.238579,
+      "sl": 0.22295,
+      "strength": 34,
+      "taken_at": "2026-03-17 12:17:51",
+      "status": "OPEN",
+      "reasons": [
+        "RSI=29 (сильная перепроданность)",
+        "BB нижняя полоса (пробой)",
+        "EMA20 > EMA50",
+        "МТФ: 15m, 1h, 4h согласны"
       ]
     }
   ],
