@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T20:24:02.333584+00:00",
+  "updated_at": "2026-03-17T20:25:08.251330+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T20:22:42Z",
+    "last_ok": "2026-03-17T20:24:06Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 83.2
   },
   "trade_stats": {
-    "open": 23,
+    "open": 22,
     "pending": 15,
     "wins": 109,
-    "losses": 78,
-    "total_pnl": 95.31,
-    "winrate": 58.3
+    "losses": 79,
+    "total_pnl": 92.94,
+    "winrate": 58.0
   },
   "fear_greed": {
     "value": 28,
@@ -1020,25 +1020,6 @@
         "OI растёт +14.0% + цена ↑",
         "CVD растёт (+6.3%) — покупки усиливаются 📈",
         "📌 Лимитный вход @ 0.0334149 (откат к EMA20)"
-      ]
-    },
-    {
-      "id": 236,
-      "symbol": "FETUSDT",
-      "direction": "SHORT",
-      "entry": 0.23116677,
-      "tp1": 0.226056,
-      "tp2": 0.220945,
-      "sl": 0.23579,
-      "strength": 30,
-      "taken_at": "2026-03-17 17:15:29",
-      "status": "OPEN",
-      "reasons": [
-        "MACD медвежий (hist=-0.00037)",
-        "Цена < EMA20 < EMA50",
-        "МТФ: 5m, 15m согласны",
-        "CVD падает (-5.0%) — продажи усиливаются 📉",
-        "📌 Лимитный вход @ 0.231167 (откат к EMA20)"
       ]
     },
     {
@@ -2178,6 +2159,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "FETUSDT",
+      "direction": "SHORT",
+      "entry": 0.23116677,
+      "tp1": 0.226056,
+      "tp2": 0.220945,
+      "sl": 0.23579,
+      "strength": 30,
+      "status": "SL",
+      "pnl_pct": -2.37,
+      "close_price": 0.23665,
+      "taken_at": "2026-03-17 17:15:29",
+      "closed_at": "2026-03-17 20:24:06"
+    },
     {
       "symbol": "FETUSDT",
       "direction": "SHORT",
@@ -4963,20 +4958,6 @@
       "close_price": 0.30335,
       "taken_at": "2026-03-17 10:06:41",
       "closed_at": "2026-03-17 10:35:15"
-    },
-    {
-      "symbol": "VANRYUSDT",
-      "direction": "SHORT",
-      "entry": 0.006135,
-      "tp1": 0.005923,
-      "tp2": 0.005711,
-      "sl": 0.0059205,
-      "strength": 34,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 3.15,
-      "close_price": 0.005942,
-      "taken_at": "2026-03-17 09:40:27",
-      "closed_at": "2026-03-17 10:17:45"
     }
   ]
 }
