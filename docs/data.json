@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T21:55:02.723896+00:00",
+  "updated_at": "2026-03-17T21:56:07.403256+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T21:54:02Z",
+    "last_ok": "2026-03-17T21:55:07Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,8 +17,8 @@
     "winrate": 83.8
   },
   "trade_stats": {
-    "open": 14,
-    "pending": 11,
+    "open": 15,
+    "pending": 10,
     "wins": 116,
     "losses": 84,
     "total_pnl": 95.95,
@@ -929,6 +929,27 @@
       ]
     },
     {
+      "id": 264,
+      "symbol": "TAOUSDT",
+      "direction": "LONG",
+      "entry": 281.10998773,
+      "tp1": 286.732187,
+      "tp2": 292.354387,
+      "sl": 275.487788,
+      "strength": 43,
+      "taken_at": "2026-03-17 21:55:37",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.39037)",
+        "Цена > EMA20 > EMA50",
+        "Стакан: сильное давление покупки (+0.33)",
+        "МТФ: 5m, 15m, 1h согласны",
+        "OI растёт +1.5%",
+        "CVD растёт (+7.8%) — покупки усиливаются 📈",
+        "📌 Лимитный вход @ 281.11 (откат к EMA20)"
+      ]
+    },
+    {
       "id": 267,
       "symbol": "CRCLUSDT",
       "direction": "LONG",
@@ -990,27 +1011,6 @@
         "CVD положительный (+3.4%)",
         "Bullish Engulfing (1h) 🕯️",
         "📌 Лимитный вход @ 0.116461 (откат к EMA20)"
-      ]
-    },
-    {
-      "id": 264,
-      "symbol": "TAOUSDT",
-      "direction": "LONG",
-      "entry": 281.10998773,
-      "tp1": 286.732187,
-      "tp2": 292.354387,
-      "sl": 275.487788,
-      "strength": 43,
-      "taken_at": "2026-03-17T21:15:34.653652",
-      "status": "PENDING",
-      "reasons": [
-        "MACD бычий (hist=0.39037)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: сильное давление покупки (+0.33)",
-        "МТФ: 5m, 15m, 1h согласны",
-        "OI растёт +1.5%",
-        "CVD растёт (+7.8%) — покупки усиливаются 📈",
-        "📌 Лимитный вход @ 281.11 (откат к EMA20)"
       ]
     },
     {
@@ -2066,20 +2066,6 @@
       "close_price": 0.11295,
       "taken_at": null,
       "closed_at": "2026-03-17 21:16:27"
-    },
-    {
-      "symbol": "TAOUSDT",
-      "direction": "LONG",
-      "entry": 281.10998773,
-      "tp1": 286.732187,
-      "tp2": 292.354387,
-      "sl": 275.487788,
-      "strength": 43,
-      "status": "PENDING",
-      "pnl_pct": 0,
-      "close_price": null,
-      "taken_at": "2026-03-17T21:15:34.653652",
-      "closed_at": null
     },
     {
       "symbol": "FILUSDT",
@@ -3998,6 +3984,20 @@
       "close_price": 0.005990499999999999,
       "taken_at": "2026-03-17 09:25:35",
       "closed_at": "2026-03-17 12:55:23"
+    },
+    {
+      "symbol": "KITEUSDT",
+      "direction": "SHORT",
+      "entry": 0.1983,
+      "tp1": 0.194334,
+      "tp2": 0.190368,
+      "sl": 0.19432500000000003,
+      "strength": 32,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 1.84,
+      "close_price": 0.194645,
+      "taken_at": "2026-03-17 09:48:37",
+      "closed_at": "2026-03-17 12:54:45"
     }
   ]
 }
