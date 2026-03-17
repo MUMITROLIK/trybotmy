@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-03-17T08:43:17.996105+00:00",
+  "updated_at": "2026-03-17T08:45:19.474883+00:00",
   "stats": {
-    "total": 136,
+    "total": 139,
     "wins": 6,
     "losses": 1,
-    "active": 66,
+    "active": 69,
     "winrate": 85.7
   },
   "trade_stats": {
-    "open": 5,
+    "open": 8,
     "wins": 16,
     "losses": 7,
     "total_pnl": 16.17,
@@ -1270,6 +1270,63 @@
       "news": null,
       "created_at": "2026-03-17 08:42:33",
       "status": "ACTIVE"
+    },
+    {
+      "id": 175,
+      "symbol": "ETHUSDT",
+      "direction": "SHORT",
+      "entry": 2330.46,
+      "tp1": 2283.8508,
+      "tp2": 2237.2416,
+      "sl": 2377.0692,
+      "strength": 27,
+      "reasons": [
+        "RSI=60 (нейтральный↑)",
+        "BB верхняя зона (83%)",
+        "EMA20 < EMA50",
+        "Стакан: сильное давление продажи (-0.82)",
+        "МТФ: только 1 таймфрейм согласен",
+        "OI падает (лонги закрываются)"
+      ],
+      "news": null,
+      "created_at": "2026-03-17 08:44:21",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 176,
+      "symbol": "BTCUSDT",
+      "direction": "SHORT",
+      "entry": 74379.8,
+      "tp1": 72892.204,
+      "tp2": 71404.608,
+      "sl": 75867.396,
+      "strength": 14,
+      "reasons": [
+        "RSI=54 (нейтральный↑)",
+        "BB выше середины",
+        "EMA20 < EMA50",
+        "CVD отрицательный (-1.5%)"
+      ],
+      "news": null,
+      "created_at": "2026-03-17 08:44:22",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 177,
+      "symbol": "ALPACAUSDT",
+      "direction": "SHORT",
+      "entry": 1.19,
+      "tp1": 1.1662,
+      "tp2": 1.1424,
+      "sl": 1.2138,
+      "strength": 23,
+      "reasons": [
+        "BB верхняя полоса (пробой)",
+        "МТФ: все 4 таймфрейма согласны ✅✅"
+      ],
+      "news": null,
+      "created_at": "2026-03-17 08:44:23",
+      "status": "ACTIVE"
     }
   ],
   "history": [
@@ -1712,13 +1769,67 @@
       ]
     },
     {
+      "id": 29,
+      "symbol": "ETHUSDT",
+      "direction": "SHORT",
+      "entry": 2330.46,
+      "tp1": 2283.8508,
+      "tp2": 2237.2416,
+      "sl": 2377.0692,
+      "strength": 27,
+      "taken_at": "2026-03-17 08:44:21",
+      "status": "OPEN",
+      "reasons": [
+        "RSI=60 (нейтральный↑)",
+        "BB верхняя зона (83%)",
+        "EMA20 < EMA50",
+        "Стакан: сильное давление продажи (-0.82)",
+        "МТФ: только 1 таймфрейм согласен",
+        "OI падает (лонги закрываются)"
+      ]
+    },
+    {
+      "id": 30,
+      "symbol": "BTCUSDT",
+      "direction": "SHORT",
+      "entry": 74379.8,
+      "tp1": 72892.204,
+      "tp2": 71404.608,
+      "sl": 75867.396,
+      "strength": 14,
+      "taken_at": "2026-03-17 08:44:22",
+      "status": "OPEN",
+      "reasons": [
+        "RSI=54 (нейтральный↑)",
+        "BB выше середины",
+        "EMA20 < EMA50",
+        "CVD отрицательный (-1.5%)"
+      ]
+    },
+    {
+      "id": 31,
+      "symbol": "ALPACAUSDT",
+      "direction": "SHORT",
+      "entry": 1.19,
+      "tp1": 1.1662,
+      "tp2": 1.1424,
+      "sl": 1.2138,
+      "strength": 23,
+      "taken_at": "2026-03-17 08:44:23",
+      "status": "OPEN",
+      "reasons": [
+        "BB верхняя полоса (пробой)",
+        "МТФ: все 4 таймфрейма согласны ✅✅"
+      ]
+    },
+    {
       "id": 27,
       "symbol": "GUSDT",
       "direction": "SHORT",
       "entry": 0.00491822,
       "tp1": 0.004784,
       "tp2": 0.00465,
-      "sl": 0.004782,
+      "sl": 0.00477879,
       "strength": 33,
       "taken_at": "2026-03-17 08:42:32",
       "status": "TP1_HIT",

@@ -1277,7 +1277,9 @@ loadBtcCandles();
 connectBtcWs();
 loadData();
 setInterval(loadBtcCandles, 60000);
-setInterval(loadData,       30000);
+// Чаще обновляем data.json, чтобы быстрее видеть взятые/закрытые сделки.
+// (Пуш в репо всё равно дебаунсится на стороне бота.)
+setInterval(loadData,       5000);
 setInterval(() => {
   _allTrades.forEach(t => {
     const el = $('ttimer_' + t.id);
