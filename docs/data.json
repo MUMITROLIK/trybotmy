@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T15:50:22.629270+00:00",
+  "updated_at": "2026-03-17T15:51:27.449468+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T15:49:22Z",
+    "last_ok": "2026-03-17T15:50:27Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -16,12 +16,12 @@
     "winrate": 88.5
   },
   "trade_stats": {
-    "open": 68,
-    "pending": 16,
+    "open": 69,
+    "pending": 15,
     "wins": 66,
     "losses": 40,
     "total_pnl": 91.66,
-    "winrate": 54.1
+    "winrate": 54.5
   },
   "fear_greed": {
     "value": 28,
@@ -2100,6 +2100,27 @@
       ]
     },
     {
+      "id": 189,
+      "symbol": "OPNUSDT",
+      "direction": "SHORT",
+      "entry": 0.29224255,
+      "tp1": 0.28486,
+      "tp2": 0.277478,
+      "sl": 0.298148,
+      "strength": 30,
+      "taken_at": "2026-03-17 15:51:10",
+      "status": "OPEN",
+      "reasons": [
+        "Цена < EMA20 < EMA50",
+        "Стакан: перевес ask (-0.09)",
+        "МТФ: 5m, 1h, 4h согласны",
+        "OI растёт +3.4% + цена ↓",
+        "CVD падает (-6.2%) — продажи усиливаются 📉",
+        "⚠️ Funding через 33м",
+        "📌 Лимитный вход @ 0.292243 (откат к EMA20)"
+      ]
+    },
+    {
       "id": 167,
       "symbol": "LYNUSDT",
       "direction": "SHORT",
@@ -2389,27 +2410,6 @@
         "CVD падает (-7.1%) — продажи усиливаются 📉",
         "⚠️ Funding через 34м",
         "📌 Лимитный вход @ 40.7205 (откат к EMA20)"
-      ]
-    },
-    {
-      "id": 189,
-      "symbol": "OPNUSDT",
-      "direction": "SHORT",
-      "entry": 0.29224255,
-      "tp1": 0.28486,
-      "tp2": 0.277478,
-      "sl": 0.298148,
-      "strength": 30,
-      "taken_at": null,
-      "status": "PENDING",
-      "reasons": [
-        "Цена < EMA20 < EMA50",
-        "Стакан: перевес ask (-0.09)",
-        "МТФ: 5m, 1h, 4h согласны",
-        "OI растёт +3.4% + цена ↓",
-        "CVD падает (-6.2%) — продажи усиливаются 📉",
-        "⚠️ Funding через 33м",
-        "📌 Лимитный вход @ 0.292243 (откат к EMA20)"
       ]
     },
     {
@@ -4110,20 +4110,6 @@
       "tp2": 39.091651,
       "sl": 41.53488,
       "strength": 36,
-      "status": "PENDING",
-      "pnl_pct": 0,
-      "close_price": null,
-      "taken_at": null,
-      "closed_at": null
-    },
-    {
-      "symbol": "OPNUSDT",
-      "direction": "SHORT",
-      "entry": 0.29224255,
-      "tp1": 0.28486,
-      "tp2": 0.277478,
-      "sl": 0.298148,
-      "strength": 30,
       "status": "PENDING",
       "pnl_pct": 0,
       "close_price": null,
