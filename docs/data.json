@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T15:15:09.259613+00:00",
+  "updated_at": "2026-03-17T15:16:13.607170+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T15:14:40Z",
+    "last_ok": "2026-03-17T15:15:13Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -9,14 +9,14 @@
     "auto_take": true
   },
   "stats": {
-    "total": 285,
+    "total": 286,
     "wins": 43,
     "losses": 3,
-    "active": 18,
+    "active": 19,
     "winrate": 93.5
   },
   "trade_stats": {
-    "open": 75,
+    "open": 76,
     "pending": 6,
     "wins": 62,
     "losses": 34,
@@ -406,6 +406,28 @@
       ],
       "news": null,
       "created_at": "2026-03-17 15:08:18",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 324,
+      "symbol": "ASTERUSDT",
+      "direction": "SHORT",
+      "entry": 0.7507,
+      "tp1": 0.729014,
+      "tp2": 0.707329,
+      "sl": 0.768049,
+      "strength": 27,
+      "reasons": [
+        "RSI=56 (нейтральный↑)",
+        "MACD медвежий (hist=-0.00077)",
+        "BB выше середины",
+        "Цена ниже EMA20",
+        "МТФ: только 1 таймфрейм согласен",
+        "OI растёт +3.4%",
+        "⚠️ Funding через 44м"
+      ],
+      "news": null,
+      "created_at": "2026-03-17 15:16:04",
       "status": "ACTIVE"
     }
   ],
@@ -2265,6 +2287,27 @@
         "Стакан: перевес bid (+0.08)",
         "МТФ: 1h, 4h согласны",
         "⚠️ Funding через 52м"
+      ]
+    },
+    {
+      "id": 178,
+      "symbol": "ASTERUSDT",
+      "direction": "SHORT",
+      "entry": 0.7507,
+      "tp1": 0.729014,
+      "tp2": 0.707329,
+      "sl": 0.768049,
+      "strength": 27,
+      "taken_at": null,
+      "status": "OPEN",
+      "reasons": [
+        "RSI=56 (нейтральный↑)",
+        "MACD медвежий (hist=-0.00077)",
+        "BB выше середины",
+        "Цена ниже EMA20",
+        "МТФ: только 1 таймфрейм согласен",
+        "OI растёт +3.4%",
+        "⚠️ Funding через 44м"
       ]
     },
     {
