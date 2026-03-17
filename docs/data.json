@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T12:46:02.324326+00:00",
+  "updated_at": "2026-03-17T12:46:43.530033+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T12:45:23Z",
+    "last_ok": null,
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -16,11 +16,11 @@
     "winrate": 94.7
   },
   "trade_stats": {
-    "open": 77,
-    "wins": 39,
+    "open": 74,
+    "wins": 42,
     "losses": 18,
-    "total_pnl": 73.78,
-    "winrate": 68.4
+    "total_pnl": 80.09,
+    "winrate": 70.0
   },
   "fear_greed": {
     "value": 28,
@@ -1889,29 +1889,10 @@
         "МТФ: 1h, 4h согласны",
         "CVD положительный (-4.3%)"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 28,
-      "symbol": "TAOUSDT",
-      "direction": "SHORT",
-      "entry": 279.13830541,
-      "tp1": 273.555539,
-      "tp2": 267.972773,
-      "sl": 273.435,
-      "strength": 24,
-      "taken_at": "2026-03-17 08:42:33",
-      "status": "TP1_HIT",
-      "reasons": [
-        "MACD медвежий (hist=-0.35816)",
-        "Цена < EMA20 < EMA50",
-        "МТФ: 5m, 15m согласны",
-        "OI падает (лонги закрываются)",
-        "CVD отрицательный (-1.2%)",
-        "📌 Лимитный вход @ 279.138 (откат к EMA20)"
-      ]
-    },
-    {
-      "id": 86,
       "symbol": "PIXELUSDT",
       "direction": "SHORT",
       "entry": 0.01027,
@@ -1919,19 +1900,13 @@
       "tp2": 0.009824,
       "sl": 0.0100395,
       "strength": 34,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 2.18,
+      "close_price": 0.0100465,
       "taken_at": "2026-03-17 11:34:36",
-      "status": "TP1_HIT",
-      "reasons": [
-        "RSI=69 (перекупленность)",
-        "BB верхняя зона (86%)",
-        "EMA20 < EMA50",
-        "Стакан: сильное давление продажи (-0.33)",
-        "МТФ: только 1 таймфрейм согласен",
-        "OI растёт +1.5% + цена ↓"
-      ]
+      "closed_at": "2026-03-17 12:46:29"
     },
     {
-      "id": 125,
       "symbol": "FETUSDT",
       "direction": "LONG",
       "entry": 0.2275,
@@ -1939,17 +1914,26 @@
       "tp2": 0.238579,
       "sl": 0.23305,
       "strength": 34,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 2.09,
+      "close_price": 0.23225,
       "taken_at": "2026-03-17 12:17:51",
-      "status": "TP1_HIT",
-      "reasons": [
-        "RSI=29 (сильная перепроданность)",
-        "BB нижняя полоса (пробой)",
-        "EMA20 > EMA50",
-        "МТФ: 15m, 1h, 4h согласны"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-17 12:46:09"
+    },
+    {
+      "symbol": "TAOUSDT",
+      "direction": "SHORT",
+      "entry": 279.13830541,
+      "tp1": 273.555539,
+      "tp2": 267.972773,
+      "sl": 273.435,
+      "strength": 24,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 2.04,
+      "close_price": 273.445,
+      "taken_at": "2026-03-17 08:42:33",
+      "closed_at": "2026-03-17 12:46:07"
+    },
     {
       "symbol": "OPNUSDT",
       "direction": "SHORT",
