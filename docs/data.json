@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T13:49:19.454901+00:00",
+  "updated_at": "2026-03-17T13:49:58.305834+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T13:48:24Z",
+    "last_ok": "2026-03-17T13:49:24Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -16,11 +16,11 @@
     "winrate": 90.9
   },
   "trade_stats": {
-    "open": 76,
+    "open": 75,
     "wins": 54,
-    "losses": 27,
-    "total_pnl": 92.83,
-    "winrate": 66.7
+    "losses": 28,
+    "total_pnl": 90.82,
+    "winrate": 65.9
   },
   "fear_greed": {
     "value": 28,
@@ -1612,27 +1612,6 @@
       ]
     },
     {
-      "id": 121,
-      "symbol": "GRASSUSDT",
-      "direction": "LONG",
-      "entry": 0.4493,
-      "tp1": 0.45990348,
-      "tp2": 0.47050696,
-      "sl": 0.440314,
-      "strength": 41,
-      "taken_at": "2026-03-17 12:12:21",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=42 (нейтральный↓)",
-        "MACD бычий (hist=0.00114)",
-        "Цена > EMA20 > EMA50",
-        "МТФ: 15m, 1h, 4h согласны",
-        "OI растёт +1.9% + цена ↑",
-        "CVD положительный (+1.0%)",
-        "📌 Лимитный вход @ 0.444759 (откат к EMA20)"
-      ]
-    },
-    {
       "id": 123,
       "symbol": "OPUSDT",
       "direction": "LONG",
@@ -2127,6 +2106,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "GRASSUSDT",
+      "direction": "LONG",
+      "entry": 0.4493,
+      "tp1": 0.45990348,
+      "tp2": 0.47050696,
+      "sl": 0.440314,
+      "strength": 41,
+      "status": "SL",
+      "pnl_pct": -2.01,
+      "close_price": 0.44025000000000003,
+      "taken_at": "2026-03-17 12:12:21",
+      "closed_at": "2026-03-17 13:49:57"
+    },
     {
       "symbol": "DEGOUSDT",
       "direction": "LONG",
