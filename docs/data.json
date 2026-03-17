@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T16:53:22.878996+00:00",
+  "updated_at": "2026-03-17T16:54:00.512801+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T16:53:00Z",
+    "last_ok": "2026-03-17T16:53:30Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -16,12 +16,12 @@
     "winrate": 87.7
   },
   "trade_stats": {
-    "open": 59,
+    "open": 58,
     "pending": 63,
-    "wins": 77,
+    "wins": 78,
     "losses": 49,
-    "total_pnl": 85.13,
-    "winrate": 40.7
+    "total_pnl": 87.26,
+    "winrate": 41.1
   },
   "fear_greed": {
     "value": 28,
@@ -3415,9 +3415,10 @@
         "CVD падает (-9.1%) — продажи усиливаются 📉",
         "📌 Лимитный вход @ 0.159302 (откат к EMA20)"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 208,
       "symbol": "FARTCOINUSDT",
       "direction": "LONG",
       "entry": 0.1998,
@@ -3425,17 +3426,12 @@
       "tp2": 0.208264,
       "sl": 0.20405,
       "strength": 27,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 2.13,
+      "close_price": 0.20405,
       "taken_at": null,
-      "status": "TP1_HIT",
-      "reasons": [
-        "RSI=50 (нейтральный↓)",
-        "MACD бычий (hist=0.00005)",
-        "BB ниже середины",
-        "МТФ: 1h, 4h согласны"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-17 16:53:47"
+    },
     {
       "symbol": "VANRYUSDT",
       "direction": "SHORT",
