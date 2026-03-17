@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T21:00:38.291464+00:00",
+  "updated_at": "2026-03-17T21:02:08.679902+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T21:00:06Z",
+    "last_ok": "2026-03-17T21:00:42Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 83.5
   },
   "trade_stats": {
-    "open": 17,
+    "open": 16,
     "pending": 18,
-    "wins": 113,
+    "wins": 114,
     "losses": 81,
-    "total_pnl": 93.57,
-    "winrate": 58.2
+    "total_pnl": 93.76,
+    "winrate": 58.5
   },
   "fear_greed": {
     "value": 28,
@@ -639,26 +639,6 @@
     }
   ],
   "trades_open": [
-    {
-      "id": 145,
-      "symbol": "RENDERUSDT",
-      "direction": "SHORT",
-      "entry": 1.816,
-      "tp1": 1.77968,
-      "tp2": 1.74336,
-      "sl": 1.85232,
-      "strength": 31,
-      "taken_at": "2026-03-17 13:01:38",
-      "status": "OPEN",
-      "reasons": [
-        "MACD медвежий (hist=-0.00560)",
-        "Цена < EMA20 < EMA50",
-        "МТФ: 5m, 15m согласны",
-        "OI растёт +1.6% + цена ↓",
-        "CVD отрицательный (-4.3%)",
-        "📌 Лимитный вход @ 1.85776 (откат к EMA20)"
-      ]
-    },
     {
       "id": 160,
       "symbol": "CRVUSDT",
@@ -2060,6 +2040,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "RENDERUSDT",
+      "direction": "SHORT",
+      "entry": 1.816,
+      "tp1": 1.77968,
+      "tp2": 1.74336,
+      "sl": 1.85232,
+      "strength": 31,
+      "status": "TIMEOUT",
+      "pnl_pct": 0.19,
+      "close_price": 1.8125,
+      "taken_at": "2026-03-17 13:01:38",
+      "closed_at": "2026-03-17 21:01:45"
+    },
     {
       "symbol": "IRUSDT",
       "direction": "LONG",
@@ -4845,20 +4839,6 @@
       "close_price": 0.063445,
       "taken_at": "2026-03-17 09:11:31",
       "closed_at": "2026-03-17 12:20:35"
-    },
-    {
-      "symbol": "FETUSDT",
-      "direction": "LONG",
-      "entry": 0.2323,
-      "tp1": 0.237561,
-      "tp2": 0.242821,
-      "sl": 0.227654,
-      "strength": 31,
-      "status": "SL",
-      "pnl_pct": -2.04,
-      "close_price": 0.22755,
-      "taken_at": "2026-03-17 12:02:45",
-      "closed_at": "2026-03-17 12:16:45"
     }
   ]
 }
