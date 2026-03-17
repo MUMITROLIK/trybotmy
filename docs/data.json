@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T10:34:34.623730+00:00",
+  "updated_at": "2026-03-17T10:35:16.402240+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T10:33:34Z",
+    "last_ok": "2026-03-17T10:34:42Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -13,11 +13,11 @@
     "winrate": 93.8
   },
   "trade_stats": {
-    "open": 38,
+    "open": 37,
     "wins": 29,
-    "losses": 8,
-    "total_pnl": 71.52,
-    "winrate": 78.4
+    "losses": 9,
+    "total_pnl": 69.52,
+    "winrate": 76.3
   },
   "fear_greed": {
     "value": 28,
@@ -1036,25 +1036,6 @@
       ]
     },
     {
-      "id": 67,
-      "symbol": "OPNUSDT",
-      "direction": "SHORT",
-      "entry": 0.2974,
-      "tp1": 0.2911546,
-      "tp2": 0.28493894,
-      "sl": 0.303348,
-      "strength": 32,
-      "taken_at": "2026-03-17 10:06:41",
-      "status": "OPEN",
-      "reasons": [
-        "MACD медвежий (hist=-0.00010)",
-        "Цена < EMA20 < EMA50",
-        "МТФ: 5m, 15m, 1h согласны",
-        "OI растёт +1.8% + цена ↓",
-        "📌 Лимитный вход @ 0.304971 (откат к EMA20)"
-      ]
-    },
-    {
       "id": 68,
       "symbol": "RIVERUSDT",
       "direction": "SHORT",
@@ -1224,6 +1205,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "OPNUSDT",
+      "direction": "SHORT",
+      "entry": 0.2974,
+      "tp1": 0.2911546,
+      "tp2": 0.28493894,
+      "sl": 0.303348,
+      "strength": 32,
+      "status": "SL",
+      "pnl_pct": -2.0,
+      "close_price": 0.30335,
+      "taken_at": "2026-03-17 10:06:41",
+      "closed_at": "2026-03-17 10:35:15"
+    },
     {
       "symbol": "VANRYUSDT",
       "direction": "SHORT",

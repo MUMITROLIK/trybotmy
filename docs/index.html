@@ -214,9 +214,10 @@ main { padding: 24px 40px; max-width: 1600px; margin: 0 auto; }
 .chart-card {
   background: var(--surface);
   border: 1px solid var(--border);
-  border-radius: 12px;
+  border-radius: var(--radius2);
   overflow: hidden;
   margin-bottom: 20px;
+  box-shadow: var(--shadow);
 }
 .chart-header {
   padding: 16px 20px 12px;
@@ -251,11 +252,12 @@ main { padding: 24px 40px; max-width: 1600px; margin: 0 auto; }
 .sig-card {
   background: var(--surface);
   border: 1px solid var(--border);
-  border-radius: 12px;
+  border-radius: var(--radius2);
   overflow: hidden;
   cursor: pointer;
   transition: border-color .2s, transform .2s, box-shadow .2s;
   position: relative;
+  box-shadow: var(--shadow);
 }
 .sig-card:hover { transform: translateY(-2px); }
 .sig-card.long  {
@@ -415,7 +417,8 @@ main { padding: 24px 40px; max-width: 1600px; margin: 0 auto; }
 
 .hist-wrap {
   background: var(--surface); border: 1px solid var(--border);
-  border-radius: 12px; overflow: hidden; margin-bottom: 40px;
+  border-radius: var(--radius2); overflow: hidden; margin-bottom: 40px;
+  box-shadow: var(--shadow);
 }
 table { width: 100%; border-collapse: collapse; }
 th {
@@ -457,7 +460,8 @@ tr:hover td { background: rgba(255,255,255,.015); }
 
 .trade-card {
   background: var(--surface); border: 1px solid var(--border);
-  border-radius: 12px; overflow: hidden; position: relative;
+  border-radius: var(--radius2); overflow: hidden; position: relative;
+  box-shadow: var(--shadow);
 }
 .trade-card.long  { border-left: 2px solid var(--green); }
 .trade-card.short { border-left: 2px solid var(--red); }
