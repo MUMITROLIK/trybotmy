@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T15:17:14.019621+00:00",
+  "updated_at": "2026-03-17T15:18:20.499540+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T15:16:18Z",
+    "last_ok": "2026-03-17T15:17:18Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -16,12 +16,12 @@
     "winrate": 93.9
   },
   "trade_stats": {
-    "open": 76,
+    "open": 75,
     "pending": 8,
-    "wins": 62,
+    "wins": 63,
     "losses": 34,
-    "total_pnl": 94.43,
-    "winrate": 59.6
+    "total_pnl": 98.3,
+    "winrate": 60.0
   },
   "fear_greed": {
     "value": 28,
@@ -1969,26 +1969,6 @@
       ]
     },
     {
-      "id": 153,
-      "symbol": "SIRENUSDT",
-      "direction": "LONG",
-      "entry": 0.72767,
-      "tp1": 0.757773,
-      "tp2": 0.787876,
-      "sl": 0.703588,
-      "strength": 36,
-      "taken_at": "2026-03-17 13:31:38",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=38 (перепроданность)",
-        "BB ниже середины",
-        "EMA20 > EMA50",
-        "Стакан: давление покупки (+0.13)",
-        "МТФ: 15m, 1h, 4h согласны",
-        "OI растёт +1.4% + цена ↑"
-      ]
-    },
-    {
       "id": 155,
       "symbol": "HUMAUSDT",
       "direction": "SHORT",
@@ -2458,6 +2438,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "SIRENUSDT",
+      "direction": "LONG",
+      "entry": 0.72767,
+      "tp1": 0.757773,
+      "tp2": 0.787876,
+      "sl": 0.75864,
+      "strength": 36,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 3.87,
+      "close_price": 0.755815,
+      "taken_at": "2026-03-17 13:31:38",
+      "closed_at": "2026-03-17 15:17:42"
+    },
     {
       "symbol": "ASTERUSDT",
       "direction": "SHORT",
