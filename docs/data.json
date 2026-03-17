@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T20:27:19.445875+00:00",
+  "updated_at": "2026-03-17T20:28:24.441530+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T20:26:19Z",
+    "last_ok": "2026-03-17T20:27:24Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -13,7 +13,7 @@
     "total": 367,
     "wins": 99,
     "losses": 20,
-    "active": 12,
+    "active": 11,
     "winrate": 83.2
   },
   "trade_stats": {
@@ -30,28 +30,6 @@
     "emoji": "😨"
   },
   "signals": [
-    {
-      "id": 365,
-      "symbol": "ASTERUSDT",
-      "direction": "LONG",
-      "entry": 0.75473629,
-      "tp1": 0.778211,
-      "tp2": 0.801686,
-      "sl": 0.735956,
-      "strength": 32,
-      "reasons": [
-        "Цена > EMA20 > EMA50",
-        "Стакан: перевес bid (+0.07)",
-        "МТФ: 5m, 1h, 4h согласны",
-        "OI растёт +2.5% + цена ↑",
-        "CVD положительный (+0.4%)",
-        "Bullish Engulfing (1h) 🕯️",
-        "📌 Лимитный вход @ 0.754736 (откат к EMA20)"
-      ],
-      "news": null,
-      "created_at": "2026-03-17 16:27:43",
-      "status": "ACTIVE"
-    },
     {
       "id": 371,
       "symbol": "OPNUSDT",
