@@ -1,19 +1,19 @@
 {
-  "updated_at": "2026-03-17T09:24:29.964539+00:00",
+  "updated_at": "2026-03-17T09:25:47.633076+00:00",
   "publish_status": {
-    "last_ok": null,
-    "last_error": "fatal: unable to access 'https://github.com/MUMITROLIK/trybotmy.git/': Failed to connect to github.com port 443 after 21069 ms: Could not connect to server\n",
+    "last_ok": "2026-03-17T09:24:47Z",
+    "last_error": null,
     "min_push_interval_sec": 30
   },
   "stats": {
-    "total": 163,
+    "total": 166,
     "wins": 12,
     "losses": 1,
-    "active": 2,
+    "active": 4,
     "winrate": 92.3
   },
   "trade_stats": {
-    "open": 25,
+    "open": 28,
     "wins": 23,
     "losses": 7,
     "total_pnl": 57.55,
@@ -25,26 +25,6 @@
     "emoji": "😐"
   },
   "signals": [
-    {
-      "id": 200,
-      "symbol": "KITEUSDT",
-      "direction": "SHORT",
-      "entry": 0.2043904,
-      "tp1": 0.200303,
-      "tp2": 0.196215,
-      "sl": 0.208478,
-      "strength": 31,
-      "reasons": [
-        "MACD медвежий (hist=-0.00029)",
-        "Цена < EMA20 < EMA50",
-        "Стакан: сильное давление продажи (-0.38)",
-        "МТФ: 5m, 15m согласны",
-        "📌 Лимитный вход @ 0.20439 (откат к EMA20)"
-      ],
-      "news": null,
-      "created_at": "2026-03-17 09:15:14",
-      "status": "ACTIVE"
-    },
     {
       "id": 201,
       "symbol": "XAUUSDT",
@@ -64,9 +44,88 @@
       "news": null,
       "created_at": "2026-03-17 09:19:59",
       "status": "ACTIVE"
+    },
+    {
+      "id": 202,
+      "symbol": "AVAXUSDT",
+      "direction": "SHORT",
+      "entry": 10.3129531,
+      "tp1": 10.106694,
+      "tp2": 9.900435,
+      "sl": 10.519212,
+      "strength": 31,
+      "reasons": [
+        "MACD медвежий (hist=-0.00233)",
+        "Цена < EMA20 < EMA50",
+        "Стакан: сильное давление продажи (-0.27)",
+        "МТФ: 5m, 15m согласны",
+        "📌 Лимитный вход @ 10.313 (откат к EMA20)"
+      ],
+      "news": null,
+      "created_at": "2026-03-17 09:25:01",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 203,
+      "symbol": "PAXGUSDT",
+      "direction": "SHORT",
+      "entry": 5005.41,
+      "tp1": 4905.3018,
+      "tp2": 4805.1936,
+      "sl": 5105.5182,
+      "strength": 31,
+      "reasons": [
+        "MACD медвежий (hist=-0.63958)",
+        "Цена ниже EMA20",
+        "Стакан: сильное давление продажи (-0.80)",
+        "МТФ: только 1 таймфрейм согласен",
+        "Bearish Engulfing (1h) 🕯️"
+      ],
+      "news": null,
+      "created_at": "2026-03-17 09:25:09",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 204,
+      "symbol": "1000SHIBUSDT",
+      "direction": "SHORT",
+      "entry": 0.006117,
+      "tp1": 0.005995,
+      "tp2": 0.005872,
+      "sl": 0.006239,
+      "strength": 31,
+      "reasons": [
+        "RSI=69 (перекупленность)",
+        "BB верхняя зона (95%)",
+        "EMA20 < EMA50",
+        "Стакан: перевес ask (-0.07)",
+        "МТФ: только 1 таймфрейм согласен",
+        "CVD падает (-11.0%) — продажи усиливаются 📉"
+      ],
+      "news": null,
+      "created_at": "2026-03-17 09:25:35",
+      "status": "ACTIVE"
     }
   ],
   "history": [
+    {
+      "symbol": "KITEUSDT",
+      "direction": "SHORT",
+      "entry": 0.2043904,
+      "tp1": 0.200303,
+      "tp2": 0.196215,
+      "sl": 0.208478,
+      "strength": 31,
+      "status": "EXPIRED",
+      "created_at": "2026-03-17 09:15:14",
+      "reasons": [
+        "MACD медвежий (hist=-0.00029)",
+        "Цена < EMA20 < EMA50",
+        "Стакан: сильное давление продажи (-0.38)",
+        "МТФ: 5m, 15m согласны",
+        "📌 Лимитный вход @ 0.20439 (откат к EMA20)"
+      ]
+    },
     {
       "symbol": "ROBOUSDT",
       "direction": "SHORT",
@@ -431,22 +490,6 @@
         "EMA20 < EMA50",
         "Стакан: перевес ask (-0.08)",
         "МТФ: только 1 таймфрейм согласен"
-      ]
-    },
-    {
-      "symbol": "BNBUSDT",
-      "direction": "SHORT",
-      "entry": 675.56,
-      "tp1": 662.0488,
-      "tp2": 648.5376,
-      "sl": 689.0712,
-      "strength": 11,
-      "status": "EXPIRED",
-      "created_at": "2026-03-17 08:45:51",
-      "reasons": [
-        "BB выше середины",
-        "Цена < EMA20 < EMA50",
-        "CVD отрицательный (-1.7%)"
       ]
     }
   ],
@@ -933,6 +976,64 @@
         "Стакан: сильное давление продажи (-0.77)",
         "МТФ: 5m, 4h согласны",
         "OI падает (лонги закрываются)"
+      ]
+    },
+    {
+      "id": 56,
+      "symbol": "AVAXUSDT",
+      "direction": "SHORT",
+      "entry": 10.263,
+      "tp1": 10.05774,
+      "tp2": 9.85248,
+      "sl": 10.46826,
+      "strength": 31,
+      "taken_at": "2026-03-17 09:25:02",
+      "status": "OPEN",
+      "reasons": [
+        "MACD медвежий (hist=-0.00233)",
+        "Цена < EMA20 < EMA50",
+        "Стакан: сильное давление продажи (-0.27)",
+        "МТФ: 5m, 15m согласны",
+        "📌 Лимитный вход @ 10.313 (откат к EMA20)"
+      ]
+    },
+    {
+      "id": 57,
+      "symbol": "PAXGUSDT",
+      "direction": "SHORT",
+      "entry": 5005.41,
+      "tp1": 4905.3018,
+      "tp2": 4805.1936,
+      "sl": 5105.5182,
+      "strength": 31,
+      "taken_at": "2026-03-17 09:25:09",
+      "status": "OPEN",
+      "reasons": [
+        "MACD медвежий (hist=-0.63958)",
+        "Цена ниже EMA20",
+        "Стакан: сильное давление продажи (-0.80)",
+        "МТФ: только 1 таймфрейм согласен",
+        "Bearish Engulfing (1h) 🕯️"
+      ]
+    },
+    {
+      "id": 58,
+      "symbol": "1000SHIBUSDT",
+      "direction": "SHORT",
+      "entry": 0.006117,
+      "tp1": 0.005995,
+      "tp2": 0.005872,
+      "sl": 0.006239,
+      "strength": 31,
+      "taken_at": "2026-03-17 09:25:35",
+      "status": "OPEN",
+      "reasons": [
+        "RSI=69 (перекупленность)",
+        "BB верхняя зона (95%)",
+        "EMA20 < EMA50",
+        "Стакан: перевес ask (-0.07)",
+        "МТФ: только 1 таймфрейм согласен",
+        "CVD падает (-11.0%) — продажи усиливаются 📉"
       ]
     }
   ],
