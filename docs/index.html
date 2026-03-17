@@ -810,6 +810,7 @@ function tryReconnect() {
 function setLiveStatus(connected) {
   const dot = document.getElementById('liveDot');
   const lbl = document.getElementById('last-update');
+  if (!dot || !lbl) return;
   if (connected) {
     dot.classList.remove('disconnected');
     lbl.textContent = 'LIVE';
@@ -1419,10 +1420,21 @@ function renderTradeHistory(hist) {
 }
 
 // ── Init ───────────────────────────────────────────────────────────
-initBtcChart();
-loadBtcCandles();
-connectBtcWs();
-initWebSocket();
+// tabs: no inline onclick (safer)
+try {
+  const b1 = document.getElementById('tab-signals');
+  const b2 = document.getElementById('tab-positions');
+  const b3 = document.getElementById('tab-history');
+  if (b1) b1.addEventListener('click', () => switchTab('signals'));
+  if (b2) b2.addEventListener('click', () => switchTab('positions'));
+  if (b3) b3.addEventListener('click', () => switchTab('history'));
+} catch(e) {}
+
+// init: even if chart lib is blocked, UI must work
+try { initBtcChart(); } catch(e) { console.warn('BTC chart init failed', e); }
+try { loadBtcCandles(); } catch(e) {}
+try { connectBtcWs(); } catch(e) {}
+try { initWebSocket(); } catch(e) { console.error('WS init failed', e); }
 setInterval(pollDataFallback, 15000);
 setInterval(pollTradePricesFallback, 3000);
 
