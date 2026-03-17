@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T18:28:43.520243+00:00",
+  "updated_at": "2026-03-17T18:29:48.656431+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T18:27:43Z",
+    "last_ok": "2026-03-17T18:28:48Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -16,12 +16,12 @@
     "winrate": 86.7
   },
   "trade_stats": {
-    "open": 53,
+    "open": 51,
     "pending": 16,
-    "wins": 87,
+    "wins": 89,
     "losses": 57,
-    "total_pnl": 87.87,
-    "winrate": 60.4
+    "total_pnl": 88.9,
+    "winrate": 61.0
   },
   "fear_greed": {
     "value": 28,
@@ -890,46 +890,6 @@
     }
   ],
   "trades_open": [
-    {
-      "id": 73,
-      "symbol": "DOTUSDT",
-      "direction": "SHORT",
-      "entry": 1.609,
-      "tp1": 1.57682,
-      "tp2": 1.54464,
-      "sl": 1.64118,
-      "strength": 30,
-      "taken_at": "2026-03-17 10:28:45",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=59 (нейтральный↑)",
-        "MACD медвежий (hist=-0.00006)",
-        "BB выше середины",
-        "Цена ниже EMA20",
-        "МТФ: только 1 таймфрейм согласен",
-        "OI падает (лонги закрываются)",
-        "CVD отрицательный (-2.6%)"
-      ]
-    },
-    {
-      "id": 74,
-      "symbol": "AAVEUSDT",
-      "direction": "SHORT",
-      "entry": 121.93,
-      "tp1": 119.4914,
-      "tp2": 117.0528,
-      "sl": 124.3686,
-      "strength": 32,
-      "taken_at": "2026-03-17 10:29:04",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=71 (сильная перекупленность)",
-        "BB верхняя полоса (пробой)",
-        "EMA20 < EMA50",
-        "Объём x2.3 🔥",
-        "МТФ: только 1 таймфрейм согласен"
-      ]
-    },
     {
       "id": 77,
       "symbol": "XMRUSDT",
@@ -3141,6 +3101,34 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "AAVEUSDT",
+      "direction": "SHORT",
+      "entry": 121.93,
+      "tp1": 119.4914,
+      "tp2": 117.0528,
+      "sl": 124.3686,
+      "strength": 32,
+      "status": "TIMEOUT",
+      "pnl_pct": 0.25,
+      "close_price": 121.625,
+      "taken_at": "2026-03-17 10:29:04",
+      "closed_at": "2026-03-17 18:29:10"
+    },
+    {
+      "symbol": "DOTUSDT",
+      "direction": "SHORT",
+      "entry": 1.609,
+      "tp1": 1.57682,
+      "tp2": 1.54464,
+      "sl": 1.64118,
+      "strength": 30,
+      "status": "TIMEOUT",
+      "pnl_pct": 0.78,
+      "close_price": 1.5965,
+      "taken_at": "2026-03-17 10:28:45",
+      "closed_at": "2026-03-17 18:28:52"
+    },
     {
       "symbol": "MEUSDT",
       "direction": "SHORT",
@@ -5907,34 +5895,6 @@
       "tp2": 0.150259,
       "sl": 0.162919,
       "strength": 49,
-      "status": "PENDING",
-      "pnl_pct": 0,
-      "close_price": null,
-      "taken_at": null,
-      "closed_at": null
-    },
-    {
-      "symbol": "ADAUSDT",
-      "direction": "LONG",
-      "entry": 0.28666865,
-      "tp1": 0.292402,
-      "tp2": 0.298135,
-      "sl": 0.280935,
-      "strength": 40,
-      "status": "PENDING",
-      "pnl_pct": 0,
-      "close_price": null,
-      "taken_at": null,
-      "closed_at": null
-    },
-    {
-      "symbol": "CRCLUSDT",
-      "direction": "LONG",
-      "entry": 128.86367352,
-      "tp1": 131.440947,
-      "tp2": 134.01822,
-      "sl": 126.2864,
-      "strength": 44,
       "status": "PENDING",
       "pnl_pct": 0,
       "close_price": null,
