@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T19:31:36.078311+00:00",
+  "updated_at": "2026-03-17T19:32:41.639019+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T19:30:31Z",
+    "last_ok": "2026-03-17T19:31:41Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -16,12 +16,12 @@
     "winrate": 85.3
   },
   "trade_stats": {
-    "open": 55,
+    "open": 54,
     "pending": 15,
     "wins": 91,
-    "losses": 62,
-    "total_pnl": 85.78,
-    "winrate": 59.5
+    "losses": 63,
+    "total_pnl": 83.75,
+    "winrate": 59.1
   },
   "fear_greed": {
     "value": 28,
@@ -1615,25 +1615,6 @@
       ]
     },
     {
-      "id": 228,
-      "symbol": "HYPEUSDT",
-      "direction": "SHORT",
-      "entry": 40.44898164,
-      "tp1": 39.640002,
-      "tp2": 38.831022,
-      "sl": 41.257961,
-      "strength": 27,
-      "taken_at": "2026-03-17 17:19:44",
-      "status": "OPEN",
-      "reasons": [
-        "MACD медвежий (hist=-0.06239)",
-        "Цена < EMA20 < EMA50",
-        "МТФ: 5m, 15m согласны",
-        "CVD падает (-9.4%) — продажи усиливаются 📉",
-        "📌 Лимитный вход @ 40.449 (откат к EMA20)"
-      ]
-    },
-    {
       "id": 229,
       "symbol": "CFGUSDT",
       "direction": "SHORT",
@@ -2932,6 +2913,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "HYPEUSDT",
+      "direction": "SHORT",
+      "entry": 40.44898164,
+      "tp1": 39.640002,
+      "tp2": 38.831022,
+      "sl": 41.257961,
+      "strength": 27,
+      "status": "SL",
+      "pnl_pct": -2.03,
+      "close_price": 41.2715,
+      "taken_at": "2026-03-17 17:19:44",
+      "closed_at": "2026-03-17 19:31:42"
+    },
     {
       "symbol": "TRXUSDT",
       "direction": "SHORT",
@@ -5712,20 +5707,6 @@
       "tp2": 0.210465,
       "sl": 0.197562,
       "strength": 40,
-      "status": "PENDING",
-      "pnl_pct": 0,
-      "close_price": null,
-      "taken_at": null,
-      "closed_at": null
-    },
-    {
-      "symbol": "ZECUSDT",
-      "direction": "LONG",
-      "entry": 270.0346493,
-      "tp1": 275.435342,
-      "tp2": 280.836035,
-      "sl": 264.633956,
-      "strength": 47,
       "status": "PENDING",
       "pnl_pct": 0,
       "close_price": null,
