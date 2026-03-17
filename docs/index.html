@@ -770,6 +770,7 @@ let currentTab = 'signals';
 let wsConnectTimer = null;
 let lastDataOkTs = 0;
 let _pendingTrades = [];
+let LIMIT_TTL_MIN = 60;
 
 function initWebSocket() {
   const protocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
@@ -856,6 +857,7 @@ function setLiveStatus(connected) {
 
 function handleDataUpdate(data) {
   AUTO_TAKE = !!(data.settings && data.settings.auto_take);
+  LIMIT_TTL_MIN = (data.settings && data.settings.limit_order_ttl_minutes) ? Number(data.settings.limit_order_ttl_minutes) : 60;
   const st = data.stats || {};
   document.getElementById('s-total').textContent   = st.total   ?? '—';
   const ts = data.trade_stats || {};
@@ -1524,15 +1526,28 @@ function renderLimits(trades, stats) {
       <div class="sig-body">
         <div class="tags">${tags}</div>
         <div style="font-family:var(--mono);font-size:9px;color:var(--muted);margin-top:8px;display:flex;justify-content:space-between;gap:10px">
-          <span>Будет активна после исполнения</span>
+          <span>Авто-отмена через <span id="lttl_${t.id}" style="color:var(--yellow)">—</span></span>
           <span>${t.taken_at ? ('создана '+ago(t.taken_at)+' назад') : ''}</span>
         </div>
       </div>
     </div>`;
   }).join('');
 
+  // fill TTL countdown immediately
+  deduped.forEach(t => updateLimitTtlUI(t));
+
   // realtime prices ONLY when Limits tab is open
   if (currentTab === 'limits') startLimitsWs(deduped);
+}
+
+function updateLimitTtlUI(t) {
+  if (!t || !t.taken_at) return;
+  const el = document.getElementById('lttl_' + t.id);
+  if (!el) return;
+  const ageMin = Math.floor((Date.now() - parseUTC(t.taken_at)) / 60000);
+  const left = Math.max(0, Math.round((LIMIT_TTL_MIN || 60) - ageMin));
+  el.textContent = left + 'м';
+  el.style.color = left <= 5 ? 'var(--red)' : left <= 15 ? 'var(--yellow)' : 'var(--muted)';
 }
 
 // ── Trades render ──────────────────────────────────────────────────
@@ -1663,6 +1678,8 @@ setInterval(() => {
       el.style.color = tradeAgeColor(t.taken_at);
     }
   });
+  // pending TTL countdown
+  (_pendingTrades || []).forEach(t => updateLimitTtlUI(t));
 }, 30000);
 
 </script>
