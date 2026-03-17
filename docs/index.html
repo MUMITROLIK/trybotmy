@@ -521,6 +521,35 @@ tr:hover td { background: rgba(255,255,255,.015); }
   .fg-card { grid-column:1/-1; }
   .sig-prices { grid-template-columns:repeat(2,1fr); }
   .signals-grid { grid-template-columns: 1fr; }
+  .tab-btn { padding: 10px 10px; letter-spacing: 2px; }
+  .stat-card { padding: 14px 14px; }
+  .sig-top { padding: 12px 14px 8px; }
+  .sig-body { padding: 10px 14px 12px; }
+  td { padding: 10px 12px; }
+}
+
+@media (max-width: 720px) {
+  /* P&L history: table -> cards */
+  table thead { display:none; }
+  table, tbody, tr, td { display:block; width:100%; }
+  tbody tr {
+    border-bottom: 1px solid var(--border);
+    padding: 10px 0;
+  }
+  tbody td {
+    border-bottom: none;
+    padding: 6px 12px;
+    display:flex;
+    justify-content: space-between;
+    gap: 12px;
+  }
+  tbody td::before{
+    content: attr(data-label);
+    color: var(--muted);
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 9px;
+  }
 }
 
 .sig-taken-label {
@@ -900,9 +929,9 @@ function tradeDuration(iso) {
   const m = Math.floor((secs % 3600) / 60);
   const pct = Math.min(100, Math.round((secs / (MAX_TRADE_HOURS * 3600)) * 100));
   const label = h > 0 ? `${h}ч ${m}м` : `${m}м`;
-  if (h >= MAX_TRADE_HOURS) return `⏰ ТАЙМАУТ (${label})`;
-  if (pct >= 75) return `⚠️ ${label} · ${pct}% лимита`;
-  return `⏱ ${label} в сделке`;
+  if (h >= MAX_TRADE_HOURS) return `TIMEOUT (${label})`;
+  if (pct >= 75) return `${label} · ${pct}%`;
+  return `${label} в сделке`;
 }
 
 function tradeAgeColor(iso) {
@@ -1214,8 +1243,8 @@ function renderTrades(trades, stats) {
       <div class="sig-body">
         ${levels}
         <div class="tags">${tags}</div>
-        <div style="font-family:'JetBrains Mono',monospace;font-size:9px;color:var(--muted);margin-top:8px;display:flex;justify-content:space-between;gap:10px">
-          <span>🕒 Взята: ${takenAgo} назад</span>
+        <div style="font-family:var(--mono);font-size:9px;color:var(--muted);margin-top:8px;display:flex;justify-content:space-between;gap:10px">
+          <span>Взята: ${takenAgo} назад</span>
           <span id="ttimer_${t.id}" style="color:${takenClr}">${takenDur}</span>
         </div>
       </div>
@@ -1250,13 +1279,13 @@ function renderTradeHistory(hist) {
     else badge = `<span class="bdg exp">${st || '—'}</span>`;
 
     return `<tr>
-      <td style="font-weight:700;color:var(--cyan)">${r.symbol}</td>
-      <td><span class="bdg ${lg?'long':'short'}">${r.direction}</span></td>
-      <td>${mono(r.entry)}</td>
-      <td>${mono(r.close_price)}</td>
-      <td class="${pnl>=0?'pnl-positive':'pnl-negative'}" style="font-weight:700">${(pnl>=0?'+':'')+pnl.toFixed(2)}%</td>
-      <td>${badge}</td>
-      <td style="color:var(--muted)">${r.closed_at ? ago(r.closed_at)+' назад' : '—'}</td>
+      <td data-label="Монета" style="font-weight:700;color:var(--cyan)">${r.symbol}</td>
+      <td data-label="Тип"><span class="bdg ${lg?'long':'short'}">${r.direction}</span></td>
+      <td data-label="Вход">${mono(r.entry)}</td>
+      <td data-label="Закрыто">${mono(r.close_price)}</td>
+      <td data-label="P&L" class="${pnl>=0?'pnl-positive':'pnl-negative'}" style="font-weight:700">${(pnl>=0?'+':'')+pnl.toFixed(2)}%</td>
+      <td data-label="Результат">${badge}</td>
+      <td data-label="Время" style="color:var(--muted)">${r.closed_at ? ago(r.closed_at)+' назад' : '—'}</td>
     </tr>`;
   }).join('');
 }
