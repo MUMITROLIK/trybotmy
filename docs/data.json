@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T13:47:22.628086+00:00",
+  "updated_at": "2026-03-17T13:48:15.814640+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T13:46:53Z",
+    "last_ok": "2026-03-17T13:47:27Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -16,11 +16,11 @@
     "winrate": 93.8
   },
   "trade_stats": {
-    "open": 78,
+    "open": 77,
     "wins": 54,
-    "losses": 25,
-    "total_pnl": 98.85,
-    "winrate": 68.4
+    "losses": 26,
+    "total_pnl": 96.65,
+    "winrate": 67.5
   },
   "fear_greed": {
     "value": 28,
@@ -1396,27 +1396,6 @@
       ]
     },
     {
-      "id": 104,
-      "symbol": "FILUSDT",
-      "direction": "LONG",
-      "entry": 0.976,
-      "tp1": 0.99552,
-      "tp2": 1.01504,
-      "sl": 0.95648,
-      "strength": 34,
-      "taken_at": "2026-03-17 12:02:50",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00121)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: давление покупки (+0.21)",
-        "МТФ: 15m, 1h, 4h согласны",
-        "CVD положительный (+0.8%)",
-        "Doji (1h) — нерешительность",
-        "📌 Лимитный вход @ 0.973034 (откат к EMA20)"
-      ]
-    },
-    {
       "id": 105,
       "symbol": "LINKUSDT",
       "direction": "LONG",
@@ -2186,6 +2165,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "FILUSDT",
+      "direction": "LONG",
+      "entry": 0.976,
+      "tp1": 0.99552,
+      "tp2": 1.01504,
+      "sl": 0.95648,
+      "strength": 34,
+      "status": "SL",
+      "pnl_pct": -2.2,
+      "close_price": 0.9544999999999999,
+      "taken_at": "2026-03-17 12:02:50",
+      "closed_at": "2026-03-17 13:47:46"
+    },
     {
       "symbol": "XANUSDT",
       "direction": "SHORT",
