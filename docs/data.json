@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T15:25:32.109596+00:00",
+  "updated_at": "2026-03-17T15:26:52.935267+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T15:24:50Z",
+    "last_ok": "2026-03-17T15:25:36Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -9,19 +9,19 @@
     "auto_take": true
   },
   "stats": {
-    "total": 295,
+    "total": 296,
     "wins": 50,
     "losses": 3,
-    "active": 21,
+    "active": 22,
     "winrate": 94.3
   },
   "trade_stats": {
-    "open": 76,
-    "pending": 13,
+    "open": 75,
+    "pending": 14,
     "wins": 64,
-    "losses": 34,
-    "total_pnl": 100.32,
-    "winrate": 57.7
+    "losses": 35,
+    "total_pnl": 98.09,
+    "winrate": 56.6
   },
   "fear_greed": {
     "value": 28,
@@ -472,6 +472,29 @@
       ],
       "news": null,
       "created_at": "2026-03-17 15:24:40",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 334,
+      "symbol": "HYPEUSDT",
+      "direction": "SHORT",
+      "entry": 40.72047028,
+      "tp1": 39.906061,
+      "tp2": 39.091651,
+      "sl": 41.53488,
+      "strength": 36,
+      "reasons": [
+        "MACD медвежий (hist=-0.11524)",
+        "Цена ниже EMA20",
+        "Стакан: сильное давление продажи (-0.43)",
+        "МТФ: только 1 таймфрейм согласен",
+        "OI растёт +1.9%",
+        "CVD падает (-7.1%) — продажи усиливаются 📉",
+        "⚠️ Funding через 34м",
+        "📌 Лимитный вход @ 40.7205 (откат к EMA20)"
+      ],
+      "news": null,
+      "created_at": "2026-03-17 15:26:22",
       "status": "ACTIVE"
     }
   ],
@@ -2173,26 +2196,6 @@
       ]
     },
     {
-      "id": 166,
-      "symbol": "OPNUSDT",
-      "direction": "SHORT",
-      "entry": 0.2847,
-      "tp1": 0.27795261,
-      "tp2": 0.27120522,
-      "sl": 0.290394,
-      "strength": 44,
-      "taken_at": "2026-03-17 14:05:59",
-      "status": "OPEN",
-      "reasons": [
-        "MACD медвежий (hist=-0.00081)",
-        "Цена < EMA20 < EMA50",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +3.7% + цена ↓",
-        "CVD падает (-10.2%) — продажи усиливаются 📉",
-        "📌 Лимитный вход @ 0.295697 (откат к EMA20)"
-      ]
-    },
-    {
       "id": 168,
       "symbol": "CRCLUSDT",
       "direction": "SHORT",
@@ -2628,9 +2631,45 @@
         "⚠️ Funding через 36м",
         "📌 Лимитный вход @ 0.00592502 (откат к EMA20)"
       ]
+    },
+    {
+      "id": 188,
+      "symbol": "HYPEUSDT",
+      "direction": "SHORT",
+      "entry": 40.72047028,
+      "tp1": 39.906061,
+      "tp2": 39.091651,
+      "sl": 41.53488,
+      "strength": 36,
+      "taken_at": null,
+      "status": "PENDING",
+      "reasons": [
+        "MACD медвежий (hist=-0.11524)",
+        "Цена ниже EMA20",
+        "Стакан: сильное давление продажи (-0.43)",
+        "МТФ: только 1 таймфрейм согласен",
+        "OI растёт +1.9%",
+        "CVD падает (-7.1%) — продажи усиливаются 📉",
+        "⚠️ Funding через 34м",
+        "📌 Лимитный вход @ 40.7205 (откат к EMA20)"
+      ]
     }
   ],
   "trades_history": [
+    {
+      "symbol": "OPNUSDT",
+      "direction": "SHORT",
+      "entry": 0.2847,
+      "tp1": 0.27795261,
+      "tp2": 0.27120522,
+      "sl": 0.290394,
+      "strength": 44,
+      "status": "SL",
+      "pnl_pct": -2.23,
+      "close_price": 0.29105000000000003,
+      "taken_at": "2026-03-17 14:05:59",
+      "closed_at": "2026-03-17 15:25:54"
+    },
     {
       "symbol": "HYPEUSDT",
       "direction": "SHORT",
@@ -4179,6 +4218,20 @@
       "tp2": 0.006387,
       "sl": 0.00574,
       "strength": 41,
+      "status": "PENDING",
+      "pnl_pct": 0,
+      "close_price": null,
+      "taken_at": null,
+      "closed_at": null
+    },
+    {
+      "symbol": "HYPEUSDT",
+      "direction": "SHORT",
+      "entry": 40.72047028,
+      "tp1": 39.906061,
+      "tp2": 39.091651,
+      "sl": 41.53488,
+      "strength": 36,
       "status": "PENDING",
       "pnl_pct": 0,
       "close_price": null,
