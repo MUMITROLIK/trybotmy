@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T17:46:48.151079+00:00",
+  "updated_at": "2026-03-17T17:47:29.184605+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T17:46:29Z",
+    "last_ok": "2026-03-17T17:46:53Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -16,12 +16,12 @@
     "winrate": 87.3
   },
   "trade_stats": {
-    "open": 55,
+    "open": 54,
     "pending": 17,
-    "wins": 85,
+    "wins": 86,
     "losses": 52,
-    "total_pnl": 91.04,
-    "winrate": 62.0
+    "total_pnl": 93.25,
+    "winrate": 62.3
   },
   "fear_greed": {
     "value": 28,
@@ -3220,9 +3220,10 @@
         "Doji (1h) — нерешительность",
         "📌 Лимитный вход @ 0.201594 (откат к EMA20)"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 135,
       "symbol": "ZECUSDT",
       "direction": "LONG",
       "entry": 268.27,
@@ -3230,19 +3231,12 @@
       "tp2": 279.0008,
       "sl": 274.305,
       "strength": 28,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 2.21,
+      "close_price": 274.195,
       "taken_at": "2026-03-17 12:46:57",
-      "status": "TP1_HIT",
-      "reasons": [
-        "RSI=42 (нейтральный↓)",
-        "BB ниже середины",
-        "EMA20 > EMA50",
-        "Стакан: перевес bid (+0.08)",
-        "МТФ: 15m, 1h, 4h согласны",
-        "CVD положительный (+4.4%)"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-17 17:47:10"
+    },
     {
       "symbol": "TSLAUSDT",
       "direction": "SHORT",
