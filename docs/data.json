@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T21:52:53.270791+00:00",
+  "updated_at": "2026-03-17T21:53:57.710264+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T21:51:50Z",
+    "last_ok": "2026-03-17T21:52:57Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,19 +10,19 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 382,
+    "total": 383,
     "wins": 109,
-    "losses": 20,
+    "losses": 21,
     "active": 12,
-    "winrate": 84.5
+    "winrate": 83.8
   },
   "trade_stats": {
-    "open": 16,
-    "pending": 10,
+    "open": 14,
+    "pending": 11,
     "wins": 116,
-    "losses": 82,
-    "total_pnl": 99.54,
-    "winrate": 58.6
+    "losses": 84,
+    "total_pnl": 95.95,
+    "winrate": 58.0
   },
   "fear_greed": {
     "value": 28,
@@ -114,29 +114,6 @@
       ],
       "news": null,
       "created_at": "2026-03-17 19:26:33",
-      "status": "ACTIVE"
-    },
-    {
-      "id": 404,
-      "symbol": "SIRENUSDT",
-      "direction": "LONG",
-      "entry": 0.73203,
-      "tp1": 0.75865,
-      "tp2": 0.785269,
-      "sl": 0.710734,
-      "strength": 45,
-      "reasons": [
-        "RSI=45 (нейтральный↓)",
-        "MACD бычий (hist=0.00008)",
-        "BB ниже середины",
-        "Цена > EMA20 > EMA50",
-        "МТФ: 15m, 4h согласны",
-        "OI растёт +3.0% + цена ↑",
-        "CVD положительный (+3.4%)",
-        "Bullish Engulfing (1h) 🕯️"
-      ],
-      "news": null,
-      "created_at": "2026-03-17 19:47:09",
       "status": "ACTIVE"
     },
     {
@@ -289,6 +266,27 @@
       ],
       "news": null,
       "created_at": "2026-03-17 21:51:12",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 421,
+      "symbol": "POLYXUSDT",
+      "direction": "LONG",
+      "entry": 0.05373631,
+      "tp1": 0.055136,
+      "tp2": 0.056535,
+      "sl": 0.052617,
+      "strength": 40,
+      "reasons": [
+        "MACD бычий (hist=0.00001)",
+        "Цена > EMA20 > EMA50",
+        "Стакан: давление покупки (+0.25)",
+        "МТФ: 5m, 15m, 4h согласны",
+        "CVD растёт (+6.9%) — покупки усиливаются 📈",
+        "📌 Лимитный вход @ 0.0537363 (откат к EMA20)"
+      ],
+      "news": null,
+      "created_at": "2026-03-17 21:53:14",
       "status": "ACTIVE"
     }
   ],
@@ -467,6 +465,27 @@
         "Стакан: давление покупки (+0.13)",
         "МТФ: 5m, 1h, 4h согласны",
         "CVD положительный (+1.6%)"
+      ]
+    },
+    {
+      "symbol": "SIRENUSDT",
+      "direction": "LONG",
+      "entry": 0.73203,
+      "tp1": 0.75865,
+      "tp2": 0.785269,
+      "sl": 0.710734,
+      "strength": 45,
+      "status": "SL",
+      "created_at": "2026-03-17 19:47:09",
+      "reasons": [
+        "RSI=45 (нейтральный↓)",
+        "MACD бычий (hist=0.00008)",
+        "BB ниже середины",
+        "Цена > EMA20 > EMA50",
+        "МТФ: 15m, 4h согласны",
+        "OI растёт +3.0% + цена ↑",
+        "CVD положительный (+3.4%)",
+        "Bullish Engulfing (1h) 🕯️"
       ]
     },
     {
@@ -664,47 +683,9 @@
         "CVD падает (-9.3%) — продажи усиливаются 📉",
         "📌 Лимитный вход @ 0.0186004 (откат к EMA20)"
       ]
-    },
-    {
-      "symbol": "GRASSUSDT",
-      "direction": "LONG",
-      "entry": 0.44334446,
-      "tp1": 0.453298,
-      "tp2": 0.463252,
-      "sl": 0.434478,
-      "strength": 37,
-      "status": "SL",
-      "created_at": "2026-03-17 16:43:16",
-      "reasons": [
-        "MACD бычий (hist=0.00125)",
-        "EMA20 > EMA50 (golden cross) 🌟",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +1.5% + цена ↑",
-        "📌 Лимитный вход @ 0.443344 (откат к EMA20)"
-      ]
     }
   ],
   "trades_open": [
-    {
-      "id": 160,
-      "symbol": "CRVUSDT",
-      "direction": "SHORT",
-      "entry": 0.251,
-      "tp1": 0.24598,
-      "tp2": 0.24096,
-      "sl": 0.25602,
-      "strength": 30,
-      "taken_at": "2026-03-17 13:53:10",
-      "status": "OPEN",
-      "reasons": [
-        "MACD медвежий (hist=-0.00039)",
-        "Цена < EMA20 < EMA50",
-        "Объём x2.0 🔥",
-        "МТФ: 5m, 15m согласны",
-        "Doji (1h) — нерешительность",
-        "📌 Лимитный вход @ 0.252424 (откат к EMA20)"
-      ]
-    },
     {
       "id": 161,
       "symbol": "RVNUSDT",
@@ -925,28 +906,6 @@
         "МТФ: все 4 таймфрейма согласны ✅✅",
         "OI растёт +2.5% + цена ↑",
         "📌 Лимитный вход @ 0.520037 (откат к EMA20)"
-      ]
-    },
-    {
-      "id": 258,
-      "symbol": "SIRENUSDT",
-      "direction": "LONG",
-      "entry": 0.73203,
-      "tp1": 0.75865,
-      "tp2": 0.785269,
-      "sl": 0.710734,
-      "strength": 45,
-      "taken_at": null,
-      "status": "OPEN",
-      "reasons": [
-        "RSI=45 (нейтральный↓)",
-        "MACD бычий (hist=0.00008)",
-        "BB ниже середины",
-        "Цена > EMA20 > EMA50",
-        "МТФ: 15m, 4h согласны",
-        "OI растёт +3.0% + цена ↑",
-        "CVD положительный (+3.4%)",
-        "Bullish Engulfing (1h) 🕯️"
       ]
     },
     {
@@ -1217,9 +1176,71 @@
         "CVD растёт (+8.5%) — покупки усиливаются 📈",
         "📌 Лимитный вход @ 0.00209642 (откат к EMA20)"
       ]
+    },
+    {
+      "id": 275,
+      "symbol": "POLYXUSDT",
+      "direction": "LONG",
+      "entry": 0.05373631,
+      "tp1": 0.055136,
+      "tp2": 0.056535,
+      "sl": 0.052617,
+      "strength": 40,
+      "taken_at": "2026-03-17T21:53:15.011314",
+      "status": "PENDING",
+      "reasons": [
+        "MACD бычий (hist=0.00001)",
+        "Цена > EMA20 > EMA50",
+        "Стакан: давление покупки (+0.25)",
+        "МТФ: 5m, 15m, 4h согласны",
+        "CVD растёт (+6.9%) — покупки усиливаются 📈",
+        "📌 Лимитный вход @ 0.0537363 (откат к EMA20)"
+      ]
     }
   ],
   "trades_history": [
+    {
+      "symbol": "CRVUSDT",
+      "direction": "SHORT",
+      "entry": 0.251,
+      "tp1": 0.24598,
+      "tp2": 0.24096,
+      "sl": 0.25602,
+      "strength": 30,
+      "status": "TIMEOUT",
+      "pnl_pct": -0.6,
+      "close_price": 0.2525,
+      "taken_at": "2026-03-17 13:53:10",
+      "closed_at": "2026-03-17 21:53:15"
+    },
+    {
+      "symbol": "POLYXUSDT",
+      "direction": "LONG",
+      "entry": 0.05373631,
+      "tp1": 0.055136,
+      "tp2": 0.056535,
+      "sl": 0.052617,
+      "strength": 40,
+      "status": "PENDING",
+      "pnl_pct": 0,
+      "close_price": null,
+      "taken_at": "2026-03-17T21:53:15.011314",
+      "closed_at": null
+    },
+    {
+      "symbol": "SIRENUSDT",
+      "direction": "LONG",
+      "entry": 0.73203,
+      "tp1": 0.75865,
+      "tp2": 0.785269,
+      "sl": 0.710734,
+      "strength": 45,
+      "status": "SL",
+      "pnl_pct": -2.99,
+      "close_price": 0.7101649999999999,
+      "taken_at": null,
+      "closed_at": "2026-03-17 21:52:57"
+    },
     {
       "symbol": "PUMPUSDT",
       "direction": "LONG",
@@ -3977,48 +3998,6 @@
       "close_price": 0.005990499999999999,
       "taken_at": "2026-03-17 09:25:35",
       "closed_at": "2026-03-17 12:55:23"
-    },
-    {
-      "symbol": "KITEUSDT",
-      "direction": "SHORT",
-      "entry": 0.1983,
-      "tp1": 0.194334,
-      "tp2": 0.190368,
-      "sl": 0.19432500000000003,
-      "strength": 32,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 1.84,
-      "close_price": 0.194645,
-      "taken_at": "2026-03-17 09:48:37",
-      "closed_at": "2026-03-17 12:54:45"
-    },
-    {
-      "symbol": "PIXELUSDT",
-      "direction": "SHORT",
-      "entry": 0.01027,
-      "tp1": 0.010047,
-      "tp2": 0.009824,
-      "sl": 0.0100395,
-      "strength": 34,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 2.18,
-      "close_price": 0.0100465,
-      "taken_at": "2026-03-17 11:34:36",
-      "closed_at": "2026-03-17 12:46:29"
-    },
-    {
-      "symbol": "FETUSDT",
-      "direction": "LONG",
-      "entry": 0.2275,
-      "tp1": 0.233039,
-      "tp2": 0.238579,
-      "sl": 0.23305,
-      "strength": 34,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 2.09,
-      "close_price": 0.23225,
-      "taken_at": "2026-03-17 12:17:51",
-      "closed_at": "2026-03-17 12:46:09"
     }
   ]
 }
