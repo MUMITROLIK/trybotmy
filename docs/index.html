@@ -915,10 +915,23 @@ let rafScheduled = false;
 let lastPaint = 0;
 let lastTradeTickTs = 0;
 
+// ── Real-time prices for pending limits (Binance WS) ──────────────────────────
+let limitsWs = null;
+const limitBySymbol = new Map();    // symbol -> pending[]
+let rafLimitsScheduled = false;
+let lastLimitsPaint = 0;
+let lastLimitsTickTs = 0;
+
 function stopTradeWs() {
   try { if (tradesWs) tradesWs.close(); } catch(e) {}
   tradesWs = null;
   tradeBySymbol.clear();
+}
+
+function stopLimitsWs() {
+  try { if (limitsWs) limitsWs.close(); } catch(e) {}
+  limitsWs = null;
+  limitBySymbol.clear();
 }
 
 function startTradeWs(trades) {
@@ -957,6 +970,41 @@ function startTradeWs(trades) {
   tradesWs.onerror = () => { /* fallback below */ };
 }
 
+function startLimitsWs(trades) {
+  limitBySymbol.clear();
+  (trades || []).forEach(t => {
+    const sym = String(t.symbol || '').toUpperCase();
+    if (!sym) return;
+    if (!limitBySymbol.has(sym)) limitBySymbol.set(sym, []);
+    limitBySymbol.get(sym).push(t);
+  });
+
+  try { if (limitsWs) limitsWs.close(); } catch(e) {}
+  limitsWs = null;
+  const symbols = [...limitBySymbol.keys()].map(s => s.toLowerCase());
+  if (!symbols.length) return;
+  const streams = symbols.map(s => `${s}@bookTicker`).join('/');
+  const url = `wss://fstream.binance.com/stream?streams=${streams}`;
+  limitsWs = new WebSocket(url);
+  limitsWs.onmessage = e => {
+    try {
+      const msg = JSON.parse(e.data);
+      const data = msg.data || msg;
+      const sym = String(data.s || '').toUpperCase();
+      if (!sym) return;
+      const bid = parseFloat(data.b || 0);
+      const ask = parseFloat(data.a || 0);
+      const mid = (bid + ask) / 2;
+      if (!mid) return;
+      latestMidBySymbol.set(sym, mid);
+      lastLimitsTickTs = Date.now();
+      scheduleLimitsPaint();
+    } catch(err) {}
+  };
+  limitsWs.onclose = () => { limitsWs = null; };
+  limitsWs.onerror = () => { /* fallback below */ };
+}
+
 function scheduleTradePaint() {
   if (rafScheduled) return;
   rafScheduled = true;
@@ -972,12 +1020,28 @@ function scheduleTradePaint() {
   });
 }
 
+function scheduleLimitsPaint() {
+  if (rafLimitsScheduled) return;
+  rafLimitsScheduled = true;
+  requestAnimationFrame(() => {
+    rafLimitsScheduled = false;
+    const now = performance.now();
+    if (now - lastLimitsPaint < 150) return;
+    lastLimitsPaint = now;
+    latestMidBySymbol.forEach((mid, sym) => {
+      (limitBySymbol.get(sym) || []).forEach(t => updateLimitUI(t, mid));
+    });
+  });
+}
+
 // ── Fallback: если Binance WS молчит — берём bookTicker по REST ───────────────
 async function pollTradePricesFallback() {
   try {
-    if (currentTab !== 'positions') return;
-    if (!_allTrades || !_allTrades.length) return;
-    const silentForMs = Date.now() - (lastTradeTickTs || 0);
+    if (currentTab !== 'positions' && currentTab !== 'limits') return;
+    const targets = currentTab === 'positions' ? (_allTrades || []) : (_pendingTrades || []);
+    if (!targets.length) return;
+    const lastTick = currentTab === 'positions' ? (lastTradeTickTs || 0) : (lastLimitsTickTs || 0);
+    const silentForMs = Date.now() - lastTick;
     // Если WS не давал цен уже 8 секунд — включаем REST fallback
     if (silentForMs < 8000) return;
 
@@ -987,7 +1051,7 @@ async function pollTradePricesFallback() {
     if (!Array.isArray(rows)) return;
 
     // Собираем нужные символы
-    const needed = new Set((_allTrades || []).map(t => String(t.symbol || '').toUpperCase()).filter(Boolean));
+    const needed = new Set((targets || []).map(t => String(t.symbol || '').toUpperCase()).filter(Boolean));
     for (const it of rows) {
       const sym = String(it.symbol || it.s || '').toUpperCase();
       if (!needed.has(sym)) continue;
@@ -997,8 +1061,13 @@ async function pollTradePricesFallback() {
       if (!mid) continue;
       latestMidBySymbol.set(sym, mid);
     }
-    lastTradeTickTs = Date.now();
-    scheduleTradePaint();
+    if (currentTab === 'positions') {
+      lastTradeTickTs = Date.now();
+      scheduleTradePaint();
+    } else {
+      lastLimitsTickTs = Date.now();
+      scheduleLimitsPaint();
+    }
   } catch(e) {}
 }
 
@@ -1050,6 +1119,32 @@ function updateTradeUI(trade, price) {
     : color === 'var(--red)'
       ? '0 0 6px rgba(255,45,107,.4)'
       : 'none';
+}
+
+function updateLimitUI(trade, price) {
+  if (!trade || !price) return;
+  const id = trade.id;
+  const entry = trade.entry_price || trade.entry;
+  if (!id || !entry) return;
+  const isLong = trade.direction === 'LONG';
+
+  const priceEl = document.getElementById('lprice_' + id);
+  const distEl  = document.getElementById('ldist_' + id);
+  if (priceEl) priceEl.textContent = mono(price);
+
+  // "Сколько осталось до входа" (в % от entry)
+  let remainingPct = 0;
+  if (isLong) {
+    // лимит-лонг обычно ниже текущей → нужно падение до entry
+    remainingPct = Math.max(0, (price - entry) / entry * 100);
+  } else {
+    // лимит-шорт обычно выше текущей → нужен рост до entry
+    remainingPct = Math.max(0, (entry - price) / entry * 100);
+  }
+  if (distEl) {
+    distEl.textContent = remainingPct <= 0.0001 ? 'почти' : remainingPct.toFixed(2) + '%';
+    distEl.className = 'p-val ' + (remainingPct <= 0.10 ? 'c-green' : 'c-yellow');
+  }
 }
 
 // ── Utils ──────────────────────────────────────────────────────────
@@ -1380,8 +1475,16 @@ function switchTab(tab) {
     page.classList.toggle('active', t === tab);
   });
   // Start/stop heavy realtime streams based on current tab
-  if (tab === 'positions') startTradeWs(_allTrades || []);
-  else stopTradeWs();
+  if (tab === 'positions') {
+    startTradeWs(_allTrades || []);
+    stopLimitsWs();
+  } else if (tab === 'limits') {
+    startLimitsWs(_pendingTrades || []);
+    stopTradeWs();
+  } else {
+    stopTradeWs();
+    stopLimitsWs();
+  }
 }
 
 function renderLimits(trades, stats) {
@@ -1403,7 +1506,8 @@ function renderLimits(trades, stats) {
       </div>
       <div class="sig-prices">
         <div class="price-cell"><div class="p-lbl">ENTRY (LIMIT)</div><div class="p-val">${mono(t.entry)}</div></div>
-        <div class="price-cell"><div class="p-lbl">СТАТУС</div><div class="p-val c-yellow">PENDING</div></div>
+        <div class="price-cell"><div class="p-lbl">ТЕКУЩАЯ</div><div class="p-val" id="lprice_${t.id}">—</div></div>
+        <div class="price-cell"><div class="p-lbl">ДО ВХОДА</div><div class="p-val c-yellow" id="ldist_${t.id}">—</div></div>
         <div class="price-cell"><div class="p-lbl">TP1</div><div class="p-val tp">${mono(t.tp1)}</div></div>
         <div class="price-cell"><div class="p-lbl">SL</div><div class="p-val sl">${mono(t.sl)}</div></div>
       </div>
@@ -1416,6 +1520,9 @@ function renderLimits(trades, stats) {
       </div>
     </div>`;
   }).join('');
+
+  // realtime prices ONLY when Limits tab is open
+  if (currentTab === 'limits') startLimitsWs(trades);
 }
 
 // ── Trades render ──────────────────────────────────────────────────

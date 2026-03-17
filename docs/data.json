@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T16:37:36.153042+00:00",
+  "updated_at": "2026-03-17T16:38:44.039456+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T16:36:36Z",
+    "last_ok": "2026-03-17T16:37:44Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -16,12 +16,12 @@
     "winrate": 90.1
   },
   "trade_stats": {
-    "open": 70,
+    "open": 69,
     "pending": 52,
-    "wins": 69,
+    "wins": 70,
     "losses": 44,
-    "total_pnl": 89.64,
-    "winrate": 41.8
+    "total_pnl": 93.65,
+    "winrate": 42.2
   },
   "fear_greed": {
     "value": 28,
@@ -3480,28 +3480,23 @@
         "CVD растёт (+6.3%) — покупки усиливаются 📈",
         "📌 Лимитный вход @ 0.0334149 (откат к EMA20)"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 39,
       "symbol": "ENSOUSDT",
       "direction": "SHORT",
       "entry": 1.19434769,
       "tp1": 1.170461,
       "tp2": 1.146574,
-      "sl": 1.15209595,
+      "sl": 1.14988935,
       "strength": 34,
+      "status": "TP2",
+      "pnl_pct": 4.01,
+      "close_price": 1.1464500000000002,
       "taken_at": "2026-03-17 08:57:12",
-      "status": "TP1_HIT",
-      "reasons": [
-        "MACD медвежий (hist=-0.00065)",
-        "Цена < EMA20 < EMA50",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "CVD отрицательный (-4.3%)",
-        "📌 Лимитный вход @ 1.19435 (откат к EMA20)"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-17 16:38:02"
+    },
     {
       "symbol": "CFGUSDT",
       "direction": "SHORT",
