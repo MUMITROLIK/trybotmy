@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-17T09:05:28.547799+00:00",
+  "updated_at": "2026-03-17T09:06:39.671616+00:00",
   "stats": {
     "total": 154,
     "wins": 8,
@@ -8,11 +8,11 @@
     "winrate": 88.9
   },
   "trade_stats": {
-    "open": 21,
-    "wins": 18,
+    "open": 20,
+    "wins": 19,
     "losses": 7,
-    "total_pnl": 30.4,
-    "winrate": 72.0
+    "total_pnl": 34.97,
+    "winrate": 73.1
   },
   "fear_greed": {
     "value": 28,
@@ -929,30 +929,23 @@
         "CVD падает (-5.2%) — продажи усиливаются 📉",
         "📌 Лимитный вход @ 0.794789 (откат к EMA20)"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 27,
       "symbol": "GUSDT",
       "direction": "SHORT",
       "entry": 0.00491822,
       "tp1": 0.004784,
       "tp2": 0.00465,
-      "sl": 0.00471109,
+      "sl": 0.00469153,
       "strength": 33,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 4.57,
+      "close_price": 0.0046935,
       "taken_at": "2026-03-17 08:42:32",
-      "status": "TP1_HIT",
-      "reasons": [
-        "MACD медвежий (hist=-0.00001)",
-        "Цена < EMA20 < EMA50",
-        "Стакан: давление продажи (-0.19)",
-        "МТФ: 5m, 15m согласны",
-        "OI падает (лонги закрываются)",
-        "CVD отрицательный (+0.7%)",
-        "📌 Лимитный вход @ 0.00491822 (откат к EMA20)"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-17 09:06:39"
+    },
     {
       "symbol": "ROBOUSDT",
       "direction": "SHORT",
