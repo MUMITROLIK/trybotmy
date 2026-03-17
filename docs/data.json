@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T17:14:01.366565+00:00",
+  "updated_at": "2026-03-17T17:14:41.663356+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T17:12:58Z",
+    "last_ok": null,
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,11 +17,11 @@
   },
   "trade_stats": {
     "open": 55,
-    "pending": 62,
+    "pending": 16,
     "wins": 82,
     "losses": 49,
     "total_pnl": 90.09,
-    "winrate": 42.5
+    "winrate": 62.6
   },
   "fear_greed": {
     "value": 28,
