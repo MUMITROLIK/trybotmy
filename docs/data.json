@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T17:14:41.663356+00:00",
+  "updated_at": "2026-03-17T17:15:46.615764+00:00",
   "publish_status": {
-    "last_ok": null,
+    "last_ok": "2026-03-17T17:14:46Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -11,17 +11,17 @@
   "stats": {
     "total": 356,
     "wins": 94,
-    "losses": 13,
-    "active": 24,
-    "winrate": 87.9
+    "losses": 14,
+    "active": 23,
+    "winrate": 87.0
   },
   "trade_stats": {
     "open": 55,
     "pending": 16,
     "wins": 82,
-    "losses": 49,
-    "total_pnl": 90.09,
-    "winrate": 62.6
+    "losses": 50,
+    "total_pnl": 87.88,
+    "winrate": 62.1
   },
   "fear_greed": {
     "value": 28,
@@ -346,26 +346,6 @@
       ],
       "news": null,
       "created_at": "2026-03-17 16:25:12",
-      "status": "ACTIVE"
-    },
-    {
-      "id": 362,
-      "symbol": "ROBOUSDT",
-      "direction": "SHORT",
-      "entry": 0.03054,
-      "tp1": 0.029929,
-      "tp2": 0.029318,
-      "sl": 0.031151,
-      "strength": 31,
-      "reasons": [
-        "RSI=59 (нейтральный↑)",
-        "BB верхняя зона (78%)",
-        "Цена < EMA20 < EMA50",
-        "Стакан: давление продажи (-0.10)",
-        "МТФ: 15m, 1h, 4h согласны"
-      ],
-      "news": null,
-      "created_at": "2026-03-17 16:25:26",
       "status": "ACTIVE"
     },
     {
@@ -1941,25 +1921,6 @@
       ]
     },
     {
-      "id": 216,
-      "symbol": "ROBOUSDT",
-      "direction": "SHORT",
-      "entry": 0.03054,
-      "tp1": 0.029929,
-      "tp2": 0.029318,
-      "sl": 0.031151,
-      "strength": 31,
-      "taken_at": null,
-      "status": "OPEN",
-      "reasons": [
-        "RSI=59 (нейтральный↑)",
-        "BB верхняя зона (78%)",
-        "Цена < EMA20 < EMA50",
-        "Стакан: давление продажи (-0.10)",
-        "МТФ: 15m, 1h, 4h согласны"
-      ]
-    },
-    {
       "id": 225,
       "symbol": "OPNUSDT",
       "direction": "SHORT",
@@ -1976,6 +1937,25 @@
         "EMA20 < EMA50",
         "МТФ: 15m, 1h, 4h согласны",
         "OI растёт +2.9% + цена ↓"
+      ]
+    },
+    {
+      "id": 236,
+      "symbol": "FETUSDT",
+      "direction": "SHORT",
+      "entry": 0.23116677,
+      "tp1": 0.226056,
+      "tp2": 0.220945,
+      "sl": 0.23579,
+      "strength": 30,
+      "taken_at": "2026-03-17 17:15:29",
+      "status": "OPEN",
+      "reasons": [
+        "MACD медвежий (hist=-0.00037)",
+        "Цена < EMA20 < EMA50",
+        "МТФ: 5m, 15m согласны",
+        "CVD падает (-5.0%) — продажи усиливаются 📉",
+        "📌 Лимитный вход @ 0.231167 (откат к EMA20)"
       ]
     },
     {
@@ -3089,25 +3069,6 @@
       ]
     },
     {
-      "id": 236,
-      "symbol": "FETUSDT",
-      "direction": "SHORT",
-      "entry": 0.23116677,
-      "tp1": 0.226056,
-      "tp2": 0.220945,
-      "sl": 0.23579,
-      "strength": 30,
-      "taken_at": null,
-      "status": "PENDING",
-      "reasons": [
-        "MACD медвежий (hist=-0.00037)",
-        "Цена < EMA20 < EMA50",
-        "МТФ: 5m, 15m согласны",
-        "CVD падает (-5.0%) — продажи усиливаются 📉",
-        "📌 Лимитный вход @ 0.231167 (откат к EMA20)"
-      ]
-    },
-    {
       "id": 237,
       "symbol": "CFGUSDT",
       "direction": "SHORT",
@@ -3296,6 +3257,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "ROBOUSDT",
+      "direction": "SHORT",
+      "entry": 0.03054,
+      "tp1": 0.029929,
+      "tp2": 0.029318,
+      "sl": 0.031151,
+      "strength": 31,
+      "status": "SL",
+      "pnl_pct": -2.21,
+      "close_price": 0.031215,
+      "taken_at": null,
+      "closed_at": "2026-03-17 17:15:10"
+    },
     {
       "symbol": "ZROUSDT",
       "direction": "LONG",
@@ -5852,20 +5827,6 @@
       "tp2": 0.036031,
       "sl": 0.032368,
       "strength": 44,
-      "status": "PENDING",
-      "pnl_pct": 0,
-      "close_price": null,
-      "taken_at": null,
-      "closed_at": null
-    },
-    {
-      "symbol": "FETUSDT",
-      "direction": "SHORT",
-      "entry": 0.23116677,
-      "tp1": 0.226056,
-      "tp2": 0.220945,
-      "sl": 0.23579,
-      "strength": 30,
       "status": "PENDING",
       "pnl_pct": 0,
       "close_price": null,
