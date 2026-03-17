@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T16:38:44.039456+00:00",
+  "updated_at": "2026-03-17T16:39:49.901338+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T16:37:44Z",
+    "last_ok": "2026-03-17T16:38:48Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -9,19 +9,19 @@
     "auto_take": true
   },
   "stats": {
-    "total": 343,
+    "total": 345,
     "wins": 82,
     "losses": 9,
-    "active": 30,
+    "active": 32,
     "winrate": 90.1
   },
   "trade_stats": {
     "open": 69,
-    "pending": 52,
+    "pending": 54,
     "wins": 70,
     "losses": 44,
     "total_pnl": 93.65,
-    "winrate": 42.2
+    "winrate": 41.7
   },
   "fear_greed": {
     "value": 28,
@@ -658,6 +658,48 @@
       ],
       "news": null,
       "created_at": "2026-03-17 16:36:40",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 382,
+      "symbol": "FETUSDT",
+      "direction": "SHORT",
+      "entry": 0.23116677,
+      "tp1": 0.226056,
+      "tp2": 0.220945,
+      "sl": 0.23579,
+      "strength": 30,
+      "reasons": [
+        "MACD медвежий (hist=-0.00037)",
+        "Цена < EMA20 < EMA50",
+        "МТФ: 5m, 15m согласны",
+        "CVD падает (-5.0%) — продажи усиливаются 📉",
+        "📌 Лимитный вход @ 0.231167 (откат к EMA20)"
+      ],
+      "news": null,
+      "created_at": "2026-03-17 16:39:25",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 383,
+      "symbol": "CFGUSDT",
+      "direction": "SHORT",
+      "entry": 0.15977231,
+      "tp1": 0.155079,
+      "tp2": 0.150387,
+      "sl": 0.163527,
+      "strength": 49,
+      "reasons": [
+        "MACD медвежий (hist=-0.00016)",
+        "Цена < EMA20 < EMA50",
+        "Стакан: давление продажи (-0.12)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +11.1% + цена ↓",
+        "CVD падает (-8.7%) — продажи усиливаются 📉",
+        "📌 Лимитный вход @ 0.159772 (откат к EMA20)"
+      ],
+      "news": null,
+      "created_at": "2026-03-17 16:39:32",
       "status": "ACTIVE"
     }
   ],
@@ -3480,6 +3522,46 @@
         "CVD растёт (+6.3%) — покупки усиливаются 📈",
         "📌 Лимитный вход @ 0.0334149 (откат к EMA20)"
       ]
+    },
+    {
+      "id": 236,
+      "symbol": "FETUSDT",
+      "direction": "SHORT",
+      "entry": 0.23116677,
+      "tp1": 0.226056,
+      "tp2": 0.220945,
+      "sl": 0.23579,
+      "strength": 30,
+      "taken_at": null,
+      "status": "PENDING",
+      "reasons": [
+        "MACD медвежий (hist=-0.00037)",
+        "Цена < EMA20 < EMA50",
+        "МТФ: 5m, 15m согласны",
+        "CVD падает (-5.0%) — продажи усиливаются 📉",
+        "📌 Лимитный вход @ 0.231167 (откат к EMA20)"
+      ]
+    },
+    {
+      "id": 237,
+      "symbol": "CFGUSDT",
+      "direction": "SHORT",
+      "entry": 0.15977231,
+      "tp1": 0.155079,
+      "tp2": 0.150387,
+      "sl": 0.163527,
+      "strength": 49,
+      "taken_at": null,
+      "status": "PENDING",
+      "reasons": [
+        "MACD медвежий (hist=-0.00016)",
+        "Цена < EMA20 < EMA50",
+        "Стакан: давление продажи (-0.12)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +11.1% + цена ↓",
+        "CVD падает (-8.7%) — продажи усиливаются 📉",
+        "📌 Лимитный вход @ 0.159772 (откат к EMA20)"
+      ]
     }
   ],
   "trades_history": [
@@ -5801,6 +5883,34 @@
       "tp2": 0.036031,
       "sl": 0.032368,
       "strength": 44,
+      "status": "PENDING",
+      "pnl_pct": 0,
+      "close_price": null,
+      "taken_at": null,
+      "closed_at": null
+    },
+    {
+      "symbol": "FETUSDT",
+      "direction": "SHORT",
+      "entry": 0.23116677,
+      "tp1": 0.226056,
+      "tp2": 0.220945,
+      "sl": 0.23579,
+      "strength": 30,
+      "status": "PENDING",
+      "pnl_pct": 0,
+      "close_price": null,
+      "taken_at": null,
+      "closed_at": null
+    },
+    {
+      "symbol": "CFGUSDT",
+      "direction": "SHORT",
+      "entry": 0.15977231,
+      "tp1": 0.155079,
+      "tp2": 0.150387,
+      "sl": 0.163527,
+      "strength": 49,
       "status": "PENDING",
       "pnl_pct": 0,
       "close_price": null,
