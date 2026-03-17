@@ -1096,6 +1096,11 @@ let btcChart = null, btcSeries = null, btcTF = '1m', btcWs = null;
 
 function initBtcChart() {
   const wrap = $('btcChartWrap');
+  if (!wrap) return;
+  if (typeof LightweightCharts === 'undefined') {
+    wrap.innerHTML = '<div class="empty-state">📉 График недоступен (блокируется CDN).<br/>Остальной терминал работает.</div>';
+    return;
+  }
   const getH = () => Math.max(220, Math.min(320, Math.round(window.innerHeight * 0.38)));
   btcChart  = LightweightCharts.createChart(wrap, {...CHART_OPTS, width:wrap.clientWidth, height:getH()});
   btcSeries = btcChart.addCandlestickSeries({
@@ -1189,6 +1194,10 @@ async function loadModalCandles() {
   const wrap = $('modalChartWrap');
   wrap.innerHTML = '';
   if (mChart) { mChart.remove(); mChart = null; }
+  if (typeof LightweightCharts === 'undefined') {
+    wrap.innerHTML = '<div class="empty-state">📉 График недоступен (блокируется CDN).<br/>Открой в другом браузере или отключи Tracking Prevention.</div>';
+    return;
+  }
   mChart  = LightweightCharts.createChart(wrap, {...CHART_OPTS, width:wrap.clientWidth, height:300});
   mSeries = mChart.addCandlestickSeries({
     upColor:'#00ff9d', downColor:'#ff2d6b',

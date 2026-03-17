@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T13:12:14.778003+00:00",
+  "updated_at": "2026-03-17T13:12:56.835868+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T13:11:14Z",
+    "last_ok": "2026-03-17T13:12:19Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -9,14 +9,14 @@
     "auto_take": true
   },
   "stats": {
-    "total": 254,
+    "total": 255,
     "wins": 22,
     "losses": 1,
-    "active": 10,
+    "active": 11,
     "winrate": 95.7
   },
   "trade_stats": {
-    "open": 78,
+    "open": 79,
     "wins": 47,
     "losses": 21,
     "total_pnl": 86.13,
@@ -230,6 +230,26 @@
       ],
       "news": null,
       "created_at": "2026-03-17 13:01:34",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 293,
+      "symbol": "HUMAUSDT",
+      "direction": "LONG",
+      "entry": 0.018127,
+      "tp1": 0.018788,
+      "tp2": 0.019449,
+      "sl": 0.017598,
+      "strength": 27,
+      "reasons": [
+        "RSI=47 (нейтральный↓)",
+        "BB ниже середины",
+        "EMA20 > EMA50",
+        "Стакан: давление покупки (+0.11)",
+        "МТФ: 5m, 1h, 4h согласны"
+      ],
+      "news": null,
+      "created_at": "2026-03-17 13:12:49",
       "status": "ACTIVE"
     }
   ],
@@ -2116,16 +2136,35 @@
       ]
     },
     {
+      "id": 147,
+      "symbol": "HUMAUSDT",
+      "direction": "LONG",
+      "entry": 0.018127,
+      "tp1": 0.018788,
+      "tp2": 0.019449,
+      "sl": 0.017598,
+      "strength": 27,
+      "taken_at": "2026-03-17 13:12:49",
+      "status": "OPEN",
+      "reasons": [
+        "RSI=47 (нейтральный↓)",
+        "BB ниже середины",
+        "EMA20 > EMA50",
+        "Стакан: давление покупки (+0.11)",
+        "МТФ: 5m, 1h, 4h согласны"
+      ]
+    },
+    {
       "id": 146,
       "symbol": "ASTERUSDT",
       "direction": "LONG",
       "entry": 0.7499,
       "tp1": 0.764898,
       "tp2": 0.779896,
-      "sl": 0.734902,
+      "sl": 0.7676499999999999,
       "strength": 40,
       "taken_at": "2026-03-17 13:06:43",
-      "status": "OPEN",
+      "status": "TP1_HIT",
       "reasons": [
         "MACD бычий (hist=0.00175)",
         "Цена > EMA20 > EMA50",
