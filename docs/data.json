@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T20:16:26.499572+00:00",
+  "updated_at": "2026-03-17T20:17:12.592760+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T20:15:26Z",
+    "last_ok": "2026-03-17T20:16:31Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -16,12 +16,12 @@
     "winrate": 83.9
   },
   "trade_stats": {
-    "open": 25,
+    "open": 24,
     "pending": 15,
     "wins": 109,
-    "losses": 76,
-    "total_pnl": 98.5,
-    "winrate": 58.9
+    "losses": 77,
+    "total_pnl": 97.39,
+    "winrate": 58.6
   },
   "fear_greed": {
     "value": 28,
@@ -720,25 +720,6 @@
     }
   ],
   "trades_open": [
-    {
-      "id": 124,
-      "symbol": "WLFIUSDT",
-      "direction": "LONG",
-      "entry": 0.1035,
-      "tp1": 0.10557,
-      "tp2": 0.10764,
-      "sl": 0.10143,
-      "strength": 27,
-      "taken_at": "2026-03-17 12:16:16",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=43 (нейтральный↓)",
-        "MACD бычий (hist=0.00007)",
-        "BB ниже середины",
-        "Стакан: перевес bid (+0.06)",
-        "CVD положительный (-11.8%)"
-      ]
-    },
     {
       "id": 130,
       "symbol": "VIRTUALUSDT",
@@ -2236,6 +2217,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "WLFIUSDT",
+      "direction": "LONG",
+      "entry": 0.1035,
+      "tp1": 0.10557,
+      "tp2": 0.10764,
+      "sl": 0.10143,
+      "strength": 27,
+      "status": "TIMEOUT",
+      "pnl_pct": -1.11,
+      "close_price": 0.10235,
+      "taken_at": "2026-03-17 12:16:16",
+      "closed_at": "2026-03-17 20:16:31"
+    },
     {
       "symbol": "OPUSDT",
       "direction": "LONG",
@@ -5016,20 +5011,6 @@
       "tp2": 0.006392,
       "sl": 0.005744,
       "strength": 44,
-      "status": "PENDING",
-      "pnl_pct": 0,
-      "close_price": null,
-      "taken_at": null,
-      "closed_at": null
-    },
-    {
-      "symbol": "XAGUSDT",
-      "direction": "SHORT",
-      "entry": 80.2045229,
-      "tp1": 78.600432,
-      "tp2": 76.996342,
-      "sl": 81.808613,
-      "strength": 31,
       "status": "PENDING",
       "pnl_pct": 0,
       "close_price": null,
