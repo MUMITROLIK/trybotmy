@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T14:56:59.968358+00:00",
+  "updated_at": "2026-03-17T14:57:40.468111+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T14:55:53Z",
+    "last_ok": "2026-03-17T14:57:04Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -16,12 +16,12 @@
     "winrate": 92.3
   },
   "trade_stats": {
-    "open": 78,
+    "open": 77,
     "pending": 1,
     "wins": 59,
-    "losses": 32,
-    "total_pnl": 93.63,
-    "winrate": 64.1
+    "losses": 33,
+    "total_pnl": 90.1,
+    "winrate": 63.4
   },
   "fear_greed": {
     "value": 28,
@@ -1738,27 +1738,6 @@
       ]
     },
     {
-      "id": 131,
-      "symbol": "VANRYUSDT",
-      "direction": "SHORT",
-      "entry": 0.00587,
-      "tp1": 0.00561407,
-      "tp2": 0.00535872,
-      "sl": 0.00607428,
-      "strength": 31,
-      "taken_at": "2026-03-17 12:34:27",
-      "status": "OPEN",
-      "reasons": [
-        "MACD медвежий (hist=-0.00001)",
-        "Цена ниже EMA20",
-        "Стакан: давление продажи (-0.12)",
-        "OI растёт +25.1%",
-        "CVD отрицательный (-1.9%)",
-        "Bearish Engulfing (1h) 🕯️",
-        "📌 Лимитный вход @ 0.00591574 (откат к EMA20)"
-      ]
-    },
-    {
       "id": 132,
       "symbol": "ZROUSDT",
       "direction": "LONG",
@@ -2337,6 +2316,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "VANRYUSDT",
+      "direction": "SHORT",
+      "entry": 0.00587,
+      "tp1": 0.00561407,
+      "tp2": 0.00535872,
+      "sl": 0.00607428,
+      "strength": 31,
+      "status": "SL",
+      "pnl_pct": -3.53,
+      "close_price": 0.006077,
+      "taken_at": "2026-03-17 12:34:27",
+      "closed_at": "2026-03-17 14:57:39"
+    },
     {
       "symbol": "ANIMEUSDT",
       "direction": "LONG",
