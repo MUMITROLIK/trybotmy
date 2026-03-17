@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T13:19:28.466257+00:00",
+  "updated_at": "2026-03-17T13:20:26.718382+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T13:18:54Z",
+    "last_ok": "2026-03-17T13:19:33Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -16,11 +16,11 @@
     "winrate": 95.8
   },
   "trade_stats": {
-    "open": 79,
-    "wins": 48,
-    "losses": 21,
-    "total_pnl": 88.1,
-    "winrate": 69.6
+    "open": 77,
+    "wins": 49,
+    "losses": 22,
+    "total_pnl": 89.52,
+    "winrate": 69.0
   },
   "fear_greed": {
     "value": 28,
@@ -1705,25 +1705,6 @@
       ]
     },
     {
-      "id": 120,
-      "symbol": "THEUSDT",
-      "direction": "LONG",
-      "entry": 0.1753,
-      "tp1": 0.178806,
-      "tp2": 0.182312,
-      "sl": 0.171794,
-      "strength": 33,
-      "taken_at": "2026-03-17 12:12:20",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=36 (перепроданность)",
-        "MACD бычий (hist=0.00006)",
-        "BB нижняя зона (4%)",
-        "Стакан: давление покупки (+0.24)",
-        "CVD положительный (+0.3%)"
-      ]
-    },
-    {
       "id": 121,
       "symbol": "GRASSUSDT",
       "direction": "LONG",
@@ -2152,9 +2133,24 @@
         "МТФ: все 4 таймфрейма согласны ✅✅",
         "📌 Лимитный вход @ 0.740356 (откат к EMA20)"
       ]
+    }
+  ],
+  "trades_history": [
+    {
+      "symbol": "THEUSDT",
+      "direction": "LONG",
+      "entry": 0.1753,
+      "tp1": 0.178806,
+      "tp2": 0.182312,
+      "sl": 0.171794,
+      "strength": 33,
+      "status": "SL",
+      "pnl_pct": -2.03,
+      "close_price": 0.17175,
+      "taken_at": "2026-03-17 12:12:20",
+      "closed_at": "2026-03-17 13:20:26"
     },
     {
-      "id": 126,
       "symbol": "BEATUSDT",
       "direction": "LONG",
       "entry": 0.5082,
@@ -2162,18 +2158,12 @@
       "tp2": 0.53914938,
       "sl": 0.52785,
       "strength": 29,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 3.45,
+      "close_price": 0.5257499999999999,
       "taken_at": "2026-03-17 12:25:47",
-      "status": "TP1_HIT",
-      "reasons": [
-        "MACD бычий (hist=0.00015)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: перевес bid (+0.06)",
-        "МТФ: 5m, 15m, 4h согласны",
-        "📌 Лимитный вход @ 0.499235 (откат к EMA20)"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-17 13:19:50"
+    },
     {
       "symbol": "ASTERUSDT",
       "direction": "LONG",
