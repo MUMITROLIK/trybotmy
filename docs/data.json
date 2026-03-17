@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T17:00:42.501616+00:00",
+  "updated_at": "2026-03-17T17:01:58.449559+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T16:59:53Z",
+    "last_ok": "2026-03-17T17:00:49Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -12,7 +12,7 @@
     "total": 356,
     "wins": 94,
     "losses": 13,
-    "active": 25,
+    "active": 24,
     "winrate": 87.9
   },
   "trade_stats": {
@@ -29,26 +29,6 @@
     "emoji": "😨"
   },
   "signals": [
-    {
-      "id": 290,
-      "symbol": "1000SHIBUSDT",
-      "direction": "SHORT",
-      "entry": 0.00605299,
-      "tp1": 0.005932,
-      "tp2": 0.005811,
-      "sl": 0.006174,
-      "strength": 32,
-      "reasons": [
-        "MACD медвежий (hist=-0.00001)",
-        "Цена < EMA20 < EMA50",
-        "Стакан: давление продажи (-0.18)",
-        "МТФ: 5m, 15m, 4h согласны",
-        "📌 Лимитный вход @ 0.00605299 (откат к EMA20)"
-      ],
-      "news": null,
-      "created_at": "2026-03-17 13:01:34",
-      "status": "ACTIVE"
-    },
     {
       "id": 306,
       "symbol": "CRVUSDT",
