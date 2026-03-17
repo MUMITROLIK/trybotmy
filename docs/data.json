@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T16:30:42.739718+00:00",
+  "updated_at": "2026-03-17T16:31:49.432739+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T16:30:02Z",
+    "last_ok": "2026-03-17T16:30:47Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -9,19 +9,19 @@
     "auto_take": true
   },
   "stats": {
-    "total": 330,
-    "wins": 74,
+    "total": 334,
+    "wins": 76,
     "losses": 9,
-    "active": 26,
-    "winrate": 89.2
+    "active": 28,
+    "winrate": 89.4
   },
   "trade_stats": {
-    "open": 69,
-    "pending": 40,
+    "open": 70,
+    "pending": 43,
     "wins": 69,
     "losses": 44,
     "total_pnl": 89.64,
-    "winrate": 45.1
+    "winrate": 44.2
   },
   "fear_greed": {
     "value": 28,
@@ -575,9 +575,89 @@
       "news": null,
       "created_at": "2026-03-17 16:30:22",
       "status": "ACTIVE"
+    },
+    {
+      "id": 371,
+      "symbol": "OPNUSDT",
+      "direction": "SHORT",
+      "entry": 0.2973,
+      "tp1": 0.290196,
+      "tp2": 0.283093,
+      "sl": 0.303246,
+      "strength": 30,
+      "reasons": [
+        "RSI=56 (нейтральный↑)",
+        "BB верхняя зона (76%)",
+        "EMA20 < EMA50",
+        "МТФ: 15m, 1h, 4h согласны",
+        "OI растёт +2.9% + цена ↓"
+      ],
+      "news": null,
+      "created_at": "2026-03-17 16:31:30",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 372,
+      "symbol": "GRASSUSDT",
+      "direction": "LONG",
+      "entry": 0.44276322,
+      "tp1": 0.452053,
+      "tp2": 0.461342,
+      "sl": 0.433908,
+      "strength": 40,
+      "reasons": [
+        "RSI=44 (нейтральный↓)",
+        "MACD бычий (hist=0.00086)",
+        "Цена выше EMA20",
+        "Стакан: давление покупки (+0.12)",
+        "МТФ: 15m, 1h, 4h согласны",
+        "OI растёт +1.5% + цена ↑",
+        "📌 Лимитный вход @ 0.442763 (откат к EMA20)"
+      ],
+      "news": null,
+      "created_at": "2026-03-17 16:31:37",
+      "status": "ACTIVE"
     }
   ],
   "history": [
+    {
+      "symbol": "TRIAUSDT",
+      "direction": "LONG",
+      "entry": 0.0334111,
+      "tp1": 0.034685,
+      "tp2": 0.035959,
+      "sl": 0.032392,
+      "strength": 40,
+      "status": "TP1",
+      "created_at": "2026-03-17 16:31:25",
+      "reasons": [
+        "MACD бычий (hist=0.00024)",
+        "Цена > EMA20 > EMA50",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +14.0% + цена ↑",
+        "CVD растёт (+6.2%) — покупки усиливаются 📈",
+        "📌 Лимитный вход @ 0.0334111 (откат к EMA20)"
+      ]
+    },
+    {
+      "symbol": "VANRYUSDT",
+      "direction": "LONG",
+      "entry": 0.00602927,
+      "tp1": 0.006296,
+      "tp2": 0.006563,
+      "sl": 0.005816,
+      "strength": 40,
+      "status": "TP1",
+      "created_at": "2026-03-17 16:31:19",
+      "reasons": [
+        "MACD бычий (hist=0.00004)",
+        "Цена > EMA20 > EMA50",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +5.5% + цена ↑",
+        "CVD положительный (-0.4%)",
+        "📌 Лимитный вход @ 0.00602927 (откат к EMA20)"
+      ]
+    },
     {
       "symbol": "TRIAUSDT",
       "direction": "LONG",
@@ -928,48 +1008,6 @@
         "OI растёт +14.0% + цена ↑",
         "CVD растёт (+7.4%) — покупки усиливаются 📈",
         "📌 Лимитный вход @ 0.0330259 (откат к EMA20)"
-      ]
-    },
-    {
-      "symbol": "TRIAUSDT",
-      "direction": "LONG",
-      "entry": 0.03292589,
-      "tp1": 0.034196,
-      "tp2": 0.035465,
-      "sl": 0.03191,
-      "strength": 46,
-      "status": "TP1",
-      "created_at": "2026-03-17 16:01:37",
-      "reasons": [
-        "MACD бычий (hist=0.00017)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: давление покупки (+0.13)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +9.8% + цена ↑",
-        "CVD растёт (+5.9%) — покупки усиливаются 📈",
-        "Doji (1h) — нерешительность",
-        "📌 Лимитный вход @ 0.0329259 (откат к EMA20)"
-      ]
-    },
-    {
-      "symbol": "VANRYUSDT",
-      "direction": "LONG",
-      "entry": 0.00592921,
-      "tp1": 0.006161,
-      "tp2": 0.006392,
-      "sl": 0.005744,
-      "strength": 44,
-      "status": "TP1",
-      "created_at": "2026-03-17 15:29:51",
-      "reasons": [
-        "MACD бычий (hist=0.00004)",
-        "Цена > EMA20 > EMA50",
-        "Объём x2.3 🔥",
-        "Стакан: перевес bid (+0.05)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "CVD положительный (-0.9%)",
-        "⚠️ Funding через 31м",
-        "📌 Лимитный вход @ 0.00592921 (откат к EMA20)"
       ]
     }
   ],
@@ -2311,6 +2349,25 @@
       ]
     },
     {
+      "id": 225,
+      "symbol": "OPNUSDT",
+      "direction": "SHORT",
+      "entry": 0.2973,
+      "tp1": 0.290196,
+      "tp2": 0.283093,
+      "sl": 0.303246,
+      "strength": 30,
+      "taken_at": null,
+      "status": "OPEN",
+      "reasons": [
+        "RSI=56 (нейтральный↑)",
+        "BB верхняя зона (76%)",
+        "EMA20 < EMA50",
+        "МТФ: 15m, 1h, 4h согласны",
+        "OI растёт +2.9% + цена ↓"
+      ]
+    },
+    {
       "id": 167,
       "symbol": "LYNUSDT",
       "direction": "SHORT",
@@ -3135,6 +3192,67 @@
         "OI растёт +14.0% + цена ↑",
         "CVD растёт (+6.3%) — покупки усиливаются 📈",
         "📌 Лимитный вход @ 0.0332107 (откат к EMA20)"
+      ]
+    },
+    {
+      "id": 223,
+      "symbol": "VANRYUSDT",
+      "direction": "LONG",
+      "entry": 0.00602927,
+      "tp1": 0.006296,
+      "tp2": 0.006563,
+      "sl": 0.005816,
+      "strength": 40,
+      "taken_at": null,
+      "status": "PENDING",
+      "reasons": [
+        "MACD бычий (hist=0.00004)",
+        "Цена > EMA20 > EMA50",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +5.5% + цена ↑",
+        "CVD положительный (-0.4%)",
+        "📌 Лимитный вход @ 0.00602927 (откат к EMA20)"
+      ]
+    },
+    {
+      "id": 224,
+      "symbol": "TRIAUSDT",
+      "direction": "LONG",
+      "entry": 0.0334111,
+      "tp1": 0.034685,
+      "tp2": 0.035959,
+      "sl": 0.032392,
+      "strength": 40,
+      "taken_at": null,
+      "status": "PENDING",
+      "reasons": [
+        "MACD бычий (hist=0.00024)",
+        "Цена > EMA20 > EMA50",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +14.0% + цена ↑",
+        "CVD растёт (+6.2%) — покупки усиливаются 📈",
+        "📌 Лимитный вход @ 0.0334111 (откат к EMA20)"
+      ]
+    },
+    {
+      "id": 226,
+      "symbol": "GRASSUSDT",
+      "direction": "LONG",
+      "entry": 0.44276322,
+      "tp1": 0.452053,
+      "tp2": 0.461342,
+      "sl": 0.433908,
+      "strength": 40,
+      "taken_at": null,
+      "status": "PENDING",
+      "reasons": [
+        "RSI=44 (нейтральный↓)",
+        "MACD бычий (hist=0.00086)",
+        "Цена выше EMA20",
+        "Стакан: давление покупки (+0.12)",
+        "МТФ: 15m, 1h, 4h согласны",
+        "OI растёт +1.5% + цена ↑",
+        "📌 Лимитный вход @ 0.442763 (откат к EMA20)"
       ]
     },
     {
@@ -5294,6 +5412,48 @@
       "tp2": 0.036125,
       "sl": 0.032045,
       "strength": 44,
+      "status": "PENDING",
+      "pnl_pct": 0,
+      "close_price": null,
+      "taken_at": null,
+      "closed_at": null
+    },
+    {
+      "symbol": "VANRYUSDT",
+      "direction": "LONG",
+      "entry": 0.00602927,
+      "tp1": 0.006296,
+      "tp2": 0.006563,
+      "sl": 0.005816,
+      "strength": 40,
+      "status": "PENDING",
+      "pnl_pct": 0,
+      "close_price": null,
+      "taken_at": null,
+      "closed_at": null
+    },
+    {
+      "symbol": "TRIAUSDT",
+      "direction": "LONG",
+      "entry": 0.0334111,
+      "tp1": 0.034685,
+      "tp2": 0.035959,
+      "sl": 0.032392,
+      "strength": 40,
+      "status": "PENDING",
+      "pnl_pct": 0,
+      "close_price": null,
+      "taken_at": null,
+      "closed_at": null
+    },
+    {
+      "symbol": "GRASSUSDT",
+      "direction": "LONG",
+      "entry": 0.44276322,
+      "tp1": 0.452053,
+      "tp2": 0.461342,
+      "sl": 0.433908,
+      "strength": 40,
       "status": "PENDING",
       "pnl_pct": 0,
       "close_price": null,
