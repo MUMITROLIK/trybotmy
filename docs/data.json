@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T17:39:46.206493+00:00",
+  "updated_at": "2026-03-17T17:40:52.063361+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T17:38:32Z",
+    "last_ok": "2026-03-17T17:39:52Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -16,7 +16,7 @@
     "winrate": 87.3
   },
   "trade_stats": {
-    "open": 54,
+    "open": 55,
     "pending": 16,
     "wins": 85,
     "losses": 52,
@@ -1741,6 +1741,27 @@
       ]
     },
     {
+      "id": 193,
+      "symbol": "HYPEUSDT",
+      "direction": "SHORT",
+      "entry": 40.49173917,
+      "tp1": 39.681904,
+      "tp2": 38.87207,
+      "sl": 41.301574,
+      "strength": 35,
+      "taken_at": "2026-03-17 17:40:18",
+      "status": "OPEN",
+      "reasons": [
+        "MACD медвежий (hist=-0.12264)",
+        "Цена < EMA20 < EMA50",
+        "Стакан: давление продажи (-0.17)",
+        "МТФ: 5m, 15m согласны",
+        "OI растёт +1.9%",
+        "CVD падает (-8.8%) — продажи усиливаются 📉",
+        "📌 Лимитный вход @ 40.4917 (откат к EMA20)"
+      ]
+    },
+    {
       "id": 195,
       "symbol": "RIVERUSDT",
       "direction": "SHORT",
@@ -2330,27 +2351,6 @@
         "CVD падает (-5.6%) — продажи усиливаются 📉",
         "Doji (1h) — нерешительность",
         "📌 Лимитный вход @ 0.00368108 (откат к EMA20)"
-      ]
-    },
-    {
-      "id": 193,
-      "symbol": "HYPEUSDT",
-      "direction": "SHORT",
-      "entry": 40.49173917,
-      "tp1": 39.681904,
-      "tp2": 38.87207,
-      "sl": 41.301574,
-      "strength": 35,
-      "taken_at": null,
-      "status": "PENDING",
-      "reasons": [
-        "MACD медвежий (hist=-0.12264)",
-        "Цена < EMA20 < EMA50",
-        "Стакан: давление продажи (-0.17)",
-        "МТФ: 5m, 15m согласны",
-        "OI растёт +1.9%",
-        "CVD падает (-8.8%) — продажи усиливаются 📉",
-        "📌 Лимитный вход @ 40.4917 (откат к EMA20)"
       ]
     },
     {
@@ -5350,20 +5350,6 @@
       "tp2": 0.003534,
       "sl": 0.003755,
       "strength": 30,
-      "status": "PENDING",
-      "pnl_pct": 0,
-      "close_price": null,
-      "taken_at": null,
-      "closed_at": null
-    },
-    {
-      "symbol": "HYPEUSDT",
-      "direction": "SHORT",
-      "entry": 40.49173917,
-      "tp1": 39.681904,
-      "tp2": 38.87207,
-      "sl": 41.301574,
-      "strength": 35,
       "status": "PENDING",
       "pnl_pct": 0,
       "close_price": null,
