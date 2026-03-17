@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T14:59:06.766711+00:00",
+  "updated_at": "2026-03-17T15:00:11.467031+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T14:58:35Z",
+    "last_ok": "2026-03-17T14:59:11Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,10 +10,10 @@
   },
   "stats": {
     "total": 278,
-    "wins": 36,
+    "wins": 37,
     "losses": 3,
-    "active": 18,
-    "winrate": 92.3
+    "active": 17,
+    "winrate": 92.5
   },
   "trade_stats": {
     "open": 77,
@@ -317,27 +317,6 @@
       "status": "ACTIVE"
     },
     {
-      "id": 313,
-      "symbol": "LYNUSDT",
-      "direction": "SHORT",
-      "entry": 0.06122633,
-      "tp1": 0.059105,
-      "tp2": 0.056983,
-      "sl": 0.062923,
-      "strength": 28,
-      "reasons": [
-        "MACD медвежий (hist=-0.00025)",
-        "Цена < EMA20 < EMA50",
-        "Стакан: давление продажи (-0.10)",
-        "МТФ: 5m, 15m согласны",
-        "⚠️ Funding через 89м",
-        "📌 Лимитный вход @ 0.0612263 (откат к EMA20)"
-      ],
-      "news": null,
-      "created_at": "2026-03-17 14:31:40",
-      "status": "ACTIVE"
-    },
-    {
       "id": 314,
       "symbol": "CRCLUSDT",
       "direction": "SHORT",
@@ -405,6 +384,25 @@
     }
   ],
   "history": [
+    {
+      "symbol": "LYNUSDT",
+      "direction": "SHORT",
+      "entry": 0.06122633,
+      "tp1": 0.059105,
+      "tp2": 0.056983,
+      "sl": 0.062923,
+      "strength": 28,
+      "status": "TP1",
+      "created_at": "2026-03-17 14:31:40",
+      "reasons": [
+        "MACD медвежий (hist=-0.00025)",
+        "Цена < EMA20 < EMA50",
+        "Стакан: давление продажи (-0.10)",
+        "МТФ: 5m, 15m согласны",
+        "⚠️ Funding через 89м",
+        "📌 Лимитный вход @ 0.0612263 (откат к EMA20)"
+      ]
+    },
     {
       "symbol": "OPNUSDT",
       "direction": "SHORT",
@@ -764,23 +762,6 @@
         "CVD падает (-9.3%) — продажи усиливаются 📉",
         "BTC корреляция 0.69, BTC -0.5% 📉",
         "📌 Лимитный вход @ 0.299337 (откат к EMA20)"
-      ]
-    },
-    {
-      "symbol": "DEGOUSDT",
-      "direction": "LONG",
-      "entry": 1.1094,
-      "tp1": 1.159114,
-      "tp2": 1.208829,
-      "sl": 1.069629,
-      "strength": 23,
-      "status": "SL",
-      "created_at": "2026-03-17 12:47:09",
-      "reasons": [
-        "RSI=44 (нейтральный↓)",
-        "MACD бычий (hist=0.00036)",
-        "BB ниже середины",
-        "МТФ: только 1 таймфрейм согласен"
       ]
     }
   ],
