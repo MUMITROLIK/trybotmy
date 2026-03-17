@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T19:05:31.396944+00:00",
+  "updated_at": "2026-03-17T19:06:36.150464+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T19:04:29Z",
+    "last_ok": "2026-03-17T19:05:36Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -12,7 +12,7 @@
     "total": 363,
     "wins": 99,
     "losses": 17,
-    "active": 19,
+    "active": 18,
     "winrate": 85.3
   },
   "trade_stats": {
@@ -29,29 +29,6 @@
     "emoji": "😨"
   },
   "signals": [
-    {
-      "id": 319,
-      "symbol": "BEATUSDT",
-      "direction": "SHORT",
-      "entry": 0.51566855,
-      "tp1": 0.49739,
-      "tp2": 0.479111,
-      "sl": 0.530291,
-      "strength": 30,
-      "reasons": [
-        "RSI=58 (нейтральный↑)",
-        "MACD медвежий (hist=-0.00026)",
-        "Цена ниже EMA20",
-        "МТФ: только 1 таймфрейм согласен",
-        "OI растёт +1.2% + цена ↓",
-        "CVD отрицательный (-1.0%)",
-        "⚠️ Funding через 55м",
-        "📌 Лимитный вход @ 0.515669 (откат к EMA20)"
-      ],
-      "news": null,
-      "created_at": "2026-03-17 15:05:48",
-      "status": "ACTIVE"
-    },
     {
       "id": 332,
       "symbol": "PIXELUSDT",
