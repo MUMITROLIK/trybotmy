@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T21:44:08.337965+00:00",
+  "updated_at": "2026-03-17T21:45:25.943677+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T21:43:23Z",
+    "last_ok": "2026-03-17T21:44:13Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -11,14 +11,14 @@
   },
   "stats": {
     "total": 380,
-    "wins": 107,
+    "wins": 108,
     "losses": 20,
-    "active": 12,
-    "winrate": 84.3
+    "active": 11,
+    "winrate": 84.4
   },
   "trade_stats": {
     "open": 16,
-    "pending": 10,
+    "pending": 9,
     "wins": 116,
     "losses": 82,
     "total_pnl": 99.54,
@@ -137,28 +137,6 @@
       ],
       "news": null,
       "created_at": "2026-03-17 19:47:09",
-      "status": "ACTIVE"
-    },
-    {
-      "id": 406,
-      "symbol": "PUMPUSDT",
-      "direction": "LONG",
-      "entry": 0.00208359,
-      "tp1": 0.002125,
-      "tp2": 0.002167,
-      "sl": 0.002042,
-      "strength": 41,
-      "reasons": [
-        "MACD бычий (hist=0.00000)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: давление покупки (+0.14)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "CVD положительный (+3.8%)",
-        "BTC корреляция 0.77, BTC +0.5% 📈",
-        "📌 Лимитный вход @ 0.00208359 (откат к EMA20)"
-      ],
-      "news": null,
-      "created_at": "2026-03-17 20:45:11",
       "status": "ACTIVE"
     },
     {
@@ -413,6 +391,26 @@
       ]
     },
     {
+      "symbol": "PUMPUSDT",
+      "direction": "LONG",
+      "entry": 0.00208359,
+      "tp1": 0.002125,
+      "tp2": 0.002167,
+      "sl": 0.002042,
+      "strength": 41,
+      "status": "TP1",
+      "created_at": "2026-03-17 20:45:11",
+      "reasons": [
+        "MACD бычий (hist=0.00000)",
+        "Цена > EMA20 > EMA50",
+        "Стакан: давление покупки (+0.14)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "CVD положительный (+3.8%)",
+        "BTC корреляция 0.77, BTC +0.5% 📈",
+        "📌 Лимитный вход @ 0.00208359 (откат к EMA20)"
+      ]
+    },
+    {
       "symbol": "ANIMEUSDT",
       "direction": "LONG",
       "entry": 0.005719,
@@ -663,24 +661,6 @@
         "OI растёт +14.0% + цена ↑",
         "CVD растёт (+5.1%) — покупки усиливаются 📈",
         "📌 Лимитный вход @ 0.0333434 (откат к EMA20)"
-      ]
-    },
-    {
-      "symbol": "VANRYUSDT",
-      "direction": "SHORT",
-      "entry": 0.006288,
-      "tp1": 0.006011,
-      "tp2": 0.005733,
-      "sl": 0.00651,
-      "strength": 34,
-      "status": "SL",
-      "created_at": "2026-03-17 16:42:56",
-      "reasons": [
-        "RSI=77 (сильная перекупленность)",
-        "BB верхняя зона (89%)",
-        "Стакан: сильное давление продажи (-0.49)",
-        "OI растёт +5.5%",
-        "CVD отрицательный (-0.8%)"
       ]
     }
   ],
@@ -1012,27 +992,6 @@
       ]
     },
     {
-      "id": 260,
-      "symbol": "PUMPUSDT",
-      "direction": "LONG",
-      "entry": 0.00208359,
-      "tp1": 0.002125,
-      "tp2": 0.002167,
-      "sl": 0.002042,
-      "strength": 41,
-      "taken_at": "2026-03-17T20:45:12.247090",
-      "status": "PENDING",
-      "reasons": [
-        "MACD бычий (hist=0.00000)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: давление покупки (+0.14)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "CVD положительный (+3.8%)",
-        "BTC корреляция 0.77, BTC +0.5% 📈",
-        "📌 Лимитный вход @ 0.00208359 (откат к EMA20)"
-      ]
-    },
-    {
       "id": 261,
       "symbol": "HYPEUSDT",
       "direction": "LONG",
@@ -1221,6 +1180,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "PUMPUSDT",
+      "direction": "LONG",
+      "entry": 0.00208359,
+      "tp1": 0.002125,
+      "tp2": 0.002167,
+      "sl": 0.002042,
+      "strength": 41,
+      "status": "LIMIT_TIMEOUT",
+      "pnl_pct": 0,
+      "close_price": null,
+      "taken_at": "2026-03-17T20:45:12.247090",
+      "closed_at": "2026-03-17 21:45:13"
+    },
     {
       "symbol": "WIFUSDT",
       "direction": "LONG",
@@ -2101,20 +2074,6 @@
       "pnl_pct": 0,
       "close_price": null,
       "taken_at": "2026-03-17T20:47:24.779351",
-      "closed_at": null
-    },
-    {
-      "symbol": "PUMPUSDT",
-      "direction": "LONG",
-      "entry": 0.00208359,
-      "tp1": 0.002125,
-      "tp2": 0.002167,
-      "sl": 0.002042,
-      "strength": 41,
-      "status": "PENDING",
-      "pnl_pct": 0,
-      "close_price": null,
-      "taken_at": "2026-03-17T20:45:12.247090",
       "closed_at": null
     },
     {
