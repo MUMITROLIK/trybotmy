@@ -659,6 +659,7 @@ tr:hover td { background: rgba(255,255,255,.015); }
     <div style="display:flex;gap:4px;margin-bottom:20px;border-bottom:1px solid var(--border);padding-bottom:0">
       <button class="tab-btn active" id="tab-signals">СИГНАЛЫ</button>
       <button class="tab-btn" id="tab-positions">ПОЗИЦИИ</button>
+      <button class="tab-btn" id="tab-limits">ЛИМИТКИ</button>
       <button class="tab-btn" id="tab-history">ИСТОРИЯ P&L</button>
     </div>
 
@@ -729,6 +730,19 @@ tr:hover td { background: rgba(255,255,255,.015); }
       </div>
     </div>
 
+    <div id="page-limits" class="page">
+      <div class="sec"><div class="sec-dot" style="background:var(--yellow)"></div>Лимитные входы · ожидают исполнения</div>
+      <div class="trade-stats-row">
+        <div class="stat-card"><div class="stat-label">В ожидании</div><div class="stat-value c-yellow" id="ls-pending">—</div></div>
+        <div class="stat-card"><div class="stat-label">Перейдут в позиции</div><div class="stat-value c-cyan">AUTO</div></div>
+        <div class="stat-card"><div class="stat-label">Условие</div><div class="stat-value" style="font-size:12px">Цена = ENTRY</div></div>
+        <div class="stat-card"><div class="stat-label">Обновление</div><div class="stat-value" style="font-size:12px">LIVE</div></div>
+      </div>
+      <div class="signals-grid" id="limitsGrid">
+        <div class="empty-state">Нет активных лимиток</div>
+      </div>
+    </div>
+
     <div id="page-history" class="page">
       <div class="sec"><div class="sec-dot" style="background:var(--muted)"></div>История взятых сделок</div>
       <div class="hist-wrap">
@@ -755,6 +769,7 @@ let AUTO_TAKE = false;
 let currentTab = 'signals';
 let wsConnectTimer = null;
 let lastDataOkTs = 0;
+let _pendingTrades = [];
 
 function initWebSocket() {
   const protocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
@@ -850,12 +865,16 @@ function handleDataUpdate(data) {
   document.getElementById('s-winrate').textContent = ts.winrate != null ? ts.winrate + '%' : '—';
   
   renderFG(data.fear_greed);
-  const openTrades = data.trades_open || [];
+  const allTrades = data.trades_open || [];
+  const openTrades = allTrades.filter(t => t.status === 'OPEN' || t.status === 'TP1_HIT');
+  const pendingTrades = allTrades.filter(t => t.status === 'PENDING');
   _allTrades = openTrades;
+  _pendingTrades = pendingTrades;
   syncTakenFromTrades(openTrades);
   renderSignals(data.signals || []);
   renderHistory(data.history || []);
   renderTrades(openTrades, data.trade_stats);
+  renderLimits(pendingTrades, data.trade_stats);
   renderTradeHistory(data.trades_history || []);
   
   // realtime price/progress bars ONLY when Positions tab is open
@@ -1353,7 +1372,7 @@ function renderHistory(h) {
 // ── Tabs ───────────────────────────────────────────────────────────
 function switchTab(tab) {
   currentTab = tab;
-  ['signals','positions','history'].forEach(t => {
+  ['signals','positions','limits','history'].forEach(t => {
     const page = $('page-'+t);
     const btn  = $('tab-'+t);
     if (btn) btn.classList.toggle('active', t === tab);
@@ -1363,6 +1382,40 @@ function switchTab(tab) {
   // Start/stop heavy realtime streams based on current tab
   if (tab === 'positions') startTradeWs(_allTrades || []);
   else stopTradeWs();
+}
+
+function renderLimits(trades, stats) {
+  const cntEl = document.getElementById('ls-pending');
+  if (cntEl) cntEl.textContent = (stats && stats.pending != null) ? stats.pending : (trades ? trades.length : 0);
+  const el = $('limitsGrid');
+  if (!trades || !trades.length) {
+    el.innerHTML = '<div class="empty-state">⏳ Нет активных лимиток</div>';
+    return;
+  }
+  el.innerHTML = trades.map(t => {
+    const lg = t.direction === 'LONG';
+    const tags   = (t.reasons||[]).slice(0,4).map(r=>`<span class="tag">${r}</span>`).join('');
+    return `
+    <div class="trade-card ${lg?'long':'short'}" style="opacity:.85" id="lc_${t.id}">
+      <div class="sig-top">
+        <span class="sig-symbol">${t.symbol}</span>
+        <span class="sig-badge ${lg?'long':'short'}">${t.direction} ${lg?'↑':'↓'}</span>
+      </div>
+      <div class="sig-prices">
+        <div class="price-cell"><div class="p-lbl">ENTRY (LIMIT)</div><div class="p-val">${mono(t.entry)}</div></div>
+        <div class="price-cell"><div class="p-lbl">СТАТУС</div><div class="p-val c-yellow">PENDING</div></div>
+        <div class="price-cell"><div class="p-lbl">TP1</div><div class="p-val tp">${mono(t.tp1)}</div></div>
+        <div class="price-cell"><div class="p-lbl">SL</div><div class="p-val sl">${mono(t.sl)}</div></div>
+      </div>
+      <div class="sig-body">
+        <div class="tags">${tags}</div>
+        <div style="font-family:var(--mono);font-size:9px;color:var(--muted);margin-top:8px;display:flex;justify-content:space-between;gap:10px">
+          <span>Будет активна после исполнения</span>
+          <span>${t.taken_at ? ('создана '+ago(t.taken_at)+' назад') : ''}</span>
+        </div>
+      </div>
+    </div>`;
+  }).join('');
 }
 
 // ── Trades render ──────────────────────────────────────────────────
@@ -1465,9 +1518,11 @@ function renderTradeHistory(hist) {
 try {
   const b1 = document.getElementById('tab-signals');
   const b2 = document.getElementById('tab-positions');
+  const bL = document.getElementById('tab-limits');
   const b3 = document.getElementById('tab-history');
   if (b1) b1.addEventListener('click', () => switchTab('signals'));
   if (b2) b2.addEventListener('click', () => switchTab('positions'));
+  if (bL) bL.addEventListener('click', () => switchTab('limits'));
   if (b3) b3.addEventListener('click', () => switchTab('history'));
 } catch(e) {}
 
