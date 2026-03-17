@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T13:45:07.491598+00:00",
+  "updated_at": "2026-03-17T13:45:51.578740+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T13:44:40Z",
+    "last_ok": "2026-03-17T13:45:11Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -16,11 +16,11 @@
     "winrate": 93.8
   },
   "trade_stats": {
-    "open": 80,
+    "open": 79,
     "wins": 53,
-    "losses": 24,
-    "total_pnl": 98.68,
-    "winrate": 68.8
+    "losses": 25,
+    "total_pnl": 96.63,
+    "winrate": 67.9
   },
   "fear_greed": {
     "value": 28,
@@ -1455,26 +1455,6 @@
       ]
     },
     {
-      "id": 106,
-      "symbol": "FARTCOINUSDT",
-      "direction": "LONG",
-      "entry": 0.2024,
-      "tp1": 0.206448,
-      "tp2": 0.210496,
-      "sl": 0.198352,
-      "strength": 31,
-      "taken_at": "2026-03-17 12:03:00",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=32 (перепроданность)",
-        "BB ниже середины",
-        "EMA20 > EMA50",
-        "Стакан: давление покупки (+0.15)",
-        "МТФ: 15m, 4h согласны",
-        "CVD положительный (-1.4%)"
-      ]
-    },
-    {
       "id": 107,
       "symbol": "LTCUSDT",
       "direction": "LONG",
@@ -2225,6 +2205,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "FARTCOINUSDT",
+      "direction": "LONG",
+      "entry": 0.2024,
+      "tp1": 0.206448,
+      "tp2": 0.210496,
+      "sl": 0.198352,
+      "strength": 31,
+      "status": "SL",
+      "pnl_pct": -2.05,
+      "close_price": 0.19824999999999998,
+      "taken_at": "2026-03-17 12:03:00",
+      "closed_at": "2026-03-17 13:45:51"
+    },
     {
       "symbol": "LYNUSDT",
       "direction": "LONG",
