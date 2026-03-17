@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T16:56:18.703964+00:00",
+  "updated_at": "2026-03-17T16:57:18.454457+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T16:55:18Z",
+    "last_ok": "2026-03-17T16:56:28Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -16,12 +16,12 @@
     "winrate": 87.9
   },
   "trade_stats": {
-    "open": 58,
+    "open": 57,
     "pending": 63,
-    "wins": 78,
+    "wins": 79,
     "losses": 49,
-    "total_pnl": 87.26,
-    "winrate": 41.1
+    "total_pnl": 87.45,
+    "winrate": 41.4
   },
   "fear_greed": {
     "value": 28,
@@ -949,26 +949,6 @@
     }
   ],
   "trades_open": [
-    {
-      "id": 38,
-      "symbol": "ADAUSDT",
-      "direction": "SHORT",
-      "entry": 0.2871,
-      "tp1": 0.281358,
-      "tp2": 0.275616,
-      "sl": 0.292842,
-      "strength": 31,
-      "taken_at": "2026-03-17 08:56:57",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=63 (перекупленность)",
-        "BB верхняя зона (82%)",
-        "EMA20 < EMA50",
-        "МТФ: только 1 таймфрейм согласен",
-        "OI растёт +1.8%",
-        "CVD падает (-17.6%) — продажи усиливаются 📉"
-      ]
-    },
     {
       "id": 41,
       "symbol": "1000BONKUSDT",
@@ -3397,6 +3377,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "ADAUSDT",
+      "direction": "SHORT",
+      "entry": 0.2871,
+      "tp1": 0.281358,
+      "tp2": 0.275616,
+      "sl": 0.292842,
+      "strength": 31,
+      "status": "TIMEOUT",
+      "pnl_pct": 0.19,
+      "close_price": 0.28654999999999997,
+      "taken_at": "2026-03-17 08:56:57",
+      "closed_at": "2026-03-17 16:57:05"
+    },
     {
       "symbol": "FARTCOINUSDT",
       "direction": "LONG",
