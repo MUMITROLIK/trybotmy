@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T23:09:01.938035+00:00",
+  "updated_at": "2026-03-17T23:10:06.863720+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T23:08:36Z",
+    "last_ok": "2026-03-17T23:09:06Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 396,
+    "total": 397,
     "wins": 111,
     "losses": 22,
-    "active": 20,
+    "active": 21,
     "winrate": 83.5
   },
   "trade_stats": {
-    "open": 19,
+    "open": 20,
     "pending": 3,
     "wins": 121,
     "losses": 85,
@@ -467,6 +467,28 @@
       ],
       "news": null,
       "created_at": "2026-03-17 23:08:12",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 435,
+      "symbol": "PIPPINUSDT",
+      "direction": "LONG",
+      "entry": 0.13436,
+      "tp1": 0.13946,
+      "tp2": 0.14456,
+      "sl": 0.13028,
+      "strength": 41,
+      "reasons": [
+        "RSI=32 (перепроданность)",
+        "MACD бычий (hist=0.00020)",
+        "BB нижняя полоса (пробой)",
+        "Стакан: сильное давление покупки (+0.30)",
+        "OI растёт +7.0%",
+        "CVD положительный (-0.3%)",
+        "⚠️ Funding через 51м"
+      ],
+      "news": null,
+      "created_at": "2026-03-17 23:09:46",
       "status": "ACTIVE"
     }
   ],
@@ -1256,6 +1278,27 @@
         "OI падает (шорты закрываются)",
         "CVD положительный (-1.7%)",
         "⚠️ Funding через 78м"
+      ]
+    },
+    {
+      "id": 289,
+      "symbol": "PIPPINUSDT",
+      "direction": "LONG",
+      "entry": 0.13436,
+      "tp1": 0.13946,
+      "tp2": 0.14456,
+      "sl": 0.13028,
+      "strength": 41,
+      "taken_at": "2026-03-17T23:09:46.335337",
+      "status": "OPEN",
+      "reasons": [
+        "RSI=32 (перепроданность)",
+        "MACD бычий (hist=0.00020)",
+        "BB нижняя полоса (пробой)",
+        "Стакан: сильное давление покупки (+0.30)",
+        "OI растёт +7.0%",
+        "CVD положительный (-0.3%)",
+        "⚠️ Funding через 51м"
       ]
     },
     {
