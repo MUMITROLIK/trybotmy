@@ -983,13 +983,23 @@ let btcChart = null, btcSeries = null, btcTF = '1m', btcWs = null;
 
 function initBtcChart() {
   const wrap = $('btcChartWrap');
-  btcChart  = LightweightCharts.createChart(wrap, {...CHART_OPTS, width:wrap.clientWidth, height:240});
+  const getH = () => Math.max(220, Math.min(320, Math.round(window.innerHeight * 0.38)));
+  btcChart  = LightweightCharts.createChart(wrap, {...CHART_OPTS, width:wrap.clientWidth, height:getH()});
   btcSeries = btcChart.addCandlestickSeries({
     upColor:'#00ff9d', downColor:'#ff2d6b',
     borderUpColor:'#00ff9d', borderDownColor:'#ff2d6b',
     wickUpColor:'#00ff9d', wickDownColor:'#ff2d6b',
   });
-  window.addEventListener('resize', () => btcChart.applyOptions({width:wrap.clientWidth}));
+  const applySize = () => {
+    if (!btcChart) return;
+    btcChart.applyOptions({width: wrap.clientWidth, height: getH()});
+  };
+  window.addEventListener('resize', applySize);
+  // Mobile address bar / layout shifts don't always fire resize reliably
+  try {
+    const ro = new ResizeObserver(applySize);
+    ro.observe(wrap);
+  } catch(e) {}
 }
 
 async function loadBtcCandles() {
