@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T22:10:59.551048+00:00",
+  "updated_at": "2026-03-17T22:12:04.253204+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T22:09:43Z",
+    "last_ok": "2026-03-17T22:11:04Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,15 +10,15 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 387,
+    "total": 388,
     "wins": 110,
     "losses": 21,
-    "active": 14,
+    "active": 15,
     "winrate": 84.0
   },
   "trade_stats": {
     "open": 10,
-    "pending": 13,
+    "pending": 14,
     "wins": 121,
     "losses": 84,
     "total_pnl": 112.34,
@@ -330,6 +330,27 @@
       ],
       "news": null,
       "created_at": "2026-03-17 22:09:14",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 426,
+      "symbol": "FETUSDT",
+      "direction": "LONG",
+      "entry": 0.23630612,
+      "tp1": 0.241032,
+      "tp2": 0.245758,
+      "sl": 0.23158,
+      "strength": 41,
+      "reasons": [
+        "MACD бычий (hist=0.00091)",
+        "Цена > EMA20 > EMA50",
+        "Объём x2.0 🔥",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "CVD растёт (+8.2%) — покупки усиливаются 📈",
+        "📌 Лимитный вход @ 0.236306 (откат к EMA20)"
+      ],
+      "news": null,
+      "created_at": "2026-03-17 22:11:21",
       "status": "ACTIVE"
     }
   ],
@@ -1196,9 +1217,43 @@
         "CVD растёт (+10.6%) — покупки усиливаются 📈",
         "📌 Лимитный вход @ 0.787446 (откат к EMA20)"
       ]
+    },
+    {
+      "id": 280,
+      "symbol": "FETUSDT",
+      "direction": "LONG",
+      "entry": 0.23630612,
+      "tp1": 0.241032,
+      "tp2": 0.245758,
+      "sl": 0.23158,
+      "strength": 41,
+      "taken_at": "2026-03-17T22:11:21.384906",
+      "status": "PENDING",
+      "reasons": [
+        "MACD бычий (hist=0.00091)",
+        "Цена > EMA20 > EMA50",
+        "Объём x2.0 🔥",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "CVD растёт (+8.2%) — покупки усиливаются 📈",
+        "📌 Лимитный вход @ 0.236306 (откат к EMA20)"
+      ]
     }
   ],
   "trades_history": [
+    {
+      "symbol": "FETUSDT",
+      "direction": "LONG",
+      "entry": 0.23630612,
+      "tp1": 0.241032,
+      "tp2": 0.245758,
+      "sl": 0.23158,
+      "strength": 41,
+      "status": "PENDING",
+      "pnl_pct": 0,
+      "close_price": null,
+      "taken_at": "2026-03-17T22:11:21.384906",
+      "closed_at": null
+    },
     {
       "symbol": "VIRTUALUSDT",
       "direction": "LONG",
@@ -3984,20 +4039,6 @@
       "close_price": 0.17175,
       "taken_at": "2026-03-17 12:12:20",
       "closed_at": "2026-03-17 13:20:26"
-    },
-    {
-      "symbol": "BEATUSDT",
-      "direction": "LONG",
-      "entry": 0.5082,
-      "tp1": 0.5237001,
-      "tp2": 0.53914938,
-      "sl": 0.52785,
-      "strength": 29,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 3.45,
-      "close_price": 0.5257499999999999,
-      "taken_at": "2026-03-17 12:25:47",
-      "closed_at": "2026-03-17 13:19:50"
     }
   ]
 }
