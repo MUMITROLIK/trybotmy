@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T14:44:09.813889+00:00",
+  "updated_at": "2026-03-17T14:45:14.138975+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T14:42:49Z",
+    "last_ok": "2026-03-17T14:44:14Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -9,19 +9,19 @@
     "auto_take": true
   },
   "stats": {
-    "total": 277,
+    "total": 278,
     "wins": 36,
     "losses": 3,
-    "active": 17,
+    "active": 18,
     "winrate": 92.3
   },
   "trade_stats": {
     "open": 77,
-    "pending": 1,
+    "pending": 2,
     "wins": 59,
     "losses": 32,
     "total_pnl": 93.63,
-    "winrate": 64.1
+    "winrate": 63.4
   },
   "fear_greed": {
     "value": 28,
@@ -379,6 +379,28 @@
       ],
       "news": null,
       "created_at": "2026-03-17 14:41:33",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 316,
+      "symbol": "XPLUSDT",
+      "direction": "LONG",
+      "entry": 0.11619036,
+      "tp1": 0.118514,
+      "tp2": 0.120838,
+      "sl": 0.113867,
+      "strength": 35,
+      "reasons": [
+        "MACD бычий (hist=0.00016)",
+        "Цена выше EMA20",
+        "Стакан: давление покупки (+0.13)",
+        "МТФ: 5m, 1h, 4h согласны",
+        "OI растёт +1.2% + цена ↑",
+        "⚠️ Funding через 76м",
+        "📌 Лимитный вход @ 0.11619 (откат к EMA20)"
+      ],
+      "news": null,
+      "created_at": "2026-03-17 14:44:41",
       "status": "ACTIVE"
     }
   ],
@@ -2291,6 +2313,27 @@
         "⚠️ Funding через 89м",
         "📌 Лимитный вход @ 0.0612263 (откат к EMA20)"
       ]
+    },
+    {
+      "id": 170,
+      "symbol": "XPLUSDT",
+      "direction": "LONG",
+      "entry": 0.11619036,
+      "tp1": 0.118514,
+      "tp2": 0.120838,
+      "sl": 0.113867,
+      "strength": 35,
+      "taken_at": null,
+      "status": "PENDING",
+      "reasons": [
+        "MACD бычий (hist=0.00016)",
+        "Цена выше EMA20",
+        "Стакан: давление покупки (+0.13)",
+        "МТФ: 5m, 1h, 4h согласны",
+        "OI растёт +1.2% + цена ↑",
+        "⚠️ Funding через 76м",
+        "📌 Лимитный вход @ 0.11619 (откат к EMA20)"
+      ]
     }
   ],
   "trades_history": [
@@ -3576,6 +3619,20 @@
       "tp2": 0.056983,
       "sl": 0.062923,
       "strength": 28,
+      "status": "PENDING",
+      "pnl_pct": 0,
+      "close_price": null,
+      "taken_at": null,
+      "closed_at": null
+    },
+    {
+      "symbol": "XPLUSDT",
+      "direction": "LONG",
+      "entry": 0.11619036,
+      "tp1": 0.118514,
+      "tp2": 0.120838,
+      "sl": 0.113867,
+      "strength": 35,
       "status": "PENDING",
       "pnl_pct": 0,
       "close_price": null,
