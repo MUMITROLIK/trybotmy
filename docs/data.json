@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T20:00:59.417930+00:00",
+  "updated_at": "2026-03-17T20:01:37.515029+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T19:59:59Z",
+    "last_ok": "2026-03-17T20:01:05Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -16,12 +16,12 @@
     "winrate": 83.9
   },
   "trade_stats": {
-    "open": 43,
+    "open": 42,
     "pending": 15,
     "wins": 98,
-    "losses": 68,
-    "total_pnl": 85.86,
-    "winrate": 59.0
+    "losses": 69,
+    "total_pnl": 83.81,
+    "winrate": 58.7
   },
   "fear_greed": {
     "value": 28,
@@ -1151,26 +1151,6 @@
         "МТФ: 5m, 15m согласны",
         "CVD отрицательный (-4.1%)",
         "📌 Лимитный вход @ 0.964407 (откат к EMA20)"
-      ]
-    },
-    {
-      "id": 186,
-      "symbol": "PIXELUSDT",
-      "direction": "LONG",
-      "entry": 0.00964,
-      "tp1": 0.00984,
-      "tp2": 0.01004,
-      "sl": 0.009447,
-      "strength": 34,
-      "taken_at": null,
-      "status": "OPEN",
-      "reasons": [
-        "RSI=22 (сильная перепроданность)",
-        "BB нижняя полоса (пробой)",
-        "Стакан: сильное давление покупки (+0.26)",
-        "МТФ: только 1 таймфрейм согласен",
-        "OI падает (шорты закрываются)",
-        "⚠️ Funding через 36м"
       ]
     },
     {
@@ -2617,6 +2597,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "PIXELUSDT",
+      "direction": "LONG",
+      "entry": 0.00964,
+      "tp1": 0.00984,
+      "tp2": 0.01004,
+      "sl": 0.009447,
+      "strength": 34,
+      "status": "SL",
+      "pnl_pct": -2.05,
+      "close_price": 0.009441999999999999,
+      "taken_at": null,
+      "closed_at": "2026-03-17 20:01:37"
+    },
     {
       "symbol": "SUIUSDT",
       "direction": "LONG",
@@ -5397,20 +5391,6 @@
       "tp2": 0.801686,
       "sl": 0.735956,
       "strength": 32,
-      "status": "PENDING",
-      "pnl_pct": 0,
-      "close_price": null,
-      "taken_at": null,
-      "closed_at": null
-    },
-    {
-      "symbol": "VANRYUSDT",
-      "direction": "LONG",
-      "entry": 0.0059999,
-      "tp1": 0.006268,
-      "tp2": 0.006536,
-      "sl": 0.005785,
-      "strength": 47,
       "status": "PENDING",
       "pnl_pct": 0,
       "close_price": null,
