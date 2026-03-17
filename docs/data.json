@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T12:55:18.256678+00:00",
+  "updated_at": "2026-03-17T12:56:14.586726+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T12:54:49Z",
+    "last_ok": "2026-03-17T12:55:22Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -16,11 +16,11 @@
     "winrate": 95.0
   },
   "trade_stats": {
-    "open": 77,
-    "wins": 43,
-    "losses": 18,
-    "total_pnl": 81.93,
-    "winrate": 70.5
+    "open": 75,
+    "wins": 44,
+    "losses": 19,
+    "total_pnl": 81.92,
+    "winrate": 69.8
   },
   "fear_greed": {
     "value": 28,
@@ -954,27 +954,6 @@
         "CVD отрицательный (-2.0%)",
         "BTC контекст: -1.5% за 12ч 📉",
         "📌 Лимитный вход @ 373.993 (откат к EMA20)"
-      ]
-    },
-    {
-      "id": 79,
-      "symbol": "ASTERUSDT",
-      "direction": "SHORT",
-      "entry": 0.7295,
-      "tp1": 0.71491,
-      "tp2": 0.70032,
-      "sl": 0.74409,
-      "strength": 32,
-      "taken_at": "2026-03-17 10:55:27",
-      "status": "OPEN",
-      "reasons": [
-        "MACD медвежий (hist=-0.00012)",
-        "Цена < EMA20 < EMA50",
-        "Стакан: давление продажи (-0.14)",
-        "МТФ: 5m, 15m согласны",
-        "CVD отрицательный (-4.1%)",
-        "BTC корреляция 0.73, BTC -0.4% 📉",
-        "BTC контекст: -1.6% за 12ч 📉"
       ]
     },
     {
@@ -1993,9 +1972,24 @@
         "BTC корреляция 0.69, BTC -0.5% 📉",
         "📌 Лимитный вход @ 0.299337 (откат к EMA20)"
       ]
+    }
+  ],
+  "trades_history": [
+    {
+      "symbol": "ASTERUSDT",
+      "direction": "SHORT",
+      "entry": 0.7295,
+      "tp1": 0.71491,
+      "tp2": 0.70032,
+      "sl": 0.74409,
+      "strength": 32,
+      "status": "SL",
+      "pnl_pct": -2.08,
+      "close_price": 0.74465,
+      "taken_at": "2026-03-17 10:55:27",
+      "closed_at": "2026-03-17 12:56:14"
     },
     {
-      "id": 58,
       "symbol": "1000SHIBUSDT",
       "direction": "SHORT",
       "entry": 0.006117,
@@ -2003,19 +1997,12 @@
       "tp2": 0.005872,
       "sl": 0.005990499999999999,
       "strength": 31,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 2.07,
+      "close_price": 0.005990499999999999,
       "taken_at": "2026-03-17 09:25:35",
-      "status": "TP1_HIT",
-      "reasons": [
-        "RSI=69 (перекупленность)",
-        "BB верхняя зона (95%)",
-        "EMA20 < EMA50",
-        "Стакан: перевес ask (-0.07)",
-        "МТФ: только 1 таймфрейм согласен",
-        "CVD падает (-11.0%) — продажи усиливаются 📉"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-17 12:55:23"
+    },
     {
       "symbol": "KITEUSDT",
       "direction": "SHORT",
