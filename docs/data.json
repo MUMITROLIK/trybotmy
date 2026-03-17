@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T20:32:33.391518+00:00",
+  "updated_at": "2026-03-17T20:33:45.149458+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T20:31:43Z",
+    "last_ok": "2026-03-17T20:32:38Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -13,7 +13,7 @@
     "total": 367,
     "wins": 99,
     "losses": 20,
-    "active": 10,
+    "active": 9,
     "winrate": 83.2
   },
   "trade_stats": {
@@ -30,27 +30,6 @@
     "emoji": "😨"
   },
   "signals": [
-    {
-      "id": 373,
-      "symbol": "XAGUSDT",
-      "direction": "SHORT",
-      "entry": 80.05278778,
-      "tp1": 78.451732,
-      "tp2": 76.850676,
-      "sl": 81.653844,
-      "strength": 28,
-      "reasons": [
-        "MACD медвежий (hist=-0.12236)",
-        "Цена < EMA20 < EMA50",
-        "МТФ: 15m, 1h согласны",
-        "OI растёт +8.4% + цена ↓",
-        "CVD отрицательный (-3.1%)",
-        "📌 Лимитный вход @ 80.0528 (откат к EMA20)"
-      ],
-      "news": null,
-      "created_at": "2026-03-17 16:32:59",
-      "status": "ACTIVE"
-    },
     {
       "id": 393,
       "symbol": "GUSDT",
