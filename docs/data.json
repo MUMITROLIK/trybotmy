@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T23:05:30.305880+00:00",
+  "updated_at": "2026-03-17T23:06:51.914360+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T23:04:49Z",
+    "last_ok": "2026-03-17T23:05:35Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -18,7 +18,7 @@
   },
   "trade_stats": {
     "open": 19,
-    "pending": 4,
+    "pending": 2,
     "wins": 121,
     "losses": 85,
     "total_pnl": 109.26,
@@ -1236,46 +1236,6 @@
       ]
     },
     {
-      "id": 277,
-      "symbol": "ENAUSDT",
-      "direction": "LONG",
-      "entry": 0.1171611,
-      "tp1": 0.119504,
-      "tp2": 0.121848,
-      "sl": 0.114818,
-      "strength": 41,
-      "taken_at": "2026-03-17T22:06:21.201805",
-      "status": "PENDING",
-      "reasons": [
-        "MACD бычий (hist=0.00022)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: перевес bid (+0.07)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "CVD растёт (+6.6%) — покупки усиливаются 📈",
-        "📌 Лимитный вход @ 0.117161 (откат к EMA20)"
-      ]
-    },
-    {
-      "id": 278,
-      "symbol": "XPLUSDT",
-      "direction": "LONG",
-      "entry": 0.11802398,
-      "tp1": 0.120384,
-      "tp2": 0.122745,
-      "sl": 0.115664,
-      "strength": 44,
-      "taken_at": "2026-03-17T22:06:31.139959",
-      "status": "PENDING",
-      "reasons": [
-        "MACD бычий (hist=0.00049)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: давление покупки (+0.14)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "CVD растёт (+6.4%) — покупки усиливаются 📈",
-        "📌 Лимитный вход @ 0.118024 (откат к EMA20)"
-      ]
-    },
-    {
       "id": 280,
       "symbol": "FETUSDT",
       "direction": "LONG",
@@ -1317,6 +1277,34 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "XPLUSDT",
+      "direction": "LONG",
+      "entry": 0.11802398,
+      "tp1": 0.120384,
+      "tp2": 0.122745,
+      "sl": 0.115664,
+      "strength": 44,
+      "status": "LIMIT_TIMEOUT",
+      "pnl_pct": 0,
+      "close_price": null,
+      "taken_at": "2026-03-17T22:06:31.139959",
+      "closed_at": "2026-03-17 23:06:36"
+    },
+    {
+      "symbol": "ENAUSDT",
+      "direction": "LONG",
+      "entry": 0.1171611,
+      "tp1": 0.119504,
+      "tp2": 0.121848,
+      "sl": 0.114818,
+      "strength": 41,
+      "status": "LIMIT_TIMEOUT",
+      "pnl_pct": 0,
+      "close_price": null,
+      "taken_at": "2026-03-17T22:06:21.201805",
+      "closed_at": "2026-03-17 23:06:21"
+    },
     {
       "symbol": "PIPPINUSDT",
       "direction": "LONG",
@@ -1455,34 +1443,6 @@
       "pnl_pct": 0,
       "close_price": null,
       "taken_at": "2026-03-17T22:11:21.384906",
-      "closed_at": null
-    },
-    {
-      "symbol": "XPLUSDT",
-      "direction": "LONG",
-      "entry": 0.11802398,
-      "tp1": 0.120384,
-      "tp2": 0.122745,
-      "sl": 0.115664,
-      "strength": 44,
-      "status": "PENDING",
-      "pnl_pct": 0,
-      "close_price": null,
-      "taken_at": "2026-03-17T22:06:31.139959",
-      "closed_at": null
-    },
-    {
-      "symbol": "ENAUSDT",
-      "direction": "LONG",
-      "entry": 0.1171611,
-      "tp1": 0.119504,
-      "tp2": 0.121848,
-      "sl": 0.114818,
-      "strength": 41,
-      "status": "PENDING",
-      "pnl_pct": 0,
-      "close_price": null,
-      "taken_at": "2026-03-17T22:06:21.201805",
       "closed_at": null
     },
     {
