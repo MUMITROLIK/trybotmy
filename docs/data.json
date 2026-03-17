@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T16:43:03.493701+00:00",
+  "updated_at": "2026-03-17T16:43:33.555502+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T16:42:03Z",
+    "last_ok": "2026-03-17T16:43:09Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -9,19 +9,19 @@
     "auto_take": true
   },
   "stats": {
-    "total": 350,
+    "total": 352,
     "wins": 87,
-    "losses": 9,
-    "active": 31,
-    "winrate": 90.6
+    "losses": 10,
+    "active": 32,
+    "winrate": 89.7
   },
   "trade_stats": {
-    "open": 69,
-    "pending": 58,
+    "open": 68,
+    "pending": 60,
     "wins": 71,
-    "losses": 44,
-    "total_pnl": 97.14,
-    "winrate": 41.0
+    "losses": 45,
+    "total_pnl": 94.48,
+    "winrate": 40.3
   },
   "fear_greed": {
     "value": 28,
@@ -154,27 +154,6 @@
       ],
       "news": null,
       "created_at": "2026-03-17 14:34:28",
-      "status": "ACTIVE"
-    },
-    {
-      "id": 315,
-      "symbol": "ANIMEUSDT",
-      "direction": "LONG",
-      "entry": 0.005904,
-      "tp1": 0.00609,
-      "tp2": 0.006276,
-      "sl": 0.005755,
-      "strength": 28,
-      "reasons": [
-        "RSI=36 (перепроданность)",
-        "BB нижняя зона (2%)",
-        "EMA20 > EMA50",
-        "МТФ: 15m, 4h согласны",
-        "CVD положительный (-1.1%)",
-        "⚠️ Funding через 79м"
-      ],
-      "news": null,
-      "created_at": "2026-03-17 14:41:33",
       "status": "ACTIVE"
     },
     {
@@ -680,6 +659,48 @@
       ],
       "news": null,
       "created_at": "2026-03-17 16:42:59",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 389,
+      "symbol": "GRASSUSDT",
+      "direction": "LONG",
+      "entry": 0.44334446,
+      "tp1": 0.453298,
+      "tp2": 0.463252,
+      "sl": 0.434478,
+      "strength": 37,
+      "reasons": [
+        "MACD бычий (hist=0.00125)",
+        "EMA20 > EMA50 (golden cross) 🌟",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +1.5% + цена ↑",
+        "📌 Лимитный вход @ 0.443344 (откат к EMA20)"
+      ],
+      "news": null,
+      "created_at": "2026-03-17 16:43:16",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 390,
+      "symbol": "HUMAUSDT",
+      "direction": "SHORT",
+      "entry": 0.01860035,
+      "tp1": 0.017936,
+      "tp2": 0.017271,
+      "sl": 0.019132,
+      "strength": 31,
+      "reasons": [
+        "RSI=50 (нейтральный↑)",
+        "MACD медвежий (hist=-0.00009)",
+        "Цена ниже EMA20",
+        "МТФ: только 1 таймфрейм согласен",
+        "OI падает (лонги закрываются)",
+        "CVD падает (-9.3%) — продажи усиливаются 📉",
+        "📌 Лимитный вход @ 0.0186004 (откат к EMA20)"
+      ],
+      "news": null,
+      "created_at": "2026-03-17 16:43:22",
       "status": "ACTIVE"
     }
   ],
@@ -2173,26 +2194,6 @@
       ]
     },
     {
-      "id": 169,
-      "symbol": "ANIMEUSDT",
-      "direction": "LONG",
-      "entry": 0.005904,
-      "tp1": 0.00609,
-      "tp2": 0.006276,
-      "sl": 0.005755,
-      "strength": 28,
-      "taken_at": null,
-      "status": "OPEN",
-      "reasons": [
-        "RSI=36 (перепроданность)",
-        "BB нижняя зона (2%)",
-        "EMA20 > EMA50",
-        "МТФ: 15m, 4h согласны",
-        "CVD положительный (-1.1%)",
-        "⚠️ Funding через 79м"
-      ]
-    },
-    {
       "id": 173,
       "symbol": "BEATUSDT",
       "direction": "SHORT",
@@ -3625,9 +3626,63 @@
         "CVD растёт (+5.1%) — покупки усиливаются 📈",
         "📌 Лимитный вход @ 0.0333434 (откат к EMA20)"
       ]
+    },
+    {
+      "id": 243,
+      "symbol": "GRASSUSDT",
+      "direction": "LONG",
+      "entry": 0.44334446,
+      "tp1": 0.453298,
+      "tp2": 0.463252,
+      "sl": 0.434478,
+      "strength": 37,
+      "taken_at": null,
+      "status": "PENDING",
+      "reasons": [
+        "MACD бычий (hist=0.00125)",
+        "EMA20 > EMA50 (golden cross) 🌟",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +1.5% + цена ↑",
+        "📌 Лимитный вход @ 0.443344 (откат к EMA20)"
+      ]
+    },
+    {
+      "id": 244,
+      "symbol": "HUMAUSDT",
+      "direction": "SHORT",
+      "entry": 0.01860035,
+      "tp1": 0.017936,
+      "tp2": 0.017271,
+      "sl": 0.019132,
+      "strength": 31,
+      "taken_at": null,
+      "status": "PENDING",
+      "reasons": [
+        "RSI=50 (нейтральный↑)",
+        "MACD медвежий (hist=-0.00009)",
+        "Цена ниже EMA20",
+        "МТФ: только 1 таймфрейм согласен",
+        "OI падает (лонги закрываются)",
+        "CVD падает (-9.3%) — продажи усиливаются 📉",
+        "📌 Лимитный вход @ 0.0186004 (откат к EMA20)"
+      ]
     }
   ],
   "trades_history": [
+    {
+      "symbol": "ANIMEUSDT",
+      "direction": "LONG",
+      "entry": 0.005904,
+      "tp1": 0.00609,
+      "tp2": 0.006276,
+      "sl": 0.005755,
+      "strength": 28,
+      "status": "SL",
+      "pnl_pct": -2.66,
+      "close_price": 0.005747,
+      "taken_at": null,
+      "closed_at": "2026-03-17 16:43:28"
+    },
     {
       "symbol": "HUMAUSDT",
       "direction": "SHORT",
@@ -6044,6 +6099,34 @@
       "tp2": 0.03617,
       "sl": 0.032213,
       "strength": 43,
+      "status": "PENDING",
+      "pnl_pct": 0,
+      "close_price": null,
+      "taken_at": null,
+      "closed_at": null
+    },
+    {
+      "symbol": "GRASSUSDT",
+      "direction": "LONG",
+      "entry": 0.44334446,
+      "tp1": 0.453298,
+      "tp2": 0.463252,
+      "sl": 0.434478,
+      "strength": 37,
+      "status": "PENDING",
+      "pnl_pct": 0,
+      "close_price": null,
+      "taken_at": null,
+      "closed_at": null
+    },
+    {
+      "symbol": "HUMAUSDT",
+      "direction": "SHORT",
+      "entry": 0.01860035,
+      "tp1": 0.017936,
+      "tp2": 0.017271,
+      "sl": 0.019132,
+      "strength": 31,
       "status": "PENDING",
       "pnl_pct": 0,
       "close_price": null,
