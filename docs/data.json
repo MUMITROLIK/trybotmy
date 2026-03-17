@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T15:26:52.935267+00:00",
+  "updated_at": "2026-03-17T15:27:41.648321+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T15:25:36Z",
+    "last_ok": "2026-03-17T15:26:57Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -9,19 +9,19 @@
     "auto_take": true
   },
   "stats": {
-    "total": 296,
-    "wins": 50,
+    "total": 297,
+    "wins": 51,
     "losses": 3,
     "active": 22,
-    "winrate": 94.3
+    "winrate": 94.4
   },
   "trade_stats": {
     "open": 75,
-    "pending": 14,
+    "pending": 15,
     "wins": 64,
     "losses": 35,
     "total_pnl": 98.09,
-    "winrate": 56.6
+    "winrate": 56.1
   },
   "fear_greed": {
     "value": 28,
@@ -452,29 +452,6 @@
       "status": "ACTIVE"
     },
     {
-      "id": 333,
-      "symbol": "VANRYUSDT",
-      "direction": "LONG",
-      "entry": 0.00592502,
-      "tp1": 0.006156,
-      "tp2": 0.006387,
-      "sl": 0.00574,
-      "strength": 41,
-      "reasons": [
-        "MACD бычий (hist=0.00004)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: давление покупки (+0.24)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "CVD положительный (-0.7%)",
-        "Doji (1h) — нерешительность",
-        "⚠️ Funding через 36м",
-        "📌 Лимитный вход @ 0.00592502 (откат к EMA20)"
-      ],
-      "news": null,
-      "created_at": "2026-03-17 15:24:40",
-      "status": "ACTIVE"
-    },
-    {
       "id": 334,
       "symbol": "HYPEUSDT",
       "direction": "SHORT",
@@ -496,9 +473,52 @@
       "news": null,
       "created_at": "2026-03-17 15:26:22",
       "status": "ACTIVE"
+    },
+    {
+      "id": 335,
+      "symbol": "OPNUSDT",
+      "direction": "SHORT",
+      "entry": 0.29224255,
+      "tp1": 0.28486,
+      "tp2": 0.277478,
+      "sl": 0.298148,
+      "strength": 30,
+      "reasons": [
+        "Цена < EMA20 < EMA50",
+        "Стакан: перевес ask (-0.09)",
+        "МТФ: 5m, 1h, 4h согласны",
+        "OI растёт +3.4% + цена ↓",
+        "CVD падает (-6.2%) — продажи усиливаются 📉",
+        "⚠️ Funding через 33м",
+        "📌 Лимитный вход @ 0.292243 (откат к EMA20)"
+      ],
+      "news": null,
+      "created_at": "2026-03-17 15:27:23",
+      "status": "ACTIVE"
     }
   ],
   "history": [
+    {
+      "symbol": "VANRYUSDT",
+      "direction": "LONG",
+      "entry": 0.00592502,
+      "tp1": 0.006156,
+      "tp2": 0.006387,
+      "sl": 0.00574,
+      "strength": 41,
+      "status": "TP1",
+      "created_at": "2026-03-17 15:24:40",
+      "reasons": [
+        "MACD бычий (hist=0.00004)",
+        "Цена > EMA20 > EMA50",
+        "Стакан: давление покупки (+0.24)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "CVD положительный (-0.7%)",
+        "Doji (1h) — нерешительность",
+        "⚠️ Funding через 36м",
+        "📌 Лимитный вход @ 0.00592502 (откат к EMA20)"
+      ]
+    },
     {
       "symbol": "VANRYUSDT",
       "direction": "LONG",
@@ -863,26 +883,6 @@
         "Стакан: давление покупки (+0.13)",
         "МТФ: 15m, 1h, 4h согласны",
         "OI растёт +1.4% + цена ↑"
-      ]
-    },
-    {
-      "symbol": "TRIAUSDT",
-      "direction": "LONG",
-      "entry": 0.0313714,
-      "tp1": 0.032272,
-      "tp2": 0.033174,
-      "sl": 0.030651,
-      "strength": 53,
-      "status": "TP1",
-      "created_at": "2026-03-17 13:27:14",
-      "reasons": [
-        "MACD бычий (hist=0.00020)",
-        "Цена > EMA20 > EMA50",
-        "Объём x4.6 🔥🔥🔥",
-        "МТФ: 5m, 15m, 4h согласны",
-        "CVD положительный (+5.0%)",
-        "Bullish Engulfing (1h) 🕯️",
-        "📌 Лимитный вход @ 0.0313714 (откат к EMA20)"
       ]
     }
   ],
@@ -2653,6 +2653,27 @@
         "⚠️ Funding через 34м",
         "📌 Лимитный вход @ 40.7205 (откат к EMA20)"
       ]
+    },
+    {
+      "id": 189,
+      "symbol": "OPNUSDT",
+      "direction": "SHORT",
+      "entry": 0.29224255,
+      "tp1": 0.28486,
+      "tp2": 0.277478,
+      "sl": 0.298148,
+      "strength": 30,
+      "taken_at": null,
+      "status": "PENDING",
+      "reasons": [
+        "Цена < EMA20 < EMA50",
+        "Стакан: перевес ask (-0.09)",
+        "МТФ: 5m, 1h, 4h согласны",
+        "OI растёт +3.4% + цена ↓",
+        "CVD падает (-6.2%) — продажи усиливаются 📉",
+        "⚠️ Funding через 33м",
+        "📌 Лимитный вход @ 0.292243 (откат к EMA20)"
+      ]
     }
   ],
   "trades_history": [
@@ -4232,6 +4253,20 @@
       "tp2": 39.091651,
       "sl": 41.53488,
       "strength": 36,
+      "status": "PENDING",
+      "pnl_pct": 0,
+      "close_price": null,
+      "taken_at": null,
+      "closed_at": null
+    },
+    {
+      "symbol": "OPNUSDT",
+      "direction": "SHORT",
+      "entry": 0.29224255,
+      "tp1": 0.28486,
+      "tp2": 0.277478,
+      "sl": 0.298148,
+      "strength": 30,
       "status": "PENDING",
       "pnl_pct": 0,
       "close_price": null,
