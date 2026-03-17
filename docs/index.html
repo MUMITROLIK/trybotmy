@@ -296,6 +296,9 @@ main { padding: 24px 40px; max-width: 1600px; margin: 0 auto; }
   position: relative;
   box-shadow: var(--shadow);
   backdrop-filter: var(--blur);
+  /* Performance: skip offscreen render */
+  content-visibility: auto;
+  contain-intrinsic-size: 260px 420px;
 }
 .sig-card:hover { transform: translateY(-2px); }
 .sig-card.long  {
@@ -500,8 +503,10 @@ tr:hover td { background: rgba(255,255,255,.015); }
 .trade-card {
   background: var(--glass); border: 1px solid var(--border);
   border-radius: var(--radius2); overflow: hidden; position: relative;
-  box-shadow: var(--shadow);
+  box-shadow: 0 10px 35px rgba(0,0,0,.40);
   backdrop-filter: var(--blur);
+  content-visibility: auto;
+  contain-intrinsic-size: 280px 420px;
 }
 .trade-card.long  { border-left: 2px solid var(--green); }
 .trade-card.short { border-left: 2px solid var(--red); }
