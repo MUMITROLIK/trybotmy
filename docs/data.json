@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T20:11:51.992389+00:00",
+  "updated_at": "2026-03-17T20:12:23.335151+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T20:11:17Z",
+    "last_ok": "2026-03-17T20:11:56Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -16,11 +16,11 @@
     "winrate": 83.9
   },
   "trade_stats": {
-    "open": 34,
+    "open": 29,
     "pending": 15,
-    "wins": 102,
-    "losses": 74,
-    "total_pnl": 83.64,
+    "wins": 105,
+    "losses": 76,
+    "total_pnl": 89.31,
     "winrate": 58.0
   },
   "fear_greed": {
@@ -721,65 +721,6 @@
   ],
   "trades_open": [
     {
-      "id": 117,
-      "symbol": "APTUSDT",
-      "direction": "SHORT",
-      "entry": 0.9915,
-      "tp1": 0.97167,
-      "tp2": 0.95184,
-      "sl": 1.01133,
-      "strength": 36,
-      "taken_at": "2026-03-17 12:11:59",
-      "status": "OPEN",
-      "reasons": [
-        "MACD медвежий (hist=-0.00048)",
-        "Цена < EMA20 < EMA50",
-        "Стакан: давление продажи (-0.21)",
-        "МТФ: 5m, 15m согласны",
-        "CVD падает (-5.0%) — продажи усиливаются 📉",
-        "📌 Лимитный вход @ 0.99586 (откат к EMA20)"
-      ]
-    },
-    {
-      "id": 118,
-      "symbol": "IRUSDT",
-      "direction": "SHORT",
-      "entry": 0.04933,
-      "tp1": 0.04712988,
-      "tp2": 0.0449347,
-      "sl": 0.05109108,
-      "strength": 33,
-      "taken_at": "2026-03-17 12:12:11",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=53 (нейтральный↑)",
-        "MACD медвежий (hist=-0.00003)",
-        "Цена ниже EMA20",
-        "Стакан: давление продажи (-0.23)",
-        "МТФ: 5m, 4h согласны",
-        "OI растёт +4.0%",
-        "📌 Лимитный вход @ 0.049687 (откат к EMA20)"
-      ]
-    },
-    {
-      "id": 119,
-      "symbol": "ICPUSDT",
-      "direction": "LONG",
-      "entry": 2.715,
-      "tp1": 2.7693,
-      "tp2": 2.8236,
-      "sl": 2.6607,
-      "strength": 25,
-      "taken_at": "2026-03-17 12:12:17",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00211)",
-        "Цена выше EMA20",
-        "МТФ: 5m, 1h, 4h согласны",
-        "CVD положительный (+1.9%)"
-      ]
-    },
-    {
       "id": 123,
       "symbol": "OPUSDT",
       "direction": "LONG",
@@ -1139,27 +1080,6 @@
       ]
     },
     {
-      "id": 232,
-      "symbol": "CFGUSDT",
-      "direction": "SHORT",
-      "entry": 0.15971519,
-      "tp1": 0.155022,
-      "tp2": 0.150329,
-      "sl": 0.163469,
-      "strength": 49,
-      "taken_at": "2026-03-17 19:25:16",
-      "status": "OPEN",
-      "reasons": [
-        "MACD медвежий (hist=-0.00020)",
-        "Цена < EMA20 < EMA50",
-        "Стакан: давление продажи (-0.24)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +11.1% + цена ↓",
-        "CVD падает (-8.8%) — продажи усиливаются 📉",
-        "📌 Лимитный вход @ 0.159715 (откат к EMA20)"
-      ]
-    },
-    {
       "id": 235,
       "symbol": "TRIAUSDT",
       "direction": "LONG",
@@ -1199,27 +1119,6 @@
       ]
     },
     {
-      "id": 237,
-      "symbol": "CFGUSDT",
-      "direction": "SHORT",
-      "entry": 0.15977231,
-      "tp1": 0.155079,
-      "tp2": 0.150387,
-      "sl": 0.163527,
-      "strength": 49,
-      "taken_at": "2026-03-17 19:25:16",
-      "status": "OPEN",
-      "reasons": [
-        "MACD медвежий (hist=-0.00016)",
-        "Цена < EMA20 < EMA50",
-        "Стакан: давление продажи (-0.12)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +11.1% + цена ↓",
-        "CVD падает (-8.7%) — продажи усиливаются 📉",
-        "📌 Лимитный вход @ 0.159772 (откат к EMA20)"
-      ]
-    },
-    {
       "id": 239,
       "symbol": "TRIAUSDT",
       "direction": "LONG",
@@ -1238,27 +1137,6 @@
         "OI растёт +14.0% + цена ↑",
         "CVD растёт (+6.4%) — покупки усиливаются 📈",
         "📌 Лимитный вход @ 0.033433 (откат к EMA20)"
-      ]
-    },
-    {
-      "id": 240,
-      "symbol": "CFGUSDT",
-      "direction": "SHORT",
-      "entry": 0.15979134,
-      "tp1": 0.155098,
-      "tp2": 0.150406,
-      "sl": 0.163546,
-      "strength": 46,
-      "taken_at": "2026-03-17 19:25:16",
-      "status": "OPEN",
-      "reasons": [
-        "MACD медвежий (hist=-0.00015)",
-        "Цена < EMA20 < EMA50",
-        "Объём x1.9 🔥",
-        "МТФ: 5m, 15m, 4h согласны",
-        "OI растёт +11.1% + цена ↓",
-        "CVD падает (-8.4%) — продажи усиливаются 📉",
-        "📌 Лимитный вход @ 0.159791 (откат к EMA20)"
       ]
     },
     {
@@ -2397,7 +2275,78 @@
       ]
     },
     {
-      "id": 229,
+      "id": 237,
+      "symbol": "CFGUSDT",
+      "direction": "SHORT",
+      "entry": 0.15977231,
+      "tp1": 0.155079,
+      "tp2": 0.150387,
+      "sl": 0.15455,
+      "strength": 49,
+      "taken_at": "2026-03-17 19:25:16",
+      "status": "TP1_HIT",
+      "reasons": [
+        "MACD медвежий (hist=-0.00016)",
+        "Цена < EMA20 < EMA50",
+        "Стакан: давление продажи (-0.12)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +11.1% + цена ↓",
+        "CVD падает (-8.7%) — продажи усиливаются 📉",
+        "📌 Лимитный вход @ 0.159772 (откат к EMA20)"
+      ]
+    },
+    {
+      "id": 240,
+      "symbol": "CFGUSDT",
+      "direction": "SHORT",
+      "entry": 0.15979134,
+      "tp1": 0.155098,
+      "tp2": 0.150406,
+      "sl": 0.15475,
+      "strength": 46,
+      "taken_at": "2026-03-17 19:25:16",
+      "status": "TP1_HIT",
+      "reasons": [
+        "MACD медвежий (hist=-0.00015)",
+        "Цена < EMA20 < EMA50",
+        "Объём x1.9 🔥",
+        "МТФ: 5m, 15m, 4h согласны",
+        "OI растёт +11.1% + цена ↓",
+        "CVD падает (-8.4%) — продажи усиливаются 📉",
+        "📌 Лимитный вход @ 0.159791 (откат к EMA20)"
+      ]
+    }
+  ],
+  "trades_history": [
+    {
+      "symbol": "CFGUSDT",
+      "direction": "SHORT",
+      "entry": 0.15971519,
+      "tp1": 0.155022,
+      "tp2": 0.150329,
+      "sl": 0.15435,
+      "strength": 49,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 3.05,
+      "close_price": 0.15485,
+      "taken_at": "2026-03-17 19:25:16",
+      "closed_at": "2026-03-17 20:12:23"
+    },
+    {
+      "symbol": "ICPUSDT",
+      "direction": "LONG",
+      "entry": 2.715,
+      "tp1": 2.7693,
+      "tp2": 2.8236,
+      "sl": 2.6607,
+      "strength": 25,
+      "status": "TIMEOUT",
+      "pnl_pct": -0.85,
+      "close_price": 2.692,
+      "taken_at": "2026-03-17 12:12:17",
+      "closed_at": "2026-03-17 20:12:20"
+    },
+    {
       "symbol": "CFGUSDT",
       "direction": "SHORT",
       "entry": 0.15970567,
@@ -2405,20 +2354,40 @@
       "tp2": 0.15032,
       "sl": 0.15435,
       "strength": 49,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 3.04,
+      "close_price": 0.15485,
       "taken_at": "2026-03-17 19:25:16",
-      "status": "TP1_HIT",
-      "reasons": [
-        "MACD медвежий (hist=-0.00020)",
-        "Цена < EMA20 < EMA50",
-        "Стакан: давление продажи (-0.21)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +11.1% + цена ↓",
-        "CVD падает (-8.9%) — продажи усиливаются 📉",
-        "📌 Лимитный вход @ 0.159706 (откат к EMA20)"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-17 20:12:20"
+    },
+    {
+      "symbol": "APTUSDT",
+      "direction": "SHORT",
+      "entry": 0.9915,
+      "tp1": 0.97167,
+      "tp2": 0.95184,
+      "sl": 1.01133,
+      "strength": 36,
+      "status": "TIMEOUT",
+      "pnl_pct": -0.19,
+      "close_price": 0.99335,
+      "taken_at": "2026-03-17 12:11:59",
+      "closed_at": "2026-03-17 20:12:19"
+    },
+    {
+      "symbol": "IRUSDT",
+      "direction": "SHORT",
+      "entry": 0.04933,
+      "tp1": 0.04712988,
+      "tp2": 0.0449347,
+      "sl": 0.05109108,
+      "strength": 33,
+      "status": "TIMEOUT",
+      "pnl_pct": 0.62,
+      "close_price": 0.049025,
+      "taken_at": "2026-03-17 12:12:11",
+      "closed_at": "2026-03-17 20:12:19"
+    },
     {
       "symbol": "WIFUSDT",
       "direction": "LONG",
@@ -5143,76 +5112,6 @@
       "tp2": 0.035842,
       "sl": 0.031912,
       "strength": 59,
-      "status": "PENDING",
-      "pnl_pct": 0,
-      "close_price": null,
-      "taken_at": null,
-      "closed_at": null
-    },
-    {
-      "symbol": "XANUSDT",
-      "direction": "LONG",
-      "entry": 0.01029733,
-      "tp1": 0.01051,
-      "tp2": 0.010723,
-      "sl": 0.010091,
-      "strength": 31,
-      "status": "PENDING",
-      "pnl_pct": 0,
-      "close_price": null,
-      "taken_at": null,
-      "closed_at": null
-    },
-    {
-      "symbol": "VANRYUSDT",
-      "direction": "LONG",
-      "entry": 0.0059765,
-      "tp1": 0.006227,
-      "tp2": 0.006477,
-      "sl": 0.005776,
-      "strength": 36,
-      "status": "PENDING",
-      "pnl_pct": 0,
-      "close_price": null,
-      "taken_at": null,
-      "closed_at": null
-    },
-    {
-      "symbol": "TRIAUSDT",
-      "direction": "LONG",
-      "entry": 0.03301641,
-      "tp1": 0.03442,
-      "tp2": 0.035824,
-      "sl": 0.031894,
-      "strength": 61,
-      "status": "PENDING",
-      "pnl_pct": 0,
-      "close_price": null,
-      "taken_at": null,
-      "closed_at": null
-    },
-    {
-      "symbol": "TRIAUSDT",
-      "direction": "LONG",
-      "entry": 0.0330126,
-      "tp1": 0.034416,
-      "tp2": 0.03582,
-      "sl": 0.03189,
-      "strength": 56,
-      "status": "PENDING",
-      "pnl_pct": 0,
-      "close_price": null,
-      "taken_at": null,
-      "closed_at": null
-    },
-    {
-      "symbol": "TRIAUSDT",
-      "direction": "LONG",
-      "entry": 0.03298688,
-      "tp1": 0.034402,
-      "tp2": 0.035818,
-      "sl": 0.031855,
-      "strength": 56,
       "status": "PENDING",
       "pnl_pct": 0,
       "close_price": null,
