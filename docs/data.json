@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-03-17T10:38:50.566486+00:00",
+  "updated_at": "2026-03-17T10:39:55.307322+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T10:37:50Z",
-    "last_error": "fatal: unable to access 'https://github.com/MUMITROLIK/trybotmy.git/': Failed to connect to github.com port 443 after 21085 ms: Could not connect to server\n",
+    "last_ok": "2026-03-17T10:38:55Z",
+    "last_error": null,
     "min_push_interval_sec": 30
   },
   "stats": {
     "total": 183,
     "wins": 15,
     "losses": 1,
-    "active": 3,
+    "active": 0,
     "winrate": 93.8
   },
   "trade_stats": {
@@ -24,51 +24,9 @@
     "label": "Fear",
     "emoji": "😨"
   },
-  "signals": [
+  "signals": [],
+  "history": [
     {
-      "id": 219,
-      "symbol": "DOTUSDT",
-      "direction": "SHORT",
-      "entry": 1.609,
-      "tp1": 1.57682,
-      "tp2": 1.54464,
-      "sl": 1.64118,
-      "strength": 30,
-      "reasons": [
-        "RSI=59 (нейтральный↑)",
-        "MACD медвежий (hist=-0.00006)",
-        "BB выше середины",
-        "Цена ниже EMA20",
-        "МТФ: только 1 таймфрейм согласен",
-        "OI падает (лонги закрываются)",
-        "CVD отрицательный (-2.6%)"
-      ],
-      "news": null,
-      "created_at": "2026-03-17 10:28:44",
-      "status": "ACTIVE"
-    },
-    {
-      "id": 220,
-      "symbol": "AAVEUSDT",
-      "direction": "SHORT",
-      "entry": 121.93,
-      "tp1": 119.4914,
-      "tp2": 117.0528,
-      "sl": 124.3686,
-      "strength": 32,
-      "reasons": [
-        "RSI=71 (сильная перекупленность)",
-        "BB верхняя полоса (пробой)",
-        "EMA20 < EMA50",
-        "Объём x2.3 🔥",
-        "МТФ: только 1 таймфрейм согласен"
-      ],
-      "news": null,
-      "created_at": "2026-03-17 10:29:04",
-      "status": "ACTIVE"
-    },
-    {
-      "id": 221,
       "symbol": "PIXELUSDT",
       "direction": "SHORT",
       "entry": 0.010066,
@@ -76,6 +34,8 @@
       "tp2": 0.009571,
       "sl": 0.010267,
       "strength": 33,
+      "status": "EXPIRED",
+      "created_at": "2026-03-17 10:29:09",
       "reasons": [
         "RSI=60 (перекупленность)",
         "BB выше середины",
@@ -84,13 +44,46 @@
         "МТФ: только 1 таймфрейм согласен",
         "OI растёт +4.1% + цена ↓",
         "Doji (1h) — нерешительность"
-      ],
-      "news": null,
-      "created_at": "2026-03-17 10:29:09",
-      "status": "ACTIVE"
-    }
-  ],
-  "history": [
+      ]
+    },
+    {
+      "symbol": "AAVEUSDT",
+      "direction": "SHORT",
+      "entry": 121.93,
+      "tp1": 119.4914,
+      "tp2": 117.0528,
+      "sl": 124.3686,
+      "strength": 32,
+      "status": "EXPIRED",
+      "created_at": "2026-03-17 10:29:04",
+      "reasons": [
+        "RSI=71 (сильная перекупленность)",
+        "BB верхняя полоса (пробой)",
+        "EMA20 < EMA50",
+        "Объём x2.3 🔥",
+        "МТФ: только 1 таймфрейм согласен"
+      ]
+    },
+    {
+      "symbol": "DOTUSDT",
+      "direction": "SHORT",
+      "entry": 1.609,
+      "tp1": 1.57682,
+      "tp2": 1.54464,
+      "sl": 1.64118,
+      "strength": 30,
+      "status": "EXPIRED",
+      "created_at": "2026-03-17 10:28:44",
+      "reasons": [
+        "RSI=59 (нейтральный↑)",
+        "MACD медвежий (hist=-0.00006)",
+        "BB выше середины",
+        "Цена ниже EMA20",
+        "МТФ: только 1 таймфрейм согласен",
+        "OI падает (лонги закрываются)",
+        "CVD отрицательный (-2.6%)"
+      ]
+    },
     {
       "symbol": "MEUSDT",
       "direction": "SHORT",
@@ -413,62 +406,6 @@
         "Стакан: сильное давление продажи (-0.27)",
         "МТФ: 5m, 15m согласны",
         "📌 Лимитный вход @ 10.313 (откат к EMA20)"
-      ]
-    },
-    {
-      "symbol": "XAUUSDT",
-      "direction": "SHORT",
-      "entry": 5014.98,
-      "tp1": 4914.6804,
-      "tp2": 4814.3808,
-      "sl": 5115.2796,
-      "strength": 30,
-      "status": "EXPIRED",
-      "created_at": "2026-03-17 09:19:59",
-      "reasons": [
-        "MACD медвежий (hist=-0.80175)",
-        "Цена ниже EMA20",
-        "Стакан: сильное давление продажи (-0.77)",
-        "МТФ: 5m, 4h согласны",
-        "OI падает (лонги закрываются)"
-      ]
-    },
-    {
-      "symbol": "KITEUSDT",
-      "direction": "SHORT",
-      "entry": 0.2043904,
-      "tp1": 0.200303,
-      "tp2": 0.196215,
-      "sl": 0.208478,
-      "strength": 31,
-      "status": "EXPIRED",
-      "created_at": "2026-03-17 09:15:14",
-      "reasons": [
-        "MACD медвежий (hist=-0.00029)",
-        "Цена < EMA20 < EMA50",
-        "Стакан: сильное давление продажи (-0.38)",
-        "МТФ: 5m, 15m согласны",
-        "📌 Лимитный вход @ 0.20439 (откат к EMA20)"
-      ]
-    },
-    {
-      "symbol": "ROBOUSDT",
-      "direction": "SHORT",
-      "entry": 0.03487777,
-      "tp1": 0.033999,
-      "tp2": 0.033121,
-      "sl": 0.035581,
-      "strength": 46,
-      "status": "TP2",
-      "created_at": "2026-03-17 09:15:08",
-      "reasons": [
-        "MACD медвежий (hist=-0.00046)",
-        "Цена < EMA20 < EMA50",
-        "Стакан: перевес ask (-0.09)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +5.4% + цена ↓",
-        "CVD падает (-14.1%) — продажи усиливаются 📉",
-        "📌 Лимитный вход @ 0.0348778 (откат к EMA20)"
       ]
     }
   ],
