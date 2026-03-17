@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T11:27:48.090307+00:00",
+  "updated_at": "2026-03-17T11:28:50.945799+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T11:26:48Z",
+    "last_ok": "2026-03-17T11:27:50Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -13,11 +13,11 @@
     "winrate": 94.1
   },
   "trade_stats": {
-    "open": 41,
+    "open": 40,
     "wins": 31,
-    "losses": 13,
-    "total_pnl": 66.3,
-    "winrate": 70.5
+    "losses": 14,
+    "total_pnl": 64.2,
+    "winrate": 68.9
   },
   "fear_greed": {
     "value": 28,
@@ -1089,27 +1089,6 @@
       ]
     },
     {
-      "id": 75,
-      "symbol": "PIXELUSDT",
-      "direction": "SHORT",
-      "entry": 0.010066,
-      "tp1": 0.009819,
-      "tp2": 0.009571,
-      "sl": 0.010267,
-      "strength": 33,
-      "taken_at": "2026-03-17 10:29:09",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=60 (перекупленность)",
-        "BB выше середины",
-        "EMA20 < EMA50",
-        "Стакан: сильное давление продажи (-0.35)",
-        "МТФ: только 1 таймфрейм согласен",
-        "OI растёт +4.1% + цена ↓",
-        "Doji (1h) — нерешительность"
-      ]
-    },
-    {
       "id": 77,
       "symbol": "XMRUSDT",
       "direction": "SHORT",
@@ -1274,6 +1253,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "PIXELUSDT",
+      "direction": "SHORT",
+      "entry": 0.010066,
+      "tp1": 0.009819,
+      "tp2": 0.009571,
+      "sl": 0.010267,
+      "strength": 33,
+      "status": "SL",
+      "pnl_pct": -2.1,
+      "close_price": 0.0102775,
+      "taken_at": "2026-03-17 10:29:09",
+      "closed_at": "2026-03-17 11:28:15"
+    },
     {
       "symbol": "RIVERUSDT",
       "direction": "SHORT",
