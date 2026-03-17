@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T21:16:07.148195+00:00",
+  "updated_at": "2026-03-17T21:16:50.226084+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T21:15:07Z",
+    "last_ok": "2026-03-17T21:16:12Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 83.7
   },
   "trade_stats": {
-    "open": 14,
+    "open": 13,
     "pending": 19,
-    "wins": 115,
+    "wins": 116,
     "losses": 82,
-    "total_pnl": 94.57,
-    "winrate": 58.4
+    "total_pnl": 99.54,
+    "winrate": 58.6
   },
   "fear_greed": {
     "value": 28,
@@ -1976,30 +1976,23 @@
         "CVD растёт (+7.8%) — покупки усиливаются 📈",
         "📌 Лимитный вход @ 281.11 (откат к EMA20)"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 253,
       "symbol": "HYPERUSDT",
       "direction": "LONG",
       "entry": 0.1076,
       "tp1": 0.112068,
       "tp2": 0.116536,
-      "sl": 0.11224999999999999,
+      "sl": 0.11300995,
       "strength": 40,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 4.97,
+      "close_price": 0.11295,
       "taken_at": null,
-      "status": "TP1_HIT",
-      "reasons": [
-        "RSI=34 (перепроданность)",
-        "BB нижняя зона (23%)",
-        "EMA20 > EMA50",
-        "Стакан: давление покупки (+0.15)",
-        "МТФ: 15m, 1h, 4h согласны",
-        "OI растёт +12.8% + цена ↑",
-        "Doji (1h) — нерешительность"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-17 21:16:27"
+    },
     {
       "symbol": "TAOUSDT",
       "direction": "LONG",
@@ -4785,20 +4778,6 @@
       "close_price": 267.085,
       "taken_at": "2026-03-17 11:55:58",
       "closed_at": "2026-03-17 12:36:22"
-    },
-    {
-      "symbol": "PENGUUSDT",
-      "direction": "SHORT",
-      "entry": 0.00785589,
-      "tp1": 0.007699,
-      "tp2": 0.007542,
-      "sl": 0.0076985000000000005,
-      "strength": 30,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 1.97,
-      "close_price": 0.0077015,
-      "taken_at": "2026-03-17 09:04:21",
-      "closed_at": "2026-03-17 12:34:23"
     }
   ]
 }
