@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T13:01:39.697990+00:00",
+  "updated_at": "2026-03-17T13:02:44.040962+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T13:00:39Z",
+    "last_ok": "2026-03-17T13:01:44Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,10 +10,10 @@
   },
   "stats": {
     "total": 253,
-    "wins": 20,
+    "wins": 21,
     "losses": 1,
-    "active": 11,
-    "winrate": 95.2
+    "active": 10,
+    "winrate": 95.5
   },
   "trade_stats": {
     "open": 79,
@@ -231,9 +231,10 @@
       "news": null,
       "created_at": "2026-03-17 13:01:34",
       "status": "ACTIVE"
-    },
+    }
+  ],
+  "history": [
     {
-      "id": 291,
       "symbol": "RENDERUSDT",
       "direction": "SHORT",
       "entry": 1.85775541,
@@ -241,6 +242,8 @@
       "tp2": 1.783445,
       "sl": 1.894911,
       "strength": 31,
+      "status": "TP1",
+      "created_at": "2026-03-17 13:01:38",
       "reasons": [
         "MACD медвежий (hist=-0.00560)",
         "Цена < EMA20 < EMA50",
@@ -248,13 +251,8 @@
         "OI растёт +1.6% + цена ↓",
         "CVD отрицательный (-4.3%)",
         "📌 Лимитный вход @ 1.85776 (откат к EMA20)"
-      ],
-      "news": null,
-      "created_at": "2026-03-17 13:01:38",
-      "status": "ACTIVE"
-    }
-  ],
-  "history": [
+      ]
+    },
     {
       "symbol": "KITEUSDT",
       "direction": "SHORT",
@@ -606,26 +604,6 @@
         "Стакан: перевес bid (+0.07)",
         "МТФ: 1h, 4h согласны",
         "CVD положительный (-1.7%)"
-      ]
-    },
-    {
-      "symbol": "CRVUSDT",
-      "direction": "LONG",
-      "entry": 0.255,
-      "tp1": 0.2601,
-      "tp2": 0.2652,
-      "sl": 0.2499,
-      "strength": 36,
-      "status": "EXPIRED",
-      "created_at": "2026-03-17 12:09:16",
-      "reasons": [
-        "RSI=45 (нейтральный↓)",
-        "MACD бычий (hist=0.00009)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: перевес bid (+0.06)",
-        "МТФ: 15m, 1h, 4h согласны",
-        "CVD положительный (+0.5%)",
-        "Doji (1h) — нерешительность"
       ]
     }
   ],
