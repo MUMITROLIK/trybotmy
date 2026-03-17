@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T19:46:58.180776+00:00",
+  "updated_at": "2026-03-17T19:48:03.382286+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T19:45:47Z",
+    "last_ok": "2026-03-17T19:47:03Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -9,14 +9,14 @@
     "auto_take": true
   },
   "stats": {
-    "total": 365,
+    "total": 366,
     "wins": 99,
     "losses": 18,
-    "active": 18,
+    "active": 19,
     "winrate": 84.6
   },
   "trade_stats": {
-    "open": 53,
+    "open": 54,
     "pending": 15,
     "wins": 91,
     "losses": 64,
@@ -407,6 +407,29 @@
       ],
       "news": null,
       "created_at": "2026-03-17 19:26:33",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 404,
+      "symbol": "SIRENUSDT",
+      "direction": "LONG",
+      "entry": 0.73203,
+      "tp1": 0.75865,
+      "tp2": 0.785269,
+      "sl": 0.710734,
+      "strength": 45,
+      "reasons": [
+        "RSI=45 (нейтральный↓)",
+        "MACD бычий (hist=0.00008)",
+        "BB ниже середины",
+        "Цена > EMA20 > EMA50",
+        "МТФ: 15m, 4h согласны",
+        "OI растёт +3.0% + цена ↑",
+        "CVD положительный (+3.4%)",
+        "Bullish Engulfing (1h) 🕯️"
+      ],
+      "news": null,
+      "created_at": "2026-03-17 19:47:09",
       "status": "ACTIVE"
     }
   ],
@@ -1859,6 +1882,28 @@
         "Стакан: сильное давление покупки (+0.25)",
         "МТФ: только 1 таймфрейм согласен",
         "CVD растёт (+7.5%) — покупки усиливаются 📈"
+      ]
+    },
+    {
+      "id": 258,
+      "symbol": "SIRENUSDT",
+      "direction": "LONG",
+      "entry": 0.73203,
+      "tp1": 0.75865,
+      "tp2": 0.785269,
+      "sl": 0.710734,
+      "strength": 45,
+      "taken_at": null,
+      "status": "OPEN",
+      "reasons": [
+        "RSI=45 (нейтральный↓)",
+        "MACD бычий (hist=0.00008)",
+        "BB ниже середины",
+        "Цена > EMA20 > EMA50",
+        "МТФ: 15m, 4h согласны",
+        "OI растёт +3.0% + цена ↑",
+        "CVD положительный (+3.4%)",
+        "Bullish Engulfing (1h) 🕯️"
       ]
     },
     {
