@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T21:43:18.976439+00:00",
+  "updated_at": "2026-03-17T21:44:08.337965+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T21:42:18Z",
+    "last_ok": "2026-03-17T21:43:23Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,15 +10,15 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 379,
+    "total": 380,
     "wins": 107,
     "losses": 20,
-    "active": 11,
+    "active": 12,
     "winrate": 84.3
   },
   "trade_stats": {
     "open": 16,
-    "pending": 9,
+    "pending": 10,
     "wins": 116,
     "losses": 82,
     "total_pnl": 99.54,
@@ -268,6 +268,28 @@
       ],
       "news": null,
       "created_at": "2026-03-17 21:35:51",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 418,
+      "symbol": "WIFUSDT",
+      "direction": "LONG",
+      "entry": 0.18744017,
+      "tp1": 0.191189,
+      "tp2": 0.194938,
+      "sl": 0.183691,
+      "strength": 46,
+      "reasons": [
+        "MACD бычий (hist=0.00023)",
+        "Цена > EMA20 > EMA50",
+        "Объём x1.9 🔥",
+        "Стакан: давление покупки (+0.13)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "CVD положительный (+1.7%)",
+        "📌 Лимитный вход @ 0.18744 (откат к EMA20)"
+      ],
+      "news": null,
+      "created_at": "2026-03-17 21:43:33",
       "status": "ACTIVE"
     }
   ],
@@ -1175,9 +1197,44 @@
         "CVD растёт (+6.7%) — покупки усиливаются 📈",
         "📌 Лимитный вход @ 1.26587 (откат к EMA20)"
       ]
+    },
+    {
+      "id": 272,
+      "symbol": "WIFUSDT",
+      "direction": "LONG",
+      "entry": 0.18744017,
+      "tp1": 0.191189,
+      "tp2": 0.194938,
+      "sl": 0.183691,
+      "strength": 46,
+      "taken_at": "2026-03-17T21:43:33.744654",
+      "status": "PENDING",
+      "reasons": [
+        "MACD бычий (hist=0.00023)",
+        "Цена > EMA20 > EMA50",
+        "Объём x1.9 🔥",
+        "Стакан: давление покупки (+0.13)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "CVD положительный (+1.7%)",
+        "📌 Лимитный вход @ 0.18744 (откат к EMA20)"
+      ]
     }
   ],
   "trades_history": [
+    {
+      "symbol": "WIFUSDT",
+      "direction": "LONG",
+      "entry": 0.18744017,
+      "tp1": 0.191189,
+      "tp2": 0.194938,
+      "sl": 0.183691,
+      "strength": 46,
+      "status": "PENDING",
+      "pnl_pct": 0,
+      "close_price": null,
+      "taken_at": "2026-03-17T21:43:33.744654",
+      "closed_at": null
+    },
     {
       "symbol": "LITUSDT",
       "direction": "LONG",
@@ -3963,20 +4020,6 @@
       "close_price": 0.28945,
       "taken_at": "2026-03-17 10:56:13",
       "closed_at": "2026-03-17 12:44:09"
-    },
-    {
-      "symbol": "REZUSDT",
-      "direction": "SHORT",
-      "entry": 0.003597,
-      "tp1": 0.00352506,
-      "tp2": 0.00345312,
-      "sl": 0.003524,
-      "strength": 32,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 1.97,
-      "close_price": 0.003526,
-      "taken_at": "2026-03-17 09:44:17",
-      "closed_at": "2026-03-17 12:42:22"
     }
   ]
 }
