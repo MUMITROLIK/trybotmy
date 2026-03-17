@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T17:41:57.985615+00:00",
+  "updated_at": "2026-03-17T17:43:04.220834+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T17:40:57Z",
+    "last_ok": "2026-03-17T17:42:04Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -9,15 +9,15 @@
     "auto_take": true
   },
   "stats": {
-    "total": 358,
+    "total": 359,
     "wins": 96,
     "losses": 14,
-    "active": 23,
+    "active": 24,
     "winrate": 87.3
   },
   "trade_stats": {
     "open": 55,
-    "pending": 16,
+    "pending": 17,
     "wins": 85,
     "losses": 52,
     "total_pnl": 91.04,
@@ -512,6 +512,28 @@
       ],
       "news": null,
       "created_at": "2026-03-17 17:23:13",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 397,
+      "symbol": "FARTCOINUSDT",
+      "direction": "LONG",
+      "entry": 0.20159364,
+      "tp1": 0.206029,
+      "tp2": 0.210465,
+      "sl": 0.197562,
+      "strength": 40,
+      "reasons": [
+        "MACD бычий (hist=0.00073)",
+        "EMA20 > EMA50 (golden cross) 🌟",
+        "Стакан: перевес bid (+0.06)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "CVD положительный (+0.5%)",
+        "Doji (1h) — нерешительность",
+        "📌 Лимитный вход @ 0.201594 (откат к EMA20)"
+      ],
+      "news": null,
+      "created_at": "2026-03-17 17:42:51",
       "status": "ACTIVE"
     }
   ],
@@ -3196,6 +3218,27 @@
         "МТФ: все 4 таймфрейма согласны ✅✅",
         "CVD положительный (+0.8%)",
         "📌 Лимитный вход @ 128.864 (откат к EMA20)"
+      ]
+    },
+    {
+      "id": 251,
+      "symbol": "FARTCOINUSDT",
+      "direction": "LONG",
+      "entry": 0.20159364,
+      "tp1": 0.206029,
+      "tp2": 0.210465,
+      "sl": 0.197562,
+      "strength": 40,
+      "taken_at": null,
+      "status": "PENDING",
+      "reasons": [
+        "MACD бычий (hist=0.00073)",
+        "EMA20 > EMA50 (golden cross) 🌟",
+        "Стакан: перевес bid (+0.06)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "CVD положительный (+0.5%)",
+        "Doji (1h) — нерешительность",
+        "📌 Лимитный вход @ 0.201594 (откат к EMA20)"
       ]
     }
   ],
@@ -5924,6 +5967,20 @@
       "tp2": 134.01822,
       "sl": 126.2864,
       "strength": 44,
+      "status": "PENDING",
+      "pnl_pct": 0,
+      "close_price": null,
+      "taken_at": null,
+      "closed_at": null
+    },
+    {
+      "symbol": "FARTCOINUSDT",
+      "direction": "LONG",
+      "entry": 0.20159364,
+      "tp1": 0.206029,
+      "tp2": 0.210465,
+      "sl": 0.197562,
+      "strength": 40,
       "status": "PENDING",
       "pnl_pct": 0,
       "close_price": null,
