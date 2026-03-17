@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T19:48:03.382286+00:00",
+  "updated_at": "2026-03-17T19:48:33.743221+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T19:47:03Z",
+    "last_ok": "2026-03-17T19:48:08Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -11,17 +11,17 @@
   "stats": {
     "total": 366,
     "wins": 99,
-    "losses": 18,
-    "active": 19,
-    "winrate": 84.6
+    "losses": 19,
+    "active": 18,
+    "winrate": 83.9
   },
   "trade_stats": {
-    "open": 54,
+    "open": 53,
     "pending": 15,
     "wins": 91,
-    "losses": 64,
-    "total_pnl": 83.73,
-    "winrate": 58.7
+    "losses": 65,
+    "total_pnl": 81.68,
+    "winrate": 58.3
   },
   "fear_greed": {
     "value": 28,
@@ -236,26 +236,6 @@
       ],
       "news": null,
       "created_at": "2026-03-17 16:39:25",
-      "status": "ACTIVE"
-    },
-    {
-      "id": 389,
-      "symbol": "GRASSUSDT",
-      "direction": "LONG",
-      "entry": 0.44334446,
-      "tp1": 0.453298,
-      "tp2": 0.463252,
-      "sl": 0.434478,
-      "strength": 37,
-      "reasons": [
-        "MACD бычий (hist=0.00125)",
-        "EMA20 > EMA50 (golden cross) 🌟",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +1.5% + цена ↑",
-        "📌 Лимитный вход @ 0.443344 (откат к EMA20)"
-      ],
-      "news": null,
-      "created_at": "2026-03-17 16:43:16",
       "status": "ACTIVE"
     },
     {
@@ -572,6 +552,24 @@
       ]
     },
     {
+      "symbol": "GRASSUSDT",
+      "direction": "LONG",
+      "entry": 0.44334446,
+      "tp1": 0.453298,
+      "tp2": 0.463252,
+      "sl": 0.434478,
+      "strength": 37,
+      "status": "SL",
+      "created_at": "2026-03-17 16:43:16",
+      "reasons": [
+        "MACD бычий (hist=0.00125)",
+        "EMA20 > EMA50 (golden cross) 🌟",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +1.5% + цена ↑",
+        "📌 Лимитный вход @ 0.443344 (откат к EMA20)"
+      ]
+    },
+    {
       "symbol": "TRIAUSDT",
       "direction": "LONG",
       "entry": 0.03334345,
@@ -803,26 +801,6 @@
         "OI растёт +5.5% + цена ↑",
         "CVD положительный (-0.3%)",
         "📌 Лимитный вход @ 0.00603651 (откат к EMA20)"
-      ]
-    },
-    {
-      "symbol": "CFGUSDT",
-      "direction": "SHORT",
-      "entry": 0.15970567,
-      "tp1": 0.155013,
-      "tp2": 0.15032,
-      "sl": 0.16346,
-      "strength": 49,
-      "status": "TP1",
-      "created_at": "2026-03-17 16:33:30",
-      "reasons": [
-        "MACD медвежий (hist=-0.00020)",
-        "Цена < EMA20 < EMA50",
-        "Стакан: давление продажи (-0.21)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +11.1% + цена ↓",
-        "CVD падает (-8.9%) — продажи усиливаются 📉",
-        "📌 Лимитный вход @ 0.159706 (откат к EMA20)"
       ]
     }
   ],
@@ -1761,25 +1739,6 @@
         "OI растёт +11.1% + цена ↓",
         "CVD падает (-8.4%) — продажи усиливаются 📉",
         "📌 Лимитный вход @ 0.159791 (откат к EMA20)"
-      ]
-    },
-    {
-      "id": 243,
-      "symbol": "GRASSUSDT",
-      "direction": "LONG",
-      "entry": 0.44334446,
-      "tp1": 0.453298,
-      "tp2": 0.463252,
-      "sl": 0.434478,
-      "strength": 37,
-      "taken_at": "2026-03-17 17:00:28",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00125)",
-        "EMA20 > EMA50 (golden cross) 🌟",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +1.5% + цена ↑",
-        "📌 Лимитный вход @ 0.443344 (откат к EMA20)"
       ]
     },
     {
@@ -2919,6 +2878,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "GRASSUSDT",
+      "direction": "LONG",
+      "entry": 0.44334446,
+      "tp1": 0.453298,
+      "tp2": 0.463252,
+      "sl": 0.434478,
+      "strength": 37,
+      "status": "SL",
+      "pnl_pct": -2.05,
+      "close_price": 0.43425,
+      "taken_at": "2026-03-17 17:00:28",
+      "closed_at": "2026-03-17 19:48:33"
+    },
     {
       "symbol": "BCHUSDT",
       "direction": "SHORT",
@@ -5699,20 +5672,6 @@
       "tp2": 0.298135,
       "sl": 0.280935,
       "strength": 40,
-      "status": "PENDING",
-      "pnl_pct": 0,
-      "close_price": null,
-      "taken_at": null,
-      "closed_at": null
-    },
-    {
-      "symbol": "CRCLUSDT",
-      "direction": "LONG",
-      "entry": 128.86367352,
-      "tp1": 131.440947,
-      "tp2": 134.01822,
-      "sl": 126.2864,
-      "strength": 44,
       "status": "PENDING",
       "pnl_pct": 0,
       "close_price": null,
