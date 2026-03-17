@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T19:55:14.227214+00:00",
+  "updated_at": "2026-03-17T19:56:07.515450+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T19:54:38Z",
+    "last_ok": "2026-03-17T19:55:18Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -16,12 +16,12 @@
     "winrate": 83.9
   },
   "trade_stats": {
-    "open": 48,
+    "open": 46,
     "pending": 15,
-    "wins": 94,
+    "wins": 96,
     "losses": 67,
-    "total_pnl": 81.95,
-    "winrate": 58.4
+    "total_pnl": 84.31,
+    "winrate": 58.9
   },
   "fear_greed": {
     "value": 28,
@@ -805,26 +805,6 @@
     }
   ],
   "trades_open": [
-    {
-      "id": 95,
-      "symbol": "DOGEUSDT",
-      "direction": "LONG",
-      "entry": 0.10011,
-      "tp1": 0.102112,
-      "tp2": 0.104114,
-      "sl": 0.098108,
-      "strength": 40,
-      "taken_at": "2026-03-17 11:56:00",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=36 (перепроданность)",
-        "MACD бычий (hist=0.00000)",
-        "BB нижняя зона (14%)",
-        "Стакан: давление покупки (+0.18)",
-        "МТФ: 1h, 4h согласны",
-        "CVD положительный (-0.2%)"
-      ]
-    },
     {
       "id": 100,
       "symbol": "TRUMPUSDT",
@@ -2756,9 +2736,10 @@
         "OI растёт +2.5% + цена ↑",
         "📌 Лимитный вход @ 0.520037 (откат к EMA20)"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 245,
       "symbol": "ANIMEUSDT",
       "direction": "SHORT",
       "entry": 0.00592561,
@@ -2766,19 +2747,26 @@
       "tp2": 0.005663,
       "sl": 0.005788,
       "strength": 29,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 2.29,
+      "close_price": 0.00579,
       "taken_at": "2026-03-17 18:58:20",
-      "status": "TP1_HIT",
-      "reasons": [
-        "MACD медвежий (hist=-0.00002)",
-        "Цена < EMA20 < EMA50",
-        "Стакан: сильное давление продажи (-0.25)",
-        "МТФ: 5m, 15m согласны",
-        "OI падает (лонги закрываются)",
-        "📌 Лимитный вход @ 0.00592561 (откат к EMA20)"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-17 19:56:07"
+    },
+    {
+      "symbol": "DOGEUSDT",
+      "direction": "LONG",
+      "entry": 0.10011,
+      "tp1": 0.102112,
+      "tp2": 0.104114,
+      "sl": 0.098108,
+      "strength": 40,
+      "status": "TIMEOUT",
+      "pnl_pct": 0.07,
+      "close_price": 0.100185,
+      "taken_at": "2026-03-17 11:56:00",
+      "closed_at": "2026-03-17 19:56:06"
+    },
     {
       "symbol": "BTCUSDT",
       "direction": "LONG",
@@ -5545,34 +5533,6 @@
       "tp2": 76.850676,
       "sl": 81.653844,
       "strength": 28,
-      "status": "PENDING",
-      "pnl_pct": 0,
-      "close_price": null,
-      "taken_at": null,
-      "closed_at": null
-    },
-    {
-      "symbol": "VANRYUSDT",
-      "direction": "LONG",
-      "entry": 0.00603651,
-      "tp1": 0.006314,
-      "tp2": 0.006591,
-      "sl": 0.005815,
-      "strength": 40,
-      "status": "PENDING",
-      "pnl_pct": 0,
-      "close_price": null,
-      "taken_at": null,
-      "closed_at": null
-    },
-    {
-      "symbol": "VANRYUSDT",
-      "direction": "LONG",
-      "entry": 0.00603613,
-      "tp1": 0.006314,
-      "tp2": 0.006591,
-      "sl": 0.005814,
-      "strength": 42,
       "status": "PENDING",
       "pnl_pct": 0,
       "close_price": null,
