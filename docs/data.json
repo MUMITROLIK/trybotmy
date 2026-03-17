@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T17:20:06.818988+00:00",
+  "updated_at": "2026-03-17T17:21:12.615739+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T17:19:04Z",
+    "last_ok": "2026-03-17T17:20:12Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -16,12 +16,12 @@
     "winrate": 87.0
   },
   "trade_stats": {
-    "open": 57,
+    "open": 56,
     "pending": 15,
-    "wins": 82,
+    "wins": 83,
     "losses": 50,
-    "total_pnl": 87.88,
-    "winrate": 62.1
+    "total_pnl": 88.04,
+    "winrate": 62.4
   },
   "fear_greed": {
     "value": 28,
@@ -909,25 +909,6 @@
     }
   ],
   "trades_open": [
-    {
-      "id": 55,
-      "symbol": "XAUUSDT",
-      "direction": "SHORT",
-      "entry": 5014.98,
-      "tp1": 4914.6804,
-      "tp2": 4814.3808,
-      "sl": 5115.2796,
-      "strength": 30,
-      "taken_at": "2026-03-17 09:20:04",
-      "status": "OPEN",
-      "reasons": [
-        "MACD медвежий (hist=-0.80175)",
-        "Цена ниже EMA20",
-        "Стакан: сильное давление продажи (-0.77)",
-        "МТФ: 5m, 4h согласны",
-        "OI падает (лонги закрываются)"
-      ]
-    },
     {
       "id": 56,
       "symbol": "AVAXUSDT",
@@ -3257,6 +3238,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "XAUUSDT",
+      "direction": "SHORT",
+      "entry": 5014.98,
+      "tp1": 4914.6804,
+      "tp2": 4814.3808,
+      "sl": 5115.2796,
+      "strength": 30,
+      "status": "TIMEOUT",
+      "pnl_pct": 0.16,
+      "close_price": 5006.955,
+      "taken_at": "2026-03-17 09:20:04",
+      "closed_at": "2026-03-17 17:20:18"
+    },
     {
       "symbol": "ROBOUSDT",
       "direction": "SHORT",
