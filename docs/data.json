@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T18:46:00.113727+00:00",
+  "updated_at": "2026-03-17T18:47:05.634806+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T18:45:34Z",
+    "last_ok": "2026-03-17T18:46:05Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -16,12 +16,12 @@
     "winrate": 85.2
   },
   "trade_stats": {
-    "open": 50,
+    "open": 49,
     "pending": 15,
     "wins": 89,
-    "losses": 59,
-    "total_pnl": 84.77,
-    "winrate": 60.1
+    "losses": 60,
+    "total_pnl": 84.28,
+    "winrate": 59.7
   },
   "fear_greed": {
     "value": 28,
@@ -847,28 +847,6 @@
     }
   ],
   "trades_open": [
-    {
-      "id": 77,
-      "symbol": "XMRUSDT",
-      "direction": "SHORT",
-      "entry": 371.67,
-      "tp1": 364.2366,
-      "tp2": 356.8032,
-      "sl": 379.1034,
-      "strength": 31,
-      "taken_at": "2026-03-17 10:46:21",
-      "status": "OPEN",
-      "reasons": [
-        "MACD медвежий (hist=-0.49423)",
-        "Цена ниже EMA20",
-        "Стакан: сильное давление продажи (-0.30)",
-        "МТФ: только 1 таймфрейм согласен",
-        "OI падает (лонги закрываются)",
-        "CVD отрицательный (-2.0%)",
-        "BTC контекст: -1.5% за 12ч 📉",
-        "📌 Лимитный вход @ 373.993 (откат к EMA20)"
-      ]
-    },
     {
       "id": 85,
       "symbol": "TRXUSDT",
@@ -3018,6 +2996,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "XMRUSDT",
+      "direction": "SHORT",
+      "entry": 371.67,
+      "tp1": 364.2366,
+      "tp2": 356.8032,
+      "sl": 379.1034,
+      "strength": 31,
+      "status": "TIMEOUT",
+      "pnl_pct": -0.49,
+      "close_price": 373.505,
+      "taken_at": "2026-03-17 10:46:21",
+      "closed_at": "2026-03-17 18:46:23"
+    },
     {
       "symbol": "XPLUSDT",
       "direction": "SHORT",
@@ -5798,20 +5790,6 @@
       "tp2": 0.005663,
       "sl": 0.006044,
       "strength": 29,
-      "status": "PENDING",
-      "pnl_pct": 0,
-      "close_price": null,
-      "taken_at": null,
-      "closed_at": null
-    },
-    {
-      "symbol": "ENSOUSDT",
-      "direction": "SHORT",
-      "entry": 1.17419917,
-      "tp1": 1.150715,
-      "tp2": 1.127231,
-      "sl": 1.197683,
-      "strength": 49,
       "status": "PENDING",
       "pnl_pct": 0,
       "close_price": null,
