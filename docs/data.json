@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T20:31:38.110280+00:00",
+  "updated_at": "2026-03-17T20:32:33.391518+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T20:30:38Z",
+    "last_ok": "2026-03-17T20:31:43Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -13,7 +13,7 @@
     "total": 367,
     "wins": 99,
     "losses": 20,
-    "active": 11,
+    "active": 10,
     "winrate": 83.2
   },
   "trade_stats": {
@@ -30,26 +30,6 @@
     "emoji": "😨"
   },
   "signals": [
-    {
-      "id": 371,
-      "symbol": "OPNUSDT",
-      "direction": "SHORT",
-      "entry": 0.2973,
-      "tp1": 0.290196,
-      "tp2": 0.283093,
-      "sl": 0.303246,
-      "strength": 30,
-      "reasons": [
-        "RSI=56 (нейтральный↑)",
-        "BB верхняя зона (76%)",
-        "EMA20 < EMA50",
-        "МТФ: 15m, 1h, 4h согласны",
-        "OI растёт +2.9% + цена ↓"
-      ],
-      "news": null,
-      "created_at": "2026-03-17 16:31:30",
-      "status": "ACTIVE"
-    },
     {
       "id": 373,
       "symbol": "XAGUSDT",
