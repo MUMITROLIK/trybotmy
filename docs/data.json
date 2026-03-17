@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T15:06:37.374819+00:00",
+  "updated_at": "2026-03-17T15:07:09.005391+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T15:05:38Z",
+    "last_ok": "2026-03-17T15:06:41Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,18 +10,18 @@
   },
   "stats": {
     "total": 281,
-    "wins": 38,
+    "wins": 39,
     "losses": 3,
-    "active": 19,
-    "winrate": 92.7
+    "active": 18,
+    "winrate": 92.9
   },
   "trade_stats": {
-    "open": 76,
+    "open": 75,
     "pending": 4,
-    "wins": 59,
+    "wins": 60,
     "losses": 34,
-    "total_pnl": 87.29,
-    "winrate": 60.8
+    "total_pnl": 88.93,
+    "winrate": 61.2
   },
   "fear_greed": {
     "value": 28,
@@ -276,27 +276,6 @@
       "status": "ACTIVE"
     },
     {
-      "id": 309,
-      "symbol": "FARTCOINUSDT",
-      "direction": "LONG",
-      "entry": 0.1985,
-      "tp1": 0.20247,
-      "tp2": 0.20644,
-      "sl": 0.19453,
-      "strength": 30,
-      "reasons": [
-        "RSI=36 (перепроданность)",
-        "BB нижняя зона (9%)",
-        "Стакан: перевес bid (+0.07)",
-        "МТФ: 1h, 4h согласны",
-        "CVD положительный (-1.8%)",
-        "Doji (1h) — нерешительность"
-      ],
-      "news": null,
-      "created_at": "2026-03-17 14:02:34",
-      "status": "ACTIVE"
-    },
-    {
       "id": 311,
       "symbol": "FILUSDT",
       "direction": "SHORT",
@@ -503,6 +482,25 @@
         "МТФ: 5m, 1h, 4h согласны",
         "OI растёт +1.2% + цена ↑",
         "Hammer (1h) 🔨"
+      ]
+    },
+    {
+      "symbol": "FARTCOINUSDT",
+      "direction": "LONG",
+      "entry": 0.1985,
+      "tp1": 0.20247,
+      "tp2": 0.20644,
+      "sl": 0.19453,
+      "strength": 30,
+      "status": "TP1",
+      "created_at": "2026-03-17 14:02:34",
+      "reasons": [
+        "RSI=36 (перепроданность)",
+        "BB нижняя зона (9%)",
+        "Стакан: перевес bid (+0.07)",
+        "МТФ: 1h, 4h согласны",
+        "CVD положительный (-1.8%)",
+        "Doji (1h) — нерешительность"
       ]
     },
     {
@@ -786,25 +784,6 @@
         "МТФ: только 1 таймфрейм согласен",
         "Doji (1h) — нерешительность",
         "📌 Лимитный вход @ 277.333 (откат к EMA20)"
-      ]
-    },
-    {
-      "symbol": "KITEUSDT",
-      "direction": "SHORT",
-      "entry": 0.19812892,
-      "tp1": 0.194166,
-      "tp2": 0.190204,
-      "sl": 0.202091,
-      "strength": 37,
-      "status": "TP1",
-      "created_at": "2026-03-17 12:56:26",
-      "reasons": [
-        "MACD медвежий (hist=-0.00022)",
-        "Цена < EMA20 < EMA50",
-        "Стакан: давление продажи (-0.23)",
-        "МТФ: 5m, 15m, 1h согласны",
-        "CVD падает (-11.3%) — продажи усиливаются 📉",
-        "📌 Лимитный вход @ 0.198129 (откат к EMA20)"
       ]
     }
   ],
@@ -2176,26 +2155,6 @@
       ]
     },
     {
-      "id": 163,
-      "symbol": "FARTCOINUSDT",
-      "direction": "LONG",
-      "entry": 0.1985,
-      "tp1": 0.20247,
-      "tp2": 0.20644,
-      "sl": 0.19453,
-      "strength": 30,
-      "taken_at": "2026-03-17 14:02:34",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=36 (перепроданность)",
-        "BB нижняя зона (9%)",
-        "Стакан: перевес bid (+0.07)",
-        "МТФ: 1h, 4h согласны",
-        "CVD положительный (-1.8%)",
-        "Doji (1h) — нерешительность"
-      ]
-    },
-    {
       "id": 165,
       "symbol": "FILUSDT",
       "direction": "SHORT",
@@ -2381,6 +2340,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "FARTCOINUSDT",
+      "direction": "LONG",
+      "entry": 0.1985,
+      "tp1": 0.20247,
+      "tp2": 0.20644,
+      "sl": 0.20274999999999999,
+      "strength": 30,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 1.64,
+      "close_price": 0.20174999999999998,
+      "taken_at": "2026-03-17 14:02:34",
+      "closed_at": "2026-03-17 15:07:08"
+    },
     {
       "symbol": "BEATUSDT",
       "direction": "LONG",
