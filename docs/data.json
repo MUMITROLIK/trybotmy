@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T23:07:56.864138+00:00",
+  "updated_at": "2026-03-17T23:08:31.665015+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T23:06:56Z",
+    "last_ok": "2026-03-17T23:08:01Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,15 +10,15 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 395,
+    "total": 396,
     "wins": 111,
     "losses": 22,
-    "active": 19,
+    "active": 20,
     "winrate": 83.5
   },
   "trade_stats": {
     "open": 19,
-    "pending": 2,
+    "pending": 3,
     "wins": 121,
     "losses": 85,
     "total_pnl": 109.26,
@@ -444,6 +444,29 @@
       ],
       "news": null,
       "created_at": "2026-03-17 22:42:32",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 434,
+      "symbol": "1000BONKUSDT",
+      "direction": "LONG",
+      "entry": 0.00660732,
+      "tp1": 0.006739,
+      "tp2": 0.006872,
+      "sl": 0.006475,
+      "strength": 41,
+      "reasons": [
+        "MACD бычий (hist=0.00001)",
+        "Цена > EMA20 > EMA50",
+        "Стакан: давление покупки (+0.11)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +2.4% + цена ↑",
+        "CVD положительный (+3.1%)",
+        "⚠️ Funding через 52м",
+        "📌 Лимитный вход @ 0.00660732 (откат к EMA20)"
+      ],
+      "news": null,
+      "created_at": "2026-03-17 23:08:12",
       "status": "ACTIVE"
     }
   ],
@@ -1274,9 +1297,45 @@
         "CVD положительный (+2.3%)",
         "📌 Лимитный вход @ 0.0111789 (откат к EMA20)"
       ]
+    },
+    {
+      "id": 288,
+      "symbol": "1000BONKUSDT",
+      "direction": "LONG",
+      "entry": 0.00660732,
+      "tp1": 0.006739,
+      "tp2": 0.006872,
+      "sl": 0.006475,
+      "strength": 41,
+      "taken_at": "2026-03-17T23:08:12.900543",
+      "status": "PENDING",
+      "reasons": [
+        "MACD бычий (hist=0.00001)",
+        "Цена > EMA20 > EMA50",
+        "Стакан: давление покупки (+0.11)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +2.4% + цена ↑",
+        "CVD положительный (+3.1%)",
+        "⚠️ Funding через 52м",
+        "📌 Лимитный вход @ 0.00660732 (откат к EMA20)"
+      ]
     }
   ],
   "trades_history": [
+    {
+      "symbol": "1000BONKUSDT",
+      "direction": "LONG",
+      "entry": 0.00660732,
+      "tp1": 0.006739,
+      "tp2": 0.006872,
+      "sl": 0.006475,
+      "strength": 41,
+      "status": "PENDING",
+      "pnl_pct": 0,
+      "close_price": null,
+      "taken_at": "2026-03-17T23:08:12.900543",
+      "closed_at": null
+    },
     {
       "symbol": "XPLUSDT",
       "direction": "LONG",
@@ -4062,20 +4121,6 @@
       "close_price": 0.5257499999999999,
       "taken_at": "2026-03-17 12:25:47",
       "closed_at": "2026-03-17 13:19:50"
-    },
-    {
-      "symbol": "ASTERUSDT",
-      "direction": "LONG",
-      "entry": 0.7499,
-      "tp1": 0.764898,
-      "tp2": 0.779896,
-      "sl": 0.7676499999999999,
-      "strength": 40,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 1.97,
-      "close_price": 0.76465,
-      "taken_at": "2026-03-17 13:06:43",
-      "closed_at": "2026-03-17 13:13:04"
     }
   ]
 }
