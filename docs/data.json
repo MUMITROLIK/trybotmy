@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T20:12:23.335151+00:00",
+  "updated_at": "2026-03-17T20:13:10.880226+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T20:11:56Z",
+    "last_ok": null,
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -16,12 +16,12 @@
     "winrate": 83.9
   },
   "trade_stats": {
-    "open": 29,
+    "open": 27,
     "pending": 15,
-    "wins": 105,
+    "wins": 107,
     "losses": 76,
-    "total_pnl": 89.31,
-    "winrate": 58.0
+    "total_pnl": 95.48,
+    "winrate": 58.5
   },
   "fear_greed": {
     "value": 28,
@@ -1160,27 +1160,6 @@
       ]
     },
     {
-      "id": 248,
-      "symbol": "CFGUSDT",
-      "direction": "SHORT",
-      "entry": 0.15930219,
-      "tp1": 0.154781,
-      "tp2": 0.150259,
-      "sl": 0.162919,
-      "strength": 49,
-      "taken_at": "2026-03-17 19:22:00",
-      "status": "OPEN",
-      "reasons": [
-        "MACD медвежий (hist=-0.00020)",
-        "Цена < EMA20 < EMA50",
-        "Стакан: давление продажи (-0.17)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +11.1% + цена ↓",
-        "CVD падает (-9.1%) — продажи усиливаются 📉",
-        "📌 Лимитный вход @ 0.159302 (откат к EMA20)"
-      ]
-    },
-    {
       "id": 253,
       "symbol": "HYPERUSDT",
       "direction": "LONG",
@@ -2275,28 +2254,29 @@
       ]
     },
     {
-      "id": 237,
+      "id": 248,
       "symbol": "CFGUSDT",
       "direction": "SHORT",
-      "entry": 0.15977231,
-      "tp1": 0.155079,
-      "tp2": 0.150387,
-      "sl": 0.15455,
+      "entry": 0.15930219,
+      "tp1": 0.154781,
+      "tp2": 0.150259,
+      "sl": 0.15475,
       "strength": 49,
-      "taken_at": "2026-03-17 19:25:16",
+      "taken_at": "2026-03-17 19:22:00",
       "status": "TP1_HIT",
       "reasons": [
-        "MACD медвежий (hist=-0.00016)",
+        "MACD медвежий (hist=-0.00020)",
         "Цена < EMA20 < EMA50",
-        "Стакан: давление продажи (-0.12)",
+        "Стакан: давление продажи (-0.17)",
         "МТФ: все 4 таймфрейма согласны ✅✅",
         "OI растёт +11.1% + цена ↓",
-        "CVD падает (-8.7%) — продажи усиливаются 📉",
-        "📌 Лимитный вход @ 0.159772 (откат к EMA20)"
+        "CVD падает (-9.1%) — продажи усиливаются 📉",
+        "📌 Лимитный вход @ 0.159302 (откат к EMA20)"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 240,
       "symbol": "CFGUSDT",
       "direction": "SHORT",
       "entry": 0.15979134,
@@ -2304,20 +2284,26 @@
       "tp2": 0.150406,
       "sl": 0.15475,
       "strength": 46,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 3.09,
+      "close_price": 0.15485,
       "taken_at": "2026-03-17 19:25:16",
-      "status": "TP1_HIT",
-      "reasons": [
-        "MACD медвежий (hist=-0.00015)",
-        "Цена < EMA20 < EMA50",
-        "Объём x1.9 🔥",
-        "МТФ: 5m, 15m, 4h согласны",
-        "OI растёт +11.1% + цена ↓",
-        "CVD падает (-8.4%) — продажи усиливаются 📉",
-        "📌 Лимитный вход @ 0.159791 (откат к EMA20)"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-17 20:12:31"
+    },
+    {
+      "symbol": "CFGUSDT",
+      "direction": "SHORT",
+      "entry": 0.15977231,
+      "tp1": 0.155079,
+      "tp2": 0.150387,
+      "sl": 0.15455,
+      "strength": 49,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 3.08,
+      "close_price": 0.15485,
+      "taken_at": "2026-03-17 19:25:16",
+      "closed_at": "2026-03-17 20:12:29"
+    },
     {
       "symbol": "CFGUSDT",
       "direction": "SHORT",
@@ -5084,34 +5070,6 @@
       "tp2": 0.035827,
       "sl": 0.031906,
       "strength": 46,
-      "status": "PENDING",
-      "pnl_pct": 0,
-      "close_price": null,
-      "taken_at": null,
-      "closed_at": null
-    },
-    {
-      "symbol": "LYNUSDT",
-      "direction": "SHORT",
-      "entry": 0.06017175,
-      "tp1": 0.057988,
-      "tp2": 0.055805,
-      "sl": 0.061919,
-      "strength": 31,
-      "status": "PENDING",
-      "pnl_pct": 0,
-      "close_price": null,
-      "taken_at": null,
-      "closed_at": null
-    },
-    {
-      "symbol": "TRIAUSDT",
-      "direction": "LONG",
-      "entry": 0.03303452,
-      "tp1": 0.034438,
-      "tp2": 0.035842,
-      "sl": 0.031912,
-      "strength": 59,
       "status": "PENDING",
       "pnl_pct": 0,
       "close_price": null,
