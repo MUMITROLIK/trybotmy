@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T12:10:25.665332+00:00",
+  "updated_at": "2026-03-17T12:10:56.304296+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T12:09:25Z",
+    "last_ok": null,
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,10 +17,10 @@
   },
   "trade_stats": {
     "open": 69,
-    "wins": 23,
-    "losses": 8,
-    "total_pnl": 69.22,
-    "winrate": 74.2
+    "wins": 32,
+    "losses": 14,
+    "total_pnl": 68.05,
+    "winrate": 69.6
   },
   "fear_greed": {
     "value": 28,
@@ -2394,6 +2394,118 @@
       "closed_at": "2026-03-17 08:41:19"
     },
     {
+      "symbol": "UNIUSDT",
+      "direction": "LONG",
+      "entry": 4.103,
+      "tp1": 4.229857,
+      "tp2": 4.356714,
+      "sl": 4.02094,
+      "strength": 53,
+      "status": "TIMEOUT",
+      "pnl_pct": 1.62,
+      "close_price": 4.169499999999999,
+      "taken_at": "2026-03-16 13:53:11",
+      "closed_at": "2026-03-16 21:53:11"
+    },
+    {
+      "symbol": "LTCUSDT",
+      "direction": "LONG",
+      "entry": 58.09,
+      "tp1": 59.2518,
+      "tp2": 60.4136,
+      "sl": 56.9282,
+      "strength": 57,
+      "status": "TIMEOUT",
+      "pnl_pct": 1.11,
+      "close_price": 58.735,
+      "taken_at": "2026-03-16 13:38:47",
+      "closed_at": "2026-03-16 21:49:25"
+    },
+    {
+      "symbol": "DOGEUSDT",
+      "direction": "LONG",
+      "entry": 0.10125,
+      "tp1": 0.104301,
+      "tp2": 0.107353,
+      "sl": 0.099225,
+      "strength": 63,
+      "status": "TIMEOUT",
+      "pnl_pct": 0.28,
+      "close_price": 0.101535,
+      "taken_at": "2026-03-16 13:39:56",
+      "closed_at": "2026-03-16 21:49:25"
+    },
+    {
+      "symbol": "SUIUSDT",
+      "direction": "LONG",
+      "entry": 1.0555,
+      "tp1": 1.087971,
+      "tp2": 1.120443,
+      "sl": 1.03439,
+      "strength": 52,
+      "status": "TIMEOUT",
+      "pnl_pct": 0.9,
+      "close_price": 1.0650499999999998,
+      "taken_at": "2026-03-16 13:41:53",
+      "closed_at": "2026-03-16 21:49:25"
+    },
+    {
+      "symbol": "AAVEUSDT",
+      "direction": "LONG",
+      "entry": 121.07,
+      "tp1": 124.25,
+      "tp2": 127.43,
+      "sl": 118.6486,
+      "strength": 63,
+      "status": "TIMEOUT",
+      "pnl_pct": 1.5,
+      "close_price": 122.88,
+      "taken_at": "2026-03-16 13:45:20",
+      "closed_at": "2026-03-16 21:49:25"
+    },
+    {
+      "symbol": "APRUSDT",
+      "direction": "LONG",
+      "entry": 0.17553,
+      "tp1": 0.189572,
+      "tp2": 0.201859,
+      "sl": 0.168509,
+      "strength": 54,
+      "status": "TIMEOUT",
+      "pnl_pct": 2.43,
+      "close_price": 0.1798,
+      "taken_at": "2026-03-16 13:15:34",
+      "closed_at": "2026-03-16 21:49:21"
+    },
+    {
+      "symbol": "BTCUSDT",
+      "direction": "LONG",
+      "entry": 73774.1,
+      "tp1": 75249.582,
+      "tp2": 76725.064,
+      "sl": 72298.618,
+      "strength": 57,
+      "status": "TIMEOUT",
+      "pnl_pct": 0.3,
+      "close_price": 73992.05,
+      "taken_at": "2026-03-16 12:37:46",
+      "closed_at": "2026-03-16 20:37:54"
+    },
+    {
+      "symbol": "BNBUSDT",
+      "direction": "LONG",
+      "entry": 679.86,
+      "tp1": 693.4572,
+      "tp2": 707.0544,
+      "sl": 666.2628,
+      "strength": 50,
+      "status": "TIMEOUT",
+      "pnl_pct": -0.59,
+      "close_price": 675.825,
+      "taken_at": "2026-03-16 12:35:05",
+      "closed_at": "2026-03-16 20:35:19"
+    },
+    {
       "symbol": "FILUSDT",
       "direction": "LONG",
       "entry": 0.95,
@@ -2406,6 +2518,20 @@
       "close_price": 0.9864999999999999,
       "taken_at": "2026-03-16 16:32:22",
       "closed_at": "2026-03-16 19:09:15"
+    },
+    {
+      "symbol": "TAOUSDT",
+      "direction": "LONG",
+      "entry": 287.33,
+      "tp1": 302.25,
+      "tp2": 317.17,
+      "sl": 278.378,
+      "strength": 54,
+      "status": "SL",
+      "pnl_pct": -3.61,
+      "close_price": 276.945,
+      "taken_at": "2026-03-16 12:09:53",
+      "closed_at": "2026-03-16 18:43:43"
     },
     {
       "symbol": "XRPUSDT",
@@ -2478,6 +2604,20 @@
       "closed_at": "2026-03-16 17:32:10"
     },
     {
+      "symbol": "BCHUSDT",
+      "direction": "LONG",
+      "entry": 473.6,
+      "tp1": 483.072,
+      "tp2": 492.544,
+      "sl": 464.128,
+      "strength": 61,
+      "status": "MANUAL",
+      "pnl_pct": 1.08,
+      "close_price": 478.7,
+      "taken_at": "2026-03-16 11:14:28",
+      "closed_at": "2026-03-16 16:52:11"
+    },
+    {
       "symbol": "TRUMPUSDT",
       "direction": "LONG",
       "entry": 3.8,
@@ -2486,10 +2626,80 @@
       "sl": 3.674857,
       "strength": 60,
       "status": "MANUAL",
-      "pnl_pct": 0.0,
+      "pnl_pct": 0,
       "close_price": 0.0,
       "taken_at": "2026-03-16 13:56:26",
       "closed_at": "2026-03-16 16:44:44"
+    },
+    {
+      "symbol": "PUMPUSDT",
+      "direction": "LONG",
+      "entry": 0.002098,
+      "tp1": 0.002169,
+      "tp2": 0.00224,
+      "sl": 0.002055,
+      "strength": 53,
+      "status": "SL",
+      "pnl_pct": -2.12,
+      "close_price": 0.0020534999999999998,
+      "taken_at": "2026-03-16 13:42:13",
+      "closed_at": "2026-03-16 14:30:29"
+    },
+    {
+      "symbol": "SOLUSDT",
+      "direction": "LONG",
+      "entry": 94.81,
+      "tp1": 97.008571,
+      "tp2": 99.207143,
+      "sl": 92.9138,
+      "strength": 58,
+      "status": "SL",
+      "pnl_pct": -2.13,
+      "close_price": 92.795,
+      "taken_at": "2026-03-16 13:34:24",
+      "closed_at": "2026-03-16 14:30:28"
+    },
+    {
+      "symbol": "DOTUSDT",
+      "direction": "LONG",
+      "entry": 1.615,
+      "tp1": 1.681286,
+      "tp2": 1.747571,
+      "sl": 1.575229,
+      "strength": 55,
+      "status": "SL",
+      "pnl_pct": -2.57,
+      "close_price": 1.5735000000000001,
+      "taken_at": "2026-03-16 11:10:44",
+      "closed_at": "2026-03-16 14:30:26"
+    },
+    {
+      "symbol": "RIVERUSDT",
+      "direction": "LONG",
+      "entry": 25.188,
+      "tp1": 26.866286,
+      "tp2": 28.544571,
+      "sl": 24.181029,
+      "strength": 61,
+      "status": "SL",
+      "pnl_pct": -4.21,
+      "close_price": 24.1265,
+      "taken_at": "2026-03-16 12:11:42",
+      "closed_at": "2026-03-16 13:06:39"
+    },
+    {
+      "symbol": "FETUSDT",
+      "direction": "LONG",
+      "entry": 0.2161,
+      "tp1": 0.226243,
+      "tp2": 0.236386,
+      "sl": 0.210014,
+      "strength": 55,
+      "status": "TP1",
+      "pnl_pct": 4.84,
+      "close_price": 0.22655,
+      "taken_at": "2026-03-16 11:12:55",
+      "closed_at": "2026-03-16 12:18:21"
     }
   ]
 }
