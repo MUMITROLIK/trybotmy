@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T09:55:17.935552+00:00",
+  "updated_at": "2026-03-17T09:56:09.649497+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T09:54:52Z",
+    "last_ok": "2026-03-17T09:55:20Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -13,11 +13,11 @@
     "winrate": 93.3
   },
   "trade_stats": {
-    "open": 34,
+    "open": 33,
     "wins": 24,
-    "losses": 7,
-    "total_pnl": 59.55,
-    "winrate": 77.4
+    "losses": 8,
+    "total_pnl": 57.29,
+    "winrate": 75.0
   },
   "fear_greed": {
     "value": 50,
@@ -996,27 +996,6 @@
       ]
     },
     {
-      "id": 62,
-      "symbol": "RIVERUSDT",
-      "direction": "SHORT",
-      "entry": 23.183,
-      "tp1": 22.5454675,
-      "tp2": 21.9102533,
-      "sl": 23.693026,
-      "strength": 31,
-      "taken_at": "2026-03-17 09:38:39",
-      "status": "OPEN",
-      "reasons": [
-        "MACD медвежий (hist=-0.14754)",
-        "Цена ниже EMA20",
-        "Стакан: давление продажи (-0.14)",
-        "МТФ: только 1 таймфрейм согласен",
-        "OI растёт +3.2% + цена ↓",
-        "CVD отрицательный (+3.5%)",
-        "📌 Лимитный вход @ 23.3891 (откат к EMA20)"
-      ]
-    },
-    {
       "id": 63,
       "symbol": "VANRYUSDT",
       "direction": "SHORT",
@@ -1074,6 +1053,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "RIVERUSDT",
+      "direction": "SHORT",
+      "entry": 23.183,
+      "tp1": 22.5454675,
+      "tp2": 21.9102533,
+      "sl": 23.693026,
+      "strength": 31,
+      "status": "SL",
+      "pnl_pct": -2.26,
+      "close_price": 23.7065,
+      "taken_at": "2026-03-17 09:38:39",
+      "closed_at": "2026-03-17 09:56:09"
+    },
     {
       "symbol": "KITEUSDT",
       "direction": "SHORT",
