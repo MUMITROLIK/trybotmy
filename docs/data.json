@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T20:33:45.149458+00:00",
+  "updated_at": "2026-03-17T20:34:49.696126+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T20:32:38Z",
+    "last_ok": "2026-03-17T20:33:49Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 83.2
   },
   "trade_stats": {
-    "open": 22,
+    "open": 21,
     "pending": 15,
-    "wins": 109,
+    "wins": 110,
     "losses": 79,
-    "total_pnl": 92.94,
-    "winrate": 58.0
+    "total_pnl": 93.52,
+    "winrate": 58.2
   },
   "fear_greed": {
     "value": 28,
@@ -617,25 +617,6 @@
     }
   ],
   "trades_open": [
-    {
-      "id": 130,
-      "symbol": "VIRTUALUSDT",
-      "direction": "LONG",
-      "entry": 0.7785,
-      "tp1": 0.79407,
-      "tp2": 0.80964,
-      "sl": 0.76293,
-      "strength": 33,
-      "taken_at": "2026-03-17 12:34:09",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=34 (перепроданность)",
-        "BB нижняя полоса (пробой)",
-        "Стакан: давление покупки (+0.21)",
-        "МТФ: 1h, 4h согласны",
-        "CVD положительный (-6.9%)"
-      ]
-    },
     {
       "id": 134,
       "symbol": "ARBUSDT",
@@ -2076,6 +2057,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "VIRTUALUSDT",
+      "direction": "LONG",
+      "entry": 0.7785,
+      "tp1": 0.79407,
+      "tp2": 0.80964,
+      "sl": 0.76293,
+      "strength": 33,
+      "status": "TIMEOUT",
+      "pnl_pct": 0.58,
+      "close_price": 0.78305,
+      "taken_at": "2026-03-17 12:34:09",
+      "closed_at": "2026-03-17 20:34:15"
+    },
     {
       "symbol": "FETUSDT",
       "direction": "SHORT",
@@ -4861,20 +4856,6 @@
       "close_price": 0.50985,
       "taken_at": "2026-03-17 09:03:40",
       "closed_at": "2026-03-17 10:46:38"
-    },
-    {
-      "symbol": "OPNUSDT",
-      "direction": "SHORT",
-      "entry": 0.2974,
-      "tp1": 0.2911546,
-      "tp2": 0.28493894,
-      "sl": 0.303348,
-      "strength": 32,
-      "status": "SL",
-      "pnl_pct": -2.0,
-      "close_price": 0.30335,
-      "taken_at": "2026-03-17 10:06:41",
-      "closed_at": "2026-03-17 10:35:15"
     }
   ]
 }
