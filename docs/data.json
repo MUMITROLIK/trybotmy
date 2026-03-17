@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-03-17T08:45:19.474883+00:00",
+  "updated_at": "2026-03-17T08:46:34.141501+00:00",
   "stats": {
-    "total": 139,
+    "total": 142,
     "wins": 6,
     "losses": 1,
-    "active": 69,
+    "active": 70,
     "winrate": 85.7
   },
   "trade_stats": {
-    "open": 8,
+    "open": 11,
     "wins": 16,
     "losses": 7,
     "total_pnl": 16.17,
@@ -20,43 +20,6 @@
     "emoji": "😨"
   },
   "signals": [
-    {
-      "id": 106,
-      "symbol": "BNXUSDT",
-      "direction": "SHORT",
-      "entry": 2.0,
-      "tp1": 1.96,
-      "tp2": 1.92,
-      "sl": 2.04,
-      "strength": 23,
-      "reasons": [
-        "BB верхняя полоса (пробой)",
-        "МТФ: все 4 таймфрейма согласны ✅✅"
-      ],
-      "news": null,
-      "created_at": "2026-03-17 08:35:05",
-      "status": "ACTIVE"
-    },
-    {
-      "id": 107,
-      "symbol": "BNBUSDT",
-      "direction": "SHORT",
-      "entry": 674.43,
-      "tp1": 660.9414,
-      "tp2": 647.4528,
-      "sl": 687.9186,
-      "strength": 18,
-      "reasons": [
-        "Цена < EMA20 < EMA50",
-        "Стакан: перевес ask (-0.07)",
-        "МТФ: 5m, 15m согласны",
-        "CVD отрицательный (-2.6%)",
-        "Doji (1h) — нерешительность"
-      ],
-      "news": null,
-      "created_at": "2026-03-17 08:35:06",
-      "status": "ACTIVE"
-    },
     {
       "id": 108,
       "symbol": "SOLUSDT",
@@ -1327,6 +1290,61 @@
       "news": null,
       "created_at": "2026-03-17 08:44:23",
       "status": "ACTIVE"
+    },
+    {
+      "id": 178,
+      "symbol": "HYPEUSDT",
+      "direction": "SHORT",
+      "entry": 40.927,
+      "tp1": 40.10846,
+      "tp2": 39.28992,
+      "sl": 41.74554,
+      "strength": 27,
+      "reasons": [
+        "RSI=52 (нейтральный↑)",
+        "MACD медвежий (hist=-0.01652)",
+        "BB выше середины",
+        "Цена ниже EMA20",
+        "Bearish Engulfing (1h) 🕯️"
+      ],
+      "news": null,
+      "created_at": "2026-03-17 08:45:49",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 179,
+      "symbol": "BNXUSDT",
+      "direction": "SHORT",
+      "entry": 2.0,
+      "tp1": 1.96,
+      "tp2": 1.92,
+      "sl": 2.04,
+      "strength": 23,
+      "reasons": [
+        "BB верхняя полоса (пробой)",
+        "МТФ: все 4 таймфрейма согласны ✅✅"
+      ],
+      "news": null,
+      "created_at": "2026-03-17 08:45:50",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 180,
+      "symbol": "BNBUSDT",
+      "direction": "SHORT",
+      "entry": 675.56,
+      "tp1": 662.0488,
+      "tp2": 648.5376,
+      "sl": 689.0712,
+      "strength": 11,
+      "reasons": [
+        "BB выше середины",
+        "Цена < EMA20 < EMA50",
+        "CVD отрицательный (-1.7%)"
+      ],
+      "news": null,
+      "created_at": "2026-03-17 08:45:51",
+      "status": "ACTIVE"
     }
   ],
   "history": [
@@ -1386,6 +1404,39 @@
         "OI падает (лонги закрываются)",
         "CVD отрицательный (+0.7%)",
         "📌 Лимитный вход @ 0.00491784 (откат к EMA20)"
+      ]
+    },
+    {
+      "symbol": "BNBUSDT",
+      "direction": "SHORT",
+      "entry": 674.43,
+      "tp1": 660.9414,
+      "tp2": 647.4528,
+      "sl": 687.9186,
+      "strength": 18,
+      "status": "EXPIRED",
+      "created_at": "2026-03-17 08:35:06",
+      "reasons": [
+        "Цена < EMA20 < EMA50",
+        "Стакан: перевес ask (-0.07)",
+        "МТФ: 5m, 15m согласны",
+        "CVD отрицательный (-2.6%)",
+        "Doji (1h) — нерешительность"
+      ]
+    },
+    {
+      "symbol": "BNXUSDT",
+      "direction": "SHORT",
+      "entry": 2.0,
+      "tp1": 1.96,
+      "tp2": 1.92,
+      "sl": 2.04,
+      "strength": 23,
+      "status": "EXPIRED",
+      "created_at": "2026-03-17 08:35:05",
+      "reasons": [
+        "BB верхняя полоса (пробой)",
+        "МТФ: все 4 таймфрейма согласны ✅✅"
       ]
     },
     {
@@ -1652,42 +1703,6 @@
         "OI падает (лонги закрываются)",
         "CVD падает (-5.1%) — продажи усиливаются 📉"
       ]
-    },
-    {
-      "symbol": "SOLUSDT",
-      "direction": "SHORT",
-      "entry": 94.46,
-      "tp1": 92.5708,
-      "tp2": 90.6816,
-      "sl": 96.3492,
-      "strength": 23,
-      "status": "EXPIRED",
-      "created_at": "2026-03-17 08:24:48",
-      "reasons": [
-        "RSI=64 (перекупленность)",
-        "BB верхняя зона (86%)",
-        "EMA20 < EMA50",
-        "Стакан: перевес ask (-0.08)",
-        "МТФ: только 1 таймфрейм согласен"
-      ]
-    },
-    {
-      "symbol": "BTCUSDT",
-      "direction": "SHORT",
-      "entry": 74302.8,
-      "tp1": 72816.744,
-      "tp2": 71330.688,
-      "sl": 75788.856,
-      "strength": 18,
-      "status": "EXPIRED",
-      "created_at": "2026-03-17 08:22:53",
-      "reasons": [
-        "RSI=53 (нейтральный↑)",
-        "BB выше середины",
-        "Цена < EMA20 < EMA50",
-        "МТФ: только 1 таймфрейм согласен",
-        "CVD отрицательный (-3.6%)"
-      ]
     }
   ],
   "trades_open": [
@@ -1820,6 +1835,58 @@
       "reasons": [
         "BB верхняя полоса (пробой)",
         "МТФ: все 4 таймфрейма согласны ✅✅"
+      ]
+    },
+    {
+      "id": 32,
+      "symbol": "HYPEUSDT",
+      "direction": "SHORT",
+      "entry": 40.927,
+      "tp1": 40.10846,
+      "tp2": 39.28992,
+      "sl": 41.74554,
+      "strength": 27,
+      "taken_at": "2026-03-17 08:45:49",
+      "status": "OPEN",
+      "reasons": [
+        "RSI=52 (нейтральный↑)",
+        "MACD медвежий (hist=-0.01652)",
+        "BB выше середины",
+        "Цена ниже EMA20",
+        "Bearish Engulfing (1h) 🕯️"
+      ]
+    },
+    {
+      "id": 33,
+      "symbol": "BNXUSDT",
+      "direction": "SHORT",
+      "entry": 2.0,
+      "tp1": 1.96,
+      "tp2": 1.92,
+      "sl": 2.04,
+      "strength": 23,
+      "taken_at": "2026-03-17 08:45:50",
+      "status": "OPEN",
+      "reasons": [
+        "BB верхняя полоса (пробой)",
+        "МТФ: все 4 таймфрейма согласны ✅✅"
+      ]
+    },
+    {
+      "id": 34,
+      "symbol": "BNBUSDT",
+      "direction": "SHORT",
+      "entry": 675.56,
+      "tp1": 662.0488,
+      "tp2": 648.5376,
+      "sl": 689.0712,
+      "strength": 11,
+      "taken_at": "2026-03-17 08:45:51",
+      "status": "OPEN",
+      "reasons": [
+        "BB выше середины",
+        "Цена < EMA20 < EMA50",
+        "CVD отрицательный (-1.7%)"
       ]
     },
     {
