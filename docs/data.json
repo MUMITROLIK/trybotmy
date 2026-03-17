@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T17:47:29.184605+00:00",
+  "updated_at": "2026-03-17T17:48:34.923339+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T17:46:53Z",
+    "last_ok": "2026-03-17T17:47:34Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -9,15 +9,15 @@
     "auto_take": true
   },
   "stats": {
-    "total": 359,
+    "total": 360,
     "wins": 96,
     "losses": 14,
-    "active": 24,
+    "active": 25,
     "winrate": 87.3
   },
   "trade_stats": {
     "open": 54,
-    "pending": 17,
+    "pending": 18,
     "wins": 86,
     "losses": 52,
     "total_pnl": 93.25,
@@ -534,6 +534,27 @@
       ],
       "news": null,
       "created_at": "2026-03-17 17:42:51",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 398,
+      "symbol": "ZECUSDT",
+      "direction": "LONG",
+      "entry": 270.0346493,
+      "tp1": 275.435342,
+      "tp2": 280.836035,
+      "sl": 264.633956,
+      "strength": 47,
+      "reasons": [
+        "MACD бычий (hist=0.68925)",
+        "EMA20 > EMA50 (golden cross) 🌟",
+        "Стакан: сильное давление покупки (+0.40)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "Bullish Engulfing (1h) 🕯️",
+        "📌 Лимитный вход @ 270.035 (откат к EMA20)"
+      ],
+      "news": null,
+      "created_at": "2026-03-17 17:48:11",
       "status": "ACTIVE"
     }
   ],
@@ -3219,6 +3240,26 @@
         "CVD положительный (+0.5%)",
         "Doji (1h) — нерешительность",
         "📌 Лимитный вход @ 0.201594 (откат к EMA20)"
+      ]
+    },
+    {
+      "id": 252,
+      "symbol": "ZECUSDT",
+      "direction": "LONG",
+      "entry": 270.0346493,
+      "tp1": 275.435342,
+      "tp2": 280.836035,
+      "sl": 264.633956,
+      "strength": 47,
+      "taken_at": null,
+      "status": "PENDING",
+      "reasons": [
+        "MACD бычий (hist=0.68925)",
+        "EMA20 > EMA50 (golden cross) 🌟",
+        "Стакан: сильное давление покупки (+0.40)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "Bullish Engulfing (1h) 🕯️",
+        "📌 Лимитный вход @ 270.035 (откат к EMA20)"
       ]
     }
   ],
@@ -5975,6 +6016,20 @@
       "tp2": 0.210465,
       "sl": 0.197562,
       "strength": 40,
+      "status": "PENDING",
+      "pnl_pct": 0,
+      "close_price": null,
+      "taken_at": null,
+      "closed_at": null
+    },
+    {
+      "symbol": "ZECUSDT",
+      "direction": "LONG",
+      "entry": 270.0346493,
+      "tp1": 275.435342,
+      "tp2": 280.836035,
+      "sl": 264.633956,
+      "strength": 47,
       "status": "PENDING",
       "pnl_pct": 0,
       "close_price": null,
