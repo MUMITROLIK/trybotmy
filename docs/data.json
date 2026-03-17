@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T21:47:35.048451+00:00",
+  "updated_at": "2026-03-17T21:48:40.033220+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T21:46:35Z",
+    "last_ok": "2026-03-17T21:47:40Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -18,7 +18,7 @@
   },
   "trade_stats": {
     "open": 16,
-    "pending": 10,
+    "pending": 9,
     "wins": 116,
     "losses": 82,
     "total_pnl": 99.54,
@@ -991,26 +991,6 @@
       ]
     },
     {
-      "id": 261,
-      "symbol": "HYPEUSDT",
-      "direction": "LONG",
-      "entry": 40.94626115,
-      "tp1": 41.765186,
-      "tp2": 42.584112,
-      "sl": 40.127336,
-      "strength": 44,
-      "taken_at": "2026-03-17T20:47:24.779351",
-      "status": "PENDING",
-      "reasons": [
-        "MACD бычий (hist=0.11583)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: давление покупки (+0.19)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "CVD растёт (+9.9%) — покупки усиливаются 📈",
-        "📌 Лимитный вход @ 40.9463 (откат к EMA20)"
-      ]
-    },
-    {
       "id": 262,
       "symbol": "XPLUSDT",
       "direction": "LONG",
@@ -1199,6 +1179,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "HYPEUSDT",
+      "direction": "LONG",
+      "entry": 40.94626115,
+      "tp1": 41.765186,
+      "tp2": 42.584112,
+      "sl": 40.127336,
+      "strength": 44,
+      "status": "LIMIT_TIMEOUT",
+      "pnl_pct": 0,
+      "close_price": null,
+      "taken_at": "2026-03-17T20:47:24.779351",
+      "closed_at": "2026-03-17 21:47:40"
+    },
     {
       "symbol": "ASTERUSDT",
       "direction": "LONG",
@@ -2094,20 +2088,6 @@
       "close_price": 0.005861,
       "taken_at": null,
       "closed_at": "2026-03-17 20:49:16"
-    },
-    {
-      "symbol": "HYPEUSDT",
-      "direction": "LONG",
-      "entry": 40.94626115,
-      "tp1": 41.765186,
-      "tp2": 42.584112,
-      "sl": 40.127336,
-      "strength": 44,
-      "status": "PENDING",
-      "pnl_pct": 0,
-      "close_price": null,
-      "taken_at": "2026-03-17T20:47:24.779351",
-      "closed_at": null
     },
     {
       "symbol": "ARBUSDT",
