@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T15:40:48.043895+00:00",
+  "updated_at": "2026-03-17T15:41:29.971673+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T15:39:51Z",
+    "last_ok": "2026-03-17T15:40:52Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -11,9 +11,9 @@
   "stats": {
     "total": 298,
     "wins": 52,
-    "losses": 6,
-    "active": 19,
-    "winrate": 89.7
+    "losses": 7,
+    "active": 18,
+    "winrate": 88.1
   },
   "trade_stats": {
     "open": 70,
@@ -299,28 +299,6 @@
       ],
       "news": null,
       "created_at": "2026-03-17 15:05:48",
-      "status": "ACTIVE"
-    },
-    {
-      "id": 320,
-      "symbol": "FARTCOINUSDT",
-      "direction": "LONG",
-      "entry": 0.2007,
-      "tp1": 0.205039,
-      "tp2": 0.209379,
-      "sl": 0.196686,
-      "strength": 36,
-      "reasons": [
-        "RSI=45 (нейтральный↓)",
-        "MACD бычий (hist=0.00001)",
-        "BB ниже середины",
-        "Объём x1.8 🔥",
-        "Стакан: перевес bid (+0.08)",
-        "МТФ: 1h, 4h согласны",
-        "⚠️ Funding через 52м"
-      ],
-      "news": null,
-      "created_at": "2026-03-17 15:08:18",
       "status": "ACTIVE"
     },
     {
@@ -656,6 +634,26 @@
       ]
     },
     {
+      "symbol": "FARTCOINUSDT",
+      "direction": "LONG",
+      "entry": 0.2007,
+      "tp1": 0.205039,
+      "tp2": 0.209379,
+      "sl": 0.196686,
+      "strength": 36,
+      "status": "SL",
+      "created_at": "2026-03-17 15:08:18",
+      "reasons": [
+        "RSI=45 (нейтральный↓)",
+        "MACD бычий (hist=0.00001)",
+        "BB ниже середины",
+        "Объём x1.8 🔥",
+        "Стакан: перевес bid (+0.08)",
+        "МТФ: 1h, 4h согласны",
+        "⚠️ Funding через 52м"
+      ]
+    },
+    {
       "symbol": "VANRYUSDT",
       "direction": "LONG",
       "entry": 0.0058957,
@@ -805,23 +803,6 @@
         "МТФ: 5m, 15m согласны",
         "CVD падает (-6.2%) — продажи усиливаются 📉",
         "📌 Лимитный вход @ 0.010345 (откат к EMA20)"
-      ]
-    },
-    {
-      "symbol": "ASTERUSDT",
-      "direction": "SHORT",
-      "entry": 0.765,
-      "tp1": 0.7497,
-      "tp2": 0.7344,
-      "sl": 0.7803,
-      "strength": 34,
-      "status": "TP1",
-      "created_at": "2026-03-17 13:43:28",
-      "reasons": [
-        "RSI=76 (сильная перекупленность)",
-        "BB верхняя зона (95%)",
-        "Объём x3.4 🔥🔥",
-        "CVD отрицательный (+0.2%)"
       ]
     }
   ],
