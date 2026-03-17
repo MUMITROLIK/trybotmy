@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T10:17:26.644447+00:00",
+  "updated_at": "2026-03-17T10:18:29.639548+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T10:16:04Z",
+    "last_ok": "2026-03-17T10:17:29Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -13,11 +13,11 @@
     "winrate": 93.8
   },
   "trade_stats": {
-    "open": 35,
-    "wins": 28,
+    "open": 34,
+    "wins": 29,
     "losses": 8,
-    "total_pnl": 68.37,
-    "winrate": 77.8
+    "total_pnl": 71.52,
+    "winrate": 78.4
   },
   "fear_greed": {
     "value": 50,
@@ -1161,9 +1161,10 @@
         "BTC контекст: -1.6% за 12ч 📉",
         "📌 Лимитный вход @ 0.00380168 (откат к EMA20)"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 63,
       "symbol": "VANRYUSDT",
       "direction": "SHORT",
       "entry": 0.006135,
@@ -1171,17 +1172,12 @@
       "tp2": 0.005711,
       "sl": 0.0059205,
       "strength": 34,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 3.15,
+      "close_price": 0.005942,
       "taken_at": "2026-03-17 09:40:27",
-      "status": "TP1_HIT",
-      "reasons": [
-        "RSI=73 (сильная перекупленность)",
-        "BB верхняя полоса (пробой)",
-        "Объём x2.6 🔥🔥",
-        "OI падает (лонги закрываются)"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-17 10:17:45"
+    },
     {
       "symbol": "EIGENUSDT",
       "direction": "SHORT",
