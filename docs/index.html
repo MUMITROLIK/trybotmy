@@ -1118,14 +1118,16 @@ function renderTaken() {
 function renderFG(fg) {
   if (!fg) return;
   const v = fg.value || 50;
-  $('fg-emoji').textContent = fg.emoji || '😐';
-  $('fg-val').textContent   = v;
-  $('fg-lbl').textContent   = (fg.label||'').toUpperCase();
+  const valEl = $('fg-val');
+  const lblEl = $('fg-lbl');
   const fill  = $('fg-fill');
+  if (!valEl || !lblEl || !fill) return;
+  valEl.textContent = v;
+  lblEl.textContent = (fg.label||'').toUpperCase();
   const color = v<=24?'#ff2d6b':v<=49?'#ff7b00':v<=74?'#ffe500':'#00ff9d';
   fill.style.width      = v+'%';
   fill.style.background = color;
-  $('fg-val').style.color = color;
+  valEl.style.color = color;
 }
 
 // ── Signals ────────────────────────────────────────────────────────
