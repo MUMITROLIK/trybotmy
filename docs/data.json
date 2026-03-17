@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T15:03:57.981612+00:00",
+  "updated_at": "2026-03-17T15:04:29.858813+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T15:03:29Z",
+    "last_ok": "2026-03-17T15:04:02Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -16,12 +16,12 @@
     "winrate": 92.7
   },
   "trade_stats": {
-    "open": 77,
+    "open": 76,
     "pending": 3,
     "wins": 59,
-    "losses": 33,
-    "total_pnl": 90.1,
-    "winrate": 62.1
+    "losses": 34,
+    "total_pnl": 87.29,
+    "winrate": 61.5
   },
   "fear_greed": {
     "value": 28,
@@ -1937,27 +1937,6 @@
       ]
     },
     {
-      "id": 149,
-      "symbol": "BEATUSDT",
-      "direction": "LONG",
-      "entry": 0.5252,
-      "tp1": 0.54179632,
-      "tp2": 0.55834012,
-      "sl": 0.51191244,
-      "strength": 42,
-      "taken_at": "2026-03-17 13:20:50",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00226)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: перевес bid (+0.10)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +1.6% + цена ↑",
-        "CVD положительный (+2.1%)",
-        "📌 Лимитный вход @ 0.506056 (откат к EMA20)"
-      ]
-    },
-    {
       "id": 150,
       "symbol": "THEUSDT",
       "direction": "SHORT",
@@ -2357,6 +2336,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "BEATUSDT",
+      "direction": "LONG",
+      "entry": 0.5252,
+      "tp1": 0.54179632,
+      "tp2": 0.55834012,
+      "sl": 0.51191244,
+      "strength": 42,
+      "status": "SL",
+      "pnl_pct": -2.81,
+      "close_price": 0.51045,
+      "taken_at": "2026-03-17 13:20:50",
+      "closed_at": "2026-03-17 15:04:14"
+    },
     {
       "symbol": "VANRYUSDT",
       "direction": "SHORT",
