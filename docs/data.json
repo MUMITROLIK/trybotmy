@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T22:21:43.732999+00:00",
+  "updated_at": "2026-03-17T22:22:13.811662+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T22:20:43Z",
+    "last_ok": "2026-03-17T22:21:48Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -18,7 +18,7 @@
   },
   "trade_stats": {
     "open": 11,
-    "pending": 13,
+    "pending": 12,
     "wins": 121,
     "losses": 84,
     "total_pnl": 112.34,
@@ -972,26 +972,6 @@
       ]
     },
     {
-      "id": 266,
-      "symbol": "HYPERUSDT",
-      "direction": "LONG",
-      "entry": 0.10932167,
-      "tp1": 0.112247,
-      "tp2": 0.115172,
-      "sl": 0.106982,
-      "strength": 46,
-      "taken_at": "2026-03-17T21:21:46.223300",
-      "status": "PENDING",
-      "reasons": [
-        "MACD бычий (hist=0.00037)",
-        "Цена > EMA20 > EMA50",
-        "Объём x3.2 🔥🔥",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "CVD положительный (-3.2%)",
-        "📌 Лимитный вход @ 0.109322 (откат к EMA20)"
-      ]
-    },
-    {
       "id": 269,
       "symbol": "1000BONKUSDT",
       "direction": "LONG",
@@ -1238,6 +1218,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "HYPERUSDT",
+      "direction": "LONG",
+      "entry": 0.10932167,
+      "tp1": 0.112247,
+      "tp2": 0.115172,
+      "sl": 0.106982,
+      "strength": 46,
+      "status": "LIMIT_TIMEOUT",
+      "pnl_pct": 0,
+      "close_price": null,
+      "taken_at": "2026-03-17T21:21:46.223300",
+      "closed_at": "2026-03-17 22:21:48"
+    },
     {
       "symbol": "FARTCOINUSDT",
       "direction": "LONG",
@@ -1558,20 +1552,6 @@
       "pnl_pct": 0,
       "close_price": null,
       "taken_at": "2026-03-17T21:30:24.187814",
-      "closed_at": null
-    },
-    {
-      "symbol": "HYPERUSDT",
-      "direction": "LONG",
-      "entry": 0.10932167,
-      "tp1": 0.112247,
-      "tp2": 0.115172,
-      "sl": 0.106982,
-      "strength": 46,
-      "status": "PENDING",
-      "pnl_pct": 0,
-      "close_price": null,
-      "taken_at": "2026-03-17T21:21:46.223300",
       "closed_at": null
     },
     {
