@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T16:29:57.761403+00:00",
+  "updated_at": "2026-03-17T16:30:42.739718+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T16:28:55Z",
+    "last_ok": "2026-03-17T16:30:02Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -9,19 +9,19 @@
     "auto_take": true
   },
   "stats": {
-    "total": 329,
+    "total": 330,
     "wins": 74,
     "losses": 9,
-    "active": 25,
+    "active": 26,
     "winrate": 89.2
   },
   "trade_stats": {
     "open": 69,
     "pending": 40,
-    "wins": 68,
+    "wins": 69,
     "losses": 44,
-    "total_pnl": 86.29,
-    "winrate": 44.7
+    "total_pnl": 89.64,
+    "winrate": 45.1
   },
   "fear_greed": {
     "value": 28,
@@ -552,6 +552,28 @@
       ],
       "news": null,
       "created_at": "2026-03-17 16:27:43",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 368,
+      "symbol": "POLYXUSDT",
+      "direction": "LONG",
+      "entry": 0.05374,
+      "tp1": 0.056077,
+      "tp2": 0.058414,
+      "sl": 0.051871,
+      "strength": 46,
+      "reasons": [
+        "RSI=26 (сильная перепроданность)",
+        "BB нижняя зона (5%)",
+        "EMA20 > EMA50",
+        "Стакан: давление покупки (+0.14)",
+        "МТФ: 15m, 1h, 4h согласны",
+        "OI растёт +37.8% + цена ↑",
+        "CVD положительный (-0.6%)"
+      ],
+      "news": null,
+      "created_at": "2026-03-17 16:30:22",
       "status": "ACTIVE"
     }
   ],
@@ -1985,26 +2007,6 @@
       ]
     },
     {
-      "id": 156,
-      "symbol": "CFGUSDT",
-      "direction": "SHORT",
-      "entry": 0.1599,
-      "tp1": 0.15486315,
-      "tp2": 0.14984229,
-      "sl": 0.16392948,
-      "strength": 37,
-      "taken_at": "2026-03-17 13:38:10",
-      "status": "OPEN",
-      "reasons": [
-        "MACD медвежий (hist=-0.00013)",
-        "Цена < EMA20 < EMA50",
-        "Стакан: перевес ask (-0.09)",
-        "МТФ: 5m, 15m, 4h согласны",
-        "CVD падает (-6.7%) — продажи усиливаются 📉",
-        "📌 Лимитный вход @ 0.164807 (откат к EMA20)"
-      ]
-    },
-    {
       "id": 160,
       "symbol": "CRVUSDT",
       "direction": "SHORT",
@@ -2285,6 +2287,27 @@
         "Цена < EMA20 < EMA50",
         "Стакан: давление продажи (-0.10)",
         "МТФ: 15m, 1h, 4h согласны"
+      ]
+    },
+    {
+      "id": 222,
+      "symbol": "POLYXUSDT",
+      "direction": "LONG",
+      "entry": 0.05374,
+      "tp1": 0.056077,
+      "tp2": 0.058414,
+      "sl": 0.051871,
+      "strength": 46,
+      "taken_at": null,
+      "status": "OPEN",
+      "reasons": [
+        "RSI=26 (сильная перепроданность)",
+        "BB нижняя зона (5%)",
+        "EMA20 > EMA50",
+        "Стакан: давление покупки (+0.14)",
+        "МТФ: 15m, 1h, 4h согласны",
+        "OI растёт +37.8% + цена ↑",
+        "CVD положительный (-0.6%)"
       ]
     },
     {
@@ -3135,6 +3158,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "CFGUSDT",
+      "direction": "SHORT",
+      "entry": 0.1599,
+      "tp1": 0.15486315,
+      "tp2": 0.14984229,
+      "sl": 0.15415,
+      "strength": 37,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 3.35,
+      "close_price": 0.15455,
+      "taken_at": "2026-03-17 13:38:10",
+      "closed_at": "2026-03-17 16:30:42"
+    },
     {
       "symbol": "GRASSUSDT",
       "direction": "LONG",
