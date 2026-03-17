@@ -633,21 +633,16 @@ tr:hover td { background: rgba(255,255,255,.015); }
         <div class="stat-value c-cyan" id="s-total">—</div>
       </div>
       <div class="stat-card">
-        <div class="stat-label">Профит</div>
-        <div class="stat-value c-green" id="s-wins">—</div>
+        <div class="stat-label">Активных</div>
+        <div class="stat-value c-cyan" id="s-active">—</div>
       </div>
       <div class="stat-card">
-        <div class="stat-label">Стоп</div>
-        <div class="stat-value c-red" id="s-losses">—</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-label">Winrate</div>
+        <div class="stat-label">Winrate (сигналы)</div>
         <div class="stat-value c-yellow" id="s-winrate">—</div>
       </div>
       <div class="fg-card">
         <div class="stat-label">Fear &amp; Greed</div>
         <div class="fg-top">
-          <span class="fg-emoji" id="fg-emoji">—</span>
           <div>
             <div class="fg-val" id="fg-val">—</div>
             <div class="fg-lbl" id="fg-lbl">—</div>
@@ -739,6 +734,12 @@ function initWebSocket() {
       const msg = JSON.parse(event.data);
       if (msg.type === 'initial_data' || msg.type === 'data_update') {
         console.log('📨 Data received from server');
+        // показываем время апдейта прямо в хедере (без F5)
+        const lbl = document.getElementById('last-update');
+        if (lbl) {
+          const now = new Date();
+          lbl.textContent = 'LIVE · ' + now.toLocaleTimeString('ru-RU');
+        }
         handleDataUpdate(msg.data);
       }
     } catch (e) {
@@ -783,8 +784,9 @@ function setLiveStatus(connected) {
 function handleDataUpdate(data) {
   const st = data.stats || {};
   document.getElementById('s-total').textContent   = st.total   ?? '—';
-  document.getElementById('s-wins').textContent    = st.wins    ?? '—';
-  document.getElementById('s-losses').textContent  = st.losses  ?? '—';
+  const act = st.active ?? ((data.signals || []).length);
+  const actEl = document.getElementById('s-active');
+  if (actEl) actEl.textContent = act;
   document.getElementById('s-winrate').textContent = st.winrate != null ? st.winrate + '%' : '—';
   
   renderFG(data.fear_greed);
@@ -800,6 +802,17 @@ function handleDataUpdate(data) {
   startTradeWs(openTrades);
 
   setLiveStatus(true);
+}
+
+// Fallback: даже при LIVE иногда апдейты теряются (мобильная сеть/туннель).
+// Поэтому раз в 15 сек подтягиваем /data.json (локальный сервер) и обновляем UI.
+async function pollDataFallback() {
+  try {
+    const r = await fetch('/data.json?t=' + Date.now(), { cache: 'no-store' });
+    if (!r.ok) return;
+    const d = await r.json();
+    if (d && d.updated_at) handleDataUpdate(d);
+  } catch(e) {}
 }
 
 // ── Real-time prices for open trades (Binance WS) ─────────────────────────────
@@ -1295,6 +1308,7 @@ initBtcChart();
 loadBtcCandles();
 connectBtcWs();
 initWebSocket();
+setInterval(pollDataFallback, 15000);
 
 setInterval(loadBtcCandles, 60000);
 setInterval(() => {
