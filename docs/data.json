@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T20:56:33.406551+00:00",
+  "updated_at": "2026-03-17T20:57:40.425592+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T20:55:15Z",
+    "last_ok": "2026-03-17T20:56:40Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 83.5
   },
   "trade_stats": {
-    "open": 18,
+    "open": 17,
     "pending": 16,
-    "wins": 112,
+    "wins": 113,
     "losses": 81,
-    "total_pnl": 92.94,
-    "winrate": 58.0
+    "total_pnl": 93.57,
+    "winrate": 58.2
   },
   "fear_greed": {
     "value": 28,
@@ -595,26 +595,6 @@
     }
   ],
   "trades_open": [
-    {
-      "id": 139,
-      "symbol": "KITEUSDT",
-      "direction": "SHORT",
-      "entry": 0.19445,
-      "tp1": 0.190561,
-      "tp2": 0.186672,
-      "sl": 0.198339,
-      "strength": 37,
-      "taken_at": "2026-03-17 12:56:27",
-      "status": "OPEN",
-      "reasons": [
-        "MACD медвежий (hist=-0.00022)",
-        "Цена < EMA20 < EMA50",
-        "Стакан: давление продажи (-0.23)",
-        "МТФ: 5m, 15m, 1h согласны",
-        "CVD падает (-11.3%) — продажи усиливаются 📉",
-        "📌 Лимитный вход @ 0.198129 (откат к EMA20)"
-      ]
-    },
     {
       "id": 145,
       "symbol": "RENDERUSDT",
@@ -1994,6 +1974,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "KITEUSDT",
+      "direction": "SHORT",
+      "entry": 0.19445,
+      "tp1": 0.190561,
+      "tp2": 0.186672,
+      "sl": 0.198339,
+      "strength": 37,
+      "status": "TIMEOUT",
+      "pnl_pct": 0.63,
+      "close_price": 0.193225,
+      "taken_at": "2026-03-17 12:56:27",
+      "closed_at": "2026-03-17 20:56:40"
+    },
     {
       "symbol": "ANIMEUSDT",
       "direction": "LONG",
@@ -4779,20 +4773,6 @@
       "close_price": 0.0102775,
       "taken_at": "2026-03-17 10:29:09",
       "closed_at": "2026-03-17 11:28:15"
-    },
-    {
-      "symbol": "RIVERUSDT",
-      "direction": "SHORT",
-      "entry": 23.744,
-      "tp1": 22.947929,
-      "tp2": 22.151857,
-      "sl": 22.938499999999998,
-      "strength": 31,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 3.36,
-      "close_price": 22.9455,
-      "taken_at": "2026-03-17 10:14:28",
-      "closed_at": "2026-03-17 11:18:48"
     }
   ]
 }
