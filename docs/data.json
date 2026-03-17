@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-03-17T08:21:47.291482+00:00",
+  "updated_at": "2026-03-17T08:23:43.441810+00:00",
   "stats": {
-    "total": 48,
+    "total": 51,
     "wins": 0,
     "losses": 1,
-    "active": 0,
+    "active": 3,
     "winrate": 0.0
   },
   "trade_stats": {
@@ -19,7 +19,68 @@
     "label": "Fear",
     "emoji": "😨"
   },
-  "signals": [],
+  "signals": [
+    {
+      "id": 87,
+      "symbol": "ETHUSDT",
+      "direction": "SHORT",
+      "entry": 2326.99,
+      "tp1": 2280.4502,
+      "tp2": 2233.9104,
+      "sl": 2373.5298,
+      "strength": 28,
+      "reasons": [
+        "RSI=59 (нейтральный↑)",
+        "BB верхняя зона (77%)",
+        "EMA20 < EMA50",
+        "Стакан: давление продажи (-0.21)",
+        "МТФ: только 1 таймфрейм согласен",
+        "OI падает (лонги закрываются)",
+        "CVD отрицательный (-1.1%)",
+        "Doji (1h) — нерешительность"
+      ],
+      "news": null,
+      "created_at": "2026-03-17 08:22:51",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 88,
+      "symbol": "BTCUSDT",
+      "direction": "SHORT",
+      "entry": 74302.8,
+      "tp1": 72816.744,
+      "tp2": 71330.688,
+      "sl": 75788.856,
+      "strength": 18,
+      "reasons": [
+        "RSI=53 (нейтральный↑)",
+        "BB выше середины",
+        "Цена < EMA20 < EMA50",
+        "МТФ: только 1 таймфрейм согласен",
+        "CVD отрицательный (-3.6%)"
+      ],
+      "news": null,
+      "created_at": "2026-03-17 08:22:53",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 89,
+      "symbol": "ALPACAUSDT",
+      "direction": "SHORT",
+      "entry": 1.19,
+      "tp1": 1.1662,
+      "tp2": 1.1424,
+      "sl": 1.2138,
+      "strength": 23,
+      "reasons": [
+        "BB верхняя полоса (пробой)",
+        "МТФ: все 4 таймфрейма согласны ✅✅"
+      ],
+      "news": null,
+      "created_at": "2026-03-17 08:22:53",
+      "status": "ACTIVE"
+    }
+  ],
   "history": [
     {
       "symbol": "RIVERUSDT",
