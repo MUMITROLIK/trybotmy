@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T15:35:30.219013+00:00",
+  "updated_at": "2026-03-17T15:36:11.379286+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T15:34:30Z",
+    "last_ok": "2026-03-17T15:35:35Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -11,17 +11,17 @@
   "stats": {
     "total": 298,
     "wins": 52,
-    "losses": 3,
-    "active": 22,
-    "winrate": 94.5
+    "losses": 4,
+    "active": 21,
+    "winrate": 92.9
   },
   "trade_stats": {
-    "open": 75,
+    "open": 74,
     "pending": 16,
     "wins": 64,
-    "losses": 35,
-    "total_pnl": 98.09,
-    "winrate": 55.7
+    "losses": 36,
+    "total_pnl": 95.96,
+    "winrate": 55.2
   },
   "fear_greed": {
     "value": 28,
@@ -88,27 +88,6 @@
       ],
       "news": null,
       "created_at": "2026-03-17 12:46:57",
-      "status": "ACTIVE"
-    },
-    {
-      "id": 283,
-      "symbol": "FETUSDT",
-      "direction": "LONG",
-      "entry": 0.2328,
-      "tp1": 0.238211,
-      "tp2": 0.243621,
-      "sl": 0.228144,
-      "strength": 27,
-      "reasons": [
-        "RSI=42 (нейтральный↓)",
-        "BB ниже середины",
-        "Стакан: перевес bid (+0.06)",
-        "МТФ: 5m, 1h, 4h согласны",
-        "CVD положительный (-0.3%)",
-        "Doji (1h) — нерешительность"
-      ],
-      "news": null,
-      "created_at": "2026-03-17 12:47:14",
       "status": "ACTIVE"
     },
     {
@@ -1901,26 +1880,6 @@
       ]
     },
     {
-      "id": 137,
-      "symbol": "FETUSDT",
-      "direction": "LONG",
-      "entry": 0.2328,
-      "tp1": 0.238211,
-      "tp2": 0.243621,
-      "sl": 0.228144,
-      "strength": 27,
-      "taken_at": "2026-03-17 12:47:14",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=42 (нейтральный↓)",
-        "BB ниже середины",
-        "Стакан: перевес bid (+0.06)",
-        "МТФ: 5m, 1h, 4h согласны",
-        "CVD положительный (-0.3%)",
-        "Doji (1h) — нерешительность"
-      ]
-    },
-    {
       "id": 139,
       "symbol": "KITEUSDT",
       "direction": "SHORT",
@@ -2701,6 +2660,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "FETUSDT",
+      "direction": "LONG",
+      "entry": 0.2328,
+      "tp1": 0.238211,
+      "tp2": 0.243621,
+      "sl": 0.228144,
+      "strength": 27,
+      "status": "SL",
+      "pnl_pct": -2.13,
+      "close_price": 0.22785,
+      "taken_at": "2026-03-17 12:47:14",
+      "closed_at": "2026-03-17 15:36:10"
+    },
     {
       "symbol": "OPNUSDT",
       "direction": "SHORT",
