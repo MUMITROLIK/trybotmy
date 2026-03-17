@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T15:24:46.082335+00:00",
+  "updated_at": "2026-03-17T15:25:32.109596+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T15:23:46Z",
+    "last_ok": "2026-03-17T15:24:50Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -16,12 +16,12 @@
     "winrate": 94.3
   },
   "trade_stats": {
-    "open": 77,
+    "open": 76,
     "pending": 13,
-    "wins": 63,
+    "wins": 64,
     "losses": 34,
-    "total_pnl": 98.3,
-    "winrate": 57.3
+    "total_pnl": 100.32,
+    "winrate": 57.7
   },
   "fear_greed": {
     "value": 28,
@@ -916,25 +916,6 @@
       "reasons": [
         "BB верхняя полоса (пробой)",
         "МТФ: все 4 таймфрейма согласны ✅✅"
-      ]
-    },
-    {
-      "id": 32,
-      "symbol": "HYPEUSDT",
-      "direction": "SHORT",
-      "entry": 40.927,
-      "tp1": 40.10846,
-      "tp2": 39.28992,
-      "sl": 41.74554,
-      "strength": 27,
-      "taken_at": "2026-03-17 08:45:49",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=52 (нейтральный↑)",
-        "MACD медвежий (hist=-0.01652)",
-        "BB выше середины",
-        "Цена ниже EMA20",
-        "Bearish Engulfing (1h) 🕯️"
       ]
     },
     {
@@ -2650,6 +2631,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "HYPEUSDT",
+      "direction": "SHORT",
+      "entry": 40.927,
+      "tp1": 40.10846,
+      "tp2": 39.28992,
+      "sl": 40.0975,
+      "strength": 27,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 2.02,
+      "close_price": 40.099999999999994,
+      "taken_at": "2026-03-17 08:45:49",
+      "closed_at": "2026-03-17 15:25:31"
+    },
     {
       "symbol": "SIRENUSDT",
       "direction": "LONG",
