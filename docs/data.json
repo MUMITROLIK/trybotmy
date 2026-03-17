@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T15:36:49.856148+00:00",
+  "updated_at": "2026-03-17T15:37:34.169665+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T15:36:16Z",
+    "last_ok": "2026-03-17T15:36:54Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -16,12 +16,12 @@
     "winrate": 89.7
   },
   "trade_stats": {
-    "open": 74,
+    "open": 71,
     "pending": 16,
-    "wins": 64,
-    "losses": 36,
-    "total_pnl": 95.96,
-    "winrate": 55.2
+    "wins": 65,
+    "losses": 38,
+    "total_pnl": 93.96,
+    "winrate": 54.6
   },
   "fear_greed": {
     "value": 28,
@@ -1351,26 +1351,6 @@
       ]
     },
     {
-      "id": 96,
-      "symbol": "1000PEPEUSDT",
-      "direction": "LONG",
-      "entry": 0.0037096,
-      "tp1": 0.003784,
-      "tp2": 0.003858,
-      "sl": 0.003635,
-      "strength": 42,
-      "taken_at": "2026-03-17 11:56:01",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=24 (сильная перепроданность)",
-        "BB нижняя полоса (пробой)",
-        "Стакан: сильное давление покупки (+0.62)",
-        "МТФ: 1h, 4h согласны",
-        "OI растёт +1.8%",
-        "CVD положительный (-2.8%)"
-      ]
-    },
-    {
       "id": 98,
       "symbol": "GUSDT",
       "direction": "LONG",
@@ -2136,27 +2116,6 @@
       ]
     },
     {
-      "id": 170,
-      "symbol": "XPLUSDT",
-      "direction": "LONG",
-      "entry": 0.11619036,
-      "tp1": 0.118514,
-      "tp2": 0.120838,
-      "sl": 0.113867,
-      "strength": 35,
-      "taken_at": "2026-03-17 14:50:09",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00016)",
-        "Цена выше EMA20",
-        "Стакан: давление покупки (+0.13)",
-        "МТФ: 5m, 1h, 4h согласны",
-        "OI растёт +1.2% + цена ↑",
-        "⚠️ Funding через 76м",
-        "📌 Лимитный вход @ 0.11619 (откат к EMA20)"
-      ]
-    },
-    {
       "id": 173,
       "symbol": "BEATUSDT",
       "direction": "SHORT",
@@ -2594,9 +2553,24 @@
         "⚠️ Funding через 31м",
         "📌 Лимитный вход @ 0.00592921 (откат к EMA20)"
       ]
+    }
+  ],
+  "trades_history": [
+    {
+      "symbol": "1000PEPEUSDT",
+      "direction": "LONG",
+      "entry": 0.0037096,
+      "tp1": 0.003784,
+      "tp2": 0.003858,
+      "sl": 0.003635,
+      "strength": 42,
+      "status": "SL",
+      "pnl_pct": -2.02,
+      "close_price": 0.0036346499999999997,
+      "taken_at": "2026-03-17 11:56:01",
+      "closed_at": "2026-03-17 15:37:33"
     },
     {
-      "id": 60,
       "symbol": "XAGUSDT",
       "direction": "SHORT",
       "entry": 80.73,
@@ -2604,20 +2578,26 @@
       "tp2": 77.5008,
       "sl": 79.07499999999999,
       "strength": 32,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 2.03,
+      "close_price": 79.095,
       "taken_at": "2026-03-17 09:35:55",
-      "status": "TP1_HIT",
-      "reasons": [
-        "MACD медвежий (hist=-0.06131)",
-        "Цена ниже EMA20",
-        "Стакан: давление продажи (-0.11)",
-        "МТФ: 5m, 4h согласны",
-        "OI растёт +3.8%",
-        "CVD отрицательный (-0.8%)",
-        "📌 Лимитный вход @ 81.0435 (откат к EMA20)"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-17 15:37:14"
+    },
+    {
+      "symbol": "XPLUSDT",
+      "direction": "LONG",
+      "entry": 0.11619036,
+      "tp1": 0.118514,
+      "tp2": 0.120838,
+      "sl": 0.113867,
+      "strength": 35,
+      "status": "SL",
+      "pnl_pct": -2.01,
+      "close_price": 0.11385,
+      "taken_at": "2026-03-17 14:50:09",
+      "closed_at": "2026-03-17 15:36:55"
+    },
     {
       "symbol": "FETUSDT",
       "direction": "LONG",
