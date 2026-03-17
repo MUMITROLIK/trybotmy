@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T21:07:03.857612+00:00",
+  "updated_at": "2026-03-17T21:08:35.469341+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T21:06:33Z",
+    "last_ok": "2026-03-17T21:07:08Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 83.5
   },
   "trade_stats": {
-    "open": 16,
+    "open": 15,
     "pending": 18,
-    "wins": 114,
+    "wins": 115,
     "losses": 81,
-    "total_pnl": 93.76,
-    "winrate": 58.5
+    "total_pnl": 96.61,
+    "winrate": 58.7
   },
   "fear_greed": {
     "value": 28,
@@ -2016,9 +2016,10 @@
         "CVD положительный (+0.2%)",
         "📌 Лимитный вход @ 0.0489722 (откат к EMA20)"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 195,
       "symbol": "RIVERUSDT",
       "direction": "SHORT",
       "entry": 22.729,
@@ -2026,20 +2027,12 @@
       "tp2": 21.417571,
       "sl": 22.072499999999998,
       "strength": 28,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 2.85,
+      "close_price": 22.0815,
       "taken_at": null,
-      "status": "TP1_HIT",
-      "reasons": [
-        "RSI=57 (нейтральный↑)",
-        "BB выше середины",
-        "EMA20 < EMA50",
-        "Стакан: сильное давление продажи (-0.42)",
-        "МТФ: только 1 таймфрейм согласен",
-        "OI падает (лонги закрываются)",
-        "CVD отрицательный (+1.7%)"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-17 21:07:24"
+    },
     {
       "symbol": "RENDERUSDT",
       "direction": "SHORT",
@@ -4825,20 +4818,6 @@
       "close_price": 1.0719500000000002,
       "taken_at": "2026-03-17 11:05:22",
       "closed_at": "2026-03-17 12:27:10"
-    },
-    {
-      "symbol": "LYNUSDT",
-      "direction": "SHORT",
-      "entry": 0.06149,
-      "tp1": 0.059143,
-      "tp2": 0.056795,
-      "sl": 0.063368,
-      "strength": 31,
-      "status": "SL",
-      "pnl_pct": -3.18,
-      "close_price": 0.063445,
-      "taken_at": "2026-03-17 09:11:31",
-      "closed_at": "2026-03-17 12:20:35"
     }
   ]
 }
