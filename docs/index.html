@@ -49,7 +49,10 @@ body {
   font-family: var(--font);
   min-height: 100vh;
   overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
 }
+
+html { scroll-behavior: smooth; }
 
 body::before {
   content: '';
@@ -249,7 +252,7 @@ main { padding: 24px 40px; max-width: 1600px; margin: 0 auto; }
   background: rgba(0,229,255,.1); border-color: rgba(0,229,255,.4);
   color: var(--cyan);
 }
-#btcChartWrap { padding: 4px; height: 240px; }
+#btcChartWrap { padding: 0; height: clamp(220px, 38vh, 320px); }
 
 .signals-grid {
   display: grid;
