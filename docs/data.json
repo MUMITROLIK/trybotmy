@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T13:54:04.523781+00:00",
+  "updated_at": "2026-03-17T13:55:09.695338+00:00",
   "publish_status": {
-    "last_ok": null,
+    "last_ok": "2026-03-17T13:54:09Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,17 +10,17 @@
   },
   "stats": {
     "total": 268,
-    "wins": 30,
+    "wins": 31,
     "losses": 3,
-    "active": 14,
-    "winrate": 90.9
+    "active": 13,
+    "winrate": 91.2
   },
   "trade_stats": {
-    "open": 75,
-    "wins": 54,
+    "open": 74,
+    "wins": 55,
     "losses": 31,
-    "total_pnl": 84.51,
-    "winrate": 63.5
+    "total_pnl": 88.81,
+    "winrate": 64.0
   },
   "fear_greed": {
     "value": 28,
@@ -274,26 +274,6 @@
       "status": "ACTIVE"
     },
     {
-      "id": 305,
-      "symbol": "XANUSDT",
-      "direction": "SHORT",
-      "entry": 0.01034505,
-      "tp1": 0.010138,
-      "tp2": 0.009931,
-      "sl": 0.010552,
-      "strength": 30,
-      "reasons": [
-        "MACD медвежий (hist=-0.00000)",
-        "Цена < EMA20 < EMA50",
-        "МТФ: 5m, 15m согласны",
-        "CVD падает (-6.2%) — продажи усиливаются 📉",
-        "📌 Лимитный вход @ 0.010345 (откат к EMA20)"
-      ],
-      "news": null,
-      "created_at": "2026-03-17 13:50:18",
-      "status": "ACTIVE"
-    },
-    {
       "id": 306,
       "symbol": "CRVUSDT",
       "direction": "SHORT",
@@ -316,6 +296,24 @@
     }
   ],
   "history": [
+    {
+      "symbol": "XANUSDT",
+      "direction": "SHORT",
+      "entry": 0.01034505,
+      "tp1": 0.010138,
+      "tp2": 0.009931,
+      "sl": 0.010552,
+      "strength": 30,
+      "status": "TP1",
+      "created_at": "2026-03-17 13:50:18",
+      "reasons": [
+        "MACD медвежий (hist=-0.00000)",
+        "Цена < EMA20 < EMA50",
+        "МТФ: 5m, 15m согласны",
+        "CVD падает (-6.2%) — продажи усиливаются 📉",
+        "📌 Лимитный вход @ 0.010345 (откат к EMA20)"
+      ]
+    },
     {
       "symbol": "CFGUSDT",
       "direction": "SHORT",
@@ -675,23 +673,6 @@
         "CVD отрицательный (+4.2%)",
         "Bearish Engulfing (1h) 🕯️",
         "📌 Лимитный вход @ 1.13279 (откат к EMA20)"
-      ]
-    },
-    {
-      "symbol": "WLDUSDT",
-      "direction": "LONG",
-      "entry": 0.3873,
-      "tp1": 0.395046,
-      "tp2": 0.402792,
-      "sl": 0.379554,
-      "strength": 31,
-      "status": "EXPIRED",
-      "created_at": "2026-03-17 12:25:53",
-      "reasons": [
-        "RSI=30 (сильная перепроданность)",
-        "BB нижняя полоса (пробой)",
-        "МТФ: 1h, 4h согласны",
-        "CVD положительный (-2.4%)"
       ]
     }
   ],
@@ -2140,9 +2121,10 @@
         "Doji (1h) — нерешительность",
         "📌 Лимитный вход @ 0.252424 (откат к EMA20)"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 84,
       "symbol": "RIVERUSDT",
       "direction": "SHORT",
       "entry": 22.953,
@@ -2150,20 +2132,12 @@
       "tp2": 21.1787331,
       "sl": 21.8819495,
       "strength": 34,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 4.3,
+      "close_price": 21.9655,
       "taken_at": "2026-03-17 11:20:53",
-      "status": "TP1_HIT",
-      "reasons": [
-        "MACD медвежий (hist=-0.11134)",
-        "Цена ниже EMA20",
-        "Стакан: сильное давление продажи (-0.32)",
-        "МТФ: только 1 таймфрейм согласен",
-        "OI растёт +3.8% + цена ↓",
-        "CVD отрицательный (+7.1%)",
-        "📌 Лимитный вход @ 23.4205 (откат к EMA20)"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-17 13:54:17"
+    },
     {
       "symbol": "CRVUSDT",
       "direction": "LONG",
