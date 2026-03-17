@@ -219,12 +219,13 @@ main { padding: 24px 40px; max-width: 1600px; margin: 0 auto; }
 .sec-dot { width: 6px; height: 6px; border-radius: 50%; }
 
 .chart-card {
-  background: var(--surface);
+  background: var(--glass);
   border: 1px solid var(--border);
   border-radius: var(--radius2);
   overflow: hidden;
   margin-bottom: 20px;
   box-shadow: var(--shadow);
+  backdrop-filter: var(--blur);
 }
 .chart-header {
   padding: 16px 20px 12px;
@@ -257,7 +258,7 @@ main { padding: 24px 40px; max-width: 1600px; margin: 0 auto; }
 }
 
 .sig-card {
-  background: var(--surface);
+  background: var(--glass);
   border: 1px solid var(--border);
   border-radius: var(--radius2);
   overflow: hidden;
@@ -265,6 +266,7 @@ main { padding: 24px 40px; max-width: 1600px; margin: 0 auto; }
   transition: border-color .2s, transform .2s, box-shadow .2s;
   position: relative;
   box-shadow: var(--shadow);
+  backdrop-filter: var(--blur);
 }
 .sig-card:hover { transform: translateY(-2px); }
 .sig-card.long  {
