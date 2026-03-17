@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T16:01:55.073790+00:00",
+  "updated_at": "2026-03-17T16:03:16.609790+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T16:01:14Z",
+    "last_ok": "2026-03-17T16:01:59Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -9,19 +9,19 @@
     "auto_take": true
   },
   "stats": {
-    "total": 302,
+    "total": 303,
     "wins": 55,
     "losses": 7,
-    "active": 19,
+    "active": 20,
     "winrate": 88.7
   },
   "trade_stats": {
     "open": 69,
     "pending": 19,
     "wins": 66,
-    "losses": 40,
-    "total_pnl": 91.66,
-    "winrate": 52.8
+    "losses": 41,
+    "total_pnl": 89.62,
+    "winrate": 52.4
   },
   "fear_greed": {
     "value": 28,
@@ -428,6 +428,28 @@
       ],
       "news": null,
       "created_at": "2026-03-17 16:00:36",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 341,
+      "symbol": "RIVERUSDT",
+      "direction": "SHORT",
+      "entry": 22.729,
+      "tp1": 22.073286,
+      "tp2": 21.417571,
+      "sl": 23.253571,
+      "strength": 28,
+      "reasons": [
+        "RSI=57 (нейтральный↑)",
+        "BB выше середины",
+        "EMA20 < EMA50",
+        "Стакан: сильное давление продажи (-0.42)",
+        "МТФ: только 1 таймфрейм согласен",
+        "OI падает (лонги закрываются)",
+        "CVD отрицательный (+1.7%)"
+      ],
+      "news": null,
+      "created_at": "2026-03-17 16:03:10",
       "status": "ACTIVE"
     }
   ],
@@ -1962,25 +1984,6 @@
       ]
     },
     {
-      "id": 159,
-      "symbol": "XANUSDT",
-      "direction": "SHORT",
-      "entry": 0.01025,
-      "tp1": 0.010045,
-      "tp2": 0.00984,
-      "sl": 0.010455,
-      "strength": 30,
-      "taken_at": "2026-03-17 13:50:19",
-      "status": "OPEN",
-      "reasons": [
-        "MACD медвежий (hist=-0.00000)",
-        "Цена < EMA20 < EMA50",
-        "МТФ: 5m, 15m согласны",
-        "CVD падает (-6.2%) — продажи усиливаются 📉",
-        "📌 Лимитный вход @ 0.010345 (откат к EMA20)"
-      ]
-    },
-    {
       "id": 160,
       "symbol": "CRVUSDT",
       "direction": "SHORT",
@@ -2184,6 +2187,27 @@
         "CVD падает (-6.2%) — продажи усиливаются 📉",
         "⚠️ Funding через 33м",
         "📌 Лимитный вход @ 0.292243 (откат к EMA20)"
+      ]
+    },
+    {
+      "id": 195,
+      "symbol": "RIVERUSDT",
+      "direction": "SHORT",
+      "entry": 22.729,
+      "tp1": 22.073286,
+      "tp2": 21.417571,
+      "sl": 23.253571,
+      "strength": 28,
+      "taken_at": null,
+      "status": "OPEN",
+      "reasons": [
+        "RSI=57 (нейтральный↑)",
+        "BB выше середины",
+        "EMA20 < EMA50",
+        "Стакан: сильное давление продажи (-0.42)",
+        "МТФ: только 1 таймфрейм согласен",
+        "OI падает (лонги закрываются)",
+        "CVD отрицательный (+1.7%)"
       ]
     },
     {
@@ -2585,6 +2609,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "XANUSDT",
+      "direction": "SHORT",
+      "entry": 0.01025,
+      "tp1": 0.010045,
+      "tp2": 0.00984,
+      "sl": 0.010455,
+      "strength": 30,
+      "status": "SL",
+      "pnl_pct": -2.04,
+      "close_price": 0.0104595,
+      "taken_at": "2026-03-17 13:50:19",
+      "closed_at": "2026-03-17 16:02:19"
+    },
     {
       "symbol": "TRIAUSDT",
       "direction": "LONG",
