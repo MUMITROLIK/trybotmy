@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T12:26:43.111015+00:00",
+  "updated_at": "2026-03-17T12:28:09.915235+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T12:26:07Z",
+    "last_ok": "2026-03-17T12:26:47Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -9,7 +9,7 @@
     "auto_take": true
   },
   "stats": {
-    "total": 235,
+    "total": 236,
     "wins": 17,
     "losses": 1,
     "active": 3,
@@ -17,10 +17,10 @@
   },
   "trade_stats": {
     "open": 79,
-    "wins": 32,
+    "wins": 33,
     "losses": 16,
-    "total_pnl": 62.83,
-    "winrate": 66.7
+    "total_pnl": 66.43,
+    "winrate": 67.3
   },
   "fear_greed": {
     "value": 28,
@@ -28,25 +28,6 @@
     "emoji": "😨"
   },
   "signals": [
-    {
-      "id": 271,
-      "symbol": "FETUSDT",
-      "direction": "LONG",
-      "entry": 0.2275,
-      "tp1": 0.233039,
-      "tp2": 0.238579,
-      "sl": 0.22295,
-      "strength": 34,
-      "reasons": [
-        "RSI=29 (сильная перепроданность)",
-        "BB нижняя полоса (пробой)",
-        "EMA20 > EMA50",
-        "МТФ: 15m, 1h, 4h согласны"
-      ],
-      "news": null,
-      "created_at": "2026-03-17 12:17:50",
-      "status": "ACTIVE"
-    },
     {
       "id": 272,
       "symbol": "BEATUSDT",
@@ -85,9 +66,49 @@
       "news": null,
       "created_at": "2026-03-17 12:25:53",
       "status": "ACTIVE"
+    },
+    {
+      "id": 274,
+      "symbol": "DEGOUSDT",
+      "direction": "SHORT",
+      "entry": 1.1327924,
+      "tp1": 1.087257,
+      "tp2": 1.041721,
+      "sl": 1.169221,
+      "strength": 40,
+      "reasons": [
+        "MACD медвежий (hist=-0.00218)",
+        "Цена < EMA20 < EMA50",
+        "Объём x2.0 🔥",
+        "МТФ: 5m, 15m согласны",
+        "OI падает (лонги закрываются)",
+        "CVD отрицательный (+4.2%)",
+        "Bearish Engulfing (1h) 🕯️",
+        "📌 Лимитный вход @ 1.13279 (откат к EMA20)"
+      ],
+      "news": null,
+      "created_at": "2026-03-17 12:28:07",
+      "status": "ACTIVE"
     }
   ],
   "history": [
+    {
+      "symbol": "FETUSDT",
+      "direction": "LONG",
+      "entry": 0.2275,
+      "tp1": 0.233039,
+      "tp2": 0.238579,
+      "sl": 0.22295,
+      "strength": 34,
+      "status": "EXPIRED",
+      "created_at": "2026-03-17 12:17:50",
+      "reasons": [
+        "RSI=29 (сильная перепроданность)",
+        "BB нижняя полоса (пробой)",
+        "EMA20 > EMA50",
+        "МТФ: 15m, 1h, 4h согласны"
+      ]
+    },
     {
       "symbol": "WLFIUSDT",
       "direction": "LONG",
@@ -439,24 +460,6 @@
         "Стакан: давление покупки (+0.15)",
         "МТФ: 15m, 4h согласны",
         "CVD положительный (-1.4%)"
-      ]
-    },
-    {
-      "symbol": "LINKUSDT",
-      "direction": "LONG",
-      "entry": 9.771,
-      "tp1": 9.96642,
-      "tp2": 10.16184,
-      "sl": 9.57558,
-      "strength": 31,
-      "status": "EXPIRED",
-      "created_at": "2026-03-17 12:02:52",
-      "reasons": [
-        "RSI=43 (нейтральный↓)",
-        "MACD бычий (hist=0.00367)",
-        "BB ниже середины",
-        "МТФ: 1h, 4h согласны",
-        "CVD положительный (-0.9%)"
       ]
     }
   ],
@@ -1111,27 +1114,6 @@
         "OI растёт +1.8% + цена ↓",
         "BTC контекст: -1.5% за 12ч 📉",
         "📌 Лимитный вход @ 0.303999 (откат к EMA20)"
-      ]
-    },
-    {
-      "id": 81,
-      "symbol": "DEGOUSDT",
-      "direction": "SHORT",
-      "entry": 1.112,
-      "tp1": 1.0684096,
-      "tp2": 1.0248192,
-      "sl": 1.1468056,
-      "strength": 31,
-      "taken_at": "2026-03-17 11:05:22",
-      "status": "OPEN",
-      "reasons": [
-        "MACD медвежий (hist=-0.00382)",
-        "Цена < EMA20 < EMA50",
-        "Объём x1.9 🔥",
-        "МТФ: 5m, 15m согласны",
-        "OI падает (лонги закрываются)",
-        "CVD отрицательный (+3.8%)",
-        "📌 Лимитный вход @ 1.14999 (откат к EMA20)"
       ]
     },
     {
@@ -2011,9 +1993,45 @@
         "МТФ: 1h, 4h согласны",
         "CVD положительный (-2.4%)"
       ]
+    },
+    {
+      "id": 128,
+      "symbol": "DEGOUSDT",
+      "direction": "SHORT",
+      "entry": 1.0749,
+      "tp1": 1.03168902,
+      "tp2": 0.98847804,
+      "sl": 1.10951178,
+      "strength": 40,
+      "taken_at": "2026-03-17 12:28:07",
+      "status": "OPEN",
+      "reasons": [
+        "MACD медвежий (hist=-0.00218)",
+        "Цена < EMA20 < EMA50",
+        "Объём x2.0 🔥",
+        "МТФ: 5m, 15m согласны",
+        "OI падает (лонги закрываются)",
+        "CVD отрицательный (+4.2%)",
+        "Bearish Engulfing (1h) 🕯️",
+        "📌 Лимитный вход @ 1.13279 (откат к EMA20)"
+      ]
     }
   ],
   "trades_history": [
+    {
+      "symbol": "DEGOUSDT",
+      "direction": "SHORT",
+      "entry": 1.112,
+      "tp1": 1.0684096,
+      "tp2": 1.0248192,
+      "sl": 1.06595,
+      "strength": 31,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 3.6,
+      "close_price": 1.0719500000000002,
+      "taken_at": "2026-03-17 11:05:22",
+      "closed_at": "2026-03-17 12:27:10"
+    },
     {
       "symbol": "LYNUSDT",
       "direction": "SHORT",
