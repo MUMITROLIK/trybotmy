@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T16:28:51.074465+00:00",
+  "updated_at": "2026-03-17T16:29:57.761403+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T16:27:39Z",
+    "last_ok": "2026-03-17T16:28:55Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -16,12 +16,12 @@
     "winrate": 89.2
   },
   "trade_stats": {
-    "open": 70,
+    "open": 69,
     "pending": 40,
-    "wins": 67,
+    "wins": 68,
     "losses": 44,
-    "total_pnl": 84.0,
-    "winrate": 44.4
+    "total_pnl": 86.29,
+    "winrate": 44.7
   },
   "fear_greed": {
     "value": 28,
@@ -3121,7 +3121,7 @@
       "entry": 1.19434769,
       "tp1": 1.170461,
       "tp2": 1.146574,
-      "sl": 1.16844485,
+      "sl": 1.1667899,
       "strength": 34,
       "taken_at": "2026-03-17 08:57:12",
       "status": "TP1_HIT",
@@ -3132,9 +3132,10 @@
         "CVD отрицательный (-4.3%)",
         "📌 Лимитный вход @ 1.19435 (откат к EMA20)"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 158,
       "symbol": "GRASSUSDT",
       "direction": "LONG",
       "entry": 0.4393,
@@ -3142,18 +3143,12 @@
       "tp2": 0.457879,
       "sl": 0.4497467,
       "strength": 29,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 2.29,
+      "close_price": 0.44935,
       "taken_at": "2026-03-17 13:50:17",
-      "status": "TP1_HIT",
-      "reasons": [
-        "MACD бычий (hist=0.00032)",
-        "BB ниже середины",
-        "EMA20 > EMA50",
-        "МТФ: 5m, 1h, 4h согласны",
-        "CVD положительный (+1.3%)"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-17 16:28:55"
+    },
     {
       "symbol": "OPNUSDT",
       "direction": "SHORT",
