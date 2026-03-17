@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T17:22:18.310199+00:00",
+  "updated_at": "2026-03-17T17:23:25.605967+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T17:21:49Z",
+    "last_ok": "2026-03-17T17:22:25Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -9,15 +9,15 @@
     "auto_take": true
   },
   "stats": {
-    "total": 356,
+    "total": 357,
     "wins": 94,
     "losses": 14,
-    "active": 23,
+    "active": 24,
     "winrate": 87.0
   },
   "trade_stats": {
     "open": 56,
-    "pending": 15,
+    "pending": 16,
     "wins": 83,
     "losses": 50,
     "total_pnl": 88.04,
@@ -511,6 +511,28 @@
       ],
       "news": null,
       "created_at": "2026-03-17 16:45:15",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 395,
+      "symbol": "ADAUSDT",
+      "direction": "LONG",
+      "entry": 0.28666865,
+      "tp1": 0.292402,
+      "tp2": 0.298135,
+      "sl": 0.280935,
+      "strength": 40,
+      "reasons": [
+        "MACD бычий (hist=0.00021)",
+        "EMA20 > EMA50 (golden cross) 🌟",
+        "Стакан: давление покупки (+0.12)",
+        "МТФ: 5m, 15m, 4h согласны",
+        "CVD положительный (-6.0%)",
+        "BTC корреляция 0.65, BTC +1.1% 📈",
+        "📌 Лимитный вход @ 0.286669 (откат к EMA20)"
+      ],
+      "news": null,
+      "created_at": "2026-03-17 17:23:13",
       "status": "ACTIVE"
     }
   ],
@@ -3235,6 +3257,27 @@
         "CVD падает (-9.1%) — продажи усиливаются 📉",
         "📌 Лимитный вход @ 0.159302 (откат к EMA20)"
       ]
+    },
+    {
+      "id": 249,
+      "symbol": "ADAUSDT",
+      "direction": "LONG",
+      "entry": 0.28666865,
+      "tp1": 0.292402,
+      "tp2": 0.298135,
+      "sl": 0.280935,
+      "strength": 40,
+      "taken_at": null,
+      "status": "PENDING",
+      "reasons": [
+        "MACD бычий (hist=0.00021)",
+        "EMA20 > EMA50 (golden cross) 🌟",
+        "Стакан: давление покупки (+0.12)",
+        "МТФ: 5m, 15m, 4h согласны",
+        "CVD положительный (-6.0%)",
+        "BTC корреляция 0.65, BTC +1.1% 📈",
+        "📌 Лимитный вход @ 0.286669 (откат к EMA20)"
+      ]
     }
   ],
   "trades_history": [
@@ -5920,6 +5963,20 @@
       "tp2": 0.150259,
       "sl": 0.162919,
       "strength": 49,
+      "status": "PENDING",
+      "pnl_pct": 0,
+      "close_price": null,
+      "taken_at": null,
+      "closed_at": null
+    },
+    {
+      "symbol": "ADAUSDT",
+      "direction": "LONG",
+      "entry": 0.28666865,
+      "tp1": 0.292402,
+      "tp2": 0.298135,
+      "sl": 0.280935,
+      "strength": 40,
       "status": "PENDING",
       "pnl_pct": 0,
       "close_price": null,
