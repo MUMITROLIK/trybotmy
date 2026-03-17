@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T12:57:24.766584+00:00",
+  "updated_at": "2026-03-17T12:58:05.643178+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T12:56:19Z",
+    "last_ok": "2026-03-17T12:57:29Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -9,18 +9,18 @@
     "auto_take": true
   },
   "stats": {
-    "total": 247,
+    "total": 248,
     "wins": 19,
     "losses": 1,
-    "active": 6,
+    "active": 7,
     "winrate": 95.0
   },
   "trade_stats": {
     "open": 76,
-    "wins": 44,
+    "wins": 45,
     "losses": 19,
-    "total_pnl": 81.92,
-    "winrate": 69.8
+    "total_pnl": 84.74,
+    "winrate": 70.3
   },
   "fear_greed": {
     "value": 28,
@@ -148,6 +148,28 @@
       ],
       "news": null,
       "created_at": "2026-03-17 12:56:26",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 286,
+      "symbol": "TAOUSDT",
+      "direction": "SHORT",
+      "entry": 277.33254607,
+      "tp1": 271.785895,
+      "tp2": 266.239244,
+      "sl": 282.879197,
+      "strength": 37,
+      "reasons": [
+        "MACD медвежий (hist=-0.28919)",
+        "Цена < EMA20 < EMA50",
+        "Объём x2.5 🔥🔥",
+        "Стакан: сильное давление продажи (-0.26)",
+        "МТФ: только 1 таймфрейм согласен",
+        "Doji (1h) — нерешительность",
+        "📌 Лимитный вход @ 277.333 (откат к EMA20)"
+      ],
+      "news": null,
+      "created_at": "2026-03-17 12:58:04",
       "status": "ACTIVE"
     }
   ],
@@ -1799,25 +1821,6 @@
       ]
     },
     {
-      "id": 129,
-      "symbol": "LYNUSDT",
-      "direction": "SHORT",
-      "entry": 0.06369,
-      "tp1": 0.06189,
-      "tp2": 0.06009,
-      "sl": 0.06513,
-      "strength": 36,
-      "taken_at": "2026-03-17 12:28:37",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=73 (сильная перекупленность)",
-        "BB верхняя полоса (пробой)",
-        "EMA20 < EMA50",
-        "Объём x1.9 🔥",
-        "МТФ: 15m, 1h согласны"
-      ]
-    },
-    {
       "id": 130,
       "symbol": "VIRTUALUSDT",
       "direction": "LONG",
@@ -2013,9 +2016,44 @@
         "CVD падает (-11.3%) — продажи усиливаются 📉",
         "📌 Лимитный вход @ 0.198129 (откат к EMA20)"
       ]
+    },
+    {
+      "id": 140,
+      "symbol": "TAOUSDT",
+      "direction": "SHORT",
+      "entry": 276.1,
+      "tp1": 270.578,
+      "tp2": 265.056,
+      "sl": 281.622,
+      "strength": 37,
+      "taken_at": "2026-03-17 12:58:05",
+      "status": "OPEN",
+      "reasons": [
+        "MACD медвежий (hist=-0.28919)",
+        "Цена < EMA20 < EMA50",
+        "Объём x2.5 🔥🔥",
+        "Стакан: сильное давление продажи (-0.26)",
+        "МТФ: только 1 таймфрейм согласен",
+        "Doji (1h) — нерешительность",
+        "📌 Лимитный вход @ 277.333 (откат к EMA20)"
+      ]
     }
   ],
   "trades_history": [
+    {
+      "symbol": "LYNUSDT",
+      "direction": "SHORT",
+      "entry": 0.06369,
+      "tp1": 0.06189,
+      "tp2": 0.06009,
+      "sl": 0.061635,
+      "strength": 36,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 2.82,
+      "close_price": 0.061895,
+      "taken_at": "2026-03-17 12:28:37",
+      "closed_at": "2026-03-17 12:58:05"
+    },
     {
       "symbol": "ASTERUSDT",
       "direction": "SHORT",
