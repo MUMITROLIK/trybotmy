@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T16:23:19.540402+00:00",
+  "updated_at": "2026-03-17T16:24:41.788310+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T16:22:39Z",
+    "last_ok": "2026-03-17T16:23:24Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -16,12 +16,12 @@
     "winrate": 89.5
   },
   "trade_stats": {
-    "open": 71,
+    "open": 70,
     "pending": 35,
-    "wins": 66,
+    "wins": 67,
     "losses": 42,
-    "total_pnl": 86.67,
-    "winrate": 46.2
+    "total_pnl": 88.65,
+    "winrate": 46.5
   },
   "fear_greed": {
     "value": 28,
@@ -3057,9 +3057,10 @@
         "CVD растёт (+6.3%) — покупки усиливаются 📈",
         "📌 Лимитный вход @ 0.0331897 (откат к EMA20)"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 127,
       "symbol": "WLDUSDT",
       "direction": "LONG",
       "entry": 0.3873,
@@ -3067,17 +3068,12 @@
       "tp2": 0.402792,
       "sl": 0.39505,
       "strength": 31,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 1.98,
+      "close_price": 0.39495,
       "taken_at": "2026-03-17 12:25:53",
-      "status": "TP1_HIT",
-      "reasons": [
-        "RSI=30 (сильная перепроданность)",
-        "BB нижняя полоса (пробой)",
-        "МТФ: 1h, 4h согласны",
-        "CVD положительный (-2.4%)"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-17 16:23:43"
+    },
     {
       "symbol": "ROBOUSDT",
       "direction": "SHORT",
