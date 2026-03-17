@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-03-17T09:44:55.241642+00:00",
+  "updated_at": "2026-03-17T09:46:16.648509+00:00",
   "publish_status": {
     "last_ok": "2026-03-17T09:43:55Z",
-    "last_error": "fatal: unable to access 'https://github.com/MUMITROLIK/trybotmy.git/': Failed to connect to github.com port 443 after 21047 ms: Could not connect to server\n",
+    "last_error": "fatal: unable to access 'https://github.com/MUMITROLIK/trybotmy.git/': Failed to connect to github.com port 443 after 21069 ms: Could not connect to server\n",
     "min_push_interval_sec": 30
   },
   "stats": {
     "total": 172,
     "wins": 13,
     "losses": 1,
-    "active": 5,
+    "active": 4,
     "winrate": 92.9
   },
   "trade_stats": {
@@ -25,28 +25,6 @@
     "emoji": "😐"
   },
   "signals": [
-    {
-      "id": 206,
-      "symbol": "XAGUSDT",
-      "direction": "SHORT",
-      "entry": 81.04345573,
-      "tp1": 79.422587,
-      "tp2": 77.801718,
-      "sl": 82.664325,
-      "strength": 32,
-      "reasons": [
-        "MACD медвежий (hist=-0.06131)",
-        "Цена ниже EMA20",
-        "Стакан: давление продажи (-0.11)",
-        "МТФ: 5m, 4h согласны",
-        "OI растёт +3.8%",
-        "CVD отрицательный (-0.8%)",
-        "📌 Лимитный вход @ 81.0435 (откат к EMA20)"
-      ],
-      "news": null,
-      "created_at": "2026-03-17 09:35:50",
-      "status": "ACTIVE"
-    },
     {
       "id": 207,
       "symbol": "TSLAUSDT",
@@ -132,6 +110,26 @@
     }
   ],
   "history": [
+    {
+      "symbol": "XAGUSDT",
+      "direction": "SHORT",
+      "entry": 81.04345573,
+      "tp1": 79.422587,
+      "tp2": 77.801718,
+      "sl": 82.664325,
+      "strength": 32,
+      "status": "EXPIRED",
+      "created_at": "2026-03-17 09:35:50",
+      "reasons": [
+        "MACD медвежий (hist=-0.06131)",
+        "Цена ниже EMA20",
+        "Стакан: давление продажи (-0.11)",
+        "МТФ: 5m, 4h согласны",
+        "OI растёт +3.8%",
+        "CVD отрицательный (-0.8%)",
+        "📌 Лимитный вход @ 81.0435 (откат к EMA20)"
+      ]
+    },
     {
       "symbol": "ROBOUSDT",
       "direction": "SHORT",
@@ -497,25 +495,6 @@
         "Объём x3.1 🔥🔥",
         "МТФ: только 1 таймфрейм согласен",
         "OI растёт +1.0% + цена ↓"
-      ]
-    },
-    {
-      "symbol": "PIXELUSDT",
-      "direction": "SHORT",
-      "entry": 0.010198,
-      "tp1": 0.009989,
-      "tp2": 0.009779,
-      "sl": 0.010402,
-      "strength": 34,
-      "status": "EXPIRED",
-      "created_at": "2026-03-17 08:57:25",
-      "reasons": [
-        "RSI=64 (перекупленность)",
-        "BB верхняя полоса (пробой)",
-        "EMA20 < EMA50",
-        "Объём x1.9 🔥",
-        "МТФ: только 1 таймфрейм согласен",
-        "OI растёт +4.6% + цена ↓"
       ]
     }
   ],
