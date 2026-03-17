@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-03-17T10:05:53.137339+00:00",
+  "updated_at": "2026-03-17T10:06:35.689798+00:00",
   "publish_status": {
     "last_ok": "2026-03-17T10:05:17Z",
-    "last_error": null,
+    "last_error": "fatal: unable to access 'https://github.com/MUMITROLIK/trybotmy.git/': Failed to connect to github.com port 443 after 21089 ms: Could not connect to server\n",
     "min_push_interval_sec": 30
   },
   "stats": {
-    "total": 174,
+    "total": 175,
     "wins": 14,
     "losses": 1,
-    "active": 1,
+    "active": 2,
     "winrate": 93.3
   },
   "trade_stats": {
@@ -42,6 +42,26 @@
       ],
       "news": null,
       "created_at": "2026-03-17 09:57:28",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 213,
+      "symbol": "OPNUSDT",
+      "direction": "SHORT",
+      "entry": 0.30497117,
+      "tp1": 0.298575,
+      "tp2": 0.292178,
+      "sl": 0.311071,
+      "strength": 32,
+      "reasons": [
+        "MACD медвежий (hist=-0.00010)",
+        "Цена < EMA20 < EMA50",
+        "МТФ: 5m, 15m, 1h согласны",
+        "OI растёт +1.8% + цена ↓",
+        "📌 Лимитный вход @ 0.304971 (откат к EMA20)"
+      ],
+      "news": null,
+      "created_at": "2026-03-17 10:06:34",
       "status": "ACTIVE"
     }
   ],
@@ -775,26 +795,6 @@
       ]
     },
     {
-      "id": 48,
-      "symbol": "COSUSDT",
-      "direction": "SHORT",
-      "entry": 0.00153963,
-      "tp1": 0.001508,
-      "tp2": 0.001477,
-      "sl": 0.00157,
-      "strength": 30,
-      "taken_at": "2026-03-17 09:09:33",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=63 (перекупленность)",
-        "BB верхняя зона (82%)",
-        "Цена < EMA20 < EMA50",
-        "МТФ: 15m, 1h согласны",
-        "Shooting Star (1h) ⭐",
-        "📌 Лимитный вход @ 0.00153963 (откат к EMA20)"
-      ]
-    },
-    {
       "id": 50,
       "symbol": "LYNUSDT",
       "direction": "SHORT",
@@ -1049,13 +1049,33 @@
       ]
     },
     {
+      "id": 48,
+      "symbol": "COSUSDT",
+      "direction": "SHORT",
+      "entry": 0.00153963,
+      "tp1": 0.001508,
+      "tp2": 0.001477,
+      "sl": 0.0015055,
+      "strength": 30,
+      "taken_at": "2026-03-17 09:09:33",
+      "status": "TP1_HIT",
+      "reasons": [
+        "RSI=63 (перекупленность)",
+        "BB верхняя зона (82%)",
+        "Цена < EMA20 < EMA50",
+        "МТФ: 15m, 1h согласны",
+        "Shooting Star (1h) ⭐",
+        "📌 Лимитный вход @ 0.00153963 (откат к EMA20)"
+      ]
+    },
+    {
       "id": 49,
       "symbol": "EIGENUSDT",
       "direction": "SHORT",
       "entry": 0.23142058,
       "tp1": 0.226792,
       "tp2": 0.222164,
-      "sl": 0.2267,
+      "sl": 0.2262768,
       "strength": 35,
       "taken_at": "2026-03-17 09:09:46",
       "status": "TP1_HIT",
