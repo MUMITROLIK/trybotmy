@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T20:34:49.696126+00:00",
+  "updated_at": "2026-03-17T20:35:45.798718+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T20:33:49Z",
+    "last_ok": "2026-03-17T20:34:54Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 83.2
   },
   "trade_stats": {
-    "open": 21,
+    "open": 20,
     "pending": 15,
     "wins": 110,
-    "losses": 79,
-    "total_pnl": 93.52,
-    "winrate": 58.2
+    "losses": 80,
+    "total_pnl": 91.51,
+    "winrate": 57.9
   },
   "fear_greed": {
     "value": 28,
@@ -777,27 +777,6 @@
         "CVD падает (-5.6%) — продажи усиливаются 📉",
         "Doji (1h) — нерешительность",
         "📌 Лимитный вход @ 0.00368108 (откат к EMA20)"
-      ]
-    },
-    {
-      "id": 193,
-      "symbol": "HYPEUSDT",
-      "direction": "SHORT",
-      "entry": 40.49173917,
-      "tp1": 39.681904,
-      "tp2": 38.87207,
-      "sl": 41.301574,
-      "strength": 35,
-      "taken_at": "2026-03-17 17:40:18",
-      "status": "OPEN",
-      "reasons": [
-        "MACD медвежий (hist=-0.12264)",
-        "Цена < EMA20 < EMA50",
-        "Стакан: давление продажи (-0.17)",
-        "МТФ: 5m, 15m согласны",
-        "OI растёт +1.9%",
-        "CVD падает (-8.8%) — продажи усиливаются 📉",
-        "📌 Лимитный вход @ 40.4917 (откат к EMA20)"
       ]
     },
     {
@@ -2057,6 +2036,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "HYPEUSDT",
+      "direction": "SHORT",
+      "entry": 40.49173917,
+      "tp1": 39.681904,
+      "tp2": 38.87207,
+      "sl": 41.301574,
+      "strength": 35,
+      "status": "SL",
+      "pnl_pct": -2.01,
+      "close_price": 41.3065,
+      "taken_at": "2026-03-17 17:40:18",
+      "closed_at": "2026-03-17 20:35:45"
+    },
     {
       "symbol": "VIRTUALUSDT",
       "direction": "LONG",
@@ -4842,20 +4835,6 @@
       "close_price": 274.335,
       "taken_at": "2026-03-17 08:42:27",
       "closed_at": "2026-03-17 10:56:24"
-    },
-    {
-      "symbol": "BEATUSDT",
-      "direction": "SHORT",
-      "entry": 0.4955,
-      "tp1": 0.479932,
-      "tp2": 0.464364,
-      "sl": 0.507954,
-      "strength": 34,
-      "status": "SL",
-      "pnl_pct": -2.9,
-      "close_price": 0.50985,
-      "taken_at": "2026-03-17 09:03:40",
-      "closed_at": "2026-03-17 10:46:38"
     }
   ]
 }
