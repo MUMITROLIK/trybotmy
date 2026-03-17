@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T16:24:41.788310+00:00",
+  "updated_at": "2026-03-17T16:25:29.247821+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T16:23:24Z",
+    "last_ok": "2026-03-17T16:24:46Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -9,19 +9,19 @@
     "auto_take": true
   },
   "stats": {
-    "total": 322,
+    "total": 324,
     "wins": 68,
     "losses": 8,
-    "active": 25,
+    "active": 27,
     "winrate": 89.5
   },
   "trade_stats": {
-    "open": 70,
+    "open": 71,
     "pending": 35,
     "wins": 67,
-    "losses": 42,
-    "total_pnl": 88.65,
-    "winrate": 46.5
+    "losses": 43,
+    "total_pnl": 86.33,
+    "winrate": 46.2
   },
   "fear_greed": {
     "value": 28,
@@ -552,6 +552,46 @@
       ],
       "news": null,
       "created_at": "2026-03-17 16:16:47",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 361,
+      "symbol": "WLDUSDT",
+      "direction": "SHORT",
+      "entry": 0.3953,
+      "tp1": 0.387394,
+      "tp2": 0.379488,
+      "sl": 0.403206,
+      "strength": 31,
+      "reasons": [
+        "RSI=77 (сильная перекупленность)",
+        "BB верхняя полоса (пробой)",
+        "EMA20 < EMA50",
+        "Стакан: давление продажи (-0.16)",
+        "МТФ: только 1 таймфрейм согласен"
+      ],
+      "news": null,
+      "created_at": "2026-03-17 16:25:12",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 362,
+      "symbol": "ROBOUSDT",
+      "direction": "SHORT",
+      "entry": 0.03054,
+      "tp1": 0.029929,
+      "tp2": 0.029318,
+      "sl": 0.031151,
+      "strength": 31,
+      "reasons": [
+        "RSI=59 (нейтральный↑)",
+        "BB верхняя зона (78%)",
+        "Цена < EMA20 < EMA50",
+        "Стакан: давление продажи (-0.10)",
+        "МТФ: 15m, 1h, 4h согласны"
+      ],
+      "news": null,
+      "created_at": "2026-03-17 16:25:26",
       "status": "ACTIVE"
     }
   ],
@@ -2172,27 +2212,6 @@
       ]
     },
     {
-      "id": 178,
-      "symbol": "ASTERUSDT",
-      "direction": "SHORT",
-      "entry": 0.7507,
-      "tp1": 0.729014,
-      "tp2": 0.707329,
-      "sl": 0.768049,
-      "strength": 27,
-      "taken_at": null,
-      "status": "OPEN",
-      "reasons": [
-        "RSI=56 (нейтральный↑)",
-        "MACD медвежий (hist=-0.00077)",
-        "BB выше середины",
-        "Цена ниже EMA20",
-        "МТФ: только 1 таймфрейм согласен",
-        "OI растёт +3.4%",
-        "⚠️ Funding через 44м"
-      ]
-    },
-    {
       "id": 185,
       "symbol": "SIRENUSDT",
       "direction": "SHORT",
@@ -2332,6 +2351,44 @@
         "MACD бычий (hist=0.00005)",
         "BB ниже середины",
         "МТФ: 1h, 4h согласны"
+      ]
+    },
+    {
+      "id": 215,
+      "symbol": "WLDUSDT",
+      "direction": "SHORT",
+      "entry": 0.3953,
+      "tp1": 0.387394,
+      "tp2": 0.379488,
+      "sl": 0.403206,
+      "strength": 31,
+      "taken_at": null,
+      "status": "OPEN",
+      "reasons": [
+        "RSI=77 (сильная перекупленность)",
+        "BB верхняя полоса (пробой)",
+        "EMA20 < EMA50",
+        "Стакан: давление продажи (-0.16)",
+        "МТФ: только 1 таймфрейм согласен"
+      ]
+    },
+    {
+      "id": 216,
+      "symbol": "ROBOUSDT",
+      "direction": "SHORT",
+      "entry": 0.03054,
+      "tp1": 0.029929,
+      "tp2": 0.029318,
+      "sl": 0.031151,
+      "strength": 31,
+      "taken_at": null,
+      "status": "OPEN",
+      "reasons": [
+        "RSI=59 (нейтральный↑)",
+        "BB верхняя зона (78%)",
+        "Цена < EMA20 < EMA50",
+        "Стакан: давление продажи (-0.10)",
+        "МТФ: 15m, 1h, 4h согласны"
       ]
     },
     {
@@ -3060,6 +3117,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "ASTERUSDT",
+      "direction": "SHORT",
+      "entry": 0.7507,
+      "tp1": 0.729014,
+      "tp2": 0.707329,
+      "sl": 0.768049,
+      "strength": 27,
+      "status": "SL",
+      "pnl_pct": -2.32,
+      "close_price": 0.76815,
+      "taken_at": null,
+      "closed_at": "2026-03-17 16:25:28"
+    },
     {
       "symbol": "WLDUSDT",
       "direction": "LONG",
