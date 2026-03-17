@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T15:07:43.906439+00:00",
+  "updated_at": "2026-03-17T15:08:48.492814+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T15:07:13Z",
+    "last_ok": "2026-03-17T15:07:48Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -9,14 +9,14 @@
     "auto_take": true
   },
   "stats": {
-    "total": 281,
+    "total": 282,
     "wins": 39,
     "losses": 3,
-    "active": 18,
+    "active": 19,
     "winrate": 92.9
   },
   "trade_stats": {
-    "open": 75,
+    "open": 76,
     "pending": 4,
     "wins": 60,
     "losses": 34,
@@ -403,6 +403,28 @@
       ],
       "news": null,
       "created_at": "2026-03-17 15:05:48",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 320,
+      "symbol": "FARTCOINUSDT",
+      "direction": "LONG",
+      "entry": 0.2007,
+      "tp1": 0.205039,
+      "tp2": 0.209379,
+      "sl": 0.196686,
+      "strength": 36,
+      "reasons": [
+        "RSI=45 (нейтральный↓)",
+        "MACD бычий (hist=0.00001)",
+        "BB ниже середины",
+        "Объём x1.8 🔥",
+        "Стакан: перевес bid (+0.08)",
+        "МТФ: 1h, 4h согласны",
+        "⚠️ Funding через 52м"
+      ],
+      "news": null,
+      "created_at": "2026-03-17 15:08:18",
       "status": "ACTIVE"
     }
   ],
@@ -2254,6 +2276,27 @@
         "OI растёт +1.2% + цена ↑",
         "⚠️ Funding через 76м",
         "📌 Лимитный вход @ 0.11619 (откат к EMA20)"
+      ]
+    },
+    {
+      "id": 174,
+      "symbol": "FARTCOINUSDT",
+      "direction": "LONG",
+      "entry": 0.2007,
+      "tp1": 0.205039,
+      "tp2": 0.209379,
+      "sl": 0.196686,
+      "strength": 36,
+      "taken_at": null,
+      "status": "OPEN",
+      "reasons": [
+        "RSI=45 (нейтральный↓)",
+        "MACD бычий (hist=0.00001)",
+        "BB ниже середины",
+        "Объём x1.8 🔥",
+        "Стакан: перевес bid (+0.08)",
+        "МТФ: 1h, 4h согласны",
+        "⚠️ Funding через 52м"
       ]
     },
     {
