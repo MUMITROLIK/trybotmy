@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T16:31:49.432739+00:00",
+  "updated_at": "2026-03-17T16:33:06.948966+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T16:30:47Z",
+    "last_ok": "2026-03-17T16:31:54Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -9,19 +9,19 @@
     "auto_take": true
   },
   "stats": {
-    "total": 334,
+    "total": 336,
     "wins": 76,
     "losses": 9,
-    "active": 28,
+    "active": 30,
     "winrate": 89.4
   },
   "trade_stats": {
     "open": 70,
-    "pending": 43,
+    "pending": 45,
     "wins": 69,
     "losses": 44,
     "total_pnl": 89.64,
-    "winrate": 44.2
+    "winrate": 43.7
   },
   "fear_greed": {
     "value": 28,
@@ -616,6 +616,47 @@
       ],
       "news": null,
       "created_at": "2026-03-17 16:31:37",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 373,
+      "symbol": "XAGUSDT",
+      "direction": "SHORT",
+      "entry": 80.05278778,
+      "tp1": 78.451732,
+      "tp2": 76.850676,
+      "sl": 81.653844,
+      "strength": 28,
+      "reasons": [
+        "MACD медвежий (hist=-0.12236)",
+        "Цена < EMA20 < EMA50",
+        "МТФ: 15m, 1h согласны",
+        "OI растёт +8.4% + цена ↓",
+        "CVD отрицательный (-3.1%)",
+        "📌 Лимитный вход @ 80.0528 (откат к EMA20)"
+      ],
+      "news": null,
+      "created_at": "2026-03-17 16:32:59",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 374,
+      "symbol": "HYPEUSDT",
+      "direction": "SHORT",
+      "entry": 40.44898164,
+      "tp1": 39.640002,
+      "tp2": 38.831022,
+      "sl": 41.257961,
+      "strength": 27,
+      "reasons": [
+        "MACD медвежий (hist=-0.06239)",
+        "Цена < EMA20 < EMA50",
+        "МТФ: 5m, 15m согласны",
+        "CVD падает (-9.4%) — продажи усиливаются 📉",
+        "📌 Лимитный вход @ 40.449 (откат к EMA20)"
+      ],
+      "news": null,
+      "created_at": "2026-03-17 16:33:05",
       "status": "ACTIVE"
     }
   ],
@@ -3256,13 +3297,52 @@
       ]
     },
     {
+      "id": 227,
+      "symbol": "XAGUSDT",
+      "direction": "SHORT",
+      "entry": 80.05278778,
+      "tp1": 78.451732,
+      "tp2": 76.850676,
+      "sl": 81.653844,
+      "strength": 28,
+      "taken_at": null,
+      "status": "PENDING",
+      "reasons": [
+        "MACD медвежий (hist=-0.12236)",
+        "Цена < EMA20 < EMA50",
+        "МТФ: 15m, 1h согласны",
+        "OI растёт +8.4% + цена ↓",
+        "CVD отрицательный (-3.1%)",
+        "📌 Лимитный вход @ 80.0528 (откат к EMA20)"
+      ]
+    },
+    {
+      "id": 228,
+      "symbol": "HYPEUSDT",
+      "direction": "SHORT",
+      "entry": 40.44898164,
+      "tp1": 39.640002,
+      "tp2": 38.831022,
+      "sl": 41.257961,
+      "strength": 27,
+      "taken_at": null,
+      "status": "PENDING",
+      "reasons": [
+        "MACD медвежий (hist=-0.06239)",
+        "Цена < EMA20 < EMA50",
+        "МТФ: 5m, 15m согласны",
+        "CVD падает (-9.4%) — продажи усиливаются 📉",
+        "📌 Лимитный вход @ 40.449 (откат к EMA20)"
+      ]
+    },
+    {
       "id": 39,
       "symbol": "ENSOUSDT",
       "direction": "SHORT",
       "entry": 1.19434769,
       "tp1": 1.170461,
       "tp2": 1.146574,
-      "sl": 1.1667899,
+      "sl": 1.16383105,
       "strength": 34,
       "taken_at": "2026-03-17 08:57:12",
       "status": "TP1_HIT",
@@ -5454,6 +5534,34 @@
       "tp2": 0.461342,
       "sl": 0.433908,
       "strength": 40,
+      "status": "PENDING",
+      "pnl_pct": 0,
+      "close_price": null,
+      "taken_at": null,
+      "closed_at": null
+    },
+    {
+      "symbol": "XAGUSDT",
+      "direction": "SHORT",
+      "entry": 80.05278778,
+      "tp1": 78.451732,
+      "tp2": 76.850676,
+      "sl": 81.653844,
+      "strength": 28,
+      "status": "PENDING",
+      "pnl_pct": 0,
+      "close_price": null,
+      "taken_at": null,
+      "closed_at": null
+    },
+    {
+      "symbol": "HYPEUSDT",
+      "direction": "SHORT",
+      "entry": 40.44898164,
+      "tp1": 39.640002,
+      "tp2": 38.831022,
+      "sl": 41.257961,
+      "strength": 27,
       "status": "PENDING",
       "pnl_pct": 0,
       "close_price": null,
