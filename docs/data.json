@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T16:59:40.713478+00:00",
+  "updated_at": "2026-03-17T17:00:42.501616+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T16:58:40Z",
+    "last_ok": "2026-03-17T16:59:53Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -16,12 +16,12 @@
     "winrate": 87.9
   },
   "trade_stats": {
-    "open": 57,
-    "pending": 63,
-    "wins": 79,
+    "open": 56,
+    "pending": 62,
+    "wins": 81,
     "losses": 49,
-    "total_pnl": 87.45,
-    "winrate": 41.4
+    "total_pnl": 88.16,
+    "winrate": 42.2
   },
   "fear_greed": {
     "value": 28,
@@ -949,47 +949,6 @@
     }
   ],
   "trades_open": [
-    {
-      "id": 41,
-      "symbol": "1000BONKUSDT",
-      "direction": "SHORT",
-      "entry": 0.006518,
-      "tp1": 0.006388,
-      "tp2": 0.006257,
-      "sl": 0.006648,
-      "strength": 40,
-      "taken_at": "2026-03-17 09:00:03",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=71 (сильная перекупленность)",
-        "BB верхняя зона (97%)",
-        "EMA20 < EMA50",
-        "Объём x3.1 🔥🔥",
-        "МТФ: только 1 таймфрейм согласен",
-        "OI растёт +1.0% + цена ↓"
-      ]
-    },
-    {
-      "id": 42,
-      "symbol": "XLMUSDT",
-      "direction": "SHORT",
-      "entry": 0.1749,
-      "tp1": 0.171402,
-      "tp2": 0.167904,
-      "sl": 0.178398,
-      "strength": 34,
-      "taken_at": "2026-03-17 09:00:16",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=61 (перекупленность)",
-        "BB выше середины",
-        "Цена < EMA20 < EMA50",
-        "Стакан: давление продажи (-0.21)",
-        "МТФ: только 1 таймфрейм согласен",
-        "OI падает (лонги закрываются)",
-        "CVD падает (-8.3%) — продажи усиливаются 📉"
-      ]
-    },
     {
       "id": 55,
       "symbol": "XAUUSDT",
@@ -2057,6 +2016,25 @@
         "EMA20 < EMA50",
         "МТФ: 15m, 1h, 4h согласны",
         "OI растёт +2.9% + цена ↓"
+      ]
+    },
+    {
+      "id": 243,
+      "symbol": "GRASSUSDT",
+      "direction": "LONG",
+      "entry": 0.44334446,
+      "tp1": 0.453298,
+      "tp2": 0.463252,
+      "sl": 0.434478,
+      "strength": 37,
+      "taken_at": "2026-03-17 17:00:28",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.00125)",
+        "EMA20 > EMA50 (golden cross) 🌟",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +1.5% + цена ↑",
+        "📌 Лимитный вход @ 0.443344 (откат к EMA20)"
       ]
     },
     {
@@ -3274,25 +3252,6 @@
       ]
     },
     {
-      "id": 243,
-      "symbol": "GRASSUSDT",
-      "direction": "LONG",
-      "entry": 0.44334446,
-      "tp1": 0.453298,
-      "tp2": 0.463252,
-      "sl": 0.434478,
-      "strength": 37,
-      "taken_at": null,
-      "status": "PENDING",
-      "reasons": [
-        "MACD бычий (hist=0.00125)",
-        "EMA20 > EMA50 (golden cross) 🌟",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +1.5% + цена ↑",
-        "📌 Лимитный вход @ 0.443344 (откат к EMA20)"
-      ]
-    },
-    {
       "id": 244,
       "symbol": "HUMAUSDT",
       "direction": "SHORT",
@@ -3377,6 +3336,34 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "XLMUSDT",
+      "direction": "SHORT",
+      "entry": 0.1749,
+      "tp1": 0.171402,
+      "tp2": 0.167904,
+      "sl": 0.178398,
+      "strength": 34,
+      "status": "TIMEOUT",
+      "pnl_pct": 0.32,
+      "close_price": 0.17433500000000002,
+      "taken_at": "2026-03-17 09:00:16",
+      "closed_at": "2026-03-17 17:00:27"
+    },
+    {
+      "symbol": "1000BONKUSDT",
+      "direction": "SHORT",
+      "entry": 0.006518,
+      "tp1": 0.006388,
+      "tp2": 0.006257,
+      "sl": 0.006648,
+      "strength": 40,
+      "status": "TIMEOUT",
+      "pnl_pct": 0.39,
+      "close_price": 0.0064925,
+      "taken_at": "2026-03-17 09:00:03",
+      "closed_at": "2026-03-17 17:00:10"
+    },
     {
       "symbol": "ADAUSDT",
       "direction": "SHORT",
@@ -5975,20 +5962,6 @@
       "tp2": 0.03617,
       "sl": 0.032213,
       "strength": 43,
-      "status": "PENDING",
-      "pnl_pct": 0,
-      "close_price": null,
-      "taken_at": null,
-      "closed_at": null
-    },
-    {
-      "symbol": "GRASSUSDT",
-      "direction": "LONG",
-      "entry": 0.44334446,
-      "tp1": 0.453298,
-      "tp2": 0.463252,
-      "sl": 0.434478,
-      "strength": 37,
       "status": "PENDING",
       "pnl_pct": 0,
       "close_price": null,
