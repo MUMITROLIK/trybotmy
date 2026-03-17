@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T23:15:36.342089+00:00",
+  "updated_at": "2026-03-17T23:16:24.550274+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T23:14:36Z",
+    "last_ok": "2026-03-17T23:15:41Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -11,10 +11,10 @@
   },
   "stats": {
     "total": 399,
-    "wins": 111,
+    "wins": 112,
     "losses": 22,
-    "active": 22,
-    "winrate": 83.5
+    "active": 21,
+    "winrate": 83.6
   },
   "trade_stats": {
     "open": 21,
@@ -490,9 +490,10 @@
       "news": null,
       "created_at": "2026-03-17 23:13:36",
       "status": "ACTIVE"
-    },
+    }
+  ],
+  "history": [
     {
-      "id": 437,
       "symbol": "VANRYUSDT",
       "direction": "LONG",
       "entry": 0.00698903,
@@ -500,6 +501,8 @@
       "tp2": 0.007604,
       "sl": 0.006743,
       "strength": 40,
+      "status": "TP1",
+      "created_at": "2026-03-17 23:15:25",
       "reasons": [
         "MACD бычий (hist=0.00000)",
         "Цена > EMA20 > EMA50",
@@ -508,13 +511,8 @@
         "CVD положительный (+0.3%)",
         "⚠️ Funding через 45м",
         "📌 Лимитный вход @ 0.00698903 (откат к EMA20)"
-      ],
-      "news": null,
-      "created_at": "2026-03-17 23:15:25",
-      "status": "ACTIVE"
-    }
-  ],
-  "history": [
+      ]
+    },
     {
       "symbol": "PIPPINUSDT",
       "direction": "LONG",
@@ -887,25 +885,6 @@
         "CVD положительный (+0.5%)",
         "Doji (1h) — нерешительность",
         "📌 Лимитный вход @ 0.201594 (откат к EMA20)"
-      ]
-    },
-    {
-      "symbol": "CRCLUSDT",
-      "direction": "LONG",
-      "entry": 128.86367352,
-      "tp1": 131.440947,
-      "tp2": 134.01822,
-      "sl": 126.2864,
-      "strength": 44,
-      "status": "TP1",
-      "created_at": "2026-03-17 17:24:00",
-      "reasons": [
-        "MACD бычий (hist=0.67502)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: сильное давление покупки (+0.85)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "CVD положительный (+0.8%)",
-        "📌 Лимитный вход @ 128.864 (откат к EMA20)"
       ]
     }
   ],
