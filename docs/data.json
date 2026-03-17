@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T22:00:05.420196+00:00",
+  "updated_at": "2026-03-17T22:01:12.905118+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T21:59:23Z",
+    "last_ok": "2026-03-17T22:00:09Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 83.8
   },
   "trade_stats": {
-    "open": 14,
+    "open": 11,
     "pending": 9,
-    "wins": 117,
+    "wins": 120,
     "losses": 84,
-    "total_pnl": 100.0,
-    "winrate": 58.2
+    "total_pnl": 108.57,
+    "winrate": 58.8
   },
   "fear_greed": {
     "value": 28,
@@ -687,27 +687,6 @@
   ],
   "trades_open": [
     {
-      "id": 161,
-      "symbol": "RVNUSDT",
-      "direction": "LONG",
-      "entry": 0.00591,
-      "tp1": 0.006028,
-      "tp2": 0.006146,
-      "sl": 0.005792,
-      "strength": 44,
-      "taken_at": "2026-03-17 14:00:49",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=39 (перепроданность)",
-        "MACD бычий (hist=0.00000)",
-        "BB нижняя зона (16%)",
-        "Стакан: давление покупки (+0.19)",
-        "МТФ: 1h, 4h согласны",
-        "CVD положительный (+4.5%)",
-        "Doji (1h) — нерешительность"
-      ]
-    },
-    {
       "id": 192,
       "symbol": "1000PEPEUSDT",
       "direction": "SHORT",
@@ -1094,27 +1073,6 @@
       ]
     },
     {
-      "id": 231,
-      "symbol": "TRIAUSDT",
-      "direction": "LONG",
-      "entry": 0.03339967,
-      "tp1": 0.034684,
-      "tp2": 0.035969,
-      "sl": 0.034745,
-      "strength": 45,
-      "taken_at": "2026-03-17 18:49:45",
-      "status": "TP1_HIT",
-      "reasons": [
-        "MACD бычий (hist=0.00023)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: давление покупки (+0.17)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +14.0% + цена ↑",
-        "CVD растёт (+6.1%) — покупки усиливаются 📈",
-        "📌 Лимитный вход @ 0.0333997 (откат к EMA20)"
-      ]
-    },
-    {
       "id": 235,
       "symbol": "TRIAUSDT",
       "direction": "LONG",
@@ -1133,9 +1091,38 @@
         "CVD растёт (+6.3%) — покупки усиливаются 📈",
         "📌 Лимитный вход @ 0.0334149 (откат к EMA20)"
       ]
+    }
+  ],
+  "trades_history": [
+    {
+      "symbol": "TRIAUSDT",
+      "direction": "LONG",
+      "entry": 0.03339967,
+      "tp1": 0.034684,
+      "tp2": 0.035969,
+      "sl": 0.034745,
+      "strength": 45,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 3.8,
+      "close_price": 0.034670000000000006,
+      "taken_at": "2026-03-17 18:49:45",
+      "closed_at": "2026-03-17 22:01:12"
     },
     {
-      "id": 239,
+      "symbol": "RVNUSDT",
+      "direction": "LONG",
+      "entry": 0.00591,
+      "tp1": 0.006028,
+      "tp2": 0.006146,
+      "sl": 0.005792,
+      "strength": 44,
+      "status": "TIMEOUT",
+      "pnl_pct": 0.76,
+      "close_price": 0.005955,
+      "taken_at": "2026-03-17 14:00:49",
+      "closed_at": "2026-03-17 22:00:57"
+    },
+    {
       "symbol": "TRIAUSDT",
       "direction": "LONG",
       "entry": 0.03343302,
@@ -1143,20 +1130,12 @@
       "tp2": 0.036075,
       "sl": 0.03483,
       "strength": 49,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 4.01,
+      "close_price": 0.034775,
       "taken_at": "2026-03-17 18:49:45",
-      "status": "TP1_HIT",
-      "reasons": [
-        "MACD бычий (hist=0.00025)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: давление покупки (+0.19)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +14.0% + цена ↑",
-        "CVD растёт (+6.4%) — покупки усиливаются 📈",
-        "📌 Лимитный вход @ 0.033433 (откат к EMA20)"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-17 22:00:10"
+    },
     {
       "symbol": "TRIAUSDT",
       "direction": "LONG",
@@ -3914,48 +3893,6 @@
       "close_price": 1.8155000000000001,
       "taken_at": "2026-03-17 12:15:43",
       "closed_at": "2026-03-17 12:59:16"
-    },
-    {
-      "symbol": "LYNUSDT",
-      "direction": "SHORT",
-      "entry": 0.06369,
-      "tp1": 0.06189,
-      "tp2": 0.06009,
-      "sl": 0.061635,
-      "strength": 36,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 2.82,
-      "close_price": 0.061895,
-      "taken_at": "2026-03-17 12:28:37",
-      "closed_at": "2026-03-17 12:58:05"
-    },
-    {
-      "symbol": "ASTERUSDT",
-      "direction": "SHORT",
-      "entry": 0.7295,
-      "tp1": 0.71491,
-      "tp2": 0.70032,
-      "sl": 0.74409,
-      "strength": 32,
-      "status": "SL",
-      "pnl_pct": -2.08,
-      "close_price": 0.74465,
-      "taken_at": "2026-03-17 10:55:27",
-      "closed_at": "2026-03-17 12:56:14"
-    },
-    {
-      "symbol": "1000SHIBUSDT",
-      "direction": "SHORT",
-      "entry": 0.006117,
-      "tp1": 0.005995,
-      "tp2": 0.005872,
-      "sl": 0.005990499999999999,
-      "strength": 31,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 2.07,
-      "close_price": 0.005990499999999999,
-      "taken_at": "2026-03-17 09:25:35",
-      "closed_at": "2026-03-17 12:55:23"
     }
   ]
 }
