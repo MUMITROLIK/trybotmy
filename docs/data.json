@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T12:08:15.767641+00:00",
+  "updated_at": "2026-03-17T12:09:21.134234+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T12:06:50Z",
+    "last_ok": "2026-03-17T12:08:21Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -9,18 +9,18 @@
     "auto_take": true
   },
   "stats": {
-    "total": 219,
+    "total": 223,
     "wins": 17,
     "losses": 1,
-    "active": 14,
+    "active": 18,
     "winrate": 94.4
   },
   "trade_stats": {
-    "open": 65,
-    "wins": 26,
-    "losses": 9,
-    "total_pnl": 71.12,
-    "winrate": 74.3
+    "open": 69,
+    "wins": 23,
+    "losses": 8,
+    "total_pnl": 69.22,
+    "winrate": 74.2
   },
   "fear_greed": {
     "value": 28,
@@ -314,6 +314,90 @@
       ],
       "news": null,
       "created_at": "2026-03-17 12:06:22",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 258,
+      "symbol": "XPLUSDT",
+      "direction": "LONG",
+      "entry": 0.1153,
+      "tp1": 0.117606,
+      "tp2": 0.119912,
+      "sl": 0.112994,
+      "strength": 40,
+      "reasons": [
+        "RSI=25 (сильная перепроданность)",
+        "MACD бычий (hist=0.00008)",
+        "BB нижняя зона (20%)",
+        "Стакан: перевес bid (+0.07)",
+        "МТФ: 1h, 4h согласны",
+        "CVD положительный (-0.3%)"
+      ],
+      "news": null,
+      "created_at": "2026-03-17 12:08:49",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 259,
+      "symbol": "CRCLUSDT",
+      "direction": "LONG",
+      "entry": 127.4,
+      "tp1": 129.948,
+      "tp2": 132.496,
+      "sl": 124.852,
+      "strength": 29,
+      "reasons": [
+        "MACD бычий (hist=0.06365)",
+        "Цена > EMA20 > EMA50",
+        "Стакан: перевес bid (+0.10)",
+        "МТФ: 15m, 1h, 4h согласны"
+      ],
+      "news": null,
+      "created_at": "2026-03-17 12:08:58",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 260,
+      "symbol": "HBARUSDT",
+      "direction": "LONG",
+      "entry": 0.09901,
+      "tp1": 0.10099,
+      "tp2": 0.10297,
+      "sl": 0.09703,
+      "strength": 34,
+      "reasons": [
+        "RSI=45 (нейтральный↓)",
+        "MACD бычий (hist=0.00003)",
+        "BB ниже середины",
+        "Стакан: давление покупки (+0.16)",
+        "МТФ: 1h, 4h согласны",
+        "CVD положительный (-3.2%)",
+        "Doji (1h) — нерешительность"
+      ],
+      "news": null,
+      "created_at": "2026-03-17 12:09:06",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 261,
+      "symbol": "CRVUSDT",
+      "direction": "LONG",
+      "entry": 0.255,
+      "tp1": 0.2601,
+      "tp2": 0.2652,
+      "sl": 0.2499,
+      "strength": 36,
+      "reasons": [
+        "RSI=45 (нейтральный↓)",
+        "MACD бычий (hist=0.00009)",
+        "Цена > EMA20 > EMA50",
+        "Стакан: перевес bid (+0.06)",
+        "МТФ: 15m, 1h, 4h согласны",
+        "CVD положительный (+0.5%)",
+        "Doji (1h) — нерешительность"
+      ],
+      "news": null,
+      "created_at": "2026-03-17 12:09:16",
       "status": "ACTIVE"
     }
   ],
@@ -1976,6 +2060,86 @@
         "МТФ: 5m, 15m согласны",
         "CVD отрицательный (-4.2%)"
       ]
+    },
+    {
+      "id": 112,
+      "symbol": "XPLUSDT",
+      "direction": "LONG",
+      "entry": 0.1153,
+      "tp1": 0.117606,
+      "tp2": 0.119912,
+      "sl": 0.112994,
+      "strength": 40,
+      "taken_at": "2026-03-17 12:08:49",
+      "status": "OPEN",
+      "reasons": [
+        "RSI=25 (сильная перепроданность)",
+        "MACD бычий (hist=0.00008)",
+        "BB нижняя зона (20%)",
+        "Стакан: перевес bid (+0.07)",
+        "МТФ: 1h, 4h согласны",
+        "CVD положительный (-0.3%)"
+      ]
+    },
+    {
+      "id": 113,
+      "symbol": "CRCLUSDT",
+      "direction": "LONG",
+      "entry": 127.4,
+      "tp1": 129.948,
+      "tp2": 132.496,
+      "sl": 124.852,
+      "strength": 29,
+      "taken_at": "2026-03-17 12:08:59",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.06365)",
+        "Цена > EMA20 > EMA50",
+        "Стакан: перевес bid (+0.10)",
+        "МТФ: 15m, 1h, 4h согласны"
+      ]
+    },
+    {
+      "id": 114,
+      "symbol": "HBARUSDT",
+      "direction": "LONG",
+      "entry": 0.09901,
+      "tp1": 0.10099,
+      "tp2": 0.10297,
+      "sl": 0.09703,
+      "strength": 34,
+      "taken_at": "2026-03-17 12:09:06",
+      "status": "OPEN",
+      "reasons": [
+        "RSI=45 (нейтральный↓)",
+        "MACD бычий (hist=0.00003)",
+        "BB ниже середины",
+        "Стакан: давление покупки (+0.16)",
+        "МТФ: 1h, 4h согласны",
+        "CVD положительный (-3.2%)",
+        "Doji (1h) — нерешительность"
+      ]
+    },
+    {
+      "id": 115,
+      "symbol": "CRVUSDT",
+      "direction": "LONG",
+      "entry": 0.255,
+      "tp1": 0.2601,
+      "tp2": 0.2652,
+      "sl": 0.2499,
+      "strength": 36,
+      "taken_at": "2026-03-17 12:09:17",
+      "status": "OPEN",
+      "reasons": [
+        "RSI=45 (нейтральный↓)",
+        "MACD бычий (hist=0.00009)",
+        "Цена > EMA20 > EMA50",
+        "Стакан: перевес bid (+0.06)",
+        "МТФ: 15m, 1h, 4h согласны",
+        "CVD положительный (+0.5%)",
+        "Doji (1h) — нерешительность"
+      ]
     }
   ],
   "trades_history": [
@@ -2316,48 +2480,6 @@
       "closed_at": "2026-03-17 08:41:19"
     },
     {
-      "symbol": "UNIUSDT",
-      "direction": "LONG",
-      "entry": 4.103,
-      "tp1": 4.229857,
-      "tp2": 4.356714,
-      "sl": 4.02094,
-      "strength": 53,
-      "status": "TIMEOUT",
-      "pnl_pct": 1.62,
-      "close_price": 4.169499999999999,
-      "taken_at": "2026-03-16 13:53:11",
-      "closed_at": "2026-03-16 21:53:11"
-    },
-    {
-      "symbol": "AAVEUSDT",
-      "direction": "LONG",
-      "entry": 121.07,
-      "tp1": 124.25,
-      "tp2": 127.43,
-      "sl": 118.6486,
-      "strength": 63,
-      "status": "TIMEOUT",
-      "pnl_pct": 1.5,
-      "close_price": 122.88,
-      "taken_at": "2026-03-16 13:45:20",
-      "closed_at": "2026-03-16 21:49:25"
-    },
-    {
-      "symbol": "SUIUSDT",
-      "direction": "LONG",
-      "entry": 1.0555,
-      "tp1": 1.087971,
-      "tp2": 1.120443,
-      "sl": 1.03439,
-      "strength": 52,
-      "status": "TIMEOUT",
-      "pnl_pct": 0.9,
-      "close_price": 1.0650499999999998,
-      "taken_at": "2026-03-16 13:41:53",
-      "closed_at": "2026-03-16 21:49:25"
-    },
-    {
       "symbol": "FILUSDT",
       "direction": "LONG",
       "entry": 0.95,
@@ -2454,20 +2576,6 @@
       "close_price": 0.0,
       "taken_at": "2026-03-16 13:56:26",
       "closed_at": "2026-03-16 16:44:44"
-    },
-    {
-      "symbol": "PUMPUSDT",
-      "direction": "LONG",
-      "entry": 0.002098,
-      "tp1": 0.002169,
-      "tp2": 0.00224,
-      "sl": 0.002055,
-      "strength": 53,
-      "status": "SL",
-      "pnl_pct": -2.12,
-      "close_price": 0.0020534999999999998,
-      "taken_at": "2026-03-16 13:42:13",
-      "closed_at": "2026-03-16 14:30:29"
     }
   ]
 }
