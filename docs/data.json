@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T13:40:53.070626+00:00",
+  "updated_at": "2026-03-17T13:41:51.684841+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T13:39:53Z",
+    "last_ok": "2026-03-17T13:40:57Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -16,11 +16,11 @@
     "winrate": 96.7
   },
   "trade_stats": {
-    "open": 81,
+    "open": 80,
     "wins": 53,
-    "losses": 22,
-    "total_pnl": 103.4,
-    "winrate": 70.7
+    "losses": 23,
+    "total_pnl": 101.34,
+    "winrate": 69.7
   },
   "fear_greed": {
     "value": 28,
@@ -2145,27 +2145,6 @@
       ]
     },
     {
-      "id": 151,
-      "symbol": "ASTERUSDT",
-      "direction": "LONG",
-      "entry": 0.7838,
-      "tp1": 0.799476,
-      "tp2": 0.815152,
-      "sl": 0.768124,
-      "strength": 60,
-      "taken_at": "2026-03-17 13:26:11",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00501)",
-        "Цена > EMA20 > EMA50",
-        "Объём x6.5 🔥🔥🔥",
-        "Стакан: сильное давление покупки (+0.37)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "CVD положительный (+0.4%)",
-        "📌 Лимитный вход @ 0.742328 (откат к EMA20)"
-      ]
-    },
-    {
       "id": 152,
       "symbol": "TRIAUSDT",
       "direction": "LONG",
@@ -2267,6 +2246,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "ASTERUSDT",
+      "direction": "LONG",
+      "entry": 0.7838,
+      "tp1": 0.799476,
+      "tp2": 0.815152,
+      "sl": 0.768124,
+      "strength": 60,
+      "status": "SL",
+      "pnl_pct": -2.06,
+      "close_price": 0.7676499999999999,
+      "taken_at": "2026-03-17 13:26:11",
+      "closed_at": "2026-03-17 13:41:16"
+    },
     {
       "symbol": "CFGUSDT",
       "direction": "SHORT",
