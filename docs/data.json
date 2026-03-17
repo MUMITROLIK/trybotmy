@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T20:15:21.761942+00:00",
+  "updated_at": "2026-03-17T20:16:26.499572+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T20:14:21Z",
+    "last_ok": "2026-03-17T20:15:26Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -16,12 +16,12 @@
     "winrate": 83.9
   },
   "trade_stats": {
-    "open": 26,
+    "open": 25,
     "pending": 15,
-    "wins": 108,
+    "wins": 109,
     "losses": 76,
-    "total_pnl": 97.9,
-    "winrate": 58.7
+    "total_pnl": 98.5,
+    "winrate": 58.9
   },
   "fear_greed": {
     "value": 28,
@@ -720,25 +720,6 @@
     }
   ],
   "trades_open": [
-    {
-      "id": 123,
-      "symbol": "OPUSDT",
-      "direction": "LONG",
-      "entry": 0.1343,
-      "tp1": 0.136986,
-      "tp2": 0.139672,
-      "sl": 0.131614,
-      "strength": 35,
-      "taken_at": "2026-03-17 12:16:06",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=37 (перепроданность)",
-        "BB нижняя полоса (пробой)",
-        "EMA20 > EMA50",
-        "МТФ: 15m, 1h, 4h согласны",
-        "CVD положительный (-5.3%)"
-      ]
-    },
     {
       "id": 124,
       "symbol": "WLFIUSDT",
@@ -2255,6 +2236,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "OPUSDT",
+      "direction": "LONG",
+      "entry": 0.1343,
+      "tp1": 0.136986,
+      "tp2": 0.139672,
+      "sl": 0.131614,
+      "strength": 35,
+      "status": "TIMEOUT",
+      "pnl_pct": 0.6,
+      "close_price": 0.1351,
+      "taken_at": "2026-03-17 12:16:06",
+      "closed_at": "2026-03-17 20:16:14"
+    },
     {
       "symbol": "CFGUSDT",
       "direction": "SHORT",
@@ -5035,20 +5030,6 @@
       "tp2": 76.996342,
       "sl": 81.808613,
       "strength": 31,
-      "status": "PENDING",
-      "pnl_pct": 0,
-      "close_price": null,
-      "taken_at": null,
-      "closed_at": null
-    },
-    {
-      "symbol": "TRIAUSDT",
-      "direction": "LONG",
-      "entry": 0.03292589,
-      "tp1": 0.034196,
-      "tp2": 0.035465,
-      "sl": 0.03191,
-      "strength": 46,
       "status": "PENDING",
       "pnl_pct": 0,
       "close_price": null,
