@@ -8,15 +8,16 @@
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Outfit:wght@300;400;600;800;900&display=swap" rel="stylesheet">
 <style>
 :root {
-  --bg:       #000000;
-  --bg2:      #050505;
-  --surface:  #0a0a0a;
-  --surface2: #0f0f0f;
-  --border:   #1a1a1a;
-  --border2: #252525;
-  --text:     #dde0ff;
-  --muted:    #4a4a7a;
-  --dim:      #222222;
+  /* Professional dark palette */
+  --bg:        #070812;
+  --bg2:       #0a0b18;
+  --surface:   rgba(255,255,255,.04);
+  --surface2:  rgba(255,255,255,.06);
+  --border:    rgba(255,255,255,.08);
+  --border2:   rgba(255,255,255,.14);
+  --text:      #e8e9ff;
+  --muted:     rgba(232,233,255,.55);
+  --dim:       rgba(255,255,255,.10);
   --cyan:     #00e5ff;
   --green:    #00ff9d;
   --red:      #ff2d6b;
@@ -27,12 +28,18 @@
   --cyan-glow: 0 0 30px rgba(0,229,255,.2);
   --green-glow:0 0 30px rgba(0,255,157,.2);
   --red-glow:  0 0 30px rgba(255,45,107,.2);
+  --shadow:    0 16px 60px rgba(0,0,0,.55);
+  --radius:    14px;
+  --radius2:   18px;
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
-  background: var(--bg);
+  background: radial-gradient(1200px 600px at 20% 0%, rgba(61,111,255,.10), transparent 60%),
+              radial-gradient(1000px 600px at 80% 10%, rgba(0,229,255,.08), transparent 55%),
+              radial-gradient(900px 600px at 50% 100%, rgba(157,78,221,.10), transparent 60%),
+              var(--bg);
   color: var(--text);
   font-family: 'Outfit', sans-serif;
   min-height: 100vh;
@@ -67,7 +74,7 @@ header {
   height: 60px;
   display: flex; align-items: center; justify-content: space-between;
   border-bottom: 1px solid var(--border);
-  background: rgba(8,8,16,.8);
+  background: rgba(8,8,16,.55);
   backdrop-filter: blur(20px);
 }
 
@@ -136,9 +143,10 @@ main { padding: 24px 40px; max-width: 1600px; margin: 0 auto; }
 .stat-card {
   background: var(--surface);
   border: 1px solid var(--border);
-  border-radius: 10px; padding: 16px 20px;
+  border-radius: var(--radius); padding: 16px 20px;
   position: relative; overflow: hidden;
-  transition: border-color .3s, transform .2s;
+  box-shadow: var(--shadow);
+  transition: border-color .3s, transform .2s, background .2s;
 }
 .stat-card:hover { border-color: var(--border2); transform: translateY(-1px); }
 .stat-card::before {
@@ -167,8 +175,9 @@ main { padding: 24px 40px; max-width: 1600px; margin: 0 auto; }
 .fg-card {
   background: var(--surface);
   border: 1px solid var(--border);
-  border-radius: 10px; padding: 16px 20px;
+  border-radius: var(--radius); padding: 16px 20px;
   position: relative; overflow: hidden;
+  box-shadow: var(--shadow);
 }
 .fg-card::before {
   content: '';
