@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T12:53:49.538443+00:00",
+  "updated_at": "2026-03-17T12:54:45.317503+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T12:53:16Z",
+    "last_ok": "2026-03-17T12:53:56Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -16,11 +16,11 @@
     "winrate": 95.0
   },
   "trade_stats": {
-    "open": 78,
-    "wins": 42,
+    "open": 77,
+    "wins": 43,
     "losses": 18,
-    "total_pnl": 80.09,
-    "winrate": 70.0
+    "total_pnl": 81.93,
+    "winrate": 70.5
   },
   "fear_greed": {
     "value": 28,
@@ -2013,9 +2013,10 @@
         "МТФ: только 1 таймфрейм согласен",
         "CVD падает (-11.0%) — продажи усиливаются 📉"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 65,
       "symbol": "KITEUSDT",
       "direction": "SHORT",
       "entry": 0.1983,
@@ -2023,18 +2024,12 @@
       "tp2": 0.190368,
       "sl": 0.19432500000000003,
       "strength": 32,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 1.84,
+      "close_price": 0.194645,
       "taken_at": "2026-03-17 09:48:37",
-      "status": "TP1_HIT",
-      "reasons": [
-        "MACD медвежий (hist=-0.00078)",
-        "Цена < EMA20 < EMA50",
-        "Стакан: давление продажи (-0.12)",
-        "МТФ: 5m, 15m, 1h согласны",
-        "📌 Лимитный вход @ 0.203082 (откат к EMA20)"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-17 12:54:45"
+    },
     {
       "symbol": "PIXELUSDT",
       "direction": "SHORT",
