@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T13:34:52.829848+00:00",
+  "updated_at": "2026-03-17T13:35:58.780779+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T13:33:52Z",
+    "last_ok": "2026-03-17T13:35:02Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -9,18 +9,18 @@
     "auto_take": true
   },
   "stats": {
-    "total": 262,
+    "total": 263,
     "wins": 28,
     "losses": 1,
-    "active": 12,
+    "active": 13,
     "winrate": 96.6
   },
   "trade_stats": {
     "open": 81,
-    "wins": 51,
+    "wins": 52,
     "losses": 22,
-    "total_pnl": 94.54,
-    "winrate": 69.9
+    "total_pnl": 99.22,
+    "winrate": 70.3
   },
   "fear_greed": {
     "value": 28,
@@ -272,6 +272,26 @@
       ],
       "news": null,
       "created_at": "2026-03-17 13:32:19",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 301,
+      "symbol": "HUMAUSDT",
+      "direction": "SHORT",
+      "entry": 0.019,
+      "tp1": 0.01832,
+      "tp2": 0.01764,
+      "sl": 0.019544,
+      "strength": 32,
+      "reasons": [
+        "RSI=59 (нейтральный↑)",
+        "MACD медвежий (hist=-0.00004)",
+        "BB верхняя зона (79%)",
+        "Стакан: сильное давление продажи (-0.32)",
+        "CVD отрицательный (-3.0%)"
+      ],
+      "news": null,
+      "created_at": "2026-03-17 13:35:50",
       "status": "ACTIVE"
     }
   ],
@@ -2226,7 +2246,27 @@
       ]
     },
     {
-      "id": 147,
+      "id": 155,
+      "symbol": "HUMAUSDT",
+      "direction": "SHORT",
+      "entry": 0.019,
+      "tp1": 0.01832,
+      "tp2": 0.01764,
+      "sl": 0.019544,
+      "strength": 32,
+      "taken_at": "2026-03-17 13:35:51",
+      "status": "OPEN",
+      "reasons": [
+        "RSI=59 (нейтральный↑)",
+        "MACD медвежий (hist=-0.00004)",
+        "BB верхняя зона (79%)",
+        "Стакан: сильное давление продажи (-0.32)",
+        "CVD отрицательный (-3.0%)"
+      ]
+    }
+  ],
+  "trades_history": [
+    {
       "symbol": "HUMAUSDT",
       "direction": "LONG",
       "entry": 0.018127,
@@ -2234,18 +2274,12 @@
       "tp2": 0.019449,
       "sl": 0.01897839,
       "strength": 27,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 4.68,
+      "close_price": 0.018975,
       "taken_at": "2026-03-17 13:12:49",
-      "status": "TP1_HIT",
-      "reasons": [
-        "RSI=47 (нейтральный↓)",
-        "BB ниже середины",
-        "EMA20 > EMA50",
-        "Стакан: давление покупки (+0.11)",
-        "МТФ: 5m, 1h, 4h согласны"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-17 13:35:04"
+    },
     {
       "symbol": "XPLUSDT",
       "direction": "LONG",
