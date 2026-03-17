@@ -54,6 +54,21 @@ body {
 
 html { scroll-behavior: smooth; }
 
+/* Smooth page transitions (tabs) */
+.page{
+  opacity: 0;
+  transform: translateY(8px);
+  pointer-events: none;
+  transition: opacity .22s ease, transform .22s ease;
+  display: none;
+}
+.page.active{
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+  display: block;
+}
+
 body::before {
   content: '';
   position: fixed; inset: 0; pointer-events: none; z-index: 0;
@@ -642,18 +657,18 @@ tr:hover td { background: rgba(255,255,255,.015); }
       <button class="tab-btn" id="tab-history" onclick="switchTab('history')">ИСТОРИЯ P&L</button>
     </div>
 
-    <div id="page-signals">
+    <div id="page-signals" class="page active">
     <div class="top-row">
       <div class="stat-card">
         <div class="stat-label">Всего сигналов</div>
         <div class="stat-value c-cyan" id="s-total">—</div>
       </div>
       <div class="stat-card">
-        <div class="stat-label">Активных</div>
-        <div class="stat-value c-cyan" id="s-active">—</div>
+        <div class="stat-label">Открытых позиций</div>
+        <div class="stat-value c-cyan" id="s-open">—</div>
       </div>
       <div class="stat-card">
-        <div class="stat-label">Winrate (сигналы)</div>
+        <div class="stat-label">Winrate (сделки)</div>
         <div class="stat-value c-yellow" id="s-winrate">—</div>
       </div>
       <div class="fg-card">
@@ -694,7 +709,7 @@ tr:hover td { background: rgba(255,255,255,.015); }
 
     </div>
 
-    <div id="page-positions" style="display:none">
+    <div id="page-positions" class="page">
       <div class="sec"><div class="sec-dot" style="background:var(--cyan)"></div>Открытые позиции · P&L в реальном времени</div>
 
       <div class="trade-stats-row" id="tradeStatsRow">
@@ -709,7 +724,7 @@ tr:hover td { background: rgba(255,255,255,.015); }
       </div>
     </div>
 
-    <div id="page-history" style="display:none">
+    <div id="page-history" class="page">
       <div class="sec"><div class="sec-dot" style="background:var(--muted)"></div>История взятых сделок</div>
       <div class="hist-wrap">
         <table>
@@ -802,10 +817,11 @@ function handleDataUpdate(data) {
   AUTO_TAKE = !!(data.settings && data.settings.auto_take);
   const st = data.stats || {};
   document.getElementById('s-total').textContent   = st.total   ?? '—';
-  const act = st.active ?? ((data.signals || []).length);
-  const actEl = document.getElementById('s-active');
-  if (actEl) actEl.textContent = act;
-  document.getElementById('s-winrate').textContent = st.winrate != null ? st.winrate + '%' : '—';
+  const ts = data.trade_stats || {};
+  const openEl = document.getElementById('s-open');
+  if (openEl) openEl.textContent = ts.open ?? (data.trades_open || []).length ?? '—';
+  // Winrate теперь по сделкам, а не по сигналам
+  document.getElementById('s-winrate').textContent = ts.winrate != null ? ts.winrate + '%' : '—';
   
   renderFG(data.fear_greed);
   const openTrades = data.trades_open || [];
@@ -1231,9 +1247,11 @@ function renderHistory(h) {
 // ── Tabs ───────────────────────────────────────────────────────────
 function switchTab(tab) {
   ['signals','positions','history'].forEach(t => {
-    $('page-'+t).style.display = t === tab ? 'block' : 'none';
-    const btn = $('tab-'+t);
+    const page = $('page-'+t);
+    const btn  = $('tab-'+t);
     if (btn) btn.classList.toggle('active', t === tab);
+    if (!page) return;
+    page.classList.toggle('active', t === tab);
   });
 }
 
