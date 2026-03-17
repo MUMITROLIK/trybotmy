@@ -1169,6 +1169,9 @@ function renderTrades(trades, stats) {
       <span class="trade-lvl tp2">TP2 ${mono(t.tp2)}</span>
       <span class="trade-lvl sl">SL ${mono(t.sl)}</span>
     </div>`;
+    const takenAgo = t.taken_at ? ago(t.taken_at) : '—';
+    const takenDur = t.taken_at ? tradeDuration(t.taken_at) : '';
+    const takenClr = t.taken_at ? tradeAgeColor(t.taken_at) : 'var(--muted)';
 
     return `
     <div class="trade-card ${lg?'long':'short'}" id="tc_${t.id}">
@@ -1186,6 +1189,10 @@ function renderTrades(trades, stats) {
       <div class="sig-body">
         ${levels}
         <div class="tags">${tags}</div>
+        <div style="font-family:'JetBrains Mono',monospace;font-size:9px;color:var(--muted);margin-top:8px;display:flex;justify-content:space-between;gap:10px">
+          <span>🕒 Взята: ${takenAgo} назад</span>
+          <span id="ttimer_${t.id}" style="color:${takenClr}">${takenDur}</span>
+        </div>
       </div>
     </div>`;
   }).join('');
