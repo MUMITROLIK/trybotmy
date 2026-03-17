@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-03-17T10:04:30.829401+00:00",
+  "updated_at": "2026-03-17T10:05:11.333944+00:00",
   "publish_status": {
     "last_ok": "2026-03-17T10:04:00Z",
-    "last_error": null,
+    "last_error": "fatal: unable to access 'https://github.com/MUMITROLIK/trybotmy.git/': Failed to connect to github.com port 443 after 21038 ms: Could not connect to server\n",
     "min_push_interval_sec": 30
   },
   "stats": {
@@ -795,27 +795,6 @@
       ]
     },
     {
-      "id": 49,
-      "symbol": "EIGENUSDT",
-      "direction": "SHORT",
-      "entry": 0.23142058,
-      "tp1": 0.226792,
-      "tp2": 0.222164,
-      "sl": 0.236049,
-      "strength": 35,
-      "taken_at": "2026-03-17 09:09:46",
-      "status": "OPEN",
-      "reasons": [
-        "MACD медвежий (hist=-0.00081)",
-        "Цена ниже EMA20",
-        "Стакан: давление продажи (-0.21)",
-        "МТФ: 5m, 1h согласны",
-        "OI падает (лонги закрываются)",
-        "CVD падает (-5.6%) — продажи усиливаются 📉",
-        "📌 Лимитный вход @ 0.231421 (откат к EMA20)"
-      ]
-    },
-    {
       "id": 50,
       "symbol": "LYNUSDT",
       "direction": "SHORT",
@@ -1067,6 +1046,27 @@
         "BB верхняя полоса (пробой)",
         "Объём x3.4 🔥🔥",
         "OI растёт +8.2%"
+      ]
+    },
+    {
+      "id": 49,
+      "symbol": "EIGENUSDT",
+      "direction": "SHORT",
+      "entry": 0.23142058,
+      "tp1": 0.226792,
+      "tp2": 0.222164,
+      "sl": 0.2267,
+      "strength": 35,
+      "taken_at": "2026-03-17 09:09:46",
+      "status": "TP1_HIT",
+      "reasons": [
+        "MACD медвежий (hist=-0.00081)",
+        "Цена ниже EMA20",
+        "Стакан: давление продажи (-0.21)",
+        "МТФ: 5m, 1h согласны",
+        "OI падает (лонги закрываются)",
+        "CVD падает (-5.6%) — продажи усиливаются 📉",
+        "📌 Лимитный вход @ 0.231421 (откат к EMA20)"
       ]
     }
   ],
