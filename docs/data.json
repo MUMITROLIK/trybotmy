@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T16:06:30.524752+00:00",
+  "updated_at": "2026-03-17T16:07:10.433921+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T16:05:30Z",
+    "last_ok": "2026-03-17T16:06:35Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -9,19 +9,19 @@
     "auto_take": true
   },
   "stats": {
-    "total": 306,
-    "wins": 56,
+    "total": 309,
+    "wins": 57,
     "losses": 7,
-    "active": 22,
-    "winrate": 88.9
+    "active": 24,
+    "winrate": 89.1
   },
   "trade_stats": {
     "open": 69,
-    "pending": 22,
+    "pending": 25,
     "wins": 66,
     "losses": 41,
     "total_pnl": 89.62,
-    "winrate": 51.2
+    "winrate": 50.0
   },
   "fear_greed": {
     "value": 28,
@@ -492,9 +492,71 @@
       "news": null,
       "created_at": "2026-03-17 16:03:54",
       "status": "ACTIVE"
+    },
+    {
+      "id": 345,
+      "symbol": "LYNUSDT",
+      "direction": "SHORT",
+      "entry": 0.06017175,
+      "tp1": 0.057988,
+      "tp2": 0.055805,
+      "sl": 0.061919,
+      "strength": 31,
+      "reasons": [
+        "MACD медвежий (hist=-0.00028)",
+        "Цена < EMA20 < EMA50",
+        "МТФ: 5m, 15m, 1h согласны",
+        "CVD падает (-5.5%) — продажи усиливаются 📉",
+        "📌 Лимитный вход @ 0.0601718 (откат к EMA20)"
+      ],
+      "news": null,
+      "created_at": "2026-03-17 16:06:36",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 347,
+      "symbol": "XANUSDT",
+      "direction": "LONG",
+      "entry": 0.01029733,
+      "tp1": 0.01051,
+      "tp2": 0.010723,
+      "sl": 0.010091,
+      "strength": 31,
+      "reasons": [
+        "RSI=49 (нейтральный↓)",
+        "MACD бычий (hist=0.00001)",
+        "Цена выше EMA20",
+        "МТФ: 5m, 1h, 4h согласны",
+        "OI падает (шорты закрываются)",
+        "📌 Лимитный вход @ 0.0102973 (откат к EMA20)"
+      ],
+      "news": null,
+      "created_at": "2026-03-17 16:07:06",
+      "status": "ACTIVE"
     }
   ],
   "history": [
+    {
+      "symbol": "TRIAUSDT",
+      "direction": "LONG",
+      "entry": 0.03303452,
+      "tp1": 0.034438,
+      "tp2": 0.035842,
+      "sl": 0.031912,
+      "strength": 59,
+      "status": "TP1",
+      "created_at": "2026-03-17 16:06:52",
+      "reasons": [
+        "MACD бычий (hist=0.00024)",
+        "Цена > EMA20 > EMA50",
+        "Объём x2.5 🔥",
+        "Стакан: сильное давление покупки (+0.27)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +14.0% + цена ↑",
+        "CVD растёт (+7.0%) — покупки усиливаются 📈",
+        "📌 Лимитный вход @ 0.0330345 (откат к EMA20)"
+      ]
+    },
     {
       "symbol": "TRIAUSDT",
       "direction": "LONG",
@@ -873,25 +935,6 @@
         "МТФ: 5m, 15m согласны",
         "⚠️ Funding через 89м",
         "📌 Лимитный вход @ 0.0612263 (откат к EMA20)"
-      ]
-    },
-    {
-      "symbol": "OPNUSDT",
-      "direction": "SHORT",
-      "entry": 0.29569738,
-      "tp1": 0.28869,
-      "tp2": 0.281683,
-      "sl": 0.301611,
-      "strength": 44,
-      "status": "TP1",
-      "created_at": "2026-03-17 14:05:59",
-      "reasons": [
-        "MACD медвежий (hist=-0.00081)",
-        "Цена < EMA20 < EMA50",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +3.7% + цена ↓",
-        "CVD падает (-10.2%) — продажи усиливаются 📉",
-        "📌 Лимитный вход @ 0.295697 (откат к EMA20)"
       ]
     }
   ],
@@ -2707,6 +2750,67 @@
         "CVD растёт (+7.4%) — покупки усиливаются 📈",
         "📌 Лимитный вход @ 0.0330259 (откат к EMA20)"
       ]
+    },
+    {
+      "id": 199,
+      "symbol": "LYNUSDT",
+      "direction": "SHORT",
+      "entry": 0.06017175,
+      "tp1": 0.057988,
+      "tp2": 0.055805,
+      "sl": 0.061919,
+      "strength": 31,
+      "taken_at": null,
+      "status": "PENDING",
+      "reasons": [
+        "MACD медвежий (hist=-0.00028)",
+        "Цена < EMA20 < EMA50",
+        "МТФ: 5m, 15m, 1h согласны",
+        "CVD падает (-5.5%) — продажи усиливаются 📉",
+        "📌 Лимитный вход @ 0.0601718 (откат к EMA20)"
+      ]
+    },
+    {
+      "id": 200,
+      "symbol": "TRIAUSDT",
+      "direction": "LONG",
+      "entry": 0.03303452,
+      "tp1": 0.034438,
+      "tp2": 0.035842,
+      "sl": 0.031912,
+      "strength": 59,
+      "taken_at": null,
+      "status": "PENDING",
+      "reasons": [
+        "MACD бычий (hist=0.00024)",
+        "Цена > EMA20 > EMA50",
+        "Объём x2.5 🔥",
+        "Стакан: сильное давление покупки (+0.27)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +14.0% + цена ↑",
+        "CVD растёт (+7.0%) — покупки усиливаются 📈",
+        "📌 Лимитный вход @ 0.0330345 (откат к EMA20)"
+      ]
+    },
+    {
+      "id": 201,
+      "symbol": "XANUSDT",
+      "direction": "LONG",
+      "entry": 0.01029733,
+      "tp1": 0.01051,
+      "tp2": 0.010723,
+      "sl": 0.010091,
+      "strength": 31,
+      "taken_at": null,
+      "status": "PENDING",
+      "reasons": [
+        "RSI=49 (нейтральный↓)",
+        "MACD бычий (hist=0.00001)",
+        "Цена выше EMA20",
+        "МТФ: 5m, 1h, 4h согласны",
+        "OI падает (шорты закрываются)",
+        "📌 Лимитный вход @ 0.0102973 (откат к EMA20)"
+      ]
     }
   ],
   "trades_history": [
@@ -4510,6 +4614,48 @@
       "tp2": 0.035827,
       "sl": 0.031906,
       "strength": 46,
+      "status": "PENDING",
+      "pnl_pct": 0,
+      "close_price": null,
+      "taken_at": null,
+      "closed_at": null
+    },
+    {
+      "symbol": "LYNUSDT",
+      "direction": "SHORT",
+      "entry": 0.06017175,
+      "tp1": 0.057988,
+      "tp2": 0.055805,
+      "sl": 0.061919,
+      "strength": 31,
+      "status": "PENDING",
+      "pnl_pct": 0,
+      "close_price": null,
+      "taken_at": null,
+      "closed_at": null
+    },
+    {
+      "symbol": "TRIAUSDT",
+      "direction": "LONG",
+      "entry": 0.03303452,
+      "tp1": 0.034438,
+      "tp2": 0.035842,
+      "sl": 0.031912,
+      "strength": 59,
+      "status": "PENDING",
+      "pnl_pct": 0,
+      "close_price": null,
+      "taken_at": null,
+      "closed_at": null
+    },
+    {
+      "symbol": "XANUSDT",
+      "direction": "LONG",
+      "entry": 0.01029733,
+      "tp1": 0.01051,
+      "tp2": 0.010723,
+      "sl": 0.010091,
+      "strength": 31,
       "status": "PENDING",
       "pnl_pct": 0,
       "close_price": null,
