@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T12:37:27.452833+00:00",
+  "updated_at": "2026-03-17T12:38:12.192167+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T12:36:27Z",
+    "last_ok": "2026-03-17T12:37:32Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -16,11 +16,11 @@
     "winrate": 94.7
   },
   "trade_stats": {
-    "open": 81,
-    "wins": 35,
+    "open": 80,
+    "wins": 36,
     "losses": 17,
-    "total_pnl": 68.41,
-    "winrate": 67.3
+    "total_pnl": 70.47,
+    "winrate": 67.9
   },
   "fear_greed": {
     "value": 28,
@@ -2053,26 +2053,6 @@
       ]
     },
     {
-      "id": 23,
-      "symbol": "DOGEUSDT",
-      "direction": "SHORT",
-      "entry": 0.10106,
-      "tp1": 0.099039,
-      "tp2": 0.097018,
-      "sl": 0.098935,
-      "strength": 22,
-      "taken_at": "2026-03-17 08:40:34",
-      "status": "TP1_HIT",
-      "reasons": [
-        "RSI=58 (нейтральный↑)",
-        "BB верхняя зона (78%)",
-        "EMA20 < EMA50",
-        "МТФ: только 1 таймфрейм согласен",
-        "OI падает (лонги закрываются)",
-        "CVD отрицательный (-3.0%)"
-      ]
-    },
-    {
       "id": 71,
       "symbol": "1000PEPEUSDT",
       "direction": "SHORT",
@@ -2095,6 +2075,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "DOGEUSDT",
+      "direction": "SHORT",
+      "entry": 0.10106,
+      "tp1": 0.099039,
+      "tp2": 0.097018,
+      "sl": 0.098935,
+      "strength": 22,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 2.06,
+      "close_price": 0.09897500000000001,
+      "taken_at": "2026-03-17 08:40:34",
+      "closed_at": "2026-03-17 12:38:11"
+    },
     {
       "symbol": "ZECUSDT",
       "direction": "LONG",
