@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T18:57:58.227801+00:00",
+  "updated_at": "2026-03-17T18:58:37.084555+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T18:56:38Z",
+    "last_ok": "2026-03-17T18:58:04Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,11 +17,11 @@
   },
   "trade_stats": {
     "open": 53,
-    "pending": 15,
-    "wins": 89,
+    "pending": 14,
+    "wins": 90,
     "losses": 60,
-    "total_pnl": 84.28,
-    "winrate": 59.7
+    "total_pnl": 86.26,
+    "winrate": 60.0
   },
   "fear_greed": {
     "value": 28,
@@ -1775,6 +1775,26 @@
       ]
     },
     {
+      "id": 245,
+      "symbol": "ANIMEUSDT",
+      "direction": "SHORT",
+      "entry": 0.00592561,
+      "tp1": 0.005794,
+      "tp2": 0.005663,
+      "sl": 0.006044,
+      "strength": 29,
+      "taken_at": "2026-03-17 18:58:20",
+      "status": "OPEN",
+      "reasons": [
+        "MACD медвежий (hist=-0.00002)",
+        "Цена < EMA20 < EMA50",
+        "Стакан: сильное давление продажи (-0.25)",
+        "МТФ: 5m, 15m согласны",
+        "OI падает (лонги закрываются)",
+        "📌 Лимитный вход @ 0.00592561 (откат к EMA20)"
+      ]
+    },
+    {
       "id": 247,
       "symbol": "GUSDT",
       "direction": "LONG",
@@ -2808,26 +2828,6 @@
       ]
     },
     {
-      "id": 245,
-      "symbol": "ANIMEUSDT",
-      "direction": "SHORT",
-      "entry": 0.00592561,
-      "tp1": 0.005794,
-      "tp2": 0.005663,
-      "sl": 0.006044,
-      "strength": 29,
-      "taken_at": null,
-      "status": "PENDING",
-      "reasons": [
-        "MACD медвежий (hist=-0.00002)",
-        "Цена < EMA20 < EMA50",
-        "Стакан: сильное давление продажи (-0.25)",
-        "МТФ: 5m, 15m согласны",
-        "OI падает (лонги закрываются)",
-        "📌 Лимитный вход @ 0.00592561 (откат к EMA20)"
-      ]
-    },
-    {
       "id": 246,
       "symbol": "ENSOUSDT",
       "direction": "SHORT",
@@ -2950,9 +2950,10 @@
         "Bullish Engulfing (1h) 🕯️",
         "📌 Лимитный вход @ 270.035 (откат к EMA20)"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 206,
       "symbol": "1000PEPEUSDT",
       "direction": "LONG",
       "entry": 0.00364,
@@ -2960,20 +2961,12 @@
       "tp2": 0.003786,
       "sl": 0.00371315,
       "strength": 36,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 1.98,
+      "close_price": 0.0037120499999999997,
       "taken_at": null,
-      "status": "TP1_HIT",
-      "reasons": [
-        "RSI=40 (перепроданность)",
-        "MACD бычий (hist=0.00000)",
-        "BB нижняя зона (18%)",
-        "Стакан: давление покупки (+0.21)",
-        "МТФ: только 1 таймфрейм согласен",
-        "OI растёт +3.0%",
-        "Doji (1h) — нерешительность"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-17 18:58:36"
+    },
     {
       "symbol": "XMRUSDT",
       "direction": "SHORT",
@@ -5698,20 +5691,6 @@
       "tp2": 0.017271,
       "sl": 0.019132,
       "strength": 31,
-      "status": "PENDING",
-      "pnl_pct": 0,
-      "close_price": null,
-      "taken_at": null,
-      "closed_at": null
-    },
-    {
-      "symbol": "ANIMEUSDT",
-      "direction": "SHORT",
-      "entry": 0.00592561,
-      "tp1": 0.005794,
-      "tp2": 0.005663,
-      "sl": 0.006044,
-      "strength": 29,
       "status": "PENDING",
       "pnl_pct": 0,
       "close_price": null,
