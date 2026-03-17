@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T18:15:29.199161+00:00",
+  "updated_at": "2026-03-17T18:16:48.206551+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T18:14:46Z",
+    "last_ok": "2026-03-17T18:15:36Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -16,12 +16,12 @@
     "winrate": 86.7
   },
   "trade_stats": {
-    "open": 54,
+    "open": 53,
     "pending": 16,
     "wins": 87,
-    "losses": 55,
-    "total_pnl": 88.94,
-    "winrate": 61.3
+    "losses": 56,
+    "total_pnl": 88.68,
+    "winrate": 60.8
   },
   "fear_greed": {
     "value": 28,
@@ -869,28 +869,6 @@
     }
   ],
   "trades_open": [
-    {
-      "id": 69,
-      "symbol": "ETCUSDT",
-      "direction": "SHORT",
-      "entry": 8.854,
-      "tp1": 8.67692,
-      "tp2": 8.49984,
-      "sl": 9.03108,
-      "strength": 34,
-      "taken_at": "2026-03-17 10:15:51",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=53 (нейтральный↑)",
-        "Цена < EMA20 < EMA50",
-        "Стакан: сильное давление продажи (-0.28)",
-        "МТФ: 5m, 15m согласны",
-        "CVD падает (-7.5%) — продажи усиливаются 📉",
-        "Doji (1h) — нерешительность",
-        "BTC корреляция 0.72, BTC -0.5% 📉",
-        "BTC контекст: -1.6% за 12ч 📉"
-      ]
-    },
     {
       "id": 72,
       "symbol": "MEUSDT",
@@ -3143,6 +3121,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "ETCUSDT",
+      "direction": "SHORT",
+      "entry": 8.854,
+      "tp1": 8.67692,
+      "tp2": 8.49984,
+      "sl": 9.03108,
+      "strength": 34,
+      "status": "TIMEOUT",
+      "pnl_pct": -0.26,
+      "close_price": 8.877,
+      "taken_at": "2026-03-17 10:15:51",
+      "closed_at": "2026-03-17 18:15:51"
+    },
     {
       "symbol": "PENGUUSDT",
       "direction": "LONG",
@@ -5923,20 +5915,6 @@
       "tp2": 0.210465,
       "sl": 0.197562,
       "strength": 40,
-      "status": "PENDING",
-      "pnl_pct": 0,
-      "close_price": null,
-      "taken_at": null,
-      "closed_at": null
-    },
-    {
-      "symbol": "ZECUSDT",
-      "direction": "LONG",
-      "entry": 270.0346493,
-      "tp1": 275.435342,
-      "tp2": 280.836035,
-      "sl": 264.633956,
-      "strength": 47,
       "status": "PENDING",
       "pnl_pct": 0,
       "close_price": null,
