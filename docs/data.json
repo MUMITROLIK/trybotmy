@@ -1,16 +1,16 @@
 {
-  "updated_at": "2026-03-17T10:58:36.668967+00:00",
+  "updated_at": "2026-03-17T10:59:40.481073+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T10:57:36Z",
+    "last_ok": "2026-03-17T10:58:40Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
   "stats": {
     "total": 188,
-    "wins": 15,
+    "wins": 16,
     "losses": 1,
-    "active": 3,
-    "winrate": 93.8
+    "active": 2,
+    "winrate": 94.1
   },
   "trade_stats": {
     "open": 39,
@@ -67,9 +67,10 @@
       "news": null,
       "created_at": "2026-03-17 10:55:27",
       "status": "ACTIVE"
-    },
+    }
+  ],
+  "history": [
     {
-      "id": 226,
       "symbol": "OPNUSDT",
       "direction": "SHORT",
       "entry": 0.30399932,
@@ -77,6 +78,8 @@
       "tp2": 0.289771,
       "sl": 0.310079,
       "strength": 32,
+      "status": "TP1",
+      "created_at": "2026-03-17 10:56:13",
       "reasons": [
         "MACD медвежий (hist=-0.00001)",
         "Цена < EMA20 < EMA50",
@@ -84,13 +87,8 @@
         "OI растёт +1.8% + цена ↓",
         "BTC контекст: -1.5% за 12ч 📉",
         "📌 Лимитный вход @ 0.303999 (откат к EMA20)"
-      ],
-      "news": null,
-      "created_at": "2026-03-17 10:56:13",
-      "status": "ACTIVE"
-    }
-  ],
-  "history": [
+      ]
+    },
     {
       "symbol": "XMRUSDT",
       "direction": "SHORT",
@@ -458,25 +456,6 @@
         "OI растёт +5.4% + цена ↓",
         "CVD падает (-12.2%) — продажи усиливаются 📉",
         "📌 Лимитный вход @ 0.0344639 (откат к EMA20)"
-      ]
-    },
-    {
-      "symbol": "1000SHIBUSDT",
-      "direction": "SHORT",
-      "entry": 0.006117,
-      "tp1": 0.005995,
-      "tp2": 0.005872,
-      "sl": 0.006239,
-      "strength": 31,
-      "status": "EXPIRED",
-      "created_at": "2026-03-17 09:25:35",
-      "reasons": [
-        "RSI=69 (перекупленность)",
-        "BB верхняя зона (95%)",
-        "EMA20 < EMA50",
-        "Стакан: перевес ask (-0.07)",
-        "МТФ: только 1 таймфрейм согласен",
-        "CVD падает (-11.0%) — продажи усиливаются 📉"
       ]
     }
   ],
