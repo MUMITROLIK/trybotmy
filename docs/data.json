@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-03-17T09:23:08.544290+00:00",
+  "updated_at": "2026-03-17T09:23:59.591140+00:00",
   "publish_status": {
     "last_ok": null,
-    "last_error": "fatal: unable to access 'https://github.com/MUMITROLIK/trybotmy.git/': Failed to connect to github.com port 443 after 21046 ms: Could not connect to server\n",
+    "last_error": "fatal: unable to access 'https://github.com/MUMITROLIK/trybotmy.git/': Failed to connect to github.com port 443 after 21087 ms: Could not connect to server\n",
     "min_push_interval_sec": 30
   },
   "stats": {
@@ -13,11 +13,11 @@
     "winrate": 92.3
   },
   "trade_stats": {
-    "open": 26,
-    "wins": 22,
+    "open": 25,
+    "wins": 23,
     "losses": 7,
-    "total_pnl": 54.52,
-    "winrate": 75.9
+    "total_pnl": 57.55,
+    "winrate": 76.7
   },
   "fear_greed": {
     "value": 50,
@@ -934,9 +934,10 @@
         "МТФ: 5m, 4h согласны",
         "OI падает (лонги закрываются)"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 53,
       "symbol": "ROBOUSDT",
       "direction": "SHORT",
       "entry": 0.03201,
@@ -944,20 +945,12 @@
       "tp2": 0.0303967,
       "sl": 0.03094255,
       "strength": 46,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 3.03,
+      "close_price": 0.03104,
       "taken_at": "2026-03-17 09:15:09",
-      "status": "TP1_HIT",
-      "reasons": [
-        "MACD медвежий (hist=-0.00046)",
-        "Цена < EMA20 < EMA50",
-        "Стакан: перевес ask (-0.09)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +5.4% + цена ↓",
-        "CVD падает (-14.1%) — продажи усиливаются 📉",
-        "📌 Лимитный вход @ 0.0348778 (откат к EMA20)"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-17 09:23:54"
+    },
     {
       "symbol": "RIVERUSDT",
       "direction": "SHORT",
