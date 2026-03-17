@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T23:36:53.671358+00:00",
+  "updated_at": "2026-03-17T23:38:20.498662+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T23:36:17Z",
+    "last_ok": "2026-03-17T23:37:00Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 82.6
   },
   "trade_stats": {
-    "open": 18,
+    "open": 17,
     "pending": 2,
-    "wins": 121,
+    "wins": 122,
     "losses": 88,
-    "total_pnl": 101.43,
-    "winrate": 57.9
+    "total_pnl": 103.39,
+    "winrate": 58.1
   },
   "fear_greed": {
     "value": 28,
@@ -1196,9 +1196,10 @@
         "⚠️ Funding через 45м",
         "📌 Лимитный вход @ 0.00698903 (откат к EMA20)"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 283,
       "symbol": "HUMAUSDT",
       "direction": "LONG",
       "entry": 0.01735,
@@ -1206,20 +1207,12 @@
       "tp2": 0.018044,
       "sl": 0.0177125,
       "strength": 41,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 1.96,
+      "close_price": 0.017690499999999998,
       "taken_at": "2026-03-17T22:32:11.974881",
-      "status": "TP1_HIT",
-      "reasons": [
-        "RSI=45 (нейтральный↓)",
-        "MACD бычий (hist=0.00004)",
-        "BB ниже середины",
-        "Стакан: сильное давление покупки (+0.52)",
-        "МТФ: 5m, 1h, 4h согласны",
-        "CVD положительный (-3.7%)",
-        "⚠️ Funding через 88м"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-17 23:37:15"
+    },
     {
       "symbol": "DEGOUSDT",
       "direction": "LONG",
@@ -4005,20 +3998,6 @@
       "close_price": 0.15925,
       "taken_at": "2026-03-17 11:13:35",
       "closed_at": "2026-03-17 13:37:49"
-    },
-    {
-      "symbol": "HUMAUSDT",
-      "direction": "LONG",
-      "entry": 0.018127,
-      "tp1": 0.018788,
-      "tp2": 0.019449,
-      "sl": 0.01897839,
-      "strength": 27,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 4.68,
-      "close_price": 0.018975,
-      "taken_at": "2026-03-17 13:12:49",
-      "closed_at": "2026-03-17 13:35:04"
     }
   ]
 }
