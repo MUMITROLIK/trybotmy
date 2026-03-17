@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T23:11:02.977679+00:00",
+  "updated_at": "2026-03-17T23:12:14.202272+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T23:10:11Z",
+    "last_ok": "2026-03-17T23:11:07Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -18,7 +18,7 @@
   },
   "trade_stats": {
     "open": 20,
-    "pending": 3,
+    "pending": 2,
     "wins": 121,
     "losses": 85,
     "total_pnl": 109.26,
@@ -1302,26 +1302,6 @@
       ]
     },
     {
-      "id": 280,
-      "symbol": "FETUSDT",
-      "direction": "LONG",
-      "entry": 0.23630612,
-      "tp1": 0.241032,
-      "tp2": 0.245758,
-      "sl": 0.23158,
-      "strength": 41,
-      "taken_at": "2026-03-17T22:11:21.384906",
-      "status": "PENDING",
-      "reasons": [
-        "MACD бычий (hist=0.00091)",
-        "Цена > EMA20 > EMA50",
-        "Объём x2.0 🔥",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "CVD растёт (+8.2%) — покупки усиливаются 📈",
-        "📌 Лимитный вход @ 0.236306 (откат к EMA20)"
-      ]
-    },
-    {
       "id": 281,
       "symbol": "XANUSDT",
       "direction": "LONG",
@@ -1365,6 +1345,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "FETUSDT",
+      "direction": "LONG",
+      "entry": 0.23630612,
+      "tp1": 0.241032,
+      "tp2": 0.245758,
+      "sl": 0.23158,
+      "strength": 41,
+      "status": "LIMIT_TIMEOUT",
+      "pnl_pct": 0,
+      "close_price": null,
+      "taken_at": "2026-03-17T22:11:21.384906",
+      "closed_at": "2026-03-17 23:11:28"
+    },
     {
       "symbol": "1000BONKUSDT",
       "direction": "LONG",
@@ -1531,20 +1525,6 @@
       "pnl_pct": 0,
       "close_price": null,
       "taken_at": "2026-03-17T22:19:39.553549",
-      "closed_at": null
-    },
-    {
-      "symbol": "FETUSDT",
-      "direction": "LONG",
-      "entry": 0.23630612,
-      "tp1": 0.241032,
-      "tp2": 0.245758,
-      "sl": 0.23158,
-      "strength": 41,
-      "status": "PENDING",
-      "pnl_pct": 0,
-      "close_price": null,
-      "taken_at": "2026-03-17T22:11:21.384906",
       "closed_at": null
     },
     {
