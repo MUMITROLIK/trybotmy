@@ -1,19 +1,19 @@
 {
-  "updated_at": "2026-03-17T09:47:40.136817+00:00",
+  "updated_at": "2026-03-17T09:48:42.707423+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T09:43:55Z",
-    "last_error": "fatal: unable to access 'https://github.com/MUMITROLIK/trybotmy.git/': Failed to connect to github.com port 443 after 22849 ms: Could not connect to server\n",
+    "last_ok": "2026-03-17T09:47:42Z",
+    "last_error": null,
     "min_push_interval_sec": 30
   },
   "stats": {
-    "total": 172,
+    "total": 173,
     "wins": 13,
     "losses": 1,
-    "active": 3,
+    "active": 4,
     "winrate": 92.9
   },
   "trade_stats": {
-    "open": 33,
+    "open": 34,
     "wins": 24,
     "losses": 7,
     "total_pnl": 59.55,
@@ -84,6 +84,26 @@
       ],
       "news": null,
       "created_at": "2026-03-17 09:44:16",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 211,
+      "symbol": "KITEUSDT",
+      "direction": "SHORT",
+      "entry": 0.20308241,
+      "tp1": 0.199021,
+      "tp2": 0.194959,
+      "sl": 0.207144,
+      "strength": 32,
+      "reasons": [
+        "MACD медвежий (hist=-0.00078)",
+        "Цена < EMA20 < EMA50",
+        "Стакан: давление продажи (-0.12)",
+        "МТФ: 5m, 15m, 1h согласны",
+        "📌 Лимитный вход @ 0.203082 (откат к EMA20)"
+      ],
+      "news": null,
+      "created_at": "2026-03-17 09:48:33",
       "status": "ACTIVE"
     }
   ],
@@ -1119,6 +1139,25 @@
         "Стакан: давление продажи (-0.12)",
         "МТФ: 5m, 15m, 4h согласны",
         "📌 Лимитный вход @ 0.00365772 (откат к EMA20)"
+      ]
+    },
+    {
+      "id": 65,
+      "symbol": "KITEUSDT",
+      "direction": "SHORT",
+      "entry": 0.1983,
+      "tp1": 0.194334,
+      "tp2": 0.190368,
+      "sl": 0.202266,
+      "strength": 32,
+      "taken_at": "2026-03-17 09:48:37",
+      "status": "OPEN",
+      "reasons": [
+        "MACD медвежий (hist=-0.00078)",
+        "Цена < EMA20 < EMA50",
+        "Стакан: давление продажи (-0.12)",
+        "МТФ: 5m, 15m, 1h согласны",
+        "📌 Лимитный вход @ 0.203082 (откат к EMA20)"
       ]
     }
   ],
