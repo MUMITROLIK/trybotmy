@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T21:00:00.800382+00:00",
+  "updated_at": "2026-03-17T21:00:38.291464+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T20:59:00Z",
+    "last_ok": "2026-03-17T21:00:06Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,15 +10,15 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 370,
+    "total": 371,
     "wins": 101,
     "losses": 20,
-    "active": 9,
+    "active": 10,
     "winrate": 83.5
   },
   "trade_stats": {
     "open": 17,
-    "pending": 17,
+    "pending": 18,
     "wins": 113,
     "losses": 81,
     "total_pnl": 93.57,
@@ -226,6 +226,27 @@
       ],
       "news": null,
       "created_at": "2026-03-17 20:59:53",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 409,
+      "symbol": "IRUSDT",
+      "direction": "LONG",
+      "entry": 0.0489722,
+      "tp1": 0.049952,
+      "tp2": 0.050931,
+      "sl": 0.047993,
+      "strength": 41,
+      "reasons": [
+        "MACD бычий (hist=0.00009)",
+        "EMA20 > EMA50 (golden cross) 🌟",
+        "Стакан: давление покупки (+0.11)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "CVD положительный (+0.2%)",
+        "📌 Лимитный вход @ 0.0489722 (откат к EMA20)"
+      ],
+      "news": null,
+      "created_at": "2026-03-17 21:00:22",
       "status": "ACTIVE"
     }
   ],
@@ -2016,9 +2037,43 @@
         "Bullish Engulfing (1h) 🕯️",
         "📌 Лимитный вход @ 0.116461 (откат к EMA20)"
       ]
+    },
+    {
+      "id": 263,
+      "symbol": "IRUSDT",
+      "direction": "LONG",
+      "entry": 0.0489722,
+      "tp1": 0.049952,
+      "tp2": 0.050931,
+      "sl": 0.047993,
+      "strength": 41,
+      "taken_at": "2026-03-17T21:00:22.403194",
+      "status": "PENDING",
+      "reasons": [
+        "MACD бычий (hist=0.00009)",
+        "EMA20 > EMA50 (golden cross) 🌟",
+        "Стакан: давление покупки (+0.11)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "CVD положительный (+0.2%)",
+        "📌 Лимитный вход @ 0.0489722 (откат к EMA20)"
+      ]
     }
   ],
   "trades_history": [
+    {
+      "symbol": "IRUSDT",
+      "direction": "LONG",
+      "entry": 0.0489722,
+      "tp1": 0.049952,
+      "tp2": 0.050931,
+      "sl": 0.047993,
+      "strength": 41,
+      "status": "PENDING",
+      "pnl_pct": 0,
+      "close_price": null,
+      "taken_at": "2026-03-17T21:00:22.403194",
+      "closed_at": null
+    },
     {
       "symbol": "XPLUSDT",
       "direction": "LONG",
@@ -4804,20 +4859,6 @@
       "close_price": 0.22755,
       "taken_at": "2026-03-17 12:02:45",
       "closed_at": "2026-03-17 12:16:45"
-    },
-    {
-      "symbol": "ROBOUSDT",
-      "direction": "SHORT",
-      "entry": 0.03107,
-      "tp1": 0.03010994,
-      "tp2": 0.02914677,
-      "sl": 0.029865000000000003,
-      "strength": 44,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 3.85,
-      "close_price": 0.029875,
-      "taken_at": "2026-03-17 09:31:19",
-      "closed_at": "2026-03-17 11:52:59"
     }
   ]
 }
