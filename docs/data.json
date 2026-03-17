@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T15:05:34.127547+00:00",
+  "updated_at": "2026-03-17T15:06:37.374819+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T15:04:34Z",
+    "last_ok": "2026-03-17T15:05:38Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -9,19 +9,19 @@
     "auto_take": true
   },
   "stats": {
-    "total": 280,
+    "total": 281,
     "wins": 38,
     "losses": 3,
-    "active": 18,
+    "active": 19,
     "winrate": 92.7
   },
   "trade_stats": {
     "open": 76,
-    "pending": 3,
+    "pending": 4,
     "wins": 59,
     "losses": 34,
     "total_pnl": 87.29,
-    "winrate": 61.5
+    "winrate": 60.8
   },
   "fear_greed": {
     "value": 28,
@@ -401,6 +401,29 @@
       ],
       "news": null,
       "created_at": "2026-03-17 15:00:33",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 319,
+      "symbol": "BEATUSDT",
+      "direction": "SHORT",
+      "entry": 0.51566855,
+      "tp1": 0.49739,
+      "tp2": 0.479111,
+      "sl": 0.530291,
+      "strength": 30,
+      "reasons": [
+        "RSI=58 (нейтральный↑)",
+        "MACD медвежий (hist=-0.00026)",
+        "Цена ниже EMA20",
+        "МТФ: только 1 таймфрейм согласен",
+        "OI растёт +1.2% + цена ↓",
+        "CVD отрицательный (-1.0%)",
+        "⚠️ Funding через 55м",
+        "📌 Лимитный вход @ 0.515669 (откат к EMA20)"
+      ],
+      "news": null,
+      "created_at": "2026-03-17 15:05:48",
       "status": "ACTIVE"
     }
   ],
@@ -2333,6 +2356,28 @@
         "⚠️ Funding через 60м",
         "📌 Лимитный вход @ 0.0058957 (откат к EMA20)"
       ]
+    },
+    {
+      "id": 173,
+      "symbol": "BEATUSDT",
+      "direction": "SHORT",
+      "entry": 0.51566855,
+      "tp1": 0.49739,
+      "tp2": 0.479111,
+      "sl": 0.530291,
+      "strength": 30,
+      "taken_at": null,
+      "status": "PENDING",
+      "reasons": [
+        "RSI=58 (нейтральный↑)",
+        "MACD медвежий (hist=-0.00026)",
+        "Цена ниже EMA20",
+        "МТФ: только 1 таймфрейм согласен",
+        "OI растёт +1.2% + цена ↓",
+        "CVD отрицательный (-1.0%)",
+        "⚠️ Funding через 55м",
+        "📌 Лимитный вход @ 0.515669 (откат к EMA20)"
+      ]
     }
   ],
   "trades_history": [
@@ -3674,6 +3719,20 @@
       "tp2": 0.00626,
       "sl": 0.00575,
       "strength": 34,
+      "status": "PENDING",
+      "pnl_pct": 0,
+      "close_price": null,
+      "taken_at": null,
+      "closed_at": null
+    },
+    {
+      "symbol": "BEATUSDT",
+      "direction": "SHORT",
+      "entry": 0.51566855,
+      "tp1": 0.49739,
+      "tp2": 0.479111,
+      "sl": 0.530291,
+      "strength": 30,
       "status": "PENDING",
       "pnl_pct": 0,
       "close_price": null,
