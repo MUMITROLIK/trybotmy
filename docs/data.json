@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T17:35:23.251659+00:00",
+  "updated_at": "2026-03-17T17:36:33.021120+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T17:34:30Z",
+    "last_ok": "2026-03-17T17:35:29Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -16,12 +16,12 @@
     "winrate": 87.3
   },
   "trade_stats": {
-    "open": 54,
+    "open": 53,
     "pending": 17,
-    "wins": 84,
+    "wins": 85,
     "losses": 51,
-    "total_pnl": 88.06,
-    "winrate": 62.2
+    "total_pnl": 91.87,
+    "winrate": 62.5
   },
   "fear_greed": {
     "value": 28,
@@ -3218,9 +3218,10 @@
         "CVD положительный (+0.8%)",
         "📌 Лимитный вход @ 128.864 (откат к EMA20)"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 185,
       "symbol": "SIRENUSDT",
       "direction": "SHORT",
       "entry": 0.74761,
@@ -3228,19 +3229,12 @@
       "tp2": 0.689144,
       "sl": 0.7174,
       "strength": 28,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 3.81,
+      "close_price": 0.71916,
       "taken_at": null,
-      "status": "TP1_HIT",
-      "reasons": [
-        "MACD медвежий (hist=-0.00254)",
-        "BB выше середины",
-        "Стакан: сильное давление продажи (-0.35)",
-        "МТФ: только 1 таймфрейм согласен",
-        "CVD отрицательный (+2.6%)",
-        "⚠️ Funding через 37м"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-17 17:35:46"
+    },
     {
       "symbol": "AVAXUSDT",
       "direction": "SHORT",
