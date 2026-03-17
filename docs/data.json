@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T12:19:39.353956+00:00",
+  "updated_at": "2026-03-17T12:20:36.264094+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T12:18:39Z",
+    "last_ok": "2026-03-17T12:19:43Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -16,11 +16,11 @@
     "winrate": 94.4
   },
   "trade_stats": {
-    "open": 78,
+    "open": 77,
     "wins": 32,
-    "losses": 15,
-    "total_pnl": 66.01,
-    "winrate": 68.1
+    "losses": 16,
+    "total_pnl": 62.83,
+    "winrate": 66.7
   },
   "fear_greed": {
     "value": 28,
@@ -913,26 +913,6 @@
         "OI падает (лонги закрываются)",
         "CVD падает (-5.2%) — продажи усиливаются 📉",
         "📌 Лимитный вход @ 0.794789 (откат к EMA20)"
-      ]
-    },
-    {
-      "id": 50,
-      "symbol": "LYNUSDT",
-      "direction": "SHORT",
-      "entry": 0.06149,
-      "tp1": 0.059143,
-      "tp2": 0.056795,
-      "sl": 0.063368,
-      "strength": 31,
-      "taken_at": "2026-03-17 09:11:31",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=57 (нейтральный↑)",
-        "BB выше середины",
-        "EMA20 < EMA50",
-        "Стакан: давление продажи (-0.17)",
-        "МТФ: 15m, 1h согласны",
-        "CVD падает (-5.8%) — продажи усиливаются 📉"
       ]
     },
     {
@@ -2145,6 +2125,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "LYNUSDT",
+      "direction": "SHORT",
+      "entry": 0.06149,
+      "tp1": 0.059143,
+      "tp2": 0.056795,
+      "sl": 0.063368,
+      "strength": 31,
+      "status": "SL",
+      "pnl_pct": -3.18,
+      "close_price": 0.063445,
+      "taken_at": "2026-03-17 09:11:31",
+      "closed_at": "2026-03-17 12:20:35"
+    },
     {
       "symbol": "FETUSDT",
       "direction": "LONG",
