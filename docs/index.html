@@ -173,8 +173,11 @@ main { padding: 24px 40px; max-width: 1600px; margin: 0 auto; }
 }
 .stat-value {
   font-family: 'JetBrains Mono', monospace;
-  font-size: 30px; font-weight: 700; line-height: 1;
+  font-size: clamp(20px, 3.2vw, 30px); font-weight: 700; line-height: 1;
   letter-spacing: -1px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .stat-value.c-green { color: var(--green); text-shadow: var(--green-glow); }
 .stat-value.c-red   { color: var(--red);   text-shadow: var(--red-glow); }
@@ -684,7 +687,7 @@ tr:hover td { background: rgba(255,255,255,.015); }
     <div id="page-positions" style="display:none">
       <div class="sec"><div class="sec-dot" style="background:var(--cyan)"></div>Открытые позиции · P&L в реальном времени</div>
 
-      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:20px" id="tradeStatsRow">
+      <div class="trade-stats-row" id="tradeStatsRow">
         <div class="stat-card"><div class="stat-label">Открытых</div><div class="stat-value c-cyan" id="ts-open">—</div></div>
         <div class="stat-card"><div class="stat-label">Профит</div><div class="stat-value c-green" id="ts-wins">—</div></div>
         <div class="stat-card"><div class="stat-label">Стоп</div><div class="stat-value c-red" id="ts-losses">—</div></div>
