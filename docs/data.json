@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T12:34:01.507890+00:00",
+  "updated_at": "2026-03-17T12:34:35.291453+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T12:33:35Z",
+    "last_ok": "2026-03-17T12:34:05Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -9,18 +9,18 @@
     "auto_take": true
   },
   "stats": {
-    "total": 237,
+    "total": 239,
     "wins": 18,
     "losses": 1,
-    "active": 3,
+    "active": 5,
     "winrate": 94.7
   },
   "trade_stats": {
-    "open": 79,
-    "wins": 34,
+    "open": 80,
+    "wins": 35,
     "losses": 16,
-    "total_pnl": 68.46,
-    "winrate": 68.0
+    "total_pnl": 70.43,
+    "winrate": 68.6
   },
   "fear_greed": {
     "value": 28,
@@ -85,6 +85,48 @@
       ],
       "news": null,
       "created_at": "2026-03-17 12:28:36",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 276,
+      "symbol": "VIRTUALUSDT",
+      "direction": "LONG",
+      "entry": 0.7785,
+      "tp1": 0.79407,
+      "tp2": 0.80964,
+      "sl": 0.76293,
+      "strength": 33,
+      "reasons": [
+        "RSI=34 (перепроданность)",
+        "BB нижняя полоса (пробой)",
+        "Стакан: давление покупки (+0.21)",
+        "МТФ: 1h, 4h согласны",
+        "CVD положительный (-6.9%)"
+      ],
+      "news": null,
+      "created_at": "2026-03-17 12:34:09",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 277,
+      "symbol": "VANRYUSDT",
+      "direction": "SHORT",
+      "entry": 0.00591574,
+      "tp1": 0.005658,
+      "tp2": 0.0054,
+      "sl": 0.006122,
+      "strength": 31,
+      "reasons": [
+        "MACD медвежий (hist=-0.00001)",
+        "Цена ниже EMA20",
+        "Стакан: давление продажи (-0.12)",
+        "OI растёт +25.1%",
+        "CVD отрицательный (-1.9%)",
+        "Bearish Engulfing (1h) 🕯️",
+        "📌 Лимитный вход @ 0.00591574 (откат к EMA20)"
+      ],
+      "news": null,
+      "created_at": "2026-03-17 12:34:26",
       "status": "ACTIVE"
     }
   ],
@@ -1992,7 +2034,48 @@
       ]
     },
     {
-      "id": 45,
+      "id": 130,
+      "symbol": "VIRTUALUSDT",
+      "direction": "LONG",
+      "entry": 0.7785,
+      "tp1": 0.79407,
+      "tp2": 0.80964,
+      "sl": 0.76293,
+      "strength": 33,
+      "taken_at": "2026-03-17 12:34:09",
+      "status": "OPEN",
+      "reasons": [
+        "RSI=34 (перепроданность)",
+        "BB нижняя полоса (пробой)",
+        "Стакан: давление покупки (+0.21)",
+        "МТФ: 1h, 4h согласны",
+        "CVD положительный (-6.9%)"
+      ]
+    },
+    {
+      "id": 131,
+      "symbol": "VANRYUSDT",
+      "direction": "SHORT",
+      "entry": 0.00587,
+      "tp1": 0.00561407,
+      "tp2": 0.00535872,
+      "sl": 0.00607428,
+      "strength": 31,
+      "taken_at": "2026-03-17 12:34:27",
+      "status": "OPEN",
+      "reasons": [
+        "MACD медвежий (hist=-0.00001)",
+        "Цена ниже EMA20",
+        "Стакан: давление продажи (-0.12)",
+        "OI растёт +25.1%",
+        "CVD отрицательный (-1.9%)",
+        "Bearish Engulfing (1h) 🕯️",
+        "📌 Лимитный вход @ 0.00591574 (откат к EMA20)"
+      ]
+    }
+  ],
+  "trades_history": [
+    {
       "symbol": "PENGUUSDT",
       "direction": "SHORT",
       "entry": 0.00785589,
@@ -2000,20 +2083,12 @@
       "tp2": 0.007542,
       "sl": 0.0076985000000000005,
       "strength": 30,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 1.97,
+      "close_price": 0.0077015,
       "taken_at": "2026-03-17 09:04:21",
-      "status": "TP1_HIT",
-      "reasons": [
-        "RSI=57 (нейтральный↑)",
-        "Цена < EMA20 < EMA50",
-        "Стакан: давление продажи (-0.20)",
-        "МТФ: только 1 таймфрейм согласен",
-        "OI растёт +1.7% + цена ↓",
-        "CVD падает (-7.5%) — продажи усиливаются 📉",
-        "📌 Лимитный вход @ 0.00785589 (откат к EMA20)"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-17 12:34:23"
+    },
     {
       "symbol": "VIRTUALUSDT",
       "direction": "SHORT",
