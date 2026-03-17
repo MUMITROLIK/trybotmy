@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-03-17T10:26:49.292049+00:00",
+  "updated_at": "2026-03-17T10:28:11.090644+00:00",
   "publish_status": {
     "last_ok": "2026-03-17T10:24:48Z",
-    "last_error": "fatal: unable to access 'https://github.com/MUMITROLIK/trybotmy.git/': Failed to connect to github.com port 443 after 21060 ms: Could not connect to server\n",
+    "last_error": "fatal: unable to access 'https://github.com/MUMITROLIK/trybotmy.git/': Failed to connect to github.com port 443 after 21079 ms: Could not connect to server\n",
     "min_push_interval_sec": 30
   },
   "stats": {
     "total": 180,
     "wins": 15,
     "losses": 1,
-    "active": 2,
+    "active": 1,
     "winrate": 93.8
   },
   "trade_stats": {
@@ -25,28 +25,6 @@
     "emoji": "😨"
   },
   "signals": [
-    {
-      "id": 217,
-      "symbol": "1000PEPEUSDT",
-      "direction": "SHORT",
-      "entry": 0.00380168,
-      "tp1": 0.003726,
-      "tp2": 0.00365,
-      "sl": 0.003878,
-      "strength": 36,
-      "reasons": [
-        "MACD медвежий (hist=-0.00000)",
-        "Цена < EMA20 < EMA50",
-        "Стакан: сильное давление продажи (-0.27)",
-        "МТФ: 5m, 15m согласны",
-        "OI растёт +1.2% + цена ↓",
-        "BTC контекст: -1.6% за 12ч 📉",
-        "📌 Лимитный вход @ 0.00380168 (откат к EMA20)"
-      ],
-      "news": null,
-      "created_at": "2026-03-17 10:17:13",
-      "status": "ACTIVE"
-    },
     {
       "id": 218,
       "symbol": "MEUSDT",
@@ -71,6 +49,26 @@
     }
   ],
   "history": [
+    {
+      "symbol": "1000PEPEUSDT",
+      "direction": "SHORT",
+      "entry": 0.00380168,
+      "tp1": 0.003726,
+      "tp2": 0.00365,
+      "sl": 0.003878,
+      "strength": 36,
+      "status": "EXPIRED",
+      "created_at": "2026-03-17 10:17:13",
+      "reasons": [
+        "MACD медвежий (hist=-0.00000)",
+        "Цена < EMA20 < EMA50",
+        "Стакан: сильное давление продажи (-0.27)",
+        "МТФ: 5m, 15m согласны",
+        "OI растёт +1.2% + цена ↓",
+        "BTC контекст: -1.6% за 12ч 📉",
+        "📌 Лимитный вход @ 0.00380168 (откат к EMA20)"
+      ]
+    },
     {
       "symbol": "COSUSDT",
       "direction": "SHORT",
@@ -429,26 +427,6 @@
         "OI падает (лонги закрываются)",
         "CVD отрицательный (+5.5%)",
         "📌 Лимитный вход @ 1.1827 (откат к EMA20)"
-      ]
-    },
-    {
-      "symbol": "ROBOUSDT",
-      "direction": "SHORT",
-      "entry": 0.0352161,
-      "tp1": 0.034327,
-      "tp2": 0.033438,
-      "sl": 0.035928,
-      "strength": 50,
-      "status": "TP2",
-      "created_at": "2026-03-17 09:12:05",
-      "reasons": [
-        "MACD медвежий (hist=-0.00043)",
-        "Цена < EMA20 < EMA50",
-        "Объём x2.3 🔥",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +5.4% + цена ↓",
-        "CVD падает (-12.7%) — продажи усиливаются 📉",
-        "📌 Лимитный вход @ 0.0352161 (откат к EMA20)"
       ]
     }
   ],
