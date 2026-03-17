@@ -1409,7 +1409,7 @@ function renderSignals(sigs) {
       ? `<div class="sig-taken-label">AUTO-TAKE: сделка будет взята ботом</div>`
       : (alreadyTaken
           ? `<div class="sig-taken-label">ВЗЯТА — отслеживается в позициях</div>`
-          : `<div class="sig-actions">
+      : `<div class="sig-actions">
               <button class="btn-take" onclick="handleTake('${s.symbol}','${s.direction}',${s.entry})">ВЗЯТЬ</button>
               <button class="btn-skip" onclick="handleSkip('${s.symbol}','${s.direction}')">ПРОПУСТИТЬ</button>
             </div>`);

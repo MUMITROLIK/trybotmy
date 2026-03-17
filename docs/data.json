@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T20:05:14.155426+00:00",
+  "updated_at": "2026-03-17T20:06:20.491647+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T20:04:14Z",
+    "last_ok": "2026-03-17T20:05:20Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -16,12 +16,12 @@
     "winrate": 83.9
   },
   "trade_stats": {
-    "open": 40,
+    "open": 36,
     "pending": 15,
-    "wins": 99,
-    "losses": 70,
-    "total_pnl": 83.56,
-    "winrate": 58.6
+    "wins": 100,
+    "losses": 73,
+    "total_pnl": 83.33,
+    "winrate": 57.8
   },
   "fear_greed": {
     "value": 28,
@@ -699,84 +699,6 @@
     }
   ],
   "trades_open": [
-    {
-      "id": 107,
-      "symbol": "LTCUSDT",
-      "direction": "LONG",
-      "entry": 57.6,
-      "tp1": 58.752,
-      "tp2": 59.904,
-      "sl": 56.448,
-      "strength": 37,
-      "taken_at": "2026-03-17 12:05:55",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=35 (перепроданность)",
-        "MACD бычий (hist=0.00437)",
-        "BB нижняя зона (16%)",
-        "Стакан: перевес bid (+0.05)",
-        "МТФ: 1h, 4h согласны",
-        "CVD положительный (-5.9%)"
-      ]
-    },
-    {
-      "id": 108,
-      "symbol": "ENAUSDT",
-      "direction": "LONG",
-      "entry": 0.1163,
-      "tp1": 0.118626,
-      "tp2": 0.120952,
-      "sl": 0.113974,
-      "strength": 26,
-      "taken_at": "2026-03-17 12:05:56",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=41 (нейтральный↓)",
-        "MACD бычий (hist=0.00003)",
-        "BB ниже середины",
-        "Стакан: перевес bid (+0.07)",
-        "МТФ: 1h, 4h согласны"
-      ]
-    },
-    {
-      "id": 109,
-      "symbol": "PUMPUSDT",
-      "direction": "LONG",
-      "entry": 0.002074,
-      "tp1": 0.002115,
-      "tp2": 0.002157,
-      "sl": 0.002033,
-      "strength": 27,
-      "taken_at": "2026-03-17 12:06:03",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=43 (нейтральный↓)",
-        "MACD бычий (hist=0.00000)",
-        "BB ниже середины",
-        "Стакан: перевес bid (+0.06)",
-        "МТФ: 1h, 4h согласны",
-        "OI падает (шорты закрываются)"
-      ]
-    },
-    {
-      "id": 110,
-      "symbol": "UNIUSDT",
-      "direction": "LONG",
-      "entry": 4.008,
-      "tp1": 4.08816,
-      "tp2": 4.16832,
-      "sl": 3.92784,
-      "strength": 23,
-      "taken_at": "2026-03-17 12:06:07",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=43 (нейтральный↓)",
-        "MACD бычий (hist=0.00405)",
-        "BB ниже середины",
-        "МТФ: только 1 таймфрейм согласен",
-        "CVD положительный (-8.8%)"
-      ]
-    },
     {
       "id": 111,
       "symbol": "DASHUSDT",
@@ -2515,6 +2437,62 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "PUMPUSDT",
+      "direction": "LONG",
+      "entry": 0.002074,
+      "tp1": 0.002115,
+      "tp2": 0.002157,
+      "sl": 0.002033,
+      "strength": 27,
+      "status": "TIMEOUT",
+      "pnl_pct": -0.07,
+      "close_price": 0.0020725,
+      "taken_at": "2026-03-17 12:06:03",
+      "closed_at": "2026-03-17 20:06:16"
+    },
+    {
+      "symbol": "UNIUSDT",
+      "direction": "LONG",
+      "entry": 4.008,
+      "tp1": 4.08816,
+      "tp2": 4.16832,
+      "sl": 3.92784,
+      "strength": 23,
+      "status": "TIMEOUT",
+      "pnl_pct": -0.86,
+      "close_price": 3.9735,
+      "taken_at": "2026-03-17 12:06:07",
+      "closed_at": "2026-03-17 20:06:16"
+    },
+    {
+      "symbol": "LTCUSDT",
+      "direction": "LONG",
+      "entry": 57.6,
+      "tp1": 58.752,
+      "tp2": 59.904,
+      "sl": 56.448,
+      "strength": 37,
+      "status": "TIMEOUT",
+      "pnl_pct": 0.91,
+      "close_price": 58.125,
+      "taken_at": "2026-03-17 12:05:55",
+      "closed_at": "2026-03-17 20:06:00"
+    },
+    {
+      "symbol": "ENAUSDT",
+      "direction": "LONG",
+      "entry": 0.1163,
+      "tp1": 0.118626,
+      "tp2": 0.120952,
+      "sl": 0.113974,
+      "strength": 26,
+      "status": "TIMEOUT",
+      "pnl_pct": -0.21,
+      "close_price": 0.11605,
+      "taken_at": "2026-03-17 12:05:56",
+      "closed_at": "2026-03-17 20:06:00"
+    },
     {
       "symbol": "NEARUSDT",
       "direction": "SHORT",
@@ -5252,62 +5230,6 @@
       "tp1": 0.00626,
       "tp2": 0.006522,
       "sl": 0.005788,
-      "strength": 45,
-      "status": "PENDING",
-      "pnl_pct": 0,
-      "close_price": null,
-      "taken_at": null,
-      "closed_at": null
-    },
-    {
-      "symbol": "TRIAUSDT",
-      "direction": "LONG",
-      "entry": 0.03316491,
-      "tp1": 0.034597,
-      "tp2": 0.03603,
-      "sl": 0.032019,
-      "strength": 49,
-      "status": "PENDING",
-      "pnl_pct": 0,
-      "close_price": null,
-      "taken_at": null,
-      "closed_at": null
-    },
-    {
-      "symbol": "VANRYUSDT",
-      "direction": "LONG",
-      "entry": 0.00600876,
-      "tp1": 0.006277,
-      "tp2": 0.006544,
-      "sl": 0.005794,
-      "strength": 40,
-      "status": "PENDING",
-      "pnl_pct": 0,
-      "close_price": null,
-      "taken_at": null,
-      "closed_at": null
-    },
-    {
-      "symbol": "TRIAUSDT",
-      "direction": "LONG",
-      "entry": 0.03318968,
-      "tp1": 0.034622,
-      "tp2": 0.036055,
-      "sl": 0.032044,
-      "strength": 44,
-      "status": "PENDING",
-      "pnl_pct": 0,
-      "close_price": null,
-      "taken_at": null,
-      "closed_at": null
-    },
-    {
-      "symbol": "VANRYUSDT",
-      "direction": "LONG",
-      "entry": 0.00600047,
-      "tp1": 0.006269,
-      "tp2": 0.006537,
-      "sl": 0.005786,
       "strength": 45,
       "status": "PENDING",
       "pnl_pct": 0,
