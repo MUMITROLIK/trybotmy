@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-03-17T10:03:58.075443+00:00",
+  "updated_at": "2026-03-17T10:04:30.829401+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T09:58:42Z",
-    "last_error": "fatal: unable to access 'https://github.com/MUMITROLIK/trybotmy.git/': Failed to connect to github.com port 443 after 21086 ms: Could not connect to server\n",
+    "last_ok": "2026-03-17T10:04:00Z",
+    "last_error": null,
     "min_push_interval_sec": 30
   },
   "stats": {
@@ -13,11 +13,11 @@
     "winrate": 93.3
   },
   "trade_stats": {
-    "open": 34,
-    "wins": 24,
+    "open": 33,
+    "wins": 25,
     "losses": 8,
-    "total_pnl": 57.29,
-    "winrate": 75.0
+    "total_pnl": 59.35,
+    "winrate": 75.8
   },
   "fear_greed": {
     "value": 50,
@@ -1068,9 +1068,10 @@
         "Объём x3.4 🔥🔥",
         "OI растёт +8.2%"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 40,
       "symbol": "PIXELUSDT",
       "direction": "SHORT",
       "entry": 0.010198,
@@ -1078,19 +1079,12 @@
       "tp2": 0.009779,
       "sl": 0.0099845,
       "strength": 34,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 2.06,
+      "close_price": 0.0099875,
       "taken_at": "2026-03-17 08:57:25",
-      "status": "TP1_HIT",
-      "reasons": [
-        "RSI=64 (перекупленность)",
-        "BB верхняя полоса (пробой)",
-        "EMA20 < EMA50",
-        "Объём x1.9 🔥",
-        "МТФ: только 1 таймфрейм согласен",
-        "OI растёт +4.6% + цена ↓"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-17 10:04:30"
+    },
     {
       "symbol": "RIVERUSDT",
       "direction": "SHORT",
