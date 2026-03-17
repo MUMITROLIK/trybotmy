@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T22:01:12.905118+00:00",
+  "updated_at": "2026-03-17T22:02:04.166652+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T22:00:09Z",
+    "last_ok": "2026-03-17T22:01:17Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 83.8
   },
   "trade_stats": {
-    "open": 11,
+    "open": 10,
     "pending": 9,
-    "wins": 120,
+    "wins": 121,
     "losses": 84,
-    "total_pnl": 108.57,
-    "winrate": 58.8
+    "total_pnl": 112.34,
+    "winrate": 59.0
   },
   "fear_greed": {
     "value": 28,
@@ -1071,9 +1071,10 @@
         "CVD растёт (+6.9%) — покупки усиливаются 📈",
         "📌 Лимитный вход @ 0.0537363 (откат к EMA20)"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 235,
       "symbol": "TRIAUSDT",
       "direction": "LONG",
       "entry": 0.03341491,
@@ -1081,19 +1082,12 @@
       "tp2": 0.036031,
       "sl": 0.03472551,
       "strength": 44,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 3.77,
+      "close_price": 0.034675,
       "taken_at": "2026-03-17 18:49:45",
-      "status": "TP1_HIT",
-      "reasons": [
-        "MACD бычий (hist=0.00024)",
-        "Цена > EMA20 > EMA50",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +14.0% + цена ↑",
-        "CVD растёт (+6.3%) — покупки усиливаются 📈",
-        "📌 Лимитный вход @ 0.0334149 (откат к EMA20)"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-17 22:01:17"
+    },
     {
       "symbol": "TRIAUSDT",
       "direction": "LONG",
@@ -3879,20 +3873,6 @@
       "close_price": 124.735,
       "taken_at": "2026-03-17 12:08:59",
       "closed_at": "2026-03-17 13:00:42"
-    },
-    {
-      "symbol": "RENDERUSDT",
-      "direction": "LONG",
-      "entry": 1.856,
-      "tp1": 1.89312,
-      "tp2": 1.93024,
-      "sl": 1.81888,
-      "strength": 34,
-      "status": "SL",
-      "pnl_pct": -2.18,
-      "close_price": 1.8155000000000001,
-      "taken_at": "2026-03-17 12:15:43",
-      "closed_at": "2026-03-17 12:59:16"
     }
   ]
 }
