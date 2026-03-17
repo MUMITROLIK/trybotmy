@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T21:19:21.152377+00:00",
+  "updated_at": "2026-03-17T21:20:27.993279+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T21:18:21Z",
+    "last_ok": "2026-03-17T21:19:27Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,8 +17,8 @@
     "winrate": 83.7
   },
   "trade_stats": {
-    "open": 13,
-    "pending": 5,
+    "open": 14,
+    "pending": 4,
     "wins": 116,
     "losses": 82,
     "total_pnl": 99.54,
@@ -883,6 +883,26 @@
       ]
     },
     {
+      "id": 263,
+      "symbol": "IRUSDT",
+      "direction": "LONG",
+      "entry": 0.0489722,
+      "tp1": 0.049952,
+      "tp2": 0.050931,
+      "sl": 0.047993,
+      "strength": 41,
+      "taken_at": "2026-03-17 21:19:57",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.00009)",
+        "EMA20 > EMA50 (golden cross) 🌟",
+        "Стакан: давление покупки (+0.11)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "CVD положительный (+0.2%)",
+        "📌 Лимитный вход @ 0.0489722 (откат к EMA20)"
+      ]
+    },
+    {
       "id": 260,
       "symbol": "PUMPUSDT",
       "direction": "LONG",
@@ -943,26 +963,6 @@
         "CVD положительный (+3.4%)",
         "Bullish Engulfing (1h) 🕯️",
         "📌 Лимитный вход @ 0.116461 (откат к EMA20)"
-      ]
-    },
-    {
-      "id": 263,
-      "symbol": "IRUSDT",
-      "direction": "LONG",
-      "entry": 0.0489722,
-      "tp1": 0.049952,
-      "tp2": 0.050931,
-      "sl": 0.047993,
-      "strength": 41,
-      "taken_at": "2026-03-17T21:00:22.403194",
-      "status": "PENDING",
-      "reasons": [
-        "MACD бычий (hist=0.00009)",
-        "EMA20 > EMA50 (golden cross) 🌟",
-        "Стакан: давление покупки (+0.11)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "CVD положительный (+0.2%)",
-        "📌 Лимитный вход @ 0.0489722 (откат к EMA20)"
       ]
     },
     {
@@ -1729,20 +1729,6 @@
       "close_price": 1.8125,
       "taken_at": "2026-03-17 13:01:38",
       "closed_at": "2026-03-17 21:01:45"
-    },
-    {
-      "symbol": "IRUSDT",
-      "direction": "LONG",
-      "entry": 0.0489722,
-      "tp1": 0.049952,
-      "tp2": 0.050931,
-      "sl": 0.047993,
-      "strength": 41,
-      "status": "PENDING",
-      "pnl_pct": 0,
-      "close_price": null,
-      "taken_at": "2026-03-17T21:00:22.403194",
-      "closed_at": null
     },
     {
       "symbol": "XPLUSDT",
@@ -3787,6 +3773,20 @@
       "close_price": 267.085,
       "taken_at": "2026-03-17 11:55:58",
       "closed_at": "2026-03-17 12:36:22"
+    },
+    {
+      "symbol": "PENGUUSDT",
+      "direction": "SHORT",
+      "entry": 0.00785589,
+      "tp1": 0.007699,
+      "tp2": 0.007542,
+      "sl": 0.0076985000000000005,
+      "strength": 30,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 1.97,
+      "close_price": 0.0077015,
+      "taken_at": "2026-03-17 09:04:21",
+      "closed_at": "2026-03-17 12:34:23"
     }
   ]
 }
