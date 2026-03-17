@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T14:49:29.705104+00:00",
+  "updated_at": "2026-03-17T14:50:34.146459+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T14:48:04Z",
+    "last_ok": "2026-03-17T14:49:34Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -16,12 +16,12 @@
     "winrate": 92.3
   },
   "trade_stats": {
-    "open": 77,
-    "pending": 2,
+    "open": 78,
+    "pending": 1,
     "wins": 59,
     "losses": 32,
     "total_pnl": 93.63,
-    "winrate": 63.4
+    "winrate": 64.1
   },
   "fear_greed": {
     "value": 28,
@@ -2295,6 +2295,27 @@
       ]
     },
     {
+      "id": 170,
+      "symbol": "XPLUSDT",
+      "direction": "LONG",
+      "entry": 0.11619036,
+      "tp1": 0.118514,
+      "tp2": 0.120838,
+      "sl": 0.113867,
+      "strength": 35,
+      "taken_at": "2026-03-17 14:50:09",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.00016)",
+        "Цена выше EMA20",
+        "Стакан: давление покупки (+0.13)",
+        "МТФ: 5m, 1h, 4h согласны",
+        "OI растёт +1.2% + цена ↑",
+        "⚠️ Funding через 76м",
+        "📌 Лимитный вход @ 0.11619 (откат к EMA20)"
+      ]
+    },
+    {
       "id": 167,
       "symbol": "LYNUSDT",
       "direction": "SHORT",
@@ -2312,27 +2333,6 @@
         "МТФ: 5m, 15m согласны",
         "⚠️ Funding через 89м",
         "📌 Лимитный вход @ 0.0612263 (откат к EMA20)"
-      ]
-    },
-    {
-      "id": 170,
-      "symbol": "XPLUSDT",
-      "direction": "LONG",
-      "entry": 0.11619036,
-      "tp1": 0.118514,
-      "tp2": 0.120838,
-      "sl": 0.113867,
-      "strength": 35,
-      "taken_at": null,
-      "status": "PENDING",
-      "reasons": [
-        "MACD бычий (hist=0.00016)",
-        "Цена выше EMA20",
-        "Стакан: давление покупки (+0.13)",
-        "МТФ: 5m, 1h, 4h согласны",
-        "OI растёт +1.2% + цена ↑",
-        "⚠️ Funding через 76м",
-        "📌 Лимитный вход @ 0.11619 (откат к EMA20)"
       ]
     }
   ],
@@ -3619,20 +3619,6 @@
       "tp2": 0.056983,
       "sl": 0.062923,
       "strength": 28,
-      "status": "PENDING",
-      "pnl_pct": 0,
-      "close_price": null,
-      "taken_at": null,
-      "closed_at": null
-    },
-    {
-      "symbol": "XPLUSDT",
-      "direction": "LONG",
-      "entry": 0.11619036,
-      "tp1": 0.118514,
-      "tp2": 0.120838,
-      "sl": 0.113867,
-      "strength": 35,
       "status": "PENDING",
       "pnl_pct": 0,
       "close_price": null,
