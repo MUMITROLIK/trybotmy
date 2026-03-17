@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T13:53:24.047118+00:00",
+  "updated_at": "2026-03-17T13:54:04.523781+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T13:52:31Z",
+    "last_ok": null,
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -2148,7 +2148,7 @@
       "entry": 22.953,
       "tp1": 22.0647189,
       "tp2": 21.1787331,
-      "sl": 21.99579,
+      "sl": 21.8819495,
       "strength": 34,
       "taken_at": "2026-03-17 11:20:53",
       "status": "TP1_HIT",
