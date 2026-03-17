@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T22:12:04.253204+00:00",
+  "updated_at": "2026-03-17T22:13:09.113482+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T22:11:04Z",
+    "last_ok": "2026-03-17T22:12:09Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,8 +17,8 @@
     "winrate": 84.0
   },
   "trade_stats": {
-    "open": 10,
-    "pending": 14,
+    "open": 11,
+    "pending": 13,
     "wins": 121,
     "losses": 84,
     "total_pnl": 112.34,
@@ -953,6 +953,26 @@
       ]
     },
     {
+      "id": 273,
+      "symbol": "ASTERUSDT",
+      "direction": "LONG",
+      "entry": 0.76979432,
+      "tp1": 0.78519,
+      "tp2": 0.800586,
+      "sl": 0.754398,
+      "strength": 40,
+      "taken_at": "2026-03-17 22:12:54",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.00083)",
+        "Цена > EMA20 > EMA50",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +2.0% + цена ↑",
+        "CVD положительный (+0.8%)",
+        "📌 Лимитный вход @ 0.769794 (откат к EMA20)"
+      ]
+    },
+    {
       "id": 265,
       "symbol": "FARTCOINUSDT",
       "direction": "LONG",
@@ -1074,26 +1094,6 @@
         "МТФ: все 4 таймфрейма согласны ✅✅",
         "CVD положительный (+1.7%)",
         "📌 Лимитный вход @ 0.18744 (откат к EMA20)"
-      ]
-    },
-    {
-      "id": 273,
-      "symbol": "ASTERUSDT",
-      "direction": "LONG",
-      "entry": 0.76979432,
-      "tp1": 0.78519,
-      "tp2": 0.800586,
-      "sl": 0.754398,
-      "strength": 40,
-      "taken_at": "2026-03-17T21:45:40.279285",
-      "status": "PENDING",
-      "reasons": [
-        "MACD бычий (hist=0.00083)",
-        "Цена > EMA20 > EMA50",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +2.0% + цена ↑",
-        "CVD положительный (+0.8%)",
-        "📌 Лимитный вход @ 0.769794 (откат к EMA20)"
       ]
     },
     {
@@ -1463,20 +1463,6 @@
       "close_price": null,
       "taken_at": "2026-03-17T20:47:24.779351",
       "closed_at": "2026-03-17 21:47:40"
-    },
-    {
-      "symbol": "ASTERUSDT",
-      "direction": "LONG",
-      "entry": 0.76979432,
-      "tp1": 0.78519,
-      "tp2": 0.800586,
-      "sl": 0.754398,
-      "strength": 40,
-      "status": "PENDING",
-      "pnl_pct": 0,
-      "close_price": null,
-      "taken_at": "2026-03-17T21:45:40.279285",
-      "closed_at": null
     },
     {
       "symbol": "PUMPUSDT",
@@ -4039,6 +4025,20 @@
       "close_price": 0.17175,
       "taken_at": "2026-03-17 12:12:20",
       "closed_at": "2026-03-17 13:20:26"
+    },
+    {
+      "symbol": "BEATUSDT",
+      "direction": "LONG",
+      "entry": 0.5082,
+      "tp1": 0.5237001,
+      "tp2": 0.53914938,
+      "sl": 0.52785,
+      "strength": 29,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 3.45,
+      "close_price": 0.5257499999999999,
+      "taken_at": "2026-03-17 12:25:47",
+      "closed_at": "2026-03-17 13:19:50"
     }
   ]
 }
