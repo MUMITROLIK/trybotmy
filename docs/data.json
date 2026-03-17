@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T14:01:22.224899+00:00",
+  "updated_at": "2026-03-17T14:02:27.075394+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T14:00:54Z",
+    "last_ok": "2026-03-17T14:01:27Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -9,14 +9,14 @@
     "auto_take": true
   },
   "stats": {
-    "total": 269,
+    "total": 270,
     "wins": 31,
     "losses": 3,
-    "active": 14,
+    "active": 15,
     "winrate": 91.2
   },
   "trade_stats": {
-    "open": 75,
+    "open": 76,
     "wins": 55,
     "losses": 31,
     "total_pnl": 88.81,
@@ -314,6 +314,26 @@
       ],
       "news": null,
       "created_at": "2026-03-17 14:00:49",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 308,
+      "symbol": "RIVERUSDT",
+      "direction": "SHORT",
+      "entry": 22.78052288,
+      "tp1": 21.92788,
+      "tp2": 21.075237,
+      "sl": 23.462637,
+      "strength": 32,
+      "reasons": [
+        "MACD медвежий (hist=-0.12163)",
+        "EMA20 < EMA50 (death cross) 💀",
+        "МТФ: 5m, 15m, 1h согласны",
+        "CVD отрицательный (+3.1%)",
+        "📌 Лимитный вход @ 22.7805 (откат к EMA20)"
+      ],
+      "news": null,
+      "created_at": "2026-03-17 14:02:05",
       "status": "ACTIVE"
     }
   ],
@@ -2163,6 +2183,25 @@
         "МТФ: 1h, 4h согласны",
         "CVD положительный (+4.5%)",
         "Doji (1h) — нерешительность"
+      ]
+    },
+    {
+      "id": 162,
+      "symbol": "RIVERUSDT",
+      "direction": "SHORT",
+      "entry": 22.051,
+      "tp1": 21.2262926,
+      "tp2": 20.3993801,
+      "sl": 22.7103249,
+      "strength": 32,
+      "taken_at": "2026-03-17 14:02:05",
+      "status": "OPEN",
+      "reasons": [
+        "MACD медвежий (hist=-0.12163)",
+        "EMA20 < EMA50 (death cross) 💀",
+        "МТФ: 5m, 15m, 1h согласны",
+        "CVD отрицательный (+3.1%)",
+        "📌 Лимитный вход @ 22.7805 (откат к EMA20)"
       ]
     }
   ],
