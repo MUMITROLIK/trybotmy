@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T13:51:37.610854+00:00",
+  "updated_at": "2026-03-17T13:52:25.765423+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T13:50:37Z",
+    "last_ok": "2026-03-17T13:51:44Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -16,11 +16,11 @@
     "winrate": 90.9
   },
   "trade_stats": {
-    "open": 75,
+    "open": 74,
     "wins": 54,
-    "losses": 30,
-    "total_pnl": 86.67,
-    "winrate": 64.3
+    "losses": 31,
+    "total_pnl": 84.51,
+    "winrate": 63.5
   },
   "fear_greed": {
     "value": 28,
@@ -1533,27 +1533,6 @@
       ]
     },
     {
-      "id": 115,
-      "symbol": "CRVUSDT",
-      "direction": "LONG",
-      "entry": 0.255,
-      "tp1": 0.2601,
-      "tp2": 0.2652,
-      "sl": 0.2499,
-      "strength": 36,
-      "taken_at": "2026-03-17 12:09:17",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=45 (нейтральный↓)",
-        "MACD бычий (hist=0.00009)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: перевес bid (+0.06)",
-        "МТФ: 15m, 1h, 4h согласны",
-        "CVD положительный (+0.5%)",
-        "Doji (1h) — нерешительность"
-      ]
-    },
-    {
       "id": 116,
       "symbol": "WIFUSDT",
       "direction": "LONG",
@@ -2144,6 +2123,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "CRVUSDT",
+      "direction": "LONG",
+      "entry": 0.255,
+      "tp1": 0.2601,
+      "tp2": 0.2652,
+      "sl": 0.2499,
+      "strength": 36,
+      "status": "SL",
+      "pnl_pct": -2.16,
+      "close_price": 0.2495,
+      "taken_at": "2026-03-17 12:09:17",
+      "closed_at": "2026-03-17 13:52:25"
+    },
     {
       "symbol": "XPLUSDT",
       "direction": "LONG",
