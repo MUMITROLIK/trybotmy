@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T14:34:07.510022+00:00",
+  "updated_at": "2026-03-17T14:34:59.649905+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T14:33:13Z",
+    "last_ok": "2026-03-17T14:34:12Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -9,19 +9,19 @@
     "auto_take": true
   },
   "stats": {
-    "total": 275,
+    "total": 276,
     "wins": 36,
     "losses": 3,
-    "active": 15,
+    "active": 16,
     "winrate": 92.3
   },
   "trade_stats": {
     "open": 77,
     "pending": 1,
-    "wins": 58,
+    "wins": 59,
     "losses": 31,
-    "total_pnl": 95.01,
-    "winrate": 64.4
+    "total_pnl": 97.14,
+    "winrate": 64.8
   },
   "fear_greed": {
     "value": 28,
@@ -335,6 +335,29 @@
       ],
       "news": null,
       "created_at": "2026-03-17 14:31:40",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 314,
+      "symbol": "CRCLUSDT",
+      "direction": "SHORT",
+      "entry": 127.46,
+      "tp1": 124.9108,
+      "tp2": 122.3616,
+      "sl": 130.0092,
+      "strength": 28,
+      "reasons": [
+        "RSI=54 (нейтральный↑)",
+        "BB верхняя зона (80%)",
+        "EMA20 < EMA50",
+        "Стакан: давление продажи (-0.12)",
+        "МТФ: только 1 таймфрейм согласен",
+        "OI растёт +1.9%",
+        "CVD отрицательный (-1.3%)",
+        "⚠️ Funding через 86м"
+      ],
+      "news": null,
+      "created_at": "2026-03-17 14:34:28",
       "status": "ACTIVE"
     }
   ],
@@ -2206,6 +2229,28 @@
       ]
     },
     {
+      "id": 168,
+      "symbol": "CRCLUSDT",
+      "direction": "SHORT",
+      "entry": 127.46,
+      "tp1": 124.9108,
+      "tp2": 122.3616,
+      "sl": 130.0092,
+      "strength": 28,
+      "taken_at": null,
+      "status": "OPEN",
+      "reasons": [
+        "RSI=54 (нейтральный↑)",
+        "BB верхняя зона (80%)",
+        "EMA20 < EMA50",
+        "Стакан: давление продажи (-0.12)",
+        "МТФ: только 1 таймфрейм согласен",
+        "OI растёт +1.9%",
+        "CVD отрицательный (-1.3%)",
+        "⚠️ Funding через 86м"
+      ]
+    },
+    {
       "id": 167,
       "symbol": "LYNUSDT",
       "direction": "SHORT",
@@ -2224,9 +2269,10 @@
         "⚠️ Funding через 89м",
         "📌 Лимитный вход @ 0.0612263 (откат к EMA20)"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 164,
       "symbol": "XPLUSDT",
       "direction": "LONG",
       "entry": 0.115,
@@ -2234,20 +2280,12 @@
       "tp2": 0.1196,
       "sl": 0.11745,
       "strength": 46,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 2.13,
+      "close_price": 0.11745,
       "taken_at": "2026-03-17 14:02:50",
-      "status": "TP1_HIT",
-      "reasons": [
-        "RSI=45 (нейтральный↓)",
-        "MACD бычий (hist=0.00004)",
-        "BB нижняя зона (10%)",
-        "Стакан: давление покупки (+0.11)",
-        "МТФ: 5m, 1h, 4h согласны",
-        "OI растёт +1.2% + цена ↑",
-        "Hammer (1h) 🔨"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-17 14:34:29"
+    },
     {
       "symbol": "CRCLUSDT",
       "direction": "LONG",
