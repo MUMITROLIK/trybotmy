@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T17:24:28.266127+00:00",
+  "updated_at": "2026-03-17T17:25:36.562987+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T17:23:32Z",
+    "last_ok": "2026-03-17T17:24:34Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -16,12 +16,12 @@
     "winrate": 87.2
   },
   "trade_stats": {
-    "open": 56,
+    "open": 54,
     "pending": 17,
-    "wins": 83,
-    "losses": 50,
-    "total_pnl": 88.04,
-    "winrate": 62.4
+    "wins": 84,
+    "losses": 51,
+    "total_pnl": 88.06,
+    "winrate": 62.2
   },
   "fear_greed": {
     "value": 28,
@@ -930,44 +930,6 @@
     }
   ],
   "trades_open": [
-    {
-      "id": 56,
-      "symbol": "AVAXUSDT",
-      "direction": "SHORT",
-      "entry": 10.263,
-      "tp1": 10.05774,
-      "tp2": 9.85248,
-      "sl": 10.46826,
-      "strength": 31,
-      "taken_at": "2026-03-17 09:25:02",
-      "status": "OPEN",
-      "reasons": [
-        "MACD медвежий (hist=-0.00233)",
-        "Цена < EMA20 < EMA50",
-        "Стакан: сильное давление продажи (-0.27)",
-        "МТФ: 5m, 15m согласны",
-        "📌 Лимитный вход @ 10.313 (откат к EMA20)"
-      ]
-    },
-    {
-      "id": 57,
-      "symbol": "PAXGUSDT",
-      "direction": "SHORT",
-      "entry": 5005.41,
-      "tp1": 4905.3018,
-      "tp2": 4805.1936,
-      "sl": 5105.5182,
-      "strength": 31,
-      "taken_at": "2026-03-17 09:25:09",
-      "status": "OPEN",
-      "reasons": [
-        "MACD медвежий (hist=-0.63958)",
-        "Цена ниже EMA20",
-        "Стакан: сильное давление продажи (-0.80)",
-        "МТФ: только 1 таймфрейм согласен",
-        "Bearish Engulfing (1h) 🕯️"
-      ]
-    },
     {
       "id": 61,
       "symbol": "TSLAUSDT",
@@ -3300,6 +3262,34 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "AVAXUSDT",
+      "direction": "SHORT",
+      "entry": 10.263,
+      "tp1": 10.05774,
+      "tp2": 9.85248,
+      "sl": 10.46826,
+      "strength": 31,
+      "status": "TIMEOUT",
+      "pnl_pct": -0.15,
+      "close_price": 10.278500000000001,
+      "taken_at": "2026-03-17 09:25:02",
+      "closed_at": "2026-03-17 17:25:09"
+    },
+    {
+      "symbol": "PAXGUSDT",
+      "direction": "SHORT",
+      "entry": 5005.41,
+      "tp1": 4905.3018,
+      "tp2": 4805.1936,
+      "sl": 5105.5182,
+      "strength": 31,
+      "status": "TIMEOUT",
+      "pnl_pct": 0.17,
+      "close_price": 4996.825,
+      "taken_at": "2026-03-17 09:25:09",
+      "closed_at": "2026-03-17 17:25:09"
+    },
     {
       "symbol": "XAUUSDT",
       "direction": "SHORT",
