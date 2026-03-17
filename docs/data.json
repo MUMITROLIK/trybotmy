@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T20:46:39.773411+00:00",
+  "updated_at": "2026-03-17T20:47:45.029382+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T20:46:11Z",
+    "last_ok": "2026-03-17T20:46:44Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,15 +10,15 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 368,
+    "total": 369,
     "wins": 99,
     "losses": 20,
-    "active": 9,
+    "active": 10,
     "winrate": 83.2
   },
   "trade_stats": {
     "open": 19,
-    "pending": 15,
+    "pending": 16,
     "wins": 111,
     "losses": 81,
     "total_pnl": 90.46,
@@ -224,6 +224,27 @@
       ],
       "news": null,
       "created_at": "2026-03-17 20:45:11",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 407,
+      "symbol": "HYPEUSDT",
+      "direction": "LONG",
+      "entry": 40.94626115,
+      "tp1": 41.765186,
+      "tp2": 42.584112,
+      "sl": 40.127336,
+      "strength": 44,
+      "reasons": [
+        "MACD бычий (hist=0.11583)",
+        "Цена > EMA20 > EMA50",
+        "Стакан: давление покупки (+0.19)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "CVD растёт (+9.9%) — покупки усиливаются 📈",
+        "📌 Лимитный вход @ 40.9463 (откат к EMA20)"
+      ],
+      "news": null,
+      "created_at": "2026-03-17 20:47:24",
       "status": "ACTIVE"
     }
   ],
@@ -2013,9 +2034,43 @@
         "BTC корреляция 0.77, BTC +0.5% 📈",
         "📌 Лимитный вход @ 0.00208359 (откат к EMA20)"
       ]
+    },
+    {
+      "id": 261,
+      "symbol": "HYPEUSDT",
+      "direction": "LONG",
+      "entry": 40.94626115,
+      "tp1": 41.765186,
+      "tp2": 42.584112,
+      "sl": 40.127336,
+      "strength": 44,
+      "taken_at": "2026-03-17T20:47:24.779351",
+      "status": "PENDING",
+      "reasons": [
+        "MACD бычий (hist=0.11583)",
+        "Цена > EMA20 > EMA50",
+        "Стакан: давление покупки (+0.19)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "CVD растёт (+9.9%) — покупки усиливаются 📈",
+        "📌 Лимитный вход @ 40.9463 (откат к EMA20)"
+      ]
     }
   ],
   "trades_history": [
+    {
+      "symbol": "HYPEUSDT",
+      "direction": "LONG",
+      "entry": 40.94626115,
+      "tp1": 41.765186,
+      "tp2": 42.584112,
+      "sl": 40.127336,
+      "strength": 44,
+      "status": "PENDING",
+      "pnl_pct": 0,
+      "close_price": null,
+      "taken_at": "2026-03-17T20:47:24.779351",
+      "closed_at": null
+    },
     {
       "symbol": "PUMPUSDT",
       "direction": "LONG",
@@ -4801,20 +4856,6 @@
       "close_price": 0.16855,
       "taken_at": "2026-03-17 10:45:21",
       "closed_at": "2026-03-17 11:03:19"
-    },
-    {
-      "symbol": "DEGOUSDT",
-      "direction": "SHORT",
-      "entry": 1.1463,
-      "tp1": 1.09769688,
-      "tp2": 1.04897913,
-      "sl": 1.09435,
-      "strength": 31,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 4.19,
-      "close_price": 1.0983,
-      "taken_at": "2026-03-17 09:14:23",
-      "closed_at": "2026-03-17 11:00:56"
     }
   ]
 }
