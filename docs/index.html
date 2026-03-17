@@ -1495,16 +1495,7 @@ function renderLimits(trades, stats) {
     el.innerHTML = '<div class="empty-state">⏳ Нет активных лимиток</div>';
     return;
   }
-  // дедуп: если в БД уже накопились дубликаты по символу/направлению — показываем только последнюю
-  const lastByKey = new Map();
-  (trades || []).forEach(t => {
-    const key = String(t.symbol||'') + '_' + String(t.direction||'');
-    const prev = lastByKey.get(key);
-    if (!prev || (t.id || 0) > (prev.id || 0)) lastByKey.set(key, t);
-  });
-  const uniq = [...lastByKey.values()];
-
-  el.innerHTML = uniq.map(t => {
+  el.innerHTML = trades.map(t => {
     const lg = t.direction === 'LONG';
     const tags   = (t.reasons||[]).slice(0,4).map(r=>`<span class="tag">${r}</span>`).join('');
     return `
@@ -1531,7 +1522,7 @@ function renderLimits(trades, stats) {
   }).join('');
 
   // realtime prices ONLY when Limits tab is open
-  if (currentTab === 'limits') startLimitsWs(uniq);
+  if (currentTab === 'limits') startLimitsWs(trades);
 }
 
 // ── Trades render ──────────────────────────────────────────────────
