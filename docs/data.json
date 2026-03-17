@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T16:43:33.555502+00:00",
+  "updated_at": "2026-03-17T16:44:09.538504+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T16:43:09Z",
+    "last_ok": "2026-03-17T16:43:39Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -16,12 +16,12 @@
     "winrate": 89.7
   },
   "trade_stats": {
-    "open": 68,
+    "open": 67,
     "pending": 60,
     "wins": 71,
-    "losses": 45,
-    "total_pnl": 94.48,
-    "winrate": 40.3
+    "losses": 46,
+    "total_pnl": 92.4,
+    "winrate": 40.1
   },
   "fear_greed": {
     "value": 28,
@@ -1581,25 +1581,6 @@
         "Стакан: давление покупки (+0.18)",
         "МТФ: 1h, 4h согласны",
         "CVD положительный (-0.2%)"
-      ]
-    },
-    {
-      "id": 98,
-      "symbol": "GUSDT",
-      "direction": "LONG",
-      "entry": 0.004647,
-      "tp1": 0.00474,
-      "tp2": 0.004833,
-      "sl": 0.004554,
-      "strength": 29,
-      "taken_at": "2026-03-17 12:00:05",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=35 (перепроданность)",
-        "MACD бычий (hist=0.00001)",
-        "BB ниже середины",
-        "МТФ: 1h, 4h согласны",
-        "OI падает (шорты закрываются)"
       ]
     },
     {
@@ -3669,6 +3650,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "GUSDT",
+      "direction": "LONG",
+      "entry": 0.004647,
+      "tp1": 0.00474,
+      "tp2": 0.004833,
+      "sl": 0.004554,
+      "strength": 29,
+      "status": "SL",
+      "pnl_pct": -2.08,
+      "close_price": 0.004550500000000001,
+      "taken_at": "2026-03-17 12:00:05",
+      "closed_at": "2026-03-17 16:43:47"
+    },
     {
       "symbol": "ANIMEUSDT",
       "direction": "LONG",
