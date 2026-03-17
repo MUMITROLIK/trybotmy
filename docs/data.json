@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T23:03:07.115899+00:00",
+  "updated_at": "2026-03-17T23:03:40.093665+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T23:02:40Z",
+    "last_ok": "2026-03-17T23:03:11Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -18,7 +18,7 @@
   },
   "trade_stats": {
     "open": 20,
-    "pending": 5,
+    "pending": 4,
     "wins": 121,
     "losses": 84,
     "total_pnl": 112.34,
@@ -1280,27 +1280,6 @@
       ]
     },
     {
-      "id": 276,
-      "symbol": "HYPEUSDT",
-      "direction": "LONG",
-      "entry": 41.31161532,
-      "tp1": 42.137848,
-      "tp2": 42.96408,
-      "sl": 40.485383,
-      "strength": 45,
-      "taken_at": "2026-03-17T22:03:20.788519",
-      "status": "PENDING",
-      "reasons": [
-        "MACD бычий (hist=0.08459)",
-        "Цена > EMA20 > EMA50",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +1.2% + цена ↑",
-        "CVD растёт (+13.8%) — покупки усиливаются 📈",
-        "Hammer (1h) 🔨",
-        "📌 Лимитный вход @ 41.3116 (откат к EMA20)"
-      ]
-    },
-    {
       "id": 277,
       "symbol": "ENAUSDT",
       "direction": "LONG",
@@ -1382,6 +1361,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "HYPEUSDT",
+      "direction": "LONG",
+      "entry": 41.31161532,
+      "tp1": 42.137848,
+      "tp2": 42.96408,
+      "sl": 40.485383,
+      "strength": 45,
+      "status": "LIMIT_TIMEOUT",
+      "pnl_pct": 0,
+      "close_price": null,
+      "taken_at": "2026-03-17T22:03:20.788519",
+      "closed_at": "2026-03-17 23:03:26"
+    },
     {
       "symbol": "WIFUSDT",
       "direction": "LONG",
@@ -1520,20 +1513,6 @@
       "pnl_pct": 0,
       "close_price": null,
       "taken_at": "2026-03-17T22:06:21.201805",
-      "closed_at": null
-    },
-    {
-      "symbol": "HYPEUSDT",
-      "direction": "LONG",
-      "entry": 41.31161532,
-      "tp1": 42.137848,
-      "tp2": 42.96408,
-      "sl": 40.485383,
-      "strength": 45,
-      "status": "PENDING",
-      "pnl_pct": 0,
-      "close_price": null,
-      "taken_at": "2026-03-17T22:03:20.788519",
       "closed_at": null
     },
     {
