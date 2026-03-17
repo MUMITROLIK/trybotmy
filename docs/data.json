@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T22:41:06.052825+00:00",
+  "updated_at": "2026-03-17T22:42:10.899135+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T22:40:06Z",
+    "last_ok": "2026-03-17T22:41:10Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 392,
+    "total": 394,
     "wins": 110,
     "losses": 21,
-    "active": 18,
+    "active": 20,
     "winrate": 84.0
   },
   "trade_stats": {
-    "open": 17,
+    "open": 19,
     "pending": 6,
     "wins": 121,
     "losses": 84,
@@ -420,6 +420,51 @@
       ],
       "news": null,
       "created_at": "2026-03-17 22:37:17",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 431,
+      "symbol": "PIPPINUSDT",
+      "direction": "LONG",
+      "entry": 0.13996,
+      "tp1": 0.144855,
+      "tp2": 0.149751,
+      "sl": 0.136044,
+      "strength": 41,
+      "reasons": [
+        "RSI=36 (перепроданность)",
+        "MACD бычий (hist=0.00049)",
+        "BB нижняя зона (21%)",
+        "Стакан: перевес bid (+0.06)",
+        "OI растёт +2.8%",
+        "CVD положительный (+0.2%)",
+        "Hammer (1h) 🔨",
+        "⚠️ Funding через 79м"
+      ],
+      "news": null,
+      "created_at": "2026-03-17 22:41:20",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 432,
+      "symbol": "ANIMEUSDT",
+      "direction": "LONG",
+      "entry": 0.005765,
+      "tp1": 0.00588,
+      "tp2": 0.005996,
+      "sl": 0.00565,
+      "strength": 40,
+      "reasons": [
+        "RSI=37 (перепроданность)",
+        "MACD бычий (hist=0.00000)",
+        "BB нижняя зона (16%)",
+        "Стакан: давление покупки (+0.24)",
+        "МТФ: 1h, 4h согласны",
+        "CVD положительный (-0.4%)",
+        "⚠️ Funding через 79м"
+      ],
+      "news": null,
+      "created_at": "2026-03-17 22:41:26",
       "status": "ACTIVE"
     }
   ],
@@ -1165,6 +1210,49 @@
         "OI растёт +2.2%",
         "CVD положительный (+4.3%)",
         "⚠️ Funding через 83м"
+      ]
+    },
+    {
+      "id": 285,
+      "symbol": "PIPPINUSDT",
+      "direction": "LONG",
+      "entry": 0.13996,
+      "tp1": 0.144855,
+      "tp2": 0.149751,
+      "sl": 0.136044,
+      "strength": 41,
+      "taken_at": "2026-03-17T22:41:20.527817",
+      "status": "OPEN",
+      "reasons": [
+        "RSI=36 (перепроданность)",
+        "MACD бычий (hist=0.00049)",
+        "BB нижняя зона (21%)",
+        "Стакан: перевес bid (+0.06)",
+        "OI растёт +2.8%",
+        "CVD положительный (+0.2%)",
+        "Hammer (1h) 🔨",
+        "⚠️ Funding через 79м"
+      ]
+    },
+    {
+      "id": 286,
+      "symbol": "ANIMEUSDT",
+      "direction": "LONG",
+      "entry": 0.005765,
+      "tp1": 0.00588,
+      "tp2": 0.005996,
+      "sl": 0.00565,
+      "strength": 40,
+      "taken_at": "2026-03-17T22:41:26.925027",
+      "status": "OPEN",
+      "reasons": [
+        "RSI=37 (перепроданность)",
+        "MACD бычий (hist=0.00000)",
+        "BB нижняя зона (16%)",
+        "Стакан: давление покупки (+0.24)",
+        "МТФ: 1h, 4h согласны",
+        "CVD положительный (-0.4%)",
+        "⚠️ Funding через 79м"
       ]
     },
     {
