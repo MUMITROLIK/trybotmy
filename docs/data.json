@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T22:43:15.972886+00:00",
+  "updated_at": "2026-03-17T22:44:21.049070+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T22:42:15Z",
+    "last_ok": "2026-03-17T22:43:21Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -18,7 +18,7 @@
   },
   "trade_stats": {
     "open": 20,
-    "pending": 6,
+    "pending": 5,
     "wins": 121,
     "losses": 84,
     "total_pnl": 112.34,
@@ -1301,27 +1301,6 @@
       ]
     },
     {
-      "id": 272,
-      "symbol": "WIFUSDT",
-      "direction": "LONG",
-      "entry": 0.18744017,
-      "tp1": 0.191189,
-      "tp2": 0.194938,
-      "sl": 0.183691,
-      "strength": 46,
-      "taken_at": "2026-03-17T21:43:33.744654",
-      "status": "PENDING",
-      "reasons": [
-        "MACD бычий (hist=0.00023)",
-        "Цена > EMA20 > EMA50",
-        "Объём x1.9 🔥",
-        "Стакан: давление покупки (+0.13)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "CVD положительный (+1.7%)",
-        "📌 Лимитный вход @ 0.18744 (откат к EMA20)"
-      ]
-    },
-    {
       "id": 276,
       "symbol": "HYPEUSDT",
       "direction": "LONG",
@@ -1424,6 +1403,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "WIFUSDT",
+      "direction": "LONG",
+      "entry": 0.18744017,
+      "tp1": 0.191189,
+      "tp2": 0.194938,
+      "sl": 0.183691,
+      "strength": 46,
+      "status": "LIMIT_TIMEOUT",
+      "pnl_pct": 0,
+      "close_price": null,
+      "taken_at": "2026-03-17T21:43:33.744654",
+      "closed_at": "2026-03-17 22:43:36"
+    },
     {
       "symbol": "LITUSDT",
       "direction": "LONG",
@@ -1703,20 +1696,6 @@
       "close_price": null,
       "taken_at": "2026-03-17T20:45:12.247090",
       "closed_at": "2026-03-17 21:45:13"
-    },
-    {
-      "symbol": "WIFUSDT",
-      "direction": "LONG",
-      "entry": 0.18744017,
-      "tp1": 0.191189,
-      "tp2": 0.194938,
-      "sl": 0.183691,
-      "strength": 46,
-      "status": "PENDING",
-      "pnl_pct": 0,
-      "close_price": null,
-      "taken_at": "2026-03-17T21:43:33.744654",
-      "closed_at": null
     },
     {
       "symbol": "VANRYUSDT",
