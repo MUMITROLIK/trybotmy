@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T13:12:56.835868+00:00",
+  "updated_at": "2026-03-17T13:14:21.648944+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T13:12:19Z",
+    "last_ok": "2026-03-17T13:13:03Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -16,11 +16,11 @@
     "winrate": 95.7
   },
   "trade_stats": {
-    "open": 79,
-    "wins": 47,
+    "open": 78,
+    "wins": 48,
     "losses": 21,
-    "total_pnl": 86.13,
-    "winrate": 69.1
+    "total_pnl": 88.1,
+    "winrate": 69.6
   },
   "fear_greed": {
     "value": 28,
@@ -2153,9 +2153,10 @@
         "Стакан: давление покупки (+0.11)",
         "МТФ: 5m, 1h, 4h согласны"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 146,
       "symbol": "ASTERUSDT",
       "direction": "LONG",
       "entry": 0.7499,
@@ -2163,19 +2164,12 @@
       "tp2": 0.779896,
       "sl": 0.7676499999999999,
       "strength": 40,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 1.97,
+      "close_price": 0.76465,
       "taken_at": "2026-03-17 13:06:43",
-      "status": "TP1_HIT",
-      "reasons": [
-        "MACD бычий (hist=0.00175)",
-        "Цена > EMA20 > EMA50",
-        "Объём x2.0 🔥",
-        "Стакан: перевес bid (+0.05)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "📌 Лимитный вход @ 0.735815 (откат к EMA20)"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-17 13:13:04"
+    },
     {
       "symbol": "HUMAUSDT",
       "direction": "SHORT",
