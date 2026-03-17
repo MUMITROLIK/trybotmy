@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T21:50:46.507413+00:00",
+  "updated_at": "2026-03-17T21:51:46.497000+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T21:49:19Z",
+    "last_ok": "2026-03-17T21:50:51Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,15 +10,15 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 381,
+    "total": 382,
     "wins": 109,
     "losses": 20,
-    "active": 11,
+    "active": 12,
     "winrate": 84.5
   },
   "trade_stats": {
     "open": 16,
-    "pending": 9,
+    "pending": 10,
     "wins": 116,
     "losses": 82,
     "total_pnl": 99.54,
@@ -268,6 +268,27 @@
       ],
       "news": null,
       "created_at": "2026-03-17 21:43:33",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 420,
+      "symbol": "PUMPUSDT",
+      "direction": "LONG",
+      "entry": 0.00209642,
+      "tp1": 0.002138,
+      "tp2": 0.00218,
+      "sl": 0.002054,
+      "strength": 44,
+      "reasons": [
+        "MACD бычий (hist=0.00000)",
+        "Цена > EMA20 > EMA50",
+        "Стакан: давление покупки (+0.24)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "CVD растёт (+8.5%) — покупки усиливаются 📈",
+        "📌 Лимитный вход @ 0.00209642 (откат к EMA20)"
+      ],
+      "news": null,
+      "created_at": "2026-03-17 21:51:12",
       "status": "ACTIVE"
     }
   ],
@@ -1176,9 +1197,43 @@
         "CVD положительный (+0.8%)",
         "📌 Лимитный вход @ 0.769794 (откат к EMA20)"
       ]
+    },
+    {
+      "id": 274,
+      "symbol": "PUMPUSDT",
+      "direction": "LONG",
+      "entry": 0.00209642,
+      "tp1": 0.002138,
+      "tp2": 0.00218,
+      "sl": 0.002054,
+      "strength": 44,
+      "taken_at": "2026-03-17T21:51:13.352823",
+      "status": "PENDING",
+      "reasons": [
+        "MACD бычий (hist=0.00000)",
+        "Цена > EMA20 > EMA50",
+        "Стакан: давление покупки (+0.24)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "CVD растёт (+8.5%) — покупки усиливаются 📈",
+        "📌 Лимитный вход @ 0.00209642 (откат к EMA20)"
+      ]
     }
   ],
   "trades_history": [
+    {
+      "symbol": "PUMPUSDT",
+      "direction": "LONG",
+      "entry": 0.00209642,
+      "tp1": 0.002138,
+      "tp2": 0.00218,
+      "sl": 0.002054,
+      "strength": 44,
+      "status": "PENDING",
+      "pnl_pct": 0,
+      "close_price": null,
+      "taken_at": "2026-03-17T21:51:13.352823",
+      "closed_at": null
+    },
     {
       "symbol": "HYPEUSDT",
       "direction": "LONG",
@@ -3964,20 +4019,6 @@
       "close_price": 0.23225,
       "taken_at": "2026-03-17 12:17:51",
       "closed_at": "2026-03-17 12:46:09"
-    },
-    {
-      "symbol": "TAOUSDT",
-      "direction": "SHORT",
-      "entry": 279.13830541,
-      "tp1": 273.555539,
-      "tp2": 267.972773,
-      "sl": 273.435,
-      "strength": 24,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 2.04,
-      "close_price": 273.445,
-      "taken_at": "2026-03-17 08:42:33",
-      "closed_at": "2026-03-17 12:46:07"
     }
   ]
 }
