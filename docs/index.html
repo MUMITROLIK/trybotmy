@@ -861,6 +861,7 @@ const tradeBySymbol = new Map();    // symbol -> trades[]
 const latestMidBySymbol = new Map();
 let rafScheduled = false;
 let lastPaint = 0;
+let lastTradeTickTs = 0;
 
 function stopTradeWs() {
   try { if (tradesWs) tradesWs.close(); } catch(e) {}
@@ -896,10 +897,12 @@ function startTradeWs(trades) {
       const mid = (bid + ask) / 2;
       if (!mid) return;
       latestMidBySymbol.set(sym, mid);
+      lastTradeTickTs = Date.now();
       scheduleTradePaint();
     } catch(err) {}
   };
   tradesWs.onclose = () => { tradesWs = null; };
+  tradesWs.onerror = () => { /* fallback below */ };
 }
 
 function scheduleTradePaint() {
@@ -915,6 +918,36 @@ function scheduleTradePaint() {
       (tradeBySymbol.get(sym) || []).forEach(t => updateTradeUI(t, mid));
     });
   });
+}
+
+// ── Fallback: если Binance WS молчит — берём bookTicker по REST ───────────────
+async function pollTradePricesFallback() {
+  try {
+    if (currentTab !== 'positions') return;
+    if (!_allTrades || !_allTrades.length) return;
+    const silentForMs = Date.now() - (lastTradeTickTs || 0);
+    // Если WS не давал цен уже 8 секунд — включаем REST fallback
+    if (silentForMs < 8000) return;
+
+    const r = await fetch('https://fapi.binance.com/fapi/v1/ticker/bookTicker', { cache: 'no-store' });
+    if (!r.ok) return;
+    const rows = await r.json();
+    if (!Array.isArray(rows)) return;
+
+    // Собираем нужные символы
+    const needed = new Set((_allTrades || []).map(t => String(t.symbol || '').toUpperCase()).filter(Boolean));
+    for (const it of rows) {
+      const sym = String(it.symbol || it.s || '').toUpperCase();
+      if (!needed.has(sym)) continue;
+      const bid = parseFloat(it.bidPrice || it.b || 0);
+      const ask = parseFloat(it.askPrice || it.a || 0);
+      const mid = (bid + ask) / 2;
+      if (!mid) continue;
+      latestMidBySymbol.set(sym, mid);
+    }
+    lastTradeTickTs = Date.now();
+    scheduleTradePaint();
+  } catch(e) {}
 }
 
 function updateTradeUI(trade, price) {
@@ -1391,6 +1424,7 @@ loadBtcCandles();
 connectBtcWs();
 initWebSocket();
 setInterval(pollDataFallback, 15000);
+setInterval(pollTradePricesFallback, 3000);
 
 setInterval(loadBtcCandles, 60000);
 setInterval(() => {
