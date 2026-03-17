@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T14:11:04.496975+00:00",
+  "updated_at": "2026-03-17T14:11:48.376360+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T14:10:04Z",
+    "last_ok": null,
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,6 +17,7 @@
   },
   "trade_stats": {
     "open": 78,
+    "pending": 0,
     "wins": 57,
     "losses": 31,
     "total_pnl": 93.09,
