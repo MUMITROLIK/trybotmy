@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T12:41:42.798813+00:00",
+  "updated_at": "2026-03-17T12:42:23.101592+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T12:41:03Z",
+    "last_ok": "2026-03-17T12:41:46Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -9,18 +9,18 @@
     "auto_take": true
   },
   "stats": {
-    "total": 241,
+    "total": 242,
     "wins": 18,
     "losses": 1,
-    "active": 4,
+    "active": 5,
     "winrate": 94.7
   },
   "trade_stats": {
     "open": 78,
-    "wins": 37,
+    "wins": 38,
     "losses": 18,
-    "total_pnl": 68.71,
-    "winrate": 67.3
+    "total_pnl": 70.68,
+    "winrate": 67.9
   },
   "fear_greed": {
     "value": 28,
@@ -109,6 +109,26 @@
       ],
       "news": null,
       "created_at": "2026-03-17 12:37:00",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 280,
+      "symbol": "ARBUSDT",
+      "direction": "LONG",
+      "entry": 0.1073,
+      "tp1": 0.109446,
+      "tp2": 0.111592,
+      "sl": 0.105154,
+      "strength": 30,
+      "reasons": [
+        "RSI=34 (перепроданность)",
+        "BB нижняя полоса (пробой)",
+        "Стакан: перевес bid (+0.08)",
+        "МТФ: 1h, 4h согласны",
+        "CVD положительный (-4.3%)"
+      ],
+      "news": null,
+      "created_at": "2026-03-17 12:42:22",
       "status": "ACTIVE"
     }
   ],
@@ -1971,22 +1991,22 @@
       ]
     },
     {
-      "id": 64,
-      "symbol": "REZUSDT",
-      "direction": "SHORT",
-      "entry": 0.003597,
-      "tp1": 0.00352506,
-      "tp2": 0.00345312,
-      "sl": 0.003524,
-      "strength": 32,
-      "taken_at": "2026-03-17 09:44:17",
-      "status": "TP1_HIT",
+      "id": 134,
+      "symbol": "ARBUSDT",
+      "direction": "LONG",
+      "entry": 0.1073,
+      "tp1": 0.109446,
+      "tp2": 0.111592,
+      "sl": 0.105154,
+      "strength": 30,
+      "taken_at": "2026-03-17 12:42:22",
+      "status": "OPEN",
       "reasons": [
-        "MACD медвежий (hist=-0.00000)",
-        "Цена < EMA20 < EMA50",
-        "Стакан: давление продажи (-0.12)",
-        "МТФ: 5m, 15m, 4h согласны",
-        "📌 Лимитный вход @ 0.00365772 (откат к EMA20)"
+        "RSI=34 (перепроданность)",
+        "BB нижняя полоса (пробой)",
+        "Стакан: перевес bid (+0.08)",
+        "МТФ: 1h, 4h согласны",
+        "CVD положительный (-4.3%)"
       ]
     },
     {
@@ -1996,7 +2016,7 @@
       "entry": 0.2987,
       "tp1": 0.29171042,
       "tp2": 0.28472084,
-      "sl": 0.29145,
+      "sl": 0.29102045,
       "strength": 32,
       "taken_at": "2026-03-17 10:56:13",
       "status": "TP1_HIT",
@@ -2011,6 +2031,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "REZUSDT",
+      "direction": "SHORT",
+      "entry": 0.003597,
+      "tp1": 0.00352506,
+      "tp2": 0.00345312,
+      "sl": 0.003524,
+      "strength": 32,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 1.97,
+      "close_price": 0.003526,
+      "taken_at": "2026-03-17 09:44:17",
+      "closed_at": "2026-03-17 12:42:22"
+    },
     {
       "symbol": "DEGOUSDT",
       "direction": "SHORT",
