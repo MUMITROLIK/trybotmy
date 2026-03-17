@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T17:18:59.437724+00:00",
+  "updated_at": "2026-03-17T17:20:06.818988+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T17:18:01Z",
+    "last_ok": "2026-03-17T17:19:04Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -16,7 +16,7 @@
     "winrate": 87.0
   },
   "trade_stats": {
-    "open": 56,
+    "open": 57,
     "pending": 15,
     "wins": 82,
     "losses": 50,
@@ -1959,6 +1959,25 @@
       ]
     },
     {
+      "id": 228,
+      "symbol": "HYPEUSDT",
+      "direction": "SHORT",
+      "entry": 40.44898164,
+      "tp1": 39.640002,
+      "tp2": 38.831022,
+      "sl": 41.257961,
+      "strength": 27,
+      "taken_at": "2026-03-17 17:19:44",
+      "status": "OPEN",
+      "reasons": [
+        "MACD медвежий (hist=-0.06239)",
+        "Цена < EMA20 < EMA50",
+        "МТФ: 5m, 15m согласны",
+        "CVD падает (-9.4%) — продажи усиливаются 📉",
+        "📌 Лимитный вход @ 40.449 (откат к EMA20)"
+      ]
+    },
+    {
       "id": 236,
       "symbol": "FETUSDT",
       "direction": "SHORT",
@@ -2903,25 +2922,6 @@
         "OI растёт +8.4% + цена ↓",
         "CVD отрицательный (-3.1%)",
         "📌 Лимитный вход @ 80.0528 (откат к EMA20)"
-      ]
-    },
-    {
-      "id": 228,
-      "symbol": "HYPEUSDT",
-      "direction": "SHORT",
-      "entry": 40.44898164,
-      "tp1": 39.640002,
-      "tp2": 38.831022,
-      "sl": 41.257961,
-      "strength": 27,
-      "taken_at": null,
-      "status": "PENDING",
-      "reasons": [
-        "MACD медвежий (hist=-0.06239)",
-        "Цена < EMA20 < EMA50",
-        "МТФ: 5m, 15m согласны",
-        "CVD падает (-9.4%) — продажи усиливаются 📉",
-        "📌 Лимитный вход @ 40.449 (откат к EMA20)"
       ]
     },
     {
@@ -5701,20 +5701,6 @@
       "tp2": 76.850676,
       "sl": 81.653844,
       "strength": 28,
-      "status": "PENDING",
-      "pnl_pct": 0,
-      "close_price": null,
-      "taken_at": null,
-      "closed_at": null
-    },
-    {
-      "symbol": "HYPEUSDT",
-      "direction": "SHORT",
-      "entry": 40.44898164,
-      "tp1": 39.640002,
-      "tp2": 38.831022,
-      "sl": 41.257961,
-      "strength": 27,
       "status": "PENDING",
       "pnl_pct": 0,
       "close_price": null,
