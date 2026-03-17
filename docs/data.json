@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T12:58:05.643178+00:00",
+  "updated_at": "2026-03-17T12:59:16.580360+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T12:57:29Z",
+    "last_ok": "2026-03-17T12:58:12Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -9,18 +9,18 @@
     "auto_take": true
   },
   "stats": {
-    "total": 248,
-    "wins": 19,
+    "total": 250,
+    "wins": 20,
     "losses": 1,
-    "active": 7,
-    "winrate": 95.0
+    "active": 8,
+    "winrate": 95.2
   },
   "trade_stats": {
-    "open": 76,
+    "open": 77,
     "wins": 45,
-    "losses": 19,
-    "total_pnl": 84.74,
-    "winrate": 70.3
+    "losses": 20,
+    "total_pnl": 82.56,
+    "winrate": 69.2
   },
   "fear_greed": {
     "value": 28,
@@ -130,27 +130,6 @@
       "status": "ACTIVE"
     },
     {
-      "id": 285,
-      "symbol": "KITEUSDT",
-      "direction": "SHORT",
-      "entry": 0.19812892,
-      "tp1": 0.194166,
-      "tp2": 0.190204,
-      "sl": 0.202091,
-      "strength": 37,
-      "reasons": [
-        "MACD медвежий (hist=-0.00022)",
-        "Цена < EMA20 < EMA50",
-        "Стакан: давление продажи (-0.23)",
-        "МТФ: 5m, 15m, 1h согласны",
-        "CVD падает (-11.3%) — продажи усиливаются 📉",
-        "📌 Лимитный вход @ 0.198129 (откат к EMA20)"
-      ],
-      "news": null,
-      "created_at": "2026-03-17 12:56:26",
-      "status": "ACTIVE"
-    },
-    {
       "id": 286,
       "symbol": "TAOUSDT",
       "direction": "SHORT",
@@ -171,9 +150,69 @@
       "news": null,
       "created_at": "2026-03-17 12:58:04",
       "status": "ACTIVE"
+    },
+    {
+      "id": 287,
+      "symbol": "LYNUSDT",
+      "direction": "LONG",
+      "entry": 0.06154,
+      "tp1": 0.063436,
+      "tp2": 0.065333,
+      "sl": 0.060023,
+      "strength": 21,
+      "reasons": [
+        "MACD бычий (hist=0.00014)",
+        "BB ниже середины",
+        "EMA20 > EMA50",
+        "МТФ: только 1 таймфрейм согласен",
+        "CVD положительный (-2.0%)"
+      ],
+      "news": null,
+      "created_at": "2026-03-17 12:58:41",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 288,
+      "symbol": "PIXELUSDT",
+      "direction": "SHORT",
+      "entry": 0.01008817,
+      "tp1": 0.009886,
+      "tp2": 0.009685,
+      "sl": 0.01029,
+      "strength": 32,
+      "reasons": [
+        "MACD медвежий (hist=-0.00001)",
+        "Цена < EMA20 < EMA50",
+        "МТФ: 5m, 15m согласны",
+        "CVD отрицательный (+1.4%)",
+        "Bearish Engulfing (1h) 🕯️",
+        "📌 Лимитный вход @ 0.0100882 (откат к EMA20)"
+      ],
+      "news": null,
+      "created_at": "2026-03-17 12:58:48",
+      "status": "ACTIVE"
     }
   ],
   "history": [
+    {
+      "symbol": "KITEUSDT",
+      "direction": "SHORT",
+      "entry": 0.19812892,
+      "tp1": 0.194166,
+      "tp2": 0.190204,
+      "sl": 0.202091,
+      "strength": 37,
+      "status": "TP1",
+      "created_at": "2026-03-17 12:56:26",
+      "reasons": [
+        "MACD медвежий (hist=-0.00022)",
+        "Цена < EMA20 < EMA50",
+        "Стакан: давление продажи (-0.23)",
+        "МТФ: 5m, 15m, 1h согласны",
+        "CVD падает (-11.3%) — продажи усиливаются 📉",
+        "📌 Лимитный вход @ 0.198129 (откат к EMA20)"
+      ]
+    },
     {
       "symbol": "OPNUSDT",
       "direction": "SHORT",
@@ -525,26 +564,6 @@
         "Стакан: перевес bid (+0.06)",
         "МТФ: 15m, 1h, 4h согласны",
         "CVD положительный (+0.5%)",
-        "Doji (1h) — нерешительность"
-      ]
-    },
-    {
-      "symbol": "HBARUSDT",
-      "direction": "LONG",
-      "entry": 0.09901,
-      "tp1": 0.10099,
-      "tp2": 0.10297,
-      "sl": 0.09703,
-      "strength": 34,
-      "status": "EXPIRED",
-      "created_at": "2026-03-17 12:09:06",
-      "reasons": [
-        "RSI=45 (нейтральный↓)",
-        "MACD бычий (hist=0.00003)",
-        "BB ниже середины",
-        "Стакан: давление покупки (+0.16)",
-        "МТФ: 1h, 4h согласны",
-        "CVD положительный (-3.2%)",
         "Doji (1h) — нерешительность"
       ]
     }
@@ -1727,25 +1746,6 @@
       ]
     },
     {
-      "id": 122,
-      "symbol": "RENDERUSDT",
-      "direction": "LONG",
-      "entry": 1.856,
-      "tp1": 1.89312,
-      "tp2": 1.93024,
-      "sl": 1.81888,
-      "strength": 34,
-      "taken_at": "2026-03-17 12:15:43",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=28 (сильная перепроданность)",
-        "BB нижняя зона (2%)",
-        "Стакан: сильное давление покупки (+0.37)",
-        "МТФ: только 1 таймфрейм согласен",
-        "CVD положительный (+1.4%)"
-      ]
-    },
-    {
       "id": 123,
       "symbol": "OPUSDT",
       "direction": "LONG",
@@ -2037,9 +2037,62 @@
         "Doji (1h) — нерешительность",
         "📌 Лимитный вход @ 277.333 (откат к EMA20)"
       ]
+    },
+    {
+      "id": 141,
+      "symbol": "LYNUSDT",
+      "direction": "LONG",
+      "entry": 0.06154,
+      "tp1": 0.063436,
+      "tp2": 0.065333,
+      "sl": 0.060023,
+      "strength": 21,
+      "taken_at": "2026-03-17 12:58:42",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.00014)",
+        "BB ниже середины",
+        "EMA20 > EMA50",
+        "МТФ: только 1 таймфрейм согласен",
+        "CVD положительный (-2.0%)"
+      ]
+    },
+    {
+      "id": 142,
+      "symbol": "PIXELUSDT",
+      "direction": "SHORT",
+      "entry": 0.009985,
+      "tp1": 0.0097853,
+      "tp2": 0.0095856,
+      "sl": 0.0101847,
+      "strength": 32,
+      "taken_at": "2026-03-17 12:58:49",
+      "status": "OPEN",
+      "reasons": [
+        "MACD медвежий (hist=-0.00001)",
+        "Цена < EMA20 < EMA50",
+        "МТФ: 5m, 15m согласны",
+        "CVD отрицательный (+1.4%)",
+        "Bearish Engulfing (1h) 🕯️",
+        "📌 Лимитный вход @ 0.0100882 (откат к EMA20)"
+      ]
     }
   ],
   "trades_history": [
+    {
+      "symbol": "RENDERUSDT",
+      "direction": "LONG",
+      "entry": 1.856,
+      "tp1": 1.89312,
+      "tp2": 1.93024,
+      "sl": 1.81888,
+      "strength": 34,
+      "status": "SL",
+      "pnl_pct": -2.18,
+      "close_price": 1.8155000000000001,
+      "taken_at": "2026-03-17 12:15:43",
+      "closed_at": "2026-03-17 12:59:16"
+    },
     {
       "symbol": "LYNUSDT",
       "direction": "SHORT",
