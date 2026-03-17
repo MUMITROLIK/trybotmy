@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T19:43:44.196968+00:00",
+  "updated_at": "2026-03-17T19:44:49.103853+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T19:42:44Z",
+    "last_ok": "2026-03-17T19:43:49Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -16,12 +16,12 @@
     "winrate": 84.6
   },
   "trade_stats": {
-    "open": 54,
+    "open": 53,
     "pending": 15,
     "wins": 91,
-    "losses": 63,
-    "total_pnl": 83.75,
-    "winrate": 59.1
+    "losses": 64,
+    "total_pnl": 83.73,
+    "winrate": 58.7
   },
   "fear_greed": {
     "value": 28,
@@ -804,25 +804,6 @@
     }
   ],
   "trades_open": [
-    {
-      "id": 88,
-      "symbol": "BCHUSDT",
-      "direction": "SHORT",
-      "entry": 475.15,
-      "tp1": 465.647,
-      "tp2": 456.144,
-      "sl": 484.653,
-      "strength": 30,
-      "taken_at": "2026-03-17 11:44:46",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=61 (перекупленность)",
-        "BB верхняя зона (90%)",
-        "EMA20 < EMA50",
-        "Стакан: сильное давление продажи (-0.32)",
-        "МТФ: только 1 таймфрейм согласен"
-      ]
-    },
     {
       "id": 89,
       "symbol": "ETHUSDT",
@@ -2893,6 +2874,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "BCHUSDT",
+      "direction": "SHORT",
+      "entry": 475.15,
+      "tp1": 465.647,
+      "tp2": 456.144,
+      "sl": 484.653,
+      "strength": 30,
+      "status": "TIMEOUT",
+      "pnl_pct": -0.02,
+      "close_price": 475.245,
+      "taken_at": "2026-03-17 11:44:46",
+      "closed_at": "2026-03-17 19:44:48"
+    },
     {
       "symbol": "HYPEUSDT",
       "direction": "SHORT",
@@ -5673,20 +5668,6 @@
       "tp2": 134.01822,
       "sl": 126.2864,
       "strength": 44,
-      "status": "PENDING",
-      "pnl_pct": 0,
-      "close_price": null,
-      "taken_at": null,
-      "closed_at": null
-    },
-    {
-      "symbol": "FARTCOINUSDT",
-      "direction": "LONG",
-      "entry": 0.20159364,
-      "tp1": 0.206029,
-      "tp2": 0.210465,
-      "sl": 0.197562,
-      "strength": 40,
       "status": "PENDING",
       "pnl_pct": 0,
       "close_price": null,
