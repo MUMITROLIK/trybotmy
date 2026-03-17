@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T23:04:44.751743+00:00",
+  "updated_at": "2026-03-17T23:05:30.305880+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T23:03:44Z",
+    "last_ok": "2026-03-17T23:04:49Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -12,17 +12,17 @@
   "stats": {
     "total": 395,
     "wins": 111,
-    "losses": 21,
-    "active": 20,
-    "winrate": 84.1
+    "losses": 22,
+    "active": 19,
+    "winrate": 83.5
   },
   "trade_stats": {
-    "open": 20,
+    "open": 19,
     "pending": 4,
     "wins": 121,
-    "losses": 84,
-    "total_pnl": 112.34,
-    "winrate": 59.0
+    "losses": 85,
+    "total_pnl": 109.26,
+    "winrate": 58.7
   },
   "fear_greed": {
     "value": 28,
@@ -402,29 +402,6 @@
       "status": "ACTIVE"
     },
     {
-      "id": 431,
-      "symbol": "PIPPINUSDT",
-      "direction": "LONG",
-      "entry": 0.13996,
-      "tp1": 0.144855,
-      "tp2": 0.149751,
-      "sl": 0.136044,
-      "strength": 41,
-      "reasons": [
-        "RSI=36 (перепроданность)",
-        "MACD бычий (hist=0.00049)",
-        "BB нижняя зона (21%)",
-        "Стакан: перевес bid (+0.06)",
-        "OI растёт +2.8%",
-        "CVD положительный (+0.2%)",
-        "Hammer (1h) 🔨",
-        "⚠️ Funding через 79м"
-      ],
-      "news": null,
-      "created_at": "2026-03-17 22:41:20",
-      "status": "ACTIVE"
-    },
-    {
       "id": 432,
       "symbol": "ANIMEUSDT",
       "direction": "LONG",
@@ -471,6 +448,27 @@
     }
   ],
   "history": [
+    {
+      "symbol": "PIPPINUSDT",
+      "direction": "LONG",
+      "entry": 0.13996,
+      "tp1": 0.144855,
+      "tp2": 0.149751,
+      "sl": 0.136044,
+      "strength": 41,
+      "status": "SL",
+      "created_at": "2026-03-17 22:41:20",
+      "reasons": [
+        "RSI=36 (перепроданность)",
+        "MACD бычий (hist=0.00049)",
+        "BB нижняя зона (21%)",
+        "Стакан: перевес bid (+0.06)",
+        "OI растёт +2.8%",
+        "CVD положительный (+0.2%)",
+        "Hammer (1h) 🔨",
+        "⚠️ Funding через 79м"
+      ]
+    },
     {
       "symbol": "XANUSDT",
       "direction": "LONG",
@@ -842,26 +840,6 @@
         "BTC корреляция 0.65, BTC +1.1% 📈",
         "📌 Лимитный вход @ 0.286669 (откат к EMA20)"
       ]
-    },
-    {
-      "symbol": "CFGUSDT",
-      "direction": "SHORT",
-      "entry": 0.15930219,
-      "tp1": 0.154781,
-      "tp2": 0.150259,
-      "sl": 0.162919,
-      "strength": 49,
-      "status": "TP1",
-      "created_at": "2026-03-17 16:45:31",
-      "reasons": [
-        "MACD медвежий (hist=-0.00020)",
-        "Цена < EMA20 < EMA50",
-        "Стакан: давление продажи (-0.17)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +11.1% + цена ↓",
-        "CVD падает (-9.1%) — продажи усиливаются 📉",
-        "📌 Лимитный вход @ 0.159302 (откат к EMA20)"
-      ]
     }
   ],
   "trades_open": [
@@ -1215,28 +1193,6 @@
       ]
     },
     {
-      "id": 285,
-      "symbol": "PIPPINUSDT",
-      "direction": "LONG",
-      "entry": 0.13996,
-      "tp1": 0.144855,
-      "tp2": 0.149751,
-      "sl": 0.136044,
-      "strength": 41,
-      "taken_at": "2026-03-17T22:41:20.527817",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=36 (перепроданность)",
-        "MACD бычий (hist=0.00049)",
-        "BB нижняя зона (21%)",
-        "Стакан: перевес bid (+0.06)",
-        "OI растёт +2.8%",
-        "CVD положительный (+0.2%)",
-        "Hammer (1h) 🔨",
-        "⚠️ Funding через 79м"
-      ]
-    },
-    {
       "id": 286,
       "symbol": "ANIMEUSDT",
       "direction": "LONG",
@@ -1361,6 +1317,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "PIPPINUSDT",
+      "direction": "LONG",
+      "entry": 0.13996,
+      "tp1": 0.144855,
+      "tp2": 0.149751,
+      "sl": 0.136044,
+      "strength": 41,
+      "status": "SL",
+      "pnl_pct": -3.08,
+      "close_price": 0.13564500000000002,
+      "taken_at": "2026-03-17T22:41:20.527817",
+      "closed_at": "2026-03-17 23:05:29"
+    },
     {
       "symbol": "HYPEUSDT",
       "direction": "LONG",
@@ -4146,20 +4116,6 @@
       "close_price": 0.76465,
       "taken_at": "2026-03-17 13:06:43",
       "closed_at": "2026-03-17 13:13:04"
-    },
-    {
-      "symbol": "HUMAUSDT",
-      "direction": "SHORT",
-      "entry": 0.0188,
-      "tp1": 0.018125,
-      "tp2": 0.017449,
-      "sl": 0.0181165,
-      "strength": 34,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 3.58,
-      "close_price": 0.018127499999999998,
-      "taken_at": "2026-03-17 11:12:02",
-      "closed_at": "2026-03-17 13:08:28"
     }
   ]
 }
