@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T16:01:09.730616+00:00",
+  "updated_at": "2026-03-17T16:01:55.073790+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T16:00:09Z",
+    "last_ok": "2026-03-17T16:01:14Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -9,19 +9,19 @@
     "auto_take": true
   },
   "stats": {
-    "total": 301,
-    "wins": 54,
+    "total": 302,
+    "wins": 55,
     "losses": 7,
     "active": 19,
-    "winrate": 88.5
+    "winrate": 88.7
   },
   "trade_stats": {
     "open": 69,
-    "pending": 18,
+    "pending": 19,
     "wins": 66,
     "losses": 40,
     "total_pnl": 91.66,
-    "winrate": 53.2
+    "winrate": 52.8
   },
   "fear_greed": {
     "value": 28,
@@ -433,6 +433,27 @@
   ],
   "history": [
     {
+      "symbol": "TRIAUSDT",
+      "direction": "LONG",
+      "entry": 0.03292589,
+      "tp1": 0.034196,
+      "tp2": 0.035465,
+      "sl": 0.03191,
+      "strength": 46,
+      "status": "TP1",
+      "created_at": "2026-03-17 16:01:37",
+      "reasons": [
+        "MACD бычий (hist=0.00017)",
+        "Цена > EMA20 > EMA50",
+        "Стакан: давление покупки (+0.13)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +9.8% + цена ↑",
+        "CVD растёт (+5.9%) — покупки усиливаются 📈",
+        "Doji (1h) — нерешительность",
+        "📌 Лимитный вход @ 0.0329259 (откат к EMA20)"
+      ]
+    },
+    {
       "symbol": "VANRYUSDT",
       "direction": "LONG",
       "entry": 0.00592921,
@@ -808,25 +829,6 @@
         "МТФ: 5m, 1h, 4h согласны",
         "OI растёт +1.2% + цена ↑",
         "Hammer (1h) 🔨"
-      ]
-    },
-    {
-      "symbol": "FARTCOINUSDT",
-      "direction": "LONG",
-      "entry": 0.1985,
-      "tp1": 0.20247,
-      "tp2": 0.20644,
-      "sl": 0.19453,
-      "strength": 30,
-      "status": "TP1",
-      "created_at": "2026-03-17 14:02:34",
-      "reasons": [
-        "RSI=36 (перепроданность)",
-        "BB нижняя зона (9%)",
-        "Стакан: перевес bid (+0.07)",
-        "МТФ: 1h, 4h согласны",
-        "CVD положительный (-1.8%)",
-        "Doji (1h) — нерешительность"
       ]
     }
   ],
@@ -2557,6 +2559,28 @@
         "OI растёт +1.9%",
         "CVD падает (-8.8%) — продажи усиливаются 📉",
         "📌 Лимитный вход @ 40.4917 (откат к EMA20)"
+      ]
+    },
+    {
+      "id": 194,
+      "symbol": "TRIAUSDT",
+      "direction": "LONG",
+      "entry": 0.03292589,
+      "tp1": 0.034196,
+      "tp2": 0.035465,
+      "sl": 0.03191,
+      "strength": 46,
+      "taken_at": null,
+      "status": "PENDING",
+      "reasons": [
+        "MACD бычий (hist=0.00017)",
+        "Цена > EMA20 > EMA50",
+        "Стакан: давление покупки (+0.13)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +9.8% + цена ↑",
+        "CVD растёт (+5.9%) — покупки усиливаются 📈",
+        "Doji (1h) — нерешительность",
+        "📌 Лимитный вход @ 0.0329259 (откат к EMA20)"
       ]
     }
   ],
@@ -4291,6 +4315,20 @@
       "tp2": 38.87207,
       "sl": 41.301574,
       "strength": 35,
+      "status": "PENDING",
+      "pnl_pct": 0,
+      "close_price": null,
+      "taken_at": null,
+      "closed_at": null
+    },
+    {
+      "symbol": "TRIAUSDT",
+      "direction": "LONG",
+      "entry": 0.03292589,
+      "tp1": 0.034196,
+      "tp2": 0.035465,
+      "sl": 0.03191,
+      "strength": 46,
       "status": "PENDING",
       "pnl_pct": 0,
       "close_price": null,
