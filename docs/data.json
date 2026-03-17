@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-03-17T10:07:55.588360+00:00",
+  "updated_at": "2026-03-17T10:09:02.366258+00:00",
   "publish_status": {
     "last_ok": "2026-03-17T10:07:17Z",
-    "last_error": null,
+    "last_error": "fatal: unable to access 'https://github.com/MUMITROLIK/trybotmy.git/': Failed to connect to github.com port 443 after 22646 ms: Could not connect to server\n",
     "min_push_interval_sec": 30
   },
   "stats": {
@@ -13,11 +13,11 @@
     "winrate": 93.8
   },
   "trade_stats": {
-    "open": 33,
-    "wins": 26,
+    "open": 32,
+    "wins": 27,
     "losses": 8,
-    "total_pnl": 61.57,
-    "winrate": 76.5
+    "total_pnl": 65.81,
+    "winrate": 77.1
   },
   "fear_greed": {
     "value": 50,
@@ -1023,9 +1023,10 @@
         "CVD падает (-5.6%) — продажи усиливаются 📉",
         "📌 Лимитный вход @ 0.231421 (откат к EMA20)"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 66,
       "symbol": "POLYXUSDT",
       "direction": "SHORT",
       "entry": 0.05519,
@@ -1033,17 +1034,12 @@
       "tp2": 0.050666,
       "sl": 0.05259,
       "strength": 34,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 4.24,
+      "close_price": 0.05285,
       "taken_at": "2026-03-17 09:57:33",
-      "status": "TP1_HIT",
-      "reasons": [
-        "RSI=90 (сильная перекупленность)",
-        "BB верхняя полоса (пробой)",
-        "Объём x3.4 🔥🔥",
-        "OI растёт +8.2%"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-17 10:09:02"
+    },
     {
       "symbol": "COSUSDT",
       "direction": "SHORT",
