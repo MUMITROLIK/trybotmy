@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T23:25:20.833713+00:00",
+  "updated_at": "2026-03-17T23:26:21.986179+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T23:24:12Z",
+    "last_ok": "2026-03-17T23:25:25Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 82.4
   },
   "trade_stats": {
-    "open": 19,
+    "open": 18,
     "pending": 2,
     "wins": 121,
-    "losses": 87,
-    "total_pnl": 104.62,
-    "winrate": 58.2
+    "losses": 88,
+    "total_pnl": 101.43,
+    "winrate": 57.9
   },
   "fear_greed": {
     "value": 28,
@@ -926,26 +926,6 @@
       ]
     },
     {
-      "id": 255,
-      "symbol": "DEGOUSDT",
-      "direction": "LONG",
-      "entry": 1.0104,
-      "tp1": 1.048832,
-      "tp2": 1.087264,
-      "sl": 0.979654,
-      "strength": 44,
-      "taken_at": null,
-      "status": "OPEN",
-      "reasons": [
-        "RSI=31 (перепроданность)",
-        "MACD бычий (hist=0.00316)",
-        "BB ниже середины",
-        "Стакан: сильное давление покупки (+0.25)",
-        "МТФ: только 1 таймфрейм согласен",
-        "CVD растёт (+7.5%) — покупки усиливаются 📈"
-      ]
-    },
-    {
       "id": 263,
       "symbol": "IRUSDT",
       "direction": "LONG",
@@ -1284,6 +1264,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "DEGOUSDT",
+      "direction": "LONG",
+      "entry": 1.0104,
+      "tp1": 1.048832,
+      "tp2": 1.087264,
+      "sl": 0.979654,
+      "strength": 44,
+      "status": "SL",
+      "pnl_pct": -3.19,
+      "close_price": 0.97815,
+      "taken_at": null,
+      "closed_at": "2026-03-17 23:26:20"
+    },
     {
       "symbol": "ANIMEUSDT",
       "direction": "LONG",
@@ -4069,20 +4063,6 @@
       "close_price": 0.018975,
       "taken_at": "2026-03-17 13:12:49",
       "closed_at": "2026-03-17 13:35:04"
-    },
-    {
-      "symbol": "XPLUSDT",
-      "direction": "LONG",
-      "entry": 0.1153,
-      "tp1": 0.117606,
-      "tp2": 0.119912,
-      "sl": 0.11765,
-      "strength": 40,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 1.86,
-      "close_price": 0.11745,
-      "taken_at": "2026-03-17 12:08:49",
-      "closed_at": "2026-03-17 13:31:49"
     }
   ]
 }
