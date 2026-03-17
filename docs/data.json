@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T22:08:52.733582+00:00",
+  "updated_at": "2026-03-17T22:09:38.677662+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T22:07:52Z",
+    "last_ok": "2026-03-17T22:08:57Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,15 +10,15 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 386,
+    "total": 387,
     "wins": 110,
     "losses": 21,
-    "active": 13,
+    "active": 14,
     "winrate": 84.0
   },
   "trade_stats": {
     "open": 10,
-    "pending": 12,
+    "pending": 13,
     "wins": 121,
     "losses": 84,
     "total_pnl": 112.34,
@@ -308,6 +308,28 @@
       ],
       "news": null,
       "created_at": "2026-03-17 22:06:20",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 425,
+      "symbol": "VIRTUALUSDT",
+      "direction": "LONG",
+      "entry": 0.78744586,
+      "tp1": 0.803195,
+      "tp2": 0.818944,
+      "sl": 0.771697,
+      "strength": 43,
+      "reasons": [
+        "MACD бычий (hist=0.00181)",
+        "Цена > EMA20 > EMA50",
+        "Стакан: давление покупки (+0.14)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +1.9%",
+        "CVD растёт (+10.6%) — покупки усиливаются 📈",
+        "📌 Лимитный вход @ 0.787446 (откат к EMA20)"
+      ],
+      "news": null,
+      "created_at": "2026-03-17 22:09:14",
       "status": "ACTIVE"
     }
   ],
@@ -1153,9 +1175,44 @@
         "CVD растёт (+6.4%) — покупки усиливаются 📈",
         "📌 Лимитный вход @ 0.118024 (откат к EMA20)"
       ]
+    },
+    {
+      "id": 279,
+      "symbol": "VIRTUALUSDT",
+      "direction": "LONG",
+      "entry": 0.78744586,
+      "tp1": 0.803195,
+      "tp2": 0.818944,
+      "sl": 0.771697,
+      "strength": 43,
+      "taken_at": "2026-03-17T22:09:14.791532",
+      "status": "PENDING",
+      "reasons": [
+        "MACD бычий (hist=0.00181)",
+        "Цена > EMA20 > EMA50",
+        "Стакан: давление покупки (+0.14)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +1.9%",
+        "CVD растёт (+10.6%) — покупки усиливаются 📈",
+        "📌 Лимитный вход @ 0.787446 (откат к EMA20)"
+      ]
     }
   ],
   "trades_history": [
+    {
+      "symbol": "VIRTUALUSDT",
+      "direction": "LONG",
+      "entry": 0.78744586,
+      "tp1": 0.803195,
+      "tp2": 0.818944,
+      "sl": 0.771697,
+      "strength": 43,
+      "status": "PENDING",
+      "pnl_pct": 0,
+      "close_price": null,
+      "taken_at": "2026-03-17T22:09:14.791532",
+      "closed_at": null
+    },
     {
       "symbol": "XPLUSDT",
       "direction": "LONG",
@@ -3941,20 +3998,6 @@
       "close_price": 0.5257499999999999,
       "taken_at": "2026-03-17 12:25:47",
       "closed_at": "2026-03-17 13:19:50"
-    },
-    {
-      "symbol": "ASTERUSDT",
-      "direction": "LONG",
-      "entry": 0.7499,
-      "tp1": 0.764898,
-      "tp2": 0.779896,
-      "sl": 0.7676499999999999,
-      "strength": 40,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 1.97,
-      "close_price": 0.76465,
-      "taken_at": "2026-03-17 13:06:43",
-      "closed_at": "2026-03-17 13:13:04"
     }
   ]
 }
