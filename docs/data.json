@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T19:16:24.074002+00:00",
+  "updated_at": "2026-03-17T19:17:10.712370+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T19:15:23Z",
+    "last_ok": "2026-03-17T19:16:36Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -16,12 +16,12 @@
     "winrate": 85.3
   },
   "trade_stats": {
-    "open": 52,
+    "open": 51,
     "pending": 15,
     "wins": 91,
-    "losses": 60,
-    "total_pnl": 89.38,
-    "winrate": 60.3
+    "losses": 61,
+    "total_pnl": 86.51,
+    "winrate": 59.9
   },
   "fear_greed": {
     "value": 28,
@@ -1427,28 +1427,6 @@
         "МТФ: 5m, 15m согласны",
         "CVD отрицательный (-4.1%)",
         "📌 Лимитный вход @ 0.964407 (откат к EMA20)"
-      ]
-    },
-    {
-      "id": 173,
-      "symbol": "BEATUSDT",
-      "direction": "SHORT",
-      "entry": 0.51566855,
-      "tp1": 0.49739,
-      "tp2": 0.479111,
-      "sl": 0.530291,
-      "strength": 30,
-      "taken_at": "2026-03-17 15:13:47",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=58 (нейтральный↑)",
-        "MACD медвежий (hist=-0.00026)",
-        "Цена ниже EMA20",
-        "МТФ: только 1 таймфрейм согласен",
-        "OI растёт +1.2% + цена ↓",
-        "CVD отрицательный (-1.0%)",
-        "⚠️ Funding через 55м",
-        "📌 Лимитный вход @ 0.515669 (откат к EMA20)"
       ]
     },
     {
@@ -2952,6 +2930,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "BEATUSDT",
+      "direction": "SHORT",
+      "entry": 0.51566855,
+      "tp1": 0.49739,
+      "tp2": 0.479111,
+      "sl": 0.530291,
+      "strength": 30,
+      "status": "SL",
+      "pnl_pct": -2.87,
+      "close_price": 0.53045,
+      "taken_at": "2026-03-17 15:13:47",
+      "closed_at": "2026-03-17 19:17:09"
+    },
     {
       "symbol": "SIRENUSDT",
       "direction": "LONG",
@@ -5732,20 +5724,6 @@
       "tp2": 0.150259,
       "sl": 0.162919,
       "strength": 49,
-      "status": "PENDING",
-      "pnl_pct": 0,
-      "close_price": null,
-      "taken_at": null,
-      "closed_at": null
-    },
-    {
-      "symbol": "ADAUSDT",
-      "direction": "LONG",
-      "entry": 0.28666865,
-      "tp1": 0.292402,
-      "tp2": 0.298135,
-      "sl": 0.280935,
-      "strength": 40,
       "status": "PENDING",
       "pnl_pct": 0,
       "close_price": null,
