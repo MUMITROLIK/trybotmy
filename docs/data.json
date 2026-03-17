@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T12:43:05.851949+00:00",
+  "updated_at": "2026-03-17T12:44:09.900378+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T12:42:27Z",
+    "last_ok": "2026-03-17T12:43:10Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -16,11 +16,11 @@
     "winrate": 94.7
   },
   "trade_stats": {
-    "open": 78,
-    "wins": 38,
+    "open": 77,
+    "wins": 39,
     "losses": 18,
-    "total_pnl": 70.68,
-    "winrate": 67.9
+    "total_pnl": 73.78,
+    "winrate": 68.4
   },
   "fear_greed": {
     "value": 28,
@@ -2008,29 +2008,23 @@
         "МТФ: 1h, 4h согласны",
         "CVD положительный (-4.3%)"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 80,
       "symbol": "OPNUSDT",
       "direction": "SHORT",
       "entry": 0.2987,
       "tp1": 0.29171042,
       "tp2": 0.28472084,
-      "sl": 0.29021805,
+      "sl": 0.28941565,
       "strength": 32,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 3.1,
+      "close_price": 0.28945,
       "taken_at": "2026-03-17 10:56:13",
-      "status": "TP1_HIT",
-      "reasons": [
-        "MACD медвежий (hist=-0.00001)",
-        "Цена < EMA20 < EMA50",
-        "МТФ: 5m, 15m, 1h согласны",
-        "OI растёт +1.8% + цена ↓",
-        "BTC контекст: -1.5% за 12ч 📉",
-        "📌 Лимитный вход @ 0.303999 (откат к EMA20)"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-17 12:44:09"
+    },
     {
       "symbol": "REZUSDT",
       "direction": "SHORT",
