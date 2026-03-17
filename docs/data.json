@@ -1,23 +1,23 @@
 {
-  "updated_at": "2026-03-17T10:06:35.689798+00:00",
+  "updated_at": "2026-03-17T10:07:15.051931+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T10:05:17Z",
-    "last_error": "fatal: unable to access 'https://github.com/MUMITROLIK/trybotmy.git/': Failed to connect to github.com port 443 after 21089 ms: Could not connect to server\n",
+    "last_ok": "2026-03-17T10:06:41Z",
+    "last_error": null,
     "min_push_interval_sec": 30
   },
   "stats": {
     "total": 175,
-    "wins": 14,
+    "wins": 15,
     "losses": 1,
-    "active": 2,
-    "winrate": 93.3
+    "active": 1,
+    "winrate": 93.8
   },
   "trade_stats": {
     "open": 33,
-    "wins": 25,
+    "wins": 26,
     "losses": 8,
-    "total_pnl": 59.35,
-    "winrate": 75.8
+    "total_pnl": 61.57,
+    "winrate": 76.5
   },
   "fear_greed": {
     "value": 50,
@@ -43,9 +43,10 @@
       "news": null,
       "created_at": "2026-03-17 09:57:28",
       "status": "ACTIVE"
-    },
+    }
+  ],
+  "history": [
     {
-      "id": 213,
       "symbol": "OPNUSDT",
       "direction": "SHORT",
       "entry": 0.30497117,
@@ -53,19 +54,16 @@
       "tp2": 0.292178,
       "sl": 0.311071,
       "strength": 32,
+      "status": "TP1",
+      "created_at": "2026-03-17 10:06:34",
       "reasons": [
         "MACD медвежий (hist=-0.00010)",
         "Цена < EMA20 < EMA50",
         "МТФ: 5m, 15m, 1h согласны",
         "OI растёт +1.8% + цена ↓",
         "📌 Лимитный вход @ 0.304971 (откат к EMA20)"
-      ],
-      "news": null,
-      "created_at": "2026-03-17 10:06:34",
-      "status": "ACTIVE"
-    }
-  ],
-  "history": [
+      ]
+    },
     {
       "symbol": "KITEUSDT",
       "direction": "SHORT",
@@ -425,27 +423,6 @@
         "OI растёт +5.4% + цена ↓",
         "CVD падает (-12.6%) — продажи усиливаются 📉",
         "📌 Лимитный вход @ 0.035237 (откат к EMA20)"
-      ]
-    },
-    {
-      "symbol": "VIRTUALUSDT",
-      "direction": "SHORT",
-      "entry": 0.79478875,
-      "tp1": 0.778893,
-      "tp2": 0.762997,
-      "sl": 0.810685,
-      "strength": 33,
-      "status": "EXPIRED",
-      "created_at": "2026-03-17 09:04:26",
-      "reasons": [
-        "RSI=57 (нейтральный↑)",
-        "MACD медвежий (hist=-0.00006)",
-        "Цена ниже EMA20",
-        "Стакан: перевес ask (-0.10)",
-        "МТФ: только 1 таймфрейм согласен",
-        "OI падает (лонги закрываются)",
-        "CVD падает (-5.2%) — продажи усиливаются 📉",
-        "📌 Лимитный вход @ 0.794789 (откат к EMA20)"
       ]
     }
   ],
@@ -1049,23 +1026,22 @@
       ]
     },
     {
-      "id": 48,
-      "symbol": "COSUSDT",
+      "id": 67,
+      "symbol": "OPNUSDT",
       "direction": "SHORT",
-      "entry": 0.00153963,
-      "tp1": 0.001508,
-      "tp2": 0.001477,
-      "sl": 0.0015055,
-      "strength": 30,
-      "taken_at": "2026-03-17 09:09:33",
-      "status": "TP1_HIT",
+      "entry": 0.2974,
+      "tp1": 0.2911546,
+      "tp2": 0.28493894,
+      "sl": 0.303348,
+      "strength": 32,
+      "taken_at": "2026-03-17 10:06:41",
+      "status": "OPEN",
       "reasons": [
-        "RSI=63 (перекупленность)",
-        "BB верхняя зона (82%)",
+        "MACD медвежий (hist=-0.00010)",
         "Цена < EMA20 < EMA50",
-        "МТФ: 15m, 1h согласны",
-        "Shooting Star (1h) ⭐",
-        "📌 Лимитный вход @ 0.00153963 (откат к EMA20)"
+        "МТФ: 5m, 15m, 1h согласны",
+        "OI растёт +1.8% + цена ↓",
+        "📌 Лимитный вход @ 0.304971 (откат к EMA20)"
       ]
     },
     {
@@ -1075,7 +1051,7 @@
       "entry": 0.23142058,
       "tp1": 0.226792,
       "tp2": 0.222164,
-      "sl": 0.2262768,
+      "sl": 0.2257753,
       "strength": 35,
       "taken_at": "2026-03-17 09:09:46",
       "status": "TP1_HIT",
@@ -1091,6 +1067,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "COSUSDT",
+      "direction": "SHORT",
+      "entry": 0.00153963,
+      "tp1": 0.001508,
+      "tp2": 0.001477,
+      "sl": 0.0015055,
+      "strength": 30,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 2.22,
+      "close_price": 0.0015055,
+      "taken_at": "2026-03-17 09:09:33",
+      "closed_at": "2026-03-17 10:06:58"
+    },
     {
       "symbol": "PIXELUSDT",
       "direction": "SHORT",
