@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T18:41:40.881839+00:00",
+  "updated_at": "2026-03-17T18:42:39.201488+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T18:40:40Z",
+    "last_ok": "2026-03-17T18:41:46Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -16,8 +16,8 @@
     "winrate": 85.2
   },
   "trade_stats": {
-    "open": 49,
-    "pending": 16,
+    "open": 50,
+    "pending": 15,
     "wins": 89,
     "losses": 59,
     "total_pnl": 84.77,
@@ -1517,6 +1517,28 @@
       ]
     },
     {
+      "id": 188,
+      "symbol": "HYPEUSDT",
+      "direction": "SHORT",
+      "entry": 40.72047028,
+      "tp1": 39.906061,
+      "tp2": 39.091651,
+      "sl": 41.53488,
+      "strength": 36,
+      "taken_at": "2026-03-17 18:42:18",
+      "status": "OPEN",
+      "reasons": [
+        "MACD медвежий (hist=-0.11524)",
+        "Цена ниже EMA20",
+        "Стакан: сильное давление продажи (-0.43)",
+        "МТФ: только 1 таймфрейм согласен",
+        "OI растёт +1.9%",
+        "CVD падает (-7.1%) — продажи усиливаются 📉",
+        "⚠️ Funding через 34м",
+        "📌 Лимитный вход @ 40.7205 (откат к EMA20)"
+      ]
+    },
+    {
       "id": 192,
       "symbol": "1000PEPEUSDT",
       "direction": "SHORT",
@@ -2085,28 +2107,6 @@
         "Doji (1h) — нерешительность",
         "⚠️ Funding через 36м",
         "📌 Лимитный вход @ 0.00592502 (откат к EMA20)"
-      ]
-    },
-    {
-      "id": 188,
-      "symbol": "HYPEUSDT",
-      "direction": "SHORT",
-      "entry": 40.72047028,
-      "tp1": 39.906061,
-      "tp2": 39.091651,
-      "sl": 41.53488,
-      "strength": 36,
-      "taken_at": null,
-      "status": "PENDING",
-      "reasons": [
-        "MACD медвежий (hist=-0.11524)",
-        "Цена ниже EMA20",
-        "Стакан: сильное давление продажи (-0.43)",
-        "МТФ: только 1 таймфрейм согласен",
-        "OI растёт +1.9%",
-        "CVD падает (-7.1%) — продажи усиливаются 📉",
-        "⚠️ Funding через 34м",
-        "📌 Лимитный вход @ 40.7205 (откат к EMA20)"
       ]
     },
     {
@@ -5273,20 +5273,6 @@
       "closed_at": null
     },
     {
-      "symbol": "HYPEUSDT",
-      "direction": "SHORT",
-      "entry": 40.72047028,
-      "tp1": 39.906061,
-      "tp2": 39.091651,
-      "sl": 41.53488,
-      "strength": 36,
-      "status": "PENDING",
-      "pnl_pct": 0,
-      "close_price": null,
-      "taken_at": null,
-      "closed_at": null
-    },
-    {
       "symbol": "VANRYUSDT",
       "direction": "LONG",
       "entry": 0.00592921,
@@ -5812,6 +5798,20 @@
       "tp2": 0.005663,
       "sl": 0.006044,
       "strength": 29,
+      "status": "PENDING",
+      "pnl_pct": 0,
+      "close_price": null,
+      "taken_at": null,
+      "closed_at": null
+    },
+    {
+      "symbol": "ENSOUSDT",
+      "direction": "SHORT",
+      "entry": 1.17419917,
+      "tp1": 1.150715,
+      "tp2": 1.127231,
+      "sl": 1.197683,
+      "strength": 49,
       "status": "PENDING",
       "pnl_pct": 0,
       "close_price": null,
