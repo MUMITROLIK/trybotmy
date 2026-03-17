@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T16:51:08.989337+00:00",
+  "updated_at": "2026-03-17T16:51:43.757017+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T16:50:31Z",
+    "last_ok": "2026-03-17T16:51:16Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -16,12 +16,12 @@
     "winrate": 87.6
   },
   "trade_stats": {
-    "open": 60,
+    "open": 59,
     "pending": 63,
     "wins": 77,
-    "losses": 48,
-    "total_pnl": 88.8,
-    "winrate": 41.0
+    "losses": 49,
+    "total_pnl": 85.13,
+    "winrate": 40.7
   },
   "fear_greed": {
     "value": 28,
@@ -2138,25 +2138,6 @@
       ]
     },
     {
-      "id": 241,
-      "symbol": "VANRYUSDT",
-      "direction": "SHORT",
-      "entry": 0.006288,
-      "tp1": 0.006011,
-      "tp2": 0.005733,
-      "sl": 0.00651,
-      "strength": 34,
-      "taken_at": null,
-      "status": "OPEN",
-      "reasons": [
-        "RSI=77 (сильная перекупленность)",
-        "BB верхняя зона (89%)",
-        "Стакан: сильное давление продажи (-0.49)",
-        "OI растёт +5.5%",
-        "CVD отрицательный (-0.8%)"
-      ]
-    },
-    {
       "id": 247,
       "symbol": "GUSDT",
       "direction": "LONG",
@@ -3474,6 +3455,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "VANRYUSDT",
+      "direction": "SHORT",
+      "entry": 0.006288,
+      "tp1": 0.006011,
+      "tp2": 0.005733,
+      "sl": 0.00651,
+      "strength": 34,
+      "status": "SL",
+      "pnl_pct": -3.67,
+      "close_price": 0.0065185,
+      "taken_at": null,
+      "closed_at": "2026-03-17 16:51:22"
+    },
     {
       "symbol": "POLYXUSDT",
       "direction": "LONG",
