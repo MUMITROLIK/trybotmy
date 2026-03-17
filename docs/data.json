@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T20:58:45.883592+00:00",
+  "updated_at": "2026-03-17T21:00:00.800382+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T20:57:45Z",
+    "last_ok": "2026-03-17T20:59:00Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,15 +10,15 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 369,
+    "total": 370,
     "wins": 101,
     "losses": 20,
-    "active": 8,
+    "active": 9,
     "winrate": 83.5
   },
   "trade_stats": {
     "open": 17,
-    "pending": 16,
+    "pending": 17,
     "wins": 113,
     "losses": 81,
     "total_pnl": 93.57,
@@ -203,6 +203,29 @@
       ],
       "news": null,
       "created_at": "2026-03-17 20:45:11",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 408,
+      "symbol": "XPLUSDT",
+      "direction": "LONG",
+      "entry": 0.11646129,
+      "tp1": 0.118791,
+      "tp2": 0.12112,
+      "sl": 0.114132,
+      "strength": 46,
+      "reasons": [
+        "MACD бычий (hist=0.00016)",
+        "EMA20 > EMA50 (golden cross) 🌟",
+        "Стакан: давление покупки (+0.13)",
+        "МТФ: 5m, 15m, 4h согласны",
+        "OI растёт +1.0%",
+        "CVD положительный (+3.4%)",
+        "Bullish Engulfing (1h) 🕯️",
+        "📌 Лимитный вход @ 0.116461 (откат к EMA20)"
+      ],
+      "news": null,
+      "created_at": "2026-03-17 20:59:53",
       "status": "ACTIVE"
     }
   ],
@@ -1971,9 +1994,45 @@
         "CVD растёт (+9.9%) — покупки усиливаются 📈",
         "📌 Лимитный вход @ 40.9463 (откат к EMA20)"
       ]
+    },
+    {
+      "id": 262,
+      "symbol": "XPLUSDT",
+      "direction": "LONG",
+      "entry": 0.11646129,
+      "tp1": 0.118791,
+      "tp2": 0.12112,
+      "sl": 0.114132,
+      "strength": 46,
+      "taken_at": "2026-03-17T20:59:53.605304",
+      "status": "PENDING",
+      "reasons": [
+        "MACD бычий (hist=0.00016)",
+        "EMA20 > EMA50 (golden cross) 🌟",
+        "Стакан: давление покупки (+0.13)",
+        "МТФ: 5m, 15m, 4h согласны",
+        "OI растёт +1.0%",
+        "CVD положительный (+3.4%)",
+        "Bullish Engulfing (1h) 🕯️",
+        "📌 Лимитный вход @ 0.116461 (откат к EMA20)"
+      ]
     }
   ],
   "trades_history": [
+    {
+      "symbol": "XPLUSDT",
+      "direction": "LONG",
+      "entry": 0.11646129,
+      "tp1": 0.118791,
+      "tp2": 0.12112,
+      "sl": 0.114132,
+      "strength": 46,
+      "status": "PENDING",
+      "pnl_pct": 0,
+      "close_price": null,
+      "taken_at": "2026-03-17T20:59:53.605304",
+      "closed_at": null
+    },
     {
       "symbol": "KITEUSDT",
       "direction": "SHORT",
@@ -4759,20 +4818,6 @@
       "close_price": 0.029875,
       "taken_at": "2026-03-17 09:31:19",
       "closed_at": "2026-03-17 11:52:59"
-    },
-    {
-      "symbol": "PIXELUSDT",
-      "direction": "SHORT",
-      "entry": 0.010066,
-      "tp1": 0.009819,
-      "tp2": 0.009571,
-      "sl": 0.010267,
-      "strength": 33,
-      "status": "SL",
-      "pnl_pct": -2.1,
-      "close_price": 0.0102775,
-      "taken_at": "2026-03-17 10:29:09",
-      "closed_at": "2026-03-17 11:28:15"
     }
   ]
 }
