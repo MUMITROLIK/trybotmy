@@ -1,16 +1,16 @@
 {
-  "updated_at": "2026-03-17T09:48:42.707423+00:00",
+  "updated_at": "2026-03-17T09:49:24.392561+00:00",
   "publish_status": {
     "last_ok": "2026-03-17T09:47:42Z",
-    "last_error": null,
+    "last_error": "fatal: unable to access 'https://github.com/MUMITROLIK/trybotmy.git/': Failed to connect to github.com port 443 after 21080 ms: Could not connect to server\n",
     "min_push_interval_sec": 30
   },
   "stats": {
     "total": 173,
-    "wins": 13,
+    "wins": 14,
     "losses": 1,
-    "active": 4,
-    "winrate": 92.9
+    "active": 2,
+    "winrate": 93.3
   },
   "trade_stats": {
     "open": 34,
@@ -25,28 +25,6 @@
     "emoji": "😐"
   },
   "signals": [
-    {
-      "id": 208,
-      "symbol": "RIVERUSDT",
-      "direction": "SHORT",
-      "entry": 23.38911026,
-      "tp1": 22.746682,
-      "tp2": 22.104253,
-      "sl": 23.903053,
-      "strength": 31,
-      "reasons": [
-        "MACD медвежий (hist=-0.14754)",
-        "Цена ниже EMA20",
-        "Стакан: давление продажи (-0.14)",
-        "МТФ: только 1 таймфрейм согласен",
-        "OI растёт +3.2% + цена ↓",
-        "CVD отрицательный (+3.5%)",
-        "📌 Лимитный вход @ 23.3891 (откат к EMA20)"
-      ],
-      "news": null,
-      "created_at": "2026-03-17 09:38:39",
-      "status": "ACTIVE"
-    },
     {
       "id": 209,
       "symbol": "VANRYUSDT",
@@ -85,9 +63,10 @@
       "news": null,
       "created_at": "2026-03-17 09:44:16",
       "status": "ACTIVE"
-    },
+    }
+  ],
+  "history": [
     {
-      "id": 211,
       "symbol": "KITEUSDT",
       "direction": "SHORT",
       "entry": 0.20308241,
@@ -95,19 +74,36 @@
       "tp2": 0.194959,
       "sl": 0.207144,
       "strength": 32,
+      "status": "TP1",
+      "created_at": "2026-03-17 09:48:33",
       "reasons": [
         "MACD медвежий (hist=-0.00078)",
         "Цена < EMA20 < EMA50",
         "Стакан: давление продажи (-0.12)",
         "МТФ: 5m, 15m, 1h согласны",
         "📌 Лимитный вход @ 0.203082 (откат к EMA20)"
-      ],
-      "news": null,
-      "created_at": "2026-03-17 09:48:33",
-      "status": "ACTIVE"
-    }
-  ],
-  "history": [
+      ]
+    },
+    {
+      "symbol": "RIVERUSDT",
+      "direction": "SHORT",
+      "entry": 23.38911026,
+      "tp1": 22.746682,
+      "tp2": 22.104253,
+      "sl": 23.903053,
+      "strength": 31,
+      "status": "EXPIRED",
+      "created_at": "2026-03-17 09:38:39",
+      "reasons": [
+        "MACD медвежий (hist=-0.14754)",
+        "Цена ниже EMA20",
+        "Стакан: давление продажи (-0.14)",
+        "МТФ: только 1 таймфрейм согласен",
+        "OI растёт +3.2% + цена ↓",
+        "CVD отрицательный (+3.5%)",
+        "📌 Лимитный вход @ 23.3891 (откат к EMA20)"
+      ]
+    },
     {
       "symbol": "TSLAUSDT",
       "direction": "SHORT",
@@ -454,46 +450,6 @@
         "МТФ: только 1 таймфрейм согласен",
         "OI растёт +2.5%",
         "CVD отрицательный (-1.8%)"
-      ]
-    },
-    {
-      "symbol": "ROBOUSDT",
-      "direction": "SHORT",
-      "entry": 0.03527321,
-      "tp1": 0.034485,
-      "tp2": 0.033696,
-      "sl": 0.035979,
-      "strength": 49,
-      "status": "TP2",
-      "created_at": "2026-03-17 09:00:19",
-      "reasons": [
-        "MACD медвежий (hist=-0.00039)",
-        "Цена < EMA20 < EMA50",
-        "Стакан: давление продажи (-0.13)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +5.4% + цена ↓",
-        "CVD падает (-11.8%) — продажи усиливаются 📉",
-        "📌 Лимитный вход @ 0.0352732 (откат к EMA20)"
-      ]
-    },
-    {
-      "symbol": "XLMUSDT",
-      "direction": "SHORT",
-      "entry": 0.1749,
-      "tp1": 0.171402,
-      "tp2": 0.167904,
-      "sl": 0.178398,
-      "strength": 34,
-      "status": "EXPIRED",
-      "created_at": "2026-03-17 09:00:14",
-      "reasons": [
-        "RSI=61 (перекупленность)",
-        "BB выше середины",
-        "Цена < EMA20 < EMA50",
-        "Стакан: давление продажи (-0.21)",
-        "МТФ: только 1 таймфрейм согласен",
-        "OI падает (лонги закрываются)",
-        "CVD падает (-8.3%) — продажи усиливаются 📉"
       ]
     }
   ],
