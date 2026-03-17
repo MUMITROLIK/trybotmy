@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T15:39:46.420126+00:00",
+  "updated_at": "2026-03-17T15:40:48.043895+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T15:39:19Z",
+    "last_ok": "2026-03-17T15:39:51Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -16,12 +16,12 @@
     "winrate": 89.7
   },
   "trade_stats": {
-    "open": 71,
+    "open": 70,
     "pending": 16,
     "wins": 65,
-    "losses": 38,
-    "total_pnl": 93.96,
-    "winrate": 54.6
+    "losses": 39,
+    "total_pnl": 91.74,
+    "winrate": 54.2
   },
   "fear_greed": {
     "value": 28,
@@ -2138,27 +2138,6 @@
       ]
     },
     {
-      "id": 174,
-      "symbol": "FARTCOINUSDT",
-      "direction": "LONG",
-      "entry": 0.2007,
-      "tp1": 0.205039,
-      "tp2": 0.209379,
-      "sl": 0.196686,
-      "strength": 36,
-      "taken_at": null,
-      "status": "OPEN",
-      "reasons": [
-        "RSI=45 (нейтральный↓)",
-        "MACD бычий (hist=0.00001)",
-        "BB ниже середины",
-        "Объём x1.8 🔥",
-        "Стакан: перевес bid (+0.08)",
-        "МТФ: 1h, 4h согласны",
-        "⚠️ Funding через 52м"
-      ]
-    },
-    {
       "id": 178,
       "symbol": "ASTERUSDT",
       "direction": "SHORT",
@@ -2556,6 +2535,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "FARTCOINUSDT",
+      "direction": "LONG",
+      "entry": 0.2007,
+      "tp1": 0.205039,
+      "tp2": 0.209379,
+      "sl": 0.196686,
+      "strength": 36,
+      "status": "SL",
+      "pnl_pct": -2.22,
+      "close_price": 0.19625,
+      "taken_at": null,
+      "closed_at": "2026-03-17 15:40:47"
+    },
     {
       "symbol": "1000PEPEUSDT",
       "direction": "LONG",
