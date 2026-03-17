@@ -1247,7 +1247,7 @@ function renderTradeHistory(hist) {
 // ── Data fetch ────────────────────────────────────────────────────────────────
 async function loadData() {
   try {
-    const r = await fetch('./data.json?t=' + Date.now());
+    const r = await fetch('./data.json?t=' + Date.now(), { cache: 'no-store' });
     if (!r.ok) throw new Error(r.status);
     const d  = await r.json();
     const st = d.stats || {};
