@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T11:18:27.315979+00:00",
+  "updated_at": "2026-03-17T11:19:30.254580+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T11:17:13Z",
+    "last_ok": "2026-03-17T11:18:30Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -13,11 +13,11 @@
     "winrate": 94.1
   },
   "trade_stats": {
-    "open": 40,
-    "wins": 30,
+    "open": 39,
+    "wins": 31,
     "losses": 13,
-    "total_pnl": 62.94,
-    "winrate": 69.8
+    "total_pnl": 66.3,
+    "winrate": 70.5
   },
   "fear_greed": {
     "value": 28,
@@ -963,27 +963,6 @@
       ]
     },
     {
-      "id": 68,
-      "symbol": "RIVERUSDT",
-      "direction": "SHORT",
-      "entry": 23.744,
-      "tp1": 22.947929,
-      "tp2": 22.151857,
-      "sl": 24.380857,
-      "strength": 31,
-      "taken_at": "2026-03-17 10:14:28",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=53 (нейтральный↑)",
-        "MACD медвежий (hist=-0.11274)",
-        "BB выше середины",
-        "Стакан: давление продажи (-0.17)",
-        "OI растёт +3.7% + цена ↓",
-        "CVD отрицательный (+6.9%)",
-        "BTC контекст: -1.6% за 12ч 📉"
-      ]
-    },
-    {
       "id": 69,
       "symbol": "ETCUSDT",
       "direction": "SHORT",
@@ -1256,6 +1235,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "RIVERUSDT",
+      "direction": "SHORT",
+      "entry": 23.744,
+      "tp1": 22.947929,
+      "tp2": 22.151857,
+      "sl": 22.938499999999998,
+      "strength": 31,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 3.36,
+      "close_price": 22.9455,
+      "taken_at": "2026-03-17 10:14:28",
+      "closed_at": "2026-03-17 11:18:48"
+    },
     {
       "symbol": "CFGUSDT",
       "direction": "SHORT",
