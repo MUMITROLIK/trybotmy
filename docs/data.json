@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T15:45:58.263806+00:00",
+  "updated_at": "2026-03-17T15:47:07.648632+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T15:45:05Z",
+    "last_ok": "2026-03-17T15:46:03Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -16,12 +16,12 @@
     "winrate": 88.5
   },
   "trade_stats": {
-    "open": 69,
+    "open": 68,
     "pending": 16,
-    "wins": 65,
+    "wins": 66,
     "losses": 40,
-    "total_pnl": 88.66,
-    "winrate": 53.7
+    "total_pnl": 91.66,
+    "winrate": 54.1
   },
   "fear_greed": {
     "value": 28,
@@ -2433,9 +2433,10 @@
         "⚠️ Funding через 31м",
         "📌 Лимитный вход @ 0.00592921 (откат к EMA20)"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 152,
       "symbol": "TRIAUSDT",
       "direction": "LONG",
       "entry": 0.03316,
@@ -2443,20 +2444,12 @@
       "tp2": 0.03506338,
       "sl": 0.03436,
       "strength": 53,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 3.0,
+      "close_price": 0.034155000000000005,
       "taken_at": "2026-03-17 13:27:15",
-      "status": "TP1_HIT",
-      "reasons": [
-        "MACD бычий (hist=0.00020)",
-        "Цена > EMA20 > EMA50",
-        "Объём x4.6 🔥🔥🔥",
-        "МТФ: 5m, 15m, 4h согласны",
-        "CVD положительный (+5.0%)",
-        "Bullish Engulfing (1h) 🕯️",
-        "📌 Лимитный вход @ 0.0313714 (откат к EMA20)"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-17 15:46:20"
+    },
     {
       "symbol": "RIVERUSDT",
       "direction": "SHORT",
