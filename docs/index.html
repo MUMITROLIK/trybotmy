@@ -142,6 +142,14 @@ header {
 
 main { padding: 24px 40px; max-width: 1600px; margin: 0 auto; }
 
+/* Positions stats row */
+.trade-stats-row{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:12px;
+  margin-bottom:20px;
+}
+
 .top-row {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 180px;
@@ -532,6 +540,8 @@ tr:hover td { background: rgba(255,255,255,.015); }
   .sig-top { padding: 12px 14px 8px; }
   .sig-body { padding: 10px 14px 12px; }
   td { padding: 10px 12px; }
+  .trade-stats-row { grid-template-columns: repeat(2, 1fr); }
+  .stat-value { font-size: clamp(18px, 7vw, 28px); }
 }
 
 @media (max-width: 720px) {
