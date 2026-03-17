@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T12:30:20.232670+00:00",
+  "updated_at": "2026-03-17T12:31:08.134026+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T12:29:20Z",
+    "last_ok": "2026-03-17T12:30:26Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -16,11 +16,11 @@
     "winrate": 94.7
   },
   "trade_stats": {
-    "open": 80,
-    "wins": 33,
+    "open": 79,
+    "wins": 34,
     "losses": 16,
-    "total_pnl": 66.43,
-    "winrate": 67.3
+    "total_pnl": 68.46,
+    "winrate": 68.0
   },
   "fear_greed": {
     "value": 28,
@@ -745,28 +745,6 @@
         "OI растёт +1.7% + цена ↓",
         "CVD падает (-7.5%) — продажи усиливаются 📉",
         "📌 Лимитный вход @ 0.00785589 (откат к EMA20)"
-      ]
-    },
-    {
-      "id": 46,
-      "symbol": "VIRTUALUSDT",
-      "direction": "SHORT",
-      "entry": 0.79478875,
-      "tp1": 0.778893,
-      "tp2": 0.762997,
-      "sl": 0.810685,
-      "strength": 33,
-      "taken_at": "2026-03-17 09:04:31",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=57 (нейтральный↑)",
-        "MACD медвежий (hist=-0.00006)",
-        "Цена ниже EMA20",
-        "Стакан: перевес ask (-0.10)",
-        "МТФ: только 1 таймфрейм согласен",
-        "OI падает (лонги закрываются)",
-        "CVD падает (-5.2%) — продажи усиливаются 📉",
-        "📌 Лимитный вход @ 0.794789 (откат к EMA20)"
       ]
     },
     {
@@ -2036,6 +2014,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "VIRTUALUSDT",
+      "direction": "SHORT",
+      "entry": 0.79478875,
+      "tp1": 0.778893,
+      "tp2": 0.762997,
+      "sl": 0.77825,
+      "strength": 33,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 2.03,
+      "close_price": 0.77865,
+      "taken_at": "2026-03-17 09:04:31",
+      "closed_at": "2026-03-17 12:31:07"
+    },
     {
       "symbol": "DEGOUSDT",
       "direction": "SHORT",
