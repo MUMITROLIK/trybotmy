@@ -858,6 +858,9 @@ async function pollDataFallback() {
 // ── Real-time prices for open trades (Binance WS) ─────────────────────────────
 let tradesWs = null;
 const tradeBySymbol = new Map();    // symbol -> trades[]
+const latestMidBySymbol = new Map();
+let rafScheduled = false;
+let lastPaint = 0;
 
 function stopTradeWs() {
   try { if (tradesWs) tradesWs.close(); } catch(e) {}
@@ -892,10 +895,26 @@ function startTradeWs(trades) {
       const ask = parseFloat(data.a || 0);
       const mid = (bid + ask) / 2;
       if (!mid) return;
-      (tradeBySymbol.get(sym) || []).forEach(t => updateTradeUI(t, mid));
+      latestMidBySymbol.set(sym, mid);
+      scheduleTradePaint();
     } catch(err) {}
   };
   tradesWs.onclose = () => { tradesWs = null; };
+}
+
+function scheduleTradePaint() {
+  if (rafScheduled) return;
+  rafScheduled = true;
+  requestAnimationFrame(() => {
+    rafScheduled = false;
+    // throttle paint rate (smoother scroll): ~10fps
+    const now = performance.now();
+    if (now - lastPaint < 100) return;
+    lastPaint = now;
+    latestMidBySymbol.forEach((mid, sym) => {
+      (tradeBySymbol.get(sym) || []).forEach(t => updateTradeUI(t, mid));
+    });
+  });
 }
 
 function updateTradeUI(trade, price) {
