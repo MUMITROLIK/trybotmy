@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T13:27:16.314702+00:00",
+  "updated_at": "2026-03-17T13:28:28.446315+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T13:26:26Z",
+    "last_ok": "2026-03-17T13:27:21Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,10 +10,10 @@
   },
   "stats": {
     "total": 260,
-    "wins": 26,
+    "wins": 27,
     "losses": 1,
-    "active": 12,
-    "winrate": 96.3
+    "active": 11,
+    "winrate": 96.4
   },
   "trade_stats": {
     "open": 80,
@@ -251,9 +251,10 @@
       "news": null,
       "created_at": "2026-03-17 13:12:49",
       "status": "ACTIVE"
-    },
+    }
+  ],
+  "history": [
     {
-      "id": 298,
       "symbol": "TRIAUSDT",
       "direction": "LONG",
       "entry": 0.0313714,
@@ -261,6 +262,8 @@
       "tp2": 0.033174,
       "sl": 0.030651,
       "strength": 53,
+      "status": "TP1",
+      "created_at": "2026-03-17 13:27:14",
       "reasons": [
         "MACD бычий (hist=0.00020)",
         "Цена > EMA20 > EMA50",
@@ -269,13 +272,8 @@
         "CVD положительный (+5.0%)",
         "Bullish Engulfing (1h) 🕯️",
         "📌 Лимитный вход @ 0.0313714 (откат к EMA20)"
-      ],
-      "news": null,
-      "created_at": "2026-03-17 13:27:14",
-      "status": "ACTIVE"
-    }
-  ],
-  "history": [
+      ]
+    },
     {
       "symbol": "ASTERUSDT",
       "direction": "LONG",
@@ -630,26 +628,6 @@
         "Стакан: сильное давление покупки (+0.37)",
         "МТФ: только 1 таймфрейм согласен",
         "CVD положительный (+1.4%)"
-      ]
-    },
-    {
-      "symbol": "GRASSUSDT",
-      "direction": "LONG",
-      "entry": 0.44475864,
-      "tp1": 0.455248,
-      "tp2": 0.465737,
-      "sl": 0.435863,
-      "strength": 41,
-      "status": "EXPIRED",
-      "created_at": "2026-03-17 12:12:21",
-      "reasons": [
-        "RSI=42 (нейтральный↓)",
-        "MACD бычий (hist=0.00114)",
-        "Цена > EMA20 > EMA50",
-        "МТФ: 15m, 1h, 4h согласны",
-        "OI растёт +1.9% + цена ↑",
-        "CVD положительный (+1.0%)",
-        "📌 Лимитный вход @ 0.444759 (откат к EMA20)"
       ]
     }
   ],
