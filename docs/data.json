@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T15:23:41.147678+00:00",
+  "updated_at": "2026-03-17T15:24:46.082335+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T15:22:30Z",
+    "last_ok": "2026-03-17T15:23:46Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -9,19 +9,19 @@
     "auto_take": true
   },
   "stats": {
-    "total": 292,
+    "total": 295,
     "wins": 50,
     "losses": 3,
-    "active": 18,
+    "active": 21,
     "winrate": 94.3
   },
   "trade_stats": {
-    "open": 75,
-    "pending": 12,
+    "open": 77,
+    "pending": 13,
     "wins": 63,
     "losses": 34,
     "total_pnl": 98.3,
-    "winrate": 57.8
+    "winrate": 57.3
   },
   "fear_greed": {
     "value": 28,
@@ -407,6 +407,71 @@
       ],
       "news": null,
       "created_at": "2026-03-17 15:16:04",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 331,
+      "symbol": "SIRENUSDT",
+      "direction": "SHORT",
+      "entry": 0.74761,
+      "tp1": 0.718377,
+      "tp2": 0.689144,
+      "sl": 0.770996,
+      "strength": 28,
+      "reasons": [
+        "MACD медвежий (hist=-0.00254)",
+        "BB выше середины",
+        "Стакан: сильное давление продажи (-0.35)",
+        "МТФ: только 1 таймфрейм согласен",
+        "CVD отрицательный (+2.6%)",
+        "⚠️ Funding через 37м"
+      ],
+      "news": null,
+      "created_at": "2026-03-17 15:23:49",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 332,
+      "symbol": "PIXELUSDT",
+      "direction": "LONG",
+      "entry": 0.00964,
+      "tp1": 0.00984,
+      "tp2": 0.01004,
+      "sl": 0.009447,
+      "strength": 34,
+      "reasons": [
+        "RSI=22 (сильная перепроданность)",
+        "BB нижняя полоса (пробой)",
+        "Стакан: сильное давление покупки (+0.26)",
+        "МТФ: только 1 таймфрейм согласен",
+        "OI падает (шорты закрываются)",
+        "⚠️ Funding через 36м"
+      ],
+      "news": null,
+      "created_at": "2026-03-17 15:24:24",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 333,
+      "symbol": "VANRYUSDT",
+      "direction": "LONG",
+      "entry": 0.00592502,
+      "tp1": 0.006156,
+      "tp2": 0.006387,
+      "sl": 0.00574,
+      "strength": 41,
+      "reasons": [
+        "MACD бычий (hist=0.00004)",
+        "Цена > EMA20 > EMA50",
+        "Стакан: давление покупки (+0.24)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "CVD положительный (-0.7%)",
+        "Doji (1h) — нерешительность",
+        "⚠️ Funding через 36м",
+        "📌 Лимитный вход @ 0.00592502 (откат к EMA20)"
+      ],
+      "news": null,
+      "created_at": "2026-03-17 15:24:40",
       "status": "ACTIVE"
     }
   ],
@@ -2274,6 +2339,46 @@
       ]
     },
     {
+      "id": 185,
+      "symbol": "SIRENUSDT",
+      "direction": "SHORT",
+      "entry": 0.74761,
+      "tp1": 0.718377,
+      "tp2": 0.689144,
+      "sl": 0.770996,
+      "strength": 28,
+      "taken_at": null,
+      "status": "OPEN",
+      "reasons": [
+        "MACD медвежий (hist=-0.00254)",
+        "BB выше середины",
+        "Стакан: сильное давление продажи (-0.35)",
+        "МТФ: только 1 таймфрейм согласен",
+        "CVD отрицательный (+2.6%)",
+        "⚠️ Funding через 37м"
+      ]
+    },
+    {
+      "id": 186,
+      "symbol": "PIXELUSDT",
+      "direction": "LONG",
+      "entry": 0.00964,
+      "tp1": 0.00984,
+      "tp2": 0.01004,
+      "sl": 0.009447,
+      "strength": 34,
+      "taken_at": null,
+      "status": "OPEN",
+      "reasons": [
+        "RSI=22 (сильная перепроданность)",
+        "BB нижняя полоса (пробой)",
+        "Стакан: сильное давление покупки (+0.26)",
+        "МТФ: только 1 таймфрейм согласен",
+        "OI падает (шорты закрываются)",
+        "⚠️ Funding через 36м"
+      ]
+    },
+    {
       "id": 167,
       "symbol": "LYNUSDT",
       "direction": "SHORT",
@@ -2519,6 +2624,28 @@
         "Doji (1h) — нерешительность",
         "⚠️ Funding через 38м",
         "📌 Лимитный вход @ 0.00592826 (откат к EMA20)"
+      ]
+    },
+    {
+      "id": 187,
+      "symbol": "VANRYUSDT",
+      "direction": "LONG",
+      "entry": 0.00592502,
+      "tp1": 0.006156,
+      "tp2": 0.006387,
+      "sl": 0.00574,
+      "strength": 41,
+      "taken_at": null,
+      "status": "PENDING",
+      "reasons": [
+        "MACD бычий (hist=0.00004)",
+        "Цена > EMA20 > EMA50",
+        "Стакан: давление покупки (+0.24)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "CVD положительный (-0.7%)",
+        "Doji (1h) — нерешительность",
+        "⚠️ Funding через 36м",
+        "📌 Лимитный вход @ 0.00592502 (откат к EMA20)"
       ]
     }
   ],
@@ -4043,6 +4170,20 @@
       "tp2": 0.006382,
       "sl": 0.005747,
       "strength": 36,
+      "status": "PENDING",
+      "pnl_pct": 0,
+      "close_price": null,
+      "taken_at": null,
+      "closed_at": null
+    },
+    {
+      "symbol": "VANRYUSDT",
+      "direction": "LONG",
+      "entry": 0.00592502,
+      "tp1": 0.006156,
+      "tp2": 0.006387,
+      "sl": 0.00574,
+      "strength": 41,
       "status": "PENDING",
       "pnl_pct": 0,
       "close_price": null,
