@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T19:20:46.779838+00:00",
+  "updated_at": "2026-03-17T19:21:53.824024+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T19:19:46Z",
+    "last_ok": "2026-03-17T19:20:53Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -16,12 +16,12 @@
     "winrate": 85.3
   },
   "trade_stats": {
-    "open": 51,
+    "open": 50,
     "pending": 15,
     "wins": 91,
-    "losses": 61,
-    "total_pnl": 86.51,
-    "winrate": 59.9
+    "losses": 62,
+    "total_pnl": 85.78,
+    "winrate": 59.5
   },
   "fear_greed": {
     "value": 28,
@@ -824,24 +824,6 @@
     }
   ],
   "trades_open": [
-    {
-      "id": 85,
-      "symbol": "TRXUSDT",
-      "direction": "SHORT",
-      "entry": 0.30254,
-      "tp1": 0.296489,
-      "tp2": 0.290438,
-      "sl": 0.308591,
-      "strength": 30,
-      "taken_at": "2026-03-17 11:21:39",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=75 (сильная перекупленность)",
-        "BB верхняя зона (85%)",
-        "Стакан: сильное давление продажи (-0.32)",
-        "OI растёт +5.6%"
-      ]
-    },
     {
       "id": 88,
       "symbol": "BCHUSDT",
@@ -2930,6 +2912,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "TRXUSDT",
+      "direction": "SHORT",
+      "entry": 0.30254,
+      "tp1": 0.296489,
+      "tp2": 0.290438,
+      "sl": 0.308591,
+      "strength": 30,
+      "status": "TIMEOUT",
+      "pnl_pct": -0.73,
+      "close_price": 0.304735,
+      "taken_at": "2026-03-17 11:21:39",
+      "closed_at": "2026-03-17 19:21:42"
+    },
     {
       "symbol": "BEATUSDT",
       "direction": "SHORT",
@@ -5709,20 +5705,6 @@
       "tp1": 1.150715,
       "tp2": 1.127231,
       "sl": 1.197683,
-      "strength": 49,
-      "status": "PENDING",
-      "pnl_pct": 0,
-      "close_price": null,
-      "taken_at": null,
-      "closed_at": null
-    },
-    {
-      "symbol": "CFGUSDT",
-      "direction": "SHORT",
-      "entry": 0.15930219,
-      "tp1": 0.154781,
-      "tp2": 0.150259,
-      "sl": 0.162919,
       "strength": 49,
       "status": "PENDING",
       "pnl_pct": 0,
