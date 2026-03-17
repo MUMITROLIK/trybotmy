@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T20:37:48.815522+00:00",
+  "updated_at": "2026-03-17T20:38:41.007731+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T20:37:03Z",
+    "last_ok": "2026-03-17T20:37:55Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 83.2
   },
   "trade_stats": {
-    "open": 20,
+    "open": 19,
     "pending": 15,
     "wins": 110,
-    "losses": 80,
-    "total_pnl": 91.51,
-    "winrate": 57.9
+    "losses": 81,
+    "total_pnl": 89.48,
+    "winrate": 57.6
   },
   "fear_greed": {
     "value": 28,
@@ -734,28 +734,6 @@
         "МТФ: 5m, 15m согласны",
         "CVD отрицательный (-4.1%)",
         "📌 Лимитный вход @ 0.964407 (откат к EMA20)"
-      ]
-    },
-    {
-      "id": 188,
-      "symbol": "HYPEUSDT",
-      "direction": "SHORT",
-      "entry": 40.72047028,
-      "tp1": 39.906061,
-      "tp2": 39.091651,
-      "sl": 41.53488,
-      "strength": 36,
-      "taken_at": "2026-03-17 18:42:18",
-      "status": "OPEN",
-      "reasons": [
-        "MACD медвежий (hist=-0.11524)",
-        "Цена ниже EMA20",
-        "Стакан: сильное давление продажи (-0.43)",
-        "МТФ: только 1 таймфрейм согласен",
-        "OI растёт +1.9%",
-        "CVD падает (-7.1%) — продажи усиливаются 📉",
-        "⚠️ Funding через 34м",
-        "📌 Лимитный вход @ 40.7205 (откат к EMA20)"
       ]
     },
     {
@@ -2036,6 +2014,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "HYPEUSDT",
+      "direction": "SHORT",
+      "entry": 40.72047028,
+      "tp1": 39.906061,
+      "tp2": 39.091651,
+      "sl": 41.53488,
+      "strength": 36,
+      "status": "SL",
+      "pnl_pct": -2.03,
+      "close_price": 41.545500000000004,
+      "taken_at": "2026-03-17 18:42:18",
+      "closed_at": "2026-03-17 20:38:40"
+    },
     {
       "symbol": "HYPEUSDT",
       "direction": "SHORT",
@@ -4821,20 +4813,6 @@
       "close_price": 0.50495,
       "taken_at": "2026-03-17 10:53:00",
       "closed_at": "2026-03-17 10:56:25"
-    },
-    {
-      "symbol": "ZECUSDT",
-      "direction": "SHORT",
-      "entry": 268.91211242,
-      "tp1": 263.53387,
-      "tp2": 258.155628,
-      "sl": 274.290355,
-      "strength": 11,
-      "status": "SL",
-      "pnl_pct": -2.02,
-      "close_price": 274.335,
-      "taken_at": "2026-03-17 08:42:27",
-      "closed_at": "2026-03-17 10:56:24"
     }
   ]
 }
