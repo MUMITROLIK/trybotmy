@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T19:59:54.786270+00:00",
+  "updated_at": "2026-03-17T20:00:59.417930+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T19:58:54Z",
+    "last_ok": "2026-03-17T19:59:59Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -12,16 +12,16 @@
     "total": 366,
     "wins": 99,
     "losses": 19,
-    "active": 18,
+    "active": 15,
     "winrate": 83.9
   },
   "trade_stats": {
-    "open": 45,
+    "open": 43,
     "pending": 15,
-    "wins": 97,
-    "losses": 67,
-    "total_pnl": 86.29,
-    "winrate": 59.1
+    "wins": 98,
+    "losses": 68,
+    "total_pnl": 85.86,
+    "winrate": 59.0
   },
   "fear_greed": {
     "value": 28,
@@ -29,70 +29,6 @@
     "emoji": "😨"
   },
   "signals": [
-    {
-      "id": 337,
-      "symbol": "XAGUSDT",
-      "direction": "SHORT",
-      "entry": 80.2045229,
-      "tp1": 78.600432,
-      "tp2": 76.996342,
-      "sl": 81.808613,
-      "strength": 31,
-      "reasons": [
-        "MACD медвежий (hist=-0.17042)",
-        "Цена < EMA20 < EMA50",
-        "МТФ: 5m, 15m, 1h согласны",
-        "CVD отрицательный (-3.8%)",
-        "📌 Лимитный вход @ 80.2045 (откат к EMA20)"
-      ],
-      "news": null,
-      "created_at": "2026-03-17 16:00:29",
-      "status": "ACTIVE"
-    },
-    {
-      "id": 338,
-      "symbol": "1000PEPEUSDT",
-      "direction": "SHORT",
-      "entry": 0.00368108,
-      "tp1": 0.003607,
-      "tp2": 0.003534,
-      "sl": 0.003755,
-      "strength": 30,
-      "reasons": [
-        "Цена < EMA20 < EMA50",
-        "Стакан: давление продажи (-0.13)",
-        "МТФ: 5m, 4h согласны",
-        "OI растёт +3.3% + цена ↓",
-        "CVD падает (-5.6%) — продажи усиливаются 📉",
-        "Doji (1h) — нерешительность",
-        "📌 Лимитный вход @ 0.00368108 (откат к EMA20)"
-      ],
-      "news": null,
-      "created_at": "2026-03-17 16:00:33",
-      "status": "ACTIVE"
-    },
-    {
-      "id": 339,
-      "symbol": "HYPEUSDT",
-      "direction": "SHORT",
-      "entry": 40.49173917,
-      "tp1": 39.681904,
-      "tp2": 38.87207,
-      "sl": 41.301574,
-      "strength": 35,
-      "reasons": [
-        "MACD медвежий (hist=-0.12264)",
-        "Цена < EMA20 < EMA50",
-        "Стакан: давление продажи (-0.17)",
-        "МТФ: 5m, 15m согласны",
-        "OI растёт +1.9%",
-        "CVD падает (-8.8%) — продажи усиливаются 📉",
-        "📌 Лимитный вход @ 40.4917 (откат к EMA20)"
-      ],
-      "news": null,
-      "created_at": "2026-03-17 16:00:36",
-      "status": "ACTIVE"
-    },
     {
       "id": 341,
       "symbol": "RIVERUSDT",
@@ -805,44 +741,6 @@
     }
   ],
   "trades_open": [
-    {
-      "id": 100,
-      "symbol": "TRUMPUSDT",
-      "direction": "LONG",
-      "entry": 3.711,
-      "tp1": 3.78522,
-      "tp2": 3.85944,
-      "sl": 3.63678,
-      "strength": 27,
-      "taken_at": "2026-03-17 12:00:10",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=41 (нейтральный↓)",
-        "MACD бычий (hist=0.00423)",
-        "BB ниже середины",
-        "МТФ: 5m, 4h согласны",
-        "CVD положительный (-1.7%)"
-      ]
-    },
-    {
-      "id": 101,
-      "symbol": "SUIUSDT",
-      "direction": "LONG",
-      "entry": 1.0239,
-      "tp1": 1.044378,
-      "tp2": 1.064856,
-      "sl": 1.003422,
-      "strength": 28,
-      "taken_at": "2026-03-17 12:00:11",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=38 (перепроданность)",
-        "MACD бычий (hist=0.00076)",
-        "BB ниже середины",
-        "МТФ: только 1 таймфрейм согласен",
-        "CVD положительный (-5.5%)"
-      ]
-    },
     {
       "id": 103,
       "symbol": "NEARUSDT",
@@ -2719,6 +2617,34 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "SUIUSDT",
+      "direction": "LONG",
+      "entry": 1.0239,
+      "tp1": 1.044378,
+      "tp2": 1.064856,
+      "sl": 1.003422,
+      "strength": 28,
+      "status": "TIMEOUT",
+      "pnl_pct": 0.5,
+      "close_price": 1.0290499999999998,
+      "taken_at": "2026-03-17 12:00:11",
+      "closed_at": "2026-03-17 20:00:16"
+    },
+    {
+      "symbol": "TRUMPUSDT",
+      "direction": "LONG",
+      "entry": 3.711,
+      "tp1": 3.78522,
+      "tp2": 3.85944,
+      "sl": 3.63678,
+      "strength": 27,
+      "status": "TIMEOUT",
+      "pnl_pct": -0.93,
+      "close_price": 3.6765,
+      "taken_at": "2026-03-17 12:00:10",
+      "closed_at": "2026-03-17 20:00:15"
+    },
     {
       "symbol": "THEUSDT",
       "direction": "SHORT",
@@ -5485,34 +5411,6 @@
       "tp2": 0.006536,
       "sl": 0.005785,
       "strength": 47,
-      "status": "PENDING",
-      "pnl_pct": 0,
-      "close_price": null,
-      "taken_at": null,
-      "closed_at": null
-    },
-    {
-      "symbol": "TRIAUSDT",
-      "direction": "LONG",
-      "entry": 0.03321065,
-      "tp1": 0.034668,
-      "tp2": 0.036125,
-      "sl": 0.032045,
-      "strength": 44,
-      "status": "PENDING",
-      "pnl_pct": 0,
-      "close_price": null,
-      "taken_at": null,
-      "closed_at": null
-    },
-    {
-      "symbol": "VANRYUSDT",
-      "direction": "LONG",
-      "entry": 0.00602927,
-      "tp1": 0.006296,
-      "tp2": 0.006563,
-      "sl": 0.005816,
-      "strength": 40,
       "status": "PENDING",
       "pnl_pct": 0,
       "close_price": null,
