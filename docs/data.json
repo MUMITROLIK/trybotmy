@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T11:00:38.353631+00:00",
+  "updated_at": "2026-03-17T11:01:27.342174+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T10:59:42Z",
+    "last_ok": "2026-03-17T11:00:40Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -13,11 +13,11 @@
     "winrate": 94.1
   },
   "trade_stats": {
-    "open": 39,
-    "wins": 29,
+    "open": 38,
+    "wins": 30,
     "losses": 12,
-    "total_pnl": 61.84,
-    "winrate": 70.7
+    "total_pnl": 66.03,
+    "winrate": 71.4
   },
   "fear_greed": {
     "value": 28,
@@ -1215,9 +1215,10 @@
         "BTC контекст: -1.5% за 12ч 📉",
         "📌 Лимитный вход @ 0.303999 (откат к EMA20)"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 52,
       "symbol": "DEGOUSDT",
       "direction": "SHORT",
       "entry": 1.1463,
@@ -1225,20 +1226,12 @@
       "tp2": 1.04897913,
       "sl": 1.09435,
       "strength": 31,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 4.19,
+      "close_price": 1.0983,
       "taken_at": "2026-03-17 09:14:23",
-      "status": "TP1_HIT",
-      "reasons": [
-        "MACD медвежий (hist=-0.00336)",
-        "Цена ниже EMA20",
-        "Стакан: сильное давление продажи (-0.62)",
-        "МТФ: только 1 таймфрейм согласен",
-        "OI падает (лонги закрываются)",
-        "CVD отрицательный (+5.5%)",
-        "📌 Лимитный вход @ 1.1827 (откат к EMA20)"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-17 11:00:56"
+    },
     {
       "symbol": "BEATUSDT",
       "direction": "SHORT",
