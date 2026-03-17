@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T16:52:52.512278+00:00",
+  "updated_at": "2026-03-17T16:53:22.878996+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T16:51:52Z",
+    "last_ok": "2026-03-17T16:53:00Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,10 +10,10 @@
   },
   "stats": {
     "total": 356,
-    "wins": 92,
+    "wins": 93,
     "losses": 13,
-    "active": 27,
-    "winrate": 87.6
+    "active": 26,
+    "winrate": 87.7
   },
   "trade_stats": {
     "open": 59,
@@ -346,25 +346,6 @@
       ],
       "news": null,
       "created_at": "2026-03-17 16:13:45",
-      "status": "ACTIVE"
-    },
-    {
-      "id": 354,
-      "symbol": "FARTCOINUSDT",
-      "direction": "LONG",
-      "entry": 0.1998,
-      "tp1": 0.204032,
-      "tp2": 0.208264,
-      "sl": 0.195804,
-      "strength": 27,
-      "reasons": [
-        "RSI=50 (нейтральный↓)",
-        "MACD бычий (hist=0.00005)",
-        "BB ниже середины",
-        "МТФ: 1h, 4h согласны"
-      ],
-      "news": null,
-      "created_at": "2026-03-17 16:16:47",
       "status": "ACTIVE"
     },
     {
@@ -2063,24 +2044,6 @@
       ]
     },
     {
-      "id": 208,
-      "symbol": "FARTCOINUSDT",
-      "direction": "LONG",
-      "entry": 0.1998,
-      "tp1": 0.204032,
-      "tp2": 0.208264,
-      "sl": 0.195804,
-      "strength": 27,
-      "taken_at": null,
-      "status": "OPEN",
-      "reasons": [
-        "RSI=50 (нейтральный↓)",
-        "MACD бычий (hist=0.00005)",
-        "BB ниже середины",
-        "МТФ: 1h, 4h согласны"
-      ]
-    },
-    {
       "id": 215,
       "symbol": "WLDUSDT",
       "direction": "SHORT",
@@ -3451,6 +3414,24 @@
         "OI растёт +11.1% + цена ↓",
         "CVD падает (-9.1%) — продажи усиливаются 📉",
         "📌 Лимитный вход @ 0.159302 (откат к EMA20)"
+      ]
+    },
+    {
+      "id": 208,
+      "symbol": "FARTCOINUSDT",
+      "direction": "LONG",
+      "entry": 0.1998,
+      "tp1": 0.204032,
+      "tp2": 0.208264,
+      "sl": 0.20405,
+      "strength": 27,
+      "taken_at": null,
+      "status": "TP1_HIT",
+      "reasons": [
+        "RSI=50 (нейтральный↓)",
+        "MACD бычий (hist=0.00005)",
+        "BB ниже середины",
+        "МТФ: 1h, 4h согласны"
       ]
     }
   ],
