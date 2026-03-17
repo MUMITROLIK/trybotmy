@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-03-17T10:03:26.890602+00:00",
+  "updated_at": "2026-03-17T10:03:58.075443+00:00",
   "publish_status": {
     "last_ok": "2026-03-17T09:58:42Z",
-    "last_error": "fatal: unable to access 'https://github.com/MUMITROLIK/trybotmy.git/': Failed to connect to github.com port 443 after 22265 ms: Could not connect to server\n",
+    "last_error": "fatal: unable to access 'https://github.com/MUMITROLIK/trybotmy.git/': Failed to connect to github.com port 443 after 21086 ms: Could not connect to server\n",
     "min_push_interval_sec": 30
   },
   "stats": {
@@ -671,26 +671,6 @@
       ]
     },
     {
-      "id": 40,
-      "symbol": "PIXELUSDT",
-      "direction": "SHORT",
-      "entry": 0.010198,
-      "tp1": 0.009989,
-      "tp2": 0.009779,
-      "sl": 0.010402,
-      "strength": 34,
-      "taken_at": "2026-03-17 08:57:25",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=64 (перекупленность)",
-        "BB верхняя полоса (пробой)",
-        "EMA20 < EMA50",
-        "Объём x1.9 🔥",
-        "МТФ: только 1 таймфрейм согласен",
-        "OI растёт +4.6% + цена ↓"
-      ]
-    },
-    {
       "id": 41,
       "symbol": "1000BONKUSDT",
       "direction": "SHORT",
@@ -1087,6 +1067,26 @@
         "BB верхняя полоса (пробой)",
         "Объём x3.4 🔥🔥",
         "OI растёт +8.2%"
+      ]
+    },
+    {
+      "id": 40,
+      "symbol": "PIXELUSDT",
+      "direction": "SHORT",
+      "entry": 0.010198,
+      "tp1": 0.009989,
+      "tp2": 0.009779,
+      "sl": 0.0099845,
+      "strength": 34,
+      "taken_at": "2026-03-17 08:57:25",
+      "status": "TP1_HIT",
+      "reasons": [
+        "RSI=64 (перекупленность)",
+        "BB верхняя полоса (пробой)",
+        "EMA20 < EMA50",
+        "Объём x1.9 🔥",
+        "МТФ: только 1 таймфрейм согласен",
+        "OI растёт +4.6% + цена ↓"
       ]
     }
   ],
