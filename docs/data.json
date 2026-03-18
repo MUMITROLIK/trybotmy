@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T20:26:06.584690+00:00",
+  "updated_at": "2026-03-18T20:27:30.560819+00:00",
   "publish_status": {
-    "last_ok": "2026-03-18T20:25:28Z",
+    "last_ok": "2026-03-18T20:26:12Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -13,7 +13,7 @@
     "total": 568,
     "wins": 176,
     "losses": 92,
-    "active": 8,
+    "active": 6,
     "winrate": 65.7
   },
   "trade_stats": {
@@ -36,50 +36,6 @@
     "trained_at": "2026-03-18T18:46:42.539461+00:00"
   },
   "signals": [
-    {
-      "id": 568,
-      "symbol": "LINKUSDT",
-      "direction": "SHORT",
-      "entry": 9.119,
-      "tp1": 8.93662,
-      "tp2": 8.75424,
-      "sl": 9.30138,
-      "strength": 37,
-      "reasons": [
-        "MACD медвежий (hist=-0.00727)",
-        "Цена < EMA20 < EMA50",
-        "Стакан: перевес ask (-0.08)",
-        "МТФ: 5m, 15m, 1h согласны",
-        "CVD падает (-9.1%) — продажи усиливаются 📉",
-        "BTC корреляция 0.90, BTC -1.5% 📉",
-        "BTC контекст: -3.6% за 12ч 📉"
-      ],
-      "news": null,
-      "created_at": "2026-03-18 16:27:20",
-      "status": "ACTIVE"
-    },
-    {
-      "id": 569,
-      "symbol": "WLDUSDT",
-      "direction": "SHORT",
-      "entry": 0.3593,
-      "tp1": 0.352114,
-      "tp2": 0.344928,
-      "sl": 0.366486,
-      "strength": 37,
-      "reasons": [
-        "MACD медвежий (hist=-0.00036)",
-        "Цена < EMA20 < EMA50",
-        "Стакан: перевес ask (-0.07)",
-        "МТФ: 5m, 15m, 1h согласны",
-        "CVD падает (-10.5%) — продажи усиливаются 📉",
-        "BTC корреляция 0.83, BTC -1.5% 📉",
-        "BTC контекст: -3.6% за 12ч 📉"
-      ],
-      "news": null,
-      "created_at": "2026-03-18 16:27:21",
-      "status": "ACTIVE"
-    },
     {
       "id": 572,
       "symbol": "OPNUSDT",
