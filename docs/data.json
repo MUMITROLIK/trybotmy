@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T09:16:45.248758+00:00",
+  "updated_at": "2026-03-18T09:17:51.466071+00:00",
   "publish_status": {
-    "last_ok": "2026-03-18T09:15:44Z",
+    "last_ok": "2026-03-18T09:16:51Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -11,10 +11,10 @@
   },
   "stats": {
     "total": 435,
-    "wins": 134,
+    "wins": 135,
     "losses": 32,
-    "active": 12,
-    "winrate": 80.7
+    "active": 11,
+    "winrate": 80.8
   },
   "trade_stats": {
     "open": 12,
@@ -280,9 +280,10 @@
       "news": null,
       "created_at": "2026-03-18 09:02:20",
       "status": "ACTIVE"
-    },
+    }
+  ],
+  "history": [
     {
-      "id": 473,
       "symbol": "VANRYUSDT",
       "direction": "LONG",
       "entry": 0.00670438,
@@ -290,6 +291,8 @@
       "tp2": 0.007121,
       "sl": 0.006538,
       "strength": 40,
+      "status": "TP1",
+      "created_at": "2026-03-18 09:16:08",
       "reasons": [
         "RSI=49 (нейтральный↓)",
         "MACD бычий (hist=0.00001)",
@@ -299,13 +302,8 @@
         "CVD положительный (-2.2%)",
         "Bullish Engulfing (1h) 🕯️",
         "📌 Лимитный вход @ 0.00670438 (откат к EMA20)"
-      ],
-      "news": null,
-      "created_at": "2026-03-18 09:16:08",
-      "status": "ACTIVE"
-    }
-  ],
-  "history": [
+      ]
+    },
     {
       "symbol": "AINUSDT",
       "direction": "LONG",
@@ -686,25 +684,6 @@
         "OI растёт +1.9% + цена ↑",
         "CVD растёт (+8.1%) — покупки усиливаются 📈",
         "Doji (1h) — нерешительность"
-      ]
-    },
-    {
-      "symbol": "FETUSDT",
-      "direction": "LONG",
-      "entry": 0.23839285,
-      "tp1": 0.2433,
-      "tp2": 0.248207,
-      "sl": 0.233625,
-      "strength": 45,
-      "status": "SL",
-      "created_at": "2026-03-18 00:14:06",
-      "reasons": [
-        "MACD бычий (hist=0.00019)",
-        "Цена > EMA20 > EMA50",
-        "Объём x1.8 🔥",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "CVD растёт (+7.0%) — покупки усиливаются 📈",
-        "📌 Лимитный вход @ 0.238393 (откат к EMA20)"
       ]
     }
   ],
