@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T11:08:18.888772+00:00",
+  "updated_at": "2026-03-18T11:09:02.987638+00:00",
   "publish_status": {
-    "last_ok": "2026-03-18T11:07:39Z",
+    "last_ok": "2026-03-18T11:08:25Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -12,17 +12,17 @@
   "stats": {
     "total": 456,
     "wins": 141,
-    "losses": 37,
-    "active": 16,
-    "winrate": 79.2
+    "losses": 38,
+    "active": 15,
+    "winrate": 78.8
   },
   "trade_stats": {
-    "open": 19,
+    "open": 18,
     "pending": 1,
     "wins": 139,
-    "losses": 114,
-    "total_pnl": 86.45,
-    "winrate": 54.9
+    "losses": 115,
+    "total_pnl": 84.4,
+    "winrate": 54.7
   },
   "fear_greed": {
     "value": 26,
@@ -236,27 +236,6 @@
       "status": "ACTIVE"
     },
     {
-      "id": 487,
-      "symbol": "LITUSDT",
-      "direction": "LONG",
-      "entry": 1.244,
-      "tp1": 1.26888,
-      "tp2": 1.29376,
-      "sl": 1.21912,
-      "strength": 40,
-      "reasons": [
-        "MACD бычий (hist=0.00159)",
-        "Цена выше EMA20",
-        "Стакан: давление покупки (+0.22)",
-        "МТФ: 5m, 1h, 4h согласны",
-        "CVD положительный (-1.5%)",
-        "Bullish Engulfing (1h) 🕯️"
-      ],
-      "news": null,
-      "created_at": "2026-03-18 10:26:43",
-      "status": "ACTIVE"
-    },
-    {
       "id": 488,
       "symbol": "RIVERUSDT",
       "direction": "LONG",
@@ -404,6 +383,25 @@
         "МТФ: все 4 таймфрейма согласны ✅✅",
         "OI растёт +1.4% + цена ↑",
         "📌 Лимитный вход @ 0.0067273 (откат к EMA20)"
+      ]
+    },
+    {
+      "symbol": "LITUSDT",
+      "direction": "LONG",
+      "entry": 1.244,
+      "tp1": 1.26888,
+      "tp2": 1.29376,
+      "sl": 1.21912,
+      "strength": 40,
+      "status": "SL",
+      "created_at": "2026-03-18 10:26:43",
+      "reasons": [
+        "MACD бычий (hist=0.00159)",
+        "Цена выше EMA20",
+        "Стакан: давление покупки (+0.22)",
+        "МТФ: 5m, 1h, 4h согласны",
+        "CVD положительный (-1.5%)",
+        "Bullish Engulfing (1h) 🕯️"
       ]
     },
     {
@@ -767,26 +765,6 @@
         "Doji (1h) — нерешительность",
         "⚠️ Funding через 44м"
       ]
-    },
-    {
-      "symbol": "ZROUSDT",
-      "direction": "LONG",
-      "entry": 2.3139,
-      "tp1": 2.360178,
-      "tp2": 2.406456,
-      "sl": 2.267622,
-      "strength": 43,
-      "status": "SL",
-      "created_at": "2026-03-18 07:08:39",
-      "reasons": [
-        "RSI=34 (перепроданность)",
-        "BB ниже середины",
-        "EMA20 > EMA50",
-        "Стакан: сильное давление покупки (+0.27)",
-        "МТФ: 15m, 1h, 4h согласны",
-        "CVD растёт (+7.7%) — покупки усиливаются 📈",
-        "⚠️ Funding через 52м"
-      ]
     }
   ],
   "trades_open": [
@@ -1047,26 +1025,6 @@
       ]
     },
     {
-      "id": 341,
-      "symbol": "LITUSDT",
-      "direction": "LONG",
-      "entry": 1.244,
-      "tp1": 1.26888,
-      "tp2": 1.29376,
-      "sl": 1.21912,
-      "strength": 40,
-      "taken_at": "2026-03-18T10:26:43.639953",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00159)",
-        "Цена выше EMA20",
-        "Стакан: давление покупки (+0.22)",
-        "МТФ: 5m, 1h, 4h согласны",
-        "CVD положительный (-1.5%)",
-        "Bullish Engulfing (1h) 🕯️"
-      ]
-    },
-    {
       "id": 342,
       "symbol": "RIVERUSDT",
       "direction": "LONG",
@@ -1211,6 +1169,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "LITUSDT",
+      "direction": "LONG",
+      "entry": 1.244,
+      "tp1": 1.26888,
+      "tp2": 1.29376,
+      "sl": 1.21912,
+      "strength": 40,
+      "status": "SL",
+      "pnl_pct": -2.05,
+      "close_price": 1.2185000000000001,
+      "taken_at": "2026-03-18T10:26:43.639953",
+      "closed_at": "2026-03-18 11:09:02"
+    },
     {
       "symbol": "PUMPUSDT",
       "direction": "LONG",
@@ -3996,20 +3968,6 @@
       "close_price": 0.17433500000000002,
       "taken_at": "2026-03-17 09:00:16",
       "closed_at": "2026-03-17 17:00:27"
-    },
-    {
-      "symbol": "1000BONKUSDT",
-      "direction": "SHORT",
-      "entry": 0.006518,
-      "tp1": 0.006388,
-      "tp2": 0.006257,
-      "sl": 0.006648,
-      "strength": 40,
-      "status": "TIMEOUT",
-      "pnl_pct": 0.39,
-      "close_price": 0.0064925,
-      "taken_at": "2026-03-17 09:00:03",
-      "closed_at": "2026-03-17 17:00:10"
     }
   ]
 }
