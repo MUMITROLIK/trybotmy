@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T12:05:15.146930+00:00",
+  "updated_at": "2026-03-18T12:06:19.907505+00:00",
   "publish_status": {
-    "last_ok": "2026-03-18T12:04:49Z",
+    "last_ok": "2026-03-18T12:05:19Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -12,17 +12,17 @@
   "stats": {
     "total": 477,
     "wins": 149,
-    "losses": 49,
-    "active": 16,
-    "winrate": 75.3
+    "losses": 50,
+    "active": 15,
+    "winrate": 74.9
   },
   "trade_stats": {
-    "open": 17,
+    "open": 16,
     "pending": 4,
     "wins": 143,
-    "losses": 129,
-    "total_pnl": 64.08,
-    "winrate": 52.6
+    "losses": 130,
+    "total_pnl": 61.95,
+    "winrate": 52.4
   },
   "fear_greed": {
     "value": 26,
@@ -164,28 +164,6 @@
       ],
       "news": null,
       "created_at": "2026-03-18 11:16:21",
-      "status": "ACTIVE"
-    },
-    {
-      "id": 498,
-      "symbol": "ZROUSDT",
-      "direction": "LONG",
-      "entry": 2.295,
-      "tp1": 2.3409,
-      "tp2": 2.3868,
-      "sl": 2.2491,
-      "strength": 46,
-      "reasons": [
-        "RSI=41 (нейтральный↓)",
-        "MACD бычий (hist=0.00063)",
-        "BB ниже середины",
-        "Стакан: давление покупки (+0.16)",
-        "МТФ: 1h, 4h согласны",
-        "CVD растёт (+8.9%) — покупки усиливаются 📈",
-        "Bullish Engulfing (1h) 🕯️"
-      ],
-      "news": null,
-      "created_at": "2026-03-18 11:18:41",
       "status": "ACTIVE"
     },
     {
@@ -544,6 +522,26 @@
       ]
     },
     {
+      "symbol": "ZROUSDT",
+      "direction": "LONG",
+      "entry": 2.295,
+      "tp1": 2.3409,
+      "tp2": 2.3868,
+      "sl": 2.2491,
+      "strength": 46,
+      "status": "SL",
+      "created_at": "2026-03-18 11:18:41",
+      "reasons": [
+        "RSI=41 (нейтральный↓)",
+        "MACD бычий (hist=0.00063)",
+        "BB ниже середины",
+        "Стакан: давление покупки (+0.16)",
+        "МТФ: 1h, 4h согласны",
+        "CVD растёт (+8.9%) — покупки усиливаются 📈",
+        "Bullish Engulfing (1h) 🕯️"
+      ]
+    },
+    {
       "symbol": "AXSUSDT",
       "direction": "LONG",
       "entry": 1.288,
@@ -760,26 +758,6 @@
         "Doji (1h) — нерешительность",
         "📌 Лимитный вход @ 0.0336981 (откат к EMA20)"
       ]
-    },
-    {
-      "symbol": "1000BONKUSDT",
-      "direction": "LONG",
-      "entry": 0.006717,
-      "tp1": 0.006851,
-      "tp2": 0.006986,
-      "sl": 0.006583,
-      "strength": 46,
-      "status": "SL",
-      "created_at": "2026-03-18 09:52:02",
-      "reasons": [
-        "RSI=49 (нейтральный↓)",
-        "MACD бычий (hist=0.00000)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: сильное давление покупки (+0.32)",
-        "МТФ: 5m, 15m, 4h согласны",
-        "CVD положительный (+0.5%)",
-        "Doji (1h) — нерешительность"
-      ]
     }
   ],
   "trades_open": [
@@ -927,27 +905,6 @@
         "Стакан: перевес bid (+0.09)",
         "МТФ: 15m, 1h, 4h согласны",
         "CVD растёт (+6.0%) — покупки усиливаются 📈"
-      ]
-    },
-    {
-      "id": 352,
-      "symbol": "ZROUSDT",
-      "direction": "LONG",
-      "entry": 2.295,
-      "tp1": 2.3409,
-      "tp2": 2.3868,
-      "sl": 2.2491,
-      "strength": 46,
-      "taken_at": "2026-03-18T11:18:42.114015",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=41 (нейтральный↓)",
-        "MACD бычий (hist=0.00063)",
-        "BB ниже середины",
-        "Стакан: давление покупки (+0.16)",
-        "МТФ: 1h, 4h согласны",
-        "CVD растёт (+8.9%) — покупки усиливаются 📈",
-        "Bullish Engulfing (1h) 🕯️"
       ]
     },
     {
@@ -1221,6 +1178,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "ZROUSDT",
+      "direction": "LONG",
+      "entry": 2.295,
+      "tp1": 2.3409,
+      "tp2": 2.3868,
+      "sl": 2.2491,
+      "strength": 46,
+      "status": "SL",
+      "pnl_pct": -2.13,
+      "close_price": 2.24615,
+      "taken_at": "2026-03-18T11:18:42.114015",
+      "closed_at": "2026-03-18 12:05:22"
+    },
     {
       "symbol": "LITUSDT",
       "direction": "LONG",
@@ -4006,20 +3977,6 @@
       "close_price": 0.0037120499999999997,
       "taken_at": null,
       "closed_at": "2026-03-17 18:58:36"
-    },
-    {
-      "symbol": "XMRUSDT",
-      "direction": "SHORT",
-      "entry": 371.67,
-      "tp1": 364.2366,
-      "tp2": 356.8032,
-      "sl": 379.1034,
-      "strength": 31,
-      "status": "TIMEOUT",
-      "pnl_pct": -0.49,
-      "close_price": 373.505,
-      "taken_at": "2026-03-17 10:46:21",
-      "closed_at": "2026-03-17 18:46:23"
     }
   ]
 }
