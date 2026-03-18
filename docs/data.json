@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T03:29:29.601304+00:00",
+  "updated_at": "2026-03-18T03:30:34.684452+00:00",
   "publish_status": {
-    "last_ok": "2026-03-18T03:28:29Z",
+    "last_ok": "2026-03-18T03:29:34Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,15 +10,15 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 409,
+    "total": 410,
     "wins": 122,
     "losses": 31,
-    "active": 2,
+    "active": 3,
     "winrate": 79.7
   },
   "trade_stats": {
     "open": 8,
-    "pending": 0,
+    "pending": 1,
     "wins": 128,
     "losses": 99,
     "total_pnl": 101.44,
@@ -72,6 +72,28 @@
       ],
       "news": null,
       "created_at": "2026-03-18 00:24:04",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 448,
+      "symbol": "HYPEUSDT",
+      "direction": "LONG",
+      "entry": 41.60444765,
+      "tp1": 42.436537,
+      "tp2": 43.268626,
+      "sl": 40.772359,
+      "strength": 50,
+      "reasons": [
+        "MACD бычий (hist=0.03432)",
+        "Цена > EMA20 > EMA50",
+        "Стакан: сильное давление покупки (+0.39)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +1.1% + цена ↑",
+        "Bullish Engulfing (1h) 🕯️",
+        "📌 Лимитный вход @ 41.6044 (откат к EMA20)"
+      ],
+      "news": null,
+      "created_at": "2026-03-18 03:29:45",
       "status": "ACTIVE"
     }
   ],
@@ -651,9 +673,44 @@
         "OI растёт +2.6% + цена ↑",
         "CVD положительный (+1.9%)"
       ]
+    },
+    {
+      "id": 302,
+      "symbol": "HYPEUSDT",
+      "direction": "LONG",
+      "entry": 41.60444765,
+      "tp1": 42.436537,
+      "tp2": 43.268626,
+      "sl": 40.772359,
+      "strength": 50,
+      "taken_at": "2026-03-18T03:29:46.240378",
+      "status": "PENDING",
+      "reasons": [
+        "MACD бычий (hist=0.03432)",
+        "Цена > EMA20 > EMA50",
+        "Стакан: сильное давление покупки (+0.39)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +1.1% + цена ↑",
+        "Bullish Engulfing (1h) 🕯️",
+        "📌 Лимитный вход @ 41.6044 (откат к EMA20)"
+      ]
     }
   ],
   "trades_history": [
+    {
+      "symbol": "HYPEUSDT",
+      "direction": "LONG",
+      "entry": 41.60444765,
+      "tp1": 42.436537,
+      "tp2": 43.268626,
+      "sl": 40.772359,
+      "strength": 50,
+      "status": "PENDING",
+      "pnl_pct": 0,
+      "close_price": null,
+      "taken_at": "2026-03-18T03:29:46.240378",
+      "closed_at": null
+    },
     {
       "symbol": "OPNUSDT",
       "direction": "SHORT",
@@ -3439,20 +3496,6 @@
       "close_price": 0.0096345,
       "taken_at": "2026-03-17 12:58:49",
       "closed_at": "2026-03-17 15:12:13"
-    },
-    {
-      "symbol": "FARTCOINUSDT",
-      "direction": "LONG",
-      "entry": 0.1985,
-      "tp1": 0.20247,
-      "tp2": 0.20644,
-      "sl": 0.20274999999999999,
-      "strength": 30,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 1.64,
-      "close_price": 0.20174999999999998,
-      "taken_at": "2026-03-17 14:02:34",
-      "closed_at": "2026-03-17 15:07:08"
     }
   ]
 }
