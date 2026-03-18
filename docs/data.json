@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T12:06:19.907505+00:00",
+  "updated_at": "2026-03-18T12:07:13.869288+00:00",
   "publish_status": {
-    "last_ok": "2026-03-18T12:05:19Z",
+    "last_ok": "2026-03-18T12:06:25Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 74.9
   },
   "trade_stats": {
-    "open": 16,
+    "open": 15,
     "pending": 4,
     "wins": 143,
-    "losses": 130,
-    "total_pnl": 61.95,
-    "winrate": 52.4
+    "losses": 131,
+    "total_pnl": 59.66,
+    "winrate": 52.2
   },
   "fear_greed": {
     "value": 26,
@@ -826,26 +826,6 @@
       ]
     },
     {
-      "id": 344,
-      "symbol": "HANAUSDT",
-      "direction": "LONG",
-      "entry": 0.048194,
-      "tp1": 0.049158,
-      "tp2": 0.050122,
-      "sl": 0.04723,
-      "strength": 41,
-      "taken_at": "2026-03-18T10:49:14.665589",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=50 (нейтральный↓)",
-        "MACD бычий (hist=0.00001)",
-        "Цена > EMA20 > EMA50",
-        "Объём x3.3 🔥🔥",
-        "МТФ: 15m, 1h, 4h согласны",
-        "Doji (1h) — нерешительность"
-      ]
-    },
-    {
       "id": 346,
       "symbol": "AKTUSDT",
       "direction": "LONG",
@@ -1178,6 +1158,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "HANAUSDT",
+      "direction": "LONG",
+      "entry": 0.048194,
+      "tp1": 0.049158,
+      "tp2": 0.050122,
+      "sl": 0.04723,
+      "strength": 41,
+      "status": "SL",
+      "pnl_pct": -2.29,
+      "close_price": 0.04709,
+      "taken_at": "2026-03-18T10:49:14.665589",
+      "closed_at": "2026-03-18 12:07:13"
+    },
     {
       "symbol": "ZROUSDT",
       "direction": "LONG",
@@ -3963,20 +3957,6 @@
       "close_price": 0.7400100000000001,
       "taken_at": null,
       "closed_at": "2026-03-17 19:08:55"
-    },
-    {
-      "symbol": "1000PEPEUSDT",
-      "direction": "LONG",
-      "entry": 0.00364,
-      "tp1": 0.003713,
-      "tp2": 0.003786,
-      "sl": 0.00371315,
-      "strength": 36,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 1.98,
-      "close_price": 0.0037120499999999997,
-      "taken_at": null,
-      "closed_at": "2026-03-17 18:58:36"
     }
   ]
 }
