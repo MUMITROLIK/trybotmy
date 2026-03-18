@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-03-18T16:08:02.726313+00:00",
+  "updated_at": "2026-03-18T16:08:56.014466+00:00",
   "publish_status": {
-    "last_ok": "2026-03-18T16:07:02Z",
-    "last_error": "On branch main\nYour branch is up to date with 'origin/main'.\n\nUntracked files:\n  (use \"git add <file>...\" to include in what will be committed)\n\t.env.example\n\t.gitignore\n\t\"8\\321\\207)\"\n\tanalysis/\n\tbot/\n\tcheck_ml.py\n\tconfig.py\n\tdata/\n\tdatabas",
+    "last_ok": "2026-03-18T16:08:11Z",
+    "last_error": null,
     "min_push_interval_sec": 30
   },
   "settings": {
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 516,
+    "total": 517,
     "wins": 152,
     "losses": 63,
-    "active": 37,
+    "active": 38,
     "winrate": 70.7
   },
   "trade_stats": {
-    "open": 38,
+    "open": 39,
     "pending": 0,
     "wins": 147,
     "losses": 144,
@@ -864,6 +864,27 @@
       ],
       "news": null,
       "created_at": "2026-03-18 16:07:24",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 555,
+      "symbol": "BERAUSDT",
+      "direction": "LONG",
+      "entry": 0.5926,
+      "tp1": 0.604452,
+      "tp2": 0.616304,
+      "sl": 0.580748,
+      "strength": 30,
+      "reasons": [
+        "RSI=26 (сильная перепроданность)",
+        "BB нижняя зона (23%)",
+        "Стакан: перевес bid (+0.05)",
+        "МТФ: только 1 таймфрейм согласен",
+        "OI растёт +1.1%",
+        "CVD положительный (-6.3%)"
+      ],
+      "news": null,
+      "created_at": "2026-03-18 16:08:55",
       "status": "ACTIVE"
     }
   ],
@@ -2228,6 +2249,30 @@
         "МТФ: все 4 таймфрейма согласны ✅✅",
         "CVD падает (-12.0%) — продажи усиливаются 📉",
         "BTC контекст: -3.5% за 12ч 📉"
+      ]
+    },
+    {
+      "id": 409,
+      "symbol": "BERAUSDT",
+      "direction": "LONG",
+      "entry": 0.5926,
+      "tp1": 0.604452,
+      "tp2": 0.616304,
+      "sl": 0.580748,
+      "entry_orig": 0.5926,
+      "tp1_orig": 0.604452,
+      "tp2_orig": 0.616304,
+      "sl_orig": 0.580748,
+      "strength": 30,
+      "taken_at": "2026-03-18T16:08:55.747557",
+      "status": "OPEN",
+      "reasons": [
+        "RSI=26 (сильная перепроданность)",
+        "BB нижняя зона (23%)",
+        "Стакан: перевес bid (+0.05)",
+        "МТФ: только 1 таймфрейм согласен",
+        "OI растёт +1.1%",
+        "CVD положительный (-6.3%)"
       ]
     }
   ],
