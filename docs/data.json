@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T06:03:46.084327+00:00",
+  "updated_at": "2026-03-18T06:04:23.392077+00:00",
   "publish_status": {
-    "last_ok": "2026-03-18T06:02:46Z",
+    "last_ok": "2026-03-18T06:03:52Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 80.0
   },
   "trade_stats": {
-    "open": 5,
+    "open": 4,
     "pending": 0,
     "wins": 131,
-    "losses": 101,
-    "total_pnl": 101.06,
-    "winrate": 56.5
+    "losses": 102,
+    "total_pnl": 96.77,
+    "winrate": 56.2
   },
   "fear_greed": {
     "value": 26,
@@ -525,27 +525,6 @@
       ]
     },
     {
-      "id": 294,
-      "symbol": "LYNUSDT",
-      "direction": "LONG",
-      "entry": 0.0448,
-      "tp1": 0.046395,
-      "tp2": 0.047991,
-      "sl": 0.043524,
-      "strength": 47,
-      "taken_at": "2026-03-18T00:09:16.224541",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=22 (сильная перепроданность)",
-        "MACD бычий (hist=0.00026)",
-        "BB нижняя зона (5%)",
-        "Стакан: сильное давление покупки (+0.40)",
-        "OI растёт +2.5%",
-        "CVD положительный (-2.5%)",
-        "Hammer (1h) 🔨"
-      ]
-    },
-    {
       "id": 298,
       "symbol": "POLYXUSDT",
       "direction": "LONG",
@@ -589,6 +568,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "LYNUSDT",
+      "direction": "LONG",
+      "entry": 0.0448,
+      "tp1": 0.046395,
+      "tp2": 0.047991,
+      "sl": 0.043524,
+      "strength": 47,
+      "status": "SL",
+      "pnl_pct": -4.29,
+      "close_price": 0.04288,
+      "taken_at": "2026-03-18T00:09:16.224541",
+      "closed_at": "2026-03-18 06:04:23"
+    },
     {
       "symbol": "FARTCOINUSDT",
       "direction": "LONG",
@@ -3374,20 +3367,6 @@
       "close_price": 79.095,
       "taken_at": "2026-03-17 09:35:55",
       "closed_at": "2026-03-17 15:37:14"
-    },
-    {
-      "symbol": "XPLUSDT",
-      "direction": "LONG",
-      "entry": 0.11619036,
-      "tp1": 0.118514,
-      "tp2": 0.120838,
-      "sl": 0.113867,
-      "strength": 35,
-      "status": "SL",
-      "pnl_pct": -2.01,
-      "close_price": 0.11385,
-      "taken_at": "2026-03-17 14:50:09",
-      "closed_at": "2026-03-17 15:36:55"
     }
   ]
 }
