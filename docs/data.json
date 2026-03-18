@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T18:01:42.487351+00:00",
+  "updated_at": "2026-03-18T18:02:16.067134+00:00",
   "publish_status": {
-    "last_ok": "2026-03-18T18:01:16Z",
+    "last_ok": "2026-03-18T18:01:49Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,8 +17,8 @@
     "winrate": 67.9
   },
   "trade_stats": {
-    "open": 51,
-    "pending": 1,
+    "open": 52,
+    "pending": 0,
     "wins": 157,
     "losses": 160,
     "total_pnl": 33.1,
@@ -2864,6 +2864,30 @@
       ]
     },
     {
+      "id": 448,
+      "symbol": "TRIAUSDT",
+      "direction": "LONG",
+      "entry": 0.033625,
+      "tp1": 0.03449971,
+      "tp2": 0.03537526,
+      "sl": 0.03292473,
+      "entry_orig": 0.03321983,
+      "tp1_orig": 0.034084,
+      "tp2_orig": 0.034949,
+      "sl_orig": 0.032528,
+      "strength": 30,
+      "taken_at": "2026-03-18T17:57:12.532043",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.00016)",
+        "EMA20 > EMA50 (golden cross) 🌟",
+        "МТФ: 15m, 1h, 4h согласны",
+        "CVD положительный (+2.2%)",
+        "Doji (1h) — нерешительность",
+        "📌 Лимитный вход @ 0.0332198 (откат к EMA20)"
+      ]
+    },
+    {
       "id": 449,
       "symbol": "HANAUSDT",
       "direction": "LONG",
@@ -2884,30 +2908,6 @@
         "EMA20 > EMA50",
         "МТФ: 15m, 1h, 4h согласны",
         "OI растёт +1.2% + цена ↑"
-      ]
-    },
-    {
-      "id": 448,
-      "symbol": "TRIAUSDT",
-      "direction": "LONG",
-      "entry": 0.03321983,
-      "tp1": 0.034084,
-      "tp2": 0.034949,
-      "sl": 0.032528,
-      "entry_orig": 0.03321983,
-      "tp1_orig": 0.034084,
-      "tp2_orig": 0.034949,
-      "sl_orig": 0.032528,
-      "strength": 30,
-      "taken_at": "2026-03-18T17:57:12.532043",
-      "status": "PENDING",
-      "reasons": [
-        "MACD бычий (hist=0.00016)",
-        "EMA20 > EMA50 (golden cross) 🌟",
-        "МТФ: 15m, 1h, 4h согласны",
-        "CVD положительный (+2.2%)",
-        "Doji (1h) — нерешительность",
-        "📌 Лимитный вход @ 0.0332198 (откат к EMA20)"
       ]
     }
   ],
