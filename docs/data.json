@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T05:18:50.780195+00:00",
+  "updated_at": "2026-03-18T05:19:56.065220+00:00",
   "publish_status": {
-    "last_ok": "2026-03-18T05:17:26Z",
+    "last_ok": "2026-03-18T05:18:55Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,15 +10,15 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 411,
-    "wins": 123,
+    "total": 412,
+    "wins": 124,
     "losses": 31,
     "active": 1,
-    "winrate": 79.9
+    "winrate": 80.0
   },
   "trade_stats": {
     "open": 5,
-    "pending": 0,
+    "pending": 1,
     "wins": 130,
     "losses": 100,
     "total_pnl": 102.28,
@@ -54,6 +54,27 @@
     }
   ],
   "history": [
+    {
+      "symbol": "FARTCOINUSDT",
+      "direction": "LONG",
+      "entry": 0.21482743,
+      "tp1": 0.220077,
+      "tp2": 0.225327,
+      "sl": 0.210531,
+      "strength": 51,
+      "status": "TP1",
+      "created_at": "2026-03-18 05:19:02",
+      "reasons": [
+        "MACD бычий (hist=0.00075)",
+        "Цена > EMA20 > EMA50",
+        "Стакан: давление покупки (+0.13)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +2.1% + цена ↑",
+        "CVD положительный (+3.0%)",
+        "Bullish Engulfing (1h) 🕯️",
+        "📌 Лимитный вход @ 0.214827 (откат к EMA20)"
+      ]
+    },
     {
       "symbol": "HUMAUSDT",
       "direction": "LONG",
@@ -438,26 +459,6 @@
         "CVD положительный (+4.3%)",
         "⚠️ Funding через 83м"
       ]
-    },
-    {
-      "symbol": "HUMAUSDT",
-      "direction": "LONG",
-      "entry": 0.01735,
-      "tp1": 0.017697,
-      "tp2": 0.018044,
-      "sl": 0.017003,
-      "strength": 41,
-      "status": "TP1",
-      "created_at": "2026-03-17 22:32:11",
-      "reasons": [
-        "RSI=45 (нейтральный↓)",
-        "MACD бычий (hist=0.00004)",
-        "BB ниже середины",
-        "Стакан: сильное давление покупки (+0.52)",
-        "МТФ: 5m, 1h, 4h согласны",
-        "CVD положительный (-3.7%)",
-        "⚠️ Funding через 88м"
-      ]
     }
   ],
   "trades_open": [
@@ -563,9 +564,45 @@
         "OI растёт +2.6% + цена ↑",
         "CVD положительный (+1.9%)"
       ]
+    },
+    {
+      "id": 304,
+      "symbol": "FARTCOINUSDT",
+      "direction": "LONG",
+      "entry": 0.21482743,
+      "tp1": 0.220077,
+      "tp2": 0.225327,
+      "sl": 0.210531,
+      "strength": 51,
+      "taken_at": "2026-03-18T05:19:02.953868",
+      "status": "PENDING",
+      "reasons": [
+        "MACD бычий (hist=0.00075)",
+        "Цена > EMA20 > EMA50",
+        "Стакан: давление покупки (+0.13)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +2.1% + цена ↑",
+        "CVD положительный (+3.0%)",
+        "Bullish Engulfing (1h) 🕯️",
+        "📌 Лимитный вход @ 0.214827 (откат к EMA20)"
+      ]
     }
   ],
   "trades_history": [
+    {
+      "symbol": "FARTCOINUSDT",
+      "direction": "LONG",
+      "entry": 0.21482743,
+      "tp1": 0.220077,
+      "tp2": 0.225327,
+      "sl": 0.210531,
+      "strength": 51,
+      "status": "PENDING",
+      "pnl_pct": 0,
+      "close_price": null,
+      "taken_at": "2026-03-18T05:19:02.953868",
+      "closed_at": null
+    },
     {
       "symbol": "CRVUSDT",
       "direction": "LONG",
@@ -3351,20 +3388,6 @@
       "close_price": 0.22785,
       "taken_at": "2026-03-17 12:47:14",
       "closed_at": "2026-03-17 15:36:10"
-    },
-    {
-      "symbol": "OPNUSDT",
-      "direction": "SHORT",
-      "entry": 0.2847,
-      "tp1": 0.27795261,
-      "tp2": 0.27120522,
-      "sl": 0.290394,
-      "strength": 44,
-      "status": "SL",
-      "pnl_pct": -2.23,
-      "close_price": 0.29105000000000003,
-      "taken_at": "2026-03-17 14:05:59",
-      "closed_at": "2026-03-17 15:25:54"
     }
   ]
 }
