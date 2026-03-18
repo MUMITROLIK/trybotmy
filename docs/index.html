@@ -79,7 +79,7 @@
     .tb.active .tc{background:rgba(221,197,162,.2);color:var(--glaze)}
     .cg{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem}
     .tbc{display:none}
-    .tbc.active{display:grid;animation:slideUp .5s cubic-bezier(.22,1,.36,1) forwards}
+    .tbc.active{display:grid}
     .tbc.active.tbl{display:block}
     .sigc{border-radius:1rem;border:1px solid rgba(82,54,52,.3);padding:1.25rem}
     .sh{display:flex;align-items:center;justify-content:space-between;margin-bottom:1rem}
@@ -225,7 +225,7 @@
     function stCls(s){if(s==='TP2')return'tp2';if(s==='TP1')return'tp1';if(s==='SL_AFTER_TP1')return'sltp1';if(s==='SL')return'sl';if(['TIMEOUT','EXPIRED','NOT_FILLED','LIMIT_TIMEOUT'].includes(s))return'to';return'oth';}
 
     function rSig(s,i){const d='d'+(i%6+1),wp=s.win_prob!=null?s.win_prob:null,mc=mlC(wp);
-      return`<div class="sigc glass shimmer ch aup ${d}"><div class="sh"><div class="symw"><span class="sym">${s.symbol}</span></div><span class="db ${s.direction==='LONG'?'long':'short'}">${s.direction==='LONG'?'🟢 ЛОНГ':'🔴 ШОРТ'}</span></div><div class="pg"><div class="pi"><span class="pil">Вход</span><span class="piv" style="color:#60A5FA">${fmt(s.entry)}</span></div><div class="pi"><span class="pil">ТП1</span><span class="piv" style="color:#4ADE80">${fmt(s.tp1)}</span></div><div class="pi"><span class="pil">ТП2</span><span class="piv" style="color:#4ADE80">${fmt(s.tp2)}</span></div><div class="pi"><span class="pil">СЛ</span><span class="piv" style="color:#F87171">${fmt(s.sl)}</span></div></div><div class="strw"><div class="strh"><span class="strl">Сила сигнала</span><span class="strv">${s.strength||0}%</span></div><div class="strb"><div class="strf" style="width:${s.strength||0}%;background:${sGr(s.strength||0)}"></div></div></div><div class="mlr">${wp!=null?`<span class="mlb ${mc}">🧠 ML: ${(wp*100).toFixed(0)}%</span>`:`<span class="mlb med">🧠 ML: —</span>`}<span class="sigtime">${fmtT(s.created_at)}</span></div>${s.reasons&&s.reasons.length?`<div class="reas">${s.reasons.slice(0,4).map(r=>`<span class="rea">${r}</span>`).join('')}</div>`:''}</div>`;}
+      return`<div class="sigc glass shimmer ch"><div class="sh"><div class="symw"><span class="sym">${s.symbol}</span></div><span class="db ${s.direction==='LONG'?'long':'short'}">${s.direction==='LONG'?'🟢 ЛОНГ':'🔴 ШОРТ'}</span></div><div class="pg"><div class="pi"><span class="pil">Вход</span><span class="piv" style="color:#60A5FA">${fmt(s.entry)}</span></div><div class="pi"><span class="pil">ТП1</span><span class="piv" style="color:#4ADE80">${fmt(s.tp1)}</span></div><div class="pi"><span class="pil">ТП2</span><span class="piv" style="color:#4ADE80">${fmt(s.tp2)}</span></div><div class="pi"><span class="pil">СЛ</span><span class="piv" style="color:#F87171">${fmt(s.sl)}</span></div></div><div class="strw"><div class="strh"><span class="strl">Сила сигнала</span><span class="strv">${s.strength||0}%</span></div><div class="strb"><div class="strf" style="width:${s.strength||0}%;background:${sGr(s.strength||0)}"></div></div></div><div class="mlr">${wp!=null?`<span class="mlb ${mc}">🧠 ML: ${(wp*100).toFixed(0)}%</span>`:`<span class="mlb med">🧠 ML: —</span>`}<span class="sigtime">${fmtT(s.created_at)}</span></div>${s.reasons&&s.reasons.length?`<div class="reas">${s.reasons.slice(0,4).map(r=>`<span class="rea">${r}</span>`).join('')}</div>`:''}</div>`;}
 
     function rPos(t,i){
       const d='d'+(i%6+1);
@@ -240,7 +240,7 @@
       const cc=pr?'profit':isN?'neu':'loss',pc=pr?'pos':isN?'ne':'neg';
       const dur=t.status!=='PENDING'?durStr(t.taken_at):'';
       const curP=livePnl!=null?fmt(livePnl):'—';
-      return`<div class="posc glass ch ${cc} ${bp} aup ${d}" id="pos-${t.id||t.symbol}"><div class="sh"><div class="symw"><span class="sym">${t.symbol}</span><span class="live-cur" style="font-size:.7rem;color:rgba(221,197,162,.4);font-family:monospace;margin-left:.25rem">${curP}</span></div><span class="db ${t.direction==='LONG'?'long':'short'}">${t.direction==='LONG'?'🟢 ЛОНГ':'🔴 ШОРТ'}</span></div><div class="ppnl ${pc} ${pr?'fl':''}">${pnl>=0?'+':''}${pnl.toFixed(2)}%</div><div class="pp"><div class="pi"><span class="pil">Вход</span><span class="piv">${fmt(t.entry)}</span></div><div class="pi"><span class="pil">ТП1</span><span class="piv" style="color:#4ADE80">${fmt(t.tp1)}</span></div><div class="pi"><span class="pil">ТП2</span><span class="piv" style="color:#4ADE80">${fmt(t.tp2)}</span></div><div class="pi"><span class="pil">СЛ</span><span class="piv" style="color:#F87171">${fmt(t.sl)}</span></div></div><div class="prb-wrap">${buildProgressBar(t,pnl,livePnl!=null?livePnl:t.entry)}</div><div style="display:flex;align-items:center;justify-content:space-between;gap:.5rem"><span class="pstat ${t.status==='TP1_HIT'?'tp1':t.status==='PENDING'?'pend':'open'}">${stLbl(t.status)}</span><span class="live-dur" style="font-size:.75rem;color:rgba(221,197,162,.5)">${dur?'⏱ '+dur:''}</span><span style="font-size:.75rem;color:rgba(221,197,162,.35)">${fmtT(t.taken_at)}</span></div></div>`;
+      return`<div class="posc glass ch ${cc} ${bp}" id="pos-${t.id||t.symbol}"><div class="sh"><div class="symw"><span class="sym">${t.symbol}</span><span class="live-cur" style="font-size:.7rem;color:rgba(221,197,162,.4);font-family:monospace;margin-left:.25rem">${curP}</span></div><span class="db ${t.direction==='LONG'?'long':'short'}">${t.direction==='LONG'?'🟢 ЛОНГ':'🔴 ШОРТ'}</span></div><div class="ppnl ${pc} ${pr?'fl':''}">${pnl>=0?'+':''}${pnl.toFixed(2)}%</div><div class="pp"><div class="pi"><span class="pil">Вход</span><span class="piv">${fmt(t.entry)}</span></div><div class="pi"><span class="pil">ТП1</span><span class="piv" style="color:#4ADE80">${fmt(t.tp1)}</span></div><div class="pi"><span class="pil">ТП2</span><span class="piv" style="color:#4ADE80">${fmt(t.tp2)}</span></div><div class="pi"><span class="pil">СЛ</span><span class="piv" style="color:#F87171">${fmt(t.sl)}</span></div></div><div class="prb-wrap">${buildProgressBar(t,pnl,livePnl!=null?livePnl:t.entry)}</div><div style="display:flex;align-items:center;justify-content:space-between;gap:.5rem"><span class="pstat ${t.status==='TP1_HIT'?'tp1':t.status==='PENDING'?'pend':'open'}">${stLbl(t.status)}</span><span class="live-dur" style="font-size:.75rem;color:rgba(221,197,162,.5)">${dur?'⏱ '+dur:''}</span><span style="font-size:.75rem;color:rgba(221,197,162,.35)">${fmtT(t.taken_at)}</span></div></div>`;
     }
 
     function rHist(h){if(!h.length)return`<div class="hw glass"><div class="empty" style="border:none"><div class="eico"><div class="eicoi"></div></div><div class="etxt">Нет истории сделок</div></div></div>`;
@@ -260,12 +260,17 @@
         fetchBTC();}
 
       const st=d.stats||{},ts=d.trade_stats||{};
+      // Signal stats
       document.getElementById('statSignals').textContent=st.total||0;
-      document.getElementById('statWL').textContent=`✅${st.wins||0} ❌${st.losses||0} WR:${st.winrate||0}%`;
+      document.getElementById('statWL').textContent=`✅${st.wins||0} ❌${st.losses||0} · сигналы`;
+      // Position stats  
       document.getElementById('statPos').textContent=ts.open||0;
       document.getElementById('statPend').textContent=(ts.pending||0)+' лимиток';
-      document.getElementById('statWR').textContent=(ts.winrate||0)+'%';
-      document.getElementById('statWLT').textContent=`✅${ts.wins||0} / ❌${ts.losses||0}`;
+      // Trade winrate (actual trades, not signals)
+      const totalTrades=(ts.wins||0)+(ts.losses||0);
+      const tradeWR=totalTrades>0?Math.round((ts.wins||0)/totalTrades*100):0;
+      document.getElementById('statWR').textContent=tradeWR+'%';
+      document.getElementById('statWLT').textContent=`✅${ts.wins||0} / ❌${ts.losses||0} сделок`;
       const pnl=ts.total_pnl||0;
       const pe=document.getElementById('statPnl');
       pe.textContent=(pnl>=0?'+':'')+pnl.toFixed(2)+'%';
@@ -370,6 +375,9 @@
 
       const markerColor = pnl >= 0 ? '#4ADE80' : '#F87171';
 
+      // Entry position in range
+      const entryPos = Math.max(0, Math.min(100, (entry - rangeMin) / range * 100));
+
       return `
         <div class="prb-labels">
           <span style="color:#F87171">СЛ ${fmt(sl)}</span>
@@ -379,6 +387,7 @@
         <div class="prb-track">
           <div class="prb-fill" style="width:${pos}%;background:linear-gradient(90deg,rgba(248,113,113,.3),${barColor})"></div>
           <div class="prb-tp1" style="left:${tp1pos}%" title="ТП1 ${fmt(tp1)}"></div>
+          <div style="position:absolute;top:50%;left:${entryPos}%;transform:translate(-50%,-50%);width:8px;height:8px;border-radius:50%;background:#60A5FA;border:2px solid var(--cocoa);z-index:3;box-shadow:0 0 6px #60A5FA80" title="Вход ${fmt(entry)}"></div>
           <div class="prb-marker" style="left:${pos}%;background:${markerColor};box-shadow:0 0 8px ${markerColor}80"></div>
         </div>`;
     }

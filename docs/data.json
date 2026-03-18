@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T11:06:33.002881+00:00",
+  "updated_at": "2026-03-18T11:07:33.785566+00:00",
   "publish_status": {
-    "last_ok": "2026-03-18T11:05:16Z",
+    "last_ok": "2026-03-18T11:06:37Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -13,16 +13,16 @@
     "total": 455,
     "wins": 141,
     "losses": 37,
-    "active": 16,
+    "active": 15,
     "winrate": 79.2
   },
   "trade_stats": {
-    "open": 19,
+    "open": 18,
     "pending": 1,
     "wins": 139,
-    "losses": 113,
-    "total_pnl": 88.5,
-    "winrate": 55.2
+    "losses": 114,
+    "total_pnl": 86.45,
+    "winrate": 54.9
   },
   "fear_greed": {
     "value": 26,
@@ -36,29 +36,6 @@
     "trained_at": null
   },
   "signals": [
-    {
-      "id": 458,
-      "symbol": "ADAUSDT",
-      "direction": "LONG",
-      "entry": 0.2877,
-      "tp1": 0.293454,
-      "tp2": 0.299208,
-      "sl": 0.281946,
-      "strength": 46,
-      "reasons": [
-        "RSI=36 (перепроданность)",
-        "BB нижняя полоса (пробой)",
-        "EMA20 > EMA50",
-        "Объём x1.8 🔥",
-        "Стакан: давление покупки (+0.20)",
-        "МТФ: 15m, 4h согласны",
-        "CVD растёт (+5.7%) — покупки усиливаются 📈",
-        "⚠️ Funding через 53м"
-      ],
-      "news": null,
-      "created_at": "2026-03-18 07:07:16",
-      "status": "ACTIVE"
-    },
     {
       "id": 460,
       "symbol": "HYPEUSDT",
@@ -792,27 +769,6 @@
   ],
   "trades_open": [
     {
-      "id": 305,
-      "symbol": "PUMPUSDT",
-      "direction": "LONG",
-      "entry": 0.00212199,
-      "tp1": 0.002164,
-      "tp2": 0.002207,
-      "sl": 0.00208,
-      "strength": 50,
-      "taken_at": "2026-03-18 05:50:07",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00000)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: сильное давление покупки (+0.25)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "CVD положительный (+2.6%)",
-        "Bullish Engulfing (1h) 🕯️",
-        "📌 Лимитный вход @ 0.00212199 (откат к EMA20)"
-      ]
-    },
-    {
       "id": 308,
       "symbol": "TAOUSDT",
       "direction": "LONG",
@@ -1212,6 +1168,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "PUMPUSDT",
+      "direction": "LONG",
+      "entry": 0.00212199,
+      "tp1": 0.002164,
+      "tp2": 0.002207,
+      "sl": 0.00208,
+      "strength": 50,
+      "status": "SL",
+      "pnl_pct": -2.05,
+      "close_price": 0.0020785,
+      "taken_at": "2026-03-18 05:50:07",
+      "closed_at": "2026-03-18 11:07:33"
+    },
     {
       "symbol": "HYPERUSDT",
       "direction": "LONG",
@@ -3997,20 +3967,6 @@
       "close_price": 0.0064925,
       "taken_at": "2026-03-17 09:00:03",
       "closed_at": "2026-03-17 17:00:10"
-    },
-    {
-      "symbol": "ADAUSDT",
-      "direction": "SHORT",
-      "entry": 0.2871,
-      "tp1": 0.281358,
-      "tp2": 0.275616,
-      "sl": 0.292842,
-      "strength": 31,
-      "status": "TIMEOUT",
-      "pnl_pct": 0.19,
-      "close_price": 0.28654999999999997,
-      "taken_at": "2026-03-17 08:56:57",
-      "closed_at": "2026-03-17 16:57:05"
     }
   ]
 }
