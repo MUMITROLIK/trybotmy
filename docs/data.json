@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T18:09:58.228059+00:00",
+  "updated_at": "2026-03-18T18:10:37.934198+00:00",
   "publish_status": {
-    "last_ok": "2026-03-18T18:08:58Z",
+    "last_ok": "2026-03-18T18:10:06Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 66.4
   },
   "trade_stats": {
-    "open": 47,
+    "open": 46,
     "pending": 2,
-    "wins": 157,
+    "wins": 158,
     "losses": 166,
-    "total_pnl": 20.33,
-    "winrate": 48.6
+    "total_pnl": 22.92,
+    "winrate": 48.8
   },
   "fear_greed": {
     "value": 26,
@@ -2649,33 +2649,23 @@
         "OI растёт +1.4% + цена ↑",
         "📌 Лимитный вход @ 0.0105179 (откат к EMA20)"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 445,
       "symbol": "ANKRUSDT",
       "direction": "LONG",
       "entry": 0.00504,
       "tp1": 0.005141,
       "tp2": 0.005242,
-      "sl": 0.00516554,
-      "entry_orig": 0.00504,
-      "tp1_orig": 0.005141,
-      "tp2_orig": 0.005242,
-      "sl_orig": 0.004939,
+      "sl": 0.00517151,
       "strength": 45,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 2.59,
+      "close_price": 0.0051705,
       "taken_at": "2026-03-18T17:37:06.237189",
-      "status": "TP1_HIT",
-      "reasons": [
-        "RSI=39 (перепроданность)",
-        "MACD бычий (hist=0.00001)",
-        "BB ниже середины",
-        "МТФ: 5m, 1h, 4h согласны",
-        "CVD положительный (+2.2%)",
-        "Bullish Engulfing (1h) 🕯️"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-18 18:10:37"
+    },
     {
       "symbol": "AVAXUSDT",
       "direction": "SHORT",
@@ -5456,20 +5446,6 @@
       "tp2": 0.036062,
       "sl": 0.032051,
       "strength": 44,
-      "status": "LIMIT_TIMEOUT",
-      "pnl_pct": 0,
-      "close_price": null,
-      "taken_at": "2026-03-17 20:18:43",
-      "closed_at": "2026-03-17 21:18:51"
-    },
-    {
-      "symbol": "ASTERUSDT",
-      "direction": "LONG",
-      "entry": 0.75473629,
-      "tp1": 0.778211,
-      "tp2": 0.801686,
-      "sl": 0.735956,
-      "strength": 32,
       "status": "LIMIT_TIMEOUT",
       "pnl_pct": 0,
       "close_price": null,
