@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T22:39:54.990961+00:00",
+  "updated_at": "2026-03-18T22:40:56.441326+00:00",
   "publish_status": {
-    "last_ok": "2026-03-18T22:39:25Z",
+    "last_ok": "2026-03-18T22:39:59Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 65.9
   },
   "trade_stats": {
-    "open": 6,
+    "open": 5,
     "pending": 0,
-    "wins": 177,
+    "wins": 178,
     "losses": 201,
-    "total_pnl": 13.56,
-    "winrate": 46.8
+    "total_pnl": 17.41,
+    "winrate": 47.0
   },
   "fear_greed": {
     "value": 26,
@@ -618,36 +618,23 @@
         "BTC контекст: -2.6% за 12ч 📉",
         "🤖 ML: вероятность 75%"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 464,
       "symbol": "ENJUSDT",
       "direction": "LONG",
       "entry": 0.02296,
       "tp1": 0.023783,
       "tp2": 0.024606,
       "sl": 0.023844999999999998,
-      "entry_orig": 0.02296,
-      "tp1_orig": 0.023783,
-      "tp2_orig": 0.024606,
-      "sl_orig": 0.022302,
       "strength": 40,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 3.85,
+      "close_price": 0.023844999999999998,
       "taken_at": "2026-03-18T21:18:59.382000",
-      "status": "TP1_HIT",
-      "reasons": [
-        "RSI=40 (нейтральный↓)",
-        "MACD бычий (hist=0.00000)",
-        "BB нижняя зона (22%)",
-        "Стакан: сильное давление покупки (+0.33)",
-        "МТФ: 1h, 4h согласны",
-        "CVD положительный (+0.7%)",
-        "Doji (1h) — нерешительность",
-        "⚡ Рыночный вход (MTF 2+ ТФ)",
-        "🤖 ML: вероятность 55%"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-18 22:40:00"
+    },
     {
       "symbol": "VANRYUSDT",
       "direction": "LONG",
@@ -3433,20 +3420,6 @@
       "close_price": null,
       "taken_at": "2026-03-17T21:36:03.591597",
       "closed_at": "2026-03-17 22:36:08"
-    },
-    {
-      "symbol": "DASHUSDT",
-      "direction": "LONG",
-      "entry": 35.33483824,
-      "tp1": 36.041535,
-      "tp2": 36.748232,
-      "sl": 34.628141,
-      "strength": 42,
-      "status": "LIMIT_TIMEOUT",
-      "pnl_pct": 0,
-      "close_price": null,
-      "taken_at": "2026-03-17T21:35:51.782035",
-      "closed_at": "2026-03-17 22:35:53"
     }
   ]
 }
