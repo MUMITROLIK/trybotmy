@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T17:56:37.840643+00:00",
+  "updated_at": "2026-03-18T17:57:13.083732+00:00",
   "publish_status": {
-    "last_ok": "2026-03-18T17:55:29Z",
+    "last_ok": "2026-03-18T17:56:44Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,15 +10,15 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 555,
+    "total": 556,
     "wins": 162,
     "losses": 76,
-    "active": 53,
+    "active": 54,
     "winrate": 68.1
   },
   "trade_stats": {
     "open": 53,
-    "pending": 1,
+    "pending": 2,
     "wins": 156,
     "losses": 158,
     "total_pnl": 35.23,
@@ -1210,6 +1210,27 @@
       ],
       "news": null,
       "created_at": "2026-03-18 17:53:38",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 594,
+      "symbol": "TRIAUSDT",
+      "direction": "LONG",
+      "entry": 0.03321983,
+      "tp1": 0.034084,
+      "tp2": 0.034949,
+      "sl": 0.032528,
+      "strength": 30,
+      "reasons": [
+        "MACD бычий (hist=0.00016)",
+        "EMA20 > EMA50 (golden cross) 🌟",
+        "МТФ: 15m, 1h, 4h согласны",
+        "CVD положительный (+2.2%)",
+        "Doji (1h) — нерешительность",
+        "📌 Лимитный вход @ 0.0332198 (откат к EMA20)"
+      ],
+      "news": null,
+      "created_at": "2026-03-18 17:57:11",
       "status": "ACTIVE"
     }
   ],
@@ -2966,6 +2987,30 @@
         "OI растёт +2.0% + цена ↑",
         "CVD растёт (+6.4%) — покупки усиливаются 📈",
         "📌 Лимитный вход @ 0.190827 (откат к EMA20)"
+      ]
+    },
+    {
+      "id": 448,
+      "symbol": "TRIAUSDT",
+      "direction": "LONG",
+      "entry": 0.03321983,
+      "tp1": 0.034084,
+      "tp2": 0.034949,
+      "sl": 0.032528,
+      "entry_orig": 0.03321983,
+      "tp1_orig": 0.034084,
+      "tp2_orig": 0.034949,
+      "sl_orig": 0.032528,
+      "strength": 30,
+      "taken_at": "2026-03-18T17:57:12.532043",
+      "status": "PENDING",
+      "reasons": [
+        "MACD бычий (hist=0.00016)",
+        "EMA20 > EMA50 (golden cross) 🌟",
+        "МТФ: 15m, 1h, 4h согласны",
+        "CVD положительный (+2.2%)",
+        "Doji (1h) — нерешительность",
+        "📌 Лимитный вход @ 0.0332198 (откат к EMA20)"
       ]
     }
   ],

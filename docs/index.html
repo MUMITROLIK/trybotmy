@@ -616,6 +616,8 @@
     // --- Live prices ---------------------------------------------------------
     function fetchLivePrices() {
       if (!openTradesCache.length) return;
+      if (pricesInFlight) return;
+      pricesInFlight = true;
       var symbols = [];
       for (var i=0;i<openTradesCache.length;i++) {
         var sym = openTradesCache[i].symbol;
@@ -633,7 +635,8 @@
             }
           }
           patchPositionCards();
-        })["catch"](function(){});
+        })["catch"](function(){})
+        .finally(function(){ pricesInFlight = false; });
     }
 
     function patchPositionCards() {
@@ -704,6 +707,12 @@
     // --- WebSocket + REST wiring --------------------------------------------
     var ws = null;
     var wsPingTimer = null;
+    var wsRetryMs = 1000;
+    var wsRetryTimer = null;
+    var wsLastMsgAt = 0;
+    var restInFlight = false;
+    var pricesInFlight = false;
+    var btcInFlight = false;
 
     function connectWS() {
       try {
@@ -711,6 +720,8 @@
         ws = new WebSocket(proto+'//'+location.host+'/ws');
         ws.onopen = function(){
           setConn(true);
+          wsRetryMs = 1000;
+          wsLastMsgAt = Date.now();
           if (wsPingTimer) clearInterval(wsPingTimer);
           // Client-initiated ping to avoid idle disconnects
           wsPingTimer = setInterval(function(){
@@ -721,6 +732,7 @@
           try {
             var m = JSON.parse(e.data);
             if (m && m.type === 'ping') return; // keepalive
+            wsLastMsgAt = Date.now();
             var d = m.data || m;
             if (d && d.stats) updateUI(d);
           } catch (err) {}
@@ -729,17 +741,23 @@
           setConn(false);
           if (wsPingTimer) { clearInterval(wsPingTimer); wsPingTimer = null; }
           ws = null;
-          setTimeout(connectWS, 5000);
+          if (wsRetryTimer) clearTimeout(wsRetryTimer);
+          wsRetryTimer = setTimeout(connectWS, wsRetryMs);
+          wsRetryMs = Math.min(15000, Math.floor(wsRetryMs * 1.6));
         };
-        ws.onerror = function(){ if (ws) ws.close(); };
+        ws.onerror = function(){ try { if (ws) ws.close(); } catch(e) {} };
       } catch (e) {
         setConn(false);
         if (wsPingTimer) { clearInterval(wsPingTimer); wsPingTimer = null; }
-        setTimeout(connectWS, 5000);
+        if (wsRetryTimer) clearTimeout(wsRetryTimer);
+        wsRetryTimer = setTimeout(connectWS, wsRetryMs);
+        wsRetryMs = Math.min(15000, Math.floor(wsRetryMs * 1.6));
       }
     }
 
     function fetchREST() {
+      if (restInFlight) return Promise.resolve(false);
+      restInFlight = true;
       return fetch('/data.json')
         .then(function(r){ return r.ok ? r.json() : null; })
         .then(function(d){
@@ -748,7 +766,8 @@
             return true;
           }
           return false;
-        })["catch"](function(){ return false; });
+        })["catch"](function(){ return false; })
+        .finally(function(){ restInFlight = false; });
     }
 
     // --- Init ----------------------------------------------------------------
@@ -767,13 +786,41 @@
       });
     });
 
-    fetchREST().then(function(){ fetchLivePrices(); });
+    fetchREST();
     connectWS();
-    setInterval(fetchREST, 30000);
+    // If WS is quiet for long time, refresh via REST
+    setInterval(function(){
+      var now = Date.now();
+      if (!ws || ws.readyState !== 1 || (now - wsLastMsgAt) > 45000) fetchREST();
+    }, 15000);
     // 2s достаточно для UI и снижает нагрузку на /api/ticker
     setInterval(fetchLivePrices, 2000);
     setInterval(function(){ if (openTradesCache.length) patchPositionCards(); }, 1000);
     setInterval(function(){ if (serverTime) serverTime = new Date(serverTime.getTime()+1000); }, 1000);
+
+    // BTC price refresh (stable)
+    function fetchBTC2() {
+      if (btcInFlight) return;
+      btcInFlight = true;
+      fetch('/api/ticker?symbol=BTCUSDT')
+        .then(function(r){ return r.ok ? r.json() : null; })
+        .then(function(d){
+          if (d && d.price) {
+            document.getElementById('btcPrice').textContent = '$'+fmt(parseFloat(d.price));
+            return;
+          }
+          return fetch('/api/klines?symbol=BTCUSDT&interval=1m&limit=1')
+            .then(function(r){ return r.ok ? r.json() : null; })
+            .then(function(k){
+              if (k && k[0]) {
+                document.getElementById('btcPrice').textContent = '$'+fmt(parseFloat(k[0][4]));
+              }
+            });
+        })["catch"](function(){})
+        .finally(function(){ btcInFlight = false; });
+    }
+    fetchBTC2();
+    setInterval(fetchBTC2, 10000);
   </script>
 </body>
 </html>
