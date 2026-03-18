@@ -217,8 +217,8 @@
 
   <script>
     function fmt(p){if(!p&&p!==0)return'—';p=parseFloat(p);if(p>=1000)return p.toLocaleString('ru-RU',{minimumFractionDigits:2,maximumFractionDigits:2});if(p>=1)return p.toFixed(2);if(p>=0.01)return p.toFixed(4);if(p>=0.0001)return p.toFixed(6);return p.toFixed(8);}
-    function fmtT(iso){if(!iso)return'—';try{const d=new Date(iso.replace(' ','T')),now=new Date(),df=Math.max(0,now-d),totalMin=Math.floor(df/60000),h=Math.floor(totalMin/60),rm=totalMin%60;if(totalMin<1)return'только что';if(totalMin<60)return totalMin+'м назад';if(h<24)return h+'ч'+(rm>0?' '+rm+'м':'')+'назад';return d.toLocaleDateString('ru-RU',{month:'short',day:'numeric',hour:'2-digit',minute:'2-digit'});}catch{return iso.slice(0,16);}}
-    function durStr(iso){if(!iso)return'';try{const d=new Date(iso.replace(' ','T')),now=new Date(),df=now-d,m=Math.floor(df/60000),h=Math.floor(m/60),rm=m%60;if(m<1)return'<1м';if(h<1)return m+'м';return h+'ч '+rm+'м';}catch{return'';}}
+    function fmtT(iso){if(!iso)return'—';try{let d;if(iso.includes('T')){d=new Date(iso);}else{d=new Date(iso.replace(' ','T'));}const now=serverTime||new Date(),df=Math.max(0,now-d),totalMin=Math.floor(df/60000),h=Math.floor(totalMin/60),rm=totalMin%60;if(totalMin<1)return'только что';if(totalMin<60)return totalMin+'м назад';if(h<24)return h+'ч'+(rm>0?' '+rm+'м':'')+' назад';return d.toLocaleDateString('ru-RU',{month:'short',day:'numeric',hour:'2-digit',minute:'2-digit'});}catch(e){console.warn('fmtT error:',iso,e);return iso.slice(0,16);}}
+    function durStr(iso){if(!iso)return'';try{let d;if(iso.includes('T')){d=new Date(iso);}else{d=new Date(iso.replace(' ','T'));}const now=serverTime||new Date(),df=now-d,m=Math.floor(df/60000),h=Math.floor(m/60),rm=m%60;if(m<1)return'<1м';if(h<1)return m+'м';return h+'ч '+rm+'м';}catch(e){console.warn('durStr error:',iso,e);return'';}}
     function fgM(v){if(v<=25)return{c:'#F87171',l:'Крайний страх'};if(v<=45)return{c:'#B6452C',l:'Страх'};if(v<=55)return{c:'#DDC5A2',l:'Нейтрально'};if(v<=75)return{c:'#4ADE80',l:'Жадность'};return{c:'#22C55E',l:'Крайняя жадность'};}
     function mlC(p){if(!p)return'med';return p<0.5?'low':p<0.7?'med':'hi';}
     function sGr(s){return s>=75?'linear-gradient(90deg,#4ADE80,#22C55E)':s>=50?'linear-gradient(90deg,#DDC5A2,#B6452C)':'linear-gradient(90deg,#F87171,#EF4444)';}
@@ -250,10 +250,14 @@
     function rEmpty(m){return`<div class="empty glass aup"><div class="eico"><div class="eicoi"></div></div><div class="etxt">${m}</div></div>`;}
     function rTicks(v){return[0,25,50,75,100].map((t,i)=>{const td=fgM(t),a=v>=t;return`<div class="ftk" style="background:${td.c};opacity:${a?1:.15};transition-delay:${i*.1}s;box-shadow:${a?`0 0 12px ${td.c}50`:'none'}"></div>`;}).join('');}
 
-    let appData=null,activeTab='signals';
+    let appData=null,activeTab='signals',serverTime=null;
 
     function updateUI(d){
       appData=d;
+      // Получаем текущее время СЕРВЕРА для точных расчётов
+      if(d.updated_at){
+        serverTime=new Date(d.updated_at.replace(' ','T'));
+      }
       // BTC — пробуем получить из signals или из истории BTC
       const btcSig=(d.signals||[]).find(s=>s.symbol==='BTCUSDT');
       if(btcSig){document.getElementById('btcPrice').textContent='$'+fmt(btcSig.entry);}
@@ -457,6 +461,21 @@
             const barColor = pnl > 1 ? '#4ADE80' : pnl > 0 ? '#86EFAC' : pnl > -1 ? '#FCD34D' : '#F87171';
             const mrkColor = pnl >= 0 ? '#4ADE80' : '#F87171';
             
+            // DEBUG: логирование координат
+            const debugKey = t.symbol+'_'+t.id;
+            if (!window._debugDots) window._debugDots = {};
+            if (!window._debugDots[debugKey]) {
+              console.log(`[ENTRY DOT] ${t.symbol} (${t.direction}):`, {
+                entry, sl, tp2, tp1,
+                rangeMin, rangeMax, range,
+                curPrice: liveP,
+                entryPos: entryPos.toFixed(1)+'%',
+                curPos: curPos.toFixed(1)+'%',
+                tp1pos: tp1pos.toFixed(1)+'%'
+              });
+              window._debugDots[debugKey] = true;
+            }
+            
             // Update fill (progress bar)
             const fill = card.querySelector('.prb-fill');
             if (fill) { 
@@ -518,22 +537,12 @@
     fetchREST().then(() => fetchLivePrices());
     connectWS();
     setInterval(fetchREST, 30000);
-    // Fetch live prices every 10 seconds
-    setInterval(fetchLivePrices, 10000);
-    // Update progress bar + time display every 5 seconds (was 60s)
-    setInterval(() => { if (openTradesCache.length) patchPositionCards(); }, 5000);
-    // Also update time displays every 1 second for real-time countdown
-    setInterval(() => { 
-      if (!openTradesCache.length) return;
-      openTradesCache.forEach(t => {
-        const card = document.getElementById('pos-'+(t.id||t.symbol));
-        if (!card) return;
-        const durEl = card.querySelector('.live-dur');
-        if (durEl && t.status !== 'PENDING') durEl.textContent = '\u23f1 ' + durStr(t.taken_at);
-        const agoEl = card.querySelector('.live-ago');
-        if (agoEl) agoEl.textContent = fmtT(t.taken_at);
-      });
-    }, 1000);
+    // Fetch live prices every 2 seconds (БЫСТРЕЕ)
+    setInterval(fetchLivePrices, 2000);
+    // Update progress bar + time display every 1 second (БЫСТРЕЕ)
+    setInterval(() => { if (openTradesCache.length) patchPositionCards(); }, 1000);
+    // Advance server time every second for accurate relative time (даже без новых данных)
+    setInterval(() => { if(serverTime) serverTime=new Date(serverTime.getTime()+1000); }, 1000);
   </script>
 </body>
 </html>
