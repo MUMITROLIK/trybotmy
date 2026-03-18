@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T10:08:59.985788+00:00",
+  "updated_at": "2026-03-18T10:09:54.419811+00:00",
   "publish_status": {
-    "last_ok": "2026-03-18T10:08:04Z",
+    "last_ok": "2026-03-18T10:09:04Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 80.7
   },
   "trade_stats": {
-    "open": 18,
+    "open": 17,
     "pending": 1,
-    "wins": 137,
+    "wins": 138,
     "losses": 106,
-    "total_pnl": 101.68,
-    "winrate": 56.4
+    "total_pnl": 103.86,
+    "winrate": 56.6
   },
   "fear_greed": {
     "value": 26,
@@ -1153,9 +1153,10 @@
         "OI растёт +1.1% + цена ↑",
         "📌 Лимитный вход @ 0.517632 (откат к EMA20)"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 329,
       "symbol": "OPNUSDT",
       "direction": "SHORT",
       "entry": 0.29365,
@@ -1163,19 +1164,12 @@
       "tp2": 0.28190432,
       "sl": 0.28720905,
       "strength": 45,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 2.18,
+      "close_price": 0.28725,
       "taken_at": "2026-03-18T09:22:42.602349",
-      "status": "TP1_HIT",
-      "reasons": [
-        "MACD медвежий (hist=-0.00048)",
-        "EMA20 < EMA50 (death cross) 💀",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +1.0% + цена ↓",
-        "CVD падает (-5.8%) — продажи усиливаются 📉",
-        "📌 Лимитный вход @ 0.297859 (откат к EMA20)"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-18 10:09:54"
+    },
     {
       "symbol": "VANRYUSDT",
       "direction": "LONG",
@@ -3960,20 +3954,6 @@
       "pnl_pct": 0.29,
       "close_price": 2323.8050000000003,
       "taken_at": "2026-03-17 08:44:21",
-      "closed_at": "2026-03-17 16:44:23"
-    },
-    {
-      "symbol": "BTCUSDT",
-      "direction": "SHORT",
-      "entry": 74379.8,
-      "tp1": 72892.204,
-      "tp2": 71404.608,
-      "sl": 75867.396,
-      "strength": 14,
-      "status": "TIMEOUT",
-      "pnl_pct": 0.43,
-      "close_price": 74060.85,
-      "taken_at": "2026-03-17 08:44:22",
       "closed_at": "2026-03-17 16:44:23"
     }
   ]
