@@ -416,33 +416,48 @@
         const card = document.getElementById('pos-'+(t.id||t.symbol));
         if (!card) return;
         const liveP = livePrices[t.symbol];
+
+        // Update duration timer and ago label always (every 15s)
+        const durEl = card.querySelector('.live-dur');
+        if (durEl && t.status !== 'PENDING') durEl.textContent = '\u23f1 ' + durStr(t.taken_at);
+        const agoEl = card.querySelector('.live-ago');
+        if (agoEl) agoEl.textContent = fmtT(t.taken_at);
+
         if (liveP == null) return;
         let pnl = t.direction==='LONG'
           ? (liveP - t.entry) / t.entry * 100
           : (t.entry - liveP) / t.entry * 100;
         const pr = pnl > 0.01, isN = Math.abs(pnl) < 0.01;
 
-        // Update P&L text
+        // Update PnL text
         const pnlEl = card.querySelector('.ppnl');
         if (pnlEl) {
           pnlEl.textContent = (pnl>=0?'+':'') + pnl.toFixed(2) + '%';
           pnlEl.className = 'ppnl ' + (pr?'pos':isN?'ne':'neg') + (pr?' fl':'');
         }
-        // Update card border color
-        card.className = card.className
-          .replace(/(profit|loss|neu)/g, pr?'profit':isN?'neu':'loss');
-
-        // Update current price display
+        card.className = card.className.replace(/\b(profit|loss|neu)\b/g, pr?'profit':isN?'neu':'loss');
         const priceSpan = card.querySelector('.live-cur');
         if (priceSpan) priceSpan.textContent = fmt(liveP);
-      });
 
-      // Also update duration every call
-      openTradesCache.forEach(t => {
-        const card = document.getElementById('pos-'+(t.id||t.symbol));
-        if (!card) return;
-        const durEl = card.querySelector('.live-dur');
-        if (durEl && t.status !== 'PENDING') durEl.textContent = '⏱ ' + durStr(t.taken_at);
+        // Update progress bar: fill + moving marker + fixed entry dot (blue)
+        const sl = t.sl, entry = t.entry, tp2 = t.tp2;
+        if (sl && entry && tp2) {
+          const isLong = t.direction === 'LONG';
+          const rangeMin = isLong ? sl : tp2, rangeMax = isLong ? tp2 : sl;
+          const range = rangeMax - rangeMin;
+          if (range > 0) {
+            const curPos   = Math.max(0, Math.min(100, (liveP - rangeMin) / range * 100));
+            const entryPos = Math.max(0, Math.min(100, (entry - rangeMin) / range * 100));
+            const barColor = pnl > 1 ? '#4ADE80' : pnl > 0 ? '#86EFAC' : pnl > -1 ? '#FCD34D' : '#F87171';
+            const mrkColor = pnl >= 0 ? '#4ADE80' : '#F87171';
+            const fill = card.querySelector('.prb-fill');
+            if (fill) { fill.style.width = curPos+'%'; fill.style.background = 'linear-gradient(90deg,rgba(248,113,113,.3),'+barColor+')'; }
+            const marker = card.querySelector('.prb-marker');
+            if (marker) { marker.style.left = curPos+'%'; marker.style.background = mrkColor; marker.style.boxShadow = '0 0 8px '+mrkColor+'80'; }
+            const entryDot = card.querySelector('.prb-entry-dot');
+            if (entryDot) entryDot.style.left = entryPos+'%';
+          }
+        }
       });
     }
 
