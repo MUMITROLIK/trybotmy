@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T17:05:38.594641+00:00",
+  "updated_at": "2026-03-18T17:06:38.656905+00:00",
   "publish_status": {
-    "last_ok": "2026-03-18T17:04:38Z",
+    "last_ok": "2026-03-18T17:05:49Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 544,
+    "total": 545,
     "wins": 159,
     "losses": 65,
-    "active": 56,
+    "active": 57,
     "winrate": 71.0
   },
   "trade_stats": {
-    "open": 57,
+    "open": 58,
     "pending": 1,
     "wins": 153,
     "losses": 146,
@@ -1279,6 +1279,27 @@
       ],
       "news": null,
       "created_at": "2026-03-18 17:03:06",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 583,
+      "symbol": "POWERUSDT",
+      "direction": "SHORT",
+      "entry": 0.10218,
+      "tp1": 0.099987,
+      "tp2": 0.097794,
+      "sl": 0.104224,
+      "strength": 38,
+      "reasons": [
+        "MACD медвежий (hist=-0.00003)",
+        "Цена < EMA20 < EMA50",
+        "Стакан: перевес ask (-0.06)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +0.9% + цена ↓",
+        "BTC контекст: -3.5% за 12ч 📉"
+      ],
+      "news": null,
+      "created_at": "2026-03-18 17:06:38",
       "status": "ACTIVE"
     }
   ],
@@ -3114,6 +3135,30 @@
         "BB ниже середины",
         "OI растёт +1.7%",
         "CVD положительный (-6.0%)"
+      ]
+    },
+    {
+      "id": 437,
+      "symbol": "POWERUSDT",
+      "direction": "SHORT",
+      "entry": 0.10218,
+      "tp1": 0.099987,
+      "tp2": 0.097794,
+      "sl": 0.104224,
+      "entry_orig": 0.10218,
+      "tp1_orig": 0.099987,
+      "tp2_orig": 0.097794,
+      "sl_orig": 0.104224,
+      "strength": 38,
+      "taken_at": "2026-03-18T17:06:38.377295",
+      "status": "OPEN",
+      "reasons": [
+        "MACD медвежий (hist=-0.00003)",
+        "Цена < EMA20 < EMA50",
+        "Стакан: перевес ask (-0.06)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +0.9% + цена ↓",
+        "BTC контекст: -3.5% за 12ч 📉"
       ]
     },
     {
