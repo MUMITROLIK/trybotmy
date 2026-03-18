@@ -44,7 +44,6 @@
       line-height: 1.5;
     }
 
-    /* ─── Header ─────────────────────────────────────────────────────────── */
     .header {
       position: sticky;
       top: 0;
@@ -77,6 +76,7 @@
       justify-content: center;
       font-size: 14px;
       font-weight: 800;
+      color: white;
     }
 
     .header-right {
@@ -128,13 +128,13 @@
       50% { opacity: 0.5; box-shadow: 0 0 0 6px rgba(63,185,80,0); }
     }
 
-    /* ─── Navigation Tabs ────────────────────────────────────────────────── */
     .nav-tabs {
       display: flex;
       gap: 4px;
       padding: 0 24px;
       border-bottom: 1px solid var(--border);
       background: var(--bg-secondary);
+      overflow-x: auto;
     }
 
     .nav-tab {
@@ -148,12 +148,12 @@
       font-weight: 500;
       cursor: pointer;
       transition: all 0.15s;
+      white-space: nowrap;
     }
 
     .nav-tab:hover { color: var(--text-primary); background: var(--bg-hover); }
     .nav-tab.active { color: var(--blue); border-bottom-color: var(--blue); }
 
-    /* ─── Main Content ───────────────────────────────────────────────────── */
     .main {
       padding: 24px;
       max-width: 1600px;
@@ -163,7 +163,6 @@
     .page { display: none; }
     .page.active { display: block; }
 
-    /* ─── Stats Grid ─────────────────────────────────────────────────────── */
     .stats-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -204,7 +203,6 @@
     .stat-value.blue { color: var(--blue); }
     .stat-value.yellow { color: var(--yellow); }
 
-    /* ─── Fear & Greed Card ──────────────────────────────────────────────── */
     .fg-card {
       background: var(--bg-card);
       border: 1px solid var(--border);
@@ -218,6 +216,8 @@
       align-items: center;
       justify-content: space-between;
       margin-bottom: 16px;
+      flex-wrap: wrap;
+      gap: 12px;
     }
 
     .fg-title {
@@ -263,7 +263,6 @@
       transition: width 0.5s ease;
     }
 
-    /* ─── Chart Section ──────────────────────────────────────────────────── */
     .chart-section {
       background: var(--bg-card);
       border: 1px solid var(--border);
@@ -278,6 +277,8 @@
       justify-content: space-between;
       padding: 16px 20px;
       border-bottom: 1px solid var(--border);
+      flex-wrap: wrap;
+      gap: 12px;
     }
 
     .chart-title {
@@ -321,7 +322,6 @@
 
     .chart-container { height: 350px; }
 
-    /* ─── Filters Bar ────────────────────────────────────────────────────── */
     .filters-bar {
       display: flex;
       align-items: center;
@@ -378,7 +378,6 @@
       min-width: 30px;
     }
 
-    /* ─── Section Header ─────────────────────────────────────────────────── */
     .section-header {
       display: flex;
       align-items: center;
@@ -401,7 +400,6 @@
       color: var(--text-secondary);
     }
 
-    /* ─── Signals Grid ───────────────────────────────────────────────────── */
     .signals-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
@@ -581,7 +579,6 @@
       color: var(--text-muted);
     }
 
-    /* ─── Trade Cards ────────────────────────────────────────────────────── */
     .trades-list {
       display: flex;
       flex-direction: column;
@@ -662,9 +659,10 @@
     .trade-level {
       display: flex;
       justify-content: space-between;
+      align-items: center;
       font-family: var(--font-mono);
       font-size: 11px;
-      padding: 4px 8px;
+      padding: 6px 10px;
       background: var(--bg-secondary);
       border-radius: 4px;
     }
@@ -672,6 +670,11 @@
     .trade-level.hit {
       background: var(--green-bg);
       color: var(--green);
+    }
+
+    .trade-level-label {
+      font-weight: 600;
+      margin-right: 8px;
     }
 
     .trade-meta {
@@ -709,18 +712,19 @@
       background: var(--bg-secondary);
     }
 
-    /* ─── History Table ──────────────────────────────────────────────────── */
     .table-container {
       background: var(--bg-card);
       border: 1px solid var(--border);
       border-radius: var(--radius-lg);
       overflow: hidden;
       margin-bottom: 32px;
+      overflow-x: auto;
     }
 
     .data-table {
       width: 100%;
       border-collapse: collapse;
+      min-width: 700px;
     }
 
     .data-table th {
@@ -732,6 +736,7 @@
       color: var(--text-secondary);
       border-bottom: 1px solid var(--border);
       background: var(--bg-secondary);
+      white-space: nowrap;
     }
 
     .data-table td {
@@ -739,6 +744,7 @@
       font-family: var(--font-mono);
       font-size: 12px;
       border-bottom: 1px solid var(--border);
+      white-space: nowrap;
     }
 
     .data-table tr:hover td { background: var(--bg-hover); }
@@ -759,7 +765,6 @@
     .badge.long { color: var(--green); }
     .badge.short { color: var(--red); }
 
-    /* ─── Modal ──────────────────────────────────────────────────────────── */
     .modal-overlay {
       display: none;
       position: fixed;
@@ -843,7 +848,6 @@
       font-weight: 600;
     }
 
-    /* ─── Empty State ────────────────────────────────────────────────────── */
     .empty-state {
       text-align: center;
       padding: 60px 20px;
@@ -866,7 +870,6 @@
       color: var(--text-muted);
     }
 
-    /* ─── Responsive ─────────────────────────────────────────────────────── */
     @media (max-width: 1024px) {
       .signals-grid { grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); }
       .trade-body { grid-template-columns: 1fr; gap: 16px; }
@@ -875,17 +878,14 @@
 
     @media (max-width: 768px) {
       .header { padding: 12px 16px; }
-      .nav-tabs { padding: 0 16px; overflow-x: auto; }
+      .nav-tabs { padding: 0 16px; }
       .main { padding: 16px; }
       .stats-grid { grid-template-columns: repeat(2, 1fr); }
       .signals-grid { grid-template-columns: 1fr; }
       .filters-bar { flex-direction: column; align-items: stretch; }
       .filter-group { justify-content: space-between; }
       .modal-stats { grid-template-columns: repeat(2, 1fr); }
-      .data-table { font-size: 11px; }
-      .data-table th, .data-table td { padding: 10px 8px; }
       
-      /* Mobile table transformation */
       .data-table thead { display: none; }
       .data-table tbody tr {
         display: block;
@@ -909,7 +909,6 @@
       }
     }
 
-    /* ─── P&L Chart Section ──────────────────────────────────────────────── */
     .pnl-chart-section {
       background: var(--bg-card);
       border: 1px solid var(--border);
@@ -923,7 +922,6 @@
       margin-top: 16px;
     }
 
-    /* ─── Heatmap ────────────────────────────────────────────────────────── */
     .heatmap-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
@@ -947,7 +945,6 @@
     .heatmap-cell.negative { background: var(--red-bg); color: var(--red); }
     .heatmap-cell.neutral { background: var(--bg-secondary); color: var(--text-secondary); }
 
-    /* ─── Funding Timer ──────────────────────────────────────────────────── */
     .funding-timer {
       display: flex;
       align-items: center;
@@ -963,10 +960,18 @@
       font-weight: 600;
       color: var(--yellow);
     }
+
+    .price-update-indicator {
+      font-size: 10px;
+      color: var(--text-muted);
+      margin-top: 4px;
+    }
+
+    .price-update-indicator.up { color: var(--green); }
+    .price-update-indicator.down { color: var(--red); }
   </style>
 </head>
 <body>
-  <!-- Header -->
   <header class="header">
     <div class="logo">
       <div class="logo-icon">FT</div>
@@ -985,7 +990,6 @@
     </div>
   </header>
 
-  <!-- Navigation -->
   <nav class="nav-tabs">
     <button class="nav-tab active" data-tab="signals">Сигналы</button>
     <button class="nav-tab" data-tab="positions">Позиции</button>
@@ -994,12 +998,9 @@
     <button class="nav-tab" data-tab="stats">Статистика</button>
   </nav>
 
-  <!-- Main Content -->
   <main class="main">
     
-    <!-- PAGE: Signals -->
     <div class="page active" id="page-signals">
-      <!-- Stats Row -->
       <div class="stats-grid">
         <div class="stat-card">
           <div class="stat-label">Всего сигналов</div>
@@ -1010,16 +1011,15 @@
           <div class="stat-value blue" id="statActiveSignals">—</div>
         </div>
         <div class="stat-card">
-          <div class="stat-label">Winrate (сигналы)</div>
+          <div class="stat-label">Winrate</div>
           <div class="stat-value yellow" id="statWinrate">—</div>
         </div>
         <div class="stat-card">
-          <div class="stat-label">P&L (сделки)</div>
+          <div class="stat-label">P&L</div>
           <div class="stat-value" id="statTotalPnl">—</div>
         </div>
       </div>
 
-      <!-- Fear & Greed -->
       <div class="fg-card">
         <div class="fg-header">
           <span class="fg-title">Fear & Greed Index</span>
@@ -1040,7 +1040,6 @@
         </div>
       </div>
 
-      <!-- BTC Chart -->
       <div class="chart-section">
         <div class="chart-header">
           <div class="chart-title">
@@ -1059,7 +1058,6 @@
         <div class="chart-container" id="btcChart"></div>
       </div>
 
-      <!-- Filters -->
       <div class="filters-bar">
         <div class="filter-group">
           <span class="filter-label">Направление:</span>
@@ -1079,7 +1077,6 @@
         </div>
       </div>
 
-      <!-- Signals Grid -->
       <div class="section-header">
         <div class="section-dot"></div>
         <span class="section-title">Активные сигналы</span>
@@ -1092,11 +1089,10 @@
       </div>
     </div>
 
-    <!-- PAGE: Positions -->
     <div class="page" id="page-positions">
       <div class="stats-grid" id="positionsStatsRow">
         <div class="stat-card">
-          <div class="stat-label">Открыто позиций</div>
+          <div class="stat-label">Открыто</div>
           <div class="stat-value blue" id="posOpen">—</div>
         </div>
         <div class="stat-card">
@@ -1125,7 +1121,6 @@
       </div>
     </div>
 
-    <!-- PAGE: Pending -->
     <div class="page" id="page-pending">
       <div class="section-header">
         <div class="section-dot" style="background: var(--yellow)"></div>
@@ -1139,9 +1134,7 @@
       </div>
     </div>
 
-    <!-- PAGE: History -->
     <div class="page" id="page-history">
-      <!-- P&L Chart -->
       <div class="pnl-chart-section">
         <div class="section-header">
           <div class="section-dot" style="background: var(--green)"></div>
@@ -1150,7 +1143,6 @@
         <div class="pnl-chart-container" id="pnlChart"></div>
       </div>
 
-      <!-- Heatmap -->
       <div class="pnl-chart-section">
         <div class="section-header">
           <div class="section-dot" style="background: var(--purple)"></div>
@@ -1159,7 +1151,6 @@
         <div class="heatmap-grid" id="pnlHeatmap"></div>
       </div>
 
-      <!-- History Table -->
       <div class="section-header">
         <div class="section-dot" style="background: var(--green)"></div>
         <span class="section-title">История сделок</span>
@@ -1186,7 +1177,6 @@
       </div>
     </div>
 
-    <!-- PAGE: Stats -->
     <div class="page" id="page-stats">
       <div class="stats-grid">
         <div class="stat-card">
@@ -1205,14 +1195,6 @@
           <div class="stat-label">Winrate</div>
           <div class="stat-value yellow" id="statsWinrate">—</div>
         </div>
-        <div class="stat-card">
-          <div class="stat-label">Средний выигрыш</div>
-          <div class="stat-value green" id="statsAvgWin">—</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-label">Средний проигрыш</div>
-          <div class="stat-value red" id="statsAvgLoss">—</div>
-        </div>
       </div>
 
       <div class="table-container">
@@ -1223,7 +1205,6 @@
               <th>Исход</th>
               <th>Количество</th>
               <th>Средний P&L</th>
-              <th>Длительность</th>
             </tr>
           </thead>
           <tbody id="statsBreakdownBody">
@@ -1235,7 +1216,6 @@
 
   </main>
 
-  <!-- Modal for Signal Details -->
   <div class="modal-overlay" id="modalOverlay" onclick="handleModalClick(event)">
     <div class="modal">
       <div class="modal-header">
@@ -1256,10 +1236,10 @@
   </div>
 
   <script>
-    // ─── Global State ──────────────────────────────────────────────────────
     let appData = null;
     let ws = null;
     let btcChart = null;
+    let btcSeries = null;
     let modalChart = null;
     let pnlChart = null;
     let currentModalSignal = null;
@@ -1269,8 +1249,8 @@
     let filterMinStrength = 0;
     let reconnectAttempts = 0;
     const MAX_RECONNECT_ATTEMPTS = 5;
+    let btcPriceData = [];
 
-    // ─── Utility Functions ─────────────────────────────────────────────────
     function formatNumber(num, decimals = 2) {
       if (num === null || num === undefined || isNaN(num)) return '—';
       return Number(num).toFixed(decimals);
@@ -1336,119 +1316,71 @@
       return 'Extreme Greed';
     }
 
-    // ─── Chart Initialization ──────────────────────────────────────────────
     function initBtcChart() {
       const container = document.getElementById('btcChart');
-      if (!container) return;
+      if (!container) return null;
 
       btcChart = LightweightCharts.createChart(container, {
         width: container.clientWidth,
         height: container.clientHeight,
         layout: {
           background: { color: 'transparent' },
-          textColor: 'var(--text-secondary)',
-        },
-        grid: {
-          vertLines: { color: 'rgba(48, 54, 61, 0.5)' },
-          horzLines: { color: 'rgba(48, 54, 61, 0.5)' },
-        },
-        crosshair: {
-          mode: LightweightCharts.CrosshairMode.Normal,
-        },
-        rightPriceScale: {
-          borderColor: 'var(--border)',
-        },
-        timeScale: {
-          borderColor: 'var(--border)',
-          timeVisible: true,
-          secondsVisible: false,
-        },
-      });
-
-      const candleSeries = btcChart.addCandlestickSeries({
-        upColor: 'var(--green)',
-        downColor: 'var(--red)',
-        borderUpColor: 'var(--green)',
-        borderDownColor: 'var(--red)',
-        wickUpColor: 'var(--green)',
-        wickDownColor: 'var(--red)',
-      });
-
-      // Resize handler
-      new ResizeObserver(entries => {
-        if (entries.length === 0 || entries[0].target !== container) { return; }
-        const newRect = entries[0].contentRect;
-        btcChart.applyOptions({ width: newRect.width, height: newRect.height });
-      }).observe(container);
-
-      return candleSeries;
-    }
-
-    function initModalChart() {
-      const container = document.getElementById('modalChart');
-      if (!container || modalChart) return;
-
-      modalChart = LightweightCharts.createChart(container, {
-        width: container.clientWidth,
-        height: container.clientHeight,
-        layout: {
-          background: { color: 'transparent' },
-          textColor: 'var(--text-secondary)',
+          textColor: '#8b949e',
         },
         grid: {
           vertLines: { color: 'rgba(48, 54, 61, 0.5)' },
           horzLines: { color: 'rgba(48, 54, 61, 0.5)' },
         },
         crosshair: { mode: LightweightCharts.CrosshairMode.Normal },
-        rightPriceScale: { borderColor: 'var(--border)' },
-        timeScale: { borderColor: 'var(--border)', timeVisible: true },
+        rightPriceScale: { borderColor: 'rgba(48, 54, 61, 1)' },
+        timeScale: { borderColor: 'rgba(48, 54, 61, 1)', timeVisible: true },
       });
 
-      const candleSeries = modalChart.addCandlestickSeries({
-        upColor: 'var(--green)',
-        downColor: 'var(--red)',
-        borderUpColor: 'var(--green)',
-        borderDownColor: 'var(--red)',
-        wickUpColor: 'var(--green)',
-        wickDownColor: 'var(--red)',
+      btcSeries = btcChart.addCandlestickSeries({
+        upColor: '#3fb950',
+        downColor: '#f85149',
+        borderUpColor: '#3fb950',
+        borderDownColor: '#f85149',
+        wickUpColor: '#3fb950',
+        wickDownColor: '#f85149',
       });
 
       new ResizeObserver(entries => {
-        if (entries.length === 0 || entries[0].target !== container) { return; }
+        if (entries.length === 0 || entries[0].target !== container) return;
         const newRect = entries[0].contentRect;
-        modalChart.applyOptions({ width: newRect.width, height: newRect.height });
+        btcChart.applyOptions({ width: newRect.width, height: newRect.height });
       }).observe(container);
 
-      return candleSeries;
+      return btcSeries;
     }
 
     function initPnlChart() {
       const container = document.getElementById('pnlChart');
-      if (!container) return;
+      if (!container) return null;
 
       pnlChart = LightweightCharts.createChart(container, {
         width: container.clientWidth,
         height: container.clientHeight,
         layout: {
           background: { color: 'transparent' },
-          textColor: 'var(--text-secondary)',
+          textColor: '#8b949e',
         },
         grid: {
           vertLines: { color: 'rgba(48, 54, 61, 0.5)' },
           horzLines: { color: 'rgba(48, 54, 61, 0.5)' },
         },
-        rightPriceScale: { borderColor: 'var(--border)' },
-        timeScale: { borderColor: 'var(--border)' },
+        rightPriceScale: { borderColor: 'rgba(48, 54, 61, 1)' },
+        timeScale: { borderColor: 'rgba(48, 54, 61, 1)' },
       });
 
       const areaSeries = pnlChart.addAreaSeries({
-        lineColor: 'var(--green)',
+        lineColor: '#3fb950',
         topColor: 'rgba(63, 185, 80, 0.3)',
         bottomColor: 'rgba(63, 185, 80, 0)',
       });
 
       new ResizeObserver(entries => {
-        if (entries.length === 0 || entries[0].target !== container) { return; }
+        if (entries.length === 0 || entries[0].target !== container) return;
         const newRect = entries[0].contentRect;
         pnlChart.applyOptions({ width: newRect.width, height: newRect.height });
       }).observe(container);
@@ -1456,11 +1388,9 @@
       return areaSeries;
     }
 
-    // ─── Render Functions ──────────────────────────────────────────────────
     function renderStats(data) {
       if (!data) return;
 
-      // Main stats
       document.getElementById('statTotalSignals').textContent = data.stats?.total || 0;
       document.getElementById('statActiveSignals').textContent = data.stats?.active || 0;
       document.getElementById('statWinrate').textContent = (data.stats?.winrate || 0) + '%';
@@ -1470,7 +1400,6 @@
       pnlEl.textContent = formatPercent(totalPnl);
       pnlEl.style.color = getPnlColor(totalPnl);
 
-      // Positions stats
       document.getElementById('posOpen').textContent = data.trade_stats?.open || 0;
       document.getElementById('posWins').textContent = data.trade_stats?.wins || 0;
       document.getElementById('posLosses').textContent = data.trade_stats?.losses || 0;
@@ -1479,7 +1408,6 @@
       posPnlEl.textContent = formatPercent(totalPnl);
       posPnlEl.style.color = getPnlColor(totalPnl);
 
-      // Fear & Greed
       const fg = data.fear_greed || {};
       const fgValue = fg.value || 50;
       document.getElementById('fgEmoji').textContent = fg.emoji || getFgEmoji(fgValue);
@@ -1488,7 +1416,6 @@
       document.getElementById('fgFill').style.width = fgValue + '%';
       document.getElementById('fgFill').style.background = getFgColor(fgValue);
 
-      // Stats page
       const tradeStats = data.trade_stats || {};
       document.getElementById('statsTotalTrades').textContent = (tradeStats.wins || 0) + (tradeStats.losses || 0);
       document.getElementById('statsWins').textContent = tradeStats.wins || 0;
@@ -1581,7 +1508,7 @@
       const list = document.getElementById('positionsList');
       if (!list) return;
 
-      const trades = data?.trades_open?.filter(t => t.status === 'OPEN' || t.status === 'TP1_HIT') || [];
+      const trades = (data?.trades_open || []).filter(t => t.status === 'OPEN' || t.status === 'TP1_HIT');
 
       if (trades.length === 0) {
         list.innerHTML = `
@@ -1593,10 +1520,15 @@
         return;
       }
 
+      let wins = 0, losses = 0, totalPnl = 0;
+
       list.innerHTML = trades.map(trade => {
-        const pnl = calculateTradePnl(trade);
+        const pnl = trade.pnl_pct || 0;
         const pnlColor = getPnlColor(pnl);
         const isTp1Hit = trade.status === 'TP1_HIT';
+        
+        if (pnl >= 0) wins++; else losses++;
+        totalPnl += pnl;
 
         return `
           <div class="trade-card ${trade.direction.toLowerCase()} ${isTp1Hit ? 'tp1-hit' : ''}">
@@ -1611,19 +1543,19 @@
               </div>
               <div class="trade-levels">
                 <div class="trade-level ${isTp1Hit ? 'hit' : ''}">
-                  <span>TP1</span>
+                  <span class="trade-level-label">TP1:</span>
                   <span>${formatNumber(trade.tp1, 6)}</span>
                 </div>
                 <div class="trade-level">
-                  <span>TP2</span>
+                  <span class="trade-level-label">TP2:</span>
                   <span>${formatNumber(trade.tp2, 6)}</span>
                 </div>
                 <div class="trade-level">
-                  <span>SL</span>
+                  <span class="trade-level-label">SL:</span>
                   <span>${formatNumber(trade.sl, 6)}</span>
                 </div>
                 <div class="trade-level">
-                  <span>Вход</span>
+                  <span class="trade-level-label">Вход:</span>
                   <span>${formatNumber(trade.entry, 6)}</span>
                 </div>
               </div>
@@ -1638,13 +1570,19 @@
           </div>
         `;
       }).join('');
+
+      document.getElementById('posWins').textContent = wins;
+      document.getElementById('posLosses').textContent = losses;
+      const pnlEl = document.getElementById('posTotalPnl');
+      pnlEl.textContent = formatPercent(totalPnl);
+      pnlEl.style.color = getPnlColor(totalPnl);
     }
 
     function renderPending(data) {
       const list = document.getElementById('pendingList');
       if (!list) return;
 
-      const pending = data?.trades_open?.filter(t => t.status === 'PENDING') || [];
+      const pending = (data?.trades_open || []).filter(t => t.status === 'PENDING');
 
       if (pending.length === 0) {
         list.innerHTML = `
@@ -1657,7 +1595,7 @@
       }
 
       list.innerHTML = pending.map(trade => `
-        <div class="trade-card pending">
+        <div class="trade-card">
           <div class="trade-body">
             <div class="trade-info">
               <div class="trade-symbol">${trade.symbol}</div>
@@ -1665,19 +1603,19 @@
             </div>
             <div class="trade-levels">
               <div class="trade-level">
-                <span>Лимит</span>
+                <span class="trade-level-label">Лимит:</span>
                 <span>${formatNumber(trade.entry, 6)}</span>
               </div>
               <div class="trade-level">
-                <span>TP1</span>
+                <span class="trade-level-label">TP1:</span>
                 <span>${formatNumber(trade.tp1, 6)}</span>
               </div>
               <div class="trade-level">
-                <span>TP2</span>
+                <span class="trade-level-label">TP2:</span>
                 <span>${formatNumber(trade.tp2, 6)}</span>
               </div>
               <div class="trade-level">
-                <span>SL</span>
+                <span class="trade-level-label">SL:</span>
                 <span>${formatNumber(trade.sl, 6)}</span>
               </div>
             </div>
@@ -1717,13 +1655,16 @@
             <td data-label="Символ"><strong>${trade.symbol}</strong></td>
             <td data-label="Напр."><span class="badge ${trade.direction.toLowerCase()}">${trade.direction}</span></td>
             <td data-label="Вход">${formatNumber(trade.entry, 6)}</td>
-            <td data-label="Выход">${formatNumber(trade.close_price, 6)}</td>
+            <td data-label="Выход">${formatNumber(trade.close_price || trade.entry, 6)}</td>
             <td data-label="P&L" style="color: ${pnlColor}">${formatPercent(pnl)}</td>
             <td data-label="Статус"><span class="badge ${statusBadge}">${trade.status}</span></td>
             <td data-label="Дата">${formatDateTime(trade.closed_at || trade.taken_at)}</td>
           </tr>
         `;
       }).join('');
+
+      renderHeatmap(data);
+      renderPnlChart(data);
     }
 
     function renderHeatmap(data) {
@@ -1760,21 +1701,32 @@
       }).join('');
     }
 
-    function renderStatsBreakdown(data) {
-      // Placeholder for detailed stats breakdown
-    }
+    function renderPnlChart(data) {
+      const series = initPnlChart();
+      if (!series) return;
 
-    // ─── Helper Functions ──────────────────────────────────────────────────
-    function calculateTradePnl(trade) {
-      // P&L рассчитывается на бэкенде, но для открытых позиций нужно считать здесь
-      if (trade.pnl_pct !== undefined && trade.pnl_pct !== null) {
-        return trade.pnl_pct;
+      const history = data?.trades_history || [];
+      const closed = history.filter(t => t.closed_at && ['TP1','TP2','SL','SL_AFTER_TP1','TIMEOUT','MANUAL'].includes(t.status));
+      
+      if (closed.length === 0) {
+        series.setData([]);
+        return;
       }
-      // Если pnl_pct нет, считаем примерно по текущей цене
-      return 0;
+
+      closed.sort((a, b) => new Date(a.closed_at) - new Date(b.closed_at));
+      
+      let cumulativePnl = 0;
+      const dataPoints = closed.map(t => {
+        cumulativePnl += (t.pnl_pct || 0);
+        return {
+          time: Math.floor(new Date(t.closed_at || t.taken_at).getTime() / 1000),
+          value: cumulativePnl
+        };
+      });
+
+      series.setData(dataPoints);
     }
 
-    // ─── Modal Functions ───────────────────────────────────────────────────
     function openSignalModal(signalId) {
       if (!appData) return;
       
@@ -1785,7 +1737,6 @@
       document.getElementById('modalSymbol').textContent = `${signal.symbol} — ${signal.direction}`;
       document.getElementById('modalOverlay').classList.add('open');
 
-      // Render modal stats
       const statsHtml = `
         <div class="modal-stat">
           <div class="modal-stat-label">Сила</div>
@@ -1806,8 +1757,29 @@
       `;
       document.getElementById('modalStats').innerHTML = statsHtml;
 
-      // Init chart if needed
-      initModalChart();
+      if (!modalChart) {
+        const container = document.getElementById('modalChart');
+        modalChart = LightweightCharts.createChart(container, {
+          width: container.clientWidth,
+          height: container.clientHeight,
+          layout: { background: { color: 'transparent' }, textColor: '#8b949e' },
+          grid: { vertLines: { color: 'rgba(48, 54, 61, 0.5)' }, horzLines: { color: 'rgba(48, 54, 61, 0.5)' } },
+          rightPriceScale: { borderColor: 'rgba(48, 54, 61, 1)' },
+          timeScale: { borderColor: 'rgba(48, 54, 61, 1)', timeVisible: true },
+        });
+        
+        const modalSeries = modalChart.addCandlestickSeries({
+          upColor: '#3fb950', downColor: '#f85149',
+          borderUpColor: '#3fb950', borderDownColor: '#f85149',
+          wickUpColor: '#3fb950', wickDownColor: '#f85149',
+        });
+
+        new ResizeObserver(entries => {
+          if (entries.length === 0 || entries[0].target !== container) return;
+          const newRect = entries[0].contentRect;
+          modalChart.applyOptions({ width: newRect.width, height: newRect.height });
+        }).observe(container);
+      }
     }
 
     function closeModal() {
@@ -1821,17 +1793,13 @@
       }
     }
 
-    // ─── Action Functions ──────────────────────────────────────────────────
     async function takeSignal(signalId) {
       try {
-        const response = await fetch(`/api/take-signal?signal_id=${signalId}`, {
-          method: 'POST',
-        });
+        const response = await fetch(`/api/take-signal?signal_id=${signalId}`, { method: 'POST' });
         const result = await response.json();
         
         if (response.ok) {
           showNotification(`✅ Сделка взята! Trade ID: ${result.trade_id}`, 'success');
-          // Обновляем UI
           setTimeout(() => renderAll(), 500);
         } else {
           showNotification(`⚠️ ${result.message || 'Ошибка'}`, 'error');
@@ -1843,22 +1811,15 @@
 
     function skipSignal(signalId) {
       fetch(`/api/skip-signal?signal_id=${signalId}`, { method: 'POST' })
-        .then(() => {
-          showNotification('Сигнал пропущен', 'info');
-          // Можно скрыть карточку сигнала
-        })
-        .catch(err => {
-          showNotification(`Ошибка: ${err.message}`, 'error');
-        });
+        .then(() => showNotification('Сигнал пропущен', 'info'))
+        .catch(err => showNotification(`Ошибка: ${err.message}`, 'error'));
     }
 
     async function closePosition(tradeId) {
       if (!confirm('Закрыть позицию по рынку?')) return;
       
       try {
-        const response = await fetch(`/api/close-position?trade_id=${tradeId}`, {
-          method: 'POST',
-        });
+        const response = await fetch(`/api/close-position?trade_id=${tradeId}`, { method: 'POST' });
         const result = await response.json();
         
         if (response.ok) {
@@ -1873,10 +1834,8 @@
     }
 
     function showNotification(message, type = 'info') {
-      // Простое уведомление через console + можно добавить UI
       console.log(`[${type.toUpperCase()}] ${message}`);
       
-      // Создаём временный notification элемент
       const notification = document.createElement('div');
       notification.style.cssText = `
         position: fixed;
@@ -1901,21 +1860,13 @@
       }, 3000);
     }
 
-    // Добавляем CSS анимации для уведомлений
-    const style = document.createElement('style');
-    style.textContent = `
-      @keyframes slideIn {
-        from { transform: translateX(100%); opacity: 0; }
-        to { transform: translateX(0); opacity: 1; }
-      }
-      @keyframes slideOut {
-        from { transform: translateX(0); opacity: 1; }
-        to { transform: translateX(100%); opacity: 0; }
-      }
+    const animStyle = document.createElement('style');
+    animStyle.textContent = `
+      @keyframes slideIn { from { transform: translateX(100%); opacity: 0; } to { transform: translateX(0); opacity: 1; } }
+      @keyframes slideOut { from { transform: translateX(0); opacity: 1; } to { transform: translateX(100%); opacity: 0; } }
     `;
-    document.head.appendChild(style);
+    document.head.appendChild(animStyle);
 
-    // ─── Tab Navigation ────────────────────────────────────────────────────
     function switchTab(tabName) {
       document.querySelectorAll('.nav-tab').forEach(tab => {
         tab.classList.toggle('active', tab.dataset.tab === tabName);
@@ -1924,15 +1875,14 @@
         page.classList.toggle('active', page.id === `page-${tabName}`);
       });
 
-      // Init charts when switching to tabs
       if (tabName === 'history') {
-        setTimeout(() => initPnlChart(), 100);
+        setTimeout(() => {
+          if (pnlChart && appData) renderPnlChart(appData);
+        }, 100);
       }
     }
 
-    // ─── Filter Functions ──────────────────────────────────────────────────
     function setupFilters() {
-      // Direction filter
       document.querySelectorAll('[data-filter-dir]').forEach(btn => {
         btn.addEventListener('click', () => {
           document.querySelectorAll('[data-filter-dir]').forEach(b => b.classList.remove('active'));
@@ -1942,7 +1892,6 @@
         });
       });
 
-      // Strength slider
       const slider = document.getElementById('strengthSlider');
       const valueDisplay = document.getElementById('strengthValue');
       
@@ -1953,31 +1902,60 @@
       });
     }
 
-    // ─── Timeframe Functions ───────────────────────────────────────────────
     function setupTimeframes() {
-      // BTC chart TF
       document.querySelectorAll('#btcTfGroup .tf-btn').forEach(btn => {
         btn.addEventListener('click', () => {
           document.querySelectorAll('#btcTfGroup .tf-btn').forEach(b => b.classList.remove('active'));
           btn.classList.add('active');
           btcCurrentTF = btn.dataset.tf;
-          // Здесь будет загрузка новых данных для графика
-          console.log('BTC TF changed to:', btcCurrentTF);
+          loadBtcCandles(btcCurrentTF);
         });
       });
 
-      // Modal chart TF
       document.querySelectorAll('#modalTfGroup .tf-btn').forEach(btn => {
         btn.addEventListener('click', () => {
           document.querySelectorAll('#modalTfGroup .tf-btn').forEach(b => b.classList.remove('active'));
           btn.classList.add('active');
           modalCurrentTF = btn.dataset.modalTf;
-          console.log('Modal TF changed to:', modalCurrentTF);
         });
       });
     }
 
-    // ─── WebSocket Connection ──────────────────────────────────────────────
+    async function loadBtcCandles(timeframe) {
+      try {
+        const response = await fetch(`/api/candles/BTCUSDT?timeframe=${timeframe}&limit=100`);
+        const data = await response.json();
+        
+        if (btcSeries && data.candles && data.candles.length > 0) {
+          btcSeries.setData(data.candles);
+          
+          const lastCandle = data.candles[data.candles.length - 1];
+          if (lastCandle) {
+            const price = lastCandle.close;
+            document.getElementById('btcChartPrice').textContent = price.toFixed(2);
+            document.getElementById('headerBtcPrice').textContent = price.toFixed(2);
+            
+            if (btcPriceData.length > 0) {
+              const prevPrice = btcPriceData[btcPriceData.length - 1].close;
+              const change = ((price - prevPrice) / prevPrice * 100);
+              const changeEl = document.getElementById('btcChartChange');
+              const headerChangeEl = document.getElementById('headerBtcChange');
+              const changeText = (change >= 0 ? '+' : '') + change.toFixed(2) + '%';
+              
+              changeEl.textContent = changeText;
+              headerChangeEl.textContent = changeText;
+              changeEl.className = 'btc-change ' + (change >= 0 ? 'up' : 'down');
+              headerChangeEl.className = 'btc-change ' + (change >= 0 ? 'up' : 'down');
+            }
+          }
+          
+          btcPriceData = data.candles;
+        }
+      } catch (error) {
+        console.error('Failed to load BTC candles:', error);
+      }
+    }
+
     function connectWebSocket() {
       const protocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
       const wsUrl = `${protocol}//${window.location.host}/ws`;
@@ -1990,8 +1968,6 @@
         reconnectAttempts = 0;
         document.getElementById('liveDot').classList.remove('disconnected');
         document.getElementById('liveStatus').textContent = 'Live';
-        
-        // Загружаем свечи BTC после подключения
         loadBtcCandles(btcCurrentTF);
       };
 
@@ -2002,15 +1978,6 @@
           if (message.type === 'initial_data' || message.type === 'data_update') {
             appData = message.data;
             renderAll();
-            updateHeaderBtcTicker();
-          }
-          
-          // Обработка действий трейдинга
-          if (message.action === 'signal_taken') {
-            console.log('Signal taken:', message);
-          }
-          if (message.action === 'position_closed') {
-            console.log('Position closed:', message);
           }
         } catch (error) {
           console.error('Error parsing WebSocket message:', error);
@@ -2022,7 +1989,6 @@
         document.getElementById('liveDot').classList.add('disconnected');
         document.getElementById('liveStatus').textContent = 'Disconnected';
         
-        // Reconnect logic
         if (reconnectAttempts < MAX_RECONNECT_ATTEMPTS) {
           reconnectAttempts++;
           console.log(`Reconnecting... Attempt ${reconnectAttempts}`);
@@ -2035,49 +2001,6 @@
       };
     }
 
-    // ─── BTC Candles Loading ───────────────────────────────────────────────
-    async function loadBtcCandles(timeframe) {
-      try {
-        const response = await fetch(`/api/candles/BTCUSDT?timeframe=${timeframe}&limit=100`);
-        const data = await response.json();
-        
-        if (btcChart && data.candles && data.candles.length > 0) {
-          // btcChart уже инициализирован в initBtcChart(), получаем серию
-          // Для простоты - создаём новую серию если нет
-          if (!window.btcCandleSeries) {
-            window.btcCandleSeries = btcChart.addCandlestickSeries({
-              upColor: 'var(--green)',
-              downColor: 'var(--red)',
-              borderUpColor: 'var(--green)',
-              borderDownColor: 'var(--red)',
-              wickUpColor: 'var(--green)',
-              wickDownColor: 'var(--red)',
-            });
-          }
-          
-          window.btcCandleSeries.setData(data.candles);
-          
-          // Обновляем цену в заголовке графика
-          const lastCandle = data.candles[data.candles.length - 1];
-          if (lastCandle) {
-            document.getElementById('btcChartPrice').textContent = lastCandle.close.toFixed(2);
-          }
-        }
-      } catch (error) {
-        console.error('Failed to load BTC candles:', error);
-      }
-    }
-
-    function updateHeaderBtcTicker() {
-      if (!appData) return;
-      
-      // Пытаемся получить BTC цену из данных
-      // В будущем можно добавить отдельное поле с текущей ценой BTC
-      const fg = appData.fear_greed || {};
-      // Пока просто обновляем индикатор
-    }
-
-    // ─── Render All ────────────────────────────────────────────────────────
     function renderAll() {
       if (!appData) return;
       renderStats(appData);
@@ -2085,10 +2008,8 @@
       renderPositions(appData);
       renderPending(appData);
       renderHistory(appData);
-      renderHeatmap(appData);
     }
 
-    // ─── Funding Countdown ─────────────────────────────────────────────────
     function updateFundingCountdown() {
       const now = new Date();
       const hours = now.getUTCHours();
@@ -2097,16 +2018,12 @@
       const fundingHours = [0, 8, 16];
       let nextFunding = fundingHours.find(h => h > hours);
       
+      let hoursUntil = 0;
       if (nextFunding === undefined) {
         nextFunding = 0;
-        if (hours >= 16) {
-          // Next day
-          var hoursUntil = (24 - hours) + nextFunding;
-        } else {
-          var hoursUntil = nextFunding - hours;
-        }
+        hoursUntil = (24 - hours) + nextFunding;
       } else {
-        var hoursUntil = nextFunding - hours;
+        hoursUntil = nextFunding - hours;
       }
       
       const minutesUntil = (hoursUntil * 60) - minutes;
@@ -2114,35 +2031,26 @@
       if (minutesUntil > 0) {
         const h = Math.floor(minutesUntil / 60);
         const m = minutesUntil % 60;
-        document.getElementById('fundingCountdown').textContent = 
-          `${h}ч ${m}м`;
+        document.getElementById('fundingCountdown').textContent = `${h}ч ${m}м`;
       } else {
         document.getElementById('fundingCountdown').textContent = 'Скоро...';
       }
     }
 
-    // ─── Initialization ────────────────────────────────────────────────────
     document.addEventListener('DOMContentLoaded', () => {
-      // Initialize BTC chart
-      const btcSeries = initBtcChart();
-
-      // Setup UI
+      initBtcChart();
       setupFilters();
       setupTimeframes();
 
-      // Tab navigation
       document.querySelectorAll('.nav-tab').forEach(tab => {
         tab.addEventListener('click', () => switchTab(tab.dataset.tab));
       });
 
-      // Connect WebSocket
       connectWebSocket();
 
-      // Funding countdown update
       updateFundingCountdown();
       setInterval(updateFundingCountdown, 60000);
 
-      // Load initial data via fetch as fallback
       fetch('/data.json')
         .then(r => r.json())
         .then(data => {
@@ -2151,16 +2059,9 @@
         })
         .catch(err => console.error('Failed to load initial data:', err));
 
-      // Header BTC ticker update from context
-      function updateHeaderBtc() {
-        if (!appData) return;
-        // Placeholder - BTC price will come from WebSocket
-      }
-
       console.log('Futures Terminal initialized');
     });
 
-    // Export for debugging
     window.appData = () => appData;
     window.render = () => renderAll();
   </script>
