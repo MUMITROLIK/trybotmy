@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T18:20:46.111789+00:00",
+  "updated_at": "2026-03-18T18:21:57.558789+00:00",
   "publish_status": {
-    "last_ok": "2026-03-18T18:19:59Z",
+    "last_ok": "2026-03-18T18:20:52Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -12,9 +12,9 @@
   "stats": {
     "total": 562,
     "wins": 167,
-    "losses": 85,
-    "active": 46,
-    "winrate": 66.3
+    "losses": 86,
+    "active": 45,
+    "winrate": 66.0
   },
   "trade_stats": {
     "open": 44,
@@ -466,27 +466,6 @@
       ],
       "news": null,
       "created_at": "2026-03-18 16:07:23",
-      "status": "ACTIVE"
-    },
-    {
-      "id": 549,
-      "symbol": "MUSDT",
-      "direction": "LONG",
-      "entry": 1.8761,
-      "tp1": 1.915764,
-      "tp2": 1.955429,
-      "sl": 1.838578,
-      "strength": 31,
-      "reasons": [
-        "RSI=49 (нейтральный↓)",
-        "BB ниже середины",
-        "EMA20 > EMA50",
-        "Стакан: давление покупки (+0.18)",
-        "МТФ: 5m, 1h, 4h согласны",
-        "CVD положительный (+4.7%)"
-      ],
-      "news": null,
-      "created_at": "2026-03-18 16:07:24",
       "status": "ACTIVE"
     },
     {
