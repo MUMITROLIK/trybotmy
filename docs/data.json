@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T01:47:28.465956+00:00",
+  "updated_at": "2026-03-18T01:48:33.720611+00:00",
   "publish_status": {
-    "last_ok": "2026-03-18T01:46:08Z",
+    "last_ok": "2026-03-18T01:47:33Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,15 +10,15 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 408,
+    "total": 409,
     "wins": 121,
     "losses": 30,
-    "active": 9,
+    "active": 10,
     "winrate": 80.1
   },
   "trade_stats": {
     "open": 12,
-    "pending": 1,
+    "pending": 2,
     "wins": 127,
     "losses": 96,
     "total_pnl": 103.88,
@@ -226,6 +226,28 @@
       ],
       "news": null,
       "created_at": "2026-03-18 00:24:04",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 447,
+      "symbol": "1000BONKUSDT",
+      "direction": "LONG",
+      "entry": 0.0066469,
+      "tp1": 0.00678,
+      "tp2": 0.006913,
+      "sl": 0.006514,
+      "strength": 45,
+      "reasons": [
+        "MACD бычий (hist=0.00001)",
+        "Цена > EMA20 > EMA50",
+        "Стакан: давление покупки (+0.15)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +1.7% + цена ↑",
+        "CVD положительный (+4.8%)",
+        "📌 Лимитный вход @ 0.0066469 (откат к EMA20)"
+      ],
+      "news": null,
+      "created_at": "2026-03-18 01:48:18",
       "status": "ACTIVE"
     }
   ],
@@ -903,9 +925,44 @@
         "Bullish Engulfing (1h) 🕯️",
         "📌 Лимитный вход @ 0.00505084 (откат к EMA20)"
       ]
+    },
+    {
+      "id": 301,
+      "symbol": "1000BONKUSDT",
+      "direction": "LONG",
+      "entry": 0.0066469,
+      "tp1": 0.00678,
+      "tp2": 0.006913,
+      "sl": 0.006514,
+      "strength": 45,
+      "taken_at": "2026-03-18T01:48:18.685046",
+      "status": "PENDING",
+      "reasons": [
+        "MACD бычий (hist=0.00001)",
+        "Цена > EMA20 > EMA50",
+        "Стакан: давление покупки (+0.15)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +1.7% + цена ↑",
+        "CVD положительный (+4.8%)",
+        "📌 Лимитный вход @ 0.0066469 (откат к EMA20)"
+      ]
     }
   ],
   "trades_history": [
+    {
+      "symbol": "1000BONKUSDT",
+      "direction": "LONG",
+      "entry": 0.0066469,
+      "tp1": 0.00678,
+      "tp2": 0.006913,
+      "sl": 0.006514,
+      "strength": 45,
+      "status": "PENDING",
+      "pnl_pct": 0,
+      "close_price": null,
+      "taken_at": "2026-03-18T01:48:18.685046",
+      "closed_at": null
+    },
     {
       "symbol": "1000BONKUSDT",
       "direction": "LONG",
@@ -3691,20 +3748,6 @@
       "close_price": 0.11745,
       "taken_at": "2026-03-17 14:02:50",
       "closed_at": "2026-03-17 14:34:29"
-    },
-    {
-      "symbol": "CRCLUSDT",
-      "direction": "LONG",
-      "entry": 124.71,
-      "tp1": 127.2042,
-      "tp2": 129.6984,
-      "sl": 127.25,
-      "strength": 37,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 1.92,
-      "close_price": 127.10499999999999,
-      "taken_at": "2026-03-17 13:01:32",
-      "closed_at": "2026-03-17 14:33:30"
     }
   ]
 }
