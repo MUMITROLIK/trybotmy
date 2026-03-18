@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T23:31:19.954674+00:00",
+  "updated_at": "2026-03-18T23:32:27.022125+00:00",
   "publish_status": {
-    "last_ok": "2026-03-18T23:30:21Z",
+    "last_ok": "2026-03-18T23:31:24Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 65.9
   },
   "trade_stats": {
-    "open": 8,
+    "open": 7,
     "pending": 0,
     "wins": 178,
-    "losses": 201,
-    "total_pnl": 17.41,
-    "winrate": 47.0
+    "losses": 202,
+    "total_pnl": 15.37,
+    "winrate": 46.8
   },
   "fear_greed": {
     "value": 26,
@@ -593,30 +593,6 @@
       ]
     },
     {
-      "id": 461,
-      "symbol": "TRIAUSDT",
-      "direction": "LONG",
-      "entry": 0.03424,
-      "tp1": 0.03493215,
-      "tp2": 0.03562424,
-      "sl": 0.0335551,
-      "entry_orig": 0.03364194,
-      "tp1_orig": 0.034322,
-      "tp2_orig": 0.035002,
-      "sl_orig": 0.032969,
-      "strength": 40,
-      "taken_at": "2026-03-18T20:39:05.184243",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00004)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: сильное давление покупки (+0.50)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "📌 Лимитный вход @ 0.0336419 (откат к EMA20)",
-        "🤖 ML: вероятность 70%"
-      ]
-    },
-    {
       "id": 462,
       "symbol": "HANAUSDT",
       "direction": "LONG",
@@ -778,6 +754,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "TRIAUSDT",
+      "direction": "LONG",
+      "entry": 0.03424,
+      "tp1": 0.03493215,
+      "tp2": 0.03562424,
+      "sl": 0.0335551,
+      "strength": 40,
+      "status": "SL",
+      "pnl_pct": -2.04,
+      "close_price": 0.03354,
+      "taken_at": "2026-03-18T20:39:05.184243",
+      "closed_at": "2026-03-18 23:31:44"
+    },
     {
       "symbol": "ENJUSDT",
       "direction": "LONG",
@@ -3563,20 +3553,6 @@
       "close_price": null,
       "taken_at": "2026-03-17T21:43:33.744654",
       "closed_at": "2026-03-17 22:43:36"
-    },
-    {
-      "symbol": "LITUSDT",
-      "direction": "LONG",
-      "entry": 1.26586677,
-      "tp1": 1.296188,
-      "tp2": 1.32651,
-      "sl": 1.240549,
-      "strength": 46,
-      "status": "LIMIT_TIMEOUT",
-      "pnl_pct": 0,
-      "close_price": null,
-      "taken_at": "2026-03-17T21:36:03.591597",
-      "closed_at": "2026-03-17 22:36:08"
     }
   ]
 }
