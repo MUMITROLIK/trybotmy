@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-03-18T17:47:12.047561+00:00",
+  "updated_at": "2026-03-18T17:48:12.986907+00:00",
   "publish_status": {
-    "last_ok": null,
-    "last_error": "fatal: unable to access 'https://github.com/MUMITROLIK/trybotmy.git/': Failed to connect to github.com port 443 after 21094 ms: Could not connect to server\n",
+    "last_ok": "2026-03-18T17:47:37Z",
+    "last_error": null,
     "min_push_interval_sec": 30
   },
   "settings": {
@@ -12,17 +12,17 @@
   "stats": {
     "total": 553,
     "wins": 161,
-    "losses": 73,
-    "active": 55,
-    "winrate": 68.8
+    "losses": 74,
+    "active": 54,
+    "winrate": 68.5
   },
   "trade_stats": {
-    "open": 56,
+    "open": 55,
     "pending": 1,
     "wins": 155,
-    "losses": 154,
-    "total_pnl": 43.37,
-    "winrate": 50.2
+    "losses": 155,
+    "total_pnl": 41.33,
+    "winrate": 50.0
   },
   "fear_greed": {
     "value": 26,
@@ -1044,26 +1044,6 @@
       "status": "ACTIVE"
     },
     {
-      "id": 577,
-      "symbol": "ROBOUSDT",
-      "direction": "SHORT",
-      "entry": 0.02522,
-      "tp1": 0.024586,
-      "tp2": 0.023951,
-      "sl": 0.025727,
-      "strength": 38,
-      "reasons": [
-        "MACD медвежий (hist=-0.00003)",
-        "Цена < EMA20 < EMA50",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "CVD падает (-9.3%) — продажи усиливаются 📉",
-        "BTC контекст: -3.3% за 12ч 📉"
-      ],
-      "news": null,
-      "created_at": "2026-03-18 16:55:41",
-      "status": "ACTIVE"
-    },
-    {
       "id": 578,
       "symbol": "LIGHTUSDT",
       "direction": "LONG",
@@ -1356,6 +1336,24 @@
       ]
     },
     {
+      "symbol": "ROBOUSDT",
+      "direction": "SHORT",
+      "entry": 0.02522,
+      "tp1": 0.024586,
+      "tp2": 0.023951,
+      "sl": 0.025727,
+      "strength": 38,
+      "status": "SL",
+      "created_at": "2026-03-18 16:55:41",
+      "reasons": [
+        "MACD медвежий (hist=-0.00003)",
+        "Цена < EMA20 < EMA50",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "CVD падает (-9.3%) — продажи усиливаются 📉",
+        "BTC контекст: -3.3% за 12ч 📉"
+      ]
+    },
+    {
       "symbol": "FLOWUSDT",
       "direction": "SHORT",
       "entry": 0.02986,
@@ -1634,25 +1632,6 @@
         "OI растёт +4.0%",
         "CVD отрицательный (+1.3%)",
         "BTC контекст: -3.2% за 12ч 📉"
-      ]
-    },
-    {
-      "symbol": "HYPEUSDT",
-      "direction": "LONG",
-      "entry": 41.757,
-      "tp1": 42.792214,
-      "tp2": 43.827429,
-      "sl": 40.92186,
-      "strength": 34,
-      "status": "TP1",
-      "created_at": "2026-03-18 16:02:14",
-      "reasons": [
-        "MACD бычий (hist=0.09229)",
-        "Цена выше EMA20",
-        "МТФ: 5m, 1h, 4h согласны",
-        "OI растёт +3.8% + цена ↑",
-        "CVD положительный (+0.8%)",
-        "⚡ Рыночный вход (моментум: MTF+OI+CVD)"
       ]
     }
   ],
@@ -2800,29 +2779,6 @@
       ]
     },
     {
-      "id": 431,
-      "symbol": "ROBOUSDT",
-      "direction": "SHORT",
-      "entry": 0.02522,
-      "tp1": 0.024586,
-      "tp2": 0.023951,
-      "sl": 0.025727,
-      "entry_orig": 0.02522,
-      "tp1_orig": 0.024586,
-      "tp2_orig": 0.023951,
-      "sl_orig": 0.025727,
-      "strength": 38,
-      "taken_at": "2026-03-18T16:55:41.625457",
-      "status": "OPEN",
-      "reasons": [
-        "MACD медвежий (hist=-0.00003)",
-        "Цена < EMA20 < EMA50",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "CVD падает (-9.3%) — продажи усиливаются 📉",
-        "BTC контекст: -3.3% за 12ч 📉"
-      ]
-    },
-    {
       "id": 432,
       "symbol": "LIGHTUSDT",
       "direction": "LONG",
@@ -3094,6 +3050,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "ROBOUSDT",
+      "direction": "SHORT",
+      "entry": 0.02522,
+      "tp1": 0.024586,
+      "tp2": 0.023951,
+      "sl": 0.025727,
+      "strength": 38,
+      "status": "SL",
+      "pnl_pct": -2.04,
+      "close_price": 0.025735,
+      "taken_at": "2026-03-18T16:55:41.625457",
+      "closed_at": "2026-03-18 17:47:39"
+    },
     {
       "symbol": "TRUMPUSDT",
       "direction": "SHORT",
@@ -5879,20 +5849,6 @@
       "close_price": 41.3065,
       "taken_at": "2026-03-17 17:40:18",
       "closed_at": "2026-03-17 20:35:45"
-    },
-    {
-      "symbol": "VIRTUALUSDT",
-      "direction": "LONG",
-      "entry": 0.7785,
-      "tp1": 0.79407,
-      "tp2": 0.80964,
-      "sl": 0.76293,
-      "strength": 33,
-      "status": "TIMEOUT",
-      "pnl_pct": 0.58,
-      "close_price": 0.78305,
-      "taken_at": "2026-03-17 12:34:09",
-      "closed_at": "2026-03-17 20:34:15"
     }
   ]
 }
