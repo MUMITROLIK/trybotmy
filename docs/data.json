@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T16:04:40.268739+00:00",
+  "updated_at": "2026-03-18T16:05:24.933345+00:00",
   "publish_status": {
-    "last_ok": "2026-03-18T16:03:40Z",
+    "last_ok": "2026-03-18T16:04:47Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -12,17 +12,17 @@
   "stats": {
     "total": 501,
     "wins": 152,
-    "losses": 62,
-    "active": 23,
-    "winrate": 71.0
+    "losses": 63,
+    "active": 22,
+    "winrate": 70.7
   },
   "trade_stats": {
-    "open": 24,
+    "open": 23,
     "pending": 0,
     "wins": 147,
-    "losses": 143,
-    "total_pnl": 42.15,
-    "winrate": 50.7
+    "losses": 144,
+    "total_pnl": 39.65,
+    "winrate": 50.5
   },
   "fear_greed": {
     "value": 26,
@@ -360,28 +360,6 @@
       "status": "ACTIVE"
     },
     {
-      "id": 531,
-      "symbol": "MBOXUSDT",
-      "direction": "LONG",
-      "entry": 0.01901,
-      "tp1": 0.019583,
-      "tp2": 0.020156,
-      "sl": 0.018551,
-      "strength": 39,
-      "reasons": [
-        "MACD бычий (hist=0.00016)",
-        "Цена выше EMA20",
-        "Стакан: давление покупки (+0.16)",
-        "МТФ: 5m, 1h, 4h согласны",
-        "OI растёт +10.8% + цена ↑",
-        "CVD положительный (+1.0%)",
-        "⚡ Рыночный вход (моментум: MTF+OI+CVD)"
-      ],
-      "news": null,
-      "created_at": "2026-03-18 16:02:17",
-      "status": "ACTIVE"
-    },
-    {
       "id": 532,
       "symbol": "XAGUSDT",
       "direction": "LONG",
@@ -560,6 +538,26 @@
     }
   ],
   "history": [
+    {
+      "symbol": "MBOXUSDT",
+      "direction": "LONG",
+      "entry": 0.01901,
+      "tp1": 0.019583,
+      "tp2": 0.020156,
+      "sl": 0.018551,
+      "strength": 39,
+      "status": "SL",
+      "created_at": "2026-03-18 16:02:17",
+      "reasons": [
+        "MACD бычий (hist=0.00016)",
+        "Цена выше EMA20",
+        "Стакан: давление покупки (+0.16)",
+        "МТФ: 5m, 1h, 4h согласны",
+        "OI растёт +10.8% + цена ↑",
+        "CVD положительный (+1.0%)",
+        "⚡ Рыночный вход (моментум: MTF+OI+CVD)"
+      ]
+    },
     {
       "symbol": "CRCLUSDT",
       "direction": "LONG",
@@ -933,25 +931,6 @@
         "МТФ: 1h, 4h согласны",
         "CVD растёт (+8.9%) — покупки усиливаются 📈",
         "Bullish Engulfing (1h) 🕯️"
-      ]
-    },
-    {
-      "symbol": "TRIAUSDT",
-      "direction": "LONG",
-      "entry": 0.03286,
-      "tp1": 0.033517,
-      "tp2": 0.034174,
-      "sl": 0.032203,
-      "strength": 41,
-      "status": "SL",
-      "created_at": "2026-03-18 11:16:21",
-      "reasons": [
-        "RSI=32 (перепроданность)",
-        "BB нижняя полоса (пробой)",
-        "EMA20 > EMA50",
-        "Стакан: перевес bid (+0.09)",
-        "МТФ: 15m, 1h, 4h согласны",
-        "CVD растёт (+6.0%) — покупки усиливаются 📈"
       ]
     }
   ],
@@ -1346,31 +1325,6 @@
       ]
     },
     {
-      "id": 385,
-      "symbol": "MBOXUSDT",
-      "direction": "LONG",
-      "entry": 0.01901,
-      "tp1": 0.019583,
-      "tp2": 0.020156,
-      "sl": 0.018551,
-      "entry_orig": 0.01901,
-      "tp1_orig": 0.019583,
-      "tp2_orig": 0.020156,
-      "sl_orig": 0.018551,
-      "strength": 39,
-      "taken_at": "2026-03-18T16:02:17.676764",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00016)",
-        "Цена выше EMA20",
-        "Стакан: давление покупки (+0.16)",
-        "МТФ: 5m, 1h, 4h согласны",
-        "OI растёт +10.8% + цена ↑",
-        "CVD положительный (+1.0%)",
-        "⚡ Рыночный вход (моментум: MTF+OI+CVD)"
-      ]
-    },
-    {
       "id": 386,
       "symbol": "XAGUSDT",
       "direction": "LONG",
@@ -1573,6 +1527,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "MBOXUSDT",
+      "direction": "LONG",
+      "entry": 0.01901,
+      "tp1": 0.019583,
+      "tp2": 0.020156,
+      "sl": 0.018551,
+      "strength": 39,
+      "status": "SL",
+      "pnl_pct": -2.5,
+      "close_price": 0.018535000000000003,
+      "taken_at": "2026-03-18T16:02:17.676764",
+      "closed_at": "2026-03-18 16:05:24"
+    },
     {
       "symbol": "RESOLVUSDT",
       "direction": "SHORT",
@@ -4357,20 +4325,6 @@
       "pnl_pct": 0.91,
       "close_price": 58.125,
       "taken_at": "2026-03-17 12:05:55",
-      "closed_at": "2026-03-17 20:06:00"
-    },
-    {
-      "symbol": "ENAUSDT",
-      "direction": "LONG",
-      "entry": 0.1163,
-      "tp1": 0.118626,
-      "tp2": 0.120952,
-      "sl": 0.113974,
-      "strength": 26,
-      "status": "TIMEOUT",
-      "pnl_pct": -0.21,
-      "close_price": 0.11605,
-      "taken_at": "2026-03-17 12:05:56",
       "closed_at": "2026-03-17 20:06:00"
     }
   ]
