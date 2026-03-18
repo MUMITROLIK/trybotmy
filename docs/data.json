@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T23:32:27.022125+00:00",
+  "updated_at": "2026-03-18T23:33:04.069371+00:00",
   "publish_status": {
-    "last_ok": "2026-03-18T23:31:24Z",
+    "last_ok": "2026-03-18T23:32:32Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -11,10 +11,10 @@
   },
   "stats": {
     "total": 576,
-    "wins": 178,
+    "wins": 179,
     "losses": 92,
-    "active": 6,
-    "winrate": 65.9
+    "active": 5,
+    "winrate": 66.1
   },
   "trade_stats": {
     "open": 7,
@@ -153,9 +153,10 @@
       "news": null,
       "created_at": "2026-03-18 23:15:09",
       "status": "ACTIVE"
-    },
+    }
+  ],
+  "history": [
     {
-      "id": 614,
       "symbol": "SIRENUSDT",
       "direction": "SHORT",
       "entry": 0.90049,
@@ -163,6 +164,8 @@
       "tp2": 0.848796,
       "sl": 0.921168,
       "strength": 45,
+      "status": "TP1",
+      "created_at": "2026-03-18 23:26:29",
       "reasons": [
         "RSI=53 (нейтральный↑)",
         "MACD медвежий (hist=-0.00008)",
@@ -173,13 +176,8 @@
         "⚠️ Funding через 35м",
         "BTC контекст: -2.5% за 12ч 📉",
         "🤖 ML: вероятность 56%"
-      ],
-      "news": null,
-      "created_at": "2026-03-18 23:26:29",
-      "status": "ACTIVE"
-    }
-  ],
-  "history": [
+      ]
+    },
     {
       "symbol": "ENJUSDT",
       "direction": "LONG",
@@ -546,25 +544,6 @@
         "МТФ: 15m, 1h, 4h согласны",
         "CVD положительный (+1.2%)"
       ]
-    },
-    {
-      "symbol": "XMRUSDT",
-      "direction": "SHORT",
-      "entry": 351.15,
-      "tp1": 344.127,
-      "tp2": 337.104,
-      "sl": 358.173,
-      "strength": 37,
-      "status": "EXPIRED",
-      "created_at": "2026-03-18 17:25:27",
-      "reasons": [
-        "MACD медвежий (hist=-0.19403)",
-        "Цена < EMA20 < EMA50",
-        "Стакан: давление продажи (-0.23)",
-        "МТФ: 5m, 15m, 1h согласны",
-        "CVD падает (-8.3%) — продажи усиливаются 📉",
-        "BTC контекст: -3.3% за 12ч 📉"
-      ]
     }
   ],
   "trades_open": [
@@ -732,14 +711,14 @@
       "entry": 0.90049,
       "tp1": 0.874643,
       "tp2": 0.848796,
-      "sl": 0.921168,
+      "sl": 0.86978,
       "entry_orig": 0.90049,
       "tp1_orig": 0.874643,
       "tp2_orig": 0.848796,
       "sl_orig": 0.921168,
       "strength": 45,
       "taken_at": "2026-03-18T23:26:29.871402",
-      "status": "OPEN",
+      "status": "TP1_HIT",
       "reasons": [
         "RSI=53 (нейтральный↑)",
         "MACD медвежий (hist=-0.00008)",
