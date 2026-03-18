@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T08:56:15.200578+00:00",
+  "updated_at": "2026-03-18T08:57:05.784848+00:00",
   "publish_status": {
-    "last_ok": "2026-03-18T08:55:13Z",
+    "last_ok": "2026-03-18T08:56:20Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 80.6
   },
   "trade_stats": {
-    "open": 11,
+    "open": 10,
     "pending": 1,
-    "wins": 135,
+    "wins": 136,
     "losses": 105,
-    "total_pnl": 99.6,
-    "winrate": 56.2
+    "total_pnl": 101.6,
+    "winrate": 56.4
   },
   "fear_greed": {
     "value": 26,
@@ -899,9 +899,10 @@
         "CVD растёт (+7.1%) — покупки усиливаются 📈",
         "📌 Лимитный вход @ 0.0793248 (откат к EMA20)"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 322,
       "symbol": "RIVERUSDT",
       "direction": "LONG",
       "entry": 23.555,
@@ -909,19 +910,12 @@
       "tp2": 24.4972,
       "sl": 24.0501325,
       "strength": 40,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 2.0,
+      "close_price": 24.0255,
       "taken_at": "2026-03-18T08:16:57.032498",
-      "status": "TP1_HIT",
-      "reasons": [
-        "RSI=41 (нейтральный↓)",
-        "BB нижняя зона (13%)",
-        "EMA20 > EMA50",
-        "Стакан: сильное давление покупки (+0.73)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +4.7%"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-18 08:57:05"
+    },
     {
       "symbol": "MUSDT",
       "direction": "LONG",
@@ -3707,20 +3701,6 @@
       "close_price": 1.1464500000000002,
       "taken_at": "2026-03-17 08:57:12",
       "closed_at": "2026-03-17 16:38:02"
-    },
-    {
-      "symbol": "CFGUSDT",
-      "direction": "SHORT",
-      "entry": 0.1599,
-      "tp1": 0.15486315,
-      "tp2": 0.14984229,
-      "sl": 0.15415,
-      "strength": 37,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 3.35,
-      "close_price": 0.15455,
-      "taken_at": "2026-03-17 13:38:10",
-      "closed_at": "2026-03-17 16:30:42"
     }
   ]
 }
