@@ -496,17 +496,20 @@
         const sl = t.sl, entry = t.entry, tp1 = t.tp1, tp2 = t.tp2;
         if (sl && entry && tp2) {
           const isLong = t.direction === 'LONG';
-          // Геометрия: всегда слева меньшая цена, справа — большая
-          const rangeMin = Math.min(sl, tp2);
-          const rangeMax = Math.max(sl, tp2);
-          const range = rangeMax - rangeMin;
-          if (range > 0) {
-            // Current price position (moving marker)
-            const curPos   = Math.max(0, Math.min(100, (liveP - rangeMin) / range * 100));
-            // Entry price position (BLUE DOT - FIXED)
-            const entryPos = Math.max(0, Math.min(100, (entry - rangeMin) / range * 100));
-            // TP1 position (vertical line)
-            const tp1pos   = Math.max(0, Math.min(100, (tp1 - rangeMin) / range * 100));
+          let range, curPos, entryPos, tp1pos;
+          if (isLong) {
+            range = tp2 - sl;
+            if (range <= 0) return;
+            curPos  = Math.max(0, Math.min(100, (liveP - sl)  / range * 100));
+            entryPos= Math.max(0, Math.min(100, (entry - sl)  / range * 100));
+            tp1pos  = Math.max(0, Math.min(100, (tp1   - sl)  / range * 100));
+          } else {
+            range = sl - tp2;
+            if (range <= 0) return;
+            curPos  = Math.max(0, Math.min(100, (sl - liveP)  / range * 100));
+            entryPos= Math.max(0, Math.min(100, (sl - entry)  / range * 100));
+            tp1pos  = Math.max(0, Math.min(100, (sl - tp1)    / range * 100));
+          }
             
             const barColor = pnl > 1 ? '#4ADE80' : pnl > 0 ? '#86EFAC' : pnl > -1 ? '#FCD34D' : '#F87171';
             const mrkColor = pnl >= 0 ? '#4ADE80' : '#F87171';
