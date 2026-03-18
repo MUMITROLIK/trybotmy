@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T09:15:37.751899+00:00",
+  "updated_at": "2026-03-18T09:16:45.248758+00:00",
   "publish_status": {
-    "last_ok": null,
+    "last_ok": "2026-03-18T09:15:44Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,15 +10,15 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 434,
+    "total": 435,
     "wins": 134,
     "losses": 32,
-    "active": 11,
+    "active": 12,
     "winrate": 80.7
   },
   "trade_stats": {
-    "open": 10,
-    "pending": 2,
+    "open": 12,
+    "pending": 1,
     "wins": 136,
     "losses": 105,
     "total_pnl": 101.6,
@@ -279,6 +279,29 @@
       ],
       "news": null,
       "created_at": "2026-03-18 09:02:20",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 473,
+      "symbol": "VANRYUSDT",
+      "direction": "LONG",
+      "entry": 0.00670438,
+      "tp1": 0.006913,
+      "tp2": 0.007121,
+      "sl": 0.006538,
+      "strength": 40,
+      "reasons": [
+        "RSI=49 (нейтральный↓)",
+        "MACD бычий (hist=0.00001)",
+        "Цена выше EMA20",
+        "МТФ: 1h, 4h согласны",
+        "OI растёт +1.9% + цена ↑",
+        "CVD положительный (-2.2%)",
+        "Bullish Engulfing (1h) 🕯️",
+        "📌 Лимитный вход @ 0.00670438 (откат к EMA20)"
+      ],
+      "news": null,
+      "created_at": "2026-03-18 09:16:08",
       "status": "ACTIVE"
     }
   ],
@@ -903,13 +926,13 @@
       "id": 325,
       "symbol": "TRUMPUSDT",
       "direction": "SHORT",
-      "entry": 3.68883779,
-      "tp1": 3.615061,
-      "tp2": 3.541284,
-      "sl": 3.762615,
+      "entry": 3.6695,
+      "tp1": 3.59610997,
+      "tp2": 3.52271972,
+      "sl": 3.74289045,
       "strength": 45,
       "taken_at": "2026-03-18T09:02:21.008230",
-      "status": "PENDING",
+      "status": "OPEN",
       "reasons": [
         "MACD медвежий (hist=-0.00427)",
         "Цена < EMA20 < EMA50",
@@ -918,6 +941,28 @@
         "OI растёт +2.1% + цена ↓",
         "CVD падает (-12.2%) — продажи усиливаются 📉",
         "📌 Лимитный вход @ 3.68884 (откат к EMA20)"
+      ]
+    },
+    {
+      "id": 327,
+      "symbol": "VANRYUSDT",
+      "direction": "LONG",
+      "entry": 0.006748499999999999,
+      "tp1": 0.00695849,
+      "tp2": 0.00716786,
+      "sl": 0.00658103,
+      "strength": 40,
+      "taken_at": "2026-03-18T09:16:08.382106",
+      "status": "OPEN",
+      "reasons": [
+        "RSI=49 (нейтральный↓)",
+        "MACD бычий (hist=0.00001)",
+        "Цена выше EMA20",
+        "МТФ: 1h, 4h согласны",
+        "OI растёт +1.9% + цена ↑",
+        "CVD положительный (-2.2%)",
+        "Bullish Engulfing (1h) 🕯️",
+        "📌 Лимитный вход @ 0.00670438 (откат к EMA20)"
       ]
     },
     {
