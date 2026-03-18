@@ -233,7 +233,7 @@
       const cc=pr?'profit':isN?'neu':'loss',pc=pr?'pos':isN?'ne':'neg';
       const dur=t.status!=='PENDING'?durStr(t.taken_at):'';
       const curP=livePnl!=null?fmt(livePnl):'—';
-      return`<div class="posc glass ch ${cc} ${bp} aup ${d}" id="pos-${t.id||t.symbol}"><div class="sh"><div class="symw"><span class="sym">${t.symbol}</span>${livePnl!=null?`<span style="font-size:.7rem;color:rgba(221,197,162,.4);font-family:monospace">${curP}</span>`:''}</div><span class="db ${t.direction==='LONG'?'long':'short'}">${t.direction==='LONG'?'🟢 ЛОНГ':'🔴 ШОРТ'}</span></div><div class="ppnl ${pc} ${pr?'fl':''}">${pnl>=0?'+':''}${pnl.toFixed(2)}%</div><div class="pp"><div class="pi"><span class="pil">Вход</span><span class="piv">${fmt(t.entry)}</span></div><div class="pi"><span class="pil">ТП1</span><span class="piv" style="color:#4ADE80">${fmt(t.tp1)}</span></div><div class="pi"><span class="pil">ТП2</span><span class="piv" style="color:#4ADE80">${fmt(t.tp2)}</span></div><div class="pi"><span class="pil">СЛ</span><span class="piv" style="color:#F87171">${fmt(t.sl)}</span></div></div><div style="display:flex;align-items:center;justify-content:space-between;gap:.5rem"><span class="pstat ${t.status==='TP1_HIT'?'tp1':t.status==='PENDING'?'pend':'open'}">${stLbl(t.status)}</span>${dur?`<span style="font-size:.75rem;color:rgba(221,197,162,.5)">⏱ ${dur}</span>`:''}<span style="font-size:.75rem;color:rgba(221,197,162,.35)">${fmtT(t.taken_at)}</span></div></div>`;
+      return`<div class="posc glass ch ${cc} ${bp} aup ${d}" id="pos-${t.id||t.symbol}"><div class="sh"><div class="symw"><span class="sym">${t.symbol}</span><span class="live-cur" style="font-size:.7rem;color:rgba(221,197,162,.4);font-family:monospace;margin-left:.25rem">${curP}</span></div><span class="db ${t.direction==='LONG'?'long':'short'}">${t.direction==='LONG'?'🟢 ЛОНГ':'🔴 ШОРТ'}</span></div><div class="ppnl ${pc} ${pr?'fl':''}">${pnl>=0?'+':''}${pnl.toFixed(2)}%</div><div class="pp"><div class="pi"><span class="pil">Вход</span><span class="piv">${fmt(t.entry)}</span></div><div class="pi"><span class="pil">ТП1</span><span class="piv" style="color:#4ADE80">${fmt(t.tp1)}</span></div><div class="pi"><span class="pil">ТП2</span><span class="piv" style="color:#4ADE80">${fmt(t.tp2)}</span></div><div class="pi"><span class="pil">СЛ</span><span class="piv" style="color:#F87171">${fmt(t.sl)}</span></div></div><div style="display:flex;align-items:center;justify-content:space-between;gap:.5rem"><span class="pstat ${t.status==='TP1_HIT'?'tp1':t.status==='PENDING'?'pend':'open'}">${stLbl(t.status)}</span><span class="live-dur" style="font-size:.75rem;color:rgba(221,197,162,.5)">${dur?'⏱ '+dur:''}</span><span style="font-size:.75rem;color:rgba(221,197,162,.35)">${fmtT(t.taken_at)}</span></div></div>`;
     }
 
     function rHist(h){if(!h.length)return`<div class="hw glass"><div class="empty" style="border:none"><div class="eico"><div class="eicoi"></div></div><div class="etxt">Нет истории сделок</div></div></div>`;
@@ -324,31 +324,52 @@
 
     async function fetchLivePrices() {
       if (!openTradesCache.length) return;
-      // Fetch prices for all open positions in parallel (batches of 5)
       const symbols = [...new Set(openTradesCache.map(t => t.symbol))];
-      const results = await Promise.allSettled(
+      await Promise.allSettled(
         symbols.map(async sym => {
           try {
             const r = await fetch(`/api/klines?symbol=${sym}&interval=1m&limit=1`);
-            if (r.ok) {
-              const d = await r.json();
-              if (d && d[0]) livePrices[sym] = parseFloat(d[0][4]);
-            }
+            if (r.ok) { const d = await r.json(); if (d&&d[0]) livePrices[sym]=parseFloat(d[0][4]); }
           } catch {}
         })
       );
-      // Re-render positions tab if active
-      if (activeTab === 'positions' || activeTab === 'pending') {
-        if (appData) {
-          const a = appData.trades_open || [];
-          renderTab(
-            appData.signals || [],
-            a.filter(t => ['OPEN','TP1_HIT'].includes(t.status)),
-            a.filter(t => t.status === 'PENDING'),
-            appData.trades_history || []
-          );
+      // Patch DOM in-place — no re-render, no flash
+      patchPositionCards();
+    }
+
+    function patchPositionCards() {
+      openTradesCache.forEach(t => {
+        const card = document.getElementById('pos-'+(t.id||t.symbol));
+        if (!card) return;
+        const liveP = livePrices[t.symbol];
+        if (liveP == null) return;
+        let pnl = t.direction==='LONG'
+          ? (liveP - t.entry) / t.entry * 100
+          : (t.entry - liveP) / t.entry * 100;
+        const pr = pnl > 0.01, isN = Math.abs(pnl) < 0.01;
+
+        // Update P&L text
+        const pnlEl = card.querySelector('.ppnl');
+        if (pnlEl) {
+          pnlEl.textContent = (pnl>=0?'+':'') + pnl.toFixed(2) + '%';
+          pnlEl.className = 'ppnl ' + (pr?'pos':isN?'ne':'neg') + (pr?' fl':'');
         }
-      }
+        // Update card border color
+        card.className = card.className
+          .replace(/(profit|loss|neu)/g, pr?'profit':isN?'neu':'loss');
+
+        // Update current price display
+        const priceSpan = card.querySelector('.live-cur');
+        if (priceSpan) priceSpan.textContent = fmt(liveP);
+      });
+
+      // Also update duration every call
+      openTradesCache.forEach(t => {
+        const card = document.getElementById('pos-'+(t.id||t.symbol));
+        if (!card) return;
+        const durEl = card.querySelector('.live-dur');
+        if (durEl && t.status !== 'PENDING') durEl.textContent = '⏱ ' + durStr(t.taken_at);
+      });
     }
 
     let ws=null;
@@ -381,18 +402,8 @@
     setInterval(fetchREST, 30000);
     // Fetch live prices every 15 seconds
     setInterval(fetchLivePrices, 15000);
-    // Also update duration display every minute
-    setInterval(() => {
-      if (appData && (activeTab === 'positions' || activeTab === 'pending')) {
-        const a = appData.trades_open || [];
-        renderTab(
-          appData.signals || [],
-          a.filter(t => ['OPEN','TP1_HIT'].includes(t.status)),
-          a.filter(t => t.status === 'PENDING'),
-          appData.trades_history || []
-        );
-      }
-    }, 60000);
+    // Patch duration every minute without re-render
+    setInterval(() => { if (openTradesCache.length) patchPositionCards(); }, 60000);
   </script>
 </body>
 </html>
