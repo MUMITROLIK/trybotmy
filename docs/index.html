@@ -287,7 +287,13 @@
       return`<div class="hw glass aup" style="overflow-x:auto"><table class="ht"><thead><tr><th>Пара</th><th>Напр.</th><th>Вход</th><th>Закрыто</th><th>P&L</th><th>Статус</th><th>Время</th></tr></thead><tbody>${h.map((x,i)=>{const pnl=x.pnl_pct||0,pc=pnl>0?'pos':pnl<0?'neg':'ne';return`<tr class="aup d${i%6+1}"><td><span class="hsym">${x.symbol}</span></td><td><span class="hdir ${x.direction==='LONG'?'long':'short'}">${x.direction==='LONG'?'Лонг':'Шорт'}</span></td><td class="hprice mono">${fmt(x.entry)}</td><td class="hprice mono">${fmt(x.close_price)}</td><td><span class="hpnl ${pc} mono">${pnl>=0?'+':''}${pnl.toFixed(2)}%</span></td><td><span class="hst ${stCls(x.status)}">${stLbl(x.status)}</span></td><td class="htime">${fmtT(x.closed_at)}</td></tr>`;}).join('')}</tbody></table></div>`;}
 
     function rEmpty(m){return`<div class="empty glass aup"><div class="eico"><div class="eicoi"></div></div><div class="etxt">${m}</div></div>`;}
-    function rTicks(v){return[0,25,50,75,100].map((t,i)=>{const td=fgM(t),a=v>=t;return`<div class="ftk" style="background:${td.c};opacity:${a?1:.15};transition-delay:${i*.1}s;box-shadow:${a?`0 0 12px ${td.c}50`:'none'}"></div>`;}).join('');}
+    function rTicks(v){
+      return [0,25,50,75,100].map((t,i)=>{
+        const td = fgM(t), a = v>=t;
+        const glow = a ? '0 0 12px '+td.c+'50' : 'none';
+        return `<div class="ftk" style="background:${td.c};opacity:${a?1:.15};transition-delay:${i*.1}s;box-shadow:${glow}"></div>`;
+      }).join('');
+    }
 
     let appData=null,activeTab='signals',serverTime=null;
 
