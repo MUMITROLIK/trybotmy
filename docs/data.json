@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T00:04:54.341987+00:00",
+  "updated_at": "2026-03-18T00:05:30.231562+00:00",
   "publish_status": {
-    "last_ok": "2026-03-18T00:04:16Z",
+    "last_ok": "2026-03-18T00:04:59Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -12,17 +12,17 @@
   "stats": {
     "total": 401,
     "wins": 114,
-    "losses": 27,
-    "active": 16,
-    "winrate": 80.9
+    "losses": 28,
+    "active": 15,
+    "winrate": 80.3
   },
   "trade_stats": {
-    "open": 14,
+    "open": 13,
     "pending": 2,
     "wins": 122,
-    "losses": 93,
-    "total_pnl": 86.85,
-    "winrate": 56.7
+    "losses": 94,
+    "total_pnl": 84.12,
+    "winrate": 56.5
   },
   "fear_greed": {
     "value": 28,
@@ -360,9 +360,10 @@
       "news": null,
       "created_at": "2026-03-18 00:02:08",
       "status": "ACTIVE"
-    },
+    }
+  ],
+  "history": [
     {
-      "id": 439,
       "symbol": "POLYXUSDT",
       "direction": "LONG",
       "entry": 0.05266,
@@ -370,6 +371,8 @@
       "tp2": 0.055501,
       "sl": 0.051523,
       "strength": 44,
+      "status": "SL",
+      "created_at": "2026-03-18 00:03:45",
       "reasons": [
         "RSI=37 (перепроданность)",
         "BB нижняя зона (12%)",
@@ -378,13 +381,8 @@
         "МТФ: 15m, 1h, 4h согласны",
         "OI растёт +2.6% + цена ↑",
         "CVD положительный (+3.6%)"
-      ],
-      "news": null,
-      "created_at": "2026-03-18 00:03:45",
-      "status": "ACTIVE"
-    }
-  ],
-  "history": [
+      ]
+    },
     {
       "symbol": "VANRYUSDT",
       "direction": "LONG",
@@ -757,27 +755,6 @@
         "МТФ: 5m, 1h, 4h согласны",
         "CVD положительный (+1.6%)"
       ]
-    },
-    {
-      "symbol": "SIRENUSDT",
-      "direction": "LONG",
-      "entry": 0.73203,
-      "tp1": 0.75865,
-      "tp2": 0.785269,
-      "sl": 0.710734,
-      "strength": 45,
-      "status": "SL",
-      "created_at": "2026-03-17 19:47:09",
-      "reasons": [
-        "RSI=45 (нейтральный↓)",
-        "MACD бычий (hist=0.00008)",
-        "BB ниже середины",
-        "Цена > EMA20 > EMA50",
-        "МТФ: 15m, 4h согласны",
-        "OI растёт +3.0% + цена ↑",
-        "CVD положительный (+3.4%)",
-        "Bullish Engulfing (1h) 🕯️"
-      ]
     }
   ],
   "trades_open": [
@@ -1054,27 +1031,6 @@
       ]
     },
     {
-      "id": 293,
-      "symbol": "POLYXUSDT",
-      "direction": "LONG",
-      "entry": 0.05266,
-      "tp1": 0.054081,
-      "tp2": 0.055501,
-      "sl": 0.051523,
-      "strength": 44,
-      "taken_at": "2026-03-18T00:03:45.895472",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=37 (перепроданность)",
-        "BB нижняя зона (12%)",
-        "EMA20 > EMA50",
-        "Объём x1.8 🔥",
-        "МТФ: 15m, 1h, 4h согласны",
-        "OI растёт +2.6% + цена ↑",
-        "CVD положительный (+3.6%)"
-      ]
-    },
-    {
       "id": 291,
       "symbol": "VANRYUSDT",
       "direction": "LONG",
@@ -1117,6 +1073,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "POLYXUSDT",
+      "direction": "LONG",
+      "entry": 0.05266,
+      "tp1": 0.054081,
+      "tp2": 0.055501,
+      "sl": 0.051523,
+      "strength": 44,
+      "status": "SL",
+      "pnl_pct": -2.73,
+      "close_price": 0.051225,
+      "taken_at": "2026-03-18T00:03:45.895472",
+      "closed_at": "2026-03-18 00:05:29"
+    },
     {
       "symbol": "GUSDT",
       "direction": "LONG",
@@ -3902,20 +3872,6 @@
       "close_price": 1.06705,
       "taken_at": "2026-03-17 12:47:09",
       "closed_at": "2026-03-17 13:49:18"
-    },
-    {
-      "symbol": "FILUSDT",
-      "direction": "LONG",
-      "entry": 0.976,
-      "tp1": 0.99552,
-      "tp2": 1.01504,
-      "sl": 0.95648,
-      "strength": 34,
-      "status": "SL",
-      "pnl_pct": -2.2,
-      "close_price": 0.9544999999999999,
-      "taken_at": "2026-03-17 12:02:50",
-      "closed_at": "2026-03-17 13:47:46"
     }
   ]
 }
