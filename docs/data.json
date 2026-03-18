@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T12:23:07.843674+00:00",
+  "updated_at": "2026-03-18T12:23:50.526969+00:00",
   "publish_status": {
-    "last_ok": null,
+    "last_ok": "2026-03-18T12:23:12Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -12,17 +12,17 @@
   "stats": {
     "total": 478,
     "wins": 149,
-    "losses": 53,
-    "active": 13,
-    "winrate": 73.8
+    "losses": 54,
+    "active": 12,
+    "winrate": 73.4
   },
   "trade_stats": {
-    "open": 15,
+    "open": 14,
     "pending": 3,
     "wins": 143,
-    "losses": 133,
-    "total_pnl": 55.42,
-    "winrate": 51.8
+    "losses": 134,
+    "total_pnl": 52.93,
+    "winrate": 51.6
   },
   "fear_greed": {
     "value": 26,
@@ -100,28 +100,6 @@
       ],
       "news": null,
       "created_at": "2026-03-18 11:02:00",
-      "status": "ACTIVE"
-    },
-    {
-      "id": 495,
-      "symbol": "ROBOUSDT",
-      "direction": "LONG",
-      "entry": 0.02752,
-      "tp1": 0.028366,
-      "tp2": 0.029213,
-      "sl": 0.026843,
-      "strength": 43,
-      "reasons": [
-        "RSI=24 (сильная перепроданность)",
-        "MACD бычий (hist=0.00003)",
-        "BB ниже середины",
-        "Стакан: давление покупки (+0.10)",
-        "OI падает (шорты закрываются)",
-        "CVD положительный (-2.9%)",
-        "Hammer (1h) 🔨"
-      ],
-      "news": null,
-      "created_at": "2026-03-18 11:11:28",
       "status": "ACTIVE"
     },
     {
@@ -559,6 +537,26 @@
       ]
     },
     {
+      "symbol": "ROBOUSDT",
+      "direction": "LONG",
+      "entry": 0.02752,
+      "tp1": 0.028366,
+      "tp2": 0.029213,
+      "sl": 0.026843,
+      "strength": 43,
+      "status": "SL",
+      "created_at": "2026-03-18 11:11:28",
+      "reasons": [
+        "RSI=24 (сильная перепроданность)",
+        "MACD бычий (hist=0.00003)",
+        "BB ниже середины",
+        "Стакан: давление покупки (+0.10)",
+        "OI падает (шорты закрываются)",
+        "CVD положительный (-2.9%)",
+        "Hammer (1h) 🔨"
+      ]
+    },
+    {
       "symbol": "HYPERUSDT",
       "direction": "LONG",
       "entry": 0.0976,
@@ -692,27 +690,6 @@
         "CVD положительный (-1.5%)",
         "Bullish Engulfing (1h) 🕯️"
       ]
-    },
-    {
-      "symbol": "DEGOUSDT",
-      "direction": "SHORT",
-      "entry": 0.98056529,
-      "tp1": 0.94538,
-      "tp2": 0.910194,
-      "sl": 1.008714,
-      "strength": 58,
-      "status": "SL",
-      "created_at": "2026-03-18 10:15:31",
-      "reasons": [
-        "RSI=54 (нейтральный↑)",
-        "MACD медвежий (hist=-0.00058)",
-        "Цена < EMA20 < EMA50",
-        "Объём x3.8 🔥🔥",
-        "Стакан: сильное давление продажи (-0.64)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +3.5% + цена ↓",
-        "📌 Лимитный вход @ 0.980565 (откат к EMA20)"
-      ]
     }
   ],
   "trades_open": [
@@ -799,27 +776,6 @@
         "OI растёт +22.0% + цена ↑",
         "CVD положительный (+1.3%)",
         "⚡ Рыночный вход (сильный моментум: MTF+OI+CVD)"
-      ]
-    },
-    {
-      "id": 349,
-      "symbol": "ROBOUSDT",
-      "direction": "LONG",
-      "entry": 0.02752,
-      "tp1": 0.028366,
-      "tp2": 0.029213,
-      "sl": 0.026843,
-      "strength": 43,
-      "taken_at": "2026-03-18T11:11:29.236227",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=24 (сильная перепроданность)",
-        "MACD бычий (hist=0.00003)",
-        "BB ниже середины",
-        "Стакан: давление покупки (+0.10)",
-        "OI падает (шорты закрываются)",
-        "CVD положительный (-2.9%)",
-        "Hammer (1h) 🔨"
       ]
     },
     {
@@ -1093,6 +1049,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "ROBOUSDT",
+      "direction": "LONG",
+      "entry": 0.02752,
+      "tp1": 0.028366,
+      "tp2": 0.029213,
+      "sl": 0.026843,
+      "strength": 43,
+      "status": "SL",
+      "pnl_pct": -2.49,
+      "close_price": 0.026834999999999998,
+      "taken_at": "2026-03-18T11:11:29.236227",
+      "closed_at": "2026-03-18 12:23:18"
+    },
     {
       "symbol": "RIVERUSDT",
       "direction": "LONG",
@@ -3878,20 +3848,6 @@
       "close_price": 41.2715,
       "taken_at": "2026-03-17 17:19:44",
       "closed_at": "2026-03-17 19:31:42"
-    },
-    {
-      "symbol": "TRXUSDT",
-      "direction": "SHORT",
-      "entry": 0.30254,
-      "tp1": 0.296489,
-      "tp2": 0.290438,
-      "sl": 0.308591,
-      "strength": 30,
-      "status": "TIMEOUT",
-      "pnl_pct": -0.73,
-      "close_price": 0.304735,
-      "taken_at": "2026-03-17 11:21:39",
-      "closed_at": "2026-03-17 19:21:42"
     }
   ]
 }
