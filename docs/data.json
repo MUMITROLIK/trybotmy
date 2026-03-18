@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T13:02:24.763143+00:00",
+  "updated_at": "2026-03-18T13:03:14.027512+00:00",
   "publish_status": {
-    "last_ok": "2026-03-18T13:01:09Z",
+    "last_ok": "2026-03-18T13:02:29Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 71.6
   },
   "trade_stats": {
-    "open": 7,
+    "open": 6,
     "pending": 0,
-    "wins": 144,
+    "wins": 145,
     "losses": 140,
-    "total_pnl": 40.89,
-    "winrate": 50.7
+    "total_pnl": 42.81,
+    "winrate": 50.9
   },
   "fear_greed": {
     "value": 26,
@@ -627,27 +627,6 @@
       ]
     },
     {
-      "id": 353,
-      "symbol": "1000PEPEUSDT",
-      "direction": "SHORT",
-      "entry": 0.0035883499999999997,
-      "tp1": 0.00351619,
-      "tp2": 0.00344461,
-      "sl": 0.00351505,
-      "strength": 45,
-      "taken_at": "2026-03-18T11:31:20.616802",
-      "status": "TP1_HIT",
-      "reasons": [
-        "MACD медвежий (hist=-0.00000)",
-        "Цена < EMA20 < EMA50",
-        "Стакан: сильное давление продажи (-0.25)",
-        "МТФ: 5m, 15m, 1h согласны",
-        "CVD падает (-10.6%) — продажи усиливаются 📉",
-        "BTC корреляция 0.85, BTC -0.4% 📉",
-        "📌 Лимитный вход @ 0.00365959 (откат к EMA20)"
-      ]
-    },
-    {
       "id": 365,
       "symbol": "CFGUSDT",
       "direction": "SHORT",
@@ -670,6 +649,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "1000PEPEUSDT",
+      "direction": "SHORT",
+      "entry": 0.0035883499999999997,
+      "tp1": 0.00351619,
+      "tp2": 0.00344461,
+      "sl": 0.00351505,
+      "strength": 45,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 1.92,
+      "close_price": 0.00351945,
+      "taken_at": "2026-03-18T11:31:20.616802",
+      "closed_at": "2026-03-18 13:03:13"
+    },
     {
       "symbol": "XANUSDT",
       "direction": "LONG",
@@ -3455,20 +3448,6 @@
       "close_price": 3.6765,
       "taken_at": "2026-03-17 12:00:10",
       "closed_at": "2026-03-17 20:00:15"
-    },
-    {
-      "symbol": "THEUSDT",
-      "direction": "SHORT",
-      "entry": 0.172,
-      "tp1": 0.16856,
-      "tp2": 0.16512,
-      "sl": 0.1683,
-      "strength": 38,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 1.98,
-      "close_price": 0.1686,
-      "taken_at": "2026-03-17 13:21:42",
-      "closed_at": "2026-03-17 19:57:10"
     }
   ]
 }
