@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T01:00:06.003518+00:00",
+  "updated_at": "2026-03-18T01:01:10.842344+00:00",
   "publish_status": {
-    "last_ok": "2026-03-18T00:59:05Z",
+    "last_ok": "2026-03-18T01:00:10Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -13,7 +13,7 @@
     "total": 408,
     "wins": 118,
     "losses": 30,
-    "active": 16,
+    "active": 15,
     "winrate": 79.7
   },
   "trade_stats": {
@@ -30,27 +30,6 @@
     "emoji": "😨"
   },
   "signals": [
-    {
-      "id": 409,
-      "symbol": "IRUSDT",
-      "direction": "LONG",
-      "entry": 0.0489722,
-      "tp1": 0.049952,
-      "tp2": 0.050931,
-      "sl": 0.047993,
-      "strength": 41,
-      "reasons": [
-        "MACD бычий (hist=0.00009)",
-        "EMA20 > EMA50 (golden cross) 🌟",
-        "Стакан: давление покупки (+0.11)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "CVD положительный (+0.2%)",
-        "📌 Лимитный вход @ 0.0489722 (откат к EMA20)"
-      ],
-      "news": null,
-      "created_at": "2026-03-17 21:00:22",
-      "status": "ACTIVE"
-    },
     {
       "id": 413,
       "symbol": "CRCLUSDT",
