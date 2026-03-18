@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T04:05:13.929774+00:00",
+  "updated_at": "2026-03-18T04:06:19.170440+00:00",
   "publish_status": {
-    "last_ok": "2026-03-18T04:04:13Z",
+    "last_ok": "2026-03-18T04:05:19Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -11,10 +11,10 @@
   },
   "stats": {
     "total": 411,
-    "wins": 122,
+    "wins": 123,
     "losses": 31,
-    "active": 4,
-    "winrate": 79.7
+    "active": 3,
+    "winrate": 79.9
   },
   "trade_stats": {
     "open": 7,
@@ -95,9 +95,10 @@
       "news": null,
       "created_at": "2026-03-18 03:29:45",
       "status": "ACTIVE"
-    },
+    }
+  ],
+  "history": [
     {
-      "id": 449,
       "symbol": "HUMAUSDT",
       "direction": "LONG",
       "entry": 0.01786948,
@@ -105,6 +106,8 @@
       "tp2": 0.018699,
       "sl": 0.017512,
       "strength": 54,
+      "status": "TP1",
+      "created_at": "2026-03-18 04:05:06",
       "reasons": [
         "MACD бычий (hist=0.00003)",
         "EMA20 > EMA50 (golden cross) 🌟",
@@ -113,13 +116,8 @@
         "OI растёт +1.0% + цена ↑",
         "CVD растёт (+5.2%) — покупки усиливаются 📈",
         "📌 Лимитный вход @ 0.0178695 (откат к EMA20)"
-      ],
-      "news": null,
-      "created_at": "2026-03-18 04:05:06",
-      "status": "ACTIVE"
-    }
-  ],
-  "history": [
+      ]
+    },
     {
       "symbol": "1000BONKUSDT",
       "direction": "LONG",
@@ -504,25 +502,6 @@
         "МТФ: все 4 таймфрейма согласны ✅✅",
         "CVD положительный (+2.3%)",
         "📌 Лимитный вход @ 0.0111789 (откат к EMA20)"
-      ]
-    },
-    {
-      "symbol": "FETUSDT",
-      "direction": "LONG",
-      "entry": 0.23630612,
-      "tp1": 0.241032,
-      "tp2": 0.245758,
-      "sl": 0.23158,
-      "strength": 41,
-      "status": "TP1",
-      "created_at": "2026-03-17 22:11:21",
-      "reasons": [
-        "MACD бычий (hist=0.00091)",
-        "Цена > EMA20 > EMA50",
-        "Объём x2.0 🔥",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "CVD растёт (+8.2%) — покупки усиливаются 📈",
-        "📌 Лимитный вход @ 0.236306 (откат к EMA20)"
       ]
     }
   ],
