@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T12:31:41.202310+00:00",
+  "updated_at": "2026-03-18T12:32:27.885502+00:00",
   "publish_status": {
-    "last_ok": "2026-03-18T12:31:13Z",
+    "last_ok": "2026-03-18T12:31:45Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -12,17 +12,17 @@
   "stats": {
     "total": 478,
     "wins": 150,
-    "losses": 55,
-    "active": 10,
-    "winrate": 73.2
+    "losses": 56,
+    "active": 9,
+    "winrate": 72.8
   },
   "trade_stats": {
-    "open": 13,
+    "open": 12,
     "pending": 3,
     "wins": 143,
-    "losses": 135,
-    "total_pnl": 50.75,
-    "winrate": 51.4
+    "losses": 136,
+    "total_pnl": 48.69,
+    "winrate": 51.3
   },
   "fear_greed": {
     "value": 26,
@@ -210,27 +210,6 @@
       "status": "ACTIVE"
     },
     {
-      "id": 514,
-      "symbol": "MOODENGUSDT",
-      "direction": "LONG",
-      "entry": 0.05542,
-      "tp1": 0.056528,
-      "tp2": 0.057637,
-      "sl": 0.054312,
-      "strength": 41,
-      "reasons": [
-        "RSI=32 (перепроданность)",
-        "BB нижняя полоса (пробой)",
-        "EMA20 > EMA50",
-        "Стакан: давление покупки (+0.14)",
-        "МТФ: 15m, 1h, 4h согласны",
-        "OI растёт +0.5% + цена ↑"
-      ],
-      "news": null,
-      "created_at": "2026-03-18 11:46:36",
-      "status": "ACTIVE"
-    },
-    {
       "id": 516,
       "symbol": "CRCLUSDT",
       "direction": "LONG",
@@ -271,6 +250,25 @@
         "OI растёт +4.9% + цена ↑",
         "CVD положительный (+2.3%)",
         "⚡ Рыночный вход (сильный моментум: MTF+OI+CVD)"
+      ]
+    },
+    {
+      "symbol": "MOODENGUSDT",
+      "direction": "LONG",
+      "entry": 0.05542,
+      "tp1": 0.056528,
+      "tp2": 0.057637,
+      "sl": 0.054312,
+      "strength": 41,
+      "status": "SL",
+      "created_at": "2026-03-18 11:46:36",
+      "reasons": [
+        "RSI=32 (перепроданность)",
+        "BB нижняя полоса (пробой)",
+        "EMA20 > EMA50",
+        "Стакан: давление покупки (+0.14)",
+        "МТФ: 15m, 1h, 4h согласны",
+        "OI растёт +0.5% + цена ↑"
       ]
     },
     {
@@ -629,25 +627,6 @@
         "МТФ: 15m, 1h, 4h согласны",
         "Doji (1h) — нерешительность"
       ]
-    },
-    {
-      "symbol": "ATHUSDT",
-      "direction": "LONG",
-      "entry": 0.0067273,
-      "tp1": 0.006898,
-      "tp2": 0.007068,
-      "sl": 0.006591,
-      "strength": 42,
-      "status": "TP1",
-      "created_at": "2026-03-18 10:38:10",
-      "reasons": [
-        "MACD бычий (hist=0.00002)",
-        "Цена > EMA20 > EMA50",
-        "Объём x2.5 🔥",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +1.4% + цена ↑",
-        "📌 Лимитный вход @ 0.0067273 (откат к EMA20)"
-      ]
     }
   ],
   "trades_open": [
@@ -880,26 +859,6 @@
       ]
     },
     {
-      "id": 368,
-      "symbol": "MOODENGUSDT",
-      "direction": "LONG",
-      "entry": 0.05542,
-      "tp1": 0.056528,
-      "tp2": 0.057637,
-      "sl": 0.054312,
-      "strength": 41,
-      "taken_at": "2026-03-18T11:46:37.174177",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=32 (перепроданность)",
-        "BB нижняя полоса (пробой)",
-        "EMA20 > EMA50",
-        "Стакан: давление покупки (+0.14)",
-        "МТФ: 15m, 1h, 4h согласны",
-        "OI растёт +0.5% + цена ↑"
-      ]
-    },
-    {
       "id": 370,
       "symbol": "CRCLUSDT",
       "direction": "LONG",
@@ -988,6 +947,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "MOODENGUSDT",
+      "direction": "LONG",
+      "entry": 0.05542,
+      "tp1": 0.056528,
+      "tp2": 0.057637,
+      "sl": 0.054312,
+      "strength": 41,
+      "status": "SL",
+      "pnl_pct": -2.06,
+      "close_price": 0.05428,
+      "taken_at": "2026-03-18T11:46:37.174177",
+      "closed_at": "2026-03-18 12:32:05"
+    },
     {
       "symbol": "MBOXUSDT",
       "direction": "LONG",
@@ -3773,20 +3746,6 @@
       "close_price": 0.43425,
       "taken_at": "2026-03-17 17:00:28",
       "closed_at": "2026-03-17 19:48:33"
-    },
-    {
-      "symbol": "BCHUSDT",
-      "direction": "SHORT",
-      "entry": 475.15,
-      "tp1": 465.647,
-      "tp2": 456.144,
-      "sl": 484.653,
-      "strength": 30,
-      "status": "TIMEOUT",
-      "pnl_pct": -0.02,
-      "close_price": 475.245,
-      "taken_at": "2026-03-17 11:44:46",
-      "closed_at": "2026-03-17 19:44:48"
     }
   ]
 }
