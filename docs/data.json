@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T00:02:02.080670+00:00",
+  "updated_at": "2026-03-18T00:03:06.917201+00:00",
   "publish_status": {
-    "last_ok": "2026-03-18T00:01:02Z",
+    "last_ok": "2026-03-18T00:02:06Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,19 +10,19 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 399,
+    "total": 400,
     "wins": 114,
     "losses": 27,
-    "active": 14,
+    "active": 15,
     "winrate": 80.9
   },
   "trade_stats": {
-    "open": 14,
-    "pending": 1,
+    "open": 13,
+    "pending": 2,
     "wins": 122,
-    "losses": 92,
-    "total_pnl": 90.02,
-    "winrate": 57.0
+    "losses": 93,
+    "total_pnl": 86.85,
+    "winrate": 56.7
   },
   "fear_greed": {
     "value": 28,
@@ -338,6 +338,27 @@
       ],
       "news": null,
       "created_at": "2026-03-17 23:13:36",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 438,
+      "symbol": "HUMAUSDT",
+      "direction": "LONG",
+      "entry": 0.01753414,
+      "tp1": 0.017885,
+      "tp2": 0.018236,
+      "sl": 0.017183,
+      "strength": 42,
+      "reasons": [
+        "MACD бычий (hist=0.00006)",
+        "Цена выше EMA20",
+        "Стакан: сильное давление покупки (+0.77)",
+        "МТФ: 5m, 1h, 4h согласны",
+        "CVD растёт (+15.9%) — покупки усиливаются 📈",
+        "📌 Лимитный вход @ 0.0175341 (откат к EMA20)"
+      ],
+      "news": null,
+      "created_at": "2026-03-18 00:02:08",
       "status": "ACTIVE"
     }
   ],
@@ -798,26 +819,6 @@
       ]
     },
     {
-      "id": 247,
-      "symbol": "GUSDT",
-      "direction": "LONG",
-      "entry": 0.004557,
-      "tp1": 0.004648,
-      "tp2": 0.004739,
-      "sl": 0.004466,
-      "strength": 37,
-      "taken_at": null,
-      "status": "OPEN",
-      "reasons": [
-        "RSI=28 (сильная перепроданность)",
-        "MACD бычий (hist=0.00000)",
-        "BB нижняя полоса (пробой)",
-        "МТФ: только 1 таймфрейм согласен",
-        "OI падает (шорты закрываются)",
-        "CVD положительный (+2.8%)"
-      ]
-    },
-    {
       "id": 263,
       "symbol": "IRUSDT",
       "direction": "LONG",
@@ -1050,9 +1051,57 @@
         "⚠️ Funding через 45м",
         "📌 Лимитный вход @ 0.00698903 (откат к EMA20)"
       ]
+    },
+    {
+      "id": 292,
+      "symbol": "HUMAUSDT",
+      "direction": "LONG",
+      "entry": 0.01753414,
+      "tp1": 0.017885,
+      "tp2": 0.018236,
+      "sl": 0.017183,
+      "strength": 42,
+      "taken_at": "2026-03-18T00:02:08.881197",
+      "status": "PENDING",
+      "reasons": [
+        "MACD бычий (hist=0.00006)",
+        "Цена выше EMA20",
+        "Стакан: сильное давление покупки (+0.77)",
+        "МТФ: 5m, 1h, 4h согласны",
+        "CVD растёт (+15.9%) — покупки усиливаются 📈",
+        "📌 Лимитный вход @ 0.0175341 (откат к EMA20)"
+      ]
     }
   ],
   "trades_history": [
+    {
+      "symbol": "GUSDT",
+      "direction": "LONG",
+      "entry": 0.004557,
+      "tp1": 0.004648,
+      "tp2": 0.004739,
+      "sl": 0.004466,
+      "strength": 37,
+      "status": "SL",
+      "pnl_pct": -3.17,
+      "close_price": 0.0044125,
+      "taken_at": null,
+      "closed_at": "2026-03-18 00:02:21"
+    },
+    {
+      "symbol": "HUMAUSDT",
+      "direction": "LONG",
+      "entry": 0.01753414,
+      "tp1": 0.017885,
+      "tp2": 0.018236,
+      "sl": 0.017183,
+      "strength": 42,
+      "status": "PENDING",
+      "pnl_pct": 0,
+      "close_price": null,
+      "taken_at": "2026-03-18T00:02:08.881197",
+      "closed_at": null
+    },
     {
       "symbol": "POLYXUSDT",
       "direction": "LONG",
@@ -3824,34 +3873,6 @@
       "close_price": 0.9544999999999999,
       "taken_at": "2026-03-17 12:02:50",
       "closed_at": "2026-03-17 13:47:46"
-    },
-    {
-      "symbol": "XANUSDT",
-      "direction": "SHORT",
-      "entry": 0.010445,
-      "tp1": 0.010236,
-      "tp2": 0.010027,
-      "sl": 0.0101965,
-      "strength": 32,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 2.22,
-      "close_price": 0.010213,
-      "taken_at": "2026-03-17 11:42:38",
-      "closed_at": "2026-03-17 13:47:11"
-    },
-    {
-      "symbol": "FARTCOINUSDT",
-      "direction": "LONG",
-      "entry": 0.2024,
-      "tp1": 0.206448,
-      "tp2": 0.210496,
-      "sl": 0.198352,
-      "strength": 31,
-      "status": "SL",
-      "pnl_pct": -2.05,
-      "close_price": 0.19824999999999998,
-      "taken_at": "2026-03-17 12:03:00",
-      "closed_at": "2026-03-17 13:45:51"
     }
   ]
 }
