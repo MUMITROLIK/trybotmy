@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T20:55:50.963243+00:00",
+  "updated_at": "2026-03-18T20:57:17.919814+00:00",
   "publish_status": {
-    "last_ok": "2026-03-18T20:55:15Z",
+    "last_ok": "2026-03-18T20:55:55Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -18,7 +18,7 @@
   },
   "trade_stats": {
     "open": 4,
-    "pending": 1,
+    "pending": 0,
     "wins": 176,
     "losses": 201,
     "total_pnl": 11.01,
@@ -629,34 +629,23 @@
         "📌 Лимитный вход @ 0.0480072 (откат к EMA20)",
         "🤖 ML: вероятность 55%"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 460,
       "symbol": "RIVERUSDT",
       "direction": "LONG",
       "entry": 24.9750157,
       "tp1": 26.013766,
       "tp2": 27.052516,
       "sl": 24.144016,
-      "entry_orig": 24.9750157,
-      "tp1_orig": 26.013766,
-      "tp2_orig": 27.052516,
-      "sl_orig": 24.144016,
       "strength": 48,
+      "status": "LIMIT_TIMEOUT",
+      "pnl_pct": 0,
+      "close_price": null,
       "taken_at": "2026-03-18T19:56:37.657886",
-      "status": "PENDING",
-      "reasons": [
-        "MACD бычий (hist=0.15136)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: сильное давление покупки (+0.25)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "CVD растёт (+7.4%) — покупки усиливаются 📈",
-        "📌 Лимитный вход @ 24.975 (откат к EMA20)",
-        "🤖 ML: вероятность 91%"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-18 20:56:38"
+    },
     {
       "symbol": "LITUSDT",
       "direction": "LONG",
@@ -3442,20 +3431,6 @@
       "close_price": null,
       "taken_at": "2026-03-17T21:30:24.187814",
       "closed_at": "2026-03-17 22:30:25"
-    },
-    {
-      "symbol": "HYPERUSDT",
-      "direction": "LONG",
-      "entry": 0.10932167,
-      "tp1": 0.112247,
-      "tp2": 0.115172,
-      "sl": 0.106982,
-      "strength": 46,
-      "status": "LIMIT_TIMEOUT",
-      "pnl_pct": 0,
-      "close_price": null,
-      "taken_at": "2026-03-17T21:21:46.223300",
-      "closed_at": "2026-03-17 22:21:48"
     }
   ]
 }
