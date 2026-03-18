@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T05:04:08.685560+00:00",
+  "updated_at": "2026-03-18T05:05:03.305561+00:00",
   "publish_status": {
-    "last_ok": "2026-03-18T05:03:30Z",
+    "last_ok": "2026-03-18T05:04:13Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 79.9
   },
   "trade_stats": {
-    "open": 7,
+    "open": 6,
     "pending": 1,
     "wins": 129,
-    "losses": 99,
-    "total_pnl": 103.52,
-    "winrate": 56.6
+    "losses": 100,
+    "total_pnl": 100.68,
+    "winrate": 56.3
   },
   "fear_greed": {
     "value": 26,
@@ -566,28 +566,6 @@
       ]
     },
     {
-      "id": 295,
-      "symbol": "DEGOUSDT",
-      "direction": "SHORT",
-      "entry": 1.00292997,
-      "tp1": 0.970166,
-      "tp2": 0.937401,
-      "sl": 1.029141,
-      "strength": 57,
-      "taken_at": "2026-03-18 00:47:16",
-      "status": "OPEN",
-      "reasons": [
-        "MACD медвежий (hist=-0.00146)",
-        "Цена < EMA20 < EMA50",
-        "Объём x3.1 🔥🔥",
-        "Стакан: сильное давление продажи (-0.26)",
-        "МТФ: 5m, 15m, 4h согласны",
-        "OI растёт +3.7% + цена ↓",
-        "CVD отрицательный (+5.8%)",
-        "📌 Лимитный вход @ 1.00293 (откат к EMA20)"
-      ]
-    },
-    {
       "id": 298,
       "symbol": "POLYXUSDT",
       "direction": "LONG",
@@ -631,6 +609,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "DEGOUSDT",
+      "direction": "SHORT",
+      "entry": 1.00292997,
+      "tp1": 0.970166,
+      "tp2": 0.937401,
+      "sl": 1.029141,
+      "strength": 57,
+      "status": "SL",
+      "pnl_pct": -2.84,
+      "close_price": 1.0314,
+      "taken_at": "2026-03-18 00:47:16",
+      "closed_at": "2026-03-18 05:05:02"
+    },
     {
       "symbol": "HYPEUSDT",
       "direction": "LONG",
@@ -3416,20 +3408,6 @@
       "close_price": 40.099999999999994,
       "taken_at": "2026-03-17 08:45:49",
       "closed_at": "2026-03-17 15:25:31"
-    },
-    {
-      "symbol": "SIRENUSDT",
-      "direction": "LONG",
-      "entry": 0.72767,
-      "tp1": 0.757773,
-      "tp2": 0.787876,
-      "sl": 0.75864,
-      "strength": 36,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 3.87,
-      "close_price": 0.755815,
-      "taken_at": "2026-03-17 13:31:38",
-      "closed_at": "2026-03-17 15:17:42"
     }
   ]
 }
