@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T10:12:06.767177+00:00",
+  "updated_at": "2026-03-18T10:12:48.004801+00:00",
   "publish_status": {
-    "last_ok": "2026-03-18T10:11:14Z",
+    "last_ok": "2026-03-18T10:12:11Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 80.8
   },
   "trade_stats": {
-    "open": 18,
+    "open": 16,
     "pending": 1,
-    "wins": 138,
-    "losses": 106,
-    "total_pnl": 103.86,
-    "winrate": 56.6
+    "wins": 139,
+    "losses": 107,
+    "total_pnl": 102.77,
+    "winrate": 56.5
   },
   "fear_greed": {
     "value": 26,
@@ -986,27 +986,6 @@
       ]
     },
     {
-      "id": 328,
-      "symbol": "DEGOUSDT",
-      "direction": "SHORT",
-      "entry": 0.9704,
-      "tp1": 0.93573409,
-      "tp2": 0.90106712,
-      "sl": 0.99813266,
-      "strength": 45,
-      "taken_at": "2026-03-18T09:19:47.375537",
-      "status": "OPEN",
-      "reasons": [
-        "MACD медвежий (hist=-0.00187)",
-        "Цена < EMA20 < EMA50",
-        "Стакан: сильное давление продажи (-0.43)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +1.8% + цена ↓",
-        "CVD отрицательный (+7.5%)",
-        "📌 Лимитный вход @ 0.984341 (откат к EMA20)"
-      ]
-    },
-    {
       "id": 331,
       "symbol": "FILUSDT",
       "direction": "LONG",
@@ -1150,9 +1129,24 @@
         "OI растёт +1.1% + цена ↑",
         "📌 Лимитный вход @ 0.517632 (откат к EMA20)"
       ]
+    }
+  ],
+  "trades_history": [
+    {
+      "symbol": "DEGOUSDT",
+      "direction": "SHORT",
+      "entry": 0.9704,
+      "tp1": 0.93573409,
+      "tp2": 0.90106712,
+      "sl": 0.99813266,
+      "strength": 45,
+      "status": "SL",
+      "pnl_pct": -2.91,
+      "close_price": 0.99865,
+      "taken_at": "2026-03-18T09:19:47.375537",
+      "closed_at": "2026-03-18 10:12:47"
     },
     {
-      "id": 317,
       "symbol": "ZECUSDT",
       "direction": "LONG",
       "entry": 277.19,
@@ -1160,21 +1154,12 @@
       "tp2": 288.2776,
       "sl": 282.885,
       "strength": 40,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 1.82,
+      "close_price": 282.245,
       "taken_at": "2026-03-18T07:18:52.549777",
-      "status": "TP1_HIT",
-      "reasons": [
-        "RSI=34 (перепроданность)",
-        "BB нижняя зона (20%)",
-        "EMA20 > EMA50",
-        "Стакан: давление покупки (+0.19)",
-        "МТФ: 15m, 1h, 4h согласны",
-        "OI растёт +1.3% + цена ↑",
-        "Doji (1h) — нерешительность",
-        "⚠️ Funding через 42м"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-18 10:12:29"
+    },
     {
       "symbol": "OPNUSDT",
       "direction": "SHORT",
@@ -3946,34 +3931,6 @@
       "close_price": 130.095,
       "taken_at": null,
       "closed_at": "2026-03-17 16:44:43"
-    },
-    {
-      "symbol": "ALPACAUSDT",
-      "direction": "SHORT",
-      "entry": 1.19,
-      "tp1": 1.1662,
-      "tp2": 1.1424,
-      "sl": 1.2138,
-      "strength": 23,
-      "status": "TIMEOUT",
-      "pnl_pct": 0,
-      "close_price": 1.19,
-      "taken_at": "2026-03-17 08:44:23",
-      "closed_at": "2026-03-17 16:44:24"
-    },
-    {
-      "symbol": "ETHUSDT",
-      "direction": "SHORT",
-      "entry": 2330.46,
-      "tp1": 2283.8508,
-      "tp2": 2237.2416,
-      "sl": 2377.0692,
-      "strength": 27,
-      "status": "TIMEOUT",
-      "pnl_pct": 0.29,
-      "close_price": 2323.8050000000003,
-      "taken_at": "2026-03-17 08:44:21",
-      "closed_at": "2026-03-17 16:44:23"
     }
   ]
 }
