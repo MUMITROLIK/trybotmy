@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T03:33:20.009641+00:00",
+  "updated_at": "2026-03-18T03:34:51.700171+00:00",
   "publish_status": {
-    "last_ok": "2026-03-18T03:32:49Z",
+    "last_ok": "2026-03-18T03:33:25Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 79.7
   },
   "trade_stats": {
-    "open": 8,
+    "open": 7,
     "pending": 1,
-    "wins": 128,
+    "wins": 129,
     "losses": 99,
-    "total_pnl": 101.44,
-    "winrate": 56.4
+    "total_pnl": 103.52,
+    "winrate": 56.6
   },
   "fear_greed": {
     "value": 26,
@@ -672,9 +672,10 @@
         "Bullish Engulfing (1h) 🕯️",
         "📌 Лимитный вход @ 41.6044 (откат к EMA20)"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 284,
       "symbol": "RENDERUSDT",
       "direction": "LONG",
       "entry": 1.806,
@@ -682,21 +683,12 @@
       "tp2": 1.87824,
       "sl": 1.8435000000000001,
       "strength": 41,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 2.08,
+      "close_price": 1.8435000000000001,
       "taken_at": "2026-03-17T22:37:18.226751",
-      "status": "TP1_HIT",
-      "reasons": [
-        "RSI=45 (нейтральный↓)",
-        "MACD бычий (hist=0.00064)",
-        "BB нижняя зона (24%)",
-        "Стакан: сильное давление покупки (+0.28)",
-        "МТФ: 5m, 4h согласны",
-        "OI растёт +2.2%",
-        "CVD положительный (+4.3%)",
-        "⚠️ Funding через 83м"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-18 03:33:40"
+    },
     {
       "symbol": "HYPEUSDT",
       "direction": "LONG",
@@ -3482,20 +3474,6 @@
       "close_price": 0.74975,
       "taken_at": "2026-03-17 13:43:28",
       "closed_at": "2026-03-17 15:14:04"
-    },
-    {
-      "symbol": "PIXELUSDT",
-      "direction": "SHORT",
-      "entry": 0.009985,
-      "tp1": 0.0097853,
-      "tp2": 0.0095856,
-      "sl": 0.00962378,
-      "strength": 32,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 3.51,
-      "close_price": 0.0096345,
-      "taken_at": "2026-03-17 12:58:49",
-      "closed_at": "2026-03-17 15:12:13"
     }
   ]
 }
