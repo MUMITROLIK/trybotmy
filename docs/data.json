@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T17:09:10.286480+00:00",
+  "updated_at": "2026-03-18T17:09:44.370859+00:00",
   "publish_status": {
-    "last_ok": "2026-03-18T17:08:47Z",
+    "last_ok": "2026-03-18T17:09:20Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 71.1
   },
   "trade_stats": {
-    "open": 57,
+    "open": 56,
     "pending": 1,
-    "wins": 153,
+    "wins": 154,
     "losses": 147,
-    "total_pnl": 50.11,
-    "winrate": 51.0
+    "total_pnl": 52.62,
+    "winrate": 51.2
   },
   "fear_greed": {
     "value": 26,
@@ -3116,33 +3116,23 @@
         "CVD растёт (+6.4%) — покупки усиливаются 📈",
         "📌 Лимитный вход @ 0.190827 (откат к EMA20)"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 375,
       "symbol": "HYPEUSDT",
       "direction": "LONG",
       "entry": 41.757,
       "tp1": 42.792214,
       "tp2": 43.827429,
       "sl": 42.810500000000005,
-      "entry_orig": 41.757,
-      "tp1_orig": 42.792214,
-      "tp2_orig": 43.827429,
-      "sl_orig": 40.92186,
       "strength": 34,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 2.51,
+      "close_price": 42.8035,
       "taken_at": "2026-03-18T16:02:15.617162",
-      "status": "TP1_HIT",
-      "reasons": [
-        "MACD бычий (hist=0.09229)",
-        "Цена выше EMA20",
-        "МТФ: 5m, 1h, 4h согласны",
-        "OI растёт +3.8% + цена ↑",
-        "CVD положительный (+0.8%)",
-        "⚡ Рыночный вход (моментум: MTF+OI+CVD)"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-18 17:09:44"
+    },
     {
       "symbol": "MUSDT",
       "direction": "LONG",
@@ -5928,20 +5918,6 @@
       "close_price": 0.15485,
       "taken_at": "2026-03-17 19:25:16",
       "closed_at": "2026-03-17 20:12:23"
-    },
-    {
-      "symbol": "ICPUSDT",
-      "direction": "LONG",
-      "entry": 2.715,
-      "tp1": 2.7693,
-      "tp2": 2.8236,
-      "sl": 2.6607,
-      "strength": 25,
-      "status": "TIMEOUT",
-      "pnl_pct": -0.85,
-      "close_price": 2.692,
-      "taken_at": "2026-03-17 12:12:17",
-      "closed_at": "2026-03-17 20:12:20"
     }
   ]
 }
