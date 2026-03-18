@@ -132,6 +132,27 @@ header {
 #btc-ticker .chg.up   { background: rgba(0,255,157,.15); color: var(--green); }
 #btc-ticker .chg.down { background: rgba(255,45,107,.15); color: var(--red); }
 
+.ml-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: rgba(139, 92, 246, 0.12);
+  border: 1px solid rgba(139, 92, 246, 0.35);
+  border-radius: 20px;
+  padding: 3px 10px;
+  font-size: 11px;
+  color: #a78bfa;
+  font-family: monospace;
+  cursor: default;
+  transition: opacity 0.3s;
+}
+.ml-badge:hover { opacity: 0.8; }
+.ml-dot {
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: #a78bfa;
+  animation: pulse 2s infinite;
+}
 .live-indicator {
   display: flex; align-items: center; gap: 6px;
   font-family: var(--mono);
@@ -652,6 +673,10 @@ tr:hover td { background: rgba(255,255,255,.015); }
         <div class="live-dot" id="liveDot"></div>
         <span id="last-update">CONNECTING...</span>
       </div>
+      <div class="ml-badge" id="mlBadge" title="ML модель и точность">
+        <div class="ml-dot"></div>
+        <span id="mlModelName">ML —</span>
+      </div>
     </div>
   </header>
 
@@ -867,6 +892,19 @@ function handleDataUpdate(data) {
   document.getElementById('s-winrate').textContent = ts.winrate != null ? ts.winrate + '%' : '—';
   
   renderFG(data.fear_greed);
+
+  // ML плашка
+  const mlInfo = data.ml_info || {};
+  const mlName = mlInfo.model_name || '—';
+  const mlAuc  = mlInfo.roc_auc  != null ? ' · AUC ' + mlInfo.roc_auc.toFixed(3) : '';
+  const mlRows = mlInfo.rows ? ' · ' + mlInfo.rows + ' строк' : '';
+  const mlEl = document.getElementById('mlModelName');
+  if (mlEl) mlEl.textContent = '🧠 ' + mlName + mlAuc + mlRows;
+  const mlBadge = document.getElementById('mlBadge');
+  if (mlBadge && mlInfo.trained_at) {
+    const d = new Date(mlInfo.trained_at);
+    mlBadge.title = 'Обучена: ' + d.toLocaleString('ru-RU');
+  }
   const allTrades = data.trades_open || [];
   const openTrades = allTrades.filter(t => t.status === 'OPEN' || t.status === 'TP1_HIT');
   const pendingTrades = allTrades.filter(t => t.status === 'PENDING');
