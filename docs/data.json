@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-03-18T17:46:37.484120+00:00",
+  "updated_at": "2026-03-18T17:47:12.047561+00:00",
   "publish_status": {
     "last_ok": null,
-    "last_error": "fatal: unable to access 'https://github.com/MUMITROLIK/trybotmy.git/': Failed to connect to github.com port 443 after 22347 ms: Could not connect to server\n",
+    "last_error": "fatal: unable to access 'https://github.com/MUMITROLIK/trybotmy.git/': Failed to connect to github.com port 443 after 21094 ms: Could not connect to server\n",
     "min_push_interval_sec": 30
   },
   "settings": {
@@ -17,12 +17,12 @@
     "winrate": 68.8
   },
   "trade_stats": {
-    "open": 57,
+    "open": 56,
     "pending": 1,
     "wins": 155,
-    "losses": 153,
-    "total_pnl": 45.65,
-    "winrate": 50.3
+    "losses": 154,
+    "total_pnl": 43.37,
+    "winrate": 50.2
   },
   "fear_greed": {
     "value": 26,
@@ -2347,31 +2347,6 @@
       ]
     },
     {
-      "id": 410,
-      "symbol": "TRUMPUSDT",
-      "direction": "SHORT",
-      "entry": 3.441,
-      "tp1": 3.37218,
-      "tp2": 3.30336,
-      "sl": 3.50982,
-      "entry_orig": 3.441,
-      "tp1_orig": 3.37218,
-      "tp2_orig": 3.30336,
-      "sl_orig": 3.50982,
-      "strength": 37,
-      "taken_at": "2026-03-18T16:10:43.784674",
-      "status": "OPEN",
-      "reasons": [
-        "MACD медвежий (hist=-0.00411)",
-        "Цена < EMA20 < EMA50",
-        "Стакан: перевес ask (-0.08)",
-        "МТФ: 5m, 15m, 1h согласны",
-        "CVD падает (-13.4%) — продажи усиливаются 📉",
-        "BTC корреляция 0.72, BTC -1.6% 📉",
-        "BTC контекст: -3.5% за 12ч 📉"
-      ]
-    },
-    {
       "id": 411,
       "symbol": "IPUSDT",
       "direction": "SHORT",
@@ -3119,6 +3094,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "TRUMPUSDT",
+      "direction": "SHORT",
+      "entry": 3.441,
+      "tp1": 3.37218,
+      "tp2": 3.30336,
+      "sl": 3.50982,
+      "strength": 37,
+      "status": "SL",
+      "pnl_pct": -2.28,
+      "close_price": 3.5195,
+      "taken_at": "2026-03-18T16:10:43.784674",
+      "closed_at": "2026-03-18 17:47:06"
+    },
     {
       "symbol": "RENDERUSDT",
       "direction": "SHORT",
@@ -5904,20 +5893,6 @@
       "close_price": 0.78305,
       "taken_at": "2026-03-17 12:34:09",
       "closed_at": "2026-03-17 20:34:15"
-    },
-    {
-      "symbol": "FETUSDT",
-      "direction": "SHORT",
-      "entry": 0.23116677,
-      "tp1": 0.226056,
-      "tp2": 0.220945,
-      "sl": 0.23579,
-      "strength": 30,
-      "status": "SL",
-      "pnl_pct": -2.37,
-      "close_price": 0.23665,
-      "taken_at": "2026-03-17 17:15:29",
-      "closed_at": "2026-03-17 20:24:06"
     }
   ]
 }
