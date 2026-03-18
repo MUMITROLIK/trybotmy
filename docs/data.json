@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T06:37:52.848553+00:00",
+  "updated_at": "2026-03-18T06:38:52.183407+00:00",
   "publish_status": {
-    "last_ok": "2026-03-18T06:36:52Z",
+    "last_ok": "2026-03-18T06:37:58Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 80.1
   },
   "trade_stats": {
-    "open": 4,
+    "open": 3,
     "pending": 3,
     "wins": 131,
-    "losses": 102,
-    "total_pnl": 96.77,
-    "winrate": 56.2
+    "losses": 103,
+    "total_pnl": 96.64,
+    "winrate": 56.0
   },
   "fear_greed": {
     "value": 26,
@@ -548,27 +548,6 @@
       ]
     },
     {
-      "id": 279,
-      "symbol": "VIRTUALUSDT",
-      "direction": "LONG",
-      "entry": 0.78744586,
-      "tp1": 0.803195,
-      "tp2": 0.818944,
-      "sl": 0.771697,
-      "strength": 43,
-      "taken_at": "2026-03-17 22:37:56",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00181)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: давление покупки (+0.14)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +1.9%",
-        "CVD растёт (+10.6%) — покупки усиливаются 📈",
-        "📌 Лимитный вход @ 0.787446 (откат к EMA20)"
-      ]
-    },
-    {
       "id": 298,
       "symbol": "POLYXUSDT",
       "direction": "LONG",
@@ -676,6 +655,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "VIRTUALUSDT",
+      "direction": "LONG",
+      "entry": 0.78744586,
+      "tp1": 0.803195,
+      "tp2": 0.818944,
+      "sl": 0.771697,
+      "strength": 43,
+      "status": "TIMEOUT",
+      "pnl_pct": -0.13,
+      "close_price": 0.78645,
+      "taken_at": "2026-03-17 22:37:56",
+      "closed_at": "2026-03-18 06:37:58"
+    },
     {
       "symbol": "LYNUSDT",
       "direction": "LONG",
@@ -3461,20 +3454,6 @@
       "close_price": 0.0036346499999999997,
       "taken_at": "2026-03-17 11:56:01",
       "closed_at": "2026-03-17 15:37:33"
-    },
-    {
-      "symbol": "XAGUSDT",
-      "direction": "SHORT",
-      "entry": 80.73,
-      "tp1": 79.1154,
-      "tp2": 77.5008,
-      "sl": 79.07499999999999,
-      "strength": 32,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 2.03,
-      "close_price": 79.095,
-      "taken_at": "2026-03-17 09:35:55",
-      "closed_at": "2026-03-17 15:37:14"
     }
   ]
 }
