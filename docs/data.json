@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T00:55:48.866584+00:00",
+  "updated_at": "2026-03-18T00:56:32.185430+00:00",
   "publish_status": {
-    "last_ok": "2026-03-18T00:54:48Z",
+    "last_ok": "2026-03-18T00:55:54Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,15 +10,15 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 407,
+    "total": 408,
     "wins": 117,
     "losses": 30,
-    "active": 16,
+    "active": 17,
     "winrate": 79.6
   },
   "trade_stats": {
     "open": 16,
-    "pending": 1,
+    "pending": 2,
     "wins": 123,
     "losses": 96,
     "total_pnl": 93.77,
@@ -381,6 +381,29 @@
       ],
       "news": null,
       "created_at": "2026-03-18 00:47:25",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 446,
+      "symbol": "ANKRUSDT",
+      "direction": "LONG",
+      "entry": 0.00505084,
+      "tp1": 0.005222,
+      "tp2": 0.005393,
+      "sl": 0.004914,
+      "strength": 52,
+      "reasons": [
+        "MACD бычий (hist=0.00011)",
+        "Цена > EMA20 > EMA50",
+        "Объём x2.4 🔥",
+        "Стакан: давление покупки (+0.18)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "CVD положительный (+0.9%)",
+        "Bullish Engulfing (1h) 🕯️",
+        "📌 Лимитный вход @ 0.00505084 (откат к EMA20)"
+      ],
+      "news": null,
+      "created_at": "2026-03-18 00:56:31",
       "status": "ACTIVE"
     }
   ],
@@ -1136,9 +1159,45 @@
         "CVD растёт (+15.9%) — покупки усиливаются 📈",
         "📌 Лимитный вход @ 0.0175341 (откат к EMA20)"
       ]
+    },
+    {
+      "id": 300,
+      "symbol": "ANKRUSDT",
+      "direction": "LONG",
+      "entry": 0.00505084,
+      "tp1": 0.005222,
+      "tp2": 0.005393,
+      "sl": 0.004914,
+      "strength": 52,
+      "taken_at": "2026-03-18T00:56:31.526812",
+      "status": "PENDING",
+      "reasons": [
+        "MACD бычий (hist=0.00011)",
+        "Цена > EMA20 > EMA50",
+        "Объём x2.4 🔥",
+        "Стакан: давление покупки (+0.18)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "CVD положительный (+0.9%)",
+        "Bullish Engulfing (1h) 🕯️",
+        "📌 Лимитный вход @ 0.00505084 (откат к EMA20)"
+      ]
     }
   ],
   "trades_history": [
+    {
+      "symbol": "ANKRUSDT",
+      "direction": "LONG",
+      "entry": 0.00505084,
+      "tp1": 0.005222,
+      "tp2": 0.005393,
+      "sl": 0.004914,
+      "strength": 52,
+      "status": "PENDING",
+      "pnl_pct": 0,
+      "close_price": null,
+      "taken_at": "2026-03-18T00:56:31.526812",
+      "closed_at": null
+    },
     {
       "symbol": "SIRENUSDT",
       "direction": "LONG",
@@ -3924,20 +3983,6 @@
       "close_price": 0.2495,
       "taken_at": "2026-03-17 12:09:17",
       "closed_at": "2026-03-17 13:52:25"
-    },
-    {
-      "symbol": "XPLUSDT",
-      "direction": "LONG",
-      "entry": 0.1176,
-      "tp1": 0.119952,
-      "tp2": 0.122304,
-      "sl": 0.115248,
-      "strength": 31,
-      "status": "SL",
-      "pnl_pct": -2.08,
-      "close_price": 0.11515,
-      "taken_at": "2026-03-17 13:32:19",
-      "closed_at": "2026-03-17 13:50:59"
     }
   ]
 }
