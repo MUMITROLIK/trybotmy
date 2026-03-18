@@ -760,7 +760,8 @@
     fetchREST().then(function(){ fetchLivePrices(); });
     connectWS();
     setInterval(fetchREST, 30000);
-    setInterval(fetchLivePrices, 1000);
+    // 2s достаточно для UI и снижает нагрузку на /api/ticker
+    setInterval(fetchLivePrices, 2000);
     setInterval(function(){ if (openTradesCache.length) patchPositionCards(); }, 1000);
     setInterval(function(){ if (serverTime) serverTime = new Date(serverTime.getTime()+1000); }, 1000);
   </script>
