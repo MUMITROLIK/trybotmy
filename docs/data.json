@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T00:47:10.955684+00:00",
+  "updated_at": "2026-03-18T00:48:16.231645+00:00",
   "publish_status": {
-    "last_ok": "2026-03-18T00:46:04Z",
+    "last_ok": "2026-03-18T00:47:16Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 406,
+    "total": 407,
     "wins": 117,
     "losses": 30,
-    "active": 15,
+    "active": 16,
     "winrate": 79.6
   },
   "trade_stats": {
-    "open": 14,
+    "open": 15,
     "pending": 2,
     "wins": 123,
     "losses": 96,
@@ -359,6 +359,28 @@
       ],
       "news": null,
       "created_at": "2026-03-18 00:24:04",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 445,
+      "symbol": "SIRENUSDT",
+      "direction": "LONG",
+      "entry": 0.72684386,
+      "tp1": 0.757396,
+      "tp2": 0.787947,
+      "sl": 0.702402,
+      "strength": 52,
+      "reasons": [
+        "MACD бычий (hist=0.00379)",
+        "Цена > EMA20 > EMA50",
+        "Стакан: сильное давление покупки (+0.44)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +2.2% + цена ↑",
+        "CVD растёт (+5.9%) — покупки усиливаются 📈",
+        "📌 Лимитный вход @ 0.726844 (откат к EMA20)"
+      ],
+      "news": null,
+      "created_at": "2026-03-18 00:47:25",
       "status": "ACTIVE"
     }
   ],
@@ -1010,6 +1032,28 @@
       ]
     },
     {
+      "id": 295,
+      "symbol": "DEGOUSDT",
+      "direction": "SHORT",
+      "entry": 1.00292997,
+      "tp1": 0.970166,
+      "tp2": 0.937401,
+      "sl": 1.029141,
+      "strength": 57,
+      "taken_at": "2026-03-18 00:47:16",
+      "status": "OPEN",
+      "reasons": [
+        "MACD медвежий (hist=-0.00146)",
+        "Цена < EMA20 < EMA50",
+        "Объём x3.1 🔥🔥",
+        "Стакан: сильное давление продажи (-0.26)",
+        "МТФ: 5m, 15m, 4h согласны",
+        "OI растёт +3.7% + цена ↓",
+        "CVD отрицательный (+5.8%)",
+        "📌 Лимитный вход @ 1.00293 (откат к EMA20)"
+      ]
+    },
+    {
       "id": 297,
       "symbol": "AINUSDT",
       "direction": "LONG",
@@ -1073,29 +1117,42 @@
       ]
     },
     {
-      "id": 295,
-      "symbol": "DEGOUSDT",
-      "direction": "SHORT",
-      "entry": 1.00292997,
-      "tp1": 0.970166,
-      "tp2": 0.937401,
-      "sl": 1.029141,
-      "strength": 57,
-      "taken_at": "2026-03-18T00:11:23.243950",
+      "id": 299,
+      "symbol": "SIRENUSDT",
+      "direction": "LONG",
+      "entry": 0.72684386,
+      "tp1": 0.757396,
+      "tp2": 0.787947,
+      "sl": 0.702402,
+      "strength": 52,
+      "taken_at": "2026-03-18T00:47:25.702266",
       "status": "PENDING",
       "reasons": [
-        "MACD медвежий (hist=-0.00146)",
-        "Цена < EMA20 < EMA50",
-        "Объём x3.1 🔥🔥",
-        "Стакан: сильное давление продажи (-0.26)",
-        "МТФ: 5m, 15m, 4h согласны",
-        "OI растёт +3.7% + цена ↓",
-        "CVD отрицательный (+5.8%)",
-        "📌 Лимитный вход @ 1.00293 (откат к EMA20)"
+        "MACD бычий (hist=0.00379)",
+        "Цена > EMA20 > EMA50",
+        "Стакан: сильное давление покупки (+0.44)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +2.2% + цена ↑",
+        "CVD растёт (+5.9%) — покупки усиливаются 📈",
+        "📌 Лимитный вход @ 0.726844 (откат к EMA20)"
       ]
     }
   ],
   "trades_history": [
+    {
+      "symbol": "SIRENUSDT",
+      "direction": "LONG",
+      "entry": 0.72684386,
+      "tp1": 0.757396,
+      "tp2": 0.787947,
+      "sl": 0.702402,
+      "strength": 52,
+      "status": "PENDING",
+      "pnl_pct": 0,
+      "close_price": null,
+      "taken_at": "2026-03-18T00:47:25.702266",
+      "closed_at": null
+    },
     {
       "symbol": "SIRENUSDT",
       "direction": "LONG",
@@ -1151,20 +1208,6 @@
       "close_price": null,
       "taken_at": "2026-03-17T23:15:25.394535",
       "closed_at": "2026-03-18 00:15:32"
-    },
-    {
-      "symbol": "DEGOUSDT",
-      "direction": "SHORT",
-      "entry": 1.00292997,
-      "tp1": 0.970166,
-      "tp2": 0.937401,
-      "sl": 1.029141,
-      "strength": 57,
-      "status": "PENDING",
-      "pnl_pct": 0,
-      "close_price": null,
-      "taken_at": "2026-03-18T00:11:23.243950",
-      "closed_at": null
     },
     {
       "symbol": "POLYXUSDT",
