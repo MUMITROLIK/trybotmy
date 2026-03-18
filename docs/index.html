@@ -216,7 +216,7 @@
 
   <script>
     function fmt(p){if(!p&&p!==0)return'—';p=parseFloat(p);if(p>=1000)return p.toLocaleString('ru-RU',{minimumFractionDigits:2,maximumFractionDigits:2});if(p>=1)return p.toFixed(2);if(p>=0.01)return p.toFixed(4);if(p>=0.0001)return p.toFixed(6);return p.toFixed(8);}
-    function fmtT(iso){if(!iso)return'—';try{const d=new Date(iso.replace(' ','T')),now=new Date(),df=now-d,m=Math.floor(df/60000),h=Math.floor(df/3600000),rm=m%60;if(m<1)return'только что';if(m<60)return m+'м назад';if(h<24)return h+'ч '+(rm>0?rm+'м ':'')+'назад';return d.toLocaleDateString('ru-RU',{month:'short',day:'numeric',hour:'2-digit',minute:'2-digit'});}catch{return iso.slice(0,16);}}
+    function fmtT(iso){if(!iso)return'—';try{const d=new Date(iso.replace(' ','T')),now=new Date(),df=Math.max(0,now-d),totalMin=Math.floor(df/60000),h=Math.floor(totalMin/60),rm=totalMin%60;if(totalMin<1)return'только что';if(totalMin<60)return totalMin+'м назад';if(h<24)return h+'ч'+(rm>0?' '+rm+'м':'')+'назад';return d.toLocaleDateString('ru-RU',{month:'short',day:'numeric',hour:'2-digit',minute:'2-digit'});}catch{return iso.slice(0,16);}}
     function durStr(iso){if(!iso)return'';try{const d=new Date(iso.replace(' ','T')),now=new Date(),df=now-d,m=Math.floor(df/60000),h=Math.floor(m/60),rm=m%60;if(m<1)return'<1м';if(h<1)return m+'м';return h+'ч '+rm+'м';}catch{return'';}}
     function fgM(v){if(v<=25)return{c:'#F87171',l:'Крайний страх'};if(v<=45)return{c:'#B6452C',l:'Страх'};if(v<=55)return{c:'#DDC5A2',l:'Нейтрально'};if(v<=75)return{c:'#4ADE80',l:'Жадность'};return{c:'#22C55E',l:'Крайняя жадность'};}
     function mlC(p){if(!p)return'med';return p<0.5?'low':p<0.7?'med':'hi';}
@@ -240,7 +240,7 @@
       const cc=pr?'profit':isN?'neu':'loss',pc=pr?'pos':isN?'ne':'neg';
       const dur=t.status!=='PENDING'?durStr(t.taken_at):'';
       const curP=livePnl!=null?fmt(livePnl):'—';
-      return`<div class="posc glass ch ${cc} ${bp}" id="pos-${t.id||t.symbol}"><div class="sh"><div class="symw"><span class="sym">${t.symbol}</span><span class="live-cur" style="font-size:.7rem;color:rgba(221,197,162,.4);font-family:monospace;margin-left:.25rem">${curP}</span></div><span class="db ${t.direction==='LONG'?'long':'short'}">${t.direction==='LONG'?'🟢 ЛОНГ':'🔴 ШОРТ'}</span></div><div class="ppnl ${pc} ${pr?'fl':''}">${pnl>=0?'+':''}${pnl.toFixed(2)}%</div><div class="pp"><div class="pi"><span class="pil">Вход</span><span class="piv">${fmt(t.entry)}</span></div><div class="pi"><span class="pil">ТП1</span><span class="piv" style="color:#4ADE80">${fmt(t.tp1)}</span></div><div class="pi"><span class="pil">ТП2</span><span class="piv" style="color:#4ADE80">${fmt(t.tp2)}</span></div><div class="pi"><span class="pil">СЛ</span><span class="piv" style="color:#F87171">${fmt(t.sl)}</span></div></div><div class="prb-wrap">${buildProgressBar(t,pnl,livePnl!=null?livePnl:t.entry)}</div><div style="display:flex;align-items:center;justify-content:space-between;gap:.5rem"><span class="pstat ${t.status==='TP1_HIT'?'tp1':t.status==='PENDING'?'pend':'open'}">${stLbl(t.status)}</span><span class="live-dur" style="font-size:.75rem;color:rgba(221,197,162,.5)">${dur?'⏱ '+dur:''}</span><span style="font-size:.75rem;color:rgba(221,197,162,.35)">${fmtT(t.taken_at)}</span></div></div>`;
+      return`<div class="posc glass ch ${cc} ${bp}" id="pos-${t.id||t.symbol}"><div class="sh"><div class="symw"><span class="sym">${t.symbol}</span><span class="live-cur" style="font-size:.7rem;color:rgba(221,197,162,.4);font-family:monospace;margin-left:.25rem">${curP}</span></div><span class="db ${t.direction==='LONG'?'long':'short'}">${t.direction==='LONG'?'🟢 ЛОНГ':'🔴 ШОРТ'}</span></div><div class="ppnl ${pc} ${pr?'fl':''}">${pnl>=0?'+':''}${pnl.toFixed(2)}%</div><div class="pp"><div class="pi"><span class="pil">Вход</span><span class="piv">${fmt(t.entry)}</span></div><div class="pi"><span class="pil">ТП1</span><span class="piv" style="color:#4ADE80">${fmt(t.tp1)}</span></div><div class="pi"><span class="pil">ТП2</span><span class="piv" style="color:#4ADE80">${fmt(t.tp2)}</span></div><div class="pi"><span class="pil">СЛ</span><span class="piv" style="color:#F87171">${fmt(t.sl)}</span></div></div><div class="prb-wrap">${buildProgressBar(t,pnl,livePnl!=null?livePnl:t.entry)}</div><div style="display:flex;align-items:center;justify-content:space-between;gap:.5rem"><span class="pstat ${t.status==='TP1_HIT'?'tp1':t.status==='PENDING'?'pend':'open'}">${stLbl(t.status)}</span><span class="live-dur" style="font-size:.75rem;color:rgba(221,197,162,.5)">${dur?'⏱ '+dur:''}</span><span class="live-ago" style="font-size:.75rem;color:rgba(221,197,162,.35)">${fmtT(t.taken_at)}</span></div></div>`;
     }
 
     function rHist(h){if(!h.length)return`<div class="hw glass"><div class="empty" style="border:none"><div class="eico"><div class="eicoi"></div></div><div class="etxt">Нет истории сделок</div></div></div>`;
@@ -387,7 +387,7 @@
         <div class="prb-track">
           <div class="prb-fill" style="width:${pos}%;background:linear-gradient(90deg,rgba(248,113,113,.3),${barColor})"></div>
           <div class="prb-tp1" style="left:${tp1pos}%" title="ТП1 ${fmt(tp1)}"></div>
-          <div style="position:absolute;top:50%;left:${entryPos}%;transform:translate(-50%,-50%);width:8px;height:8px;border-radius:50%;background:#60A5FA;border:2px solid var(--cocoa);z-index:3;box-shadow:0 0 6px #60A5FA80" title="Вход ${fmt(entry)}"></div>
+          <div class="prb-entry-dot" style="position:absolute;top:50%;left:${entryPos}%;transform:translate(-50%,-50%);width:8px;height:8px;border-radius:50%;background:#60A5FA;border:2px solid var(--cocoa);z-index:3;box-shadow:0 0 6px #60A5FA80;transition:left .8s cubic-bezier(.22,1,.36,1)" title="Вход ${fmt(entry)}"></div>
           <div class="prb-marker" style="left:${pos}%;background:${markerColor};box-shadow:0 0 8px ${markerColor}80"></div>
         </div>`;
     }
@@ -476,7 +476,7 @@
     setInterval(fetchREST, 30000);
     // Fetch live prices every 15 seconds
     setInterval(fetchLivePrices, 15000);
-    // Patch duration every minute without re-render
+    // Patch duration + ago-time every minute without re-render
     setInterval(() => { if (openTradesCache.length) patchPositionCards(); }, 60000);
   </script>
 </body>
