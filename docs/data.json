@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T18:10:37.934198+00:00",
+  "updated_at": "2026-03-18T18:11:51.180641+00:00",
   "publish_status": {
-    "last_ok": "2026-03-18T18:10:06Z",
+    "last_ok": "2026-03-18T18:10:43Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 66.4
   },
   "trade_stats": {
-    "open": 46,
+    "open": 45,
     "pending": 2,
     "wins": 158,
-    "losses": 166,
-    "total_pnl": 22.92,
-    "winrate": 48.8
+    "losses": 167,
+    "total_pnl": 21.76,
+    "winrate": 48.6
   },
   "fear_greed": {
     "value": 26,
@@ -1447,30 +1447,6 @@
   ],
   "trades_open": [
     {
-      "id": 337,
-      "symbol": "APRUSDT",
-      "direction": "LONG",
-      "entry": 0.1817776,
-      "tp1": 0.189485,
-      "tp2": 0.197193,
-      "sl": 0.175611,
-      "entry_orig": 0.1817776,
-      "tp1_orig": 0.189485,
-      "tp2_orig": 0.197193,
-      "sl_orig": 0.175611,
-      "strength": 41,
-      "taken_at": "2026-03-18 10:11:34",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00038)",
-        "Цена > EMA20 > EMA50",
-        "Объём x2.6 🔥🔥",
-        "Стакан: давление покупки (+0.15)",
-        "МТФ: 5m, 15m, 1h согласны",
-        "📌 Лимитный вход @ 0.181778 (откат к EMA20)"
-      ]
-    },
-    {
       "id": 371,
       "symbol": "ETCUSDT",
       "direction": "SHORT",
@@ -2652,6 +2628,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "APRUSDT",
+      "direction": "LONG",
+      "entry": 0.1817776,
+      "tp1": 0.189485,
+      "tp2": 0.197193,
+      "sl": 0.175611,
+      "strength": 41,
+      "status": "TIMEOUT",
+      "pnl_pct": -1.16,
+      "close_price": 0.17966,
+      "taken_at": "2026-03-18 10:11:34",
+      "closed_at": "2026-03-18 18:11:45"
+    },
     {
       "symbol": "ANKRUSDT",
       "direction": "LONG",
@@ -5432,20 +5422,6 @@
       "tp2": 0.006537,
       "sl": 0.005786,
       "strength": 45,
-      "status": "LIMIT_TIMEOUT",
-      "pnl_pct": 0,
-      "close_price": null,
-      "taken_at": "2026-03-17 20:18:43",
-      "closed_at": "2026-03-17 21:18:51"
-    },
-    {
-      "symbol": "TRIAUSDT",
-      "direction": "LONG",
-      "entry": 0.03319731,
-      "tp1": 0.03463,
-      "tp2": 0.036062,
-      "sl": 0.032051,
-      "strength": 44,
       "status": "LIMIT_TIMEOUT",
       "pnl_pct": 0,
       "close_price": null,
