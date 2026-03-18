@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T08:22:20.891036+00:00",
+  "updated_at": "2026-03-18T08:23:22.615492+00:00",
   "publish_status": {
-    "last_ok": "2026-03-18T08:21:20Z",
+    "last_ok": "2026-03-18T08:22:25Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,15 +10,15 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 430,
+    "total": 431,
     "wins": 131,
     "losses": 31,
-    "active": 11,
+    "active": 12,
     "winrate": 80.9
   },
   "trade_stats": {
     "open": 10,
-    "pending": 1,
+    "pending": 2,
     "wins": 135,
     "losses": 104,
     "total_pnl": 102.13,
@@ -273,6 +273,27 @@
       ],
       "news": null,
       "created_at": "2026-03-18 08:16:55",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 469,
+      "symbol": "XPLUSDT",
+      "direction": "LONG",
+      "entry": 0.11888192,
+      "tp1": 0.12126,
+      "tp2": 0.123637,
+      "sl": 0.116504,
+      "strength": 41,
+      "reasons": [
+        "MACD бычий (hist=0.00012)",
+        "Цена > EMA20 > EMA50",
+        "Объём x2.9 🔥🔥",
+        "Стакан: перевес bid (+0.08)",
+        "МТФ: 5m, 15m, 4h согласны",
+        "📌 Лимитный вход @ 0.118882 (откат к EMA20)"
+      ],
+      "news": null,
+      "created_at": "2026-03-18 08:23:02",
       "status": "ACTIVE"
     }
   ],
@@ -915,6 +936,26 @@
         "OI растёт +1.6% + цена ↑",
         "CVD растёт (+7.1%) — покупки усиливаются 📈",
         "📌 Лимитный вход @ 0.0793248 (откат к EMA20)"
+      ]
+    },
+    {
+      "id": 323,
+      "symbol": "XPLUSDT",
+      "direction": "LONG",
+      "entry": 0.11888192,
+      "tp1": 0.12126,
+      "tp2": 0.123637,
+      "sl": 0.116504,
+      "strength": 41,
+      "taken_at": "2026-03-18T08:23:03.922461",
+      "status": "PENDING",
+      "reasons": [
+        "MACD бычий (hist=0.00012)",
+        "Цена > EMA20 > EMA50",
+        "Объём x2.9 🔥🔥",
+        "Стакан: перевес bid (+0.08)",
+        "МТФ: 5m, 15m, 4h согласны",
+        "📌 Лимитный вход @ 0.118882 (откат к EMA20)"
       ]
     }
   ],
