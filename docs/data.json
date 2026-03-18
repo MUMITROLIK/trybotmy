@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-03-18T17:13:27.016476+00:00",
+  "updated_at": "2026-03-18T17:14:56.248202+00:00",
   "publish_status": {
-    "last_ok": "2026-03-18T17:11:22Z",
-    "last_error": "fatal: unable to access 'https://github.com/MUMITROLIK/trybotmy.git/': Failed to connect to github.com port 443 after 21130 ms: Could not connect to server\n",
+    "last_ok": "2026-03-18T17:13:44Z",
+    "last_error": null,
     "min_push_interval_sec": 30
   },
   "settings": {
@@ -11,17 +11,17 @@
   },
   "stats": {
     "total": 547,
-    "wins": 160,
-    "losses": 65,
-    "active": 58,
-    "winrate": 71.1
+    "wins": 161,
+    "losses": 66,
+    "active": 56,
+    "winrate": 70.9
   },
   "trade_stats": {
-    "open": 58,
+    "open": 56,
     "pending": 1,
-    "wins": 154,
-    "losses": 147,
-    "total_pnl": 52.62,
+    "wins": 155,
+    "losses": 148,
+    "total_pnl": 58.11,
     "winrate": 51.2
   },
   "fear_greed": {
@@ -134,28 +134,6 @@
       ],
       "news": null,
       "created_at": "2026-03-18 15:18:17",
-      "status": "ACTIVE"
-    },
-    {
-      "id": 522,
-      "symbol": "TAOUSDT",
-      "direction": "LONG",
-      "entry": 267.52,
-      "tp1": 272.8704,
-      "tp2": 278.2208,
-      "sl": 262.1696,
-      "strength": 38,
-      "reasons": [
-        "RSI=45 (нейтральный↓)",
-        "MACD бычий (hist=0.03865)",
-        "BB ниже середины",
-        "Стакан: сильное давление покупки (+0.35)",
-        "МТФ: только 1 таймфрейм согласен",
-        "OI растёт +3.1%",
-        "CVD положительный (-1.3%)"
-      ],
-      "news": null,
-      "created_at": "2026-03-18 16:02:15",
       "status": "ACTIVE"
     },
     {
@@ -1261,27 +1239,6 @@
       "status": "ACTIVE"
     },
     {
-      "id": 583,
-      "symbol": "POWERUSDT",
-      "direction": "SHORT",
-      "entry": 0.10218,
-      "tp1": 0.099987,
-      "tp2": 0.097794,
-      "sl": 0.104224,
-      "strength": 38,
-      "reasons": [
-        "MACD медвежий (hist=-0.00003)",
-        "Цена < EMA20 < EMA50",
-        "Стакан: перевес ask (-0.06)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +0.9% + цена ↓",
-        "BTC контекст: -3.5% за 12ч 📉"
-      ],
-      "news": null,
-      "created_at": "2026-03-18 17:06:38",
-      "status": "ACTIVE"
-    },
-    {
       "id": 584,
       "symbol": "HYPEUSDT",
       "direction": "LONG",
@@ -1326,6 +1283,25 @@
     }
   ],
   "history": [
+    {
+      "symbol": "POWERUSDT",
+      "direction": "SHORT",
+      "entry": 0.10218,
+      "tp1": 0.099987,
+      "tp2": 0.097794,
+      "sl": 0.104224,
+      "strength": 38,
+      "status": "TP2",
+      "created_at": "2026-03-18 17:06:38",
+      "reasons": [
+        "MACD медвежий (hist=-0.00003)",
+        "Цена < EMA20 < EMA50",
+        "Стакан: перевес ask (-0.06)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +0.9% + цена ↓",
+        "BTC контекст: -3.5% за 12ч 📉"
+      ]
+    },
     {
       "symbol": "KITEUSDT",
       "direction": "LONG",
@@ -1506,6 +1482,26 @@
       ]
     },
     {
+      "symbol": "TAOUSDT",
+      "direction": "LONG",
+      "entry": 267.52,
+      "tp1": 272.8704,
+      "tp2": 278.2208,
+      "sl": 262.1696,
+      "strength": 38,
+      "status": "SL",
+      "created_at": "2026-03-18 16:02:15",
+      "reasons": [
+        "RSI=45 (нейтральный↓)",
+        "MACD бычий (hist=0.03865)",
+        "BB ниже середины",
+        "Стакан: сильное давление покупки (+0.35)",
+        "МТФ: только 1 таймфрейм согласен",
+        "OI растёт +3.1%",
+        "CVD положительный (-1.3%)"
+      ]
+    },
+    {
       "symbol": "RIVERUSDT",
       "direction": "SHORT",
       "entry": 24.686,
@@ -1680,46 +1676,6 @@
         "BTC корреляция 0.82, BTC -1.2% 📉",
         "📌 Лимитный вход @ 1.79944 (откат к EMA20)"
       ]
-    },
-    {
-      "symbol": "RESOLVUSDT",
-      "direction": "SHORT",
-      "entry": 0.06263745,
-      "tp1": 0.061385,
-      "tp2": 0.060132,
-      "sl": 0.06389,
-      "strength": 45,
-      "status": "TP1",
-      "created_at": "2026-03-18 11:43:25",
-      "reasons": [
-        "MACD медвежий (hist=-0.00017)",
-        "Цена < EMA20 < EMA50",
-        "Объём x4.2 🔥🔥🔥",
-        "Стакан: перевес ask (-0.08)",
-        "МТФ: 5m, 15m, 1h согласны",
-        "📌 Лимитный вход @ 0.0626374 (откат к EMA20)"
-      ]
-    },
-    {
-      "symbol": "FARTCOINUSDT",
-      "direction": "SHORT",
-      "entry": 0.21040412,
-      "tp1": 0.206196,
-      "tp2": 0.201988,
-      "sl": 0.214612,
-      "strength": 46,
-      "status": "TP1",
-      "created_at": "2026-03-18 11:41:45",
-      "reasons": [
-        "MACD медвежий (hist=-0.00044)",
-        "Цена < EMA20 < EMA50",
-        "Объём x4.1 🔥🔥🔥",
-        "МТФ: 5m, 15m согласны",
-        "OI падает (лонги закрываются)",
-        "CVD отрицательный (-5.0%)",
-        "BTC корреляция 0.75, BTC -1.1% 📉",
-        "📌 Лимитный вход @ 0.210404 (откат к EMA20)"
-      ]
     }
   ],
   "trades_open": [
@@ -1857,31 +1813,6 @@
         "⚠️ Funding через 43м",
         "⚡ Рыночный вход (моментум: MTF+OI+CVD)",
         "🤖 ML: вероятность 53%"
-      ]
-    },
-    {
-      "id": 376,
-      "symbol": "TAOUSDT",
-      "direction": "LONG",
-      "entry": 267.52,
-      "tp1": 272.8704,
-      "tp2": 278.2208,
-      "sl": 262.1696,
-      "entry_orig": 267.52,
-      "tp1_orig": 272.8704,
-      "tp2_orig": 278.2208,
-      "sl_orig": 262.1696,
-      "strength": 38,
-      "taken_at": "2026-03-18T16:02:15.808490",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=45 (нейтральный↓)",
-        "MACD бычий (hist=0.03865)",
-        "BB ниже середины",
-        "Стакан: сильное давление покупки (+0.35)",
-        "МТФ: только 1 таймфрейм согласен",
-        "OI растёт +3.1%",
-        "CVD положительный (-1.3%)"
       ]
     },
     {
@@ -3113,30 +3044,6 @@
       ]
     },
     {
-      "id": 437,
-      "symbol": "POWERUSDT",
-      "direction": "SHORT",
-      "entry": 0.10218,
-      "tp1": 0.099987,
-      "tp2": 0.097794,
-      "sl": 0.104224,
-      "entry_orig": 0.10218,
-      "tp1_orig": 0.099987,
-      "tp2_orig": 0.097794,
-      "sl_orig": 0.104224,
-      "strength": 38,
-      "taken_at": "2026-03-18T17:06:38.377295",
-      "status": "OPEN",
-      "reasons": [
-        "MACD медвежий (hist=-0.00003)",
-        "Цена < EMA20 < EMA50",
-        "Стакан: перевес ask (-0.06)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +0.9% + цена ↓",
-        "BTC контекст: -3.5% за 12ч 📉"
-      ]
-    },
-    {
       "id": 438,
       "symbol": "HYPEUSDT",
       "direction": "LONG",
@@ -3211,6 +3118,34 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "TAOUSDT",
+      "direction": "LONG",
+      "entry": 267.52,
+      "tp1": 272.8704,
+      "tp2": 278.2208,
+      "sl": 262.1696,
+      "strength": 38,
+      "status": "SL",
+      "pnl_pct": -2.07,
+      "close_price": 261.995,
+      "taken_at": "2026-03-18T16:02:15.808490",
+      "closed_at": "2026-03-18 17:14:53"
+    },
+    {
+      "symbol": "POWERUSDT",
+      "direction": "SHORT",
+      "entry": 0.10218,
+      "tp1": 0.099987,
+      "tp2": 0.097794,
+      "sl": 0.104224,
+      "strength": 38,
+      "status": "TP2",
+      "pnl_pct": 7.56,
+      "close_price": 0.09446,
+      "taken_at": "2026-03-18T17:06:38.377295",
+      "closed_at": "2026-03-18 17:13:45"
+    },
     {
       "symbol": "HYPEUSDT",
       "direction": "LONG",
@@ -5982,34 +5917,6 @@
       "close_price": 0.15485,
       "taken_at": "2026-03-17 19:25:16",
       "closed_at": "2026-03-17 20:12:31"
-    },
-    {
-      "symbol": "CFGUSDT",
-      "direction": "SHORT",
-      "entry": 0.15977231,
-      "tp1": 0.155079,
-      "tp2": 0.150387,
-      "sl": 0.15455,
-      "strength": 49,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 3.08,
-      "close_price": 0.15485,
-      "taken_at": "2026-03-17 19:25:16",
-      "closed_at": "2026-03-17 20:12:29"
-    },
-    {
-      "symbol": "CFGUSDT",
-      "direction": "SHORT",
-      "entry": 0.15971519,
-      "tp1": 0.155022,
-      "tp2": 0.150329,
-      "sl": 0.15435,
-      "strength": 49,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 3.05,
-      "close_price": 0.15485,
-      "taken_at": "2026-03-17 19:25:16",
-      "closed_at": "2026-03-17 20:12:23"
     }
   ]
 }
