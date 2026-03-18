@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T18:54:52.517451+00:00",
+  "updated_at": "2026-03-18T18:55:43.851415+00:00",
   "publish_status": {
-    "last_ok": "2026-03-18T18:54:26Z",
+    "last_ok": "2026-03-18T18:54:58Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -12,17 +12,17 @@
   "stats": {
     "total": 566,
     "wins": 169,
-    "losses": 87,
-    "active": 46,
-    "winrate": 66.0
+    "losses": 88,
+    "active": 44,
+    "winrate": 65.8
   },
   "trade_stats": {
-    "open": 47,
+    "open": 46,
     "pending": 1,
     "wins": 160,
-    "losses": 170,
-    "total_pnl": 18.3,
-    "winrate": 48.5
+    "losses": 171,
+    "total_pnl": 16.29,
+    "winrate": 48.3
   },
   "fear_greed": {
     "value": 26,
@@ -36,32 +36,6 @@
     "trained_at": "2026-03-18T18:46:42.539461+00:00"
   },
   "signals": [
-    {
-      "id": 517,
-      "symbol": "ETCUSDT",
-      "direction": "SHORT",
-      "entry": 8.352,
-      "tp1": 8.18496,
-      "tp2": 8.01792,
-      "sl": 8.51904,
-      "strength": 62,
-      "reasons": [
-        "MACD медвежий (hist=-0.02228)",
-        "Цена < EMA20 < EMA50",
-        "Объём x2.8 🔥🔥",
-        "Стакан: давление продажи (-0.20)",
-        "МТФ: 5m, 15m, 1h согласны",
-        "CVD падает (-16.1%) — продажи усиливаются 📉",
-        "Bearish Engulfing (1h) 🕯️",
-        "BTC корреляция 0.91, BTC -3.5% 📉",
-        "⚠️ Funding через 65м",
-        "BTC контекст: -3.8% за 12ч 📉",
-        "🤖 ML: вероятность 69%"
-      ],
-      "news": null,
-      "created_at": "2026-03-18 14:55:04",
-      "status": "ACTIVE"
-    },
     {
       "id": 519,
       "symbol": "ETHUSDT",
@@ -508,27 +482,6 @@
       ],
       "news": null,
       "created_at": "2026-03-18 16:07:24",
-      "status": "ACTIVE"
-    },
-    {
-      "id": 555,
-      "symbol": "BERAUSDT",
-      "direction": "LONG",
-      "entry": 0.5926,
-      "tp1": 0.604452,
-      "tp2": 0.616304,
-      "sl": 0.580748,
-      "strength": 30,
-      "reasons": [
-        "RSI=26 (сильная перепроданность)",
-        "BB нижняя зона (23%)",
-        "Стакан: перевес bid (+0.05)",
-        "МТФ: только 1 таймфрейм согласен",
-        "OI растёт +1.1%",
-        "CVD положительный (-6.3%)"
-      ],
-      "news": null,
-      "created_at": "2026-03-18 16:08:55",
       "status": "ACTIVE"
     },
     {
@@ -1979,30 +1932,6 @@
       ]
     },
     {
-      "id": 409,
-      "symbol": "BERAUSDT",
-      "direction": "LONG",
-      "entry": 0.5926,
-      "tp1": 0.604452,
-      "tp2": 0.616304,
-      "sl": 0.580748,
-      "entry_orig": 0.5926,
-      "tp1_orig": 0.604452,
-      "tp2_orig": 0.616304,
-      "sl_orig": 0.580748,
-      "strength": 30,
-      "taken_at": "2026-03-18T16:08:55.747557",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=26 (сильная перепроданность)",
-        "BB нижняя зона (23%)",
-        "Стакан: перевес bid (+0.05)",
-        "МТФ: только 1 таймфрейм согласен",
-        "OI растёт +1.1%",
-        "CVD положительный (-6.3%)"
-      ]
-    },
-    {
       "id": 411,
       "symbol": "IPUSDT",
       "direction": "SHORT",
@@ -2644,6 +2573,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "BERAUSDT",
+      "direction": "LONG",
+      "entry": 0.5926,
+      "tp1": 0.604452,
+      "tp2": 0.616304,
+      "sl": 0.580748,
+      "strength": 30,
+      "status": "SL",
+      "pnl_pct": -2.01,
+      "close_price": 0.5807,
+      "taken_at": "2026-03-18T16:08:55.747557",
+      "closed_at": "2026-03-18 18:55:17"
+    },
     {
       "symbol": "POWERUSDT",
       "direction": "SHORT",
@@ -5424,20 +5367,6 @@
       "tp2": 0.006514,
       "sl": 0.005794,
       "strength": 40,
-      "status": "LIMIT_TIMEOUT",
-      "pnl_pct": 0,
-      "close_price": null,
-      "taken_at": "2026-03-17 20:18:43",
-      "closed_at": "2026-03-17 21:18:51"
-    },
-    {
-      "symbol": "TRIAUSDT",
-      "direction": "LONG",
-      "entry": 0.03315347,
-      "tp1": 0.034566,
-      "tp2": 0.035978,
-      "sl": 0.032024,
-      "strength": 45,
       "status": "LIMIT_TIMEOUT",
       "pnl_pct": 0,
       "close_price": null,
