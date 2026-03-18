@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T11:50:24.816963+00:00",
+  "updated_at": "2026-03-18T11:51:12.869009+00:00",
   "publish_status": {
-    "last_ok": "2026-03-18T11:49:54Z",
+    "last_ok": "2026-03-18T11:50:30Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -11,18 +11,18 @@
   },
   "stats": {
     "total": 477,
-    "wins": 148,
+    "wins": 149,
     "losses": 46,
-    "active": 20,
-    "winrate": 76.3
+    "active": 19,
+    "winrate": 76.4
   },
   "trade_stats": {
-    "open": 21,
+    "open": 20,
     "pending": 5,
-    "wins": 141,
+    "wins": 142,
     "losses": 126,
-    "total_pnl": 67.09,
-    "winrate": 52.8
+    "total_pnl": 68.92,
+    "winrate": 53.0
   },
   "fear_greed": {
     "value": 26,
@@ -36,28 +36,6 @@
     "trained_at": null
   },
   "signals": [
-    {
-      "id": 471,
-      "symbol": "TRUMPUSDT",
-      "direction": "SHORT",
-      "entry": 3.68883779,
-      "tp1": 3.615061,
-      "tp2": 3.541284,
-      "sl": 3.762615,
-      "strength": 45,
-      "reasons": [
-        "MACD медвежий (hist=-0.00427)",
-        "Цена < EMA20 < EMA50",
-        "Стакан: давление продажи (-0.12)",
-        "МТФ: 5m, 15m, 1h согласны",
-        "OI растёт +2.1% + цена ↓",
-        "CVD падает (-12.2%) — продажи усиливаются 📉",
-        "📌 Лимитный вход @ 3.68884 (откат к EMA20)"
-      ],
-      "news": null,
-      "created_at": "2026-03-18 09:02:20",
-      "status": "ACTIVE"
-    },
     {
       "id": 483,
       "symbol": "APRUSDT",
@@ -893,27 +871,6 @@
       ]
     },
     {
-      "id": 325,
-      "symbol": "TRUMPUSDT",
-      "direction": "SHORT",
-      "entry": 3.6695,
-      "tp1": 3.59610997,
-      "tp2": 3.52271972,
-      "sl": 3.74289045,
-      "strength": 45,
-      "taken_at": "2026-03-18T09:02:21.008230",
-      "status": "OPEN",
-      "reasons": [
-        "MACD медвежий (hist=-0.00427)",
-        "Цена < EMA20 < EMA50",
-        "Стакан: давление продажи (-0.12)",
-        "МТФ: 5m, 15m, 1h согласны",
-        "OI растёт +2.1% + цена ↓",
-        "CVD падает (-12.2%) — продажи усиливаются 📉",
-        "📌 Лимитный вход @ 3.68884 (откат к EMA20)"
-      ]
-    },
-    {
       "id": 337,
       "symbol": "APRUSDT",
       "direction": "LONG",
@@ -1412,6 +1369,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "TRUMPUSDT",
+      "direction": "SHORT",
+      "entry": 3.6695,
+      "tp1": 3.59610997,
+      "tp2": 3.52271972,
+      "sl": 3.5925000000000002,
+      "strength": 45,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 1.83,
+      "close_price": 3.6025,
+      "taken_at": "2026-03-18T09:02:21.008230",
+      "closed_at": "2026-03-18 11:51:12"
+    },
     {
       "symbol": "HYPEUSDT",
       "direction": "LONG",
@@ -4197,20 +4168,6 @@
       "close_price": 1.5965,
       "taken_at": "2026-03-17 10:28:45",
       "closed_at": "2026-03-17 18:28:52"
-    },
-    {
-      "symbol": "MEUSDT",
-      "direction": "SHORT",
-      "entry": 0.1228,
-      "tp1": 0.120344,
-      "tp2": 0.117888,
-      "sl": 0.125256,
-      "strength": 32,
-      "status": "TIMEOUT",
-      "pnl_pct": -0.81,
-      "close_price": 0.1238,
-      "taken_at": "2026-03-17 10:20:51",
-      "closed_at": "2026-03-17 18:21:06"
     }
   ]
 }
