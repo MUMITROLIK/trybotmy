@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T09:17:51.466071+00:00",
+  "updated_at": "2026-03-18T09:18:31.700550+00:00",
   "publish_status": {
-    "last_ok": "2026-03-18T09:16:51Z",
+    "last_ok": "2026-03-18T09:17:56Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 80.8
   },
   "trade_stats": {
-    "open": 12,
+    "open": 11,
     "pending": 1,
-    "wins": 136,
+    "wins": 137,
     "losses": 105,
-    "total_pnl": 101.6,
-    "winrate": 56.4
+    "total_pnl": 104.6,
+    "winrate": 56.6
   },
   "fear_greed": {
     "value": 26,
@@ -923,28 +923,6 @@
       ]
     },
     {
-      "id": 327,
-      "symbol": "VANRYUSDT",
-      "direction": "LONG",
-      "entry": 0.006748499999999999,
-      "tp1": 0.00695849,
-      "tp2": 0.00716786,
-      "sl": 0.00658103,
-      "strength": 40,
-      "taken_at": "2026-03-18T09:16:08.382106",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=49 (нейтральный↓)",
-        "MACD бычий (hist=0.00001)",
-        "Цена выше EMA20",
-        "МТФ: 1h, 4h согласны",
-        "OI растёт +1.9% + цена ↑",
-        "CVD положительный (-2.2%)",
-        "Bullish Engulfing (1h) 🕯️",
-        "📌 Лимитный вход @ 0.00670438 (откат к EMA20)"
-      ]
-    },
-    {
       "id": 326,
       "symbol": "AINUSDT",
       "direction": "LONG",
@@ -966,6 +944,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "VANRYUSDT",
+      "direction": "LONG",
+      "entry": 0.006748499999999999,
+      "tp1": 0.00695849,
+      "tp2": 0.00716786,
+      "sl": 0.0069715,
+      "strength": 40,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 3.0,
+      "close_price": 0.006951,
+      "taken_at": "2026-03-18T09:16:08.382106",
+      "closed_at": "2026-03-18 09:18:31"
+    },
     {
       "symbol": "AINUSDT",
       "direction": "LONG",
@@ -3751,20 +3743,6 @@
       "close_price": 0.005747,
       "taken_at": null,
       "closed_at": "2026-03-17 16:43:28"
-    },
-    {
-      "symbol": "HUMAUSDT",
-      "direction": "SHORT",
-      "entry": 0.019,
-      "tp1": 0.01832,
-      "tp2": 0.01764,
-      "sl": 0.018297,
-      "strength": 32,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 3.49,
-      "close_price": 0.0183375,
-      "taken_at": "2026-03-17 13:35:51",
-      "closed_at": "2026-03-17 16:41:03"
     }
   ]
 }
