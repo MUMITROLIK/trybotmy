@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T12:01:29.927634+00:00",
+  "updated_at": "2026-03-18T12:02:00.357199+00:00",
   "publish_status": {
-    "last_ok": "2026-03-18T12:00:48Z",
+    "last_ok": "2026-03-18T12:01:35Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 75.3
   },
   "trade_stats": {
-    "open": 18,
+    "open": 17,
     "pending": 4,
-    "wins": 142,
+    "wins": 143,
     "losses": 129,
-    "total_pnl": 62.45,
-    "winrate": 52.4
+    "total_pnl": 64.08,
+    "winrate": 52.6
   },
   "fear_greed": {
     "value": 26,
@@ -1218,9 +1218,10 @@
         "МТФ: 5m, 15m, 1h согласны",
         "📌 Лимитный вход @ 0.0626374 (откат к EMA20)"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 354,
       "symbol": "LITUSDT",
       "direction": "LONG",
       "entry": 1.2,
@@ -1228,19 +1229,12 @@
       "tp2": 1.248,
       "sl": 1.2255,
       "strength": 40,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 1.63,
+      "close_price": 1.2195,
       "taken_at": "2026-03-18T11:31:20.863204",
-      "status": "TP1_HIT",
-      "reasons": [
-        "RSI=23 (сильная перепроданность)",
-        "BB нижняя полоса (пробой)",
-        "Объём x2.3 🔥",
-        "Стакан: перевес bid (+0.07)",
-        "МТФ: 1h, 4h согласны",
-        "CVD положительный (-4.2%)"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-18 12:01:58"
+    },
     {
       "symbol": "PIXELUSDT",
       "direction": "LONG",
@@ -4026,20 +4020,6 @@
       "close_price": 373.505,
       "taken_at": "2026-03-17 10:46:21",
       "closed_at": "2026-03-17 18:46:23"
-    },
-    {
-      "symbol": "XPLUSDT",
-      "direction": "SHORT",
-      "entry": 0.11525923,
-      "tp1": 0.112934,
-      "tp2": 0.110609,
-      "sl": 0.117564,
-      "strength": 31,
-      "status": "SL",
-      "pnl_pct": -2.07,
-      "close_price": 0.11765,
-      "taken_at": "2026-03-17 17:52:19",
-      "closed_at": "2026-03-17 18:38:33"
     }
   ]
 }
