@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T01:02:26.753183+00:00",
+  "updated_at": "2026-03-18T01:02:59.139469+00:00",
   "publish_status": {
-    "last_ok": "2026-03-18T01:01:54Z",
+    "last_ok": "2026-03-18T01:02:31Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 79.7
   },
   "trade_stats": {
-    "open": 16,
+    "open": 15,
     "pending": 1,
-    "wins": 123,
+    "wins": 124,
     "losses": 96,
-    "total_pnl": 93.77,
-    "winrate": 56.2
+    "total_pnl": 95.86,
+    "winrate": 56.4
   },
   "fear_greed": {
     "value": 26,
@@ -1098,9 +1098,10 @@
         "Bullish Engulfing (1h) 🕯️",
         "📌 Лимитный вход @ 0.00505084 (откат к EMA20)"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 263,
       "symbol": "IRUSDT",
       "direction": "LONG",
       "entry": 0.0489722,
@@ -1108,19 +1109,12 @@
       "tp2": 0.050931,
       "sl": 0.05001,
       "strength": 41,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 2.09,
+      "close_price": 0.049995,
       "taken_at": "2026-03-17 21:19:57",
-      "status": "TP1_HIT",
-      "reasons": [
-        "MACD бычий (hist=0.00009)",
-        "EMA20 > EMA50 (golden cross) 🌟",
-        "Стакан: давление покупки (+0.11)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "CVD положительный (+0.2%)",
-        "📌 Лимитный вход @ 0.0489722 (откат к EMA20)"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-18 01:02:58"
+    },
     {
       "symbol": "HUMAUSDT",
       "direction": "LONG",
@@ -3906,20 +3900,6 @@
       "close_price": 21.9655,
       "taken_at": "2026-03-17 11:20:53",
       "closed_at": "2026-03-17 13:54:17"
-    },
-    {
-      "symbol": "CRVUSDT",
-      "direction": "LONG",
-      "entry": 0.255,
-      "tp1": 0.2601,
-      "tp2": 0.2652,
-      "sl": 0.2499,
-      "strength": 36,
-      "status": "SL",
-      "pnl_pct": -2.16,
-      "close_price": 0.2495,
-      "taken_at": "2026-03-17 12:09:17",
-      "closed_at": "2026-03-17 13:52:25"
     }
   ]
 }
