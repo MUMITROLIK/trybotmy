@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T05:05:03.305561+00:00",
+  "updated_at": "2026-03-18T05:06:34.848958+00:00",
   "publish_status": {
-    "last_ok": "2026-03-18T05:04:13Z",
+    "last_ok": "2026-03-18T05:05:08Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -18,7 +18,7 @@
   },
   "trade_stats": {
     "open": 6,
-    "pending": 1,
+    "pending": 0,
     "wins": 129,
     "losses": 100,
     "total_pnl": 100.68,
@@ -585,9 +585,10 @@
         "OI растёт +2.6% + цена ↑",
         "CVD положительный (+1.9%)"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 303,
       "symbol": "HUMAUSDT",
       "direction": "LONG",
       "entry": 0.01786948,
@@ -595,20 +596,12 @@
       "tp2": 0.018699,
       "sl": 0.017512,
       "strength": 54,
+      "status": "LIMIT_TIMEOUT",
+      "pnl_pct": 0,
+      "close_price": null,
       "taken_at": "2026-03-18T04:05:06.685362",
-      "status": "PENDING",
-      "reasons": [
-        "MACD бычий (hist=0.00003)",
-        "EMA20 > EMA50 (golden cross) 🌟",
-        "Стакан: сильное давление покупки (+0.26)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +1.0% + цена ↑",
-        "CVD растёт (+5.2%) — покупки усиливаются 📈",
-        "📌 Лимитный вход @ 0.0178695 (откат к EMA20)"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-18 05:05:08"
+    },
     {
       "symbol": "DEGOUSDT",
       "direction": "SHORT",
@@ -636,20 +629,6 @@
       "close_price": null,
       "taken_at": "2026-03-18T03:29:46.240378",
       "closed_at": "2026-03-18 04:29:53"
-    },
-    {
-      "symbol": "HUMAUSDT",
-      "direction": "LONG",
-      "entry": 0.01786948,
-      "tp1": 0.018284,
-      "tp2": 0.018699,
-      "sl": 0.017512,
-      "strength": 54,
-      "status": "PENDING",
-      "pnl_pct": 0,
-      "close_price": null,
-      "taken_at": "2026-03-18T04:05:06.685362",
-      "closed_at": null
     },
     {
       "symbol": "RENDERUSDT",
