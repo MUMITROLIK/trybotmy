@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T00:13:52.886615+00:00",
+  "updated_at": "2026-03-18T00:14:51.430246+00:00",
   "publish_status": {
-    "last_ok": "2026-03-18T00:12:29Z",
+    "last_ok": "2026-03-18T00:13:57Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,15 +10,15 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 403,
+    "total": 405,
     "wins": 116,
     "losses": 28,
-    "active": 15,
+    "active": 17,
     "winrate": 80.6
   },
   "trade_stats": {
-    "open": 14,
-    "pending": 3,
+    "open": 15,
+    "pending": 4,
     "wins": 122,
     "losses": 94,
     "total_pnl": 84.12,
@@ -360,6 +360,50 @@
       ],
       "news": null,
       "created_at": "2026-03-18 00:09:15",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 442,
+      "symbol": "FETUSDT",
+      "direction": "LONG",
+      "entry": 0.23839285,
+      "tp1": 0.2433,
+      "tp2": 0.248207,
+      "sl": 0.233625,
+      "strength": 45,
+      "reasons": [
+        "MACD бычий (hist=0.00019)",
+        "Цена > EMA20 > EMA50",
+        "Объём x1.8 🔥",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "CVD растёт (+7.0%) — покупки усиливаются 📈",
+        "📌 Лимитный вход @ 0.238393 (откат к EMA20)"
+      ],
+      "news": null,
+      "created_at": "2026-03-18 00:14:06",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 443,
+      "symbol": "AINUSDT",
+      "direction": "LONG",
+      "entry": 0.07764,
+      "tp1": 0.079572,
+      "tp2": 0.081504,
+      "sl": 0.076087,
+      "strength": 50,
+      "reasons": [
+        "RSI=29 (сильная перепроданность)",
+        "BB нижняя зона (5%)",
+        "EMA20 > EMA50",
+        "Стакан: сильное давление покупки (+0.47)",
+        "МТФ: 15m, 4h согласны",
+        "OI растёт +1.9% + цена ↑",
+        "CVD растёт (+8.1%) — покупки усиливаются 📈",
+        "Doji (1h) — нерешительность"
+      ],
+      "news": null,
+      "created_at": "2026-03-18 00:14:50",
       "status": "ACTIVE"
     }
   ],
@@ -1054,6 +1098,28 @@
       ]
     },
     {
+      "id": 297,
+      "symbol": "AINUSDT",
+      "direction": "LONG",
+      "entry": 0.07764,
+      "tp1": 0.079572,
+      "tp2": 0.081504,
+      "sl": 0.076087,
+      "strength": 50,
+      "taken_at": "2026-03-18T00:14:51.073188",
+      "status": "OPEN",
+      "reasons": [
+        "RSI=29 (сильная перепроданность)",
+        "BB нижняя зона (5%)",
+        "EMA20 > EMA50",
+        "Стакан: сильное давление покупки (+0.47)",
+        "МТФ: 15m, 4h согласны",
+        "OI растёт +1.9% + цена ↑",
+        "CVD растёт (+8.1%) — покупки усиливаются 📈",
+        "Doji (1h) — нерешительность"
+      ]
+    },
+    {
       "id": 291,
       "symbol": "VANRYUSDT",
       "direction": "LONG",
@@ -1115,9 +1181,43 @@
         "CVD отрицательный (+5.8%)",
         "📌 Лимитный вход @ 1.00293 (откат к EMA20)"
       ]
+    },
+    {
+      "id": 296,
+      "symbol": "FETUSDT",
+      "direction": "LONG",
+      "entry": 0.23839285,
+      "tp1": 0.2433,
+      "tp2": 0.248207,
+      "sl": 0.233625,
+      "strength": 45,
+      "taken_at": "2026-03-18T00:14:06.470933",
+      "status": "PENDING",
+      "reasons": [
+        "MACD бычий (hist=0.00019)",
+        "Цена > EMA20 > EMA50",
+        "Объём x1.8 🔥",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "CVD растёт (+7.0%) — покупки усиливаются 📈",
+        "📌 Лимитный вход @ 0.238393 (откат к EMA20)"
+      ]
     }
   ],
   "trades_history": [
+    {
+      "symbol": "FETUSDT",
+      "direction": "LONG",
+      "entry": 0.23839285,
+      "tp1": 0.2433,
+      "tp2": 0.248207,
+      "sl": 0.233625,
+      "strength": 45,
+      "status": "PENDING",
+      "pnl_pct": 0,
+      "close_price": null,
+      "taken_at": "2026-03-18T00:14:06.470933",
+      "closed_at": null
+    },
     {
       "symbol": "DEGOUSDT",
       "direction": "SHORT",
@@ -3903,20 +4003,6 @@
       "close_price": 40.6485,
       "taken_at": "2026-03-17 11:56:06",
       "closed_at": "2026-03-17 13:50:56"
-    },
-    {
-      "symbol": "GRASSUSDT",
-      "direction": "LONG",
-      "entry": 0.4493,
-      "tp1": 0.45990348,
-      "tp2": 0.47050696,
-      "sl": 0.440314,
-      "strength": 41,
-      "status": "SL",
-      "pnl_pct": -2.01,
-      "close_price": 0.44025000000000003,
-      "taken_at": "2026-03-17 12:12:21",
-      "closed_at": "2026-03-17 13:49:57"
     }
   ]
 }
