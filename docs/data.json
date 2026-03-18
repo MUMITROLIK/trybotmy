@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T10:51:36.554413+00:00",
+  "updated_at": "2026-03-18T10:52:29.961976+00:00",
   "publish_status": {
-    "last_ok": "2026-03-18T10:50:36Z",
+    "last_ok": "2026-03-18T10:51:41Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -18,7 +18,7 @@
   },
   "trade_stats": {
     "open": 18,
-    "pending": 2,
+    "pending": 1,
     "wins": 139,
     "losses": 111,
     "total_pnl": 92.62,
@@ -1128,26 +1128,6 @@
       ]
     },
     {
-      "id": 334,
-      "symbol": "AKTUSDT",
-      "direction": "LONG",
-      "entry": 0.51763234,
-      "tp1": 0.539629,
-      "tp2": 0.561625,
-      "sl": 0.500035,
-      "strength": 41,
-      "taken_at": "2026-03-18T09:52:02.630150",
-      "status": "PENDING",
-      "reasons": [
-        "MACD бычий (hist=0.00181)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: давление покупки (+0.10)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +1.1% + цена ↑",
-        "📌 Лимитный вход @ 0.517632 (откат к EMA20)"
-      ]
-    },
-    {
       "id": 343,
       "symbol": "ATHUSDT",
       "direction": "LONG",
@@ -1169,6 +1149,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "AKTUSDT",
+      "direction": "LONG",
+      "entry": 0.51763234,
+      "tp1": 0.539629,
+      "tp2": 0.561625,
+      "sl": 0.500035,
+      "strength": 41,
+      "status": "LIMIT_TIMEOUT",
+      "pnl_pct": 0,
+      "close_price": null,
+      "taken_at": "2026-03-18T09:52:02.630150",
+      "closed_at": "2026-03-18 10:52:06"
+    },
     {
       "symbol": "DEGOUSDT",
       "direction": "SHORT",
@@ -3954,20 +3948,6 @@
       "close_price": 0.0065185,
       "taken_at": null,
       "closed_at": "2026-03-17 16:51:22"
-    },
-    {
-      "symbol": "POLYXUSDT",
-      "direction": "LONG",
-      "entry": 0.05374,
-      "tp1": 0.056077,
-      "tp2": 0.058414,
-      "sl": 0.051871,
-      "strength": 46,
-      "status": "SL",
-      "pnl_pct": -3.75,
-      "close_price": 0.051725,
-      "taken_at": null,
-      "closed_at": "2026-03-17 16:50:20"
     }
   ]
 }

@@ -210,6 +210,7 @@
   <script>
     function fmt(p){if(!p&&p!==0)return'—';p=parseFloat(p);if(p>=1000)return p.toLocaleString('ru-RU',{minimumFractionDigits:2,maximumFractionDigits:2});if(p>=1)return p.toFixed(2);if(p>=0.01)return p.toFixed(4);if(p>=0.0001)return p.toFixed(6);return p.toFixed(8);}
     function fmtT(iso){if(!iso)return'—';try{const d=new Date(iso.replace(' ','T')),now=new Date(),df=now-d,m=Math.floor(df/60000),h=Math.floor(df/3600000);if(m<1)return'только что';if(m<60)return m+'м назад';if(h<24)return h+'ч назад';return d.toLocaleDateString('ru-RU',{month:'short',day:'numeric',hour:'2-digit',minute:'2-digit'});}catch{return iso.slice(0,16);}}
+    function durStr(iso){if(!iso)return'';try{const d=new Date(iso.replace(' ','T')),now=new Date(),df=now-d,m=Math.floor(df/60000),h=Math.floor(m/60),rm=m%60;if(m<1)return'<1м';if(h<1)return m+'м';return h+'ч '+rm+'м';}catch{return'';}}
     function fgM(v){if(v<=25)return{c:'#F87171',l:'Крайний страх'};if(v<=45)return{c:'#B6452C',l:'Страх'};if(v<=55)return{c:'#DDC5A2',l:'Нейтрально'};if(v<=75)return{c:'#4ADE80',l:'Жадность'};return{c:'#22C55E',l:'Крайняя жадность'};}
     function mlC(p){if(!p)return'med';return p<0.5?'low':p<0.7?'med':'hi';}
     function sGr(s){return s>=75?'linear-gradient(90deg,#4ADE80,#22C55E)':s>=50?'linear-gradient(90deg,#DDC5A2,#B6452C)':'linear-gradient(90deg,#F87171,#EF4444)';}
@@ -219,8 +220,21 @@
     function rSig(s,i){const d='d'+(i%6+1),wp=s.win_prob!=null?s.win_prob:null,mc=mlC(wp);
       return`<div class="sigc glass shimmer ch aup ${d}"><div class="sh"><div class="symw"><span class="sym">${s.symbol}</span></div><span class="db ${s.direction==='LONG'?'long':'short'}">${s.direction==='LONG'?'🟢 ЛОНГ':'🔴 ШОРТ'}</span></div><div class="pg"><div class="pi"><span class="pil">Вход</span><span class="piv" style="color:#60A5FA">${fmt(s.entry)}</span></div><div class="pi"><span class="pil">ТП1</span><span class="piv" style="color:#4ADE80">${fmt(s.tp1)}</span></div><div class="pi"><span class="pil">ТП2</span><span class="piv" style="color:#4ADE80">${fmt(s.tp2)}</span></div><div class="pi"><span class="pil">СЛ</span><span class="piv" style="color:#F87171">${fmt(s.sl)}</span></div></div><div class="strw"><div class="strh"><span class="strl">Сила сигнала</span><span class="strv">${s.strength||0}%</span></div><div class="strb"><div class="strf" style="width:${s.strength||0}%;background:${sGr(s.strength||0)}"></div></div></div><div class="mlr">${wp!=null?`<span class="mlb ${mc}">🧠 ML: ${(wp*100).toFixed(0)}%</span>`:`<span class="mlb med">🧠 ML: —</span>`}<span class="sigtime">${fmtT(s.created_at)}</span></div>${s.reasons&&s.reasons.length?`<div class="reas">${s.reasons.slice(0,4).map(r=>`<span class="rea">${r}</span>`).join('')}</div>`:''}</div>`;}
 
-    function rPos(t,i){const d='d'+(i%6+1),pnl=t.pnl_pct||0,pr=pnl>0,isN=pnl===0,bp=t.status==='TP1_HIT'?'bp':'',cc=pr?'profit':isN?'neu':'loss',pc=pr?'pos':isN?'ne':'neg';
-      return`<div class="posc glass ch ${cc} ${bp} aup ${d}"><div class="sh"><div class="symw"><span class="sym">${t.symbol}</span></div><span class="db ${t.direction==='LONG'?'long':'short'}">${t.direction==='LONG'?'🟢 ЛОНГ':'🔴 ШОРТ'}</span></div><div class="ppnl ${pc} ${pr?'fl':''}">${pnl>=0?'+':''}${pnl.toFixed(2)}%</div><div class="pp"><div class="pi"><span class="pil">Вход</span><span class="piv">${fmt(t.entry)}</span></div><div class="pi"><span class="pil">ТП1</span><span class="piv" style="color:#4ADE80">${fmt(t.tp1)}</span></div><div class="pi"><span class="pil">ТП2</span><span class="piv" style="color:#4ADE80">${fmt(t.tp2)}</span></div><div class="pi"><span class="pil">СЛ</span><span class="piv" style="color:#F87171">${fmt(t.sl)}</span></div></div><div style="display:flex;align-items:center;justify-content:space-between"><span class="pstat ${t.status==='TP1_HIT'?'tp1':t.status==='PENDING'?'pend':'open'}">${stLbl(t.status)}</span><span style="font-size:.75rem;color:rgba(221,197,162,.4)">${fmtT(t.taken_at)}</span></div></div>`;}
+    function rPos(t,i){
+      const d='d'+(i%6+1);
+      const livePnl=livePrices[t.symbol];
+      let pnl=0;
+      if(livePnl!=null&&t.entry){
+        pnl=t.direction==='LONG'?(livePnl-t.entry)/t.entry*100:(t.entry-livePnl)/t.entry*100;
+      } else {
+        pnl=t.pnl_pct||0;
+      }
+      const pr=pnl>0.01,isN=Math.abs(pnl)<0.01,bp=t.status==='TP1_HIT'?'bp':'';
+      const cc=pr?'profit':isN?'neu':'loss',pc=pr?'pos':isN?'ne':'neg';
+      const dur=t.status!=='PENDING'?durStr(t.taken_at):'';
+      const curP=livePnl!=null?fmt(livePnl):'—';
+      return`<div class="posc glass ch ${cc} ${bp} aup ${d}" id="pos-${t.id||t.symbol}"><div class="sh"><div class="symw"><span class="sym">${t.symbol}</span>${livePnl!=null?`<span style="font-size:.7rem;color:rgba(221,197,162,.4);font-family:monospace">${curP}</span>`:''}</div><span class="db ${t.direction==='LONG'?'long':'short'}">${t.direction==='LONG'?'🟢 ЛОНГ':'🔴 ШОРТ'}</span></div><div class="ppnl ${pc} ${pr?'fl':''}">${pnl>=0?'+':''}${pnl.toFixed(2)}%</div><div class="pp"><div class="pi"><span class="pil">Вход</span><span class="piv">${fmt(t.entry)}</span></div><div class="pi"><span class="pil">ТП1</span><span class="piv" style="color:#4ADE80">${fmt(t.tp1)}</span></div><div class="pi"><span class="pil">ТП2</span><span class="piv" style="color:#4ADE80">${fmt(t.tp2)}</span></div><div class="pi"><span class="pil">СЛ</span><span class="piv" style="color:#F87171">${fmt(t.sl)}</span></div></div><div style="display:flex;align-items:center;justify-content:space-between;gap:.5rem"><span class="pstat ${t.status==='TP1_HIT'?'tp1':t.status==='PENDING'?'pend':'open'}">${stLbl(t.status)}</span>${dur?`<span style="font-size:.75rem;color:rgba(221,197,162,.5)">⏱ ${dur}</span>`:''}<span style="font-size:.75rem;color:rgba(221,197,162,.35)">${fmtT(t.taken_at)}</span></div></div>`;
+    }
 
     function rHist(h){if(!h.length)return`<div class="hw glass"><div class="empty" style="border:none"><div class="eico"><div class="eicoi"></div></div><div class="etxt">Нет истории сделок</div></div></div>`;
       return`<div class="hw glass aup" style="overflow-x:auto"><table class="ht"><thead><tr><th>Пара</th><th>Напр.</th><th>Вход</th><th>Закрыто</th><th>P&L</th><th>Статус</th><th>Время</th></tr></thead><tbody>${h.map((x,i)=>{const pnl=x.pnl_pct||0,pc=pnl>0?'pos':pnl<0?'neg':'ne';return`<tr class="aup d${i%6+1}"><td><span class="hsym">${x.symbol}</span></td><td><span class="hdir ${x.direction==='LONG'?'long':'short'}">${x.direction==='LONG'?'Лонг':'Шорт'}</span></td><td class="hprice mono">${fmt(x.entry)}</td><td class="hprice mono">${fmt(x.close_price)}</td><td><span class="hpnl ${pc} mono">${pnl>=0?'+':''}${pnl.toFixed(2)}%</span></td><td><span class="hst ${stCls(x.status)}">${stLbl(x.status)}</span></td><td class="htime">${fmtT(x.closed_at)}</td></tr>`;}).join('')}</tbody></table></div>`;}
@@ -270,7 +284,7 @@
       ab.textContent=auto?'🤖 АВТО':'👤 РУЧНОЙ';ab.className='ab '+(auto?'on':'off')+' aup d4';
       if(d.updated_at)document.getElementById('updInfo').textContent='Обновлено: '+fmtT(d.updated_at);
 
-      const sigs=d.signals||[],alls=d.trades_open||[];
+      const sigs=d.signals||[],alls=d.trades_open||[];openTradesCache=alls.filter(t=>['OPEN','TP1_HIT'].includes(t.status));
       const opens=alls.filter(t=>['OPEN','TP1_HIT'].includes(t.status));
       const pends=alls.filter(t=>t.status==='PENDING');
       const hist=d.trades_history||[];
@@ -304,6 +318,39 @@
       else{dot.className='sd off';txt.className='st off';txt.textContent='Переподключение...';}
     }
 
+    // Live prices cache for open positions
+    let livePrices = {};
+    let openTradesCache = [];
+
+    async function fetchLivePrices() {
+      if (!openTradesCache.length) return;
+      // Fetch prices for all open positions in parallel (batches of 5)
+      const symbols = [...new Set(openTradesCache.map(t => t.symbol))];
+      const results = await Promise.allSettled(
+        symbols.map(async sym => {
+          try {
+            const r = await fetch(`/api/klines?symbol=${sym}&interval=1m&limit=1`);
+            if (r.ok) {
+              const d = await r.json();
+              if (d && d[0]) livePrices[sym] = parseFloat(d[0][4]);
+            }
+          } catch {}
+        })
+      );
+      // Re-render positions tab if active
+      if (activeTab === 'positions' || activeTab === 'pending') {
+        if (appData) {
+          const a = appData.trades_open || [];
+          renderTab(
+            appData.signals || [],
+            a.filter(t => ['OPEN','TP1_HIT'].includes(t.status)),
+            a.filter(t => t.status === 'PENDING'),
+            appData.trades_history || []
+          );
+        }
+      }
+    }
+
     let ws=null;
     function connectWS(){
       try{
@@ -329,9 +376,23 @@
       });
     });
 
-    fetchREST();
+    fetchREST().then(() => fetchLivePrices());
     connectWS();
-    setInterval(fetchREST,30000);
+    setInterval(fetchREST, 30000);
+    // Fetch live prices every 15 seconds
+    setInterval(fetchLivePrices, 15000);
+    // Also update duration display every minute
+    setInterval(() => {
+      if (appData && (activeTab === 'positions' || activeTab === 'pending')) {
+        const a = appData.trades_open || [];
+        renderTab(
+          appData.signals || [],
+          a.filter(t => ['OPEN','TP1_HIT'].includes(t.status)),
+          a.filter(t => t.status === 'PENDING'),
+          appData.trades_history || []
+        );
+      }
+    }, 60000);
   </script>
 </body>
 </html>
