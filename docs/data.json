@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T13:05:19.417521+00:00",
+  "updated_at": "2026-03-18T13:06:19.979795+00:00",
   "publish_status": {
-    "last_ok": "2026-03-18T13:04:42Z",
+    "last_ok": "2026-03-18T13:05:24Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 71.6
   },
   "trade_stats": {
-    "open": 6,
+    "open": 5,
     "pending": 0,
-    "wins": 145,
+    "wins": 146,
     "losses": 140,
-    "total_pnl": 42.81,
-    "winrate": 50.9
+    "total_pnl": 45.85,
+    "winrate": 51.0
   },
   "fear_greed": {
     "value": 26,
@@ -625,9 +625,10 @@
         "OI растёт +1.5% + цена ↑",
         "🤖 ML: вероятность 61%"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 365,
       "symbol": "CFGUSDT",
       "direction": "SHORT",
       "entry": 0.143,
@@ -635,20 +636,12 @@
       "tp2": 0.136979,
       "sl": 0.13863975,
       "strength": 46,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 3.04,
+      "close_price": 0.13865,
       "taken_at": "2026-03-18T11:44:58.590978",
-      "status": "TP1_HIT",
-      "reasons": [
-        "MACD медвежий (hist=-0.00012)",
-        "Цена < EMA20 < EMA50",
-        "Объём x1.8 🔥",
-        "МТФ: 5m, 15m, 4h согласны",
-        "OI растёт +8.4% + цена ↓",
-        "CVD падает (-9.0%) — продажи усиливаются 📉",
-        "⚡ Рыночный вход (сильный моментум: MTF+OI+CVD)"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-18 13:06:19"
+    },
     {
       "symbol": "1000PEPEUSDT",
       "direction": "SHORT",
@@ -3434,20 +3427,6 @@
       "close_price": 1.0290499999999998,
       "taken_at": "2026-03-17 12:00:11",
       "closed_at": "2026-03-17 20:00:16"
-    },
-    {
-      "symbol": "TRUMPUSDT",
-      "direction": "LONG",
-      "entry": 3.711,
-      "tp1": 3.78522,
-      "tp2": 3.85944,
-      "sl": 3.63678,
-      "strength": 27,
-      "status": "TIMEOUT",
-      "pnl_pct": -0.93,
-      "close_price": 3.6765,
-      "taken_at": "2026-03-17 12:00:10",
-      "closed_at": "2026-03-17 20:00:15"
     }
   ]
 }
