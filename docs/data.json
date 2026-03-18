@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T18:27:32.275264+00:00",
+  "updated_at": "2026-03-18T18:28:05.786250+00:00",
   "publish_status": {
-    "last_ok": "2026-03-18T18:26:31Z",
+    "last_ok": "2026-03-18T18:27:37Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 563,
+    "total": 564,
     "wins": 167,
     "losses": 86,
-    "active": 46,
+    "active": 47,
     "winrate": 66.0
   },
   "trade_stats": {
-    "open": 45,
+    "open": 46,
     "pending": 2,
     "wins": 159,
     "losses": 169,
@@ -1050,6 +1050,25 @@
       ],
       "news": null,
       "created_at": "2026-03-18 18:23:48",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 602,
+      "symbol": "ANKRUSDT",
+      "direction": "LONG",
+      "entry": 0.005111,
+      "tp1": 0.005213,
+      "tp2": 0.005315,
+      "sl": 0.005009,
+      "strength": 33,
+      "reasons": [
+        "MACD бычий (hist=0.00003)",
+        "Стакан: давление покупки (+0.20)",
+        "МТФ: 5m, 1h, 4h согласны",
+        "CVD положительный (+4.3%)"
+      ],
+      "news": null,
+      "created_at": "2026-03-18 18:28:05",
       "status": "ACTIVE"
     }
   ],
@@ -2572,6 +2591,28 @@
         "МТФ: все 4 таймфрейма согласны ✅✅",
         "OI растёт +1.0% + цена ↓",
         "BTC контекст: -3.0% за 12ч 📉"
+      ]
+    },
+    {
+      "id": 456,
+      "symbol": "ANKRUSDT",
+      "direction": "LONG",
+      "entry": 0.005111,
+      "tp1": 0.005213,
+      "tp2": 0.005315,
+      "sl": 0.005009,
+      "entry_orig": 0.005111,
+      "tp1_orig": 0.005213,
+      "tp2_orig": 0.005315,
+      "sl_orig": 0.005009,
+      "strength": 33,
+      "taken_at": "2026-03-18T18:28:05.510930",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.00003)",
+        "Стакан: давление покупки (+0.20)",
+        "МТФ: 5m, 1h, 4h согласны",
+        "CVD положительный (+4.3%)"
       ]
     },
     {
