@@ -1990,7 +1990,44 @@
     document.addEventListener('DOMContentLoaded', () => {
       // Initialize BTC chart
       const btcSeries = initBtcChart();
-      
+
       // Setup UI
       setupFilters();
-      setupTimeframe
+      setupTimeframes();
+
+      // Tab navigation
+      document.querySelectorAll('.nav-tab').forEach(tab => {
+        tab.addEventListener('click', () => switchTab(tab.dataset.tab));
+      });
+
+      // Connect WebSocket
+      connectWebSocket();
+
+      // Funding countdown update
+      updateFundingCountdown();
+      setInterval(updateFundingCountdown, 60000);
+
+      // Load initial data via fetch as fallback
+      fetch('/data.json')
+        .then(r => r.json())
+        .then(data => {
+          appData = data;
+          renderAll();
+        })
+        .catch(err => console.error('Failed to load initial data:', err));
+
+      // Header BTC ticker update from context
+      function updateHeaderBtc() {
+        if (!appData) return;
+        // Placeholder - BTC price will come from WebSocket
+      }
+
+      console.log('Futures Terminal initialized');
+    });
+
+    // Export for debugging
+    window.appData = () => appData;
+    window.render = () => renderAll();
+  </script>
+</body>
+</html>
