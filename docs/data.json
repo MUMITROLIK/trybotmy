@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-03-18T17:49:38.264825+00:00",
+  "updated_at": "2026-03-18T17:50:18.149953+00:00",
   "publish_status": {
     "last_ok": "2026-03-18T17:48:22Z",
-    "last_error": null,
+    "last_error": "fatal: unable to access 'https://github.com/MUMITROLIK/trybotmy.git/': Failed to connect to github.com port 443 after 21166 ms: Could not connect to server\n",
     "min_push_interval_sec": 30
   },
   "settings": {
@@ -17,12 +17,12 @@
     "winrate": 67.9
   },
   "trade_stats": {
-    "open": 54,
+    "open": 53,
     "pending": 1,
     "wins": 155,
-    "losses": 156,
-    "total_pnl": 37.97,
-    "winrate": 49.8
+    "losses": 157,
+    "total_pnl": 35.8,
+    "winrate": 49.7
   },
   "fear_greed": {
     "value": 26,
@@ -2560,31 +2560,6 @@
       ]
     },
     {
-      "id": 424,
-      "symbol": "KASUSDT",
-      "direction": "SHORT",
-      "entry": 0.03741,
-      "tp1": 0.036557,
-      "tp2": 0.035704,
-      "sl": 0.038158,
-      "entry_orig": 0.03741,
-      "tp1_orig": 0.036557,
-      "tp2_orig": 0.035704,
-      "sl_orig": 0.038158,
-      "strength": 36,
-      "taken_at": "2026-03-18T16:27:21.328052",
-      "status": "OPEN",
-      "reasons": [
-        "MACD медвежий (hist=-0.00003)",
-        "EMA20 < EMA50 (death cross) 💀",
-        "Стакан: давление продажи (-0.21)",
-        "МТФ: 5m, 15m согласны",
-        "OI растёт +6.8%",
-        "CVD отрицательный (-2.8%)",
-        "BTC контекст: -3.6% за 12ч 📉"
-      ]
-    },
-    {
       "id": 425,
       "symbol": "MOODENGUSDT",
       "direction": "SHORT",
@@ -2980,6 +2955,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "KASUSDT",
+      "direction": "SHORT",
+      "entry": 0.03741,
+      "tp1": 0.036557,
+      "tp2": 0.035704,
+      "sl": 0.038158,
+      "strength": 36,
+      "status": "SL",
+      "pnl_pct": -2.17,
+      "close_price": 0.03822,
+      "taken_at": "2026-03-18T16:27:21.328052",
+      "closed_at": "2026-03-18 17:50:13"
+    },
     {
       "symbol": "DEGOUSDT",
       "direction": "SHORT",
@@ -5765,20 +5754,6 @@
       "close_price": 0.10835,
       "taken_at": "2026-03-17 12:42:22",
       "closed_at": "2026-03-17 20:42:24"
-    },
-    {
-      "symbol": "HYPEUSDT",
-      "direction": "SHORT",
-      "entry": 40.72047028,
-      "tp1": 39.906061,
-      "tp2": 39.091651,
-      "sl": 41.53488,
-      "strength": 36,
-      "status": "SL",
-      "pnl_pct": -2.03,
-      "close_price": 41.545500000000004,
-      "taken_at": "2026-03-17 18:42:18",
-      "closed_at": "2026-03-17 20:38:40"
     }
   ]
 }
