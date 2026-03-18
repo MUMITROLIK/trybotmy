@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T14:26:00.813233+00:00",
+  "updated_at": "2026-03-18T14:27:26.199565+00:00",
   "publish_status": {
-    "last_ok": "2026-03-18T14:25:29Z",
+    "last_ok": "2026-03-18T14:26:06Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -460,10 +460,10 @@
       "entry": 0.06143,
       "tp1": 0.06020169,
       "tp2": 0.05897285,
-      "sl": 0.0626584,
+      "sl": 0.06018,
       "strength": 45,
       "taken_at": "2026-03-18T11:43:25.481188",
-      "status": "OPEN",
+      "status": "TP1_HIT",
       "reasons": [
         "MACD медвежий (hist=-0.00017)",
         "Цена < EMA20 < EMA50",
