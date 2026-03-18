@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T18:17:25.349147+00:00",
+  "updated_at": "2026-03-18T18:17:56.597730+00:00",
   "publish_status": {
-    "last_ok": "2026-03-18T18:16:40Z",
+    "last_ok": "2026-03-18T18:17:32Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 66.5
   },
   "trade_stats": {
-    "open": 46,
+    "open": 45,
     "pending": 2,
-    "wins": 158,
+    "wins": 159,
     "losses": 167,
-    "total_pnl": 21.76,
-    "winrate": 48.6
+    "total_pnl": 23.68,
+    "winrate": 48.8
   },
   "fear_greed": {
     "value": 26,
@@ -2624,35 +2624,23 @@
         "OI растёт +1.4% + цена ↑",
         "📌 Лимитный вход @ 0.0105179 (откат к EMA20)"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 440,
       "symbol": "CRCLUSDT",
       "direction": "LONG",
       "entry": 132.46,
       "tp1": 135.1092,
       "tp2": 137.7584,
       "sl": 135.135,
-      "entry_orig": 132.46,
-      "tp1_orig": 135.1092,
-      "tp2_orig": 137.7584,
-      "sl_orig": 129.8108,
       "strength": 37,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 1.92,
+      "close_price": 135.005,
       "taken_at": "2026-03-18T17:15:54.839731",
-      "status": "TP1_HIT",
-      "reasons": [
-        "RSI=45 (нейтральный↓)",
-        "MACD бычий (hist=0.24703)",
-        "Цена выше EMA20",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +3.0%",
-        "CVD положительный (+0.2%)",
-        "Doji (1h) — нерешительность",
-        "⚡ Рыночный вход (моментум: MTF+OI+CVD)"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-18 18:17:56"
+    },
     {
       "symbol": "APRUSDT",
       "direction": "LONG",
@@ -5433,20 +5421,6 @@
       "tp2": 0.036055,
       "sl": 0.032044,
       "strength": 44,
-      "status": "LIMIT_TIMEOUT",
-      "pnl_pct": 0,
-      "close_price": null,
-      "taken_at": "2026-03-17 20:18:43",
-      "closed_at": "2026-03-17 21:18:51"
-    },
-    {
-      "symbol": "VANRYUSDT",
-      "direction": "LONG",
-      "entry": 0.00600047,
-      "tp1": 0.006269,
-      "tp2": 0.006537,
-      "sl": 0.005786,
-      "strength": 45,
       "status": "LIMIT_TIMEOUT",
       "pnl_pct": 0,
       "close_price": null,
