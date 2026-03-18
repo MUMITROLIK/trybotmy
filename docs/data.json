@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T12:41:55.111587+00:00",
+  "updated_at": "2026-03-18T12:43:05.232550+00:00",
   "publish_status": {
-    "last_ok": "2026-03-18T12:40:41Z",
+    "last_ok": "2026-03-18T12:42:00Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -18,7 +18,7 @@
   },
   "trade_stats": {
     "open": 9,
-    "pending": 1,
+    "pending": 0,
     "wins": 144,
     "losses": 138,
     "total_pnl": 45.25,
@@ -794,9 +794,10 @@
         "OI растёт +1.5% + цена ↑",
         "🤖 ML: вероятность 61%"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 360,
       "symbol": "FARTCOINUSDT",
       "direction": "SHORT",
       "entry": 0.21040412,
@@ -804,21 +805,12 @@
       "tp2": 0.201988,
       "sl": 0.214612,
       "strength": 46,
+      "status": "LIMIT_TIMEOUT",
+      "pnl_pct": 0,
+      "close_price": null,
       "taken_at": "2026-03-18T11:41:45.433993",
-      "status": "PENDING",
-      "reasons": [
-        "MACD медвежий (hist=-0.00044)",
-        "Цена < EMA20 < EMA50",
-        "Объём x4.1 🔥🔥🔥",
-        "МТФ: 5m, 15m согласны",
-        "OI падает (лонги закрываются)",
-        "CVD отрицательный (-5.0%)",
-        "BTC корреляция 0.75, BTC -1.1% 📉",
-        "📌 Лимитный вход @ 0.210404 (откат к EMA20)"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-18 12:42:01"
+    },
     {
       "symbol": "AKTUSDT",
       "direction": "LONG",
@@ -3604,20 +3596,6 @@
       "close_price": 0.100185,
       "taken_at": "2026-03-17 11:56:00",
       "closed_at": "2026-03-17 19:56:06"
-    },
-    {
-      "symbol": "BTCUSDT",
-      "direction": "LONG",
-      "entry": 74139.2,
-      "tp1": 75621.984,
-      "tp2": 77104.768,
-      "sl": 72656.416,
-      "strength": 44,
-      "status": "TIMEOUT",
-      "pnl_pct": 0.51,
-      "close_price": 74518.05,
-      "taken_at": "2026-03-17 11:53:23",
-      "closed_at": "2026-03-17 19:53:28"
     }
   ]
 }
