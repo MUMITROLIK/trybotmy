@@ -1238,7 +1238,8 @@ function initBtcChart() {
 
 async function loadBtcCandles() {
   try {
-    const r = await fetch(`https://fapi.binance.com/fapi/v1/klines?symbol=BTCUSDT&interval=${btcTF}&limit=100`);
+    const r = await fetch(`/api/klines?symbol=BTCUSDT&interval=${btcTF}&limit=100`, { cache: 'no-store' });
+    if (!r.ok) throw new Error('klines http ' + r.status);
     const raw = await r.json();
     const candles = raw.map(d => ({
       time:Math.floor(d[0]/1000), open:parseFloat(d[1]),
@@ -1321,7 +1322,8 @@ async function loadModalCandles() {
     wickUpColor:'#00ff9d', wickDownColor:'#ff2d6b',
   });
   try {
-    const r = await fetch(`https://fapi.binance.com/fapi/v1/klines?symbol=${mSym}&interval=${mTF}&limit=100`);
+    const r = await fetch(`/api/klines?symbol=${mSym}&interval=${mTF}&limit=100`, { cache: 'no-store' });
+    if (!r.ok) throw new Error('klines http ' + r.status);
     const raw = await r.json();
     mSeries.setData(raw.map(d => ({
       time:Math.floor(d[0]/1000), open:parseFloat(d[1]),
