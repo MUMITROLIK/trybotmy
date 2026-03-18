@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T00:40:41.923208+00:00",
+  "updated_at": "2026-03-18T00:41:50.784971+00:00",
   "publish_status": {
-    "last_ok": "2026-03-18T00:39:48Z",
+    "last_ok": "2026-03-18T00:40:46Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -12,17 +12,17 @@
   "stats": {
     "total": 406,
     "wins": 116,
-    "losses": 29,
-    "active": 17,
-    "winrate": 80.0
+    "losses": 30,
+    "active": 16,
+    "winrate": 79.5
   },
   "trade_stats": {
-    "open": 16,
+    "open": 15,
     "pending": 2,
     "wins": 122,
-    "losses": 95,
-    "total_pnl": 81.99,
-    "winrate": 56.2
+    "losses": 96,
+    "total_pnl": 79.96,
+    "winrate": 56.0
   },
   "fear_greed": {
     "value": 26,
@@ -341,27 +341,6 @@
       "status": "ACTIVE"
     },
     {
-      "id": 442,
-      "symbol": "FETUSDT",
-      "direction": "LONG",
-      "entry": 0.23839285,
-      "tp1": 0.2433,
-      "tp2": 0.248207,
-      "sl": 0.233625,
-      "strength": 45,
-      "reasons": [
-        "MACD бычий (hist=0.00019)",
-        "Цена > EMA20 > EMA50",
-        "Объём x1.8 🔥",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "CVD растёт (+7.0%) — покупки усиливаются 📈",
-        "📌 Лимитный вход @ 0.238393 (откат к EMA20)"
-      ],
-      "news": null,
-      "created_at": "2026-03-18 00:14:06",
-      "status": "ACTIVE"
-    },
-    {
       "id": 443,
       "symbol": "AINUSDT",
       "direction": "LONG",
@@ -408,6 +387,25 @@
     }
   ],
   "history": [
+    {
+      "symbol": "FETUSDT",
+      "direction": "LONG",
+      "entry": 0.23839285,
+      "tp1": 0.2433,
+      "tp2": 0.248207,
+      "sl": 0.233625,
+      "strength": 45,
+      "status": "SL",
+      "created_at": "2026-03-18 00:14:06",
+      "reasons": [
+        "MACD бычий (hist=0.00019)",
+        "Цена > EMA20 > EMA50",
+        "Объём x1.8 🔥",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "CVD растёт (+7.0%) — покупки усиливаются 📈",
+        "📌 Лимитный вход @ 0.238393 (откат к EMA20)"
+      ]
+    },
     {
       "symbol": "DEGOUSDT",
       "direction": "SHORT",
@@ -781,27 +779,6 @@
         "CVD растёт (+7.8%) — покупки усиливаются 📈",
         "📌 Лимитный вход @ 281.11 (откат к EMA20)"
       ]
-    },
-    {
-      "symbol": "XPLUSDT",
-      "direction": "LONG",
-      "entry": 0.11646129,
-      "tp1": 0.118791,
-      "tp2": 0.12112,
-      "sl": 0.114132,
-      "strength": 46,
-      "status": "TP1",
-      "created_at": "2026-03-17 20:59:53",
-      "reasons": [
-        "MACD бычий (hist=0.00016)",
-        "EMA20 > EMA50 (golden cross) 🌟",
-        "Стакан: давление покупки (+0.13)",
-        "МТФ: 5m, 15m, 4h согласны",
-        "OI растёт +1.0%",
-        "CVD положительный (+3.4%)",
-        "Bullish Engulfing (1h) 🕯️",
-        "📌 Лимитный вход @ 0.116461 (откат к EMA20)"
-      ]
     }
   ],
   "trades_open": [
@@ -1078,26 +1055,6 @@
       ]
     },
     {
-      "id": 296,
-      "symbol": "FETUSDT",
-      "direction": "LONG",
-      "entry": 0.23839285,
-      "tp1": 0.2433,
-      "tp2": 0.248207,
-      "sl": 0.233625,
-      "strength": 45,
-      "taken_at": "2026-03-18 00:16:38",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00019)",
-        "Цена > EMA20 > EMA50",
-        "Объём x1.8 🔥",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "CVD растёт (+7.0%) — покупки усиливаются 📈",
-        "📌 Лимитный вход @ 0.238393 (откат к EMA20)"
-      ]
-    },
-    {
       "id": 297,
       "symbol": "AINUSDT",
       "direction": "LONG",
@@ -1184,6 +1141,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "FETUSDT",
+      "direction": "LONG",
+      "entry": 0.23839285,
+      "tp1": 0.2433,
+      "tp2": 0.248207,
+      "sl": 0.233625,
+      "strength": 45,
+      "status": "SL",
+      "pnl_pct": -2.03,
+      "close_price": 0.23355,
+      "taken_at": "2026-03-18 00:16:38",
+      "closed_at": "2026-03-18 00:41:08"
+    },
     {
       "symbol": "BANUSDT",
       "direction": "LONG",
@@ -3969,20 +3940,6 @@
       "close_price": 0.11515,
       "taken_at": "2026-03-17 13:32:19",
       "closed_at": "2026-03-17 13:50:59"
-    },
-    {
-      "symbol": "HYPEUSDT",
-      "direction": "LONG",
-      "entry": 41.507,
-      "tp1": 42.33714,
-      "tp2": 43.16728,
-      "sl": 40.67686,
-      "strength": 36,
-      "status": "SL",
-      "pnl_pct": -2.07,
-      "close_price": 40.6485,
-      "taken_at": "2026-03-17 11:56:06",
-      "closed_at": "2026-03-17 13:50:56"
     }
   ]
 }
