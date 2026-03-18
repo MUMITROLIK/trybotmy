@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T01:01:49.354562+00:00",
+  "updated_at": "2026-03-18T01:02:26.753183+00:00",
   "publish_status": {
-    "last_ok": "2026-03-18T01:01:16Z",
+    "last_ok": "2026-03-18T01:01:54Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -18,7 +18,7 @@
   },
   "trade_stats": {
     "open": 16,
-    "pending": 2,
+    "pending": 1,
     "wins": 123,
     "losses": 96,
     "total_pnl": 93.77,
@@ -822,26 +822,6 @@
       ]
     },
     {
-      "id": 263,
-      "symbol": "IRUSDT",
-      "direction": "LONG",
-      "entry": 0.0489722,
-      "tp1": 0.049952,
-      "tp2": 0.050931,
-      "sl": 0.047993,
-      "strength": 41,
-      "taken_at": "2026-03-17 21:19:57",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00009)",
-        "EMA20 > EMA50 (golden cross) 🌟",
-        "Стакан: давление покупки (+0.11)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "CVD положительный (+0.2%)",
-        "📌 Лимитный вход @ 0.0489722 (откат к EMA20)"
-      ]
-    },
-    {
       "id": 267,
       "symbol": "CRCLUSDT",
       "direction": "LONG",
@@ -1098,26 +1078,6 @@
       ]
     },
     {
-      "id": 292,
-      "symbol": "HUMAUSDT",
-      "direction": "LONG",
-      "entry": 0.01753414,
-      "tp1": 0.017885,
-      "tp2": 0.018236,
-      "sl": 0.017183,
-      "strength": 42,
-      "taken_at": "2026-03-18T00:02:08.881197",
-      "status": "PENDING",
-      "reasons": [
-        "MACD бычий (hist=0.00006)",
-        "Цена выше EMA20",
-        "Стакан: сильное давление покупки (+0.77)",
-        "МТФ: 5m, 1h, 4h согласны",
-        "CVD растёт (+15.9%) — покупки усиливаются 📈",
-        "📌 Лимитный вход @ 0.0175341 (откат к EMA20)"
-      ]
-    },
-    {
       "id": 300,
       "symbol": "ANKRUSDT",
       "direction": "LONG",
@@ -1138,9 +1098,43 @@
         "Bullish Engulfing (1h) 🕯️",
         "📌 Лимитный вход @ 0.00505084 (откат к EMA20)"
       ]
+    },
+    {
+      "id": 263,
+      "symbol": "IRUSDT",
+      "direction": "LONG",
+      "entry": 0.0489722,
+      "tp1": 0.049952,
+      "tp2": 0.050931,
+      "sl": 0.05001,
+      "strength": 41,
+      "taken_at": "2026-03-17 21:19:57",
+      "status": "TP1_HIT",
+      "reasons": [
+        "MACD бычий (hist=0.00009)",
+        "EMA20 > EMA50 (golden cross) 🌟",
+        "Стакан: давление покупки (+0.11)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "CVD положительный (+0.2%)",
+        "📌 Лимитный вход @ 0.0489722 (откат к EMA20)"
+      ]
     }
   ],
   "trades_history": [
+    {
+      "symbol": "HUMAUSDT",
+      "direction": "LONG",
+      "entry": 0.01753414,
+      "tp1": 0.017885,
+      "tp2": 0.018236,
+      "sl": 0.017183,
+      "strength": 42,
+      "status": "LIMIT_TIMEOUT",
+      "pnl_pct": 0,
+      "close_price": null,
+      "taken_at": "2026-03-18T00:02:08.881197",
+      "closed_at": "2026-03-18 01:02:10"
+    },
     {
       "symbol": "ANKRUSDT",
       "direction": "LONG",
@@ -1238,20 +1232,6 @@
       "close_price": 0.0044125,
       "taken_at": null,
       "closed_at": "2026-03-18 00:02:21"
-    },
-    {
-      "symbol": "HUMAUSDT",
-      "direction": "LONG",
-      "entry": 0.01753414,
-      "tp1": 0.017885,
-      "tp2": 0.018236,
-      "sl": 0.017183,
-      "strength": 42,
-      "status": "PENDING",
-      "pnl_pct": 0,
-      "close_price": null,
-      "taken_at": "2026-03-18T00:02:08.881197",
-      "closed_at": null
     },
     {
       "symbol": "POLYXUSDT",
