@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-03-18T17:17:29.774067+00:00",
+  "updated_at": "2026-03-18T17:18:24.992292+00:00",
   "publish_status": {
-    "last_ok": "2026-03-18T17:15:07Z",
-    "last_error": "fatal: unable to access 'https://github.com/MUMITROLIK/trybotmy.git/': Failed to connect to github.com port 443 after 21039 ms: Could not connect to server\n",
+    "last_ok": "2026-03-18T17:17:45Z",
+    "last_error": null,
     "min_push_interval_sec": 30
   },
   "settings": {
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 548,
+    "total": 549,
     "wins": 161,
     "losses": 66,
-    "active": 57,
+    "active": 58,
     "winrate": 70.9
   },
   "trade_stats": {
-    "open": 57,
+    "open": 58,
     "pending": 1,
     "wins": 155,
     "losses": 148,
@@ -1302,6 +1302,26 @@
       ],
       "news": null,
       "created_at": "2026-03-18 17:15:54",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 587,
+      "symbol": "POWERUSDT",
+      "direction": "SHORT",
+      "entry": 0.09433,
+      "tp1": 0.090991,
+      "tp2": 0.087653,
+      "sl": 0.097001,
+      "strength": 42,
+      "reasons": [
+        "MACD медвежий (hist=-0.00077)",
+        "Цена < EMA20 < EMA50",
+        "Объём x3.0 🔥🔥",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "BTC контекст: -3.5% за 12ч 📉"
+      ],
+      "news": null,
+      "created_at": "2026-03-18 17:18:24",
       "status": "ACTIVE"
     }
   ],
@@ -3139,6 +3159,29 @@
         "CVD положительный (+0.2%)",
         "Doji (1h) — нерешительность",
         "⚡ Рыночный вход (моментум: MTF+OI+CVD)"
+      ]
+    },
+    {
+      "id": 441,
+      "symbol": "POWERUSDT",
+      "direction": "SHORT",
+      "entry": 0.09433,
+      "tp1": 0.090991,
+      "tp2": 0.087653,
+      "sl": 0.097001,
+      "entry_orig": 0.09433,
+      "tp1_orig": 0.090991,
+      "tp2_orig": 0.087653,
+      "sl_orig": 0.097001,
+      "strength": 42,
+      "taken_at": "2026-03-18T17:18:24.694356",
+      "status": "OPEN",
+      "reasons": [
+        "MACD медвежий (hist=-0.00077)",
+        "Цена < EMA20 < EMA50",
+        "Объём x3.0 🔥🔥",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "BTC контекст: -3.5% за 12ч 📉"
       ]
     },
     {
