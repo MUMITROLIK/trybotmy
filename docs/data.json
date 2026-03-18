@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T08:09:36.828132+00:00",
+  "updated_at": "2026-03-18T08:10:12.449650+00:00",
   "publish_status": {
-    "last_ok": "2026-03-18T08:08:34Z",
+    "last_ok": "2026-03-18T08:09:42Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 80.9
   },
   "trade_stats": {
-    "open": 9,
+    "open": 8,
     "pending": 5,
-    "wins": 134,
+    "wins": 135,
     "losses": 104,
-    "total_pnl": 101.74,
-    "winrate": 56.3
+    "total_pnl": 102.13,
+    "winrate": 56.5
   },
   "fear_greed": {
     "value": 26,
@@ -663,25 +663,6 @@
   ],
   "trades_open": [
     {
-      "id": 215,
-      "symbol": "WLDUSDT",
-      "direction": "SHORT",
-      "entry": 0.3953,
-      "tp1": 0.387394,
-      "tp2": 0.379488,
-      "sl": 0.403206,
-      "strength": 31,
-      "taken_at": null,
-      "status": "OPEN",
-      "reasons": [
-        "RSI=77 (сильная перекупленность)",
-        "BB верхняя полоса (пробой)",
-        "EMA20 < EMA50",
-        "Стакан: давление продажи (-0.16)",
-        "МТФ: только 1 таймфрейм согласен"
-      ]
-    },
-    {
       "id": 305,
       "symbol": "PUMPUSDT",
       "direction": "LONG",
@@ -960,6 +941,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "WLDUSDT",
+      "direction": "SHORT",
+      "entry": 0.3953,
+      "tp1": 0.387394,
+      "tp2": 0.379488,
+      "sl": 0.403206,
+      "strength": 31,
+      "status": "MANUAL",
+      "pnl_pct": 0.39,
+      "close_price": 0.39375,
+      "taken_at": null,
+      "closed_at": "2026-03-18 08:09:43"
+    },
     {
       "symbol": "PIXELUSDT",
       "direction": "LONG",
@@ -3745,20 +3740,6 @@
       "close_price": 0.39495,
       "taken_at": "2026-03-17 12:25:53",
       "closed_at": "2026-03-17 16:23:43"
-    },
-    {
-      "symbol": "ROBOUSDT",
-      "direction": "SHORT",
-      "entry": 0.02997,
-      "tp1": 0.0288731,
-      "tp2": 0.0277732,
-      "sl": 0.03084812,
-      "strength": 36,
-      "status": "SL",
-      "pnl_pct": -2.95,
-      "close_price": 0.030855,
-      "taken_at": "2026-03-17 11:54:11",
-      "closed_at": "2026-03-17 16:22:42"
     }
   ]
 }
