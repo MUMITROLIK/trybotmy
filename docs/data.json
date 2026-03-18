@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T18:00:33.865436+00:00",
+  "updated_at": "2026-03-18T18:01:08.271294+00:00",
   "publish_status": {
-    "last_ok": "2026-03-18T18:00:08Z",
+    "last_ok": "2026-03-18T18:00:39Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,19 +10,19 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 556,
+    "total": 557,
     "wins": 163,
-    "losses": 76,
+    "losses": 77,
     "active": 53,
-    "winrate": 68.2
+    "winrate": 67.9
   },
   "trade_stats": {
     "open": 52,
     "pending": 2,
     "wins": 156,
-    "losses": 159,
-    "total_pnl": 33.23,
-    "winrate": 49.5
+    "losses": 160,
+    "total_pnl": 31.22,
+    "winrate": 49.4
   },
   "fear_greed": {
     "value": 26,
@@ -936,28 +936,6 @@
       "status": "ACTIVE"
     },
     {
-      "id": 573,
-      "symbol": "AKTUSDT",
-      "direction": "SHORT",
-      "entry": 0.5096,
-      "tp1": 0.497718,
-      "tp2": 0.485836,
-      "sl": 0.519792,
-      "strength": 35,
-      "reasons": [
-        "RSI=51 (нейтральный↑)",
-        "MACD медвежий (hist=-0.00141)",
-        "Цена ниже EMA20",
-        "МТФ: 5m, 1h согласны",
-        "OI растёт +1.7%",
-        "CVD падает (-5.6%) — продажи усиливаются 📉",
-        "BTC контекст: -3.5% за 12ч 📉"
-      ],
-      "news": null,
-      "created_at": "2026-03-18 16:32:15",
-      "status": "ACTIVE"
-    },
-    {
       "id": 575,
       "symbol": "1000SHIBUSDT",
       "direction": "SHORT",
@@ -1210,6 +1188,26 @@
       "news": null,
       "created_at": "2026-03-18 17:57:11",
       "status": "ACTIVE"
+    },
+    {
+      "id": 595,
+      "symbol": "HANAUSDT",
+      "direction": "LONG",
+      "entry": 0.0477,
+      "tp1": 0.048654,
+      "tp2": 0.049608,
+      "sl": 0.046746,
+      "strength": 30,
+      "reasons": [
+        "RSI=41 (нейтральный↓)",
+        "BB нижняя зона (21%)",
+        "EMA20 > EMA50",
+        "МТФ: 15m, 1h, 4h согласны",
+        "OI растёт +1.2% + цена ↑"
+      ],
+      "news": null,
+      "created_at": "2026-03-18 18:01:00",
+      "status": "ACTIVE"
     }
   ],
   "history": [
@@ -1364,6 +1362,26 @@
         "МТФ: все 4 таймфрейма согласны ✅✅",
         "CVD падает (-9.3%) — продажи усиливаются 📉",
         "BTC контекст: -3.3% за 12ч 📉"
+      ]
+    },
+    {
+      "symbol": "AKTUSDT",
+      "direction": "SHORT",
+      "entry": 0.5096,
+      "tp1": 0.497718,
+      "tp2": 0.485836,
+      "sl": 0.519792,
+      "strength": 35,
+      "status": "SL",
+      "created_at": "2026-03-18 16:32:15",
+      "reasons": [
+        "RSI=51 (нейтральный↑)",
+        "MACD медвежий (hist=-0.00141)",
+        "Цена ниже EMA20",
+        "МТФ: 5m, 1h согласны",
+        "OI растёт +1.7%",
+        "CVD падает (-5.6%) — продажи усиливаются 📉",
+        "BTC контекст: -3.5% за 12ч 📉"
       ]
     },
     {
@@ -1584,25 +1602,6 @@
         "Doji (1h) — нерешительность",
         "BTC корреляция 0.84, BTC -1.3% 📉",
         "BTC контекст: -3.2% за 12ч 📉"
-      ]
-    },
-    {
-      "symbol": "BEATUSDT",
-      "direction": "LONG",
-      "entry": 0.5832,
-      "tp1": 0.603911,
-      "tp2": 0.624621,
-      "sl": 0.566631,
-      "strength": 36,
-      "status": "SL",
-      "created_at": "2026-03-18 16:02:17",
-      "reasons": [
-        "MACD бычий (hist=0.00149)",
-        "Цена > EMA20 > EMA50",
-        "МТФ: 15m, 1h, 4h согласны",
-        "OI растёт +1.2% + цена ↑",
-        "CVD положительный (+4.0%)",
-        "⚡ Рыночный вход (моментум: MTF+OI+CVD)"
       ]
     }
   ],
@@ -2599,31 +2598,6 @@
       ]
     },
     {
-      "id": 427,
-      "symbol": "AKTUSDT",
-      "direction": "SHORT",
-      "entry": 0.5096,
-      "tp1": 0.497718,
-      "tp2": 0.485836,
-      "sl": 0.519792,
-      "entry_orig": 0.5096,
-      "tp1_orig": 0.497718,
-      "tp2_orig": 0.485836,
-      "sl_orig": 0.519792,
-      "strength": 35,
-      "taken_at": "2026-03-18T16:32:15.299648",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=51 (нейтральный↑)",
-        "MACD медвежий (hist=-0.00141)",
-        "Цена ниже EMA20",
-        "МТФ: 5m, 1h согласны",
-        "OI растёт +1.7%",
-        "CVD падает (-5.6%) — продажи усиливаются 📉",
-        "BTC контекст: -3.5% за 12ч 📉"
-      ]
-    },
-    {
       "id": 429,
       "symbol": "1000SHIBUSDT",
       "direction": "SHORT",
@@ -2915,6 +2889,29 @@
       ]
     },
     {
+      "id": 449,
+      "symbol": "HANAUSDT",
+      "direction": "LONG",
+      "entry": 0.0477,
+      "tp1": 0.048654,
+      "tp2": 0.049608,
+      "sl": 0.046746,
+      "entry_orig": 0.0477,
+      "tp1_orig": 0.048654,
+      "tp2_orig": 0.049608,
+      "sl_orig": 0.046746,
+      "strength": 30,
+      "taken_at": "2026-03-18T18:01:00.618044",
+      "status": "OPEN",
+      "reasons": [
+        "RSI=41 (нейтральный↓)",
+        "BB нижняя зона (21%)",
+        "EMA20 > EMA50",
+        "МТФ: 15m, 1h, 4h согласны",
+        "OI растёт +1.2% + цена ↑"
+      ]
+    },
+    {
       "id": 434,
       "symbol": "KITEUSDT",
       "direction": "LONG",
@@ -2964,6 +2961,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "AKTUSDT",
+      "direction": "SHORT",
+      "entry": 0.5096,
+      "tp1": 0.497718,
+      "tp2": 0.485836,
+      "sl": 0.519792,
+      "strength": 35,
+      "status": "SL",
+      "pnl_pct": -2.01,
+      "close_price": 0.51985,
+      "taken_at": "2026-03-18T16:32:15.299648",
+      "closed_at": "2026-03-18 18:00:46"
+    },
     {
       "symbol": "XLMUSDT",
       "direction": "SHORT",
@@ -5749,20 +5760,6 @@
       "close_price": 22.0815,
       "taken_at": null,
       "closed_at": "2026-03-17 21:07:24"
-    },
-    {
-      "symbol": "RENDERUSDT",
-      "direction": "SHORT",
-      "entry": 1.816,
-      "tp1": 1.77968,
-      "tp2": 1.74336,
-      "sl": 1.85232,
-      "strength": 31,
-      "status": "TIMEOUT",
-      "pnl_pct": 0.19,
-      "close_price": 1.8125,
-      "taken_at": "2026-03-17 13:01:38",
-      "closed_at": "2026-03-17 21:01:45"
     }
   ]
 }
