@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T09:49:39.537377+00:00",
+  "updated_at": "2026-03-18T09:50:21.474826+00:00",
   "publish_status": {
-    "last_ok": null,
+    "last_ok": "2026-03-18T09:49:44Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 439,
+    "total": 440,
     "wins": 136,
     "losses": 32,
-    "active": 13,
+    "active": 14,
     "winrate": 81.0
   },
   "trade_stats": {
-    "open": 15,
+    "open": 16,
     "pending": 1,
     "wins": 137,
     "losses": 105,
@@ -325,6 +325,28 @@
       ],
       "news": null,
       "created_at": "2026-03-18 09:39:49",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 478,
+      "symbol": "PENGUUSDT",
+      "direction": "LONG",
+      "entry": 0.007965,
+      "tp1": 0.008124,
+      "tp2": 0.008284,
+      "sl": 0.007806,
+      "strength": 42,
+      "reasons": [
+        "RSI=44 (нейтральный↓)",
+        "BB ниже середины",
+        "Цена > EMA20 > EMA50",
+        "Стакан: сильное давление покупки (+0.53)",
+        "МТФ: 15m, 1h, 4h согласны",
+        "CVD положительный (-0.2%)",
+        "Bullish Engulfing (1h) 🕯️"
+      ],
+      "news": null,
+      "created_at": "2026-03-18 09:50:21",
       "status": "ACTIVE"
     }
   ],
@@ -1049,6 +1071,27 @@
         "OI растёт +1.9% + цена ↑",
         "CVD растёт (+5.0%) — покупки усиливаются 📈",
         "📌 Лимитный вход @ 0.976185 (откат к EMA20)"
+      ]
+    },
+    {
+      "id": 332,
+      "symbol": "PENGUUSDT",
+      "direction": "LONG",
+      "entry": 0.007965,
+      "tp1": 0.008124,
+      "tp2": 0.008284,
+      "sl": 0.007806,
+      "strength": 42,
+      "taken_at": "2026-03-18T09:50:21.418327",
+      "status": "OPEN",
+      "reasons": [
+        "RSI=44 (нейтральный↓)",
+        "BB ниже середины",
+        "Цена > EMA20 > EMA50",
+        "Стакан: сильное давление покупки (+0.53)",
+        "МТФ: 15m, 1h, 4h согласны",
+        "CVD положительный (-0.2%)",
+        "Bullish Engulfing (1h) 🕯️"
       ]
     },
     {
