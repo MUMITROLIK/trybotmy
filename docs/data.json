@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T09:03:33.865407+00:00",
+  "updated_at": "2026-03-18T09:04:38.879517+00:00",
   "publish_status": {
-    "last_ok": null,
+    "last_ok": "2026-03-18T09:03:38Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -18,7 +18,7 @@
   },
   "trade_stats": {
     "open": 10,
-    "pending": 2,
+    "pending": 1,
     "wins": 136,
     "losses": 105,
     "total_pnl": 101.6,
@@ -902,27 +902,6 @@
       ]
     },
     {
-      "id": 320,
-      "symbol": "AINUSDT",
-      "direction": "LONG",
-      "entry": 0.07932483,
-      "tp1": 0.082289,
-      "tp2": 0.085254,
-      "sl": 0.076953,
-      "strength": 46,
-      "taken_at": "2026-03-18T08:03:34.122601",
-      "status": "PENDING",
-      "reasons": [
-        "MACD бычий (hist=0.00029)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: перевес bid (+0.06)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +1.6% + цена ↑",
-        "CVD растёт (+7.1%) — покупки усиливаются 📈",
-        "📌 Лимитный вход @ 0.0793248 (откат к EMA20)"
-      ]
-    },
-    {
       "id": 325,
       "symbol": "TRUMPUSDT",
       "direction": "SHORT",
@@ -945,6 +924,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "AINUSDT",
+      "direction": "LONG",
+      "entry": 0.07932483,
+      "tp1": 0.082289,
+      "tp2": 0.085254,
+      "sl": 0.076953,
+      "strength": 46,
+      "status": "LIMIT_TIMEOUT",
+      "pnl_pct": 0,
+      "close_price": null,
+      "taken_at": "2026-03-18T08:03:34.122601",
+      "closed_at": "2026-03-18 09:03:42"
+    },
     {
       "symbol": "RIVERUSDT",
       "direction": "LONG",
@@ -3730,20 +3723,6 @@
       "close_price": 0.0183375,
       "taken_at": "2026-03-17 13:35:51",
       "closed_at": "2026-03-17 16:41:03"
-    },
-    {
-      "symbol": "ENSOUSDT",
-      "direction": "SHORT",
-      "entry": 1.19434769,
-      "tp1": 1.170461,
-      "tp2": 1.146574,
-      "sl": 1.14988935,
-      "strength": 34,
-      "status": "TP2",
-      "pnl_pct": 4.01,
-      "close_price": 1.1464500000000002,
-      "taken_at": "2026-03-17 08:57:12",
-      "closed_at": "2026-03-17 16:38:02"
     }
   ]
 }
