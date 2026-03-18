@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T01:56:11.874945+00:00",
+  "updated_at": "2026-03-18T01:57:17.038523+00:00",
   "publish_status": {
-    "last_ok": "2026-03-18T01:55:11Z",
+    "last_ok": "2026-03-18T01:56:17Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -11,14 +11,14 @@
   },
   "stats": {
     "total": 409,
-    "wins": 121,
+    "wins": 122,
     "losses": 30,
-    "active": 9,
-    "winrate": 80.1
+    "active": 8,
+    "winrate": 80.3
   },
   "trade_stats": {
     "open": 11,
-    "pending": 2,
+    "pending": 1,
     "wins": 127,
     "losses": 97,
     "total_pnl": 103.6,
@@ -206,9 +206,10 @@
       "news": null,
       "created_at": "2026-03-18 00:24:04",
       "status": "ACTIVE"
-    },
+    }
+  ],
+  "history": [
     {
-      "id": 447,
       "symbol": "1000BONKUSDT",
       "direction": "LONG",
       "entry": 0.0066469,
@@ -216,6 +217,8 @@
       "tp2": 0.006913,
       "sl": 0.006514,
       "strength": 45,
+      "status": "TP1",
+      "created_at": "2026-03-18 01:48:18",
       "reasons": [
         "MACD бычий (hist=0.00001)",
         "Цена > EMA20 > EMA50",
@@ -224,13 +227,8 @@
         "OI растёт +1.7% + цена ↑",
         "CVD положительный (+4.8%)",
         "📌 Лимитный вход @ 0.0066469 (откат к EMA20)"
-      ],
-      "news": null,
-      "created_at": "2026-03-18 01:48:18",
-      "status": "ACTIVE"
-    }
-  ],
-  "history": [
+      ]
+    },
     {
       "symbol": "ANKRUSDT",
       "direction": "LONG",
@@ -610,25 +608,6 @@
         "CVD растёт (+8.5%) — покупки усиливаются 📈",
         "📌 Лимитный вход @ 0.00209642 (откат к EMA20)"
       ]
-    },
-    {
-      "symbol": "ASTERUSDT",
-      "direction": "LONG",
-      "entry": 0.76979432,
-      "tp1": 0.78519,
-      "tp2": 0.800586,
-      "sl": 0.754398,
-      "strength": 40,
-      "status": "TP1",
-      "created_at": "2026-03-17 21:45:39",
-      "reasons": [
-        "MACD бычий (hist=0.00083)",
-        "Цена > EMA20 > EMA50",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +2.0% + цена ↑",
-        "CVD положительный (+0.8%)",
-        "📌 Лимитный вход @ 0.769794 (откат к EMA20)"
-      ]
     }
   ],
   "trades_open": [
@@ -862,28 +841,6 @@
       ]
     },
     {
-      "id": 300,
-      "symbol": "ANKRUSDT",
-      "direction": "LONG",
-      "entry": 0.00505084,
-      "tp1": 0.005222,
-      "tp2": 0.005393,
-      "sl": 0.004914,
-      "strength": 52,
-      "taken_at": "2026-03-18T00:56:31.526812",
-      "status": "PENDING",
-      "reasons": [
-        "MACD бычий (hist=0.00011)",
-        "Цена > EMA20 > EMA50",
-        "Объём x2.4 🔥",
-        "Стакан: давление покупки (+0.18)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "CVD положительный (+0.9%)",
-        "Bullish Engulfing (1h) 🕯️",
-        "📌 Лимитный вход @ 0.00505084 (откат к EMA20)"
-      ]
-    },
-    {
       "id": 301,
       "symbol": "1000BONKUSDT",
       "direction": "LONG",
@@ -906,6 +863,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "ANKRUSDT",
+      "direction": "LONG",
+      "entry": 0.00505084,
+      "tp1": 0.005222,
+      "tp2": 0.005393,
+      "sl": 0.004914,
+      "strength": 52,
+      "status": "LIMIT_TIMEOUT",
+      "pnl_pct": 0,
+      "close_price": null,
+      "taken_at": "2026-03-18T00:56:31.526812",
+      "closed_at": "2026-03-18 01:56:33"
+    },
     {
       "symbol": "1000PEPEUSDT",
       "direction": "SHORT",
@@ -1003,20 +974,6 @@
       "close_price": null,
       "taken_at": "2026-03-18T00:02:08.881197",
       "closed_at": "2026-03-18 01:02:10"
-    },
-    {
-      "symbol": "ANKRUSDT",
-      "direction": "LONG",
-      "entry": 0.00505084,
-      "tp1": 0.005222,
-      "tp2": 0.005393,
-      "sl": 0.004914,
-      "strength": 52,
-      "status": "PENDING",
-      "pnl_pct": 0,
-      "close_price": null,
-      "taken_at": "2026-03-18T00:56:31.526812",
-      "closed_at": null
     },
     {
       "symbol": "SIRENUSDT",
