@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T05:26:26.995778+00:00",
+  "updated_at": "2026-03-18T05:26:45.007383+00:00",
   "publish_status": {
-    "last_ok": "2026-03-18T05:25:26Z",
+    "last_ok": null,
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -589,20 +589,6 @@
     }
   ],
   "trades_history": [
-    {
-      "symbol": "FARTCOINUSDT",
-      "direction": "LONG",
-      "entry": 0.21482743,
-      "tp1": 0.220077,
-      "tp2": 0.225327,
-      "sl": 0.210531,
-      "strength": 51,
-      "status": "PENDING",
-      "pnl_pct": 0,
-      "close_price": null,
-      "taken_at": "2026-03-18T05:19:02.953868",
-      "closed_at": null
-    },
     {
       "symbol": "CRVUSDT",
       "direction": "LONG",
@@ -3388,6 +3374,20 @@
       "close_price": 0.22785,
       "taken_at": "2026-03-17 12:47:14",
       "closed_at": "2026-03-17 15:36:10"
+    },
+    {
+      "symbol": "OPNUSDT",
+      "direction": "SHORT",
+      "entry": 0.2847,
+      "tp1": 0.27795261,
+      "tp2": 0.27120522,
+      "sl": 0.290394,
+      "strength": 44,
+      "status": "SL",
+      "pnl_pct": -2.23,
+      "close_price": 0.29105000000000003,
+      "taken_at": "2026-03-17 14:05:59",
+      "closed_at": "2026-03-17 15:25:54"
     }
   ]
 }
