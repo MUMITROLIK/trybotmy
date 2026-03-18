@@ -401,14 +401,14 @@
 
     // ── Progress bar builder ──────────────────────────────────────────────────
     function buildProgressBar(t, pnl, curPrice) {
-      const sl = t.sl, entry = t.entry, tp1 = t.tp1, tp2 = t.tp2;
+      var sl = t.sl, entry = t.entry, tp1 = t.tp1, tp2 = t.tp2;
       if (!sl || !entry || !tp2) return '';
-      const isLong = t.direction === 'LONG';
+      var isLong = t.direction === 'LONG';
       // Геометрия ОСИ:
       //   Визуально всегда:   SL  ---- entry ---- TP2
       //   LONG:  SL < entry < TP2  (растущий диапазон)
       //   SHORT: SL > entry > TP2  (убывающий диапазон, считаем от SL вниз)
-      let range, pos, tp1pos, entryPos;
+      var range, pos, tp1pos, entryPos;
       if (isLong) {
         range = tp2 - sl;
         if (range <= 0) return '';
@@ -425,25 +425,26 @@
       }
 
       // Color based on P&L
-      const barColor = pnl > 1   ? '#4ADE80'
+      var barColor = pnl > 1   ? '#4ADE80'
                      : pnl > 0   ? '#86EFAC'
                      : pnl > -1  ? '#FCD34D'
                      : '#F87171';
 
-      const markerColor = pnl >= 0 ? '#4ADE80' : '#F87171';
+      var markerColor = pnl >= 0 ? '#4ADE80' : '#F87171';
 
-      return `
-        <div class="prb-labels">
-          <span style="color:#F87171">СЛ ${fmt(sl)}</span>
-          <span style="color:rgba(221,197,162,.5)">Вход ${fmt(entry)}</span>
-          <span style="color:#4ADE80">ТП2 ${fmt(tp2)}</span>
-        </div>
-        <div class="prb-track">
-          <div class="prb-fill" style="width:${pos}%;background:linear-gradient(90deg,rgba(248,113,113,.3),${barColor})"></div>
-          <div class="prb-tp1" style="left:${tp1pos}%" title="ТП1 ${fmt(tp1)}"></div>
-          <div class="prb-entry-dot" style="position:absolute;top:50%;left:${entryPos}%;transform:translate(-50%,-50%);width:12px;height:12px;border-radius:50%;background:#60A5FA;border:3px solid #fff;z-index:4;box-shadow:0 0 12px #60A5FA,0 0 20px #60A5FAaa;transition:left .8s cubic-bezier(.22,1,.36,1)" title="Вход ${fmt(entry)}"></div>
-          <div class="prb-marker" style="left:${pos}%;background:${markerColor};box-shadow:0 0 8px ${markerColor}80"></div>
-        </div>`;
+      var html = '';
+      html += '<div class="prb-labels">';
+      html += '<span style="color:#F87171">СЛ '+fmt(sl)+'</span>';
+      html += '<span style="color:rgba(221,197,162,.5)">Вход '+fmt(entry)+'</span>';
+      html += '<span style="color:#4ADE80">ТП2 '+fmt(tp2)+'</span>';
+      html += '</div>';
+      html += '<div class="prb-track">';
+      html += '<div class="prb-fill" style="width:'+pos+'%;background:linear-gradient(90deg,rgba(248,113,113,.3),'+barColor+')"></div>';
+      html += '<div class="prb-tp1" style="left:'+tp1pos+'%" title="ТП1 '+fmt(tp1)+'"></div>';
+      html += '<div class="prb-entry-dot" style="position:absolute;top:50%;left:'+entryPos+'%;transform:translate(-50%,-50%);width:12px;height:12px;border-radius:50%;background:#60A5FA;border:3px solid #fff;z-index:4;box-shadow:0 0 12px #60A5FA, 0 0 20px #60A5FAaa;transition:left .8s cubic-bezier(.22,1,.36,1)" title="Вход '+fmt(entry)+'"></div>';
+      html += '<div class="prb-marker" style="left:'+pos+'%;background:'+markerColor+';box-shadow:0 0 8px '+markerColor+'80"></div>';
+      html += '</div>';
+      return html;
     }
 
     // Live prices cache for open positions
