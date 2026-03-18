@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T18:07:40.646703+00:00",
+  "updated_at": "2026-03-18T18:08:11.993042+00:00",
   "publish_status": {
-    "last_ok": "2026-03-18T18:06:30Z",
+    "last_ok": "2026-03-18T18:07:47Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -12,17 +12,17 @@
   "stats": {
     "total": 560,
     "wins": 166,
-    "losses": 81,
-    "active": 49,
-    "winrate": 67.2
+    "losses": 82,
+    "active": 48,
+    "winrate": 66.9
   },
   "trade_stats": {
     "open": 49,
-    "pending": 3,
+    "pending": 2,
     "wins": 157,
-    "losses": 163,
-    "total_pnl": 26.53,
-    "winrate": 49.1
+    "losses": 164,
+    "total_pnl": 24.49,
+    "winrate": 48.9
   },
   "fear_greed": {
     "value": 26,
@@ -866,27 +866,6 @@
       "status": "ACTIVE"
     },
     {
-      "id": 576,
-      "symbol": "ARBUSDT",
-      "direction": "SHORT",
-      "entry": 0.1006,
-      "tp1": 0.098588,
-      "tp2": 0.096576,
-      "sl": 0.102612,
-      "strength": 35,
-      "reasons": [
-        "MACD медвежий (hist=-0.00000)",
-        "Цена < EMA20 < EMA50",
-        "МТФ: 5m, 15m, 1h согласны",
-        "CVD падает (-12.1%) — продажи усиливаются 📉",
-        "BTC корреляция 0.91, BTC -1.7% 📉",
-        "BTC контекст: -3.7% за 12ч 📉"
-      ],
-      "news": null,
-      "created_at": "2026-03-18 16:35:27",
-      "status": "ACTIVE"
-    },
-    {
       "id": 578,
       "symbol": "LIGHTUSDT",
       "direction": "LONG",
@@ -1333,6 +1312,25 @@
       ]
     },
     {
+      "symbol": "ARBUSDT",
+      "direction": "SHORT",
+      "entry": 0.1006,
+      "tp1": 0.098588,
+      "tp2": 0.096576,
+      "sl": 0.102612,
+      "strength": 35,
+      "status": "SL",
+      "created_at": "2026-03-18 16:35:27",
+      "reasons": [
+        "MACD медвежий (hist=-0.00000)",
+        "Цена < EMA20 < EMA50",
+        "МТФ: 5m, 15m, 1h согласны",
+        "CVD падает (-12.1%) — продажи усиливаются 📉",
+        "BTC корреляция 0.91, BTC -1.7% 📉",
+        "BTC контекст: -3.7% за 12ч 📉"
+      ]
+    },
+    {
       "symbol": "AKTUSDT",
       "direction": "SHORT",
       "entry": 0.5096,
@@ -1490,26 +1488,6 @@
         "BTC корреляция 0.82, BTC -1.4% 📉",
         "BTC контекст: -3.5% за 12ч 📉",
         "⚡ Рыночный вход (моментум: MTF+OI+CVD)"
-      ]
-    },
-    {
-      "symbol": "龙虾USDT",
-      "direction": "SHORT",
-      "entry": 0.012697,
-      "tp1": 0.012139,
-      "tp2": 0.011581,
-      "sl": 0.013143,
-      "strength": 47,
-      "status": "TP1",
-      "created_at": "2026-03-18 16:07:24",
-      "reasons": [
-        "MACD медвежий (hist=-0.00004)",
-        "Цена < EMA20 < EMA50",
-        "Стакан: сильное давление продажи (-0.28)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "CVD падает (-7.7%) — продажи усиливаются 📉",
-        "BTC корреляция 0.67, BTC -1.4% 📉",
-        "BTC контекст: -3.5% за 12ч 📉"
       ]
     }
   ],
@@ -2455,30 +2433,6 @@
       ]
     },
     {
-      "id": 430,
-      "symbol": "ARBUSDT",
-      "direction": "SHORT",
-      "entry": 0.1006,
-      "tp1": 0.098588,
-      "tp2": 0.096576,
-      "sl": 0.102612,
-      "entry_orig": 0.1006,
-      "tp1_orig": 0.098588,
-      "tp2_orig": 0.096576,
-      "sl_orig": 0.102612,
-      "strength": 35,
-      "taken_at": "2026-03-18T16:35:30.807693",
-      "status": "OPEN",
-      "reasons": [
-        "MACD медвежий (hist=-0.00000)",
-        "Цена < EMA20 < EMA50",
-        "МТФ: 5m, 15m, 1h согласны",
-        "CVD падает (-12.1%) — продажи усиливаются 📉",
-        "BTC корреляция 0.91, BTC -1.7% 📉",
-        "BTC контекст: -3.7% за 12ч 📉"
-      ]
-    },
-    {
       "id": 432,
       "symbol": "LIGHTUSDT",
       "direction": "LONG",
@@ -2720,6 +2674,31 @@
       ]
     },
     {
+      "id": 451,
+      "symbol": "KITEUSDT",
+      "direction": "LONG",
+      "entry": 0.19676,
+      "tp1": 0.20215781,
+      "tp2": 0.20755587,
+      "sl": 0.19244131,
+      "entry_orig": 0.19355024,
+      "tp1_orig": 0.19886,
+      "tp2_orig": 0.20417,
+      "sl_orig": 0.189302,
+      "strength": 37,
+      "taken_at": "2026-03-18T18:02:48.994690",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.00070)",
+        "Цена > EMA20 > EMA50",
+        "Стакан: сильное давление покупки (+0.37)",
+        "МТФ: только 1 таймфрейм согласен",
+        "OI растёт +3.5% + цена ↑",
+        "CVD растёт (+6.0%) — покупки усиливаются 📈",
+        "📌 Лимитный вход @ 0.19355 (откат к EMA20)"
+      ]
+    },
+    {
       "id": 450,
       "symbol": "FARTCOINUSDT",
       "direction": "LONG",
@@ -2742,31 +2721,6 @@
         "CVD положительный (+2.6%)",
         "BTC корреляция 0.73, BTC +0.8% 📈",
         "📌 Лимитный вход @ 0.204181 (откат к EMA20)"
-      ]
-    },
-    {
-      "id": 451,
-      "symbol": "KITEUSDT",
-      "direction": "LONG",
-      "entry": 0.19355024,
-      "tp1": 0.19886,
-      "tp2": 0.20417,
-      "sl": 0.189302,
-      "entry_orig": 0.19355024,
-      "tp1_orig": 0.19886,
-      "tp2_orig": 0.20417,
-      "sl_orig": 0.189302,
-      "strength": 37,
-      "taken_at": "2026-03-18T18:02:48.994690",
-      "status": "PENDING",
-      "reasons": [
-        "MACD бычий (hist=0.00070)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: сильное давление покупки (+0.37)",
-        "МТФ: только 1 таймфрейм согласен",
-        "OI растёт +3.5% + цена ↑",
-        "CVD растёт (+6.0%) — покупки усиливаются 📈",
-        "📌 Лимитный вход @ 0.19355 (откат к EMA20)"
       ]
     },
     {
@@ -2819,6 +2773,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "ARBUSDT",
+      "direction": "SHORT",
+      "entry": 0.1006,
+      "tp1": 0.098588,
+      "tp2": 0.096576,
+      "sl": 0.102612,
+      "strength": 35,
+      "status": "SL",
+      "pnl_pct": -2.04,
+      "close_price": 0.10264999999999999,
+      "taken_at": "2026-03-18T16:35:30.807693",
+      "closed_at": "2026-03-18 18:08:11"
+    },
     {
       "symbol": "MOODENGUSDT",
       "direction": "SHORT",
@@ -5599,20 +5567,6 @@
       "tp2": 0.036125,
       "sl": 0.032045,
       "strength": 44,
-      "status": "LIMIT_TIMEOUT",
-      "pnl_pct": 0,
-      "close_price": null,
-      "taken_at": "2026-03-17 20:18:43",
-      "closed_at": "2026-03-17 21:18:51"
-    },
-    {
-      "symbol": "VANRYUSDT",
-      "direction": "LONG",
-      "entry": 0.00602927,
-      "tp1": 0.006296,
-      "tp2": 0.006563,
-      "sl": 0.005816,
-      "strength": 40,
       "status": "LIMIT_TIMEOUT",
       "pnl_pct": 0,
       "close_price": null,
