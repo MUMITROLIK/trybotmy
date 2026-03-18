@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T20:19:55.611641+00:00",
+  "updated_at": "2026-03-18T20:20:38.678768+00:00",
   "publish_status": {
-    "last_ok": "2026-03-18T20:19:03Z",
+    "last_ok": null,
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -13,7 +13,7 @@
     "total": 568,
     "wins": 176,
     "losses": 92,
-    "active": 12,
+    "active": 11,
     "winrate": 65.7
   },
   "trade_stats": {
@@ -36,29 +36,6 @@
     "trained_at": "2026-03-18T18:46:42.539461+00:00"
   },
   "signals": [
-    {
-      "id": 562,
-      "symbol": "NXPCUSDT",
-      "direction": "SHORT",
-      "entry": 0.2987,
-      "tp1": 0.286271,
-      "tp2": 0.273843,
-      "sl": 0.308643,
-      "strength": 35,
-      "reasons": [
-        "MACD медвежий (hist=-0.00239)",
-        "EMA20 < EMA50 (death cross) 💀",
-        "Стакан: перевес ask (-0.05)",
-        "МТФ: 5m, 15m согласны",
-        "OI растёт +3.9%",
-        "CVD отрицательный (-0.8%)",
-        "Bearish Engulfing (1h) 🕯️",
-        "BTC контекст: -3.6% за 12ч 📉"
-      ],
-      "news": null,
-      "created_at": "2026-03-18 16:20:21",
-      "status": "ACTIVE"
-    },
     {
       "id": 563,
       "symbol": "DOGEUSDT",
