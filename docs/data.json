@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T11:48:08.655539+00:00",
+  "updated_at": "2026-03-18T11:48:55.629373+00:00",
   "publish_status": {
-    "last_ok": "2026-03-18T11:47:18Z",
+    "last_ok": "2026-03-18T11:48:13Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -18,11 +18,11 @@
   },
   "trade_stats": {
     "open": 21,
-    "pending": 6,
+    "pending": 5,
     "wins": 141,
-    "losses": 125,
-    "total_pnl": 69.11,
-    "winrate": 53.0
+    "losses": 126,
+    "total_pnl": 67.09,
+    "winrate": 52.8
   },
   "fear_greed": {
     "value": 26,
@@ -893,29 +893,6 @@
       ]
     },
     {
-      "id": 314,
-      "symbol": "HYPEUSDT",
-      "direction": "LONG",
-      "entry": 41.77129349,
-      "tp1": 42.606719,
-      "tp2": 43.442145,
-      "sl": 40.935868,
-      "strength": 42,
-      "taken_at": "2026-03-18 07:20:09",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=42 (нейтральный↓)",
-        "MACD бычий (hist=0.00293)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: давление покупки (+0.13)",
-        "МТФ: 5m, 15m, 4h согласны",
-        "CVD положительный (+1.9%)",
-        "Doji (1h) — нерешительность",
-        "⚠️ Funding через 44м",
-        "📌 Лимитный вход @ 41.7713 (откат к EMA20)"
-      ]
-    },
-    {
       "id": 325,
       "symbol": "TRUMPUSDT",
       "direction": "SHORT",
@@ -1205,6 +1182,26 @@
       ]
     },
     {
+      "id": 363,
+      "symbol": "RENDERUSDT",
+      "direction": "SHORT",
+      "entry": 1.779,
+      "tp1": 1.74342005,
+      "tp2": 1.70783989,
+      "sl": 1.81458038,
+      "strength": 45,
+      "taken_at": "2026-03-18T11:43:25.335673",
+      "status": "OPEN",
+      "reasons": [
+        "MACD медвежий (hist=-0.00162)",
+        "Цена < EMA20 < EMA50",
+        "Объём x6.1 🔥🔥🔥",
+        "МТФ: 5m, 15m, 1h согласны",
+        "BTC корреляция 0.82, BTC -1.2% 📉",
+        "📌 Лимитный вход @ 1.79944 (откат к EMA20)"
+      ]
+    },
+    {
       "id": 365,
       "symbol": "CFGUSDT",
       "direction": "SHORT",
@@ -1394,26 +1391,6 @@
       ]
     },
     {
-      "id": 363,
-      "symbol": "RENDERUSDT",
-      "direction": "SHORT",
-      "entry": 1.79944178,
-      "tp1": 1.763453,
-      "tp2": 1.727464,
-      "sl": 1.835431,
-      "strength": 45,
-      "taken_at": "2026-03-18T11:43:25.335673",
-      "status": "PENDING",
-      "reasons": [
-        "MACD медвежий (hist=-0.00162)",
-        "Цена < EMA20 < EMA50",
-        "Объём x6.1 🔥🔥🔥",
-        "МТФ: 5m, 15m, 1h согласны",
-        "BTC корреляция 0.82, BTC -1.2% 📉",
-        "📌 Лимитный вход @ 1.79944 (откат к EMA20)"
-      ]
-    },
-    {
       "id": 364,
       "symbol": "RESOLVUSDT",
       "direction": "SHORT",
@@ -1435,6 +1412,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "HYPEUSDT",
+      "direction": "LONG",
+      "entry": 41.77129349,
+      "tp1": 42.606719,
+      "tp2": 43.442145,
+      "sl": 40.935868,
+      "strength": 42,
+      "status": "SL",
+      "pnl_pct": -2.02,
+      "close_price": 40.926500000000004,
+      "taken_at": "2026-03-18 07:20:09",
+      "closed_at": "2026-03-18 11:48:55"
+    },
     {
       "symbol": "RIVERUSDT",
       "direction": "LONG",
@@ -4220,20 +4211,6 @@
       "close_price": 0.1238,
       "taken_at": "2026-03-17 10:20:51",
       "closed_at": "2026-03-17 18:21:06"
-    },
-    {
-      "symbol": "ETCUSDT",
-      "direction": "SHORT",
-      "entry": 8.854,
-      "tp1": 8.67692,
-      "tp2": 8.49984,
-      "sl": 9.03108,
-      "strength": 34,
-      "status": "TIMEOUT",
-      "pnl_pct": -0.26,
-      "close_price": 8.877,
-      "taken_at": "2026-03-17 10:15:51",
-      "closed_at": "2026-03-17 18:15:51"
     }
   ]
 }
