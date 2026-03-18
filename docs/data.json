@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T00:10:39.749994+00:00",
+  "updated_at": "2026-03-18T00:11:44.616219+00:00",
   "publish_status": {
-    "last_ok": "2026-03-18T00:09:39Z",
+    "last_ok": "2026-03-18T00:10:44Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,15 +10,15 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 402,
+    "total": 403,
     "wins": 114,
     "losses": 28,
-    "active": 16,
+    "active": 17,
     "winrate": 80.3
   },
   "trade_stats": {
     "open": 14,
-    "pending": 2,
+    "pending": 3,
     "wins": 122,
     "losses": 94,
     "total_pnl": 84.12,
@@ -381,6 +381,29 @@
       ],
       "news": null,
       "created_at": "2026-03-18 00:09:15",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 441,
+      "symbol": "DEGOUSDT",
+      "direction": "SHORT",
+      "entry": 1.00292997,
+      "tp1": 0.970166,
+      "tp2": 0.937401,
+      "sl": 1.029141,
+      "strength": 57,
+      "reasons": [
+        "MACD медвежий (hist=-0.00146)",
+        "Цена < EMA20 < EMA50",
+        "Объём x3.1 🔥🔥",
+        "Стакан: сильное давление продажи (-0.26)",
+        "МТФ: 5m, 15m, 4h согласны",
+        "OI растёт +3.7% + цена ↓",
+        "CVD отрицательный (+5.8%)",
+        "📌 Лимитный вход @ 1.00293 (откат к EMA20)"
+      ],
+      "news": null,
+      "created_at": "2026-03-18 00:11:22",
       "status": "ACTIVE"
     }
   ],
@@ -1113,9 +1136,45 @@
         "CVD растёт (+15.9%) — покупки усиливаются 📈",
         "📌 Лимитный вход @ 0.0175341 (откат к EMA20)"
       ]
+    },
+    {
+      "id": 295,
+      "symbol": "DEGOUSDT",
+      "direction": "SHORT",
+      "entry": 1.00292997,
+      "tp1": 0.970166,
+      "tp2": 0.937401,
+      "sl": 1.029141,
+      "strength": 57,
+      "taken_at": "2026-03-18T00:11:23.243950",
+      "status": "PENDING",
+      "reasons": [
+        "MACD медвежий (hist=-0.00146)",
+        "Цена < EMA20 < EMA50",
+        "Объём x3.1 🔥🔥",
+        "Стакан: сильное давление продажи (-0.26)",
+        "МТФ: 5m, 15m, 4h согласны",
+        "OI растёт +3.7% + цена ↓",
+        "CVD отрицательный (+5.8%)",
+        "📌 Лимитный вход @ 1.00293 (откат к EMA20)"
+      ]
     }
   ],
   "trades_history": [
+    {
+      "symbol": "DEGOUSDT",
+      "direction": "SHORT",
+      "entry": 1.00292997,
+      "tp1": 0.970166,
+      "tp2": 0.937401,
+      "sl": 1.029141,
+      "strength": 57,
+      "status": "PENDING",
+      "pnl_pct": 0,
+      "close_price": null,
+      "taken_at": "2026-03-18T00:11:23.243950",
+      "closed_at": null
+    },
     {
       "symbol": "POLYXUSDT",
       "direction": "LONG",
@@ -3901,20 +3960,6 @@
       "close_price": 0.44025000000000003,
       "taken_at": "2026-03-17 12:12:21",
       "closed_at": "2026-03-17 13:49:57"
-    },
-    {
-      "symbol": "DEGOUSDT",
-      "direction": "LONG",
-      "entry": 1.1094,
-      "tp1": 1.159114,
-      "tp2": 1.208829,
-      "sl": 1.069629,
-      "strength": 23,
-      "status": "SL",
-      "pnl_pct": -3.82,
-      "close_price": 1.06705,
-      "taken_at": "2026-03-17 12:47:09",
-      "closed_at": "2026-03-17 13:49:18"
     }
   ]
 }
