@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T18:08:51.134598+00:00",
+  "updated_at": "2026-03-18T18:09:58.228059+00:00",
   "publish_status": {
-    "last_ok": "2026-03-18T18:08:18Z",
+    "last_ok": "2026-03-18T18:08:58Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -12,17 +12,17 @@
   "stats": {
     "total": 560,
     "wins": 166,
-    "losses": 83,
-    "active": 47,
-    "winrate": 66.7
+    "losses": 84,
+    "active": 46,
+    "winrate": 66.4
   },
   "trade_stats": {
-    "open": 48,
+    "open": 47,
     "pending": 2,
     "wins": 157,
-    "losses": 165,
-    "total_pnl": 22.35,
-    "winrate": 48.8
+    "losses": 166,
+    "total_pnl": 20.33,
+    "winrate": 48.6
   },
   "fear_greed": {
     "value": 26,
@@ -683,28 +683,6 @@
         "МТФ: 5m, 15m, 1h согласны",
         "CVD падает (-10.6%) — продажи усиливаются 📉",
         "BTC корреляция 0.89, BTC -1.6% 📉",
-        "BTC контекст: -3.5% за 12ч 📉"
-      ],
-      "news": null,
-      "created_at": "2026-03-18 16:22:51",
-      "status": "ACTIVE"
-    },
-    {
-      "id": 564,
-      "symbol": "AVAXUSDT",
-      "direction": "SHORT",
-      "entry": 9.511,
-      "tp1": 9.32078,
-      "tp2": 9.13056,
-      "sl": 9.70122,
-      "strength": 37,
-      "reasons": [
-        "MACD медвежий (hist=-0.00738)",
-        "Цена < EMA20 < EMA50",
-        "Стакан: перевес ask (-0.09)",
-        "МТФ: 5m, 15m, 1h согласны",
-        "CVD падает (-12.4%) — продажи усиливаются 📉",
-        "BTC корреляция 0.92, BTC -1.5% 📉",
         "BTC контекст: -3.5% за 12ч 📉"
       ],
       "news": null,
@@ -1407,6 +1385,26 @@
       ]
     },
     {
+      "symbol": "AVAXUSDT",
+      "direction": "SHORT",
+      "entry": 9.511,
+      "tp1": 9.32078,
+      "tp2": 9.13056,
+      "sl": 9.70122,
+      "strength": 37,
+      "status": "SL",
+      "created_at": "2026-03-18 16:22:51",
+      "reasons": [
+        "MACD медвежий (hist=-0.00738)",
+        "Цена < EMA20 < EMA50",
+        "Стакан: перевес ask (-0.09)",
+        "МТФ: 5m, 15m, 1h согласны",
+        "CVD падает (-12.4%) — продажи усиливаются 📉",
+        "BTC корреляция 0.92, BTC -1.5% 📉",
+        "BTC контекст: -3.5% за 12ч 📉"
+      ]
+    },
+    {
       "symbol": "FETUSDT",
       "direction": "SHORT",
       "entry": 0.2172,
@@ -1444,27 +1442,6 @@
         "CVD падает (-13.4%) — продажи усиливаются 📉",
         "BTC корреляция 0.72, BTC -1.6% 📉",
         "BTC контекст: -3.5% за 12ч 📉"
-      ]
-    },
-    {
-      "symbol": "RENDERUSDT",
-      "direction": "SHORT",
-      "entry": 1.699,
-      "tp1": 1.66502,
-      "tp2": 1.63104,
-      "sl": 1.73298,
-      "strength": 39,
-      "status": "SL",
-      "created_at": "2026-03-18 16:07:24",
-      "reasons": [
-        "MACD медвежий (hist=-0.00379)",
-        "Цена < EMA20 < EMA50",
-        "МТФ: 5m, 15m, 1h согласны",
-        "OI растёт +3.0% + цена ↓",
-        "CVD падает (-5.9%) — продажи усиливаются 📉",
-        "BTC корреляция 0.82, BTC -1.4% 📉",
-        "BTC контекст: -3.5% за 12ч 📉",
-        "⚡ Рыночный вход (моментум: MTF+OI+CVD)"
       ]
     }
   ],
@@ -2210,31 +2187,6 @@
       ]
     },
     {
-      "id": 418,
-      "symbol": "AVAXUSDT",
-      "direction": "SHORT",
-      "entry": 9.511,
-      "tp1": 9.32078,
-      "tp2": 9.13056,
-      "sl": 9.70122,
-      "entry_orig": 9.511,
-      "tp1_orig": 9.32078,
-      "tp2_orig": 9.13056,
-      "sl_orig": 9.70122,
-      "strength": 37,
-      "taken_at": "2026-03-18T16:22:51.841492",
-      "status": "OPEN",
-      "reasons": [
-        "MACD медвежий (hist=-0.00738)",
-        "Цена < EMA20 < EMA50",
-        "Стакан: перевес ask (-0.09)",
-        "МТФ: 5m, 15m, 1h согласны",
-        "CVD падает (-12.4%) — продажи усиливаются 📉",
-        "BTC корреляция 0.92, BTC -1.5% 📉",
-        "BTC контекст: -3.5% за 12ч 📉"
-      ]
-    },
-    {
       "id": 419,
       "symbol": "MANTRAUSDT",
       "direction": "SHORT",
@@ -2705,7 +2657,7 @@
       "entry": 0.00504,
       "tp1": 0.005141,
       "tp2": 0.005242,
-      "sl": 0.00516305,
+      "sl": 0.00516554,
       "entry_orig": 0.00504,
       "tp1_orig": 0.005141,
       "tp2_orig": 0.005242,
@@ -2724,6 +2676,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "AVAXUSDT",
+      "direction": "SHORT",
+      "entry": 9.511,
+      "tp1": 9.32078,
+      "tp2": 9.13056,
+      "sl": 9.70122,
+      "strength": 37,
+      "status": "SL",
+      "pnl_pct": -2.02,
+      "close_price": 9.7035,
+      "taken_at": "2026-03-18T16:22:51.841492",
+      "closed_at": "2026-03-18 18:09:02"
+    },
     {
       "symbol": "1000BONKUSDT",
       "direction": "SHORT",
@@ -5504,20 +5470,6 @@
       "tp2": 0.801686,
       "sl": 0.735956,
       "strength": 32,
-      "status": "LIMIT_TIMEOUT",
-      "pnl_pct": 0,
-      "close_price": null,
-      "taken_at": "2026-03-17 20:18:43",
-      "closed_at": "2026-03-17 21:18:51"
-    },
-    {
-      "symbol": "VANRYUSDT",
-      "direction": "LONG",
-      "entry": 0.0059999,
-      "tp1": 0.006268,
-      "tp2": 0.006536,
-      "sl": 0.005785,
-      "strength": 47,
       "status": "LIMIT_TIMEOUT",
       "pnl_pct": 0,
       "close_price": null,
