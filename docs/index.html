@@ -417,7 +417,7 @@
         if (!card) return;
         const liveP = livePrices[t.symbol];
 
-        // Update duration timer and ago label always (every 15s)
+        // Always update time displays (for real-time countdown effect)
         const durEl = card.querySelector('.live-dur');
         if (durEl && t.status !== 'PENDING') durEl.textContent = '\u23f1 ' + durStr(t.taken_at);
         const agoEl = card.querySelector('.live-ago');
@@ -439,23 +439,51 @@
         const priceSpan = card.querySelector('.live-cur');
         if (priceSpan) priceSpan.textContent = fmt(liveP);
 
-        // Update progress bar: fill + moving marker + fixed entry dot (blue)
-        const sl = t.sl, entry = t.entry, tp2 = t.tp2;
+        // Update progress bar: fill + moving marker + ALWAYS UPDATE ENTRY DOT
+        const sl = t.sl, entry = t.entry, tp1 = t.tp1, tp2 = t.tp2;
         if (sl && entry && tp2) {
           const isLong = t.direction === 'LONG';
           const rangeMin = isLong ? sl : tp2, rangeMax = isLong ? tp2 : sl;
           const range = rangeMax - rangeMin;
           if (range > 0) {
+            // Current price position (moving marker)
             const curPos   = Math.max(0, Math.min(100, (liveP - rangeMin) / range * 100));
+            // Entry price position (BLUE DOT - FIXED)
             const entryPos = Math.max(0, Math.min(100, (entry - rangeMin) / range * 100));
+            // TP1 position (vertical line)
+            const tp1pos   = Math.max(0, Math.min(100, (tp1 - rangeMin) / range * 100));
+            
             const barColor = pnl > 1 ? '#4ADE80' : pnl > 0 ? '#86EFAC' : pnl > -1 ? '#FCD34D' : '#F87171';
             const mrkColor = pnl >= 0 ? '#4ADE80' : '#F87171';
+            
+            // Update fill (progress bar)
             const fill = card.querySelector('.prb-fill');
-            if (fill) { fill.style.width = curPos+'%'; fill.style.background = 'linear-gradient(90deg,rgba(248,113,113,.3),'+barColor+')'; }
+            if (fill) { 
+              fill.style.width = curPos+'%'; 
+              fill.style.background = 'linear-gradient(90deg,rgba(248,113,113,.3),'+barColor+')'; 
+            }
+            
+            // Update TP1 line position
+            const tp1line = card.querySelector('.prb-tp1');
+            if (tp1line) {
+              tp1line.style.left = tp1pos + '%';
+            }
+            
+            // Update moving marker (current price)
             const marker = card.querySelector('.prb-marker');
-            if (marker) { marker.style.left = curPos+'%'; marker.style.background = mrkColor; marker.style.boxShadow = '0 0 8px '+mrkColor+'80'; }
+            if (marker) { 
+              marker.style.left = curPos+'%'; 
+              marker.style.background = mrkColor;
+              marker.style.boxShadow = '0 0 8px '+mrkColor+'80'; 
+            }
+            
+            // Update entry dot (BLUE - FIXED AT ENTRY POINT)
             const entryDot = card.querySelector('.prb-entry-dot');
-            if (entryDot) entryDot.style.left = entryPos+'%';
+            if (entryDot) {
+              entryDot.style.left = entryPos+'%';
+              entryDot.style.background = '#60A5FA';
+              entryDot.style.boxShadow = '0 0 6px #60A5FA80';
+            }
           }
         }
       });
