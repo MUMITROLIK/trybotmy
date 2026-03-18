@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T11:18:08.899167+00:00",
+  "updated_at": "2026-03-18T11:18:42.188013+00:00",
   "publish_status": {
-    "last_ok": null,
+    "last_ok": "2026-03-18T11:18:13Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 459,
+    "total": 460,
     "wins": 141,
     "losses": 39,
-    "active": 16,
+    "active": 17,
     "winrate": 78.3
   },
   "trade_stats": {
-    "open": 21,
+    "open": 22,
     "pending": 1,
     "wins": 139,
     "losses": 115,
@@ -381,6 +381,28 @@
       ],
       "news": null,
       "created_at": "2026-03-18 11:16:21",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 498,
+      "symbol": "ZROUSDT",
+      "direction": "LONG",
+      "entry": 2.295,
+      "tp1": 2.3409,
+      "tp2": 2.3868,
+      "sl": 2.2491,
+      "strength": 46,
+      "reasons": [
+        "RSI=41 (нейтральный↓)",
+        "MACD бычий (hist=0.00063)",
+        "BB ниже середины",
+        "Стакан: давление покупки (+0.16)",
+        "МТФ: 1h, 4h согласны",
+        "CVD растёт (+8.9%) — покупки усиливаются 📈",
+        "Bullish Engulfing (1h) 🕯️"
+      ],
+      "news": null,
+      "created_at": "2026-03-18 11:18:41",
       "status": "ACTIVE"
     }
   ],
@@ -1224,6 +1246,27 @@
         "Стакан: перевес bid (+0.09)",
         "МТФ: 15m, 1h, 4h согласны",
         "CVD растёт (+6.0%) — покупки усиливаются 📈"
+      ]
+    },
+    {
+      "id": 352,
+      "symbol": "ZROUSDT",
+      "direction": "LONG",
+      "entry": 2.295,
+      "tp1": 2.3409,
+      "tp2": 2.3868,
+      "sl": 2.2491,
+      "strength": 46,
+      "taken_at": "2026-03-18T11:18:42.114015",
+      "status": "OPEN",
+      "reasons": [
+        "RSI=41 (нейтральный↓)",
+        "MACD бычий (hist=0.00063)",
+        "BB ниже середины",
+        "Стакан: давление покупки (+0.16)",
+        "МТФ: 1h, 4h согласны",
+        "CVD растёт (+8.9%) — покупки усиливаются 📈",
+        "Bullish Engulfing (1h) 🕯️"
       ]
     },
     {
