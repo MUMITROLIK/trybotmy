@@ -437,6 +437,7 @@
     var activeTab = 'signals';
     var livePrices = {};
     var openTradesCache = [];
+    // фиксированный масштаб прогресс-бара по исходным уровням сделки
     var scaleCache = {};
 
     // --- UI update -----------------------------------------------------------
@@ -560,7 +561,11 @@
 
     // --- Progress bar builder ------------------------------------------------
     function buildProgressBar(t, pnl, curPrice) {
-      var sl = t.sl, entry = t.entry, tp1 = t.tp1, tp2 = t.tp2;
+      // используем исходные уровни, если они есть (бекенд фиксирует их при входе)
+      var sl = t.sl_orig || t.sl;
+      var entry = t.entry_orig || t.entry;
+      var tp1 = t.tp1_orig || t.tp1;
+      var tp2 = t.tp2_orig || t.tp2;
       if (!sl || !entry || !tp2) return '';
       var key = t.id || t.symbol;
       var cached = scaleCache[key];
@@ -649,7 +654,11 @@
         var priceSpan = card.querySelector('.live-cur');
         if (priceSpan) priceSpan.textContent = fmt(liveP);
 
-        var sl = t.sl, entry = t.entry, tp1 = t.tp1, tp2 = t.tp2;
+        // берём те же уровни, что и при первом рендере (scaleCache уже зафиксирован)
+        var sl = t.sl_orig || t.sl;
+        var entry = t.entry_orig || t.entry;
+        var tp1 = t.tp1_orig || t.tp1;
+        var tp2 = t.tp2_orig || t.tp2;
         if (!sl || !entry || !tp2) continue;
         var key = t.id || t.symbol;
         var cached = scaleCache[key];
