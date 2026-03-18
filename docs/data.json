@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T08:17:20.128393+00:00",
+  "updated_at": "2026-03-18T08:18:12.079555+00:00",
   "publish_status": {
-    "last_ok": "2026-03-18T08:16:20Z",
+    "last_ok": "2026-03-18T08:17:26Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -18,7 +18,7 @@
   },
   "trade_stats": {
     "open": 10,
-    "pending": 4,
+    "pending": 3,
     "wins": 135,
     "losses": 104,
     "total_pnl": 102.13,
@@ -897,27 +897,6 @@
       ]
     },
     {
-      "id": 316,
-      "symbol": "ENJUSDT",
-      "direction": "LONG",
-      "entry": 0.02153035,
-      "tp1": 0.022492,
-      "tp2": 0.023455,
-      "sl": 0.020761,
-      "strength": 40,
-      "taken_at": "2026-03-18T07:17:36.477919",
-      "status": "PENDING",
-      "reasons": [
-        "MACD бычий (hist=0.00026)",
-        "Цена > EMA20 > EMA50",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +25.6% + цена ↑",
-        "CVD положительный (+0.5%)",
-        "⚠️ Funding через 43м",
-        "📌 Лимитный вход @ 0.0215304 (откат к EMA20)"
-      ]
-    },
-    {
       "id": 318,
       "symbol": "SIRENUSDT",
       "direction": "LONG",
@@ -982,6 +961,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "ENJUSDT",
+      "direction": "LONG",
+      "entry": 0.02153035,
+      "tp1": 0.022492,
+      "tp2": 0.023455,
+      "sl": 0.020761,
+      "strength": 40,
+      "status": "LIMIT_TIMEOUT",
+      "pnl_pct": 0,
+      "close_price": null,
+      "taken_at": "2026-03-18T07:17:36.477919",
+      "closed_at": "2026-03-18 08:17:41"
+    },
     {
       "symbol": "WLDUSDT",
       "direction": "SHORT",
@@ -3767,20 +3760,6 @@
       "close_price": 0.76815,
       "taken_at": null,
       "closed_at": "2026-03-17 16:25:28"
-    },
-    {
-      "symbol": "WLDUSDT",
-      "direction": "LONG",
-      "entry": 0.3873,
-      "tp1": 0.395046,
-      "tp2": 0.402792,
-      "sl": 0.39505,
-      "strength": 31,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 1.98,
-      "close_price": 0.39495,
-      "taken_at": "2026-03-17 12:25:53",
-      "closed_at": "2026-03-17 16:23:43"
     }
   ]
 }
