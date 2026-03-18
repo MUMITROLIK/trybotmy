@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T11:38:24.473158+00:00",
+  "updated_at": "2026-03-18T11:39:38.260696+00:00",
   "publish_status": {
-    "last_ok": "2026-03-18T11:36:55Z",
+    "last_ok": "2026-03-18T11:38:29Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -18,7 +18,7 @@
   },
   "trade_stats": {
     "open": 15,
-    "pending": 4,
+    "pending": 3,
     "wins": 140,
     "losses": 124,
     "total_pnl": 69.33,
@@ -1039,26 +1039,6 @@
       ]
     },
     {
-      "id": 343,
-      "symbol": "ATHUSDT",
-      "direction": "LONG",
-      "entry": 0.0067273,
-      "tp1": 0.006898,
-      "tp2": 0.007068,
-      "sl": 0.006591,
-      "strength": 42,
-      "taken_at": "2026-03-18T10:38:11.002288",
-      "status": "PENDING",
-      "reasons": [
-        "MACD бычий (hist=0.00002)",
-        "Цена > EMA20 > EMA50",
-        "Объём x2.5 🔥",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +1.4% + цена ↑",
-        "📌 Лимитный вход @ 0.0067273 (откат к EMA20)"
-      ]
-    },
-    {
       "id": 353,
       "symbol": "1000PEPEUSDT",
       "direction": "SHORT",
@@ -1125,6 +1105,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "ATHUSDT",
+      "direction": "LONG",
+      "entry": 0.0067273,
+      "tp1": 0.006898,
+      "tp2": 0.007068,
+      "sl": 0.006591,
+      "strength": 42,
+      "status": "LIMIT_TIMEOUT",
+      "pnl_pct": 0,
+      "close_price": null,
+      "taken_at": "2026-03-18T10:38:11.002288",
+      "closed_at": "2026-03-18 11:38:40"
+    },
     {
       "symbol": "ORDERUSDT",
       "direction": "LONG",
@@ -3910,20 +3904,6 @@
       "close_price": 0.006092500000000001,
       "taken_at": "2026-03-17 13:01:34",
       "closed_at": "2026-03-17 18:07:49"
-    },
-    {
-      "symbol": "TAOUSDT",
-      "direction": "SHORT",
-      "entry": 276.1,
-      "tp1": 270.578,
-      "tp2": 265.056,
-      "sl": 281.622,
-      "strength": 37,
-      "status": "SL",
-      "pnl_pct": -2.2,
-      "close_price": 282.175,
-      "taken_at": "2026-03-17 12:58:05",
-      "closed_at": "2026-03-17 18:05:43"
     }
   ]
 }
