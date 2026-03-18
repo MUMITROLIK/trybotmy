@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T02:48:07.908914+00:00",
+  "updated_at": "2026-03-18T02:49:12.842685+00:00",
   "publish_status": {
-    "last_ok": "2026-03-18T02:46:44Z",
+    "last_ok": "2026-03-18T02:48:12Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -18,7 +18,7 @@
   },
   "trade_stats": {
     "open": 9,
-    "pending": 1,
+    "pending": 0,
     "wins": 128,
     "losses": 98,
     "total_pnl": 103.54,
@@ -670,9 +670,10 @@
         "OI растёт +2.6% + цена ↑",
         "CVD положительный (+1.9%)"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 301,
       "symbol": "1000BONKUSDT",
       "direction": "LONG",
       "entry": 0.0066469,
@@ -680,20 +681,12 @@
       "tp2": 0.006913,
       "sl": 0.006514,
       "strength": 45,
+      "status": "LIMIT_TIMEOUT",
+      "pnl_pct": 0,
+      "close_price": null,
       "taken_at": "2026-03-18T01:48:18.685046",
-      "status": "PENDING",
-      "reasons": [
-        "MACD бычий (hist=0.00001)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: давление покупки (+0.15)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +1.7% + цена ↑",
-        "CVD положительный (+4.8%)",
-        "📌 Лимитный вход @ 0.0066469 (откат к EMA20)"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-18 02:48:29"
+    },
     {
       "symbol": "PUMPUSDT",
       "direction": "LONG",
@@ -749,20 +742,6 @@
       "close_price": 0.0036914499999999998,
       "taken_at": "2026-03-17 17:48:43",
       "closed_at": "2026-03-18 01:48:55"
-    },
-    {
-      "symbol": "1000BONKUSDT",
-      "direction": "LONG",
-      "entry": 0.0066469,
-      "tp1": 0.00678,
-      "tp2": 0.006913,
-      "sl": 0.006514,
-      "strength": 45,
-      "status": "PENDING",
-      "pnl_pct": 0,
-      "close_price": null,
-      "taken_at": "2026-03-18T01:48:18.685046",
-      "closed_at": null
     },
     {
       "symbol": "1000BONKUSDT",
