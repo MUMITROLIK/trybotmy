@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T10:26:12.242095+00:00",
+  "updated_at": "2026-03-18T10:26:43.705953+00:00",
   "publish_status": {
-    "last_ok": "2026-03-18T10:25:10Z",
+    "last_ok": "2026-03-18T10:26:17Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 448,
+    "total": 449,
     "wins": 140,
     "losses": 33,
-    "active": 17,
+    "active": 18,
     "winrate": 80.9
   },
   "trade_stats": {
-    "open": 19,
+    "open": 20,
     "pending": 1,
     "wins": 139,
     "losses": 107,
@@ -411,6 +411,27 @@
       ],
       "news": null,
       "created_at": "2026-03-18 10:18:35",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 487,
+      "symbol": "LITUSDT",
+      "direction": "LONG",
+      "entry": 1.244,
+      "tp1": 1.26888,
+      "tp2": 1.29376,
+      "sl": 1.21912,
+      "strength": 40,
+      "reasons": [
+        "MACD бычий (hist=0.00159)",
+        "Цена выше EMA20",
+        "Стакан: давление покупки (+0.22)",
+        "МТФ: 5m, 1h, 4h согласны",
+        "CVD положительный (-1.5%)",
+        "Bullish Engulfing (1h) 🕯️"
+      ],
+      "news": null,
+      "created_at": "2026-03-18 10:26:43",
       "status": "ACTIVE"
     }
   ],
@@ -1221,6 +1242,26 @@
         "OI растёт +1.7% + цена ↑",
         "CVD положительный (-1.8%)",
         "Doji (1h) — нерешительность"
+      ]
+    },
+    {
+      "id": 341,
+      "symbol": "LITUSDT",
+      "direction": "LONG",
+      "entry": 1.244,
+      "tp1": 1.26888,
+      "tp2": 1.29376,
+      "sl": 1.21912,
+      "strength": 40,
+      "taken_at": "2026-03-18T10:26:43.639953",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.00159)",
+        "Цена выше EMA20",
+        "Стакан: давление покупки (+0.22)",
+        "МТФ: 5m, 1h, 4h согласны",
+        "CVD положительный (-1.5%)",
+        "Bullish Engulfing (1h) 🕯️"
       ]
     },
     {
