@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T01:38:45.626571+00:00",
+  "updated_at": "2026-03-18T01:39:58.120438+00:00",
   "publish_status": {
-    "last_ok": "2026-03-18T01:37:56Z",
+    "last_ok": "2026-03-18T01:38:50Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 80.0
   },
   "trade_stats": {
-    "open": 14,
+    "open": 13,
     "pending": 1,
-    "wins": 125,
+    "wins": 126,
     "losses": 96,
-    "total_pnl": 99.41,
-    "winrate": 56.6
+    "total_pnl": 101.91,
+    "winrate": 56.8
   },
   "fear_greed": {
     "value": 26,
@@ -969,9 +969,10 @@
         "Bullish Engulfing (1h) 🕯️",
         "📌 Лимитный вход @ 0.00505084 (откат к EMA20)"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 297,
       "symbol": "AINUSDT",
       "direction": "LONG",
       "entry": 0.07764,
@@ -979,21 +980,12 @@
       "tp2": 0.081504,
       "sl": 0.07967,
       "strength": 50,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 2.5,
+      "close_price": 0.07958,
       "taken_at": "2026-03-18T00:14:51.073188",
-      "status": "TP1_HIT",
-      "reasons": [
-        "RSI=29 (сильная перепроданность)",
-        "BB нижняя зона (5%)",
-        "EMA20 > EMA50",
-        "Стакан: сильное давление покупки (+0.47)",
-        "МТФ: 15m, 4h согласны",
-        "OI растёт +1.9% + цена ↑",
-        "CVD растёт (+8.1%) — покупки усиливаются 📈",
-        "Doji (1h) — нерешительность"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-18 01:39:06"
+    },
     {
       "symbol": "SIRENUSDT",
       "direction": "LONG",
@@ -3779,20 +3771,6 @@
       "close_price": 0.28375,
       "taken_at": "2026-03-17 12:48:08",
       "closed_at": "2026-03-17 14:04:40"
-    },
-    {
-      "symbol": "XRPUSDT",
-      "direction": "SHORT",
-      "entry": 1.5269,
-      "tp1": 1.496362,
-      "tp2": 1.465824,
-      "sl": 1.4955500000000002,
-      "strength": 11,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 1.92,
-      "close_price": 1.49755,
-      "taken_at": "2026-03-17 08:47:43",
-      "closed_at": "2026-03-17 14:04:18"
     }
   ]
 }
