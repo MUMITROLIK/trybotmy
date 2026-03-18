@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T17:02:09.107296+00:00",
+  "updated_at": "2026-03-18T17:02:47.603611+00:00",
   "publish_status": {
-    "last_ok": "2026-03-18T17:01:12Z",
+    "last_ok": "2026-03-18T17:02:16Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 71.0
   },
   "trade_stats": {
-    "open": 56,
+    "open": 55,
     "pending": 1,
-    "wins": 152,
+    "wins": 153,
     "losses": 146,
-    "total_pnl": 49.65,
-    "winrate": 51.0
+    "total_pnl": 52.25,
+    "winrate": 51.2
   },
   "fear_greed": {
     "value": 26,
@@ -3049,33 +3049,23 @@
         "CVD растёт (+6.4%) — покупки усиливаются 📈",
         "📌 Лимитный вход @ 0.190827 (откат к EMA20)"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 408,
       "symbol": "POWERUSDT",
       "direction": "SHORT",
       "entry": 0.10448,
       "tp1": 0.102318,
       "tp2": 0.100156,
       "sl": 0.10161,
-      "entry_orig": 0.10448,
-      "tp1_orig": 0.102318,
-      "tp2_orig": 0.100156,
-      "sl_orig": 0.10657,
       "strength": 37,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 2.6,
+      "close_price": 0.10176,
       "taken_at": "2026-03-18T16:07:25.090312",
-      "status": "TP1_HIT",
-      "reasons": [
-        "RSI=52 (нейтральный↑)",
-        "Цена < EMA20 < EMA50",
-        "Стакан: давление продажи (-0.18)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "CVD падает (-12.0%) — продажи усиливаются 📉",
-        "BTC контекст: -3.5% за 12ч 📉"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-18 17:02:47"
+    },
     {
       "symbol": "ZECUSDT",
       "direction": "SHORT",
@@ -5861,20 +5851,6 @@
       "close_price": 0.15485,
       "taken_at": "2026-03-17 19:25:16",
       "closed_at": "2026-03-17 20:12:20"
-    },
-    {
-      "symbol": "APTUSDT",
-      "direction": "SHORT",
-      "entry": 0.9915,
-      "tp1": 0.97167,
-      "tp2": 0.95184,
-      "sl": 1.01133,
-      "strength": 36,
-      "status": "TIMEOUT",
-      "pnl_pct": -0.19,
-      "close_price": 0.99335,
-      "taken_at": "2026-03-17 12:11:59",
-      "closed_at": "2026-03-17 20:12:19"
     }
   ]
 }
