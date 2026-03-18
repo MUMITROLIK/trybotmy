@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T11:44:59.050332+00:00",
+  "updated_at": "2026-03-18T11:45:38.477497+00:00",
   "publish_status": {
-    "last_ok": "2026-03-18T11:44:02Z",
+    "last_ok": "2026-03-18T11:45:04Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -11,18 +11,18 @@
   },
   "stats": {
     "total": 475,
-    "wins": 146,
+    "wins": 147,
     "losses": 46,
-    "active": 20,
-    "winrate": 76.0
+    "active": 19,
+    "winrate": 76.2
   },
   "trade_stats": {
-    "open": 20,
+    "open": 19,
     "pending": 6,
-    "wins": 140,
+    "wins": 141,
     "losses": 125,
-    "total_pnl": 67.13,
-    "winrate": 52.8
+    "total_pnl": 69.11,
+    "winrate": 53.0
   },
   "fear_greed": {
     "value": 26,
@@ -100,27 +100,6 @@
       ],
       "news": null,
       "created_at": "2026-03-18 10:18:35",
-      "status": "ACTIVE"
-    },
-    {
-      "id": 488,
-      "symbol": "RIVERUSDT",
-      "direction": "LONG",
-      "entry": 24.689,
-      "tp1": 25.253107,
-      "tp2": 25.817214,
-      "sl": 24.19522,
-      "strength": 40,
-      "reasons": [
-        "MACD бычий (hist=0.03305)",
-        "Цена > EMA20 > EMA50",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +4.6% + цена ↑",
-        "CVD положительный (+2.8%)",
-        "⚡ Рыночный вход (сильный моментум: MTF+OI+CVD)"
-      ],
-      "news": null,
-      "created_at": "2026-03-18 10:31:52",
       "status": "ACTIVE"
     },
     {
@@ -651,6 +630,25 @@
       ]
     },
     {
+      "symbol": "RIVERUSDT",
+      "direction": "LONG",
+      "entry": 24.689,
+      "tp1": 25.253107,
+      "tp2": 25.817214,
+      "sl": 24.19522,
+      "strength": 40,
+      "status": "TP1",
+      "created_at": "2026-03-18 10:31:52",
+      "reasons": [
+        "MACD бычий (hist=0.03305)",
+        "Цена > EMA20 > EMA50",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +4.6% + цена ↑",
+        "CVD положительный (+2.8%)",
+        "⚡ Рыночный вход (сильный моментум: MTF+OI+CVD)"
+      ]
+    },
+    {
       "symbol": "LITUSDT",
       "direction": "LONG",
       "entry": 1.244,
@@ -851,25 +849,6 @@
         "Bullish Engulfing (1h) 🕯️",
         "📌 Лимитный вход @ 0.00671581 (откат к EMA20)"
       ]
-    },
-    {
-      "symbol": "OPNUSDT",
-      "direction": "SHORT",
-      "entry": 0.29785904,
-      "tp1": 0.291902,
-      "tp2": 0.285945,
-      "sl": 0.303816,
-      "strength": 45,
-      "status": "TP1",
-      "created_at": "2026-03-18 09:22:42",
-      "reasons": [
-        "MACD медвежий (hist=-0.00048)",
-        "EMA20 < EMA50 (death cross) 💀",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +1.0% + цена ↓",
-        "CVD падает (-5.8%) — продажи усиливаются 📉",
-        "📌 Лимитный вход @ 0.297859 (откат к EMA20)"
-      ]
     }
   ],
   "trades_open": [
@@ -979,26 +958,6 @@
         "OI растёт +1.7% + цена ↑",
         "CVD положительный (-1.8%)",
         "Doji (1h) — нерешительность"
-      ]
-    },
-    {
-      "id": 342,
-      "symbol": "RIVERUSDT",
-      "direction": "LONG",
-      "entry": 24.689,
-      "tp1": 25.253107,
-      "tp2": 25.817214,
-      "sl": 24.19522,
-      "strength": 40,
-      "taken_at": "2026-03-18T10:31:52.715733",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.03305)",
-        "Цена > EMA20 > EMA50",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +4.6% + цена ↑",
-        "CVD положительный (+2.8%)",
-        "⚡ Рыночный вход (сильный моментум: MTF+OI+CVD)"
       ]
     },
     {
@@ -1418,6 +1377,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "RIVERUSDT",
+      "direction": "LONG",
+      "entry": 24.689,
+      "tp1": 25.253107,
+      "tp2": 25.817214,
+      "sl": 25.265500000000003,
+      "strength": 40,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 1.98,
+      "close_price": 25.1785,
+      "taken_at": "2026-03-18T10:31:52.715733",
+      "closed_at": "2026-03-18 11:45:38"
+    },
     {
       "symbol": "HYPERUSDT",
       "direction": "LONG",
@@ -4203,20 +4176,6 @@
       "close_price": 8.877,
       "taken_at": "2026-03-17 10:15:51",
       "closed_at": "2026-03-17 18:15:51"
-    },
-    {
-      "symbol": "PENGUUSDT",
-      "direction": "LONG",
-      "entry": 0.007657,
-      "tp1": 0.00781,
-      "tp2": 0.007963,
-      "sl": 0.00783592,
-      "strength": 32,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 2.31,
-      "close_price": 0.0078335,
-      "taken_at": "2026-03-17 12:37:00",
-      "closed_at": "2026-03-17 18:15:28"
     }
   ]
 }
