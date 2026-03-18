@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T19:02:06.032812+00:00",
+  "updated_at": "2026-03-18T19:02:39.495778+00:00",
   "publish_status": {
-    "last_ok": "2026-03-18T19:00:49Z",
+    "last_ok": "2026-03-18T19:02:18Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 65.8
   },
   "trade_stats": {
-    "open": 46,
+    "open": 45,
     "pending": 1,
     "wins": 160,
-    "losses": 171,
-    "total_pnl": 16.29,
-    "winrate": 48.3
+    "losses": 172,
+    "total_pnl": 13.6,
+    "winrate": 48.2
   },
   "fear_greed": {
     "value": 26,
@@ -2403,31 +2403,6 @@
       ]
     },
     {
-      "id": 450,
-      "symbol": "FARTCOINUSDT",
-      "direction": "LONG",
-      "entry": 0.20825,
-      "tp1": 0.21424941,
-      "tp2": 0.22024863,
-      "sl": 0.2034504,
-      "entry_orig": 0.20418082,
-      "tp1_orig": 0.210063,
-      "tp2_orig": 0.215945,
-      "sl_orig": 0.199475,
-      "strength": 32,
-      "taken_at": "2026-03-18T18:02:48.812042",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00176)",
-        "Цена выше EMA20",
-        "МТФ: 5m, 1h, 4h согласны",
-        "OI падает (шорты закрываются)",
-        "CVD положительный (+2.6%)",
-        "BTC корреляция 0.73, BTC +0.8% 📈",
-        "📌 Лимитный вход @ 0.204181 (откат к EMA20)"
-      ]
-    },
-    {
       "id": 453,
       "symbol": "DOTUSDT",
       "direction": "LONG",
@@ -2573,6 +2548,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "FARTCOINUSDT",
+      "direction": "LONG",
+      "entry": 0.20825,
+      "tp1": 0.21424941,
+      "tp2": 0.22024863,
+      "sl": 0.2034504,
+      "strength": 32,
+      "status": "SL",
+      "pnl_pct": -2.69,
+      "close_price": 0.20265,
+      "taken_at": "2026-03-18T18:02:48.812042",
+      "closed_at": "2026-03-18 19:02:25"
+    },
     {
       "symbol": "BERAUSDT",
       "direction": "LONG",
@@ -5353,20 +5342,6 @@
       "tp2": 0.035818,
       "sl": 0.031855,
       "strength": 56,
-      "status": "LIMIT_TIMEOUT",
-      "pnl_pct": 0,
-      "close_price": null,
-      "taken_at": "2026-03-17 20:18:43",
-      "closed_at": "2026-03-17 21:18:51"
-    },
-    {
-      "symbol": "VANRYUSDT",
-      "direction": "LONG",
-      "entry": 0.00599923,
-      "tp1": 0.006256,
-      "tp2": 0.006514,
-      "sl": 0.005794,
-      "strength": 40,
       "status": "LIMIT_TIMEOUT",
       "pnl_pct": 0,
       "close_price": null,
