@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T20:25:22.009342+00:00",
+  "updated_at": "2026-03-18T20:26:06.584690+00:00",
   "publish_status": {
-    "last_ok": null,
+    "last_ok": "2026-03-18T20:25:28Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -13,7 +13,7 @@
     "total": 568,
     "wins": 176,
     "losses": 92,
-    "active": 9,
+    "active": 8,
     "winrate": 65.7
   },
   "trade_stats": {
@@ -36,27 +36,6 @@
     "trained_at": "2026-03-18T18:46:42.539461+00:00"
   },
   "signals": [
-    {
-      "id": 567,
-      "symbol": "MNTUSDT",
-      "direction": "SHORT",
-      "entry": 0.763,
-      "tp1": 0.740639,
-      "tp2": 0.718279,
-      "sl": 0.780889,
-      "strength": 35,
-      "reasons": [
-        "MACD медвежий (hist=-0.00397)",
-        "Цена < EMA20 < EMA50",
-        "Объём x2.3 🔥",
-        "МТФ: 5m, 15m, 1h согласны",
-        "OI растёт +2.7% + цена ↓",
-        "BTC контекст: -3.6% за 12ч 📉"
-      ],
-      "news": null,
-      "created_at": "2026-03-18 16:25:13",
-      "status": "ACTIVE"
-    },
     {
       "id": 568,
       "symbol": "LINKUSDT",
