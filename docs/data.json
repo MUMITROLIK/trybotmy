@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T17:53:28.127534+00:00",
+  "updated_at": "2026-03-18T17:54:08.028171+00:00",
   "publish_status": {
-    "last_ok": "2026-03-18T17:52:28Z",
+    "last_ok": "2026-03-18T17:53:33Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,19 +10,19 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 553,
+    "total": 555,
     "wins": 162,
     "losses": 76,
-    "active": 51,
+    "active": 53,
     "winrate": 68.1
   },
   "trade_stats": {
-    "open": 52,
+    "open": 53,
     "pending": 1,
     "wins": 156,
-    "losses": 157,
-    "total_pnl": 37.89,
-    "winrate": 49.8
+    "losses": 158,
+    "total_pnl": 35.23,
+    "winrate": 49.7
   },
   "fear_greed": {
     "value": 26,
@@ -1170,6 +1170,46 @@
       ],
       "news": null,
       "created_at": "2026-03-18 17:37:05",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 592,
+      "symbol": "HYPEUSDT",
+      "direction": "LONG",
+      "entry": 43.686,
+      "tp1": 44.55972,
+      "tp2": 45.43344,
+      "sl": 42.81228,
+      "strength": 44,
+      "reasons": [
+        "MACD бычий (hist=0.26499)",
+        "Цена > EMA20 > EMA50",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +5.6% + цена ↑",
+        "CVD растёт (+5.3%) — покупки усиливаются 📈",
+        "⚡ Рыночный вход (моментум: MTF+OI+CVD)"
+      ],
+      "news": null,
+      "created_at": "2026-03-18 17:53:37",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 593,
+      "symbol": "ENJUSDT",
+      "direction": "LONG",
+      "entry": 0.02394,
+      "tp1": 0.024972,
+      "tp2": 0.026004,
+      "sl": 0.023115,
+      "strength": 31,
+      "reasons": [
+        "MACD бычий (hist=0.00008)",
+        "Цена > EMA20 > EMA50",
+        "МТФ: 5m, 15m, 4h согласны",
+        "CVD положительный (+1.8%)"
+      ],
+      "news": null,
+      "created_at": "2026-03-18 17:53:38",
       "status": "ACTIVE"
     }
   ],
@@ -2787,31 +2827,6 @@
       ]
     },
     {
-      "id": 442,
-      "symbol": "ARCUSDT",
-      "direction": "SHORT",
-      "entry": 0.03906,
-      "tp1": 0.037771,
-      "tp2": 0.036482,
-      "sl": 0.040091,
-      "entry_orig": 0.03906,
-      "tp1_orig": 0.037771,
-      "tp2_orig": 0.036482,
-      "sl_orig": 0.040091,
-      "strength": 48,
-      "taken_at": "2026-03-18T17:21:39.246075",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=72 (сильная перекупленность)",
-        "BB верхняя полоса (пробой)",
-        "EMA20 < EMA50",
-        "Объём x4.5 🔥🔥🔥",
-        "МТФ: 15m, 4h согласны",
-        "OI растёт +3.9%",
-        "BTC контекст: -3.5% за 12ч 📉"
-      ]
-    },
-    {
       "id": 443,
       "symbol": "XMRUSDT",
       "direction": "SHORT",
@@ -2884,6 +2899,52 @@
       ]
     },
     {
+      "id": 446,
+      "symbol": "HYPEUSDT",
+      "direction": "LONG",
+      "entry": 43.686,
+      "tp1": 44.55972,
+      "tp2": 45.43344,
+      "sl": 42.81228,
+      "entry_orig": 43.686,
+      "tp1_orig": 44.55972,
+      "tp2_orig": 45.43344,
+      "sl_orig": 42.81228,
+      "strength": 44,
+      "taken_at": "2026-03-18T17:53:38.300734",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.26499)",
+        "Цена > EMA20 > EMA50",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +5.6% + цена ↑",
+        "CVD растёт (+5.3%) — покупки усиливаются 📈",
+        "⚡ Рыночный вход (моментум: MTF+OI+CVD)"
+      ]
+    },
+    {
+      "id": 447,
+      "symbol": "ENJUSDT",
+      "direction": "LONG",
+      "entry": 0.02394,
+      "tp1": 0.024972,
+      "tp2": 0.026004,
+      "sl": 0.023115,
+      "entry_orig": 0.02394,
+      "tp1_orig": 0.024972,
+      "tp2_orig": 0.026004,
+      "sl_orig": 0.023115,
+      "strength": 31,
+      "taken_at": "2026-03-18T17:53:38.463961",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.00008)",
+        "Цена > EMA20 > EMA50",
+        "МТФ: 5m, 15m, 4h согласны",
+        "CVD положительный (+1.8%)"
+      ]
+    },
+    {
       "id": 434,
       "symbol": "KITEUSDT",
       "direction": "LONG",
@@ -2909,6 +2970,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "ARCUSDT",
+      "direction": "SHORT",
+      "entry": 0.03906,
+      "tp1": 0.037771,
+      "tp2": 0.036482,
+      "sl": 0.040091,
+      "strength": 48,
+      "status": "SL",
+      "pnl_pct": -2.66,
+      "close_price": 0.0401,
+      "taken_at": "2026-03-18T17:21:39.246075",
+      "closed_at": "2026-03-18 17:54:07"
+    },
     {
       "symbol": "HYPEUSDT",
       "direction": "LONG",
@@ -5694,20 +5769,6 @@
       "close_price": 0.193225,
       "taken_at": "2026-03-17 12:56:27",
       "closed_at": "2026-03-17 20:56:40"
-    },
-    {
-      "symbol": "ANIMEUSDT",
-      "direction": "LONG",
-      "entry": 0.005719,
-      "tp1": 0.005844,
-      "tp2": 0.005969,
-      "sl": 0.0058645,
-      "strength": 40,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 2.48,
-      "close_price": 0.005861,
-      "taken_at": null,
-      "closed_at": "2026-03-17 20:49:16"
     }
   ]
 }
