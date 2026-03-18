@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T06:45:22.119620+00:00",
+  "updated_at": "2026-03-18T06:46:27.859867+00:00",
   "publish_status": {
-    "last_ok": "2026-03-18T06:44:06Z",
+    "last_ok": "2026-03-18T06:45:27Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 416,
+    "total": 417,
     "wins": 125,
     "losses": 31,
-    "active": 4,
+    "active": 5,
     "winrate": 80.1
   },
   "trade_stats": {
-    "open": 3,
+    "open": 4,
     "pending": 2,
     "wins": 131,
     "losses": 104,
@@ -117,6 +117,28 @@
       ],
       "news": null,
       "created_at": "2026-03-18 06:29:14",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 455,
+      "symbol": "HYPERUSDT",
+      "direction": "LONG",
+      "entry": 0.0994,
+      "tp1": 0.101388,
+      "tp2": 0.103376,
+      "sl": 0.097412,
+      "strength": 50,
+      "reasons": [
+        "RSI=25 (сильная перепроданность)",
+        "MACD бычий (hist=0.00008)",
+        "BB нижняя зона (12%)",
+        "Стакан: сильное давление покупки (+0.25)",
+        "МТФ: 1h, 4h согласны",
+        "CVD положительный (-9.8%)",
+        "⚠️ Funding через 75м"
+      ],
+      "news": null,
+      "created_at": "2026-03-18 06:45:53",
       "status": "ACTIVE"
     }
   ],
@@ -588,6 +610,27 @@
         "OI падает (шорты закрываются)",
         "Bullish Engulfing (1h) 🕯️",
         "📌 Лимитный вход @ 277.911 (откат к EMA20)"
+      ]
+    },
+    {
+      "id": 309,
+      "symbol": "HYPERUSDT",
+      "direction": "LONG",
+      "entry": 0.0994,
+      "tp1": 0.101388,
+      "tp2": 0.103376,
+      "sl": 0.097412,
+      "strength": 50,
+      "taken_at": "2026-03-18T06:45:53.409833",
+      "status": "OPEN",
+      "reasons": [
+        "RSI=25 (сильная перепроданность)",
+        "MACD бычий (hist=0.00008)",
+        "BB нижняя зона (12%)",
+        "Стакан: сильное давление покупки (+0.25)",
+        "МТФ: 1h, 4h согласны",
+        "CVD положительный (-9.8%)",
+        "⚠️ Funding через 75м"
       ]
     },
     {
