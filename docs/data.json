@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T18:01:08.271294+00:00",
+  "updated_at": "2026-03-18T18:01:42.487351+00:00",
   "publish_status": {
-    "last_ok": "2026-03-18T18:00:39Z",
+    "last_ok": "2026-03-18T18:01:16Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 67.9
   },
   "trade_stats": {
-    "open": 52,
-    "pending": 2,
-    "wins": 156,
+    "open": 51,
+    "pending": 1,
+    "wins": 157,
     "losses": 160,
-    "total_pnl": 31.22,
-    "winrate": 49.4
+    "total_pnl": 33.1,
+    "winrate": 49.5
   },
   "fear_greed": {
     "value": 26,
@@ -2720,31 +2720,6 @@
       ]
     },
     {
-      "id": 439,
-      "symbol": "DASHUSDT",
-      "direction": "LONG",
-      "entry": 32.15,
-      "tp1": 32.793,
-      "tp2": 33.436,
-      "sl": 31.507,
-      "entry_orig": 32.15,
-      "tp1_orig": 32.793,
-      "tp2_orig": 33.436,
-      "sl_orig": 31.507,
-      "strength": 46,
-      "taken_at": "2026-03-18T17:10:41.745747",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=8 (сильная перепроданность)",
-        "BB нижняя полоса (пробой)",
-        "Объём x2.6 🔥🔥",
-        "Стакан: давление покупки (+0.15)",
-        "МТФ: только 1 таймфрейм согласен",
-        "OI падает (шорты закрываются)",
-        "CVD положительный (-11.8%)"
-      ]
-    },
-    {
       "id": 440,
       "symbol": "CRCLUSDT",
       "direction": "LONG",
@@ -2912,30 +2887,6 @@
       ]
     },
     {
-      "id": 434,
-      "symbol": "KITEUSDT",
-      "direction": "LONG",
-      "entry": 0.1908266,
-      "tp1": 0.194733,
-      "tp2": 0.198639,
-      "sl": 0.18701,
-      "entry_orig": 0.1908266,
-      "tp1_orig": 0.194733,
-      "tp2_orig": 0.198639,
-      "sl_orig": 0.18701,
-      "strength": 32,
-      "taken_at": "2026-03-18T17:01:13.842038",
-      "status": "PENDING",
-      "reasons": [
-        "MACD бычий (hist=0.00115)",
-        "Цена > EMA20 > EMA50",
-        "МТФ: 5m, 15m согласны",
-        "OI растёт +2.0% + цена ↑",
-        "CVD растёт (+6.4%) — покупки усиливаются 📈",
-        "📌 Лимитный вход @ 0.190827 (откат к EMA20)"
-      ]
-    },
-    {
       "id": 448,
       "symbol": "TRIAUSDT",
       "direction": "LONG",
@@ -2961,6 +2912,34 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "DASHUSDT",
+      "direction": "LONG",
+      "entry": 32.15,
+      "tp1": 32.793,
+      "tp2": 33.436,
+      "sl": 32.795,
+      "strength": 46,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 1.88,
+      "close_price": 32.754999999999995,
+      "taken_at": "2026-03-18T17:10:41.745747",
+      "closed_at": "2026-03-18 18:01:42"
+    },
+    {
+      "symbol": "KITEUSDT",
+      "direction": "LONG",
+      "entry": 0.1908266,
+      "tp1": 0.194733,
+      "tp2": 0.198639,
+      "sl": 0.18701,
+      "strength": 32,
+      "status": "LIMIT_TIMEOUT",
+      "pnl_pct": 0,
+      "close_price": null,
+      "taken_at": "2026-03-18T17:01:13.842038",
+      "closed_at": "2026-03-18 18:01:21"
+    },
     {
       "symbol": "AKTUSDT",
       "direction": "SHORT",
@@ -5732,34 +5711,6 @@
       "close_price": 0.11295,
       "taken_at": null,
       "closed_at": "2026-03-17 21:16:27"
-    },
-    {
-      "symbol": "FILUSDT",
-      "direction": "SHORT",
-      "entry": 0.955,
-      "tp1": 0.9359,
-      "tp2": 0.9168,
-      "sl": 0.9741,
-      "strength": 26,
-      "status": "SL",
-      "pnl_pct": -2.04,
-      "close_price": 0.9744999999999999,
-      "taken_at": "2026-03-17 14:05:12",
-      "closed_at": "2026-03-17 21:12:38"
-    },
-    {
-      "symbol": "RIVERUSDT",
-      "direction": "SHORT",
-      "entry": 22.729,
-      "tp1": 22.073286,
-      "tp2": 21.417571,
-      "sl": 22.072499999999998,
-      "strength": 28,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 2.85,
-      "close_price": 22.0815,
-      "taken_at": null,
-      "closed_at": "2026-03-17 21:07:24"
     }
   ]
 }

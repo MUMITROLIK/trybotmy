@@ -793,8 +793,8 @@
       var now = Date.now();
       if (!ws || ws.readyState !== 1 || (now - wsLastMsgAt) > 45000) fetchREST();
     }, 15000);
-    // 2s достаточно для UI и снижает нагрузку на /api/ticker
-    setInterval(fetchLivePrices, 2000);
+    // Обновляем раз в 1с: /api/ticker теперь bulk + кеш.
+    setInterval(fetchLivePrices, 1000);
     setInterval(function(){ if (openTradesCache.length) patchPositionCards(); }, 1000);
     setInterval(function(){ if (serverTime) serverTime = new Date(serverTime.getTime()+1000); }, 1000);
 
