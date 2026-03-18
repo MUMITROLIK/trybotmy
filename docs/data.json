@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T18:45:34.779653+00:00",
+  "updated_at": "2026-03-18T18:46:59.776614+00:00",
   "publish_status": {
-    "last_ok": "2026-03-18T18:44:57Z",
+    "last_ok": "2026-03-18T18:45:41Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -33,7 +33,7 @@
     "model_name": "LogisticRegression",
     "roc_auc": 0.7805,
     "rows": 400,
-    "trained_at": "2026-03-18T18:06:08.043117+00:00"
+    "trained_at": "2026-03-18T18:46:42.539461+00:00"
   },
   "signals": [
     {
