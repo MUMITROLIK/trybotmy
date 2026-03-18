@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T17:22:10.070564+00:00",
+  "updated_at": "2026-03-18T17:22:55.674635+00:00",
   "publish_status": {
-    "last_ok": "2026-03-18T17:21:49Z",
+    "last_ok": "2026-03-18T17:22:19Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -12,17 +12,17 @@
   "stats": {
     "total": 550,
     "wins": 161,
-    "losses": 66,
-    "active": 59,
-    "winrate": 70.9
+    "losses": 67,
+    "active": 58,
+    "winrate": 70.6
   },
   "trade_stats": {
-    "open": 59,
+    "open": 58,
     "pending": 1,
     "wins": 155,
-    "losses": 148,
-    "total_pnl": 58.11,
-    "winrate": 51.2
+    "losses": 149,
+    "total_pnl": 55.04,
+    "winrate": 51.0
   },
   "fear_greed": {
     "value": 26,
@@ -1323,9 +1323,10 @@
       "news": null,
       "created_at": "2026-03-18 17:18:24",
       "status": "ACTIVE"
-    },
+    }
+  ],
+  "history": [
     {
-      "id": 588,
       "symbol": "ARCUSDT",
       "direction": "SHORT",
       "entry": 0.03906,
@@ -1333,6 +1334,8 @@
       "tp2": 0.036482,
       "sl": 0.040091,
       "strength": 48,
+      "status": "SL",
+      "created_at": "2026-03-18 17:21:39",
       "reasons": [
         "RSI=72 (сильная перекупленность)",
         "BB верхняя полоса (пробой)",
@@ -1341,13 +1344,8 @@
         "МТФ: 15m, 4h согласны",
         "OI растёт +3.9%",
         "BTC контекст: -3.5% за 12ч 📉"
-      ],
-      "news": null,
-      "created_at": "2026-03-18 17:21:39",
-      "status": "ACTIVE"
-    }
-  ],
-  "history": [
+      ]
+    },
     {
       "symbol": "POWERUSDT",
       "direction": "SHORT",
@@ -1721,25 +1719,6 @@
         "Объём x2.9 🔥🔥",
         "Стакан: перевес bid (+0.05)",
         "МТФ: 1h, 4h согласны"
-      ]
-    },
-    {
-      "symbol": "RENDERUSDT",
-      "direction": "SHORT",
-      "entry": 1.79944178,
-      "tp1": 1.763453,
-      "tp2": 1.727464,
-      "sl": 1.835431,
-      "strength": 45,
-      "status": "TP1",
-      "created_at": "2026-03-18 11:43:25",
-      "reasons": [
-        "MACD медвежий (hist=-0.00162)",
-        "Цена < EMA20 < EMA50",
-        "Объём x6.1 🔥🔥🔥",
-        "МТФ: 5m, 15m, 1h согласны",
-        "BTC корреляция 0.82, BTC -1.2% 📉",
-        "📌 Лимитный вход @ 1.79944 (откат к EMA20)"
       ]
     }
   ],
@@ -3184,29 +3163,6 @@
       ]
     },
     {
-      "id": 441,
-      "symbol": "POWERUSDT",
-      "direction": "SHORT",
-      "entry": 0.09433,
-      "tp1": 0.090991,
-      "tp2": 0.087653,
-      "sl": 0.097001,
-      "entry_orig": 0.09433,
-      "tp1_orig": 0.090991,
-      "tp2_orig": 0.087653,
-      "sl_orig": 0.097001,
-      "strength": 42,
-      "taken_at": "2026-03-18T17:18:24.694356",
-      "status": "OPEN",
-      "reasons": [
-        "MACD медвежий (hist=-0.00077)",
-        "Цена < EMA20 < EMA50",
-        "Объём x3.0 🔥🔥",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "BTC контекст: -3.5% за 12ч 📉"
-      ]
-    },
-    {
       "id": 442,
       "symbol": "ARCUSDT",
       "direction": "SHORT",
@@ -3257,6 +3213,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "POWERUSDT",
+      "direction": "SHORT",
+      "entry": 0.09433,
+      "tp1": 0.090991,
+      "tp2": 0.087653,
+      "sl": 0.097001,
+      "strength": 42,
+      "status": "SL",
+      "pnl_pct": -3.07,
+      "close_price": 0.09723,
+      "taken_at": "2026-03-18T17:18:24.694356",
+      "closed_at": "2026-03-18 17:22:52"
+    },
     {
       "symbol": "TAOUSDT",
       "direction": "LONG",
@@ -6042,20 +6012,6 @@
       "close_price": 0.15545,
       "taken_at": "2026-03-17 19:22:00",
       "closed_at": "2026-03-17 20:13:20"
-    },
-    {
-      "symbol": "CFGUSDT",
-      "direction": "SHORT",
-      "entry": 0.15979134,
-      "tp1": 0.155098,
-      "tp2": 0.150406,
-      "sl": 0.15475,
-      "strength": 46,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 3.09,
-      "close_price": 0.15485,
-      "taken_at": "2026-03-17 19:25:16",
-      "closed_at": "2026-03-17 20:12:31"
     }
   ]
 }
