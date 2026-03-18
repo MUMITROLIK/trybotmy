@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T23:33:04.069371+00:00",
+  "updated_at": "2026-03-18T23:34:34.356365+00:00",
   "publish_status": {
-    "last_ok": "2026-03-18T23:32:32Z",
+    "last_ok": "2026-03-18T23:33:09Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 66.1
   },
   "trade_stats": {
-    "open": 7,
+    "open": 6,
     "pending": 0,
-    "wins": 178,
+    "wins": 179,
     "losses": 202,
-    "total_pnl": 15.37,
-    "winrate": 46.8
+    "total_pnl": 17.89,
+    "winrate": 47.0
   },
   "fear_greed": {
     "value": 26,
@@ -703,36 +703,23 @@
         "BTC контекст: -2.4% за 12ч 📉",
         "🤖 ML: вероятность 66%"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 468,
       "symbol": "SIRENUSDT",
       "direction": "SHORT",
       "entry": 0.90049,
       "tp1": 0.874643,
       "tp2": 0.848796,
-      "sl": 0.86978,
-      "entry_orig": 0.90049,
-      "tp1_orig": 0.874643,
-      "tp2_orig": 0.848796,
-      "sl_orig": 0.921168,
+      "sl": 0.86905365,
       "strength": 45,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 2.52,
+      "close_price": 0.87779,
       "taken_at": "2026-03-18T23:26:29.871402",
-      "status": "TP1_HIT",
-      "reasons": [
-        "RSI=53 (нейтральный↑)",
-        "MACD медвежий (hist=-0.00008)",
-        "BB верхняя полоса (пробой)",
-        "Объём x6.3 🔥🔥🔥",
-        "Стакан: давление продажи (-0.24)",
-        "OI растёт +2.7%",
-        "⚠️ Funding через 35м",
-        "BTC контекст: -2.5% за 12ч 📉",
-        "🤖 ML: вероятность 56%"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-18 23:33:29"
+    },
     {
       "symbol": "TRIAUSDT",
       "direction": "LONG",
@@ -3518,20 +3505,6 @@
       "close_price": null,
       "taken_at": "2026-03-17T22:03:20.788519",
       "closed_at": "2026-03-17 23:03:26"
-    },
-    {
-      "symbol": "WIFUSDT",
-      "direction": "LONG",
-      "entry": 0.18744017,
-      "tp1": 0.191189,
-      "tp2": 0.194938,
-      "sl": 0.183691,
-      "strength": 46,
-      "status": "LIMIT_TIMEOUT",
-      "pnl_pct": 0,
-      "close_price": null,
-      "taken_at": "2026-03-17T21:43:33.744654",
-      "closed_at": "2026-03-17 22:43:36"
     }
   ]
 }
