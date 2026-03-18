@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T10:04:44.565523+00:00",
+  "updated_at": "2026-03-18T10:05:47.137427+00:00",
   "publish_status": {
-    "last_ok": "2026-03-18T10:04:18Z",
+    "last_ok": "2026-03-18T10:04:49Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -18,7 +18,7 @@
   },
   "trade_stats": {
     "open": 19,
-    "pending": 2,
+    "pending": 1,
     "wins": 137,
     "losses": 105,
     "total_pnl": 104.6,
@@ -1203,26 +1203,6 @@
       ]
     },
     {
-      "id": 326,
-      "symbol": "AINUSDT",
-      "direction": "LONG",
-      "entry": 0.08129831,
-      "tp1": 0.084858,
-      "tp2": 0.088417,
-      "sl": 0.078451,
-      "strength": 44,
-      "taken_at": "2026-03-18T09:04:59.708384",
-      "status": "PENDING",
-      "reasons": [
-        "MACD бычий (hist=0.00082)",
-        "Цена > EMA20 > EMA50",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +5.4% + цена ↑",
-        "CVD растёт (+11.4%) — покупки усиливаются 📈",
-        "📌 Лимитный вход @ 0.0812983 (откат к EMA20)"
-      ]
-    },
-    {
       "id": 334,
       "symbol": "AKTUSDT",
       "direction": "LONG",
@@ -1264,6 +1244,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "AINUSDT",
+      "direction": "LONG",
+      "entry": 0.08129831,
+      "tp1": 0.084858,
+      "tp2": 0.088417,
+      "sl": 0.078451,
+      "strength": 44,
+      "status": "LIMIT_TIMEOUT",
+      "pnl_pct": 0,
+      "close_price": null,
+      "taken_at": "2026-03-18T09:04:59.708384",
+      "closed_at": "2026-03-18 10:05:09"
+    },
     {
       "symbol": "VANRYUSDT",
       "direction": "LONG",
@@ -4049,20 +4043,6 @@
       "close_price": 0.004550500000000001,
       "taken_at": "2026-03-17 12:00:05",
       "closed_at": "2026-03-17 16:43:47"
-    },
-    {
-      "symbol": "ANIMEUSDT",
-      "direction": "LONG",
-      "entry": 0.005904,
-      "tp1": 0.00609,
-      "tp2": 0.006276,
-      "sl": 0.005755,
-      "strength": 28,
-      "status": "SL",
-      "pnl_pct": -2.66,
-      "close_price": 0.005747,
-      "taken_at": null,
-      "closed_at": "2026-03-17 16:43:28"
     }
   ]
 }
