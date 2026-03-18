@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T08:19:05.236876+00:00",
+  "updated_at": "2026-03-18T08:20:10.831264+00:00",
   "publish_status": {
-    "last_ok": null,
+    "last_ok": "2026-03-18T08:19:10Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -18,7 +18,7 @@
   },
   "trade_stats": {
     "open": 10,
-    "pending": 3,
+    "pending": 1,
     "wins": 135,
     "losses": 104,
     "total_pnl": 102.13,
@@ -897,48 +897,6 @@
       ]
     },
     {
-      "id": 318,
-      "symbol": "SIRENUSDT",
-      "direction": "LONG",
-      "entry": 0.81196276,
-      "tp1": 0.849751,
-      "tp2": 0.887539,
-      "sl": 0.781732,
-      "strength": 41,
-      "taken_at": "2026-03-18T07:18:56.906551",
-      "status": "PENDING",
-      "reasons": [
-        "MACD бычий (hist=0.00171)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: давление покупки (+0.12)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +10.4% + цена ↑",
-        "⚠️ Funding через 42м",
-        "📌 Лимитный вход @ 0.811963 (откат к EMA20)"
-      ]
-    },
-    {
-      "id": 319,
-      "symbol": "TRIAUSDT",
-      "direction": "LONG",
-      "entry": 0.03348053,
-      "tp1": 0.034255,
-      "tp2": 0.03503,
-      "sl": 0.032811,
-      "strength": 45,
-      "taken_at": "2026-03-18T07:19:46.254383",
-      "status": "PENDING",
-      "reasons": [
-        "MACD бычий (hist=0.00024)",
-        "EMA20 > EMA50 (golden cross) 🌟",
-        "Стакан: сильное давление покупки (+0.35)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "CVD положительный (+4.2%)",
-        "⚠️ Funding через 41м",
-        "📌 Лимитный вход @ 0.0334805 (откат к EMA20)"
-      ]
-    },
-    {
       "id": 320,
       "symbol": "AINUSDT",
       "direction": "LONG",
@@ -961,6 +919,34 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "TRIAUSDT",
+      "direction": "LONG",
+      "entry": 0.03348053,
+      "tp1": 0.034255,
+      "tp2": 0.03503,
+      "sl": 0.032811,
+      "strength": 45,
+      "status": "LIMIT_TIMEOUT",
+      "pnl_pct": 0,
+      "close_price": null,
+      "taken_at": "2026-03-18T07:19:46.254383",
+      "closed_at": "2026-03-18 08:19:59"
+    },
+    {
+      "symbol": "SIRENUSDT",
+      "direction": "LONG",
+      "entry": 0.81196276,
+      "tp1": 0.849751,
+      "tp2": 0.887539,
+      "sl": 0.781732,
+      "strength": 41,
+      "status": "LIMIT_TIMEOUT",
+      "pnl_pct": 0,
+      "close_price": null,
+      "taken_at": "2026-03-18T07:18:56.906551",
+      "closed_at": "2026-03-18 08:19:13"
+    },
     {
       "symbol": "ENJUSDT",
       "direction": "LONG",
@@ -3732,34 +3718,6 @@
       "close_price": 0.44935,
       "taken_at": "2026-03-17 13:50:17",
       "closed_at": "2026-03-17 16:28:55"
-    },
-    {
-      "symbol": "OPNUSDT",
-      "direction": "SHORT",
-      "entry": 0.29224255,
-      "tp1": 0.28486,
-      "tp2": 0.277478,
-      "sl": 0.298148,
-      "strength": 30,
-      "status": "SL",
-      "pnl_pct": -2.33,
-      "close_price": 0.29905,
-      "taken_at": "2026-03-17 15:51:10",
-      "closed_at": "2026-03-17 16:28:50"
-    },
-    {
-      "symbol": "ASTERUSDT",
-      "direction": "SHORT",
-      "entry": 0.7507,
-      "tp1": 0.729014,
-      "tp2": 0.707329,
-      "sl": 0.768049,
-      "strength": 27,
-      "status": "SL",
-      "pnl_pct": -2.32,
-      "close_price": 0.76815,
-      "taken_at": null,
-      "closed_at": "2026-03-17 16:25:28"
     }
   ]
 }
