@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T10:45:11.228881+00:00",
+  "updated_at": "2026-03-18T10:46:06.009057+00:00",
   "publish_status": {
-    "last_ok": "2026-03-18T10:44:11Z",
+    "last_ok": "2026-03-18T10:45:16Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -13,7 +13,7 @@
     "total": 451,
     "wins": 141,
     "losses": 37,
-    "active": 14,
+    "active": 13,
     "winrate": 79.2
   },
   "trade_stats": {
@@ -36,28 +36,6 @@
     "trained_at": null
   },
   "signals": [
-    {
-      "id": 455,
-      "symbol": "HYPERUSDT",
-      "direction": "LONG",
-      "entry": 0.0994,
-      "tp1": 0.101388,
-      "tp2": 0.103376,
-      "sl": 0.097412,
-      "strength": 50,
-      "reasons": [
-        "RSI=25 (сильная перепроданность)",
-        "MACD бычий (hist=0.00008)",
-        "BB нижняя зона (12%)",
-        "Стакан: сильное давление покупки (+0.25)",
-        "МТФ: 1h, 4h согласны",
-        "CVD положительный (-9.8%)",
-        "⚠️ Funding через 75м"
-      ],
-      "news": null,
-      "created_at": "2026-03-18 06:45:53",
-      "status": "ACTIVE"
-    },
     {
       "id": 457,
       "symbol": "SUIUSDT",
