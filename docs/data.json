@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T05:27:49.941180+00:00",
+  "updated_at": "2026-03-18T05:28:25.191190+00:00",
   "publish_status": {
-    "last_ok": "2026-03-18T05:26:49Z",
+    "last_ok": "2026-03-18T05:27:54Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,15 +10,15 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 412,
+    "total": 413,
     "wins": 124,
     "losses": 31,
-    "active": 1,
+    "active": 2,
     "winrate": 80.0
   },
   "trade_stats": {
     "open": 4,
-    "pending": 1,
+    "pending": 2,
     "wins": 131,
     "losses": 100,
     "total_pnl": 103.1,
@@ -50,6 +50,28 @@
       ],
       "news": null,
       "created_at": "2026-03-18 03:29:45",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 451,
+      "symbol": "PUMPUSDT",
+      "direction": "LONG",
+      "entry": 0.00212199,
+      "tp1": 0.002164,
+      "tp2": 0.002207,
+      "sl": 0.00208,
+      "strength": 50,
+      "reasons": [
+        "MACD бычий (hist=0.00000)",
+        "Цена > EMA20 > EMA50",
+        "Стакан: сильное давление покупки (+0.25)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "CVD положительный (+2.6%)",
+        "Bullish Engulfing (1h) 🕯️",
+        "📌 Лимитный вход @ 0.00212199 (откат к EMA20)"
+      ],
+      "news": null,
+      "created_at": "2026-03-18 05:27:57",
       "status": "ACTIVE"
     }
   ],
@@ -564,6 +586,27 @@
         "CVD положительный (+3.0%)",
         "Bullish Engulfing (1h) 🕯️",
         "📌 Лимитный вход @ 0.214827 (откат к EMA20)"
+      ]
+    },
+    {
+      "id": 305,
+      "symbol": "PUMPUSDT",
+      "direction": "LONG",
+      "entry": 0.00212199,
+      "tp1": 0.002164,
+      "tp2": 0.002207,
+      "sl": 0.00208,
+      "strength": 50,
+      "taken_at": "2026-03-18T05:27:58.183435",
+      "status": "PENDING",
+      "reasons": [
+        "MACD бычий (hist=0.00000)",
+        "Цена > EMA20 > EMA50",
+        "Стакан: сильное давление покупки (+0.25)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "CVD положительный (+2.6%)",
+        "Bullish Engulfing (1h) 🕯️",
+        "📌 Лимитный вход @ 0.00212199 (откат к EMA20)"
       ]
     }
   ],
