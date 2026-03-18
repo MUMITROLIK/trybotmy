@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T07:16:49.707417+00:00",
+  "updated_at": "2026-03-18T07:17:38.537600+00:00",
   "publish_status": {
-    "last_ok": "2026-03-18T07:15:49Z",
+    "last_ok": "2026-03-18T07:16:55Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,15 +10,15 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 423,
+    "total": 424,
     "wins": 125,
     "losses": 31,
-    "active": 11,
+    "active": 12,
     "winrate": 80.1
   },
   "trade_stats": {
     "open": 10,
-    "pending": 1,
+    "pending": 2,
     "wins": 131,
     "losses": 104,
     "total_pnl": 93.78,
@@ -276,6 +276,28 @@
       ],
       "news": null,
       "created_at": "2026-03-18 07:16:48",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 462,
+      "symbol": "ENJUSDT",
+      "direction": "LONG",
+      "entry": 0.02153035,
+      "tp1": 0.022492,
+      "tp2": 0.023455,
+      "sl": 0.020761,
+      "strength": 40,
+      "reasons": [
+        "MACD бычий (hist=0.00026)",
+        "Цена > EMA20 > EMA50",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +25.6% + цена ↑",
+        "CVD положительный (+0.5%)",
+        "⚠️ Funding через 43м",
+        "📌 Лимитный вход @ 0.0215304 (откат к EMA20)"
+      ],
+      "news": null,
+      "created_at": "2026-03-18 07:17:36",
       "status": "ACTIVE"
     }
   ],
@@ -920,6 +942,27 @@
         "Doji (1h) — нерешительность",
         "⚠️ Funding через 44м",
         "📌 Лимитный вход @ 41.7713 (откат к EMA20)"
+      ]
+    },
+    {
+      "id": 316,
+      "symbol": "ENJUSDT",
+      "direction": "LONG",
+      "entry": 0.02153035,
+      "tp1": 0.022492,
+      "tp2": 0.023455,
+      "sl": 0.020761,
+      "strength": 40,
+      "taken_at": "2026-03-18T07:17:36.477919",
+      "status": "PENDING",
+      "reasons": [
+        "MACD бычий (hist=0.00026)",
+        "Цена > EMA20 > EMA50",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +25.6% + цена ↑",
+        "CVD положительный (+0.5%)",
+        "⚠️ Funding через 43м",
+        "📌 Лимитный вход @ 0.0215304 (откат к EMA20)"
       ]
     }
   ],
