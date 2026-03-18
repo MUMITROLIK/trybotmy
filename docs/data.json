@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T04:04:09.031013+00:00",
+  "updated_at": "2026-03-18T04:05:13.929774+00:00",
   "publish_status": {
-    "last_ok": "2026-03-18T04:02:54Z",
+    "last_ok": "2026-03-18T04:04:13Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,15 +10,15 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 410,
+    "total": 411,
     "wins": 122,
     "losses": 31,
-    "active": 3,
+    "active": 4,
     "winrate": 79.7
   },
   "trade_stats": {
     "open": 7,
-    "pending": 1,
+    "pending": 2,
     "wins": 129,
     "losses": 99,
     "total_pnl": 103.52,
@@ -94,6 +94,28 @@
       ],
       "news": null,
       "created_at": "2026-03-18 03:29:45",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 449,
+      "symbol": "HUMAUSDT",
+      "direction": "LONG",
+      "entry": 0.01786948,
+      "tp1": 0.018284,
+      "tp2": 0.018699,
+      "sl": 0.017512,
+      "strength": 54,
+      "reasons": [
+        "MACD бычий (hist=0.00003)",
+        "EMA20 > EMA50 (golden cross) 🌟",
+        "Стакан: сильное давление покупки (+0.26)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +1.0% + цена ↑",
+        "CVD растёт (+5.2%) — покупки усиливаются 📈",
+        "📌 Лимитный вход @ 0.0178695 (откат к EMA20)"
+      ],
+      "news": null,
+      "created_at": "2026-03-18 04:05:06",
       "status": "ACTIVE"
     }
   ],
@@ -672,9 +694,44 @@
         "Bullish Engulfing (1h) 🕯️",
         "📌 Лимитный вход @ 41.6044 (откат к EMA20)"
       ]
+    },
+    {
+      "id": 303,
+      "symbol": "HUMAUSDT",
+      "direction": "LONG",
+      "entry": 0.01786948,
+      "tp1": 0.018284,
+      "tp2": 0.018699,
+      "sl": 0.017512,
+      "strength": 54,
+      "taken_at": "2026-03-18T04:05:06.685362",
+      "status": "PENDING",
+      "reasons": [
+        "MACD бычий (hist=0.00003)",
+        "EMA20 > EMA50 (golden cross) 🌟",
+        "Стакан: сильное давление покупки (+0.26)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +1.0% + цена ↑",
+        "CVD растёт (+5.2%) — покупки усиливаются 📈",
+        "📌 Лимитный вход @ 0.0178695 (откат к EMA20)"
+      ]
     }
   ],
   "trades_history": [
+    {
+      "symbol": "HUMAUSDT",
+      "direction": "LONG",
+      "entry": 0.01786948,
+      "tp1": 0.018284,
+      "tp2": 0.018699,
+      "sl": 0.017512,
+      "strength": 54,
+      "status": "PENDING",
+      "pnl_pct": 0,
+      "close_price": null,
+      "taken_at": "2026-03-18T04:05:06.685362",
+      "closed_at": null
+    },
     {
       "symbol": "RENDERUSDT",
       "direction": "LONG",
@@ -3460,20 +3517,6 @@
       "close_price": 0.755815,
       "taken_at": "2026-03-17 13:31:38",
       "closed_at": "2026-03-17 15:17:42"
-    },
-    {
-      "symbol": "ASTERUSDT",
-      "direction": "SHORT",
-      "entry": 0.765,
-      "tp1": 0.7497,
-      "tp2": 0.7344,
-      "sl": 0.74865,
-      "strength": 34,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 1.99,
-      "close_price": 0.74975,
-      "taken_at": "2026-03-17 13:43:28",
-      "closed_at": "2026-03-17 15:14:04"
     }
   ]
 }
