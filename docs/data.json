@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T03:09:55.426782+00:00",
+  "updated_at": "2026-03-18T03:11:00.349178+00:00",
   "publish_status": {
-    "last_ok": "2026-03-18T03:08:55Z",
+    "last_ok": "2026-03-18T03:10:00Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 79.7
   },
   "trade_stats": {
-    "open": 9,
+    "open": 8,
     "pending": 0,
     "wins": 128,
-    "losses": 98,
-    "total_pnl": 103.54,
-    "winrate": 56.6
+    "losses": 99,
+    "total_pnl": 101.44,
+    "winrate": 56.4
   },
   "fear_greed": {
     "value": 26,
@@ -503,25 +503,6 @@
       ]
     },
     {
-      "id": 225,
-      "symbol": "OPNUSDT",
-      "direction": "SHORT",
-      "entry": 0.2973,
-      "tp1": 0.290196,
-      "tp2": 0.283093,
-      "sl": 0.303246,
-      "strength": 30,
-      "taken_at": null,
-      "status": "OPEN",
-      "reasons": [
-        "RSI=56 (нейтральный↑)",
-        "BB верхняя зона (76%)",
-        "EMA20 < EMA50",
-        "МТФ: 15m, 1h, 4h согласны",
-        "OI растёт +2.9% + цена ↓"
-      ]
-    },
-    {
       "id": 267,
       "symbol": "CRCLUSDT",
       "direction": "LONG",
@@ -673,6 +654,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "OPNUSDT",
+      "direction": "SHORT",
+      "entry": 0.2973,
+      "tp1": 0.290196,
+      "tp2": 0.283093,
+      "sl": 0.303246,
+      "strength": 30,
+      "status": "SL",
+      "pnl_pct": -2.1,
+      "close_price": 0.30355,
+      "taken_at": null,
+      "closed_at": "2026-03-18 03:10:15"
+    },
     {
       "symbol": "1000BONKUSDT",
       "direction": "LONG",
@@ -3458,20 +3453,6 @@
       "close_price": 0.20174999999999998,
       "taken_at": "2026-03-17 14:02:34",
       "closed_at": "2026-03-17 15:07:08"
-    },
-    {
-      "symbol": "BEATUSDT",
-      "direction": "LONG",
-      "entry": 0.5252,
-      "tp1": 0.54179632,
-      "tp2": 0.55834012,
-      "sl": 0.51191244,
-      "strength": 42,
-      "status": "SL",
-      "pnl_pct": -2.81,
-      "close_price": 0.51045,
-      "taken_at": "2026-03-17 13:20:50",
-      "closed_at": "2026-03-17 15:04:14"
     }
   ]
 }
