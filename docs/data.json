@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T10:14:18.178770+00:00",
+  "updated_at": "2026-03-18T10:15:24.564933+00:00",
   "publish_status": {
-    "last_ok": "2026-03-18T10:13:51Z",
+    "last_ok": "2026-03-18T10:14:23Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,10 +10,10 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 445,
+    "total": 446,
     "wins": 139,
     "losses": 33,
-    "active": 15,
+    "active": 16,
     "winrate": 80.8
   },
   "trade_stats": {
@@ -365,6 +365,29 @@
       ],
       "news": null,
       "created_at": "2026-03-18 10:10:35",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 484,
+      "symbol": "ZECUSDT",
+      "direction": "LONG",
+      "entry": 278.30582897,
+      "tp1": 283.871946,
+      "tp2": 289.438062,
+      "sl": 272.739712,
+      "strength": 45,
+      "reasons": [
+        "MACD бычий (hist=0.48116)",
+        "Цена > EMA20 > EMA50",
+        "Объём x1.8 🔥",
+        "Стакан: давление покупки (+0.13)",
+        "МТФ: 5m, 15m, 4h согласны",
+        "OI растёт +2.0% + цена ↑",
+        "Doji (1h) — нерешительность",
+        "📌 Лимитный вход @ 278.306 (откат к EMA20)"
+      ],
+      "news": null,
+      "created_at": "2026-03-18 10:15:22",
       "status": "ACTIVE"
     }
   ],
