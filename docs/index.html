@@ -536,12 +536,22 @@
 
     // --- BTC fallback fetch --------------------------------------------------
     function fetchBTC() {
-      fetch('/api/klines?symbol=BTCUSDT&interval=1m&limit=1')
+      // Prefer ticker proxy (more stable than klines, has Bybit fallback)
+      fetch('/api/ticker?symbol=BTCUSDT')
         .then(function(r){ return r.ok ? r.json() : null; })
         .then(function(d){
-          if (d && d[0]) {
-            document.getElementById('btcPrice').textContent = '$'+fmt(parseFloat(d[0][4]));
+          if (d && d.price) {
+            document.getElementById('btcPrice').textContent = '$'+fmt(parseFloat(d.price));
+            return;
           }
+          // Last resort: klines
+          return fetch('/api/klines?symbol=BTCUSDT&interval=1m&limit=1')
+            .then(function(r){ return r.ok ? r.json() : null; })
+            .then(function(k){
+              if (k && k[0]) {
+                document.getElementById('btcPrice').textContent = '$'+fmt(parseFloat(k[0][4]));
+              }
+            });
         })["catch"](function(){});
     }
 
