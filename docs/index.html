@@ -137,6 +137,13 @@
     .eicoi{height:2rem;width:2rem;border-radius:.75rem;border:2px dashed rgba(221,197,162,.3)}
     .etxt{font-size:.875rem;color:rgba(221,197,162,.5)}
     @media(max-width:1024px){.cg{grid-template-columns:repeat(2,1fr)}}
+    .ppnl{transition:color .6s ease;}
+    .prb-wrap{margin:.75rem 0 .5rem;display:flex;flex-direction:column;gap:.35rem}
+    .prb-labels{display:flex;justify-content:space-between;font-size:.6rem;font-family:'JetBrains Mono',monospace;color:rgba(221,197,162,.35)}
+    .prb-track{height:.4rem;border-radius:9999px;background:rgba(82,54,52,.5);position:relative;overflow:visible}
+    .prb-fill{height:100%;border-radius:9999px;transition:width .8s cubic-bezier(.22,1,.36,1),background .6s ease;position:relative}
+    .prb-marker{position:absolute;top:50%;transform:translate(-50%,-50%);width:10px;height:10px;border-radius:50%;border:2px solid var(--cocoa);transition:left .8s cubic-bezier(.22,1,.36,1),background .6s ease;z-index:2}
+    .prb-tp1{position:absolute;top:-3px;height:calc(100% + 6px);width:2px;background:rgba(74,222,128,.4);border-radius:1px}
     @media(max-width:768px){.cg{grid-template-columns:1fr}.sg{grid-template-columns:repeat(2,1fr)}.fgc{flex-direction:column}.ft{margin:1rem auto 0}.ui{margin:0}}
     @media(max-width:480px){.sg{grid-template-columns:1fr}.pp{grid-template-columns:repeat(2,1fr)}}
   </style>
@@ -233,7 +240,7 @@
       const cc=pr?'profit':isN?'neu':'loss',pc=pr?'pos':isN?'ne':'neg';
       const dur=t.status!=='PENDING'?durStr(t.taken_at):'';
       const curP=livePnl!=null?fmt(livePnl):'—';
-      return`<div class="posc glass ch ${cc} ${bp} aup ${d}" id="pos-${t.id||t.symbol}"><div class="sh"><div class="symw"><span class="sym">${t.symbol}</span><span class="live-cur" style="font-size:.7rem;color:rgba(221,197,162,.4);font-family:monospace;margin-left:.25rem">${curP}</span></div><span class="db ${t.direction==='LONG'?'long':'short'}">${t.direction==='LONG'?'🟢 ЛОНГ':'🔴 ШОРТ'}</span></div><div class="ppnl ${pc} ${pr?'fl':''}">${pnl>=0?'+':''}${pnl.toFixed(2)}%</div><div class="pp"><div class="pi"><span class="pil">Вход</span><span class="piv">${fmt(t.entry)}</span></div><div class="pi"><span class="pil">ТП1</span><span class="piv" style="color:#4ADE80">${fmt(t.tp1)}</span></div><div class="pi"><span class="pil">ТП2</span><span class="piv" style="color:#4ADE80">${fmt(t.tp2)}</span></div><div class="pi"><span class="pil">СЛ</span><span class="piv" style="color:#F87171">${fmt(t.sl)}</span></div></div><div style="display:flex;align-items:center;justify-content:space-between;gap:.5rem"><span class="pstat ${t.status==='TP1_HIT'?'tp1':t.status==='PENDING'?'pend':'open'}">${stLbl(t.status)}</span><span class="live-dur" style="font-size:.75rem;color:rgba(221,197,162,.5)">${dur?'⏱ '+dur:''}</span><span style="font-size:.75rem;color:rgba(221,197,162,.35)">${fmtT(t.taken_at)}</span></div></div>`;
+      return`<div class="posc glass ch ${cc} ${bp} aup ${d}" id="pos-${t.id||t.symbol}"><div class="sh"><div class="symw"><span class="sym">${t.symbol}</span><span class="live-cur" style="font-size:.7rem;color:rgba(221,197,162,.4);font-family:monospace;margin-left:.25rem">${curP}</span></div><span class="db ${t.direction==='LONG'?'long':'short'}">${t.direction==='LONG'?'🟢 ЛОНГ':'🔴 ШОРТ'}</span></div><div class="ppnl ${pc} ${pr?'fl':''}">${pnl>=0?'+':''}${pnl.toFixed(2)}%</div><div class="pp"><div class="pi"><span class="pil">Вход</span><span class="piv">${fmt(t.entry)}</span></div><div class="pi"><span class="pil">ТП1</span><span class="piv" style="color:#4ADE80">${fmt(t.tp1)}</span></div><div class="pi"><span class="pil">ТП2</span><span class="piv" style="color:#4ADE80">${fmt(t.tp2)}</span></div><div class="pi"><span class="pil">СЛ</span><span class="piv" style="color:#F87171">${fmt(t.sl)}</span></div></div><div class="prb-wrap">${buildProgressBar(t,pnl,liveP!=null?liveP:t.entry)}</div><div style="display:flex;align-items:center;justify-content:space-between;gap:.5rem"><span class="pstat ${t.status==='TP1_HIT'?'tp1':t.status==='PENDING'?'pend':'open'}">${stLbl(t.status)}</span><span class="live-dur" style="font-size:.75rem;color:rgba(221,197,162,.5)">${dur?'⏱ '+dur:''}</span><span style="font-size:.75rem;color:rgba(221,197,162,.35)">${fmtT(t.taken_at)}</span></div></div>`;
     }
 
     function rHist(h){if(!h.length)return`<div class="hw glass"><div class="empty" style="border:none"><div class="eico"><div class="eicoi"></div></div><div class="etxt">Нет истории сделок</div></div></div>`;
@@ -316,6 +323,64 @@
       const dot=document.getElementById('statusDot'),txt=document.getElementById('statusText');
       if(c){dot.className='sd on glow';txt.className='st on';txt.textContent='LIVE';}
       else{dot.className='sd off';txt.className='st off';txt.textContent='Переподключение...';}
+    }
+
+    // ── Smooth counter animation ─────────────────────────────────────────────
+    const _pnlState = {}; // {id: {current, target, raf}}
+
+    function animatePnl(id, from, to) {
+      if (_pnlState[id] && _pnlState[id].raf) cancelAnimationFrame(_pnlState[id].raf);
+      const start = performance.now();
+      const duration = 800;
+      function step(now) {
+        const el = document.querySelector('#pos-'+id+' .ppnl');
+        if (!el) return;
+        const t = Math.min((now - start) / duration, 1);
+        const ease = 1 - Math.pow(1 - t, 3); // ease-out cubic
+        const val = from + (to - from) * ease;
+        el.textContent = (val >= 0 ? '+' : '') + val.toFixed(2) + '%';
+        if (t < 1) _pnlState[id] = {raf: requestAnimationFrame(step)};
+      }
+      _pnlState[id] = {raf: requestAnimationFrame(step)};
+    }
+
+    // ── Progress bar builder ──────────────────────────────────────────────────
+    function buildProgressBar(t, pnl, curPrice) {
+      const sl = t.sl, entry = t.entry, tp1 = t.tp1, tp2 = t.tp2;
+      if (!sl || !entry || !tp2) return '';
+      const isLong = t.direction === 'LONG';
+
+      // Range: SL → TP2
+      const rangeMin = isLong ? sl    : tp2;
+      const rangeMax = isLong ? tp2   : sl;
+      const range    = rangeMax - rangeMin;
+      if (range <= 0) return '';
+
+      // Current position in range (0-100%)
+      const pos = Math.max(0, Math.min(100, (curPrice - rangeMin) / range * 100));
+
+      // TP1 position in range
+      const tp1pos = Math.max(0, Math.min(100, (tp1 - rangeMin) / range * 100));
+
+      // Color based on P&L
+      const barColor = pnl > 1   ? '#4ADE80'
+                     : pnl > 0   ? '#86EFAC'
+                     : pnl > -1  ? '#FCD34D'
+                     : '#F87171';
+
+      const markerColor = pnl >= 0 ? '#4ADE80' : '#F87171';
+
+      return `
+        <div class="prb-labels">
+          <span style="color:#F87171">СЛ ${fmt(sl)}</span>
+          <span style="color:rgba(221,197,162,.5)">Вход ${fmt(entry)}</span>
+          <span style="color:#4ADE80">ТП2 ${fmt(tp2)}</span>
+        </div>
+        <div class="prb-track">
+          <div class="prb-fill" style="width:${pos}%;background:linear-gradient(90deg,rgba(248,113,113,.3),${barColor})"></div>
+          <div class="prb-tp1" style="left:${tp1pos}%" title="ТП1 ${fmt(tp1)}"></div>
+          <div class="prb-marker" style="left:${pos}%;background:${markerColor};box-shadow:0 0 8px ${markerColor}80"></div>
+        </div>`;
     }
 
     // Live prices cache for open positions
