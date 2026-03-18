@@ -216,7 +216,7 @@
 
   <script>
     function fmt(p){if(!p&&p!==0)return'—';p=parseFloat(p);if(p>=1000)return p.toLocaleString('ru-RU',{minimumFractionDigits:2,maximumFractionDigits:2});if(p>=1)return p.toFixed(2);if(p>=0.01)return p.toFixed(4);if(p>=0.0001)return p.toFixed(6);return p.toFixed(8);}
-    function fmtT(iso){if(!iso)return'—';try{const d=new Date(iso.replace(' ','T')),now=new Date(),df=now-d,m=Math.floor(df/60000),h=Math.floor(df/3600000);if(m<1)return'только что';if(m<60)return m+'м назад';if(h<24)return h+'ч назад';return d.toLocaleDateString('ru-RU',{month:'short',day:'numeric',hour:'2-digit',minute:'2-digit'});}catch{return iso.slice(0,16);}}
+    function fmtT(iso){if(!iso)return'—';try{const d=new Date(iso.replace(' ','T')),now=new Date(),df=now-d,m=Math.floor(df/60000),h=Math.floor(df/3600000),rm=m%60;if(m<1)return'только что';if(m<60)return m+'м назад';if(h<24)return h+'ч '+(rm>0?rm+'м ':'')+'назад';return d.toLocaleDateString('ru-RU',{month:'short',day:'numeric',hour:'2-digit',minute:'2-digit'});}catch{return iso.slice(0,16);}}
     function durStr(iso){if(!iso)return'';try{const d=new Date(iso.replace(' ','T')),now=new Date(),df=now-d,m=Math.floor(df/60000),h=Math.floor(m/60),rm=m%60;if(m<1)return'<1м';if(h<1)return m+'м';return h+'ч '+rm+'м';}catch{return'';}}
     function fgM(v){if(v<=25)return{c:'#F87171',l:'Крайний страх'};if(v<=45)return{c:'#B6452C',l:'Страх'};if(v<=55)return{c:'#DDC5A2',l:'Нейтрально'};if(v<=75)return{c:'#4ADE80',l:'Жадность'};return{c:'#22C55E',l:'Крайняя жадность'};}
     function mlC(p){if(!p)return'med';return p<0.5?'low':p<0.7?'med':'hi';}
