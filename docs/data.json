@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T04:28:46.250808+00:00",
+  "updated_at": "2026-03-18T04:30:08.521805+00:00",
   "publish_status": {
-    "last_ok": "2026-03-18T04:28:06Z",
+    "last_ok": "2026-03-18T04:28:51Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -18,7 +18,7 @@
   },
   "trade_stats": {
     "open": 7,
-    "pending": 2,
+    "pending": 1,
     "wins": 129,
     "losses": 99,
     "total_pnl": 103.52,
@@ -609,27 +609,6 @@
       ]
     },
     {
-      "id": 302,
-      "symbol": "HYPEUSDT",
-      "direction": "LONG",
-      "entry": 41.60444765,
-      "tp1": 42.436537,
-      "tp2": 43.268626,
-      "sl": 40.772359,
-      "strength": 50,
-      "taken_at": "2026-03-18T03:29:46.240378",
-      "status": "PENDING",
-      "reasons": [
-        "MACD бычий (hist=0.03432)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: сильное давление покупки (+0.39)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +1.1% + цена ↑",
-        "Bullish Engulfing (1h) 🕯️",
-        "📌 Лимитный вход @ 41.6044 (откат к EMA20)"
-      ]
-    },
-    {
       "id": 303,
       "symbol": "HUMAUSDT",
       "direction": "LONG",
@@ -652,6 +631,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "HYPEUSDT",
+      "direction": "LONG",
+      "entry": 41.60444765,
+      "tp1": 42.436537,
+      "tp2": 43.268626,
+      "sl": 40.772359,
+      "strength": 50,
+      "status": "LIMIT_TIMEOUT",
+      "pnl_pct": 0,
+      "close_price": null,
+      "taken_at": "2026-03-18T03:29:46.240378",
+      "closed_at": "2026-03-18 04:29:53"
+    },
     {
       "symbol": "HUMAUSDT",
       "direction": "LONG",
@@ -679,20 +672,6 @@
       "close_price": 1.8435000000000001,
       "taken_at": "2026-03-17T22:37:18.226751",
       "closed_at": "2026-03-18 03:33:40"
-    },
-    {
-      "symbol": "HYPEUSDT",
-      "direction": "LONG",
-      "entry": 41.60444765,
-      "tp1": 42.436537,
-      "tp2": 43.268626,
-      "sl": 40.772359,
-      "strength": 50,
-      "status": "PENDING",
-      "pnl_pct": 0,
-      "close_price": null,
-      "taken_at": "2026-03-18T03:29:46.240378",
-      "closed_at": null
     },
     {
       "symbol": "OPNUSDT",
