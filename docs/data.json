@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T17:24:22.208907+00:00",
+  "updated_at": "2026-03-18T17:25:27.711660+00:00",
   "publish_status": {
-    "last_ok": "2026-03-18T17:23:43Z",
+    "last_ok": "2026-03-18T17:24:30Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 550,
+    "total": 551,
     "wins": 161,
     "losses": 67,
-    "active": 58,
+    "active": 59,
     "winrate": 70.6
   },
   "trade_stats": {
-    "open": 58,
+    "open": 59,
     "pending": 1,
     "wins": 155,
     "losses": 149,
@@ -1322,6 +1322,27 @@
       ],
       "news": null,
       "created_at": "2026-03-18 17:18:24",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 589,
+      "symbol": "XMRUSDT",
+      "direction": "SHORT",
+      "entry": 351.15,
+      "tp1": 344.127,
+      "tp2": 337.104,
+      "sl": 358.173,
+      "strength": 37,
+      "reasons": [
+        "MACD медвежий (hist=-0.19403)",
+        "Цена < EMA20 < EMA50",
+        "Стакан: давление продажи (-0.23)",
+        "МТФ: 5m, 15m, 1h согласны",
+        "CVD падает (-8.3%) — продажи усиливаются 📉",
+        "BTC контекст: -3.3% за 12ч 📉"
+      ],
+      "news": null,
+      "created_at": "2026-03-18 17:25:27",
       "status": "ACTIVE"
     }
   ],
@@ -3185,6 +3206,30 @@
         "МТФ: 15m, 4h согласны",
         "OI растёт +3.9%",
         "BTC контекст: -3.5% за 12ч 📉"
+      ]
+    },
+    {
+      "id": 443,
+      "symbol": "XMRUSDT",
+      "direction": "SHORT",
+      "entry": 351.15,
+      "tp1": 344.127,
+      "tp2": 337.104,
+      "sl": 358.173,
+      "entry_orig": 351.15,
+      "tp1_orig": 344.127,
+      "tp2_orig": 337.104,
+      "sl_orig": 358.173,
+      "strength": 37,
+      "taken_at": "2026-03-18T17:25:27.449794",
+      "status": "OPEN",
+      "reasons": [
+        "MACD медвежий (hist=-0.19403)",
+        "Цена < EMA20 < EMA50",
+        "Стакан: давление продажи (-0.23)",
+        "МТФ: 5m, 15m, 1h согласны",
+        "CVD падает (-8.3%) — продажи усиливаются 📉",
+        "BTC контекст: -3.3% за 12ч 📉"
       ]
     },
     {
