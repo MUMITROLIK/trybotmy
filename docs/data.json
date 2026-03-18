@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T02:44:58.694237+00:00",
+  "updated_at": "2026-03-18T02:45:36.586241+00:00",
   "publish_status": {
-    "last_ok": "2026-03-18T02:43:56Z",
+    "last_ok": "2026-03-18T02:45:03Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 79.7
   },
   "trade_stats": {
-    "open": 10,
+    "open": 9,
     "pending": 1,
-    "wins": 127,
+    "wins": 128,
     "losses": 98,
-    "total_pnl": 101.53,
-    "winrate": 56.4
+    "total_pnl": 103.54,
+    "winrate": 56.6
   },
   "fear_greed": {
     "value": 26,
@@ -543,26 +543,6 @@
       ]
     },
     {
-      "id": 274,
-      "symbol": "PUMPUSDT",
-      "direction": "LONG",
-      "entry": 0.00209642,
-      "tp1": 0.002138,
-      "tp2": 0.00218,
-      "sl": 0.002054,
-      "strength": 44,
-      "taken_at": "2026-03-17 22:32:48",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00000)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: давление покупки (+0.24)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "CVD растёт (+8.5%) — покупки усиливаются 📈",
-        "📌 Лимитный вход @ 0.00209642 (откат к EMA20)"
-      ]
-    },
-    {
       "id": 279,
       "symbol": "VIRTUALUSDT",
       "direction": "LONG",
@@ -714,6 +694,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "PUMPUSDT",
+      "direction": "LONG",
+      "entry": 0.00209642,
+      "tp1": 0.002138,
+      "tp2": 0.00218,
+      "sl": 0.0021384999999999998,
+      "strength": 44,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 2.01,
+      "close_price": 0.0021384999999999998,
+      "taken_at": "2026-03-17 22:32:48",
+      "closed_at": "2026-03-18 02:45:36"
+    },
     {
       "symbol": "LITUSDT",
       "direction": "LONG",
@@ -3499,20 +3493,6 @@
       "close_price": 0.51045,
       "taken_at": "2026-03-17 13:20:50",
       "closed_at": "2026-03-17 15:04:14"
-    },
-    {
-      "symbol": "VANRYUSDT",
-      "direction": "SHORT",
-      "entry": 0.00587,
-      "tp1": 0.00561407,
-      "tp2": 0.00535872,
-      "sl": 0.00607428,
-      "strength": 31,
-      "status": "SL",
-      "pnl_pct": -3.53,
-      "close_price": 0.006077,
-      "taken_at": "2026-03-17 12:34:27",
-      "closed_at": "2026-03-17 14:57:39"
     }
   ]
 }
