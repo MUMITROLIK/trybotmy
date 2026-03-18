@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T13:15:13.853521+00:00",
+  "updated_at": "2026-03-18T13:16:02.932680+00:00",
   "publish_status": {
-    "last_ok": "2026-03-18T13:13:57Z",
+    "last_ok": "2026-03-18T13:15:18Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -12,17 +12,17 @@
   "stats": {
     "total": 478,
     "wins": 151,
-    "losses": 60,
-    "active": 4,
-    "winrate": 71.6
+    "losses": 61,
+    "active": 3,
+    "winrate": 71.2
   },
   "trade_stats": {
-    "open": 5,
+    "open": 4,
     "pending": 0,
     "wins": 146,
-    "losses": 140,
-    "total_pnl": 45.85,
-    "winrate": 51.0
+    "losses": 141,
+    "total_pnl": 42.63,
+    "winrate": 50.9
   },
   "fear_greed": {
     "value": 26,
@@ -55,29 +55,6 @@
       ],
       "news": null,
       "created_at": "2026-03-18 10:10:35",
-      "status": "ACTIVE"
-    },
-    {
-      "id": 486,
-      "symbol": "VANRYUSDT",
-      "direction": "LONG",
-      "entry": 0.006555,
-      "tp1": 0.006792,
-      "tp2": 0.007029,
-      "sl": 0.006365,
-      "strength": 43,
-      "reasons": [
-        "RSI=37 (перепроданность)",
-        "MACD бычий (hist=0.00001)",
-        "BB ниже середины",
-        "Стакан: сильное давление покупки (+0.26)",
-        "МТФ: только 1 таймфрейм согласен",
-        "OI растёт +1.7% + цена ↑",
-        "CVD положительный (-1.8%)",
-        "Doji (1h) — нерешительность"
-      ],
-      "news": null,
-      "created_at": "2026-03-18 10:18:35",
       "status": "ACTIVE"
     },
     {
@@ -543,28 +520,6 @@
       ]
     },
     {
-      "id": 340,
-      "symbol": "VANRYUSDT",
-      "direction": "LONG",
-      "entry": 0.006555,
-      "tp1": 0.006792,
-      "tp2": 0.007029,
-      "sl": 0.006365,
-      "strength": 43,
-      "taken_at": "2026-03-18T10:18:35.621993",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=37 (перепроданность)",
-        "MACD бычий (hist=0.00001)",
-        "BB ниже середины",
-        "Стакан: сильное давление покупки (+0.26)",
-        "МТФ: только 1 таймфрейм согласен",
-        "OI растёт +1.7% + цена ↑",
-        "CVD положительный (-1.8%)",
-        "Doji (1h) — нерешительность"
-      ]
-    },
-    {
       "id": 364,
       "symbol": "RESOLVUSDT",
       "direction": "SHORT",
@@ -628,6 +583,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "VANRYUSDT",
+      "direction": "LONG",
+      "entry": 0.006555,
+      "tp1": 0.006792,
+      "tp2": 0.007029,
+      "sl": 0.006365,
+      "strength": 43,
+      "status": "SL",
+      "pnl_pct": -3.22,
+      "close_price": 0.006344,
+      "taken_at": "2026-03-18T10:18:35.621993",
+      "closed_at": "2026-03-18 13:16:02"
+    },
     {
       "symbol": "CFGUSDT",
       "direction": "SHORT",
@@ -3413,20 +3382,6 @@
       "close_price": 0.009441999999999999,
       "taken_at": null,
       "closed_at": "2026-03-17 20:01:37"
-    },
-    {
-      "symbol": "SUIUSDT",
-      "direction": "LONG",
-      "entry": 1.0239,
-      "tp1": 1.044378,
-      "tp2": 1.064856,
-      "sl": 1.003422,
-      "strength": 28,
-      "status": "TIMEOUT",
-      "pnl_pct": 0.5,
-      "close_price": 1.0290499999999998,
-      "taken_at": "2026-03-17 12:00:11",
-      "closed_at": "2026-03-17 20:00:16"
     }
   ]
 }
