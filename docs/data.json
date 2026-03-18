@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T00:14:51.430246+00:00",
+  "updated_at": "2026-03-18T00:15:59.691925+00:00",
   "publish_status": {
-    "last_ok": "2026-03-18T00:13:57Z",
+    "last_ok": "2026-03-18T00:14:56Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -18,7 +18,7 @@
   },
   "trade_stats": {
     "open": 15,
-    "pending": 4,
+    "pending": 3,
     "wins": 122,
     "losses": 94,
     "total_pnl": 84.12,
@@ -1120,27 +1120,6 @@
       ]
     },
     {
-      "id": 291,
-      "symbol": "VANRYUSDT",
-      "direction": "LONG",
-      "entry": 0.00698903,
-      "tp1": 0.007297,
-      "tp2": 0.007604,
-      "sl": 0.006743,
-      "strength": 40,
-      "taken_at": "2026-03-17T23:15:25.394535",
-      "status": "PENDING",
-      "reasons": [
-        "MACD бычий (hist=0.00000)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: давление покупки (+0.18)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "CVD положительный (+0.3%)",
-        "⚠️ Funding через 45м",
-        "📌 Лимитный вход @ 0.00698903 (откат к EMA20)"
-      ]
-    },
-    {
       "id": 292,
       "symbol": "HUMAUSDT",
       "direction": "LONG",
@@ -1204,6 +1183,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "VANRYUSDT",
+      "direction": "LONG",
+      "entry": 0.00698903,
+      "tp1": 0.007297,
+      "tp2": 0.007604,
+      "sl": 0.006743,
+      "strength": 40,
+      "status": "LIMIT_TIMEOUT",
+      "pnl_pct": 0,
+      "close_price": null,
+      "taken_at": "2026-03-17T23:15:25.394535",
+      "closed_at": "2026-03-18 00:15:32"
+    },
     {
       "symbol": "FETUSDT",
       "direction": "LONG",
@@ -1399,20 +1392,6 @@
       "close_price": null,
       "taken_at": "2026-03-17T22:19:39.553549",
       "closed_at": "2026-03-17 23:19:40"
-    },
-    {
-      "symbol": "VANRYUSDT",
-      "direction": "LONG",
-      "entry": 0.00698903,
-      "tp1": 0.007297,
-      "tp2": 0.007604,
-      "sl": 0.006743,
-      "strength": 40,
-      "status": "PENDING",
-      "pnl_pct": 0,
-      "close_price": null,
-      "taken_at": "2026-03-17T23:15:25.394535",
-      "closed_at": null
     },
     {
       "symbol": "FETUSDT",
