@@ -398,17 +398,25 @@
       const sl = t.sl, entry = t.entry, tp1 = t.tp1, tp2 = t.tp2;
       if (!sl || !entry || !tp2) return '';
       const isLong = t.direction === 'LONG';
-      // Геометрия: всегда слева меньшая цена, справа — большая
-      const rangeMin = Math.min(sl, tp2);
-      const rangeMax = Math.max(sl, tp2);
-      const range    = rangeMax - rangeMin;
-      if (range <= 0) return '';
-
-      // Current position in range (0-100%)
-      const pos = Math.max(0, Math.min(100, (curPrice - rangeMin) / range * 100));
-
-      // TP1 position in range
-      const tp1pos = Math.max(0, Math.min(100, (tp1 - rangeMin) / range * 100));
+      // Геометрия ОСИ:
+      //   Визуально всегда:   SL  ---- entry ---- TP2
+      //   LONG:  SL < entry < TP2  (растущий диапазон)
+      //   SHORT: SL > entry > TP2  (убывающий диапазон, считаем от SL вниз)
+      let range, pos, tp1pos, entryPos;
+      if (isLong) {
+        range = tp2 - sl;
+        if (range <= 0) return '';
+        pos      = Math.max(0, Math.min(100, (curPrice - sl) / range * 100));
+        tp1pos   = Math.max(0, Math.min(100, (tp1     - sl) / range * 100));
+        entryPos = Math.max(0, Math.min(100, (entry   - sl) / range * 100));
+      } else {
+        range = sl - tp2;
+        if (range <= 0) return '';
+        // Для шорта считаем от SL влево к TP2
+        pos      = Math.max(0, Math.min(100, (sl - curPrice) / range * 100));
+        tp1pos   = Math.max(0, Math.min(100, (sl - tp1)     / range * 100));
+        entryPos = Math.max(0, Math.min(100, (sl - entry)   / range * 100));
+      }
 
       // Color based on P&L
       const barColor = pnl > 1   ? '#4ADE80'
@@ -418,22 +426,11 @@
 
       const markerColor = pnl >= 0 ? '#4ADE80' : '#F87171';
 
-      // Entry position in range
-      const entryPos = Math.max(0, Math.min(100, (entry - rangeMin) / range * 100));
-
       return `
         <div class="prb-labels">
-          ${
-            isLong
-              ? `<span style="color:#F87171">СЛ ${fmt(sl)}</span>`
-              : `<span style="color:#4ADE80">ТП2 ${fmt(tp2)}</span>`
-          }
+          <span style="color:#F87171">СЛ ${fmt(sl)}</span>
           <span style="color:rgba(221,197,162,.5)">Вход ${fmt(entry)}</span>
-          ${
-            isLong
-              ? `<span style="color:#4ADE80">ТП2 ${fmt(tp2)}</span>`
-              : `<span style="color:#F87171">СЛ ${fmt(sl)}</span>`
-          }
+          <span style="color:#4ADE80">ТП2 ${fmt(tp2)}</span>
         </div>
         <div class="prb-track">
           <div class="prb-fill" style="width:${pos}%;background:linear-gradient(90deg,rgba(248,113,113,.3),${barColor})"></div>
