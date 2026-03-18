@@ -398,10 +398,9 @@
       const sl = t.sl, entry = t.entry, tp1 = t.tp1, tp2 = t.tp2;
       if (!sl || !entry || !tp2) return '';
       const isLong = t.direction === 'LONG';
-
-      // Range: SL → TP2
-      const rangeMin = isLong ? sl    : tp2;
-      const rangeMax = isLong ? tp2   : sl;
+      // Геометрия: всегда слева меньшая цена, справа — большая
+      const rangeMin = Math.min(sl, tp2);
+      const rangeMax = Math.max(sl, tp2);
       const range    = rangeMax - rangeMin;
       if (range <= 0) return '';
 
@@ -424,9 +423,17 @@
 
       return `
         <div class="prb-labels">
-          <span style="color:#F87171">СЛ ${fmt(sl)}</span>
+          ${
+            isLong
+              ? `<span style="color:#F87171">СЛ ${fmt(sl)}</span>`
+              : `<span style="color:#4ADE80">ТП2 ${fmt(tp2)}</span>`
+          }
           <span style="color:rgba(221,197,162,.5)">Вход ${fmt(entry)}</span>
-          <span style="color:#4ADE80">ТП2 ${fmt(tp2)}</span>
+          ${
+            isLong
+              ? `<span style="color:#4ADE80">ТП2 ${fmt(tp2)}</span>`
+              : `<span style="color:#F87171">СЛ ${fmt(sl)}</span>`
+          }
         </div>
         <div class="prb-track">
           <div class="prb-fill" style="width:${pos}%;background:linear-gradient(90deg,rgba(248,113,113,.3),${barColor})"></div>
@@ -492,7 +499,9 @@
         const sl = t.sl, entry = t.entry, tp1 = t.tp1, tp2 = t.tp2;
         if (sl && entry && tp2) {
           const isLong = t.direction === 'LONG';
-          const rangeMin = isLong ? sl : tp2, rangeMax = isLong ? tp2 : sl;
+          // Геометрия: всегда слева меньшая цена, справа — большая
+          const rangeMin = Math.min(sl, tp2);
+          const rangeMax = Math.max(sl, tp2);
           const range = rangeMax - rangeMin;
           if (range > 0) {
             // Current price position (moving marker)
