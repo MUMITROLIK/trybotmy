@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T19:59:36.872596+00:00",
+  "updated_at": "2026-03-18T20:00:42.148239+00:00",
   "publish_status": {
-    "last_ok": "2026-03-18T19:58:17Z",
+    "last_ok": "2026-03-18T19:59:42Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,8 +17,8 @@
     "winrate": 65.5
   },
   "trade_stats": {
-    "open": 1,
-    "pending": 2,
+    "open": 2,
+    "pending": 1,
     "wins": 176,
     "losses": 201,
     "total_pnl": 11.01,
@@ -1271,17 +1271,17 @@
       "id": 459,
       "symbol": "VANRYUSDT",
       "direction": "LONG",
-      "entry": 0.00639592,
-      "tp1": 0.006554,
-      "tp2": 0.006713,
-      "sl": 0.006268,
+      "entry": 0.0064364999999999995,
+      "tp1": 0.00659558,
+      "tp2": 0.00675559,
+      "sl": 0.00630777,
       "entry_orig": 0.00639592,
       "tp1_orig": 0.006554,
       "tp2_orig": 0.006713,
       "sl_orig": 0.006268,
       "strength": 45,
       "taken_at": "2026-03-18T19:54:55.255112",
-      "status": "PENDING",
+      "status": "OPEN",
       "reasons": [
         "MACD бычий (hist=0.00002)",
         "Цена выше EMA20",
