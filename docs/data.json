@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T05:49:23.536662+00:00",
+  "updated_at": "2026-03-18T05:50:37.725207+00:00",
   "publish_status": {
-    "last_ok": "2026-03-18T05:48:35Z",
+    "last_ok": "2026-03-18T05:49:29Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,8 +17,8 @@
     "winrate": 80.0
   },
   "trade_stats": {
-    "open": 5,
-    "pending": 1,
+    "open": 6,
+    "pending": 0,
     "wins": 131,
     "losses": 100,
     "total_pnl": 103.1,
@@ -597,8 +597,8 @@
       "tp2": 0.002207,
       "sl": 0.00208,
       "strength": 50,
-      "taken_at": "2026-03-18T05:27:58.183435",
-      "status": "PENDING",
+      "taken_at": "2026-03-18 05:50:07",
+      "status": "OPEN",
       "reasons": [
         "MACD бычий (hist=0.00000)",
         "Цена > EMA20 > EMA50",
