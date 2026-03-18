@@ -437,6 +437,7 @@
     var activeTab = 'signals';
     var livePrices = {};
     var openTradesCache = [];
+    var scaleCache = {};
 
     // --- UI update -----------------------------------------------------------
     function updateUI(d) {
@@ -561,21 +562,25 @@
     function buildProgressBar(t, pnl, curPrice) {
       var sl = t.sl, entry = t.entry, tp1 = t.tp1, tp2 = t.tp2;
       if (!sl || !entry || !tp2) return '';
-      var isLong = t.direction === 'LONG';
-      var range, pos, tp1pos, entryPos;
-      if (isLong) {
-        range = tp2 - sl;
-        if (range <= 0) return '';
-        pos      = Math.max(0, Math.min(100, (curPrice - sl) / range * 100));
-        tp1pos   = Math.max(0, Math.min(100, (tp1     - sl) / range * 100));
-        entryPos = Math.max(0, Math.min(100, (entry   - sl) / range * 100));
-      } else {
-        range = sl - tp2;
-        if (range <= 0) return '';
-        pos      = Math.max(0, Math.min(100, (sl - curPrice) / range * 100));
-        tp1pos   = Math.max(0, Math.min(100, (sl - tp1)     / range * 100));
-        entryPos = Math.max(0, Math.min(100, (sl - entry)   / range * 100));
+      var key = t.id || t.symbol;
+      var cached = scaleCache[key];
+      if (!cached) {
+        var minP = Math.min(sl, entry, tp2);
+        var maxP = Math.max(sl, entry, tp2);
+        if (maxP - minP <= 0) return '';
+        cached = { min: minP, max: maxP };
+        scaleCache[key] = cached;
       }
+      var minV = cached.min;
+      var maxV = cached.max;
+      var range = maxV - minV;
+      if (range <= 0) return '';
+      function norm(v) {
+        return Math.max(0, Math.min(100, (v - minV) / range * 100));
+      }
+      var pos      = norm(curPrice);
+      var tp1pos   = norm(tp1);
+      var entryPos = norm(entry);
       var barColor = pnl > 1 ? '#4ADE80' : (pnl > 0 ? '#86EFAC' : (pnl > -1 ? '#FCD34D' : '#F87171'));
       var markerColor = pnl >= 0 ? '#4ADE80' : '#F87171';
       var html = '';
@@ -646,19 +651,18 @@
 
         var sl = t.sl, entry = t.entry, tp1 = t.tp1, tp2 = t.tp2;
         if (!sl || !entry || !tp2) continue;
-        var isLong = t.direction === 'LONG';
-        var range, curPos, tp1pos;
-        if (isLong) {
-          range = tp2 - sl;
-          if (range <= 0) continue;
-          curPos  = Math.max(0, Math.min(100, (liveP - sl)  / range * 100));
-          tp1pos  = Math.max(0, Math.min(100, (tp1   - sl)  / range * 100));
-        } else {
-          range = sl - tp2;
-          if (range <= 0) continue;
-          curPos  = Math.max(0, Math.min(100, (sl - liveP)  / range * 100));
-          tp1pos  = Math.max(0, Math.min(100, (sl - tp1)    / range * 100));
+        var key = t.id || t.symbol;
+        var cached = scaleCache[key];
+        if (!cached) continue;
+        var minV = cached.min;
+        var maxV = cached.max;
+        var range = maxV - minV;
+        if (range <= 0) continue;
+        function norm(v) {
+          return Math.max(0, Math.min(100, (v - minV) / range * 100));
         }
+        var curPos  = norm(liveP);
+        var tp1pos  = norm(tp1);
         var barColor = pnl > 1 ? '#4ADE80' : (pnl > 0 ? '#86EFAC' : (pnl > -1 ? '#FCD34D' : '#F87171'));
         var mrkColor = pnl >= 0 ? '#4ADE80' : '#F87171';
 

@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T15:51:25.942287+00:00",
+  "updated_at": "2026-03-18T15:52:05.972993+00:00",
   "publish_status": {
-    "last_ok": "2026-03-18T15:50:25Z",
+    "last_ok": "2026-03-18T15:51:30Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 71.0
   },
   "trade_stats": {
-    "open": 6,
+    "open": 5,
     "pending": 0,
-    "wins": 146,
+    "wins": 147,
     "losses": 143,
-    "total_pnl": 38.15,
-    "winrate": 50.5
+    "total_pnl": 42.15,
+    "winrate": 50.7
   },
   "fear_greed": {
     "value": 26,
@@ -649,29 +649,23 @@
         "⚡ Рыночный вход (моментум: MTF+OI+CVD)",
         "🤖 ML: вероятность 53%"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 364,
       "symbol": "RESOLVUSDT",
       "direction": "SHORT",
       "entry": 0.06143,
       "tp1": 0.06020169,
       "tp2": 0.05897285,
-      "sl": 0.059295,
+      "sl": 0.05926485,
       "strength": 45,
+      "status": "TP2",
+      "pnl_pct": 4.0,
+      "close_price": 0.05897,
       "taken_at": "2026-03-18T11:43:25.481188",
-      "status": "TP1_HIT",
-      "reasons": [
-        "MACD медвежий (hist=-0.00017)",
-        "Цена < EMA20 < EMA50",
-        "Объём x4.2 🔥🔥🔥",
-        "Стакан: перевес ask (-0.08)",
-        "МТФ: 5m, 15m, 1h согласны",
-        "📌 Лимитный вход @ 0.0626374 (откат к EMA20)"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-18 15:51:49"
+    },
     {
       "symbol": "MONUSDT",
       "direction": "LONG",
@@ -3457,20 +3451,6 @@
       "close_price": 0.11605,
       "taken_at": "2026-03-17 12:05:56",
       "closed_at": "2026-03-17 20:06:00"
-    },
-    {
-      "symbol": "NEARUSDT",
-      "direction": "SHORT",
-      "entry": 1.444,
-      "tp1": 1.41512,
-      "tp2": 1.38624,
-      "sl": 1.47288,
-      "strength": 30,
-      "status": "TIMEOUT",
-      "pnl_pct": -0.52,
-      "close_price": 1.4515,
-      "taken_at": "2026-03-17 12:02:47",
-      "closed_at": "2026-03-17 20:03:01"
     }
   ]
 }
