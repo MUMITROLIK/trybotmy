@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T22:00:16.491319+00:00",
+  "updated_at": "2026-03-18T22:01:25.758375+00:00",
   "publish_status": {
-    "last_ok": "2026-03-18T21:59:23Z",
+    "last_ok": "2026-03-18T22:00:21Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -13,7 +13,7 @@
     "total": 572,
     "wins": 177,
     "losses": 92,
-    "active": 6,
+    "active": 5,
     "winrate": 65.8
   },
   "trade_stats": {
@@ -36,26 +36,6 @@
     "trained_at": "2026-03-18T18:46:42.539461+00:00"
   },
   "signals": [
-    {
-      "id": 595,
-      "symbol": "HANAUSDT",
-      "direction": "LONG",
-      "entry": 0.0477,
-      "tp1": 0.048654,
-      "tp2": 0.049608,
-      "sl": 0.046746,
-      "strength": 30,
-      "reasons": [
-        "RSI=41 (нейтральный↓)",
-        "BB нижняя зона (21%)",
-        "EMA20 > EMA50",
-        "МТФ: 15m, 1h, 4h согласны",
-        "OI растёт +1.2% + цена ↑"
-      ],
-      "news": null,
-      "created_at": "2026-03-18 18:01:00",
-      "status": "ACTIVE"
-    },
     {
       "id": 600,
       "symbol": "CRCLUSDT",
@@ -364,6 +344,24 @@
       ]
     },
     {
+      "symbol": "HANAUSDT",
+      "direction": "LONG",
+      "entry": 0.0477,
+      "tp1": 0.048654,
+      "tp2": 0.049608,
+      "sl": 0.046746,
+      "strength": 30,
+      "status": "EXPIRED",
+      "created_at": "2026-03-18 18:01:00",
+      "reasons": [
+        "RSI=41 (нейтральный↓)",
+        "BB нижняя зона (21%)",
+        "EMA20 > EMA50",
+        "МТФ: 15m, 1h, 4h согласны",
+        "OI растёт +1.2% + цена ↑"
+      ]
+    },
+    {
       "symbol": "TRIAUSDT",
       "direction": "LONG",
       "entry": 0.03321983,
@@ -531,25 +529,6 @@
         "OI растёт +3.0%",
         "CVD положительный (+0.2%)",
         "Doji (1h) — нерешительность",
-        "⚡ Рыночный вход (моментум: MTF+OI+CVD)"
-      ]
-    },
-    {
-      "symbol": "HYPEUSDT",
-      "direction": "LONG",
-      "entry": 42.739,
-      "tp1": 43.662464,
-      "tp2": 44.585929,
-      "sl": 41.88422,
-      "strength": 40,
-      "status": "TP1",
-      "created_at": "2026-03-18 17:10:41",
-      "reasons": [
-        "MACD бычий (hist=0.19383)",
-        "Цена > EMA20 > EMA50",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +5.6% + цена ↑",
-        "CVD положительный (+2.5%)",
         "⚡ Рыночный вход (моментум: MTF+OI+CVD)"
       ]
     }
