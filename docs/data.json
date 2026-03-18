@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T16:26:03.962756+00:00",
+  "updated_at": "2026-03-18T16:27:11.623165+00:00",
   "publish_status": {
-    "last_ok": "2026-03-18T16:25:23Z",
+    "last_ok": "2026-03-18T16:26:16Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 70.6
   },
   "trade_stats": {
-    "open": 50,
+    "open": 49,
     "pending": 0,
-    "wins": 147,
+    "wins": 148,
     "losses": 145,
-    "total_pnl": 36.78,
-    "winrate": 50.3
+    "total_pnl": 39.8,
+    "winrate": 50.5
   },
   "fear_greed": {
     "value": 26,
@@ -2709,32 +2709,6 @@
       ]
     },
     {
-      "id": 384,
-      "symbol": "OPNUSDT",
-      "direction": "SHORT",
-      "entry": 0.2667,
-      "tp1": 0.259264,
-      "tp2": 0.251829,
-      "sl": 0.25805,
-      "entry_orig": 0.2667,
-      "tp1_orig": 0.259264,
-      "tp2_orig": 0.251829,
-      "sl_orig": 0.272649,
-      "strength": 49,
-      "taken_at": "2026-03-18T16:02:17.526067",
-      "status": "TP1_HIT",
-      "reasons": [
-        "MACD медвежий (hist=-0.00107)",
-        "Цена < EMA20 < EMA50",
-        "Стакан: давление продажи (-0.23)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +6.7% + цена ↓",
-        "CVD падает (-6.9%) — продажи усиливаются 📉",
-        "BTC контекст: -3.2% за 12ч 📉",
-        "⚡ Рыночный вход (моментум: MTF+OI+CVD)"
-      ]
-    },
-    {
       "id": 399,
       "symbol": "FLOWUSDT",
       "direction": "SHORT",
@@ -2760,6 +2734,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "OPNUSDT",
+      "direction": "SHORT",
+      "entry": 0.2667,
+      "tp1": 0.259264,
+      "tp2": 0.251829,
+      "sl": 0.25805,
+      "strength": 49,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 3.02,
+      "close_price": 0.25865,
+      "taken_at": "2026-03-18T16:02:17.526067",
+      "closed_at": "2026-03-18 16:27:11"
+    },
     {
       "symbol": "BEATUSDT",
       "direction": "LONG",
@@ -5544,20 +5532,6 @@
       "pnl_pct": -0.07,
       "close_price": 0.0020725,
       "taken_at": "2026-03-17 12:06:03",
-      "closed_at": "2026-03-17 20:06:16"
-    },
-    {
-      "symbol": "UNIUSDT",
-      "direction": "LONG",
-      "entry": 4.008,
-      "tp1": 4.08816,
-      "tp2": 4.16832,
-      "sl": 3.92784,
-      "strength": 23,
-      "status": "TIMEOUT",
-      "pnl_pct": -0.86,
-      "close_price": 3.9735,
-      "taken_at": "2026-03-17 12:06:07",
       "closed_at": "2026-03-17 20:06:16"
     }
   ]
