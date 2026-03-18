@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T16:37:59.976234+00:00",
+  "updated_at": "2026-03-18T16:39:20.699900+00:00",
   "publish_status": {
-    "last_ok": "2026-03-18T16:37:34Z",
+    "last_ok": "2026-03-18T16:38:10Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 70.5
   },
   "trade_stats": {
-    "open": 56,
+    "open": 55,
     "pending": 0,
-    "wins": 149,
+    "wins": 150,
     "losses": 146,
-    "total_pnl": 40.71,
-    "winrate": 50.5
+    "total_pnl": 44.84,
+    "winrate": 50.7
   },
   "fear_greed": {
     "value": 26,
@@ -3030,34 +3030,23 @@
         "BTC корреляция 0.91, BTC -1.7% 📉",
         "BTC контекст: -3.7% за 12ч 📉"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 407,
       "symbol": "龙虾USDT",
       "direction": "SHORT",
       "entry": 0.012697,
       "tp1": 0.012139,
       "tp2": 0.011581,
       "sl": 0.012115,
-      "entry_orig": 0.012697,
-      "tp1_orig": 0.012139,
-      "tp2_orig": 0.011581,
-      "sl_orig": 0.013143,
       "strength": 47,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 4.13,
+      "close_price": 0.012172,
       "taken_at": "2026-03-18T16:07:24.934163",
-      "status": "TP1_HIT",
-      "reasons": [
-        "MACD медвежий (hist=-0.00004)",
-        "Цена < EMA20 < EMA50",
-        "Стакан: сильное давление продажи (-0.28)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "CVD падает (-7.7%) — продажи усиливаются 📉",
-        "BTC корреляция 0.67, BTC -1.4% 📉",
-        "BTC контекст: -3.5% за 12ч 📉"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-18 16:39:16"
+    },
     {
       "symbol": "THEUSDT",
       "direction": "SHORT",
@@ -5843,20 +5832,6 @@
       "close_price": 0.18614999999999998,
       "taken_at": "2026-03-17 12:11:36",
       "closed_at": "2026-03-17 20:11:50"
-    },
-    {
-      "symbol": "HBARUSDT",
-      "direction": "LONG",
-      "entry": 0.09901,
-      "tp1": 0.10099,
-      "tp2": 0.10297,
-      "sl": 0.09703,
-      "strength": 34,
-      "status": "TIMEOUT",
-      "pnl_pct": -0.56,
-      "close_price": 0.098455,
-      "taken_at": "2026-03-17 12:09:06",
-      "closed_at": "2026-03-17 20:09:10"
     }
   ]
 }
