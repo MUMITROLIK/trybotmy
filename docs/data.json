@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-17T23:59:49.325835+00:00",
+  "updated_at": "2026-03-18T00:00:25.528148+00:00",
   "publish_status": {
-    "last_ok": "2026-03-17T23:58:55Z",
+    "last_ok": "2026-03-17T23:59:53Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -12,17 +12,17 @@
   "stats": {
     "total": 399,
     "wins": 114,
-    "losses": 26,
-    "active": 15,
-    "winrate": 81.4
+    "losses": 27,
+    "active": 14,
+    "winrate": 80.9
   },
   "trade_stats": {
-    "open": 15,
+    "open": 14,
     "pending": 1,
     "wins": 122,
-    "losses": 91,
-    "total_pnl": 93.26,
-    "winrate": 57.3
+    "losses": 92,
+    "total_pnl": 90.02,
+    "winrate": 57.0
   },
   "fear_greed": {
     "value": 28,
@@ -158,27 +158,6 @@
       ],
       "news": null,
       "created_at": "2026-03-17 21:51:12",
-      "status": "ACTIVE"
-    },
-    {
-      "id": 421,
-      "symbol": "POLYXUSDT",
-      "direction": "LONG",
-      "entry": 0.05373631,
-      "tp1": 0.055136,
-      "tp2": 0.056535,
-      "sl": 0.052617,
-      "strength": 40,
-      "reasons": [
-        "MACD бычий (hist=0.00001)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: давление покупки (+0.25)",
-        "МТФ: 5m, 15m, 4h согласны",
-        "CVD растёт (+6.9%) — покупки усиливаются 📈",
-        "📌 Лимитный вход @ 0.0537363 (откат к EMA20)"
-      ],
-      "news": null,
-      "created_at": "2026-03-17 21:53:14",
       "status": "ACTIVE"
     },
     {
@@ -522,6 +501,25 @@
       ]
     },
     {
+      "symbol": "POLYXUSDT",
+      "direction": "LONG",
+      "entry": 0.05373631,
+      "tp1": 0.055136,
+      "tp2": 0.056535,
+      "sl": 0.052617,
+      "strength": 40,
+      "status": "SL",
+      "created_at": "2026-03-17 21:53:14",
+      "reasons": [
+        "MACD бычий (hist=0.00001)",
+        "Цена > EMA20 > EMA50",
+        "Стакан: давление покупки (+0.25)",
+        "МТФ: 5m, 15m, 4h согласны",
+        "CVD растёт (+6.9%) — покупки усиливаются 📈",
+        "📌 Лимитный вход @ 0.0537363 (откат к EMA20)"
+      ]
+    },
+    {
       "symbol": "ASTERUSDT",
       "direction": "LONG",
       "entry": 0.76979432,
@@ -737,25 +735,6 @@
         "CVD положительный (+3.4%)",
         "Bullish Engulfing (1h) 🕯️"
       ]
-    },
-    {
-      "symbol": "BEATUSDT",
-      "direction": "LONG",
-      "entry": 0.52003703,
-      "tp1": 0.535444,
-      "tp2": 0.550851,
-      "sl": 0.507711,
-      "strength": 44,
-      "status": "SL",
-      "created_at": "2026-03-17 19:26:33",
-      "reasons": [
-        "MACD бычий (hist=0.00103)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: сильное давление покупки (+0.26)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +2.5% + цена ↑",
-        "📌 Лимитный вход @ 0.520037 (откат к EMA20)"
-      ]
     }
   ],
   "trades_open": [
@@ -921,26 +900,6 @@
       ]
     },
     {
-      "id": 275,
-      "symbol": "POLYXUSDT",
-      "direction": "LONG",
-      "entry": 0.05373631,
-      "tp1": 0.055136,
-      "tp2": 0.056535,
-      "sl": 0.052617,
-      "strength": 40,
-      "taken_at": "2026-03-17 22:38:41",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00001)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: давление покупки (+0.25)",
-        "МТФ: 5m, 15m, 4h согласны",
-        "CVD растёт (+6.9%) — покупки усиливаются 📈",
-        "📌 Лимитный вход @ 0.0537363 (откат к EMA20)"
-      ]
-    },
-    {
       "id": 279,
       "symbol": "VIRTUALUSDT",
       "direction": "LONG",
@@ -1094,6 +1053,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "POLYXUSDT",
+      "direction": "LONG",
+      "entry": 0.05373631,
+      "tp1": 0.055136,
+      "tp2": 0.056535,
+      "sl": 0.052617,
+      "strength": 40,
+      "status": "SL",
+      "pnl_pct": -3.24,
+      "close_price": 0.051995,
+      "taken_at": "2026-03-17 22:38:41",
+      "closed_at": "2026-03-18 00:00:25"
+    },
     {
       "symbol": "TAOUSDT",
       "direction": "LONG",
@@ -3879,20 +3852,6 @@
       "close_price": 0.19824999999999998,
       "taken_at": "2026-03-17 12:03:00",
       "closed_at": "2026-03-17 13:45:51"
-    },
-    {
-      "symbol": "LYNUSDT",
-      "direction": "LONG",
-      "entry": 0.06154,
-      "tp1": 0.063436,
-      "tp2": 0.065333,
-      "sl": 0.060023,
-      "strength": 21,
-      "status": "SL",
-      "pnl_pct": -2.66,
-      "close_price": 0.059899999999999995,
-      "taken_at": "2026-03-17 12:58:42",
-      "closed_at": "2026-03-17 13:42:49"
     }
   ]
 }
