@@ -1822,17 +1822,98 @@
     }
 
     // ─── Action Functions ──────────────────────────────────────────────────
-    function takeSignal(signalId) {
-      alert(`Взять сигнал #${signalId} — функционал требует бэкенд интеграции`);
+    async function takeSignal(signalId) {
+      try {
+        const response = await fetch(`/api/take-signal?signal_id=${signalId}`, {
+          method: 'POST',
+        });
+        const result = await response.json();
+        
+        if (response.ok) {
+          showNotification(`✅ Сделка взята! Trade ID: ${result.trade_id}`, 'success');
+          // Обновляем UI
+          setTimeout(() => renderAll(), 500);
+        } else {
+          showNotification(`⚠️ ${result.message || 'Ошибка'}`, 'error');
+        }
+      } catch (error) {
+        showNotification(`❌ Ошибка: ${error.message}`, 'error');
+      }
     }
 
     function skipSignal(signalId) {
-      alert(`Пропустить сигнал #${signalId}`);
+      fetch(`/api/skip-signal?signal_id=${signalId}`, { method: 'POST' })
+        .then(() => {
+          showNotification('Сигнал пропущен', 'info');
+          // Можно скрыть карточку сигнала
+        })
+        .catch(err => {
+          showNotification(`Ошибка: ${err.message}`, 'error');
+        });
     }
 
-    function closePosition(tradeId) {
-      alert(`Закрыть позицию #${tradeId} — функционал требует бэкенд интеграции`);
+    async function closePosition(tradeId) {
+      if (!confirm('Закрыть позицию по рынку?')) return;
+      
+      try {
+        const response = await fetch(`/api/close-position?trade_id=${tradeId}`, {
+          method: 'POST',
+        });
+        const result = await response.json();
+        
+        if (response.ok) {
+          showNotification(`✅ Позиция закрыта! P&L: ${formatPercent(result.pnl)}`, 'success');
+          setTimeout(() => renderAll(), 500);
+        } else {
+          showNotification(`⚠️ ${result.detail || 'Ошибка'}`, 'error');
+        }
+      } catch (error) {
+        showNotification(`❌ Ошибка: ${error.message}`, 'error');
+      }
     }
+
+    function showNotification(message, type = 'info') {
+      // Простое уведомление через console + можно добавить UI
+      console.log(`[${type.toUpperCase()}] ${message}`);
+      
+      // Создаём временный notification элемент
+      const notification = document.createElement('div');
+      notification.style.cssText = `
+        position: fixed;
+        top: 80px;
+        right: 20px;
+        padding: 12px 20px;
+        background: ${type === 'success' ? 'var(--green-bg)' : type === 'error' ? 'var(--red-bg)' : 'var(--bg-card)'};
+        border: 1px solid ${type === 'success' ? 'var(--green)' : type === 'error' ? 'var(--red)' : 'var(--border)'};
+        border-radius: 8px;
+        color: var(--text-primary);
+        font-size: 13px;
+        font-weight: 500;
+        z-index: 10000;
+        animation: slideIn 0.3s ease;
+      `;
+      notification.textContent = message;
+      document.body.appendChild(notification);
+      
+      setTimeout(() => {
+        notification.style.animation = 'slideOut 0.3s ease';
+        setTimeout(() => notification.remove(), 300);
+      }, 3000);
+    }
+
+    // Добавляем CSS анимации для уведомлений
+    const style = document.createElement('style');
+    style.textContent = `
+      @keyframes slideIn {
+        from { transform: translateX(100%); opacity: 0; }
+        to { transform: translateX(0); opacity: 1; }
+      }
+      @keyframes slideOut {
+        from { transform: translateX(0); opacity: 1; }
+        to { transform: translateX(100%); opacity: 0; }
+      }
+    `;
+    document.head.appendChild(style);
 
     // ─── Tab Navigation ────────────────────────────────────────────────────
     function switchTab(tabName) {
@@ -1909,6 +1990,9 @@
         reconnectAttempts = 0;
         document.getElementById('liveDot').classList.remove('disconnected');
         document.getElementById('liveStatus').textContent = 'Live';
+        
+        // Загружаем свечи BTC после подключения
+        loadBtcCandles(btcCurrentTF);
       };
 
       ws.onmessage = (event) => {
@@ -1918,6 +2002,15 @@
           if (message.type === 'initial_data' || message.type === 'data_update') {
             appData = message.data;
             renderAll();
+            updateHeaderBtcTicker();
+          }
+          
+          // Обработка действий трейдинга
+          if (message.action === 'signal_taken') {
+            console.log('Signal taken:', message);
+          }
+          if (message.action === 'position_closed') {
+            console.log('Position closed:', message);
           }
         } catch (error) {
           console.error('Error parsing WebSocket message:', error);
@@ -1940,6 +2033,48 @@
       ws.onerror = (error) => {
         console.error('WebSocket error:', error);
       };
+    }
+
+    // ─── BTC Candles Loading ───────────────────────────────────────────────
+    async function loadBtcCandles(timeframe) {
+      try {
+        const response = await fetch(`/api/candles/BTCUSDT?timeframe=${timeframe}&limit=100`);
+        const data = await response.json();
+        
+        if (btcChart && data.candles && data.candles.length > 0) {
+          // btcChart уже инициализирован в initBtcChart(), получаем серию
+          // Для простоты - создаём новую серию если нет
+          if (!window.btcCandleSeries) {
+            window.btcCandleSeries = btcChart.addCandlestickSeries({
+              upColor: 'var(--green)',
+              downColor: 'var(--red)',
+              borderUpColor: 'var(--green)',
+              borderDownColor: 'var(--red)',
+              wickUpColor: 'var(--green)',
+              wickDownColor: 'var(--red)',
+            });
+          }
+          
+          window.btcCandleSeries.setData(data.candles);
+          
+          // Обновляем цену в заголовке графика
+          const lastCandle = data.candles[data.candles.length - 1];
+          if (lastCandle) {
+            document.getElementById('btcChartPrice').textContent = lastCandle.close.toFixed(2);
+          }
+        }
+      } catch (error) {
+        console.error('Failed to load BTC candles:', error);
+      }
+    }
+
+    function updateHeaderBtcTicker() {
+      if (!appData) return;
+      
+      // Пытаемся получить BTC цену из данных
+      // В будущем можно добавить отдельное поле с текущей ценой BTC
+      const fg = appData.fear_greed || {};
+      // Пока просто обновляем индикатор
     }
 
     // ─── Render All ────────────────────────────────────────────────────────
