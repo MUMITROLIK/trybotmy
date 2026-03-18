@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T07:55:17.563682+00:00",
+  "updated_at": "2026-03-18T07:56:09.728497+00:00",
   "publish_status": {
-    "last_ok": "2026-03-18T07:54:45Z",
+    "last_ok": "2026-03-18T07:55:24Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 80.6
   },
   "trade_stats": {
-    "open": 12,
+    "open": 11,
     "pending": 3,
-    "wins": 131,
+    "wins": 132,
     "losses": 104,
-    "total_pnl": 93.78,
-    "winrate": 55.7
+    "total_pnl": 95.95,
+    "winrate": 55.9
   },
   "fear_greed": {
     "value": 26,
@@ -961,9 +961,10 @@
         "⚠️ Funding через 41м",
         "📌 Лимитный вход @ 0.0334805 (откат к EMA20)"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 310,
       "symbol": "POLYXUSDT",
       "direction": "LONG",
       "entry": 0.04808,
@@ -971,20 +972,12 @@
       "tp2": 0.050003,
       "sl": 0.04912718,
       "strength": 40,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 2.17,
+      "close_price": 0.049125,
       "taken_at": "2026-03-18T07:01:36.002735",
-      "status": "TP1_HIT",
-      "reasons": [
-        "RSI=34 (перепроданность)",
-        "MACD бычий (hist=0.00009)",
-        "BB нижняя зона (10%)",
-        "Стакан: давление покупки (+0.15)",
-        "МТФ: 1h, 4h согласны",
-        "CVD положительный (+4.2%)",
-        "⚠️ Funding через 59м"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-18 07:55:30"
+    },
     {
       "symbol": "BEATUSDT",
       "direction": "LONG",
@@ -3770,20 +3763,6 @@
       "close_price": 0.034155000000000005,
       "taken_at": "2026-03-17 13:27:15",
       "closed_at": "2026-03-17 15:46:20"
-    },
-    {
-      "symbol": "RIVERUSDT",
-      "direction": "SHORT",
-      "entry": 22.051,
-      "tp1": 21.2262926,
-      "tp2": 20.3993801,
-      "sl": 22.7103249,
-      "strength": 32,
-      "status": "SL",
-      "pnl_pct": -3.08,
-      "close_price": 22.731,
-      "taken_at": "2026-03-17 14:02:05",
-      "closed_at": "2026-03-17 15:42:35"
     }
   ]
 }
