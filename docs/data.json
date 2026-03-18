@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T18:46:59.776614+00:00",
+  "updated_at": "2026-03-18T18:48:07.635033+00:00",
   "publish_status": {
-    "last_ok": "2026-03-18T18:45:41Z",
+    "last_ok": "2026-03-18T18:47:07Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,15 +10,15 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 565,
+    "total": 566,
     "wins": 168,
     "losses": 86,
-    "active": 47,
+    "active": 48,
     "winrate": 66.1
   },
   "trade_stats": {
     "open": 46,
-    "pending": 2,
+    "pending": 3,
     "wins": 160,
     "losses": 169,
     "total_pnl": 21.41,
@@ -1070,6 +1070,27 @@
       ],
       "news": null,
       "created_at": "2026-03-18 18:31:39",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 604,
+      "symbol": "LITUSDT",
+      "direction": "LONG",
+      "entry": 1.18075546,
+      "tp1": 1.204371,
+      "tp2": 1.227986,
+      "sl": 1.15714,
+      "strength": 30,
+      "reasons": [
+        "MACD бычий (hist=0.00678)",
+        "Цена выше EMA20",
+        "МТФ: 5m, 1h, 4h согласны",
+        "OI падает (шорты закрываются)",
+        "CVD положительный (+1.1%)",
+        "📌 Лимитный вход @ 1.18076 (откат к EMA20)"
+      ],
+      "news": null,
+      "created_at": "2026-03-18 18:47:26",
       "status": "ACTIVE"
     }
   ],
@@ -2663,6 +2684,30 @@
         "МТФ: 5m, 1h, 4h согласны",
         "OI растёт +1.4% + цена ↑",
         "📌 Лимитный вход @ 0.0105179 (откат к EMA20)"
+      ]
+    },
+    {
+      "id": 458,
+      "symbol": "LITUSDT",
+      "direction": "LONG",
+      "entry": 1.18075546,
+      "tp1": 1.204371,
+      "tp2": 1.227986,
+      "sl": 1.15714,
+      "entry_orig": 1.18075546,
+      "tp1_orig": 1.204371,
+      "tp2_orig": 1.227986,
+      "sl_orig": 1.15714,
+      "strength": 30,
+      "taken_at": "2026-03-18T18:47:27.069445",
+      "status": "PENDING",
+      "reasons": [
+        "MACD бычий (hist=0.00678)",
+        "Цена выше EMA20",
+        "МТФ: 5m, 1h, 4h согласны",
+        "OI падает (шорты закрываются)",
+        "CVD положительный (+1.1%)",
+        "📌 Лимитный вход @ 1.18076 (откат к EMA20)"
       ]
     }
   ],
