@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T07:13:24.640266+00:00",
+  "updated_at": "2026-03-18T07:14:24.110934+00:00",
   "publish_status": {
-    "last_ok": "2026-03-18T07:12:24Z",
+    "last_ok": "2026-03-18T07:13:31Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -18,7 +18,7 @@
   },
   "trade_stats": {
     "open": 9,
-    "pending": 1,
+    "pending": 0,
     "wins": 131,
     "losses": 104,
     "total_pnl": 93.78,
@@ -827,9 +827,10 @@
         "CVD растёт (+7.7%) — покупки усиливаются 📈",
         "⚠️ Funding через 52м"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 307,
       "symbol": "BEATUSDT",
       "direction": "LONG",
       "entry": 0.52776533,
@@ -837,20 +838,12 @@
       "tp2": 0.568801,
       "sl": 0.511351,
       "strength": 52,
+      "status": "LIMIT_TIMEOUT",
+      "pnl_pct": 0,
+      "close_price": null,
       "taken_at": "2026-03-18T06:14:08.845636",
-      "status": "PENDING",
-      "reasons": [
-        "MACD бычий (hist=0.00507)",
-        "Цена > EMA20 > EMA50",
-        "Объём x2.7 🔥🔥",
-        "Стакан: давление покупки (+0.24)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "CVD положительный (+0.3%)",
-        "📌 Лимитный вход @ 0.527765 (откат к EMA20)"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-18 07:14:16"
+    },
     {
       "symbol": "POLYXUSDT",
       "direction": "LONG",
@@ -3636,20 +3629,6 @@
       "close_price": 22.731,
       "taken_at": "2026-03-17 14:02:05",
       "closed_at": "2026-03-17 15:42:35"
-    },
-    {
-      "symbol": "FARTCOINUSDT",
-      "direction": "LONG",
-      "entry": 0.2007,
-      "tp1": 0.205039,
-      "tp2": 0.209379,
-      "sl": 0.196686,
-      "strength": 36,
-      "status": "SL",
-      "pnl_pct": -2.22,
-      "close_price": 0.19625,
-      "taken_at": null,
-      "closed_at": "2026-03-17 15:40:47"
     }
   ]
 }
