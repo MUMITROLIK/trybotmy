@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-18T11:26:36.516661+00:00",
+  "updated_at": "2026-03-18T11:27:15.160599+00:00",
   "publish_status": {
-    "last_ok": "2026-03-18T11:25:49Z",
+    "last_ok": "2026-03-18T11:26:41Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -12,17 +12,17 @@
   "stats": {
     "total": 460,
     "wins": 141,
-    "losses": 39,
-    "active": 17,
-    "winrate": 78.3
+    "losses": 40,
+    "active": 16,
+    "winrate": 77.9
   },
   "trade_stats": {
-    "open": 22,
+    "open": 21,
     "pending": 1,
     "wins": 139,
-    "losses": 115,
-    "total_pnl": 84.4,
-    "winrate": 54.7
+    "losses": 116,
+    "total_pnl": 82.34,
+    "winrate": 54.5
   },
   "fear_greed": {
     "value": 26,
@@ -121,28 +121,6 @@
       ],
       "news": null,
       "created_at": "2026-03-18 09:50:21",
-      "status": "ACTIVE"
-    },
-    {
-      "id": 479,
-      "symbol": "1000BONKUSDT",
-      "direction": "LONG",
-      "entry": 0.006717,
-      "tp1": 0.006851,
-      "tp2": 0.006986,
-      "sl": 0.006583,
-      "strength": 46,
-      "reasons": [
-        "RSI=49 (нейтральный↓)",
-        "MACD бычий (hist=0.00000)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: сильное давление покупки (+0.32)",
-        "МТФ: 5m, 15m, 4h согласны",
-        "CVD положительный (+0.5%)",
-        "Doji (1h) — нерешительность"
-      ],
-      "news": null,
-      "created_at": "2026-03-18 09:52:02",
       "status": "ACTIVE"
     },
     {
@@ -528,6 +506,26 @@
       ]
     },
     {
+      "symbol": "1000BONKUSDT",
+      "direction": "LONG",
+      "entry": 0.006717,
+      "tp1": 0.006851,
+      "tp2": 0.006986,
+      "sl": 0.006583,
+      "strength": 46,
+      "status": "SL",
+      "created_at": "2026-03-18 09:52:02",
+      "reasons": [
+        "RSI=49 (нейтральный↓)",
+        "MACD бычий (hist=0.00000)",
+        "Цена > EMA20 > EMA50",
+        "Стакан: сильное давление покупки (+0.32)",
+        "МТФ: 5m, 15m, 4h согласны",
+        "CVD положительный (+0.5%)",
+        "Doji (1h) — нерешительность"
+      ]
+    },
+    {
       "symbol": "AKTUSDT",
       "direction": "LONG",
       "entry": 0.51763234,
@@ -784,26 +782,6 @@
         "Doji (1h) — нерешительность",
         "⚠️ Funding через 42м"
       ]
-    },
-    {
-      "symbol": "ENJUSDT",
-      "direction": "LONG",
-      "entry": 0.02153035,
-      "tp1": 0.022492,
-      "tp2": 0.023455,
-      "sl": 0.020761,
-      "strength": 40,
-      "status": "TP2",
-      "created_at": "2026-03-18 07:17:36",
-      "reasons": [
-        "MACD бычий (hist=0.00026)",
-        "Цена > EMA20 > EMA50",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +25.6% + цена ↑",
-        "CVD положительный (+0.5%)",
-        "⚠️ Funding через 43м",
-        "📌 Лимитный вход @ 0.0215304 (откат к EMA20)"
-      ]
     }
   ],
   "trades_open": [
@@ -976,27 +954,6 @@
         "МТФ: 15m, 1h, 4h согласны",
         "CVD положительный (-0.2%)",
         "Bullish Engulfing (1h) 🕯️"
-      ]
-    },
-    {
-      "id": 333,
-      "symbol": "1000BONKUSDT",
-      "direction": "LONG",
-      "entry": 0.006717,
-      "tp1": 0.006851,
-      "tp2": 0.006986,
-      "sl": 0.006583,
-      "strength": 46,
-      "taken_at": "2026-03-18T09:52:02.472775",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=49 (нейтральный↓)",
-        "MACD бычий (hist=0.00000)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: сильное давление покупки (+0.32)",
-        "МТФ: 5m, 15m, 4h согласны",
-        "CVD положительный (+0.5%)",
-        "Doji (1h) — нерешительность"
       ]
     },
     {
@@ -1291,6 +1248,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "1000BONKUSDT",
+      "direction": "LONG",
+      "entry": 0.006717,
+      "tp1": 0.006851,
+      "tp2": 0.006986,
+      "sl": 0.006583,
+      "strength": 46,
+      "status": "SL",
+      "pnl_pct": -2.06,
+      "close_price": 0.006578499999999999,
+      "taken_at": "2026-03-18T09:52:02.472775",
+      "closed_at": "2026-03-18 11:27:14"
+    },
     {
       "symbol": "LITUSDT",
       "direction": "LONG",
@@ -4076,20 +4047,6 @@
       "close_price": 2.3119,
       "taken_at": "2026-03-17 12:34:51",
       "closed_at": "2026-03-17 17:10:13"
-    },
-    {
-      "symbol": "XLMUSDT",
-      "direction": "SHORT",
-      "entry": 0.1749,
-      "tp1": 0.171402,
-      "tp2": 0.167904,
-      "sl": 0.178398,
-      "strength": 34,
-      "status": "TIMEOUT",
-      "pnl_pct": 0.32,
-      "close_price": 0.17433500000000002,
-      "taken_at": "2026-03-17 09:00:16",
-      "closed_at": "2026-03-17 17:00:27"
     }
   ]
 }
