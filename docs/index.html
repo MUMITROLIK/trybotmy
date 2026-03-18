@@ -693,27 +693,38 @@
 
     // --- WebSocket + REST wiring --------------------------------------------
     var ws = null;
+    var wsPingTimer = null;
 
     function connectWS() {
       try {
         var proto = location.protocol === 'https:' ? 'wss:' : 'ws:';
         ws = new WebSocket(proto+'//'+location.host+'/ws');
-        ws.onopen = function(){ setConn(true); };
+        ws.onopen = function(){
+          setConn(true);
+          if (wsPingTimer) clearInterval(wsPingTimer);
+          // Client-initiated ping to avoid idle disconnects
+          wsPingTimer = setInterval(function(){
+            try { if (ws && ws.readyState === 1) ws.send('ping'); } catch(e) {}
+          }, 20000);
+        };
         ws.onmessage = function(e){
           try {
             var m = JSON.parse(e.data);
+            if (m && m.type === 'ping') return; // keepalive
             var d = m.data || m;
             if (d && d.stats) updateUI(d);
           } catch (err) {}
         };
         ws.onclose = function(){
           setConn(false);
+          if (wsPingTimer) { clearInterval(wsPingTimer); wsPingTimer = null; }
           ws = null;
           setTimeout(connectWS, 5000);
         };
         ws.onerror = function(){ if (ws) ws.close(); };
       } catch (e) {
         setConn(false);
+        if (wsPingTimer) { clearInterval(wsPingTimer); wsPingTimer = null; }
         setTimeout(connectWS, 5000);
       }
     }
