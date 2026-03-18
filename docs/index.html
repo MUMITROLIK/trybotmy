@@ -143,7 +143,8 @@
     .prb-track{height:.4rem;border-radius:9999px;background:rgba(82,54,52,.5);position:relative;overflow:visible}
     .prb-fill{height:100%;border-radius:9999px;transition:width .8s cubic-bezier(.22,1,.36,1),background .6s ease;position:relative}
     .prb-marker{position:absolute;top:50%;transform:translate(-50%,-50%);width:10px;height:10px;border-radius:50%;border:2px solid var(--cocoa);transition:left .8s cubic-bezier(.22,1,.36,1),background .6s ease;z-index:2}
-    .prb-tp1{position:absolute;top:-3px;height:calc(100% + 6px);width:2px;background:rgba(74,222,128,.4);border-radius:1px}
+    .prb-entry-dot{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:8px;height:8px;border-radius:50%;background:#60A5FA;border:2px solid var(--cocoa);z-index:3;box-shadow:0 0 6px #60A5FA80;transition:left .8s cubic-bezier(.22,1,.36,1);pointer-events:none}
+    .prb-tp1{position:absolute;top:-3px;height:calc(100% + 6px);width:2px;background:rgba(74,222,128,.4);border-radius:1px;z-index:1;transition:left .8s cubic-bezier(.22,1,.36,1)}
     @media(max-width:768px){.cg{grid-template-columns:1fr}.sg{grid-template-columns:repeat(2,1fr)}.fgc{flex-direction:column}.ft{margin:1rem auto 0}.ui{margin:0}}
     @media(max-width:480px){.sg{grid-template-columns:1fr}.pp{grid-template-columns:repeat(2,1fr)}}
   </style>
@@ -517,10 +518,22 @@
     fetchREST().then(() => fetchLivePrices());
     connectWS();
     setInterval(fetchREST, 30000);
-    // Fetch live prices every 15 seconds
-    setInterval(fetchLivePrices, 15000);
-    // Patch duration + ago-time every minute without re-render
-    setInterval(() => { if (openTradesCache.length) patchPositionCards(); }, 60000);
+    // Fetch live prices every 10 seconds
+    setInterval(fetchLivePrices, 10000);
+    // Update progress bar + time display every 5 seconds (was 60s)
+    setInterval(() => { if (openTradesCache.length) patchPositionCards(); }, 5000);
+    // Also update time displays every 1 second for real-time countdown
+    setInterval(() => { 
+      if (!openTradesCache.length) return;
+      openTradesCache.forEach(t => {
+        const card = document.getElementById('pos-'+(t.id||t.symbol));
+        if (!card) return;
+        const durEl = card.querySelector('.live-dur');
+        if (durEl && t.status !== 'PENDING') durEl.textContent = '\u23f1 ' + durStr(t.taken_at);
+        const agoEl = card.querySelector('.live-ago');
+        if (agoEl) agoEl.textContent = fmtT(t.taken_at);
+      });
+    }, 1000);
   </script>
 </body>
 </html>
