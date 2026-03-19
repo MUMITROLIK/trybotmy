@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-03-19T15:00:38.189250+00:00",
+  "updated_at": "2026-03-19T15:01:15.704008+00:00",
   "publish_status": {
-    "last_ok": "2026-03-19T14:58:34Z",
-    "last_error": "On branch main\nYour branch is ahead of 'origin/main' by 1 commit.\n  (use \"git push\" to publish your local commits)\n\nChanges not staged for commit:\n  (use \"git add <file>...\" to update what will be committed)\n  (use \"git restore <file>...\" t",
+    "last_ok": "2026-03-19T15:00:53Z",
+    "last_error": null,
     "min_push_interval_sec": 30
   },
   "settings": {
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 636,
+    "total": 637,
     "wins": 191,
     "losses": 111,
-    "active": 32,
+    "active": 33,
     "winrate": 63.2
   },
   "trade_stats": {
-    "open": 32,
+    "open": 33,
     "pending": 0,
     "wins": 193,
     "losses": 222,
@@ -739,6 +739,28 @@
       ],
       "news": null,
       "created_at": "2026-03-19 14:59:12",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 675,
+      "symbol": "SIRENUSDT",
+      "direction": "LONG",
+      "entry": 0.78932,
+      "tp1": 0.8238,
+      "tp2": 0.858279,
+      "sl": 0.761736,
+      "strength": 47,
+      "reasons": [
+        "RSI=30 (сильная перепроданность)",
+        "BB нижняя зона (1%)",
+        "Стакан: сильное давление покупки (+0.29)",
+        "МТФ: 1h, 4h согласны",
+        "CVD растёт (+5.0%) — покупки усиливаются 📈",
+        "⚠️ Funding через 60м",
+        "⚡ Рыночный вход (MTF 2+ ТФ)"
+      ],
+      "news": null,
+      "created_at": "2026-03-19 15:01:13",
       "status": "ACTIVE"
     }
   ],
@@ -1943,6 +1965,31 @@
         "МТФ: все 4 таймфрейма согласны ✅✅",
         "⚠️ Funding через 62м",
         "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
+    {
+      "id": 529,
+      "symbol": "SIRENUSDT",
+      "direction": "LONG",
+      "entry": 0.78932,
+      "tp1": 0.8238,
+      "tp2": 0.858279,
+      "sl": 0.761736,
+      "entry_orig": 0.78932,
+      "tp1_orig": 0.8238,
+      "tp2_orig": 0.858279,
+      "sl_orig": 0.761736,
+      "strength": 47,
+      "taken_at": "2026-03-19T15:01:14.370440",
+      "status": "OPEN",
+      "reasons": [
+        "RSI=30 (сильная перепроданность)",
+        "BB нижняя зона (1%)",
+        "Стакан: сильное давление покупки (+0.29)",
+        "МТФ: 1h, 4h согласны",
+        "CVD растёт (+5.0%) — покупки усиливаются 📈",
+        "⚠️ Funding через 60м",
+        "⚡ Рыночный вход (MTF 2+ ТФ)"
       ]
     }
   ],
