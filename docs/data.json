@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-19T11:41:28.348743+00:00",
+  "updated_at": "2026-03-19T11:42:29.069365+00:00",
   "publish_status": {
-    "last_ok": "2026-03-19T11:40:28Z",
+    "last_ok": "2026-03-19T11:41:34Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 576,
+    "total": 577,
     "wins": 181,
     "losses": 93,
-    "active": 0,
+    "active": 1,
     "winrate": 66.1
   },
   "trade_stats": {
-    "open": 0,
+    "open": 1,
     "pending": 0,
     "wins": 183,
     "losses": 204,
@@ -35,7 +35,30 @@
     "rows": 400,
     "trained_at": "2026-03-18T18:46:42.539461+00:00"
   },
-  "signals": [],
+  "signals": [
+    {
+      "id": 615,
+      "symbol": "POLYXUSDT",
+      "direction": "LONG",
+      "entry": 0.0461,
+      "tp1": 0.047022,
+      "tp2": 0.047944,
+      "sl": 0.045178,
+      "strength": 45,
+      "reasons": [
+        "MACD бычий (hist=0.00014)",
+        "Цена > EMA20 > EMA50",
+        "Объём x3.1 🔥🔥",
+        "МТФ: 5m, 15m согласны",
+        "OI падает (шорты закрываются)",
+        "CVD положительный (+3.0%)",
+        "⚡ Рыночный вход (MTF 2+ ТФ)"
+      ],
+      "news": null,
+      "created_at": "2026-03-19 11:42:27",
+      "status": "ACTIVE"
+    }
+  ],
   "history": [
     {
       "symbol": "SIRENUSDT",
@@ -442,7 +465,33 @@
       ]
     }
   ],
-  "trades_open": [],
+  "trades_open": [
+    {
+      "id": 469,
+      "symbol": "POLYXUSDT",
+      "direction": "LONG",
+      "entry": 0.0461,
+      "tp1": 0.047022,
+      "tp2": 0.047944,
+      "sl": 0.045178,
+      "entry_orig": 0.0461,
+      "tp1_orig": 0.047022,
+      "tp2_orig": 0.047944,
+      "sl_orig": 0.045178,
+      "strength": 45,
+      "taken_at": "2026-03-19T11:42:28.773685",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.00014)",
+        "Цена > EMA20 > EMA50",
+        "Объём x3.1 🔥🔥",
+        "МТФ: 5m, 15m согласны",
+        "OI падает (шорты закрываются)",
+        "CVD положительный (+3.0%)",
+        "⚡ Рыночный вход (MTF 2+ ТФ)"
+      ]
+    }
+  ],
   "trades_history": [
     {
       "symbol": "OPNUSDT",
