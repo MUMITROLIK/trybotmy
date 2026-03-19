@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-19T22:28:52.801769+00:00",
+  "updated_at": "2026-03-19T22:30:16.013633+00:00",
   "publish_status": {
-    "last_ok": "2026-03-19T22:28:12Z",
+    "last_ok": "2026-03-19T22:28:58Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,11 +17,11 @@
     "winrate": 62.9
   },
   "trade_stats": {
-    "open": 18,
+    "open": 16,
     "pending": 0,
-    "wins": 226,
-    "losses": 240,
-    "total_pnl": 27.43,
+    "wins": 227,
+    "losses": 241,
+    "total_pnl": 27.59,
     "winrate": 48.5
   },
   "fear_greed": {
@@ -486,58 +486,6 @@
       ]
     },
     {
-      "id": 523,
-      "symbol": "AVAXUSDT",
-      "direction": "SHORT",
-      "exchange": "binance",
-      "entry": 9.379,
-      "tp1": 9.19142,
-      "tp2": 9.00384,
-      "sl": 9.56658,
-      "entry_orig": 9.379,
-      "tp1_orig": 9.19142,
-      "tp2_orig": 9.00384,
-      "sl_orig": 9.56658,
-      "strength": 48,
-      "taken_at": "2026-03-19T14:30:01.747223",
-      "status": "OPEN",
-      "reasons": [
-        "MACD медвежий (hist=-0.00819)",
-        "Цена < EMA20 < EMA50",
-        "Стакан: давление продажи (-0.10)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "CVD падает (-7.5%) — продажи усиливаются 📉",
-        "Bearish Engulfing (1h) 🕯️",
-        "BTC корреляция 0.86, BTC -1.4% 📉",
-        "BTC контекст: -2.6% за 12ч 📉"
-      ]
-    },
-    {
-      "id": 524,
-      "symbol": "XPLUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.0993,
-      "tp1": 0.101286,
-      "tp2": 0.103272,
-      "sl": 0.097314,
-      "entry_orig": 0.0993,
-      "tp1_orig": 0.101286,
-      "tp2_orig": 0.103272,
-      "sl_orig": 0.097314,
-      "strength": 47,
-      "taken_at": "2026-03-19T14:30:01.901729",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=24 (сильная перепроданность)",
-        "BB нижняя зона (6%)",
-        "Объём x2.6 🔥🔥",
-        "Стакан: давление покупки (+0.11)",
-        "МТФ: только 1 таймфрейм согласен",
-        "CVD положительный (-8.7%)"
-      ]
-    },
-    {
       "id": 527,
       "symbol": "XLMUSDT",
       "direction": "LONG",
@@ -902,6 +850,34 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "XPLUSDT",
+      "direction": "LONG",
+      "entry": 0.0993,
+      "tp1": 0.101286,
+      "tp2": 0.103272,
+      "sl": 0.097314,
+      "strength": 47,
+      "status": "TIMEOUT",
+      "pnl_pct": 1.06,
+      "close_price": 0.10035,
+      "taken_at": "2026-03-19T14:30:01.901729",
+      "closed_at": "2026-03-19 22:30:03"
+    },
+    {
+      "symbol": "AVAXUSDT",
+      "direction": "SHORT",
+      "entry": 9.379,
+      "tp1": 9.19142,
+      "tp2": 9.00384,
+      "sl": 9.56658,
+      "strength": 48,
+      "status": "TIMEOUT",
+      "pnl_pct": -0.9,
+      "close_price": 9.4635,
+      "taken_at": "2026-03-19T14:30:01.747223",
+      "closed_at": "2026-03-19 22:30:02"
+    },
     {
       "symbol": "HBARUSDT",
       "direction": "LONG",
@@ -3673,34 +3649,6 @@
       "close_price": 0.04709,
       "taken_at": "2026-03-18T10:49:14.665589",
       "closed_at": "2026-03-18 12:07:13"
-    },
-    {
-      "symbol": "ZROUSDT",
-      "direction": "LONG",
-      "entry": 2.295,
-      "tp1": 2.3409,
-      "tp2": 2.3868,
-      "sl": 2.2491,
-      "strength": 46,
-      "status": "SL",
-      "pnl_pct": -2.13,
-      "close_price": 2.24615,
-      "taken_at": "2026-03-18T11:18:42.114015",
-      "closed_at": "2026-03-18 12:05:22"
-    },
-    {
-      "symbol": "LITUSDT",
-      "direction": "LONG",
-      "entry": 1.2,
-      "tp1": 1.224,
-      "tp2": 1.248,
-      "sl": 1.2255,
-      "strength": 40,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 1.63,
-      "close_price": 1.2195,
-      "taken_at": "2026-03-18T11:31:20.863204",
-      "closed_at": "2026-03-18 12:01:58"
     }
   ]
 }
