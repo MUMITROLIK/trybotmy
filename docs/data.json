@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-19T16:43:29.791021+00:00",
+  "updated_at": "2026-03-19T16:44:08.946003+00:00",
   "publish_status": {
-    "last_ok": "2026-03-19T16:42:29Z",
+    "last_ok": "2026-03-19T16:43:37Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 655,
+    "total": 656,
     "wins": 203,
     "losses": 116,
-    "active": 31,
+    "active": 32,
     "winrate": 63.6
   },
   "trade_stats": {
-    "open": 33,
+    "open": 34,
     "pending": 0,
     "wins": 206,
     "losses": 227,
@@ -723,6 +723,27 @@
       ],
       "news": null,
       "created_at": "2026-03-19 16:30:32",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 694,
+      "symbol": "1000PEPEUSDT",
+      "direction": "SHORT",
+      "entry": 0.0033519,
+      "tp1": 0.003285,
+      "tp2": 0.003218,
+      "sl": 0.003419,
+      "strength": 45,
+      "reasons": [
+        "MACD медвежий (hist=-0.00000)",
+        "Цена < EMA20 < EMA50",
+        "Стакан: сильное давление продажи (-0.33)",
+        "МТФ: 5m, 15m, 1h согласны",
+        "CVD падает (-7.0%) — продажи усиливаются 📉",
+        "Bearish Engulfing (1h) 🕯️"
+      ],
+      "news": null,
+      "created_at": "2026-03-19 16:43:37",
       "status": "ACTIVE"
     }
   ],
@@ -1965,6 +1986,30 @@
         "CVD положительный (+1.8%)",
         "Doji (1h) — нерешительность",
         "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
+    {
+      "id": 548,
+      "symbol": "1000PEPEUSDT",
+      "direction": "SHORT",
+      "entry": 0.0033519,
+      "tp1": 0.003285,
+      "tp2": 0.003218,
+      "sl": 0.003419,
+      "entry_orig": 0.0033519,
+      "tp1_orig": 0.003285,
+      "tp2_orig": 0.003218,
+      "sl_orig": 0.003419,
+      "strength": 45,
+      "taken_at": "2026-03-19T16:43:37.657582",
+      "status": "OPEN",
+      "reasons": [
+        "MACD медвежий (hist=-0.00000)",
+        "Цена < EMA20 < EMA50",
+        "Стакан: сильное давление продажи (-0.33)",
+        "МТФ: 5m, 15m, 1h согласны",
+        "CVD падает (-7.0%) — продажи усиливаются 📉",
+        "Bearish Engulfing (1h) 🕯️"
       ]
     }
   ],
