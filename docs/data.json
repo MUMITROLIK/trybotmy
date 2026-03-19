@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-19T16:15:37.977001+00:00",
+  "updated_at": "2026-03-19T16:16:33.169789+00:00",
   "publish_status": {
-    "last_ok": "2026-03-19T16:14:51Z",
+    "last_ok": "2026-03-19T16:15:45Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -11,18 +11,18 @@
   },
   "stats": {
     "total": 654,
-    "wins": 202,
+    "wins": 203,
     "losses": 116,
-    "active": 32,
-    "winrate": 63.5
+    "active": 31,
+    "winrate": 63.6
   },
   "trade_stats": {
-    "open": 34,
+    "open": 33,
     "pending": 0,
-    "wins": 204,
+    "wins": 205,
     "losses": 227,
-    "total_pnl": 19.19,
-    "winrate": 47.3
+    "total_pnl": 21.46,
+    "winrate": 47.5
   },
   "fear_greed": {
     "value": 23,
@@ -680,28 +680,6 @@
       "status": "ACTIVE"
     },
     {
-      "id": 690,
-      "symbol": "ENJUSDT",
-      "direction": "LONG",
-      "entry": 0.02399,
-      "tp1": 0.024549,
-      "tp2": 0.025109,
-      "sl": 0.02351,
-      "strength": 47,
-      "reasons": [
-        "MACD бычий (hist=0.00015)",
-        "Цена выше EMA20",
-        "Объём x2.6 🔥🔥",
-        "МТФ: 5m, 1h, 4h согласны",
-        "OI падает (шорты закрываются)",
-        "CVD положительный (+2.0%)",
-        "⚡ Рыночный вход (MTF сильный)"
-      ],
-      "news": null,
-      "created_at": "2026-03-19 16:10:32",
-      "status": "ACTIVE"
-    },
-    {
       "id": 691,
       "symbol": "PTBUSDT",
       "direction": "LONG",
@@ -746,6 +724,26 @@
     }
   ],
   "history": [
+    {
+      "symbol": "ENJUSDT",
+      "direction": "LONG",
+      "entry": 0.02399,
+      "tp1": 0.024549,
+      "tp2": 0.025109,
+      "sl": 0.02351,
+      "strength": 47,
+      "status": "TP1",
+      "created_at": "2026-03-19 16:10:32",
+      "reasons": [
+        "MACD бычий (hist=0.00015)",
+        "Цена выше EMA20",
+        "Объём x2.6 🔥🔥",
+        "МТФ: 5m, 1h, 4h согласны",
+        "OI падает (шорты закрываются)",
+        "CVD положительный (+2.0%)",
+        "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
     {
       "symbol": "UAIUSDT",
       "direction": "LONG",
@@ -1132,26 +1130,6 @@
         "МТФ: 15m, 4h согласны",
         "OI падает (шорты закрываются)",
         "⚡ Рыночный вход (MTF 2+ ТФ)"
-      ]
-    },
-    {
-      "symbol": "VVVUSDT",
-      "direction": "SHORT",
-      "entry": 5.237,
-      "tp1": 5.13226,
-      "tp2": 5.02752,
-      "sl": 5.34174,
-      "strength": 51,
-      "status": "SL",
-      "created_at": "2026-03-19 13:07:31",
-      "reasons": [
-        "MACD медвежий (hist=-0.01852)",
-        "Цена < EMA20 < EMA50",
-        "Объём x3.5 🔥🔥",
-        "Стакан: давление продажи (-0.11)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "CVD падает (-12.2%) — продажи усиливаются 📉",
-        "BTC контекст: -2.5% за 12ч 📉"
       ]
     }
   ],
@@ -1984,34 +1962,23 @@
         "МТФ: 5m, 4h согласны",
         "⚡ Рыночный вход (MTF 2+ ТФ)"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 544,
       "symbol": "ENJUSDT",
       "direction": "LONG",
       "entry": 0.02399,
       "tp1": 0.024549,
       "tp2": 0.025109,
-      "sl": 0.024575,
-      "entry_orig": 0.02399,
-      "tp1_orig": 0.024549,
-      "tp2_orig": 0.025109,
-      "sl_orig": 0.02351,
+      "sl": 0.02463122,
       "strength": 47,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 2.27,
+      "close_price": 0.024535,
       "taken_at": "2026-03-19T16:10:32.548034",
-      "status": "TP1_HIT",
-      "reasons": [
-        "MACD бычий (hist=0.00015)",
-        "Цена выше EMA20",
-        "Объём x2.6 🔥🔥",
-        "МТФ: 5m, 1h, 4h согласны",
-        "OI падает (шорты закрываются)",
-        "CVD положительный (+2.0%)",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-19 16:16:07"
+    },
     {
       "symbol": "UAIUSDT",
       "direction": "LONG",
@@ -4797,20 +4764,6 @@
       "close_price": null,
       "taken_at": "2026-03-18T08:03:34.122601",
       "closed_at": "2026-03-18 09:03:42"
-    },
-    {
-      "symbol": "RIVERUSDT",
-      "direction": "LONG",
-      "entry": 23.555,
-      "tp1": 24.0261,
-      "tp2": 24.4972,
-      "sl": 24.0501325,
-      "strength": 40,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 2.0,
-      "close_price": 24.0255,
-      "taken_at": "2026-03-18T08:16:57.032498",
-      "closed_at": "2026-03-18 08:57:05"
     }
   ]
 }
