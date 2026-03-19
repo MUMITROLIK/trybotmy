@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-19T13:44:31.764557+00:00",
+  "updated_at": "2026-03-19T13:45:26.976517+00:00",
   "publish_status": {
-    "last_ok": "2026-03-19T13:43:31Z",
+    "last_ok": "2026-03-19T13:44:38Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 621,
+    "total": 622,
     "wins": 185,
     "losses": 107,
-    "active": 27,
+    "active": 28,
     "winrate": 63.4
   },
   "trade_stats": {
-    "open": 27,
+    "open": 28,
     "pending": 0,
     "wins": 187,
     "losses": 218,
@@ -624,6 +624,27 @@
       ],
       "news": "Crypto Market Regains Its Nerve as ETF Inflows Top $1B, Report Shows",
       "created_at": "2026-03-19 13:43:47",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 660,
+      "symbol": "RIVERUSDT",
+      "direction": "LONG",
+      "entry": 25.511,
+      "tp1": 26.350036,
+      "tp2": 27.189071,
+      "sl": 24.839771,
+      "strength": 48,
+      "reasons": [
+        "RSI=32 (перепроданность)",
+        "BB нижняя полоса (пробой)",
+        "EMA20 > EMA50",
+        "Объём x2.6 🔥🔥",
+        "МТФ: 15m, 1h, 4h согласны",
+        "⚡ Рыночный вход (MTF сильный)"
+      ],
+      "news": null,
+      "created_at": "2026-03-19 13:45:26",
       "status": "ACTIVE"
     }
   ],
@@ -1699,6 +1720,30 @@
         "МТФ: только 1 таймфрейм согласен",
         "OI падает (шорты закрываются)",
         "CVD положительный (+3.1%)"
+      ]
+    },
+    {
+      "id": 514,
+      "symbol": "RIVERUSDT",
+      "direction": "LONG",
+      "entry": 25.511,
+      "tp1": 26.350036,
+      "tp2": 27.189071,
+      "sl": 24.839771,
+      "entry_orig": 25.511,
+      "tp1_orig": 26.350036,
+      "tp2_orig": 27.189071,
+      "sl_orig": 24.839771,
+      "strength": 48,
+      "taken_at": "2026-03-19T13:45:26.794974",
+      "status": "OPEN",
+      "reasons": [
+        "RSI=32 (перепроданность)",
+        "BB нижняя полоса (пробой)",
+        "EMA20 > EMA50",
+        "Объём x2.6 🔥🔥",
+        "МТФ: 15m, 1h, 4h согласны",
+        "⚡ Рыночный вход (MTF сильный)"
       ]
     }
   ],
