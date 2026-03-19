@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-19T17:06:10.916113+00:00",
+  "updated_at": "2026-03-19T17:06:23.513363+00:00",
   "publish_status": {
-    "last_ok": "2026-03-19T17:05:37Z",
+    "last_ok": "2026-03-19T17:06:00Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 63.4
   },
   "trade_stats": {
-    "open": 36,
+    "open": 35,
     "pending": 0,
     "wins": 206,
-    "losses": 228,
-    "total_pnl": 20.43,
-    "winrate": 47.5
+    "losses": 229,
+    "total_pnl": 18.39,
+    "winrate": 47.4
   },
   "fear_greed": {
     "value": 23,
@@ -1239,30 +1239,6 @@
       ]
     },
     {
-      "id": 496,
-      "symbol": "VIRTUALUSDT",
-      "direction": "LONG",
-      "entry": 0.7013,
-      "tp1": 0.715326,
-      "tp2": 0.729352,
-      "sl": 0.687274,
-      "entry_orig": 0.7013,
-      "tp1_orig": 0.715326,
-      "tp2_orig": 0.729352,
-      "sl_orig": 0.687274,
-      "strength": 49,
-      "taken_at": "2026-03-19T12:59:00.012300",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=23 (сильная перепроданность)",
-        "BB нижняя полоса (пробой)",
-        "Объём x2.7 🔥🔥",
-        "Стакан: давление покупки (+0.11)",
-        "МТФ: только 1 таймфрейм согласен",
-        "CVD положительный (-5.3%)"
-      ]
-    },
-    {
       "id": 501,
       "symbol": "PUMPFUNUSDT",
       "direction": "SHORT",
@@ -1995,6 +1971,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "VIRTUALUSDT",
+      "direction": "LONG",
+      "entry": 0.7013,
+      "tp1": 0.715326,
+      "tp2": 0.729352,
+      "sl": 0.687274,
+      "strength": 49,
+      "status": "SL",
+      "pnl_pct": -2.04,
+      "close_price": 0.687,
+      "taken_at": "2026-03-19T12:59:00.012300",
+      "closed_at": "2026-03-19 17:06:23"
+    },
     {
       "symbol": "RIVERUSDT",
       "direction": "LONG",
@@ -4780,20 +4770,6 @@
       "close_price": 0.00652,
       "taken_at": "2026-03-18 09:33:47",
       "closed_at": "2026-03-18 10:06:59"
-    },
-    {
-      "symbol": "AINUSDT",
-      "direction": "LONG",
-      "entry": 0.08129831,
-      "tp1": 0.084858,
-      "tp2": 0.088417,
-      "sl": 0.078451,
-      "strength": 44,
-      "status": "LIMIT_TIMEOUT",
-      "pnl_pct": 0,
-      "close_price": null,
-      "taken_at": "2026-03-18T09:04:59.708384",
-      "closed_at": "2026-03-18 10:05:09"
     }
   ]
 }
