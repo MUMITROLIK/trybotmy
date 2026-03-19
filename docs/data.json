@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-19T19:29:39.478820+00:00",
+  "updated_at": "2026-03-19T19:30:17.019515+00:00",
   "publish_status": {
-    "last_ok": "2026-03-19T19:29:32Z",
+    "last_ok": "2026-03-19T19:29:45Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 63.2
   },
   "trade_stats": {
-    "open": 36,
+    "open": 32,
     "pending": 0,
-    "wins": 213,
-    "losses": 235,
-    "total_pnl": 15.6,
-    "winrate": 47.5
+    "wins": 216,
+    "losses": 236,
+    "total_pnl": 20.35,
+    "winrate": 47.8
   },
   "fear_greed": {
     "value": 23,
@@ -1568,31 +1568,6 @@
       ]
     },
     {
-      "id": 563,
-      "symbol": "AKTUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.5113,
-      "tp1": 0.521526,
-      "tp2": 0.531752,
-      "sl": 0.501074,
-      "entry_orig": 0.5113,
-      "tp1_orig": 0.521526,
-      "tp2_orig": 0.531752,
-      "sl_orig": 0.501074,
-      "strength": 46,
-      "taken_at": "2026-03-19T18:12:31.855596",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00161)",
-        "Цена выше EMA20",
-        "Объём x3.2 🔥🔥",
-        "Стакан: сильное давление покупки (+0.33)",
-        "МТФ: 5m, 1h согласны",
-        "⚡ Рыночный вход (MTF 2+ ТФ)"
-      ]
-    },
-    {
       "id": 564,
       "symbol": "ROBOUSDT",
       "direction": "LONG",
@@ -1645,88 +1620,65 @@
         "⚡ Рыночный вход (MTF 2+ ТФ)",
         "🤖 ML: вероятность 63%"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 555,
-      "symbol": "LITUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 1.165,
-      "tp1": 1.193286,
-      "tp2": 1.221571,
-      "sl": 1.1985000000000001,
-      "entry_orig": 1.165,
-      "tp1_orig": 1.193286,
-      "tp2_orig": 1.221571,
-      "sl_orig": 1.1417,
-      "strength": 45,
-      "taken_at": "2026-03-19T17:13:22.536287",
-      "status": "TP1_HIT",
-      "reasons": [
-        "MACD бычий (hist=0.00494)",
-        "EMA20 > EMA50 (golden cross) 🌟",
-        "Стакан: перевес bid (+0.06)",
-        "МТФ: 5m, 15m, 1h согласны",
-        "CVD растёт (+8.8%) — покупки усиливаются 📈",
-        "Hammer (1h) 🔨",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
-      "id": 557,
-      "symbol": "KITEUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.20042,
-      "tp1": 0.20474,
-      "tp2": 0.20906,
-      "sl": 0.20509,
-      "entry_orig": 0.20042,
-      "tp1_orig": 0.20474,
-      "tp2_orig": 0.20906,
-      "sl_orig": 0.196412,
-      "strength": 46,
-      "taken_at": "2026-03-19T17:31:56.658333",
-      "status": "TP1_HIT",
-      "reasons": [
-        "MACD бычий (hist=0.00067)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: давление покупки (+0.10)",
-        "МТФ: 5m, 15m согласны",
-        "OI растёт +3.0% + цена ↑",
-        "CVD растёт (+6.5%) — покупки усиливаются 📈",
-        "⚡ Рыночный вход (MTF 2+ ТФ)"
-      ]
-    },
-    {
-      "id": 561,
       "symbol": "ZECUSDT",
       "direction": "LONG",
-      "exchange": "binance",
       "entry": 232.49,
       "tp1": 237.1398,
       "tp2": 241.7896,
       "sl": 237.505,
-      "entry_orig": 232.49,
-      "tp1_orig": 237.1398,
-      "tp2_orig": 241.7896,
-      "sl_orig": 227.8402,
       "strength": 51,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 2.08,
+      "close_price": 237.315,
       "taken_at": "2026-03-19T18:06:49.486227",
-      "status": "TP1_HIT",
-      "reasons": [
-        "RSI=33 (перепроданность)",
-        "MACD бычий (hist=0.03439)",
-        "BB нижняя зона (25%)",
-        "Стакан: сильное давление покупки (+0.39)",
-        "МТФ: только 1 таймфрейм согласен",
-        "OI растёт +2.7%",
-        "CVD положительный (-1.5%)",
-        "BTC корреляция 0.66, BTC +0.4% 📈"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-19 19:30:16"
+    },
+    {
+      "symbol": "KITEUSDT",
+      "direction": "LONG",
+      "entry": 0.20042,
+      "tp1": 0.20474,
+      "tp2": 0.20906,
+      "sl": 0.20509,
+      "strength": 46,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 1.82,
+      "close_price": 0.204065,
+      "taken_at": "2026-03-19T17:31:56.658333",
+      "closed_at": "2026-03-19 19:29:54"
+    },
+    {
+      "symbol": "LITUSDT",
+      "direction": "LONG",
+      "entry": 1.165,
+      "tp1": 1.193286,
+      "tp2": 1.221571,
+      "sl": 1.1985000000000001,
+      "strength": 45,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 2.88,
+      "close_price": 1.1985000000000001,
+      "taken_at": "2026-03-19T17:13:22.536287",
+      "closed_at": "2026-03-19 19:29:50"
+    },
+    {
+      "symbol": "AKTUSDT",
+      "direction": "LONG",
+      "entry": 0.5113,
+      "tp1": 0.521526,
+      "tp2": 0.531752,
+      "sl": 0.501074,
+      "strength": 46,
+      "status": "SL",
+      "pnl_pct": -2.03,
+      "close_price": 0.5009,
+      "taken_at": "2026-03-19T18:12:31.855596",
+      "closed_at": "2026-03-19 19:29:45"
+    },
     {
       "symbol": "DEXEUSDT",
       "direction": "LONG",
@@ -4470,62 +4422,6 @@
       "close_price": 0.109335,
       "taken_at": "2026-03-18T11:05:11.726085",
       "closed_at": "2026-03-18 11:31:32"
-    },
-    {
-      "symbol": "POLYXUSDT",
-      "direction": "LONG",
-      "entry": 0.04782,
-      "tp1": 0.048961,
-      "tp2": 0.050102,
-      "sl": 0.046864,
-      "strength": 40,
-      "status": "SL",
-      "pnl_pct": -2.31,
-      "close_price": 0.046715,
-      "taken_at": "2026-03-18T08:40:44.425411",
-      "closed_at": "2026-03-18 11:31:07"
-    },
-    {
-      "symbol": "ZECUSDT",
-      "direction": "LONG",
-      "entry": 282.995,
-      "tp1": 288.65490046,
-      "tp2": 294.31479987,
-      "sl": 277.3350996,
-      "strength": 45,
-      "status": "SL",
-      "pnl_pct": -2.1,
-      "close_price": 277.055,
-      "taken_at": "2026-03-18T10:15:31.411286",
-      "closed_at": "2026-03-18 11:30:42"
-    },
-    {
-      "symbol": "PENGUUSDT",
-      "direction": "LONG",
-      "entry": 0.007965,
-      "tp1": 0.008124,
-      "tp2": 0.008284,
-      "sl": 0.007806,
-      "strength": 42,
-      "status": "SL",
-      "pnl_pct": -2.27,
-      "close_price": 0.0077845,
-      "taken_at": "2026-03-18T09:50:21.418327",
-      "closed_at": "2026-03-18 11:30:05"
-    },
-    {
-      "symbol": "1000BONKUSDT",
-      "direction": "LONG",
-      "entry": 0.006717,
-      "tp1": 0.006851,
-      "tp2": 0.006986,
-      "sl": 0.006583,
-      "strength": 46,
-      "status": "SL",
-      "pnl_pct": -2.06,
-      "close_price": 0.006578499999999999,
-      "taken_at": "2026-03-18T09:52:02.472775",
-      "closed_at": "2026-03-18 11:27:14"
     }
   ]
 }
