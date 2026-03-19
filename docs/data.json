@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-19T16:49:55.416160+00:00",
+  "updated_at": "2026-03-19T16:50:22.930537+00:00",
   "publish_status": {
-    "last_ok": "2026-03-19T16:48:55Z",
+    "last_ok": "2026-03-19T16:49:22Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 63.6
   },
   "trade_stats": {
-    "open": 34,
+    "open": 33,
     "pending": 0,
     "wins": 206,
-    "losses": 227,
-    "total_pnl": 23.51,
-    "winrate": 47.6
+    "losses": 228,
+    "total_pnl": 20.43,
+    "winrate": 47.5
   },
   "fear_greed": {
     "value": 23,
@@ -1458,30 +1458,6 @@
       ]
     },
     {
-      "id": 514,
-      "symbol": "RIVERUSDT",
-      "direction": "LONG",
-      "entry": 25.511,
-      "tp1": 26.350036,
-      "tp2": 27.189071,
-      "sl": 24.839771,
-      "entry_orig": 25.511,
-      "tp1_orig": 26.350036,
-      "tp2_orig": 27.189071,
-      "sl_orig": 24.839771,
-      "strength": 48,
-      "taken_at": "2026-03-19T13:45:26.794974",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=32 (перепроданность)",
-        "BB нижняя полоса (пробой)",
-        "EMA20 > EMA50",
-        "Объём x2.6 🔥🔥",
-        "МТФ: 15m, 1h, 4h согласны",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 515,
       "symbol": "HYPEUSDT",
       "direction": "LONG",
@@ -1991,6 +1967,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "RIVERUSDT",
+      "direction": "LONG",
+      "entry": 25.511,
+      "tp1": 26.350036,
+      "tp2": 27.189071,
+      "sl": 24.839771,
+      "strength": 48,
+      "status": "SL",
+      "pnl_pct": -3.08,
+      "close_price": 24.7265,
+      "taken_at": "2026-03-19T13:45:26.794974",
+      "closed_at": "2026-03-19 16:50:05"
+    },
     {
       "symbol": "1000PEPEUSDT",
       "direction": "SHORT",
@@ -4776,20 +4766,6 @@
       "close_price": null,
       "taken_at": "2026-03-18T09:04:59.708384",
       "closed_at": "2026-03-18 10:05:09"
-    },
-    {
-      "symbol": "VANRYUSDT",
-      "direction": "LONG",
-      "entry": 0.006748499999999999,
-      "tp1": 0.00695849,
-      "tp2": 0.00716786,
-      "sl": 0.0069715,
-      "strength": 40,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 3.0,
-      "close_price": 0.006951,
-      "taken_at": "2026-03-18T09:16:08.382106",
-      "closed_at": "2026-03-18 09:18:31"
     }
   ]
 }
