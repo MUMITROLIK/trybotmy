@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-19T17:59:35.604715+00:00",
+  "updated_at": "2026-03-19T18:00:18.917187+00:00",
   "publish_status": {
-    "last_ok": "2026-03-19T17:58:35Z",
+    "last_ok": "2026-03-19T17:59:34Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 63.5
   },
   "trade_stats": {
-    "open": 35,
+    "open": 34,
     "pending": 0,
-    "wins": 212,
+    "wins": 213,
     "losses": 231,
-    "total_pnl": 25.03,
-    "winrate": 47.9
+    "total_pnl": 27.06,
+    "winrate": 48.0
   },
   "fear_greed": {
     "value": 23,
@@ -1846,32 +1846,23 @@
         "CVD положительный (-3.4%)",
         "⚡ Рыночный вход (MTF сильный)"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 554,
       "symbol": "KASUSDT",
       "direction": "LONG",
       "entry": 0.03801,
       "tp1": 0.03877,
       "tp2": 0.03953,
       "sl": 0.03878,
-      "entry_orig": 0.03801,
-      "tp1_orig": 0.03877,
-      "tp2_orig": 0.03953,
-      "sl_orig": 0.03725,
       "strength": 49,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 2.03,
+      "close_price": 0.03878,
       "taken_at": "2026-03-19T17:12:20.232000",
-      "status": "TP1_HIT",
-      "reasons": [
-        "RSI=27 (сильная перепроданность)",
-        "BB нижняя полоса (пробой)",
-        "Объём x2.8 🔥🔥",
-        "Стакан: сильное давление покупки (+0.27)",
-        "МТФ: только 1 таймфрейм согласен"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-19 18:00:18"
+    },
     {
       "symbol": "VVVUSDT",
       "direction": "LONG",
@@ -4657,20 +4648,6 @@
       "close_price": 0.033225000000000005,
       "taken_at": "2026-03-18T09:53:31.245095",
       "closed_at": "2026-03-18 11:02:25"
-    },
-    {
-      "symbol": "AKTUSDT",
-      "direction": "LONG",
-      "entry": 0.51763234,
-      "tp1": 0.539629,
-      "tp2": 0.561625,
-      "sl": 0.500035,
-      "strength": 41,
-      "status": "LIMIT_TIMEOUT",
-      "pnl_pct": 0,
-      "close_price": null,
-      "taken_at": "2026-03-18T09:52:02.630150",
-      "closed_at": "2026-03-18 10:52:06"
     }
   ]
 }
