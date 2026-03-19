@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-19T21:22:58.494184+00:00",
+  "updated_at": "2026-03-19T21:23:33.021867+00:00",
   "publish_status": {
-    "last_ok": "2026-03-19T21:21:54Z",
+    "last_ok": "2026-03-19T21:23:04Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 62.9
   },
   "trade_stats": {
-    "open": 23,
+    "open": 22,
     "pending": 0,
-    "wins": 222,
+    "wins": 223,
     "losses": 239,
-    "total_pnl": 24.61,
-    "winrate": 48.2
+    "total_pnl": 25.35,
+    "winrate": 48.3
   },
   "fear_greed": {
     "value": 23,
@@ -530,33 +530,6 @@
         "OI растёт +0.6% + цена ↓",
         "BTC корреляция 0.81, BTC -1.6% 📉",
         "BTC контекст: -2.5% за 12ч 📉"
-      ]
-    },
-    {
-      "id": 509,
-      "symbol": "ETHUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 2130.83,
-      "tp1": 2173.4466,
-      "tp2": 2216.0632,
-      "sl": 2088.2134,
-      "entry_orig": 2130.83,
-      "tp1_orig": 2173.4466,
-      "tp2_orig": 2216.0632,
-      "sl_orig": 2088.2134,
-      "strength": 49,
-      "taken_at": "2026-03-19T13:23:17.686871",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=18 (сильная перепроданность)",
-        "BB нижняя зона (6%)",
-        "Объём x1.9 🔥",
-        "Стакан: сильное давление покупки (+0.98)",
-        "📰 Crypto Market Regains Its Nerve as ETF Inflows Top $1B, Report Sh...",
-        "МТФ: только 1 таймфрейм согласен",
-        "CVD положительный (-3.1%)",
-        "Doji (1h) — нерешительность"
       ]
     },
     {
@@ -1081,6 +1054,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "ETHUSDT",
+      "direction": "LONG",
+      "entry": 2130.83,
+      "tp1": 2173.4466,
+      "tp2": 2216.0632,
+      "sl": 2088.2134,
+      "strength": 49,
+      "status": "TIMEOUT",
+      "pnl_pct": 0.74,
+      "close_price": 2146.625,
+      "taken_at": "2026-03-19T13:23:17.686871",
+      "closed_at": "2026-03-19 21:23:20"
+    },
     {
       "symbol": "RENDERUSDT",
       "direction": "LONG",
@@ -3866,20 +3853,6 @@
       "close_price": 3.6025,
       "taken_at": "2026-03-18T09:02:21.008230",
       "closed_at": "2026-03-18 11:51:12"
-    },
-    {
-      "symbol": "HYPEUSDT",
-      "direction": "LONG",
-      "entry": 41.77129349,
-      "tp1": 42.606719,
-      "tp2": 43.442145,
-      "sl": 40.935868,
-      "strength": 42,
-      "status": "SL",
-      "pnl_pct": -2.02,
-      "close_price": 40.926500000000004,
-      "taken_at": "2026-03-18 07:20:09",
-      "closed_at": "2026-03-18 11:48:55"
     }
   ]
 }
