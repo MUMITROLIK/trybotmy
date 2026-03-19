@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-19T13:22:49.651897+00:00",
+  "updated_at": "2026-03-19T13:23:55.728943+00:00",
   "publish_status": {
-    "last_ok": "2026-03-19T13:21:49Z",
+    "last_ok": "2026-03-19T13:22:55Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 616,
+    "total": 617,
     "wins": 184,
     "losses": 104,
-    "active": 26,
+    "active": 27,
     "winrate": 63.9
   },
   "trade_stats": {
-    "open": 26,
+    "open": 27,
     "pending": 0,
     "wins": 186,
     "losses": 215,
@@ -600,6 +600,29 @@
       ],
       "news": null,
       "created_at": "2026-03-19 13:14:30",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 655,
+      "symbol": "ETHUSDT",
+      "direction": "LONG",
+      "entry": 2130.83,
+      "tp1": 2173.4466,
+      "tp2": 2216.0632,
+      "sl": 2088.2134,
+      "strength": 49,
+      "reasons": [
+        "RSI=18 (сильная перепроданность)",
+        "BB нижняя зона (6%)",
+        "Объём x1.9 🔥",
+        "Стакан: сильное давление покупки (+0.98)",
+        "📰 Crypto Market Regains Its Nerve as ETF Inflows Top $1B, Report Sh...",
+        "МТФ: только 1 таймфрейм согласен",
+        "CVD положительный (-3.1%)",
+        "Doji (1h) — нерешительность"
+      ],
+      "news": "Crypto Market Regains Its Nerve as ETF Inflows Top $1B, Report Shows",
+      "created_at": "2026-03-19 13:23:17",
       "status": "ACTIVE"
     }
   ],
@@ -1655,6 +1678,32 @@
         "Объём x2.6 🔥🔥",
         "Стакан: сильное давление покупки (+0.26)",
         "МТФ: только 1 таймфрейм согласен"
+      ]
+    },
+    {
+      "id": 509,
+      "symbol": "ETHUSDT",
+      "direction": "LONG",
+      "entry": 2130.83,
+      "tp1": 2173.4466,
+      "tp2": 2216.0632,
+      "sl": 2088.2134,
+      "entry_orig": 2130.83,
+      "tp1_orig": 2173.4466,
+      "tp2_orig": 2216.0632,
+      "sl_orig": 2088.2134,
+      "strength": 49,
+      "taken_at": "2026-03-19T13:23:17.686871",
+      "status": "OPEN",
+      "reasons": [
+        "RSI=18 (сильная перепроданность)",
+        "BB нижняя зона (6%)",
+        "Объём x1.9 🔥",
+        "Стакан: сильное давление покупки (+0.98)",
+        "📰 Crypto Market Regains Its Nerve as ETF Inflows Top $1B, Report Sh...",
+        "МТФ: только 1 таймфрейм согласен",
+        "CVD положительный (-3.1%)",
+        "Doji (1h) — нерешительность"
       ]
     }
   ],
