@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-19T20:07:16.859809+00:00",
+  "updated_at": "2026-03-19T20:07:48.763458+00:00",
   "publish_status": {
-    "last_ok": "2026-03-19T20:06:48Z",
+    "last_ok": "2026-03-19T20:07:22Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 63.2
   },
   "trade_stats": {
-    "open": 32,
+    "open": 31,
     "pending": 0,
-    "wins": 216,
+    "wins": 217,
     "losses": 236,
-    "total_pnl": 20.35,
-    "winrate": 47.8
+    "total_pnl": 20.9,
+    "winrate": 47.9
   },
   "fear_greed": {
     "value": 23,
@@ -712,32 +712,6 @@
     }
   ],
   "trades_open": [
-    {
-      "id": 476,
-      "symbol": "AXSUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 1.182,
-      "tp1": 1.20564,
-      "tp2": 1.22928,
-      "sl": 1.15836,
-      "entry_orig": 1.182,
-      "tp1_orig": 1.20564,
-      "tp2_orig": 1.22928,
-      "sl_orig": 1.15836,
-      "strength": 45,
-      "taken_at": "2026-03-19T12:07:09.527953",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=29 (сильная перепроданность)",
-        "BB нижняя полоса (пробой)",
-        "Объём x1.9 🔥",
-        "Стакан: давление покупки (+0.18)",
-        "МТФ: только 1 таймфрейм согласен",
-        "OI падает (шорты закрываются)",
-        "CVD положительный (-8.0%)"
-      ]
-    },
     {
       "id": 483,
       "symbol": "PENGUUSDT",
@@ -1550,6 +1524,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "AXSUSDT",
+      "direction": "LONG",
+      "entry": 1.182,
+      "tp1": 1.20564,
+      "tp2": 1.22928,
+      "sl": 1.15836,
+      "strength": 45,
+      "status": "TIMEOUT",
+      "pnl_pct": 0.55,
+      "close_price": 1.1885,
+      "taken_at": "2026-03-19T12:07:09.527953",
+      "closed_at": "2026-03-19 20:07:23"
+    },
     {
       "symbol": "ZECUSDT",
       "direction": "LONG",
@@ -4335,20 +4323,6 @@
       "close_price": 1.0046499999999998,
       "taken_at": "2026-03-18T07:01:45.256724",
       "closed_at": "2026-03-18 11:31:51"
-    },
-    {
-      "symbol": "PIPPINUSDT",
-      "direction": "SHORT",
-      "entry": 0.11438,
-      "tp1": 0.109559,
-      "tp2": 0.104737,
-      "sl": 0.10875,
-      "strength": 49,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 4.41,
-      "close_price": 0.109335,
-      "taken_at": "2026-03-18T11:05:11.726085",
-      "closed_at": "2026-03-18 11:31:32"
     }
   ]
 }
