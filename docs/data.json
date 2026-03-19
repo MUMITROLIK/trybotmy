@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-03-19T17:58:27.570040+00:00",
+  "updated_at": "2026-03-19T17:59:26.731592+00:00",
   "publish_status": {
-    "last_ok": "2026-03-19T17:56:57Z",
-    "last_error": "On branch main\nYour branch is up to date with 'origin/main'.\n\nChanges not staged for commit:\n  (use \"git add <file>...\" to update what will be committed)\n  (use \"git restore <file>...\" to discard changes in working directory)\n\tmodified:   d",
+    "last_ok": "2026-03-19T17:58:19Z",
+    "last_error": null,
     "min_push_interval_sec": 30
   },
   "settings": {
@@ -17,12 +17,12 @@
     "winrate": 63.5
   },
   "trade_stats": {
-    "open": 36,
+    "open": 35,
     "pending": 0,
-    "wins": 211,
+    "wins": 212,
     "losses": 231,
-    "total_pnl": 22.6,
-    "winrate": 47.7
+    "total_pnl": 25.03,
+    "winrate": 47.9
   },
   "fear_greed": {
     "value": 23,
@@ -1848,31 +1848,6 @@
       ]
     },
     {
-      "id": 549,
-      "symbol": "VVVUSDT",
-      "direction": "LONG",
-      "entry": 5.198,
-      "tp1": 5.30196,
-      "tp2": 5.40592,
-      "sl": 5.3260000000000005,
-      "entry_orig": 5.198,
-      "tp1_orig": 5.30196,
-      "tp2_orig": 5.40592,
-      "sl_orig": 5.09404,
-      "strength": 51,
-      "taken_at": "2026-03-19T17:00:55.844693",
-      "status": "TP1_HIT",
-      "reasons": [
-        "RSI=20 (сильная перепроданность)",
-        "MACD бычий (hist=0.00108)",
-        "BB нижняя зона (20%)",
-        "Стакан: сильное давление покупки (+0.27)",
-        "OI падает (шорты закрываются)",
-        "CVD положительный (-4.2%)",
-        "Doji (1h) — нерешительность"
-      ]
-    },
-    {
       "id": 554,
       "symbol": "KASUSDT",
       "direction": "LONG",
@@ -1897,6 +1872,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "VVVUSDT",
+      "direction": "LONG",
+      "entry": 5.198,
+      "tp1": 5.30196,
+      "tp2": 5.40592,
+      "sl": 5.3260000000000005,
+      "strength": 51,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 2.43,
+      "close_price": 5.3245000000000005,
+      "taken_at": "2026-03-19T17:00:55.844693",
+      "closed_at": "2026-03-19 17:58:38"
+    },
     {
       "symbol": "TAOUSDT",
       "direction": "LONG",
@@ -4682,20 +4671,6 @@
       "close_price": null,
       "taken_at": "2026-03-18T09:52:02.630150",
       "closed_at": "2026-03-18 10:52:06"
-    },
-    {
-      "symbol": "DEGOUSDT",
-      "direction": "SHORT",
-      "entry": 0.98056529,
-      "tp1": 0.94538,
-      "tp2": 0.910194,
-      "sl": 1.008714,
-      "strength": 58,
-      "status": "SL",
-      "pnl_pct": -2.93,
-      "close_price": 1.0092500000000002,
-      "taken_at": "2026-03-18 10:16:25",
-      "closed_at": "2026-03-18 10:41:44"
     }
   ]
 }
