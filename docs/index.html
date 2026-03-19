@@ -278,6 +278,103 @@ main{position:relative;z-index:1;max-width:1920px;margin:0 auto;padding:1rem 1.2
 @media(max-width:1100px){.mid-row{grid-template-columns:1fr};.sidebar{flex-direction:row;flex-wrap:wrap}.fg-card,.equity-card,.wr-card,.activity-card{flex:1 1 240px}}
 @media(max-width:900px){.stats-row,.mini-stats{grid-template-columns:repeat(2,1fr)};.tab-pane.grid-pane.active{grid-template-columns:1fr}}
 @media(max-width:600px){.stats-row,.mini-stats{grid-template-columns:1fr}}
+
+/* ── НОВЫЕ СТИЛИ v2 ────────────────────────────────────────────────────────── */
+
+/* Flash анимации для цен */
+@keyframes flashGreen{0%{background:rgba(5,240,144,.25);border-color:rgba(5,240,144,.6)}100%{background:transparent;border-color:var(--line)}}
+@keyframes flashRed{0%{background:rgba(255,23,68,.25);border-color:rgba(255,23,68,.6)}100%{background:transparent;border-color:var(--line)}}
+@keyframes countUp{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes scanline{0%{top:-10%}100%{top:110%}}
+
+.flash-g{animation:flashGreen .6s ease forwards}
+.flash-r{animation:flashRed .6s ease forwards}
+
+/* Scan timer */
+.scan-timer{display:flex;align-items:center;gap:.5rem;padding:0 1.25rem;height:100%;border-right:1px solid var(--line)}
+.scan-ring{position:relative;width:28px;height:28px;flex-shrink:0}
+.scan-ring svg{transform:rotate(-90deg)}
+.scan-ring-txt{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:.5rem;font-weight:700;color:var(--B)}
+.scan-lbl{display:flex;flex-direction:column;gap:.1rem}
+.scan-lbl span:first-child{font-size:.55rem;letter-spacing:.1em;text-transform:uppercase;color:var(--text3)}
+.scan-lbl span:last-child{font-family:var(--mono);font-size:.7rem;font-weight:600;color:var(--B)}
+
+/* Market regime badge */
+.regime-badge{font-family:var(--mono);font-size:.65rem;font-weight:700;letter-spacing:.06em;padding:.25rem .7rem;border-radius:4px;border:1px solid;display:flex;align-items:center;gap:.35rem}
+.regime-badge.bull{background:rgba(5,240,144,.08);border-color:rgba(5,240,144,.3);color:var(--G)}
+.regime-badge.bear{background:rgba(255,23,68,.08);border-color:rgba(255,23,68,.3);color:var(--R)}
+.regime-badge.flat{background:rgba(255,179,0,.08);border-color:rgba(255,179,0,.3);color:var(--A)}
+.regime-badge.fear_bull{background:rgba(0,207,255,.08);border-color:rgba(0,207,255,.3);color:var(--B)}
+.regime-badge.greed_bear{background:rgba(255,99,0,.08);border-color:rgba(255,99,0,.3);color:#FF6300}
+
+/* Sound toggle */
+.sound-btn{width:28px;height:28px;border-radius:5px;border:1px solid var(--line);background:var(--elevated);display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:.8rem;transition:all .2s;color:var(--text3)}
+.sound-btn:hover{border-color:var(--line2);color:var(--text)}
+.sound-btn.on{border-color:rgba(5,240,144,.3);color:var(--G);background:rgba(5,240,144,.05)}
+
+/* Funding timer */
+.fund-card{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:.875rem 1rem}
+.fund-head{font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:var(--text3);margin-bottom:.625rem}
+.fund-row{display:flex;align-items:center;justify-content:space-between}
+.fund-time{font-family:var(--mono);font-size:1.5rem;font-weight:800;color:var(--A);letter-spacing:.05em;line-height:1}
+.fund-bar-wrap{height:3px;background:var(--elevated);border-radius:2px;margin-top:.625rem;overflow:hidden}
+.fund-bar{height:100%;border-radius:2px;background:linear-gradient(90deg,var(--G),var(--A));transition:width 1s linear}
+.fund-rate{font-family:var(--mono);font-size:.75rem}
+.fund-rate.pos{color:var(--G)}.fund-rate.neg{color:var(--R)}
+
+/* BTC Chart widget */
+.btc-chart-card{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:.875rem 1rem}
+.btc-chart-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:.625rem}
+.btc-chart-title{font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:var(--text3)}
+.btc-chart-price{font-family:var(--mono);font-size:.85rem;font-weight:600}
+.btc-chart-chg{font-family:var(--mono);font-size:.65rem;padding:.1rem .35rem;border-radius:3px}
+.btc-chart-chg.pos{background:rgba(5,240,144,.1);color:var(--G)}
+.btc-chart-chg.neg{background:rgba(255,23,68,.1);color:var(--R)}
+
+/* Circular strength meter */
+.str-circle-wrap{display:flex;align-items:center;gap:.75rem;margin-bottom:.625rem}
+.str-circle{position:relative;flex-shrink:0;width:52px;height:52px}
+.str-circle svg{transform:rotate(-90deg)}
+.str-circle-val{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;flex-direction:column}
+.str-circle-num{font-family:var(--mono);font-size:.75rem;font-weight:700;line-height:1}
+.str-circle-lbl{font-size:.45rem;letter-spacing:.08em;text-transform:uppercase;color:var(--text3)}
+.str-info{display:flex;flex-direction:column;gap:.2rem;flex:1}
+.str-info-sym{font-family:var(--disp);font-size:1rem;font-weight:700}
+.str-info-dir{font-family:var(--mono);font-size:.65rem}
+
+/* Keyboard shortcuts hint */
+.kb-hint{position:fixed;bottom:1.5rem;left:1.5rem;z-index:100;display:flex;gap:.35rem;opacity:.4;transition:opacity .2s}
+.kb-hint:hover{opacity:1}
+.kb-key{font-family:var(--mono);font-size:.55rem;background:var(--elevated);border:1px solid var(--line2);padding:.2rem .45rem;border-radius:3px;color:var(--text3)}
+
+/* Hotkey overlay */
+.kb-overlay{position:fixed;inset:0;z-index:200;background:rgba(4,6,15,.95);display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity .2s}
+.kb-overlay.show{opacity:1;pointer-events:all}
+.kb-box{background:var(--panel);border:1px solid var(--line2);border-radius:12px;padding:2rem;min-width:320px}
+.kb-box-title{font-family:var(--disp);font-size:1rem;font-weight:700;margin-bottom:1.25rem;color:var(--text)}
+.kb-row{display:flex;align-items:center;justify-content:space-between;padding:.5rem 0;border-bottom:1px solid var(--line)}
+.kb-row:last-child{border:none}
+.kb-row-key{font-family:var(--mono);font-size:.75rem;background:var(--elevated);border:1px solid var(--line2);padding:.25rem .6rem;border-radius:4px;color:var(--B);min-width:32px;text-align:center}
+.kb-row-lbl{font-size:.8rem;color:var(--text2)}
+
+/* Scanline effect on BTC chart */
+.scanline-wrap{position:relative;overflow:hidden}
+.scanline-wrap::after{content:'';position:absolute;left:0;right:0;height:1px;background:rgba(0,207,255,.15);animation:scanline 3s linear infinite;pointer-events:none}
+
+/* Number transition */
+.num-transition{transition:all .3s cubic-bezier(.22,1,.36,1)}
+
+/* Improved position card live price */
+.pos-live-badge{font-family:var(--mono);font-size:.6rem;background:rgba(0,207,255,.08);border:1px solid rgba(0,207,255,.2);color:var(--B);padding:.15rem .45rem;border-radius:3px;margin-left:.35rem}
+
+/* Signal entry type badge */
+.entry-badge{font-family:var(--mono);font-size:.55rem;font-weight:600;padding:.15rem .45rem;border-radius:3px;letter-spacing:.04em}
+.entry-badge.limit{background:rgba(255,179,0,.1);color:var(--A);border:1px solid rgba(255,179,0,.2)}
+.entry-badge.market{background:rgba(255,23,68,.08);color:var(--R);border:1px solid rgba(255,23,68,.15)}
+
+/* Heavy confirmed stars */
+.heavy-stars{font-size:.75rem;letter-spacing:-.05em}
 </style>
 </head>
 <body>
@@ -326,11 +423,50 @@ main{position:relative;z-index:1;max-width:1920px;margin:0 auto;padding:1rem 1.2
       <span class="model-name" id="modelName">—</span>
       <span class="model-auc" id="modelAuc">—</span>
     </div>
-    <div class="hseg hseg-right au d5">
+    <!-- Scan timer -->
+    <div class="scan-timer au d4">
+      <div class="scan-ring">
+        <svg width="28" height="28" viewBox="0 0 28 28">
+          <circle cx="14" cy="14" r="11" fill="none" stroke="var(--elevated)" stroke-width="2.5"/>
+          <circle id="scanArc" cx="14" cy="14" r="11" fill="none" stroke="var(--B)" stroke-width="2.5" stroke-dasharray="69.1" stroke-dashoffset="0" stroke-linecap="round" style="transition:stroke-dashoffset 1s linear"/>
+        </svg>
+        <div class="scan-ring-txt" id="scanSec">—</div>
+      </div>
+      <div class="scan-lbl">
+        <span>Скан через</span>
+        <span id="scanLabel">—</span>
+      </div>
+    </div>
+    <!-- Market regime -->
+    <div class="hseg au d4" style="gap:.5rem">
+      <span class="hseg-lbl">Режим</span>
+      <span class="regime-badge flat" id="regimeBadge">● FLAT</span>
+    </div>
+    <div class="hseg hseg-right au d5" style="gap:.75rem">
+      <button class="sound-btn" id="soundBtn" title="Звук" onclick="toggleSound()">🔇</button>
+      <button class="sound-btn" id="kbBtn" title="Горячие клавиши" onclick="toggleKB()" style="font-size:.65rem;font-family:var(--mono)">KB</button>
       <span class="mode-btn manual" id="autoBadge">РУЧНОЙ</span>
     </div>
   </div>
 </header>
+
+<!-- Keyboard shortcut overlay -->
+<div class="kb-overlay" id="kbOverlay" onclick="toggleKB()">
+  <div class="kb-box" onclick="event.stopPropagation()">
+    <div class="kb-box-title">⌨️ Горячие клавиши</div>
+    <div class="kb-row"><span class="kb-row-key">S</span><span class="kb-row-lbl">Сигналы</span></div>
+    <div class="kb-row"><span class="kb-row-key">P</span><span class="kb-row-lbl">Позиции</span></div>
+    <div class="kb-row"><span class="kb-row-key">L</span><span class="kb-row-lbl">Лимитки</span></div>
+    <div class="kb-row"><span class="kb-row-key">H</span><span class="kb-row-lbl">История</span></div>
+    <div class="kb-row"><span class="kb-row-key">M</span><span class="kb-row-lbl">Звук вкл/выкл</span></div>
+    <div class="kb-row"><span class="kb-row-key">ESC</span><span class="kb-row-lbl">Закрыть</span></div>
+  </div>
+</div>
+
+<!-- KB hint -->
+<div class="kb-hint">
+  <span class="kb-key">S</span><span class="kb-key">P</span><span class="kb-key">L</span><span class="kb-key">H</span>
+</div>
 
 <main>
   <!-- STATS -->
@@ -380,6 +516,34 @@ main{position:relative;z-index:1;max-width:1920px;margin:0 auto;padding:1rem 1.2
   <!-- MID ROW -->
   <div class="mid-row">
     <div class="sidebar">
+      <!-- BTC Mini Chart -->
+      <div class="btc-chart-card au d1 scanline-wrap">
+        <div class="btc-chart-head">
+          <span class="btc-chart-title">BTC/USDT · 15m</span>
+          <div style="display:flex;align-items:center;gap:.5rem">
+            <span class="btc-chart-price" id="btcChartPrice">—</span>
+            <span class="btc-chart-chg" id="btcChartChg">—</span>
+          </div>
+        </div>
+        <canvas id="btcCandleCanvas" style="width:100%;height:80px;display:block"></canvas>
+      </div>
+
+      <!-- Funding Timer -->
+      <div class="fund-card au d1">
+        <div class="fund-head">Funding Rate · BTC</div>
+        <div class="fund-row">
+          <div>
+            <div class="fund-time" id="fundTime">—</div>
+            <div style="font-size:.6rem;color:var(--text3);margin-top:.2rem">до следующего</div>
+          </div>
+          <div style="text-align:right">
+            <div class="fund-rate pos" id="fundRate">—</div>
+            <div style="font-size:.6rem;color:var(--text3);margin-top:.2rem">ставка</div>
+          </div>
+        </div>
+        <div class="fund-bar-wrap"><div class="fund-bar" id="fundBar" style="width:50%"></div></div>
+      </div>
+
       <!-- Fear & Greed -->
       <div class="fg-card au d2">
         <div class="fg-header">Индекс страха и жадности</div>
@@ -867,6 +1031,203 @@ document.querySelectorAll('.tab').forEach(function(btn){
   })
 });
 
+// ── SCAN COUNTDOWN TIMER ──────────────────────────────────────────────────────
+var scanInterval=60,scanLastStart=Date.now();
+function updateScanTimer(){
+  var elapsed=Math.floor((Date.now()-scanLastStart)/1000)%scanInterval;
+  var remaining=scanInterval-elapsed;
+  var pct=remaining/scanInterval;
+  var arc=69.1*(1-pct);
+  var arcEl=document.getElementById('scanArc');
+  if(arcEl)arcEl.setAttribute('stroke-dashoffset',arc);
+  var secEl=document.getElementById('scanSec');
+  if(secEl)secEl.textContent=remaining+'s';
+  var lblEl=document.getElementById('scanLabel');
+  if(lblEl)lblEl.textContent=remaining+'с';
+}
+setInterval(updateScanTimer,1000);
+updateScanTimer();
+
+// ── SOUND ─────────────────────────────────────────────────────────────────────
+var soundOn=false;
+function toggleSound(){
+  soundOn=!soundOn;
+  var btn=document.getElementById('soundBtn');
+  if(btn){btn.textContent=soundOn?'🔊':'🔇';btn.className='sound-btn'+(soundOn?' on':'')}
+}
+function playSound(type){
+  if(!soundOn)return;
+  try{
+    var ctx=new(window.AudioContext||window.webkitAudioContext)();
+    var o=ctx.createOscillator(),g=ctx.createGain();
+    o.connect(g);g.connect(ctx.destination);
+    if(type==='win'){o.frequency.setValueAtTime(523,ctx.currentTime);o.frequency.setValueAtTime(659,ctx.currentTime+.1);o.frequency.setValueAtTime(784,ctx.currentTime+.2);g.gain.setValueAtTime(.15,ctx.currentTime);g.gain.exponentialRampToValueAtTime(.001,ctx.currentTime+.5)}
+    else if(type==='loss'){o.frequency.setValueAtTime(300,ctx.currentTime);o.frequency.setValueAtTime(220,ctx.currentTime+.2);g.gain.setValueAtTime(.15,ctx.currentTime);g.gain.exponentialRampToValueAtTime(.001,ctx.currentTime+.4)}
+    else{o.frequency.setValueAtTime(800,ctx.currentTime);g.gain.setValueAtTime(.08,ctx.currentTime);g.gain.exponentialRampToValueAtTime(.001,ctx.currentTime+.2)}
+    o.start();o.stop(ctx.currentTime+.5);
+  }catch(e){}
+}
+
+// ── KEYBOARD SHORTCUTS ────────────────────────────────────────────────────────
+function toggleKB(){
+  var el=document.getElementById('kbOverlay');
+  if(el)el.classList.toggle('show');
+}
+document.addEventListener('keydown',function(e){
+  if(e.target.tagName==='INPUT'||e.target.tagName==='TEXTAREA')return;
+  var key=e.key.toLowerCase();
+  if(key==='escape'){var el=document.getElementById('kbOverlay');if(el)el.classList.remove('show');return}
+  if(key==='s')switchTab('signals');
+  else if(key==='p')switchTab('positions');
+  else if(key==='l')switchTab('pending');
+  else if(key==='h')switchTab('history');
+  else if(key==='m')toggleSound();
+  else if(key==='?'||key==='/')toggleKB();
+});
+function switchTab(name){
+  document.querySelectorAll('.tab').forEach(function(b){
+    b.classList.remove('active');
+    if(b.dataset.tab===name)b.classList.add('active');
+  });
+  activeTab=name;
+  if(appData){var a=appData.trades_open||[];renderTab(appData.signals||[],a.filter(function(t){return['OPEN','TP1_HIT'].indexOf(t.status)!==-1}),a.filter(function(t){return t.status==='PENDING'}),appData.trades_history||[])}
+}
+
+// ── MARKET REGIME ─────────────────────────────────────────────────────────────
+function updateRegime(regime){
+  var el=document.getElementById('regimeBadge');
+  if(!el)return;
+  var labels={bull:'● BULL',bear:'● BEAR',flat:'● FLAT',fear_bull:'● СТРАХ/BULL',greed_bear:'● ЖАДНОСТЬ/BEAR'};
+  el.textContent=labels[regime]||('● '+(regime||'FLAT').toUpperCase());
+  el.className='regime-badge '+(regime||'flat');
+}
+
+// ── PRICE FLASH ───────────────────────────────────────────────────────────────
+var prevPrices={};
+function flashPrice(el,newVal,oldVal){
+  if(!el||oldVal===undefined)return;
+  if(newVal>oldVal){el.classList.remove('flash-r');void el.offsetWidth;el.classList.add('flash-g')}
+  else if(newVal<oldVal){el.classList.remove('flash-g');void el.offsetWidth;el.classList.add('flash-r')}
+  setTimeout(function(){el.classList.remove('flash-g','flash-r')},600);
+}
+
+// ── BTC CANDLESTICK CHART ─────────────────────────────────────────────────────
+var btcCandles=[];
+function drawBTCCandles(candles){
+  var c=document.getElementById('btcCandleCanvas');if(!c)return;
+  var w=c.parentElement.clientWidth-32||248;
+  var DPR=window.devicePixelRatio||1;
+  c.width=w*DPR;c.height=80*DPR;c.style.width=w+'px';c.style.height='80px';
+  var ctx=c.getContext('2d');ctx.scale(DPR,DPR);
+  if(!candles||candles.length<2)return;
+  var data=candles.slice(-40);
+  var highs=data.map(function(d){return d[2]});
+  var lows=data.map(function(d){return d[3]});
+  var mn=Math.min.apply(null,lows),mx=Math.max.apply(null,highs);
+  var rng=mx-mn;if(rng===0)rng=1;
+  var pad={t:4,b:4,l:2,r:2};
+  var cw=w-pad.l-pad.r,ch=80-pad.t-pad.b;
+  var cWidth=Math.max(2,(cw/data.length)-1);
+  function py(v){return pad.t+ch-(v-mn)/rng*ch}
+  data.forEach(function(d,i){
+    var o=parseFloat(d[1]),h=parseFloat(d[2]),l=parseFloat(d[3]),cl=parseFloat(d[4]);
+    var isG=cl>=o;var color=isG?'#05F090':'#FF1744';
+    var x=pad.l+i*(cw/data.length)+cWidth/2;
+    // Wick
+    ctx.beginPath();ctx.moveTo(x,py(h));ctx.lineTo(x,py(l));
+    ctx.strokeStyle=isG?'rgba(5,240,144,.5)':'rgba(255,23,68,.5)';ctx.lineWidth=1;ctx.stroke();
+    // Body
+    var bTop=py(Math.max(o,cl)),bBot=py(Math.min(o,cl)),bH=Math.max(1,bBot-bTop);
+    ctx.fillStyle=color;
+    ctx.fillRect(x-cWidth/2,bTop,cWidth,bH);
+  });
+  // Last price line
+  var lastClose=parseFloat(data[data.length-1][4]);
+  var lpy=py(lastClose);
+  var isUp=lastClose>=parseFloat(data[data.length-1][1]);
+  ctx.beginPath();ctx.setLineDash([3,3]);
+  ctx.moveTo(pad.l,lpy);ctx.lineTo(w-pad.r,lpy);
+  ctx.strokeStyle=isUp?'rgba(5,240,144,.4)':'rgba(255,23,68,.4)';ctx.lineWidth=1;ctx.stroke();
+  ctx.setLineDash([]);
+}
+
+async function fetchBTCChart(){
+  try{
+    var r=await fetch('/api/klines?symbol=BTCUSDT&interval=15m&limit=40');
+    if(!r.ok)return;
+    var data=await r.json();
+    if(!data||!data.length)return;
+    btcCandles=data;
+    drawBTCCandles(data);
+    var last=data[data.length-1];
+    var cl=parseFloat(last[4]),op=parseFloat(data[0][1]);
+    var chgPct=(cl-op)/op*100;
+    var prEl=document.getElementById('btcChartPrice');
+    var chEl=document.getElementById('btcChartChg');
+    if(prEl)prEl.textContent='$'+fmt(cl);
+    if(chEl){chEl.textContent=(chgPct>=0?'+':'')+chgPct.toFixed(2)+'%';chEl.className='btc-chart-chg '+(chgPct>=0?'pos':'neg')}
+  }catch(e){}
+}
+
+// ── FUNDING TIMER ─────────────────────────────────────────────────────────────
+function updateFundingDisplay(){
+  var now=new Date();
+  var h=now.getUTCHours(),m=now.getUTCMinutes(),s=now.getUTCSeconds();
+  var fundingHours=[0,8,16];
+  var nextH=fundingHours.find(function(fh){return fh>h});
+  if(nextH===undefined)nextH=fundingHours[0]+24;
+  var totalSecToFunding=((nextH-h-1)*3600)+((60-m-1)*60)+(60-s);
+  var totalSecInPeriod=8*3600;
+  var pct=Math.max(0,Math.min(100,(1-totalSecToFunding/totalSecInPeriod)*100));
+  var rh=Math.floor(totalSecToFunding/3600);
+  var rm=Math.floor((totalSecToFunding%3600)/60);
+  var rs=totalSecToFunding%60;
+  var timeStr=(rh>0?rh+'ч ':'')+rm+'м '+rs+'с';
+  var ftEl=document.getElementById('fundTime');if(ftEl)ftEl.textContent=timeStr;
+  var fbEl=document.getElementById('fundBar');if(fbEl)fbEl.style.width=pct+'%';
+  // Color bar based on time left
+  if(fbEl){
+    if(totalSecToFunding<1800)fbEl.style.background='linear-gradient(90deg,var(--R),#FF7043)';
+    else if(totalSecToFunding<3600)fbEl.style.background='linear-gradient(90deg,var(--A),var(--G))';
+    else fbEl.style.background='linear-gradient(90deg,var(--G),var(--A))';
+  }
+}
+setInterval(updateFundingDisplay,1000);
+updateFundingDisplay();
+
+// Hook into updateUI to update regime and play sounds
+var _origUpdateUI=updateUI;
+updateUI=function(d){
+  var prevSigCount=appData?(appData.signals||[]).length:0;
+  var prevHistLen2=appData?(appData.trades_history||[]).length:0;
+  _origUpdateUI(d);
+  // Regime from ml_info or context
+  var regime=null;
+  if(d.trades_history&&d.trades_history.length&&d.trades_history[0].market_regime){
+    regime=d.trades_history[0].market_regime;
+  }
+  updateRegime(regime||'flat');
+  // Play sounds for new events
+  var newSigs=(d.signals||[]).length;
+  var newHist=(d.trades_history||[]).length;
+  if(prevSigCount>0&&newSigs>prevSigCount)playSound('signal');
+  if(prevHistLen2>0&&newHist>prevHistLen2){
+    var newest=d.trades_history[0];
+    var isW=['TP2','TP1','SL_AFTER_TP1'].indexOf(newest.status)!==-1;
+    playSound(isW?'win':'loss');
+  }
+  // Update BTC funding rate from signals data
+  var btcFunding=null;
+  if(d.signals){var bs=d.signals.find(function(s){return s.symbol==='BTCUSDT'});if(bs)btcFunding=bs.funding_rate}
+  var frEl=document.getElementById('fundRate');
+  if(frEl&&btcFunding!=null){
+    var frPct=(btcFunding*100).toFixed(4)+'%';
+    frEl.textContent=(btcFunding>=0?'+':'')+frPct;
+    frEl.className='fund-rate '+(btcFunding>=0?'pos':'neg');
+  }
+  scanLastStart=Date.now();
+};
+
 // ── INIT ──────────────────────────────────────────────────────────────────────
 fetchREST();connectWS();fetchBTC2();
 setInterval(function(){if(!ws||ws.readyState!==1||(Date.now()-wsLM)>45000)fetchREST()},15000);
@@ -875,6 +1236,7 @@ setInterval(function(){if(openTradesCache.length)patchCards()},1000);
 setInterval(function(){if(serverTime)serverTime=new Date(serverTime.getTime()+1000)},1000);
 setInterval(fetchBTC2,10000);
 setInterval(updateSession,60000);
+fetchBTCChart();
+setInterval(fetchBTCChart,60000);
 </script>
 </body>
-</html>
