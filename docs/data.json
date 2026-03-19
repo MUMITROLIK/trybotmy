@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-19T23:29:23.513604+00:00",
+  "updated_at": "2026-03-19T23:30:16.932980+00:00",
   "publish_status": {
-    "last_ok": "2026-03-19T23:28:23Z",
+    "last_ok": "2026-03-19T23:29:29Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 62.9
   },
   "trade_stats": {
-    "open": 12,
+    "open": 11,
     "pending": 0,
     "wins": 228,
-    "losses": 244,
-    "total_pnl": 25.18,
-    "winrate": 48.3
+    "losses": 245,
+    "total_pnl": 23.17,
+    "winrate": 48.2
   },
   "fear_greed": {
     "value": 23,
@@ -587,31 +587,6 @@
       ]
     },
     {
-      "id": 548,
-      "symbol": "1000PEPEUSDT",
-      "direction": "SHORT",
-      "exchange": "binance",
-      "entry": 0.0033519,
-      "tp1": 0.003285,
-      "tp2": 0.003218,
-      "sl": 0.003419,
-      "entry_orig": 0.0033519,
-      "tp1_orig": 0.003285,
-      "tp2_orig": 0.003218,
-      "sl_orig": 0.003419,
-      "strength": 45,
-      "taken_at": "2026-03-19T16:43:37.657582",
-      "status": "OPEN",
-      "reasons": [
-        "MACD медвежий (hist=-0.00000)",
-        "Цена < EMA20 < EMA50",
-        "Стакан: сильное давление продажи (-0.33)",
-        "МТФ: 5m, 15m, 1h согласны",
-        "CVD падает (-7.0%) — продажи усиливаются 📉",
-        "Bearish Engulfing (1h) 🕯️"
-      ]
-    },
-    {
       "id": 550,
       "symbol": "FILUSDT",
       "direction": "LONG",
@@ -739,6 +714,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "1000PEPEUSDT",
+      "direction": "SHORT",
+      "entry": 0.0033519,
+      "tp1": 0.003285,
+      "tp2": 0.003218,
+      "sl": 0.003419,
+      "strength": 45,
+      "status": "SL",
+      "pnl_pct": -2.01,
+      "close_price": 0.00341935,
+      "taken_at": "2026-03-19T16:43:37.657582",
+      "closed_at": "2026-03-19 23:30:16"
+    },
     {
       "symbol": "BTCUSDT",
       "direction": "LONG",
@@ -3524,20 +3513,6 @@
       "close_price": 0.05428,
       "taken_at": "2026-03-18T11:46:37.174177",
       "closed_at": "2026-03-18 12:32:05"
-    },
-    {
-      "symbol": "MBOXUSDT",
-      "direction": "LONG",
-      "entry": 0.018279,
-      "tp1": 0.018645,
-      "tp2": 0.01901,
-      "sl": 0.017913,
-      "strength": 43,
-      "status": "SL",
-      "pnl_pct": -2.18,
-      "close_price": 0.01788,
-      "taken_at": "2026-03-18T11:41:45.592745",
-      "closed_at": "2026-03-18 12:31:40"
     }
   ]
 }
