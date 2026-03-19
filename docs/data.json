@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-19T13:56:22.667349+00:00",
+  "updated_at": "2026-03-19T13:57:28.058715+00:00",
   "publish_status": {
-    "last_ok": "2026-03-19T13:55:52Z",
+    "last_ok": "2026-03-19T13:56:28Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 623,
+    "total": 624,
     "wins": 187,
     "losses": 108,
-    "active": 26,
+    "active": 27,
     "winrate": 63.4
   },
   "trade_stats": {
-    "open": 26,
+    "open": 27,
     "pending": 0,
     "wins": 189,
     "losses": 219,
@@ -603,6 +603,28 @@
       ],
       "news": "S&P 500 Launches on Hyperliquid via First Officially Licensed Perpetual Contracts",
       "created_at": "2026-03-19 13:47:10",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 662,
+      "symbol": "KITEUSDT",
+      "direction": "LONG",
+      "entry": 0.19203,
+      "tp1": 0.195871,
+      "tp2": 0.199711,
+      "sl": 0.188189,
+      "strength": 45,
+      "reasons": [
+        "MACD бычий (hist=0.00101)",
+        "EMA20 > EMA50 (golden cross) 🌟",
+        "Стакан: перевес bid (+0.06)",
+        "МТФ: 5m, 15m согласны",
+        "CVD растёт (+14.2%) — покупки усиливаются 📈",
+        "Bullish Engulfing (1h) 🕯️",
+        "⚡ Рыночный вход (MTF 2+ ТФ)"
+      ],
+      "news": null,
+      "created_at": "2026-03-19 13:57:27",
       "status": "ACTIVE"
     }
   ],
@@ -1649,6 +1671,31 @@
         "МТФ: только 1 таймфрейм согласен",
         "OI падает (шорты закрываются)",
         "CVD положительный (-5.6%)"
+      ]
+    },
+    {
+      "id": 516,
+      "symbol": "KITEUSDT",
+      "direction": "LONG",
+      "entry": 0.19203,
+      "tp1": 0.195871,
+      "tp2": 0.199711,
+      "sl": 0.188189,
+      "entry_orig": 0.19203,
+      "tp1_orig": 0.195871,
+      "tp2_orig": 0.199711,
+      "sl_orig": 0.188189,
+      "strength": 45,
+      "taken_at": "2026-03-19T13:57:27.573213",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.00101)",
+        "EMA20 > EMA50 (golden cross) 🌟",
+        "Стакан: перевес bid (+0.06)",
+        "МТФ: 5m, 15m согласны",
+        "CVD растёт (+14.2%) — покупки усиливаются 📈",
+        "Bullish Engulfing (1h) 🕯️",
+        "⚡ Рыночный вход (MTF 2+ ТФ)"
       ]
     }
   ],
