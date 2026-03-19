@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-19T15:47:09.373087+00:00",
+  "updated_at": "2026-03-19T15:47:45.375975+00:00",
   "publish_status": {
-    "last_ok": "2026-03-19T15:46:32Z",
+    "last_ok": "2026-03-19T15:47:16Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 63.6
   },
   "trade_stats": {
-    "open": 29,
+    "open": 28,
     "pending": 0,
-    "wins": 201,
+    "wins": 202,
     "losses": 226,
-    "total_pnl": 12.13,
-    "winrate": 47.1
+    "total_pnl": 14.2,
+    "winrate": 47.2
   },
   "fear_greed": {
     "value": 23,
@@ -1754,34 +1754,23 @@
         "⚠️ Funding через 32м",
         "⚡ Рыночный вход (MTF 2+ ТФ)"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 492,
       "symbol": "WLFIUSDT",
       "direction": "SHORT",
       "entry": 0.094,
       "tp1": 0.09212,
       "tp2": 0.09024,
       "sl": 0.09204999999999999,
-      "entry_orig": 0.094,
-      "tp1_orig": 0.09212,
-      "tp2_orig": 0.09024,
-      "sl_orig": 0.09588,
       "strength": 47,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 2.07,
+      "close_price": 0.09204999999999999,
       "taken_at": "2026-03-19T12:55:34.195319",
-      "status": "TP1_HIT",
-      "reasons": [
-        "MACD медвежий (hist=-0.00024)",
-        "Цена < EMA20 < EMA50",
-        "Объём x2.5 🔥🔥",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "CVD падает (-16.2%) — продажи усиливаются 📉",
-        "BTC корреляция 0.68, BTC -0.9% 📉",
-        "BTC контекст: -2.5% за 12ч 📉"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-19 15:47:16"
+    },
     {
       "symbol": "EIGENUSDT",
       "direction": "SHORT",
@@ -4567,20 +4556,6 @@
       "close_price": null,
       "taken_at": "2026-03-18T07:18:56.906551",
       "closed_at": "2026-03-18 08:19:13"
-    },
-    {
-      "symbol": "ENJUSDT",
-      "direction": "LONG",
-      "entry": 0.02153035,
-      "tp1": 0.022492,
-      "tp2": 0.023455,
-      "sl": 0.020761,
-      "strength": 40,
-      "status": "LIMIT_TIMEOUT",
-      "pnl_pct": 0,
-      "close_price": null,
-      "taken_at": "2026-03-18T07:17:36.477919",
-      "closed_at": "2026-03-18 08:17:41"
     }
   ]
 }
