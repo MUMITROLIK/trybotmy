@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-19T21:00:56.042977+00:00",
+  "updated_at": "2026-03-19T21:02:24.908742+00:00",
   "publish_status": {
-    "last_ok": "2026-03-19T21:00:20Z",
+    "last_ok": "2026-03-19T21:01:01Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -12,17 +12,17 @@
   "stats": {
     "total": 673,
     "wins": 212,
-    "losses": 123,
-    "active": 8,
-    "winrate": 63.3
+    "losses": 124,
+    "active": 7,
+    "winrate": 63.1
   },
   "trade_stats": {
-    "open": 26,
+    "open": 25,
     "pending": 0,
     "wins": 221,
-    "losses": 237,
-    "total_pnl": 26.66,
-    "winrate": 48.3
+    "losses": 238,
+    "total_pnl": 24.64,
+    "winrate": 48.1
   },
   "fear_greed": {
     "value": 23,
@@ -170,29 +170,6 @@
       "status": "ACTIVE"
     },
     {
-      "id": 706,
-      "symbol": "ARIAUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.19481,
-      "tp1": 0.199201,
-      "tp2": 0.203591,
-      "sl": 0.190914,
-      "strength": 53,
-      "reasons": [
-        "RSI=30 (сильная перепроданность)",
-        "BB нижняя полоса (пробой)",
-        "EMA20 > EMA50",
-        "Стакан: сильное давление покупки (+0.43)",
-        "МТФ: 15m, 1h, 4h согласны",
-        "OI растёт +7.6% + цена ↑",
-        "⚡ Рыночный вход (MTF сильный)"
-      ],
-      "news": null,
-      "created_at": "2026-03-19 18:00:33",
-      "status": "ACTIVE"
-    },
-    {
       "id": 711,
       "symbol": "HYPEUSDT",
       "direction": "LONG",
@@ -296,6 +273,26 @@
         "OI растёт +2.7%",
         "CVD положительный (-1.5%)",
         "BTC корреляция 0.66, BTC +0.4% 📈"
+      ]
+    },
+    {
+      "symbol": "ARIAUSDT",
+      "direction": "LONG",
+      "entry": 0.19481,
+      "tp1": 0.199201,
+      "tp2": 0.203591,
+      "sl": 0.190914,
+      "strength": 53,
+      "status": "SL",
+      "created_at": "2026-03-19 18:00:33",
+      "reasons": [
+        "RSI=30 (сильная перепроданность)",
+        "BB нижняя полоса (пробой)",
+        "EMA20 > EMA50",
+        "Стакан: сильное давление покупки (+0.43)",
+        "МТФ: 15m, 1h, 4h согласны",
+        "OI растёт +7.6% + цена ↑",
+        "⚡ Рыночный вход (MTF сильный)"
       ]
     },
     {
@@ -592,25 +589,6 @@
         "CVD положительный (+0.7%)",
         "Hammer (1h) 🔨",
         "⚡ Рыночный вход (MTF 2+ ТФ)"
-      ]
-    },
-    {
-      "symbol": "TSLAUSDT",
-      "direction": "LONG",
-      "entry": 382.57,
-      "tp1": 390.2214,
-      "tp2": 397.8728,
-      "sl": 374.9186,
-      "strength": 45,
-      "status": "EXPIRED",
-      "created_at": "2026-03-19 16:01:48",
-      "reasons": [
-        "RSI=36 (перепроданность)",
-        "MACD бычий (hist=0.00192)",
-        "BB ниже середины",
-        "Стакан: сильное давление покупки (+0.37)",
-        "OI растёт +26.7%",
-        "CVD положительный (+0.1%)"
       ]
     }
   ],
@@ -1244,32 +1222,6 @@
       ]
     },
     {
-      "id": 560,
-      "symbol": "ARIAUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.19481,
-      "tp1": 0.199201,
-      "tp2": 0.203591,
-      "sl": 0.190914,
-      "entry_orig": 0.19481,
-      "tp1_orig": 0.199201,
-      "tp2_orig": 0.203591,
-      "sl_orig": 0.190914,
-      "strength": 53,
-      "taken_at": "2026-03-19T18:00:33.844989",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=30 (сильная перепроданность)",
-        "BB нижняя полоса (пробой)",
-        "EMA20 > EMA50",
-        "Стакан: сильное давление покупки (+0.43)",
-        "МТФ: 15m, 1h, 4h согласны",
-        "OI растёт +7.6% + цена ↑",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 565,
       "symbol": "HYPEUSDT",
       "direction": "LONG",
@@ -1299,6 +1251,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "ARIAUSDT",
+      "direction": "LONG",
+      "entry": 0.19481,
+      "tp1": 0.199201,
+      "tp2": 0.203591,
+      "sl": 0.190914,
+      "strength": 53,
+      "status": "SL",
+      "pnl_pct": -2.02,
+      "close_price": 0.19088,
+      "taken_at": "2026-03-19T18:00:33.844989",
+      "closed_at": "2026-03-19 21:01:02"
+    },
     {
       "symbol": "GALAUSDT",
       "direction": "LONG",
@@ -4084,20 +4050,6 @@
       "close_price": 0.09545000000000001,
       "taken_at": "2026-03-18T11:08:18.828488",
       "closed_at": "2026-03-18 11:40:42"
-    },
-    {
-      "symbol": "ATHUSDT",
-      "direction": "LONG",
-      "entry": 0.0067273,
-      "tp1": 0.006898,
-      "tp2": 0.007068,
-      "sl": 0.006591,
-      "strength": 42,
-      "status": "LIMIT_TIMEOUT",
-      "pnl_pct": 0,
-      "close_price": null,
-      "taken_at": "2026-03-18T10:38:11.002288",
-      "closed_at": "2026-03-18 11:38:40"
     }
   ]
 }
