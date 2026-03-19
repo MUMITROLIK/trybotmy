@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-19T15:07:52.128983+00:00",
+  "updated_at": "2026-03-19T15:08:43.360880+00:00",
   "publish_status": {
-    "last_ok": "2026-03-19T15:07:17Z",
+    "last_ok": "2026-03-19T15:07:34Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -12,17 +12,17 @@
   "stats": {
     "total": 639,
     "wins": 191,
-    "losses": 112,
-    "active": 34,
-    "winrate": 63.0
+    "losses": 113,
+    "active": 33,
+    "winrate": 62.8
   },
   "trade_stats": {
-    "open": 34,
+    "open": 33,
     "pending": 0,
     "wins": 193,
-    "losses": 223,
-    "total_pnl": -2.0,
-    "winrate": 46.4
+    "losses": 224,
+    "total_pnl": -5.52,
+    "winrate": 46.3
   },
   "fear_greed": {
     "value": 23,
@@ -650,28 +650,6 @@
       "status": "ACTIVE"
     },
     {
-      "id": 671,
-      "symbol": "BTRUSDT",
-      "direction": "LONG",
-      "entry": 0.14251,
-      "tp1": 0.147201,
-      "tp2": 0.151891,
-      "sl": 0.138757,
-      "strength": 47,
-      "reasons": [
-        "MACD бычий (hist=0.00101)",
-        "Цена > EMA20 > EMA50",
-        "Объём x2.0 🔥",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +1.5% + цена ↑",
-        "⚠️ Funding через 76м",
-        "⚡ Рыночный вход (MTF сильный)"
-      ],
-      "news": null,
-      "created_at": "2026-03-19 14:45:19",
-      "status": "ACTIVE"
-    },
-    {
       "id": 673,
       "symbol": "XLMUSDT",
       "direction": "LONG",
@@ -806,6 +784,26 @@
         "МТФ: 5m, 15m, 1h согласны",
         "OI растёт +1.9% + цена ↑",
         "⚠️ Funding через 70м",
+        "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
+    {
+      "symbol": "BTRUSDT",
+      "direction": "LONG",
+      "entry": 0.14251,
+      "tp1": 0.147201,
+      "tp2": 0.151891,
+      "sl": 0.138757,
+      "strength": 47,
+      "status": "SL",
+      "created_at": "2026-03-19 14:45:19",
+      "reasons": [
+        "MACD бычий (hist=0.00101)",
+        "Цена > EMA20 > EMA50",
+        "Объём x2.0 🔥",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +1.5% + цена ↑",
+        "⚠️ Funding через 76м",
         "⚡ Рыночный вход (MTF сильный)"
       ]
     },
@@ -1169,26 +1167,6 @@
         "МТФ: 5m, 4h согласны",
         "CVD положительный (-2.2%)",
         "⚡ Рыночный вход (MTF 2+ ТФ)"
-      ]
-    },
-    {
-      "symbol": "ENAUSDT",
-      "direction": "LONG",
-      "entry": 0.1032,
-      "tp1": 0.105264,
-      "tp2": 0.107328,
-      "sl": 0.101136,
-      "strength": 47,
-      "status": "SL",
-      "created_at": "2026-03-19 12:21:48",
-      "reasons": [
-        "RSI=29 (сильная перепроданность)",
-        "MACD бычий (hist=0.00002)",
-        "BB нижняя зона (19%)",
-        "Стакан: перевес bid (+0.10)",
-        "МТФ: только 1 таймфрейм согласен",
-        "OI растёт +1.4%",
-        "CVD положительный (-1.5%)"
       ]
     }
   ],
@@ -1891,31 +1869,6 @@
       ]
     },
     {
-      "id": 525,
-      "symbol": "BTRUSDT",
-      "direction": "LONG",
-      "entry": 0.14251,
-      "tp1": 0.147201,
-      "tp2": 0.151891,
-      "sl": 0.138757,
-      "entry_orig": 0.14251,
-      "tp1_orig": 0.147201,
-      "tp2_orig": 0.151891,
-      "sl_orig": 0.138757,
-      "strength": 47,
-      "taken_at": "2026-03-19T14:45:19.593773",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00101)",
-        "Цена > EMA20 > EMA50",
-        "Объём x2.0 🔥",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +1.5% + цена ↑",
-        "⚠️ Funding через 76м",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 527,
       "symbol": "XLMUSDT",
       "direction": "LONG",
@@ -2048,6 +2001,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "BTRUSDT",
+      "direction": "LONG",
+      "entry": 0.14251,
+      "tp1": 0.147201,
+      "tp2": 0.151891,
+      "sl": 0.138757,
+      "strength": 47,
+      "status": "SL",
+      "pnl_pct": -3.52,
+      "close_price": 0.1375,
+      "taken_at": "2026-03-19T14:45:19.593773",
+      "closed_at": "2026-03-19 15:08:43"
+    },
     {
       "symbol": "TRIAUSDT",
       "direction": "LONG",
@@ -4833,20 +4800,6 @@
       "close_price": 134.055,
       "taken_at": "2026-03-17T21:27:08.603646",
       "closed_at": "2026-03-18 05:27:22"
-    },
-    {
-      "symbol": "CRVUSDT",
-      "direction": "LONG",
-      "entry": 0.25,
-      "tp1": 0.255,
-      "tp2": 0.26,
-      "sl": 0.255,
-      "strength": 47,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 1.6,
-      "close_price": 0.254,
-      "taken_at": "2026-03-17T22:42:32.783284",
-      "closed_at": "2026-03-18 05:11:27"
     }
   ]
 }
