@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-03-19T17:52:16.756499+00:00",
+  "updated_at": "2026-03-19T17:52:42.869267+00:00",
   "publish_status": {
-    "last_ok": "2026-03-19T17:51:51Z",
-    "last_error": null,
+    "last_ok": "2026-03-19T17:50:20Z",
+    "last_error": "On branch main\nYour branch is ahead of 'origin/main' by 1 commit.\n  (use \"git push\" to publish your local commits)\n\nChanges not staged for commit:\n  (use \"git add <file>...\" to update what will be committed)\n  (use \"git restore <file>...\" t",
     "min_push_interval_sec": 30
   },
   "settings": {
@@ -11,10 +11,10 @@
   },
   "stats": {
     "total": 666,
-    "wins": 205,
+    "wins": 206,
     "losses": 119,
-    "active": 26,
-    "winrate": 63.3
+    "active": 25,
+    "winrate": 63.4
   },
   "trade_stats": {
     "open": 35,
@@ -501,26 +501,6 @@
       "status": "ACTIVE"
     },
     {
-      "id": 700,
-      "symbol": "KASUSDT",
-      "direction": "LONG",
-      "entry": 0.03801,
-      "tp1": 0.03877,
-      "tp2": 0.03953,
-      "sl": 0.03725,
-      "strength": 49,
-      "reasons": [
-        "RSI=27 (сильная перепроданность)",
-        "BB нижняя полоса (пробой)",
-        "Объём x2.8 🔥🔥",
-        "Стакан: сильное давление покупки (+0.27)",
-        "МТФ: только 1 таймфрейм согласен"
-      ],
-      "news": null,
-      "created_at": "2026-03-19 17:12:19",
-      "status": "ACTIVE"
-    },
-    {
       "id": 701,
       "symbol": "LITUSDT",
       "direction": "LONG",
@@ -610,6 +590,24 @@
     }
   ],
   "history": [
+    {
+      "symbol": "KASUSDT",
+      "direction": "LONG",
+      "entry": 0.03801,
+      "tp1": 0.03877,
+      "tp2": 0.03953,
+      "sl": 0.03725,
+      "strength": 49,
+      "status": "TP1",
+      "created_at": "2026-03-19 17:12:19",
+      "reasons": [
+        "RSI=27 (сильная перепроданность)",
+        "BB нижняя полоса (пробой)",
+        "Объём x2.8 🔥🔥",
+        "Стакан: сильное давление покупки (+0.27)",
+        "МТФ: только 1 таймфрейм согласен"
+      ]
+    },
     {
       "symbol": "PTBUSDT",
       "direction": "LONG",
@@ -994,27 +992,6 @@
         "Объём x2.6 🔥🔥",
         "МТФ: 15m, 1h, 4h согласны",
         "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
-      "symbol": "SOLUSDT",
-      "direction": "LONG",
-      "entry": 88.36,
-      "tp1": 90.1272,
-      "tp2": 91.8944,
-      "sl": 86.5928,
-      "strength": 46,
-      "status": "EXPIRED",
-      "created_at": "2026-03-19 13:43:47",
-      "reasons": [
-        "RSI=26 (сильная перепроданность)",
-        "BB нижняя зона (19%)",
-        "Объём x2.0 🔥",
-        "Стакан: давление покупки (+0.21)",
-        "📰 Crypto Market Regains Its Nerve as ETF Inflows Top $1B, Report Sh...",
-        "МТФ: только 1 таймфрейм согласен",
-        "OI падает (шорты закрываются)",
-        "CVD положительный (+3.1%)"
       ]
     }
   ],
@@ -1772,29 +1749,6 @@
       ]
     },
     {
-      "id": 554,
-      "symbol": "KASUSDT",
-      "direction": "LONG",
-      "entry": 0.03801,
-      "tp1": 0.03877,
-      "tp2": 0.03953,
-      "sl": 0.03725,
-      "entry_orig": 0.03801,
-      "tp1_orig": 0.03877,
-      "tp2_orig": 0.03953,
-      "sl_orig": 0.03725,
-      "strength": 49,
-      "taken_at": "2026-03-19T17:12:20.232000",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=27 (сильная перепроданность)",
-        "BB нижняя полоса (пробой)",
-        "Объём x2.8 🔥🔥",
-        "Стакан: сильное давление покупки (+0.27)",
-        "МТФ: только 1 таймфрейм согласен"
-      ]
-    },
-    {
       "id": 555,
       "symbol": "LITUSDT",
       "direction": "LONG",
@@ -1892,6 +1846,29 @@
         "CVD положительный (+2.6%)",
         "Bullish Engulfing (1h) 🕯️",
         "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
+    {
+      "id": 554,
+      "symbol": "KASUSDT",
+      "direction": "LONG",
+      "entry": 0.03801,
+      "tp1": 0.03877,
+      "tp2": 0.03953,
+      "sl": 0.03878,
+      "entry_orig": 0.03801,
+      "tp1_orig": 0.03877,
+      "tp2_orig": 0.03953,
+      "sl_orig": 0.03725,
+      "strength": 49,
+      "taken_at": "2026-03-19T17:12:20.232000",
+      "status": "TP1_HIT",
+      "reasons": [
+        "RSI=27 (сильная перепроданность)",
+        "BB нижняя полоса (пробой)",
+        "Объём x2.8 🔥🔥",
+        "Стакан: сильное давление покупки (+0.27)",
+        "МТФ: только 1 таймфрейм согласен"
       ]
     }
   ],
