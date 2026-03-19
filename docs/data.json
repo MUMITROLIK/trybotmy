@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-19T15:07:10.098408+00:00",
+  "updated_at": "2026-03-19T15:07:26.001699+00:00",
   "publish_status": {
-    "last_ok": "2026-03-19T15:06:03Z",
+    "last_ok": "2026-03-19T15:06:45Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 638,
+    "total": 639,
     "wins": 191,
     "losses": 112,
-    "active": 33,
+    "active": 34,
     "winrate": 63.0
   },
   "trade_stats": {
-    "open": 33,
+    "open": 34,
     "pending": 0,
     "wins": 193,
     "losses": 223,
@@ -762,6 +762,29 @@
       ],
       "news": null,
       "created_at": "2026-03-19 15:04:04",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 677,
+      "symbol": "BARDUSDT",
+      "direction": "LONG",
+      "entry": 0.6003,
+      "tp1": 0.612306,
+      "tp2": 0.624312,
+      "sl": 0.588294,
+      "strength": 49,
+      "reasons": [
+        "RSI=35 (перепроданность)",
+        "MACD бычий (hist=0.00012)",
+        "BB нижняя зона (5%)",
+        "Стакан: давление покупки (+0.16)",
+        "OI растёт +1.2%",
+        "CVD растёт (+8.0%) — покупки усиливаются 📈",
+        "Hammer (1h) 🔨",
+        "⚠️ Funding через 54м"
+      ],
+      "news": null,
+      "created_at": "2026-03-19 15:07:22",
       "status": "ACTIVE"
     }
   ],
@@ -1995,6 +2018,32 @@
         "CVD положительный (+1.0%)",
         "Doji (1h) — нерешительность",
         "⚠️ Funding через 57м"
+      ]
+    },
+    {
+      "id": 531,
+      "symbol": "BARDUSDT",
+      "direction": "LONG",
+      "entry": 0.6003,
+      "tp1": 0.612306,
+      "tp2": 0.624312,
+      "sl": 0.588294,
+      "entry_orig": 0.6003,
+      "tp1_orig": 0.612306,
+      "tp2_orig": 0.624312,
+      "sl_orig": 0.588294,
+      "strength": 49,
+      "taken_at": "2026-03-19T15:07:23.151596",
+      "status": "OPEN",
+      "reasons": [
+        "RSI=35 (перепроданность)",
+        "MACD бычий (hist=0.00012)",
+        "BB нижняя зона (5%)",
+        "Стакан: давление покупки (+0.16)",
+        "OI растёт +1.2%",
+        "CVD растёт (+8.0%) — покупки усиливаются 📈",
+        "Hammer (1h) 🔨",
+        "⚠️ Funding через 54м"
       ]
     }
   ],
