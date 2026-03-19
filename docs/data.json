@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-19T15:16:11.371896+00:00",
+  "updated_at": "2026-03-19T15:16:49.120822+00:00",
   "publish_status": {
-    "last_ok": "2026-03-19T15:15:25Z",
+    "last_ok": "2026-03-19T15:16:19Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -11,18 +11,18 @@
   },
   "stats": {
     "total": 641,
-    "wins": 194,
+    "wins": 195,
     "losses": 113,
-    "active": 32,
-    "winrate": 63.2
+    "active": 31,
+    "winrate": 63.3
   },
   "trade_stats": {
-    "open": 32,
+    "open": 31,
     "pending": 1,
-    "wins": 195,
+    "wins": 196,
     "losses": 224,
-    "total_pnl": 1.22,
-    "winrate": 46.5
+    "total_pnl": 4.2,
+    "winrate": 46.7
   },
   "fear_greed": {
     "value": 23,
@@ -653,27 +653,6 @@
       "status": "ACTIVE"
     },
     {
-      "id": 674,
-      "symbol": "UAIUSDT",
-      "direction": "LONG",
-      "entry": 0.47017,
-      "tp1": 0.483744,
-      "tp2": 0.497318,
-      "sl": 0.459311,
-      "strength": 51,
-      "reasons": [
-        "MACD бычий (hist=0.00505)",
-        "Цена > EMA20 > EMA50",
-        "Объём x5.1 🔥🔥🔥",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "⚠️ Funding через 62м",
-        "⚡ Рыночный вход (MTF сильный)"
-      ],
-      "news": null,
-      "created_at": "2026-03-19 14:59:12",
-      "status": "ACTIVE"
-    },
-    {
       "id": 676,
       "symbol": "NEARUSDT",
       "direction": "LONG",
@@ -785,6 +764,25 @@
         "CVD растёт (+5.0%) — покупки усиливаются 📈",
         "⚠️ Funding через 60м",
         "⚡ Рыночный вход (MTF 2+ ТФ)"
+      ]
+    },
+    {
+      "symbol": "UAIUSDT",
+      "direction": "LONG",
+      "entry": 0.47017,
+      "tp1": 0.483744,
+      "tp2": 0.497318,
+      "sl": 0.459311,
+      "strength": 51,
+      "status": "TP1",
+      "created_at": "2026-03-19 14:59:12",
+      "reasons": [
+        "MACD бычий (hist=0.00505)",
+        "Цена > EMA20 > EMA50",
+        "Объём x5.1 🔥🔥🔥",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "⚠️ Funding через 62м",
+        "⚡ Рыночный вход (MTF сильный)"
       ]
     },
     {
@@ -1127,25 +1125,6 @@
         "МТФ: все 4 таймфрейма согласны ✅✅",
         "CVD положительный (+2.7%)",
         "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
-      "symbol": "WLDUSDT",
-      "direction": "LONG",
-      "entry": 0.3373,
-      "tp1": 0.344046,
-      "tp2": 0.350792,
-      "sl": 0.330554,
-      "strength": 47,
-      "status": "SL",
-      "created_at": "2026-03-19 12:45:36",
-      "reasons": [
-        "RSI=29 (сильная перепроданность)",
-        "MACD бычий (hist=0.00034)",
-        "BB нижняя зона (17%)",
-        "Стакан: давление покупки (+0.10)",
-        "OI растёт +1.3%",
-        "CVD положительный (-10.2%)"
       ]
     }
   ],
@@ -1851,30 +1830,6 @@
       ]
     },
     {
-      "id": 528,
-      "symbol": "UAIUSDT",
-      "direction": "LONG",
-      "entry": 0.47017,
-      "tp1": 0.483744,
-      "tp2": 0.497318,
-      "sl": 0.459311,
-      "entry_orig": 0.47017,
-      "tp1_orig": 0.483744,
-      "tp2_orig": 0.497318,
-      "sl_orig": 0.459311,
-      "strength": 51,
-      "taken_at": "2026-03-19T14:59:12.390507",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00505)",
-        "Цена > EMA20 > EMA50",
-        "Объём x5.1 🔥🔥🔥",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "⚠️ Funding через 62м",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 530,
       "symbol": "NEARUSDT",
       "direction": "LONG",
@@ -1982,6 +1937,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "UAIUSDT",
+      "direction": "LONG",
+      "entry": 0.47017,
+      "tp1": 0.483744,
+      "tp2": 0.497318,
+      "sl": 0.4882,
+      "strength": 51,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 2.98,
+      "close_price": 0.4842,
+      "taken_at": "2026-03-19T14:59:12.390507",
+      "closed_at": "2026-03-19 15:16:48"
+    },
     {
       "symbol": "SIRENUSDT",
       "direction": "LONG",
@@ -4767,20 +4736,6 @@
       "close_price": 0.78645,
       "taken_at": "2026-03-17 22:37:56",
       "closed_at": "2026-03-18 06:37:58"
-    },
-    {
-      "symbol": "LYNUSDT",
-      "direction": "LONG",
-      "entry": 0.0448,
-      "tp1": 0.046395,
-      "tp2": 0.047991,
-      "sl": 0.043524,
-      "strength": 47,
-      "status": "SL",
-      "pnl_pct": -4.29,
-      "close_price": 0.04288,
-      "taken_at": "2026-03-18T00:09:16.224541",
-      "closed_at": "2026-03-18 06:04:23"
     }
   ]
 }
