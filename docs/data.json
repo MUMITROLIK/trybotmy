@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-19T13:43:26.198083+00:00",
+  "updated_at": "2026-03-19T13:44:31.764557+00:00",
   "publish_status": {
-    "last_ok": "2026-03-19T13:43:01Z",
+    "last_ok": "2026-03-19T13:43:31Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,19 +10,19 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 620,
+    "total": 621,
     "wins": 185,
-    "losses": 106,
+    "losses": 107,
     "active": 27,
-    "winrate": 63.6
+    "winrate": 63.4
   },
   "trade_stats": {
     "open": 27,
     "pending": 0,
-    "wins": 186,
+    "wins": 187,
     "losses": 218,
-    "total_pnl": -6.2,
-    "winrate": 46.0
+    "total_pnl": -4.12,
+    "winrate": 46.2
   },
   "fear_greed": {
     "value": 23,
@@ -231,29 +231,6 @@
       ],
       "news": null,
       "created_at": "2026-03-19 12:50:36",
-      "status": "ACTIVE"
-    },
-    {
-      "id": 636,
-      "symbol": "WIFUSDT",
-      "direction": "SHORT",
-      "entry": 0.1719,
-      "tp1": 0.168462,
-      "tp2": 0.165024,
-      "sl": 0.175338,
-      "strength": 49,
-      "reasons": [
-        "MACD медвежий (hist=-0.00029)",
-        "Цена < EMA20 < EMA50",
-        "Объём x2.9 🔥🔥",
-        "МТФ: 5m, 15m, 1h согласны",
-        "OI растёт +2.6% + цена ↓",
-        "CVD падает (-7.6%) — продажи усиливаются 📉",
-        "BTC корреляция 0.69, BTC -1.2% 📉",
-        "BTC контекст: -2.5% за 12ч 📉"
-      ],
-      "news": null,
-      "created_at": "2026-03-19 12:53:58",
       "status": "ACTIVE"
     },
     {
@@ -625,6 +602,29 @@
       "news": null,
       "created_at": "2026-03-19 13:42:00",
       "status": "ACTIVE"
+    },
+    {
+      "id": 659,
+      "symbol": "SOLUSDT",
+      "direction": "LONG",
+      "entry": 88.36,
+      "tp1": 90.1272,
+      "tp2": 91.8944,
+      "sl": 86.5928,
+      "strength": 46,
+      "reasons": [
+        "RSI=26 (сильная перепроданность)",
+        "BB нижняя зона (19%)",
+        "Объём x2.0 🔥",
+        "Стакан: давление покупки (+0.21)",
+        "📰 Crypto Market Regains Its Nerve as ETF Inflows Top $1B, Report Sh...",
+        "МТФ: только 1 таймфрейм согласен",
+        "OI падает (шорты закрываются)",
+        "CVD положительный (+3.1%)"
+      ],
+      "news": "Crypto Market Regains Its Nerve as ETF Inflows Top $1B, Report Shows",
+      "created_at": "2026-03-19 13:43:47",
+      "status": "ACTIVE"
     }
   ],
   "history": [
@@ -726,6 +726,27 @@
         "МТФ: все 4 таймфрейма согласны ✅✅",
         "CVD падает (-10.9%) — продажи усиливаются 📉",
         "BTC контекст: -2.6% за 12ч 📉"
+      ]
+    },
+    {
+      "symbol": "WIFUSDT",
+      "direction": "SHORT",
+      "entry": 0.1719,
+      "tp1": 0.168462,
+      "tp2": 0.165024,
+      "sl": 0.175338,
+      "strength": 49,
+      "status": "SL",
+      "created_at": "2026-03-19 12:53:58",
+      "reasons": [
+        "MACD медвежий (hist=-0.00029)",
+        "Цена < EMA20 < EMA50",
+        "Объём x2.9 🔥🔥",
+        "МТФ: 5m, 15m, 1h согласны",
+        "OI растёт +2.6% + цена ↓",
+        "CVD падает (-7.6%) — продажи усиливаются 📉",
+        "BTC корреляция 0.69, BTC -1.2% 📉",
+        "BTC контекст: -2.5% за 12ч 📉"
       ]
     },
     {
@@ -1005,30 +1026,6 @@
         "⚠️ Funding через 46м",
         "BTC контекст: -2.4% за 12ч 📉",
         "🤖 ML: вероятность 66%"
-      ]
-    },
-    {
-      "symbol": "ENJUSDT",
-      "direction": "SHORT",
-      "entry": 0.02425,
-      "tp1": 0.023321,
-      "tp2": 0.022392,
-      "sl": 0.024993,
-      "strength": 49,
-      "status": "TP1",
-      "created_at": "2026-03-18 22:57:19",
-      "reasons": [
-        "RSI=60 (перекупленность)",
-        "BB верхняя полоса (пробой)",
-        "EMA20 < EMA50",
-        "Объём x2.5 🔥🔥",
-        "Стакан: сильное давление продажи (-0.30)",
-        "МТФ: только 1 таймфрейм согласен",
-        "OI падает (лонги закрываются)",
-        "CVD отрицательный (+0.7%)",
-        "⚠️ Funding через 64м",
-        "BTC контекст: -2.5% за 12ч 📉",
-        "🤖 ML: вероятность 69%"
       ]
     }
   ],
@@ -1679,32 +1676,47 @@
       ]
     },
     {
-      "id": 510,
+      "id": 513,
+      "symbol": "SOLUSDT",
+      "direction": "LONG",
+      "entry": 88.36,
+      "tp1": 90.1272,
+      "tp2": 91.8944,
+      "sl": 86.5928,
+      "entry_orig": 88.36,
+      "tp1_orig": 90.1272,
+      "tp2_orig": 91.8944,
+      "sl_orig": 86.5928,
+      "strength": 46,
+      "taken_at": "2026-03-19T13:43:47.691008",
+      "status": "OPEN",
+      "reasons": [
+        "RSI=26 (сильная перепроданность)",
+        "BB нижняя зона (19%)",
+        "Объём x2.0 🔥",
+        "Стакан: давление покупки (+0.21)",
+        "📰 Crypto Market Regains Its Nerve as ETF Inflows Top $1B, Report Sh...",
+        "МТФ: только 1 таймфрейм согласен",
+        "OI падает (шорты закрываются)",
+        "CVD положительный (+3.1%)"
+      ]
+    }
+  ],
+  "trades_history": [
+    {
       "symbol": "KITEUSDT",
       "direction": "LONG",
       "entry": 0.18898,
       "tp1": 0.19276,
       "tp2": 0.196539,
       "sl": 0.192935,
-      "entry_orig": 0.18898,
-      "tp1_orig": 0.19276,
-      "tp2_orig": 0.196539,
-      "sl_orig": 0.1852,
       "strength": 45,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 2.08,
+      "close_price": 0.19291999999999998,
       "taken_at": "2026-03-19T13:26:41.129810",
-      "status": "TP1_HIT",
-      "reasons": [
-        "MACD бычий (hist=0.00053)",
-        "Цена выше EMA20",
-        "Объём x1.9 🔥",
-        "МТФ: 5m, 1h согласны",
-        "CVD растёт (+12.8%) — покупки усиливаются 📈",
-        "Bullish Engulfing (1h) 🕯️",
-        "⚡ Рыночный вход (MTF 2+ ТФ)"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-19 13:43:32"
+    },
     {
       "symbol": "WIFUSDT",
       "direction": "SHORT",
@@ -4490,20 +4502,6 @@
       "close_price": 0.0067375,
       "taken_at": "2026-03-17 23:46:01",
       "closed_at": "2026-03-18 01:41:48"
-    },
-    {
-      "symbol": "AINUSDT",
-      "direction": "LONG",
-      "entry": 0.07764,
-      "tp1": 0.079572,
-      "tp2": 0.081504,
-      "sl": 0.07967,
-      "strength": 50,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 2.5,
-      "close_price": 0.07958,
-      "taken_at": "2026-03-18T00:14:51.073188",
-      "closed_at": "2026-03-18 01:39:06"
     }
   ]
 }
