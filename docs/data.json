@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-19T14:29:18.417620+00:00",
+  "updated_at": "2026-03-19T14:29:52.795256+00:00",
   "publish_status": {
-    "last_ok": "2026-03-19T14:28:16Z",
+    "last_ok": "2026-03-19T14:29:24Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -12,17 +12,17 @@
   "stats": {
     "total": 630,
     "wins": 188,
-    "losses": 109,
-    "active": 31,
-    "winrate": 63.3
+    "losses": 110,
+    "active": 30,
+    "winrate": 63.1
   },
   "trade_stats": {
-    "open": 31,
+    "open": 30,
     "pending": 0,
     "wins": 190,
-    "losses": 220,
-    "total_pnl": -2.22,
-    "winrate": 46.3
+    "losses": 221,
+    "total_pnl": -4.41,
+    "winrate": 46.2
   },
   "fear_greed": {
     "value": 23,
@@ -188,27 +188,6 @@
       ],
       "news": "Bittensor price outlook: consolidation or deeper correction?",
       "created_at": "2026-03-19 12:48:38",
-      "status": "ACTIVE"
-    },
-    {
-      "id": 634,
-      "symbol": "BEATUSDT",
-      "direction": "LONG",
-      "entry": 0.6052,
-      "tp1": 0.617304,
-      "tp2": 0.629408,
-      "sl": 0.593096,
-      "strength": 45,
-      "reasons": [
-        "MACD бычий (hist=0.00083)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: давление покупки (+0.19)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "CVD положительный (+2.7%)",
-        "⚡ Рыночный вход (MTF сильный)"
-      ],
-      "news": null,
-      "created_at": "2026-03-19 12:50:36",
       "status": "ACTIVE"
     },
     {
@@ -939,6 +918,25 @@
       ]
     },
     {
+      "symbol": "BEATUSDT",
+      "direction": "LONG",
+      "entry": 0.6052,
+      "tp1": 0.617304,
+      "tp2": 0.629408,
+      "sl": 0.593096,
+      "strength": 45,
+      "status": "SL",
+      "created_at": "2026-03-19 12:50:36",
+      "reasons": [
+        "MACD бычий (hist=0.00083)",
+        "Цена > EMA20 > EMA50",
+        "Стакан: давление покупки (+0.19)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "CVD положительный (+2.7%)",
+        "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
+    {
       "symbol": "WLDUSDT",
       "direction": "LONG",
       "entry": 0.3373,
@@ -1093,25 +1091,6 @@
         "Стакан: сильное давление покупки (+0.50)",
         "МТФ: только 1 таймфрейм согласен",
         "OI падает (шорты закрываются)"
-      ]
-    },
-    {
-      "symbol": "MUSDT",
-      "direction": "LONG",
-      "entry": 1.9309,
-      "tp1": 1.995293,
-      "tp2": 2.059686,
-      "sl": 1.879386,
-      "strength": 46,
-      "status": "SL",
-      "created_at": "2026-03-19 11:59:59",
-      "reasons": [
-        "RSI=33 (перепроданность)",
-        "MACD бычий (hist=0.00035)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: давление покупки (+0.16)",
-        "МТФ: 15m, 1h, 4h согласны",
-        "⚡ Рыночный вход (MTF сильный)"
       ]
     }
   ],
@@ -1289,30 +1268,6 @@
         "МТФ: только 1 таймфрейм согласен",
         "OI растёт +2.5%",
         "CVD положительный (-0.9%)"
-      ]
-    },
-    {
-      "id": 488,
-      "symbol": "BEATUSDT",
-      "direction": "LONG",
-      "entry": 0.6052,
-      "tp1": 0.617304,
-      "tp2": 0.629408,
-      "sl": 0.593096,
-      "entry_orig": 0.6052,
-      "tp1_orig": 0.617304,
-      "tp2_orig": 0.629408,
-      "sl_orig": 0.593096,
-      "strength": 45,
-      "taken_at": "2026-03-19T12:50:36.575263",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00083)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: давление покупки (+0.19)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "CVD положительный (+2.7%)",
-        "⚡ Рыночный вход (MTF сильный)"
       ]
     },
     {
@@ -1890,6 +1845,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "BEATUSDT",
+      "direction": "LONG",
+      "entry": 0.6052,
+      "tp1": 0.617304,
+      "tp2": 0.629408,
+      "sl": 0.593096,
+      "strength": 45,
+      "status": "SL",
+      "pnl_pct": -2.19,
+      "close_price": 0.59195,
+      "taken_at": "2026-03-19T12:50:36.575263",
+      "closed_at": "2026-03-19 14:29:52"
+    },
     {
       "symbol": "JTOUSDT",
       "direction": "LONG",
@@ -4675,20 +4644,6 @@
       "close_price": 0.30355,
       "taken_at": null,
       "closed_at": "2026-03-18 03:10:15"
-    },
-    {
-      "symbol": "1000BONKUSDT",
-      "direction": "LONG",
-      "entry": 0.0066469,
-      "tp1": 0.00678,
-      "tp2": 0.006913,
-      "sl": 0.006514,
-      "strength": 45,
-      "status": "LIMIT_TIMEOUT",
-      "pnl_pct": 0,
-      "close_price": null,
-      "taken_at": "2026-03-18T01:48:18.685046",
-      "closed_at": "2026-03-18 02:48:29"
     }
   ]
 }
