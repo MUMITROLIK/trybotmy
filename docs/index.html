@@ -79,7 +79,7 @@ header{position:sticky;top:32px;z-index:50;background:rgba(8,11,24,.97);border-b
 .hseg-right{margin-left:auto;border-right:none}
 
 /* ── MAIN ── */
-main{position:relative;z-index:1;max-width:1920px;margin:0 auto;padding:1rem 1.25rem;display:flex;flex-direction:column;gap:1rem}
+main{position:relative;z-index:1;max-width:1920px;margin:0 auto;padding:1rem 1.25rem;display:flex;flex-direction:column;gap:1rem;scroll-padding-top:100px}
 
 /* ── STATS ROW ── */
 .stats-row{display:grid;grid-template-columns:repeat(4,1fr);gap:.75rem}
@@ -167,12 +167,12 @@ main{position:relative;z-index:1;max-width:1920px;margin:0 auto;padding:1rem 1.2
 .tab:hover{color:var(--text)}.tab.active{color:var(--B);border-bottom-color:var(--B)}
 .tab-n{font-family:var(--mono);font-size:.6rem;background:var(--elevated);border:1px solid var(--line);padding:.1rem .4rem;border-radius:3px;min-width:20px;text-align:center}
 .tab.active .tab-n{background:rgba(0,207,255,.1);border-color:rgba(0,207,255,.25);color:var(--B)}
-.tab-body{padding:.875rem;flex:1;overflow-y:auto;max-height:calc(100vh - 220px);min-height:300px;scroll-padding-top:1rem}
+.tab-body{padding:.875rem;flex:1;overflow-y:auto;max-height:calc(100vh - 220px);min-height:300px;scroll-padding-top:100px}
 .tab-pane{display:none}.tab-pane.active{display:block}
 .tab-pane.grid-pane.active{display:grid;grid-template-columns:repeat(3,1fr);gap:.75rem}
 
 /* ── SIGNAL / POSITION CARDS ── */
-.sig-c,.pos-c{background:var(--surface);border:1px solid var(--line);border-radius:7px;padding:.875rem;transition:border-color .2s,transform .2s;position:relative;overflow:hidden}
+.sig-c,.pos-c{background:var(--surface);border:1px solid var(--line);border-radius:7px;padding:.875rem;transition:border-color .2s,transform .2s;position:relative;overflow:hidden;scroll-margin-top:100px}
 .sig-c:hover,.pos-c:hover{border-color:var(--line2);transform:translateY(-1px)}
 .pos-c.profit{border-left:3px solid var(--G)}.pos-c.loss{border-left:3px solid var(--R)}.pos-c.neu{border-left:3px solid var(--line2)}
 .sig-top,.pos-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:.75rem}
