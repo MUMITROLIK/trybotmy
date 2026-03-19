@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-19T13:05:31.160768+00:00",
+  "updated_at": "2026-03-19T13:06:23.491809+00:00",
   "publish_status": {
-    "last_ok": "2026-03-19T13:04:12Z",
+    "last_ok": "2026-03-19T13:05:37Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 605,
-    "wins": 182,
+    "total": 606,
+    "wins": 183,
     "losses": 100,
     "active": 21,
-    "winrate": 64.5
+    "winrate": 64.7
   },
   "trade_stats": {
-    "open": 22,
+    "open": 23,
     "pending": 0,
     "wins": 184,
     "losses": 210,
@@ -475,7 +475,29 @@
       "status": "ACTIVE"
     },
     {
-      "id": 643,
+      "id": 644,
+      "symbol": "ALCHUSDT",
+      "direction": "LONG",
+      "entry": 0.08304,
+      "tp1": 0.084701,
+      "tp2": 0.086362,
+      "sl": 0.081379,
+      "strength": 45,
+      "reasons": [
+        "MACD бычий (hist=0.00007)",
+        "Цена > EMA20 > EMA50",
+        "Объём x3.1 🔥🔥",
+        "МТФ: 5m, 15m, 4h согласны",
+        "OI растёт +0.9% + цена ↑",
+        "⚡ Рыночный вход (MTF сильный)"
+      ],
+      "news": null,
+      "created_at": "2026-03-19 13:05:53",
+      "status": "ACTIVE"
+    }
+  ],
+  "history": [
+    {
       "symbol": "VVVUSDT",
       "direction": "SHORT",
       "entry": 5.337,
@@ -483,6 +505,8 @@
       "tp2": 5.12352,
       "sl": 5.44374,
       "strength": 45,
+      "status": "TP1",
+      "created_at": "2026-03-19 12:59:00",
       "reasons": [
         "MACD медвежий (hist=-0.00901)",
         "Цена < EMA20 < EMA50",
@@ -491,13 +515,8 @@
         "МТФ: все 4 таймфрейма согласны ✅✅",
         "CVD падает (-10.9%) — продажи усиливаются 📉",
         "BTC контекст: -2.6% за 12ч 📉"
-      ],
-      "news": null,
-      "created_at": "2026-03-19 12:59:00",
-      "status": "ACTIVE"
-    }
-  ],
-  "history": [
+      ]
+    },
     {
       "symbol": "WLDUSDT",
       "direction": "LONG",
@@ -882,26 +901,6 @@
         "OI падает (шорты закрываются)",
         "CVD положительный (+1.1%)",
         "📌 Лимитный вход @ 1.18076 (откат к EMA20)"
-      ]
-    },
-    {
-      "symbol": "TAOUSDT",
-      "direction": "LONG",
-      "entry": 268.69205249,
-      "tp1": 274.065894,
-      "tp2": 279.439735,
-      "sl": 263.318211,
-      "strength": 36,
-      "status": "EXPIRED",
-      "created_at": "2026-03-18 18:31:39",
-      "reasons": [
-        "MACD бычий (hist=0.65844)",
-        "Цена выше EMA20",
-        "Стакан: сильное давление покупки (+0.27)",
-        "МТФ: 5m, 4h согласны",
-        "OI растёт +1.9%",
-        "CVD положительный (+1.1%)",
-        "📌 Лимитный вход @ 268.692 (откат к EMA20)"
       ]
     }
   ],
@@ -1429,20 +1428,44 @@
       ]
     },
     {
+      "id": 498,
+      "symbol": "ALCHUSDT",
+      "direction": "LONG",
+      "entry": 0.08304,
+      "tp1": 0.084701,
+      "tp2": 0.086362,
+      "sl": 0.081379,
+      "entry_orig": 0.08304,
+      "tp1_orig": 0.084701,
+      "tp2_orig": 0.086362,
+      "sl_orig": 0.081379,
+      "strength": 45,
+      "taken_at": "2026-03-19T13:05:53.947002",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.00007)",
+        "Цена > EMA20 > EMA50",
+        "Объём x3.1 🔥🔥",
+        "МТФ: 5m, 15m, 4h согласны",
+        "OI растёт +0.9% + цена ↑",
+        "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
+    {
       "id": 497,
       "symbol": "VVVUSDT",
       "direction": "SHORT",
       "entry": 5.337,
       "tp1": 5.23026,
       "tp2": 5.12352,
-      "sl": 5.44374,
+      "sl": 5.2204999999999995,
       "entry_orig": 5.337,
       "tp1_orig": 5.23026,
       "tp2_orig": 5.12352,
       "sl_orig": 5.44374,
       "strength": 45,
       "taken_at": "2026-03-19T12:59:00.172299",
-      "status": "OPEN",
+      "status": "TP1_HIT",
       "reasons": [
         "MACD медвежий (hist=-0.00901)",
         "Цена < EMA20 < EMA50",
