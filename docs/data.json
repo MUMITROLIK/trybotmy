@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-19T13:13:31.642541+00:00",
+  "updated_at": "2026-03-19T13:14:04.441534+00:00",
   "publish_status": {
-    "last_ok": "2026-03-19T13:12:46Z",
+    "last_ok": "2026-03-19T13:13:39Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 64.2
   },
   "trade_stats": {
-    "open": 27,
+    "open": 26,
     "pending": 0,
     "wins": 185,
-    "losses": 212,
-    "total_pnl": 4.51,
-    "winrate": 46.6
+    "losses": 213,
+    "total_pnl": 2.51,
+    "winrate": 46.5
   },
   "fear_greed": {
     "value": 23,
@@ -1213,30 +1213,6 @@
       ]
     },
     {
-      "id": 486,
-      "symbol": "WLDUSDT",
-      "direction": "LONG",
-      "entry": 0.3373,
-      "tp1": 0.344046,
-      "tp2": 0.350792,
-      "sl": 0.330554,
-      "entry_orig": 0.3373,
-      "tp1_orig": 0.344046,
-      "tp2_orig": 0.350792,
-      "sl_orig": 0.330554,
-      "strength": 47,
-      "taken_at": "2026-03-19T12:45:36.286071",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=29 (сильная перепроданность)",
-        "MACD бычий (hist=0.00034)",
-        "BB нижняя зона (17%)",
-        "Стакан: давление покупки (+0.10)",
-        "OI растёт +1.3%",
-        "CVD положительный (-10.2%)"
-      ]
-    },
-    {
       "id": 487,
       "symbol": "TAOUSDT",
       "direction": "LONG",
@@ -1683,6 +1659,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "WLDUSDT",
+      "direction": "LONG",
+      "entry": 0.3373,
+      "tp1": 0.344046,
+      "tp2": 0.350792,
+      "sl": 0.330554,
+      "strength": 47,
+      "status": "SL",
+      "pnl_pct": -2.0,
+      "close_price": 0.33055,
+      "taken_at": "2026-03-19T12:45:36.286071",
+      "closed_at": "2026-03-19 13:14:00"
+    },
     {
       "symbol": "IMXUSDT",
       "direction": "LONG",
@@ -4468,20 +4458,6 @@
       "close_price": 0.164985,
       "taken_at": "2026-03-17T21:27:36.349716",
       "closed_at": "2026-03-18 00:36:20"
-    },
-    {
-      "symbol": "VANRYUSDT",
-      "direction": "LONG",
-      "entry": 0.00698903,
-      "tp1": 0.007297,
-      "tp2": 0.007604,
-      "sl": 0.006743,
-      "strength": 40,
-      "status": "LIMIT_TIMEOUT",
-      "pnl_pct": 0,
-      "close_price": null,
-      "taken_at": "2026-03-17T23:15:25.394535",
-      "closed_at": "2026-03-18 00:15:32"
     }
   ]
 }
