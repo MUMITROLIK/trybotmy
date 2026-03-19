@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-19T13:46:40.226112+00:00",
+  "updated_at": "2026-03-19T13:47:11.221448+00:00",
   "publish_status": {
-    "last_ok": "2026-03-19T13:45:33Z",
+    "last_ok": "2026-03-19T13:46:45Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 622,
+    "total": 623,
     "wins": 185,
     "losses": 107,
-    "active": 28,
+    "active": 29,
     "winrate": 63.4
   },
   "trade_stats": {
-    "open": 28,
+    "open": 29,
     "pending": 0,
     "wins": 187,
     "losses": 218,
@@ -645,6 +645,29 @@
       ],
       "news": null,
       "created_at": "2026-03-19 13:45:26",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 661,
+      "symbol": "HYPEUSDT",
+      "direction": "LONG",
+      "entry": 39.09,
+      "tp1": 39.8718,
+      "tp2": 40.6536,
+      "sl": 38.3082,
+      "strength": 49,
+      "reasons": [
+        "RSI=35 (перепроданность)",
+        "MACD бычий (hist=0.00968)",
+        "BB ниже середины",
+        "Стакан: сильное давление покупки (+0.37)",
+        "📰 S&P 500 Launches on Hyperliquid via First Officially Licensed Per...",
+        "МТФ: только 1 таймфрейм согласен",
+        "OI падает (шорты закрываются)",
+        "CVD положительный (-5.6%)"
+      ],
+      "news": "S&P 500 Launches on Hyperliquid via First Officially Licensed Perpetual Contracts",
+      "created_at": "2026-03-19 13:47:10",
       "status": "ACTIVE"
     }
   ],
@@ -1744,6 +1767,32 @@
         "Объём x2.6 🔥🔥",
         "МТФ: 15m, 1h, 4h согласны",
         "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
+    {
+      "id": 515,
+      "symbol": "HYPEUSDT",
+      "direction": "LONG",
+      "entry": 39.09,
+      "tp1": 39.8718,
+      "tp2": 40.6536,
+      "sl": 38.3082,
+      "entry_orig": 39.09,
+      "tp1_orig": 39.8718,
+      "tp2_orig": 40.6536,
+      "sl_orig": 38.3082,
+      "strength": 49,
+      "taken_at": "2026-03-19T13:47:11.096597",
+      "status": "OPEN",
+      "reasons": [
+        "RSI=35 (перепроданность)",
+        "MACD бычий (hist=0.00968)",
+        "BB ниже середины",
+        "Стакан: сильное давление покупки (+0.37)",
+        "📰 S&P 500 Launches on Hyperliquid via First Officially Licensed Per...",
+        "МТФ: только 1 таймфрейм согласен",
+        "OI падает (шорты закрываются)",
+        "CVD положительный (-5.6%)"
       ]
     }
   ],
