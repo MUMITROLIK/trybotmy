@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-19T02:32:03.647568+00:00",
+  "updated_at": "2026-03-19T02:33:03.550327+00:00",
   "publish_status": {
-    "last_ok": "2026-03-19T02:31:12Z",
+    "last_ok": "2026-03-19T02:32:08Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 66.1
   },
   "trade_stats": {
-    "open": 3,
+    "open": 2,
     "pending": 0,
     "wins": 181,
-    "losses": 203,
-    "total_pnl": 20.8,
-    "winrate": 47.1
+    "losses": 204,
+    "total_pnl": 18.8,
+    "winrate": 47.0
   },
   "fear_greed": {
     "value": 23,
@@ -490,30 +490,6 @@
       ]
     },
     {
-      "id": 462,
-      "symbol": "HANAUSDT",
-      "direction": "LONG",
-      "entry": 0.04838,
-      "tp1": 0.04934723,
-      "tp2": 0.0503157,
-      "sl": 0.04741232,
-      "entry_orig": 0.04800722,
-      "tp1_orig": 0.048967,
-      "tp2_orig": 0.049928,
-      "sl_orig": 0.047047,
-      "strength": 40,
-      "taken_at": "2026-03-18T20:44:22.241240",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00007)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: сильное давление покупки (+0.54)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "📌 Лимитный вход @ 0.0480072 (откат к EMA20)",
-        "🤖 ML: вероятность 55%"
-      ]
-    },
-    {
       "id": 465,
       "symbol": "OPNUSDT",
       "direction": "SHORT",
@@ -543,6 +519,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "HANAUSDT",
+      "direction": "LONG",
+      "entry": 0.04838,
+      "tp1": 0.04934723,
+      "tp2": 0.0503157,
+      "sl": 0.04741232,
+      "strength": 40,
+      "status": "SL",
+      "pnl_pct": -2.0,
+      "close_price": 0.04741,
+      "taken_at": "2026-03-18T20:44:22.241240",
+      "closed_at": "2026-03-19 02:33:03"
+    },
     {
       "symbol": "ENJUSDT",
       "direction": "SHORT",
@@ -3328,20 +3318,6 @@
       "close_price": null,
       "taken_at": "2026-03-17T22:11:21.384906",
       "closed_at": "2026-03-17 23:11:28"
-    },
-    {
-      "symbol": "XPLUSDT",
-      "direction": "LONG",
-      "entry": 0.11802398,
-      "tp1": 0.120384,
-      "tp2": 0.122745,
-      "sl": 0.115664,
-      "strength": 44,
-      "status": "LIMIT_TIMEOUT",
-      "pnl_pct": 0,
-      "close_price": null,
-      "taken_at": "2026-03-17T22:06:31.139959",
-      "closed_at": "2026-03-17 23:06:36"
     }
   ]
 }
