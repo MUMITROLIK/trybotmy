@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-19T13:42:01.279203+00:00",
+  "updated_at": "2026-03-19T13:42:55.868019+00:00",
   "publish_status": {
-    "last_ok": "2026-03-19T13:41:24Z",
+    "last_ok": "2026-03-19T13:42:06Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -11,10 +11,10 @@
   },
   "stats": {
     "total": 620,
-    "wins": 184,
+    "wins": 185,
     "losses": 106,
-    "active": 28,
-    "winrate": 63.4
+    "active": 27,
+    "winrate": 63.6
   },
   "trade_stats": {
     "open": 28,
@@ -581,28 +581,6 @@
       "status": "ACTIVE"
     },
     {
-      "id": 656,
-      "symbol": "KITEUSDT",
-      "direction": "LONG",
-      "entry": 0.18898,
-      "tp1": 0.19276,
-      "tp2": 0.196539,
-      "sl": 0.1852,
-      "strength": 45,
-      "reasons": [
-        "MACD бычий (hist=0.00053)",
-        "Цена выше EMA20",
-        "Объём x1.9 🔥",
-        "МТФ: 5m, 1h согласны",
-        "CVD растёт (+12.8%) — покупки усиливаются 📈",
-        "Bullish Engulfing (1h) 🕯️",
-        "⚡ Рыночный вход (MTF 2+ ТФ)"
-      ],
-      "news": null,
-      "created_at": "2026-03-19 13:26:40",
-      "status": "ACTIVE"
-    },
-    {
       "id": 657,
       "symbol": "JTOUSDT",
       "direction": "LONG",
@@ -650,6 +628,26 @@
     }
   ],
   "history": [
+    {
+      "symbol": "KITEUSDT",
+      "direction": "LONG",
+      "entry": 0.18898,
+      "tp1": 0.19276,
+      "tp2": 0.196539,
+      "sl": 0.1852,
+      "strength": 45,
+      "status": "TP1",
+      "created_at": "2026-03-19 13:26:40",
+      "reasons": [
+        "MACD бычий (hist=0.00053)",
+        "Цена выше EMA20",
+        "Объём x1.9 🔥",
+        "МТФ: 5m, 1h согласны",
+        "CVD растёт (+12.8%) — покупки усиливаются 📈",
+        "Bullish Engulfing (1h) 🕯️",
+        "⚡ Рыночный вход (MTF 2+ ТФ)"
+      ]
+    },
     {
       "symbol": "GRASSUSDT",
       "direction": "LONG",
@@ -1031,29 +1029,6 @@
         "⚠️ Funding через 64м",
         "BTC контекст: -2.5% за 12ч 📉",
         "🤖 ML: вероятность 69%"
-      ]
-    },
-    {
-      "symbol": "OPNUSDT",
-      "direction": "SHORT",
-      "entry": 0.2692,
-      "tp1": 0.261271,
-      "tp2": 0.253343,
-      "sl": 0.275543,
-      "strength": 51,
-      "status": "EXPIRED",
-      "created_at": "2026-03-18 22:37:38",
-      "reasons": [
-        "RSI=63 (перекупленность)",
-        "BB верхняя полоса (пробой)",
-        "EMA20 < EMA50",
-        "Объём x2.0 🔥",
-        "Стакан: сильное давление продажи (-0.29)",
-        "МТФ: 15m, 1h, 4h согласны",
-        "OI растёт +2.0% + цена ↓",
-        "⚠️ Funding через 83м",
-        "BTC контекст: -2.6% за 12ч 📉",
-        "🤖 ML: вероятность 75%"
       ]
     }
   ],
@@ -1678,31 +1653,6 @@
       ]
     },
     {
-      "id": 510,
-      "symbol": "KITEUSDT",
-      "direction": "LONG",
-      "entry": 0.18898,
-      "tp1": 0.19276,
-      "tp2": 0.196539,
-      "sl": 0.1852,
-      "entry_orig": 0.18898,
-      "tp1_orig": 0.19276,
-      "tp2_orig": 0.196539,
-      "sl_orig": 0.1852,
-      "strength": 45,
-      "taken_at": "2026-03-19T13:26:41.129810",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00053)",
-        "Цена выше EMA20",
-        "Объём x1.9 🔥",
-        "МТФ: 5m, 1h согласны",
-        "CVD растёт (+12.8%) — покупки усиливаются 📈",
-        "Bullish Engulfing (1h) 🕯️",
-        "⚡ Рыночный вход (MTF 2+ ТФ)"
-      ]
-    },
-    {
       "id": 511,
       "symbol": "JTOUSDT",
       "direction": "LONG",
@@ -1752,6 +1702,31 @@
         "МТФ: только 1 таймфрейм согласен",
         "OI растёт +0.6% + цена ↑",
         "Hammer (1h) 🔨"
+      ]
+    },
+    {
+      "id": 510,
+      "symbol": "KITEUSDT",
+      "direction": "LONG",
+      "entry": 0.18898,
+      "tp1": 0.19276,
+      "tp2": 0.196539,
+      "sl": 0.192935,
+      "entry_orig": 0.18898,
+      "tp1_orig": 0.19276,
+      "tp2_orig": 0.196539,
+      "sl_orig": 0.1852,
+      "strength": 45,
+      "taken_at": "2026-03-19T13:26:41.129810",
+      "status": "TP1_HIT",
+      "reasons": [
+        "MACD бычий (hist=0.00053)",
+        "Цена выше EMA20",
+        "Объём x1.9 🔥",
+        "МТФ: 5m, 1h согласны",
+        "CVD растёт (+12.8%) — покупки усиливаются 📈",
+        "Bullish Engulfing (1h) 🕯️",
+        "⚡ Рыночный вход (MTF 2+ ТФ)"
       ]
     }
   ],
