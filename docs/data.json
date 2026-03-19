@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-03-19T15:23:31.081076+00:00",
+  "updated_at": "2026-03-19T15:24:04.533477+00:00",
   "publish_status": {
     "last_ok": "2026-03-19T15:23:04Z",
-    "last_error": null,
+    "last_error": "On branch main\nYour branch is ahead of 'origin/main' by 1 commit.\n  (use \"git push\" to publish your local commits)\n\nChanges not staged for commit:\n  (use \"git add <file>...\" to update what will be committed)\n  (use \"git restore <file>...\" t",
     "min_push_interval_sec": 30
   },
   "settings": {
@@ -17,12 +17,12 @@
     "winrate": 63.2
   },
   "trade_stats": {
-    "open": 33,
+    "open": 32,
     "pending": 0,
-    "wins": 196,
+    "wins": 197,
     "losses": 225,
-    "total_pnl": 2.17,
-    "winrate": 46.6
+    "total_pnl": 4.14,
+    "winrate": 46.7
   },
   "fear_greed": {
     "value": 23,
@@ -1938,35 +1938,23 @@
         "⚠️ Funding через 41м",
         "⚡ Рыночный вход (MTF 2+ ТФ)"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 482,
       "symbol": "1000BONKUSDT",
       "direction": "SHORT",
       "entry": 0.00597,
       "tp1": 0.005851,
       "tp2": 0.005731,
       "sl": 0.0058505,
-      "entry_orig": 0.00597,
-      "tp1_orig": 0.005851,
-      "tp2_orig": 0.005731,
-      "sl_orig": 0.006089,
       "strength": 47,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 1.97,
+      "close_price": 0.0058525,
       "taken_at": "2026-03-19T12:34:35.542778",
-      "status": "TP1_HIT",
-      "reasons": [
-        "MACD медвежий (hist=-0.00001)",
-        "Цена < EMA20 < EMA50",
-        "Объём x3.2 🔥🔥",
-        "Стакан: сильное давление продажи (-0.30)",
-        "МТФ: 5m, 15m согласны",
-        "CVD падает (-11.5%) — продажи усиливаются 📉",
-        "BTC корреляция 0.79, BTC -0.6% 📉",
-        "BTC контекст: -2.3% за 12ч 📉"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-19 15:23:47"
+    },
     {
       "symbol": "PUMPUSDT",
       "direction": "LONG",
@@ -4752,20 +4740,6 @@
       "close_price": null,
       "taken_at": "2026-03-18T06:14:08.845636",
       "closed_at": "2026-03-18 07:14:16"
-    },
-    {
-      "symbol": "POLYXUSDT",
-      "direction": "LONG",
-      "entry": 0.04953,
-      "tp1": 0.051264,
-      "tp2": 0.052997,
-      "sl": 0.048143,
-      "strength": 45,
-      "status": "SL",
-      "pnl_pct": -2.86,
-      "close_price": 0.048115000000000005,
-      "taken_at": "2026-03-18T00:24:09.639870",
-      "closed_at": "2026-03-18 06:41:51"
     }
   ]
 }
