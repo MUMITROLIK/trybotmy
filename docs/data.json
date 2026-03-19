@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-03-19T16:01:49.230879+00:00",
+  "updated_at": "2026-03-19T16:02:33.340076+00:00",
   "publish_status": {
-    "last_ok": "2026-03-19T15:59:54Z",
-    "last_error": "On branch main\nYour branch is ahead of 'origin/main' by 1 commit.\n  (use \"git push\" to publish your local commits)\n\nChanges not staged for commit:\n  (use \"git add <file>...\" to update what will be committed)\n  (use \"git restore <file>...\" t",
+    "last_ok": "2026-03-19T16:01:33Z",
+    "last_error": null,
     "min_push_interval_sec": 30
   },
   "settings": {
@@ -10,10 +10,10 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 646,
+    "total": 647,
     "wins": 201,
     "losses": 116,
-    "active": 27,
+    "active": 28,
     "winrate": 63.4
   },
   "trade_stats": {
@@ -633,6 +633,30 @@
       ],
       "news": null,
       "created_at": "2026-03-19 16:01:48",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 685,
+      "symbol": "RENDERUSDT",
+      "direction": "LONG",
+      "entry": 1.642,
+      "tp1": 1.67484,
+      "tp2": 1.70768,
+      "sl": 1.60916,
+      "strength": 48,
+      "reasons": [
+        "RSI=46 (нейтральный↓)",
+        "MACD бычий (hist=0.00237)",
+        "BB ниже середины",
+        "Стакан: давление покупки (+0.22)",
+        "МТФ: 5m, 4h согласны",
+        "OI растёт +1.9%",
+        "CVD положительный (+0.7%)",
+        "Hammer (1h) 🔨",
+        "⚡ Рыночный вход (MTF 2+ ТФ)"
+      ],
+      "news": null,
+      "created_at": "2026-03-19 16:02:33",
       "status": "ACTIVE"
     }
   ],
