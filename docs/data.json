@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-19T13:26:06.380530+00:00",
+  "updated_at": "2026-03-19T13:26:41.252772+00:00",
   "publish_status": {
-    "last_ok": "2026-03-19T13:25:35Z",
+    "last_ok": "2026-03-19T13:26:11Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 617,
+    "total": 618,
     "wins": 184,
     "losses": 105,
-    "active": 26,
+    "active": 27,
     "winrate": 63.7
   },
   "trade_stats": {
-    "open": 26,
+    "open": 27,
     "pending": 0,
     "wins": 186,
     "losses": 216,
@@ -600,6 +600,28 @@
       ],
       "news": "Crypto Market Regains Its Nerve as ETF Inflows Top $1B, Report Shows",
       "created_at": "2026-03-19 13:23:17",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 656,
+      "symbol": "KITEUSDT",
+      "direction": "LONG",
+      "entry": 0.18898,
+      "tp1": 0.19276,
+      "tp2": 0.196539,
+      "sl": 0.1852,
+      "strength": 45,
+      "reasons": [
+        "MACD бычий (hist=0.00053)",
+        "Цена выше EMA20",
+        "Объём x1.9 🔥",
+        "МТФ: 5m, 1h согласны",
+        "CVD растёт (+12.8%) — покупки усиливаются 📈",
+        "Bullish Engulfing (1h) 🕯️",
+        "⚡ Рыночный вход (MTF 2+ ТФ)"
+      ],
+      "news": null,
+      "created_at": "2026-03-19 13:26:40",
       "status": "ACTIVE"
     }
   ],
@@ -1656,6 +1678,31 @@
         "МТФ: только 1 таймфрейм согласен",
         "CVD положительный (-3.1%)",
         "Doji (1h) — нерешительность"
+      ]
+    },
+    {
+      "id": 510,
+      "symbol": "KITEUSDT",
+      "direction": "LONG",
+      "entry": 0.18898,
+      "tp1": 0.19276,
+      "tp2": 0.196539,
+      "sl": 0.1852,
+      "entry_orig": 0.18898,
+      "tp1_orig": 0.19276,
+      "tp2_orig": 0.196539,
+      "sl_orig": 0.1852,
+      "strength": 45,
+      "taken_at": "2026-03-19T13:26:41.129810",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.00053)",
+        "Цена выше EMA20",
+        "Объём x1.9 🔥",
+        "МТФ: 5m, 1h согласны",
+        "CVD растёт (+12.8%) — покупки усиливаются 📈",
+        "Bullish Engulfing (1h) 🕯️",
+        "⚡ Рыночный вход (MTF 2+ ТФ)"
       ]
     }
   ],
