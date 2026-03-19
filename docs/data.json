@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-19T22:25:34.130649+00:00",
+  "updated_at": "2026-03-19T22:27:00.508920+00:00",
   "publish_status": {
-    "last_ok": "2026-03-19T22:24:56Z",
+    "last_ok": "2026-03-19T22:25:39Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 62.9
   },
   "trade_stats": {
-    "open": 19,
+    "open": 18,
     "pending": 0,
-    "wins": 225,
+    "wins": 226,
     "losses": 240,
-    "total_pnl": 26.55,
-    "winrate": 48.4
+    "total_pnl": 27.43,
+    "winrate": 48.5
   },
   "fear_greed": {
     "value": 23,
@@ -486,32 +486,6 @@
       ]
     },
     {
-      "id": 522,
-      "symbol": "HBARUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.09234,
-      "tp1": 0.094187,
-      "tp2": 0.096034,
-      "sl": 0.090493,
-      "entry_orig": 0.09234,
-      "tp1_orig": 0.094187,
-      "tp2_orig": 0.096034,
-      "sl_orig": 0.090493,
-      "strength": 51,
-      "taken_at": "2026-03-19T14:25:58.879217",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=34 (перепроданность)",
-        "MACD бычий (hist=0.00001)",
-        "BB нижняя зона (24%)",
-        "Стакан: сильное давление покупки (+0.26)",
-        "МТФ: только 1 таймфрейм согласен",
-        "OI растёт +1.9%",
-        "CVD положительный (-2.6%)"
-      ]
-    },
-    {
       "id": 523,
       "symbol": "AVAXUSDT",
       "direction": "SHORT",
@@ -928,6 +902,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "HBARUSDT",
+      "direction": "LONG",
+      "entry": 0.09234,
+      "tp1": 0.094187,
+      "tp2": 0.096034,
+      "sl": 0.090493,
+      "strength": 51,
+      "status": "TIMEOUT",
+      "pnl_pct": 0.88,
+      "close_price": 0.093155,
+      "taken_at": "2026-03-19T14:25:58.879217",
+      "closed_at": "2026-03-19 22:26:00"
+    },
     {
       "symbol": "APTUSDT",
       "direction": "SHORT",
@@ -3713,20 +3701,6 @@
       "close_price": 1.2195,
       "taken_at": "2026-03-18T11:31:20.863204",
       "closed_at": "2026-03-18 12:01:58"
-    },
-    {
-      "symbol": "PIXELUSDT",
-      "direction": "LONG",
-      "entry": 0.008644,
-      "tp1": 0.008817,
-      "tp2": 0.00899,
-      "sl": 0.008471,
-      "strength": 41,
-      "status": "SL",
-      "pnl_pct": -2.22,
-      "close_price": 0.0084525,
-      "taken_at": "2026-03-18T11:38:24.365155",
-      "closed_at": "2026-03-18 12:00:43"
     }
   ]
 }
