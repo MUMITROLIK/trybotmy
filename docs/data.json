@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-19T15:51:10.387908+00:00",
+  "updated_at": "2026-03-19T15:51:29.822777+00:00",
   "publish_status": {
-    "last_ok": "2026-03-19T15:50:06Z",
+    "last_ok": "2026-03-19T15:50:59Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 63.6
   },
   "trade_stats": {
-    "open": 28,
+    "open": 27,
     "pending": 0,
-    "wins": 202,
+    "wins": 203,
     "losses": 226,
-    "total_pnl": 14.2,
-    "winrate": 47.2
+    "total_pnl": 16.12,
+    "winrate": 47.3
   },
   "fear_greed": {
     "value": 23,
@@ -1728,35 +1728,23 @@
         "⚠️ Funding через 32м",
         "⚡ Рыночный вход (MTF 2+ ТФ)"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 533,
       "symbol": "LITUSDT",
       "direction": "LONG",
       "entry": 1.1455,
       "tp1": 1.16840996,
       "tp2": 1.19131974,
       "sl": 1.1684999999999999,
-      "entry_orig": 1.12316082,
-      "tp1_orig": 1.145624,
-      "tp2_orig": 1.168087,
-      "sl_orig": 1.100698,
       "strength": 51,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 1.92,
+      "close_price": 1.1675,
       "taken_at": "2026-03-19T15:09:54.616995",
-      "status": "TP1_HIT",
-      "reasons": [
-        "MACD бычий (hist=0.00547)",
-        "Цена выше EMA20",
-        "Объём x4.5 🔥🔥🔥",
-        "Стакан: давление покупки (+0.12)",
-        "МТФ: только 1 таймфрейм согласен",
-        "CVD растёт (+10.0%) — покупки усиливаются 📈",
-        "⚠️ Funding через 51м",
-        "📌 Лимитный вход @ 1.12316 (откат к EMA20)"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-19 15:51:29"
+    },
     {
       "symbol": "WLFIUSDT",
       "direction": "SHORT",
@@ -4542,20 +4530,6 @@
       "close_price": null,
       "taken_at": "2026-03-18T07:19:46.254383",
       "closed_at": "2026-03-18 08:19:59"
-    },
-    {
-      "symbol": "SIRENUSDT",
-      "direction": "LONG",
-      "entry": 0.81196276,
-      "tp1": 0.849751,
-      "tp2": 0.887539,
-      "sl": 0.781732,
-      "strength": 41,
-      "status": "LIMIT_TIMEOUT",
-      "pnl_pct": 0,
-      "close_price": null,
-      "taken_at": "2026-03-18T07:18:56.906551",
-      "closed_at": "2026-03-18 08:19:13"
     }
   ]
 }
