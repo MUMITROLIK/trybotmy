@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-19T15:57:33.463364+00:00",
+  "updated_at": "2026-03-19T15:58:06.483906+00:00",
   "publish_status": {
-    "last_ok": "2026-03-19T15:56:33Z",
+    "last_ok": "2026-03-19T15:57:06Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -12,17 +12,17 @@
   "stats": {
     "total": 645,
     "wins": 201,
-    "losses": 115,
-    "active": 27,
-    "winrate": 63.6
+    "losses": 116,
+    "active": 26,
+    "winrate": 63.4
   },
   "trade_stats": {
-    "open": 27,
+    "open": 26,
     "pending": 0,
     "wins": 203,
-    "losses": 226,
-    "total_pnl": 16.12,
-    "winrate": 47.3
+    "losses": 227,
+    "total_pnl": 14.12,
+    "winrate": 47.2
   },
   "fear_greed": {
     "value": 23,
@@ -613,29 +613,6 @@
       "news": "Bitcoin $20,000 put option is third most popular strike ahead of quarterly expiry",
       "created_at": "2026-03-19 15:09:29",
       "status": "ACTIVE"
-    },
-    {
-      "id": 682,
-      "symbol": "ARCUSDT",
-      "direction": "LONG",
-      "entry": 0.04275,
-      "tp1": 0.043797,
-      "tp2": 0.044844,
-      "sl": 0.041895,
-      "strength": 45,
-      "reasons": [
-        "RSI=43 (нейтральный↓)",
-        "MACD бычий (hist=0.00001)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: сильное давление покупки (+0.31)",
-        "МТФ: 15m, 1h согласны",
-        "CVD положительный (+0.8%)",
-        "⚠️ Funding через 32м",
-        "⚡ Рыночный вход (MTF 2+ ТФ)"
-      ],
-      "news": null,
-      "created_at": "2026-03-19 15:28:34",
-      "status": "ACTIVE"
     }
   ],
   "history": [
@@ -657,6 +634,27 @@
         "Стакан: сильное давление покупки (+0.25)",
         "МТФ: 5m, 15m согласны",
         "CVD положительный (+1.9%)",
+        "⚠️ Funding через 32м",
+        "⚡ Рыночный вход (MTF 2+ ТФ)"
+      ]
+    },
+    {
+      "symbol": "ARCUSDT",
+      "direction": "LONG",
+      "entry": 0.04275,
+      "tp1": 0.043797,
+      "tp2": 0.044844,
+      "sl": 0.041895,
+      "strength": 45,
+      "status": "SL",
+      "created_at": "2026-03-19 15:28:34",
+      "reasons": [
+        "RSI=43 (нейтральный↓)",
+        "MACD бычий (hist=0.00001)",
+        "Цена > EMA20 > EMA50",
+        "Стакан: сильное давление покупки (+0.31)",
+        "МТФ: 15m, 1h согласны",
+        "CVD положительный (+0.8%)",
         "⚠️ Funding через 32м",
         "⚡ Рыночный вход (MTF 2+ ТФ)"
       ]
@@ -1024,25 +1022,6 @@
         "Стакан: сильное давление продажи (-0.34)",
         "МТФ: 5m, 15m, 1h согласны",
         "BTC контекст: -2.5% за 12ч 📉"
-      ]
-    },
-    {
-      "symbol": "XAGUSDT",
-      "direction": "LONG",
-      "entry": 66.9,
-      "tp1": 68.238,
-      "tp2": 69.576,
-      "sl": 65.562,
-      "strength": 48,
-      "status": "TP1",
-      "created_at": "2026-03-19 13:07:30",
-      "reasons": [
-        "RSI=10 (сильная перепроданность)",
-        "BB нижняя полоса (пробой)",
-        "Объём x2.6 🔥🔥",
-        "OI растёт +14.9%",
-        "CVD положительный (-0.5%)",
-        "Hammer (1h) 🔨"
       ]
     }
   ],
@@ -1702,35 +1681,23 @@
         "⚠️ Funding через 52м",
         "⚡ Рыночный вход (MTF 2+ ТФ)"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 536,
       "symbol": "ARCUSDT",
       "direction": "LONG",
       "entry": 0.04275,
       "tp1": 0.043797,
       "tp2": 0.044844,
       "sl": 0.041895,
-      "entry_orig": 0.04275,
-      "tp1_orig": 0.043797,
-      "tp2_orig": 0.044844,
-      "sl_orig": 0.041895,
       "strength": 45,
+      "status": "SL",
+      "pnl_pct": -2.0,
+      "close_price": 0.041895,
       "taken_at": "2026-03-19T15:28:34.476897",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=43 (нейтральный↓)",
-        "MACD бычий (hist=0.00001)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: сильное давление покупки (+0.31)",
-        "МТФ: 15m, 1h согласны",
-        "CVD положительный (+0.8%)",
-        "⚠️ Funding через 32м",
-        "⚡ Рыночный вход (MTF 2+ ТФ)"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-19 15:57:44"
+    },
     {
       "symbol": "LITUSDT",
       "direction": "LONG",
@@ -4516,20 +4483,6 @@
       "close_price": 1.8533,
       "taken_at": "2026-03-18 08:13:02",
       "closed_at": "2026-03-18 08:40:12"
-    },
-    {
-      "symbol": "TRIAUSDT",
-      "direction": "LONG",
-      "entry": 0.03348053,
-      "tp1": 0.034255,
-      "tp2": 0.03503,
-      "sl": 0.032811,
-      "strength": 45,
-      "status": "LIMIT_TIMEOUT",
-      "pnl_pct": 0,
-      "close_price": null,
-      "taken_at": "2026-03-18T07:19:46.254383",
-      "closed_at": "2026-03-18 08:19:59"
     }
   ]
 }
