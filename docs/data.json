@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-19T17:07:00.752771+00:00",
+  "updated_at": "2026-03-19T17:07:41.511644+00:00",
   "publish_status": {
-    "last_ok": "2026-03-19T17:06:30Z",
+    "last_ok": "2026-03-19T17:06:18Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -13,7 +13,7 @@
     "total": 659,
     "wins": 203,
     "losses": 117,
-    "active": 29,
+    "active": 28,
     "winrate": 63.4
   },
   "trade_stats": {
@@ -36,29 +36,6 @@
     "trained_at": "2026-03-19T14:10:12.840045+00:00"
   },
   "signals": [
-    {
-      "id": 647,
-      "symbol": "PUMPFUNUSDT",
-      "direction": "SHORT",
-      "entry": 0.0018565,
-      "tp1": 0.001819,
-      "tp2": 0.001782,
-      "sl": 0.001894,
-      "strength": 51,
-      "reasons": [
-        "MACD медвежий (hist=-0.00000)",
-        "Цена < EMA20 < EMA50",
-        "Объём x3.4 🔥🔥",
-        "Стакан: давление продажи (-0.11)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +0.6% + цена ↓",
-        "BTC корреляция 0.81, BTC -1.6% 📉",
-        "BTC контекст: -2.5% за 12ч 📉"
-      ],
-      "news": null,
-      "created_at": "2026-03-19 13:07:31",
-      "status": "ACTIVE"
-    },
     {
       "id": 651,
       "symbol": "POWERUSDT",
