@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-03-19T15:17:33.453482+00:00",
+  "updated_at": "2026-03-19T15:18:03.349231+00:00",
   "publish_status": {
-    "last_ok": "2026-03-19T15:16:19Z",
-    "last_error": "On branch main\nYour branch is ahead of 'origin/main' by 1 commit.\n  (use \"git push\" to publish your local commits)\n\nChanges not staged for commit:\n  (use \"git add <file>...\" to update what will be committed)\n  (use \"git restore <file>...\" t",
+    "last_ok": "2026-03-19T15:17:32Z",
+    "last_error": null,
     "min_push_interval_sec": 30
   },
   "settings": {
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 641,
+    "total": 642,
     "wins": 195,
     "losses": 113,
-    "active": 31,
+    "active": 32,
     "winrate": 63.3
   },
   "trade_stats": {
-    "open": 31,
+    "open": 32,
     "pending": 1,
     "wins": 196,
     "losses": 224,
@@ -721,6 +721,28 @@
       ],
       "news": "Bitcoin $20,000 put option is third most popular strike ahead of quarterly expiry",
       "created_at": "2026-03-19 15:09:29",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 680,
+      "symbol": "UAIUSDT",
+      "direction": "LONG",
+      "entry": 0.48139,
+      "tp1": 0.498042,
+      "tp2": 0.514694,
+      "sl": 0.468068,
+      "strength": 49,
+      "reasons": [
+        "MACD бычий (hist=0.00645)",
+        "Цена > EMA20 > EMA50",
+        "Стакан: сильное давление покупки (+0.66)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +2.8% + цена ↑",
+        "⚠️ Funding через 43м",
+        "⚡ Рыночный вход (MTF сильный)"
+      ],
+      "news": null,
+      "created_at": "2026-03-19 15:18:01",
       "status": "ACTIVE"
     }
   ],
@@ -1907,6 +1929,31 @@
         "CVD положительный (-0.6%)",
         "⚠️ Funding через 52м",
         "⚡ Рыночный вход (MTF 2+ ТФ)"
+      ]
+    },
+    {
+      "id": 534,
+      "symbol": "UAIUSDT",
+      "direction": "LONG",
+      "entry": 0.48139,
+      "tp1": 0.498042,
+      "tp2": 0.514694,
+      "sl": 0.468068,
+      "entry_orig": 0.48139,
+      "tp1_orig": 0.498042,
+      "tp2_orig": 0.514694,
+      "sl_orig": 0.468068,
+      "strength": 49,
+      "taken_at": "2026-03-19T15:18:01.328154",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.00645)",
+        "Цена > EMA20 > EMA50",
+        "Стакан: сильное давление покупки (+0.66)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +2.8% + цена ↑",
+        "⚠️ Funding через 43м",
+        "⚡ Рыночный вход (MTF сильный)"
       ]
     },
     {
