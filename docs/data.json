@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-19T17:51:42.501652+00:00",
+  "updated_at": "2026-03-19T17:52:16.756499+00:00",
   "publish_status": {
-    "last_ok": "2026-03-19T17:50:42Z",
+    "last_ok": "2026-03-19T17:51:51Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 63.3
   },
   "trade_stats": {
-    "open": 36,
+    "open": 35,
     "pending": 0,
-    "wins": 210,
+    "wins": 211,
     "losses": 231,
-    "total_pnl": 20.64,
-    "winrate": 47.6
+    "total_pnl": 22.6,
+    "winrate": 47.7
   },
   "fear_greed": {
     "value": 23,
@@ -1068,32 +1068,6 @@
       ]
     },
     {
-      "id": 487,
-      "symbol": "TAOUSDT",
-      "direction": "LONG",
-      "entry": 245.22,
-      "tp1": 250.1244,
-      "tp2": 255.0288,
-      "sl": 240.3156,
-      "entry_orig": 245.22,
-      "tp1_orig": 250.1244,
-      "tp2_orig": 255.0288,
-      "sl_orig": 240.3156,
-      "strength": 48,
-      "taken_at": "2026-03-19T12:48:38.891377",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=37 (перепроданность)",
-        "MACD бычий (hist=0.14436)",
-        "BB нижняя зона (4%)",
-        "Стакан: сильное давление покупки (+0.60)",
-        "📰 Bittensor price outlook: consolidation or deeper correction?",
-        "МТФ: только 1 таймфрейм согласен",
-        "OI растёт +2.5%",
-        "CVD положительный (-0.9%)"
-      ]
-    },
-    {
       "id": 489,
       "symbol": "XAUTUSDT",
       "direction": "SHORT",
@@ -1922,6 +1896,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "TAOUSDT",
+      "direction": "LONG",
+      "entry": 245.22,
+      "tp1": 250.1244,
+      "tp2": 255.0288,
+      "sl": 250.445,
+      "strength": 48,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 1.96,
+      "close_price": 250.01999999999998,
+      "taken_at": "2026-03-19T12:48:38.891377",
+      "closed_at": "2026-03-19 17:52:16"
+    },
     {
       "symbol": "HYPEUSDT",
       "direction": "LONG",
@@ -4707,20 +4695,6 @@
       "close_price": 1.0092500000000002,
       "taken_at": "2026-03-18 10:16:25",
       "closed_at": "2026-03-18 10:41:44"
-    },
-    {
-      "symbol": "ANKRUSDT",
-      "direction": "LONG",
-      "entry": 0.005661,
-      "tp1": 0.005866,
-      "tp2": 0.00607,
-      "sl": 0.005497,
-      "strength": 43,
-      "status": "SL",
-      "pnl_pct": -3.07,
-      "close_price": 0.0054870000000000006,
-      "taken_at": "2026-03-18T09:59:57.164798",
-      "closed_at": "2026-03-18 10:39:12"
     }
   ]
 }
