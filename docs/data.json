@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-19T17:24:28.326636+00:00",
+  "updated_at": "2026-03-19T17:25:18.472600+00:00",
   "publish_status": {
-    "last_ok": null,
+    "last_ok": "2026-03-19T17:24:36Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -13,7 +13,7 @@
     "total": 664,
     "wins": 204,
     "losses": 119,
-    "active": 27,
+    "active": 26,
     "winrate": 63.2
   },
   "trade_stats": {
@@ -36,29 +36,6 @@
     "trained_at": "2026-03-19T14:10:12.840045+00:00"
   },
   "signals": [
-    {
-      "id": 655,
-      "symbol": "ETHUSDT",
-      "direction": "LONG",
-      "entry": 2130.83,
-      "tp1": 2173.4466,
-      "tp2": 2216.0632,
-      "sl": 2088.2134,
-      "strength": 49,
-      "reasons": [
-        "RSI=18 (сильная перепроданность)",
-        "BB нижняя зона (6%)",
-        "Объём x1.9 🔥",
-        "Стакан: сильное давление покупки (+0.98)",
-        "📰 Crypto Market Regains Its Nerve as ETF Inflows Top $1B, Report Sh...",
-        "МТФ: только 1 таймфрейм согласен",
-        "CVD положительный (-3.1%)",
-        "Doji (1h) — нерешительность"
-      ],
-      "news": "Crypto Market Regains Its Nerve as ETF Inflows Top $1B, Report Shows",
-      "created_at": "2026-03-19 13:23:17",
-      "status": "ACTIVE"
-    },
     {
       "id": 659,
       "symbol": "SOLUSDT",
