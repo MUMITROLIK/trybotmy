@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-19T14:57:49.147071+00:00",
+  "updated_at": "2026-03-19T14:58:24.587255+00:00",
   "publish_status": {
-    "last_ok": "2026-03-19T14:57:07Z",
+    "last_ok": "2026-03-19T14:58:04Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -11,18 +11,18 @@
   },
   "stats": {
     "total": 635,
-    "wins": 190,
+    "wins": 191,
     "losses": 111,
-    "active": 32,
-    "winrate": 63.1
+    "active": 31,
+    "winrate": 63.2
   },
   "trade_stats": {
-    "open": 33,
+    "open": 32,
     "pending": 0,
-    "wins": 191,
+    "wins": 192,
     "losses": 222,
-    "total_pnl": -4.51,
-    "winrate": 46.2
+    "total_pnl": -2.76,
+    "winrate": 46.4
   },
   "fear_greed": {
     "value": 23,
@@ -36,28 +36,6 @@
     "trained_at": "2026-03-19T14:10:12.840045+00:00"
   },
   "signals": [
-    {
-      "id": 616,
-      "symbol": "LITUSDT",
-      "direction": "LONG",
-      "entry": 1.116,
-      "tp1": 1.13832,
-      "tp2": 1.16064,
-      "sl": 1.09368,
-      "strength": 48,
-      "reasons": [
-        "RSI=38 (перепроданность)",
-        "MACD бычий (hist=0.00074)",
-        "BB нижняя зона (19%)",
-        "Стакан: давление покупки (+0.22)",
-        "OI падает (шорты закрываются)",
-        "CVD растёт (+7.4%) — покупки усиливаются 📈",
-        "Doji (1h) — нерешительность"
-      ],
-      "news": null,
-      "created_at": "2026-03-19 11:46:16",
-      "status": "ACTIVE"
-    },
     {
       "id": 622,
       "symbol": "AXSUSDT",
@@ -1146,31 +1124,6 @@
   ],
   "trades_open": [
     {
-      "id": 470,
-      "symbol": "LITUSDT",
-      "direction": "LONG",
-      "entry": 1.116,
-      "tp1": 1.13832,
-      "tp2": 1.16064,
-      "sl": 1.09368,
-      "entry_orig": 1.116,
-      "tp1_orig": 1.13832,
-      "tp2_orig": 1.16064,
-      "sl_orig": 1.09368,
-      "strength": 48,
-      "taken_at": "2026-03-19T11:46:16.419072",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=38 (перепроданность)",
-        "MACD бычий (hist=0.00074)",
-        "BB нижняя зона (19%)",
-        "Стакан: давление покупки (+0.22)",
-        "OI падает (шорты закрываются)",
-        "CVD растёт (+7.4%) — покупки усиливаются 📈",
-        "Doji (1h) — нерешительность"
-      ]
-    },
-    {
       "id": 476,
       "symbol": "AXSUSDT",
       "direction": "LONG",
@@ -1974,6 +1927,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "LITUSDT",
+      "direction": "LONG",
+      "entry": 1.116,
+      "tp1": 1.13832,
+      "tp2": 1.16064,
+      "sl": 1.1385,
+      "strength": 48,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 1.75,
+      "close_price": 1.1355,
+      "taken_at": "2026-03-19T11:46:16.419072",
+      "closed_at": "2026-03-19 14:58:24"
+    },
     {
       "symbol": "UAIUSDT",
       "direction": "LONG",
@@ -4759,20 +4726,6 @@
       "close_price": 1.0314,
       "taken_at": "2026-03-18 00:47:16",
       "closed_at": "2026-03-18 05:05:02"
-    },
-    {
-      "symbol": "HYPEUSDT",
-      "direction": "LONG",
-      "entry": 41.60444765,
-      "tp1": 42.436537,
-      "tp2": 43.268626,
-      "sl": 40.772359,
-      "strength": 50,
-      "status": "LIMIT_TIMEOUT",
-      "pnl_pct": 0,
-      "close_price": null,
-      "taken_at": "2026-03-18T03:29:46.240378",
-      "closed_at": "2026-03-18 04:29:53"
     }
   ]
 }
