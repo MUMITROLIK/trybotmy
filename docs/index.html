@@ -851,7 +851,7 @@ function rPos(t){
   var pr=pnl>0.01,isN=Math.abs(pnl)<0.01,pc=pr?'pos':isN?'ne':'neg';
   var isL=t.direction==='LONG',sc=t.status==='TP1_HIT'?'tp1':t.status==='PENDING'?'pend':'open';
   var h='<div class="pos-c '+(pr?'profit':isN?'neu':'loss')+'" id="pos-'+(t.id||t.symbol)+'">';
-  h+='<div class="pos-top"><div class="pos-sym-row"><span class="pos-sym">'+t.symbol+'</span><span class="pos-live-p live-cur">'+(lP!=null?fmt(lP):'—')+'</span></div><span class="dir-pill '+(isL?'long':'short')+'">'+(isL?'↑ LONG':'↓ SHORT')+'</span></div>';
+  h+='<div class="pos-top"><div class="pos-sym-row"><span class="pos-sym">'+t.symbol+'</span><span class="pos-live-p live-cur" style="font-size:.85rem;font-weight:600;color:var(--B)">'+(lP!=null?fmt(lP):'—')+'</span></div><span class="dir-pill '+(isL?'long':'short')+'">'+(isL?'↑ LONG':'↓ SHORT')+'</span></div>';
   h+='<div class="pos-pnl '+pc+(pr?' glow':'')+'">'+(pnl>=0?'+':'')+pnl.toFixed(2)+'%</div>';
   h+='<div class="pos-lvls"><div class="lvl"><span class="lvl-l">Вход</span><span class="lvl-v en">'+fmt(t.entry)+'</span></div><div class="lvl"><span class="lvl-l">ТП1</span><span class="lvl-v tp">'+fmt(t.tp1)+'</span></div><div class="lvl"><span class="lvl-l">ТП2</span><span class="lvl-v tp">'+fmt(t.tp2)+'</span></div><div class="lvl"><span class="lvl-l">СЛ</span><span class="lvl-v sl">'+fmt(t.sl)+'</span></div></div>';
   h+='<div class="pb-wrap">'+buildPB(t,pnl,lP!=null?lP:t.entry)+'</div>';
