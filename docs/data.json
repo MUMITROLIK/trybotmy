@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-19T15:28:03.841741+00:00",
+  "updated_at": "2026-03-19T15:28:34.895912+00:00",
   "publish_status": {
-    "last_ok": "2026-03-19T15:27:03Z",
+    "last_ok": "2026-03-19T15:27:36Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 643,
+    "total": 644,
     "wins": 196,
     "losses": 114,
-    "active": 31,
+    "active": 32,
     "winrate": 63.2
   },
   "trade_stats": {
-    "open": 32,
+    "open": 33,
     "pending": 0,
     "wins": 197,
     "losses": 225,
@@ -723,6 +723,29 @@
       ],
       "news": null,
       "created_at": "2026-03-19 15:19:50",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 682,
+      "symbol": "ARCUSDT",
+      "direction": "LONG",
+      "entry": 0.04275,
+      "tp1": 0.043797,
+      "tp2": 0.044844,
+      "sl": 0.041895,
+      "strength": 45,
+      "reasons": [
+        "RSI=43 (нейтральный↓)",
+        "MACD бычий (hist=0.00001)",
+        "Цена > EMA20 > EMA50",
+        "Стакан: сильное давление покупки (+0.31)",
+        "МТФ: 15m, 1h согласны",
+        "CVD положительный (+0.8%)",
+        "⚠️ Funding через 32м",
+        "⚡ Рыночный вход (MTF 2+ ТФ)"
+      ],
+      "news": null,
+      "created_at": "2026-03-19 15:28:34",
       "status": "ACTIVE"
     }
   ],
@@ -1936,6 +1959,32 @@
         "CVD положительный (+3.4%)",
         "Bullish Engulfing (1h) 🕯️",
         "⚠️ Funding через 41м",
+        "⚡ Рыночный вход (MTF 2+ ТФ)"
+      ]
+    },
+    {
+      "id": 536,
+      "symbol": "ARCUSDT",
+      "direction": "LONG",
+      "entry": 0.04275,
+      "tp1": 0.043797,
+      "tp2": 0.044844,
+      "sl": 0.041895,
+      "entry_orig": 0.04275,
+      "tp1_orig": 0.043797,
+      "tp2_orig": 0.044844,
+      "sl_orig": 0.041895,
+      "strength": 45,
+      "taken_at": "2026-03-19T15:28:34.476897",
+      "status": "OPEN",
+      "reasons": [
+        "RSI=43 (нейтральный↓)",
+        "MACD бычий (hist=0.00001)",
+        "Цена > EMA20 > EMA50",
+        "Стакан: сильное давление покупки (+0.31)",
+        "МТФ: 15m, 1h согласны",
+        "CVD положительный (+0.8%)",
+        "⚠️ Funding через 32м",
         "⚡ Рыночный вход (MTF 2+ ТФ)"
       ]
     }
