@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-19T14:07:26.856559+00:00",
+  "updated_at": "2026-03-19T14:08:07.665562+00:00",
   "publish_status": {
-    "last_ok": "2026-03-19T14:06:09Z",
+    "last_ok": "2026-03-19T14:07:34Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 624,
+    "total": 625,
     "wins": 187,
     "losses": 108,
-    "active": 27,
+    "active": 28,
     "winrate": 63.4
   },
   "trade_stats": {
-    "open": 27,
+    "open": 28,
     "pending": 0,
     "wins": 189,
     "losses": 219,
@@ -625,6 +625,28 @@
       ],
       "news": null,
       "created_at": "2026-03-19 13:57:27",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 663,
+      "symbol": "UAIUSDT",
+      "direction": "LONG",
+      "entry": 0.4346,
+      "tp1": 0.444098,
+      "tp2": 0.453596,
+      "sl": 0.425908,
+      "strength": 58,
+      "reasons": [
+        "MACD бычий (hist=0.00210)",
+        "Цена > EMA20 > EMA50",
+        "Объём x6.5 🔥🔥🔥",
+        "Стакан: давление покупки (+0.10)",
+        "МТФ: 5m, 15m, 1h согласны",
+        "OI растёт +5.2% + цена ↑",
+        "⚡ Рыночный вход (MTF сильный)"
+      ],
+      "news": null,
+      "created_at": "2026-03-19 14:08:06",
       "status": "ACTIVE"
     }
   ],
@@ -1696,6 +1718,31 @@
         "CVD растёт (+14.2%) — покупки усиливаются 📈",
         "Bullish Engulfing (1h) 🕯️",
         "⚡ Рыночный вход (MTF 2+ ТФ)"
+      ]
+    },
+    {
+      "id": 517,
+      "symbol": "UAIUSDT",
+      "direction": "LONG",
+      "entry": 0.4346,
+      "tp1": 0.444098,
+      "tp2": 0.453596,
+      "sl": 0.425908,
+      "entry_orig": 0.4346,
+      "tp1_orig": 0.444098,
+      "tp2_orig": 0.453596,
+      "sl_orig": 0.425908,
+      "strength": 58,
+      "taken_at": "2026-03-19T14:08:07.171357",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.00210)",
+        "Цена > EMA20 > EMA50",
+        "Объём x6.5 🔥🔥🔥",
+        "Стакан: давление покупки (+0.10)",
+        "МТФ: 5m, 15m, 1h согласны",
+        "OI растёт +5.2% + цена ↑",
+        "⚡ Рыночный вход (MTF сильный)"
       ]
     }
   ],
