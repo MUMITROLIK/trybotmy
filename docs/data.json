@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-19T13:55:47.027672+00:00",
+  "updated_at": "2026-03-19T13:56:22.667349+00:00",
   "publish_status": {
-    "last_ok": "2026-03-19T13:55:16Z",
+    "last_ok": "2026-03-19T13:55:52Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 63.4
   },
   "trade_stats": {
-    "open": 27,
+    "open": 26,
     "pending": 0,
-    "wins": 188,
+    "wins": 189,
     "losses": 219,
-    "total_pnl": -4.57,
-    "winrate": 46.2
+    "total_pnl": -2.31,
+    "winrate": 46.3
   },
   "fear_greed": {
     "value": 23,
@@ -30,10 +30,10 @@
     "emoji": "😱"
   },
   "ml_info": {
-    "model_name": "LogisticRegression",
-    "roc_auc": 0.7805,
-    "rows": 400,
-    "trained_at": "2026-03-18T18:46:42.539461+00:00"
+    "model_name": "GradientBoosting-Deep",
+    "roc_auc": 0.8401,
+    "rows": 502,
+    "trained_at": "2026-03-19T13:56:16.528174+00:00"
   },
   "signals": [
     {
@@ -1650,33 +1650,23 @@
         "OI падает (шорты закрываются)",
         "CVD положительный (-5.6%)"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 493,
       "symbol": "XPTUSDT",
       "direction": "LONG",
       "entry": 1886.66,
       "tp1": 1924.3932,
       "tp2": 1962.1264,
       "sl": 1930.18,
-      "entry_orig": 1886.66,
-      "tp1_orig": 1924.3932,
-      "tp2_orig": 1962.1264,
-      "sl_orig": 1848.9268,
       "strength": 47,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 2.26,
+      "close_price": 1929.3899999999999,
       "taken_at": "2026-03-19T12:55:34.351819",
-      "status": "TP1_HIT",
-      "reasons": [
-        "RSI=21 (сильная перепроданность)",
-        "BB нижняя полоса (пробой)",
-        "Объём x2.0 🔥",
-        "Стакан: сильное давление покупки (+0.60)",
-        "OI растёт +5.4%",
-        "CVD положительный (-4.5%)"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-19 13:56:01"
+    },
     {
       "symbol": "MSTRUSDT",
       "direction": "SHORT",
@@ -4462,20 +4452,6 @@
       "close_price": 1.2525,
       "taken_at": "2026-03-17T23:13:36.519729",
       "closed_at": "2026-03-18 02:40:13"
-    },
-    {
-      "symbol": "ANKRUSDT",
-      "direction": "LONG",
-      "entry": 0.00505084,
-      "tp1": 0.005222,
-      "tp2": 0.005393,
-      "sl": 0.004914,
-      "strength": 52,
-      "status": "LIMIT_TIMEOUT",
-      "pnl_pct": 0,
-      "close_price": null,
-      "taken_at": "2026-03-18T00:56:31.526812",
-      "closed_at": "2026-03-18 01:56:33"
     }
   ]
 }
