@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-19T15:09:31.060990+00:00",
+  "updated_at": "2026-03-19T15:09:57.518664+00:00",
   "publish_status": {
-    "last_ok": "2026-03-19T15:08:53Z",
+    "last_ok": "2026-03-19T15:09:40Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,15 +10,15 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 640,
+    "total": 641,
     "wins": 191,
     "losses": 113,
-    "active": 34,
+    "active": 35,
     "winrate": 62.8
   },
   "trade_stats": {
     "open": 34,
-    "pending": 0,
+    "pending": 1,
     "wins": 193,
     "losses": 224,
     "total_pnl": -5.52,
@@ -787,6 +787,29 @@
       ],
       "news": "Bitcoin $20,000 put option is third most popular strike ahead of quarterly expiry",
       "created_at": "2026-03-19 15:09:29",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 679,
+      "symbol": "LITUSDT",
+      "direction": "LONG",
+      "entry": 1.12316082,
+      "tp1": 1.145624,
+      "tp2": 1.168087,
+      "sl": 1.100698,
+      "strength": 51,
+      "reasons": [
+        "MACD бычий (hist=0.00547)",
+        "Цена выше EMA20",
+        "Объём x4.5 🔥🔥🔥",
+        "Стакан: давление покупки (+0.12)",
+        "МТФ: только 1 таймфрейм согласен",
+        "CVD растёт (+10.0%) — покупки усиливаются 📈",
+        "⚠️ Funding через 51м",
+        "📌 Лимитный вход @ 1.12316 (откат к EMA20)"
+      ],
+      "news": null,
+      "created_at": "2026-03-19 15:09:54",
       "status": "ACTIVE"
     }
   ],
@@ -2048,6 +2071,32 @@
         "CVD положительный (-0.6%)",
         "⚠️ Funding через 52м",
         "⚡ Рыночный вход (MTF 2+ ТФ)"
+      ]
+    },
+    {
+      "id": 533,
+      "symbol": "LITUSDT",
+      "direction": "LONG",
+      "entry": 1.12316082,
+      "tp1": 1.145624,
+      "tp2": 1.168087,
+      "sl": 1.100698,
+      "entry_orig": 1.12316082,
+      "tp1_orig": 1.145624,
+      "tp2_orig": 1.168087,
+      "sl_orig": 1.100698,
+      "strength": 51,
+      "taken_at": "2026-03-19T15:09:54.616995",
+      "status": "PENDING",
+      "reasons": [
+        "MACD бычий (hist=0.00547)",
+        "Цена выше EMA20",
+        "Объём x4.5 🔥🔥🔥",
+        "Стакан: давление покупки (+0.12)",
+        "МТФ: только 1 таймфрейм согласен",
+        "CVD растёт (+10.0%) — покупки усиливаются 📈",
+        "⚠️ Funding через 51м",
+        "📌 Лимитный вход @ 1.12316 (откат к EMA20)"
       ]
     }
   ],
