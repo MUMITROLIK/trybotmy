@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-19T18:57:15.343949+00:00",
+  "updated_at": "2026-03-19T18:58:10.428495+00:00",
   "publish_status": {
-    "last_ok": "2026-03-19T18:56:41Z",
+    "last_ok": "2026-03-19T18:57:26Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 63.3
   },
   "trade_stats": {
-    "open": 38,
+    "open": 37,
     "pending": 0,
     "wins": 213,
-    "losses": 232,
-    "total_pnl": 23.8,
-    "winrate": 47.9
+    "losses": 233,
+    "total_pnl": 21.25,
+    "winrate": 47.8
   },
   "fear_greed": {
     "value": 23,
@@ -1678,31 +1678,6 @@
       ]
     },
     {
-      "id": 556,
-      "symbol": "PIXELUSDT",
-      "direction": "LONG",
-      "entry": 0.0093,
-      "tp1": 0.009596,
-      "tp2": 0.009892,
-      "sl": 0.009063,
-      "entry_orig": 0.0093,
-      "tp1_orig": 0.009596,
-      "tp2_orig": 0.009892,
-      "sl_orig": 0.009063,
-      "strength": 45,
-      "taken_at": "2026-03-19T17:16:50.733777",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00002)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: сильное давление покупки (+0.26)",
-        "МТФ: 5m, 15m согласны",
-        "OI растёт +5.6% + цена ↑",
-        "CVD положительный (-0.6%)",
-        "⚡ Рыночный вход (MTF 2+ ТФ)"
-      ]
-    },
-    {
       "id": 557,
       "symbol": "KITEUSDT",
       "direction": "LONG",
@@ -1902,6 +1877,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "PIXELUSDT",
+      "direction": "LONG",
+      "entry": 0.0093,
+      "tp1": 0.009596,
+      "tp2": 0.009892,
+      "sl": 0.009063,
+      "strength": 45,
+      "status": "SL",
+      "pnl_pct": -2.55,
+      "close_price": 0.0090625,
+      "taken_at": "2026-03-19T17:16:50.733777",
+      "closed_at": "2026-03-19 18:58:09"
+    },
     {
       "symbol": "SIRENUSDT",
       "direction": "LONG",
@@ -4687,20 +4676,6 @@
       "close_price": 0.0020785,
       "taken_at": "2026-03-18 05:50:07",
       "closed_at": "2026-03-18 11:07:33"
-    },
-    {
-      "symbol": "HYPERUSDT",
-      "direction": "LONG",
-      "entry": 0.0994,
-      "tp1": 0.101388,
-      "tp2": 0.103376,
-      "sl": 0.097412,
-      "strength": 50,
-      "status": "SL",
-      "pnl_pct": -2.06,
-      "close_price": 0.09734999999999999,
-      "taken_at": "2026-03-18T06:45:53.409833",
-      "closed_at": "2026-03-18 11:06:32"
     }
   ]
 }
