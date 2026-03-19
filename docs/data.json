@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-19T00:46:13.266338+00:00",
+  "updated_at": "2026-03-19T00:47:18.472123+00:00",
   "publish_status": {
-    "last_ok": "2026-03-19T00:44:47Z",
+    "last_ok": "2026-03-19T00:46:18Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -25,9 +25,9 @@
     "winrate": 47.1
   },
   "fear_greed": {
-    "value": 26,
-    "label": "Fear",
-    "emoji": "😨"
+    "value": 23,
+    "label": "Extreme Fear",
+    "emoji": "😱"
   },
   "ml_info": {
     "model_name": "LogisticRegression",
