@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-19T13:20:35.359652+00:00",
+  "updated_at": "2026-03-19T13:21:12.004274+00:00",
   "publish_status": {
-    "last_ok": "2026-03-19T13:19:35Z",
+    "last_ok": "2026-03-19T13:20:43Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 63.9
   },
   "trade_stats": {
-    "open": 27,
+    "open": 26,
     "pending": 0,
-    "wins": 185,
+    "wins": 186,
     "losses": 215,
-    "total_pnl": -1.9,
-    "winrate": 46.2
+    "total_pnl": 0.35,
+    "winrate": 46.4
   },
   "fear_greed": {
     "value": 23,
@@ -1461,30 +1461,6 @@
       ]
     },
     {
-      "id": 499,
-      "symbol": "XAGUSDT",
-      "direction": "LONG",
-      "entry": 66.9,
-      "tp1": 68.238,
-      "tp2": 69.576,
-      "sl": 65.562,
-      "entry_orig": 66.9,
-      "tp1_orig": 68.238,
-      "tp2_orig": 69.576,
-      "sl_orig": 65.562,
-      "strength": 48,
-      "taken_at": "2026-03-19T13:07:31.132546",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=10 (сильная перепроданность)",
-        "BB нижняя полоса (пробой)",
-        "Объём x2.6 🔥🔥",
-        "OI растёт +14.9%",
-        "CVD положительный (-0.5%)",
-        "Hammer (1h) 🔨"
-      ]
-    },
-    {
       "id": 500,
       "symbol": "VVVUSDT",
       "direction": "SHORT",
@@ -1683,6 +1659,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "XAGUSDT",
+      "direction": "LONG",
+      "entry": 66.9,
+      "tp1": 68.238,
+      "tp2": 69.576,
+      "sl": 68.445,
+      "strength": 48,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 2.25,
+      "close_price": 68.405,
+      "taken_at": "2026-03-19T13:07:31.132546",
+      "closed_at": "2026-03-19 13:21:11"
+    },
     {
       "symbol": "GRASSUSDT",
       "direction": "LONG",
@@ -4468,20 +4458,6 @@
       "close_price": null,
       "taken_at": "2026-03-18T00:02:08.881197",
       "closed_at": "2026-03-18 01:02:10"
-    },
-    {
-      "symbol": "SIRENUSDT",
-      "direction": "LONG",
-      "entry": 0.71383,
-      "tp1": 0.731791,
-      "tp2": 0.749753,
-      "sl": 0.699461,
-      "strength": 48,
-      "status": "TP2",
-      "pnl_pct": 13.81,
-      "close_price": 0.8124,
-      "taken_at": "2026-03-17T22:31:12.573817",
-      "closed_at": "2026-03-18 00:43:52"
     }
   ]
 }
