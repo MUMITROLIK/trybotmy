@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-19T16:50:22.930537+00:00",
+  "updated_at": "2026-03-19T16:50:42.713264+00:00",
   "publish_status": {
-    "last_ok": "2026-03-19T16:49:22Z",
+    "last_ok": "2026-03-19T16:50:02Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -12,9 +12,9 @@
   "stats": {
     "total": 656,
     "wins": 203,
-    "losses": 116,
-    "active": 31,
-    "winrate": 63.6
+    "losses": 117,
+    "active": 30,
+    "winrate": 63.4
   },
   "trade_stats": {
     "open": 33,
@@ -252,27 +252,6 @@
       ],
       "news": "Crypto Market Regains Its Nerve as ETF Inflows Top $1B, Report Shows",
       "created_at": "2026-03-19 13:43:47",
-      "status": "ACTIVE"
-    },
-    {
-      "id": 660,
-      "symbol": "RIVERUSDT",
-      "direction": "LONG",
-      "entry": 25.511,
-      "tp1": 26.350036,
-      "tp2": 27.189071,
-      "sl": 24.839771,
-      "strength": 48,
-      "reasons": [
-        "RSI=32 (перепроданность)",
-        "BB нижняя полоса (пробой)",
-        "EMA20 > EMA50",
-        "Объём x2.6 🔥🔥",
-        "МТФ: 15m, 1h, 4h согласны",
-        "⚡ Рыночный вход (MTF сильный)"
-      ],
-      "news": null,
-      "created_at": "2026-03-19 13:45:26",
       "status": "ACTIVE"
     },
     {
@@ -1011,6 +990,25 @@
       ]
     },
     {
+      "symbol": "RIVERUSDT",
+      "direction": "LONG",
+      "entry": 25.511,
+      "tp1": 26.350036,
+      "tp2": 27.189071,
+      "sl": 24.839771,
+      "strength": 48,
+      "status": "SL",
+      "created_at": "2026-03-19 13:45:26",
+      "reasons": [
+        "RSI=32 (перепроданность)",
+        "BB нижняя полоса (пробой)",
+        "EMA20 > EMA50",
+        "Объём x2.6 🔥🔥",
+        "МТФ: 15m, 1h, 4h согласны",
+        "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
+    {
       "symbol": "ARCUSDT",
       "direction": "LONG",
       "entry": 0.04193,
@@ -1110,27 +1108,6 @@
         "Стакан: перевес bid (+0.09)",
         "OI растёт +1.4%",
         "CVD положительный (-3.0%)"
-      ]
-    },
-    {
-      "symbol": "GRASSUSDT",
-      "direction": "LONG",
-      "entry": 0.38628,
-      "tp1": 0.396525,
-      "tp2": 0.40677,
-      "sl": 0.378084,
-      "strength": 45,
-      "status": "SL",
-      "created_at": "2026-03-19 13:09:20",
-      "reasons": [
-        "RSI=34 (перепроданность)",
-        "BB нижняя полоса (пробой)",
-        "EMA20 > EMA50",
-        "Объём x2.4 🔥",
-        "Стакан: давление покупки (+0.13)",
-        "МТФ: 15m, 4h согласны",
-        "OI падает (шорты закрываются)",
-        "⚡ Рыночный вход (MTF 2+ ТФ)"
       ]
     }
   ],
