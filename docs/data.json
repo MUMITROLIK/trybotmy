@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-03-19T16:07:03.210320+00:00",
+  "updated_at": "2026-03-19T16:07:36.634966+00:00",
   "publish_status": {
     "last_ok": "2026-03-19T16:06:36Z",
-    "last_error": null,
+    "last_error": "On branch main\nYour branch is up to date with 'origin/main'.\n\nChanges not staged for commit:\n  (use \"git add <file>...\" to update what will be committed)\n  (use \"git restore <file>...\" to discard changes in working directory)\n\tmodified:   d",
     "min_push_interval_sec": 30
   },
   "settings": {
@@ -13,7 +13,7 @@
     "total": 650,
     "wins": 201,
     "losses": 116,
-    "active": 31,
+    "active": 30,
     "winrate": 63.4
   },
   "trade_stats": {
@@ -36,28 +36,6 @@
     "trained_at": "2026-03-19T14:10:12.840045+00:00"
   },
   "signals": [
-    {
-      "id": 622,
-      "symbol": "AXSUSDT",
-      "direction": "LONG",
-      "entry": 1.182,
-      "tp1": 1.20564,
-      "tp2": 1.22928,
-      "sl": 1.15836,
-      "strength": 45,
-      "reasons": [
-        "RSI=29 (сильная перепроданность)",
-        "BB нижняя полоса (пробой)",
-        "Объём x1.9 🔥",
-        "Стакан: давление покупки (+0.18)",
-        "МТФ: только 1 таймфрейм согласен",
-        "OI падает (шорты закрываются)",
-        "CVD положительный (-8.0%)"
-      ],
-      "news": null,
-      "created_at": "2026-03-19 12:07:09",
-      "status": "ACTIVE"
-    },
     {
       "id": 625,
       "symbol": "1000PEPEUSDT",
