@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-19T15:39:48.018870+00:00",
+  "updated_at": "2026-03-19T15:39:55.451101+00:00",
   "publish_status": {
-    "last_ok": "2026-03-19T15:38:48Z",
+    "last_ok": "2026-03-19T15:39:26Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -12,17 +12,17 @@
   "stats": {
     "total": 645,
     "wins": 196,
-    "losses": 114,
-    "active": 33,
-    "winrate": 63.2
+    "losses": 115,
+    "active": 32,
+    "winrate": 63.0
   },
   "trade_stats": {
-    "open": 34,
+    "open": 33,
     "pending": 0,
     "wins": 197,
-    "losses": 225,
-    "total_pnl": 4.14,
-    "winrate": 46.7
+    "losses": 226,
+    "total_pnl": 1.68,
+    "winrate": 46.6
   },
   "fear_greed": {
     "value": 23,
@@ -747,9 +747,10 @@
       "news": null,
       "created_at": "2026-03-19 15:28:34",
       "status": "ACTIVE"
-    },
+    }
+  ],
+  "history": [
     {
-      "id": 683,
       "symbol": "KATUSDT",
       "direction": "LONG",
       "entry": 0.01036,
@@ -757,6 +758,8 @@
       "tp2": 0.010984,
       "sl": 0.010111,
       "strength": 47,
+      "status": "SL",
+      "created_at": "2026-03-19 15:28:48",
       "reasons": [
         "RSI=38 (перепроданность)",
         "MACD бычий (hist=0.00001)",
@@ -767,13 +770,8 @@
         "CVD положительный (+1.9%)",
         "⚠️ Funding через 32м",
         "⚡ Рыночный вход (MTF 2+ ТФ)"
-      ],
-      "news": null,
-      "created_at": "2026-03-19 15:28:48",
-      "status": "ACTIVE"
-    }
-  ],
-  "history": [
+      ]
+    },
     {
       "symbol": "LITUSDT",
       "direction": "LONG",
@@ -1153,27 +1151,6 @@
         "Стакан: сильное давление покупки (+0.60)",
         "OI растёт +5.4%",
         "CVD положительный (-4.5%)"
-      ]
-    },
-    {
-      "symbol": "WIFUSDT",
-      "direction": "SHORT",
-      "entry": 0.1719,
-      "tp1": 0.168462,
-      "tp2": 0.165024,
-      "sl": 0.175338,
-      "strength": 49,
-      "status": "SL",
-      "created_at": "2026-03-19 12:53:58",
-      "reasons": [
-        "MACD медвежий (hist=-0.00029)",
-        "Цена < EMA20 < EMA50",
-        "Объём x2.9 🔥🔥",
-        "МТФ: 5m, 15m, 1h согласны",
-        "OI растёт +2.6% + цена ↓",
-        "CVD падает (-7.6%) — продажи усиливаются 📉",
-        "BTC корреляция 0.69, BTC -1.2% 📉",
-        "BTC контекст: -2.5% за 12ч 📉"
       ]
     }
   ],
@@ -2011,36 +1988,23 @@
         "⚠️ Funding через 32м",
         "⚡ Рыночный вход (MTF 2+ ТФ)"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 537,
       "symbol": "KATUSDT",
       "direction": "LONG",
       "entry": 0.01036,
       "tp1": 0.010672,
       "tp2": 0.010984,
       "sl": 0.010111,
-      "entry_orig": 0.01036,
-      "tp1_orig": 0.010672,
-      "tp2_orig": 0.010984,
-      "sl_orig": 0.010111,
       "strength": 47,
+      "status": "SL",
+      "pnl_pct": -2.46,
+      "close_price": 0.010105,
       "taken_at": "2026-03-19T15:28:48.780657",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=38 (перепроданность)",
-        "MACD бычий (hist=0.00001)",
-        "BB ниже середины",
-        "Цена выше EMA20",
-        "Стакан: сильное давление покупки (+0.25)",
-        "МТФ: 5m, 15m согласны",
-        "CVD положительный (+1.9%)",
-        "⚠️ Funding через 32м",
-        "⚡ Рыночный вход (MTF 2+ ТФ)"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-19 15:39:55"
+    },
     {
       "symbol": "1000BONKUSDT",
       "direction": "SHORT",
@@ -4826,20 +4790,6 @@
       "close_price": 0.049125,
       "taken_at": "2026-03-18T07:01:36.002735",
       "closed_at": "2026-03-18 07:55:30"
-    },
-    {
-      "symbol": "BEATUSDT",
-      "direction": "LONG",
-      "entry": 0.52776533,
-      "tp1": 0.548283,
-      "tp2": 0.568801,
-      "sl": 0.511351,
-      "strength": 52,
-      "status": "LIMIT_TIMEOUT",
-      "pnl_pct": 0,
-      "close_price": null,
-      "taken_at": "2026-03-18T06:14:08.845636",
-      "closed_at": "2026-03-18 07:14:16"
     }
   ]
 }
