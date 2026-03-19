@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-19T20:55:10.649664+00:00",
+  "updated_at": "2026-03-19T20:55:59.520536+00:00",
   "publish_status": {
-    "last_ok": "2026-03-19T20:54:10Z",
+    "last_ok": "2026-03-19T20:55:16Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 63.3
   },
   "trade_stats": {
-    "open": 28,
+    "open": 27,
     "pending": 0,
     "wins": 220,
-    "losses": 236,
-    "total_pnl": 27.3,
-    "winrate": 48.2
+    "losses": 237,
+    "total_pnl": 26.21,
+    "winrate": 48.1
   },
   "fear_greed": {
     "value": 23,
@@ -639,32 +639,6 @@
         "МТФ: все 4 таймфрейма согласны ✅✅",
         "OI растёт +1.5% + цена ↓",
         "BTC контекст: -2.2% за 12ч 📉"
-      ]
-    },
-    {
-      "id": 494,
-      "symbol": "MOODENGUSDT",
-      "direction": "SHORT",
-      "exchange": "binance",
-      "entry": 0.04941,
-      "tp1": 0.048422,
-      "tp2": 0.047434,
-      "sl": 0.050398,
-      "entry_orig": 0.04941,
-      "tp1_orig": 0.048422,
-      "tp2_orig": 0.047434,
-      "sl_orig": 0.050398,
-      "strength": 45,
-      "taken_at": "2026-03-19T12:55:34.531321",
-      "status": "OPEN",
-      "reasons": [
-        "MACD медвежий (hist=-0.00011)",
-        "Цена < EMA20 < EMA50",
-        "Объём x3.1 🔥🔥",
-        "Стакан: сильное давление продажи (-0.34)",
-        "МТФ: 5m, 15m, 1h согласны",
-        "BTC корреляция 0.69, BTC -0.9% 📉",
-        "BTC контекст: -2.5% за 12ч 📉"
       ]
     },
     {
@@ -1350,6 +1324,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "MOODENGUSDT",
+      "direction": "SHORT",
+      "entry": 0.04941,
+      "tp1": 0.048422,
+      "tp2": 0.047434,
+      "sl": 0.050398,
+      "strength": 45,
+      "status": "TIMEOUT",
+      "pnl_pct": -1.09,
+      "close_price": 0.04995,
+      "taken_at": "2026-03-19T12:55:34.531321",
+      "closed_at": "2026-03-19 20:55:34"
+    },
     {
       "symbol": "ENJUSDT",
       "direction": "LONG",
@@ -4135,20 +4123,6 @@
       "close_price": 0.05635,
       "taken_at": "2026-03-18T10:58:44.615758",
       "closed_at": "2026-03-18 11:36:29"
-    },
-    {
-      "symbol": "ADAUSDT",
-      "direction": "LONG",
-      "entry": 0.2877,
-      "tp1": 0.293454,
-      "tp2": 0.299208,
-      "sl": 0.281946,
-      "strength": 46,
-      "status": "SL",
-      "pnl_pct": -2.03,
-      "close_price": 0.28185,
-      "taken_at": "2026-03-18T07:07:16.425510",
-      "closed_at": "2026-03-18 11:35:50"
     }
   ]
 }
