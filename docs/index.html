@@ -3,824 +3,443 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CashTrack - Криптовалютный терминал</title>
+  <title>CashTrack Terminal</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@300;400;500;600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
   <style>
-    :root { --cocoa:#301B28; --chocolate:#523634; --toffee:#B6452C; --glaze:#DDC5A2; --success:#4ADE80; --error:#F87171; --info:#60A5FA; }
-    * { margin:0; padding:0; box-sizing:border-box; }
-    body { font-family:'Inter',sans-serif; background:var(--cocoa); color:var(--glaze); min-height:100vh; -webkit-font-smoothing:antialiased; }
-    .mono { font-family:'JetBrains Mono',monospace; }
-    @keyframes slideUp { from{opacity:0;transform:translate3d(0,24px,0)} to{opacity:1;transform:translate3d(0,0,0)} }
-    @keyframes glow { 0%,100%{box-shadow:0 0 8px var(--success)} 50%{box-shadow:0 0 20px var(--success),0 0 30px var(--success)} }
-    @keyframes float { 0%,100%{transform:translate3d(0,0,0)} 50%{transform:translate3d(0,-6px,0)} }
-    @keyframes borderPulse { 0%,100%{border-color:rgba(74,222,128,.3)} 50%{border-color:rgba(74,222,128,.7);box-shadow:0 0 20px rgba(74,222,128,.15)} }
-    @keyframes shimmer { 0%{background-position:-200% 0} 100%{background-position:200% 0} }
-    .aup{animation:slideUp .7s cubic-bezier(.22,1,.36,1) forwards;opacity:0}
-    .glow{animation:glow 2s ease-in-out infinite}
-    .fl{animation:float 4s ease-in-out infinite}
-    .bp{animation:borderPulse 2.5s ease-in-out infinite}
-    .d1{animation-delay:.1s}.d2{animation-delay:.2s}.d3{animation-delay:.3s}.d4{animation-delay:.4s}.d5{animation-delay:.5s}.d6{animation-delay:.6s}
-    .glass{background:linear-gradient(135deg,rgba(82,54,52,.4) 0%,rgba(48,27,40,.6) 100%);backdrop-filter:blur(24px)}
-    .shimmer{background:linear-gradient(90deg,transparent 0%,rgba(221,197,162,.03) 50%,transparent 100%);background-size:200% 100%;animation:shimmer 4s ease-in-out infinite}
-    .ch{transition:transform .4s cubic-bezier(.22,1,.36,1),box-shadow .4s}
-    .ch:hover{transform:translate3d(0,-4px,0);box-shadow:0 20px 40px -12px rgba(48,27,40,.5)}
-    header{position:sticky;top:0;z-index:50;border-bottom:1px solid rgba(82,54,52,.3);background:rgba(48,27,40,.95);backdrop-filter:blur(24px)}
-    .hi{max-width:1600px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:1rem 1.5rem;flex-wrap:wrap;gap:1rem}
-    .lw{display:flex;align-items:center;gap:1rem}
-    .li{width:44px;height:44px;display:flex;align-items:center;justify-content:center;border-radius:1rem;background:linear-gradient(135deg,var(--toffee) 0%,var(--chocolate) 100%);font-family:'JetBrains Mono',monospace;font-size:.875rem;font-weight:700;color:var(--glaze);box-shadow:0 10px 20px -5px rgba(182,69,44,.3)}
-    .lt{display:flex;flex-direction:column}
-    .lt-t{font-size:1.125rem;font-weight:600;letter-spacing:-.025em}
-    .lt-s{font-size:.75rem;color:rgba(221,197,162,.5)}
-    .hr{display:flex;align-items:center;gap:1.5rem;flex-wrap:wrap}
-    .bp-s{display:flex;align-items:center;gap:1rem}
-    .bl{font-family:'JetBrains Mono',monospace;font-size:.75rem;color:rgba(221,197,162,.5)}
-    .bpr{font-family:'JetBrains Mono',monospace;font-size:1.25rem;font-weight:600}
-    .bc{border-radius:.75rem;padding:.375rem .75rem;font-family:'JetBrains Mono',monospace;font-size:.75rem;font-weight:500}
-    .bc.pos{background:rgba(74,222,128,.1);color:var(--success)}.bc.neg{background:rgba(248,113,113,.1);color:var(--error)}
-    .dv{height:2rem;width:1px;background:linear-gradient(to bottom,transparent,var(--chocolate),transparent)}
-    .sw{display:flex;align-items:center;gap:.75rem}
-    .sd{width:10px;height:10px;border-radius:50%}.sd.on{background:var(--success)}.sd.off{background:var(--error)}
-    .st{font-family:'JetBrains Mono',monospace;font-size:.75rem;font-weight:500}.st.on{color:var(--success)}.st.off{color:var(--error)}
-    .mw{display:flex;align-items:center;gap:.75rem;border-radius:1rem;background:rgba(82,54,52,.3);padding:.625rem 1rem}
-    .ml{font-size:.75rem;color:rgba(221,197,162,.5)}
-    .mn{font-family:'JetBrains Mono',monospace;font-size:.75rem;font-weight:600;color:var(--toffee)}
-    .ma{border-radius:.5rem;background:rgba(182,69,44,.15);padding:.25rem .625rem;font-family:'JetBrains Mono',monospace;font-size:.625rem;font-weight:500;color:var(--toffee)}
-    .ab{border-radius:.75rem;padding:.375rem .75rem;font-size:.75rem;font-weight:600}
-    .ab.on{background:rgba(74,222,128,.1);color:var(--success);border:1px solid rgba(74,222,128,.2)}
-    .ab.off{background:rgba(248,113,113,.1);color:var(--error);border:1px solid rgba(248,113,113,.2)}
-    main{max-width:1600px;margin:0 auto;padding:1.5rem}
-    .sg{display:grid;grid-template-columns:repeat(4,1fr);gap:1.25rem;margin-bottom:2rem}
-    .sc{border-radius:1rem;border:1px solid;padding:1.25rem}
-    .sc.tf{border-color:rgba(182,69,44,.2);background:rgba(182,69,44,.1)}
-    .sc.in{border-color:rgba(96,165,250,.2);background:rgba(96,165,250,.1)}
-    .sc.su{border-color:rgba(74,222,128,.2);background:rgba(74,222,128,.1)}
-    .sc.er{border-color:rgba(248,113,113,.2);background:rgba(248,113,113,.1)}
-    .sl{font-size:.875rem;color:rgba(221,197,162,.6);margin-bottom:.5rem}
-    .ss{font-size:.75rem;color:rgba(221,197,162,.4);margin-top:.25rem}
-    .sv{font-family:'JetBrains Mono',monospace;font-size:1.875rem;font-weight:700}
-    .sv.tf{color:var(--toffee)}.sv.in{color:var(--info)}.sv.su{color:var(--success)}.sv.er{color:var(--error)}
-    .fgc{display:flex;align-items:center;gap:2rem;border-radius:1rem;border:1px solid rgba(82,54,52,.3);background:linear-gradient(135deg,rgba(82,54,52,.2) 0%,rgba(48,27,40,.4) 100%);padding:1.5rem;margin-bottom:2rem;flex-wrap:wrap}
-    .gw{position:relative;width:140px;height:80px;flex-shrink:0}
-    .gv{position:absolute;bottom:0;left:50%;transform:translateX(-50%);font-family:'JetBrains Mono',monospace;font-size:1.875rem;font-weight:700}
-    .fi{display:flex;flex-direction:column;gap:.375rem}
-    .fgl{font-size:.875rem;color:rgba(221,197,162,.5)}
-    .fgs{font-size:1.25rem;font-weight:600}
-    .ft{display:flex;gap:.5rem;margin-left:auto}
-    .ftk{height:2.5rem;width:.625rem;border-radius:9999px;transition:opacity .5s ease,box-shadow .5s ease}
-    .ui{font-family:'JetBrains Mono',monospace;font-size:.75rem;color:rgba(221,197,162,.4)}
-    .tw{display:flex;gap:.5rem;border-radius:1rem;background:rgba(82,54,52,.2);padding:.5rem;margin-bottom:1.5rem;flex-wrap:wrap}
-    .tb{display:flex;align-items:center;gap:.625rem;border-radius:.75rem;padding:.75rem 1.25rem;font-size:.875rem;font-weight:500;border:none;cursor:pointer;background:transparent;color:rgba(221,197,162,.6);transition:all .3s cubic-bezier(.22,1,.36,1);font-family:'Inter',sans-serif}
-    .tb:hover{background:rgba(82,54,52,.4);color:var(--glaze)}
-    .tb.active{background:var(--toffee);color:var(--glaze);box-shadow:0 10px 20px -5px rgba(182,69,44,.3)}
-    .tc{display:flex;height:1.5rem;min-width:1.5rem;align-items:center;justify-content:center;border-radius:.5rem;padding:0 .5rem;font-family:'JetBrains Mono',monospace;font-size:.75rem}
-    .tb:not(.active) .tc{background:rgba(82,54,52,.3);color:rgba(221,197,162,.4)}
-    .tb.active .tc{background:rgba(221,197,162,.2);color:var(--glaze)}
-    .cg{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem}
-    .tbc{display:none}
-    .tbc.active{display:grid}
-    .tbc.active.tbl{display:block}
-    .sigc{border-radius:1rem;border:1px solid rgba(82,54,52,.3);padding:1.25rem}
-    .sh{display:flex;align-items:center;justify-content:space-between;margin-bottom:1rem}
-    .symw{display:flex;align-items:center;gap:.75rem}
-    .sym{font-size:1rem;font-weight:700}
-    .db{border-radius:.75rem;padding:.375rem .875rem;font-size:.75rem;font-weight:700;letter-spacing:.025em}
-    .db.long{background:rgba(74,222,128,.15);color:var(--success)}.db.short{background:rgba(248,113,113,.15);color:var(--error)}
-    .pg{display:grid;grid-template-columns:repeat(4,1fr);gap:.75rem;margin-bottom:1rem}
-    .pi{display:flex;flex-direction:column;gap:.25rem}
-    .pil{font-size:.6875rem;color:rgba(221,197,162,.4)}
-    .piv{font-family:'JetBrains Mono',monospace;font-size:.875rem;font-weight:600}
-    .strw{margin-bottom:1rem}
-    .strh{display:flex;align-items:center;justify-content:space-between;margin-bottom:.5rem}
-    .strl{font-size:.75rem;color:rgba(221,197,162,.5)}.strv{font-family:'JetBrains Mono',monospace;font-size:.875rem;font-weight:600}
-    .strb{height:.625rem;overflow:hidden;border-radius:9999px;background:rgba(82,54,52,.4)}
-    .strf{height:100%;border-radius:9999px;transition:width 1.2s cubic-bezier(.22,1,.36,1)}
-    .mlr{display:flex;align-items:center;justify-content:space-between;margin-bottom:1rem}
-    .mlb{border-radius:.75rem;border:1px solid;padding:.375rem .75rem;font-family:'JetBrains Mono',monospace;font-size:.75rem;font-weight:500}
-    .mlb.low{background:rgba(248,113,113,.1);border-color:rgba(248,113,113,.2);color:var(--error)}
-    .mlb.med{background:rgba(221,197,162,.1);border-color:rgba(221,197,162,.2);color:var(--glaze)}
-    .mlb.hi{background:rgba(74,222,128,.1);border-color:rgba(74,222,128,.2);color:var(--success)}
-    .sigtime{font-size:.75rem;color:rgba(221,197,162,.4)}
-    .reas{display:flex;flex-wrap:wrap;gap:.5rem}
-    .rea{border-radius:.5rem;background:rgba(82,54,52,.4);padding:.375rem .75rem;font-size:.75rem;color:rgba(221,197,162,.7);transition:background .3s,color .3s}
-    .rea:hover{background:rgba(82,54,52,.6);color:var(--glaze)}
-    .posc{border-radius:1rem;border:1px solid;padding:1.25rem}
-    .posc.profit{border-color:rgba(74,222,128,.3)}.posc.loss{border-color:rgba(248,113,113,.3)}.posc.neu{border-color:rgba(82,54,52,.3)}
-    .ppnl{font-family:'JetBrains Mono',monospace;font-size:1.875rem;font-weight:700;margin-bottom:1.25rem}
-    .ppnl.pos{color:var(--success);text-shadow:0 0 32px rgba(74,222,128,.25)}
-    .ppnl.neg{color:var(--error);text-shadow:0 0 32px rgba(248,113,113,.25)}
-    .ppnl.ne{color:var(--glaze)}
-    .pp{display:grid;grid-template-columns:repeat(4,1fr);gap:.5rem;margin-bottom:1rem}
-    .pstat{display:inline-flex;border-radius:.75rem;padding:.375rem .875rem;font-size:.75rem;font-weight:600}
-    .pstat.open{background:rgba(96,165,250,.1);color:var(--info)}.pstat.tp1{background:rgba(74,222,128,.1);color:var(--success)}.pstat.pend{background:rgba(221,197,162,.1);color:rgba(221,197,162,.7)}
-    .hw{overflow:hidden;border-radius:1rem;border:1px solid rgba(82,54,52,.3)}
-    .ht{width:100%;min-width:700px;border-collapse:collapse}
-    .ht thead tr{border-bottom:1px solid rgba(82,54,52,.3);background:rgba(82,54,52,.2)}
-    .ht th{padding:1rem 1.25rem;text-align:left;font-size:.75rem;font-weight:500;color:rgba(221,197,162,.5)}
-    .ht tbody tr{border-bottom:1px solid rgba(82,54,52,.2);transition:background .3s}
-    .ht tbody tr:last-child{border-bottom:none}.ht tbody tr:hover{background:rgba(82,54,52,.2)}
-    .ht td{padding:1rem 1.25rem}
-    .hsym{font-size:.875rem;font-weight:600}
-    .hdir{font-size:.75rem;font-weight:600}.hdir.long{color:var(--success)}.hdir.short{color:var(--error)}
-    .hprice{font-family:'JetBrains Mono',monospace;font-size:.875rem;color:rgba(221,197,162,.8)}
-    .hpnl{font-family:'JetBrains Mono',monospace;font-size:.875rem;font-weight:600}
-    .hpnl.pos{color:var(--success)}.hpnl.neg{color:var(--error)}.hpnl.ne{color:rgba(221,197,162,.5)}
-    .hst{display:inline-flex;border-radius:.75rem;padding:.375rem .75rem;font-size:.75rem;font-weight:500}
-    .hst.tp2{background:rgba(74,222,128,.18);color:var(--success)}
-    .hst.tp1,.hst.sltp1{background:rgba(74,222,128,.12);color:var(--success)}
-    .hst.sl{background:rgba(248,113,113,.1);color:var(--error)}
-    .hst.to,.hst.oth{background:rgba(221,197,162,.1);color:rgba(221,197,162,.6)}
-    .htime{font-size:.75rem;color:rgba(221,197,162,.4)}
-    .empty{display:flex;flex-direction:column;align-items:center;justify-content:center;border-radius:1rem;border:1px solid rgba(82,54,52,.3);padding:5rem 1rem;grid-column:1/-1}
-    .eico{display:flex;height:4rem;width:4rem;align-items:center;justify-content:center;border-radius:1rem;background:rgba(82,54,52,.3);margin-bottom:1rem}
-    .eicoi{height:2rem;width:2rem;border-radius:.75rem;border:2px dashed rgba(221,197,162,.3)}
-    .etxt{font-size:.875rem;color:rgba(221,197,162,.5)}
-    @media(max-width:1024px){.cg{grid-template-columns:repeat(2,1fr)}}
-    .ppnl{transition:color .6s ease;}
-    .prb-wrap{margin:.75rem 0 .5rem;display:flex;flex-direction:column;gap:.35rem}
-    .prb-labels{display:flex;justify-content:space-between;font-size:.6rem;font-family:'JetBrains Mono',monospace;color:rgba(221,197,162,.35)}
-    .prb-track{height:.4rem;border-radius:9999px;background:rgba(82,54,52,.5);position:relative;overflow:visible}
-    .prb-fill{height:100%;border-radius:9999px;transition:width .8s cubic-bezier(.22,1,.36,1),background .6s ease;position:relative}
-    .prb-marker{position:absolute;top:50%;transform:translate(-50%,-50%);width:10px;height:10px;border-radius:50%;border:2px solid var(--cocoa);transition:left .8s cubic-bezier(.22,1,.36,1),background .6s ease;z-index:2}
-    .prb-entry-dot{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:12px;height:12px;border-radius:50%;background:#60A5FA;border:3px solid #fff;z-index:4;box-shadow:0 0 12px #60A5FA,0 0 20px #60A5FAaa;transition:left .8s cubic-bezier(.22,1,.36,1);pointer-events:none;cursor:help}
-    .prb-tp1{position:absolute;top:-3px;height:calc(100% + 6px);width:2px;background:rgba(74,222,128,.4);border-radius:1px;z-index:1;transition:left .8s cubic-bezier(.22,1,.36,1)}
-    @media(max-width:768px){.cg{grid-template-columns:1fr}.sg{grid-template-columns:repeat(2,1fr)}.fgc{flex-direction:column}.ft{margin:1rem auto 0}.ui{margin:0}}
-    @media(max-width:480px){.sg{grid-template-columns:1fr}.pp{grid-template-columns:repeat(2,1fr)}}
+    :root{--bg:#080A0F;--bg2:#0D1017;--bg3:#131720;--bg4:#1A2030;--border:#1E2535;--border2:#252E40;--green:#00E676;--green2:#00C853;--red:#FF3D57;--red2:#D32F2F;--blue:#448AFF;--gold:#FFD740;--text:#E2E8F8;--text2:#8892A4;--text3:#4A5568;--mono:'IBM Plex Mono',monospace;--sans:'DM Sans',sans-serif;--display:'Syne',sans-serif}
+    *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+    body{font-family:var(--sans);background:var(--bg);color:var(--text);min-height:100vh;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+    body::before{content:'';position:fixed;inset:0;background:repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(0,0,0,.025) 2px,rgba(0,0,0,.025) 4px);pointer-events:none;z-index:9999}
+    @keyframes fadeIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+    @keyframes pulseGrn{0%,100%{box-shadow:0 0 0 0 rgba(0,230,118,.4)}50%{box-shadow:0 0 0 5px rgba(0,230,118,0)}}
+    @keyframes glowG{0%,100%{text-shadow:0 0 20px rgba(0,230,118,.2)}50%{text-shadow:0 0 40px rgba(0,230,118,.6)}}
+    @keyframes glowR{0%,100%{text-shadow:0 0 20px rgba(255,61,87,.2)}50%{text-shadow:0 0 40px rgba(255,61,87,.6)}}
+    .anim{animation:fadeIn .5s cubic-bezier(.22,1,.36,1) forwards;opacity:0}
+    .d1{animation-delay:.05s}.d2{animation-delay:.1s}.d3{animation-delay:.15s}.d4{animation-delay:.2s}.d5{animation-delay:.25s}.d6{animation-delay:.3s}
+    ::-webkit-scrollbar{width:4px;height:4px}::-webkit-scrollbar-track{background:var(--bg)}::-webkit-scrollbar-thumb{background:var(--border2);border-radius:2px}
+
+    /* HEADER */
+    header{position:sticky;top:0;z-index:100;background:rgba(8,10,15,.96);border-bottom:1px solid var(--border);backdrop-filter:blur(20px)}
+    .hi{max-width:1800px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:.75rem 1.5rem;gap:1.25rem;flex-wrap:wrap}
+    .logo{display:flex;align-items:center;gap:.75rem;font-family:var(--display);font-weight:800;font-size:1.1rem;letter-spacing:-.02em;color:var(--text);text-decoration:none}
+    .logo-mark{width:36px;height:36px;background:linear-gradient(135deg,var(--green),#00BFA5);border-radius:8px;display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:.75rem;font-weight:600;color:#000;box-shadow:0 0 20px rgba(0,230,118,.2)}
+    .logo-sub{font-size:.6rem;font-weight:300;color:var(--text3);letter-spacing:.1em;text-transform:uppercase;display:block;margin-top:-.1rem}
+    .hdata{display:flex;align-items:center;gap:1.25rem;flex-wrap:wrap}
+    .hsep{width:1px;height:26px;background:var(--border)}
+    .btcblock{display:flex;flex-direction:column;gap:.15rem}
+    .btclbl{font-size:.6rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--text3)}
+    .btcrow{display:flex;align-items:center;gap:.5rem}
+    .btcprice{font-family:var(--mono);font-size:1rem;font-weight:600}
+    .btcchg{font-family:var(--mono);font-size:.7rem;padding:.1rem .4rem;border-radius:3px}
+    .btcchg.pos{background:rgba(0,230,118,.1);color:var(--green)}.btcchg.neg{background:rgba(255,61,87,.1);color:var(--red)}
+    .stblock{display:flex;align-items:center;gap:.5rem}
+    .stdot{width:7px;height:7px;border-radius:50%}
+    .stdot.live{background:var(--green);animation:pulseGrn 2s infinite}.stdot.off{background:var(--red)}
+    .sttxt{font-family:var(--mono);font-size:.7rem;font-weight:500;letter-spacing:.05em}
+    .sttxt.live{color:var(--green)}.sttxt.off{color:var(--red)}
+    .mlblock{display:flex;align-items:center;gap:.625rem;background:var(--bg3);border:1px solid var(--border);border-radius:6px;padding:.35rem .75rem}
+    .mllbl{font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;color:var(--text3)}
+    .mlname{font-family:var(--mono);font-size:.7rem;color:var(--gold);font-weight:500}
+    .mlauc{font-family:var(--mono);font-size:.65rem;background:rgba(255,215,64,.08);color:var(--gold);padding:.15rem .45rem;border-radius:3px}
+    .abadge{font-family:var(--mono);font-size:.7rem;font-weight:600;letter-spacing:.05em;padding:.35rem .7rem;border-radius:4px;border:1px solid}
+    .abadge.on{background:rgba(0,230,118,.08);color:var(--green);border-color:rgba(0,230,118,.25)}
+    .abadge.off{background:rgba(255,61,87,.08);color:var(--red);border-color:rgba(255,61,87,.25)}
+
+    /* MAIN */
+    main{max-width:1800px;margin:0 auto;padding:1.25rem 1.5rem}
+
+    /* STATS */
+    .sgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:.75rem;margin-bottom:1.25rem}
+    .scard{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:1rem 1.25rem;position:relative;overflow:hidden;transition:border-color .3s}
+    .scard:hover{border-color:var(--border2)}
+    .scard::before{content:'';position:absolute;top:0;left:0;right:0;height:2px}
+    .scard.cg::before{background:linear-gradient(90deg,var(--green),transparent)}
+    .scard.cb::before{background:linear-gradient(90deg,var(--blue),transparent)}
+    .scard.co::before{background:linear-gradient(90deg,var(--gold),transparent)}
+    .scard.cr::before{background:linear-gradient(90deg,var(--red),transparent)}
+    .slbl{font-size:.6rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--text3);margin-bottom:.5rem}
+    .sval{font-family:var(--display);font-size:2rem;font-weight:700;line-height:1}
+    .sval.g{color:var(--green)}.sval.b{color:var(--blue)}.sval.o{color:var(--gold)}.sval.r{color:var(--red)}
+    .ssub{font-size:.7rem;color:var(--text3);margin-top:.35rem}
+
+    /* FEAR GREED */
+    .fgcard{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:1.25rem 1.5rem;display:flex;align-items:center;gap:2rem;margin-bottom:1.25rem;flex-wrap:wrap}
+    .fggauge{position:relative;width:130px;height:75px;flex-shrink:0}
+    .fgval{position:absolute;bottom:0;left:50%;transform:translateX(-50%);font-family:var(--display);font-size:2rem;font-weight:800;line-height:1}
+    .fginfo{display:flex;flex-direction:column;gap:.375rem}
+    .fgtitle{font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:var(--text3)}
+    .fgstate{font-family:var(--display);font-size:1.25rem;font-weight:700}
+    .fgemoji{font-size:1.5rem}
+    .fgbars{display:flex;gap:4px;margin-left:auto;align-items:flex-end}
+    .fgbar{width:8px;border-radius:2px;transition:opacity .5s,box-shadow .5s}
+    .updtxt{font-family:var(--mono);font-size:.65rem;color:var(--text3)}
+
+    /* TABS */
+    .tabrow{display:flex;gap:.125rem;margin-bottom:1rem;border-bottom:1px solid var(--border);padding-bottom:0}
+    .tabbtn{display:flex;align-items:center;gap:.5rem;font-family:var(--display);font-size:.75rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;padding:.625rem 1rem;border:none;cursor:pointer;background:transparent;color:var(--text3);border-bottom:2px solid transparent;margin-bottom:-1px;transition:all .2s;border-radius:4px 4px 0 0}
+    .tabbtn:hover{color:var(--text);background:var(--bg3)}
+    .tabbtn.active{color:var(--green);border-bottom-color:var(--green)}
+    .tabcount{font-family:var(--mono);font-size:.6rem;font-weight:500;background:var(--bg3);border:1px solid var(--border);padding:.1rem .4rem;border-radius:3px}
+    .tabbtn.active .tabcount{background:rgba(0,230,118,.08);border-color:rgba(0,230,118,.2);color:var(--green)}
+
+    .cgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+    .tabcont{display:none}.tabcont.active{display:grid}.tabcont.list{display:none}.tabcont.list.active{display:block}
+
+    /* SIGNAL CARD */
+    .sigcard{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:1.125rem;transition:border-color .25s,transform .25s;position:relative;overflow:hidden}
+    .sigcard:hover{border-color:var(--border2);transform:translateY(-1px)}
+    .sigcard::after{content:'';position:absolute;top:0;right:0;width:60px;height:60px;background:radial-gradient(circle at top right,rgba(255,215,64,.04),transparent);pointer-events:none}
+    .sigh{display:flex;align-items:center;justify-content:space-between;margin-bottom:.875rem}
+    .sigsym{font-family:var(--display);font-size:1rem;font-weight:700}
+    .dirbadge{font-family:var(--mono);font-size:.65rem;font-weight:600;letter-spacing:.07em;padding:.3rem .65rem;border-radius:4px}
+    .dirbadge.long{background:rgba(0,230,118,.1);color:var(--green);border:1px solid rgba(0,230,118,.18)}
+    .dirbadge.short{background:rgba(255,61,87,.1);color:var(--red);border:1px solid rgba(255,61,87,.18)}
+    .siglevels{display:grid;grid-template-columns:repeat(4,1fr);gap:.5rem;margin-bottom:.875rem}
+    .lvli{display:flex;flex-direction:column;gap:.2rem}
+    .lvll{font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;color:var(--text3)}
+    .lvlv{font-family:var(--mono);font-size:.8rem;font-weight:500}
+    .lvlv.en{color:var(--blue)}.lvlv.tp{color:var(--green)}.lvlv.sl{color:var(--red)}
+    .strw{margin-bottom:.875rem}
+    .strh{display:flex;justify-content:space-between;align-items:center;margin-bottom:.35rem}
+    .strl{font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;color:var(--text3)}
+    .strv{font-family:var(--mono);font-size:.75rem;font-weight:600}
+    .strbar{height:3px;background:var(--bg4);border-radius:2px;overflow:hidden}
+    .strfill{height:100%;border-radius:2px;transition:width 1s cubic-bezier(.22,1,.36,1)}
+    .sigfoot{display:flex;align-items:center;justify-content:space-between;margin-bottom:.75rem}
+    .mlbadge{font-family:var(--mono);font-size:.7rem;font-weight:500;padding:.25rem .6rem;border-radius:4px;border:1px solid}
+    .mlbadge.hi{background:rgba(0,230,118,.08);color:var(--green);border-color:rgba(0,230,118,.2)}
+    .mlbadge.med{background:rgba(255,215,64,.08);color:var(--gold);border-color:rgba(255,215,64,.2)}
+    .mlbadge.low{background:rgba(255,61,87,.08);color:var(--red);border-color:rgba(255,61,87,.2)}
+    .sigtime{font-family:var(--mono);font-size:.65rem;color:var(--text3)}
+    .sigreasons{display:flex;flex-wrap:wrap;gap:.35rem}
+    .reasontag{font-size:.65rem;background:var(--bg3);border:1px solid var(--border);padding:.25rem .55rem;border-radius:3px;color:var(--text2);transition:background .2s}
+    .reasontag:hover{background:var(--bg4);color:var(--text)}
+
+    /* POSITION CARD */
+    .poscard{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:1.125rem;transition:border-color .25s;position:relative;overflow:hidden}
+    .poscard.profit{border-color:rgba(0,230,118,.2)}.poscard.loss{border-color:rgba(255,61,87,.2)}.poscard.neu{border-color:var(--border)}
+    .posh{display:flex;align-items:center;justify-content:space-between;margin-bottom:.75rem}
+    .possymrow{display:flex;align-items:center;gap:.625rem}
+    .possym{font-family:var(--display);font-size:1rem;font-weight:700}
+    .poslive{font-family:var(--mono);font-size:.7rem;color:var(--text3)}
+    .pospnl{font-family:var(--display);font-size:2.25rem;font-weight:800;line-height:1;margin-bottom:.875rem;transition:color .6s}
+    .pospnl.pos{color:var(--green);animation:glowG 3s ease-in-out infinite}
+    .pospnl.neg{color:var(--red);animation:glowR 3s ease-in-out infinite}
+    .pospnl.ne{color:var(--text2)}
+    .poslevels{display:grid;grid-template-columns:repeat(4,1fr);gap:.5rem;margin-bottom:.875rem}
+
+    /* PROGRESS BAR */
+    .prbwrap{margin-bottom:.875rem}
+    .prblabels{display:flex;justify-content:space-between;font-family:var(--mono);font-size:.6rem;color:var(--text3);margin-bottom:.35rem}
+    .prbtrack{height:4px;border-radius:2px;background:var(--bg4);position:relative;overflow:visible}
+    .prbfill{height:100%;border-radius:2px;transition:width .8s cubic-bezier(.22,1,.36,1),background .6s}
+    .prbmarker{position:absolute;top:50%;transform:translate(-50%,-50%);width:10px;height:10px;border-radius:50%;border:2px solid var(--bg);transition:left .8s cubic-bezier(.22,1,.36,1),background .6s;z-index:2}
+    .prbtp1{position:absolute;top:-4px;height:calc(100% + 8px);width:1px;background:rgba(0,230,118,.3);z-index:1;transition:left .8s cubic-bezier(.22,1,.36,1)}
+    .prbentrydot{position:absolute;top:50%;transform:translate(-50%,-50%);width:10px;height:10px;border-radius:50%;background:var(--blue);border:2px solid var(--bg);z-index:4;box-shadow:0 0 10px var(--blue);transition:left .8s cubic-bezier(.22,1,.36,1)}
+
+    .posfoot{display:flex;align-items:center;justify-content:space-between}
+    .posstat{font-family:var(--mono);font-size:.65rem;font-weight:600;letter-spacing:.05em;padding:.25rem .6rem;border-radius:4px}
+    .posstat.open{background:rgba(68,138,255,.08);color:var(--blue);border:1px solid rgba(68,138,255,.2)}
+    .posstat.tp1{background:rgba(0,230,118,.08);color:var(--green);border:1px solid rgba(0,230,118,.2)}
+    .posstat.pend{background:rgba(255,215,64,.08);color:var(--gold);border:1px solid rgba(255,215,64,.2)}
+    .posdur,.posago{font-family:var(--mono);font-size:.65rem;color:var(--text3)}
+
+    /* HISTORY */
+    .histwrap{background:var(--bg2);border:1px solid var(--border);border-radius:8px;overflow:hidden}
+    .histtable{width:100%;min-width:700px;border-collapse:collapse}
+    .histtable thead tr{background:var(--bg3);border-bottom:1px solid var(--border)}
+    .histtable th{padding:.75rem 1.125rem;text-align:left;font-size:.6rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--text3);font-family:var(--display)}
+    .histtable tbody tr{border-bottom:1px solid rgba(30,37,53,.5);transition:background .2s}
+    .histtable tbody tr:last-child{border-bottom:none}.histtable tbody tr:hover{background:var(--bg3)}
+    .histtable td{padding:.875rem 1.125rem}
+    .hsym{font-family:var(--display);font-size:.875rem;font-weight:700}
+    .hdir{font-family:var(--mono);font-size:.7rem;font-weight:600}
+    .hdir.long{color:var(--green)}.hdir.short{color:var(--red)}
+    .hprice{font-family:var(--mono);font-size:.8rem;color:var(--text2)}
+    .hpnl{font-family:var(--mono);font-size:.875rem;font-weight:600}
+    .hpnl.pos{color:var(--green)}.hpnl.neg{color:var(--red)}.hpnl.ne{color:var(--text3)}
+    .hstat{font-family:var(--mono);font-size:.65rem;font-weight:500;letter-spacing:.04em;padding:.25rem .6rem;border-radius:3px}
+    .hstat.tp2{background:rgba(0,230,118,.12);color:var(--green)}
+    .hstat.tp1,.hstat.sltp1{background:rgba(0,230,118,.08);color:var(--green)}
+    .hstat.sl{background:rgba(255,61,87,.08);color:var(--red)}
+    .hstat.to,.hstat.oth{background:var(--bg3);color:var(--text3)}
+    .htime{font-family:var(--mono);font-size:.65rem;color:var(--text3)}
+
+    /* EMPTY */
+    .emptystate{grid-column:1/-1;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:5rem 1rem;border:1px dashed var(--border);border-radius:8px;gap:.75rem}
+    .emptyico{font-size:2rem;opacity:.25}
+    .emptytxt{font-size:.875rem;color:var(--text3)}
+
+    @media(max-width:1200px){.cgrid{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:900px){.sgrid{grid-template-columns:repeat(2,1fr)}.cgrid{grid-template-columns:1fr}.fgbars{display:none}}
+    @media(max-width:600px){.sgrid{grid-template-columns:1fr}.hdata{gap:.75rem}}
   </style>
 </head>
 <body>
   <header>
     <div class="hi">
-      <div class="lw aup">
-        <div class="li">CT</div>
-        <div class="lt"><span class="lt-t">CashTrack</span><span class="lt-s">Торговый терминал</span></div>
-      </div>
-      <div class="hr">
-        <div class="bp-s aup d1">
-          <span class="bl">BTC/USDT</span>
-          <span class="bpr mono" id="btcPrice">—</span>
-          <span class="bc pos" id="btcChange">—</span>
+      <a class="logo anim" href="/">
+        <div class="logo-mark">CT</div>
+        <div>CashTrack<span class="logo-sub">Futures Terminal</span></div>
+      </a>
+      <div class="hdata">
+        <div class="btcblock anim d1">
+          <span class="btclbl">BTC/USDT</span>
+          <div class="btcrow">
+            <span class="btcprice" id="btcPrice">—</span>
+            <span class="btcchg pos" id="btcChange">—</span>
+          </div>
         </div>
-        <div class="dv"></div>
-        <div class="sw aup d2">
-          <div class="sd off glow" id="statusDot"></div>
-          <span class="st off" id="statusText">Подключение...</span>
+        <div class="hsep"></div>
+        <div class="stblock anim d2">
+          <div class="stdot off" id="statusDot"></div>
+          <span class="sttxt off" id="statusText">Подключение...</span>
         </div>
-        <div class="dv"></div>
-        <div class="mw aup d3">
-          <span class="ml">Модель</span>
-          <span class="mn" id="modelName">—</span>
-          <div class="dv" style="height:1rem"></div>
-          <span class="ma" id="modelAuc">—</span>
+        <div class="hsep"></div>
+        <div class="mlblock anim d3">
+          <span class="mllbl">Модель</span>
+          <span class="mlname" id="modelName">—</span>
+          <div class="hsep" style="height:16px"></div>
+          <span class="mlauc" id="modelAuc">—</span>
         </div>
-        <div class="dv"></div>
-        <span class="ab off aup d4" id="autoBadge">РУЧНОЙ</span>
+        <div class="hsep"></div>
+        <span class="abadge off anim d4" id="autoBadge">РУЧНОЙ</span>
       </div>
     </div>
   </header>
 
   <main>
-    <div class="sg">
-      <div class="sc tf ch aup d1"><div class="sl">Всего сигналов</div><div class="sv tf" id="statSignals">—</div><div class="ss" id="statWL">—</div></div>
-      <div class="sc in ch aup d2"><div class="sl">Открытые позиции</div><div class="sv in" id="statPos">—</div><div class="ss" id="statPend">—</div></div>
-      <div class="sc su ch aup d3"><div class="sl">Винрейт сделок</div><div class="sv su" id="statWR">—</div><div class="ss" id="statWLT">—</div></div>
-      <div class="sc su ch aup d4" id="pnlCard"><div class="sl">Общий P&L</div><div class="sv su" id="statPnl">—</div><div class="ss">суммарный %</div></div>
+    <div class="sgrid">
+      <div class="scard co anim d1"><div class="slbl">Всего сигналов</div><div class="sval o" id="statSignals">—</div><div class="ssub" id="statWL">—</div></div>
+      <div class="scard cb anim d2"><div class="slbl">Открытые позиции</div><div class="sval b" id="statPos">—</div><div class="ssub" id="statPend">—</div></div>
+      <div class="scard cg anim d3"><div class="slbl">Винрейт сделок</div><div class="sval g" id="statWR">—</div><div class="ssub" id="statWLT">—</div></div>
+      <div class="scard cg anim d4" id="pnlCard"><div class="slbl">Общий P&amp;L</div><div class="sval g" id="statPnl">—</div><div class="ssub">суммарный %</div></div>
     </div>
 
-    <div class="fgc ch aup">
-      <div class="gw">
-        <svg viewBox="0 0 140 80" width="140" height="80">
-          <defs><linearGradient id="gg" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#F87171"/><stop offset="25%" stop-color="#B6452C"/><stop offset="50%" stop-color="#DDC5A2"/><stop offset="75%" stop-color="#4ADE80"/><stop offset="100%" stop-color="#22C55E"/></linearGradient></defs>
-          <path d="M 15 70 A 55 55 0 0 1 125 70" fill="none" stroke="#523634" stroke-width="12" stroke-linecap="round"/>
-          <path id="gArc" d="M 15 70 A 55 55 0 0 1 125 70" fill="none" stroke="#DDC5A2" stroke-width="12" stroke-linecap="round" stroke-dasharray="157" stroke-dashoffset="78" style="transition:stroke-dashoffset 1.2s cubic-bezier(.22,1,.36,1),stroke .4s"/>
+    <div class="fgcard anim d2">
+      <div class="fggauge">
+        <svg viewBox="0 0 130 75" width="130" height="75">
+          <defs><linearGradient id="gg" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#FF3D57"/><stop offset="25%" stop-color="#FF7043"/><stop offset="50%" stop-color="#FFD740"/><stop offset="75%" stop-color="#69F0AE"/><stop offset="100%" stop-color="#00E676"/></linearGradient></defs>
+          <path d="M 12 68 A 53 53 0 0 1 118 68" fill="none" stroke="#1A2030" stroke-width="10" stroke-linecap="round"/>
+          <path id="gArc" d="M 12 68 A 53 53 0 0 1 118 68" fill="none" stroke="url(#gg)" stroke-width="10" stroke-linecap="round" stroke-dasharray="166" stroke-dashoffset="83" style="transition:stroke-dashoffset 1.2s cubic-bezier(.22,1,.36,1)"/>
         </svg>
-        <div class="gv mono" id="gVal">—</div>
+        <div class="fgval" id="gVal">—</div>
       </div>
-      <div class="fi"><span class="fgl">Индекс страха и жадности</span><span class="fgs" id="fgS">—</span><span style="font-size:1.5rem;margin-top:.25rem" id="fgE">😐</span></div>
-      <div class="ft" id="fgT"></div>
-      <div class="ui" id="updInfo">—</div>
+      <div class="fginfo">
+        <span class="fgtitle">Индекс страха и жадности</span>
+        <span class="fgstate" id="fgS">—</span>
+        <span class="fgemoji" id="fgE">😐</span>
+      </div>
+      <div class="fgbars" id="fgT"></div>
+      <div class="updtxt" id="updInfo">—</div>
     </div>
 
-    <div class="tw">
-      <button class="tb active aup d1" data-tab="signals">Сигналы <span class="tc" id="cS">0</span></button>
-      <button class="tb aup d2" data-tab="positions">Позиции <span class="tc" id="cP">0</span></button>
-      <button class="tb aup d3" data-tab="pending">Лимитки <span class="tc" id="cPe">0</span></button>
-      <button class="tb aup d4" data-tab="history">История <span class="tc" id="cH">0</span></button>
+    <div class="tabrow">
+      <button class="tabbtn active" data-tab="signals">Сигналы <span class="tabcount" id="cS">0</span></button>
+      <button class="tabbtn" data-tab="positions">Позиции <span class="tabcount" id="cP">0</span></button>
+      <button class="tabbtn" data-tab="pending">Лимитки <span class="tabcount" id="cPe">0</span></button>
+      <button class="tabbtn" data-tab="history">История <span class="tabcount" id="cH">0</span></button>
     </div>
 
-    <div id="signalsTab" class="tbc cg active"></div>
-    <div id="positionsTab" class="tbc cg"></div>
-    <div id="pendingTab" class="tbc cg"></div>
-    <div id="historyTab" class="tbc tbl"></div>
+    <div id="signalsTab"   class="tabcont cgrid active"></div>
+    <div id="positionsTab" class="tabcont cgrid"></div>
+    <div id="pendingTab"   class="tabcont cgrid"></div>
+    <div id="historyTab"   class="tabcont list"></div>
   </main>
 
   <script>
-    // --- Helpers -------------------------------------------------------------
-    function fmt(p) {
-      if (p === null || p === undefined || p === '') return '—';
-      p = parseFloat(p);
-      if (isNaN(p)) return '—';
-      if (p >= 1000) return p.toLocaleString('ru-RU', {minimumFractionDigits: 2, maximumFractionDigits: 2});
-      if (p >= 1)    return p.toFixed(2);
-      if (p >= 0.01) return p.toFixed(4);
-      if (p >= 0.0001) return p.toFixed(6);
-      return p.toFixed(8);
+    function fmt(p){if(p===null||p===undefined||p==='')return'—';p=parseFloat(p);if(isNaN(p))return'—';if(p>=1000)return p.toLocaleString('ru-RU',{minimumFractionDigits:2,maximumFractionDigits:2});if(p>=1)return p.toFixed(2);if(p>=0.01)return p.toFixed(4);if(p>=0.0001)return p.toFixed(6);return p.toFixed(8)}
+    function parseServerDate(iso){if(!iso)return null;try{var s=String(iso).trim().replace(' ','T');if(!/[zZ]|[+\-]\d{2}:\d{2}$/.test(s))s+='Z';var d=new Date(s);return isNaN(d.getTime())?null:d}catch(e){return null}}
+    var serverTime=null;
+    function fmtT(iso){if(!iso)return'—';var d=parseServerDate(iso);if(!d)return'—';var now=serverTime||new Date();var tot=Math.max(0,Math.floor((now-d)/60000));var h=Math.floor(tot/60);var rm=tot%60;if(tot<1)return'только что';if(tot<60)return tot+'м назад';if(h<24)return h+'ч'+(rm>0?' '+rm+'м':'')+' назад';return d.toLocaleDateString('ru-RU',{month:'short',day:'numeric',hour:'2-digit',minute:'2-digit'})}
+    function durStr(iso){if(!iso)return'';var d=parseServerDate(iso);if(!d)return'';var now=serverTime||new Date();var m=Math.max(0,Math.floor((now-d)/60000));var h=Math.floor(m/60);var rm=m%60;if(m<1)return'<1м';return h>0?h+'ч '+rm+'м':m+'м'}
+    function fgMeta(v){if(v<=25)return{c:'#FF3D57',l:'Крайний страх'};if(v<=45)return{c:'#FF7043',l:'Страх'};if(v<=55)return{c:'#FFD740',l:'Нейтрально'};if(v<=75)return{c:'#69F0AE',l:'Жадность'};return{c:'#00E676',l:'Крайняя жадность'}}
+    function mlCls(p){if(p===null||p===undefined)return'med';return p<0.5?'low':(p<0.7?'med':'hi')}
+    function strGrad(s){if(s>=75)return'linear-gradient(90deg,#00E676,#00C853)';if(s>=50)return'linear-gradient(90deg,#FFD740,#FF7043)';return'linear-gradient(90deg,#FF3D57,#D32F2F)'}
+    function stLbl(s){var m={TP2:'ТП2',TP1:'ТП1',SL:'Стоп',SL_AFTER_TP1:'СЛ/ТП1',TIMEOUT:'Таймаут',EXPIRED:'Истёк',NOT_FILLED:'Не исп.',LIMIT_TIMEOUT:'Лимит',OPEN:'Открыта',TP1_HIT:'ТП1 хит',PENDING:'Ожидание'};return m[s]||s}
+    function stCls(s){if(s==='TP2')return'tp2';if(s==='TP1')return'tp1';if(s==='SL_AFTER_TP1')return'sltp1';if(s==='SL')return'sl';if(['TIMEOUT','EXPIRED','NOT_FILLED','LIMIT_TIMEOUT'].indexOf(s)!==-1)return'to';return'oth'}
+
+    var appData=null,activeTab='signals',livePrices={},openTradesCache=[],scaleCache={};
+
+    function rSig(s){
+      var wp=(s.win_prob!==null&&s.win_prob!==undefined)?s.win_prob:null;
+      var mc=mlCls(wp);var isLong=s.direction==='LONG';var str=s.strength||0;
+      var h='<div class="sigcard anim">';
+      h+='<div class="sigh"><span class="sigsym">'+s.symbol+'</span><span class="dirbadge '+(isLong?'long':'short')+'">'+(isLong?'↑ LONG':'↓ SHORT')+'</span></div>';
+      h+='<div class="siglevels"><div class="lvli"><span class="lvll">Вход</span><span class="lvlv en">'+fmt(s.entry)+'</span></div><div class="lvli"><span class="lvll">ТП1</span><span class="lvlv tp">'+fmt(s.tp1)+'</span></div><div class="lvli"><span class="lvll">ТП2</span><span class="lvlv tp">'+fmt(s.tp2)+'</span></div><div class="lvli"><span class="lvll">СЛ</span><span class="lvlv sl">'+fmt(s.sl)+'</span></div></div>';
+      h+='<div class="strw"><div class="strh"><span class="strl">Сила сигнала</span><span class="strv">'+str+'%</span></div><div class="strbar"><div class="strfill" style="width:'+str+'%;background:'+strGrad(str)+'"></div></div></div>';
+      h+='<div class="sigfoot">'+(wp!==null?'<span class="mlbadge '+mc+'">🧠 '+Math.round(wp*100)+'%</span>':'<span class="mlbadge med">🧠 —</span>')+'<span class="sigtime">'+fmtT(s.created_at)+'</span></div>';
+      if(s.reasons&&s.reasons.length){h+='<div class="sigreasons">';for(var j=0;j<Math.min(4,s.reasons.length);j++)h+='<span class="reasontag">'+s.reasons[j]+'</span>';h+='</div>'}
+      return h+'</div>'
     }
 
-    function parseServerDate(iso) {
-      if (!iso) return null;
-      try {
-        var s = String(iso).trim().replace(' ', 'T');
-        if (!/[zZ]|[+\-]\d{2}:\d{2}$/.test(s)) s += 'Z';
-        var d = new Date(s);
-        return isNaN(d.getTime()) ? null : d;
-      } catch (e) {
-        console.warn('parseServerDate error', iso, e);
-        return null;
-      }
+    function buildProgressBar(t,pnl,curP){
+      var sl=t.sl_orig||t.sl,en=t.entry_orig||t.entry,tp1=t.tp1_orig||t.tp1,tp2=t.tp2_orig||t.tp2;
+      if(!sl||!en||!tp2)return'';
+      var key=t.id||t.symbol,cached=scaleCache[key];
+      if(!cached){var mn=Math.min(sl,en,tp2),mx=Math.max(sl,en,tp2);if(mx-mn<=0)return'';cached={min:mn,max:mx};scaleCache[key]=cached}
+      var rng=cached.max-cached.min;if(rng<=0)return'';
+      function n(v){return Math.max(0,Math.min(100,(v-cached.min)/rng*100))}
+      var pos=n(curP),t1p=n(tp1),enp=n(en);
+      var bc=pnl>1?'#00E676':(pnl>0?'#69F0AE':(pnl>-1?'#FFD740':'#FF3D57'));
+      var mc=pnl>=0?'#00E676':'#FF3D57';
+      return'<div class="prblabels"><span style="color:#FF3D57">СЛ '+fmt(sl)+'</span><span>Вход '+fmt(en)+'</span><span style="color:#00E676">ТП2 '+fmt(tp2)+'</span></div>'+
+        '<div class="prbtrack"><div class="prbfill" style="width:'+pos+'%;background:linear-gradient(90deg,rgba(255,61,87,.25),'+bc+')"></div>'+
+        '<div class="prbtp1" style="left:'+t1p+'%"></div>'+
+        '<div class="prbentrydot" style="left:'+enp+'%"></div>'+
+        '<div class="prbmarker" style="left:'+pos+'%;background:'+mc+';box-shadow:0 0 8px '+mc+'90"></div></div>'
     }
 
-    var serverTime = null;
-
-    function fmtT(iso) {
-      if (!iso) return '—';
-      var d = parseServerDate(iso);
-      if (!d) return '—';
-      var now = serverTime || new Date();
-      var diffMs = Math.max(0, now - d);
-      var totalMin = Math.floor(diffMs / 60000);
-      var h = Math.floor(totalMin / 60);
-      var rm = totalMin % 60;
-      if (totalMin < 1) return 'только что';
-      if (totalMin < 60) return totalMin + 'м назад';
-      if (h < 24) return h + 'ч' + (rm > 0 ? ' ' + rm + 'м' : '') + ' назад';
-      return d.toLocaleDateString('ru-RU', {month:'short',day:'numeric',hour:'2-digit',minute:'2-digit'});
+    function rPos(t){
+      var lP=livePrices[t.symbol],pnl=0;
+      if(lP!==null&&lP!==undefined&&t.entry){pnl=t.direction==='LONG'?(lP-t.entry)/t.entry*100:(t.entry-lP)/t.entry*100}else{pnl=t.pnl_pct||0}
+      var pr=pnl>0.01,isN=Math.abs(pnl)<0.01;
+      var cc=pr?'profit':(isN?'neu':'loss'),pc=pr?'pos':(isN?'ne':'neg');
+      var isLong=t.direction==='LONG';
+      var sc=t.status==='TP1_HIT'?'tp1':(t.status==='PENDING'?'pend':'open');
+      var curP=(lP!==null&&lP!==undefined)?fmt(lP):'—';
+      var h='<div class="poscard '+cc+'" id="pos-'+(t.id||t.symbol)+'">';
+      h+='<div class="posh"><div class="possymrow"><span class="possym">'+t.symbol+'</span><span class="poslive live-cur">'+curP+'</span></div><span class="dirbadge '+(isLong?'long':'short')+'">'+(isLong?'↑ LONG':'↓ SHORT')+'</span></div>';
+      h+='<div class="pospnl '+pc+(pr?' fl':'')+'">'+(pnl>=0?'+':'')+pnl.toFixed(2)+'%</div>';
+      h+='<div class="poslevels"><div class="lvli"><span class="lvll">Вход</span><span class="lvlv en">'+fmt(t.entry)+'</span></div><div class="lvli"><span class="lvll">ТП1</span><span class="lvlv tp">'+fmt(t.tp1)+'</span></div><div class="lvli"><span class="lvll">ТП2</span><span class="lvlv tp">'+fmt(t.tp2)+'</span></div><div class="lvli"><span class="lvll">СЛ</span><span class="lvlv sl">'+fmt(t.sl)+'</span></div></div>';
+      h+='<div class="prbwrap">'+buildProgressBar(t,pnl,(lP!==null&&lP!==undefined)?lP:t.entry)+'</div>';
+      h+='<div class="posfoot"><span class="posstat '+sc+'">'+stLbl(t.status)+'</span><span class="posdur live-dur">'+(t.status!=='PENDING'?('⏱ '+durStr(t.taken_at)):'')+'</span><span class="posago live-ago">'+fmtT(t.taken_at)+'</span></div>';
+      return h+'</div>'
     }
 
-    function durStr(iso) {
-      if (!iso) return '';
-      var d = parseServerDate(iso);
-      if (!d) return '';
-      var now = serverTime || new Date();
-      var diffMs = now - d;
-      var m = Math.floor(diffMs / 60000);
-      var h = Math.floor(m / 60);
-      var rm = m % 60;
-      if (m < 1) return '<1м';
-      if (h < 1) return m + 'м';
-      return h + 'ч ' + rm + 'м';
+    function rHist(h){
+      if(!h||!h.length)return'<div class="emptystate"><div class="emptyico">📋</div><div class="emptytxt">Нет истории сделок</div></div>';
+      var out='<div class="histwrap" style="overflow-x:auto"><table class="histtable"><thead><tr><th>Пара</th><th>Напр.</th><th>Вход</th><th>Закрыто</th><th>P&L</th><th>Статус</th><th>Время</th></tr></thead><tbody>';
+      for(var i=0;i<h.length;i++){var x=h[i];var pnl=x.pnl_pct||0;var pc=pnl>0?'pos':(pnl<0?'neg':'ne');out+='<tr><td><span class="hsym">'+x.symbol+'</span></td><td><span class="hdir '+(x.direction==='LONG'?'long':'short')+'">'+(x.direction==='LONG'?'↑ Лонг':'↓ Шорт')+'</span></td><td class="hprice">'+fmt(x.entry)+'</td><td class="hprice">'+fmt(x.close_price)+'</td><td><span class="hpnl '+pc+'">'+(pnl>=0?'+':'')+pnl.toFixed(2)+'%</span></td><td><span class="hstat '+stCls(x.status)+'">'+stLbl(x.status)+'</span></td><td class="htime">'+fmtT(x.closed_at)+'</td></tr>'}
+      return out+'</tbody></table></div>'
+    }
+    function rEmpty(m){return'<div class="emptystate"><div class="emptyico">◉</div><div class="emptytxt">'+m+'</div></div>'}
+    function rFgBars(v){var steps=[0,25,50,75,100];var h='';for(var i=0;i<steps.length;i++){var t=steps[i];var m=fgMeta(t);var a=v>=t;var ht=16+i*6;h+='<div class="fgbar" style="height:'+ht+'px;background:'+m.c+';opacity:'+(a?1:.15)+';box-shadow:'+(a?'0 0 8px '+m.c+'50':'none')+'"></div>'}return h}
+
+    function updateUI(d){
+      appData=d;
+      if(d.updated_at)serverTime=parseServerDate(d.updated_at)||new Date();
+      var btcSig=(d.signals||[]).find(function(s){return s.symbol==='BTCUSDT'});
+      if(btcSig)document.getElementById('btcPrice').textContent='$'+fmt(btcSig.entry);else fetchBTC2();
+      var st=d.stats||{},ts=d.trade_stats||{};
+      document.getElementById('statSignals').textContent=st.total||0;
+      document.getElementById('statWL').textContent='✅'+(st.wins||0)+' ❌'+(st.losses||0)+' · сигналы';
+      document.getElementById('statPos').textContent=ts.open||0;
+      document.getElementById('statPend').textContent=(ts.pending||0)+' лимиток';
+      var tot=(ts.wins||0)+(ts.losses||0),wr=tot>0?Math.round((ts.wins||0)/tot*100):0;
+      document.getElementById('statWR').textContent=wr+'%';
+      document.getElementById('statWLT').textContent='✅'+(ts.wins||0)+' / ❌'+(ts.losses||0)+' сделок';
+      var pnl=ts.total_pnl||0;
+      var pe=document.getElementById('statPnl');pe.textContent=(pnl>=0?'+':'')+pnl.toFixed(2)+'%';pe.className='sval '+(pnl>=0?'g':'r');
+      document.getElementById('pnlCard').className='scard '+(pnl>=0?'cg':'cr')+' anim d4';
+      var fg=d.fear_greed||{value:50,label:'Нейтрально',emoji:'😐'};var fgm=fgMeta(fg.value);
+      document.getElementById('gArc').setAttribute('stroke-dashoffset',166-(fg.value/100)*166);
+      var gv=document.getElementById('gVal');gv.textContent=fg.value;gv.style.color=fgm.c;
+      var fgS=document.getElementById('fgS');fgS.textContent=fg.label||fgm.l;fgS.style.color=fgm.c;
+      document.getElementById('fgE').textContent=fg.emoji||'😐';
+      document.getElementById('fgT').innerHTML=rFgBars(fg.value);
+      if(d.updated_at)document.getElementById('updInfo').textContent='Обновлено: '+fmtT(d.updated_at);
+      var ml=d.ml_info||{};
+      document.getElementById('modelName').textContent=ml.model_name||'LogisticRegression';
+      document.getElementById('modelAuc').textContent=ml.roc_auc?'AUC '+ml.roc_auc.toFixed(3):'нет модели';
+      var auto=d.settings&&d.settings.auto_take;
+      var ab=document.getElementById('autoBadge');ab.textContent=auto?'🤖 АВТО':'👤 РУЧНОЙ';ab.className='abadge '+(auto?'on':'off')+' anim d4';
+      var sigs=d.signals||[],allT=d.trades_open||[];
+      openTradesCache=allT.filter(function(t){return['OPEN','TP1_HIT'].indexOf(t.status)!==-1});
+      var opens=openTradesCache.slice(),pends=allT.filter(function(t){return t.status==='PENDING'}),hist=d.trades_history||[];
+      document.getElementById('cS').textContent=sigs.length;document.getElementById('cP').textContent=opens.length;
+      document.getElementById('cPe').textContent=pends.length;document.getElementById('cH').textContent=hist.length;
+      renderTab(sigs,opens,pends,hist)
     }
 
-    function fgM(v) {
-      if (v <= 25) return {c:'#F87171', l:'Крайний страх'};
-      if (v <= 45) return {c:'#B6452C', l:'Страх'};
-      if (v <= 55) return {c:'#DDC5A2', l:'Нейтрально'};
-      if (v <= 75) return {c:'#4ADE80', l:'Жадность'};
-      return {c:'#22C55E', l:'Крайняя жадность'};
+    function renderTab(sigs,opens,pends,hist){
+      ['signalsTab','positionsTab','pendingTab','historyTab'].forEach(function(id){var el=document.getElementById(id);el.classList.remove('active');el.innerHTML=''});
+      var tab=document.getElementById(activeTab+'Tab');tab.classList.add('active');
+      var h='';
+      if(activeTab==='signals')h=sigs.length?sigs.map(rSig).join(''):rEmpty('Нет активных сигналов · Бот сканирует рынок');
+      else if(activeTab==='positions')h=opens.length?opens.map(rPos).join(''):rEmpty('Нет открытых позиций');
+      else if(activeTab==='pending')h=pends.length?pends.map(rPos).join(''):rEmpty('Нет ожидающих ордеров');
+      else if(activeTab==='history')h=rHist(hist);
+      tab.innerHTML=h
     }
 
-    function mlC(p) {
-      if (p === null || p === undefined) return 'med';
-      return p < 0.5 ? 'low' : (p < 0.7 ? 'med' : 'hi');
+    var pricesInFlight=false,btcInFlight=false,restInFlight=false;
+    function fetchLivePrices(){
+      if(!openTradesCache.length||pricesInFlight)return;
+      pricesInFlight=true;
+      var syms=[];openTradesCache.forEach(function(t){if(syms.indexOf(t.symbol)===-1)syms.push(t.symbol)});
+      fetch('/api/ticker?symbols='+encodeURIComponent(syms.join(',')))
+        .then(function(r){return r.ok?r.json():null})
+        .then(function(d){if(!d||!d.prices)return;for(var s in d.prices){if(Object.prototype.hasOwnProperty.call(d.prices,s)){var p=parseFloat(d.prices[s]);if(!isNaN(p)&&p>0)livePrices[s]=p}}patchPositionCards()})
+        ['catch'](function(){}).finally(function(){pricesInFlight=false})
     }
 
-    function sGr(s) {
-      if (s >= 75) return 'linear-gradient(90deg,#4ADE80,#22C55E)';
-      if (s >= 50) return 'linear-gradient(90deg,#DDC5A2,#B6452C)';
-      return 'linear-gradient(90deg,#F87171,#EF4444)';
+    function patchPositionCards(){
+      openTradesCache.forEach(function(t){
+        var card=document.getElementById('pos-'+(t.id||t.symbol));if(!card)return;
+        var lP=livePrices[t.symbol];
+        var durEl=card.querySelector('.live-dur');if(durEl&&t.status!=='PENDING')durEl.textContent='⏱ '+durStr(t.taken_at);
+        var agoEl=card.querySelector('.live-ago');if(agoEl)agoEl.textContent=fmtT(t.taken_at);
+        if(lP===null||lP===undefined)return;
+        var pnl=t.direction==='LONG'?(lP-t.entry)/t.entry*100:(t.entry-lP)/t.entry*100;
+        var pr=pnl>0.01,isN=Math.abs(pnl)<0.01;
+        var pnlEl=card.querySelector('.pospnl');
+        if(pnlEl){pnlEl.textContent=(pnl>=0?'+':'')+pnl.toFixed(2)+'%';pnlEl.className='pospnl '+(pr?'pos':(isN?'ne':'neg'))+(pr?' fl':'')}
+        card.className='poscard '+(pr?'profit':(isN?'neu':'loss'));
+        var ps=card.querySelector('.live-cur');if(ps)ps.textContent=fmt(lP);
+        var key=t.id||t.symbol,cached=scaleCache[key];if(!cached)return;
+        var rng=cached.max-cached.min;if(rng<=0)return;
+        function n(v){return Math.max(0,Math.min(100,(v-cached.min)/rng*100))}
+        var cp=n(lP),t1p=n(t.tp1_orig||t.tp1);
+        var bc=pnl>1?'#00E676':(pnl>0?'#69F0AE':(pnl>-1?'#FFD740':'#FF3D57'));
+        var mc=pnl>=0?'#00E676':'#FF3D57';
+        var fill=card.querySelector('.prbfill');if(fill){fill.style.width=cp+'%';fill.style.background='linear-gradient(90deg,rgba(255,61,87,.25),'+bc+')'}
+        var t1l=card.querySelector('.prbtp1');if(t1l)t1l.style.left=t1p+'%';
+        var mkr=card.querySelector('.prbmarker');if(mkr){mkr.style.left=cp+'%';mkr.style.background=mc;mkr.style.boxShadow='0 0 8px '+mc+'90'}
+      })
     }
 
-    function stLbl(s) {
-      var m = {
-        TP2:'ТП2', TP1:'ТП1', SL:'Стоп', SL_AFTER_TP1:'СЛ/ТП1',
-        TIMEOUT:'Таймаут', EXPIRED:'Истёк', NOT_FILLED:'Не исп.',
-        LIMIT_TIMEOUT:'Лимит истёк', OPEN:'Открыта', TP1_HIT:'ТП1 хит',
-        PENDING:'Ожидание'
-      };
-      return m[s] || s;
+    var ws=null,wsPingTimer=null,wsRetryMs=1000,wsRetryTimer=null,wsLastMsgAt=0;
+    function setConn(c){
+      var dot=document.getElementById('statusDot'),txt=document.getElementById('statusText');
+      if(c){dot.className='stdot live';txt.className='sttxt live';txt.textContent='LIVE'}
+      else{dot.className='stdot off';txt.className='sttxt off';txt.textContent='Переподключение...'}
+    }
+    function connectWS(){
+      try{
+        var proto=location.protocol==='https:'?'wss:':'ws:';
+        ws=new WebSocket(proto+'//'+location.host+'/ws');
+        ws.onopen=function(){setConn(true);wsRetryMs=1000;wsLastMsgAt=Date.now();if(wsPingTimer)clearInterval(wsPingTimer);wsPingTimer=setInterval(function(){try{if(ws&&ws.readyState===1)ws.send('ping')}catch(e){}},20000)};
+        ws.onmessage=function(e){try{var m=JSON.parse(e.data);if(m&&m.type==='ping')return;wsLastMsgAt=Date.now();var d=m.data||m;if(d&&d.stats)updateUI(d)}catch(err){}};
+        ws.onclose=function(){setConn(false);if(wsPingTimer){clearInterval(wsPingTimer);wsPingTimer=null}ws=null;if(wsRetryTimer)clearTimeout(wsRetryTimer);wsRetryTimer=setTimeout(connectWS,wsRetryMs);wsRetryMs=Math.min(15000,Math.floor(wsRetryMs*1.6))};
+        ws.onerror=function(){try{if(ws)ws.close()}catch(e){}};
+      }catch(e){setConn(false);if(wsRetryTimer)clearTimeout(wsRetryTimer);wsRetryTimer=setTimeout(connectWS,wsRetryMs);wsRetryMs=Math.min(15000,Math.floor(wsRetryMs*1.6))}
+    }
+    function fetchREST(){if(restInFlight)return Promise.resolve(false);restInFlight=true;return fetch('/data.json').then(function(r){return r.ok?r.json():null}).then(function(d){if(d&&d.stats){updateUI(d);return true}return false})['catch'](function(){return false}).finally(function(){restInFlight=false})}
+    function fetchBTC2(){
+      if(btcInFlight)return;btcInFlight=true;
+      fetch('/api/ticker?symbol=BTCUSDT').then(function(r){return r.ok?r.json():null}).then(function(d){
+        if(d&&d.price){document.getElementById('btcPrice').textContent='$'+fmt(parseFloat(d.price));return}
+        return fetch('/api/klines?symbol=BTCUSDT&interval=1m&limit=1').then(function(r){return r.ok?r.json():null}).then(function(k){if(k&&k[0])document.getElementById('btcPrice').textContent='$'+fmt(parseFloat(k[0][4]))})
+      })['catch'](function(){}).finally(function(){btcInFlight=false})
     }
 
-    function stCls(s) {
-      if (s === 'TP2') return 'tp2';
-      if (s === 'TP1') return 'tp1';
-      if (s === 'SL_AFTER_TP1') return 'sltp1';
-      if (s === 'SL') return 'sl';
-      if (['TIMEOUT','EXPIRED','NOT_FILLED','LIMIT_TIMEOUT'].indexOf(s) !== -1) return 'to';
-      return 'oth';
-    }
-
-    // --- Render helpers ------------------------------------------------------
-    function rSig(s, i) {
-      var wp = (s.win_prob !== null && s.win_prob !== undefined) ? s.win_prob : null;
-      var mc = mlC(wp);
-      var clsDir = s.direction === 'LONG' ? 'long' : 'short';
-      var txtDir = s.direction === 'LONG' ? '🟢 ЛОНГ' : '🔴 ШОРТ';
-      var html = '';
-      html += '<div class="sigc glass shimmer ch">';
-      html += '<div class="sh"><div class="symw"><span class="sym">'+s.symbol+'</span></div>';
-      html += '<span class="db '+clsDir+'">'+txtDir+'</span></div>';
-      html += '<div class="pg">';
-      html += '<div class="pi"><span class="pil">Вход</span><span class="piv" style="color:#60A5FA">'+fmt(s.entry)+'</span></div>';
-      html += '<div class="pi"><span class="pil">ТП1</span><span class="piv" style="color:#4ADE80">'+fmt(s.tp1)+'</span></div>';
-      html += '<div class="pi"><span class="pil">ТП2</span><span class="piv" style="color:#4ADE80">'+fmt(s.tp2)+'</span></div>';
-      html += '<div class="pi"><span class="pil">СЛ</span><span class="piv" style="color:#F87171">'+fmt(s.sl)+'</span></div>';
-      html += '</div>';
-      var strength = s.strength || 0;
-      html += '<div class="strw"><div class="strh"><span class="strl">Сила сигнала</span>';
-      html += '<span class="strv">'+strength+'%</span></div>';
-      html += '<div class="strb"><div class="strf" style="width:'+strength+'%;background:'+sGr(strength)+'"></div></div></div>';
-      html += '<div class="mlr">';
-      if (wp !== null) {
-        html += '<span class="mlb '+mc+'">🧠 ML: '+Math.round(wp*100)+'%</span>';
-      } else {
-        html += '<span class="mlb med">🧠 ML: —</span>';
-      }
-      html += '<span class="sigtime">'+fmtT(s.created_at)+'</span></div>';
-      if (s.reasons && s.reasons.length) {
-        html += '<div class="reas">';
-        for (var j = 0; j < Math.min(4, s.reasons.length); j++) {
-          html += '<span class="rea">'+s.reasons[j]+'</span>';
-        }
-        html += '</div>';
-      }
-      html += '</div>';
-      return html;
-    }
-
-    function rPos(t, i) {
-      var liveP = livePrices[t.symbol];
-      var pnl = 0;
-      if (liveP !== null && liveP !== undefined && t.entry) {
-        pnl = t.direction === 'LONG'
-          ? (liveP - t.entry) / t.entry * 100
-          : (t.entry - liveP) / t.entry * 100;
-      } else {
-        pnl = t.pnl_pct || 0;
-      }
-      var pr = pnl > 0.01;
-      var isN = Math.abs(pnl) < 0.01;
-      var cc = pr ? 'profit' : (isN ? 'neu' : 'loss');
-      var pc = pr ? 'pos' : (isN ? 'ne' : 'neg');
-      var dur = t.status !== 'PENDING' ? durStr(t.taken_at) : '';
-      var curP = (liveP !== null && liveP !== undefined) ? fmt(liveP) : '—';
-      var dirCls = t.direction === 'LONG' ? 'long' : 'short';
-      var dirTxt = t.direction === 'LONG' ? '🟢 ЛОНГ' : '🔴 ШОРТ';
-      var statusCls = t.status === 'TP1_HIT' ? 'tp1' : (t.status === 'PENDING' ? 'pend' : 'open');
-
-      var html = '';
-      html += '<div class="posc glass ch '+cc+'" id="pos-'+(t.id||t.symbol)+'">';
-      html += '<div class="sh"><div class="symw"><span class="sym">'+t.symbol+
-              '</span><span class="live-cur" style="font-size:.7rem;color:rgba(221,197,162,.4);font-family:monospace;margin-left:.25rem">'+curP+
-              '</span></div><span class="db '+dirCls+'">'+dirTxt+'</span></div>';
-      html += '<div class="ppnl '+pc+(pr?' fl':'')+'">'+(pnl>=0?'+':'')+pnl.toFixed(2)+'%</div>';
-      html += '<div class="pp">';
-      html += '<div class="pi"><span class="pil">Вход</span><span class="piv">'+fmt(t.entry)+'</span></div>';
-      html += '<div class="pi"><span class="pil">ТП1</span><span class="piv" style="color:#4ADE80">'+fmt(t.tp1)+'</span></div>';
-      html += '<div class="pi"><span class="pil">ТП2</span><span class="piv" style="color:#4ADE80">'+fmt(t.tp2)+'</span></div>';
-      html += '<div class="pi"><span class="pil">СЛ</span><span class="piv" style="color:#F87171">'+fmt(t.sl)+'</span></div>';
-      html += '</div>';
-      html += '<div class="prb-wrap">'+buildProgressBar(t, pnl, (liveP!==null&&liveP!==undefined)?liveP:t.entry)+'</div>';
-      html += '<div style="display:flex;align-items:center;justify-content:space-between;gap:.5rem">';
-      html += '<span class="pstat '+statusCls+'">'+stLbl(t.status)+'</span>';
-      html += '<span class="live-dur" style="font-size:.75rem;color:rgba(221,197,162,.5)">'+(dur?('⏱ '+dur):'')+'</span>';
-      html += '<span class="live-ago" style="font-size:.75rem;color:rgba(221,197,162,.35)">'+fmtT(t.taken_at)+'</span>';
-      html += '</div></div>';
-      return html;
-    }
-
-    function rHist(h) {
-      if (!h || !h.length) {
-        return '<div class="hw glass"><div class="empty" style="border:none"><div class="eico"><div class="eicoi"></div></div><div class="etxt">Нет истории сделок</div></div></div>';
-      }
-      var html = '';
-      html += '<div class="hw glass aup" style="overflow-x:auto"><table class="ht"><thead><tr>'+
-              '<th>Пара</th><th>Напр.</th><th>Вход</th><th>Закрыто</th><th>P&L</th><th>Статус</th><th>Время</th></tr></thead><tbody>';
-      for (var i=0;i<h.length;i++) {
-        var x = h[i];
-        var pnl = x.pnl_pct || 0;
-        var pc = pnl>0?'pos':(pnl<0?'neg':'ne');
-        html += '<tr class="aup d'+((i%6)+1)+'">';
-        html += '<td><span class="hsym">'+x.symbol+'</span></td>';
-        var dirCls = x.direction==='LONG'?'long':'short';
-        var dirTxt = x.direction==='LONG'?'Лонг':'Шорт';
-        html += '<td><span class="hdir '+dirCls+'">'+dirTxt+'</span></td>';
-        html += '<td class="hprice mono">'+fmt(x.entry)+'</td>';
-        html += '<td class="hprice mono">'+fmt(x.close_price)+'</td>';
-        html += '<td><span class="hpnl '+pc+' mono">'+(pnl>=0?'+':'')+pnl.toFixed(2)+'%</span></td>';
-        html += '<td><span class="hst '+stCls(x.status)+'">'+stLbl(x.status)+'</span></td>';
-        html += '<td class="htime">'+fmtT(x.closed_at)+'</td></tr>';
-      }
-      html += '</tbody></table></div>';
-      return html;
-    }
-
-    function rEmpty(m) {
-      return '<div class="empty glass aup"><div class="eico"><div class="eicoi"></div></div><div class="etxt">'+m+'</div></div>';
-    }
-
-    function rTicks(v) {
-      var vals = [0,25,50,75,100];
-      var html = '';
-      for (var i=0;i<vals.length;i++) {
-        var t = vals[i];
-        var td = fgM(t);
-        var a = v >= t;
-        var glow = a ? '0 0 12px '+td.c+'50' : 'none';
-        html += '<div class="ftk" style="background:'+td.c+';opacity:'+(a?1:.15)+';transition-delay:'+(i*0.1)+'s;box-shadow:'+glow+'"></div>';
-      }
-      return html;
-    }
-
-    // --- State ---------------------------------------------------------------
-    var appData = null;
-    var activeTab = 'signals';
-    var livePrices = {};
-    var openTradesCache = [];
-    // фиксированный масштаб прогресс-бара по исходным уровням сделки
-    var scaleCache = {};
-
-    // --- UI update -----------------------------------------------------------
-    function updateUI(d) {
-      appData = d;
-      if (d.updated_at) {
-        serverTime = parseServerDate(d.updated_at) || new Date();
-      }
-
-      var btcSig = (d.signals || []).find(function(s){return s.symbol==='BTCUSDT';});
-      if (btcSig) {
-        document.getElementById('btcPrice').textContent = '$'+fmt(btcSig.entry);
-      } else {
-        fetchBTC();
-      }
-
-      var st = d.stats || {};
-      var ts = d.trade_stats || {};
-      document.getElementById('statSignals').textContent = st.total || 0;
-      document.getElementById('statWL').textContent = '✅'+(st.wins||0)+' ❌'+(st.losses||0)+' · сигналы';
-
-      document.getElementById('statPos').textContent = ts.open || 0;
-      document.getElementById('statPend').textContent = (ts.pending || 0)+' лимиток';
-
-      var totalTrades = (ts.wins||0) + (ts.losses||0);
-      var tradeWR = totalTrades>0 ? Math.round((ts.wins||0)/totalTrades*100) : 0;
-      document.getElementById('statWR').textContent = tradeWR+'%';
-      document.getElementById('statWLT').textContent = '✅'+(ts.wins||0)+' / ❌'+(ts.losses||0)+' сделок';
-
-      var pnl = ts.total_pnl || 0;
-      var pe = document.getElementById('statPnl');
-      pe.textContent = (pnl>=0?'+':'')+pnl.toFixed(2)+'%';
-      pe.className = 'sv '+(pnl>=0?'su':'er');
-      document.getElementById('pnlCard').className = 'sc '+(pnl>=0?'su':'er')+' ch aup d4';
-
-      var fg = d.fear_greed || {value:50,label:'Нейтрально',emoji:'😐'};
-      var fgm = fgM(fg.value);
-      var off = 157 - (fg.value/100)*157;
-      var arc = document.getElementById('gArc');
-      arc.setAttribute('stroke-dashoffset', off);
-      arc.setAttribute('stroke', fgm.c);
-      arc.style.filter = 'drop-shadow(0 0 12px '+fgm.c+'60)';
-      var gv = document.getElementById('gVal');
-      gv.textContent = fg.value;
-      gv.style.color = fgm.c;
-      var fgS = document.getElementById('fgS');
-      fgS.textContent = fg.label || fgm.l;
-      fgS.style.color = fgm.c;
-      document.getElementById('fgE').textContent = fg.emoji || '😐';
-      document.getElementById('fgT').innerHTML = rTicks(fg.value);
-
-      var ml = d.ml_info || {};
-      document.getElementById('modelName').textContent = ml.model_name || 'LogisticRegression';
-      document.getElementById('modelAuc').textContent = ml.roc_auc ? ('AUC '+ml.roc_auc.toFixed(3)) : 'нет модели';
-      var auto = d.settings && d.settings.auto_take;
-      var ab = document.getElementById('autoBadge');
-      ab.textContent = auto ? '🤖 АВТО' : '👤 РУЧНОЙ';
-      ab.className = 'ab '+(auto?'on':'off')+' aup d4';
-      if (d.updated_at) {
-        document.getElementById('updInfo').textContent = 'Обновлено: '+fmtT(d.updated_at);
-      }
-
-      var sigs = d.signals || [];
-      var alls = d.trades_open || [];
-      openTradesCache = alls.filter(function(t){ return ['OPEN','TP1_HIT'].indexOf(t.status)!==-1; });
-      var opens = openTradesCache.slice();
-      var pends = alls.filter(function(t){ return t.status==='PENDING'; });
-      var hist = d.trades_history || [];
-      document.getElementById('cS').textContent = sigs.length;
-      document.getElementById('cP').textContent = opens.length;
-      document.getElementById('cPe').textContent = pends.length;
-      document.getElementById('cH').textContent = hist.length;
-      renderTab(sigs, opens, pends, hist);
-    }
-
-    function renderTab(sigs, opens, pends, hist) {
-      var blocks = document.querySelectorAll('.tbc');
-      for (var i=0;i<blocks.length;i++) {
-        blocks[i].classList.remove('active');
-        blocks[i].innerHTML = '';
-      }
-      var tab = document.getElementById(activeTab+'Tab');
-      tab.classList.add('active');
-      var html = '';
-      if (activeTab === 'signals') {
-        html = sigs.length ? sigs.map(function(s,i){return rSig(s,i);}).join('') : rEmpty('Нет активных сигналов · Бот сканирует рынок');
-      } else if (activeTab === 'positions') {
-        html = opens.length ? opens.map(function(t,i){return rPos(t,i);}).join('') : rEmpty('Нет открытых позиций');
-      } else if (activeTab === 'pending') {
-        html = pends.length ? pends.map(function(t,i){return rPos(t,i);}).join('') : rEmpty('Нет ожидающих лимитных ордеров');
-      } else if (activeTab === 'history') {
-        html = rHist(hist);
-      }
-      tab.innerHTML = html;
-    }
-
-    // --- BTC fallback fetch --------------------------------------------------
-    function fetchBTC() {
-      // Prefer ticker proxy (more stable than klines, has Bybit fallback)
-      fetch('/api/ticker?symbol=BTCUSDT')
-        .then(function(r){ return r.ok ? r.json() : null; })
-        .then(function(d){
-          if (d && d.price) {
-            document.getElementById('btcPrice').textContent = '$'+fmt(parseFloat(d.price));
-            return;
-          }
-          // Last resort: klines
-          return fetch('/api/klines?symbol=BTCUSDT&interval=1m&limit=1')
-            .then(function(r){ return r.ok ? r.json() : null; })
-            .then(function(k){
-              if (k && k[0]) {
-                document.getElementById('btcPrice').textContent = '$'+fmt(parseFloat(k[0][4]));
-              }
-            });
-        })["catch"](function(){});
-    }
-
-    function setConn(c) {
-      var dot = document.getElementById('statusDot');
-      var txt = document.getElementById('statusText');
-      if (c) {
-        dot.className = 'sd on glow';
-        txt.className = 'st on';
-        txt.textContent = 'LIVE';
-      } else {
-        dot.className = 'sd off';
-        txt.className = 'st off';
-        txt.textContent = 'Переподключение...';
-      }
-    }
-
-    // --- Progress bar builder ------------------------------------------------
-    function buildProgressBar(t, pnl, curPrice) {
-      // используем исходные уровни, если они есть (бекенд фиксирует их при входе)
-      var sl = t.sl_orig || t.sl;
-      var entry = t.entry_orig || t.entry;
-      var tp1 = t.tp1_orig || t.tp1;
-      var tp2 = t.tp2_orig || t.tp2;
-      if (!sl || !entry || !tp2) return '';
-      var key = t.id || t.symbol;
-      var cached = scaleCache[key];
-      if (!cached) {
-        var minP = Math.min(sl, entry, tp2);
-        var maxP = Math.max(sl, entry, tp2);
-        if (maxP - minP <= 0) return '';
-        cached = { min: minP, max: maxP };
-        scaleCache[key] = cached;
-      }
-      var minV = cached.min;
-      var maxV = cached.max;
-      var range = maxV - minV;
-      if (range <= 0) return '';
-      function norm(v) {
-        return Math.max(0, Math.min(100, (v - minV) / range * 100));
-      }
-      var pos      = norm(curPrice);
-      var tp1pos   = norm(tp1);
-      var entryPos = norm(entry);
-      var barColor = pnl > 1 ? '#4ADE80' : (pnl > 0 ? '#86EFAC' : (pnl > -1 ? '#FCD34D' : '#F87171'));
-      var markerColor = pnl >= 0 ? '#4ADE80' : '#F87171';
-      var html = '';
-      html += '<div class="prb-labels">';
-      html += '<span style="color:#F87171">СЛ '+fmt(sl)+'</span>';
-      html += '<span style="color:rgba(221,197,162,.5)">Вход '+fmt(entry)+'</span>';
-      html += '<span style="color:#4ADE80">ТП2 '+fmt(tp2)+'</span>';
-      html += '</div>';
-      html += '<div class="prb-track">';
-      html += '<div class="prb-fill" style="width:'+pos+'%;background:linear-gradient(90deg,rgba(248,113,113,.3),'+barColor+')"></div>';
-      html += '<div class="prb-tp1" style="left:'+tp1pos+'%" title="ТП1 '+fmt(tp1)+'"></div>';
-      html += '<div class="prb-entry-dot" style="position:absolute;top:50%;left:'+entryPos+'%;transform:translate(-50%,-50%);width:12px;height:12px;border-radius:50%;background:#60A5FA;border:3px solid #fff;z-index:4;box-shadow:0 0 12px #60A5FA, 0 0 20px #60A5FAaa;transition:left .8s cubic-bezier(.22,1,.36,1)" title="Вход '+fmt(entry)+'"></div>';
-      html += '<div class="prb-marker" style="left:'+pos+'%;background:'+markerColor+';box-shadow:0 0 8px '+markerColor+'80"></div>';
-      html += '</div>';
-      return html;
-    }
-
-    // --- Live prices ---------------------------------------------------------
-    function fetchLivePrices() {
-      if (!openTradesCache.length) return;
-      if (pricesInFlight) return;
-      pricesInFlight = true;
-      var symbols = [];
-      for (var i=0;i<openTradesCache.length;i++) {
-        var sym = openTradesCache[i].symbol;
-        if (symbols.indexOf(sym) === -1) symbols.push(sym);
-      }
-      var url = '/api/ticker?symbols='+encodeURIComponent(symbols.join(','));
-      fetch(url)
-        .then(function(r){ return r.ok ? r.json() : null; })
-        .then(function(d){
-          if (!d || !d.prices) return;
-          for (var sym in d.prices) {
-            if (Object.prototype.hasOwnProperty.call(d.prices, sym)) {
-              var p = parseFloat(d.prices[sym]);
-              if (!isNaN(p) && p>0) livePrices[sym] = p;
-            }
-          }
-          patchPositionCards();
-        })["catch"](function(){})
-        .finally(function(){ pricesInFlight = false; });
-    }
-
-    function patchPositionCards() {
-      for (var i=0;i<openTradesCache.length;i++) {
-        var t = openTradesCache[i];
-        var card = document.getElementById('pos-'+(t.id||t.symbol));
-        if (!card) continue;
-        var liveP = livePrices[t.symbol];
-
-        var durEl = card.querySelector('.live-dur');
-        if (durEl && t.status !== 'PENDING') durEl.textContent = '⏱ '+durStr(t.taken_at);
-        var agoEl = card.querySelector('.live-ago');
-        if (agoEl) agoEl.textContent = fmtT(t.taken_at);
-
-        if (liveP === null || liveP === undefined) continue;
-        var pnl = t.direction==='LONG'
-          ? (liveP - t.entry) / t.entry * 100
-          : (t.entry - liveP) / t.entry * 100;
-        var pr = pnl > 0.01;
-        var isN = Math.abs(pnl) < 0.01;
-
-        var pnlEl = card.querySelector('.ppnl');
-        if (pnlEl) {
-          pnlEl.textContent = (pnl>=0?'+':'')+pnl.toFixed(2)+'%';
-          pnlEl.className = 'ppnl '+(pr?'pos':(isN?'ne':'neg'))+(pr?' fl':'');
-        }
-        card.className = card.className.replace(/\b(profit|loss|neu)\b/g, pr?'profit':(isN?'neu':'loss'));
-        var priceSpan = card.querySelector('.live-cur');
-        if (priceSpan) priceSpan.textContent = fmt(liveP);
-
-        // берём те же уровни, что и при первом рендере (scaleCache уже зафиксирован)
-        var sl = t.sl_orig || t.sl;
-        var entry = t.entry_orig || t.entry;
-        var tp1 = t.tp1_orig || t.tp1;
-        var tp2 = t.tp2_orig || t.tp2;
-        if (!sl || !entry || !tp2) continue;
-        var key = t.id || t.symbol;
-        var cached = scaleCache[key];
-        if (!cached) continue;
-        var minV = cached.min;
-        var maxV = cached.max;
-        var range = maxV - minV;
-        if (range <= 0) continue;
-        function norm(v) {
-          return Math.max(0, Math.min(100, (v - minV) / range * 100));
-        }
-        var curPos  = norm(liveP);
-        var tp1pos  = norm(tp1);
-        var barColor = pnl > 1 ? '#4ADE80' : (pnl > 0 ? '#86EFAC' : (pnl > -1 ? '#FCD34D' : '#F87171'));
-        var mrkColor = pnl >= 0 ? '#4ADE80' : '#F87171';
-
-        var fill = card.querySelector('.prb-fill');
-        if (fill) {
-          fill.style.width = curPos+'%';
-          fill.style.background = 'linear-gradient(90deg,rgba(248,113,113,.3),'+barColor+')';
-        }
-        var tp1line = card.querySelector('.prb-tp1');
-        if (tp1line) tp1line.style.left = tp1pos + '%';
-        var marker = card.querySelector('.prb-marker');
-        if (marker) {
-          marker.style.left = curPos+'%';
-          marker.style.background = mrkColor;
-          marker.style.boxShadow = '0 0 8px '+mrkColor+'80';
-        }
-      }
-    }
-
-    // --- WebSocket + REST wiring --------------------------------------------
-    var ws = null;
-    var wsPingTimer = null;
-    var wsRetryMs = 1000;
-    var wsRetryTimer = null;
-    var wsLastMsgAt = 0;
-    var restInFlight = false;
-    var pricesInFlight = false;
-    var btcInFlight = false;
-
-    function connectWS() {
-      try {
-        var proto = location.protocol === 'https:' ? 'wss:' : 'ws:';
-        ws = new WebSocket(proto+'//'+location.host+'/ws');
-        ws.onopen = function(){
-          setConn(true);
-          wsRetryMs = 1000;
-          wsLastMsgAt = Date.now();
-          if (wsPingTimer) clearInterval(wsPingTimer);
-          // Client-initiated ping to avoid idle disconnects
-          wsPingTimer = setInterval(function(){
-            try { if (ws && ws.readyState === 1) ws.send('ping'); } catch(e) {}
-          }, 20000);
-        };
-        ws.onmessage = function(e){
-          try {
-            var m = JSON.parse(e.data);
-            if (m && m.type === 'ping') return; // keepalive
-            wsLastMsgAt = Date.now();
-            var d = m.data || m;
-            if (d && d.stats) updateUI(d);
-          } catch (err) {}
-        };
-        ws.onclose = function(){
-          setConn(false);
-          if (wsPingTimer) { clearInterval(wsPingTimer); wsPingTimer = null; }
-          ws = null;
-          if (wsRetryTimer) clearTimeout(wsRetryTimer);
-          wsRetryTimer = setTimeout(connectWS, wsRetryMs);
-          wsRetryMs = Math.min(15000, Math.floor(wsRetryMs * 1.6));
-        };
-        ws.onerror = function(){ try { if (ws) ws.close(); } catch(e) {} };
-      } catch (e) {
-        setConn(false);
-        if (wsPingTimer) { clearInterval(wsPingTimer); wsPingTimer = null; }
-        if (wsRetryTimer) clearTimeout(wsRetryTimer);
-        wsRetryTimer = setTimeout(connectWS, wsRetryMs);
-        wsRetryMs = Math.min(15000, Math.floor(wsRetryMs * 1.6));
-      }
-    }
-
-    function fetchREST() {
-      if (restInFlight) return Promise.resolve(false);
-      restInFlight = true;
-      return fetch('/data.json')
-        .then(function(r){ return r.ok ? r.json() : null; })
-        .then(function(d){
-          if (d && d.stats) {
-            updateUI(d);
-            return true;
-          }
-          return false;
-        })["catch"](function(){ return false; })
-        .finally(function(){ restInFlight = false; });
-    }
-
-    // --- Init ----------------------------------------------------------------
-    document.querySelectorAll('.tb').forEach(function(btn){
-      btn.addEventListener('click', function(){
-        document.querySelectorAll('.tb').forEach(function(b){ b.classList.remove('active'); });
-        btn.classList.add('active');
-        activeTab = btn.dataset.tab;
-        if (appData) {
-          var a = appData.trades_open || [];
-          renderTab(appData.signals || [],
-                    a.filter(function(t){return ['OPEN','TP1_HIT'].indexOf(t.status)!==-1;}),
-                    a.filter(function(t){return t.status==='PENDING';}),
-                    appData.trades_history || []);
-        }
-      });
+    document.querySelectorAll('.tabbtn').forEach(function(btn){
+      btn.addEventListener('click',function(){
+        document.querySelectorAll('.tabbtn').forEach(function(b){b.classList.remove('active')});
+        btn.classList.add('active');activeTab=btn.dataset.tab;
+        if(appData){var a=appData.trades_open||[];renderTab(appData.signals||[],a.filter(function(t){return['OPEN','TP1_HIT'].indexOf(t.status)!==-1}),a.filter(function(t){return t.status==='PENDING'}),appData.trades_history||[])}
+      })
     });
 
-    fetchREST();
-    connectWS();
-    // If WS is quiet for long time, refresh via REST
-    setInterval(function(){
-      var now = Date.now();
-      if (!ws || ws.readyState !== 1 || (now - wsLastMsgAt) > 45000) fetchREST();
-    }, 15000);
-    // Обновляем раз в 1с: /api/ticker теперь bulk + кеш.
-    setInterval(fetchLivePrices, 1000);
-    setInterval(function(){ if (openTradesCache.length) patchPositionCards(); }, 1000);
-    setInterval(function(){ if (serverTime) serverTime = new Date(serverTime.getTime()+1000); }, 1000);
-
-    // BTC price refresh (stable)
-    function fetchBTC2() {
-      if (btcInFlight) return;
-      btcInFlight = true;
-      fetch('/api/ticker?symbol=BTCUSDT')
-        .then(function(r){ return r.ok ? r.json() : null; })
-        .then(function(d){
-          if (d && d.price) {
-            document.getElementById('btcPrice').textContent = '$'+fmt(parseFloat(d.price));
-            return;
-          }
-          return fetch('/api/klines?symbol=BTCUSDT&interval=1m&limit=1')
-            .then(function(r){ return r.ok ? r.json() : null; })
-            .then(function(k){
-              if (k && k[0]) {
-                document.getElementById('btcPrice').textContent = '$'+fmt(parseFloat(k[0][4]));
-              }
-            });
-        })["catch"](function(){})
-        .finally(function(){ btcInFlight = false; });
-    }
-    fetchBTC2();
-    setInterval(fetchBTC2, 10000);
+    fetchREST();connectWS();fetchBTC2();
+    setInterval(function(){var now=Date.now();if(!ws||ws.readyState!==1||(now-wsLastMsgAt)>45000)fetchREST()},15000);
+    setInterval(fetchLivePrices,1000);
+    setInterval(function(){if(openTradesCache.length)patchPositionCards()},1000);
+    setInterval(function(){if(serverTime)serverTime=new Date(serverTime.getTime()+1000)},1000);
+    setInterval(fetchBTC2,10000);
   </script>
 </body>
 </html>
