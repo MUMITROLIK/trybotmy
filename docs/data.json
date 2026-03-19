@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-19T17:13:14.935159+00:00",
+  "updated_at": "2026-03-19T17:13:35.265651+00:00",
   "publish_status": {
-    "last_ok": "2026-03-19T17:12:14Z",
+    "last_ok": "2026-03-19T17:13:09Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,19 +10,19 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 662,
+    "total": 663,
     "wins": 204,
-    "losses": 118,
+    "losses": 119,
     "active": 28,
-    "winrate": 63.4
+    "winrate": 63.2
   },
   "trade_stats": {
     "open": 36,
     "pending": 0,
     "wins": 207,
-    "losses": 230,
-    "total_pnl": 18.22,
-    "winrate": 47.4
+    "losses": 231,
+    "total_pnl": 14.79,
+    "winrate": 47.3
   },
   "fear_greed": {
     "value": 23,
@@ -441,28 +441,6 @@
       "status": "ACTIVE"
     },
     {
-      "id": 691,
-      "symbol": "PTBUSDT",
-      "direction": "LONG",
-      "entry": 0.0013203,
-      "tp1": 0.001375,
-      "tp2": 0.001429,
-      "sl": 0.001277,
-      "strength": 47,
-      "reasons": [
-        "MACD бычий (hist=0.00000)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: сильное давление покупки (+0.49)",
-        "МТФ: 5m, 15m, 1h согласны",
-        "OI растёт +0.7% + цена ↑",
-        "Doji (1h) — нерешительность",
-        "⚡ Рыночный вход (MTF сильный)"
-      ],
-      "news": null,
-      "created_at": "2026-03-19 16:11:06",
-      "status": "ACTIVE"
-    },
-    {
       "id": 692,
       "symbol": "MONUSDT",
       "direction": "LONG",
@@ -652,9 +630,51 @@
       "news": null,
       "created_at": "2026-03-19 17:12:19",
       "status": "ACTIVE"
+    },
+    {
+      "id": 701,
+      "symbol": "LITUSDT",
+      "direction": "LONG",
+      "entry": 1.165,
+      "tp1": 1.193286,
+      "tp2": 1.221571,
+      "sl": 1.1417,
+      "strength": 45,
+      "reasons": [
+        "MACD бычий (hist=0.00494)",
+        "EMA20 > EMA50 (golden cross) 🌟",
+        "Стакан: перевес bid (+0.06)",
+        "МТФ: 5m, 15m, 1h согласны",
+        "CVD растёт (+8.8%) — покупки усиливаются 📈",
+        "Hammer (1h) 🔨",
+        "⚡ Рыночный вход (MTF сильный)"
+      ],
+      "news": null,
+      "created_at": "2026-03-19 17:13:22",
+      "status": "ACTIVE"
     }
   ],
   "history": [
+    {
+      "symbol": "PTBUSDT",
+      "direction": "LONG",
+      "entry": 0.0013203,
+      "tp1": 0.001375,
+      "tp2": 0.001429,
+      "sl": 0.001277,
+      "strength": 47,
+      "status": "SL",
+      "created_at": "2026-03-19 16:11:06",
+      "reasons": [
+        "MACD бычий (hist=0.00000)",
+        "Цена > EMA20 > EMA50",
+        "Стакан: сильное давление покупки (+0.49)",
+        "МТФ: 5m, 15m, 1h согласны",
+        "OI растёт +0.7% + цена ↑",
+        "Doji (1h) — нерешительность",
+        "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
     {
       "symbol": "ENJUSDT",
       "direction": "LONG",
@@ -1040,26 +1060,6 @@
         "МТФ: 5m, 15m, 4h согласны",
         "OI растёт +0.8% + цена ↑",
         "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
-      "symbol": "KITEUSDT",
-      "direction": "LONG",
-      "entry": 0.18898,
-      "tp1": 0.19276,
-      "tp2": 0.196539,
-      "sl": 0.1852,
-      "strength": 45,
-      "status": "TP1",
-      "created_at": "2026-03-19 13:26:40",
-      "reasons": [
-        "MACD бычий (hist=0.00053)",
-        "Цена выше EMA20",
-        "Объём x1.9 🔥",
-        "МТФ: 5m, 1h согласны",
-        "CVD растёт (+12.8%) — покупки усиливаются 📈",
-        "Bullish Engulfing (1h) 🕯️",
-        "⚡ Рыночный вход (MTF 2+ ТФ)"
       ]
     }
   ],
@@ -1721,31 +1721,6 @@
       ]
     },
     {
-      "id": 545,
-      "symbol": "PTBUSDT",
-      "direction": "LONG",
-      "entry": 0.0013203,
-      "tp1": 0.001375,
-      "tp2": 0.001429,
-      "sl": 0.001277,
-      "entry_orig": 0.0013203,
-      "tp1_orig": 0.001375,
-      "tp2_orig": 0.001429,
-      "sl_orig": 0.001277,
-      "strength": 47,
-      "taken_at": "2026-03-19T16:11:06.979470",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00000)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: сильное давление покупки (+0.49)",
-        "МТФ: 5m, 15m, 1h согласны",
-        "OI растёт +0.7% + цена ↑",
-        "Doji (1h) — нерешительность",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 546,
       "symbol": "MONUSDT",
       "direction": "LONG",
@@ -1962,9 +1937,48 @@
         "Стакан: сильное давление покупки (+0.27)",
         "МТФ: только 1 таймфрейм согласен"
       ]
+    },
+    {
+      "id": 555,
+      "symbol": "LITUSDT",
+      "direction": "LONG",
+      "entry": 1.165,
+      "tp1": 1.193286,
+      "tp2": 1.221571,
+      "sl": 1.1417,
+      "entry_orig": 1.165,
+      "tp1_orig": 1.193286,
+      "tp2_orig": 1.221571,
+      "sl_orig": 1.1417,
+      "strength": 45,
+      "taken_at": "2026-03-19T17:13:22.536287",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.00494)",
+        "EMA20 > EMA50 (golden cross) 🌟",
+        "Стакан: перевес bid (+0.06)",
+        "МТФ: 5m, 15m, 1h согласны",
+        "CVD растёт (+8.8%) — покупки усиливаются 📈",
+        "Hammer (1h) 🔨",
+        "⚡ Рыночный вход (MTF сильный)"
+      ]
     }
   ],
   "trades_history": [
+    {
+      "symbol": "PTBUSDT",
+      "direction": "LONG",
+      "entry": 0.0013203,
+      "tp1": 0.001375,
+      "tp2": 0.001429,
+      "sl": 0.001277,
+      "strength": 47,
+      "status": "SL",
+      "pnl_pct": -3.43,
+      "close_price": 0.001275,
+      "taken_at": "2026-03-19T16:11:06.979470",
+      "closed_at": "2026-03-19 17:13:29"
+    },
     {
       "symbol": "KITEUSDT",
       "direction": "LONG",
@@ -4750,20 +4764,6 @@
       "close_price": 0.99865,
       "taken_at": "2026-03-18T09:19:47.375537",
       "closed_at": "2026-03-18 10:12:47"
-    },
-    {
-      "symbol": "ZECUSDT",
-      "direction": "LONG",
-      "entry": 277.19,
-      "tp1": 282.7338,
-      "tp2": 288.2776,
-      "sl": 282.885,
-      "strength": 40,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 1.82,
-      "close_price": 282.245,
-      "taken_at": "2026-03-18T07:18:52.549777",
-      "closed_at": "2026-03-18 10:12:29"
     }
   ]
 }
