@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-03-19T16:01:25.757000+00:00",
+  "updated_at": "2026-03-19T16:01:49.230879+00:00",
   "publish_status": {
-    "last_ok": "2026-03-19T16:01:02Z",
-    "last_error": null,
+    "last_ok": "2026-03-19T15:59:54Z",
+    "last_error": "On branch main\nYour branch is ahead of 'origin/main' by 1 commit.\n  (use \"git push\" to publish your local commits)\n\nChanges not staged for commit:\n  (use \"git add <file>...\" to update what will be committed)\n  (use \"git restore <file>...\" t",
     "min_push_interval_sec": 30
   },
   "settings": {
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 645,
+    "total": 646,
     "wins": 201,
     "losses": 116,
-    "active": 26,
+    "active": 27,
     "winrate": 63.4
   },
   "trade_stats": {
-    "open": 26,
+    "open": 27,
     "pending": 0,
     "wins": 203,
     "losses": 227,
@@ -612,6 +612,27 @@
       ],
       "news": "Bitcoin $20,000 put option is third most popular strike ahead of quarterly expiry",
       "created_at": "2026-03-19 15:09:29",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 684,
+      "symbol": "TSLAUSDT",
+      "direction": "LONG",
+      "entry": 382.57,
+      "tp1": 390.2214,
+      "tp2": 397.8728,
+      "sl": 374.9186,
+      "strength": 45,
+      "reasons": [
+        "RSI=36 (перепроданность)",
+        "MACD бычий (hist=0.00192)",
+        "BB ниже середины",
+        "Стакан: сильное давление покупки (+0.37)",
+        "OI растёт +26.7%",
+        "CVD положительный (+0.1%)"
+      ],
+      "news": null,
+      "created_at": "2026-03-19 16:01:48",
       "status": "ACTIVE"
     }
   ],
@@ -1680,6 +1701,30 @@
         "CVD положительный (-0.6%)",
         "⚠️ Funding через 52м",
         "⚡ Рыночный вход (MTF 2+ ТФ)"
+      ]
+    },
+    {
+      "id": 538,
+      "symbol": "TSLAUSDT",
+      "direction": "LONG",
+      "entry": 382.57,
+      "tp1": 390.2214,
+      "tp2": 397.8728,
+      "sl": 374.9186,
+      "entry_orig": 382.57,
+      "tp1_orig": 390.2214,
+      "tp2_orig": 397.8728,
+      "sl_orig": 374.9186,
+      "strength": 45,
+      "taken_at": "2026-03-19T16:01:49.082364",
+      "status": "OPEN",
+      "reasons": [
+        "RSI=36 (перепроданность)",
+        "MACD бычий (hist=0.00192)",
+        "BB ниже середины",
+        "Стакан: сильное давление покупки (+0.37)",
+        "OI растёт +26.7%",
+        "CVD положительный (+0.1%)"
       ]
     }
   ],
