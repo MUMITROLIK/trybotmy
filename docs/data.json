@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-19T17:11:00.349600+00:00",
+  "updated_at": "2026-03-19T17:11:15.857009+00:00",
   "publish_status": {
-    "last_ok": "2026-03-19T17:09:46Z",
+    "last_ok": "2026-03-19T17:11:07Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -12,17 +12,17 @@
   "stats": {
     "total": 660,
     "wins": 203,
-    "losses": 117,
-    "active": 29,
-    "winrate": 63.4
+    "losses": 118,
+    "active": 28,
+    "winrate": 63.2
   },
   "trade_stats": {
-    "open": 36,
+    "open": 35,
     "pending": 0,
     "wins": 206,
-    "losses": 229,
-    "total_pnl": 18.39,
-    "winrate": 47.4
+    "losses": 230,
+    "total_pnl": 16.15,
+    "winrate": 47.2
   },
   "fear_greed": {
     "value": 23,
@@ -348,29 +348,6 @@
       ],
       "news": null,
       "created_at": "2026-03-19 15:04:04",
-      "status": "ACTIVE"
-    },
-    {
-      "id": 677,
-      "symbol": "BARDUSDT",
-      "direction": "LONG",
-      "entry": 0.6003,
-      "tp1": 0.612306,
-      "tp2": 0.624312,
-      "sl": 0.588294,
-      "strength": 49,
-      "reasons": [
-        "RSI=35 (перепроданность)",
-        "MACD бычий (hist=0.00012)",
-        "BB нижняя зона (5%)",
-        "Стакан: давление покупки (+0.16)",
-        "OI растёт +1.2%",
-        "CVD растёт (+8.0%) — покупки усиливаются 📈",
-        "Hammer (1h) 🔨",
-        "⚠️ Funding через 54м"
-      ],
-      "news": null,
-      "created_at": "2026-03-19 15:07:22",
       "status": "ACTIVE"
     },
     {
@@ -826,6 +803,27 @@
       ]
     },
     {
+      "symbol": "BARDUSDT",
+      "direction": "LONG",
+      "entry": 0.6003,
+      "tp1": 0.612306,
+      "tp2": 0.624312,
+      "sl": 0.588294,
+      "strength": 49,
+      "status": "SL",
+      "created_at": "2026-03-19 15:07:22",
+      "reasons": [
+        "RSI=35 (перепроданность)",
+        "MACD бычий (hist=0.00012)",
+        "BB нижняя зона (5%)",
+        "Стакан: давление покупки (+0.16)",
+        "OI растёт +1.2%",
+        "CVD растёт (+8.0%) — покупки усиливаются 📈",
+        "Hammer (1h) 🔨",
+        "⚠️ Funding через 54м"
+      ]
+    },
+    {
       "symbol": "SIRENUSDT",
       "direction": "LONG",
       "entry": 0.78932,
@@ -1065,25 +1063,6 @@
         "CVD отрицательный (+1.0%)",
         "BTC корреляция 0.94, BTC -2.0% 📉",
         "BTC контекст: -2.6% за 12ч 📉"
-      ]
-    },
-    {
-      "symbol": "PUMPUSDT",
-      "direction": "LONG",
-      "entry": 0.001849,
-      "tp1": 0.001886,
-      "tp2": 0.001923,
-      "sl": 0.001812,
-      "strength": 46,
-      "status": "SL",
-      "created_at": "2026-03-19 13:11:05",
-      "reasons": [
-        "RSI=22 (сильная перепроданность)",
-        "BB нижняя полоса (пробой)",
-        "Объём x2.6 🔥🔥",
-        "Стакан: перевес bid (+0.09)",
-        "OI растёт +1.4%",
-        "CVD положительный (-3.0%)"
       ]
     }
   ],
@@ -1413,31 +1392,6 @@
       ]
     },
     {
-      "id": 516,
-      "symbol": "KITEUSDT",
-      "direction": "LONG",
-      "entry": 0.19203,
-      "tp1": 0.195871,
-      "tp2": 0.199711,
-      "sl": 0.188189,
-      "entry_orig": 0.19203,
-      "tp1_orig": 0.195871,
-      "tp2_orig": 0.199711,
-      "sl_orig": 0.188189,
-      "strength": 45,
-      "taken_at": "2026-03-19T13:57:27.573213",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00101)",
-        "EMA20 > EMA50 (golden cross) 🌟",
-        "Стакан: перевес bid (+0.06)",
-        "МТФ: 5m, 15m согласны",
-        "CVD растёт (+14.2%) — покупки усиливаются 📈",
-        "Bullish Engulfing (1h) 🕯️",
-        "⚡ Рыночный вход (MTF 2+ ТФ)"
-      ]
-    },
-    {
       "id": 518,
       "symbol": "PAXGUSDT",
       "direction": "LONG",
@@ -1616,32 +1570,6 @@
         "CVD положительный (+1.0%)",
         "Doji (1h) — нерешительность",
         "⚠️ Funding через 57м"
-      ]
-    },
-    {
-      "id": 531,
-      "symbol": "BARDUSDT",
-      "direction": "LONG",
-      "entry": 0.6003,
-      "tp1": 0.612306,
-      "tp2": 0.624312,
-      "sl": 0.588294,
-      "entry_orig": 0.6003,
-      "tp1_orig": 0.612306,
-      "tp2_orig": 0.624312,
-      "sl_orig": 0.588294,
-      "strength": 49,
-      "taken_at": "2026-03-19T15:07:23.151596",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=35 (перепроданность)",
-        "MACD бычий (hist=0.00012)",
-        "BB нижняя зона (5%)",
-        "Стакан: давление покупки (+0.16)",
-        "OI растёт +1.2%",
-        "CVD растёт (+8.0%) — покупки усиливаются 📈",
-        "Hammer (1h) 🔨",
-        "⚠️ Funding через 54м"
       ]
     },
     {
@@ -1990,9 +1918,48 @@
         "CVD падает (-11.4%) — продажи усиливаются 📉",
         "BTC корреляция 0.68, BTC -1.1% 📉"
       ]
+    },
+    {
+      "id": 516,
+      "symbol": "KITEUSDT",
+      "direction": "LONG",
+      "entry": 0.19203,
+      "tp1": 0.195871,
+      "tp2": 0.199711,
+      "sl": 0.19611,
+      "entry_orig": 0.19203,
+      "tp1_orig": 0.195871,
+      "tp2_orig": 0.199711,
+      "sl_orig": 0.188189,
+      "strength": 45,
+      "taken_at": "2026-03-19T13:57:27.573213",
+      "status": "TP1_HIT",
+      "reasons": [
+        "MACD бычий (hist=0.00101)",
+        "EMA20 > EMA50 (golden cross) 🌟",
+        "Стакан: перевес bid (+0.06)",
+        "МТФ: 5m, 15m согласны",
+        "CVD растёт (+14.2%) — покупки усиливаются 📈",
+        "Bullish Engulfing (1h) 🕯️",
+        "⚡ Рыночный вход (MTF 2+ ТФ)"
+      ]
     }
   ],
   "trades_history": [
+    {
+      "symbol": "BARDUSDT",
+      "direction": "LONG",
+      "entry": 0.6003,
+      "tp1": 0.612306,
+      "tp2": 0.624312,
+      "sl": 0.588294,
+      "strength": 49,
+      "status": "SL",
+      "pnl_pct": -2.24,
+      "close_price": 0.58685,
+      "taken_at": "2026-03-19T15:07:23.151596",
+      "closed_at": "2026-03-19 17:11:15"
+    },
     {
       "symbol": "VIRTUALUSDT",
       "direction": "LONG",
@@ -4778,20 +4745,6 @@
       "close_price": 0.28725,
       "taken_at": "2026-03-18T09:22:42.602349",
       "closed_at": "2026-03-18 10:09:54"
-    },
-    {
-      "symbol": "VANRYUSDT",
-      "direction": "LONG",
-      "entry": 0.00671581,
-      "tp1": 0.006951,
-      "tp2": 0.007186,
-      "sl": 0.006528,
-      "strength": 49,
-      "status": "SL",
-      "pnl_pct": -2.92,
-      "close_price": 0.00652,
-      "taken_at": "2026-03-18 09:33:47",
-      "closed_at": "2026-03-18 10:06:59"
     }
   ]
 }
