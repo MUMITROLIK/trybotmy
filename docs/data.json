@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-03-19T16:57:00.314690+00:00",
+  "updated_at": "2026-03-19T16:57:28.848810+00:00",
   "publish_status": {
-    "last_ok": "2026-03-19T16:56:36Z",
-    "last_error": null,
+    "last_ok": "2026-03-19T16:55:32Z",
+    "last_error": "On branch main\nYour branch is up to date with 'origin/main'.\n\nChanges not staged for commit:\n  (use \"git add <file>...\" to update what will be committed)\n  (use \"git restore <file>...\" to discard changes in working directory)\n\tmodified:   d",
     "min_push_interval_sec": 30
   },
   "settings": {
@@ -13,7 +13,7 @@
     "total": 656,
     "wins": 203,
     "losses": 117,
-    "active": 28,
+    "active": 27,
     "winrate": 63.4
   },
   "trade_stats": {
@@ -36,27 +36,6 @@
     "trained_at": "2026-03-19T14:10:12.840045+00:00"
   },
   "signals": [
-    {
-      "id": 641,
-      "symbol": "GALAUSDT",
-      "direction": "LONG",
-      "entry": 0.00333,
-      "tp1": 0.003397,
-      "tp2": 0.003463,
-      "sl": 0.003263,
-      "strength": 47,
-      "reasons": [
-        "RSI=25 (сильная перепроданность)",
-        "BB нижняя полоса (пробой)",
-        "Объём x2.4 🔥",
-        "Стакан: сильное давление покупки (+0.26)",
-        "OI растёт +1.7%",
-        "CVD положительный (+0.4%)"
-      ],
-      "news": null,
-      "created_at": "2026-03-19 12:57:19",
-      "status": "ACTIVE"
-    },
     {
       "id": 642,
       "symbol": "VIRTUALUSDT",
