@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-19T13:33:30.249849+00:00",
+  "updated_at": "2026-03-19T13:34:46.999668+00:00",
   "publish_status": {
-    "last_ok": "2026-03-19T13:32:44Z",
+    "last_ok": "2026-03-19T13:33:36Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 63.4
   },
   "trade_stats": {
-    "open": 28,
+    "open": 27,
     "pending": 0,
     "wins": 186,
-    "losses": 216,
-    "total_pnl": -2.03,
-    "winrate": 46.3
+    "losses": 217,
+    "total_pnl": -4.08,
+    "winrate": 46.2
   },
   "fear_greed": {
     "value": 23,
@@ -1457,31 +1457,6 @@
       ]
     },
     {
-      "id": 500,
-      "symbol": "VVVUSDT",
-      "direction": "SHORT",
-      "entry": 5.237,
-      "tp1": 5.13226,
-      "tp2": 5.02752,
-      "sl": 5.34174,
-      "entry_orig": 5.237,
-      "tp1_orig": 5.13226,
-      "tp2_orig": 5.02752,
-      "sl_orig": 5.34174,
-      "strength": 51,
-      "taken_at": "2026-03-19T13:07:31.339551",
-      "status": "OPEN",
-      "reasons": [
-        "MACD медвежий (hist=-0.01852)",
-        "Цена < EMA20 < EMA50",
-        "Объём x3.5 🔥🔥",
-        "Стакан: давление продажи (-0.11)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "CVD падает (-12.2%) — продажи усиливаются 📉",
-        "BTC контекст: -2.5% за 12ч 📉"
-      ]
-    },
-    {
       "id": 501,
       "symbol": "PUMPFUNUSDT",
       "direction": "SHORT",
@@ -1732,6 +1707,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "VVVUSDT",
+      "direction": "SHORT",
+      "entry": 5.237,
+      "tp1": 5.13226,
+      "tp2": 5.02752,
+      "sl": 5.34174,
+      "strength": 51,
+      "status": "SL",
+      "pnl_pct": -2.05,
+      "close_price": 5.3445,
+      "taken_at": "2026-03-19T13:07:31.339551",
+      "closed_at": "2026-03-19 13:33:58"
+    },
     {
       "symbol": "CRCLUSDT",
       "direction": "LONG",
@@ -4517,20 +4506,6 @@
       "close_price": 0.75263,
       "taken_at": "2026-03-18 00:50:35",
       "closed_at": "2026-03-18 01:09:42"
-    },
-    {
-      "symbol": "IRUSDT",
-      "direction": "LONG",
-      "entry": 0.0489722,
-      "tp1": 0.049952,
-      "tp2": 0.050931,
-      "sl": 0.05001,
-      "strength": 41,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 2.09,
-      "close_price": 0.049995,
-      "taken_at": "2026-03-17 21:19:57",
-      "closed_at": "2026-03-18 01:02:58"
     }
   ]
 }
