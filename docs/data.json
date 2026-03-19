@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-19T22:52:11.513386+00:00",
+  "updated_at": "2026-03-19T22:53:21.263266+00:00",
   "publish_status": {
-    "last_ok": "2026-03-19T22:51:13Z",
+    "last_ok": "2026-03-19T22:52:17Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 62.9
   },
   "trade_stats": {
-    "open": 15,
+    "open": 14,
     "pending": 0,
     "wins": 227,
-    "losses": 242,
-    "total_pnl": 25.46,
-    "winrate": 48.4
+    "losses": 243,
+    "total_pnl": 24.8,
+    "winrate": 48.3
   },
   "fear_greed": {
     "value": 23,
@@ -486,36 +486,6 @@
       ]
     },
     {
-      "id": 527,
-      "symbol": "XLMUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.16641,
-      "tp1": 0.169738,
-      "tp2": 0.173066,
-      "sl": 0.163082,
-      "entry_orig": 0.16641,
-      "tp1_orig": 0.169738,
-      "tp2_orig": 0.173066,
-      "sl_orig": 0.163082,
-      "strength": 50,
-      "taken_at": "2026-03-19T14:53:01.368188",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=44 (нейтральный↓)",
-        "MACD бычий (hist=0.00007)",
-        "BB ниже середины",
-        "Цена выше EMA20",
-        "Стакан: давление покупки (+0.18)",
-        "МТФ: 15m, 4h согласны",
-        "OI растёт +2.8%",
-        "CVD растёт (+5.5%) — покупки усиливаются 📈",
-        "Doji (1h) — нерешительность",
-        "⚠️ Funding через 68м",
-        "⚡ Рыночный вход (MTF 2+ ТФ)"
-      ]
-    },
-    {
       "id": 530,
       "symbol": "NEARUSDT",
       "direction": "LONG",
@@ -825,6 +795,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "XLMUSDT",
+      "direction": "LONG",
+      "entry": 0.16641,
+      "tp1": 0.169738,
+      "tp2": 0.173066,
+      "sl": 0.163082,
+      "strength": 50,
+      "status": "TIMEOUT",
+      "pnl_pct": -0.66,
+      "close_price": 0.165305,
+      "taken_at": "2026-03-19T14:53:01.368188",
+      "closed_at": "2026-03-19 22:53:08"
+    },
     {
       "symbol": "SAHARAUSDT",
       "direction": "LONG",
@@ -3610,20 +3594,6 @@
       "close_price": 24.613,
       "taken_at": "2026-03-18T11:48:08.571539",
       "closed_at": "2026-03-18 12:20:26"
-    },
-    {
-      "symbol": "OPNUSDT",
-      "direction": "SHORT",
-      "entry": 0.2887,
-      "tp1": 0.282926,
-      "tp2": 0.277152,
-      "sl": 0.294474,
-      "strength": 45,
-      "status": "SL",
-      "pnl_pct": -2.15,
-      "close_price": 0.2949,
-      "taken_at": "2026-03-18T11:40:13.008899",
-      "closed_at": "2026-03-18 12:15:33"
     }
   ]
 }
