@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-19T23:03:49.639797+00:00",
+  "updated_at": "2026-03-19T23:04:23.809410+00:00",
   "publish_status": {
-    "last_ok": "2026-03-19T23:03:23Z",
+    "last_ok": "2026-03-19T23:03:55Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 62.9
   },
   "trade_stats": {
-    "open": 14,
+    "open": 13,
     "pending": 0,
     "wins": 227,
-    "losses": 243,
-    "total_pnl": 24.8,
-    "winrate": 48.3
+    "losses": 244,
+    "total_pnl": 24.39,
+    "winrate": 48.2
   },
   "fear_greed": {
     "value": 23,
@@ -486,34 +486,6 @@
       ]
     },
     {
-      "id": 530,
-      "symbol": "NEARUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 1.337,
-      "tp1": 1.36374,
-      "tp2": 1.39048,
-      "sl": 1.31026,
-      "entry_orig": 1.337,
-      "tp1_orig": 1.36374,
-      "tp2_orig": 1.39048,
-      "sl_orig": 1.31026,
-      "strength": 45,
-      "taken_at": "2026-03-19T15:04:05.130919",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=36 (перепроданность)",
-        "MACD бычий (hist=0.00027)",
-        "BB ниже середины",
-        "Стакан: давление покупки (+0.15)",
-        "МТФ: только 1 таймфрейм согласен",
-        "OI растёт +2.3%",
-        "CVD положительный (+1.0%)",
-        "Doji (1h) — нерешительность",
-        "⚠️ Funding через 57м"
-      ]
-    },
-    {
       "id": 532,
       "symbol": "BTCUSDT",
       "direction": "LONG",
@@ -795,6 +767,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "NEARUSDT",
+      "direction": "LONG",
+      "entry": 1.337,
+      "tp1": 1.36374,
+      "tp2": 1.39048,
+      "sl": 1.31026,
+      "strength": 45,
+      "status": "TIMEOUT",
+      "pnl_pct": -0.41,
+      "close_price": 1.3315000000000001,
+      "taken_at": "2026-03-19T15:04:05.130919",
+      "closed_at": "2026-03-19 23:04:10"
+    },
     {
       "symbol": "XLMUSDT",
       "direction": "LONG",
@@ -3580,20 +3566,6 @@
       "close_price": 0.026834999999999998,
       "taken_at": "2026-03-18T11:11:29.236227",
       "closed_at": "2026-03-18 12:23:18"
-    },
-    {
-      "symbol": "RIVERUSDT",
-      "direction": "LONG",
-      "entry": 25.139,
-      "tp1": 25.694321,
-      "tp2": 26.249643,
-      "sl": 24.63622,
-      "strength": 40,
-      "status": "SL",
-      "pnl_pct": -2.09,
-      "close_price": 24.613,
-      "taken_at": "2026-03-18T11:48:08.571539",
-      "closed_at": "2026-03-18 12:20:26"
     }
   ]
 }
