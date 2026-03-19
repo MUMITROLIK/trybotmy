@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-19T06:36:29.336889+00:00",
+  "updated_at": "2026-03-19T06:37:59.304183+00:00",
   "publish_status": {
-    "last_ok": "2026-03-19T06:35:52Z",
+    "last_ok": "2026-03-19T06:36:35Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 66.1
   },
   "trade_stats": {
-    "open": 1,
+    "open": 0,
     "pending": 0,
-    "wins": 182,
+    "wins": 183,
     "losses": 204,
-    "total_pnl": 18.8,
-    "winrate": 47.2
+    "total_pnl": 19.97,
+    "winrate": 47.3
   },
   "fear_greed": {
     "value": 23,
@@ -442,37 +442,22 @@
       ]
     }
   ],
-  "trades_open": [
+  "trades_open": [],
+  "trades_history": [
     {
-      "id": 465,
       "symbol": "OPNUSDT",
       "direction": "SHORT",
       "entry": 0.2692,
       "tp1": 0.261271,
       "tp2": 0.253343,
       "sl": 0.275543,
-      "entry_orig": 0.2692,
-      "tp1_orig": 0.261271,
-      "tp2_orig": 0.253343,
-      "sl_orig": 0.275543,
       "strength": 51,
+      "status": "TIMEOUT",
+      "pnl_pct": 1.17,
+      "close_price": 0.26605,
       "taken_at": "2026-03-18T22:37:38.888791",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=63 (перекупленность)",
-        "BB верхняя полоса (пробой)",
-        "EMA20 < EMA50",
-        "Объём x2.0 🔥",
-        "Стакан: сильное давление продажи (-0.29)",
-        "МТФ: 15m, 1h, 4h согласны",
-        "OI растёт +2.0% + цена ↓",
-        "⚠️ Funding через 83м",
-        "BTC контекст: -2.6% за 12ч 📉",
-        "🤖 ML: вероятность 75%"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-19 06:37:43"
+    },
     {
       "symbol": "MNTUSDT",
       "direction": "SHORT",
@@ -3258,20 +3243,6 @@
       "close_price": 0.50725,
       "taken_at": "2026-03-17 20:43:48",
       "closed_at": "2026-03-17 23:21:40"
-    },
-    {
-      "symbol": "XANUSDT",
-      "direction": "LONG",
-      "entry": 0.0111789,
-      "tp1": 0.011604,
-      "tp2": 0.01203,
-      "sl": 0.010839,
-      "strength": 40,
-      "status": "LIMIT_TIMEOUT",
-      "pnl_pct": 0,
-      "close_price": null,
-      "taken_at": "2026-03-17T22:19:39.553549",
-      "closed_at": "2026-03-17 23:19:40"
     }
   ]
 }
