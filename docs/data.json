@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-19T21:03:31.986871+00:00",
+  "updated_at": "2026-03-19T21:04:15.958721+00:00",
   "publish_status": {
-    "last_ok": "2026-03-19T21:02:31Z",
+    "last_ok": "2026-03-19T21:03:38Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -12,17 +12,17 @@
   "stats": {
     "total": 673,
     "wins": 212,
-    "losses": 124,
-    "active": 7,
-    "winrate": 63.1
+    "losses": 125,
+    "active": 5,
+    "winrate": 62.9
   },
   "trade_stats": {
-    "open": 25,
+    "open": 24,
     "pending": 0,
     "wins": 221,
-    "losses": 238,
-    "total_pnl": 24.64,
-    "winrate": 48.1
+    "losses": 239,
+    "total_pnl": 22.63,
+    "winrate": 48.0
   },
   "fear_greed": {
     "value": 23,
@@ -36,28 +36,6 @@
     "trained_at": "2026-03-19T20:02:57.773386+00:00"
   },
   "signals": [
-    {
-      "id": 696,
-      "symbol": "FILUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.882,
-      "tp1": 0.89964,
-      "tp2": 0.91728,
-      "sl": 0.86436,
-      "strength": 46,
-      "reasons": [
-        "RSI=29 (сильная перепроданность)",
-        "MACD бычий (hist=0.00001)",
-        "BB нижняя зона (22%)",
-        "Стакан: давление покупки (+0.17)",
-        "МТФ: только 1 таймфрейм согласен",
-        "OI растёт +3.5%"
-      ],
-      "news": null,
-      "created_at": "2026-03-19 17:03:25",
-      "status": "ACTIVE"
-    },
     {
       "id": 697,
       "symbol": "LAUSDT",
@@ -168,17 +146,19 @@
       "news": null,
       "created_at": "2026-03-19 17:55:48",
       "status": "ACTIVE"
-    },
+    }
+  ],
+  "history": [
     {
-      "id": 711,
       "symbol": "HYPEUSDT",
       "direction": "LONG",
-      "exchange": "binance",
       "entry": 40.152,
       "tp1": 40.95504,
       "tp2": 41.75808,
       "sl": 39.34896,
       "strength": 46,
+      "status": "SL",
+      "created_at": "2026-03-19 19:07:00",
       "reasons": [
         "MACD бычий (hist=0.08901)",
         "Цена выше EMA20",
@@ -189,13 +169,8 @@
         "BTC корреляция 0.77, BTC +0.9% 📈",
         "⚡ Рыночный вход (MTF 2+ ТФ)",
         "🤖 ML: вероятность 63%"
-      ],
-      "news": null,
-      "created_at": "2026-03-19 19:07:00",
-      "status": "ACTIVE"
-    }
-  ],
-  "history": [
+      ]
+    },
     {
       "symbol": "ROBOUSDT",
       "direction": "LONG",
@@ -374,6 +349,25 @@
       ]
     },
     {
+      "symbol": "FILUSDT",
+      "direction": "LONG",
+      "entry": 0.882,
+      "tp1": 0.89964,
+      "tp2": 0.91728,
+      "sl": 0.86436,
+      "strength": 46,
+      "status": "EXPIRED",
+      "created_at": "2026-03-19 17:03:25",
+      "reasons": [
+        "RSI=29 (сильная перепроданность)",
+        "MACD бычий (hist=0.00001)",
+        "BB нижняя зона (22%)",
+        "Стакан: давление покупки (+0.17)",
+        "МТФ: только 1 таймфрейм согласен",
+        "OI растёт +3.5%"
+      ]
+    },
+    {
       "symbol": "VVVUSDT",
       "direction": "LONG",
       "entry": 5.198,
@@ -546,49 +540,6 @@
         "МТФ: все 4 таймфрейма согласны ✅✅",
         "OI растёт +3.9% + цена ↑",
         "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
-      "symbol": "DOGEUSDT",
-      "direction": "LONG",
-      "entry": 0.09277,
-      "tp1": 0.094625,
-      "tp2": 0.096481,
-      "sl": 0.090915,
-      "strength": 46,
-      "status": "EXPIRED",
-      "created_at": "2026-03-19 16:03:34",
-      "reasons": [
-        "RSI=44 (нейтральный↓)",
-        "MACD бычий (hist=0.00001)",
-        "BB ниже середины",
-        "Стакан: давление покупки (+0.14)",
-        "МТФ: 5m, 4h согласны",
-        "CVD положительный (-4.8%)",
-        "Hammer (1h) 🔨",
-        "⚡ Рыночный вход (MTF 2+ ТФ)"
-      ]
-    },
-    {
-      "symbol": "RENDERUSDT",
-      "direction": "LONG",
-      "entry": 1.642,
-      "tp1": 1.67484,
-      "tp2": 1.70768,
-      "sl": 1.60916,
-      "strength": 48,
-      "status": "TP1",
-      "created_at": "2026-03-19 16:02:33",
-      "reasons": [
-        "RSI=46 (нейтральный↓)",
-        "MACD бычий (hist=0.00237)",
-        "BB ниже середины",
-        "Стакан: давление покупки (+0.22)",
-        "МТФ: 5m, 4h согласны",
-        "OI растёт +1.9%",
-        "CVD положительный (+0.7%)",
-        "Hammer (1h) 🔨",
-        "⚡ Рыночный вход (MTF 2+ ТФ)"
       ]
     }
   ],
@@ -1220,37 +1171,23 @@
         "CVD положительный (-3.4%)",
         "⚡ Рыночный вход (MTF сильный)"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 565,
       "symbol": "HYPEUSDT",
       "direction": "LONG",
-      "exchange": "binance",
       "entry": 40.152,
       "tp1": 40.95504,
       "tp2": 41.75808,
       "sl": 39.34896,
-      "entry_orig": 40.152,
-      "tp1_orig": 40.95504,
-      "tp2_orig": 41.75808,
-      "sl_orig": 39.34896,
       "strength": 46,
+      "status": "SL",
+      "pnl_pct": -2.01,
+      "close_price": 39.3465,
       "taken_at": "2026-03-19T19:07:00.446225",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.08901)",
-        "Цена выше EMA20",
-        "Стакан: сильное давление покупки (+0.45)",
-        "МТФ: 5m, 4h согласны",
-        "CVD положительный (+4.3%)",
-        "Bullish Engulfing (1h) 🕯️",
-        "BTC корреляция 0.77, BTC +0.9% 📈",
-        "⚡ Рыночный вход (MTF 2+ ТФ)",
-        "🤖 ML: вероятность 63%"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-19 21:04:15"
+    },
     {
       "symbol": "ARIAUSDT",
       "direction": "LONG",
@@ -4036,20 +3973,6 @@
       "close_price": 25.1785,
       "taken_at": "2026-03-18T10:31:52.715733",
       "closed_at": "2026-03-18 11:45:38"
-    },
-    {
-      "symbol": "HYPERUSDT",
-      "direction": "LONG",
-      "entry": 0.0976,
-      "tp1": 0.099552,
-      "tp2": 0.101504,
-      "sl": 0.095648,
-      "strength": 43,
-      "status": "SL",
-      "pnl_pct": -2.2,
-      "close_price": 0.09545000000000001,
-      "taken_at": "2026-03-18T11:08:18.828488",
-      "closed_at": "2026-03-18 11:40:42"
     }
   ]
 }
