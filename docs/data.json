@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-19T14:15:04.453536+00:00",
+  "updated_at": "2026-03-19T14:16:10.749431+00:00",
   "publish_status": {
-    "last_ok": "2026-03-19T14:13:38Z",
+    "last_ok": "2026-03-19T14:15:10Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,19 +10,19 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 626,
+    "total": 627,
     "wins": 188,
     "losses": 108,
-    "active": 28,
+    "active": 29,
     "winrate": 63.5
   },
   "trade_stats": {
     "open": 29,
     "pending": 0,
-    "wins": 189,
+    "wins": 190,
     "losses": 219,
-    "total_pnl": -2.31,
-    "winrate": 46.3
+    "total_pnl": -0.15,
+    "winrate": 46.5
   },
   "fear_greed": {
     "value": 23,
@@ -647,6 +647,28 @@
       ],
       "news": null,
       "created_at": "2026-03-19 14:09:53",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 665,
+      "symbol": "UAIUSDT",
+      "direction": "LONG",
+      "entry": 0.44569,
+      "tp1": 0.455802,
+      "tp2": 0.465914,
+      "sl": 0.436776,
+      "strength": 58,
+      "reasons": [
+        "MACD бычий (hist=0.00280)",
+        "Цена > EMA20 > EMA50",
+        "Объём x8.1 🔥🔥🔥",
+        "Стакан: давление покупки (+0.13)",
+        "МТФ: 5m, 15m, 1h согласны",
+        "OI растёт +7.5% + цена ↑",
+        "⚡ Рыночный вход (MTF сильный)"
+      ],
+      "news": null,
+      "created_at": "2026-03-19 14:15:27",
       "status": "ACTIVE"
     }
   ],
@@ -1746,32 +1768,46 @@
       ]
     },
     {
-      "id": 517,
+      "id": 519,
+      "symbol": "UAIUSDT",
+      "direction": "LONG",
+      "entry": 0.44569,
+      "tp1": 0.455802,
+      "tp2": 0.465914,
+      "sl": 0.436776,
+      "entry_orig": 0.44569,
+      "tp1_orig": 0.455802,
+      "tp2_orig": 0.465914,
+      "sl_orig": 0.436776,
+      "strength": 58,
+      "taken_at": "2026-03-19T14:15:28.049205",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.00280)",
+        "Цена > EMA20 > EMA50",
+        "Объём x8.1 🔥🔥🔥",
+        "Стакан: давление покупки (+0.13)",
+        "МТФ: 5m, 15m, 1h согласны",
+        "OI растёт +7.5% + цена ↑",
+        "⚡ Рыночный вход (MTF сильный)"
+      ]
+    }
+  ],
+  "trades_history": [
+    {
       "symbol": "UAIUSDT",
       "direction": "LONG",
       "entry": 0.4346,
       "tp1": 0.444098,
       "tp2": 0.453596,
       "sl": 0.444964,
-      "entry_orig": 0.4346,
-      "tp1_orig": 0.444098,
-      "tp2_orig": 0.453596,
-      "sl_orig": 0.425908,
       "strength": 58,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 2.16,
+      "close_price": 0.444,
       "taken_at": "2026-03-19T14:08:07.171357",
-      "status": "TP1_HIT",
-      "reasons": [
-        "MACD бычий (hist=0.00210)",
-        "Цена > EMA20 > EMA50",
-        "Объём x6.5 🔥🔥🔥",
-        "Стакан: давление покупки (+0.10)",
-        "МТФ: 5m, 15m, 1h согласны",
-        "OI растёт +5.2% + цена ↑",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-19 14:15:24"
+    },
     {
       "symbol": "XPTUSDT",
       "direction": "LONG",
@@ -4557,20 +4593,6 @@
       "close_price": 0.0021384999999999998,
       "taken_at": "2026-03-17 22:32:48",
       "closed_at": "2026-03-18 02:45:36"
-    },
-    {
-      "symbol": "LITUSDT",
-      "direction": "LONG",
-      "entry": 1.279,
-      "tp1": 1.307286,
-      "tp2": 1.335571,
-      "sl": 1.25342,
-      "strength": 40,
-      "status": "SL",
-      "pnl_pct": -2.07,
-      "close_price": 1.2525,
-      "taken_at": "2026-03-17T23:13:36.519729",
-      "closed_at": "2026-03-18 02:40:13"
     }
   ]
 }
