@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-19T15:09:22.065678+00:00",
+  "updated_at": "2026-03-19T15:09:31.060990+00:00",
   "publish_status": {
-    "last_ok": "2026-03-19T15:08:02Z",
+    "last_ok": "2026-03-19T15:08:53Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 639,
+    "total": 640,
     "wins": 191,
     "losses": 113,
-    "active": 33,
+    "active": 34,
     "winrate": 62.8
   },
   "trade_stats": {
-    "open": 33,
+    "open": 34,
     "pending": 0,
     "wins": 193,
     "losses": 224,
@@ -763,6 +763,30 @@
       ],
       "news": null,
       "created_at": "2026-03-19 15:07:22",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 678,
+      "symbol": "BTCUSDT",
+      "direction": "LONG",
+      "entry": 69667.3,
+      "tp1": 71060.646,
+      "tp2": 72453.992,
+      "sl": 68273.954,
+      "strength": 46,
+      "reasons": [
+        "RSI=45 (нейтральный↓)",
+        "MACD бычий (hist=20.12925)",
+        "BB ниже середины",
+        "Стакан: сильное давление покупки (+0.79)",
+        "📰 Bitcoin $20,000 put option is third most popular strike ahead of ...",
+        "МТФ: 5m, 4h согласны",
+        "CVD положительный (-0.6%)",
+        "⚠️ Funding через 52м",
+        "⚡ Рыночный вход (MTF 2+ ТФ)"
+      ],
+      "news": "Bitcoin $20,000 put option is third most popular strike ahead of quarterly expiry",
+      "created_at": "2026-03-19 15:09:29",
       "status": "ACTIVE"
     }
   ],
@@ -1997,6 +2021,33 @@
         "CVD растёт (+8.0%) — покупки усиливаются 📈",
         "Hammer (1h) 🔨",
         "⚠️ Funding через 54м"
+      ]
+    },
+    {
+      "id": 532,
+      "symbol": "BTCUSDT",
+      "direction": "LONG",
+      "entry": 69667.3,
+      "tp1": 71060.646,
+      "tp2": 72453.992,
+      "sl": 68273.954,
+      "entry_orig": 69667.3,
+      "tp1_orig": 71060.646,
+      "tp2_orig": 72453.992,
+      "sl_orig": 68273.954,
+      "strength": 46,
+      "taken_at": "2026-03-19T15:09:29.616921",
+      "status": "OPEN",
+      "reasons": [
+        "RSI=45 (нейтральный↓)",
+        "MACD бычий (hist=20.12925)",
+        "BB ниже середины",
+        "Стакан: сильное давление покупки (+0.79)",
+        "📰 Bitcoin $20,000 put option is third most popular strike ahead of ...",
+        "МТФ: 5m, 4h согласны",
+        "CVD положительный (-0.6%)",
+        "⚠️ Funding через 52м",
+        "⚡ Рыночный вход (MTF 2+ ТФ)"
       ]
     }
   ],
