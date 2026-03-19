@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-19T21:43:43.837452+00:00",
+  "updated_at": "2026-03-19T21:44:49.942393+00:00",
   "publish_status": {
-    "last_ok": "2026-03-19T21:42:28Z",
+    "last_ok": "2026-03-19T21:43:49Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 62.9
   },
   "trade_stats": {
-    "open": 22,
+    "open": 21,
     "pending": 0,
-    "wins": 223,
+    "wins": 224,
     "losses": 239,
-    "total_pnl": 25.35,
-    "winrate": 48.3
+    "total_pnl": 26.09,
+    "winrate": 48.4
   },
   "fear_greed": {
     "value": 23,
@@ -507,33 +507,6 @@
         "OI растёт +0.6% + цена ↓",
         "BTC корреляция 0.81, BTC -1.6% 📉",
         "BTC контекст: -2.5% за 12ч 📉"
-      ]
-    },
-    {
-      "id": 513,
-      "symbol": "SOLUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 88.36,
-      "tp1": 90.1272,
-      "tp2": 91.8944,
-      "sl": 86.5928,
-      "entry_orig": 88.36,
-      "tp1_orig": 90.1272,
-      "tp2_orig": 91.8944,
-      "sl_orig": 86.5928,
-      "strength": 46,
-      "taken_at": "2026-03-19T13:43:47.691008",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=26 (сильная перепроданность)",
-        "BB нижняя зона (19%)",
-        "Объём x2.0 🔥",
-        "Стакан: давление покупки (+0.21)",
-        "📰 Crypto Market Regains Its Nerve as ETF Inflows Top $1B, Report Sh...",
-        "МТФ: только 1 таймфрейм согласен",
-        "OI падает (шорты закрываются)",
-        "CVD положительный (+3.1%)"
       ]
     },
     {
@@ -1031,6 +1004,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "SOLUSDT",
+      "direction": "LONG",
+      "entry": 88.36,
+      "tp1": 90.1272,
+      "tp2": 91.8944,
+      "sl": 86.5928,
+      "strength": 46,
+      "status": "TIMEOUT",
+      "pnl_pct": 0.74,
+      "close_price": 89.015,
+      "taken_at": "2026-03-19T13:43:47.691008",
+      "closed_at": "2026-03-19 21:43:49"
+    },
     {
       "symbol": "ETHUSDT",
       "direction": "LONG",
@@ -3816,20 +3803,6 @@
       "close_price": 0.10565,
       "taken_at": "2026-03-18T11:41:45.736976",
       "closed_at": "2026-03-18 11:52:48"
-    },
-    {
-      "symbol": "TRUMPUSDT",
-      "direction": "SHORT",
-      "entry": 3.6695,
-      "tp1": 3.59610997,
-      "tp2": 3.52271972,
-      "sl": 3.5925000000000002,
-      "strength": 45,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 1.83,
-      "close_price": 3.6025,
-      "taken_at": "2026-03-18T09:02:21.008230",
-      "closed_at": "2026-03-18 11:51:12"
     }
   ]
 }
