@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-03-19T16:30:10.932539+00:00",
+  "updated_at": "2026-03-19T16:30:59.978682+00:00",
   "publish_status": {
-    "last_ok": "2026-03-19T16:28:06Z",
-    "last_error": "On branch main\nYour branch is ahead of 'origin/main' by 1 commit.\n  (use \"git push\" to publish your local commits)\n\nChanges not staged for commit:\n  (use \"git add <file>...\" to update what will be committed)\n  (use \"git restore <file>...\" t",
+    "last_ok": "2026-03-19T16:29:55Z",
+    "last_error": null,
     "min_push_interval_sec": 30
   },
   "settings": {
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 654,
+    "total": 655,
     "wins": 203,
     "losses": 116,
-    "active": 31,
+    "active": 32,
     "winrate": 63.6
   },
   "trade_stats": {
-    "open": 33,
+    "open": 34,
     "pending": 0,
     "wins": 205,
     "losses": 227,
@@ -720,6 +720,29 @@
       ],
       "news": null,
       "created_at": "2026-03-19 16:12:19",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 693,
+      "symbol": "ENJUSDT",
+      "direction": "LONG",
+      "entry": 0.02359,
+      "tp1": 0.024297,
+      "tp2": 0.025004,
+      "sl": 0.023024,
+      "strength": 45,
+      "reasons": [
+        "MACD бычий (hist=0.00016)",
+        "Цена выше EMA20",
+        "Объём x3.3 🔥🔥",
+        "МТФ: 5m, 1h, 4h согласны",
+        "OI падает (шорты закрываются)",
+        "CVD положительный (+1.8%)",
+        "Doji (1h) — нерешительность",
+        "⚡ Рыночный вход (MTF сильный)"
+      ],
+      "news": null,
+      "created_at": "2026-03-19 16:30:32",
       "status": "ACTIVE"
     }
   ],
@@ -1961,6 +1984,32 @@
         "Стакан: сильное давление покупки (+0.26)",
         "МТФ: 5m, 4h согласны",
         "⚡ Рыночный вход (MTF 2+ ТФ)"
+      ]
+    },
+    {
+      "id": 547,
+      "symbol": "ENJUSDT",
+      "direction": "LONG",
+      "entry": 0.02359,
+      "tp1": 0.024297,
+      "tp2": 0.025004,
+      "sl": 0.023024,
+      "entry_orig": 0.02359,
+      "tp1_orig": 0.024297,
+      "tp2_orig": 0.025004,
+      "sl_orig": 0.023024,
+      "strength": 45,
+      "taken_at": "2026-03-19T16:30:32.627541",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.00016)",
+        "Цена выше EMA20",
+        "Объём x3.3 🔥🔥",
+        "МТФ: 5m, 1h, 4h согласны",
+        "OI падает (шорты закрываются)",
+        "CVD положительный (+1.8%)",
+        "Doji (1h) — нерешительность",
+        "⚡ Рыночный вход (MTF сильный)"
       ]
     }
   ],
