@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-19T17:40:27.501240+00:00",
+  "updated_at": "2026-03-19T17:41:38.079883+00:00",
   "publish_status": {
-    "last_ok": "2026-03-19T17:39:27Z",
+    "last_ok": "2026-03-19T17:40:41Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 665,
+    "total": 666,
     "wins": 205,
     "losses": 119,
-    "active": 26,
+    "active": 27,
     "winrate": 63.3
   },
   "trade_stats": {
-    "open": 35,
+    "open": 36,
     "pending": 0,
     "wins": 210,
     "losses": 231,
@@ -607,6 +607,28 @@
       ],
       "news": null,
       "created_at": "2026-03-19 17:31:56",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 704,
+      "symbol": "SIGNUSDT",
+      "direction": "LONG",
+      "entry": 0.04453,
+      "tp1": 0.045421,
+      "tp2": 0.046311,
+      "sl": 0.043639,
+      "strength": 47,
+      "reasons": [
+        "MACD бычий (hist=0.00000)",
+        "Цена > EMA20 > EMA50",
+        "Стакан: давление покупки (+0.11)",
+        "МТФ: 5m, 15m, 1h согласны",
+        "CVD положительный (+2.6%)",
+        "Bullish Engulfing (1h) 🕯️",
+        "⚡ Рыночный вход (MTF сильный)"
+      ],
+      "news": null,
+      "created_at": "2026-03-19 17:41:33",
       "status": "ACTIVE"
     }
   ],
@@ -1894,6 +1916,31 @@
         "OI растёт +3.0% + цена ↑",
         "CVD растёт (+6.5%) — покупки усиливаются 📈",
         "⚡ Рыночный вход (MTF 2+ ТФ)"
+      ]
+    },
+    {
+      "id": 558,
+      "symbol": "SIGNUSDT",
+      "direction": "LONG",
+      "entry": 0.04453,
+      "tp1": 0.045421,
+      "tp2": 0.046311,
+      "sl": 0.043639,
+      "entry_orig": 0.04453,
+      "tp1_orig": 0.045421,
+      "tp2_orig": 0.046311,
+      "sl_orig": 0.043639,
+      "strength": 47,
+      "taken_at": "2026-03-19T17:41:34.354131",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.00000)",
+        "Цена > EMA20 > EMA50",
+        "Стакан: давление покупки (+0.11)",
+        "МТФ: 5m, 15m, 1h согласны",
+        "CVD положительный (+2.6%)",
+        "Bullish Engulfing (1h) 🕯️",
+        "⚡ Рыночный вход (MTF сильный)"
       ]
     }
   ],
