@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-19T22:09:11.981428+00:00",
+  "updated_at": "2026-03-19T22:10:43.230346+00:00",
   "publish_status": {
-    "last_ok": "2026-03-19T22:08:39Z",
+    "last_ok": "2026-03-19T22:09:17Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 62.9
   },
   "trade_stats": {
-    "open": 21,
+    "open": 20,
     "pending": 0,
-    "wins": 224,
+    "wins": 225,
     "losses": 239,
-    "total_pnl": 26.09,
-    "winrate": 48.4
+    "total_pnl": 27.22,
+    "winrate": 48.5
   },
   "fear_greed": {
     "value": 23,
@@ -483,32 +483,6 @@
         "OI растёт +0.6% + цена ↓",
         "BTC корреляция 0.81, BTC -1.6% 📉",
         "BTC контекст: -2.5% за 12ч 📉"
-      ]
-    },
-    {
-      "id": 518,
-      "symbol": "PAXGUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 4619.64,
-      "tp1": 4712.0328,
-      "tp2": 4804.4256,
-      "sl": 4527.2472,
-      "entry_orig": 4619.64,
-      "tp1_orig": 4712.0328,
-      "tp2_orig": 4804.4256,
-      "sl_orig": 4527.2472,
-      "strength": 45,
-      "taken_at": "2026-03-19T14:09:54.317851",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=40 (перепроданность)",
-        "MACD бычий (hist=2.60057)",
-        "BB ниже середины",
-        "Стакан: сильное давление покупки (+0.58)",
-        "OI падает (шорты закрываются)",
-        "CVD положительный (+0.9%)",
-        "Doji (1h) — нерешительность"
       ]
     },
     {
@@ -980,6 +954,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "PAXGUSDT",
+      "direction": "LONG",
+      "entry": 4619.64,
+      "tp1": 4712.0328,
+      "tp2": 4804.4256,
+      "sl": 4527.2472,
+      "strength": 45,
+      "status": "TIMEOUT",
+      "pnl_pct": 1.13,
+      "close_price": 4671.995,
+      "taken_at": "2026-03-19T14:09:54.317851",
+      "closed_at": "2026-03-19 22:09:58"
+    },
     {
       "symbol": "SOLUSDT",
       "direction": "LONG",
@@ -3765,20 +3753,6 @@
       "close_price": 0.00436,
       "taken_at": "2026-03-18T11:31:21.151545",
       "closed_at": "2026-03-18 11:57:52"
-    },
-    {
-      "symbol": "POWERUSDT",
-      "direction": "LONG",
-      "entry": 0.10786,
-      "tp1": 0.110017,
-      "tp2": 0.112174,
-      "sl": 0.105703,
-      "strength": 40,
-      "status": "SL",
-      "pnl_pct": -2.05,
-      "close_price": 0.10565,
-      "taken_at": "2026-03-18T11:41:45.736976",
-      "closed_at": "2026-03-18 11:52:48"
     }
   ]
 }
