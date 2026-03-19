@@ -161,13 +161,13 @@ main{position:relative;z-index:1;max-width:1920px;margin:0 auto;padding:1rem 1.2
 .act-time{font-family:var(--mono);font-size:.58rem;color:var(--text3)}
 
 /* ── CONTENT PANEL ── */
-.content-panel{background:var(--panel);border:1px solid var(--line);border-radius:8px;overflow:hidden;display:flex;flex-direction:column}
+.content-panel{background:var(--panel);border:1px solid var(--line);border-radius:8px;overflow:visible;display:flex;flex-direction:column}
 .tabs{display:flex;border-bottom:1px solid var(--line);background:var(--deep);flex-shrink:0}
 .tab{display:flex;align-items:center;gap:.5rem;padding:.75rem 1.25rem;font-family:var(--disp);font-size:.7rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;border:none;cursor:pointer;background:transparent;color:var(--text3);border-bottom:2px solid transparent;margin-bottom:-1px;transition:color .2s}
 .tab:hover{color:var(--text)}.tab.active{color:var(--B);border-bottom-color:var(--B)}
 .tab-n{font-family:var(--mono);font-size:.6rem;background:var(--elevated);border:1px solid var(--line);padding:.1rem .4rem;border-radius:3px;min-width:20px;text-align:center}
 .tab.active .tab-n{background:rgba(0,207,255,.1);border-color:rgba(0,207,255,.25);color:var(--B)}
-.tab-body{padding:.875rem;flex:1;overflow-y:auto;max-height:calc(100vh - 280px);min-height:300px}
+.tab-body{padding:.875rem;flex:1;overflow-y:auto;max-height:calc(100vh - 220px);min-height:300px;scroll-padding-top:1rem}
 .tab-pane{display:none}.tab-pane.active{display:block}
 .tab-pane.grid-pane.active{display:grid;grid-template-columns:repeat(3,1fr);gap:.75rem}
 
