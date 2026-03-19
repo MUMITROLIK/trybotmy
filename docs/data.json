@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-19T22:23:45.056232+00:00",
+  "updated_at": "2026-03-19T22:24:50.793538+00:00",
   "publish_status": {
-    "last_ok": "2026-03-19T22:22:22Z",
+    "last_ok": "2026-03-19T22:23:50Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 62.9
   },
   "trade_stats": {
-    "open": 20,
+    "open": 19,
     "pending": 0,
     "wins": 225,
-    "losses": 239,
-    "total_pnl": 27.22,
-    "winrate": 48.5
+    "losses": 240,
+    "total_pnl": 26.55,
+    "winrate": 48.4
   },
   "fear_greed": {
     "value": 23,
@@ -486,32 +486,6 @@
       ]
     },
     {
-      "id": 521,
-      "symbol": "APTUSDT",
-      "direction": "SHORT",
-      "exchange": "binance",
-      "entry": 0.9348,
-      "tp1": 0.916104,
-      "tp2": 0.897408,
-      "sl": 0.953496,
-      "entry_orig": 0.9348,
-      "tp1_orig": 0.916104,
-      "tp2_orig": 0.897408,
-      "sl_orig": 0.953496,
-      "strength": 47,
-      "taken_at": "2026-03-19T14:24:18.109371",
-      "status": "OPEN",
-      "reasons": [
-        "MACD медвежий (hist=-0.00223)",
-        "Цена < EMA20 < EMA50",
-        "Объём x2.5 🔥🔥",
-        "Стакан: давление продажи (-0.14)",
-        "МТФ: 5m, 15m, 1h согласны",
-        "CVD падает (-16.5%) — продажи усиливаются 📉",
-        "BTC контекст: -2.5% за 12ч 📉"
-      ]
-    },
-    {
       "id": 522,
       "symbol": "HBARUSDT",
       "direction": "LONG",
@@ -954,6 +928,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "APTUSDT",
+      "direction": "SHORT",
+      "entry": 0.9348,
+      "tp1": 0.916104,
+      "tp2": 0.897408,
+      "sl": 0.953496,
+      "strength": 47,
+      "status": "TIMEOUT",
+      "pnl_pct": -0.67,
+      "close_price": 0.9410499999999999,
+      "taken_at": "2026-03-19T14:24:18.109371",
+      "closed_at": "2026-03-19 22:24:22"
+    },
     {
       "symbol": "PAXGUSDT",
       "direction": "LONG",
@@ -3739,20 +3727,6 @@
       "close_price": 0.0084525,
       "taken_at": "2026-03-18T11:38:24.365155",
       "closed_at": "2026-03-18 12:00:43"
-    },
-    {
-      "symbol": "ZILUSDT",
-      "direction": "LONG",
-      "entry": 0.004458,
-      "tp1": 0.004547,
-      "tp2": 0.004636,
-      "sl": 0.004369,
-      "strength": 42,
-      "status": "SL",
-      "pnl_pct": -2.2,
-      "close_price": 0.00436,
-      "taken_at": "2026-03-18T11:31:21.151545",
-      "closed_at": "2026-03-18 11:57:52"
     }
   ]
 }
