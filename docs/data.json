@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-19T06:28:07.323878+00:00",
+  "updated_at": "2026-03-19T06:28:58.052031+00:00",
   "publish_status": {
-    "last_ok": "2026-03-19T06:27:07Z",
+    "last_ok": "2026-03-19T06:28:16Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 66.1
   },
   "trade_stats": {
-    "open": 2,
+    "open": 1,
     "pending": 0,
-    "wins": 181,
+    "wins": 182,
     "losses": 204,
     "total_pnl": 18.8,
-    "winrate": 47.0
+    "winrate": 47.2
   },
   "fear_greed": {
     "value": 23,
@@ -444,30 +444,6 @@
   ],
   "trades_open": [
     {
-      "id": 421,
-      "symbol": "MNTUSDT",
-      "direction": "SHORT",
-      "entry": 0.763,
-      "tp1": 0.740639,
-      "tp2": 0.718279,
-      "sl": 0.780889,
-      "entry_orig": 0.763,
-      "tp1_orig": 0.740639,
-      "tp2_orig": 0.718279,
-      "sl_orig": 0.780889,
-      "strength": 35,
-      "taken_at": "2026-03-18T16:25:13.251200",
-      "status": "OPEN",
-      "reasons": [
-        "MACD медвежий (hist=-0.00397)",
-        "Цена < EMA20 < EMA50",
-        "Объём x2.3 🔥",
-        "МТФ: 5m, 15m, 1h согласны",
-        "OI растёт +2.7% + цена ↓",
-        "BTC контекст: -3.6% за 12ч 📉"
-      ]
-    },
-    {
       "id": 465,
       "symbol": "OPNUSDT",
       "direction": "SHORT",
@@ -497,6 +473,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "MNTUSDT",
+      "direction": "SHORT",
+      "entry": 0.763,
+      "tp1": 0.740639,
+      "tp2": 0.718279,
+      "sl": 0.780889,
+      "strength": 35,
+      "status": "MANUAL",
+      "pnl_pct": 0,
+      "close_price": 0.763,
+      "taken_at": "2026-03-18T16:25:13.251200",
+      "closed_at": "2026-03-19 06:28:57"
+    },
     {
       "symbol": "HANAUSDT",
       "direction": "LONG",
@@ -3282,20 +3272,6 @@
       "close_price": null,
       "taken_at": "2026-03-17T22:19:39.553549",
       "closed_at": "2026-03-17 23:19:40"
-    },
-    {
-      "symbol": "FETUSDT",
-      "direction": "LONG",
-      "entry": 0.23630612,
-      "tp1": 0.241032,
-      "tp2": 0.245758,
-      "sl": 0.23158,
-      "strength": 41,
-      "status": "LIMIT_TIMEOUT",
-      "pnl_pct": 0,
-      "close_price": null,
-      "taken_at": "2026-03-17T22:11:21.384906",
-      "closed_at": "2026-03-17 23:11:28"
     }
   ]
 }
