@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-19T17:32:45.699140+00:00",
+  "updated_at": "2026-03-19T17:33:19.638039+00:00",
   "publish_status": {
-    "last_ok": "2026-03-19T17:32:20Z",
+    "last_ok": "2026-03-19T17:32:55Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 63.3
   },
   "trade_stats": {
-    "open": 37,
+    "open": 35,
     "pending": 0,
-    "wins": 208,
+    "wins": 210,
     "losses": 231,
-    "total_pnl": 16.78,
-    "winrate": 47.4
+    "total_pnl": 20.64,
+    "winrate": 47.6
   },
   "fear_greed": {
     "value": 23,
@@ -1895,58 +1895,37 @@
         "CVD растёт (+6.5%) — покупки усиливаются 📈",
         "⚡ Рыночный вход (MTF 2+ ТФ)"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 508,
-      "symbol": "REZUSDT",
-      "direction": "LONG",
-      "entry": 0.003415,
-      "tp1": 0.003483,
-      "tp2": 0.003552,
-      "sl": 0.003483,
-      "entry_orig": 0.003415,
-      "tp1_orig": 0.003483,
-      "tp2_orig": 0.003552,
-      "sl_orig": 0.003347,
-      "strength": 49,
-      "taken_at": "2026-03-19T13:14:30.363468",
-      "status": "TP1_HIT",
-      "reasons": [
-        "RSI=21 (сильная перепроданность)",
-        "BB нижняя полоса (пробой)",
-        "Объём x2.6 🔥🔥",
-        "Стакан: сильное давление покупки (+0.26)",
-        "МТФ: только 1 таймфрейм согласен"
-      ]
-    },
-    {
-      "id": 515,
       "symbol": "HYPEUSDT",
       "direction": "LONG",
       "entry": 39.09,
       "tp1": 39.8718,
       "tp2": 40.6536,
       "sl": 39.8915,
-      "entry_orig": 39.09,
-      "tp1_orig": 39.8718,
-      "tp2_orig": 40.6536,
-      "sl_orig": 38.3082,
       "strength": 49,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 1.93,
+      "close_price": 39.8455,
       "taken_at": "2026-03-19T13:47:11.096597",
-      "status": "TP1_HIT",
-      "reasons": [
-        "RSI=35 (перепроданность)",
-        "MACD бычий (hist=0.00968)",
-        "BB ниже середины",
-        "Стакан: сильное давление покупки (+0.37)",
-        "📰 S&P 500 Launches on Hyperliquid via First Officially Licensed Per...",
-        "МТФ: только 1 таймфрейм согласен",
-        "OI падает (шорты закрываются)",
-        "CVD положительный (-5.6%)"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-19 17:33:19"
+    },
+    {
+      "symbol": "REZUSDT",
+      "direction": "LONG",
+      "entry": 0.003415,
+      "tp1": 0.003483,
+      "tp2": 0.003552,
+      "sl": 0.003483,
+      "strength": 49,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 1.93,
+      "close_price": 0.003481,
+      "taken_at": "2026-03-19T13:14:30.363468",
+      "closed_at": "2026-03-19 17:32:57"
+    },
     {
       "symbol": "POWERUSDT",
       "direction": "SHORT",
@@ -4718,34 +4697,6 @@
       "close_price": 0.0054870000000000006,
       "taken_at": "2026-03-18T09:59:57.164798",
       "closed_at": "2026-03-18 10:39:12"
-    },
-    {
-      "symbol": "XPLUSDT",
-      "direction": "LONG",
-      "entry": 0.11888192,
-      "tp1": 0.12126,
-      "tp2": 0.123637,
-      "sl": 0.116504,
-      "strength": 41,
-      "status": "SL",
-      "pnl_pct": -2.05,
-      "close_price": 0.11645,
-      "taken_at": "2026-03-18 08:31:50",
-      "closed_at": "2026-03-18 10:37:58"
-    },
-    {
-      "symbol": "ZROUSDT",
-      "direction": "LONG",
-      "entry": 2.3139,
-      "tp1": 2.360178,
-      "tp2": 2.406456,
-      "sl": 2.267622,
-      "strength": 43,
-      "status": "SL",
-      "pnl_pct": -2.1,
-      "close_price": 2.2653999999999996,
-      "taken_at": "2026-03-18T07:08:39.877360",
-      "closed_at": "2026-03-18 10:36:03"
     }
   ]
 }
