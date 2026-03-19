@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-19T16:58:41.286606+00:00",
+  "updated_at": "2026-03-19T16:59:16.173396+00:00",
   "publish_status": {
-    "last_ok": "2026-03-19T16:57:36Z",
+    "last_ok": "2026-03-19T16:58:48Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -13,7 +13,7 @@
     "total": 656,
     "wins": 203,
     "losses": 117,
-    "active": 27,
+    "active": 26,
     "winrate": 63.4
   },
   "trade_stats": {
@@ -36,27 +36,6 @@
     "trained_at": "2026-03-19T14:10:12.840045+00:00"
   },
   "signals": [
-    {
-      "id": 642,
-      "symbol": "VIRTUALUSDT",
-      "direction": "LONG",
-      "entry": 0.7013,
-      "tp1": 0.715326,
-      "tp2": 0.729352,
-      "sl": 0.687274,
-      "strength": 49,
-      "reasons": [
-        "RSI=23 (сильная перепроданность)",
-        "BB нижняя полоса (пробой)",
-        "Объём x2.7 🔥🔥",
-        "Стакан: давление покупки (+0.11)",
-        "МТФ: только 1 таймфрейм согласен",
-        "CVD положительный (-5.3%)"
-      ],
-      "news": null,
-      "created_at": "2026-03-19 12:58:59",
-      "status": "ACTIVE"
-    },
     {
       "id": 647,
       "symbol": "PUMPFUNUSDT",
