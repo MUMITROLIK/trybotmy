@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-19T20:44:03.933779+00:00",
+  "updated_at": "2026-03-19T20:44:47.284389+00:00",
   "publish_status": {
-    "last_ok": null,
+    "last_ok": "2026-03-19T20:44:09Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -13,16 +13,16 @@
     "total": 673,
     "wins": 212,
     "losses": 123,
-    "active": 9,
+    "active": 8,
     "winrate": 63.3
   },
   "trade_stats": {
-    "open": 30,
+    "open": 29,
     "pending": 0,
-    "wins": 218,
+    "wins": 219,
     "losses": 236,
-    "total_pnl": 22.02,
-    "winrate": 48.0
+    "total_pnl": 24.1,
+    "winrate": 48.1
   },
   "fear_greed": {
     "value": 23,
@@ -36,28 +36,6 @@
     "trained_at": "2026-03-19T20:02:57.773386+00:00"
   },
   "signals": [
-    {
-      "id": 694,
-      "symbol": "1000PEPEUSDT",
-      "direction": "SHORT",
-      "exchange": "binance",
-      "entry": 0.0033519,
-      "tp1": 0.003285,
-      "tp2": 0.003218,
-      "sl": 0.003419,
-      "strength": 45,
-      "reasons": [
-        "MACD медвежий (hist=-0.00000)",
-        "Цена < EMA20 < EMA50",
-        "Стакан: сильное давление продажи (-0.33)",
-        "МТФ: 5m, 15m, 1h согласны",
-        "CVD падает (-7.0%) — продажи усиливаются 📉",
-        "Bearish Engulfing (1h) 🕯️"
-      ],
-      "news": null,
-      "created_at": "2026-03-19 16:43:37",
-      "status": "ACTIVE"
-    },
     {
       "id": 696,
       "symbol": "FILUSDT",
@@ -419,6 +397,25 @@
       ]
     },
     {
+      "symbol": "1000PEPEUSDT",
+      "direction": "SHORT",
+      "entry": 0.0033519,
+      "tp1": 0.003285,
+      "tp2": 0.003218,
+      "sl": 0.003419,
+      "strength": 45,
+      "status": "EXPIRED",
+      "created_at": "2026-03-19 16:43:37",
+      "reasons": [
+        "MACD медвежий (hist=-0.00000)",
+        "Цена < EMA20 < EMA50",
+        "Стакан: сильное давление продажи (-0.33)",
+        "МТФ: 5m, 15m, 1h согласны",
+        "CVD падает (-7.0%) — продажи усиливаются 📉",
+        "Bearish Engulfing (1h) 🕯️"
+      ]
+    },
+    {
       "symbol": "ENJUSDT",
       "direction": "LONG",
       "entry": 0.02359,
@@ -614,28 +611,6 @@
         "Стакан: сильное давление покупки (+0.37)",
         "OI растёт +26.7%",
         "CVD положительный (+0.1%)"
-      ]
-    },
-    {
-      "symbol": "KATUSDT",
-      "direction": "LONG",
-      "entry": 0.01036,
-      "tp1": 0.010672,
-      "tp2": 0.010984,
-      "sl": 0.010111,
-      "strength": 47,
-      "status": "SL",
-      "created_at": "2026-03-19 15:28:48",
-      "reasons": [
-        "RSI=38 (перепроданность)",
-        "MACD бычий (hist=0.00001)",
-        "BB ниже середины",
-        "Цена выше EMA20",
-        "Стакан: сильное давление покупки (+0.25)",
-        "МТФ: 5m, 15m согласны",
-        "CVD положительный (+1.9%)",
-        "⚠️ Funding через 32м",
-        "⚡ Рыночный вход (MTF 2+ ТФ)"
       ]
     }
   ],
@@ -1399,35 +1374,23 @@
         "⚡ Рыночный вход (MTF 2+ ТФ)",
         "🤖 ML: вероятность 63%"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 564,
       "symbol": "ROBOUSDT",
       "direction": "LONG",
-      "exchange": "binance",
       "entry": 0.02527,
       "tp1": 0.025775,
       "tp2": 0.026281,
       "sl": 0.02582523,
-      "entry_orig": 0.02527,
-      "tp1_orig": 0.025775,
-      "tp2_orig": 0.026281,
-      "sl_orig": 0.024765,
       "strength": 47,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 2.08,
+      "close_price": 0.025795,
       "taken_at": "2026-03-19T18:46:03.049826",
-      "status": "TP1_HIT",
-      "reasons": [
-        "RSI=37 (перепроданность)",
-        "MACD бычий (hist=0.00001)",
-        "BB нижняя зона (20%)",
-        "Стакан: сильное давление покупки (+0.29)",
-        "OI растёт +1.7%",
-        "CVD положительный (-1.4%)",
-        "🤖 ML: вероятность 54%"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-19 20:44:14"
+    },
     {
       "symbol": "PENGUUSDT",
       "direction": "LONG",
@@ -4213,20 +4176,6 @@
       "close_price": 0.9555,
       "taken_at": "2026-03-18 09:44:34",
       "closed_at": "2026-03-18 11:35:30"
-    },
-    {
-      "symbol": "AXSUSDT",
-      "direction": "LONG",
-      "entry": 1.288,
-      "tp1": 1.31376,
-      "tp2": 1.33952,
-      "sl": 1.26224,
-      "strength": 43,
-      "status": "SL",
-      "pnl_pct": -2.06,
-      "close_price": 1.2614999999999998,
-      "taken_at": "2026-03-18T11:13:13.519138",
-      "closed_at": "2026-03-18 11:31:57"
     }
   ]
 }
