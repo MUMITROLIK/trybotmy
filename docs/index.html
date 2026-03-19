@@ -971,12 +971,35 @@ function renderTab(sigs,opens,pends,hist){
 // ── LIVE PRICES ───────────────────────────────────────────────────────────────
 var pricesIF=false;
 function fetchLP(){
-  if(!openTradesCache.length||pricesIF)return;pricesIF=true;
-  var syms=[];openTradesCache.forEach(function(t){if(syms.indexOf(t.symbol)===-1)syms.push(t.symbol)});
+  if(pricesIF)return;
+  var syms=[];
+  openTradesCache.forEach(function(t){if(syms.indexOf(t.symbol)===-1)syms.push(t.symbol)});
+  // Добавляем pending тоже
+  if(appData){(appData.trades_open||[]).forEach(function(t){if(syms.indexOf(t.symbol)===-1)syms.push(t.symbol)})}
+  if(!syms.length)return;
+  pricesIF=true;
   fetch('/api/ticker?symbols='+encodeURIComponent(syms.join(',')))
     .then(function(r){return r.ok?r.json():null})
-    .then(function(d){if(!d||!d.prices)return;for(var s in d.prices){if(Object.prototype.hasOwnProperty.call(d.prices,s)){var p=parseFloat(d.prices[s]);if(!isNaN(p)&&p>0)livePrices[s]=p}}patchCards()})
-    ['catch'](function(){}).finally(function(){pricesIF=false})
+    .then(function(d){
+      if(!d)return;
+      // Один символ
+      if(d.symbol&&d.price){
+        var p=parseFloat(d.price);
+        if(!isNaN(p)&&p>0)livePrices[d.symbol]=p;
+      }
+      // Несколько символов
+      if(d.prices){
+        for(var s in d.prices){
+          if(Object.prototype.hasOwnProperty.call(d.prices,s)){
+            var p=parseFloat(d.prices[s]);
+            if(!isNaN(p)&&p>0)livePrices[s]=p;
+          }
+        }
+      }
+      patchCards();
+    })
+    ['catch'](function(){})
+    .finally(function(){pricesIF=false});
 }
 function patchCards(){
   openTradesCache.forEach(function(t){
@@ -1231,7 +1254,7 @@ updateUI=function(d){
 // ── INIT ──────────────────────────────────────────────────────────────────────
 fetchREST();connectWS();fetchBTC2();
 setInterval(function(){if(!ws||ws.readyState!==1||(Date.now()-wsLM)>45000)fetchREST()},15000);
-setInterval(fetchLP,1000);
+setInterval(fetchLP,500);
 setInterval(function(){if(openTradesCache.length)patchCards()},1000);
 setInterval(function(){if(serverTime)serverTime=new Date(serverTime.getTime()+1000)},1000);
 setInterval(fetchBTC2,10000);
