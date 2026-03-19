@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-19T15:19:36.830829+00:00",
+  "updated_at": "2026-03-19T15:19:54.014060+00:00",
   "publish_status": {
-    "last_ok": "2026-03-19T15:18:11Z",
+    "last_ok": "2026-03-19T15:19:44Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 642,
+    "total": 643,
     "wins": 195,
     "losses": 113,
-    "active": 32,
+    "active": 33,
     "winrate": 63.3
   },
   "trade_stats": {
-    "open": 33,
+    "open": 34,
     "pending": 0,
     "wins": 196,
     "losses": 224,
@@ -743,6 +743,30 @@
       ],
       "news": null,
       "created_at": "2026-03-19 15:18:01",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 681,
+      "symbol": "THEUSDT",
+      "direction": "LONG",
+      "entry": 0.1613,
+      "tp1": 0.166218,
+      "tp2": 0.171136,
+      "sl": 0.157366,
+      "strength": 49,
+      "reasons": [
+        "MACD бычий (hist=0.00095)",
+        "EMA20 > EMA50 (golden cross) 🌟",
+        "Стакан: давление покупки (+0.11)",
+        "МТФ: 5m, 15m согласны",
+        "OI растёт +1.7% + цена ↑",
+        "CVD положительный (+3.4%)",
+        "Bullish Engulfing (1h) 🕯️",
+        "⚠️ Funding через 41м",
+        "⚡ Рыночный вход (MTF 2+ ТФ)"
+      ],
+      "news": null,
+      "created_at": "2026-03-19 15:19:50",
       "status": "ACTIVE"
     }
   ],
@@ -1980,6 +2004,33 @@
         "OI растёт +2.8% + цена ↑",
         "⚠️ Funding через 43м",
         "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
+    {
+      "id": 535,
+      "symbol": "THEUSDT",
+      "direction": "LONG",
+      "entry": 0.1613,
+      "tp1": 0.166218,
+      "tp2": 0.171136,
+      "sl": 0.157366,
+      "entry_orig": 0.1613,
+      "tp1_orig": 0.166218,
+      "tp2_orig": 0.171136,
+      "sl_orig": 0.157366,
+      "strength": 49,
+      "taken_at": "2026-03-19T15:19:50.849586",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.00095)",
+        "EMA20 > EMA50 (golden cross) 🌟",
+        "Стакан: давление покупки (+0.11)",
+        "МТФ: 5m, 15m согласны",
+        "OI растёт +1.7% + цена ↑",
+        "CVD положительный (+3.4%)",
+        "Bullish Engulfing (1h) 🕯️",
+        "⚠️ Funding через 41м",
+        "⚡ Рыночный вход (MTF 2+ ТФ)"
       ]
     }
   ],
