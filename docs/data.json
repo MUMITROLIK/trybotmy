@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-19T20:56:58.899889+00:00",
+  "updated_at": "2026-03-19T20:57:38.723771+00:00",
   "publish_status": {
-    "last_ok": null,
+    "last_ok": "2026-03-19T20:57:04Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 63.3
   },
   "trade_stats": {
-    "open": 27,
+    "open": 26,
     "pending": 0,
-    "wins": 220,
+    "wins": 221,
     "losses": 237,
-    "total_pnl": 26.21,
-    "winrate": 48.1
+    "total_pnl": 26.66,
+    "winrate": 48.3
   },
   "fear_greed": {
     "value": 23,
@@ -639,31 +639,6 @@
         "МТФ: все 4 таймфрейма согласны ✅✅",
         "OI растёт +1.5% + цена ↓",
         "BTC контекст: -2.2% за 12ч 📉"
-      ]
-    },
-    {
-      "id": 495,
-      "symbol": "GALAUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.00333,
-      "tp1": 0.003397,
-      "tp2": 0.003463,
-      "sl": 0.003263,
-      "entry_orig": 0.00333,
-      "tp1_orig": 0.003397,
-      "tp2_orig": 0.003463,
-      "sl_orig": 0.003263,
-      "strength": 47,
-      "taken_at": "2026-03-19T12:57:20.266708",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=25 (сильная перепроданность)",
-        "BB нижняя полоса (пробой)",
-        "Объём x2.4 🔥",
-        "Стакан: сильное давление покупки (+0.26)",
-        "OI растёт +1.7%",
-        "CVD положительный (+0.4%)"
       ]
     },
     {
@@ -1324,6 +1299,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "GALAUSDT",
+      "direction": "LONG",
+      "entry": 0.00333,
+      "tp1": 0.003397,
+      "tp2": 0.003463,
+      "sl": 0.003263,
+      "strength": 47,
+      "status": "TIMEOUT",
+      "pnl_pct": 0.45,
+      "close_price": 0.003345,
+      "taken_at": "2026-03-19T12:57:20.266708",
+      "closed_at": "2026-03-19 20:57:25"
+    },
     {
       "symbol": "MOODENGUSDT",
       "direction": "SHORT",
@@ -4109,20 +4098,6 @@
       "close_price": null,
       "taken_at": "2026-03-18T10:38:11.002288",
       "closed_at": "2026-03-18 11:38:40"
-    },
-    {
-      "symbol": "ORDERUSDT",
-      "direction": "LONG",
-      "entry": 0.0576,
-      "tp1": 0.058794,
-      "tp2": 0.059987,
-      "sl": 0.056448,
-      "strength": 43,
-      "status": "SL",
-      "pnl_pct": -2.17,
-      "close_price": 0.05635,
-      "taken_at": "2026-03-18T10:58:44.615758",
-      "closed_at": "2026-03-18 11:36:29"
     }
   ]
 }
