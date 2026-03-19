@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-19T23:08:45.058724+00:00",
+  "updated_at": "2026-03-19T23:09:50.732134+00:00",
   "publish_status": {
-    "last_ok": "2026-03-19T23:07:18Z",
+    "last_ok": "2026-03-19T23:08:50Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 62.9
   },
   "trade_stats": {
-    "open": 13,
+    "open": 12,
     "pending": 0,
-    "wins": 227,
+    "wins": 228,
     "losses": 244,
-    "total_pnl": 24.39,
-    "winrate": 48.2
+    "total_pnl": 25.18,
+    "winrate": 48.3
   },
   "fear_greed": {
     "value": 23,
@@ -486,34 +486,6 @@
       ]
     },
     {
-      "id": 532,
-      "symbol": "BTCUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 69667.3,
-      "tp1": 71060.646,
-      "tp2": 72453.992,
-      "sl": 68273.954,
-      "entry_orig": 69667.3,
-      "tp1_orig": 71060.646,
-      "tp2_orig": 72453.992,
-      "sl_orig": 68273.954,
-      "strength": 46,
-      "taken_at": "2026-03-19T15:09:29.616921",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=45 (нейтральный↓)",
-        "MACD бычий (hist=20.12925)",
-        "BB ниже середины",
-        "Стакан: сильное давление покупки (+0.79)",
-        "📰 Bitcoin $20,000 put option is third most popular strike ahead of ...",
-        "МТФ: 5m, 4h согласны",
-        "CVD положительный (-0.6%)",
-        "⚠️ Funding через 52м",
-        "⚡ Рыночный вход (MTF 2+ ТФ)"
-      ]
-    },
-    {
       "id": 538,
       "symbol": "TSLAUSDT",
       "direction": "LONG",
@@ -767,6 +739,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "BTCUSDT",
+      "direction": "LONG",
+      "entry": 69667.3,
+      "tp1": 71060.646,
+      "tp2": 72453.992,
+      "sl": 68273.954,
+      "strength": 46,
+      "status": "TIMEOUT",
+      "pnl_pct": 0.79,
+      "close_price": 70214.65,
+      "taken_at": "2026-03-19T15:09:29.616921",
+      "closed_at": "2026-03-19 23:09:39"
+    },
     {
       "symbol": "NEARUSDT",
       "direction": "LONG",
@@ -3552,20 +3538,6 @@
       "close_price": 0.01788,
       "taken_at": "2026-03-18T11:41:45.592745",
       "closed_at": "2026-03-18 12:31:40"
-    },
-    {
-      "symbol": "ROBOUSDT",
-      "direction": "LONG",
-      "entry": 0.02752,
-      "tp1": 0.028366,
-      "tp2": 0.029213,
-      "sl": 0.026843,
-      "strength": 43,
-      "status": "SL",
-      "pnl_pct": -2.49,
-      "close_price": 0.026834999999999998,
-      "taken_at": "2026-03-18T11:11:29.236227",
-      "closed_at": "2026-03-18 12:23:18"
     }
   ]
 }
