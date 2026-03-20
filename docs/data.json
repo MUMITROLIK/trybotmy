@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-20T21:55:50.607507+00:00",
+  "updated_at": "2026-03-20T21:57:17.382116+00:00",
   "publish_status": {
-    "last_ok": "2026-03-20T21:55:13Z",
+    "last_ok": "2026-03-20T21:55:56Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 60.2
   },
   "trade_stats": {
-    "open": 22,
+    "open": 21,
     "pending": 0,
-    "wins": 272,
+    "wins": 273,
     "losses": 292,
-    "total_pnl": 21.36,
-    "winrate": 48.2
+    "total_pnl": 21.57,
+    "winrate": 48.3
   },
   "fear_greed": {
     "value": 11,
@@ -760,30 +760,6 @@
   ],
   "trades_open": [
     {
-      "id": 612,
-      "symbol": "MSTRUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 136.24,
-      "tp1": 138.9648,
-      "tp2": 141.6896,
-      "sl": 133.5152,
-      "entry_orig": 136.24,
-      "tp1_orig": 138.9648,
-      "tp2_orig": 141.6896,
-      "sl_orig": 133.5152,
-      "strength": 51,
-      "taken_at": "2026-03-20T13:55:43.766695",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=41 (нейтральный↓)",
-        "BB нижняя полоса (пробой)",
-        "Объём x4.1 🔥🔥🔥",
-        "Стакан: сильное давление покупки (+0.31)",
-        "CVD растёт (+10.9%) — покупки усиливаются 📈"
-      ]
-    },
-    {
       "id": 614,
       "symbol": "SAFEUSDT",
       "direction": "LONG",
@@ -1334,6 +1310,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "MSTRUSDT",
+      "direction": "LONG",
+      "entry": 136.24,
+      "tp1": 138.9648,
+      "tp2": 141.6896,
+      "sl": 133.5152,
+      "strength": 51,
+      "status": "TIMEOUT",
+      "pnl_pct": 0.21,
+      "close_price": 136.53,
+      "taken_at": "2026-03-20T13:55:43.766695",
+      "closed_at": "2026-03-20 21:55:58"
+    },
     {
       "symbol": "MONUSDT",
       "direction": "LONG",
@@ -4118,20 +4108,6 @@
       "pnl_pct": -0.03,
       "close_price": 249.48,
       "taken_at": "2026-03-18T17:01:13.344123",
-      "closed_at": "2026-03-18 19:05:15"
-    },
-    {
-      "symbol": "CFGUSDT",
-      "direction": "LONG",
-      "entry": 0.1366,
-      "tp1": 0.140007,
-      "tp2": 0.143414,
-      "sl": 0.14005,
-      "strength": 31,
-      "status": "MANUAL",
-      "pnl_pct": 2.49,
-      "close_price": 0.14,
-      "taken_at": "2026-03-18T17:03:06.155925",
       "closed_at": "2026-03-18 19:05:15"
     }
   ]
