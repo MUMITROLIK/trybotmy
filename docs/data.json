@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-20T16:48:30.561291+00:00",
+  "updated_at": "2026-03-20T16:49:36.454534+00:00",
   "publish_status": {
-    "last_ok": "2026-03-20T16:48:00Z",
+    "last_ok": "2026-03-20T16:48:36Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -12,17 +12,17 @@
   "stats": {
     "total": 747,
     "wins": 233,
-    "losses": 145,
-    "active": 21,
-    "winrate": 61.6
+    "losses": 146,
+    "active": 20,
+    "winrate": 61.5
   },
   "trade_stats": {
-    "open": 25,
+    "open": 24,
     "pending": 0,
     "wins": 262,
-    "losses": 271,
-    "total_pnl": 39.04,
-    "winrate": 49.2
+    "losses": 272,
+    "total_pnl": 36.89,
+    "winrate": 49.1
   },
   "fear_greed": {
     "value": 11,
@@ -267,29 +267,6 @@
       "status": "ACTIVE"
     },
     {
-      "id": 774,
-      "symbol": "CRCLUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 129.79,
-      "tp1": 133.242143,
-      "tp2": 136.694286,
-      "sl": 127.028286,
-      "strength": 50,
-      "reasons": [
-        "MACD бычий (hist=0.26226)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: сильное давление покупки (+0.33)",
-        "МТФ: 5m, 15m, 4h согласны",
-        "OI растёт +2.6% + цена ↑",
-        "CVD положительный (+2.9%)",
-        "⚡ Рыночный вход (MTF сильный)"
-      ],
-      "news": null,
-      "created_at": "2026-03-20 16:02:47",
-      "status": "ACTIVE"
-    },
-    {
       "id": 776,
       "symbol": "STOUSDT",
       "direction": "LONG",
@@ -520,6 +497,26 @@
     }
   ],
   "history": [
+    {
+      "symbol": "CRCLUSDT",
+      "direction": "LONG",
+      "entry": 129.79,
+      "tp1": 133.242143,
+      "tp2": 136.694286,
+      "sl": 127.028286,
+      "strength": 50,
+      "status": "SL",
+      "created_at": "2026-03-20 16:02:47",
+      "reasons": [
+        "MACD бычий (hist=0.26226)",
+        "Цена > EMA20 > EMA50",
+        "Стакан: сильное давление покупки (+0.33)",
+        "МТФ: 5m, 15m, 4h согласны",
+        "OI растёт +2.6% + цена ↑",
+        "CVD положительный (+2.9%)",
+        "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
     {
       "symbol": "ATHUSDT",
       "direction": "LONG",
@@ -908,26 +905,6 @@
         "Объём x3.4 🔥🔥",
         "Стакан: давление покупки (+0.13)",
         "МТФ: все 4 таймфрейма согласны ✅✅",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
-      "symbol": "STOUSDT",
-      "direction": "LONG",
-      "entry": 0.10062,
-      "tp1": 0.103444,
-      "tp2": 0.106269,
-      "sl": 0.098361,
-      "strength": 50,
-      "status": "SL",
-      "created_at": "2026-03-20 12:59:01",
-      "reasons": [
-        "MACD бычий (hist=0.00040)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: давление покупки (+0.10)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +3.1% + цена ↑",
-        "CVD положительный (+3.7%)",
         "⚡ Рыночный вход (MTF сильный)"
       ]
     }
@@ -1353,32 +1330,6 @@
       ]
     },
     {
-      "id": 628,
-      "symbol": "CRCLUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 129.79,
-      "tp1": 133.242143,
-      "tp2": 136.694286,
-      "sl": 127.028286,
-      "entry_orig": 129.79,
-      "tp1_orig": 133.242143,
-      "tp2_orig": 136.694286,
-      "sl_orig": 127.028286,
-      "strength": 50,
-      "taken_at": "2026-03-20T16:02:47.624456",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.26226)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: сильное давление покупки (+0.33)",
-        "МТФ: 5m, 15m, 4h согласны",
-        "OI растёт +2.6% + цена ↑",
-        "CVD положительный (+2.9%)",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 630,
       "symbol": "STOUSDT",
       "direction": "LONG",
@@ -1589,6 +1540,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "CRCLUSDT",
+      "direction": "LONG",
+      "entry": 129.79,
+      "tp1": 133.242143,
+      "tp2": 136.694286,
+      "sl": 127.028286,
+      "strength": 50,
+      "status": "SL",
+      "pnl_pct": -2.15,
+      "close_price": 126.995,
+      "taken_at": "2026-03-20T16:02:47.624456",
+      "closed_at": "2026-03-20 16:48:57"
+    },
     {
       "symbol": "1000SHIBUSDT",
       "direction": "LONG",
@@ -4374,20 +4339,6 @@
       "close_price": 0.919,
       "taken_at": "2026-03-18T16:02:16.360542",
       "closed_at": "2026-03-18 19:04:58"
-    },
-    {
-      "symbol": "ETHUSDT",
-      "direction": "SHORT",
-      "entry": 2183.52,
-      "tp1": 2139.8496,
-      "tp2": 2096.1792,
-      "sl": 2227.1904,
-      "strength": 54,
-      "status": "MANUAL",
-      "pnl_pct": -0.25,
-      "close_price": 2189.08,
-      "taken_at": "2026-03-18T15:13:48.865552",
-      "closed_at": "2026-03-18 19:04:57"
     }
   ]
 }
