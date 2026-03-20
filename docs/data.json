@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-20T22:06:00.676563+00:00",
+  "updated_at": "2026-03-20T22:07:06.550374+00:00",
   "publish_status": {
-    "last_ok": "2026-03-20T22:05:30Z",
+    "last_ok": "2026-03-20T22:06:06Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 60.2
   },
   "trade_stats": {
-    "open": 18,
+    "open": 17,
     "pending": 0,
-    "wins": 275,
+    "wins": 276,
     "losses": 293,
-    "total_pnl": 22.42,
-    "winrate": 48.4
+    "total_pnl": 24.45,
+    "winrate": 48.5
   },
   "fear_greed": {
     "value": 11,
@@ -1136,33 +1136,23 @@
         "CVD положительный (+3.0%)",
         "⚡ Рыночный вход (MTF сильный)"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 660,
       "symbol": "ICPUSDT",
       "direction": "LONG",
-      "exchange": "bybit",
       "entry": 2.468,
       "tp1": 2.51736,
       "tp2": 2.56672,
       "sl": 2.518,
-      "entry_orig": 2.468,
-      "tp1_orig": 2.51736,
-      "tp2_orig": 2.56672,
-      "sl_orig": 2.41864,
       "strength": 51,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 2.03,
+      "close_price": 2.518,
       "taken_at": "2026-03-20T20:45:11.476810",
-      "status": "TP1_HIT",
-      "reasons": [
-        "RSI=34 (перепроданность)",
-        "BB нижняя полоса (пробой)",
-        "Объём x4.8 🔥🔥🔥",
-        "Стакан: сильное давление покупки (+0.28)",
-        "Цена у поддержки 2.4640"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-20 22:06:18"
+    },
     {
       "symbol": "COSUSDT",
       "direction": "LONG",
@@ -3947,20 +3937,6 @@
       "pnl_pct": 0.7,
       "close_price": 0.03386,
       "taken_at": "2026-03-18T17:57:12.532043",
-      "closed_at": "2026-03-18 19:05:18"
-    },
-    {
-      "symbol": "HANAUSDT",
-      "direction": "LONG",
-      "entry": 0.0477,
-      "tp1": 0.048654,
-      "tp2": 0.049608,
-      "sl": 0.046746,
-      "strength": 30,
-      "status": "MANUAL",
-      "pnl_pct": 0.19,
-      "close_price": 0.04779,
-      "taken_at": "2026-03-18T18:01:00.618044",
       "closed_at": "2026-03-18 19:05:18"
     }
   ]
