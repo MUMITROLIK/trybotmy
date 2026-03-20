@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-20T00:03:17.728459+00:00",
+  "updated_at": "2026-03-20T00:04:23.438763+00:00",
   "publish_status": {
-    "last_ok": "2026-03-20T00:01:58Z",
+    "last_ok": "2026-03-20T00:03:23Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 62.9
   },
   "trade_stats": {
-    "open": 10,
+    "open": 9,
     "pending": 0,
-    "wins": 229,
+    "wins": 230,
     "losses": 245,
-    "total_pnl": 23.3,
-    "winrate": 48.3
+    "total_pnl": 24.08,
+    "winrate": 48.4
   },
   "fear_greed": {
     "value": 23,
@@ -486,33 +486,6 @@
       ]
     },
     {
-      "id": 540,
-      "symbol": "DOGEUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.09277,
-      "tp1": 0.094625,
-      "tp2": 0.096481,
-      "sl": 0.090915,
-      "entry_orig": 0.09277,
-      "tp1_orig": 0.094625,
-      "tp2_orig": 0.096481,
-      "sl_orig": 0.090915,
-      "strength": 46,
-      "taken_at": "2026-03-19T16:03:34.546497",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=44 (нейтральный↓)",
-        "MACD бычий (hist=0.00001)",
-        "BB ниже середины",
-        "Стакан: давление покупки (+0.14)",
-        "МТФ: 5m, 4h согласны",
-        "CVD положительный (-4.8%)",
-        "Hammer (1h) 🔨",
-        "⚡ Рыночный вход (MTF 2+ ТФ)"
-      ]
-    },
-    {
       "id": 542,
       "symbol": "MNTUSDT",
       "direction": "LONG",
@@ -689,6 +662,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "DOGEUSDT",
+      "direction": "LONG",
+      "entry": 0.09277,
+      "tp1": 0.094625,
+      "tp2": 0.096481,
+      "sl": 0.090915,
+      "strength": 46,
+      "status": "TIMEOUT",
+      "pnl_pct": 0.78,
+      "close_price": 0.093495,
+      "taken_at": "2026-03-19T16:03:34.546497",
+      "closed_at": "2026-03-20 00:03:39"
+    },
     {
       "symbol": "TSLAUSDT",
       "direction": "LONG",
@@ -3474,20 +3461,6 @@
       "close_price": 1.7455,
       "taken_at": "2026-03-18T11:43:25.335673",
       "closed_at": "2026-03-18 12:34:20"
-    },
-    {
-      "symbol": "TAOUSDT",
-      "direction": "LONG",
-      "entry": 277.91080066,
-      "tp1": 283.469017,
-      "tp2": 289.027233,
-      "sl": 272.352585,
-      "strength": 53,
-      "status": "SL",
-      "pnl_pct": -2.03,
-      "close_price": 272.275,
-      "taken_at": "2026-03-18 06:42:28",
-      "closed_at": "2026-03-18 12:32:41"
     }
   ]
 }
