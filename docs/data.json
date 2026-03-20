@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-20T23:39:11.339182+00:00",
+  "updated_at": "2026-03-20T23:39:58.622244+00:00",
   "publish_status": {
-    "last_ok": "2026-03-20T23:37:57Z",
+    "last_ok": "2026-03-20T23:39:17Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 60.3
   },
   "trade_stats": {
-    "open": 16,
+    "open": 15,
     "pending": 0,
-    "wins": 281,
+    "wins": 282,
     "losses": 295,
-    "total_pnl": 30.14,
-    "winrate": 48.8
+    "total_pnl": 32.63,
+    "winrate": 48.9
   },
   "fear_greed": {
     "value": 11,
@@ -811,32 +811,6 @@
       ]
     },
     {
-      "id": 661,
-      "symbol": "PTBUSDT",
-      "direction": "LONG",
-      "exchange": "bybit",
-      "entry": 0.001428,
-      "tp1": 0.001457,
-      "tp2": 0.001485,
-      "sl": 0.001399,
-      "entry_orig": 0.001428,
-      "tp1_orig": 0.001457,
-      "tp2_orig": 0.001485,
-      "sl_orig": 0.001399,
-      "strength": 52,
-      "taken_at": "2026-03-20T20:57:34.242055",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00000)",
-        "Цена > EMA20 > EMA50",
-        "Объём x2.4 🔥",
-        "Стакан: сильное давление покупки (+0.34)",
-        "МТФ: 5m, 15m, 4h согласны",
-        "OI растёт +1.5% + цена ↑",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 662,
       "symbol": "XAGUSDT",
       "direction": "LONG",
@@ -1078,6 +1052,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "PTBUSDT",
+      "direction": "LONG",
+      "entry": 0.001428,
+      "tp1": 0.001457,
+      "tp2": 0.001485,
+      "sl": 0.0014635,
+      "strength": 52,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 2.49,
+      "close_price": 0.0014635,
+      "taken_at": "2026-03-20T20:57:34.242055",
+      "closed_at": "2026-03-20 23:39:58"
+    },
     {
       "symbol": "JTOUSDT",
       "direction": "LONG",
@@ -3863,20 +3851,6 @@
       "close_price": 0.0066005000000000005,
       "taken_at": "2026-03-18T19:54:55.255112",
       "closed_at": "2026-03-18 21:41:08"
-    },
-    {
-      "symbol": "RIVERUSDT",
-      "direction": "LONG",
-      "entry": 24.9750157,
-      "tp1": 26.013766,
-      "tp2": 27.052516,
-      "sl": 24.144016,
-      "strength": 48,
-      "status": "LIMIT_TIMEOUT",
-      "pnl_pct": 0,
-      "close_price": null,
-      "taken_at": "2026-03-18T19:56:37.657886",
-      "closed_at": "2026-03-18 20:56:38"
     }
   ]
 }
