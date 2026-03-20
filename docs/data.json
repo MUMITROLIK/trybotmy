@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-20T09:18:33.061306+00:00",
+  "updated_at": "2026-03-20T09:19:14.574661+00:00",
   "publish_status": {
-    "last_ok": "2026-03-20T09:17:54Z",
+    "last_ok": "2026-03-20T09:18:39Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 62.9
   },
   "trade_stats": {
-    "open": 8,
+    "open": 7,
     "pending": 0,
     "wins": 241,
-    "losses": 250,
-    "total_pnl": 35.39,
-    "winrate": 49.1
+    "losses": 251,
+    "total_pnl": 33.2,
+    "winrate": 49.0
   },
   "fear_greed": {
     "value": 11,
@@ -646,33 +646,6 @@
       ]
     },
     {
-      "id": 571,
-      "symbol": "ZETAUSDT",
-      "direction": "LONG",
-      "exchange": "bybit",
-      "entry": 0.05903,
-      "tp1": 0.060359,
-      "tp2": 0.061687,
-      "sl": 0.057849,
-      "entry_orig": 0.05903,
-      "tp1_orig": 0.060359,
-      "tp2_orig": 0.061687,
-      "sl_orig": 0.057849,
-      "strength": 50,
-      "taken_at": "2026-03-20T07:27:44.542389",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00005)",
-        "Цена > EMA20 > EMA50",
-        "Объём x2.3 🔥",
-        "Стакан: перевес bid (+0.07)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +5.9% + цена ↑",
-        "⚠️ Funding через 33м",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 573,
       "symbol": "ATHUSDT",
       "direction": "LONG",
@@ -838,6 +811,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "ZETAUSDT",
+      "direction": "LONG",
+      "entry": 0.05903,
+      "tp1": 0.060359,
+      "tp2": 0.061687,
+      "sl": 0.057849,
+      "strength": 50,
+      "status": "SL",
+      "pnl_pct": -2.19,
+      "close_price": 0.05774,
+      "taken_at": "2026-03-20T07:27:44.542389",
+      "closed_at": "2026-03-20 09:19:14"
+    },
     {
       "symbol": "COSUSDT",
       "direction": "LONG",
@@ -3623,20 +3610,6 @@
       "close_price": 0.14005,
       "taken_at": "2026-03-18T16:05:42.415350",
       "closed_at": "2026-03-18 16:33:36"
-    },
-    {
-      "symbol": "FLOWUSDT",
-      "direction": "SHORT",
-      "entry": 0.03095,
-      "tp1": 0.030153,
-      "tp2": 0.029356,
-      "sl": 0.02985352,
-      "strength": 40,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 3.44,
-      "close_price": 0.029885000000000002,
-      "taken_at": "2026-03-18T16:05:42.813553",
-      "closed_at": "2026-03-18 16:28:34"
     }
   ]
 }
