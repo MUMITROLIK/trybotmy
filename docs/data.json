@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-20T16:41:23.000341+00:00",
+  "updated_at": "2026-03-20T16:41:58.413041+00:00",
   "publish_status": {
-    "last_ok": "2026-03-20T16:40:38Z",
+    "last_ok": null,
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 61.6
   },
   "trade_stats": {
-    "open": 26,
+    "open": 24,
     "pending": 0,
-    "wins": 260,
+    "wins": 262,
     "losses": 271,
     "total_pnl": 39.04,
-    "winrate": 49.0
+    "winrate": 49.2
   },
   "fear_greed": {
     "value": 11,
@@ -1487,31 +1487,6 @@
       ]
     },
     {
-      "id": 635,
-      "symbol": "1000SHIBUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.006158,
-      "tp1": 0.006281,
-      "tp2": 0.006404,
-      "sl": 0.006035,
-      "entry_orig": 0.006158,
-      "tp1_orig": 0.006281,
-      "tp2_orig": 0.006404,
-      "sl_orig": 0.006035,
-      "strength": 50,
-      "taken_at": "2026-03-20T16:24:32.447178",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00002)",
-        "Цена > EMA20 > EMA50",
-        "Объём x1.9 🔥",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "CVD растёт (+6.3%) — покупки усиливаются 📈",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 636,
       "symbol": "ARIAUSDT",
       "direction": "LONG",
@@ -1532,31 +1507,6 @@
         "Цена > EMA20 > EMA50",
         "Объём x2.0 🔥",
         "Стакан: сильное давление покупки (+0.28)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
-      "id": 637,
-      "symbol": "SHIB1000USDT",
-      "direction": "LONG",
-      "exchange": "bybit",
-      "entry": 0.006145,
-      "tp1": 0.006268,
-      "tp2": 0.006391,
-      "sl": 0.006022,
-      "entry_orig": 0.006145,
-      "tp1_orig": 0.006268,
-      "tp2_orig": 0.006391,
-      "sl_orig": 0.006022,
-      "strength": 50,
-      "taken_at": "2026-03-20T16:29:24.846166",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00002)",
-        "Цена > EMA20 > EMA50",
-        "Объём x2.7 🔥🔥",
-        "Стакан: перевес bid (+0.06)",
         "МТФ: все 4 таймфрейма согласны ✅✅",
         "⚡ Рыночный вход (MTF сильный)"
       ]
@@ -1590,6 +1540,34 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "1000SHIBUSDT",
+      "direction": "LONG",
+      "entry": 0.006158,
+      "tp1": 0.006281,
+      "tp2": 0.006404,
+      "sl": 0.006035,
+      "strength": 50,
+      "status": "MANUAL",
+      "pnl_pct": 0,
+      "close_price": null,
+      "taken_at": "2026-03-20T16:24:32.447178",
+      "closed_at": "2026-03-20 16:41:34"
+    },
+    {
+      "symbol": "SHIB1000USDT",
+      "direction": "LONG",
+      "entry": 0.006145,
+      "tp1": 0.006268,
+      "tp2": 0.006391,
+      "sl": 0.006022,
+      "strength": 50,
+      "status": "MANUAL",
+      "pnl_pct": 0,
+      "close_price": null,
+      "taken_at": "2026-03-20T16:29:24.846166",
+      "closed_at": "2026-03-20 16:41:34"
+    },
     {
       "symbol": "ARIAUSDT",
       "direction": "LONG",
@@ -4361,34 +4339,6 @@
       "close_price": 2189.08,
       "taken_at": "2026-03-18T15:13:48.865552",
       "closed_at": "2026-03-18 19:04:57"
-    },
-    {
-      "symbol": "SIRENUSDT",
-      "direction": "LONG",
-      "entry": 0.87287,
-      "tp1": 0.910728,
-      "tp2": 0.948586,
-      "sl": 0.842584,
-      "strength": 45,
-      "status": "MANUAL",
-      "pnl_pct": 2.16,
-      "close_price": 0.8917,
-      "taken_at": "2026-03-18T15:18:18.217829",
-      "closed_at": "2026-03-18 19:04:57"
-    },
-    {
-      "symbol": "ETCUSDT",
-      "direction": "SHORT",
-      "entry": 8.352,
-      "tp1": 8.18496,
-      "tp2": 8.01792,
-      "sl": 8.51904,
-      "strength": 62,
-      "status": "MANUAL",
-      "pnl_pct": -1.02,
-      "close_price": 8.437,
-      "taken_at": "2026-03-18T14:55:04.532405",
-      "closed_at": "2026-03-18 19:04:54"
     }
   ]
 }
