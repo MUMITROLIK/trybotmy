@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-20T01:11:01.088647+00:00",
+  "updated_at": "2026-03-20T01:12:06.802775+00:00",
   "publish_status": {
-    "last_ok": "2026-03-20T01:10:35Z",
+    "last_ok": "2026-03-20T01:11:06Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 62.9
   },
   "trade_stats": {
-    "open": 4,
+    "open": 3,
     "pending": 0,
-    "wins": 232,
+    "wins": 233,
     "losses": 248,
-    "total_pnl": 22.58,
-    "winrate": 48.3
+    "total_pnl": 23.6,
+    "winrate": 48.4
   },
   "fear_greed": {
     "value": 11,
@@ -508,34 +508,23 @@
         "Объём x3.2 🔥🔥",
         "МТФ: только 1 таймфрейм согласен"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 553,
       "symbol": "AAVEUSDT",
       "direction": "LONG",
-      "exchange": "binance",
       "entry": 110.88,
       "tp1": 113.0976,
       "tp2": 115.3152,
       "sl": 108.6624,
-      "entry_orig": 110.88,
-      "tp1_orig": 113.0976,
-      "tp2_orig": 115.3152,
-      "sl_orig": 108.6624,
       "strength": 45,
+      "status": "TIMEOUT",
+      "pnl_pct": 1.02,
+      "close_price": 112.015,
       "taken_at": "2026-03-19T17:11:35.060630",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=27 (сильная перепроданность)",
-        "MACD бычий (hist=0.02108)",
-        "BB нижняя зона (23%)",
-        "МТФ: только 1 таймфрейм согласен",
-        "OI растёт +2.3%",
-        "Hammer (1h) 🔨"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-20 01:11:40"
+    },
     {
       "symbol": "XMRUSDT",
       "direction": "SHORT",
@@ -3321,20 +3310,6 @@
       "close_price": 0.01041,
       "taken_at": "2026-03-18T11:44:58.982311",
       "closed_at": "2026-03-18 12:51:52"
-    },
-    {
-      "symbol": "TRIAUSDT",
-      "direction": "LONG",
-      "entry": 0.03286,
-      "tp1": 0.033517,
-      "tp2": 0.034174,
-      "sl": 0.032203,
-      "strength": 41,
-      "status": "SL",
-      "pnl_pct": -2.3,
-      "close_price": 0.032104999999999995,
-      "taken_at": "2026-03-18T11:16:21.420436",
-      "closed_at": "2026-03-18 12:48:48"
     }
   ]
 }
