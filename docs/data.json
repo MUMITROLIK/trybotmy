@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-20T14:52:23.771999+00:00",
+  "updated_at": "2026-03-20T14:52:59.387274+00:00",
   "publish_status": {
-    "last_ok": "2026-03-20T14:51:23Z",
+    "last_ok": "2026-03-20T14:52:30Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -12,17 +12,17 @@
   "stats": {
     "total": 731,
     "wins": 226,
-    "losses": 142,
-    "active": 18,
-    "winrate": 61.4
+    "losses": 143,
+    "active": 17,
+    "winrate": 61.2
   },
   "trade_stats": {
-    "open": 24,
+    "open": 23,
     "pending": 0,
     "wins": 251,
-    "losses": 267,
-    "total_pnl": 21.38,
-    "winrate": 48.5
+    "losses": 268,
+    "total_pnl": 19.35,
+    "winrate": 48.4
   },
   "fear_greed": {
     "value": 11,
@@ -200,30 +200,6 @@
       ],
       "news": null,
       "created_at": "2026-03-20 13:43:20",
-      "status": "ACTIVE"
-    },
-    {
-      "id": 756,
-      "symbol": "APTUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 1.0127,
-      "tp1": 1.032954,
-      "tp2": 1.053208,
-      "sl": 0.992446,
-      "strength": 53,
-      "reasons": [
-        "MACD бычий (hist=0.00061)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: давление покупки (+0.14)",
-        "📰 CoinDesk 20 performance update: Aptos (APT) gains 6.3% as index r...",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +1.9% + цена ↑",
-        "CVD положительный (-1.8%)",
-        "⚡ Рыночный вход (MTF сильный)"
-      ],
-      "news": "CoinDesk 20 performance update: Aptos (APT) gains 6.3% as index rises",
-      "created_at": "2026-03-20 13:46:57",
       "status": "ACTIVE"
     },
     {
@@ -517,6 +493,27 @@
         "Стакан: сильное давление покупки (+0.42)",
         "МТФ: 5m, 15m, 1h согласны",
         "CVD положительный (+3.7%)",
+        "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
+    {
+      "symbol": "APTUSDT",
+      "direction": "LONG",
+      "entry": 1.0127,
+      "tp1": 1.032954,
+      "tp2": 1.053208,
+      "sl": 0.992446,
+      "strength": 53,
+      "status": "SL",
+      "created_at": "2026-03-20 13:46:57",
+      "reasons": [
+        "MACD бычий (hist=0.00061)",
+        "Цена > EMA20 > EMA50",
+        "Стакан: давление покупки (+0.14)",
+        "📰 CoinDesk 20 performance update: Aptos (APT) gains 6.3% as index r...",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +1.9% + цена ↑",
+        "CVD положительный (-1.8%)",
         "⚡ Рыночный вход (MTF сильный)"
       ]
     },
@@ -842,26 +839,6 @@
         "МТФ: все 4 таймфрейма согласны ✅✅",
         "OI растёт +0.5% + цена ↑",
         "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
-      "symbol": "XMRUSDT",
-      "direction": "LONG",
-      "entry": 344.5,
-      "tp1": 351.39,
-      "tp2": 358.28,
-      "sl": 337.61,
-      "strength": 50,
-      "status": "EXPIRED",
-      "created_at": "2026-03-20 10:36:52",
-      "reasons": [
-        "MACD бычий (hist=0.22947)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: сильное давление покупки (+0.25)",
-        "МТФ: 5m, 15m согласны",
-        "CVD растёт (+8.4%) — покупки усиливаются 📈",
-        "Bullish Engulfing (1h) 🕯️",
-        "⚡ Рыночный вход (MTF 2+ ТФ)"
       ]
     }
   ],
@@ -1215,33 +1192,6 @@
       ]
     },
     {
-      "id": 610,
-      "symbol": "APTUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 1.0127,
-      "tp1": 1.032954,
-      "tp2": 1.053208,
-      "sl": 0.992446,
-      "entry_orig": 1.0127,
-      "tp1_orig": 1.032954,
-      "tp2_orig": 1.053208,
-      "sl_orig": 0.992446,
-      "strength": 53,
-      "taken_at": "2026-03-20T13:46:57.301541",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00061)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: давление покупки (+0.14)",
-        "📰 CoinDesk 20 performance update: Aptos (APT) gains 6.3% as index r...",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +1.9% + цена ↑",
-        "CVD положительный (-1.8%)",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 612,
       "symbol": "MSTRUSDT",
       "direction": "LONG",
@@ -1505,6 +1455,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "APTUSDT",
+      "direction": "LONG",
+      "entry": 1.0127,
+      "tp1": 1.032954,
+      "tp2": 1.053208,
+      "sl": 0.992446,
+      "strength": 53,
+      "status": "SL",
+      "pnl_pct": -2.03,
+      "close_price": 0.99215,
+      "taken_at": "2026-03-20T13:46:57.301541",
+      "closed_at": "2026-03-20 14:52:33"
+    },
     {
       "symbol": "ENJUSDT",
       "direction": "LONG",
@@ -4290,20 +4254,6 @@
       "close_price": 0.10264999999999999,
       "taken_at": "2026-03-18T16:35:30.807693",
       "closed_at": "2026-03-18 18:08:11"
-    },
-    {
-      "symbol": "MOODENGUSDT",
-      "direction": "SHORT",
-      "entry": 0.05099,
-      "tp1": 0.04997,
-      "tp2": 0.04895,
-      "sl": 0.05201,
-      "strength": 37,
-      "status": "SL",
-      "pnl_pct": -2.1,
-      "close_price": 0.05206,
-      "taken_at": "2026-03-18T16:27:21.488260",
-      "closed_at": "2026-03-18 18:04:18"
     }
   ]
 }
