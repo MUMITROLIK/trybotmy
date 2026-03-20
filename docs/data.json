@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-20T08:37:24.390218+00:00",
+  "updated_at": "2026-03-20T08:38:30.547282+00:00",
   "publish_status": {
-    "last_ok": "2026-03-20T08:36:08Z",
+    "last_ok": "2026-03-20T08:37:30Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 685,
+    "total": 686,
     "wins": 216,
     "losses": 127,
-    "active": 6,
+    "active": 7,
     "winrate": 63.0
   },
   "trade_stats": {
-    "open": 7,
+    "open": 8,
     "pending": 0,
     "wins": 240,
     "losses": 249,
@@ -179,6 +179,32 @@
       ],
       "news": "Solana sees capital repositioning on-chain – Is a new cycle forming?",
       "created_at": "2026-03-20 08:15:14",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 724,
+      "symbol": "1000SHIBUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.005971,
+      "tp1": 0.00609,
+      "tp2": 0.00621,
+      "sl": 0.005852,
+      "strength": 53,
+      "reasons": [
+        "RSI=29 (сильная перепроданность)",
+        "BB ниже середины",
+        "EMA20 > EMA50",
+        "Стакан: сильное давление покупки (+0.52)",
+        "МТФ: 15m, 1h, 4h согласны",
+        "OI растёт +2.0% + цена ↑",
+        "CVD положительный (+2.1%)",
+        "Doji (1h) — нерешительность",
+        "BTC контекст: +1.9% за 12ч 📈",
+        "⚡ Рыночный вход (MTF сильный)"
+      ],
+      "news": null,
+      "created_at": "2026-03-20 08:37:47",
       "status": "ACTIVE"
     }
   ],
@@ -774,6 +800,35 @@
         "CVD положительный (+3.6%)",
         "BTC корреляция 0.74, BTC +0.6% 📈",
         "BTC контекст: +2.0% за 12ч 📈",
+        "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
+    {
+      "id": 578,
+      "symbol": "1000SHIBUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.005971,
+      "tp1": 0.00609,
+      "tp2": 0.00621,
+      "sl": 0.005852,
+      "entry_orig": 0.005971,
+      "tp1_orig": 0.00609,
+      "tp2_orig": 0.00621,
+      "sl_orig": 0.005852,
+      "strength": 53,
+      "taken_at": "2026-03-20T08:37:48.661723",
+      "status": "OPEN",
+      "reasons": [
+        "RSI=29 (сильная перепроданность)",
+        "BB ниже середины",
+        "EMA20 > EMA50",
+        "Стакан: сильное давление покупки (+0.52)",
+        "МТФ: 15m, 1h, 4h согласны",
+        "OI растёт +2.0% + цена ↑",
+        "CVD положительный (+2.1%)",
+        "Doji (1h) — нерешительность",
+        "BTC контекст: +1.9% за 12ч 📈",
         "⚡ Рыночный вход (MTF сильный)"
       ]
     }
