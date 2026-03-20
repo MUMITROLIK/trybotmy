@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-20T20:48:15.310985+00:00",
+  "updated_at": "2026-03-20T20:48:47.188692+00:00",
   "publish_status": {
-    "last_ok": "2026-03-20T20:47:08Z",
+    "last_ok": "2026-03-20T20:48:21Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -12,9 +12,9 @@
   "stats": {
     "total": 768,
     "wins": 238,
-    "losses": 155,
-    "active": 13,
-    "winrate": 60.6
+    "losses": 156,
+    "active": 12,
+    "winrate": 60.4
   },
   "trade_stats": {
     "open": 22,
@@ -292,28 +292,6 @@
       "status": "ACTIVE"
     },
     {
-      "id": 805,
-      "symbol": "ANKRUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.005269,
-      "tp1": 0.005374,
-      "tp2": 0.00548,
-      "sl": 0.005164,
-      "strength": 53,
-      "reasons": [
-        "MACD бычий (hist=0.00003)",
-        "Цена > EMA20 > EMA50",
-        "Объём x4.3 🔥🔥🔥",
-        "МТФ: 5m, 15m, 1h согласны",
-        "OI растёт +7.8% + цена ↑",
-        "⚡ Рыночный вход (MTF сильный)"
-      ],
-      "news": null,
-      "created_at": "2026-03-20 20:39:54",
-      "status": "ACTIVE"
-    },
-    {
       "id": 806,
       "symbol": "ICPUSDT",
       "direction": "LONG",
@@ -336,6 +314,25 @@
     }
   ],
   "history": [
+    {
+      "symbol": "ANKRUSDT",
+      "direction": "LONG",
+      "entry": 0.005269,
+      "tp1": 0.005374,
+      "tp2": 0.00548,
+      "sl": 0.005164,
+      "strength": 53,
+      "status": "SL",
+      "created_at": "2026-03-20 20:39:54",
+      "reasons": [
+        "MACD бычий (hist=0.00003)",
+        "Цена > EMA20 > EMA50",
+        "Объём x4.3 🔥🔥🔥",
+        "МТФ: 5m, 15m, 1h согласны",
+        "OI растёт +7.8% + цена ↑",
+        "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
     {
       "symbol": "ANKRUSDT",
       "direction": "LONG",
@@ -710,26 +707,6 @@
         "МТФ: 5m, 15m, 4h согласны",
         "OI растёт +2.6% + цена ↑",
         "CVD положительный (+2.9%)",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
-      "symbol": "ATHUSDT",
-      "direction": "LONG",
-      "entry": 0.007916,
-      "tp1": 0.008111,
-      "tp2": 0.008307,
-      "sl": 0.007758,
-      "strength": 50,
-      "status": "TP1",
-      "created_at": "2026-03-20 16:02:47",
-      "reasons": [
-        "MACD бычий (hist=0.00001)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: давление покупки (+0.11)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +2.7% + цена ↑",
-        "CVD положительный (-3.8%)",
         "⚡ Рыночный вход (MTF сильный)"
       ]
     }
