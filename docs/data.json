@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-20T20:49:21.364934+00:00",
+  "updated_at": "2026-03-20T20:50:05.774947+00:00",
   "publish_status": {
-    "last_ok": "2026-03-20T20:48:53Z",
+    "last_ok": "2026-03-20T20:49:27Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 60.4
   },
   "trade_stats": {
-    "open": 22,
+    "open": 21,
     "pending": 0,
     "wins": 270,
-    "losses": 287,
-    "total_pnl": 29.4,
-    "winrate": 48.5
+    "losses": 288,
+    "total_pnl": 26.57,
+    "winrate": 48.4
   },
   "fear_greed": {
     "value": 11,
@@ -1236,31 +1236,6 @@
       ]
     },
     {
-      "id": 659,
-      "symbol": "ANKRUSDT",
-      "direction": "LONG",
-      "exchange": "bybit",
-      "entry": 0.005269,
-      "tp1": 0.005374,
-      "tp2": 0.00548,
-      "sl": 0.005164,
-      "entry_orig": 0.005269,
-      "tp1_orig": 0.005374,
-      "tp2_orig": 0.00548,
-      "sl_orig": 0.005164,
-      "strength": 53,
-      "taken_at": "2026-03-20T20:39:54.975821",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00003)",
-        "Цена > EMA20 > EMA50",
-        "Объём x4.3 🔥🔥🔥",
-        "МТФ: 5m, 15m, 1h согласны",
-        "OI растёт +7.8% + цена ↑",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 660,
       "symbol": "ICPUSDT",
       "direction": "LONG",
@@ -1286,6 +1261,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "ANKRUSDT",
+      "direction": "LONG",
+      "entry": 0.005269,
+      "tp1": 0.005374,
+      "tp2": 0.00548,
+      "sl": 0.005164,
+      "strength": 53,
+      "status": "SL",
+      "pnl_pct": -2.83,
+      "close_price": 0.00512,
+      "taken_at": "2026-03-20T20:39:54.975821",
+      "closed_at": "2026-03-20 20:50:05"
+    },
     {
       "symbol": "ATHUSDT",
       "direction": "LONG",
@@ -4071,20 +4060,6 @@
       "close_price": 0.01359,
       "taken_at": "2026-03-18T16:22:52.125019",
       "closed_at": "2026-03-18 19:05:11"
-    },
-    {
-      "symbol": "DOGEUSDT",
-      "direction": "SHORT",
-      "entry": 0.09372,
-      "tp1": 0.091846,
-      "tp2": 0.089971,
-      "sl": 0.095594,
-      "strength": 37,
-      "status": "MANUAL",
-      "pnl_pct": -1.4,
-      "close_price": 0.09503,
-      "taken_at": "2026-03-18T16:22:51.566671",
-      "closed_at": "2026-03-18 19:05:10"
     }
   ]
 }
