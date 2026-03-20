@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-20T14:59:42.713311+00:00",
+  "updated_at": "2026-03-20T15:00:47.393221+00:00",
   "publish_status": {
-    "last_ok": "2026-03-20T14:59:04Z",
+    "last_ok": "2026-03-20T14:59:48Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -12,17 +12,17 @@
   "stats": {
     "total": 732,
     "wins": 226,
-    "losses": 143,
-    "active": 18,
-    "winrate": 61.2
+    "losses": 144,
+    "active": 17,
+    "winrate": 61.1
   },
   "trade_stats": {
-    "open": 24,
+    "open": 23,
     "pending": 0,
     "wins": 251,
-    "losses": 268,
-    "total_pnl": 19.35,
-    "winrate": 48.4
+    "losses": 269,
+    "total_pnl": 16.92,
+    "winrate": 48.3
   },
   "fear_greed": {
     "value": 11,
@@ -433,17 +433,19 @@
       "news": null,
       "created_at": "2026-03-20 14:49:27",
       "status": "ACTIVE"
-    },
+    }
+  ],
+  "history": [
     {
-      "id": 770,
       "symbol": "XANUSDT",
       "direction": "LONG",
-      "exchange": "binance",
       "entry": 0.012036,
       "tp1": 0.012391,
       "tp2": 0.012745,
       "sl": 0.011752,
       "strength": 54,
+      "status": "SL",
+      "created_at": "2026-03-20 14:56:21",
       "reasons": [
         "RSI=28 (сильная перепроданность)",
         "BB нижняя полоса (пробой)",
@@ -453,13 +455,8 @@
         "OI падает (шорты закрываются)",
         "Цена у поддержки 0.0120",
         "⚠️ Funding через 64м"
-      ],
-      "news": null,
-      "created_at": "2026-03-20 14:56:21",
-      "status": "ACTIVE"
-    }
-  ],
-  "history": [
+      ]
+    },
     {
       "symbol": "BTRUSDT",
       "direction": "LONG",
@@ -842,26 +839,6 @@
         "Стакан: сильное давление покупки (+0.63)",
         "МТФ: все 4 таймфрейма согласны ✅✅",
         "OI растёт +9.8% + цена ↑",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
-      "symbol": "JTOUSDT",
-      "direction": "LONG",
-      "entry": 0.3117,
-      "tp1": 0.317934,
-      "tp2": 0.324168,
-      "sl": 0.305466,
-      "strength": 50,
-      "status": "SL",
-      "created_at": "2026-03-20 10:43:40",
-      "reasons": [
-        "MACD бычий (hist=0.00003)",
-        "Цена > EMA20 > EMA50",
-        "Объём x2.4 🔥",
-        "Стакан: перевес bid (+0.07)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +0.5% + цена ↑",
         "⚡ Рыночный вход (MTF сильный)"
       ]
     }
@@ -1476,36 +1453,23 @@
         "⚠️ Funding через 71м",
         "⚡ Рыночный вход (MTF 2+ ТФ)"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 624,
       "symbol": "XANUSDT",
       "direction": "LONG",
-      "exchange": "binance",
       "entry": 0.012036,
       "tp1": 0.012391,
       "tp2": 0.012745,
       "sl": 0.011752,
-      "entry_orig": 0.012036,
-      "tp1_orig": 0.012391,
-      "tp2_orig": 0.012745,
-      "sl_orig": 0.011752,
       "strength": 54,
+      "status": "SL",
+      "pnl_pct": -2.43,
+      "close_price": 0.011743,
       "taken_at": "2026-03-20T14:56:22.176251",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=28 (сильная перепроданность)",
-        "BB нижняя полоса (пробой)",
-        "Объём x2.8 🔥🔥",
-        "Стакан: сильное давление покупки (+0.51)",
-        "МТФ: только 1 таймфрейм согласен",
-        "OI падает (шорты закрываются)",
-        "Цена у поддержки 0.0120",
-        "⚠️ Funding через 64м"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-20 15:00:47"
+    },
     {
       "symbol": "APTUSDT",
       "direction": "LONG",
@@ -4291,20 +4255,6 @@
       "close_price": 0.0061905,
       "taken_at": "2026-03-18T16:03:54.526756",
       "closed_at": "2026-03-18 18:08:37"
-    },
-    {
-      "symbol": "ARBUSDT",
-      "direction": "SHORT",
-      "entry": 0.1006,
-      "tp1": 0.098588,
-      "tp2": 0.096576,
-      "sl": 0.102612,
-      "strength": 35,
-      "status": "SL",
-      "pnl_pct": -2.04,
-      "close_price": 0.10264999999999999,
-      "taken_at": "2026-03-18T16:35:30.807693",
-      "closed_at": "2026-03-18 18:08:11"
     }
   ]
 }
