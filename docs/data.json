@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-20T16:56:49.213672+00:00",
+  "updated_at": "2026-03-20T16:57:37.785867+00:00",
   "publish_status": {
-    "last_ok": "2026-03-20T16:55:49Z",
+    "last_ok": "2026-03-20T16:56:55Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 748,
+    "total": 749,
     "wins": 233,
     "losses": 146,
-    "active": 21,
+    "active": 22,
     "winrate": 61.5
   },
   "trade_stats": {
-    "open": 25,
+    "open": 26,
     "pending": 0,
     "wins": 262,
     "losses": 272,
@@ -515,6 +515,28 @@
       ],
       "news": null,
       "created_at": "2026-03-20 16:54:12",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 787,
+      "symbol": "POLUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.10067,
+      "tp1": 0.102683,
+      "tp2": 0.104697,
+      "sl": 0.098657,
+      "strength": 53,
+      "reasons": [
+        "MACD бычий (hist=0.00025)",
+        "Цена > EMA20 > EMA50",
+        "Объём x4.4 🔥🔥🔥",
+        "Стакан: давление покупки (+0.15)",
+        "МТФ: 5m, 15m, 1h согласны",
+        "⚡ Рыночный вход (MTF сильный)"
+      ],
+      "news": null,
+      "created_at": "2026-03-20 16:57:37",
       "status": "ACTIVE"
     }
   ],
@@ -1583,6 +1605,31 @@
         "Стакан: сильное давление покупки (+0.29)",
         "МТФ: только 1 таймфрейм согласен",
         "CVD положительный (+1.4%)"
+      ]
+    },
+    {
+      "id": 641,
+      "symbol": "POLUSDT",
+      "direction": "LONG",
+      "exchange": "bybit",
+      "entry": 0.10067,
+      "tp1": 0.102683,
+      "tp2": 0.104697,
+      "sl": 0.098657,
+      "entry_orig": 0.10067,
+      "tp1_orig": 0.102683,
+      "tp2_orig": 0.104697,
+      "sl_orig": 0.098657,
+      "strength": 53,
+      "taken_at": "2026-03-20T16:57:37.248760",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.00025)",
+        "Цена > EMA20 > EMA50",
+        "Объём x4.4 🔥🔥🔥",
+        "Стакан: давление покупки (+0.15)",
+        "МТФ: 5m, 15m, 1h согласны",
+        "⚡ Рыночный вход (MTF сильный)"
       ]
     }
   ],
