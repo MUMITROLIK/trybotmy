@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-20T13:59:50.428025+00:00",
+  "updated_at": "2026-03-20T14:00:21.008871+00:00",
   "publish_status": {
-    "last_ok": "2026-03-20T13:59:25Z",
+    "last_ok": "2026-03-20T13:59:56Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -12,17 +12,17 @@
   "stats": {
     "total": 722,
     "wins": 223,
-    "losses": 137,
-    "active": 18,
-    "winrate": 61.9
+    "losses": 138,
+    "active": 17,
+    "winrate": 61.8
   },
   "trade_stats": {
-    "open": 24,
+    "open": 23,
     "pending": 0,
     "wins": 248,
-    "losses": 261,
-    "total_pnl": 27.18,
-    "winrate": 48.7
+    "losses": 262,
+    "total_pnl": 24.75,
+    "winrate": 48.6
   },
   "fear_greed": {
     "value": 11,
@@ -343,29 +343,6 @@
       "status": "ACTIVE"
     },
     {
-      "id": 755,
-      "symbol": "TAOUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 283.53,
-      "tp1": 289.511786,
-      "tp2": 295.493571,
-      "sl": 277.8594,
-      "strength": 51,
-      "reasons": [
-        "RSI=39 (перепроданность)",
-        "MACD бычий (hist=0.19012)",
-        "BB ниже середины",
-        "EMA20 > EMA50",
-        "📰 Bittensor (TAO) Surges 28% As Nvidia CEO Huang Praises Open AI Mo...",
-        "МТФ: 15m, 1h, 4h согласны",
-        "⚡ Рыночный вход (MTF сильный)"
-      ],
-      "news": "Bittensor (TAO) Surges 28% As Nvidia CEO Huang Praises Open AI Models",
-      "created_at": "2026-03-20 13:46:56",
-      "status": "ACTIVE"
-    },
-    {
       "id": 756,
       "symbol": "APTUSDT",
       "direction": "LONG",
@@ -475,6 +452,26 @@
         "Стакан: сильное давление покупки (+0.42)",
         "МТФ: 5m, 15m, 1h согласны",
         "CVD положительный (+3.7%)",
+        "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
+    {
+      "symbol": "TAOUSDT",
+      "direction": "LONG",
+      "entry": 283.53,
+      "tp1": 289.511786,
+      "tp2": 295.493571,
+      "sl": 277.8594,
+      "strength": 51,
+      "status": "SL",
+      "created_at": "2026-03-20 13:46:56",
+      "reasons": [
+        "RSI=39 (перепроданность)",
+        "MACD бычий (hist=0.19012)",
+        "BB ниже середины",
+        "EMA20 > EMA50",
+        "📰 Bittensor (TAO) Surges 28% As Nvidia CEO Huang Praises Open AI Mo...",
+        "МТФ: 15m, 1h, 4h согласны",
         "⚡ Рыночный вход (MTF сильный)"
       ]
     },
@@ -845,27 +842,6 @@
         "CVD положительный (+2.1%)",
         "Doji (1h) — нерешительность",
         "BTC контекст: +1.9% за 12ч 📈",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
-      "symbol": "FARTCOINUSDT",
-      "direction": "LONG",
-      "entry": 0.2119,
-      "tp1": 0.217139,
-      "tp2": 0.222379,
-      "sl": 0.207662,
-      "strength": 57,
-      "status": "SL",
-      "created_at": "2026-03-20 08:15:15",
-      "reasons": [
-        "MACD бычий (hist=0.00085)",
-        "Цена > EMA20 > EMA50",
-        "Объём x2.8 🔥🔥",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +3.3% + цена ↑",
-        "CVD положительный (+4.0%)",
-        "BTC контекст: +2.0% за 12ч 📈",
         "⚡ Рыночный вход (MTF сильный)"
       ]
     }
@@ -1378,32 +1354,6 @@
       ]
     },
     {
-      "id": 609,
-      "symbol": "TAOUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 283.53,
-      "tp1": 289.511786,
-      "tp2": 295.493571,
-      "sl": 277.8594,
-      "entry_orig": 283.53,
-      "tp1_orig": 289.511786,
-      "tp2_orig": 295.493571,
-      "sl_orig": 277.8594,
-      "strength": 51,
-      "taken_at": "2026-03-20T13:46:57.123941",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=39 (перепроданность)",
-        "MACD бычий (hist=0.19012)",
-        "BB ниже середины",
-        "EMA20 > EMA50",
-        "📰 Bittensor (TAO) Surges 28% As Nvidia CEO Huang Praises Open AI Mo...",
-        "МТФ: 15m, 1h, 4h согласны",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 610,
       "symbol": "APTUSDT",
       "direction": "LONG",
@@ -1508,6 +1458,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "TAOUSDT",
+      "direction": "LONG",
+      "entry": 283.53,
+      "tp1": 289.511786,
+      "tp2": 295.493571,
+      "sl": 277.8594,
+      "strength": 51,
+      "status": "SL",
+      "pnl_pct": -2.43,
+      "close_price": 276.635,
+      "taken_at": "2026-03-20T13:46:57.123941",
+      "closed_at": "2026-03-20 14:00:20"
+    },
     {
       "symbol": "EDGEUSDT",
       "direction": "LONG",
@@ -4293,20 +4257,6 @@
       "close_price": 43.6305,
       "taken_at": "2026-03-18T17:10:41.528175",
       "closed_at": "2026-03-18 17:52:35"
-    },
-    {
-      "symbol": "KASUSDT",
-      "direction": "SHORT",
-      "entry": 0.03741,
-      "tp1": 0.036557,
-      "tp2": 0.035704,
-      "sl": 0.038158,
-      "strength": 36,
-      "status": "SL",
-      "pnl_pct": -2.17,
-      "close_price": 0.03822,
-      "taken_at": "2026-03-18T16:27:21.328052",
-      "closed_at": "2026-03-18 17:50:13"
     }
   ]
 }
