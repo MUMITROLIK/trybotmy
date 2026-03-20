@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-20T18:19:53.755945+00:00",
+  "updated_at": "2026-03-20T18:21:06.458435+00:00",
   "publish_status": {
-    "last_ok": "2026-03-20T18:19:02Z",
+    "last_ok": "2026-03-20T18:19:59Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -12,17 +12,17 @@
   "stats": {
     "total": 755,
     "wins": 236,
-    "losses": 151,
-    "active": 14,
-    "winrate": 61.0
+    "losses": 152,
+    "active": 13,
+    "winrate": 60.8
   },
   "trade_stats": {
-    "open": 22,
+    "open": 21,
     "pending": 0,
     "wins": 265,
-    "losses": 279,
-    "total_pnl": 34.94,
-    "winrate": 48.7
+    "losses": 280,
+    "total_pnl": 32.52,
+    "winrate": 48.6
   },
   "fear_greed": {
     "value": 11,
@@ -337,17 +337,19 @@
       "news": null,
       "created_at": "2026-03-20 17:21:16",
       "status": "ACTIVE"
-    },
+    }
+  ],
+  "history": [
     {
-      "id": 793,
       "symbol": "WAXPUSDT",
       "direction": "LONG",
-      "exchange": "binance",
       "entry": 0.008124,
       "tp1": 0.008363,
       "tp2": 0.008601,
       "sl": 0.007933,
       "strength": 50,
+      "status": "SL",
+      "created_at": "2026-03-20 17:36:53",
       "reasons": [
         "MACD бычий (hist=0.00000)",
         "Цена > EMA20 > EMA50",
@@ -356,13 +358,8 @@
         "OI растёт +12.2% + цена ↑",
         "CVD положительный (+0.5%)",
         "⚡ Рыночный вход (MTF сильный)"
-      ],
-      "news": null,
-      "created_at": "2026-03-20 17:36:53",
-      "status": "ACTIVE"
-    }
-  ],
-  "history": [
+      ]
+    },
     {
       "symbol": "ALCHUSDT",
       "direction": "LONG",
@@ -743,27 +740,6 @@
         "OI растёт +2.7% + цена ↑",
         "CVD положительный (+1.0%)",
         "Doji (1h) — нерешительность",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
-      "symbol": "SAFEUSDT",
-      "direction": "LONG",
-      "entry": 0.10557,
-      "tp1": 0.107681,
-      "tp2": 0.109793,
-      "sl": 0.103459,
-      "strength": 51,
-      "status": "TP1",
-      "created_at": "2026-03-20 13:59:10",
-      "reasons": [
-        "RSI=49 (нейтральный↓)",
-        "MACD бычий (hist=0.00002)",
-        "BB ниже середины",
-        "EMA20 > EMA50",
-        "Объём x1.9 🔥",
-        "Стакан: сильное давление покупки (+0.27)",
-        "МТФ: 5m, 15m, 4h согласны",
         "⚡ Рыночный вход (MTF сильный)"
       ]
     }
@@ -1317,35 +1293,23 @@
         "OI растёт +4.6% + цена ↑",
         "⚡ Рыночный вход (MTF сильный)"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 647,
       "symbol": "WAXPUSDT",
       "direction": "LONG",
-      "exchange": "binance",
       "entry": 0.008124,
       "tp1": 0.008363,
       "tp2": 0.008601,
       "sl": 0.007933,
-      "entry_orig": 0.008124,
-      "tp1_orig": 0.008363,
-      "tp2_orig": 0.008601,
-      "sl_orig": 0.007933,
       "strength": 50,
+      "status": "SL",
+      "pnl_pct": -2.42,
+      "close_price": 0.0079275,
       "taken_at": "2026-03-20T17:36:54.060446",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00000)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: давление покупки (+0.15)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +12.2% + цена ↑",
-        "CVD положительный (+0.5%)",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-20 18:20:16"
+    },
     {
       "symbol": "POLUSDT",
       "direction": "LONG",
@@ -4130,20 +4094,6 @@
       "pnl_pct": 1.01,
       "close_price": 0.0979,
       "taken_at": "2026-03-18T16:03:55.272194",
-      "closed_at": "2026-03-18 19:05:03"
-    },
-    {
-      "symbol": "CRVUSDT",
-      "direction": "SHORT",
-      "entry": 0.239,
-      "tp1": 0.23422,
-      "tp2": 0.22944,
-      "sl": 0.24378,
-      "strength": 35,
-      "status": "MANUAL",
-      "pnl_pct": -0.84,
-      "close_price": 0.241,
-      "taken_at": "2026-03-18T16:05:42.047754",
       "closed_at": "2026-03-18 19:05:03"
     }
   ]
