@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-20T11:22:56.948642+00:00",
+  "updated_at": "2026-03-20T11:24:18.992673+00:00",
   "publish_status": {
-    "last_ok": "2026-03-20T11:22:14Z",
+    "last_ok": "2026-03-20T11:23:02Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -12,17 +12,17 @@
   "stats": {
     "total": 698,
     "wins": 220,
-    "losses": 130,
-    "active": 12,
-    "winrate": 62.9
+    "losses": 131,
+    "active": 11,
+    "winrate": 62.7
   },
   "trade_stats": {
-    "open": 13,
+    "open": 12,
     "pending": 0,
     "wins": 243,
-    "losses": 253,
-    "total_pnl": 33.55,
-    "winrate": 49.0
+    "losses": 254,
+    "total_pnl": 31.2,
+    "winrate": 48.9
   },
   "fear_greed": {
     "value": 11,
@@ -295,17 +295,19 @@
       "news": null,
       "created_at": "2026-03-20 10:54:07",
       "status": "ACTIVE"
-    },
+    }
+  ],
+  "history": [
     {
-      "id": 736,
       "symbol": "ENJUSDT",
       "direction": "LONG",
-      "exchange": "binance",
       "entry": 0.02529,
       "tp1": 0.025845,
       "tp2": 0.0264,
       "sl": 0.024784,
       "strength": 51,
+      "status": "SL",
+      "created_at": "2026-03-20 11:10:58",
       "reasons": [
         "MACD бычий (hist=0.00009)",
         "Цена > EMA20 > EMA50",
@@ -314,13 +316,8 @@
         "OI растёт +1.6% + цена ↑",
         "CVD положительный (+1.6%)",
         "⚡ Рыночный вход (MTF сильный)"
-      ],
-      "news": null,
-      "created_at": "2026-03-20 11:10:58",
-      "status": "ACTIVE"
-    }
-  ],
-  "history": [
+      ]
+    },
     {
       "symbol": "EDGEUSDT",
       "direction": "LONG",
@@ -714,25 +711,6 @@
         "OI растёт +7.6% + цена ↑",
         "⚡ Рыночный вход (MTF сильный)"
       ]
-    },
-    {
-      "symbol": "SAHARAUSDT",
-      "direction": "LONG",
-      "entry": 0.02698,
-      "tp1": 0.027585,
-      "tp2": 0.028191,
-      "sl": 0.02644,
-      "strength": 45,
-      "status": "EXPIRED",
-      "created_at": "2026-03-19 17:55:48",
-      "reasons": [
-        "MACD бычий (hist=0.00000)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: давление покупки (+0.12)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "CVD положительный (-3.4%)",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
     }
   ],
   "trades_open": [
@@ -1056,35 +1034,23 @@
         "OI растёт +2.0% + цена ↑",
         "⚡ Рыночный вход (MTF сильный)"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 590,
       "symbol": "ENJUSDT",
       "direction": "LONG",
-      "exchange": "binance",
       "entry": 0.02529,
       "tp1": 0.025845,
       "tp2": 0.0264,
       "sl": 0.024784,
-      "entry_orig": 0.02529,
-      "tp1_orig": 0.025845,
-      "tp2_orig": 0.0264,
-      "sl_orig": 0.024784,
       "strength": 51,
+      "status": "SL",
+      "pnl_pct": -2.35,
+      "close_price": 0.024695,
       "taken_at": "2026-03-20T11:10:58.745638",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00009)",
-        "Цена > EMA20 > EMA50",
-        "Объём x2.3 🔥",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +1.6% + цена ↑",
-        "CVD положительный (+1.6%)",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-20 11:23:05"
+    },
     {
       "symbol": "EDGEUSDT",
       "direction": "LONG",
@@ -3870,20 +3836,6 @@
       "close_price": 1.836,
       "taken_at": "2026-03-18T16:07:24.197190",
       "closed_at": "2026-03-18 17:09:09"
-    },
-    {
-      "symbol": "POWERUSDT",
-      "direction": "SHORT",
-      "entry": 0.10448,
-      "tp1": 0.102318,
-      "tp2": 0.100156,
-      "sl": 0.10161,
-      "strength": 37,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 2.6,
-      "close_price": 0.10176,
-      "taken_at": "2026-03-18T16:07:25.090312",
-      "closed_at": "2026-03-18 17:02:47"
     }
   ]
 }
