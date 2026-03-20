@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-20T22:30:00.663342+00:00",
+  "updated_at": "2026-03-20T22:31:04.267860+00:00",
   "publish_status": {
-    "last_ok": "2026-03-20T22:29:33Z",
+    "last_ok": "2026-03-20T22:30:06Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 60.4
   },
   "trade_stats": {
-    "open": 15,
+    "open": 14,
     "pending": 0,
     "wins": 280,
-    "losses": 294,
-    "total_pnl": 29.25,
-    "winrate": 48.8
+    "losses": 295,
+    "total_pnl": 28.11,
+    "winrate": 48.7
   },
   "fear_greed": {
     "value": 11,
@@ -673,32 +673,6 @@
   ],
   "trades_open": [
     {
-      "id": 619,
-      "symbol": "PAXGUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 4564.05,
-      "tp1": 4655.331,
-      "tp2": 4746.612,
-      "sl": 4472.769,
-      "entry_orig": 4564.05,
-      "tp1_orig": 4655.331,
-      "tp2_orig": 4746.612,
-      "sl_orig": 4472.769,
-      "strength": 56,
-      "taken_at": "2026-03-20T14:30:43.109663",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=28 (сильная перепроданность)",
-        "BB нижняя полоса (пробой)",
-        "Объём x3.7 🔥🔥",
-        "Стакан: сильное давление покупки (+0.68)",
-        "OI растёт +1.1%",
-        "CVD положительный (-3.5%)",
-        "Цена у поддержки 4557.1400"
-      ]
-    },
-    {
       "id": 638,
       "symbol": "APTUSDT",
       "direction": "LONG",
@@ -1071,6 +1045,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "PAXGUSDT",
+      "direction": "LONG",
+      "entry": 4564.05,
+      "tp1": 4655.331,
+      "tp2": 4746.612,
+      "sl": 4472.769,
+      "strength": 56,
+      "status": "TIMEOUT",
+      "pnl_pct": -1.14,
+      "close_price": 4512.155,
+      "taken_at": "2026-03-20T14:30:43.109663",
+      "closed_at": "2026-03-20 22:30:58"
+    },
     {
       "symbol": "EDGEUSDT",
       "direction": "LONG",
@@ -3856,20 +3844,6 @@
       "close_price": 1.207,
       "taken_at": "2026-03-18T18:47:27.069445",
       "closed_at": "2026-03-18 19:05:21"
-    },
-    {
-      "symbol": "ANKRUSDT",
-      "direction": "LONG",
-      "entry": 0.005111,
-      "tp1": 0.005213,
-      "tp2": 0.005315,
-      "sl": 0.005009,
-      "strength": 33,
-      "status": "MANUAL",
-      "pnl_pct": 2.68,
-      "close_price": 0.005248,
-      "taken_at": "2026-03-18T18:28:05.510930",
-      "closed_at": "2026-03-18 19:05:20"
     }
   ]
 }
