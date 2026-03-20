@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-20T14:38:05.845232+00:00",
+  "updated_at": "2026-03-20T14:39:03.218962+00:00",
   "publish_status": {
-    "last_ok": "2026-03-20T14:37:05Z",
+    "last_ok": "2026-03-20T14:38:11Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 729,
+    "total": 730,
     "wins": 224,
     "losses": 141,
-    "active": 19,
+    "active": 20,
     "winrate": 61.4
   },
   "trade_stats": {
-    "open": 26,
+    "open": 27,
     "pending": 0,
     "wins": 249,
     "losses": 265,
@@ -479,6 +479,30 @@
       ],
       "news": null,
       "created_at": "2026-03-20 14:34:04",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 768,
+      "symbol": "STOUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.10125,
+      "tp1": 0.104462,
+      "tp2": 0.107674,
+      "sl": 0.09868,
+      "strength": 53,
+      "reasons": [
+        "MACD бычий (hist=0.00006)",
+        "Цена > EMA20 > EMA50",
+        "Стакан: сильное давление покупки (+0.48)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +7.3% + цена ↑",
+        "CVD положительный (+4.0%)",
+        "⚠️ Funding через 82м",
+        "⚡ Рыночный вход (MTF сильный)"
+      ],
+      "news": null,
+      "created_at": "2026-03-20 14:39:02",
       "status": "ACTIVE"
     }
   ],
@@ -1577,6 +1601,33 @@
         "Bullish Engulfing (1h) 🕯️",
         "⚠️ Funding через 87м",
         "⚡ Рыночный вход (MTF 2+ ТФ)"
+      ]
+    },
+    {
+      "id": 622,
+      "symbol": "STOUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.10125,
+      "tp1": 0.104462,
+      "tp2": 0.107674,
+      "sl": 0.09868,
+      "entry_orig": 0.10125,
+      "tp1_orig": 0.104462,
+      "tp2_orig": 0.107674,
+      "sl_orig": 0.09868,
+      "strength": 53,
+      "taken_at": "2026-03-20T14:39:02.612165",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.00006)",
+        "Цена > EMA20 > EMA50",
+        "Стакан: сильное давление покупки (+0.48)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +7.3% + цена ↑",
+        "CVD положительный (+4.0%)",
+        "⚠️ Funding через 82м",
+        "⚡ Рыночный вход (MTF сильный)"
       ]
     }
   ],
