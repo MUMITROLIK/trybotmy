@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-20T13:55:27.584843+00:00",
+  "updated_at": "2026-03-20T13:56:33.880311+00:00",
   "publish_status": {
-    "last_ok": "2026-03-20T13:55:03Z",
+    "last_ok": "2026-03-20T13:55:33Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 719,
+    "total": 721,
     "wins": 223,
     "losses": 136,
-    "active": 16,
+    "active": 18,
     "winrate": 62.1
   },
   "trade_stats": {
-    "open": 22,
+    "open": 24,
     "pending": 0,
     "wins": 248,
     "losses": 260,
@@ -412,6 +412,49 @@
       ],
       "news": "CoinDesk 20 performance update: Aptos (APT) gains 6.3% as index rises",
       "created_at": "2026-03-20 13:46:57",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 758,
+      "symbol": "MSTRUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 136.24,
+      "tp1": 138.9648,
+      "tp2": 141.6896,
+      "sl": 133.5152,
+      "strength": 51,
+      "reasons": [
+        "RSI=41 (нейтральный↓)",
+        "BB нижняя полоса (пробой)",
+        "Объём x4.1 🔥🔥🔥",
+        "Стакан: сильное давление покупки (+0.31)",
+        "CVD растёт (+10.9%) — покупки усиливаются 📈"
+      ],
+      "news": null,
+      "created_at": "2026-03-20 13:55:43",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 759,
+      "symbol": "MYXUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.3395,
+      "tp1": 0.34629,
+      "tp2": 0.35308,
+      "sl": 0.33271,
+      "strength": 50,
+      "reasons": [
+        "MACD бычий (hist=0.00133)",
+        "Цена > EMA20 > EMA50",
+        "Объём x4.3 🔥🔥🔥",
+        "Стакан: перевес bid (+0.07)",
+        "МТФ: 5m, 15m, 1h согласны",
+        "⚡ Рыночный вход (MTF сильный)"
+      ],
+      "news": null,
+      "created_at": "2026-03-20 13:55:43",
       "status": "ACTIVE"
     }
   ],
@@ -1413,6 +1456,55 @@
         "МТФ: все 4 таймфрейма согласны ✅✅",
         "OI растёт +1.9% + цена ↑",
         "CVD положительный (-1.8%)",
+        "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
+    {
+      "id": 612,
+      "symbol": "MSTRUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 136.24,
+      "tp1": 138.9648,
+      "tp2": 141.6896,
+      "sl": 133.5152,
+      "entry_orig": 136.24,
+      "tp1_orig": 138.9648,
+      "tp2_orig": 141.6896,
+      "sl_orig": 133.5152,
+      "strength": 51,
+      "taken_at": "2026-03-20T13:55:43.766695",
+      "status": "OPEN",
+      "reasons": [
+        "RSI=41 (нейтральный↓)",
+        "BB нижняя полоса (пробой)",
+        "Объём x4.1 🔥🔥🔥",
+        "Стакан: сильное давление покупки (+0.31)",
+        "CVD растёт (+10.9%) — покупки усиливаются 📈"
+      ]
+    },
+    {
+      "id": 613,
+      "symbol": "MYXUSDT",
+      "direction": "LONG",
+      "exchange": "bybit",
+      "entry": 0.3395,
+      "tp1": 0.34629,
+      "tp2": 0.35308,
+      "sl": 0.33271,
+      "entry_orig": 0.3395,
+      "tp1_orig": 0.34629,
+      "tp2_orig": 0.35308,
+      "sl_orig": 0.33271,
+      "strength": 50,
+      "taken_at": "2026-03-20T13:55:43.945226",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.00133)",
+        "Цена > EMA20 > EMA50",
+        "Объём x4.3 🔥🔥🔥",
+        "Стакан: перевес bid (+0.07)",
+        "МТФ: 5m, 15m, 1h согласны",
         "⚡ Рыночный вход (MTF сильный)"
       ]
     }
