@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-20T22:05:24.944017+00:00",
+  "updated_at": "2026-03-20T22:06:00.676563+00:00",
   "publish_status": {
-    "last_ok": "2026-03-20T22:05:00Z",
+    "last_ok": "2026-03-20T22:05:30Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 60.2
   },
   "trade_stats": {
-    "open": 19,
+    "open": 18,
     "pending": 0,
-    "wins": 274,
+    "wins": 275,
     "losses": 293,
-    "total_pnl": 20.38,
-    "winrate": 48.3
+    "total_pnl": 22.42,
+    "winrate": 48.4
   },
   "fear_greed": {
     "value": 11,
@@ -981,30 +981,6 @@
       ]
     },
     {
-      "id": 660,
-      "symbol": "ICPUSDT",
-      "direction": "LONG",
-      "exchange": "bybit",
-      "entry": 2.468,
-      "tp1": 2.51736,
-      "tp2": 2.56672,
-      "sl": 2.41864,
-      "entry_orig": 2.468,
-      "tp1_orig": 2.51736,
-      "tp2_orig": 2.56672,
-      "sl_orig": 2.41864,
-      "strength": 51,
-      "taken_at": "2026-03-20T20:45:11.476810",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=34 (перепроданность)",
-        "BB нижняя полоса (пробой)",
-        "Объём x4.8 🔥🔥🔥",
-        "Стакан: сильное давление покупки (+0.28)",
-        "Цена у поддержки 2.4640"
-      ]
-    },
-    {
       "id": 661,
       "symbol": "PTBUSDT",
       "direction": "LONG",
@@ -1162,33 +1138,45 @@
       ]
     },
     {
-      "id": 658,
-      "symbol": "COSUSDT",
+      "id": 660,
+      "symbol": "ICPUSDT",
       "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.001597,
-      "tp1": 0.001629,
-      "tp2": 0.001661,
-      "sl": 0.0016294999999999999,
-      "entry_orig": 0.001597,
-      "tp1_orig": 0.001629,
-      "tp2_orig": 0.001661,
-      "sl_orig": 0.001565,
-      "strength": 53,
-      "taken_at": "2026-03-20T20:34:39.365876",
+      "exchange": "bybit",
+      "entry": 2.468,
+      "tp1": 2.51736,
+      "tp2": 2.56672,
+      "sl": 2.518,
+      "entry_orig": 2.468,
+      "tp1_orig": 2.51736,
+      "tp2_orig": 2.56672,
+      "sl_orig": 2.41864,
+      "strength": 51,
+      "taken_at": "2026-03-20T20:45:11.476810",
       "status": "TP1_HIT",
       "reasons": [
-        "RSI=40 (перепроданность)",
-        "MACD бычий (hist=0.00000)",
-        "BB ниже середины",
-        "Стакан: давление покупки (+0.13)",
-        "МТФ: 5m, 1h, 4h согласны",
-        "CVD растёт (+6.0%) — покупки усиливаются 📈",
-        "⚡ Рыночный вход (MTF сильный)"
+        "RSI=34 (перепроданность)",
+        "BB нижняя полоса (пробой)",
+        "Объём x4.8 🔥🔥🔥",
+        "Стакан: сильное давление покупки (+0.28)",
+        "Цена у поддержки 2.4640"
       ]
     }
   ],
   "trades_history": [
+    {
+      "symbol": "COSUSDT",
+      "direction": "LONG",
+      "entry": 0.001597,
+      "tp1": 0.001629,
+      "tp2": 0.001661,
+      "sl": 0.0016294999999999999,
+      "strength": 53,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 2.04,
+      "close_price": 0.0016294999999999999,
+      "taken_at": "2026-03-20T20:34:39.365876",
+      "closed_at": "2026-03-20 22:05:52"
+    },
     {
       "symbol": "WAXPUSDT",
       "direction": "LONG",
@@ -3974,20 +3962,6 @@
       "close_price": 0.04779,
       "taken_at": "2026-03-18T18:01:00.618044",
       "closed_at": "2026-03-18 19:05:18"
-    },
-    {
-      "symbol": "XMRUSDT",
-      "direction": "SHORT",
-      "entry": 351.15,
-      "tp1": 344.127,
-      "tp2": 337.104,
-      "sl": 358.173,
-      "strength": 37,
-      "status": "MANUAL",
-      "pnl_pct": 0.7,
-      "close_price": 348.69,
-      "taken_at": "2026-03-18T17:25:27.449794",
-      "closed_at": "2026-03-18 19:05:17"
     }
   ]
 }
