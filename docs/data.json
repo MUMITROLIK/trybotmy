@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-20T16:28:28.791448+00:00",
+  "updated_at": "2026-03-20T16:29:25.194232+00:00",
   "publish_status": {
-    "last_ok": "2026-03-20T16:27:28Z",
+    "last_ok": "2026-03-20T16:28:34Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 744,
+    "total": 745,
     "wins": 233,
     "losses": 145,
-    "active": 18,
+    "active": 19,
     "winrate": 61.6
   },
   "trade_stats": {
-    "open": 24,
+    "open": 25,
     "pending": 0,
     "wins": 260,
     "losses": 271,
@@ -447,6 +447,28 @@
       ],
       "news": null,
       "created_at": "2026-03-20 16:27:49",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 783,
+      "symbol": "SHIB1000USDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.006145,
+      "tp1": 0.006268,
+      "tp2": 0.006391,
+      "sl": 0.006022,
+      "strength": 50,
+      "reasons": [
+        "MACD бычий (hist=0.00002)",
+        "Цена > EMA20 > EMA50",
+        "Объём x2.7 🔥🔥",
+        "Стакан: перевес bid (+0.06)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "⚡ Рыночный вход (MTF сильный)"
+      ],
+      "news": null,
+      "created_at": "2026-03-20 16:29:24",
       "status": "ACTIVE"
     }
   ],
@@ -1486,6 +1508,31 @@
         "Цена > EMA20 > EMA50",
         "Объём x2.0 🔥",
         "Стакан: сильное давление покупки (+0.28)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
+    {
+      "id": 637,
+      "symbol": "SHIB1000USDT",
+      "direction": "LONG",
+      "exchange": "bybit",
+      "entry": 0.006145,
+      "tp1": 0.006268,
+      "tp2": 0.006391,
+      "sl": 0.006022,
+      "entry_orig": 0.006145,
+      "tp1_orig": 0.006268,
+      "tp2_orig": 0.006391,
+      "sl_orig": 0.006022,
+      "strength": 50,
+      "taken_at": "2026-03-20T16:29:24.846166",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.00002)",
+        "Цена > EMA20 > EMA50",
+        "Объём x2.7 🔥🔥",
+        "Стакан: перевес bid (+0.06)",
         "МТФ: все 4 таймфрейма согласны ✅✅",
         "⚡ Рыночный вход (MTF сильный)"
       ]
