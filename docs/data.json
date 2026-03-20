@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-20T17:27:09.077968+00:00",
+  "updated_at": "2026-03-20T17:28:01.080138+00:00",
   "publish_status": {
-    "last_ok": "2026-03-20T17:26:09Z",
+    "last_ok": "2026-03-20T17:27:15Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,19 +10,19 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 753,
+    "total": 754,
     "wins": 235,
     "losses": 147,
-    "active": 19,
+    "active": 20,
     "winrate": 61.5
   },
   "trade_stats": {
     "open": 27,
     "pending": 0,
     "wins": 264,
-    "losses": 273,
-    "total_pnl": 40.07,
-    "winrate": 49.2
+    "losses": 274,
+    "total_pnl": 39.82,
+    "winrate": 49.1
   },
   "fear_greed": {
     "value": 11,
@@ -473,6 +473,28 @@
       "news": null,
       "created_at": "2026-03-20 17:23:01",
       "status": "ACTIVE"
+    },
+    {
+      "id": 792,
+      "symbol": "ALCHUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.08421,
+      "tp1": 0.087283,
+      "tp2": 0.090356,
+      "sl": 0.081752,
+      "strength": 53,
+      "reasons": [
+        "MACD бычий (hist=0.00046)",
+        "Цена > EMA20 > EMA50",
+        "Объём x11.8 🔥🔥🔥",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +4.6% + цена ↑",
+        "⚡ Рыночный вход (MTF сильный)"
+      ],
+      "news": null,
+      "created_at": "2026-03-20 17:28:00",
+      "status": "ACTIVE"
     }
   ],
   "history": [
@@ -885,32 +907,6 @@
     }
   ],
   "trades_open": [
-    {
-      "id": 582,
-      "symbol": "AXSUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 1.223,
-      "tp1": 1.24746,
-      "tp2": 1.27192,
-      "sl": 1.19854,
-      "entry_orig": 1.223,
-      "tp1_orig": 1.24746,
-      "tp2_orig": 1.27192,
-      "sl_orig": 1.19854,
-      "strength": 51,
-      "taken_at": "2026-03-20T09:27:24.633150",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=39 (перепроданность)",
-        "BB нижняя полоса (пробой)",
-        "EMA20 > EMA50",
-        "Стакан: сильное давление покупки (+0.26)",
-        "МТФ: 15m, 1h, 4h согласны",
-        "Цена у поддержки 1.2210",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
     {
       "id": 583,
       "symbol": "ETHUSDT",
@@ -1591,9 +1587,48 @@
         "CVD растёт (+6.6%) — покупки усиливаются 📈",
         "⚡ Рыночный вход (MTF сильный)"
       ]
+    },
+    {
+      "id": 646,
+      "symbol": "ALCHUSDT",
+      "direction": "LONG",
+      "exchange": "bybit",
+      "entry": 0.08421,
+      "tp1": 0.087283,
+      "tp2": 0.090356,
+      "sl": 0.081752,
+      "entry_orig": 0.08421,
+      "tp1_orig": 0.087283,
+      "tp2_orig": 0.090356,
+      "sl_orig": 0.081752,
+      "strength": 53,
+      "taken_at": "2026-03-20T17:28:00.670544",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.00046)",
+        "Цена > EMA20 > EMA50",
+        "Объём x11.8 🔥🔥🔥",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +4.6% + цена ↑",
+        "⚡ Рыночный вход (MTF сильный)"
+      ]
     }
   ],
   "trades_history": [
+    {
+      "symbol": "AXSUSDT",
+      "direction": "LONG",
+      "entry": 1.223,
+      "tp1": 1.24746,
+      "tp2": 1.27192,
+      "sl": 1.19854,
+      "strength": 51,
+      "status": "TIMEOUT",
+      "pnl_pct": -0.25,
+      "close_price": 1.22,
+      "taken_at": "2026-03-20T09:27:24.633150",
+      "closed_at": "2026-03-20 17:27:38"
+    },
     {
       "symbol": "OPNUSDT",
       "direction": "SHORT",
@@ -4379,20 +4414,6 @@
       "close_price": 76.17,
       "taken_at": "2026-03-18T16:03:53.816762",
       "closed_at": "2026-03-18 19:05:00"
-    },
-    {
-      "symbol": "AINUSDT",
-      "direction": "LONG",
-      "entry": 0.0929,
-      "tp1": 0.096715,
-      "tp2": 0.100531,
-      "sl": 0.089848,
-      "strength": 31,
-      "status": "MANUAL",
-      "pnl_pct": 0.99,
-      "close_price": 0.09382,
-      "taken_at": "2026-03-18T16:02:16.887652",
-      "closed_at": "2026-03-18 19:04:59"
     }
   ]
 }
