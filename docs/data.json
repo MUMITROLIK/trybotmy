@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-20T20:29:16.864233+00:00",
+  "updated_at": "2026-03-20T20:30:45.935017+00:00",
   "publish_status": {
-    "last_ok": "2026-03-20T20:28:41Z",
+    "last_ok": "2026-03-20T20:29:22Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 60.7
   },
   "trade_stats": {
-    "open": 23,
+    "open": 22,
     "pending": 0,
-    "wins": 269,
+    "wins": 270,
     "losses": 284,
-    "total_pnl": 32.48,
-    "winrate": 48.6
+    "total_pnl": 35.72,
+    "winrate": 48.7
   },
   "fear_greed": {
     "value": 11,
@@ -1315,34 +1315,23 @@
         "OI падает (шорты закрываются)",
         "CVD положительный (-1.9%)"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 656,
       "symbol": "ANKRUSDT",
       "direction": "LONG",
-      "exchange": "bybit",
       "entry": 0.005154,
       "tp1": 0.005257,
       "tp2": 0.00536,
       "sl": 0.005321,
-      "entry_orig": 0.005154,
-      "tp1_orig": 0.005257,
-      "tp2_orig": 0.00536,
-      "sl_orig": 0.005051,
       "strength": 57,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 3.24,
+      "close_price": 0.005321,
       "taken_at": "2026-03-20T20:18:34.447894",
-      "status": "TP1_HIT",
-      "reasons": [
-        "MACD бычий (hist=0.00001)",
-        "Цена > EMA20 > EMA50",
-        "Объём x7.3 🔥🔥🔥",
-        "Стакан: давление покупки (+0.16)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-20 20:29:24"
+    },
     {
       "symbol": "PHAUSDT",
       "direction": "LONG",
@@ -4128,20 +4117,6 @@
       "close_price": 0.6914,
       "taken_at": "2026-03-18T16:16:35.635846",
       "closed_at": "2026-03-18 19:05:08"
-    },
-    {
-      "symbol": "IPUSDT",
-      "direction": "SHORT",
-      "entry": 0.804,
-      "tp1": 0.775693,
-      "tp2": 0.747386,
-      "sl": 0.826646,
-      "strength": 36,
-      "status": "MANUAL",
-      "pnl_pct": 1.34,
-      "close_price": 0.7932,
-      "taken_at": "2026-03-18T16:10:44.028411",
-      "closed_at": "2026-03-18 19:05:07"
     }
   ]
 }
