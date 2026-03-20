@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-20T14:30:27.097802+00:00",
+  "updated_at": "2026-03-20T14:31:33.750737+00:00",
   "publish_status": {
-    "last_ok": "2026-03-20T14:29:03Z",
+    "last_ok": "2026-03-20T14:30:33Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 726,
+    "total": 728,
     "wins": 224,
     "losses": 141,
-    "active": 17,
+    "active": 19,
     "winrate": 61.4
   },
   "trade_stats": {
-    "open": 23,
+    "open": 25,
     "pending": 0,
     "wins": 249,
     "losses": 265,
@@ -433,6 +433,51 @@
       ],
       "news": null,
       "created_at": "2026-03-20 14:28:56",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 765,
+      "symbol": "PAXGUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 4564.05,
+      "tp1": 4655.331,
+      "tp2": 4746.612,
+      "sl": 4472.769,
+      "strength": 56,
+      "reasons": [
+        "RSI=28 (сильная перепроданность)",
+        "BB нижняя полоса (пробой)",
+        "Объём x3.7 🔥🔥",
+        "Стакан: сильное давление покупки (+0.68)",
+        "OI растёт +1.1%",
+        "CVD положительный (-3.5%)",
+        "Цена у поддержки 4557.1400"
+      ],
+      "news": null,
+      "created_at": "2026-03-20 14:30:42",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 766,
+      "symbol": "RENDERUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 1.707,
+      "tp1": 1.74114,
+      "tp2": 1.77528,
+      "sl": 1.67286,
+      "strength": 51,
+      "reasons": [
+        "RSI=40 (перепроданность)",
+        "MACD бычий (hist=0.00044)",
+        "BB ниже середины",
+        "Стакан: сильное давление покупки (+0.28)",
+        "CVD положительный (+0.0%)",
+        "Bullish Engulfing (1h) 🕯️"
+      ],
+      "news": null,
+      "created_at": "2026-03-20 14:30:43",
       "status": "ACTIVE"
     }
   ],
@@ -1453,6 +1498,57 @@
         "OI растёт +1.5% + цена ↑",
         "CVD растёт (+12.4%) — покупки усиливаются 📈",
         "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
+    {
+      "id": 619,
+      "symbol": "PAXGUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 4564.05,
+      "tp1": 4655.331,
+      "tp2": 4746.612,
+      "sl": 4472.769,
+      "entry_orig": 4564.05,
+      "tp1_orig": 4655.331,
+      "tp2_orig": 4746.612,
+      "sl_orig": 4472.769,
+      "strength": 56,
+      "taken_at": "2026-03-20T14:30:43.109663",
+      "status": "OPEN",
+      "reasons": [
+        "RSI=28 (сильная перепроданность)",
+        "BB нижняя полоса (пробой)",
+        "Объём x3.7 🔥🔥",
+        "Стакан: сильное давление покупки (+0.68)",
+        "OI растёт +1.1%",
+        "CVD положительный (-3.5%)",
+        "Цена у поддержки 4557.1400"
+      ]
+    },
+    {
+      "id": 620,
+      "symbol": "RENDERUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 1.707,
+      "tp1": 1.74114,
+      "tp2": 1.77528,
+      "sl": 1.67286,
+      "entry_orig": 1.707,
+      "tp1_orig": 1.74114,
+      "tp2_orig": 1.77528,
+      "sl_orig": 1.67286,
+      "strength": 51,
+      "taken_at": "2026-03-20T14:30:43.361193",
+      "status": "OPEN",
+      "reasons": [
+        "RSI=40 (перепроданность)",
+        "MACD бычий (hist=0.00044)",
+        "BB ниже середины",
+        "Стакан: сильное давление покупки (+0.28)",
+        "CVD положительный (+0.0%)",
+        "Bullish Engulfing (1h) 🕯️"
       ]
     }
   ],
