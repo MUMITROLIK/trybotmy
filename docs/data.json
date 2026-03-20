@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-20T16:01:36.484954+00:00",
+  "updated_at": "2026-03-20T16:02:19.798375+00:00",
   "publish_status": {
-    "last_ok": "2026-03-20T16:01:10Z",
+    "last_ok": "2026-03-20T16:01:42Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 61.3
   },
   "trade_stats": {
-    "open": 22,
+    "open": 20,
     "pending": 0,
-    "wins": 254,
+    "wins": 256,
     "losses": 270,
-    "total_pnl": 25.48,
-    "winrate": 48.5
+    "total_pnl": 29.41,
+    "winrate": 48.7
   },
   "fear_greed": {
     "value": 11,
@@ -1255,65 +1255,37 @@
         "Цена у поддержки 0.0575",
         "⚡ Рыночный вход (MTF сильный)"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 578,
       "symbol": "1000SHIBUSDT",
       "direction": "LONG",
-      "exchange": "binance",
       "entry": 0.005971,
       "tp1": 0.00609,
       "tp2": 0.00621,
       "sl": 0.006092500000000001,
-      "entry_orig": 0.005971,
-      "tp1_orig": 0.00609,
-      "tp2_orig": 0.00621,
-      "sl_orig": 0.005852,
       "strength": 53,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 1.83,
+      "close_price": 0.0060805,
       "taken_at": "2026-03-20T08:37:48.661723",
-      "status": "TP1_HIT",
-      "reasons": [
-        "RSI=29 (сильная перепроданность)",
-        "BB ниже середины",
-        "EMA20 > EMA50",
-        "Стакан: сильное давление покупки (+0.52)",
-        "МТФ: 15m, 1h, 4h согласны",
-        "OI растёт +2.0% + цена ↑",
-        "CVD положительный (+2.1%)",
-        "Doji (1h) — нерешительность",
-        "BTC контекст: +1.9% за 12ч 📈",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
+      "closed_at": "2026-03-20 16:02:03"
     },
     {
-      "id": 615,
       "symbol": "CRCLUSDT",
       "direction": "LONG",
-      "exchange": "binance",
       "entry": 127.48,
       "tp1": 130.0296,
       "tp2": 132.5792,
       "sl": 130.245,
-      "entry_orig": 127.48,
-      "tp1_orig": 130.0296,
-      "tp2_orig": 132.5792,
-      "sl_orig": 124.9304,
       "strength": 50,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 2.1,
+      "close_price": 130.155,
       "taken_at": "2026-03-20T14:09:53.996586",
-      "status": "TP1_HIT",
-      "reasons": [
-        "MACD бычий (hist=0.32896)",
-        "Цена > EMA20 > EMA50",
-        "Объём x2.9 🔥🔥",
-        "МТФ: 15m, 1h, 4h согласны",
-        "OI растёт +2.7% + цена ↑",
-        "CVD положительный (+1.0%)",
-        "Doji (1h) — нерешительность",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-20 16:01:42"
+    },
     {
       "symbol": "BTRUSDT",
       "direction": "LONG",
@@ -4085,34 +4057,6 @@
       "close_price": 0.19218000000000002,
       "taken_at": "2026-03-18T18:02:48.994690",
       "closed_at": "2026-03-18 18:24:41"
-    },
-    {
-      "symbol": "HYPEUSDT",
-      "direction": "LONG",
-      "entry": 43.686,
-      "tp1": 44.55972,
-      "tp2": 45.43344,
-      "sl": 42.81228,
-      "strength": 44,
-      "status": "SL",
-      "pnl_pct": -2.02,
-      "close_price": 42.805499999999995,
-      "taken_at": "2026-03-18T17:53:38.300734",
-      "closed_at": "2026-03-18 18:20:45"
-    },
-    {
-      "symbol": "CRCLUSDT",
-      "direction": "LONG",
-      "entry": 132.46,
-      "tp1": 135.1092,
-      "tp2": 137.7584,
-      "sl": 135.135,
-      "strength": 37,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 1.92,
-      "close_price": 135.005,
-      "taken_at": "2026-03-18T17:15:54.839731",
-      "closed_at": "2026-03-18 18:17:56"
     }
   ]
 }
