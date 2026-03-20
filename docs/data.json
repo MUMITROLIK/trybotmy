@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-20T07:01:37.547871+00:00",
+  "updated_at": "2026-03-20T07:02:11.677013+00:00",
   "publish_status": {
-    "last_ok": "2026-03-20T07:00:33Z",
+    "last_ok": "2026-03-20T07:01:43Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 675,
+    "total": 676,
     "wins": 212,
     "losses": 125,
-    "active": 2,
+    "active": 3,
     "winrate": 62.9
   },
   "trade_stats": {
-    "open": 2,
+    "open": 3,
     "pending": 0,
     "wins": 236,
     "losses": 248,
@@ -81,6 +81,30 @@
       ],
       "news": null,
       "created_at": "2026-03-20 07:00:22",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 714,
+      "symbol": "PIPPINUSDT",
+      "direction": "SHORT",
+      "exchange": "binance",
+      "entry": 0.08844,
+      "tp1": 0.085011,
+      "tp2": 0.081583,
+      "sl": 0.091183,
+      "strength": 52,
+      "reasons": [
+        "MACD медвежий (hist=-0.00052)",
+        "Цена < EMA20 < EMA50",
+        "Объём x2.8 🔥🔥",
+        "Стакан: давление продажи (-0.19)",
+        "МТФ: 5m, 15m, 1h согласны",
+        "OI растёт +5.2% + цена ↓",
+        "CVD падает (-7.5%) — продажи усиливаются 📉",
+        "⚠️ Funding через 59м"
+      ],
+      "news": null,
+      "created_at": "2026-03-20 07:02:11",
       "status": "ACTIVE"
     }
   ],
@@ -531,6 +555,33 @@
         "МТФ: все 4 таймфрейма согласны ✅✅",
         "⚠️ Funding через 61м",
         "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
+    {
+      "id": 568,
+      "symbol": "PIPPINUSDT",
+      "direction": "SHORT",
+      "exchange": "binance",
+      "entry": 0.08844,
+      "tp1": 0.085011,
+      "tp2": 0.081583,
+      "sl": 0.091183,
+      "entry_orig": 0.08844,
+      "tp1_orig": 0.085011,
+      "tp2_orig": 0.081583,
+      "sl_orig": 0.091183,
+      "strength": 52,
+      "taken_at": "2026-03-20T07:02:11.477452",
+      "status": "OPEN",
+      "reasons": [
+        "MACD медвежий (hist=-0.00052)",
+        "Цена < EMA20 < EMA50",
+        "Объём x2.8 🔥🔥",
+        "Стакан: давление продажи (-0.19)",
+        "МТФ: 5m, 15m, 1h согласны",
+        "OI растёт +5.2% + цена ↓",
+        "CVD падает (-7.5%) — продажи усиливаются 📉",
+        "⚠️ Funding через 59м"
       ]
     }
   ],
