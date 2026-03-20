@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-20T19:39:31.121634+00:00",
+  "updated_at": "2026-03-20T19:41:00.969615+00:00",
   "publish_status": {
-    "last_ok": "2026-03-20T19:38:56Z",
+    "last_ok": "2026-03-20T19:39:36Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,11 +17,11 @@
     "winrate": 60.5
   },
   "trade_stats": {
-    "open": 21,
+    "open": 20,
     "pending": 0,
     "wins": 268,
-    "losses": 283,
-    "total_pnl": 30.36,
+    "losses": 284,
+    "total_pnl": 29.1,
     "winrate": 48.6
   },
   "fear_greed": {
@@ -746,32 +746,6 @@
   ],
   "trades_open": [
     {
-      "id": 594,
-      "symbol": "INJUSDT",
-      "direction": "LONG",
-      "exchange": "bybit",
-      "entry": 3.092,
-      "tp1": 3.15384,
-      "tp2": 3.21568,
-      "sl": 3.03016,
-      "entry_orig": 3.092,
-      "tp1_orig": 3.15384,
-      "tp2_orig": 3.21568,
-      "sl_orig": 3.03016,
-      "strength": 53,
-      "taken_at": "2026-03-20T11:40:00.561743",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=35 (перепроданность)",
-        "BB нижняя полоса (пробой)",
-        "EMA20 > EMA50",
-        "Объём x4.1 🔥🔥🔥",
-        "МТФ: 15m, 4h согласны",
-        "Цена у поддержки 3.0880",
-        "⚡ Рыночный вход (MTF 2+ ТФ)"
-      ]
-    },
-    {
       "id": 608,
       "symbol": "MONUSDT",
       "direction": "LONG",
@@ -1296,6 +1270,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "INJUSDT",
+      "direction": "LONG",
+      "entry": 3.092,
+      "tp1": 3.15384,
+      "tp2": 3.21568,
+      "sl": 3.03016,
+      "strength": 53,
+      "status": "TIMEOUT",
+      "pnl_pct": -1.26,
+      "close_price": 3.053,
+      "taken_at": "2026-03-20T11:40:00.561743",
+      "closed_at": "2026-03-20 19:40:12"
+    },
     {
       "symbol": "CELOUSDT",
       "direction": "LONG",
@@ -4081,20 +4069,6 @@
       "close_price": 1.4568,
       "taken_at": "2026-03-18T16:12:24.018239",
       "closed_at": "2026-03-18 19:05:07"
-    },
-    {
-      "symbol": "GALAUSDT",
-      "direction": "SHORT",
-      "entry": 0.00338,
-      "tp1": 0.003312,
-      "tp2": 0.003245,
-      "sl": 0.003448,
-      "strength": 35,
-      "status": "MANUAL",
-      "pnl_pct": -1.48,
-      "close_price": 0.00343,
-      "taken_at": "2026-03-18T16:07:24.588625",
-      "closed_at": "2026-03-18 19:05:06"
     }
   ]
 }
