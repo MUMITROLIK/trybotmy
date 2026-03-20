@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-20T22:28:54.762474+00:00",
+  "updated_at": "2026-03-20T22:29:27.342507+00:00",
   "publish_status": {
-    "last_ok": "2026-03-20T22:27:50Z",
+    "last_ok": "2026-03-20T22:29:00Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 60.5
   },
   "trade_stats": {
-    "open": 18,
+    "open": 16,
     "pending": 0,
-    "wins": 278,
+    "wins": 280,
     "losses": 293,
-    "total_pnl": 29.22,
-    "winrate": 48.7
+    "total_pnl": 31.53,
+    "winrate": 48.9
   },
   "fear_greed": {
     "value": 11,
@@ -695,58 +695,6 @@
   ],
   "trades_open": [
     {
-      "id": 617,
-      "symbol": "XAUUSDT",
-      "direction": "SHORT",
-      "exchange": "binance",
-      "entry": 4570.91,
-      "tp1": 4479.4918,
-      "tp2": 4388.0736,
-      "sl": 4662.3282,
-      "entry_orig": 4570.91,
-      "tp1_orig": 4479.4918,
-      "tp2_orig": 4388.0736,
-      "sl_orig": 4662.3282,
-      "strength": 55,
-      "taken_at": "2026-03-20T14:28:56.459712",
-      "status": "OPEN",
-      "reasons": [
-        "MACD медвежий (hist=-9.86361)",
-        "Цена < EMA20 < EMA50",
-        "Объём x2.6 🔥🔥",
-        "Стакан: сильное давление продажи (-0.66)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +1.5% + цена ↓",
-        "CVD отрицательный (-3.6%)"
-      ]
-    },
-    {
-      "id": 618,
-      "symbol": "BCHUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 469.07,
-      "tp1": 478.4514,
-      "tp2": 487.8328,
-      "sl": 459.6886,
-      "entry_orig": 469.07,
-      "tp1_orig": 478.4514,
-      "tp2_orig": 487.8328,
-      "sl_orig": 459.6886,
-      "strength": 54,
-      "taken_at": "2026-03-20T14:28:56.607225",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00902)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: сильное давление покупки (+0.38)",
-        "МТФ: 5m, 15m, 1h согласны",
-        "OI растёт +1.5% + цена ↑",
-        "CVD растёт (+12.4%) — покупки усиливаются 📈",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 619,
       "symbol": "PAXGUSDT",
       "direction": "LONG",
@@ -1172,6 +1120,34 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "XAUUSDT",
+      "direction": "SHORT",
+      "entry": 4570.91,
+      "tp1": 4479.4918,
+      "tp2": 4388.0736,
+      "sl": 4662.3282,
+      "strength": 55,
+      "status": "TIMEOUT",
+      "pnl_pct": 1.54,
+      "close_price": 4500.545,
+      "taken_at": "2026-03-20T14:28:56.459712",
+      "closed_at": "2026-03-20 22:29:06"
+    },
+    {
+      "symbol": "BCHUSDT",
+      "direction": "LONG",
+      "entry": 469.07,
+      "tp1": 478.4514,
+      "tp2": 487.8328,
+      "sl": 459.6886,
+      "strength": 54,
+      "status": "TIMEOUT",
+      "pnl_pct": 0.77,
+      "close_price": 472.705,
+      "taken_at": "2026-03-20T14:28:56.607225",
+      "closed_at": "2026-03-20 22:29:06"
+    },
     {
       "symbol": "TRIAUSDT",
       "direction": "LONG",
@@ -3943,34 +3919,6 @@
       "close_price": 270.6,
       "taken_at": "2026-03-18T18:31:40.272855",
       "closed_at": "2026-03-18 19:05:20"
-    },
-    {
-      "symbol": "XANUSDT",
-      "direction": "LONG",
-      "entry": 0.01051789,
-      "tp1": 0.010839,
-      "tp2": 0.01116,
-      "sl": 0.010261,
-      "strength": 35,
-      "status": "MANUAL",
-      "pnl_pct": 6.2,
-      "close_price": 0.01117,
-      "taken_at": "2026-03-18T18:04:39.724269",
-      "closed_at": "2026-03-18 19:05:19"
-    },
-    {
-      "symbol": "DOTUSDT",
-      "direction": "LONG",
-      "entry": 1.571,
-      "tp1": 1.60242,
-      "tp2": 1.63384,
-      "sl": 1.53958,
-      "strength": 37,
-      "status": "MANUAL",
-      "pnl_pct": -0.45,
-      "close_price": 1.564,
-      "taken_at": "2026-03-18T18:15:59.575063",
-      "closed_at": "2026-03-18 19:05:19"
     }
   ]
 }
