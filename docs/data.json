@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-20T17:11:50.384131+00:00",
+  "updated_at": "2026-03-20T17:12:40.194464+00:00",
   "publish_status": {
-    "last_ok": "2026-03-20T17:10:50Z",
+    "last_ok": "2026-03-20T17:11:57Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,19 +10,19 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 749,
+    "total": 750,
     "wins": 233,
     "losses": 147,
-    "active": 17,
+    "active": 18,
     "winrate": 61.3
   },
   "trade_stats": {
     "open": 26,
     "pending": 0,
     "wins": 262,
-    "losses": 272,
-    "total_pnl": 36.89,
-    "winrate": 49.1
+    "losses": 273,
+    "total_pnl": 34.88,
+    "winrate": 49.0
   },
   "fear_greed": {
     "value": 11,
@@ -424,6 +424,29 @@
       ],
       "news": null,
       "created_at": "2026-03-20 16:57:37",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 788,
+      "symbol": "OPNUSDT",
+      "direction": "SHORT",
+      "exchange": "binance",
+      "entry": 0.2831,
+      "tp1": 0.277438,
+      "tp2": 0.271776,
+      "sl": 0.288762,
+      "strength": 50,
+      "reasons": [
+        "MACD медвежий (hist=-0.00104)",
+        "EMA20 < EMA50 (death cross) 💀",
+        "Объём x2.6 🔥🔥",
+        "Стакан: давление продажи (-0.22)",
+        "МТФ: 5m, 15m, 4h согласны",
+        "CVD падает (-6.4%) — продажи усиливаются 📉",
+        "Doji (1h) — нерешительность"
+      ],
+      "news": null,
+      "created_at": "2026-03-20 17:12:39",
       "status": "ACTIVE"
     }
   ],
@@ -1390,31 +1413,6 @@
       ]
     },
     {
-      "id": 636,
-      "symbol": "ARIAUSDT",
-      "direction": "LONG",
-      "exchange": "bybit",
-      "entry": 0.20631,
-      "tp1": 0.210575,
-      "tp2": 0.214841,
-      "sl": 0.202184,
-      "entry_orig": 0.20631,
-      "tp1_orig": 0.210575,
-      "tp2_orig": 0.214841,
-      "sl_orig": 0.202184,
-      "strength": 51,
-      "taken_at": "2026-03-20T16:27:49.624981",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00035)",
-        "Цена > EMA20 > EMA50",
-        "Объём x2.0 🔥",
-        "Стакан: сильное давление покупки (+0.28)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 638,
       "symbol": "APTUSDT",
       "direction": "LONG",
@@ -1516,9 +1514,49 @@
         "МТФ: 5m, 15m, 1h согласны",
         "⚡ Рыночный вход (MTF сильный)"
       ]
+    },
+    {
+      "id": 642,
+      "symbol": "OPNUSDT",
+      "direction": "SHORT",
+      "exchange": "binance",
+      "entry": 0.2831,
+      "tp1": 0.277438,
+      "tp2": 0.271776,
+      "sl": 0.288762,
+      "entry_orig": 0.2831,
+      "tp1_orig": 0.277438,
+      "tp2_orig": 0.271776,
+      "sl_orig": 0.288762,
+      "strength": 50,
+      "taken_at": "2026-03-20T17:12:39.782046",
+      "status": "OPEN",
+      "reasons": [
+        "MACD медвежий (hist=-0.00104)",
+        "EMA20 < EMA50 (death cross) 💀",
+        "Объём x2.6 🔥🔥",
+        "Стакан: давление продажи (-0.22)",
+        "МТФ: 5m, 15m, 4h согласны",
+        "CVD падает (-6.4%) — продажи усиливаются 📉",
+        "Doji (1h) — нерешительность"
+      ]
     }
   ],
   "trades_history": [
+    {
+      "symbol": "ARIAUSDT",
+      "direction": "LONG",
+      "entry": 0.20631,
+      "tp1": 0.210575,
+      "tp2": 0.214841,
+      "sl": 0.202184,
+      "strength": 51,
+      "status": "SL",
+      "pnl_pct": -2.01,
+      "close_price": 0.20217,
+      "taken_at": "2026-03-20T16:27:49.624981",
+      "closed_at": "2026-03-20 17:12:19"
+    },
     {
       "symbol": "CRCLUSDT",
       "direction": "LONG",
@@ -4303,20 +4341,6 @@
       "pnl_pct": -0.51,
       "close_price": 1.391,
       "taken_at": "2026-03-18T16:02:16.178912",
-      "closed_at": "2026-03-18 19:04:58"
-    },
-    {
-      "symbol": "FILUSDT",
-      "direction": "SHORT",
-      "entry": 0.915,
-      "tp1": 0.8967,
-      "tp2": 0.8784,
-      "sl": 0.9333,
-      "strength": 35,
-      "status": "MANUAL",
-      "pnl_pct": -0.44,
-      "close_price": 0.919,
-      "taken_at": "2026-03-18T16:02:16.360542",
       "closed_at": "2026-03-18 19:04:58"
     }
   ]
