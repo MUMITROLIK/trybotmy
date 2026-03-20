@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-20T10:21:01.271272+00:00",
+  "updated_at": "2026-03-20T10:21:40.789031+00:00",
   "publish_status": {
-    "last_ok": "2026-03-20T10:19:47Z",
+    "last_ok": "2026-03-20T10:21:07Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -12,17 +12,17 @@
   "stats": {
     "total": 693,
     "wins": 219,
-    "losses": 128,
-    "active": 10,
-    "winrate": 63.1
+    "losses": 129,
+    "active": 9,
+    "winrate": 62.9
   },
   "trade_stats": {
-    "open": 10,
+    "open": 9,
     "pending": 0,
     "wins": 243,
-    "losses": 251,
-    "total_pnl": 38.34,
-    "winrate": 49.2
+    "losses": 252,
+    "total_pnl": 36.19,
+    "winrate": 49.1
   },
   "fear_greed": {
     "value": 11,
@@ -230,30 +230,6 @@
       "status": "ACTIVE"
     },
     {
-      "id": 730,
-      "symbol": "TAOUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 289.7,
-      "tp1": 297.347857,
-      "tp2": 304.995714,
-      "sl": 283.581714,
-      "strength": 54,
-      "reasons": [
-        "RSI=33 (перепроданность)",
-        "BB нижняя полоса (пробой)",
-        "EMA20 > EMA50",
-        "Стакан: сильное давление покупки (+0.52)",
-        "МТФ: 15m, 1h, 4h согласны",
-        "OI растёт +9.5% + цена ↑",
-        "CVD положительный (+1.7%)",
-        "⚡ Рыночный вход (MTF сильный)"
-      ],
-      "news": null,
-      "created_at": "2026-03-20 09:39:41",
-      "status": "ACTIVE"
-    },
-    {
       "id": 731,
       "symbol": "ARIAUSDT",
       "direction": "LONG",
@@ -279,6 +255,27 @@
     }
   ],
   "history": [
+    {
+      "symbol": "TAOUSDT",
+      "direction": "LONG",
+      "entry": 289.7,
+      "tp1": 297.347857,
+      "tp2": 304.995714,
+      "sl": 283.581714,
+      "strength": 54,
+      "status": "SL",
+      "created_at": "2026-03-20 09:39:41",
+      "reasons": [
+        "RSI=33 (перепроданность)",
+        "BB нижняя полоса (пробой)",
+        "EMA20 > EMA50",
+        "Стакан: сильное давление покупки (+0.52)",
+        "МТФ: 15m, 1h, 4h согласны",
+        "OI растёт +9.5% + цена ↑",
+        "CVD положительный (+1.7%)",
+        "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
     {
       "symbol": "WAXPUSDT",
       "direction": "LONG",
@@ -668,26 +665,6 @@
         "CVD растёт (+6.5%) — покупки усиливаются 📈",
         "⚡ Рыночный вход (MTF 2+ ТФ)"
       ]
-    },
-    {
-      "symbol": "PIXELUSDT",
-      "direction": "LONG",
-      "entry": 0.0093,
-      "tp1": 0.009596,
-      "tp2": 0.009892,
-      "sl": 0.009063,
-      "strength": 45,
-      "status": "SL",
-      "created_at": "2026-03-19 17:16:50",
-      "reasons": [
-        "MACD бычий (hist=0.00002)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: сильное давление покупки (+0.26)",
-        "МТФ: 5m, 15m согласны",
-        "OI растёт +5.6% + цена ↑",
-        "CVD положительный (-0.6%)",
-        "⚡ Рыночный вход (MTF 2+ ТФ)"
-      ]
     }
   ],
   "trades_open": [
@@ -909,33 +886,6 @@
       ]
     },
     {
-      "id": 584,
-      "symbol": "TAOUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 289.7,
-      "tp1": 297.347857,
-      "tp2": 304.995714,
-      "sl": 283.581714,
-      "entry_orig": 289.7,
-      "tp1_orig": 297.347857,
-      "tp2_orig": 304.995714,
-      "sl_orig": 283.581714,
-      "strength": 54,
-      "taken_at": "2026-03-20T09:39:41.527095",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=33 (перепроданность)",
-        "BB нижняя полоса (пробой)",
-        "EMA20 > EMA50",
-        "Стакан: сильное давление покупки (+0.52)",
-        "МТФ: 15m, 1h, 4h согласны",
-        "OI растёт +9.5% + цена ↑",
-        "CVD положительный (+1.7%)",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 585,
       "symbol": "ARIAUSDT",
       "direction": "LONG",
@@ -964,6 +914,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "TAOUSDT",
+      "direction": "LONG",
+      "entry": 289.7,
+      "tp1": 297.347857,
+      "tp2": 304.995714,
+      "sl": 283.581714,
+      "strength": 54,
+      "status": "SL",
+      "pnl_pct": -2.15,
+      "close_price": 283.46500000000003,
+      "taken_at": "2026-03-20T09:39:41.527095",
+      "closed_at": "2026-03-20 10:21:40"
+    },
     {
       "symbol": "WAXPUSDT",
       "direction": "LONG",
@@ -3749,20 +3713,6 @@
       "close_price": 249.74,
       "taken_at": "2026-03-18T16:03:53.994592",
       "closed_at": "2026-03-18 17:00:08"
-    },
-    {
-      "symbol": "RIVERUSDT",
-      "direction": "SHORT",
-      "entry": 24.686,
-      "tp1": 24.129929,
-      "tp2": 23.573857,
-      "sl": 24.003999999999998,
-      "strength": 37,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 2.25,
-      "close_price": 24.1295,
-      "taken_at": "2026-03-18T16:02:16.013299",
-      "closed_at": "2026-03-18 16:56:03"
     }
   ]
 }
