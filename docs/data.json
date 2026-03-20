@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-20T07:25:05.869533+00:00",
+  "updated_at": "2026-03-20T07:25:52.455375+00:00",
   "publish_status": {
-    "last_ok": null,
+    "last_ok": "2026-03-20T07:25:11Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 677,
+    "total": 678,
     "wins": 213,
     "losses": 125,
-    "active": 3,
+    "active": 4,
     "winrate": 63.0
   },
   "trade_stats": {
-    "open": 3,
+    "open": 4,
     "pending": 0,
     "wins": 237,
     "losses": 248,
@@ -107,6 +107,31 @@
       ],
       "news": null,
       "created_at": "2026-03-20 07:04:01",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 716,
+      "symbol": "STOUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.09392,
+      "tp1": 0.096174,
+      "tp2": 0.098429,
+      "sl": 0.092042,
+      "strength": 53,
+      "reasons": [
+        "RSI=50 (нейтральный↓)",
+        "MACD бычий (hist=0.00004)",
+        "Цена > EMA20 > EMA50",
+        "Объём x2.1 🔥",
+        "Стакан: перевес bid (+0.06)",
+        "МТФ: 5m, 15m, 4h согласны",
+        "OI растёт +3.1% + цена ↑",
+        "⚠️ Funding через 35м",
+        "⚡ Рыночный вход (MTF сильный)"
+      ],
+      "news": null,
+      "created_at": "2026-03-20 07:25:46",
       "status": "ACTIVE"
     }
   ],
@@ -588,6 +613,34 @@
         "Цена у поддержки 0.0241",
         "⚠️ Funding через 57м",
         "⚡ Рыночный вход (MTF 2+ ТФ)"
+      ]
+    },
+    {
+      "id": 570,
+      "symbol": "STOUSDT",
+      "direction": "LONG",
+      "exchange": "bybit",
+      "entry": 0.09392,
+      "tp1": 0.096174,
+      "tp2": 0.098429,
+      "sl": 0.092042,
+      "entry_orig": 0.09392,
+      "tp1_orig": 0.096174,
+      "tp2_orig": 0.098429,
+      "sl_orig": 0.092042,
+      "strength": 53,
+      "taken_at": "2026-03-20T07:25:51.371379",
+      "status": "OPEN",
+      "reasons": [
+        "RSI=50 (нейтральный↓)",
+        "MACD бычий (hist=0.00004)",
+        "Цена > EMA20 > EMA50",
+        "Объём x2.1 🔥",
+        "Стакан: перевес bid (+0.06)",
+        "МТФ: 5m, 15m, 4h согласны",
+        "OI растёт +3.1% + цена ↑",
+        "⚠️ Funding через 35м",
+        "⚡ Рыночный вход (MTF сильный)"
       ]
     }
   ],
