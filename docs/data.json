@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-20T22:48:55.605147+00:00",
+  "updated_at": "2026-03-20T22:49:27.926441+00:00",
   "publish_status": {
-    "last_ok": "2026-03-20T22:47:51Z",
+    "last_ok": "2026-03-20T22:49:01Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 780,
+    "total": 781,
     "wins": 244,
     "losses": 160,
-    "active": 12,
+    "active": 13,
     "winrate": 60.4
   },
   "trade_stats": {
-    "open": 16,
+    "open": 17,
     "pending": 0,
     "wins": 280,
     "losses": 295,
@@ -316,6 +316,29 @@
       ],
       "news": "Grayscale files for HYPE ETF as Hyperliquid gains traction despite mixed ETF flows",
       "created_at": "2026-03-20 22:44:24",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 819,
+      "symbol": "KATUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.0103,
+      "tp1": 0.010506,
+      "tp2": 0.010712,
+      "sl": 0.010094,
+      "strength": 50,
+      "reasons": [
+        "RSI=29 (сильная перепроданность)",
+        "MACD бычий (hist=0.00000)",
+        "BB ниже середины",
+        "Стакан: сильное давление покупки (+0.33)",
+        "OI растёт +1.7% + цена ↑",
+        "CVD положительный (-2.5%)",
+        "⚠️ Funding через 71м"
+      ],
+      "news": null,
+      "created_at": "2026-03-20 22:49:27",
       "status": "ACTIVE"
     }
   ],
@@ -1143,6 +1166,32 @@
         "CVD положительный (+0.9%)",
         "⚠️ Funding через 77м",
         "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
+    {
+      "id": 673,
+      "symbol": "KATUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.0103,
+      "tp1": 0.010506,
+      "tp2": 0.010712,
+      "sl": 0.010094,
+      "entry_orig": 0.0103,
+      "tp1_orig": 0.010506,
+      "tp2_orig": 0.010712,
+      "sl_orig": 0.010094,
+      "strength": 50,
+      "taken_at": "2026-03-20T22:49:27.521432",
+      "status": "OPEN",
+      "reasons": [
+        "RSI=29 (сильная перепроданность)",
+        "MACD бычий (hist=0.00000)",
+        "BB ниже середины",
+        "Стакан: сильное давление покупки (+0.33)",
+        "OI растёт +1.7% + цена ↑",
+        "CVD положительный (-2.5%)",
+        "⚠️ Funding через 71м"
       ]
     }
   ],
