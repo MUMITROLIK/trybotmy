@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-20T23:50:02.504950+00:00",
+  "updated_at": "2026-03-20T23:50:45.054439+00:00",
   "publish_status": {
-    "last_ok": "2026-03-20T23:49:02Z",
+    "last_ok": "2026-03-20T23:50:08Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -11,18 +11,18 @@
   },
   "stats": {
     "total": 781,
-    "wins": 245,
+    "wins": 246,
     "losses": 162,
-    "active": 8,
-    "winrate": 60.2
+    "active": 7,
+    "winrate": 60.3
   },
   "trade_stats": {
-    "open": 14,
+    "open": 13,
     "pending": 0,
-    "wins": 282,
+    "wins": 283,
     "losses": 296,
-    "total_pnl": 29.84,
-    "winrate": 48.8
+    "total_pnl": 31.93,
+    "winrate": 48.9
   },
   "fear_greed": {
     "value": 11,
@@ -201,17 +201,19 @@
       "news": "Grayscale files for HYPE ETF as Hyperliquid gains traction despite mixed ETF flows",
       "created_at": "2026-03-20 22:44:24",
       "status": "ACTIVE"
-    },
+    }
+  ],
+  "history": [
     {
-      "id": 819,
       "symbol": "KATUSDT",
       "direction": "LONG",
-      "exchange": "binance",
       "entry": 0.0103,
       "tp1": 0.010506,
       "tp2": 0.010712,
       "sl": 0.010094,
       "strength": 50,
+      "status": "TP1",
+      "created_at": "2026-03-20 22:49:27",
       "reasons": [
         "RSI=29 (сильная перепроданность)",
         "MACD бычий (hist=0.00000)",
@@ -220,13 +222,8 @@
         "OI растёт +1.7% + цена ↑",
         "CVD положительный (-2.5%)",
         "⚠️ Funding через 71м"
-      ],
-      "news": null,
-      "created_at": "2026-03-20 22:49:27",
-      "status": "ACTIVE"
-    }
-  ],
-  "history": [
+      ]
+    },
     {
       "symbol": "EDGEUSDT",
       "direction": "LONG",
@@ -605,25 +602,6 @@
         "CVD положительный (+0.5%)",
         "⚡ Рыночный вход (MTF сильный)"
       ]
-    },
-    {
-      "symbol": "ALCHUSDT",
-      "direction": "LONG",
-      "entry": 0.08421,
-      "tp1": 0.087283,
-      "tp2": 0.090356,
-      "sl": 0.081752,
-      "strength": 53,
-      "status": "TP1",
-      "created_at": "2026-03-20 17:28:00",
-      "reasons": [
-        "MACD бычий (hist=0.00046)",
-        "Цена > EMA20 > EMA50",
-        "Объём x11.8 🔥🔥🔥",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +4.6% + цена ↑",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
     }
   ],
   "trades_open": [
@@ -972,35 +950,23 @@
         "⚠️ Funding через 77м",
         "⚡ Рыночный вход (MTF сильный)"
       ]
-    },
-    {
-      "id": 673,
-      "symbol": "KATUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.0103,
-      "tp1": 0.010506,
-      "tp2": 0.010712,
-      "sl": 0.010094,
-      "entry_orig": 0.0103,
-      "tp1_orig": 0.010506,
-      "tp2_orig": 0.010712,
-      "sl_orig": 0.010094,
-      "strength": 50,
-      "taken_at": "2026-03-20T22:49:27.521432",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=29 (сильная перепроданность)",
-        "MACD бычий (hist=0.00000)",
-        "BB ниже середины",
-        "Стакан: сильное давление покупки (+0.33)",
-        "OI растёт +1.7% + цена ↑",
-        "CVD положительный (-2.5%)",
-        "⚠️ Funding через 71м"
-      ]
     }
   ],
   "trades_history": [
+    {
+      "symbol": "KATUSDT",
+      "direction": "LONG",
+      "entry": 0.0103,
+      "tp1": 0.010506,
+      "tp2": 0.010712,
+      "sl": 0.010515,
+      "strength": 50,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 2.09,
+      "close_price": 0.010515,
+      "taken_at": "2026-03-20T22:49:27.521432",
+      "closed_at": "2026-03-20 23:50:44"
+    },
     {
       "symbol": "GUAUSDT",
       "direction": "LONG",
@@ -3786,20 +3752,6 @@
       "close_price": 0.03354,
       "taken_at": "2026-03-18T20:39:05.184243",
       "closed_at": "2026-03-18 23:31:44"
-    },
-    {
-      "symbol": "ENJUSDT",
-      "direction": "LONG",
-      "entry": 0.02296,
-      "tp1": 0.023783,
-      "tp2": 0.024606,
-      "sl": 0.023844999999999998,
-      "strength": 40,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 3.85,
-      "close_price": 0.023844999999999998,
-      "taken_at": "2026-03-18T21:18:59.382000",
-      "closed_at": "2026-03-18 22:40:00"
     }
   ]
 }
