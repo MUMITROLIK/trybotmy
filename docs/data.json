@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-20T01:02:00.623482+00:00",
+  "updated_at": "2026-03-20T01:02:50.881889+00:00",
   "publish_status": {
-    "last_ok": "2026-03-20T01:01:10Z",
+    "last_ok": "2026-03-20T01:02:06Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 62.9
   },
   "trade_stats": {
-    "open": 7,
+    "open": 6,
     "pending": 0,
-    "wins": 231,
+    "wins": 232,
     "losses": 246,
-    "total_pnl": 22.19,
-    "winrate": 48.4
+    "total_pnl": 24.29,
+    "winrate": 48.5
   },
   "fear_greed": {
     "value": 11,
@@ -510,31 +510,6 @@
       ]
     },
     {
-      "id": 550,
-      "symbol": "FILUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.882,
-      "tp1": 0.89964,
-      "tp2": 0.91728,
-      "sl": 0.86436,
-      "entry_orig": 0.882,
-      "tp1_orig": 0.89964,
-      "tp2_orig": 0.91728,
-      "sl_orig": 0.86436,
-      "strength": 46,
-      "taken_at": "2026-03-19T17:03:25.509384",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=29 (сильная перепроданность)",
-        "MACD бычий (hist=0.00001)",
-        "BB нижняя зона (22%)",
-        "Стакан: давление покупки (+0.17)",
-        "МТФ: только 1 таймфрейм согласен",
-        "OI растёт +3.5%"
-      ]
-    },
-    {
       "id": 551,
       "symbol": "LAUSDT",
       "direction": "LONG",
@@ -611,6 +586,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "FILUSDT",
+      "direction": "LONG",
+      "entry": 0.882,
+      "tp1": 0.89964,
+      "tp2": 0.91728,
+      "sl": 0.9005000000000001,
+      "strength": 46,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 2.1,
+      "close_price": 0.9005000000000001,
+      "taken_at": "2026-03-19T17:03:25.509384",
+      "closed_at": "2026-03-20 01:02:50"
+    },
     {
       "symbol": "MONUSDT",
       "direction": "LONG",
@@ -3396,20 +3385,6 @@
       "close_price": 0.52215,
       "taken_at": "2026-03-18T11:02:01.243062",
       "closed_at": "2026-03-18 12:34:59"
-    },
-    {
-      "symbol": "ASTERUSDT",
-      "direction": "SHORT",
-      "entry": 0.72963759,
-      "tp1": 0.715045,
-      "tp2": 0.700452,
-      "sl": 0.74423,
-      "strength": 47,
-      "status": "LIMIT_TIMEOUT",
-      "pnl_pct": 0,
-      "close_price": null,
-      "taken_at": "2026-03-18T11:34:40.276449",
-      "closed_at": "2026-03-18 12:34:43"
     }
   ]
 }
