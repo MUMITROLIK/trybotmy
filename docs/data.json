@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-20T13:29:08.582314+00:00",
+  "updated_at": "2026-03-20T13:30:14.924162+00:00",
   "publish_status": {
-    "last_ok": "2026-03-20T13:28:39Z",
+    "last_ok": "2026-03-20T13:29:14Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -12,17 +12,17 @@
   "stats": {
     "total": 711,
     "wins": 220,
-    "losses": 133,
-    "active": 16,
-    "winrate": 62.3
+    "losses": 134,
+    "active": 15,
+    "winrate": 62.1
   },
   "trade_stats": {
-    "open": 19,
+    "open": 18,
     "pending": 0,
     "wins": 246,
-    "losses": 257,
-    "total_pnl": 33.83,
-    "winrate": 48.9
+    "losses": 258,
+    "total_pnl": 31.54,
+    "winrate": 48.8
   },
   "fear_greed": {
     "value": 11,
@@ -297,29 +297,6 @@
       "status": "ACTIVE"
     },
     {
-      "id": 745,
-      "symbol": "STOUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.10062,
-      "tp1": 0.103444,
-      "tp2": 0.106269,
-      "sl": 0.098361,
-      "strength": 50,
-      "reasons": [
-        "MACD бычий (hist=0.00040)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: давление покупки (+0.10)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +3.1% + цена ↑",
-        "CVD положительный (+3.7%)",
-        "⚡ Рыночный вход (MTF сильный)"
-      ],
-      "news": null,
-      "created_at": "2026-03-20 12:59:01",
-      "status": "ACTIVE"
-    },
-    {
       "id": 746,
       "symbol": "WAXPUSDT",
       "direction": "LONG",
@@ -413,6 +390,26 @@
     }
   ],
   "history": [
+    {
+      "symbol": "STOUSDT",
+      "direction": "LONG",
+      "entry": 0.10062,
+      "tp1": 0.103444,
+      "tp2": 0.106269,
+      "sl": 0.098361,
+      "strength": 50,
+      "status": "SL",
+      "created_at": "2026-03-20 12:59:01",
+      "reasons": [
+        "MACD бычий (hist=0.00040)",
+        "Цена > EMA20 > EMA50",
+        "Стакан: давление покупки (+0.10)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +3.1% + цена ↑",
+        "CVD положительный (+3.7%)",
+        "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
     {
       "symbol": "STOUSDT",
       "direction": "LONG",
@@ -808,27 +805,6 @@
         "Цена у поддержки 0.0241",
         "⚠️ Funding через 57м",
         "⚡ Рыночный вход (MTF 2+ ТФ)"
-      ]
-    },
-    {
-      "symbol": "PIPPINUSDT",
-      "direction": "SHORT",
-      "entry": 0.08844,
-      "tp1": 0.085011,
-      "tp2": 0.081583,
-      "sl": 0.091183,
-      "strength": 52,
-      "status": "TP1",
-      "created_at": "2026-03-20 07:02:11",
-      "reasons": [
-        "MACD медвежий (hist=-0.00052)",
-        "Цена < EMA20 < EMA50",
-        "Объём x2.8 🔥🔥",
-        "Стакан: давление продажи (-0.19)",
-        "МТФ: 5m, 15m, 1h согласны",
-        "OI растёт +5.2% + цена ↓",
-        "CVD падает (-7.5%) — продажи усиливаются 📉",
-        "⚠️ Funding через 59м"
       ]
     }
   ],
@@ -1235,32 +1211,6 @@
       ]
     },
     {
-      "id": 599,
-      "symbol": "STOUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.10062,
-      "tp1": 0.103444,
-      "tp2": 0.106269,
-      "sl": 0.098361,
-      "entry_orig": 0.10062,
-      "tp1_orig": 0.103444,
-      "tp2_orig": 0.106269,
-      "sl_orig": 0.098361,
-      "strength": 50,
-      "taken_at": "2026-03-20T12:59:02.080289",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00040)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: давление покупки (+0.10)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +3.1% + цена ↑",
-        "CVD положительный (+3.7%)",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 600,
       "symbol": "WAXPUSDT",
       "direction": "LONG",
@@ -1339,6 +1289,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "STOUSDT",
+      "direction": "LONG",
+      "entry": 0.10062,
+      "tp1": 0.103444,
+      "tp2": 0.106269,
+      "sl": 0.098361,
+      "strength": 50,
+      "status": "SL",
+      "pnl_pct": -2.29,
+      "close_price": 0.098315,
+      "taken_at": "2026-03-20T12:59:02.080289",
+      "closed_at": "2026-03-20 13:29:34"
+    },
     {
       "symbol": "ZBCNUSDT",
       "direction": "LONG",
@@ -4124,20 +4088,6 @@
       "close_price": 0.03082,
       "taken_at": "2026-03-18T16:32:15.490339",
       "closed_at": "2026-03-18 17:39:14"
-    },
-    {
-      "symbol": "PENGUUSDT",
-      "direction": "SHORT",
-      "entry": 0.007286,
-      "tp1": 0.00714,
-      "tp2": 0.006995,
-      "sl": 0.007432,
-      "strength": 43,
-      "status": "SL",
-      "pnl_pct": -2.13,
-      "close_price": 0.007441,
-      "taken_at": "2026-03-18T16:25:12.999091",
-      "closed_at": "2026-03-18 17:38:34"
     }
   ]
 }
