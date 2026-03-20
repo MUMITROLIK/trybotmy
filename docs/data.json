@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-20T18:36:30.067260+00:00",
+  "updated_at": "2026-03-20T18:37:36.004230+00:00",
   "publish_status": {
-    "last_ok": "2026-03-20T18:35:15Z",
+    "last_ok": "2026-03-20T18:36:36Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 60.5
   },
   "trade_stats": {
-    "open": 19,
+    "open": 18,
     "pending": 0,
-    "wins": 265,
+    "wins": 266,
     "losses": 282,
-    "total_pnl": 28.49,
-    "winrate": 48.4
+    "total_pnl": 28.58,
+    "winrate": 48.5
   },
   "fear_greed": {
     "value": 11,
@@ -607,32 +607,6 @@
   ],
   "trades_open": [
     {
-      "id": 586,
-      "symbol": "XMRUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 344.5,
-      "tp1": 351.39,
-      "tp2": 358.28,
-      "sl": 337.61,
-      "entry_orig": 344.5,
-      "tp1_orig": 351.39,
-      "tp2_orig": 358.28,
-      "sl_orig": 337.61,
-      "strength": 50,
-      "taken_at": "2026-03-20T10:36:52.408982",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.22947)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: сильное давление покупки (+0.25)",
-        "МТФ: 5m, 15m согласны",
-        "CVD растёт (+8.4%) — покупки усиливаются 📈",
-        "Bullish Engulfing (1h) 🕯️",
-        "⚡ Рыночный вход (MTF 2+ ТФ)"
-      ]
-    },
-    {
       "id": 591,
       "symbol": "CELOUSDT",
       "direction": "LONG",
@@ -1105,6 +1079,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "XMRUSDT",
+      "direction": "LONG",
+      "entry": 344.5,
+      "tp1": 351.39,
+      "tp2": 358.28,
+      "sl": 337.61,
+      "strength": 50,
+      "status": "TIMEOUT",
+      "pnl_pct": 0.09,
+      "close_price": 344.815,
+      "taken_at": "2026-03-20T10:36:52.408982",
+      "closed_at": "2026-03-20 18:36:57"
+    },
     {
       "symbol": "WIFUSDT",
       "direction": "LONG",
@@ -3889,20 +3877,6 @@
       "pnl_pct": -0.57,
       "close_price": 0.0653,
       "taken_at": "2026-03-18T16:05:43.013387",
-      "closed_at": "2026-03-18 19:05:05"
-    },
-    {
-      "symbol": "AXSUSDT",
-      "direction": "SHORT",
-      "entry": 1.195,
-      "tp1": 1.1711,
-      "tp2": 1.1472,
-      "sl": 1.2189,
-      "strength": 35,
-      "status": "MANUAL",
-      "pnl_pct": -0.75,
-      "close_price": 1.204,
-      "taken_at": "2026-03-18T16:07:23.992322",
       "closed_at": "2026-03-18 19:05:05"
     }
   ]
