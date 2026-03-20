@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-20T17:42:28.576173+00:00",
+  "updated_at": "2026-03-20T17:43:40.977558+00:00",
   "publish_status": {
-    "last_ok": "2026-03-20T17:41:33Z",
+    "last_ok": "2026-03-20T17:42:35Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -13,7 +13,7 @@
     "total": 755,
     "wins": 235,
     "losses": 150,
-    "active": 18,
+    "active": 17,
     "winrate": 61.0
   },
   "trade_stats": {
@@ -36,29 +36,6 @@
     "trained_at": "2026-03-20T16:54:05.838000+00:00"
   },
   "signals": [
-    {
-      "id": 754,
-      "symbol": "MONUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.02214761,
-      "tp1": 0.022591,
-      "tp2": 0.023034,
-      "sl": 0.021705,
-      "strength": 54,
-      "reasons": [
-        "MACD бычий (hist=0.00000)",
-        "EMA20 > EMA50 (golden cross) 🌟",
-        "Объём x5.0 🔥🔥🔥",
-        "Стакан: давление покупки (+0.13)",
-        "МТФ: только 1 таймфрейм согласен",
-        "OI растёт +0.9% + цена ↑",
-        "📌 Лимитный вход @ 0.0221476 (откат к EMA20)"
-      ],
-      "news": null,
-      "created_at": "2026-03-20 13:43:20",
-      "status": "ACTIVE"
-    },
     {
       "id": 758,
       "symbol": "MSTRUSDT",
