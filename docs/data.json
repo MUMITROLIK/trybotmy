@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-20T17:17:58.750127+00:00",
+  "updated_at": "2026-03-20T17:18:30.877842+00:00",
   "publish_status": {
-    "last_ok": "2026-03-20T17:17:23Z",
+    "last_ok": "2026-03-20T17:18:04Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -11,18 +11,18 @@
   },
   "stats": {
     "total": 751,
-    "wins": 234,
+    "wins": 235,
     "losses": 147,
-    "active": 18,
-    "winrate": 61.4
+    "active": 17,
+    "winrate": 61.5
   },
   "trade_stats": {
-    "open": 27,
+    "open": 26,
     "pending": 0,
-    "wins": 262,
+    "wins": 263,
     "losses": 273,
-    "total_pnl": 34.88,
-    "winrate": 49.0
+    "total_pnl": 38.18,
+    "winrate": 49.1
   },
   "fear_greed": {
     "value": 11,
@@ -404,29 +404,6 @@
       "status": "ACTIVE"
     },
     {
-      "id": 788,
-      "symbol": "OPNUSDT",
-      "direction": "SHORT",
-      "exchange": "binance",
-      "entry": 0.2831,
-      "tp1": 0.277438,
-      "tp2": 0.271776,
-      "sl": 0.288762,
-      "strength": 50,
-      "reasons": [
-        "MACD медвежий (hist=-0.00104)",
-        "EMA20 < EMA50 (death cross) 💀",
-        "Объём x2.6 🔥🔥",
-        "Стакан: давление продажи (-0.22)",
-        "МТФ: 5m, 15m, 4h согласны",
-        "CVD падает (-6.4%) — продажи усиливаются 📉",
-        "Doji (1h) — нерешительность"
-      ],
-      "news": null,
-      "created_at": "2026-03-20 17:12:39",
-      "status": "ACTIVE"
-    },
-    {
       "id": 789,
       "symbol": "ADAUSDT",
       "direction": "LONG",
@@ -452,6 +429,26 @@
     }
   ],
   "history": [
+    {
+      "symbol": "OPNUSDT",
+      "direction": "SHORT",
+      "entry": 0.2831,
+      "tp1": 0.277438,
+      "tp2": 0.271776,
+      "sl": 0.288762,
+      "strength": 50,
+      "status": "TP1",
+      "created_at": "2026-03-20 17:12:39",
+      "reasons": [
+        "MACD медвежий (hist=-0.00104)",
+        "EMA20 < EMA50 (death cross) 💀",
+        "Объём x2.6 🔥🔥",
+        "Стакан: давление продажи (-0.22)",
+        "МТФ: 5m, 15m, 4h согласны",
+        "CVD падает (-6.4%) — продажи усиливаются 📉",
+        "Doji (1h) — нерешительность"
+      ]
+    },
     {
       "symbol": "SHIB1000USDT",
       "direction": "LONG",
@@ -836,28 +833,6 @@
         "МТФ: 5m, 15m согласны",
         "CVD положительный (-2.7%)",
         "Цена у поддержки 2.0290",
-        "⚡ Рыночный вход (MTF 2+ ТФ)"
-      ]
-    },
-    {
-      "symbol": "EDGEUSDT",
-      "direction": "LONG",
-      "entry": 0.661,
-      "tp1": 0.690539,
-      "tp2": 0.720079,
-      "sl": 0.637369,
-      "strength": 55,
-      "status": "SL",
-      "created_at": "2026-03-20 13:39:42",
-      "reasons": [
-        "RSI=39 (перепроданность)",
-        "MACD бычий (hist=0.00110)",
-        "BB ниже середины",
-        "Цена выше EMA20",
-        "Стакан: сильное давление покупки (+0.51)",
-        "МТФ: 15m, 4h согласны",
-        "OI растёт +3.2% + цена ↑",
-        "CVD положительный (+2.0%)",
         "⚡ Рыночный вход (MTF 2+ ТФ)"
       ]
     }
@@ -1491,32 +1466,6 @@
       ]
     },
     {
-      "id": 642,
-      "symbol": "OPNUSDT",
-      "direction": "SHORT",
-      "exchange": "binance",
-      "entry": 0.2831,
-      "tp1": 0.277438,
-      "tp2": 0.271776,
-      "sl": 0.288762,
-      "entry_orig": 0.2831,
-      "tp1_orig": 0.277438,
-      "tp2_orig": 0.271776,
-      "sl_orig": 0.288762,
-      "strength": 50,
-      "taken_at": "2026-03-20T17:12:39.782046",
-      "status": "OPEN",
-      "reasons": [
-        "MACD медвежий (hist=-0.00104)",
-        "EMA20 < EMA50 (death cross) 💀",
-        "Объём x2.6 🔥🔥",
-        "Стакан: давление продажи (-0.22)",
-        "МТФ: 5m, 15m, 4h согласны",
-        "CVD падает (-6.4%) — продажи усиливаются 📉",
-        "Doji (1h) — нерешительность"
-      ]
-    },
-    {
       "id": 643,
       "symbol": "ADAUSDT",
       "direction": "LONG",
@@ -1544,33 +1493,47 @@
       ]
     },
     {
-      "id": 630,
-      "symbol": "STOUSDT",
-      "direction": "LONG",
+      "id": 642,
+      "symbol": "OPNUSDT",
+      "direction": "SHORT",
       "exchange": "binance",
-      "entry": 0.10413,
-      "tp1": 0.10682,
-      "tp2": 0.109511,
-      "sl": 0.10813,
-      "entry_orig": 0.10413,
-      "tp1_orig": 0.10682,
-      "tp2_orig": 0.109511,
-      "sl_orig": 0.101978,
-      "strength": 53,
-      "taken_at": "2026-03-20T16:04:26.951506",
+      "entry": 0.2831,
+      "tp1": 0.277438,
+      "tp2": 0.271776,
+      "sl": 0.27735,
+      "entry_orig": 0.2831,
+      "tp1_orig": 0.277438,
+      "tp2_orig": 0.271776,
+      "sl_orig": 0.288762,
+      "strength": 50,
+      "taken_at": "2026-03-20T17:12:39.782046",
       "status": "TP1_HIT",
       "reasons": [
-        "MACD бычий (hist=0.00019)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: сильное давление покупки (+0.50)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +17.7% + цена ↑",
-        "CVD положительный (+4.2%)",
-        "⚡ Рыночный вход (MTF сильный)"
+        "MACD медвежий (hist=-0.00104)",
+        "EMA20 < EMA50 (death cross) 💀",
+        "Объём x2.6 🔥🔥",
+        "Стакан: давление продажи (-0.22)",
+        "МТФ: 5m, 15m, 4h согласны",
+        "CVD падает (-6.4%) — продажи усиливаются 📉",
+        "Doji (1h) — нерешительность"
       ]
     }
   ],
   "trades_history": [
+    {
+      "symbol": "STOUSDT",
+      "direction": "LONG",
+      "entry": 0.10413,
+      "tp1": 0.10682,
+      "tp2": 0.109511,
+      "sl": 0.10813,
+      "strength": 53,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 3.3,
+      "close_price": 0.10757,
+      "taken_at": "2026-03-20T16:04:26.951506",
+      "closed_at": "2026-03-20 17:18:26"
+    },
     {
       "symbol": "ARIAUSDT",
       "direction": "LONG",
@@ -4356,20 +4319,6 @@
       "close_price": 3.639,
       "taken_at": "2026-03-18T16:02:17.034980",
       "closed_at": "2026-03-18 19:04:59"
-    },
-    {
-      "symbol": "NEARUSDT",
-      "direction": "SHORT",
-      "entry": 1.384,
-      "tp1": 1.35632,
-      "tp2": 1.32864,
-      "sl": 1.41168,
-      "strength": 35,
-      "status": "MANUAL",
-      "pnl_pct": -0.51,
-      "close_price": 1.391,
-      "taken_at": "2026-03-18T16:02:16.178912",
-      "closed_at": "2026-03-18 19:04:58"
     }
   ]
 }
