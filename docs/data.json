@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-20T20:55:32.991131+00:00",
+  "updated_at": "2026-03-20T20:56:59.648502+00:00",
   "publish_status": {
-    "last_ok": "2026-03-20T20:54:54Z",
+    "last_ok": "2026-03-20T20:55:38Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 60.5
   },
   "trade_stats": {
-    "open": 21,
+    "open": 20,
     "pending": 0,
-    "wins": 270,
+    "wins": 271,
     "losses": 288,
-    "total_pnl": 26.57,
-    "winrate": 48.4
+    "total_pnl": 28.75,
+    "winrate": 48.5
   },
   "fear_greed": {
     "value": 11,
@@ -1210,34 +1210,23 @@
         "Стакан: сильное давление покупки (+0.28)",
         "Цена у поддержки 2.4640"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 649,
       "symbol": "PTBUSDT",
       "direction": "LONG",
-      "exchange": "bybit",
       "entry": 0.0013985,
       "tp1": 0.001426,
       "tp2": 0.001454,
       "sl": 0.001429,
-      "entry_orig": 0.0013985,
-      "tp1_orig": 0.001426,
-      "tp2_orig": 0.001454,
-      "sl_orig": 0.001371,
       "strength": 52,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 2.18,
+      "close_price": 0.001429,
       "taken_at": "2026-03-20T19:05:47.920643",
-      "status": "TP1_HIT",
-      "reasons": [
-        "RSI=49 (нейтральный↓)",
-        "MACD бычий (hist=0.00000)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: сильное давление покупки (+0.38)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-20 20:56:00"
+    },
     {
       "symbol": "ANKRUSDT",
       "direction": "LONG",
@@ -4023,20 +4012,6 @@
       "close_price": 9.218,
       "taken_at": "2026-03-18T16:27:20.994635",
       "closed_at": "2026-03-18 19:05:12"
-    },
-    {
-      "symbol": "MANTRAUSDT",
-      "direction": "SHORT",
-      "entry": 0.01361,
-      "tp1": 0.013338,
-      "tp2": 0.013066,
-      "sl": 0.013882,
-      "strength": 44,
-      "status": "MANUAL",
-      "pnl_pct": 0.15,
-      "close_price": 0.01359,
-      "taken_at": "2026-03-18T16:22:52.125019",
-      "closed_at": "2026-03-18 19:05:11"
     }
   ]
 }
