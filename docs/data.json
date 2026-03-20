@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-20T07:28:22.474079+00:00",
+  "updated_at": "2026-03-20T07:29:24.938556+00:00",
   "publish_status": {
-    "last_ok": "2026-03-20T07:27:22Z",
+    "last_ok": "2026-03-20T07:28:28Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -12,9 +12,9 @@
   "stats": {
     "total": 679,
     "wins": 213,
-    "losses": 125,
-    "active": 5,
-    "winrate": 63.0
+    "losses": 126,
+    "active": 4,
+    "winrate": 62.8
   },
   "trade_stats": {
     "open": 5,
@@ -133,17 +133,19 @@
       "news": null,
       "created_at": "2026-03-20 07:25:46",
       "status": "ACTIVE"
-    },
+    }
+  ],
+  "history": [
     {
-      "id": 717,
       "symbol": "ZETAUSDT",
       "direction": "LONG",
-      "exchange": "binance",
       "entry": 0.05903,
       "tp1": 0.060359,
       "tp2": 0.061687,
       "sl": 0.057849,
       "strength": 50,
+      "status": "SL",
+      "created_at": "2026-03-20 07:27:44",
       "reasons": [
         "MACD бычий (hist=0.00005)",
         "Цена > EMA20 > EMA50",
@@ -153,13 +155,8 @@
         "OI растёт +5.9% + цена ↑",
         "⚠️ Funding через 33м",
         "⚡ Рыночный вход (MTF сильный)"
-      ],
-      "news": null,
-      "created_at": "2026-03-20 07:27:44",
-      "status": "ACTIVE"
-    }
-  ],
-  "history": [
+      ]
+    },
     {
       "symbol": "PIPPINUSDT",
       "direction": "SHORT",
@@ -532,27 +529,6 @@
         "МТФ: 5m, 15m, 1h согласны",
         "CVD падает (-7.0%) — продажи усиливаются 📉",
         "Bearish Engulfing (1h) 🕯️"
-      ]
-    },
-    {
-      "symbol": "ENJUSDT",
-      "direction": "LONG",
-      "entry": 0.02359,
-      "tp1": 0.024297,
-      "tp2": 0.025004,
-      "sl": 0.023024,
-      "strength": 45,
-      "status": "EXPIRED",
-      "created_at": "2026-03-19 16:30:32",
-      "reasons": [
-        "MACD бычий (hist=0.00016)",
-        "Цена выше EMA20",
-        "Объём x3.3 🔥🔥",
-        "МТФ: 5m, 1h, 4h согласны",
-        "OI падает (шорты закрываются)",
-        "CVD положительный (+1.8%)",
-        "Doji (1h) — нерешительность",
-        "⚡ Рыночный вход (MTF сильный)"
       ]
     }
   ],
