@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-20T22:50:49.775186+00:00",
+  "updated_at": "2026-03-20T22:52:11.610851+00:00",
   "publish_status": {
-    "last_ok": "2026-03-20T22:50:07Z",
+    "last_ok": "2026-03-20T22:50:55Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 60.4
   },
   "trade_stats": {
-    "open": 17,
+    "open": 16,
     "pending": 0,
-    "wins": 280,
+    "wins": 281,
     "losses": 295,
-    "total_pnl": 28.11,
-    "winrate": 48.7
+    "total_pnl": 30.14,
+    "winrate": 48.8
   },
   "fear_greed": {
     "value": 11,
@@ -1167,35 +1167,23 @@
         "CVD положительный (-2.5%)",
         "⚠️ Funding через 71м"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 644,
       "symbol": "JTOUSDT",
       "direction": "LONG",
-      "exchange": "bybit",
       "entry": 0.3001,
       "tp1": 0.306102,
       "tp2": 0.312104,
       "sl": 0.3062,
-      "entry_orig": 0.3001,
-      "tp1_orig": 0.306102,
-      "tp2_orig": 0.312104,
-      "sl_orig": 0.294098,
       "strength": 50,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 2.03,
+      "close_price": 0.3062,
       "taken_at": "2026-03-20T17:21:17.178653",
-      "status": "TP1_HIT",
-      "reasons": [
-        "RSI=20 (сильная перепроданность)",
-        "BB нижняя зона (9%)",
-        "Объём x3.5 🔥🔥",
-        "МТФ: 1h, 4h согласны",
-        "OI растёт +5.1% + цена ↑",
-        "Цена у поддержки 0.2992",
-        "⚡ Рыночный вход (MTF 2+ ТФ)"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-20 22:51:13"
+    },
     {
       "symbol": "PAXGUSDT",
       "direction": "LONG",
@@ -3981,20 +3969,6 @@
       "close_price": null,
       "taken_at": "2026-03-18T19:56:37.657886",
       "closed_at": "2026-03-18 20:56:38"
-    },
-    {
-      "symbol": "LITUSDT",
-      "direction": "LONG",
-      "entry": 1.2025000000000001,
-      "tp1": 1.22655044,
-      "tp2": 1.25060033,
-      "sl": 1.17844964,
-      "strength": 30,
-      "status": "MANUAL",
-      "pnl_pct": 0.37,
-      "close_price": 1.207,
-      "taken_at": "2026-03-18T18:47:27.069445",
-      "closed_at": "2026-03-18 19:05:21"
     }
   ]
 }
