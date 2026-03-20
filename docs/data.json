@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-20T10:36:15.595822+00:00",
+  "updated_at": "2026-03-20T10:36:53.084639+00:00",
   "publish_status": {
-    "last_ok": "2026-03-20T10:35:10Z",
+    "last_ok": "2026-03-20T10:36:21Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 693,
+    "total": 694,
     "wins": 219,
     "losses": 129,
-    "active": 9,
+    "active": 10,
     "winrate": 62.9
   },
   "trade_stats": {
-    "open": 9,
+    "open": 10,
     "pending": 0,
     "wins": 243,
     "losses": 252,
@@ -251,6 +251,29 @@
       ],
       "news": null,
       "created_at": "2026-03-20 09:39:41",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 732,
+      "symbol": "XMRUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 344.5,
+      "tp1": 351.39,
+      "tp2": 358.28,
+      "sl": 337.61,
+      "strength": 50,
+      "reasons": [
+        "MACD бычий (hist=0.22947)",
+        "Цена > EMA20 > EMA50",
+        "Стакан: сильное давление покупки (+0.25)",
+        "МТФ: 5m, 15m согласны",
+        "CVD растёт (+8.4%) — покупки усиливаются 📈",
+        "Bullish Engulfing (1h) 🕯️",
+        "⚡ Рыночный вход (MTF 2+ ТФ)"
+      ],
+      "news": null,
+      "created_at": "2026-03-20 10:36:52",
       "status": "ACTIVE"
     }
   ],
@@ -910,6 +933,32 @@
         "CVD положительный (+4.4%)",
         "Bullish Engulfing (1h) 🕯️",
         "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
+    {
+      "id": 586,
+      "symbol": "XMRUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 344.5,
+      "tp1": 351.39,
+      "tp2": 358.28,
+      "sl": 337.61,
+      "entry_orig": 344.5,
+      "tp1_orig": 351.39,
+      "tp2_orig": 358.28,
+      "sl_orig": 337.61,
+      "strength": 50,
+      "taken_at": "2026-03-20T10:36:52.408982",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.22947)",
+        "Цена > EMA20 > EMA50",
+        "Стакан: сильное давление покупки (+0.25)",
+        "МТФ: 5m, 15m согласны",
+        "CVD растёт (+8.4%) — покупки усиливаются 📈",
+        "Bullish Engulfing (1h) 🕯️",
+        "⚡ Рыночный вход (MTF 2+ ТФ)"
       ]
     }
   ],
