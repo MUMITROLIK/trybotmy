@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-20T21:43:07.102063+00:00",
+  "updated_at": "2026-03-20T21:43:46.427802+00:00",
   "publish_status": {
-    "last_ok": "2026-03-20T21:42:07Z",
+    "last_ok": "2026-03-20T21:43:13Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,19 +10,19 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 772,
+    "total": 773,
     "wins": 239,
     "losses": 158,
-    "active": 11,
+    "active": 12,
     "winrate": 60.2
   },
   "trade_stats": {
     "open": 20,
     "pending": 0,
     "wins": 272,
-    "losses": 291,
-    "total_pnl": 21.92,
-    "winrate": 48.3
+    "losses": 292,
+    "total_pnl": 21.36,
+    "winrate": 48.2
   },
   "fear_greed": {
     "value": 11,
@@ -286,6 +286,28 @@
       ],
       "news": null,
       "created_at": "2026-03-20 21:31:49",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 811,
+      "symbol": "EDGEUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.7223,
+      "tp1": 0.740943,
+      "tp2": 0.759586,
+      "sl": 0.707386,
+      "strength": 50,
+      "reasons": [
+        "MACD бычий (hist=0.00571)",
+        "Цена > EMA20 > EMA50",
+        "Объём x1.9 🔥",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "CVD растёт (+17.6%) — покупки усиливаются 📈",
+        "⚡ Рыночный вход (MTF сильный)"
+      ],
+      "news": null,
+      "created_at": "2026-03-20 21:43:45",
       "status": "ACTIVE"
     }
   ],
@@ -689,32 +711,6 @@
     }
   ],
   "trades_open": [
-    {
-      "id": 608,
-      "symbol": "MONUSDT",
-      "direction": "LONG",
-      "exchange": "bybit",
-      "entry": 0.02219,
-      "tp1": 0.02263424,
-      "tp2": 0.02307809,
-      "sl": 0.02174654,
-      "entry_orig": 0.02214761,
-      "tp1_orig": 0.022591,
-      "tp2_orig": 0.023034,
-      "sl_orig": 0.021705,
-      "strength": 54,
-      "taken_at": "2026-03-20T13:43:20.455471",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00000)",
-        "EMA20 > EMA50 (golden cross) 🌟",
-        "Объём x5.0 🔥🔥🔥",
-        "Стакан: давление покупки (+0.13)",
-        "МТФ: только 1 таймфрейм согласен",
-        "OI растёт +0.9% + цена ↑",
-        "📌 Лимитный вход @ 0.0221476 (откат к EMA20)"
-      ]
-    },
     {
       "id": 612,
       "symbol": "MSTRUSDT",
@@ -1208,9 +1204,48 @@
         "OI растёт +0.7% + цена ↑",
         "⚡ Рыночный вход (MTF сильный)"
       ]
+    },
+    {
+      "id": 665,
+      "symbol": "EDGEUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.7223,
+      "tp1": 0.740943,
+      "tp2": 0.759586,
+      "sl": 0.707386,
+      "entry_orig": 0.7223,
+      "tp1_orig": 0.740943,
+      "tp2_orig": 0.759586,
+      "sl_orig": 0.707386,
+      "strength": 50,
+      "taken_at": "2026-03-20T21:43:45.276693",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.00571)",
+        "Цена > EMA20 > EMA50",
+        "Объём x1.9 🔥",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "CVD растёт (+17.6%) — покупки усиливаются 📈",
+        "⚡ Рыночный вход (MTF сильный)"
+      ]
     }
   ],
   "trades_history": [
+    {
+      "symbol": "MONUSDT",
+      "direction": "LONG",
+      "entry": 0.02219,
+      "tp1": 0.02263424,
+      "tp2": 0.02307809,
+      "sl": 0.02174654,
+      "strength": 54,
+      "status": "TIMEOUT",
+      "pnl_pct": -0.56,
+      "close_price": 0.022065,
+      "taken_at": "2026-03-20T13:43:20.455471",
+      "closed_at": "2026-03-20 21:43:22"
+    },
     {
       "symbol": "STOUSDT",
       "direction": "LONG",
@@ -3996,20 +4031,6 @@
       "close_price": 0.14,
       "taken_at": "2026-03-18T17:03:06.155925",
       "closed_at": "2026-03-18 19:05:15"
-    },
-    {
-      "symbol": "1000SHIBUSDT",
-      "direction": "SHORT",
-      "entry": 0.005719,
-      "tp1": 0.005605,
-      "tp2": 0.00549,
-      "sl": 0.005833,
-      "strength": 35,
-      "status": "MANUAL",
-      "pnl_pct": -1.05,
-      "close_price": 0.005779,
-      "taken_at": "2026-03-18T16:35:27.171850",
-      "closed_at": "2026-03-18 19:05:14"
     }
   ]
 }
