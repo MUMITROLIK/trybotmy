@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-20T10:16:19.457568+00:00",
+  "updated_at": "2026-03-20T10:17:45.048550+00:00",
   "publish_status": {
-    "last_ok": "2026-03-20T10:15:41Z",
+    "last_ok": "2026-03-20T10:16:25Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 63.1
   },
   "trade_stats": {
-    "open": 11,
+    "open": 10,
     "pending": 0,
-    "wins": 242,
+    "wins": 243,
     "losses": 251,
-    "total_pnl": 35.61,
-    "winrate": 49.1
+    "total_pnl": 38.34,
+    "winrate": 49.2
   },
   "fear_greed": {
     "value": 11,
@@ -804,34 +804,6 @@
       ]
     },
     {
-      "id": 579,
-      "symbol": "WAXPUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.007137,
-      "tp1": 0.007309,
-      "tp2": 0.007481,
-      "sl": 0.006994,
-      "entry_orig": 0.007137,
-      "tp1_orig": 0.007309,
-      "tp2_orig": 0.007481,
-      "sl_orig": 0.006994,
-      "strength": 51,
-      "taken_at": "2026-03-20T09:01:47.139203",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=38 (перепроданность)",
-        "BB нижняя зона (10%)",
-        "EMA20 > EMA50",
-        "Стакан: сильное давление покупки (+0.29)",
-        "МТФ: 15m, 1h, 4h согласны",
-        "OI растёт +18.0% + цена ↑",
-        "Цена у поддержки 0.0071",
-        "BTC контекст: +1.6% за 12ч 📈",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 580,
       "symbol": "ANKRUSDT",
       "direction": "LONG",
@@ -992,6 +964,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "WAXPUSDT",
+      "direction": "LONG",
+      "entry": 0.007137,
+      "tp1": 0.007309,
+      "tp2": 0.007481,
+      "sl": 0.007343000000000001,
+      "strength": 51,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 2.73,
+      "close_price": 0.007332,
+      "taken_at": "2026-03-20T09:01:47.139203",
+      "closed_at": "2026-03-20 10:16:48"
+    },
     {
       "symbol": "ATHUSDT",
       "direction": "LONG",
@@ -3777,20 +3763,6 @@
       "close_price": 24.1295,
       "taken_at": "2026-03-18T16:02:16.013299",
       "closed_at": "2026-03-18 16:56:03"
-    },
-    {
-      "symbol": "龙虾USDT",
-      "direction": "SHORT",
-      "entry": 0.012697,
-      "tp1": 0.012139,
-      "tp2": 0.011581,
-      "sl": 0.012115,
-      "strength": 47,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 4.13,
-      "close_price": 0.012172,
-      "taken_at": "2026-03-18T16:07:24.934163",
-      "closed_at": "2026-03-18 16:39:16"
     }
   ]
 }
