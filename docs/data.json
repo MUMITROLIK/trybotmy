@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-20T12:48:09.384418+00:00",
+  "updated_at": "2026-03-20T12:49:42.769144+00:00",
   "publish_status": {
-    "last_ok": "2026-03-20T12:47:27Z",
+    "last_ok": null,
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 62.3
   },
   "trade_stats": {
-    "open": 16,
+    "open": 15,
     "pending": 0,
-    "wins": 244,
+    "wins": 245,
     "losses": 256,
     "total_pnl": 33.11,
-    "winrate": 48.8
+    "winrate": 48.9
   },
   "fear_greed": {
     "value": 11,
@@ -1090,33 +1090,6 @@
       ]
     },
     {
-      "id": 593,
-      "symbol": "ZBCNUSDT",
-      "direction": "LONG",
-      "exchange": "bybit",
-      "entry": 0.0024638,
-      "tp1": 0.002536,
-      "tp2": 0.002609,
-      "sl": 0.002406,
-      "entry_orig": 0.0024638,
-      "tp1_orig": 0.002536,
-      "tp2_orig": 0.002609,
-      "sl_orig": 0.002406,
-      "strength": 50,
-      "taken_at": "2026-03-20T11:36:21.785764",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=27 (сильная перепроданность)",
-        "BB нижняя зона (10%)",
-        "EMA20 > EMA50",
-        "Стакан: сильное давление покупки (+0.25)",
-        "МТФ: 15m, 4h согласны",
-        "OI растёт +1.3% + цена ↑",
-        "Цена у поддержки 0.0025",
-        "⚡ Рыночный вход (MTF 2+ ТФ)"
-      ]
-    },
-    {
       "id": 594,
       "symbol": "INJUSDT",
       "direction": "LONG",
@@ -1198,6 +1171,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "ZBCNUSDT",
+      "direction": "LONG",
+      "entry": 0.0024638,
+      "tp1": 0.002536,
+      "tp2": 0.002609,
+      "sl": 0.002406,
+      "strength": 50,
+      "status": "MANUAL",
+      "pnl_pct": 0,
+      "close_price": null,
+      "taken_at": "2026-03-20T11:36:21.785764",
+      "closed_at": "2026-03-20 12:49:21"
+    },
     {
       "symbol": "STOUSDT",
       "direction": "LONG",
@@ -3983,20 +3970,6 @@
       "close_price": 0.09723,
       "taken_at": "2026-03-18T17:18:24.694356",
       "closed_at": "2026-03-18 17:22:52"
-    },
-    {
-      "symbol": "TAOUSDT",
-      "direction": "LONG",
-      "entry": 267.52,
-      "tp1": 272.8704,
-      "tp2": 278.2208,
-      "sl": 262.1696,
-      "strength": 38,
-      "status": "SL",
-      "pnl_pct": -2.07,
-      "close_price": 261.995,
-      "taken_at": "2026-03-18T16:02:15.808490",
-      "closed_at": "2026-03-18 17:14:53"
     }
   ]
 }
