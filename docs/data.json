@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-20T18:16:26.005683+00:00",
+  "updated_at": "2026-03-20T18:17:38.934680+00:00",
   "publish_status": {
-    "last_ok": "2026-03-20T18:15:46Z",
+    "last_ok": "2026-03-20T18:16:32Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 61.0
   },
   "trade_stats": {
-    "open": 23,
+    "open": 22,
     "pending": 0,
     "wins": 265,
-    "losses": 278,
-    "total_pnl": 37.24,
-    "winrate": 48.8
+    "losses": 279,
+    "total_pnl": 34.94,
+    "winrate": 48.7
   },
   "fear_greed": {
     "value": 11,
@@ -1241,31 +1241,6 @@
       ]
     },
     {
-      "id": 641,
-      "symbol": "POLUSDT",
-      "direction": "LONG",
-      "exchange": "bybit",
-      "entry": 0.10067,
-      "tp1": 0.102683,
-      "tp2": 0.104697,
-      "sl": 0.098657,
-      "entry_orig": 0.10067,
-      "tp1_orig": 0.102683,
-      "tp2_orig": 0.104697,
-      "sl_orig": 0.098657,
-      "strength": 53,
-      "taken_at": "2026-03-20T16:57:37.248760",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00025)",
-        "Цена > EMA20 > EMA50",
-        "Объём x4.4 🔥🔥🔥",
-        "Стакан: давление покупки (+0.15)",
-        "МТФ: 5m, 15m, 1h согласны",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 643,
       "symbol": "ADAUSDT",
       "direction": "LONG",
@@ -1371,6 +1346,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "POLUSDT",
+      "direction": "LONG",
+      "entry": 0.10067,
+      "tp1": 0.102683,
+      "tp2": 0.104697,
+      "sl": 0.098657,
+      "strength": 53,
+      "status": "SL",
+      "pnl_pct": -2.3,
+      "close_price": 0.09835,
+      "taken_at": "2026-03-20T16:57:37.248760",
+      "closed_at": "2026-03-20 18:17:38"
+    },
     {
       "symbol": "PTBUSDT",
       "direction": "LONG",
@@ -4156,20 +4145,6 @@
       "close_price": 0.241,
       "taken_at": "2026-03-18T16:05:42.047754",
       "closed_at": "2026-03-18 19:05:03"
-    },
-    {
-      "symbol": "VIRTUALUSDT",
-      "direction": "SHORT",
-      "entry": 0.7307,
-      "tp1": 0.716086,
-      "tp2": 0.701472,
-      "sl": 0.745314,
-      "strength": 40,
-      "status": "MANUAL",
-      "pnl_pct": -0.36,
-      "close_price": 0.7333,
-      "taken_at": "2026-03-18T16:03:54.770028",
-      "closed_at": "2026-03-18 19:05:02"
     }
   ]
 }
