@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-20T20:31:52.149775+00:00",
+  "updated_at": "2026-03-20T20:32:34.332041+00:00",
   "publish_status": {
-    "last_ok": "2026-03-20T20:30:52Z",
+    "last_ok": "2026-03-20T20:31:58Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 60.7
   },
   "trade_stats": {
-    "open": 22,
+    "open": 21,
     "pending": 0,
     "wins": 270,
-    "losses": 284,
-    "total_pnl": 35.72,
-    "winrate": 48.7
+    "losses": 285,
+    "total_pnl": 33.7,
+    "winrate": 48.6
   },
   "fear_greed": {
     "value": 11,
@@ -897,31 +897,6 @@
       ]
     },
     {
-      "id": 620,
-      "symbol": "RENDERUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 1.707,
-      "tp1": 1.74114,
-      "tp2": 1.77528,
-      "sl": 1.67286,
-      "entry_orig": 1.707,
-      "tp1_orig": 1.74114,
-      "tp2_orig": 1.77528,
-      "sl_orig": 1.67286,
-      "strength": 51,
-      "taken_at": "2026-03-20T14:30:43.361193",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=40 (перепроданность)",
-        "MACD бычий (hist=0.00044)",
-        "BB ниже середины",
-        "Стакан: сильное давление покупки (+0.28)",
-        "CVD положительный (+0.0%)",
-        "Bullish Engulfing (1h) 🕯️"
-      ]
-    },
-    {
       "id": 627,
       "symbol": "ZETAUSDT",
       "direction": "LONG",
@@ -1318,6 +1293,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "RENDERUSDT",
+      "direction": "LONG",
+      "entry": 1.707,
+      "tp1": 1.74114,
+      "tp2": 1.77528,
+      "sl": 1.67286,
+      "strength": 51,
+      "status": "SL",
+      "pnl_pct": -2.02,
+      "close_price": 1.6724999999999999,
+      "taken_at": "2026-03-20T14:30:43.361193",
+      "closed_at": "2026-03-20 20:32:34"
+    },
     {
       "symbol": "ANKRUSDT",
       "direction": "LONG",
@@ -4103,20 +4092,6 @@
       "close_price": 0.3011,
       "taken_at": "2026-03-18T16:20:22.073967",
       "closed_at": "2026-03-18 19:05:09"
-    },
-    {
-      "symbol": "ASTERUSDT",
-      "direction": "LONG",
-      "entry": 0.6901,
-      "tp1": 0.703902,
-      "tp2": 0.717704,
-      "sl": 0.676298,
-      "strength": 38,
-      "status": "MANUAL",
-      "pnl_pct": 0.19,
-      "close_price": 0.6914,
-      "taken_at": "2026-03-18T16:16:35.635846",
-      "closed_at": "2026-03-18 19:05:08"
     }
   ]
 }
