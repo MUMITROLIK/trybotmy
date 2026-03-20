@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-20T15:51:13.657037+00:00",
+  "updated_at": "2026-03-20T15:51:53.237540+00:00",
   "publish_status": {
-    "last_ok": "2026-03-20T15:50:28Z",
+    "last_ok": "2026-03-20T15:51:19Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -11,10 +11,10 @@
   },
   "stats": {
     "total": 734,
-    "wins": 228,
+    "wins": 229,
     "losses": 145,
-    "active": 13,
-    "winrate": 61.1
+    "active": 12,
+    "winrate": 61.2
   },
   "trade_stats": {
     "open": 22,
@@ -291,30 +291,6 @@
       "status": "ACTIVE"
     },
     {
-      "id": 769,
-      "symbol": "BTRUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.13936,
-      "tp1": 0.143656,
-      "tp2": 0.147953,
-      "sl": 0.135923,
-      "strength": 53,
-      "reasons": [
-        "MACD бычий (hist=0.00229)",
-        "Цена > EMA20 > EMA50",
-        "Объём x2.7 🔥🔥",
-        "МТФ: 5m, 15m согласны",
-        "CVD растёт (+13.5%) — покупки усиливаются 📈",
-        "Bullish Engulfing (1h) 🕯️",
-        "⚠️ Funding через 71м",
-        "⚡ Рыночный вход (MTF 2+ ТФ)"
-      ],
-      "news": null,
-      "created_at": "2026-03-20 14:49:27",
-      "status": "ACTIVE"
-    },
-    {
       "id": 772,
       "symbol": "WIFUSDT",
       "direction": "LONG",
@@ -380,6 +356,27 @@
         "OI падает (шорты закрываются)",
         "Цена у поддержки 0.0120",
         "⚠️ Funding через 64м"
+      ]
+    },
+    {
+      "symbol": "BTRUSDT",
+      "direction": "LONG",
+      "entry": 0.13936,
+      "tp1": 0.143656,
+      "tp2": 0.147953,
+      "sl": 0.135923,
+      "strength": 53,
+      "status": "TP1",
+      "created_at": "2026-03-20 14:49:27",
+      "reasons": [
+        "MACD бычий (hist=0.00229)",
+        "Цена > EMA20 > EMA50",
+        "Объём x2.7 🔥🔥",
+        "МТФ: 5m, 15m согласны",
+        "CVD растёт (+13.5%) — покупки усиливаются 📈",
+        "Bullish Engulfing (1h) 🕯️",
+        "⚠️ Funding через 71м",
+        "⚡ Рыночный вход (MTF 2+ ТФ)"
       ]
     },
     {
@@ -728,26 +725,6 @@
         "OI растёт +9.0% + цена ↑",
         "CVD положительный (+3.8%)",
         "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
-      "symbol": "INJUSDT",
-      "direction": "LONG",
-      "entry": 3.092,
-      "tp1": 3.15384,
-      "tp2": 3.21568,
-      "sl": 3.03016,
-      "strength": 53,
-      "status": "EXPIRED",
-      "created_at": "2026-03-20 11:40:00",
-      "reasons": [
-        "RSI=35 (перепроданность)",
-        "BB нижняя полоса (пробой)",
-        "EMA20 > EMA50",
-        "Объём x4.1 🔥🔥🔥",
-        "МТФ: 15m, 4h согласны",
-        "Цена у поддержки 3.0880",
-        "⚡ Рыночный вход (MTF 2+ ТФ)"
       ]
     }
   ],
@@ -1282,33 +1259,6 @@
       ]
     },
     {
-      "id": 623,
-      "symbol": "BTRUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.13936,
-      "tp1": 0.143656,
-      "tp2": 0.147953,
-      "sl": 0.135923,
-      "entry_orig": 0.13936,
-      "tp1_orig": 0.143656,
-      "tp2_orig": 0.147953,
-      "sl_orig": 0.135923,
-      "strength": 53,
-      "taken_at": "2026-03-20T14:49:27.707279",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00229)",
-        "Цена > EMA20 > EMA50",
-        "Объём x2.7 🔥🔥",
-        "МТФ: 5m, 15m согласны",
-        "CVD растёт (+13.5%) — покупки усиливаются 📈",
-        "Bullish Engulfing (1h) 🕯️",
-        "⚠️ Funding через 71м",
-        "⚡ Рыночный вход (MTF 2+ ТФ)"
-      ]
-    },
-    {
       "id": 626,
       "symbol": "WIFUSDT",
       "direction": "LONG",
@@ -1333,6 +1283,33 @@
         "CVD положительный (-0.3%)",
         "⚠️ Funding через 31м",
         "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
+    {
+      "id": 623,
+      "symbol": "BTRUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.13936,
+      "tp1": 0.143656,
+      "tp2": 0.147953,
+      "sl": 0.144095,
+      "entry_orig": 0.13936,
+      "tp1_orig": 0.143656,
+      "tp2_orig": 0.147953,
+      "sl_orig": 0.135923,
+      "strength": 53,
+      "taken_at": "2026-03-20T14:49:27.707279",
+      "status": "TP1_HIT",
+      "reasons": [
+        "MACD бычий (hist=0.00229)",
+        "Цена > EMA20 > EMA50",
+        "Объём x2.7 🔥🔥",
+        "МТФ: 5m, 15m согласны",
+        "CVD растёт (+13.5%) — покупки усиливаются 📈",
+        "Bullish Engulfing (1h) 🕯️",
+        "⚠️ Funding через 71м",
+        "⚡ Рыночный вход (MTF 2+ ТФ)"
       ]
     }
   ],
