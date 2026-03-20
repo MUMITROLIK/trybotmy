@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-20T06:34:07.796849+00:00",
+  "updated_at": "2026-03-20T06:35:23.854561+00:00",
   "publish_status": {
-    "last_ok": "2026-03-20T06:33:26Z",
+    "last_ok": "2026-03-20T06:34:13Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 62.9
   },
   "trade_stats": {
-    "open": 3,
+    "open": 2,
     "pending": 0,
-    "wins": 233,
+    "wins": 234,
     "losses": 248,
     "total_pnl": 23.6,
-    "winrate": 48.4
+    "winrate": 48.5
   },
   "fear_greed": {
     "value": 11,
@@ -484,33 +484,23 @@
         "BTC корреляция 0.81, BTC -1.6% 📉",
         "BTC контекст: -2.5% за 12ч 📉"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 542,
       "symbol": "MNTUSDT",
       "direction": "LONG",
-      "exchange": "binance",
       "entry": 0.7312,
       "tp1": 0.745824,
       "tp2": 0.760448,
       "sl": 0.716576,
-      "entry_orig": 0.7312,
-      "tp1_orig": 0.745824,
-      "tp2_orig": 0.760448,
-      "sl_orig": 0.716576,
       "strength": 47,
+      "status": "MANUAL",
+      "pnl_pct": 0,
+      "close_price": 0.7312,
       "taken_at": "2026-03-19T16:05:15.842560",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=33 (перепроданность)",
-        "MACD бычий (hist=0.00002)",
-        "BB нижняя зона (25%)",
-        "Объём x3.2 🔥🔥",
-        "МТФ: только 1 таймфрейм согласен"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-20 06:35:23"
+    },
     {
       "symbol": "AAVEUSDT",
       "direction": "LONG",
@@ -3296,20 +3286,6 @@
       "close_price": 0.00351945,
       "taken_at": "2026-03-18T11:31:20.616802",
       "closed_at": "2026-03-18 13:03:13"
-    },
-    {
-      "symbol": "XANUSDT",
-      "direction": "LONG",
-      "entry": 0.010629,
-      "tp1": 0.010842,
-      "tp2": 0.011054,
-      "sl": 0.010416,
-      "strength": 40,
-      "status": "SL",
-      "pnl_pct": -2.06,
-      "close_price": 0.01041,
-      "taken_at": "2026-03-18T11:44:58.982311",
-      "closed_at": "2026-03-18 12:51:52"
     }
   ]
 }
