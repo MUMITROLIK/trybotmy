@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-20T13:49:57.113610+00:00",
+  "updated_at": "2026-03-20T13:51:03.634141+00:00",
   "publish_status": {
-    "last_ok": "2026-03-20T13:48:43Z",
+    "last_ok": "2026-03-20T13:50:03Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 718,
+    "total": 719,
     "wins": 223,
     "losses": 135,
-    "active": 16,
+    "active": 17,
     "winrate": 62.3
   },
   "trade_stats": {
-    "open": 22,
+    "open": 23,
     "pending": 0,
     "wins": 248,
     "losses": 259,
@@ -412,6 +412,29 @@
       ],
       "news": "CoinDesk 20 performance update: Aptos (APT) gains 6.3% as index rises",
       "created_at": "2026-03-20 13:46:57",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 757,
+      "symbol": "PIXELUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.009823,
+      "tp1": 0.010056,
+      "tp2": 0.010288,
+      "sl": 0.009627,
+      "strength": 51,
+      "reasons": [
+        "MACD бычий (hist=0.00006)",
+        "Цена > EMA20 > EMA50",
+        "Объём x2.2 🔥",
+        "Стакан: сильное давление покупки (+0.42)",
+        "МТФ: 5m, 15m, 1h согласны",
+        "CVD положительный (+3.7%)",
+        "⚡ Рыночный вход (MTF сильный)"
+      ],
+      "news": null,
+      "created_at": "2026-03-20 13:50:24",
       "status": "ACTIVE"
     }
   ],
@@ -1414,6 +1437,32 @@
         "МТФ: все 4 таймфрейма согласны ✅✅",
         "OI растёт +1.9% + цена ↑",
         "CVD положительный (-1.8%)",
+        "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
+    {
+      "id": 611,
+      "symbol": "PIXELUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.009823,
+      "tp1": 0.010056,
+      "tp2": 0.010288,
+      "sl": 0.009627,
+      "entry_orig": 0.009823,
+      "tp1_orig": 0.010056,
+      "tp2_orig": 0.010288,
+      "sl_orig": 0.009627,
+      "strength": 51,
+      "taken_at": "2026-03-20T13:50:25.078317",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.00006)",
+        "Цена > EMA20 > EMA50",
+        "Объём x2.2 🔥",
+        "Стакан: сильное давление покупки (+0.42)",
+        "МТФ: 5m, 15m, 1h согласны",
+        "CVD положительный (+3.7%)",
         "⚡ Рыночный вход (MTF сильный)"
       ]
     }
