@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-20T00:11:49.844612+00:00",
+  "updated_at": "2026-03-20T00:13:04.106876+00:00",
   "publish_status": {
-    "last_ok": "2026-03-20T00:11:00Z",
+    "last_ok": "2026-03-20T00:11:55Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 62.9
   },
   "trade_stats": {
-    "open": 8,
+    "open": 7,
     "pending": 0,
-    "wins": 230,
+    "wins": 231,
     "losses": 246,
-    "total_pnl": 22.03,
-    "winrate": 48.3
+    "total_pnl": 22.19,
+    "winrate": 48.4
   },
   "fear_greed": {
     "value": 11,
@@ -510,31 +510,6 @@
       ]
     },
     {
-      "id": 546,
-      "symbol": "MONUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.021955,
-      "tp1": 0.022394,
-      "tp2": 0.022833,
-      "sl": 0.021516,
-      "entry_orig": 0.021955,
-      "tp1_orig": 0.022394,
-      "tp2_orig": 0.022833,
-      "sl_orig": 0.021516,
-      "strength": 45,
-      "taken_at": "2026-03-19T16:12:20.329064",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=36 (перепроданность)",
-        "MACD бычий (hist=0.00003)",
-        "BB ниже середины",
-        "Стакан: сильное давление покупки (+0.26)",
-        "МТФ: 5m, 4h согласны",
-        "⚡ Рыночный вход (MTF 2+ ТФ)"
-      ]
-    },
-    {
       "id": 550,
       "symbol": "FILUSDT",
       "direction": "LONG",
@@ -636,6 +611,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "MONUSDT",
+      "direction": "LONG",
+      "entry": 0.021955,
+      "tp1": 0.022394,
+      "tp2": 0.022833,
+      "sl": 0.021516,
+      "strength": 45,
+      "status": "TIMEOUT",
+      "pnl_pct": 0.16,
+      "close_price": 0.02199,
+      "taken_at": "2026-03-19T16:12:20.329064",
+      "closed_at": "2026-03-20 00:12:27"
+    },
     {
       "symbol": "SIGNUSDT",
       "direction": "LONG",
@@ -3420,20 +3409,6 @@
       "pnl_pct": 0,
       "close_price": null,
       "taken_at": "2026-03-18T11:34:40.276449",
-      "closed_at": "2026-03-18 12:34:43"
-    },
-    {
-      "symbol": "1000BONKUSDT",
-      "direction": "SHORT",
-      "entry": 0.00665947,
-      "tp1": 0.006526,
-      "tp2": 0.006393,
-      "sl": 0.006793,
-      "strength": 53,
-      "status": "LIMIT_TIMEOUT",
-      "pnl_pct": 0,
-      "close_price": null,
-      "taken_at": "2026-03-18T11:34:40.422444",
       "closed_at": "2026-03-18 12:34:43"
     }
   ]
