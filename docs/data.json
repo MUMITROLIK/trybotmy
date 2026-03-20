@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-20T11:53:54.204015+00:00",
+  "updated_at": "2026-03-20T11:55:00.378839+00:00",
   "publish_status": {
-    "last_ok": "2026-03-20T11:52:29Z",
+    "last_ok": "2026-03-20T11:54:00Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 703,
+    "total": 704,
     "wins": 220,
     "losses": 133,
-    "active": 14,
+    "active": 15,
     "winrate": 62.3
   },
   "trade_stats": {
-    "open": 14,
+    "open": 15,
     "pending": 0,
     "wins": 244,
     "losses": 256,
@@ -367,6 +367,30 @@
       ],
       "news": null,
       "created_at": "2026-03-20 11:40:00",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 742,
+      "symbol": "AIAUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.10348,
+      "tp1": 0.106245,
+      "tp2": 0.109011,
+      "sl": 0.101268,
+      "strength": 50,
+      "reasons": [
+        "MACD бычий (hist=0.00047)",
+        "Цена выше EMA20",
+        "Стакан: сильное давление покупки (+0.28)",
+        "МТФ: 5m, 1h, 4h согласны",
+        "OI падает (шорты закрываются)",
+        "CVD положительный (-4.3%)",
+        "Bullish Engulfing (1h) 🕯️",
+        "⚡ Рыночный вход (MTF сильный)"
+      ],
+      "news": null,
+      "created_at": "2026-03-20 11:54:10",
       "status": "ACTIVE"
     }
   ],
@@ -1159,6 +1183,33 @@
         "МТФ: 15m, 4h согласны",
         "Цена у поддержки 3.0880",
         "⚡ Рыночный вход (MTF 2+ ТФ)"
+      ]
+    },
+    {
+      "id": 596,
+      "symbol": "AIAUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.10348,
+      "tp1": 0.106245,
+      "tp2": 0.109011,
+      "sl": 0.101268,
+      "entry_orig": 0.10348,
+      "tp1_orig": 0.106245,
+      "tp2_orig": 0.109011,
+      "sl_orig": 0.101268,
+      "strength": 50,
+      "taken_at": "2026-03-20T11:54:10.577616",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.00047)",
+        "Цена выше EMA20",
+        "Стакан: сильное давление покупки (+0.28)",
+        "МТФ: 5m, 1h, 4h согласны",
+        "OI падает (шорты закрываются)",
+        "CVD положительный (-4.3%)",
+        "Bullish Engulfing (1h) 🕯️",
+        "⚡ Рыночный вход (MTF сильный)"
       ]
     }
   ],
