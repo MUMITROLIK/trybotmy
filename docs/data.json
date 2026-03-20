@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-20T13:53:56.692034+00:00",
+  "updated_at": "2026-03-20T13:54:56.736085+00:00",
   "publish_status": {
-    "last_ok": "2026-03-20T13:53:23Z",
+    "last_ok": "2026-03-20T13:54:03Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -12,17 +12,17 @@
   "stats": {
     "total": 719,
     "wins": 223,
-    "losses": 135,
-    "active": 17,
-    "winrate": 62.3
+    "losses": 136,
+    "active": 16,
+    "winrate": 62.1
   },
   "trade_stats": {
-    "open": 23,
+    "open": 22,
     "pending": 0,
     "wins": 248,
-    "losses": 259,
-    "total_pnl": 34.01,
-    "winrate": 48.9
+    "losses": 260,
+    "total_pnl": 31.91,
+    "winrate": 48.8
   },
   "fear_greed": {
     "value": 11,
@@ -413,17 +413,19 @@
       "news": "CoinDesk 20 performance update: Aptos (APT) gains 6.3% as index rises",
       "created_at": "2026-03-20 13:46:57",
       "status": "ACTIVE"
-    },
+    }
+  ],
+  "history": [
     {
-      "id": 757,
       "symbol": "PIXELUSDT",
       "direction": "LONG",
-      "exchange": "binance",
       "entry": 0.009823,
       "tp1": 0.010056,
       "tp2": 0.010288,
       "sl": 0.009627,
       "strength": 51,
+      "status": "SL",
+      "created_at": "2026-03-20 13:50:24",
       "reasons": [
         "MACD бычий (hist=0.00006)",
         "Цена > EMA20 > EMA50",
@@ -432,13 +434,8 @@
         "МТФ: 5m, 15m, 1h согласны",
         "CVD положительный (+3.7%)",
         "⚡ Рыночный вход (MTF сильный)"
-      ],
-      "news": null,
-      "created_at": "2026-03-20 13:50:24",
-      "status": "ACTIVE"
-    }
-  ],
-  "history": [
+      ]
+    },
     {
       "symbol": "ENJUSDT",
       "direction": "LONG",
@@ -827,27 +824,6 @@
         "CVD положительный (+3.6%)",
         "BTC корреляция 0.74, BTC +0.6% 📈",
         "BTC контекст: +2.0% за 12ч 📈",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
-      "symbol": "HYPEUSDT",
-      "direction": "LONG",
-      "entry": 40.632,
-      "tp1": 41.44464,
-      "tp2": 42.25728,
-      "sl": 39.81936,
-      "strength": 51,
-      "status": "SL",
-      "created_at": "2026-03-20 08:11:01",
-      "reasons": [
-        "MACD бычий (hist=0.08666)",
-        "Цена > EMA20 > EMA50",
-        "Объём x2.2 🔥",
-        "Стакан: сильное давление покупки (+0.29)",
-        "МТФ: 5m, 15m, 4h согласны",
-        "CVD положительный (-1.0%)",
-        "BTC контекст: +1.5% за 12ч 📈",
         "⚡ Рыночный вход (MTF сильный)"
       ]
     }
@@ -1439,35 +1415,23 @@
         "CVD положительный (-1.8%)",
         "⚡ Рыночный вход (MTF сильный)"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 611,
       "symbol": "PIXELUSDT",
       "direction": "LONG",
-      "exchange": "binance",
       "entry": 0.009823,
       "tp1": 0.010056,
       "tp2": 0.010288,
       "sl": 0.009627,
-      "entry_orig": 0.009823,
-      "tp1_orig": 0.010056,
-      "tp2_orig": 0.010288,
-      "sl_orig": 0.009627,
       "strength": 51,
+      "status": "SL",
+      "pnl_pct": -2.1,
+      "close_price": 0.009617,
       "taken_at": "2026-03-20T13:50:25.078317",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00006)",
-        "Цена > EMA20 > EMA50",
-        "Объём x2.2 🔥",
-        "Стакан: сильное давление покупки (+0.42)",
-        "МТФ: 5m, 15m, 1h согласны",
-        "CVD положительный (+3.7%)",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-20 13:54:56"
+    },
     {
       "symbol": "PIXELUSDT",
       "direction": "LONG",
@@ -4253,20 +4217,6 @@
       "close_price": 0.9373,
       "taken_at": "2026-03-18T16:05:41.859514",
       "closed_at": "2026-03-18 17:49:33"
-    },
-    {
-      "symbol": "ROBOUSDT",
-      "direction": "SHORT",
-      "entry": 0.02522,
-      "tp1": 0.024586,
-      "tp2": 0.023951,
-      "sl": 0.025727,
-      "strength": 38,
-      "status": "SL",
-      "pnl_pct": -2.04,
-      "close_price": 0.025735,
-      "taken_at": "2026-03-18T16:55:41.625457",
-      "closed_at": "2026-03-18 17:47:39"
     }
   ]
 }
