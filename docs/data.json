@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-20T00:01:53.272857+00:00",
+  "updated_at": "2026-03-20T00:03:17.728459+00:00",
   "publish_status": {
-    "last_ok": "2026-03-20T00:01:13Z",
+    "last_ok": "2026-03-20T00:01:58Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 62.9
   },
   "trade_stats": {
-    "open": 11,
+    "open": 10,
     "pending": 0,
-    "wins": 228,
+    "wins": 229,
     "losses": 245,
-    "total_pnl": 23.17,
-    "winrate": 48.2
+    "total_pnl": 23.3,
+    "winrate": 48.3
   },
   "fear_greed": {
     "value": 23,
@@ -486,31 +486,6 @@
       ]
     },
     {
-      "id": 538,
-      "symbol": "TSLAUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 382.57,
-      "tp1": 390.2214,
-      "tp2": 397.8728,
-      "sl": 374.9186,
-      "entry_orig": 382.57,
-      "tp1_orig": 390.2214,
-      "tp2_orig": 397.8728,
-      "sl_orig": 374.9186,
-      "strength": 45,
-      "taken_at": "2026-03-19T16:01:49.082364",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=36 (перепроданность)",
-        "MACD бычий (hist=0.00192)",
-        "BB ниже середины",
-        "Стакан: сильное давление покупки (+0.37)",
-        "OI растёт +26.7%",
-        "CVD положительный (+0.1%)"
-      ]
-    },
-    {
       "id": 540,
       "symbol": "DOGEUSDT",
       "direction": "LONG",
@@ -714,6 +689,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "TSLAUSDT",
+      "direction": "LONG",
+      "entry": 382.57,
+      "tp1": 390.2214,
+      "tp2": 397.8728,
+      "sl": 374.9186,
+      "strength": 45,
+      "status": "TIMEOUT",
+      "pnl_pct": 0.13,
+      "close_price": 383.075,
+      "taken_at": "2026-03-19T16:01:49.082364",
+      "closed_at": "2026-03-20 00:02:01"
+    },
     {
       "symbol": "1000PEPEUSDT",
       "direction": "SHORT",
@@ -3499,20 +3488,6 @@
       "close_price": 272.275,
       "taken_at": "2026-03-18 06:42:28",
       "closed_at": "2026-03-18 12:32:41"
-    },
-    {
-      "symbol": "MOODENGUSDT",
-      "direction": "LONG",
-      "entry": 0.05542,
-      "tp1": 0.056528,
-      "tp2": 0.057637,
-      "sl": 0.054312,
-      "strength": 41,
-      "status": "SL",
-      "pnl_pct": -2.06,
-      "close_price": 0.05428,
-      "taken_at": "2026-03-18T11:46:37.174177",
-      "closed_at": "2026-03-18 12:32:05"
     }
   ]
 }
