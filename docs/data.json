@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-20T11:12:17.855903+00:00",
+  "updated_at": "2026-03-20T11:13:23.630200+00:00",
   "publish_status": {
-    "last_ok": "2026-03-20T11:11:04Z",
+    "last_ok": "2026-03-20T11:12:23Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -12,17 +12,17 @@
   "stats": {
     "total": 698,
     "wins": 220,
-    "losses": 129,
-    "active": 13,
-    "winrate": 63.0
+    "losses": 130,
+    "active": 12,
+    "winrate": 62.9
   },
   "trade_stats": {
-    "open": 14,
+    "open": 13,
     "pending": 0,
     "wins": 243,
-    "losses": 252,
-    "total_pnl": 36.19,
-    "winrate": 49.1
+    "losses": 253,
+    "total_pnl": 33.55,
+    "winrate": 49.0
   },
   "fear_greed": {
     "value": 11,
@@ -275,29 +275,6 @@
       "status": "ACTIVE"
     },
     {
-      "id": 734,
-      "symbol": "EDGEUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.6818,
-      "tp1": 0.703796,
-      "tp2": 0.725793,
-      "sl": 0.664203,
-      "strength": 50,
-      "reasons": [
-        "RSI=50 (нейтральный↓)",
-        "MACD бычий (hist=0.00046)",
-        "EMA20 > EMA50",
-        "Стакан: сильное давление покупки (+0.63)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +9.8% + цена ↑",
-        "⚡ Рыночный вход (MTF сильный)"
-      ],
-      "news": null,
-      "created_at": "2026-03-20 10:45:30",
-      "status": "ACTIVE"
-    },
-    {
       "id": 735,
       "symbol": "IRYSUSDT",
       "direction": "LONG",
@@ -344,6 +321,26 @@
     }
   ],
   "history": [
+    {
+      "symbol": "EDGEUSDT",
+      "direction": "LONG",
+      "entry": 0.6818,
+      "tp1": 0.703796,
+      "tp2": 0.725793,
+      "sl": 0.664203,
+      "strength": 50,
+      "status": "SL",
+      "created_at": "2026-03-20 10:45:30",
+      "reasons": [
+        "RSI=50 (нейтральный↓)",
+        "MACD бычий (hist=0.00046)",
+        "EMA20 > EMA50",
+        "Стакан: сильное давление покупки (+0.63)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +9.8% + цена ↑",
+        "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
     {
       "symbol": "TAOUSDT",
       "direction": "LONG",
@@ -736,26 +733,6 @@
         "CVD положительный (-3.4%)",
         "⚡ Рыночный вход (MTF сильный)"
       ]
-    },
-    {
-      "symbol": "SIGNUSDT",
-      "direction": "LONG",
-      "entry": 0.04453,
-      "tp1": 0.045421,
-      "tp2": 0.046311,
-      "sl": 0.043639,
-      "strength": 47,
-      "status": "EXPIRED",
-      "created_at": "2026-03-19 17:41:33",
-      "reasons": [
-        "MACD бычий (hist=0.00000)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: давление покупки (+0.11)",
-        "МТФ: 5m, 15m, 1h согласны",
-        "CVD положительный (+2.6%)",
-        "Bullish Engulfing (1h) 🕯️",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
     }
   ],
   "trades_open": [
@@ -1056,32 +1033,6 @@
       ]
     },
     {
-      "id": 588,
-      "symbol": "EDGEUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.6818,
-      "tp1": 0.703796,
-      "tp2": 0.725793,
-      "sl": 0.664203,
-      "entry_orig": 0.6818,
-      "tp1_orig": 0.703796,
-      "tp2_orig": 0.725793,
-      "sl_orig": 0.664203,
-      "strength": 50,
-      "taken_at": "2026-03-20T10:45:30.800284",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=50 (нейтральный↓)",
-        "MACD бычий (hist=0.00046)",
-        "EMA20 > EMA50",
-        "Стакан: сильное давление покупки (+0.63)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +9.8% + цена ↑",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 589,
       "symbol": "IRYSUSDT",
       "direction": "LONG",
@@ -1134,6 +1085,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "EDGEUSDT",
+      "direction": "LONG",
+      "entry": 0.6818,
+      "tp1": 0.703796,
+      "tp2": 0.725793,
+      "sl": 0.664203,
+      "strength": 50,
+      "status": "SL",
+      "pnl_pct": -2.64,
+      "close_price": 0.6638,
+      "taken_at": "2026-03-20T10:45:30.800284",
+      "closed_at": "2026-03-20 11:12:47"
+    },
     {
       "symbol": "TAOUSDT",
       "direction": "LONG",
@@ -3919,20 +3884,6 @@
       "close_price": 0.10176,
       "taken_at": "2026-03-18T16:07:25.090312",
       "closed_at": "2026-03-18 17:02:47"
-    },
-    {
-      "symbol": "ZECUSDT",
-      "direction": "SHORT",
-      "entry": 256.3,
-      "tp1": 251.174,
-      "tp2": 246.048,
-      "sl": 249.655,
-      "strength": 35,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 2.56,
-      "close_price": 249.74,
-      "taken_at": "2026-03-18T16:03:53.994592",
-      "closed_at": "2026-03-18 17:00:08"
     }
   ]
 }
