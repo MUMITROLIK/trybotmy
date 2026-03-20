@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-20T18:37:36.004230+00:00",
+  "updated_at": "2026-03-20T18:38:16.335299+00:00",
   "publish_status": {
-    "last_ok": "2026-03-20T18:36:36Z",
+    "last_ok": "2026-03-20T18:37:42Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -1060,14 +1060,14 @@
       "entry": 0.08421,
       "tp1": 0.087283,
       "tp2": 0.090356,
-      "sl": 0.081752,
+      "sl": 0.08729,
       "entry_orig": 0.08421,
       "tp1_orig": 0.087283,
       "tp2_orig": 0.090356,
       "sl_orig": 0.081752,
       "strength": 53,
       "taken_at": "2026-03-20T17:28:00.670544",
-      "status": "OPEN",
+      "status": "TP1_HIT",
       "reasons": [
         "MACD бычий (hist=0.00046)",
         "Цена > EMA20 > EMA50",
