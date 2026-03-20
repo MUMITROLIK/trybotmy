@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-20T14:11:33.109547+00:00",
+  "updated_at": "2026-03-20T14:12:53.949005+00:00",
   "publish_status": {
-    "last_ok": "2026-03-20T14:10:55Z",
+    "last_ok": "2026-03-20T14:11:39Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 61.5
   },
   "trade_stats": {
-    "open": 23,
+    "open": 22,
     "pending": 0,
     "wins": 248,
-    "losses": 263,
-    "total_pnl": 22.75,
-    "winrate": 48.5
+    "losses": 264,
+    "total_pnl": 20.73,
+    "winrate": 48.4
   },
   "fear_greed": {
     "value": 11,
@@ -1013,32 +1013,6 @@
       ]
     },
     {
-      "id": 587,
-      "symbol": "JTOUSDT",
-      "direction": "LONG",
-      "exchange": "bybit",
-      "entry": 0.3117,
-      "tp1": 0.317934,
-      "tp2": 0.324168,
-      "sl": 0.305466,
-      "entry_orig": 0.3117,
-      "tp1_orig": 0.317934,
-      "tp2_orig": 0.324168,
-      "sl_orig": 0.305466,
-      "strength": 50,
-      "taken_at": "2026-03-20T10:43:40.696534",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00003)",
-        "Цена > EMA20 > EMA50",
-        "Объём x2.4 🔥",
-        "Стакан: перевес bid (+0.07)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +0.5% + цена ↑",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 591,
       "symbol": "CELOUSDT",
       "direction": "LONG",
@@ -1407,6 +1381,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "JTOUSDT",
+      "direction": "LONG",
+      "entry": 0.3117,
+      "tp1": 0.317934,
+      "tp2": 0.324168,
+      "sl": 0.305466,
+      "strength": 50,
+      "status": "SL",
+      "pnl_pct": -2.02,
+      "close_price": 0.3054,
+      "taken_at": "2026-03-20T10:43:40.696534",
+      "closed_at": "2026-03-20 14:12:53"
+    },
     {
       "symbol": "ZROUSDT",
       "direction": "LONG",
@@ -4192,20 +4180,6 @@
       "close_price": 0.169425,
       "taken_at": "2026-03-18T15:00:05.872528",
       "closed_at": "2026-03-18 18:00:33"
-    },
-    {
-      "symbol": "ARCUSDT",
-      "direction": "SHORT",
-      "entry": 0.03906,
-      "tp1": 0.037771,
-      "tp2": 0.036482,
-      "sl": 0.040091,
-      "strength": 48,
-      "status": "SL",
-      "pnl_pct": -2.66,
-      "close_price": 0.0401,
-      "taken_at": "2026-03-18T17:21:39.246075",
-      "closed_at": "2026-03-18 17:54:07"
     }
   ]
 }
