@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-20T17:34:45.281925+00:00",
+  "updated_at": "2026-03-20T17:35:51.461149+00:00",
   "publish_status": {
-    "last_ok": "2026-03-20T17:33:25Z",
+    "last_ok": "2026-03-20T17:34:51Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -12,17 +12,17 @@
   "stats": {
     "total": 754,
     "wins": 235,
-    "losses": 148,
-    "active": 19,
-    "winrate": 61.4
+    "losses": 149,
+    "active": 18,
+    "winrate": 61.2
   },
   "trade_stats": {
-    "open": 24,
+    "open": 23,
     "pending": 0,
     "wins": 265,
-    "losses": 276,
-    "total_pnl": 41.51,
-    "winrate": 49.0
+    "losses": 277,
+    "total_pnl": 39.31,
+    "winrate": 48.9
   },
   "fear_greed": {
     "value": 11,
@@ -428,30 +428,6 @@
       "status": "ACTIVE"
     },
     {
-      "id": 791,
-      "symbol": "STOUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.10902,
-      "tp1": 0.111827,
-      "tp2": 0.114634,
-      "sl": 0.106774,
-      "strength": 58,
-      "reasons": [
-        "MACD бычий (hist=0.00041)",
-        "Цена > EMA20 > EMA50",
-        "Объём x2.1 🔥",
-        "Стакан: перевес bid (+0.08)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +13.6% + цена ↑",
-        "CVD растёт (+6.6%) — покупки усиливаются 📈",
-        "⚡ Рыночный вход (MTF сильный)"
-      ],
-      "news": null,
-      "created_at": "2026-03-20 17:23:01",
-      "status": "ACTIVE"
-    },
-    {
       "id": 792,
       "symbol": "ALCHUSDT",
       "direction": "LONG",
@@ -475,6 +451,27 @@
     }
   ],
   "history": [
+    {
+      "symbol": "STOUSDT",
+      "direction": "LONG",
+      "entry": 0.10902,
+      "tp1": 0.111827,
+      "tp2": 0.114634,
+      "sl": 0.106774,
+      "strength": 58,
+      "status": "SL",
+      "created_at": "2026-03-20 17:23:01",
+      "reasons": [
+        "MACD бычий (hist=0.00041)",
+        "Цена > EMA20 > EMA50",
+        "Объём x2.1 🔥",
+        "Стакан: перевес bid (+0.08)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +13.6% + цена ↑",
+        "CVD растёт (+6.6%) — покупки усиливаются 📈",
+        "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
     {
       "symbol": "OPNUSDT",
       "direction": "SHORT",
@@ -857,26 +854,6 @@
         "МТФ: все 4 таймфрейма согласны ✅✅",
         "OI растёт +1.9% + цена ↑",
         "CVD положительный (-1.8%)",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
-      "symbol": "TAOUSDT",
-      "direction": "LONG",
-      "entry": 283.53,
-      "tp1": 289.511786,
-      "tp2": 295.493571,
-      "sl": 277.8594,
-      "strength": 51,
-      "status": "SL",
-      "created_at": "2026-03-20 13:46:56",
-      "reasons": [
-        "RSI=39 (перепроданность)",
-        "MACD бычий (hist=0.19012)",
-        "BB ниже середины",
-        "EMA20 > EMA50",
-        "📰 Bittensor (TAO) Surges 28% As Nvidia CEO Huang Praises Open AI Mo...",
-        "МТФ: 15m, 1h, 4h согласны",
         "⚡ Рыночный вход (MTF сильный)"
       ]
     }
@@ -1458,33 +1435,6 @@
       ]
     },
     {
-      "id": 645,
-      "symbol": "STOUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.10902,
-      "tp1": 0.111827,
-      "tp2": 0.114634,
-      "sl": 0.106774,
-      "entry_orig": 0.10902,
-      "tp1_orig": 0.111827,
-      "tp2_orig": 0.114634,
-      "sl_orig": 0.106774,
-      "strength": 58,
-      "taken_at": "2026-03-20T17:23:02.126322",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00041)",
-        "Цена > EMA20 > EMA50",
-        "Объём x2.1 🔥",
-        "Стакан: перевес bid (+0.08)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +13.6% + цена ↑",
-        "CVD растёт (+6.6%) — покупки усиливаются 📈",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 646,
       "symbol": "ALCHUSDT",
       "direction": "LONG",
@@ -1511,6 +1461,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "STOUSDT",
+      "direction": "LONG",
+      "entry": 0.10902,
+      "tp1": 0.111827,
+      "tp2": 0.114634,
+      "sl": 0.106774,
+      "strength": 58,
+      "status": "SL",
+      "pnl_pct": -2.2,
+      "close_price": 0.106625,
+      "taken_at": "2026-03-20T17:23:02.126322",
+      "closed_at": "2026-03-20 17:34:59"
+    },
     {
       "symbol": "WAXPUSDT",
       "direction": "LONG",
@@ -4296,20 +4260,6 @@
       "close_price": 0.9549,
       "taken_at": "2026-03-18T16:03:54.974804",
       "closed_at": "2026-03-18 19:05:02"
-    },
-    {
-      "symbol": "SUIUSDT",
-      "direction": "SHORT",
-      "entry": 0.9765,
-      "tp1": 0.95697,
-      "tp2": 0.93744,
-      "sl": 0.99603,
-      "strength": 39,
-      "status": "MANUAL",
-      "pnl_pct": -0.22,
-      "close_price": 0.9786,
-      "taken_at": "2026-03-18T16:03:54.167731",
-      "closed_at": "2026-03-18 19:05:01"
     }
   ]
 }
