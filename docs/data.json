@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-20T17:44:24.734509+00:00",
+  "updated_at": "2026-03-20T17:45:52.756045+00:00",
   "publish_status": {
-    "last_ok": "2026-03-20T17:43:48Z",
+    "last_ok": "2026-03-20T17:44:33Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -11,10 +11,10 @@
   },
   "stats": {
     "total": 755,
-    "wins": 235,
+    "wins": 236,
     "losses": 150,
-    "active": 17,
-    "winrate": 61.0
+    "active": 16,
+    "winrate": 61.1
   },
   "trade_stats": {
     "open": 23,
@@ -382,28 +382,6 @@
       "status": "ACTIVE"
     },
     {
-      "id": 792,
-      "symbol": "ALCHUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.08421,
-      "tp1": 0.087283,
-      "tp2": 0.090356,
-      "sl": 0.081752,
-      "strength": 53,
-      "reasons": [
-        "MACD бычий (hist=0.00046)",
-        "Цена > EMA20 > EMA50",
-        "Объём x11.8 🔥🔥🔥",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +4.6% + цена ↑",
-        "⚡ Рыночный вход (MTF сильный)"
-      ],
-      "news": null,
-      "created_at": "2026-03-20 17:28:00",
-      "status": "ACTIVE"
-    },
-    {
       "id": 793,
       "symbol": "WAXPUSDT",
       "direction": "LONG",
@@ -428,6 +406,25 @@
     }
   ],
   "history": [
+    {
+      "symbol": "ALCHUSDT",
+      "direction": "LONG",
+      "entry": 0.08421,
+      "tp1": 0.087283,
+      "tp2": 0.090356,
+      "sl": 0.081752,
+      "strength": 53,
+      "status": "TP1",
+      "created_at": "2026-03-20 17:28:00",
+      "reasons": [
+        "MACD бычий (hist=0.00046)",
+        "Цена > EMA20 > EMA50",
+        "Объём x11.8 🔥🔥🔥",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +4.6% + цена ↑",
+        "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
     {
       "symbol": "STOUSDT",
       "direction": "LONG",
@@ -810,26 +807,6 @@
         "Объём x4.3 🔥🔥🔥",
         "Стакан: перевес bid (+0.07)",
         "МТФ: 5m, 15m, 1h согласны",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
-      "symbol": "PIXELUSDT",
-      "direction": "LONG",
-      "entry": 0.009823,
-      "tp1": 0.010056,
-      "tp2": 0.010288,
-      "sl": 0.009627,
-      "strength": 51,
-      "status": "SL",
-      "created_at": "2026-03-20 13:50:24",
-      "reasons": [
-        "MACD бычий (hist=0.00006)",
-        "Цена > EMA20 > EMA50",
-        "Объём x2.2 🔥",
-        "Стакан: сильное давление покупки (+0.42)",
-        "МТФ: 5m, 15m, 1h согласны",
-        "CVD положительный (+3.7%)",
         "⚡ Рыночный вход (MTF сильный)"
       ]
     }
