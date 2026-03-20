@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-20T08:32:40.357611+00:00",
+  "updated_at": "2026-03-20T08:34:07.807273+00:00",
   "publish_status": {
-    "last_ok": "2026-03-20T08:32:03Z",
+    "last_ok": "2026-03-20T08:32:46Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -12,17 +12,17 @@
   "stats": {
     "total": 685,
     "wins": 216,
-    "losses": 126,
-    "active": 7,
-    "winrate": 63.2
+    "losses": 127,
+    "active": 6,
+    "winrate": 63.0
   },
   "trade_stats": {
-    "open": 8,
+    "open": 7,
     "pending": 0,
     "wins": 240,
-    "losses": 248,
-    "total_pnl": 35.23,
-    "winrate": 49.2
+    "losses": 249,
+    "total_pnl": 33.18,
+    "winrate": 49.1
   },
   "fear_greed": {
     "value": 11,
@@ -180,17 +180,19 @@
       "news": "Solana sees capital repositioning on-chain – Is a new cycle forming?",
       "created_at": "2026-03-20 08:15:14",
       "status": "ACTIVE"
-    },
+    }
+  ],
+  "history": [
     {
-      "id": 723,
       "symbol": "FARTCOINUSDT",
       "direction": "LONG",
-      "exchange": "binance",
       "entry": 0.2119,
       "tp1": 0.217139,
       "tp2": 0.222379,
       "sl": 0.207662,
       "strength": 57,
+      "status": "SL",
+      "created_at": "2026-03-20 08:15:15",
       "reasons": [
         "MACD бычий (hist=0.00085)",
         "Цена > EMA20 > EMA50",
@@ -200,13 +202,8 @@
         "CVD положительный (+4.0%)",
         "BTC контекст: +2.0% за 12ч 📈",
         "⚡ Рыночный вход (MTF сильный)"
-      ],
-      "news": null,
-      "created_at": "2026-03-20 08:15:15",
-      "status": "ACTIVE"
-    }
-  ],
-  "history": [
+      ]
+    },
     {
       "symbol": "FARTCOINUSDT",
       "direction": "LONG",
@@ -587,25 +584,6 @@
         "CVD падает (-11.4%) — продажи усиливаются 📉",
         "BTC корреляция 0.68, BTC -1.1% 📉"
       ]
-    },
-    {
-      "symbol": "LAUSDT",
-      "direction": "LONG",
-      "entry": 0.23662,
-      "tp1": 0.241352,
-      "tp2": 0.246085,
-      "sl": 0.231888,
-      "strength": 46,
-      "status": "EXPIRED",
-      "created_at": "2026-03-19 17:05:19",
-      "reasons": [
-        "RSI=48 (нейтральный↓)",
-        "MACD бычий (hist=0.00015)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: сильное давление покупки (+0.26)",
-        "МТФ: 5m, 15m, 1h согласны",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
     }
   ],
   "trades_open": [
@@ -798,36 +776,23 @@
         "BTC контекст: +2.0% за 12ч 📈",
         "⚡ Рыночный вход (MTF сильный)"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 577,
       "symbol": "FARTCOINUSDT",
       "direction": "LONG",
-      "exchange": "binance",
       "entry": 0.2119,
       "tp1": 0.217139,
       "tp2": 0.222379,
       "sl": 0.207662,
-      "entry_orig": 0.2119,
-      "tp1_orig": 0.217139,
-      "tp2_orig": 0.222379,
-      "sl_orig": 0.207662,
       "strength": 57,
+      "status": "SL",
+      "pnl_pct": -2.05,
+      "close_price": 0.20755,
       "taken_at": "2026-03-20T08:15:16.088424",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00085)",
-        "Цена > EMA20 > EMA50",
-        "Объём x2.8 🔥🔥",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +3.3% + цена ↑",
-        "CVD положительный (+4.0%)",
-        "BTC контекст: +2.0% за 12ч 📈",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-20 08:33:09"
+    },
     {
       "symbol": "FARTCOINUSDT",
       "direction": "LONG",
@@ -3613,20 +3578,6 @@
       "close_price": 0.56645,
       "taken_at": "2026-03-18T16:02:17.383447",
       "closed_at": "2026-03-18 16:22:06"
-    },
-    {
-      "symbol": "MBOXUSDT",
-      "direction": "LONG",
-      "entry": 0.01901,
-      "tp1": 0.019583,
-      "tp2": 0.020156,
-      "sl": 0.018551,
-      "strength": 39,
-      "status": "SL",
-      "pnl_pct": -2.5,
-      "close_price": 0.018535000000000003,
-      "taken_at": "2026-03-18T16:02:17.676764",
-      "closed_at": "2026-03-18 16:05:24"
     }
   ]
 }
