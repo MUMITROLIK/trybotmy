@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-20T12:58:27.752032+00:00",
+  "updated_at": "2026-03-20T12:59:02.489005+00:00",
   "publish_status": {
-    "last_ok": "2026-03-20T12:57:23Z",
+    "last_ok": "2026-03-20T12:58:33Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 706,
+    "total": 707,
     "wins": 220,
     "losses": 133,
-    "active": 14,
+    "active": 15,
     "winrate": 62.3
   },
   "trade_stats": {
-    "open": 16,
+    "open": 17,
     "pending": 0,
     "wins": 245,
     "losses": 256,
@@ -363,6 +363,29 @@
       ],
       "news": null,
       "created_at": "2026-03-20 12:52:15",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 745,
+      "symbol": "STOUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.10062,
+      "tp1": 0.103444,
+      "tp2": 0.106269,
+      "sl": 0.098361,
+      "strength": 50,
+      "reasons": [
+        "MACD бычий (hist=0.00040)",
+        "Цена > EMA20 > EMA50",
+        "Стакан: давление покупки (+0.10)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +3.1% + цена ↑",
+        "CVD положительный (+3.7%)",
+        "⚡ Рыночный вход (MTF сильный)"
+      ],
+      "news": null,
+      "created_at": "2026-03-20 12:59:01",
       "status": "ACTIVE"
     }
   ],
@@ -1216,6 +1239,32 @@
         "МТФ: 5m, 15m согласны",
         "CVD положительный (+2.7%)",
         "⚡ Рыночный вход (MTF 2+ ТФ)"
+      ]
+    },
+    {
+      "id": 599,
+      "symbol": "STOUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.10062,
+      "tp1": 0.103444,
+      "tp2": 0.106269,
+      "sl": 0.098361,
+      "entry_orig": 0.10062,
+      "tp1_orig": 0.103444,
+      "tp2_orig": 0.106269,
+      "sl_orig": 0.098361,
+      "strength": 50,
+      "taken_at": "2026-03-20T12:59:02.080289",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.00040)",
+        "Цена > EMA20 > EMA50",
+        "Стакан: давление покупки (+0.10)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +3.1% + цена ↑",
+        "CVD положительный (+3.7%)",
+        "⚡ Рыночный вход (MTF сильный)"
       ]
     }
   ],
