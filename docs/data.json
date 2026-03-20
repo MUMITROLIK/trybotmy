@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-20T11:44:04.832084+00:00",
+  "updated_at": "2026-03-20T11:44:56.149913+00:00",
   "publish_status": {
-    "last_ok": "2026-03-20T11:43:04Z",
+    "last_ok": "2026-03-20T11:44:11Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 62.5
   },
   "trade_stats": {
-    "open": 16,
+    "open": 15,
     "pending": 0,
     "wins": 244,
-    "losses": 254,
-    "total_pnl": 37.57,
-    "winrate": 49.0
+    "losses": 255,
+    "total_pnl": 35.12,
+    "winrate": 48.9
   },
   "fear_greed": {
     "value": 11,
@@ -1079,31 +1079,6 @@
       ]
     },
     {
-      "id": 589,
-      "symbol": "IRYSUSDT",
-      "direction": "LONG",
-      "exchange": "bybit",
-      "entry": 0.021517,
-      "tp1": 0.022176,
-      "tp2": 0.022834,
-      "sl": 0.02099,
-      "entry_orig": 0.021517,
-      "tp1_orig": 0.022176,
-      "tp2_orig": 0.022834,
-      "sl_orig": 0.02099,
-      "strength": 57,
-      "taken_at": "2026-03-20T10:54:07.484563",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00011)",
-        "Цена > EMA20 > EMA50",
-        "Объём x4.4 🔥🔥🔥",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +2.0% + цена ↑",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 591,
       "symbol": "CELOUSDT",
       "direction": "LONG",
@@ -1239,6 +1214,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "IRYSUSDT",
+      "direction": "LONG",
+      "entry": 0.021517,
+      "tp1": 0.022176,
+      "tp2": 0.022834,
+      "sl": 0.02099,
+      "strength": 57,
+      "status": "SL",
+      "pnl_pct": -2.45,
+      "close_price": 0.02099,
+      "taken_at": "2026-03-20T10:54:07.484563",
+      "closed_at": "2026-03-20 11:44:53"
+    },
     {
       "symbol": "STOUSDT",
       "direction": "LONG",
@@ -4024,20 +4013,6 @@
       "close_price": 0.09446,
       "taken_at": "2026-03-18T17:06:38.377295",
       "closed_at": "2026-03-18 17:13:45"
-    },
-    {
-      "symbol": "HYPEUSDT",
-      "direction": "LONG",
-      "entry": 41.757,
-      "tp1": 42.792214,
-      "tp2": 43.827429,
-      "sl": 42.810500000000005,
-      "strength": 34,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 2.51,
-      "close_price": 42.8035,
-      "taken_at": "2026-03-18T16:02:15.617162",
-      "closed_at": "2026-03-18 17:09:44"
     }
   ]
 }
