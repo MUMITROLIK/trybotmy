@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-20T21:17:47.382779+00:00",
+  "updated_at": "2026-03-20T21:18:19.621348+00:00",
   "publish_status": {
-    "last_ok": "2026-03-20T21:16:32Z",
+    "last_ok": "2026-03-20T21:17:53Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 60.5
   },
   "trade_stats": {
-    "open": 21,
+    "open": 20,
     "pending": 0,
     "wins": 271,
-    "losses": 289,
-    "total_pnl": 26.64,
-    "winrate": 48.4
+    "losses": 290,
+    "total_pnl": 24.62,
+    "winrate": 48.3
   },
   "fear_greed": {
     "value": 11,
@@ -1080,32 +1080,6 @@
       ]
     },
     {
-      "id": 653,
-      "symbol": "PENGUUSDT",
-      "direction": "SHORT",
-      "exchange": "binance",
-      "entry": 0.006961,
-      "tp1": 0.006822,
-      "tp2": 0.006683,
-      "sl": 0.0071,
-      "entry_orig": 0.006961,
-      "tp1_orig": 0.006822,
-      "tp2_orig": 0.006683,
-      "sl_orig": 0.0071,
-      "strength": 56,
-      "taken_at": "2026-03-20T19:37:53.456249",
-      "status": "OPEN",
-      "reasons": [
-        "MACD медвежий (hist=-0.00002)",
-        "Цена < EMA20 < EMA50",
-        "Объём x3.0 🔥🔥",
-        "Стакан: давление продажи (-0.18)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +1.2% + цена ↓",
-        "CVD падает (-6.1%) — продажи усиливаются 📉"
-      ]
-    },
-    {
       "id": 655,
       "symbol": "WAXPUSDT",
       "direction": "LONG",
@@ -1261,6 +1235,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "PENGUUSDT",
+      "direction": "SHORT",
+      "entry": 0.006961,
+      "tp1": 0.006822,
+      "tp2": 0.006683,
+      "sl": 0.0071,
+      "strength": 56,
+      "status": "SL",
+      "pnl_pct": -2.02,
+      "close_price": 0.0071015,
+      "taken_at": "2026-03-20T19:37:53.456249",
+      "closed_at": "2026-03-20 21:18:19"
+    },
     {
       "symbol": "ZETAUSDT",
       "direction": "LONG",
@@ -4045,20 +4033,6 @@
       "pnl_pct": -1.28,
       "close_price": 0.3639,
       "taken_at": "2026-03-18T16:27:21.153655",
-      "closed_at": "2026-03-18 19:05:13"
-    },
-    {
-      "symbol": "OPNUSDT",
-      "direction": "SHORT",
-      "entry": 0.2527,
-      "tp1": 0.243593,
-      "tp2": 0.234486,
-      "sl": 0.259986,
-      "strength": 49,
-      "status": "MANUAL",
-      "pnl_pct": -2.61,
-      "close_price": 0.2593,
-      "taken_at": "2026-03-18T16:32:15.094804",
       "closed_at": "2026-03-18 19:05:13"
     }
   ]
