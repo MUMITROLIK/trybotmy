@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-20T11:48:25.874695+00:00",
+  "updated_at": "2026-03-20T11:49:01.028203+00:00",
   "publish_status": {
-    "last_ok": "2026-03-20T11:47:14Z",
+    "last_ok": "2026-03-20T11:48:31Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -12,17 +12,17 @@
   "stats": {
     "total": 703,
     "wins": 220,
-    "losses": 132,
-    "active": 15,
-    "winrate": 62.5
+    "losses": 133,
+    "active": 14,
+    "winrate": 62.3
   },
   "trade_stats": {
-    "open": 15,
+    "open": 14,
     "pending": 0,
     "wins": 244,
-    "losses": 255,
-    "total_pnl": 35.12,
-    "winrate": 48.9
+    "losses": 256,
+    "total_pnl": 33.11,
+    "winrate": 48.8
   },
   "fear_greed": {
     "value": 11,
@@ -368,17 +368,19 @@
       "news": null,
       "created_at": "2026-03-20 11:40:00",
       "status": "ACTIVE"
-    },
+    }
+  ],
+  "history": [
     {
-      "id": 741,
       "symbol": "STOUSDT",
       "direction": "LONG",
-      "exchange": "binance",
       "entry": 0.0991,
       "tp1": 0.101562,
       "tp2": 0.104024,
       "sl": 0.097118,
       "strength": 56,
+      "status": "SL",
+      "created_at": "2026-03-20 11:43:27",
       "reasons": [
         "MACD бычий (hist=0.00050)",
         "Цена > EMA20 > EMA50",
@@ -388,13 +390,8 @@
         "OI растёт +9.0% + цена ↑",
         "CVD положительный (+3.8%)",
         "⚡ Рыночный вход (MTF сильный)"
-      ],
-      "news": null,
-      "created_at": "2026-03-20 11:43:27",
-      "status": "ACTIVE"
-    }
-  ],
-  "history": [
+      ]
+    },
     {
       "symbol": "ENJUSDT",
       "direction": "LONG",
@@ -786,27 +783,6 @@
         "МТФ: все 4 таймфрейма согласны ✅✅",
         "⚡ Рыночный вход (MTF сильный)"
       ]
-    },
-    {
-      "symbol": "ZECUSDT",
-      "direction": "LONG",
-      "entry": 232.49,
-      "tp1": 237.1398,
-      "tp2": 241.7896,
-      "sl": 227.8402,
-      "strength": 51,
-      "status": "TP1",
-      "created_at": "2026-03-19 18:06:49",
-      "reasons": [
-        "RSI=33 (перепроданность)",
-        "MACD бычий (hist=0.03439)",
-        "BB нижняя зона (25%)",
-        "Стакан: сильное давление покупки (+0.39)",
-        "МТФ: только 1 таймфрейм согласен",
-        "OI растёт +2.7%",
-        "CVD положительный (-1.5%)",
-        "BTC корреляция 0.66, BTC +0.4% 📈"
-      ]
     }
   ],
   "trades_open": [
@@ -1184,36 +1160,23 @@
         "Цена у поддержки 3.0880",
         "⚡ Рыночный вход (MTF 2+ ТФ)"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 595,
       "symbol": "STOUSDT",
       "direction": "LONG",
-      "exchange": "binance",
       "entry": 0.0991,
       "tp1": 0.101562,
       "tp2": 0.104024,
       "sl": 0.097118,
-      "entry_orig": 0.0991,
-      "tp1_orig": 0.101562,
-      "tp2_orig": 0.104024,
-      "sl_orig": 0.097118,
       "strength": 56,
+      "status": "SL",
+      "pnl_pct": -2.01,
+      "close_price": 0.09711,
       "taken_at": "2026-03-20T11:43:27.592669",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00050)",
-        "Цена > EMA20 > EMA50",
-        "Объём x1.8 🔥",
-        "Стакан: давление покупки (+0.19)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +9.0% + цена ↑",
-        "CVD положительный (+3.8%)",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-20 11:48:52"
+    },
     {
       "symbol": "IRYSUSDT",
       "direction": "LONG",
@@ -3999,20 +3962,6 @@
       "close_price": 261.995,
       "taken_at": "2026-03-18T16:02:15.808490",
       "closed_at": "2026-03-18 17:14:53"
-    },
-    {
-      "symbol": "POWERUSDT",
-      "direction": "SHORT",
-      "entry": 0.10218,
-      "tp1": 0.099987,
-      "tp2": 0.097794,
-      "sl": 0.104224,
-      "strength": 38,
-      "status": "TP2",
-      "pnl_pct": 7.56,
-      "close_price": 0.09446,
-      "taken_at": "2026-03-18T17:06:38.377295",
-      "closed_at": "2026-03-18 17:13:45"
     }
   ]
 }
