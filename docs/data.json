@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-20T21:59:13.449283+00:00",
+  "updated_at": "2026-03-20T22:00:33.096781+00:00",
   "publish_status": {
-    "last_ok": "2026-03-20T21:58:29Z",
+    "last_ok": "2026-03-20T21:59:19Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 60.2
   },
   "trade_stats": {
-    "open": 21,
+    "open": 20,
     "pending": 0,
-    "wins": 273,
+    "wins": 274,
     "losses": 292,
-    "total_pnl": 21.57,
-    "winrate": 48.3
+    "total_pnl": 23.06,
+    "winrate": 48.4
   },
   "fear_greed": {
     "value": 11,
@@ -760,33 +760,6 @@
   ],
   "trades_open": [
     {
-      "id": 614,
-      "symbol": "SAFEUSDT",
-      "direction": "LONG",
-      "exchange": "bybit",
-      "entry": 0.10557,
-      "tp1": 0.107681,
-      "tp2": 0.109793,
-      "sl": 0.103459,
-      "entry_orig": 0.10557,
-      "tp1_orig": 0.107681,
-      "tp2_orig": 0.109793,
-      "sl_orig": 0.103459,
-      "strength": 51,
-      "taken_at": "2026-03-20T13:59:11.317448",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=49 (нейтральный↓)",
-        "MACD бычий (hist=0.00002)",
-        "BB ниже середины",
-        "EMA20 > EMA50",
-        "Объём x1.9 🔥",
-        "Стакан: сильное давление покупки (+0.27)",
-        "МТФ: 5m, 15m, 4h согласны",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 617,
       "symbol": "XAUUSDT",
       "direction": "SHORT",
@@ -1310,6 +1283,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "SAFEUSDT",
+      "direction": "LONG",
+      "entry": 0.10557,
+      "tp1": 0.107681,
+      "tp2": 0.109793,
+      "sl": 0.103459,
+      "strength": 51,
+      "status": "TIMEOUT",
+      "pnl_pct": 1.49,
+      "close_price": 0.10714,
+      "taken_at": "2026-03-20T13:59:11.317448",
+      "closed_at": "2026-03-20 21:59:21"
+    },
     {
       "symbol": "MSTRUSDT",
       "direction": "LONG",
@@ -4095,20 +4082,6 @@
       "close_price": 0.02347,
       "taken_at": "2026-03-18T17:53:38.463961",
       "closed_at": "2026-03-18 19:05:17"
-    },
-    {
-      "symbol": "ZECUSDT",
-      "direction": "SHORT",
-      "entry": 249.41,
-      "tp1": 244.4218,
-      "tp2": 239.4336,
-      "sl": 254.3982,
-      "strength": 47,
-      "status": "MANUAL",
-      "pnl_pct": -0.03,
-      "close_price": 249.48,
-      "taken_at": "2026-03-18T17:01:13.344123",
-      "closed_at": "2026-03-18 19:05:15"
     }
   ]
 }
