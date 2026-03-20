@@ -511,6 +511,13 @@ main{position:relative;z-index:1;max-width:1920px;margin:0 auto;padding:1rem 1.2
       <div class="mini-icon a">⚡</div>
       <div class="mini-info"><span class="mini-lbl">Серия побед</span><span class="mini-val a" id="mStreak">—</span></div>
     </div>
+    <div class="mini-card au d5">
+      <div class="mini-icon b">🧠</div>
+      <div class="mini-info">
+        <span class="mini-lbl">ML Clean2 датасет</span>
+        <span class="mini-val b" id="mClean2">…</span>
+      </div>
+    </div>
   </div>
 
   <!-- MID ROW -->
@@ -1261,5 +1268,17 @@ setInterval(fetchBTC2,10000);
 setInterval(updateSession,60000);
 fetchBTCChart();
 setInterval(fetchBTCChart,60000);
+
+async function fetchMLStats(){
+  try{
+    var r=await fetch('/api/ml-stats');
+    if(!r.ok)return;
+    var d=await r.json();
+    var el=document.getElementById('mClean2');
+    if(el&&d.clean2!=null)el.textContent=d.clean2+' / '+d.goal+' · WR '+d.winrate_clean2+'%';
+  }catch(e){}
+}
+fetchMLStats();
+setInterval(fetchMLStats,60000);
 </script>
 </body>
