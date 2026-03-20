@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-20T20:34:02.257507+00:00",
+  "updated_at": "2026-03-20T20:34:40.457038+00:00",
   "publish_status": {
-    "last_ok": "2026-03-20T20:32:40Z",
+    "last_ok": "2026-03-20T20:34:08Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,18 +10,18 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 765,
+    "total": 766,
     "wins": 238,
     "losses": 154,
-    "active": 13,
+    "active": 14,
     "winrate": 60.7
   },
   "trade_stats": {
     "open": 21,
     "pending": 0,
     "wins": 270,
-    "losses": 285,
-    "total_pnl": 33.7,
+    "losses": 286,
+    "total_pnl": 31.48,
     "winrate": 48.6
   },
   "fear_greed": {
@@ -337,6 +337,29 @@
       ],
       "news": null,
       "created_at": "2026-03-20 20:20:24",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 804,
+      "symbol": "COSUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.001597,
+      "tp1": 0.001629,
+      "tp2": 0.001661,
+      "sl": 0.001565,
+      "strength": 53,
+      "reasons": [
+        "RSI=40 (перепроданность)",
+        "MACD бычий (hist=0.00000)",
+        "BB ниже середины",
+        "Стакан: давление покупки (+0.13)",
+        "МТФ: 5m, 1h, 4h согласны",
+        "CVD растёт (+6.0%) — покупки усиливаются 📈",
+        "⚡ Рыночный вход (MTF сильный)"
+      ],
+      "news": null,
+      "created_at": "2026-03-20 20:34:39",
       "status": "ACTIVE"
     }
   ],
@@ -924,32 +947,6 @@
       ]
     },
     {
-      "id": 632,
-      "symbol": "IPUSDT",
-      "direction": "LONG",
-      "exchange": "bybit",
-      "entry": 0.7514,
-      "tp1": 0.766428,
-      "tp2": 0.781456,
-      "sl": 0.736372,
-      "entry_orig": 0.7514,
-      "tp1_orig": 0.766428,
-      "tp2_orig": 0.781456,
-      "sl_orig": 0.736372,
-      "strength": 51,
-      "taken_at": "2026-03-20T16:09:33.020593",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=22 (сильная перепроданность)",
-        "BB нижняя зона (14%)",
-        "Объём x3.8 🔥🔥",
-        "Стакан: сильное давление покупки (+0.33)",
-        "OI растёт +2.0%",
-        "Doji (1h) — нерешительность",
-        "Цена у поддержки 0.7490"
-      ]
-    },
-    {
       "id": 638,
       "symbol": "APTUSDT",
       "direction": "LONG",
@@ -1290,9 +1287,49 @@
         "OI падает (шорты закрываются)",
         "CVD положительный (-1.9%)"
       ]
+    },
+    {
+      "id": 658,
+      "symbol": "COSUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.001597,
+      "tp1": 0.001629,
+      "tp2": 0.001661,
+      "sl": 0.001565,
+      "entry_orig": 0.001597,
+      "tp1_orig": 0.001629,
+      "tp2_orig": 0.001661,
+      "sl_orig": 0.001565,
+      "strength": 53,
+      "taken_at": "2026-03-20T20:34:39.365876",
+      "status": "OPEN",
+      "reasons": [
+        "RSI=40 (перепроданность)",
+        "MACD бычий (hist=0.00000)",
+        "BB ниже середины",
+        "Стакан: давление покупки (+0.13)",
+        "МТФ: 5m, 1h, 4h согласны",
+        "CVD растёт (+6.0%) — покупки усиливаются 📈",
+        "⚡ Рыночный вход (MTF сильный)"
+      ]
     }
   ],
   "trades_history": [
+    {
+      "symbol": "IPUSDT",
+      "direction": "LONG",
+      "entry": 0.7514,
+      "tp1": 0.766428,
+      "tp2": 0.781456,
+      "sl": 0.736372,
+      "strength": 51,
+      "status": "SL",
+      "pnl_pct": -2.22,
+      "close_price": 0.7347,
+      "taken_at": "2026-03-20T16:09:33.020593",
+      "closed_at": "2026-03-20 20:34:08"
+    },
     {
       "symbol": "RENDERUSDT",
       "direction": "LONG",
@@ -4077,20 +4114,6 @@
       "pnl_pct": -1.11,
       "close_price": 0.02366,
       "taken_at": "2026-03-18T16:16:36.048565",
-      "closed_at": "2026-03-18 19:05:09"
-    },
-    {
-      "symbol": "NXPCUSDT",
-      "direction": "SHORT",
-      "entry": 0.2987,
-      "tp1": 0.286271,
-      "tp2": 0.273843,
-      "sl": 0.308643,
-      "strength": 35,
-      "status": "MANUAL",
-      "pnl_pct": -0.8,
-      "close_price": 0.3011,
-      "taken_at": "2026-03-18T16:20:22.073967",
       "closed_at": "2026-03-18 19:05:09"
     }
   ]
