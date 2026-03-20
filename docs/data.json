@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-20T21:13:27.350721+00:00",
+  "updated_at": "2026-03-20T21:14:10.632382+00:00",
   "publish_status": {
-    "last_ok": "2026-03-20T21:13:02Z",
+    "last_ok": "2026-03-20T21:13:33Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 60.5
   },
   "trade_stats": {
-    "open": 21,
+    "open": 20,
     "pending": 0,
     "wins": 271,
-    "losses": 288,
-    "total_pnl": 28.75,
-    "winrate": 48.5
+    "losses": 289,
+    "total_pnl": 26.64,
+    "winrate": 48.4
   },
   "fear_greed": {
     "value": 11,
@@ -868,33 +868,6 @@
       ]
     },
     {
-      "id": 627,
-      "symbol": "ZETAUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.05771,
-      "tp1": 0.059112,
-      "tp2": 0.060515,
-      "sl": 0.056556,
-      "entry_orig": 0.05771,
-      "tp1_orig": 0.059112,
-      "tp2_orig": 0.060515,
-      "sl_orig": 0.056556,
-      "strength": 50,
-      "taken_at": "2026-03-20T16:01:03.921250",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=36 (перепроданность)",
-        "BB нижняя полоса (пробой)",
-        "EMA20 > EMA50",
-        "Стакан: давление покупки (+0.18)",
-        "МТФ: 15m, 1h, 4h согласны",
-        "OI растёт +12.0% + цена ↑",
-        "Цена у поддержки 0.0575",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 638,
       "symbol": "APTUSDT",
       "direction": "LONG",
@@ -1262,6 +1235,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "ZETAUSDT",
+      "direction": "LONG",
+      "entry": 0.05771,
+      "tp1": 0.059112,
+      "tp2": 0.060515,
+      "sl": 0.056556,
+      "strength": 50,
+      "status": "SL",
+      "pnl_pct": -2.11,
+      "close_price": 0.056495000000000004,
+      "taken_at": "2026-03-20T16:01:03.921250",
+      "closed_at": "2026-03-20 21:14:10"
+    },
     {
       "symbol": "PTBUSDT",
       "direction": "LONG",
@@ -4047,20 +4034,6 @@
       "close_price": 0.2593,
       "taken_at": "2026-03-18T16:32:15.094804",
       "closed_at": "2026-03-18 19:05:13"
-    },
-    {
-      "symbol": "LINKUSDT",
-      "direction": "SHORT",
-      "entry": 9.119,
-      "tp1": 8.93662,
-      "tp2": 8.75424,
-      "sl": 9.30138,
-      "strength": 37,
-      "status": "MANUAL",
-      "pnl_pct": -1.09,
-      "close_price": 9.218,
-      "taken_at": "2026-03-18T16:27:20.994635",
-      "closed_at": "2026-03-18 19:05:12"
     }
   ]
 }
