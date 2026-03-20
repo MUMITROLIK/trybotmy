@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-20T17:18:30.877842+00:00",
+  "updated_at": "2026-03-20T17:19:25.831179+00:00",
   "publish_status": {
-    "last_ok": "2026-03-20T17:18:04Z",
+    "last_ok": "2026-03-20T17:18:36Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 61.5
   },
   "trade_stats": {
-    "open": 26,
+    "open": 25,
     "pending": 0,
-    "wins": 263,
+    "wins": 264,
     "losses": 273,
-    "total_pnl": 38.18,
-    "winrate": 49.1
+    "total_pnl": 40.07,
+    "winrate": 49.2
   },
   "fear_greed": {
     "value": 11,
@@ -1491,35 +1491,23 @@
         "Doji (1h) — нерешительность",
         "Цена у поддержки 0.2643"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 642,
       "symbol": "OPNUSDT",
       "direction": "SHORT",
-      "exchange": "binance",
       "entry": 0.2831,
       "tp1": 0.277438,
       "tp2": 0.271776,
       "sl": 0.27735,
-      "entry_orig": 0.2831,
-      "tp1_orig": 0.277438,
-      "tp2_orig": 0.271776,
-      "sl_orig": 0.288762,
       "strength": 50,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 1.89,
+      "close_price": 0.27775,
       "taken_at": "2026-03-20T17:12:39.782046",
-      "status": "TP1_HIT",
-      "reasons": [
-        "MACD медвежий (hist=-0.00104)",
-        "EMA20 < EMA50 (death cross) 💀",
-        "Объём x2.6 🔥🔥",
-        "Стакан: давление продажи (-0.22)",
-        "МТФ: 5m, 15m, 4h согласны",
-        "CVD падает (-6.4%) — продажи усиливаются 📉",
-        "Doji (1h) — нерешительность"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-20 17:18:53"
+    },
     {
       "symbol": "STOUSDT",
       "direction": "LONG",
@@ -4304,20 +4292,6 @@
       "pnl_pct": 0.99,
       "close_price": 0.09382,
       "taken_at": "2026-03-18T16:02:16.887652",
-      "closed_at": "2026-03-18 19:04:59"
-    },
-    {
-      "symbol": "UNIUSDT",
-      "direction": "SHORT",
-      "entry": 3.669,
-      "tp1": 3.59562,
-      "tp2": 3.52224,
-      "sl": 3.74238,
-      "strength": 40,
-      "status": "MANUAL",
-      "pnl_pct": 0.82,
-      "close_price": 3.639,
-      "taken_at": "2026-03-18T16:02:17.034980",
       "closed_at": "2026-03-18 19:04:59"
     }
   ]
