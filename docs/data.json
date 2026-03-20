@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-20T11:25:25.532520+00:00",
+  "updated_at": "2026-03-20T11:26:22.442662+00:00",
   "publish_status": {
-    "last_ok": "2026-03-20T11:24:25Z",
+    "last_ok": "2026-03-20T11:25:31Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 698,
+    "total": 699,
     "wins": 220,
     "losses": 131,
-    "active": 11,
+    "active": 12,
     "winrate": 62.7
   },
   "trade_stats": {
-    "open": 12,
+    "open": 13,
     "pending": 0,
     "wins": 243,
     "losses": 254,
@@ -294,6 +294,29 @@
       ],
       "news": null,
       "created_at": "2026-03-20 10:54:07",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 737,
+      "symbol": "CELOUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.0835,
+      "tp1": 0.08517,
+      "tp2": 0.08684,
+      "sl": 0.08183,
+      "strength": 55,
+      "reasons": [
+        "MACD бычий (hist=0.00022)",
+        "Цена выше EMA20",
+        "Объём x2.8 🔥🔥",
+        "Стакан: сильное давление покупки (+0.43)",
+        "МТФ: 5m, 1h, 4h согласны",
+        "OI растёт +0.5% + цена ↑",
+        "⚡ Рыночный вход (MTF сильный)"
+      ],
+      "news": null,
+      "created_at": "2026-03-20 11:26:21",
       "status": "ACTIVE"
     }
   ],
@@ -1032,6 +1055,32 @@
         "Объём x4.4 🔥🔥🔥",
         "МТФ: все 4 таймфрейма согласны ✅✅",
         "OI растёт +2.0% + цена ↑",
+        "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
+    {
+      "id": 591,
+      "symbol": "CELOUSDT",
+      "direction": "LONG",
+      "exchange": "bybit",
+      "entry": 0.0835,
+      "tp1": 0.08517,
+      "tp2": 0.08684,
+      "sl": 0.08183,
+      "entry_orig": 0.0835,
+      "tp1_orig": 0.08517,
+      "tp2_orig": 0.08684,
+      "sl_orig": 0.08183,
+      "strength": 55,
+      "taken_at": "2026-03-20T11:26:22.029437",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.00022)",
+        "Цена выше EMA20",
+        "Объём x2.8 🔥🔥",
+        "Стакан: сильное давление покупки (+0.43)",
+        "МТФ: 5m, 1h, 4h согласны",
+        "OI растёт +0.5% + цена ↑",
         "⚡ Рыночный вход (MTF сильный)"
       ]
     }
