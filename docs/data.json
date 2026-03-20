@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-20T17:31:31.227154+00:00",
+  "updated_at": "2026-03-20T17:32:14.636259+00:00",
   "publish_status": {
-    "last_ok": "2026-03-20T17:31:03Z",
+    "last_ok": "2026-03-20T17:31:37Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 61.4
   },
   "trade_stats": {
-    "open": 25,
+    "open": 24,
     "pending": 0,
-    "wins": 264,
+    "wins": 265,
     "losses": 276,
-    "total_pnl": 37.04,
-    "winrate": 48.9
+    "total_pnl": 41.51,
+    "winrate": 49.0
   },
   "fear_greed": {
     "value": 11,
@@ -1508,35 +1508,23 @@
         "OI растёт +4.6% + цена ↑",
         "⚡ Рыночный вход (MTF сильный)"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 600,
       "symbol": "WAXPUSDT",
       "direction": "LONG",
-      "exchange": "binance",
       "entry": 0.007813,
       "tp1": 0.008138,
       "tp2": 0.008462,
       "sl": 0.008167,
-      "entry_orig": 0.007813,
-      "tp1_orig": 0.008138,
-      "tp2_orig": 0.008462,
-      "sl_orig": 0.007553,
       "strength": 50,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 4.47,
+      "close_price": 0.008161999999999999,
       "taken_at": "2026-03-20T13:00:54.882395",
-      "status": "TP1_HIT",
-      "reasons": [
-        "MACD бычий (hist=0.00004)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: сильное давление покупки (+0.33)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +89.7% + цена ↑",
-        "CVD положительный (-0.4%)",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-20 17:32:14"
+    },
     {
       "symbol": "ETHUSDT",
       "direction": "LONG",
@@ -4321,20 +4309,6 @@
       "pnl_pct": -0.22,
       "close_price": 0.9786,
       "taken_at": "2026-03-18T16:03:54.167731",
-      "closed_at": "2026-03-18 19:05:01"
-    },
-    {
-      "symbol": "VANRYUSDT",
-      "direction": "LONG",
-      "entry": 0.006314,
-      "tp1": 0.006489,
-      "tp2": 0.006664,
-      "sl": 0.006174,
-      "strength": 48,
-      "status": "MANUAL",
-      "pnl_pct": 1.82,
-      "close_price": 0.006429,
-      "taken_at": "2026-03-18T16:03:54.342531",
       "closed_at": "2026-03-18 19:05:01"
     }
   ]
