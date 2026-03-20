@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-20T13:46:40.308062+00:00",
+  "updated_at": "2026-03-20T13:47:46.584247+00:00",
   "publish_status": {
-    "last_ok": "2026-03-20T13:45:16Z",
+    "last_ok": "2026-03-20T13:46:46Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 716,
+    "total": 718,
     "wins": 223,
     "losses": 135,
-    "active": 14,
+    "active": 16,
     "winrate": 62.3
   },
   "trade_stats": {
-    "open": 19,
+    "open": 21,
     "pending": 1,
     "wins": 248,
     "losses": 259,
@@ -365,6 +365,53 @@
       ],
       "news": null,
       "created_at": "2026-03-20 13:43:20",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 755,
+      "symbol": "TAOUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 283.53,
+      "tp1": 289.511786,
+      "tp2": 295.493571,
+      "sl": 277.8594,
+      "strength": 51,
+      "reasons": [
+        "RSI=39 (перепроданность)",
+        "MACD бычий (hist=0.19012)",
+        "BB ниже середины",
+        "EMA20 > EMA50",
+        "📰 Bittensor (TAO) Surges 28% As Nvidia CEO Huang Praises Open AI Mo...",
+        "МТФ: 15m, 1h, 4h согласны",
+        "⚡ Рыночный вход (MTF сильный)"
+      ],
+      "news": "Bittensor (TAO) Surges 28% As Nvidia CEO Huang Praises Open AI Models",
+      "created_at": "2026-03-20 13:46:56",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 756,
+      "symbol": "APTUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 1.0127,
+      "tp1": 1.032954,
+      "tp2": 1.053208,
+      "sl": 0.992446,
+      "strength": 53,
+      "reasons": [
+        "MACD бычий (hist=0.00061)",
+        "Цена > EMA20 > EMA50",
+        "Стакан: давление покупки (+0.14)",
+        "📰 CoinDesk 20 performance update: Aptos (APT) gains 6.3% as index r...",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +1.9% + цена ↑",
+        "CVD положительный (-1.8%)",
+        "⚡ Рыночный вход (MTF сильный)"
+      ],
+      "news": "CoinDesk 20 performance update: Aptos (APT) gains 6.3% as index rises",
+      "created_at": "2026-03-20 13:46:57",
       "status": "ACTIVE"
     }
   ],
@@ -1289,6 +1336,59 @@
         "CVD положительный (-2.7%)",
         "Цена у поддержки 2.0290",
         "⚡ Рыночный вход (MTF 2+ ТФ)"
+      ]
+    },
+    {
+      "id": 609,
+      "symbol": "TAOUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 283.53,
+      "tp1": 289.511786,
+      "tp2": 295.493571,
+      "sl": 277.8594,
+      "entry_orig": 283.53,
+      "tp1_orig": 289.511786,
+      "tp2_orig": 295.493571,
+      "sl_orig": 277.8594,
+      "strength": 51,
+      "taken_at": "2026-03-20T13:46:57.123941",
+      "status": "OPEN",
+      "reasons": [
+        "RSI=39 (перепроданность)",
+        "MACD бычий (hist=0.19012)",
+        "BB ниже середины",
+        "EMA20 > EMA50",
+        "📰 Bittensor (TAO) Surges 28% As Nvidia CEO Huang Praises Open AI Mo...",
+        "МТФ: 15m, 1h, 4h согласны",
+        "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
+    {
+      "id": 610,
+      "symbol": "APTUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 1.0127,
+      "tp1": 1.032954,
+      "tp2": 1.053208,
+      "sl": 0.992446,
+      "entry_orig": 1.0127,
+      "tp1_orig": 1.032954,
+      "tp2_orig": 1.053208,
+      "sl_orig": 0.992446,
+      "strength": 53,
+      "taken_at": "2026-03-20T13:46:57.301541",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.00061)",
+        "Цена > EMA20 > EMA50",
+        "Стакан: давление покупки (+0.14)",
+        "📰 CoinDesk 20 performance update: Aptos (APT) gains 6.3% as index r...",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +1.9% + цена ↑",
+        "CVD положительный (-1.8%)",
+        "⚡ Рыночный вход (MTF сильный)"
       ]
     },
     {
