@@ -6,375 +6,769 @@
 <title>CashTrack — Futures Terminal</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700;800&family=Fira+Code:wght@300;400;500;600&family=Barlow:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{
-  --void:#04060F;--deep:#080B18;--panel:#0B0F1E;--surface:#0F1424;
-  --elevated:#141928;--line:#1A2038;--line2:#222840;
-  --G:#05F090;--G2:#00C96B;--R:#FF1744;--R2:#CC0033;
-  --B:#00CFFF;--A:#FFB300;
-  --text:#C8D4F0;--text2:#6B7A9E;--text3:#3A4460;
-  --mono:'Fira Code',monospace;--disp:'Oxanium',sans-serif;--body:'Barlow',sans-serif;
+/* ── DESIGN TOKENS ─────────────────────────────────────────────────────────── */
+:root {
+  /* Backgrounds */
+  --bg:     #131722;
+  --bg2:    #1E222D;
+  --bg3:    #252930;
+  --bg4:    #2A2E3A;
+  /* Borders */
+  --b1:     #2A2E39;
+  --b2:     #363A45;
+  --b3:     #454B57;
+  /* Brand colors — TradingView palette */
+  --G:      #26A69A;
+  --G2:     #1D7D73;
+  --G3:     rgba(38,166,154,.12);
+  --R:      #EF5350;
+  --R2:     #C62828;
+  --R3:     rgba(239,83,80,.12);
+  --B:      #4C9EFF;
+  --B2:     #1A6FCC;
+  --B3:     rgba(76,158,255,.12);
+  --A:      #F7941D;
+  --A2:     #C4700A;
+  --A3:     rgba(247,148,29,.12);
+  --P:      #AB47BC;   /* purple accent */
+  /* Text */
+  --t1:     #D1D4DC;
+  --t2:     #9598A1;
+  --t3:     #5D606B;
+  --t4:     #383C46;
+  /* Fonts */
+  --sans:   'IBM Plex Sans', system-ui, sans-serif;
+  --mono:   'IBM Plex Mono', 'Courier New', monospace;
 }
-*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
-html,body{height:100%;overflow-x:hidden}
-body{font-family:var(--body);background:var(--void);color:var(--text);-webkit-font-smoothing:antialiased}
-body::before{content:'';position:fixed;inset:0;background-image:radial-gradient(circle,rgba(0,207,255,.035) 1px,transparent 1px);background-size:28px 28px;pointer-events:none;z-index:0}
-::-webkit-scrollbar{width:4px;height:4px}::-webkit-scrollbar-track{background:var(--void)}::-webkit-scrollbar-thumb{background:var(--line2);border-radius:2px}
 
-@keyframes fadeUp{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
-@keyframes fadeIn{from{opacity:0}to{opacity:1}}
-@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
-@keyframes glowG{0%,100%{text-shadow:0 0 20px rgba(5,240,144,.1)}50%{text-shadow:0 0 50px rgba(5,240,144,.5),0 0 100px rgba(5,240,144,.15)}}
-@keyframes glowR{0%,100%{text-shadow:0 0 20px rgba(255,23,68,.1)}50%{text-shadow:0 0 50px rgba(255,23,68,.5),0 0 100px rgba(255,23,68,.15)}}
-@keyframes slideInRight{from{opacity:0;transform:translateX(120px)}to{opacity:1;transform:translateX(0)}}
-@keyframes slideOutRight{from{opacity:1;transform:translateX(0)}to{opacity:0;transform:translateX(120px)}}
-@keyframes toastIn{from{opacity:0;transform:translateX(120%)}to{opacity:1;transform:translateX(0)}}
-@keyframes toastOut{from{opacity:1;transform:translateX(0)}to{opacity:0;transform:translateX(120%)}}
-
-.au{animation:fadeUp .55s cubic-bezier(.22,1,.36,1) both}
-.ai{animation:fadeIn .4s ease both}
-.d1{animation-delay:.05s}.d2{animation-delay:.1s}.d3{animation-delay:.18s}.d4{animation-delay:.26s}.d5{animation-delay:.34s}
-
-/* ── TICKER TAPE ── */
-.tape{position:relative;overflow:hidden;height:32px;background:var(--deep);border-bottom:1px solid var(--line);display:flex;align-items:center;z-index:20;flex-shrink:0}
-.tape-track{display:flex;align-items:center;white-space:nowrap;will-change:transform}
-.tape-item{display:inline-flex;align-items:center;gap:.625rem;padding:0 1.5rem;height:32px;border-right:1px solid var(--line);flex-shrink:0;cursor:default}
-.tape-sym{font-family:var(--mono);font-size:.6rem;color:var(--text3);letter-spacing:.08em;font-weight:500}
-.tape-price{font-family:var(--mono);font-size:.7rem;font-weight:600;color:var(--text);transition:color .3s}
-.tape-chg{font-family:var(--mono);font-size:.65rem;font-weight:600;padding:.1rem .35rem;border-radius:3px;transition:all .3s}
-.tape-chg.pos{background:rgba(5,240,144,.1);color:var(--G)}
-.tape-chg.neg{background:rgba(255,23,68,.1);color:var(--R)}
-.tape-chg.neu{color:var(--text3)}
-.tape-sep{display:inline-flex;align-items:center;padding:0 1.5rem;height:32px;border-right:1px solid var(--line);flex-shrink:0}
-.tape-stat-lbl{font-family:var(--mono);font-size:.6rem;color:var(--text3);letter-spacing:.1em;margin-right:.5rem}
-.tape-stat-val{font-family:var(--mono);font-size:.7rem;font-weight:600}
-
-/* ── HEADER ── */
-header{position:sticky;top:32px;z-index:50;background:rgba(8,11,24,.97);border-bottom:1px solid var(--line);backdrop-filter:blur(24px)}
-.hinner{max-width:1920px;margin:0 auto;display:flex;align-items:center;height:52px}
-.logo{display:flex;align-items:center;gap:.75rem;padding:0 1.25rem;height:100%;border-right:1px solid var(--line);text-decoration:none;flex-shrink:0}
-.logo-icon{width:32px;height:32px;border-radius:6px;background:linear-gradient(135deg,var(--G),#00A855);display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:.7rem;font-weight:700;color:#000;box-shadow:0 0 16px rgba(5,240,144,.3)}
-.logo-name{font-family:var(--disp);font-size:.9rem;font-weight:700;letter-spacing:.05em;color:var(--text)}
-.logo-sub{font-size:.55rem;letter-spacing:.15em;text-transform:uppercase;color:var(--text3)}
-.hseg{display:flex;align-items:center;gap:.75rem;padding:0 1.25rem;height:100%;border-right:1px solid var(--line)}
-.hseg-lbl{font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:var(--text3)}
-.btc-price{font-family:var(--mono);font-size:1rem;font-weight:600;color:var(--text)}
-.btc-chg{font-family:var(--mono);font-size:.7rem;padding:.15rem .45rem;border-radius:3px}
-.btc-chg.pos{background:rgba(5,240,144,.1);color:var(--G)}.btc-chg.neg{background:rgba(255,23,68,.1);color:var(--R)}
-.live-dot{width:7px;height:7px;border-radius:50%}
-.live-dot.on{background:var(--G);box-shadow:0 0 0 3px rgba(5,240,144,.15);animation:pulse 2s ease-in-out infinite}
-.live-dot.off{background:var(--R)}
-.live-txt{font-family:var(--mono);font-size:.7rem;font-weight:600;letter-spacing:.08em}
-.live-txt.on{color:var(--G)}.live-txt.off{color:var(--R)}
-.sess-block{display:flex;gap:.35rem}
-.sess{font-family:var(--mono);font-size:.6rem;font-weight:600;padding:.2rem .5rem;border-radius:3px;border:1px solid;letter-spacing:.05em;transition:all .4s}
-.sess.on{background:rgba(0,207,255,.12);border-color:rgba(0,207,255,.35);color:var(--B);box-shadow:0 0 8px rgba(0,207,255,.15)}
-.sess.off{background:transparent;border-color:var(--line);color:var(--text3)}
-.model-name{font-family:var(--mono);font-size:.75rem;font-weight:600;color:var(--A)}
-.model-auc{font-family:var(--mono);font-size:.65rem;background:rgba(255,179,0,.08);border:1px solid rgba(255,179,0,.2);color:var(--A);padding:.2rem .5rem;border-radius:3px}
-.mode-btn{font-family:var(--mono);font-size:.7rem;font-weight:700;letter-spacing:.06em;padding:.3rem .8rem;border-radius:4px;border:1px solid}
-.mode-btn.auto{background:rgba(5,240,144,.08);border-color:rgba(5,240,144,.3);color:var(--G)}
-.mode-btn.manual{background:rgba(255,23,68,.08);border-color:rgba(255,23,68,.3);color:var(--R)}
-.hseg-right{margin-left:auto;border-right:none}
-
-/* ── MAIN ── */
-main{position:relative;z-index:1;max-width:1920px;margin:0 auto;padding:1rem 1.25rem;display:flex;flex-direction:column;gap:1rem;scroll-padding-top:100px}
-
-/* ── STATS ROW ── */
-.stats-row{display:grid;grid-template-columns:repeat(4,1fr);gap:.75rem}
-.stat-card{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:.875rem 1.125rem;position:relative;overflow:hidden;transition:border-color .25s,transform .25s;cursor:default}
-.stat-card:hover{border-color:var(--line2);transform:translateY(-1px)}
-.stat-card::before{content:'';position:absolute;top:0;left:0;width:3px;bottom:0;border-radius:8px 0 0 8px}
-.stat-card.cg::before{background:linear-gradient(180deg,var(--G),rgba(5,240,144,0))}
-.stat-card.cb::before{background:linear-gradient(180deg,var(--B),rgba(0,207,255,0))}
-.stat-card.ca::before{background:linear-gradient(180deg,var(--A),rgba(255,179,0,0))}
-.stat-card.cr::before{background:linear-gradient(180deg,var(--R),rgba(255,23,68,0))}
-.stat-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:.625rem}
-.stat-lbl{font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:var(--text3);font-weight:600}
-.stat-badge{font-family:var(--mono);font-size:.6rem;padding:.15rem .45rem;border-radius:3px}
-.stat-badge.g{background:rgba(5,240,144,.08);color:var(--G)}
-.stat-badge.b{background:rgba(0,207,255,.08);color:var(--B)}
-.stat-badge.a{background:rgba(255,179,0,.08);color:var(--A)}
-.stat-badge.r{background:rgba(255,23,68,.08);color:var(--R)}
-.stat-val{font-family:var(--disp);font-size:2.25rem;font-weight:800;line-height:1;letter-spacing:-.02em;margin-bottom:.375rem}
-.stat-val.g{color:var(--G)}.stat-val.b{color:var(--B)}.stat-val.a{color:var(--A)}.stat-val.r{color:var(--R)}
-.stat-sub{font-size:.7rem;color:var(--text3)}
-
-/* ── MINI STATS ── */
-.mini-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:.75rem}
-.mini-card{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:.75rem 1rem;display:flex;align-items:center;gap:.75rem;transition:border-color .25s}
-.mini-card:hover{border-color:var(--line2)}
-.mini-icon{width:32px;height:32px;border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:1rem;flex-shrink:0}
-.mini-icon.g{background:rgba(5,240,144,.1)}.mini-icon.r{background:rgba(255,23,68,.1)}.mini-icon.b{background:rgba(0,207,255,.1)}.mini-icon.a{background:rgba(255,179,0,.1)}
-.mini-info{display:flex;flex-direction:column;gap:.15rem;min-width:0}
-.mini-lbl{font-size:.58rem;letter-spacing:.1em;text-transform:uppercase;color:var(--text3);white-space:nowrap}
-.mini-val{font-family:var(--mono);font-size:.85rem;font-weight:600;white-space:nowrap}
-.mini-val.g{color:var(--G)}.mini-val.r{color:var(--R)}.mini-val.b{color:var(--B)}.mini-val.a{color:var(--A)}
-
-/* ── LAYOUT ── */
-.mid-row{display:grid;grid-template-columns:280px 1fr;gap:.75rem}
-.sidebar{display:flex;flex-direction:column;gap:.75rem}
-
-/* F&G */
-.fg-card{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:1rem}
-.fg-header{font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:var(--text3);margin-bottom:.875rem}
-.fg-gauge-wrap{display:flex;align-items:center;gap:1rem}
-.fg-svg-wrap{position:relative;flex-shrink:0}
-.fg-num{position:absolute;bottom:4px;left:50%;transform:translateX(-50%);font-family:var(--disp);font-size:1.5rem;font-weight:800;line-height:1}
-.fg-right{display:flex;flex-direction:column;gap:.35rem}
-.fg-state{font-family:var(--disp);font-size:1rem;font-weight:700}
-.fg-emoji{font-size:1.25rem}
-.fg-bars{display:flex;gap:3px;align-items:flex-end;margin-top:.25rem}
-.fg-bar{width:6px;border-radius:1px;transition:opacity .5s,box-shadow .5s}
-.fg-upd{font-family:var(--mono);font-size:.6rem;color:var(--text3);margin-top:.5rem}
-
-/* Winrate donut */
-.wr-card{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:1rem}
-.wr-inner{display:flex;align-items:center;gap:1rem}
-.wr-donut{position:relative;flex-shrink:0}
-.wr-center{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;flex-direction:column}
-.wr-pct{font-family:var(--disp);font-size:1rem;font-weight:800}
-.wr-lbl2{font-size:.5rem;letter-spacing:.1em;text-transform:uppercase;color:var(--text3)}
-.wr-legend{display:flex;flex-direction:column;gap:.4rem}
-.wr-legend-item{display:flex;align-items:center;gap:.5rem;font-size:.7rem;color:var(--text2)}
-.wr-dot{width:6px;height:6px;border-radius:50%;flex-shrink:0}
-
-/* Equity */
-.equity-card{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:1rem;flex:1}
-.eq-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:.75rem}
-.eq-title{font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:var(--text3)}
-.eq-pnl{font-family:var(--disp);font-size:1rem;font-weight:700}
-
-/* Activity feed */
-.activity-card{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:1rem;max-height:200px;overflow:hidden;display:flex;flex-direction:column}
-.activity-head{font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:var(--text3);margin-bottom:.75rem;flex-shrink:0}
-.activity-list{display:flex;flex-direction:column;gap:.5rem;overflow-y:auto}
-.act-item{display:flex;align-items:center;gap:.625rem;padding:.5rem .625rem;background:var(--surface);border-radius:5px;border:1px solid var(--line);animation:slideInRight .3s cubic-bezier(.22,1,.36,1)}
-.act-dot{width:6px;height:6px;border-radius:50%;flex-shrink:0}
-.act-sym{font-family:var(--disp);font-size:.75rem;font-weight:700;flex:0 0 80px}
-.act-dir{font-family:var(--mono);font-size:.6rem;font-weight:600;flex:0 0 40px}
-.act-dir.long{color:var(--G)}.act-dir.short{color:var(--R)}
-.act-pnl{font-family:var(--mono);font-size:.75rem;font-weight:600;margin-left:auto}
-.act-pnl.pos{color:var(--G)}.act-pnl.neg{color:var(--R)}
-.act-stat{font-family:var(--mono);font-size:.6rem;color:var(--text3)}
-.act-time{font-family:var(--mono);font-size:.58rem;color:var(--text3)}
-
-/* ── CONTENT PANEL ── */
-.content-panel{background:var(--panel);border:1px solid var(--line);border-radius:8px;overflow:hidden;display:flex;flex-direction:column}
-.tabs{display:flex;border-bottom:1px solid var(--line);background:var(--deep);flex-shrink:0}
-.tab{display:flex;align-items:center;gap:.5rem;padding:.75rem 1.25rem;font-family:var(--disp);font-size:.7rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;border:none;cursor:pointer;background:transparent;color:var(--text3);border-bottom:2px solid transparent;margin-bottom:-1px;transition:color .2s}
-.tab:hover{color:var(--text)}.tab.active{color:var(--B);border-bottom-color:var(--B)}
-.tab-n{font-family:var(--mono);font-size:.6rem;background:var(--elevated);border:1px solid var(--line);padding:.1rem .4rem;border-radius:3px;min-width:20px;text-align:center}
-.tab.active .tab-n{background:rgba(0,207,255,.1);border-color:rgba(0,207,255,.25);color:var(--B)}
-.tab-body{padding:.875rem;flex:1;overflow-y:visible;min-height:300px}
-.tab-pane{display:none}.tab-pane.active{display:block}
-.tab-pane.grid-pane.active{display:grid;grid-template-columns:repeat(3,1fr);gap:.75rem}
-
-/* ── SIGNAL / POSITION CARDS ── */
-.sig-c,.pos-c{background:var(--surface);border:1px solid var(--line);border-radius:7px;padding:.875rem;transition:border-color .2s,transform .2s;position:relative;overflow:hidden;scroll-margin-top:100px}
-.sig-c:hover,.pos-c:hover{border-color:var(--line2);transform:translateY(-1px)}
-.pos-c.profit{border-left:3px solid var(--G)}.pos-c.loss{border-left:3px solid var(--R)}.pos-c.neu{border-left:3px solid var(--line2)}
-.sig-top,.pos-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:.75rem}
-.sig-sym,.pos-sym{font-family:var(--disp);font-size:.95rem;font-weight:700}
-.pos-sym-row{display:flex;align-items:center;gap:.625rem}
-.pos-live-p{font-family:var(--mono);font-size:.65rem;color:var(--text3)}
-.dir-pill{font-family:var(--mono);font-size:.6rem;font-weight:600;letter-spacing:.08em;padding:.25rem .6rem;border-radius:3px}
-.dir-pill.long{background:rgba(5,240,144,.1);color:var(--G);border:1px solid rgba(5,240,144,.2)}
-.dir-pill.short{background:rgba(255,23,68,.1);color:var(--R);border:1px solid rgba(255,23,68,.2)}
-.lvl-grid,.pos-lvls{display:grid;grid-template-columns:repeat(4,1fr);gap:.4rem;margin-bottom:.75rem}
-.lvl{display:flex;flex-direction:column;gap:.2rem}
-.lvl-l{font-size:.55rem;letter-spacing:.1em;text-transform:uppercase;color:var(--text3)}
-.lvl-v{font-family:var(--mono);font-size:.75rem;font-weight:500}
-.lvl-v.en{color:var(--B)}.lvl-v.tp{color:var(--G)}.lvl-v.sl{color:var(--R)}
-.str-row{margin-bottom:.75rem}
-.str-top{display:flex;justify-content:space-between;margin-bottom:.35rem}
-.str-l,.str-v{font-size:.6rem;letter-spacing:.08em;text-transform:uppercase}
-.str-l{color:var(--text3)}.str-v{font-family:var(--mono);font-weight:600}
-.str-bar{height:2px;background:var(--elevated);border-radius:1px;overflow:hidden}
-.str-fill{height:100%;border-radius:1px;transition:width 1s cubic-bezier(.22,1,.36,1)}
-.sig-foot,.pos-foot{display:flex;align-items:center;justify-content:space-between;margin-bottom:.625rem}
-.pos-foot{margin-bottom:0}
-.ml-pill{font-family:var(--mono);font-size:.65rem;font-weight:500;padding:.2rem .55rem;border-radius:4px;border:1px solid}
-.ml-pill.hi{background:rgba(5,240,144,.08);border-color:rgba(5,240,144,.2);color:var(--G)}
-.ml-pill.med{background:rgba(255,179,0,.08);border-color:rgba(255,179,0,.2);color:var(--A)}
-.ml-pill.low{background:rgba(255,23,68,.08);border-color:rgba(255,23,68,.2);color:var(--R)}
-.sig-t,.pos-ago,.pos-dur{font-family:var(--mono);font-size:.6rem;color:var(--text3)}
-.tags{display:flex;flex-wrap:wrap;gap:.3rem;margin-top:.625rem}
-.tag{font-size:.6rem;background:var(--elevated);border:1px solid var(--line);padding:.2rem .5rem;border-radius:3px;color:var(--text2);transition:background .2s}
-.tag:hover{background:var(--line);color:var(--text)}
-.pos-pnl{font-family:var(--disp);font-size:2rem;font-weight:800;line-height:1;margin-bottom:.625rem;transition:color .5s}
-.pos-pnl.pos{color:var(--G);animation:glowG 3s ease-in-out infinite}
-.pos-pnl.neg{color:var(--R);animation:glowR 3s ease-in-out infinite}
-.pos-pnl.ne{color:var(--text2)}
-.pos-stat{font-family:var(--mono);font-size:.6rem;font-weight:600;letter-spacing:.06em;padding:.2rem .55rem;border-radius:3px}
-.pos-stat.open{background:rgba(0,207,255,.08);color:var(--B);border:1px solid rgba(0,207,255,.2)}
-.pos-stat.tp1{background:rgba(5,240,144,.08);color:var(--G);border:1px solid rgba(5,240,144,.2)}
-.pos-stat.pend{background:rgba(255,179,0,.08);color:var(--A);border:1px solid rgba(255,179,0,.2)}
-
-/* Progress bar */
-.pb-wrap{margin-bottom:.75rem}
-.pb-labels{display:flex;justify-content:space-between;font-family:var(--mono);font-size:.55rem;color:var(--text3);margin-bottom:.35rem}
-.pb-track{height:3px;border-radius:2px;background:var(--elevated);position:relative;overflow:visible}
-.pb-fill{height:100%;border-radius:2px;transition:width .8s cubic-bezier(.22,1,.36,1),background .6s}
-.pb-marker{position:absolute;top:50%;transform:translate(-50%,-50%);width:9px;height:9px;border-radius:50%;border:2px solid var(--panel);transition:left .8s cubic-bezier(.22,1,.36,1),background .6s;z-index:2}
-.pb-tp1{position:absolute;top:-5px;height:calc(100%+10px);width:1px;background:rgba(5,240,144,.3);z-index:1;transition:left .8s}
-.pb-entry{position:absolute;top:50%;transform:translate(-50%,-50%);width:9px;height:9px;border-radius:50%;background:var(--B);border:2px solid var(--panel);z-index:3;box-shadow:0 0 8px var(--B);transition:left .8s}
-
-/* ── HISTORY ── */
-.hist-wrap{overflow-x:auto}
-.hist-table{width:100%;min-width:680px;border-collapse:collapse}
-.hist-table thead tr{border-bottom:1px solid var(--line)}
-.hist-table th{padding:.625rem 1rem;text-align:left;font-family:var(--disp);font-size:.6rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--text3)}
-.hist-table tbody tr{border-bottom:1px solid rgba(26,32,56,.5);transition:background .15s}
-.hist-table tbody tr:hover{background:var(--elevated)}
-.hist-table tbody tr:last-child{border:none}
-.hist-table td{padding:.75rem 1rem}
-.h-sym{font-family:var(--disp);font-size:.85rem;font-weight:700}
-.h-dir{font-family:var(--mono);font-size:.7rem;font-weight:600}
-.h-dir.long{color:var(--G)}.h-dir.short{color:var(--R)}
-.h-price{font-family:var(--mono);font-size:.75rem;color:var(--text2)}
-.h-pnl{font-family:var(--mono);font-size:.85rem;font-weight:600}
-.h-pnl.pos{color:var(--G)}.h-pnl.neg{color:var(--R)}.h-pnl.ne{color:var(--text3)}
-.h-stat{font-family:var(--mono);font-size:.6rem;font-weight:500;letter-spacing:.04em;padding:.2rem .55rem;border-radius:3px}
-.h-stat.tp2{background:rgba(5,240,144,.15);color:var(--G)}
-.h-stat.tp1,.h-stat.sltp1{background:rgba(5,240,144,.1);color:var(--G)}
-.h-stat.sl{background:rgba(255,23,68,.1);color:var(--R)}
-.h-stat.to,.h-stat.oth{background:var(--elevated);color:var(--text3)}
-.h-time{font-family:var(--mono);font-size:.6rem;color:var(--text3)}
-
-/* ── TOASTS ── */
-.toast-container{position:fixed;bottom:1.5rem;right:1.5rem;z-index:999;display:flex;flex-direction:column;gap:.5rem;pointer-events:none}
-.toast{
-  display:flex;align-items:flex-start;gap:.75rem;
-  background:var(--elevated);border:1px solid var(--line2);
-  border-radius:8px;padding:.875rem 1rem;
-  pointer-events:all;cursor:pointer;
-  animation:toastIn .4s cubic-bezier(.22,1,.36,1);
-  min-width:260px;max-width:340px;
-  box-shadow:0 8px 32px rgba(0,0,0,.4)
+/* ── RESET ─────────────────────────────────────────────────────────────────── */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { height: 100%; overflow-x: hidden; }
+body {
+  font-family: var(--sans);
+  background: var(--bg);
+  color: var(--t1);
+  -webkit-font-smoothing: antialiased;
+  font-size: 13px;
+  line-height: 1.5;
 }
-.toast.out{animation:toastOut .3s ease forwards}
-.toast-icon{width:28px;height:28px;border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:.875rem;flex-shrink:0}
-.toast-body{display:flex;flex-direction:column;gap:.2rem;flex:1;min-width:0}
-.toast-title{font-family:var(--disp);font-size:.75rem;font-weight:700;color:var(--text)}
-.toast-msg{font-family:var(--mono);font-size:.65rem;color:var(--text2)}
-.toast.win .toast-icon{background:rgba(5,240,144,.15);color:var(--G)}
-.toast.win{border-color:rgba(5,240,144,.2)}
-.toast.loss .toast-icon{background:rgba(255,23,68,.15);color:var(--R)}
-.toast.loss{border-color:rgba(255,23,68,.2)}
-.toast.info .toast-icon{background:rgba(0,207,255,.15);color:var(--B)}
-.toast.info{border-color:rgba(0,207,255,.2)}
-.toast.warn .toast-icon{background:rgba(255,179,0,.15);color:var(--A)}
-.toast.warn{border-color:rgba(255,179,0,.2)}
+::-webkit-scrollbar { width: 4px; height: 4px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--b2); border-radius: 2px; }
+::-webkit-scrollbar-thumb:hover { background: var(--b3); }
 
-/* ── EMPTY ── */
-.empty{grid-column:1/-1;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:4rem 1rem;gap:.75rem}
-.empty-ico{font-size:2rem;opacity:.2}
-.empty-txt{font-size:.8rem;color:var(--text3)}
+/* ── ANIMATIONS ────────────────────────────────────────────────────────────── */
+@keyframes fadeUp   { from { opacity:0; transform:translateY(10px) } to { opacity:1; transform:translateY(0) } }
+@keyframes fadeIn   { from { opacity:0 } to { opacity:1 } }
+@keyframes pulse    { 0%,100%{opacity:1} 50%{opacity:.25} }
+@keyframes spin     { to { transform:rotate(360deg) } }
+@keyframes toastIn  { from{opacity:0;transform:translateX(110%)} to{opacity:1;transform:translateX(0)} }
+@keyframes toastOut { from{opacity:1;transform:translateX(0)} to{opacity:0;transform:translateX(110%)} }
+@keyframes slideIn  { from{opacity:0;transform:translateX(16px)} to{opacity:1;transform:translateX(0)} }
+@keyframes flashG   { 0%{background:rgba(38,166,154,.18)} 100%{background:transparent} }
+@keyframes flashR   { 0%{background:rgba(239,83,80,.18)} 100%{background:transparent} }
+@keyframes scanline { 0%{top:-5%} 100%{top:105%} }
 
-/* ── RESPONSIVE ── */
-@media(max-width:1400px){.tab-pane.grid-pane.active{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:1100px){.mid-row{grid-template-columns:1fr};.sidebar{flex-direction:row;flex-wrap:wrap}.fg-card,.equity-card,.wr-card,.activity-card{flex:1 1 240px}}
-@media(max-width:900px){.stats-row,.mini-stats{grid-template-columns:repeat(2,1fr)};.tab-pane.grid-pane.active{grid-template-columns:1fr}}
-@media(max-width:600px){.stats-row,.mini-stats{grid-template-columns:1fr}}
+.au  { animation: fadeUp  .45s cubic-bezier(.2,1,.3,1) both }
+.ai  { animation: fadeIn  .35s ease both }
+.d1  { animation-delay:.04s } .d2 { animation-delay:.09s }
+.d3  { animation-delay:.15s } .d4 { animation-delay:.22s }
+.d5  { animation-delay:.30s }
 
-/* ── НОВЫЕ СТИЛИ v2 ────────────────────────────────────────────────────────── */
+.flash-g { animation: flashG .5s ease forwards }
+.flash-r { animation: flashR .5s ease forwards }
 
-/* Flash анимации для цен */
-@keyframes flashGreen{0%{background:rgba(5,240,144,.25);border-color:rgba(5,240,144,.6)}100%{background:transparent;border-color:var(--line)}}
-@keyframes flashRed{0%{background:rgba(255,23,68,.25);border-color:rgba(255,23,68,.6)}100%{background:transparent;border-color:var(--line)}}
-@keyframes countUp{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
-@keyframes spin{to{transform:rotate(360deg)}}
-@keyframes scanline{0%{top:-10%}100%{top:110%}}
+/* ── TICKER TAPE ───────────────────────────────────────────────────────────── */
+.tape {
+  position: relative;
+  height: 28px;
+  background: var(--bg2);
+  border-bottom: 1px solid var(--b1);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  z-index: 20;
+  flex-shrink: 0;
+}
+.tape-track {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  will-change: transform;
+}
+.tape-item {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  padding: 0 1.125rem;
+  height: 28px;
+  border-right: 1px solid var(--b1);
+  flex-shrink: 0;
+}
+.tape-sym   { font-family: var(--mono); font-size: .65rem; color: var(--t3); letter-spacing: .06em; font-weight: 500; }
+.tape-price { font-family: var(--mono); font-size: .72rem; font-weight: 600; color: var(--t1); }
+.tape-chg   { font-family: var(--mono); font-size: .65rem; font-weight: 600; }
+.tape-chg.pos { color: var(--G); }
+.tape-chg.neg { color: var(--R); }
+.tape-chg.neu { color: var(--t3); }
+.tape-sep {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  padding: 0 1.125rem;
+  height: 28px;
+  border-right: 1px solid var(--b1);
+}
+.tape-stat-lbl { font-family: var(--mono); font-size: .6rem; color: var(--t3); letter-spacing: .1em; }
+.tape-stat-val { font-family: var(--mono); font-size: .72rem; font-weight: 600; }
 
-.flash-g{animation:flashGreen .6s ease forwards}
-.flash-r{animation:flashRed .6s ease forwards}
+/* ── HEADER ────────────────────────────────────────────────────────────────── */
+header {
+  position: sticky;
+  top: 28px;
+  z-index: 50;
+  background: var(--bg2);
+  border-bottom: 1px solid var(--b1);
+  height: 48px;
+  display: flex;
+  align-items: center;
+}
+.hinner {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
 
-/* Scan timer */
-.scan-timer{display:flex;align-items:center;gap:.5rem;padding:0 1.25rem;height:100%;border-right:1px solid var(--line)}
-.scan-ring{position:relative;width:28px;height:28px;flex-shrink:0}
-.scan-ring svg{transform:rotate(-90deg)}
-.scan-ring-txt{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:.5rem;font-weight:700;color:var(--B)}
-.scan-lbl{display:flex;flex-direction:column;gap:.1rem}
-.scan-lbl span:first-child{font-size:.55rem;letter-spacing:.1em;text-transform:uppercase;color:var(--text3)}
-.scan-lbl span:last-child{font-family:var(--mono);font-size:.7rem;font-weight:600;color:var(--B)}
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: .625rem;
+  padding: 0 1rem;
+  height: 100%;
+  border-right: 1px solid var(--b1);
+  text-decoration: none;
+  flex-shrink: 0;
+}
+.logo-mark {
+  width: 28px;
+  height: 28px;
+  border-radius: 4px;
+  background: var(--G);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--mono);
+  font-size: .65rem;
+  font-weight: 700;
+  color: #0D1117;
+  flex-shrink: 0;
+}
+.logo-text { display: flex; flex-direction: column; gap: .05rem; }
+.logo-name {
+  font-family: var(--mono);
+  font-size: .8rem;
+  font-weight: 700;
+  letter-spacing: .06em;
+  color: var(--t1);
+  line-height: 1;
+}
+.logo-sub { font-size: .55rem; letter-spacing: .12em; text-transform: uppercase; color: var(--t3); line-height: 1; }
 
-/* Market regime badge */
-.regime-badge{font-family:var(--mono);font-size:.65rem;font-weight:700;letter-spacing:.06em;padding:.25rem .7rem;border-radius:4px;border:1px solid;display:flex;align-items:center;gap:.35rem}
-.regime-badge.bull{background:rgba(5,240,144,.08);border-color:rgba(5,240,144,.3);color:var(--G)}
-.regime-badge.bear{background:rgba(255,23,68,.08);border-color:rgba(255,23,68,.3);color:var(--R)}
-.regime-badge.flat{background:rgba(255,179,0,.08);border-color:rgba(255,179,0,.3);color:var(--A)}
-.regime-badge.fear_bull{background:rgba(0,207,255,.08);border-color:rgba(0,207,255,.3);color:var(--B)}
-.regime-badge.greed_bear{background:rgba(255,99,0,.08);border-color:rgba(255,99,0,.3);color:#FF6300}
+/* Header segments */
+.hseg {
+  display: flex;
+  align-items: center;
+  gap: .625rem;
+  padding: 0 1rem;
+  height: 100%;
+  border-right: 1px solid var(--b1);
+  flex-shrink: 0;
+}
+.hseg-lbl { font-size: .6rem; letter-spacing: .1em; text-transform: uppercase; color: var(--t3); white-space: nowrap; }
+.btc-price { font-family: var(--mono); font-size: .95rem; font-weight: 600; color: var(--t1); }
+.btc-chg { font-family: var(--mono); font-size: .65rem; font-weight: 500; }
+.btc-chg.pos { color: var(--G); } .btc-chg.neg { color: var(--R); }
 
-/* Sound toggle */
-.sound-btn{width:28px;height:28px;border-radius:5px;border:1px solid var(--line);background:var(--elevated);display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:.8rem;transition:all .2s;color:var(--text3)}
-.sound-btn:hover{border-color:var(--line2);color:var(--text)}
-.sound-btn.on{border-color:rgba(5,240,144,.3);color:var(--G);background:rgba(5,240,144,.05)}
+/* Live dot */
+.live-dot { width: 6px; height: 6px; border-radius: 50%; flex-shrink: 0; }
+.live-dot.on  { background: var(--G); box-shadow: 0 0 0 2px rgba(38,166,154,.2); animation: pulse 2.5s ease-in-out infinite; }
+.live-dot.off { background: var(--R); }
+.live-txt { font-family: var(--mono); font-size: .65rem; font-weight: 600; letter-spacing: .06em; }
+.live-txt.on  { color: var(--G); } .live-txt.off { color: var(--R); }
 
-/* Funding timer */
-.fund-card{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:.875rem 1rem}
-.fund-head{font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:var(--text3);margin-bottom:.625rem}
-.fund-row{display:flex;align-items:center;justify-content:space-between}
-.fund-time{font-family:var(--mono);font-size:1.5rem;font-weight:800;color:var(--A);letter-spacing:.05em;line-height:1}
-.fund-bar-wrap{height:3px;background:var(--elevated);border-radius:2px;margin-top:.625rem;overflow:hidden}
-.fund-bar{height:100%;border-radius:2px;background:linear-gradient(90deg,var(--G),var(--A));transition:width 1s linear}
-.fund-rate{font-family:var(--mono);font-size:.75rem}
-.fund-rate.pos{color:var(--G)}.fund-rate.neg{color:var(--R)}
+/* Sessions */
+.sess-block { display: flex; gap: .25rem; }
+.sess {
+  font-family: var(--mono);
+  font-size: .58rem;
+  font-weight: 600;
+  padding: .15rem .45rem;
+  border-radius: 2px;
+  border: 1px solid;
+  letter-spacing: .04em;
+  transition: all .3s;
+}
+.sess.on  { background: var(--B3); border-color: rgba(76,158,255,.35); color: var(--B); }
+.sess.off { background: transparent; border-color: var(--b1); color: var(--t4); }
 
-/* BTC Chart widget */
-.btc-chart-card{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:.875rem 1rem}
-.btc-chart-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:.625rem}
-.btc-chart-title{font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:var(--text3)}
-.btc-chart-price{font-family:var(--mono);font-size:.85rem;font-weight:600}
-.btc-chart-chg{font-family:var(--mono);font-size:.65rem;padding:.1rem .35rem;border-radius:3px}
-.btc-chart-chg.pos{background:rgba(5,240,144,.1);color:var(--G)}
-.btc-chart-chg.neg{background:rgba(255,23,68,.1);color:var(--R)}
+/* ML model */
+.model-name { font-family: var(--mono); font-size: .72rem; font-weight: 600; color: var(--A); }
+.model-auc  {
+  font-family: var(--mono); font-size: .6rem;
+  background: var(--A3); border: 1px solid rgba(247,148,29,.25);
+  color: var(--A); padding: .15rem .4rem; border-radius: 2px;
+}
 
-/* Circular strength meter */
-.str-circle-wrap{display:flex;align-items:center;gap:.75rem;margin-bottom:.625rem}
-.str-circle{position:relative;flex-shrink:0;width:52px;height:52px}
-.str-circle svg{transform:rotate(-90deg)}
-.str-circle-val{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;flex-direction:column}
-.str-circle-num{font-family:var(--mono);font-size:.75rem;font-weight:700;line-height:1}
-.str-circle-lbl{font-size:.45rem;letter-spacing:.08em;text-transform:uppercase;color:var(--text3)}
-.str-info{display:flex;flex-direction:column;gap:.2rem;flex:1}
-.str-info-sym{font-family:var(--disp);font-size:1rem;font-weight:700}
-.str-info-dir{font-family:var(--mono);font-size:.65rem}
+/* Scan ring */
+.scan-timer { display: flex; align-items: center; gap: .5rem; padding: 0 1rem; height: 100%; border-right: 1px solid var(--b1); }
+.scan-ring { position: relative; width: 26px; height: 26px; flex-shrink: 0; }
+.scan-ring svg { transform: rotate(-90deg); }
+.scan-ring-txt { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font-family: var(--mono); font-size: .48rem; font-weight: 700; color: var(--B); }
+.scan-lbl { display: flex; flex-direction: column; gap: .08rem; }
+.scan-lbl span:first-child { font-size: .55rem; letter-spacing: .1em; text-transform: uppercase; color: var(--t3); }
+.scan-lbl span:last-child  { font-family: var(--mono); font-size: .68rem; font-weight: 600; color: var(--B); }
 
-/* Keyboard shortcuts hint */
-.kb-hint{position:fixed;bottom:1.5rem;left:1.5rem;z-index:100;display:flex;gap:.35rem;opacity:.4;transition:opacity .2s}
-.kb-hint:hover{opacity:1}
-.kb-key{font-family:var(--mono);font-size:.55rem;background:var(--elevated);border:1px solid var(--line2);padding:.2rem .45rem;border-radius:3px;color:var(--text3)}
+/* Regime */
+.regime-badge {
+  font-family: var(--mono); font-size: .62rem; font-weight: 600;
+  letter-spacing: .06em; padding: .2rem .6rem; border-radius: 2px; border: 1px solid;
+  display: flex; align-items: center; gap: .3rem;
+}
+.regime-badge.bull       { background:var(--G3); border-color:rgba(38,166,154,.3); color:var(--G); }
+.regime-badge.bear       { background:var(--R3); border-color:rgba(239,83,80,.3); color:var(--R); }
+.regime-badge.flat       { background:var(--A3); border-color:rgba(247,148,29,.3); color:var(--A); }
+.regime-badge.fear_bull  { background:var(--B3); border-color:rgba(76,158,255,.3); color:var(--B); }
+.regime-badge.greed_bear { background:rgba(171,71,188,.1); border-color:rgba(171,71,188,.3); color:var(--P); }
 
-/* Hotkey overlay */
-.kb-overlay{position:fixed;inset:0;z-index:200;background:rgba(4,6,15,.95);display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity .2s}
-.kb-overlay.show{opacity:1;pointer-events:all}
-.kb-box{background:var(--panel);border:1px solid var(--line2);border-radius:12px;padding:2rem;min-width:320px}
-.kb-box-title{font-family:var(--disp);font-size:1rem;font-weight:700;margin-bottom:1.25rem;color:var(--text)}
-.kb-row{display:flex;align-items:center;justify-content:space-between;padding:.5rem 0;border-bottom:1px solid var(--line)}
-.kb-row:last-child{border:none}
-.kb-row-key{font-family:var(--mono);font-size:.75rem;background:var(--elevated);border:1px solid var(--line2);padding:.25rem .6rem;border-radius:4px;color:var(--B);min-width:32px;text-align:center}
-.kb-row-lbl{font-size:.8rem;color:var(--text2)}
+/* Auto/Manual badge */
+.mode-btn {
+  font-family: var(--mono); font-size: .65rem; font-weight: 700;
+  letter-spacing: .06em; padding: .25rem .7rem; border-radius: 2px; border: 1px solid;
+}
+.mode-btn.auto   { background:var(--G3); border-color:rgba(38,166,154,.3); color:var(--G); }
+.mode-btn.manual { background:var(--R3); border-color:rgba(239,83,80,.3); color:var(--R); }
 
-/* Scanline effect on BTC chart */
-.scanline-wrap{position:relative;overflow:hidden}
-.scanline-wrap::after{content:'';position:absolute;left:0;right:0;height:1px;background:rgba(0,207,255,.15);animation:scanline 3s linear infinite;pointer-events:none}
+/* Icon buttons */
+.icon-btn {
+  width: 28px; height: 28px; border-radius: 3px;
+  border: 1px solid var(--b1); background: transparent;
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer; font-size: .8rem; transition: all .15s;
+  color: var(--t3); flex-shrink: 0;
+}
+.icon-btn:hover { border-color: var(--b2); background: var(--bg3); color: var(--t1); }
+.icon-btn.on { border-color: rgba(38,166,154,.35); background: var(--G3); color: var(--G); }
+.icon-btn.small { font-family: var(--mono); font-size: .58rem; font-weight: 700; color: var(--t3); }
 
-/* Number transition */
-.num-transition{transition:all .3s cubic-bezier(.22,1,.36,1)}
+.hseg-right { margin-left: auto; border-right: none; }
 
-/* Improved position card live price */
-.pos-live-badge{font-family:var(--mono);font-size:.6rem;background:rgba(0,207,255,.08);border:1px solid rgba(0,207,255,.2);color:var(--B);padding:.15rem .45rem;border-radius:3px;margin-left:.35rem}
+/* ── MAIN LAYOUT ───────────────────────────────────────────────────────────── */
+main {
+  position: relative;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: .875rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+}
 
-/* Signal entry type badge */
-.entry-badge{font-family:var(--mono);font-size:.55rem;font-weight:600;padding:.15rem .45rem;border-radius:3px;letter-spacing:.04em}
-.entry-badge.limit{background:rgba(255,179,0,.1);color:var(--A);border:1px solid rgba(255,179,0,.2)}
-.entry-badge.market{background:rgba(255,23,68,.08);color:var(--R);border:1px solid rgba(255,23,68,.15)}
+/* ── STATS ROW ─────────────────────────────────────────────────────────────── */
+.stats-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: .625rem; }
 
-/* Heavy confirmed stars */
-.heavy-stars{font-size:.75rem;letter-spacing:-.05em}
+.stat-card {
+  background: var(--bg2);
+  border: 1px solid var(--b1);
+  border-radius: 4px;
+  padding: .875rem 1rem;
+  transition: border-color .2s;
+  cursor: default;
+  position: relative;
+  overflow: hidden;
+}
+.stat-card:hover { border-color: var(--b2); }
+.stat-card::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  border-radius: 4px 4px 0 0;
+}
+.stat-card.cg::after { background: var(--G); }
+.stat-card.cb::after { background: var(--B); }
+.stat-card.ca::after { background: var(--A); }
+.stat-card.cr::after { background: var(--R); }
+
+.stat-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: .5rem; }
+.stat-lbl { font-size: .65rem; letter-spacing: .08em; text-transform: uppercase; color: var(--t3); font-weight: 500; }
+.stat-badge {
+  font-family: var(--mono); font-size: .58rem;
+  padding: .1rem .4rem; border-radius: 2px; border: 1px solid;
+}
+.stat-badge.g { background: var(--G3); border-color: rgba(38,166,154,.25); color: var(--G); }
+.stat-badge.b { background: var(--B3); border-color: rgba(76,158,255,.25); color: var(--B); }
+.stat-badge.a { background: var(--A3); border-color: rgba(247,148,29,.25); color: var(--A); }
+.stat-badge.r { background: var(--R3); border-color: rgba(239,83,80,.25); color: var(--R); }
+
+.stat-val {
+  font-family: var(--mono);
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -.02em;
+  margin-bottom: .3rem;
+}
+.stat-val.g { color: var(--G); } .stat-val.b { color: var(--B); }
+.stat-val.a { color: var(--A); } .stat-val.r { color: var(--R); }
+.stat-sub { font-size: .65rem; color: var(--t3); }
+
+/* ── MINI STATS ────────────────────────────────────────────────────────────── */
+.mini-stats { display: grid; grid-template-columns: repeat(5, 1fr); gap: .625rem; }
+
+.mini-card {
+  background: var(--bg2);
+  border: 1px solid var(--b1);
+  border-radius: 4px;
+  padding: .625rem .875rem;
+  display: flex;
+  align-items: center;
+  gap: .625rem;
+  transition: border-color .2s;
+}
+.mini-card:hover { border-color: var(--b2); }
+
+.mini-icon {
+  width: 28px; height: 28px; border-radius: 3px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: .875rem; flex-shrink: 0;
+}
+.mini-icon.g { background: var(--G3); }
+.mini-icon.r { background: var(--R3); }
+.mini-icon.b { background: var(--B3); }
+.mini-icon.a { background: var(--A3); }
+
+.mini-info { display: flex; flex-direction: column; gap: .1rem; min-width: 0; }
+.mini-lbl { font-size: .58rem; letter-spacing: .08em; text-transform: uppercase; color: var(--t3); white-space: nowrap; }
+.mini-val { font-family: var(--mono); font-size: .82rem; font-weight: 600; white-space: nowrap; }
+.mini-val.g { color: var(--G); } .mini-val.r { color: var(--R); }
+.mini-val.b { color: var(--B); } .mini-val.a { color: var(--A); }
+
+/* ── MID ROW ───────────────────────────────────────────────────────────────── */
+.mid-row { display: grid; grid-template-columns: 268px 1fr; gap: .625rem; }
+.sidebar { display: flex; flex-direction: column; gap: .625rem; }
+
+/* Panel base */
+.panel {
+  background: var(--bg2);
+  border: 1px solid var(--b1);
+  border-radius: 4px;
+  overflow: hidden;
+}
+.panel-head {
+  padding: .5rem .875rem;
+  border-bottom: 1px solid var(--b1);
+  font-size: .6rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--t3);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .5rem;
+}
+.panel-body { padding: .75rem .875rem; }
+
+/* ── SIDEBAR: BTC CHART ────────────────────────────────────────────────────── */
+.btc-chart-card { }
+.btc-chart-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.btc-chart-price { font-family: var(--mono); font-size: .82rem; font-weight: 600; color: var(--t1); }
+.btc-chart-chg { font-family: var(--mono); font-size: .62rem; }
+.btc-chart-chg.pos { color: var(--G); } .btc-chart-chg.neg { color: var(--R); }
+.scanline-wrap { position: relative; overflow: hidden; }
+.scanline-wrap::after {
+  content: '';
+  position: absolute;
+  left: 0; right: 0;
+  height: 1px;
+  background: rgba(76,158,255,.12);
+  animation: scanline 4s linear infinite;
+  pointer-events: none;
+}
+
+/* ── SIDEBAR: FUNDING ──────────────────────────────────────────────────────── */
+.fund-row { display: flex; align-items: flex-end; justify-content: space-between; margin-bottom: .5rem; }
+.fund-time { font-family: var(--mono); font-size: 1.25rem; font-weight: 700; color: var(--A); line-height: 1; letter-spacing: .02em; }
+.fund-sub  { font-size: .58rem; color: var(--t3); margin-top: .15rem; }
+.fund-rate { font-family: var(--mono); font-size: .75rem; font-weight: 600; }
+.fund-rate.pos { color: var(--G); } .fund-rate.neg { color: var(--R); }
+.fund-bar-wrap { height: 2px; background: var(--bg3); border-radius: 1px; overflow: hidden; }
+.fund-bar { height: 100%; border-radius: 1px; background: linear-gradient(90deg, var(--G), var(--A)); transition: width 1s linear; }
+
+/* ── SIDEBAR: FEAR & GREED ─────────────────────────────────────────────────── */
+.fg-gauge-wrap { display: flex; align-items: center; gap: .875rem; }
+.fg-svg-wrap   { position: relative; flex-shrink: 0; }
+.fg-num {
+  position: absolute; bottom: 2px; left: 50%; transform: translateX(-50%);
+  font-family: var(--mono); font-size: 1.35rem; font-weight: 700; line-height: 1;
+}
+.fg-right { display: flex; flex-direction: column; gap: .3rem; }
+.fg-state { font-family: var(--sans); font-size: .9rem; font-weight: 700; }
+.fg-emoji { font-size: 1.1rem; }
+.fg-bars  { display: flex; gap: 2px; align-items: flex-end; margin-top: .2rem; }
+.fg-bar   { width: 5px; border-radius: 1px; transition: opacity .4s; }
+.fg-upd   { font-family: var(--mono); font-size: .58rem; color: var(--t3); margin-top: .4rem; }
+
+/* ── SIDEBAR: WINRATE DONUT ────────────────────────────────────────────────── */
+.wr-inner { display: flex; align-items: center; gap: .875rem; }
+.wr-donut { position: relative; flex-shrink: 0; }
+.wr-center { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; flex-direction: column; }
+.wr-pct    { font-family: var(--mono); font-size: .95rem; font-weight: 700; }
+.wr-lbl2   { font-size: .48rem; letter-spacing: .1em; text-transform: uppercase; color: var(--t3); }
+.wr-legend { display: flex; flex-direction: column; gap: .35rem; }
+.wr-legend-item { display: flex; align-items: center; gap: .4rem; font-size: .65rem; color: var(--t2); }
+.wr-dot { width: 5px; height: 5px; border-radius: 50%; flex-shrink: 0; }
+
+/* ── SIDEBAR: EQUITY ───────────────────────────────────────────────────────── */
+.eq-head { display: flex; align-items: center; justify-content: space-between; }
+.eq-pnl  { font-family: var(--mono); font-size: .9rem; font-weight: 700; }
+
+/* ── SIDEBAR: ACTIVITY ─────────────────────────────────────────────────────── */
+.activity-card { max-height: 192px; display: flex; flex-direction: column; }
+.activity-list { display: flex; flex-direction: column; gap: .35rem; overflow-y: auto; padding: .625rem .875rem; flex: 1; }
+.act-item {
+  display: flex; align-items: center; gap: .5rem;
+  padding: .4rem .5rem;
+  background: var(--bg3);
+  border: 1px solid var(--b1);
+  border-radius: 3px;
+  font-size: .65rem;
+  animation: slideIn .25s cubic-bezier(.2,1,.3,1);
+}
+.act-dot  { width: 5px; height: 5px; border-radius: 50%; flex-shrink: 0; }
+.act-sym  { font-family: var(--mono); font-size: .72rem; font-weight: 600; flex: 0 0 76px; color: var(--t1); }
+.act-dir  { font-family: var(--mono); font-size: .58rem; font-weight: 600; flex: 0 0 36px; }
+.act-dir.long  { color: var(--G); } .act-dir.short { color: var(--R); }
+.act-pnl  { font-family: var(--mono); font-size: .7rem; font-weight: 600; margin-left: auto; }
+.act-pnl.pos { color: var(--G); } .act-pnl.neg { color: var(--R); }
+.act-stat { font-family: var(--mono); font-size: .58rem; color: var(--t3); }
+.act-time { font-family: var(--mono); font-size: .56rem; color: var(--t3); }
+
+/* ── CONTENT PANEL ─────────────────────────────────────────────────────────── */
+.content-panel {
+  background: var(--bg2);
+  border: 1px solid var(--b1);
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.tabs {
+  display: flex;
+  border-bottom: 1px solid var(--b1);
+  background: var(--bg);
+  flex-shrink: 0;
+}
+.tab {
+  display: flex; align-items: center; gap: .4rem;
+  padding: .625rem 1rem;
+  font-family: var(--sans); font-size: .68rem; font-weight: 600;
+  letter-spacing: .04em; text-transform: uppercase;
+  border: none; cursor: pointer; background: transparent;
+  color: var(--t3);
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+  transition: color .15s;
+}
+.tab:hover  { color: var(--t2); }
+.tab.active { color: var(--B); border-bottom-color: var(--B); }
+.tab-n {
+  font-family: var(--mono); font-size: .58rem;
+  background: var(--bg3); border: 1px solid var(--b1);
+  padding: .08rem .35rem; border-radius: 2px;
+  min-width: 18px; text-align: center;
+  color: var(--t3);
+}
+.tab.active .tab-n { background: var(--B3); border-color: rgba(76,158,255,.3); color: var(--B); }
+
+.tab-body { padding: .75rem; flex: 1; overflow-y: visible; min-height: 300px; }
+.tab-pane  { display: none; }
+.tab-pane.active { display: block; }
+.tab-pane.grid-pane.active { display: grid; grid-template-columns: repeat(3, 1fr); gap: .625rem; }
+
+/* ── SIGNAL CARDS ──────────────────────────────────────────────────────────── */
+.sig-c, .pos-c {
+  background: var(--bg);
+  border: 1px solid var(--b1);
+  border-radius: 4px;
+  padding: .75rem;
+  transition: border-color .15s;
+  position: relative;
+  overflow: hidden;
+  scroll-margin-top: 80px;
+}
+.sig-c:hover, .pos-c:hover { border-color: var(--b2); }
+
+.pos-c.profit { border-left: 2px solid var(--G); }
+.pos-c.loss   { border-left: 2px solid var(--R); }
+.pos-c.neu    { border-left: 2px solid var(--b2); }
+
+.sig-top, .pos-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: .625rem; }
+.sig-sym, .pos-sym { font-family: var(--mono); font-size: .88rem; font-weight: 700; color: var(--t1); }
+.pos-sym-row { display: flex; align-items: center; gap: .5rem; }
+.pos-live-p  { font-family: var(--mono); font-size: .62rem; color: var(--t3); }
+
+.dir-pill {
+  font-family: var(--mono); font-size: .58rem; font-weight: 700;
+  letter-spacing: .06em; padding: .18rem .5rem; border-radius: 2px; border: 1px solid;
+}
+.dir-pill.long  { background: var(--G3); color: var(--G); border-color: rgba(38,166,154,.3); }
+.dir-pill.short { background: var(--R3); color: var(--R); border-color: rgba(239,83,80,.3); }
+
+/* Level grid */
+.lvl-grid, .pos-lvls {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: .35rem;
+  margin-bottom: .625rem;
+  padding: .5rem;
+  background: var(--bg3);
+  border-radius: 3px;
+}
+.lvl { display: flex; flex-direction: column; gap: .15rem; }
+.lvl-l { font-size: .52rem; letter-spacing: .1em; text-transform: uppercase; color: var(--t3); }
+.lvl-v { font-family: var(--mono); font-size: .72rem; font-weight: 500; color: var(--t1); }
+.lvl-v.en { color: var(--B); } .lvl-v.tp { color: var(--G); } .lvl-v.sl { color: var(--R); }
+
+/* Strength bar */
+.str-row { margin-bottom: .625rem; }
+.str-top { display: flex; justify-content: space-between; margin-bottom: .3rem; }
+.str-l, .str-v { font-size: .6rem; letter-spacing: .06em; text-transform: uppercase; }
+.str-l { color: var(--t3); }
+.str-v { font-family: var(--mono); font-weight: 600; color: var(--t1); }
+.str-bar  { height: 2px; background: var(--bg3); border-radius: 1px; overflow: hidden; }
+.str-fill { height: 100%; border-radius: 1px; transition: width 1s cubic-bezier(.2,1,.3,1); }
+
+/* Sig/pos footer */
+.sig-foot, .pos-foot {
+  display: flex; align-items: center; justify-content: space-between; margin-bottom: .5rem;
+}
+.pos-foot { margin-bottom: 0; }
+
+.ml-pill {
+  font-family: var(--mono); font-size: .62rem; font-weight: 500;
+  padding: .16rem .45rem; border-radius: 2px; border: 1px solid;
+}
+.ml-pill.hi  { background: var(--G3); border-color: rgba(38,166,154,.25); color: var(--G); }
+.ml-pill.med { background: var(--A3); border-color: rgba(247,148,29,.25); color: var(--A); }
+.ml-pill.low { background: var(--R3); border-color: rgba(239,83,80,.25); color: var(--R); }
+
+.sig-t, .pos-ago, .pos-dur { font-family: var(--mono); font-size: .58rem; color: var(--t3); }
+
+.tags { display: flex; flex-wrap: wrap; gap: .25rem; margin-top: .5rem; }
+.tag {
+  font-size: .58rem; background: var(--bg3); border: 1px solid var(--b1);
+  padding: .15rem .45rem; border-radius: 2px; color: var(--t2);
+  transition: border-color .15s;
+}
+.tag:hover { border-color: var(--b2); }
+
+/* Position P&L */
+.pos-pnl {
+  font-family: var(--mono); font-size: 1.85rem; font-weight: 700;
+  line-height: 1; margin-bottom: .5rem; transition: color .4s;
+  letter-spacing: -.02em;
+}
+.pos-pnl.pos { color: var(--G); }
+.pos-pnl.neg { color: var(--R); }
+.pos-pnl.ne  { color: var(--t2); }
+
+.pos-stat {
+  font-family: var(--mono); font-size: .58rem; font-weight: 600;
+  letter-spacing: .05em; padding: .16rem .45rem; border-radius: 2px; border: 1px solid;
+}
+.pos-stat.open { background: var(--B3); color: var(--B); border-color: rgba(76,158,255,.25); }
+.pos-stat.tp1  { background: var(--G3); color: var(--G); border-color: rgba(38,166,154,.25); }
+.pos-stat.pend { background: var(--A3); color: var(--A); border-color: rgba(247,148,29,.25); }
+
+/* ── PROGRESS BAR ──────────────────────────────────────────────────────────── */
+.pb-wrap { margin-bottom: .625rem; }
+.pb-labels {
+  display: flex; justify-content: space-between;
+  font-family: var(--mono); font-size: .52rem; color: var(--t3); margin-bottom: .3rem;
+}
+.pb-track {
+  height: 3px; border-radius: 2px;
+  background: var(--bg3); position: relative; overflow: visible;
+}
+.pb-fill { height: 100%; border-radius: 2px; transition: width .8s cubic-bezier(.2,1,.3,1), background .5s; }
+.pb-marker {
+  position: absolute; top: 50%; transform: translate(-50%, -50%);
+  width: 8px; height: 8px; border-radius: 50%;
+  border: 2px solid var(--bg2); transition: left .8s cubic-bezier(.2,1,.3,1), background .5s;
+  z-index: 2;
+}
+.pb-tp1 {
+  position: absolute; top: -4px; height: calc(100% + 8px); width: 1px;
+  background: rgba(38,166,154,.4); z-index: 1; transition: left .8s;
+}
+.pb-entry {
+  position: absolute; top: 50%; transform: translate(-50%, -50%);
+  width: 8px; height: 8px; border-radius: 50%;
+  background: var(--B); border: 2px solid var(--bg2); z-index: 3;
+  box-shadow: 0 0 6px var(--B); transition: left .8s;
+}
+
+/* ── HISTORY TABLE ─────────────────────────────────────────────────────────── */
+.hist-wrap { overflow-x: auto; }
+.hist-table { width: 100%; min-width: 680px; border-collapse: collapse; }
+.hist-table thead tr { border-bottom: 1px solid var(--b1); }
+.hist-table th {
+  padding: .5rem .875rem; text-align: left;
+  font-size: .6rem; font-weight: 600; letter-spacing: .1em;
+  text-transform: uppercase; color: var(--t3);
+}
+.hist-table tbody tr { border-bottom: 1px solid rgba(42,46,57,.6); transition: background .12s; }
+.hist-table tbody tr:hover { background: var(--bg3); }
+.hist-table tbody tr:last-child { border: none; }
+.hist-table td { padding: .625rem .875rem; }
+.h-sym   { font-family: var(--mono); font-size: .82rem; font-weight: 700; color: var(--t1); }
+.h-dir   { font-family: var(--mono); font-size: .68rem; font-weight: 600; }
+.h-dir.long  { color: var(--G); } .h-dir.short { color: var(--R); }
+.h-price { font-family: var(--mono); font-size: .72rem; color: var(--t2); }
+.h-pnl   { font-family: var(--mono); font-size: .82rem; font-weight: 600; }
+.h-pnl.pos { color: var(--G); } .h-pnl.neg { color: var(--R); } .h-pnl.ne { color: var(--t3); }
+.h-stat {
+  font-family: var(--mono); font-size: .58rem; font-weight: 500;
+  letter-spacing: .04em; padding: .16rem .45rem; border-radius: 2px; border: 1px solid;
+}
+.h-stat.tp2  { background: var(--G3); border-color: rgba(38,166,154,.25); color: var(--G); }
+.h-stat.tp1, .h-stat.sltp1 { background: rgba(38,166,154,.07); border-color: rgba(38,166,154,.2); color: var(--G); }
+.h-stat.sl   { background: var(--R3); border-color: rgba(239,83,80,.2); color: var(--R); }
+.h-stat.to, .h-stat.oth { background: var(--bg3); border-color: var(--b1); color: var(--t3); }
+.h-time { font-family: var(--mono); font-size: .6rem; color: var(--t3); }
+
+/* ── TOASTS ────────────────────────────────────────────────────────────────── */
+.toast-container {
+  position: fixed; bottom: 1.25rem; right: 1.25rem;
+  z-index: 999; display: flex; flex-direction: column; gap: .4rem; pointer-events: none;
+}
+.toast {
+  display: flex; align-items: flex-start; gap: .625rem;
+  background: var(--bg2); border: 1px solid var(--b2);
+  border-radius: 4px; padding: .75rem .875rem;
+  pointer-events: all; cursor: pointer;
+  animation: toastIn .35s cubic-bezier(.2,1,.3,1);
+  min-width: 240px; max-width: 320px;
+  box-shadow: 0 8px 24px rgba(0,0,0,.5);
+}
+.toast.out { animation: toastOut .25s ease forwards; }
+.toast-icon {
+  width: 26px; height: 26px; border-radius: 3px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: .8rem; flex-shrink: 0;
+}
+.toast-body { display: flex; flex-direction: column; gap: .15rem; flex: 1; min-width: 0; }
+.toast-title { font-size: .72rem; font-weight: 600; color: var(--t1); }
+.toast-msg   { font-family: var(--mono); font-size: .62rem; color: var(--t2); }
+.toast.win  .toast-icon { background: var(--G3); color: var(--G); }
+.toast.win  { border-color: rgba(38,166,154,.3); }
+.toast.loss .toast-icon { background: var(--R3); color: var(--R); }
+.toast.loss { border-color: rgba(239,83,80,.3); }
+.toast.info .toast-icon { background: var(--B3); color: var(--B); }
+.toast.info { border-color: rgba(76,158,255,.3); }
+.toast.warn .toast-icon { background: var(--A3); color: var(--A); }
+.toast.warn { border-color: rgba(247,148,29,.3); }
+
+/* ── KB OVERLAY ────────────────────────────────────────────────────────────── */
+.kb-overlay {
+  position: fixed; inset: 0; z-index: 200;
+  background: rgba(13,17,23,.9);
+  display: flex; align-items: center; justify-content: center;
+  opacity: 0; pointer-events: none; transition: opacity .2s;
+}
+.kb-overlay.show { opacity: 1; pointer-events: all; }
+.kb-box {
+  background: var(--bg2); border: 1px solid var(--b2);
+  border-radius: 6px; padding: 1.5rem; min-width: 300px;
+}
+.kb-box-title { font-size: .9rem; font-weight: 600; margin-bottom: 1rem; color: var(--t1); }
+.kb-row {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: .4rem 0; border-bottom: 1px solid var(--b1);
+}
+.kb-row:last-child { border: none; }
+.kb-row-key {
+  font-family: var(--mono); font-size: .72rem;
+  background: var(--bg3); border: 1px solid var(--b2);
+  padding: .2rem .5rem; border-radius: 3px; color: var(--B);
+  min-width: 32px; text-align: center;
+}
+.kb-row-lbl { font-size: .75rem; color: var(--t2); }
+
+/* KB hint bottom left */
+.kb-hint {
+  position: fixed; bottom: 1.25rem; left: 1.25rem;
+  z-index: 100; display: flex; gap: .3rem; opacity: .3; transition: opacity .2s;
+}
+.kb-hint:hover { opacity: 1; }
+.kb-key {
+  font-family: var(--mono); font-size: .52rem;
+  background: var(--bg2); border: 1px solid var(--b2);
+  padding: .18rem .42rem; border-radius: 2px; color: var(--t3);
+}
+
+/* ── EMPTY STATE ───────────────────────────────────────────────────────────── */
+.empty {
+  grid-column: 1 / -1;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  padding: 3.5rem 1rem; gap: .625rem;
+}
+.empty-ico { font-size: 1.75rem; opacity: .15; }
+.empty-txt { font-size: .75rem; color: var(--t3); }
+
+/* ── MISC BADGES ───────────────────────────────────────────────────────────── */
+.entry-badge {
+  font-family: var(--mono); font-size: .52rem; font-weight: 600;
+  padding: .12rem .4rem; border-radius: 2px; letter-spacing: .04em; border: 1px solid;
+}
+.entry-badge.limit  { background: var(--A3); color: var(--A); border-color: rgba(247,148,29,.25); }
+.entry-badge.market { background: var(--R3); color: var(--R); border-color: rgba(239,83,80,.2); }
+
+.pos-live-badge {
+  font-family: var(--mono); font-size: .58rem;
+  background: var(--B3); border: 1px solid rgba(76,158,255,.25);
+  color: var(--B); padding: .12rem .4rem; border-radius: 2px; margin-left: .3rem;
+}
+
+/* ── DIVIDER ───────────────────────────────────────────────────────────────── */
+.vdiv { width: 1px; height: 20px; background: var(--b1); flex-shrink: 0; }
+
+/* ── RESPONSIVE ────────────────────────────────────────────────────────────── */
+@media(max-width:1400px) { .tab-pane.grid-pane.active { grid-template-columns: repeat(2, 1fr); } }
+@media(max-width:1100px) {
+  .mid-row { grid-template-columns: 1fr; }
+  .sidebar { flex-direction: row; flex-wrap: wrap; }
+  .sidebar > * { flex: 1 1 240px; }
+}
+@media(max-width:900px) {
+  .stats-row { grid-template-columns: repeat(2, 1fr); }
+  .mini-stats { grid-template-columns: repeat(2, 1fr); }
+  .tab-pane.grid-pane.active { grid-template-columns: 1fr; }
+}
+@media(max-width:600px) {
+  .stats-row, .mini-stats { grid-template-columns: 1fr; }
+}
 </style>
 </head>
 <body>
@@ -390,45 +784,68 @@ main{position:relative;z-index:1;max-width:1920px;margin:0 auto;padding:1rem 1.2
 <!-- HEADER -->
 <header>
   <div class="hinner">
+
+    <!-- Logo -->
     <a class="logo" href="/">
-      <div class="logo-icon">CT</div>
-      <div>
+      <div class="logo-mark">CT</div>
+      <div class="logo-text">
         <div class="logo-name">CASHTRACK</div>
         <div class="logo-sub">Futures Terminal</div>
       </div>
     </a>
+
+    <!-- BTC Price -->
     <div class="hseg au d1">
-      <div style="display:flex;flex-direction:column;gap:.15rem">
-        <span class="hseg-lbl">BTC/USDT</span>
+      <div style="display:flex;flex-direction:column;gap:.1rem">
+        <span class="hseg-lbl">BTC / USDT</span>
         <div style="display:flex;align-items:center;gap:.5rem">
           <span class="btc-price" id="btcPrice">—</span>
-          <span class="btc-chg" id="btcChange">—</span>
+          <span class="btc-chg"   id="btcChange">—</span>
         </div>
       </div>
     </div>
-    <div class="hseg au d2">
+
+    <div class="vdiv"></div>
+
+    <!-- Connection status -->
+    <div class="hseg au d2" style="gap:.4rem">
       <div class="live-dot off" id="statusDot"></div>
       <span class="live-txt off" id="statusText">Подключение...</span>
     </div>
-    <div class="hseg au d3" style="flex-direction:column;align-items:flex-start;gap:.2rem">
-      <span class="hseg-lbl">Торговая сессия</span>
+
+    <div class="vdiv"></div>
+
+    <!-- Sessions -->
+    <div class="hseg au d2" style="flex-direction:column;align-items:flex-start;gap:.15rem">
+      <span class="hseg-lbl">Сессия</span>
       <div class="sess-block">
         <span class="sess off" id="sessAsia">ASIA</span>
         <span class="sess off" id="sessEur">EUR</span>
         <span class="sess off" id="sessUS">US</span>
       </div>
     </div>
-    <div class="hseg au d4">
-      <span class="hseg-lbl">Модель</span>
-      <span class="model-name" id="modelName">—</span>
-      <span class="model-auc" id="modelAuc">—</span>
+
+    <div class="vdiv"></div>
+
+    <!-- ML Model -->
+    <div class="hseg au d3" style="flex-direction:column;align-items:flex-start;gap:.15rem">
+      <span class="hseg-lbl">Модель ML</span>
+      <div style="display:flex;align-items:center;gap:.4rem">
+        <span class="model-name" id="modelName">—</span>
+        <span class="model-auc"  id="modelAuc">—</span>
+      </div>
     </div>
-    <!-- Scan timer -->
-    <div class="scan-timer au d4">
+
+    <div class="vdiv"></div>
+
+    <!-- Scan countdown -->
+    <div class="scan-timer au d3">
       <div class="scan-ring">
-        <svg width="28" height="28" viewBox="0 0 28 28">
-          <circle cx="14" cy="14" r="11" fill="none" stroke="var(--elevated)" stroke-width="2.5"/>
-          <circle id="scanArc" cx="14" cy="14" r="11" fill="none" stroke="var(--B)" stroke-width="2.5" stroke-dasharray="69.1" stroke-dashoffset="0" stroke-linecap="round" style="transition:stroke-dashoffset 1s linear"/>
+        <svg width="26" height="26" viewBox="0 0 26 26">
+          <circle cx="13" cy="13" r="10" fill="none" stroke="var(--bg3)" stroke-width="2.5"/>
+          <circle id="scanArc" cx="13" cy="13" r="10" fill="none" stroke="var(--B)"
+            stroke-width="2.5" stroke-dasharray="62.8" stroke-dashoffset="0" stroke-linecap="round"
+            style="transition:stroke-dashoffset 1s linear"/>
         </svg>
         <div class="scan-ring-txt" id="scanSec">—</div>
       </div>
@@ -437,23 +854,30 @@ main{position:relative;z-index:1;max-width:1920px;margin:0 auto;padding:1rem 1.2
         <span id="scanLabel">—</span>
       </div>
     </div>
-    <!-- Market regime -->
+
+    <div class="vdiv"></div>
+
+    <!-- Regime -->
     <div class="hseg au d4" style="gap:.5rem">
       <span class="hseg-lbl">Режим</span>
       <span class="regime-badge flat" id="regimeBadge">● FLAT</span>
     </div>
-    <div class="hseg hseg-right au d5" style="gap:.75rem">
-      <button class="sound-btn" id="soundBtn" title="Звук" onclick="toggleSound()">🔇</button>
-      <button class="sound-btn" id="kbBtn" title="Горячие клавиши" onclick="toggleKB()" style="font-size:.65rem;font-family:var(--mono)">KB</button>
+
+    <!-- Right side -->
+    <div class="hseg hseg-right au d5" style="gap:.5rem">
+      <button class="icon-btn" id="soundBtn" title="Звук" onclick="toggleSound()">🔇</button>
+      <button class="icon-btn small" id="kbBtn" title="Горячие клавиши" onclick="toggleKB()">KB</button>
+      <div class="vdiv"></div>
       <span class="mode-btn manual" id="autoBadge">РУЧНОЙ</span>
     </div>
+
   </div>
 </header>
 
-<!-- Keyboard shortcut overlay -->
+<!-- KB Overlay -->
 <div class="kb-overlay" id="kbOverlay" onclick="toggleKB()">
   <div class="kb-box" onclick="event.stopPropagation()">
-    <div class="kb-box-title">⌨️ Горячие клавиши</div>
+    <div class="kb-box-title">Горячие клавиши</div>
     <div class="kb-row"><span class="kb-row-key">S</span><span class="kb-row-lbl">Сигналы</span></div>
     <div class="kb-row"><span class="kb-row-key">P</span><span class="kb-row-lbl">Позиции</span></div>
     <div class="kb-row"><span class="kb-row-key">L</span><span class="kb-row-lbl">Лимитки</span></div>
@@ -469,47 +893,72 @@ main{position:relative;z-index:1;max-width:1920px;margin:0 auto;padding:1rem 1.2
 </div>
 
 <main>
-  <!-- STATS -->
+
+  <!-- ── STATS ROW ── -->
   <div class="stats-row">
     <div class="stat-card ca au d1">
-      <div class="stat-top"><span class="stat-lbl">Всего сигналов</span><span class="stat-badge a" id="sBadge1">—</span></div>
+      <div class="stat-top">
+        <span class="stat-lbl">Всего сигналов</span>
+        <span class="stat-badge a" id="sBadge1">—</span>
+      </div>
       <div class="stat-val a" id="statSignals">—</div>
       <div class="stat-sub" id="statWL">—</div>
     </div>
     <div class="stat-card cb au d2">
-      <div class="stat-top"><span class="stat-lbl">Открытые позиции</span><span class="stat-badge b" id="sBadge2">0 лимиток</span></div>
+      <div class="stat-top">
+        <span class="stat-lbl">Открытые позиции</span>
+        <span class="stat-badge b" id="sBadge2">0 лимиток</span>
+      </div>
       <div class="stat-val b" id="statPos">—</div>
       <div class="stat-sub" id="statPend">—</div>
     </div>
     <div class="stat-card cg au d3">
-      <div class="stat-top"><span class="stat-lbl">Винрейт сделок</span><span class="stat-badge g" id="sBadge3">—</span></div>
+      <div class="stat-top">
+        <span class="stat-lbl">Винрейт</span>
+        <span class="stat-badge g" id="sBadge3">—</span>
+      </div>
       <div class="stat-val g" id="statWR">—</div>
       <div class="stat-sub" id="statWLT">—</div>
     </div>
     <div class="stat-card cg au d4" id="pnlCard">
-      <div class="stat-top"><span class="stat-lbl">Общий P&amp;L</span><span class="stat-badge g">суммарный</span></div>
+      <div class="stat-top">
+        <span class="stat-lbl">Общий P&amp;L</span>
+        <span class="stat-badge g">Суммарный</span>
+      </div>
       <div class="stat-val g" id="statPnl">—</div>
-      <div class="stat-sub">за всё время торговли</div>
+      <div class="stat-sub">За всё время торговли</div>
     </div>
   </div>
 
-  <!-- MINI STATS ROW -->
+  <!-- ── MINI STATS ── -->
   <div class="mini-stats">
     <div class="mini-card au d2">
       <div class="mini-icon g">🏆</div>
-      <div class="mini-info"><span class="mini-lbl">Лучшая сделка</span><span class="mini-val g" id="mBest">—</span></div>
+      <div class="mini-info">
+        <span class="mini-lbl">Лучшая сделка</span>
+        <span class="mini-val g" id="mBest">—</span>
+      </div>
     </div>
     <div class="mini-card au d3">
       <div class="mini-icon r">💀</div>
-      <div class="mini-info"><span class="mini-lbl">Худшая сделка</span><span class="mini-val r" id="mWorst">—</span></div>
+      <div class="mini-info">
+        <span class="mini-lbl">Худшая сделка</span>
+        <span class="mini-val r" id="mWorst">—</span>
+      </div>
     </div>
     <div class="mini-card au d4">
       <div class="mini-icon b">📊</div>
-      <div class="mini-info"><span class="mini-lbl">Средний профит</span><span class="mini-val b" id="mAvgWin">—</span></div>
+      <div class="mini-info">
+        <span class="mini-lbl">Средний профит</span>
+        <span class="mini-val b" id="mAvgWin">—</span>
+      </div>
     </div>
     <div class="mini-card au d5">
       <div class="mini-icon a">⚡</div>
-      <div class="mini-info"><span class="mini-lbl">Серия побед</span><span class="mini-val a" id="mStreak">—</span></div>
+      <div class="mini-info">
+        <span class="mini-lbl">Серия побед</span>
+        <span class="mini-val a" id="mStreak">—</span>
+      </div>
     </div>
     <div class="mini-card au d5">
       <div class="mini-icon b">🧠</div>
@@ -520,102 +969,134 @@ main{position:relative;z-index:1;max-width:1920px;margin:0 auto;padding:1rem 1.2
     </div>
   </div>
 
-  <!-- MID ROW -->
+  <!-- ── MID ROW ── -->
   <div class="mid-row">
+
+    <!-- ── SIDEBAR ── -->
     <div class="sidebar">
-      <!-- BTC Mini Chart -->
-      <div class="btc-chart-card au d1 scanline-wrap">
-        <div class="btc-chart-head">
-          <span class="btc-chart-title">BTC/USDT · 15m</span>
-          <div style="display:flex;align-items:center;gap:.5rem">
+
+      <!-- BTC Chart -->
+      <div class="panel au d1 scanline-wrap">
+        <div class="panel-head">
+          <span>BTC/USDT · 15m</span>
+          <div style="display:flex;align-items:center;gap:.4rem">
             <span class="btc-chart-price" id="btcChartPrice">—</span>
-            <span class="btc-chart-chg" id="btcChartChg">—</span>
+            <span class="btc-chart-chg"   id="btcChartChg">—</span>
           </div>
         </div>
-        <canvas id="btcCandleCanvas" style="width:100%;height:80px;display:block"></canvas>
+        <div class="panel-body" style="padding:.5rem .875rem .625rem">
+          <canvas id="btcCandleCanvas" style="width:100%;height:76px;display:block"></canvas>
+        </div>
       </div>
 
       <!-- Funding Timer -->
-      <div class="fund-card au d1">
-        <div class="fund-head">Funding Rate · BTC</div>
-        <div class="fund-row">
-          <div>
-            <div class="fund-time" id="fundTime">—</div>
-            <div style="font-size:.6rem;color:var(--text3);margin-top:.2rem">до следующего</div>
+      <div class="panel au d1">
+        <div class="panel-head">Funding Rate · BTC</div>
+        <div class="panel-body">
+          <div class="fund-row">
+            <div>
+              <div class="fund-time" id="fundTime">—</div>
+              <div class="fund-sub">до следующего</div>
+            </div>
+            <div style="text-align:right">
+              <div class="fund-rate pos" id="fundRate">—</div>
+              <div class="fund-sub">ставка</div>
+            </div>
           </div>
-          <div style="text-align:right">
-            <div class="fund-rate pos" id="fundRate">—</div>
-            <div style="font-size:.6rem;color:var(--text3);margin-top:.2rem">ставка</div>
-          </div>
+          <div class="fund-bar-wrap"><div class="fund-bar" id="fundBar" style="width:50%"></div></div>
         </div>
-        <div class="fund-bar-wrap"><div class="fund-bar" id="fundBar" style="width:50%"></div></div>
       </div>
 
       <!-- Fear & Greed -->
-      <div class="fg-card au d2">
-        <div class="fg-header">Индекс страха и жадности</div>
-        <div class="fg-gauge-wrap">
-          <div class="fg-svg-wrap">
-            <svg viewBox="0 0 110 65" width="110" height="65">
-              <defs><linearGradient id="fgg" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#FF1744"/><stop offset="30%" stop-color="#FF7043"/><stop offset="50%" stop-color="#FFB300"/><stop offset="70%" stop-color="#69F0AE"/><stop offset="100%" stop-color="#05F090"/></linearGradient></defs>
-              <path d="M 10 60 A 45 45 0 0 1 100 60" fill="none" stroke="#141928" stroke-width="8" stroke-linecap="round"/>
-              <path id="gArc" d="M 10 60 A 45 45 0 0 1 100 60" fill="none" stroke="url(#fgg)" stroke-width="8" stroke-linecap="round" stroke-dasharray="142" stroke-dashoffset="71" style="transition:stroke-dashoffset 1.2s cubic-bezier(.22,1,.36,1)"/>
-            </svg>
-            <div class="fg-num" id="gVal">—</div>
-          </div>
-          <div class="fg-right">
-            <span class="fg-state" id="fgS">—</span>
-            <span class="fg-emoji" id="fgE">😐</span>
-            <div class="fg-bars" id="fgT"></div>
-          </div>
-        </div>
-        <div class="fg-upd" id="updInfo">—</div>
-      </div>
-
-      <!-- Winrate donut -->
-      <div class="wr-card au d3">
-        <div class="fg-header" style="margin-bottom:.75rem">Распределение сделок</div>
-        <div class="wr-inner">
-          <div class="wr-donut">
-            <canvas id="donutCanvas" width="80" height="80"></canvas>
-            <div class="wr-center">
-              <span class="wr-pct" id="wrPct" style="color:var(--G)">—</span>
-              <span class="wr-lbl2">WIN</span>
+      <div class="panel au d2">
+        <div class="panel-head">Страх &amp; Жадность</div>
+        <div class="panel-body">
+          <div class="fg-gauge-wrap">
+            <div class="fg-svg-wrap">
+              <svg viewBox="0 0 110 65" width="104" height="62">
+                <defs>
+                  <linearGradient id="fgg" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%"   stop-color="#EF5350"/>
+                    <stop offset="30%"  stop-color="#FF8A65"/>
+                    <stop offset="50%"  stop-color="#F7941D"/>
+                    <stop offset="70%"  stop-color="#66BB6A"/>
+                    <stop offset="100%" stop-color="#26A69A"/>
+                  </linearGradient>
+                </defs>
+                <path d="M 10 60 A 45 45 0 0 1 100 60" fill="none" stroke="#252930" stroke-width="7" stroke-linecap="round"/>
+                <path id="gArc" d="M 10 60 A 45 45 0 0 1 100 60" fill="none" stroke="url(#fgg)"
+                  stroke-width="7" stroke-linecap="round" stroke-dasharray="142" stroke-dashoffset="71"
+                  style="transition:stroke-dashoffset 1.2s cubic-bezier(.2,1,.3,1)"/>
+              </svg>
+              <div class="fg-num" id="gVal">—</div>
+            </div>
+            <div class="fg-right">
+              <span class="fg-state" id="fgS">—</span>
+              <span class="fg-emoji" id="fgE">😐</span>
+              <div class="fg-bars" id="fgT"></div>
             </div>
           </div>
-          <div class="wr-legend">
-            <div class="wr-legend-item"><div class="wr-dot" style="background:var(--G)"></div><span id="wrWins">— побед</span></div>
-            <div class="wr-legend-item"><div class="wr-dot" style="background:var(--R)"></div><span id="wrLoss">— потерь</span></div>
-            <div class="wr-legend-item"><div class="wr-dot" style="background:var(--text3)"></div><span id="wrOther">— нейтрально</span></div>
+          <div class="fg-upd" id="updInfo">—</div>
+        </div>
+      </div>
+
+      <!-- Winrate Donut -->
+      <div class="panel au d3">
+        <div class="panel-head">Распределение сделок</div>
+        <div class="panel-body">
+          <div class="wr-inner">
+            <div class="wr-donut">
+              <canvas id="donutCanvas" width="80" height="80"></canvas>
+              <div class="wr-center">
+                <span class="wr-pct" id="wrPct" style="color:var(--G)">—</span>
+                <span class="wr-lbl2">WIN</span>
+              </div>
+            </div>
+            <div class="wr-legend">
+              <div class="wr-legend-item"><div class="wr-dot" style="background:var(--G)"></div><span id="wrWins">— побед</span></div>
+              <div class="wr-legend-item"><div class="wr-dot" style="background:var(--R)"></div><span id="wrLoss">— потерь</span></div>
+              <div class="wr-legend-item"><div class="wr-dot" style="background:var(--t3)"></div><span id="wrOther">— нейтрально</span></div>
+            </div>
           </div>
         </div>
       </div>
 
-      <!-- Equity curve -->
-      <div class="equity-card au d4">
-        <div class="eq-head">
-          <span class="eq-title">Кривая эквити</span>
+      <!-- Equity Curve -->
+      <div class="panel au d4">
+        <div class="panel-head">
+          <span>Кривая эквити</span>
           <span class="eq-pnl" id="eqPnl">—</span>
         </div>
-        <canvas id="equityCanvas" style="width:100%;height:80px;display:block"></canvas>
-      </div>
-
-      <!-- Activity feed -->
-      <div class="activity-card au d5">
-        <div class="activity-head">Последние сделки</div>
-        <div class="activity-list" id="activityList">
-          <div class="empty-txt" style="text-align:center;padding:.5rem">Нет данных</div>
+        <div class="panel-body" style="padding:.5rem .875rem .625rem">
+          <canvas id="equityCanvas" style="width:100%;height:76px;display:block"></canvas>
         </div>
       </div>
-    </div>
 
-    <!-- CONTENT PANEL -->
+      <!-- Activity Feed -->
+      <div class="panel au d5 activity-card">
+        <div class="panel-head">Последние сделки</div>
+        <div class="activity-list" id="activityList">
+          <div class="empty-txt" style="text-align:center;padding:.5rem;font-size:.68rem;color:var(--t3)">Нет данных</div>
+        </div>
+      </div>
+
+    </div><!-- /sidebar -->
+
+    <!-- ── CONTENT PANEL ── -->
     <div class="content-panel au d3">
       <div class="tabs">
-        <button class="tab active" data-tab="signals">Сигналы <span class="tab-n" id="cS">0</span></button>
-        <button class="tab" data-tab="positions">Позиции <span class="tab-n" id="cP">0</span></button>
-        <button class="tab" data-tab="pending">Лимитки <span class="tab-n" id="cPe">0</span></button>
-        <button class="tab" data-tab="history">История <span class="tab-n" id="cH">0</span></button>
+        <button class="tab active" data-tab="signals">
+          Сигналы <span class="tab-n" id="cS">0</span>
+        </button>
+        <button class="tab" data-tab="positions">
+          Позиции <span class="tab-n" id="cP">0</span>
+        </button>
+        <button class="tab" data-tab="pending">
+          Лимитки <span class="tab-n" id="cPe">0</span>
+        </button>
+        <button class="tab" data-tab="history">
+          История <span class="tab-n" id="cH">0</span>
+        </button>
       </div>
       <div class="tab-body">
         <div id="signalsTab"   class="tab-pane grid-pane active"></div>
@@ -624,62 +1105,39 @@ main{position:relative;z-index:1;max-width:1920px;margin:0 auto;padding:1rem 1.2
         <div id="historyTab"   class="tab-pane"></div>
       </div>
     </div>
-  </div>
+
+  </div><!-- /mid-row -->
+
 </main>
 
 <script>
-// ── HELPERS ───────────────────────────────────────────────────────────────────
+// ── HELPERS ────────────────────────────────────────────────────────────────────
 function fmt(p){if(p===null||p===undefined||p==='')return'—';p=parseFloat(p);if(isNaN(p))return'—';if(p>=1000)return p.toLocaleString('ru-RU',{minimumFractionDigits:2,maximumFractionDigits:2});if(p>=1)return p.toFixed(2);if(p>=0.01)return p.toFixed(4);if(p>=0.0001)return p.toFixed(6);return p.toFixed(8)}
 function parseDt(iso){if(!iso)return null;try{var s=String(iso).trim().replace(' ','T');if(!/[zZ]|[+\-]\d{2}:\d{2}$/.test(s))s+='Z';var d=new Date(s);return isNaN(d.getTime())?null:d}catch(e){return null}}
 var serverTime=null;
 function fmtT(iso){if(!iso)return'—';var d=parseDt(iso);if(!d)return'—';var now=serverTime||new Date();var m=Math.max(0,Math.floor((now-d)/60000));var h=Math.floor(m/60),rm=m%60;if(m<1)return'только что';if(m<60)return m+'м назад';if(h<24)return h+'ч'+(rm?' '+rm+'м':'')+' назад';return d.toLocaleDateString('ru-RU',{month:'short',day:'numeric',hour:'2-digit',minute:'2-digit'})}
 function durStr(iso){if(!iso)return'';var d=parseDt(iso);if(!d)return'';var now=serverTime||new Date();var m=Math.max(0,Math.floor((now-d)/60000));var h=Math.floor(m/60),rm=m%60;if(m<1)return'<1м';return h>0?h+'ч '+rm+'м':m+'м'}
-function fgM(v){if(v<=25)return{c:'#FF1744',l:'Extreme Fear'};if(v<=45)return{c:'#FF7043',l:'Страх'};if(v<=55)return{c:'#FFB300',l:'Нейтрально'};if(v<=75)return{c:'#69F0AE',l:'Жадность'};return{c:'#05F090',l:'Extreme Greed'}}
+function fgM(v){if(v<=25)return{c:'#EF5350',l:'Extreme Fear'};if(v<=45)return{c:'#FF8A65',l:'Страх'};if(v<=55)return{c:'#F7941D',l:'Нейтрально'};if(v<=75)return{c:'#66BB6A',l:'Жадность'};return{c:'#26A69A',l:'Extreme Greed'}}
 function mlC(p){return p==null?'med':p<0.5?'low':p<0.7?'med':'hi'}
-function strGr(s){return s>=75?'linear-gradient(90deg,#05F090,#00C96B)':s>=50?'linear-gradient(90deg,#FFB300,#FF7043)':'linear-gradient(90deg,#FF1744,#CC0033)'}
+function strGr(s){return s>=75?'linear-gradient(90deg,#26A69A,#1D7D73)':s>=50?'linear-gradient(90deg,#F7941D,#E65100)':'linear-gradient(90deg,#EF5350,#C62828)'}
 function stLbl(s){var m={TP2:'ТП2',TP1:'ТП1',SL:'Стоп',SL_AFTER_TP1:'СЛ/ТП1',TIMEOUT:'Таймаут',EXPIRED:'Истёк',NOT_FILLED:'Не исп.',LIMIT_TIMEOUT:'Лимит',OPEN:'Открыта',TP1_HIT:'ТП1 хит',PENDING:'Ожидание',MANUAL:'Manual'};return m[s]||s}
 function stCls(s){if(s==='TP2')return'tp2';if(s==='TP1')return'tp1';if(s==='SL_AFTER_TP1')return'sltp1';if(s==='SL')return'sl';if(['TIMEOUT','EXPIRED','NOT_FILLED','LIMIT_TIMEOUT'].indexOf(s)!==-1)return'to';return'oth'}
 
-// ── TOAST SYSTEM ──────────────────────────────────────────────────────────────
-function showToast(type,icon,title,msg){
-  var c=document.getElementById('toastContainer');
-  var t=document.createElement('div');t.className='toast '+type;
-  t.innerHTML='<div class="toast-icon">'+icon+'</div><div class="toast-body"><div class="toast-title">'+title+'</div><div class="toast-msg">'+msg+'</div></div>';
-  c.appendChild(t);
-  t.addEventListener('click',function(){dismissToast(t)});
-  setTimeout(function(){dismissToast(t)},5000);
-}
+// ── TOAST ──────────────────────────────────────────────────────────────────────
+function showToast(type,icon,title,msg){var c=document.getElementById('toastContainer');var t=document.createElement('div');t.className='toast '+type;t.innerHTML='<div class="toast-icon">'+icon+'</div><div class="toast-body"><div class="toast-title">'+title+'</div><div class="toast-msg">'+msg+'</div></div>';c.appendChild(t);t.addEventListener('click',function(){dismissToast(t)});setTimeout(function(){dismissToast(t)},5000)}
 function dismissToast(t){t.classList.add('out');setTimeout(function(){if(t.parentNode)t.parentNode.removeChild(t)},300)}
 
-// ── SESSION ────────────────────────────────────────────────────────────────────
-function updateSession(){
-  var h=new Date().getUTCHours();
-  var sess={asia:(h>=0&&h<9)||(h>=23),eur:h>=7&&h<17,us:h>=13&&h<22};
-  ['Asia','Eur','US'].forEach(function(s,i){
-    var el=document.getElementById('sess'+s);
-    var on=[sess.asia,sess.eur,sess.us][i];
-    if(el)el.className='sess '+(on?'on':'off');
-  });
-}
+// ── SESSIONS ───────────────────────────────────────────────────────────────────
+function updateSession(){var h=new Date().getUTCHours();var sess={asia:(h>=0&&h<9)||(h>=23),eur:h>=7&&h<17,us:h>=13&&h<22};['Asia','Eur','US'].forEach(function(s,i){var el=document.getElementById('sess'+s);var on=[sess.asia,sess.eur,sess.us][i];if(el)el.className='sess '+(on?'on':'off')})}
 updateSession();setInterval(updateSession,60000);
 
-// ── TICKER TAPE ───────────────────────────────────────────────────────────────
+// ── TICKER TAPE ────────────────────────────────────────────────────────────────
 var tapeCoins=['BTCUSDT','ETHUSDT','BNBUSDT','SOLUSDT','XRPUSDT','DOGEUSDT'];
-var tapePrices={};  // {sym: {price, open24h, chg}}
+var tapePrices={};
 var tapeAnimX=0,tapeAnimPrev=null,tapeTrackW=0;
-
 function buildTapeHTML(){
   var items='';
-  tapeCoins.forEach(function(sym){
-    var d=tapePrices[sym]||{};
-    var price=d.price?fmt(d.price):'—';
-    var chg=d.chg;
-    var chgTxt=chg!=null?(chg>=0?'+':'')+chg.toFixed(2)+'%':'—';
-    var chgCls=chg==null?'neu':chg>0?'pos':'neg';
-    var shortSym=sym.replace('USDT','');
-    items+='<div class="tape-item"><span class="tape-sym">'+shortSym+'/USDT</span><span class="tape-price">'+price+'</span><span class="tape-chg '+chgCls+'">'+chgTxt+'</span></div>';
-  });
-  // Stats
+  tapeCoins.forEach(function(sym){var d=tapePrices[sym]||{};var price=d.price?fmt(d.price):'—';var chg=d.chg;var chgTxt=chg!=null?(chg>=0?'+':'')+chg.toFixed(2)+'%':'—';var chgCls=chg==null?'neu':chg>0?'pos':'neg';var shortSym=sym.replace('USDT','');items+='<div class="tape-item"><span class="tape-sym">'+shortSym+'/USDT</span><span class="tape-price">'+price+'</span><span class="tape-chg '+chgCls+'">'+chgTxt+'</span></div>'});
   var w=document.getElementById('statWR');var p=document.getElementById('statPnl');var op=document.getElementById('statPos');
   var wrTxt=w?w.textContent:'—';var pnlTxt=p?p.textContent:'—';var posTxt=op?op.textContent:'—';
   items+='<div class="tape-sep"><span class="tape-stat-lbl">ПОЗИЦИИ</span><span class="tape-stat-val" style="color:var(--B)">'+posTxt+'</span></div>';
@@ -687,140 +1145,84 @@ function buildTapeHTML(){
   items+='<div class="tape-sep"><span class="tape-stat-lbl">P&L</span><span class="tape-stat-val" style="color:'+(pnlTxt.startsWith('-')?'var(--R)':'var(--G)')+'">'+pnlTxt+'</span></div>';
   return items;
 }
+function renderTape(){var track=document.getElementById('tapeTrack');if(!track)return;var html=buildTapeHTML();track.innerHTML=html+html;tapeTrackW=track.scrollWidth/2}
+function animateTape(){var track=document.getElementById('tapeTrack');if(!track)return;var now=performance.now();var dt=tapeAnimPrev?now-tapeAnimPrev:16;tapeAnimPrev=now;tapeAnimX-=dt*0.05;if(tapeTrackW>0&&-tapeAnimX>=tapeTrackW)tapeAnimX=-tapeAnimX%(tapeTrackW);track.style.transform='translateX('+tapeAnimX+'px)';requestAnimationFrame(animateTape)}
+async function fetchTapePrice(sym){try{var r=await fetch('/api/klines?symbol='+sym+'&interval=1d&limit=2');if(!r.ok)return;var data=await r.json();if(!data||!data[0])return;var open24=parseFloat(data[0][1]);try{var r2=await fetch('/api/ticker?symbol='+sym);if(r2.ok){var td=await r2.json();if(td&&td.price){var cur=parseFloat(td.price);tapePrices[sym]={price:cur,open24:open24,chg:open24>0?(cur-open24)/open24*100:null};renderTape();return}}}catch(e){}var cur2=parseFloat(data[data.length-1][4]);tapePrices[sym]={price:cur2,open24:open24,chg:open24>0?(cur2-open24)/open24*100:null};renderTape()}catch(e){}}
+function refreshTapePrices(){tapeCoins.forEach(function(sym){fetchTapePrice(sym)})}
+renderTape();requestAnimationFrame(animateTape);refreshTapePrices();setInterval(refreshTapePrices,30000);
 
-function renderTape(){
-  var track=document.getElementById('tapeTrack');if(!track)return;
-  // Build double content for seamless loop
-  var html=buildTapeHTML();
-  track.innerHTML=html+html; // duplicate for seamless scroll
-  tapeTrackW=track.scrollWidth/2;
-}
-
-function animateTape(){
-  var track=document.getElementById('tapeTrack');if(!track)return;
-  var now=performance.now();
-  var dt=tapeAnimPrev?now-tapeAnimPrev:16;tapeAnimPrev=now;
-  tapeAnimX-=dt*0.055; // px/ms = speed
-  if(tapeTrackW>0&&-tapeAnimX>=tapeTrackW)tapeAnimX=-tapeAnimX%(tapeTrackW);
-  track.style.transform='translateX('+tapeAnimX+'px)';
-  requestAnimationFrame(animateTape);
-}
-
-async function fetchTapePrice(sym){
-  try{
-    // Get current price + 24h kline
-    var r=await fetch('/api/klines?symbol='+sym+'&interval=1d&limit=2');
-    if(!r.ok)return;
-    var data=await r.json();
-    if(!data||!data[0])return;
-    // data[0] = yesterday's candle (or today's open if only 1 returned)
-    var open24=parseFloat(data[0][1]);// open of yesterday
-    // Try to get current via ticker
-    try{
-      var r2=await fetch('/api/ticker?symbol='+sym);
-      if(r2.ok){var td=await r2.json();if(td&&td.price){var cur=parseFloat(td.price);tapePrices[sym]={price:cur,open24:open24,chg:open24>0?(cur-open24)/open24*100:null};renderTape();return}}
-    }catch(e){}
-    // fallback: use close of last candle
-    var cur2=parseFloat(data[data.length-1][4]);
-    tapePrices[sym]={price:cur2,open24:open24,chg:open24>0?(cur2-open24)/open24*100:null};
-    renderTape();
-  }catch(e){}
-}
-
-function refreshTapePrices(){
-  tapeCoins.forEach(function(sym){fetchTapePrice(sym)});
-}
-
-// Start tape
-renderTape();
-requestAnimationFrame(animateTape);
-refreshTapePrices();
-setInterval(refreshTapePrices,30000);
-
-// ── EQUITY ────────────────────────────────────────────────────────────────────
+// ── EQUITY CHART ───────────────────────────────────────────────────────────────
 function drawEquity(history){
   var c=document.getElementById('equityCanvas');if(!c)return;
-  var w=c.parentElement.clientWidth-32||248;
-  var DPR=window.devicePixelRatio||1;
-  c.width=w*DPR;c.height=80*DPR;c.style.width=w+'px';c.style.height='80px';
+  var w=c.parentElement.clientWidth-32||248;var DPR=window.devicePixelRatio||1;
+  c.width=w*DPR;c.height=76*DPR;c.style.width=w+'px';c.style.height='76px';
   var ctx=c.getContext('2d');ctx.scale(DPR,DPR);
-  if(!history||history.length<2){ctx.fillStyle='rgba(107,122,158,.2)';ctx.font='10px Fira Code,monospace';ctx.textAlign='center';ctx.fillText('Недостаточно данных',w/2,40);return}
+  if(!history||history.length<2){ctx.fillStyle='rgba(93,96,107,.3)';ctx.font='11px IBM Plex Mono,monospace';ctx.textAlign='center';ctx.fillText('Недостаточно данных',w/2,38);return}
   var pts=[0],cum=0;
   for(var i=history.length-1;i>=0;i--){var pv=parseFloat(history[i].pnl_pct)||0;cum+=pv;pts.push(cum)}
-  var mn=Math.min.apply(null,pts),mx=Math.max.apply(null,pts);
-  var rng=mx-mn;if(rng===0)rng=1;
-  var pad={t:6,b:6,l:2,r:2},cw=w-pad.l-pad.r,ch=80-pad.t-pad.b;
+  var mn=Math.min.apply(null,pts),mx=Math.max.apply(null,pts);var rng=mx-mn;if(rng===0)rng=1;
+  var pad={t:6,b:6,l:2,r:2},cw=w-pad.l-pad.r,ch=76-pad.t-pad.b;
   function px(i){return pad.l+i/(pts.length-1)*cw}
   function py(v){return pad.t+ch-(v-mn)/rng*ch}
   var isPos=pts[pts.length-1]>=0;
-  var gc=ctx.createLinearGradient(0,pad.t,0,80-pad.b);
-  gc.addColorStop(0,isPos?'rgba(5,240,144,.2)':'rgba(255,23,68,.2)');
-  gc.addColorStop(1,'rgba(0,0,0,0)');
-  ctx.beginPath();ctx.moveTo(px(0),py(pts[0]));
-  for(var j=1;j<pts.length;j++)ctx.lineTo(px(j),py(pts[j]));
-  ctx.lineTo(px(pts.length-1),80-pad.b);ctx.lineTo(px(0),80-pad.b);
-  ctx.closePath();ctx.fillStyle=gc;ctx.fill();
-  ctx.beginPath();ctx.moveTo(px(0),py(pts[0]));
-  for(var k=1;k<pts.length;k++)ctx.lineTo(px(k),py(pts[k]));
-  ctx.strokeStyle=isPos?'#05F090':'#FF1744';ctx.lineWidth=1.5;ctx.stroke();
-  if(mn<0&&mx>0){var zy=py(0);ctx.beginPath();ctx.moveTo(pad.l,zy);ctx.lineTo(w-pad.r,zy);ctx.strokeStyle='rgba(107,122,158,.25)';ctx.lineWidth=1;ctx.setLineDash([3,3]);ctx.stroke();ctx.setLineDash([])}
+  var gc=ctx.createLinearGradient(0,pad.t,0,76-pad.b);
+  gc.addColorStop(0,isPos?'rgba(38,166,154,.18)':'rgba(239,83,80,.18)');gc.addColorStop(1,'rgba(0,0,0,0)');
+  ctx.beginPath();ctx.moveTo(px(0),py(pts[0]));for(var j=1;j<pts.length;j++)ctx.lineTo(px(j),py(pts[j]));
+  ctx.lineTo(px(pts.length-1),76-pad.b);ctx.lineTo(px(0),76-pad.b);ctx.closePath();ctx.fillStyle=gc;ctx.fill();
+  ctx.beginPath();ctx.moveTo(px(0),py(pts[0]));for(var k=1;k<pts.length;k++)ctx.lineTo(px(k),py(pts[k]));
+  ctx.strokeStyle=isPos?'#26A69A':'#EF5350';ctx.lineWidth=1.5;ctx.stroke();
+  if(mn<0&&mx>0){var zy=py(0);ctx.beginPath();ctx.moveTo(pad.l,zy);ctx.lineTo(w-pad.r,zy);ctx.strokeStyle='rgba(93,96,107,.3)';ctx.lineWidth=1;ctx.setLineDash([3,4]);ctx.stroke();ctx.setLineDash([])}
   var ex=px(pts.length-1),ey=py(pts[pts.length-1]);
-  ctx.beginPath();ctx.arc(ex,ey,3,0,Math.PI*2);ctx.fillStyle=isPos?'#05F090':'#FF1744';ctx.fill();
-  ctx.beginPath();ctx.arc(ex,ey,6,0,Math.PI*2);ctx.fillStyle=isPos?'rgba(5,240,144,.2)':'rgba(255,23,68,.2)';ctx.fill();
+  ctx.beginPath();ctx.arc(ex,ey,3,0,Math.PI*2);ctx.fillStyle=isPos?'#26A69A':'#EF5350';ctx.fill();
+  ctx.beginPath();ctx.arc(ex,ey,6,0,Math.PI*2);ctx.fillStyle=isPos?'rgba(38,166,154,.2)':'rgba(239,83,80,.2)';ctx.fill();
 }
 
-// ── DONUT ─────────────────────────────────────────────────────────────────────
+// ── DONUT ──────────────────────────────────────────────────────────────────────
 function drawDonut(wins,losses,other){
   var c=document.getElementById('donutCanvas');if(!c)return;
   var ctx=c.getContext('2d');ctx.clearRect(0,0,80,80);
   var total=wins+losses+other;
-  if(total===0){ctx.beginPath();ctx.arc(40,40,30,0,Math.PI*2);ctx.strokeStyle='#1A2038';ctx.lineWidth=8;ctx.stroke();return}
-  var data=[[wins,'#05F090'],[losses,'#FF1744'],[other,'#3A4460']],start=-Math.PI/2;
-  data.forEach(function(d){if(!d[0])return;var arc=d[0]/total*Math.PI*2;ctx.beginPath();ctx.arc(40,40,30,start,start+arc);ctx.strokeStyle=d[1];ctx.lineWidth=8;ctx.lineCap='butt';ctx.stroke();start+=arc});
+  if(total===0){ctx.beginPath();ctx.arc(40,40,28,0,Math.PI*2);ctx.strokeStyle='#2A2E39';ctx.lineWidth=7;ctx.stroke();return}
+  var data=[[wins,'#26A69A'],[losses,'#EF5350'],[other,'#5D606B']],start=-Math.PI/2;
+  data.forEach(function(d){if(!d[0])return;var arc=d[0]/total*Math.PI*2;ctx.beginPath();ctx.arc(40,40,28,start,start+arc);ctx.strokeStyle=d[1];ctx.lineWidth=7;ctx.lineCap='butt';ctx.stroke();start+=arc});
 }
 
-// ── ACTIVITY FEED ─────────────────────────────────────────────────────────────
+// ── ACTIVITY FEED ──────────────────────────────────────────────────────────────
 function renderActivity(history){
   var list=document.getElementById('activityList');if(!list)return;
-  if(!history||!history.length){list.innerHTML='<div class="empty-txt" style="text-align:center;padding:.5rem">Нет данных</div>';return}
+  if(!history||!history.length){list.innerHTML='<div class="empty-txt" style="text-align:center;padding:.5rem;font-size:.68rem;color:var(--t3)">Нет данных</div>';return}
   var recent=history.slice(0,8);
   list.innerHTML=recent.map(function(x){
     var pnl=x.pnl_pct||0;var pc=pnl>0?'pos':'neg';
     var isWin=['TP2','TP1','SL_AFTER_TP1'].indexOf(x.status)!==-1;
-    var dotC=isWin?'#05F090':'#FF1744';
+    var dotC=isWin?'#26A69A':'#EF5350';
     return'<div class="act-item">'+
       '<div class="act-dot" style="background:'+dotC+'"></div>'+
       '<span class="act-sym">'+x.symbol+'</span>'+
-      '<span class="act-dir '+(x.direction==='LONG'?'long':'short')+'">'+(x.direction==='LONG'?'↑':'↓')+'</span>'+
+      '<span class="act-dir '+(x.direction==='LONG'?'long':'short')+'">'+(x.direction==='LONG'?'↑ L':'↓ S')+'</span>'+
       '<span class="act-stat">'+stLbl(x.status)+'</span>'+
-      '<span class="act-pnl '+pc+(pnl>=0?' pos':' neg')+'">'+(pnl>=0?'+':'')+pnl.toFixed(2)+'%</span>'+
-      '<span class="act-time" style="margin-left:.25rem">'+fmtT(x.closed_at)+'</span>'+
+      '<span class="act-pnl '+pc+'">'+(pnl>=0?'+':'')+pnl.toFixed(2)+'%</span>'+
+      '<span class="act-time" style="margin-left:.2rem">'+fmtT(x.closed_at)+'</span>'+
     '</div>'
   }).join('');
 }
 
-// ── MINI STATS ────────────────────────────────────────────────────────────────
+// ── MINI STATS ─────────────────────────────────────────────────────────────────
 function calcMiniStats(history){
   if(!history||!history.length)return;
   var pnls=history.map(function(x){return parseFloat(x.pnl_pct)||0});
   var best=Math.max.apply(null,pnls),worst=Math.min.apply(null,pnls);
   var wins=pnls.filter(function(p){return p>0});
   var avgWin=wins.length?wins.reduce(function(a,b){return a+b},0)/wins.length:0;
-  // Current streak
   var streak=0,streakType=null;
-  for(var i=0;i<history.length;i++){
-    var isW=['TP2','TP1','SL_AFTER_TP1'].indexOf(history[i].status)!==-1;
-    if(i===0){streakType=isW;streak=1}
-    else if(isW===streakType)streak++;
-    else break;
-  }
+  for(var i=0;i<history.length;i++){var isW=['TP2','TP1','SL_AFTER_TP1'].indexOf(history[i].status)!==-1;if(i===0){streakType=isW;streak=1}else if(isW===streakType)streak++;else break}
   var mB=document.getElementById('mBest');if(mB)mB.textContent=best>0?'+'+best.toFixed(2)+'%':best.toFixed(2)+'%';
   var mW=document.getElementById('mWorst');if(mW)mW.textContent=worst.toFixed(2)+'%';
   var mA=document.getElementById('mAvgWin');if(mA)mA.textContent=avgWin>0?'+'+avgWin.toFixed(2)+'%':'—';
   var mS=document.getElementById('mStreak');if(mS)mS.textContent=(streakType?'✅':'❌')+' × '+streak;
 }
 
-// ── PROGRESS BAR ─────────────────────────────────────────────────────────────
+// ── PROGRESS BAR ───────────────────────────────────────────────────────────────
 var scaleCache={};
 function buildPB(t,pnl,cur){
   var sl=t.sl_orig||t.sl,en=t.entry_orig||t.entry,tp1=t.tp1_orig||t.tp1,tp2=t.tp2_orig||t.tp2;
@@ -830,22 +1232,22 @@ function buildPB(t,pnl,cur){
   var rng=cached.max-cached.min;if(rng<=0)return'';
   function n(v){return Math.max(0,Math.min(100,(v-cached.min)/rng*100))}
   var pos=n(cur),t1p=n(tp1),enp=n(en);
-  var bc=pnl>1?'#05F090':pnl>0?'#69F0AE':pnl>-1?'#FFB300':'#FF1744';
-  var mc=pnl>=0?'#05F090':'#FF1744';
-  return'<div class="pb-labels"><span style="color:#FF1744">СЛ '+fmt(sl)+'</span><span>Вход '+fmt(en)+'</span><span style="color:#05F090">ТП2 '+fmt(tp2)+'</span></div>'+
-    '<div class="pb-track"><div class="pb-fill" style="width:'+pos+'%;background:linear-gradient(90deg,rgba(255,23,68,.2),'+bc+')"></div>'+
+  var bc=pnl>1?'#26A69A':pnl>0?'#66BB6A':pnl>-1?'#F7941D':'#EF5350';
+  var mc=pnl>=0?'#26A69A':'#EF5350';
+  return'<div class="pb-labels"><span style="color:#EF5350">СЛ '+fmt(sl)+'</span><span>'+fmt(en)+'</span><span style="color:#26A69A">ТП2 '+fmt(tp2)+'</span></div>'+
+    '<div class="pb-track"><div class="pb-fill" style="width:'+pos+'%;background:linear-gradient(90deg,rgba(239,83,80,.15),'+bc+')"></div>'+
     '<div class="pb-tp1" style="left:'+t1p+'%"></div>'+
     '<div class="pb-entry" style="left:'+enp+'%"></div>'+
-    '<div class="pb-marker" style="left:'+pos+'%;background:'+mc+';box-shadow:0 0 6px '+mc+'"></div></div>'
+    '<div class="pb-marker" style="left:'+pos+'%;background:'+mc+';box-shadow:0 0 5px '+mc+'"></div></div>'
 }
 
-// ── RENDER ────────────────────────────────────────────────────────────────────
+// ── RENDER CARDS ──────────────────────────────────────────────────────────────
 function rSig(s){
   var wp=s.win_prob!=null?s.win_prob:null,mc=mlC(wp),isL=s.direction==='LONG',str=s.strength||0;
   var h='<div class="sig-c au">';
   h+='<div class="sig-top"><span class="sig-sym">'+s.symbol+'</span><span class="dir-pill '+(isL?'long':'short')+'">'+(isL?'↑ LONG':'↓ SHORT')+'</span></div>';
   h+='<div class="lvl-grid"><div class="lvl"><span class="lvl-l">Вход</span><span class="lvl-v en">'+fmt(s.entry)+'</span></div><div class="lvl"><span class="lvl-l">ТП1</span><span class="lvl-v tp">'+fmt(s.tp1)+'</span></div><div class="lvl"><span class="lvl-l">ТП2</span><span class="lvl-v tp">'+fmt(s.tp2)+'</span></div><div class="lvl"><span class="lvl-l">СЛ</span><span class="lvl-v sl">'+fmt(s.sl)+'</span></div></div>';
-  h+='<div class="str-row"><div class="str-top"><span class="str-l">Сила</span><span class="str-v">'+str+'%</span></div><div class="str-bar"><div class="str-fill" style="width:'+str+'%;background:'+strGr(str)+'"></div></div></div>';
+  h+='<div class="str-row"><div class="str-top"><span class="str-l">Сила сигнала</span><span class="str-v">'+str+'%</span></div><div class="str-bar"><div class="str-fill" style="width:'+str+'%;background:'+strGr(str)+'"></div></div></div>';
   h+='<div class="sig-foot">'+(wp!=null?'<span class="ml-pill '+mc+'">🧠 '+Math.round(wp*100)+'%</span>':'<span class="ml-pill med">🧠 —</span>')+'<span class="sig-t">'+fmtT(s.created_at)+'</span></div>';
   if(s.reasons&&s.reasons.length){h+='<div class="tags">';for(var j=0;j<Math.min(4,s.reasons.length);j++)h+='<span class="tag">'+s.reasons[j]+'</span>';h+='</div>'}
   return h+'</div>'
@@ -858,8 +1260,8 @@ function rPos(t){
   var pr=pnl>0.01,isN=Math.abs(pnl)<0.01,pc=pr?'pos':isN?'ne':'neg';
   var isL=t.direction==='LONG',sc=t.status==='TP1_HIT'?'tp1':t.status==='PENDING'?'pend':'open';
   var h='<div class="pos-c '+(pr?'profit':isN?'neu':'loss')+'" id="pos-'+(t.id||t.symbol)+'">';
-  h+='<div class="pos-top"><div class="pos-sym-row"><span class="pos-sym">'+t.symbol+'</span><span class="pos-live-p live-cur" style="font-size:.85rem;font-weight:600;color:var(--B)">'+(lP!=null?fmt(lP):'—')+'</span></div><span class="dir-pill '+(isL?'long':'short')+'">'+(isL?'↑ LONG':'↓ SHORT')+'</span></div>';
-  h+='<div class="pos-pnl '+pc+(pr?' glow':'')+'">'+(pnl>=0?'+':'')+pnl.toFixed(2)+'%</div>';
+  h+='<div class="pos-top"><div class="pos-sym-row"><span class="pos-sym">'+t.symbol+'</span><span class="pos-live-p live-cur" style="font-size:.82rem;font-weight:600;color:var(--B)">'+(lP!=null?fmt(lP):'—')+'</span></div><span class="dir-pill '+(isL?'long':'short')+'">'+(isL?'↑ LONG':'↓ SHORT')+'</span></div>';
+  h+='<div class="pos-pnl '+pc+'">'+(pnl>=0?'+':'')+pnl.toFixed(2)+'%</div>';
   h+='<div class="pos-lvls"><div class="lvl"><span class="lvl-l">Вход</span><span class="lvl-v en">'+fmt(t.entry)+'</span></div><div class="lvl"><span class="lvl-l">ТП1</span><span class="lvl-v tp">'+fmt(t.tp1)+'</span></div><div class="lvl"><span class="lvl-l">ТП2</span><span class="lvl-v tp">'+fmt(t.tp2)+'</span></div><div class="lvl"><span class="lvl-l">СЛ</span><span class="lvl-v sl">'+fmt(t.sl)+'</span></div></div>';
   h+='<div class="pb-wrap">'+buildPB(t,pnl,lP!=null?lP:t.entry)+'</div>';
   h+='<div class="pos-foot"><span class="pos-stat '+sc+'">'+stLbl(t.status)+'</span><span class="pos-dur live-dur">'+(t.status!=='PENDING'?'⏱ '+durStr(t.taken_at):'')+'</span><span class="pos-ago live-ago">'+fmtT(t.taken_at)+'</span></div>';
@@ -870,20 +1272,19 @@ function rHist(h){
   if(!h||!h.length)return'<div class="empty"><div class="empty-ico">📋</div><div class="empty-txt">Нет истории</div></div>';
   var out='<div class="hist-wrap"><table class="hist-table"><thead><tr><th>Пара</th><th>Напр.</th><th>Вход</th><th>Закрыто</th><th>P&L</th><th>Статус</th><th>Время</th></tr></thead><tbody>';
   for(var i=0;i<h.length;i++){var x=h[i];var pnl=x.pnl_pct||0;var pc=pnl>0?'pos':pnl<0?'neg':'ne';
-  out+='<tr><td><span class="h-sym">'+x.symbol+'</span></td><td><span class="h-dir '+(x.direction==='LONG'?'long':'short')+'">'+(x.direction==='LONG'?'↑ Лонг':'↓ Шорт')+'</span></td><td class="h-price">'+fmt(x.entry)+'</td><td class="h-price">'+fmt(x.close_price)+'</td><td><span class="h-pnl '+pc+'">'+(pnl>=0?'+':'')+pnl.toFixed(2)+'%</span></td><td><span class="h-stat '+stCls(x.status)+'">'+stLbl(x.status)+'</span></td><td class="h-time">'+fmtT(x.closed_at)+'</td></tr>'}
+    out+='<tr><td><span class="h-sym">'+x.symbol+'</span></td><td><span class="h-dir '+(x.direction==='LONG'?'long':'short')+'">'+(x.direction==='LONG'?'↑ Лонг':'↓ Шорт')+'</span></td><td class="h-price">'+fmt(x.entry)+'</td><td class="h-price">'+fmt(x.close_price)+'</td><td><span class="h-pnl '+pc+'">'+(pnl>=0?'+':'')+pnl.toFixed(2)+'%</span></td><td><span class="h-stat '+stCls(x.status)+'">'+stLbl(x.status)+'</span></td><td class="h-time">'+fmtT(x.closed_at)+'</td></tr>'}
   return out+'</tbody></table></div>'
 }
 function rEmpty(m){return'<div class="empty"><div class="empty-ico">◉</div><div class="empty-txt">'+m+'</div></div>'}
-function rFgBars(v){var s=[0,25,50,75,100],h='';s.forEach(function(t,i){var m=fgM(t),a=v>=t;h+='<div class="fg-bar" style="height:'+(14+i*5)+'px;background:'+m.c+';opacity:'+(a?1:.12)+';box-shadow:'+(a?'0 0 6px '+m.c+'60':'none')+'"></div>'});return h}
+function rFgBars(v){var s=[0,25,50,75,100],h='';s.forEach(function(t,i){var m=fgM(t),a=v>=t;h+='<div class="fg-bar" style="height:'+(12+i*5)+'px;background:'+m.c+';opacity:'+(a?1:.1)+';box-shadow:'+(a?'0 0 4px '+m.c+'60':'none')+'"></div>'});return h}
 
-// ── STATE ─────────────────────────────────────────────────────────────────────
+// ── STATE ──────────────────────────────────────────────────────────────────────
 var appData=null,activeTab='signals',livePrices={},openTradesCache=[],prevHistLen=0;
 
 function updateUI(d){
   appData=d;
   if(d.updated_at)serverTime=parseDt(d.updated_at)||new Date();
 
-  // BTC in header
   var btcSig=(d.signals||[]).find(function(s){return s.symbol==='BTCUSDT'});
   if(btcSig){document.getElementById('btcPrice').textContent='$'+fmt(btcSig.entry)}else fetchBTC2();
 
@@ -911,7 +1312,7 @@ function updateUI(d){
   var fgSEl=document.getElementById('fgS');fgSEl.textContent=fg.label||fgm.l;fgSEl.style.color=fgm.c;
   document.getElementById('fgE').textContent=fg.emoji||'😐';
   document.getElementById('fgT').innerHTML=rFgBars(fg.value);
-  if(d.updated_at)document.getElementById('updInfo').textContent='Обновлено: '+fmtT(d.updated_at);
+  if(d.updated_at)document.getElementById('updInfo').textContent='Обн.: '+fmtT(d.updated_at);
 
   // ML
   var ml=d.ml_info||{};
@@ -922,20 +1323,13 @@ function updateUI(d){
   var auto=d.settings&&d.settings.auto_take;
   var ab=document.getElementById('autoBadge');ab.textContent=auto?'🤖 АВТО':'👤 РУЧНОЙ';ab.className='mode-btn '+(auto?'auto':'manual');
 
-  // Equity PnL label
+  // Equity label
   var eqPnlEl=document.getElementById('eqPnl');if(eqPnlEl){eqPnlEl.textContent=(pnl>=0?'+':'')+pnl.toFixed(2)+'%';eqPnlEl.style.color=pnl>=0?'var(--G)':'var(--R)'}
 
   var hist=d.trades_history||[];
 
-  // Toast: new closed trade
-  if(prevHistLen>0&&hist.length>prevHistLen){
-    var newest=hist[0];var npnl=newest.pnl_pct||0;var isW=['TP2','TP1','SL_AFTER_TP1'].indexOf(newest.status)!==-1;
-    showToast(isW?'win':'loss',isW?'✅':'❌',newest.symbol+' '+(newest.direction==='LONG'?'↑ LONG':'↓ SHORT'),stLbl(newest.status)+' · '+(npnl>=0?'+':'')+npnl.toFixed(2)+'%');
-  }
-  // Toast: new signal
-  if(appData&&d.signals&&appData.signals&&d.signals.length>appData.signals.length){
-    var ns=d.signals[0];showToast('info','📡',ns.symbol+' '+(ns.direction==='LONG'?'↑ LONG':'↓ SHORT'),'Новый сигнал · Сила '+( ns.strength||0)+'%');
-  }
+  if(prevHistLen>0&&hist.length>prevHistLen){var newest=hist[0];var npnl=newest.pnl_pct||0;var isW=['TP2','TP1','SL_AFTER_TP1'].indexOf(newest.status)!==-1;showToast(isW?'win':'loss',isW?'✅':'❌',newest.symbol+' '+(newest.direction==='LONG'?'↑ LONG':'↓ SHORT'),stLbl(newest.status)+' · '+(npnl>=0?'+':'')+npnl.toFixed(2)+'%')}
+  if(appData&&d.signals&&appData.signals&&d.signals.length>appData.signals.length){var ns=d.signals[0];showToast('info','📡',ns.symbol+' '+(ns.direction==='LONG'?'↑ LONG':'↓ SHORT'),'Новый сигнал · Сила '+(ns.strength||0)+'%')}
   prevHistLen=hist.length;
 
   // Donut
@@ -947,11 +1341,7 @@ function updateUI(d){
   var wrL=document.getElementById('wrLoss');if(wrL)wrL.textContent=slc+' потерь';
   var wrO=document.getElementById('wrOther');if(wrO)wrO.textContent=otc+' нейтрально';
 
-  drawEquity(hist);
-  renderActivity(hist);
-  calcMiniStats(hist);
-
-  // Refresh tape stats
+  drawEquity(hist);renderActivity(hist);calcMiniStats(hist);
   setTimeout(function(){renderTape()},100);
 
   var sigs=d.signals||[],allT=d.trades_open||[];
@@ -975,13 +1365,12 @@ function renderTab(sigs,opens,pends,hist){
   tab.innerHTML=h;
 }
 
-// ── LIVE PRICES ───────────────────────────────────────────────────────────────
+// ── LIVE PRICES ────────────────────────────────────────────────────────────────
 var pricesIF=false;
 function fetchLP(){
   if(pricesIF)return;
   var syms=[];
   openTradesCache.forEach(function(t){if(syms.indexOf(t.symbol)===-1)syms.push(t.symbol)});
-  // Добавляем pending тоже
   if(appData){(appData.trades_open||[]).forEach(function(t){if(syms.indexOf(t.symbol)===-1)syms.push(t.symbol)})}
   if(!syms.length)return;
   pricesIF=true;
@@ -989,25 +1378,12 @@ function fetchLP(){
     .then(function(r){return r.ok?r.json():null})
     .then(function(d){
       if(!d)return;
-      // Один символ
-      if(d.symbol&&d.price){
-        var p=parseFloat(d.price);
-        if(!isNaN(p)&&p>0)livePrices[d.symbol]=p;
-      }
-      // Несколько символов
-      if(d.prices){
-        for(var s in d.prices){
-          if(Object.prototype.hasOwnProperty.call(d.prices,s)){
-            var p=parseFloat(d.prices[s]);
-            if(!isNaN(p)&&p>0)livePrices[s]=p;
-          }
-        }
-      }
+      if(d.symbol&&d.price){var p=parseFloat(d.price);if(!isNaN(p)&&p>0)livePrices[d.symbol]=p}
+      if(d.prices){for(var s in d.prices){if(Object.prototype.hasOwnProperty.call(d.prices,s)){var p=parseFloat(d.prices[s]);if(!isNaN(p)&&p>0)livePrices[s]=p}}}
       patchCards();
-    })
-    ['catch'](function(){})
-    .finally(function(){pricesIF=false});
+    })['catch'](function(){}).finally(function(){pricesIF=false});
 }
+
 function patchCards(){
   openTradesCache.forEach(function(t){
     var card=document.getElementById('pos-'+(t.id||t.symbol));if(!card)return;
@@ -1024,14 +1400,14 @@ function patchCards(){
     var rng=cached.max-cached.min;if(rng<=0)return;
     function n(v){return Math.max(0,Math.min(100,(v-cached.min)/rng*100))}
     var cp=n(lP),t1p=n(t.tp1_orig||t.tp1);
-    var bc=pnl>1?'#05F090':pnl>0?'#69F0AE':pnl>-1?'#FFB300':'#FF1744';var mc=pnl>=0?'#05F090':'#FF1744';
-    var fill=card.querySelector('.pb-fill');if(fill){fill.style.width=cp+'%';fill.style.background='linear-gradient(90deg,rgba(255,23,68,.2),'+bc+')'}
+    var bc=pnl>1?'#26A69A':pnl>0?'#66BB6A':pnl>-1?'#F7941D':'#EF5350';var mc=pnl>=0?'#26A69A':'#EF5350';
+    var fill=card.querySelector('.pb-fill');if(fill){fill.style.width=cp+'%';fill.style.background='linear-gradient(90deg,rgba(239,83,80,.15),'+bc+')'}
     var t1l=card.querySelector('.pb-tp1');if(t1l)t1l.style.left=t1p+'%';
-    var mkr=card.querySelector('.pb-marker');if(mkr){mkr.style.left=cp+'%';mkr.style.background=mc;mkr.style.boxShadow='0 0 6px '+mc}
+    var mkr=card.querySelector('.pb-marker');if(mkr){mkr.style.left=cp+'%;';mkr.style.background=mc;mkr.style.boxShadow='0 0 5px '+mc}
   })
 }
 
-// ── WS + REST ─────────────────────────────────────────────────────────────────
+// ── WS + REST ──────────────────────────────────────────────────────────────────
 var ws=null,wsPT=null,wsRM=1000,wsRT=null,wsLM=0,restIF=false,btcIF=false;
 function setConn(c){var dot=document.getElementById('statusDot'),txt=document.getElementById('statusText');if(c){dot.className='live-dot on';txt.className='live-txt on';txt.textContent='LIVE'}else{dot.className='live-dot off';txt.className='live-txt off';txt.textContent='Переподключение...'}}
 function connectWS(){
@@ -1052,7 +1428,7 @@ function fetchBTC2(){
   })['catch'](function(){}).finally(function(){btcIF=false})
 }
 
-// ── TABS ──────────────────────────────────────────────────────────────────────
+// ── TABS ───────────────────────────────────────────────────────────────────────
 document.querySelectorAll('.tab').forEach(function(btn){
   btn.addEventListener('click',function(){
     document.querySelectorAll('.tab').forEach(function(b){b.classList.remove('active')});
@@ -1061,36 +1437,31 @@ document.querySelectorAll('.tab').forEach(function(btn){
   })
 });
 
-// ── SCAN COUNTDOWN TIMER ──────────────────────────────────────────────────────
+// ── SCAN TIMER ─────────────────────────────────────────────────────────────────
 var scanInterval=60,scanLastStart=Date.now();
 function updateScanTimer(){
   var elapsed=Math.floor((Date.now()-scanLastStart)/1000)%scanInterval;
   var remaining=scanInterval-elapsed;
   var pct=remaining/scanInterval;
-  var arc=69.1*(1-pct);
+  var arc=62.8*(1-pct);
   var arcEl=document.getElementById('scanArc');
   if(arcEl)arcEl.setAttribute('stroke-dashoffset',arc);
-  var secEl=document.getElementById('scanSec');
-  if(secEl)secEl.textContent=remaining+'s';
-  var lblEl=document.getElementById('scanLabel');
-  if(lblEl)lblEl.textContent=remaining+'с';
+  var secEl=document.getElementById('scanSec');if(secEl)secEl.textContent=remaining+'s';
+  var lblEl=document.getElementById('scanLabel');if(lblEl)lblEl.textContent=remaining+'с';
 }
-setInterval(updateScanTimer,1000);
-updateScanTimer();
+setInterval(updateScanTimer,1000);updateScanTimer();
 
-// ── SOUND ─────────────────────────────────────────────────────────────────────
+// ── SOUND ──────────────────────────────────────────────────────────────────────
 var soundOn=false;
 function toggleSound(){
   soundOn=!soundOn;
   var btn=document.getElementById('soundBtn');
-  if(btn){btn.textContent=soundOn?'🔊':'🔇';btn.className='sound-btn'+(soundOn?' on':'')}
+  if(btn){btn.textContent=soundOn?'🔊':'🔇';btn.className='icon-btn'+(soundOn?' on':'')}
 }
 function playSound(type){
   if(!soundOn)return;
   try{
-    var ctx=new(window.AudioContext||window.webkitAudioContext)();
-    var o=ctx.createOscillator(),g=ctx.createGain();
-    o.connect(g);g.connect(ctx.destination);
+    var ctx=new(window.AudioContext||window.webkitAudioContext)();var o=ctx.createOscillator(),g=ctx.createGain();o.connect(g);g.connect(ctx.destination);
     if(type==='win'){o.frequency.setValueAtTime(523,ctx.currentTime);o.frequency.setValueAtTime(659,ctx.currentTime+.1);o.frequency.setValueAtTime(784,ctx.currentTime+.2);g.gain.setValueAtTime(.15,ctx.currentTime);g.gain.exponentialRampToValueAtTime(.001,ctx.currentTime+.5)}
     else if(type==='loss'){o.frequency.setValueAtTime(300,ctx.currentTime);o.frequency.setValueAtTime(220,ctx.currentTime+.2);g.gain.setValueAtTime(.15,ctx.currentTime);g.gain.exponentialRampToValueAtTime(.001,ctx.currentTime+.4)}
     else{o.frequency.setValueAtTime(800,ctx.currentTime);g.gain.setValueAtTime(.08,ctx.currentTime);g.gain.exponentialRampToValueAtTime(.001,ctx.currentTime+.2)}
@@ -1098,11 +1469,8 @@ function playSound(type){
   }catch(e){}
 }
 
-// ── KEYBOARD SHORTCUTS ────────────────────────────────────────────────────────
-function toggleKB(){
-  var el=document.getElementById('kbOverlay');
-  if(el)el.classList.toggle('show');
-}
+// ── KEYBOARD ───────────────────────────────────────────────────────────────────
+function toggleKB(){var el=document.getElementById('kbOverlay');if(el)el.classList.toggle('show')}
 document.addEventListener('keydown',function(e){
   if(e.target.tagName==='INPUT'||e.target.tagName==='TEXTAREA')return;
   var key=e.key.toLowerCase();
@@ -1115,150 +1483,111 @@ document.addEventListener('keydown',function(e){
   else if(key==='?'||key==='/')toggleKB();
 });
 function switchTab(name){
-  document.querySelectorAll('.tab').forEach(function(b){
-    b.classList.remove('active');
-    if(b.dataset.tab===name)b.classList.add('active');
-  });
+  document.querySelectorAll('.tab').forEach(function(b){b.classList.remove('active');if(b.dataset.tab===name)b.classList.add('active')});
   activeTab=name;
   if(appData){var a=appData.trades_open||[];renderTab(appData.signals||[],a.filter(function(t){return['OPEN','TP1_HIT'].indexOf(t.status)!==-1}),a.filter(function(t){return t.status==='PENDING'}),appData.trades_history||[])}
 }
 
-// ── MARKET REGIME ─────────────────────────────────────────────────────────────
+// ── REGIME ─────────────────────────────────────────────────────────────────────
 function updateRegime(regime){
-  var el=document.getElementById('regimeBadge');
-  if(!el)return;
+  var el=document.getElementById('regimeBadge');if(!el)return;
   var labels={bull:'● BULL',bear:'● BEAR',flat:'● FLAT',fear_bull:'● СТРАХ/BULL',greed_bear:'● ЖАДНОСТЬ/BEAR'};
   el.textContent=labels[regime]||('● '+(regime||'FLAT').toUpperCase());
   el.className='regime-badge '+(regime||'flat');
 }
 
-// ── PRICE FLASH ───────────────────────────────────────────────────────────────
-var prevPrices={};
-function flashPrice(el,newVal,oldVal){
-  if(!el||oldVal===undefined)return;
-  if(newVal>oldVal){el.classList.remove('flash-r');void el.offsetWidth;el.classList.add('flash-g')}
-  else if(newVal<oldVal){el.classList.remove('flash-g');void el.offsetWidth;el.classList.add('flash-r')}
-  setTimeout(function(){el.classList.remove('flash-g','flash-r')},600);
-}
-
-// ── BTC CANDLESTICK CHART ─────────────────────────────────────────────────────
+// ── BTC CANDLESTICK ────────────────────────────────────────────────────────────
 var btcCandles=[];
 function drawBTCCandles(candles){
   var c=document.getElementById('btcCandleCanvas');if(!c)return;
-  var w=c.parentElement.clientWidth-32||248;
-  var DPR=window.devicePixelRatio||1;
-  c.width=w*DPR;c.height=80*DPR;c.style.width=w+'px';c.style.height='80px';
+  var w=c.parentElement.clientWidth-32||240;var DPR=window.devicePixelRatio||1;
+  c.width=w*DPR;c.height=76*DPR;c.style.width=w+'px';c.style.height='76px';
   var ctx=c.getContext('2d');ctx.scale(DPR,DPR);
   if(!candles||candles.length<2)return;
   var data=candles.slice(-40);
-  var highs=data.map(function(d){return d[2]});
-  var lows=data.map(function(d){return d[3]});
-  var mn=Math.min.apply(null,lows),mx=Math.max.apply(null,highs);
-  var rng=mx-mn;if(rng===0)rng=1;
-  var pad={t:4,b:4,l:2,r:2};
-  var cw=w-pad.l-pad.r,ch=80-pad.t-pad.b;
-  var cWidth=Math.max(2,(cw/data.length)-1);
+  var highs=data.map(function(d){return d[2]});var lows=data.map(function(d){return d[3]});
+  var mn=Math.min.apply(null,lows),mx=Math.max.apply(null,highs);var rng=mx-mn;if(rng===0)rng=1;
+  var pad={t:4,b:4,l:2,r:2};var cw=w-pad.l-pad.r,ch=76-pad.t-pad.b;
+  var cWidth=Math.max(1.5,(cw/data.length)-1);
   function py(v){return pad.t+ch-(v-mn)/rng*ch}
   data.forEach(function(d,i){
-    var o=parseFloat(d[1]),h=parseFloat(d[2]),l=parseFloat(d[3]),cl=parseFloat(d[4]);
-    var isG=cl>=o;var color=isG?'#05F090':'#FF1744';
+    var o=parseFloat(d[1]),h2=parseFloat(d[2]),l=parseFloat(d[3]),cl=parseFloat(d[4]);
+    var isG=cl>=o;
     var x=pad.l+i*(cw/data.length)+cWidth/2;
-    // Wick
-    ctx.beginPath();ctx.moveTo(x,py(h));ctx.lineTo(x,py(l));
-    ctx.strokeStyle=isG?'rgba(5,240,144,.5)':'rgba(255,23,68,.5)';ctx.lineWidth=1;ctx.stroke();
-    // Body
+    ctx.beginPath();ctx.moveTo(x,py(h2));ctx.lineTo(x,py(l));
+    ctx.strokeStyle=isG?'rgba(38,166,154,.5)':'rgba(239,83,80,.5)';ctx.lineWidth=1;ctx.stroke();
     var bTop=py(Math.max(o,cl)),bBot=py(Math.min(o,cl)),bH=Math.max(1,bBot-bTop);
-    ctx.fillStyle=color;
-    ctx.fillRect(x-cWidth/2,bTop,cWidth,bH);
+    ctx.fillStyle=isG?'#26A69A':'#EF5350';ctx.fillRect(x-cWidth/2,bTop,cWidth,bH);
   });
-  // Last price line
   var lastClose=parseFloat(data[data.length-1][4]);
   var lpy=py(lastClose);
   var isUp=lastClose>=parseFloat(data[data.length-1][1]);
-  ctx.beginPath();ctx.setLineDash([3,3]);
+  ctx.beginPath();ctx.setLineDash([3,4]);
   ctx.moveTo(pad.l,lpy);ctx.lineTo(w-pad.r,lpy);
-  ctx.strokeStyle=isUp?'rgba(5,240,144,.4)':'rgba(255,23,68,.4)';ctx.lineWidth=1;ctx.stroke();
+  ctx.strokeStyle=isUp?'rgba(38,166,154,.35)':'rgba(239,83,80,.35)';ctx.lineWidth=1;ctx.stroke();
   ctx.setLineDash([]);
 }
-
 async function fetchBTCChart(){
   try{
     var r=await fetch('/api/klines?symbol=BTCUSDT&interval=15m&limit=40');
-    if(!r.ok)return;
-    var data=await r.json();
-    if(!data||!data.length)return;
-    btcCandles=data;
-    drawBTCCandles(data);
-    var last=data[data.length-1];
-    var cl=parseFloat(last[4]),op=parseFloat(data[0][1]);
+    if(!r.ok)return;var data=await r.json();if(!data||!data.length)return;
+    btcCandles=data;drawBTCCandles(data);
+    var last=data[data.length-1];var cl=parseFloat(last[4]),op=parseFloat(data[0][1]);
     var chgPct=(cl-op)/op*100;
-    var prEl=document.getElementById('btcChartPrice');
-    var chEl=document.getElementById('btcChartChg');
+    var prEl=document.getElementById('btcChartPrice');var chEl=document.getElementById('btcChartChg');
     if(prEl)prEl.textContent='$'+fmt(cl);
     if(chEl){chEl.textContent=(chgPct>=0?'+':'')+chgPct.toFixed(2)+'%';chEl.className='btc-chart-chg '+(chgPct>=0?'pos':'neg')}
   }catch(e){}
 }
 
-// ── FUNDING TIMER ─────────────────────────────────────────────────────────────
+// ── FUNDING ────────────────────────────────────────────────────────────────────
 function updateFundingDisplay(){
-  var now=new Date();
-  var h=now.getUTCHours(),m=now.getUTCMinutes(),s=now.getUTCSeconds();
-  var fundingHours=[0,8,16];
-  var nextH=fundingHours.find(function(fh){return fh>h});
+  var now=new Date();var h=now.getUTCHours(),m=now.getUTCMinutes(),s=now.getUTCSeconds();
+  var fundingHours=[0,8,16];var nextH=fundingHours.find(function(fh){return fh>h});
   if(nextH===undefined)nextH=fundingHours[0]+24;
   var totalSecToFunding=((nextH-h-1)*3600)+((60-m-1)*60)+(60-s);
   var totalSecInPeriod=8*3600;
   var pct=Math.max(0,Math.min(100,(1-totalSecToFunding/totalSecInPeriod)*100));
-  var rh=Math.floor(totalSecToFunding/3600);
-  var rm=Math.floor((totalSecToFunding%3600)/60);
-  var rs=totalSecToFunding%60;
+  var rh=Math.floor(totalSecToFunding/3600),rm=Math.floor((totalSecToFunding%3600)/60),rs=totalSecToFunding%60;
   var timeStr=(rh>0?rh+'ч ':'')+rm+'м '+rs+'с';
   var ftEl=document.getElementById('fundTime');if(ftEl)ftEl.textContent=timeStr;
-  var fbEl=document.getElementById('fundBar');if(fbEl)fbEl.style.width=pct+'%';
-  // Color bar based on time left
-  if(fbEl){
-    if(totalSecToFunding<1800)fbEl.style.background='linear-gradient(90deg,var(--R),#FF7043)';
-    else if(totalSecToFunding<3600)fbEl.style.background='linear-gradient(90deg,var(--A),var(--G))';
-    else fbEl.style.background='linear-gradient(90deg,var(--G),var(--A))';
+  var fbEl=document.getElementById('fundBar');if(fbEl){fbEl.style.width=pct+'%';
+    if(totalSecToFunding<1800)fbEl.style.background='linear-gradient(90deg,#EF5350,#FF8A65)';
+    else if(totalSecToFunding<3600)fbEl.style.background='linear-gradient(90deg,#F7941D,#26A69A)';
+    else fbEl.style.background='linear-gradient(90deg,#26A69A,#F7941D)';
   }
 }
-setInterval(updateFundingDisplay,1000);
-updateFundingDisplay();
+setInterval(updateFundingDisplay,1000);updateFundingDisplay();
 
-// Hook into updateUI to update regime and play sounds
+// ── UPDATE UI HOOK ─────────────────────────────────────────────────────────────
 var _origUpdateUI=updateUI;
 updateUI=function(d){
   var prevSigCount=appData?(appData.signals||[]).length:0;
   var prevHistLen2=appData?(appData.trades_history||[]).length:0;
   _origUpdateUI(d);
-  // Regime from ml_info or context
   var regime=null;
-  if(d.trades_history&&d.trades_history.length&&d.trades_history[0].market_regime){
-    regime=d.trades_history[0].market_regime;
-  }
+  if(d.trades_history&&d.trades_history.length&&d.trades_history[0].market_regime){regime=d.trades_history[0].market_regime}
   updateRegime(regime||'flat');
-  // Play sounds for new events
-  var newSigs=(d.signals||[]).length;
-  var newHist=(d.trades_history||[]).length;
+  var newSigs=(d.signals||[]).length;var newHist=(d.trades_history||[]).length;
   if(prevSigCount>0&&newSigs>prevSigCount)playSound('signal');
-  if(prevHistLen2>0&&newHist>prevHistLen2){
-    var newest=d.trades_history[0];
-    var isW=['TP2','TP1','SL_AFTER_TP1'].indexOf(newest.status)!==-1;
-    playSound(isW?'win':'loss');
-  }
-  // Update BTC funding rate from signals data
+  if(prevHistLen2>0&&newHist>prevHistLen2){var newest=d.trades_history[0];var isW=['TP2','TP1','SL_AFTER_TP1'].indexOf(newest.status)!==-1;playSound(isW?'win':'loss')}
   var btcFunding=null;
   if(d.signals){var bs=d.signals.find(function(s){return s.symbol==='BTCUSDT'});if(bs)btcFunding=bs.funding_rate}
   var frEl=document.getElementById('fundRate');
-  if(frEl&&btcFunding!=null){
-    var frPct=(btcFunding*100).toFixed(4)+'%';
-    frEl.textContent=(btcFunding>=0?'+':'')+frPct;
-    frEl.className='fund-rate '+(btcFunding>=0?'pos':'neg');
-  }
+  if(frEl&&btcFunding!=null){var frPct=(btcFunding*100).toFixed(4)+'%';frEl.textContent=(btcFunding>=0?'+':'')+frPct;frEl.className='fund-rate '+(btcFunding>=0?'pos':'neg')}
   scanLastStart=Date.now();
 };
 
-// ── INIT ──────────────────────────────────────────────────────────────────────
+// ── ML STATS ───────────────────────────────────────────────────────────────────
+async function fetchMLStats(){
+  try{
+    var r=await fetch('/api/ml-stats');if(!r.ok)return;var d=await r.json();
+    var el=document.getElementById('mClean2');
+    if(el&&d.clean2!=null)el.textContent=d.clean2+' / '+d.goal+' · WR '+d.winrate_clean2+'%';
+  }catch(e){}
+}
+
+// ── INIT ───────────────────────────────────────────────────────────────────────
 fetchREST();connectWS();fetchBTC2();
 setInterval(function(){if(!ws||ws.readyState!==1||(Date.now()-wsLM)>45000)fetchREST()},15000);
 setInterval(fetchLP,1500);
@@ -1268,17 +1597,8 @@ setInterval(fetchBTC2,10000);
 setInterval(updateSession,60000);
 fetchBTCChart();
 setInterval(fetchBTCChart,60000);
-
-async function fetchMLStats(){
-  try{
-    var r=await fetch('/api/ml-stats');
-    if(!r.ok)return;
-    var d=await r.json();
-    var el=document.getElementById('mClean2');
-    if(el&&d.clean2!=null)el.textContent=d.clean2+' / '+d.goal+' · WR '+d.winrate_clean2+'%';
-  }catch(e){}
-}
 fetchMLStats();
 setInterval(fetchMLStats,60000);
 </script>
 </body>
+</html>
