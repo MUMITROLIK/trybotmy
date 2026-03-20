@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-20T01:10:29.502035+00:00",
+  "updated_at": "2026-03-20T01:11:01.088647+00:00",
   "publish_status": {
-    "last_ok": "2026-03-20T01:10:01Z",
+    "last_ok": "2026-03-20T01:10:35Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 62.9
   },
   "trade_stats": {
-    "open": 5,
+    "open": 4,
     "pending": 0,
     "wins": 232,
-    "losses": 247,
-    "total_pnl": 24.03,
-    "winrate": 48.4
+    "losses": 248,
+    "total_pnl": 22.58,
+    "winrate": 48.3
   },
   "fear_greed": {
     "value": 11,
@@ -510,31 +510,6 @@
       ]
     },
     {
-      "id": 552,
-      "symbol": "XMRUSDT",
-      "direction": "SHORT",
-      "exchange": "binance",
-      "entry": 337.09,
-      "tp1": 330.3482,
-      "tp2": 323.6064,
-      "sl": 343.8318,
-      "entry_orig": 337.09,
-      "tp1_orig": 330.3482,
-      "tp2_orig": 323.6064,
-      "sl_orig": 343.8318,
-      "strength": 45,
-      "taken_at": "2026-03-19T17:10:43.739552",
-      "status": "OPEN",
-      "reasons": [
-        "MACD медвежий (hist=-0.55281)",
-        "Цена < EMA20 < EMA50",
-        "Стакан: сильное давление продажи (-0.37)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "CVD падает (-11.4%) — продажи усиливаются 📉",
-        "BTC корреляция 0.68, BTC -1.1% 📉"
-      ]
-    },
-    {
       "id": 553,
       "symbol": "AAVEUSDT",
       "direction": "LONG",
@@ -561,6 +536,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "XMRUSDT",
+      "direction": "SHORT",
+      "entry": 337.09,
+      "tp1": 330.3482,
+      "tp2": 323.6064,
+      "sl": 343.8318,
+      "strength": 45,
+      "status": "TIMEOUT",
+      "pnl_pct": -1.45,
+      "close_price": 341.97,
+      "taken_at": "2026-03-19T17:10:43.739552",
+      "closed_at": "2026-03-20 01:10:54"
+    },
     {
       "symbol": "LAUSDT",
       "direction": "LONG",
@@ -3346,20 +3335,6 @@
       "close_price": 0.032104999999999995,
       "taken_at": "2026-03-18T11:16:21.420436",
       "closed_at": "2026-03-18 12:48:48"
-    },
-    {
-      "symbol": "FARTCOINUSDT",
-      "direction": "SHORT",
-      "entry": 0.21040412,
-      "tp1": 0.206196,
-      "tp2": 0.201988,
-      "sl": 0.214612,
-      "strength": 46,
-      "status": "LIMIT_TIMEOUT",
-      "pnl_pct": 0,
-      "close_price": null,
-      "taken_at": "2026-03-18T11:41:45.433993",
-      "closed_at": "2026-03-18 12:42:01"
     }
   ]
 }
