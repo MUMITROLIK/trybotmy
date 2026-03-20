@@ -1351,6 +1351,7 @@ function updateUI(d){
   document.getElementById('cP').textContent=opens.length;
   document.getElementById('cPe').textContent=pends.length;
   document.getElementById('cH').textContent=hist.length;
+  syncPriceSubscription();
   renderTab(sigs,opens,pends,hist);
 }
 
@@ -1365,47 +1366,115 @@ function renderTab(sigs,opens,pends,hist){
   tab.innerHTML=h;
 }
 
-// ── LIVE PRICES ────────────────────────────────────────────────────────────────
-var pricesIF=false;
-function fetchLP(){
-  if(pricesIF)return;
-  var syms=[];
-  openTradesCache.forEach(function(t){if(syms.indexOf(t.symbol)===-1)syms.push(t.symbol)});
-  if(appData){(appData.trades_open||[]).forEach(function(t){if(syms.indexOf(t.symbol)===-1)syms.push(t.symbol)})}
-  if(!syms.length)return;
-  pricesIF=true;
-  fetch('/api/ticker?symbols='+encodeURIComponent(syms.join(',')))
-    .then(function(r){return r.ok?r.json():null})
-    .then(function(d){
-      if(!d)return;
-      if(d.symbol&&d.price){var p=parseFloat(d.price);if(!isNaN(p)&&p>0)livePrices[d.symbol]=p}
-      if(d.prices){for(var s in d.prices){if(Object.prototype.hasOwnProperty.call(d.prices,s)){var p=parseFloat(d.prices[s]);if(!isNaN(p)&&p>0)livePrices[s]=p}}}
-      patchCards();
-    })['catch'](function(){}).finally(function(){pricesIF=false});
+// ── LIVE PRICES via Binance WebSocket ──────────────────────────────────────────
+var priceWS=null;
+var dirtyCards=new Set();
+var rafPending=false;
+
+function subscribePrices(symbols){
+  if(priceWS){try{priceWS.close()}catch(e){}}
+  if(!symbols.length)return;
+  var streams=symbols.map(function(s){return s.toLowerCase()+'@bookTicker'}).join('/');
+  priceWS=new WebSocket('wss://fstream.binance.com/stream?streams='+streams);
+  priceWS.onmessage=function(e){
+    try{
+      var msg=JSON.parse(e.data);
+      var d=msg.data||msg;
+      if(d.s&&d.b){
+        var sym=d.s;
+        var newPrice=parseFloat(d.b);
+        if(!isNaN(newPrice)&&newPrice>0){
+          var old=livePrices[sym];
+          livePrices[sym]=newPrice;
+          if(old!==newPrice){
+            dirtyCards.add(sym);
+            scheduleRender();
+          }
+        }
+      }
+    }catch(e){}
+  };
+  priceWS.onclose=function(){
+    setTimeout(function(){
+      var syms=getActiveSymbols();
+      if(syms.length)subscribePrices(syms);
+    },3000);
+  };
 }
 
-function patchCards(){
+function getActiveSymbols(){
+  var syms=[];
   openTradesCache.forEach(function(t){
-    var card=document.getElementById('pos-'+(t.id||t.symbol));if(!card)return;
-    var lP=livePrices[t.symbol];
-    var dur=card.querySelector('.live-dur');if(dur&&t.status!=='PENDING')dur.textContent='⏱ '+durStr(t.taken_at);
-    var ago=card.querySelector('.live-ago');if(ago)ago.textContent=fmtT(t.taken_at);
+    if(syms.indexOf(t.symbol)===-1)syms.push(t.symbol);
+  });
+  if(appData){
+    (appData.trades_open||[]).forEach(function(t){
+      if(syms.indexOf(t.symbol)===-1)syms.push(t.symbol);
+    });
+  }
+  return syms;
+}
+
+function scheduleRender(){
+  if(rafPending)return;
+  rafPending=true;
+  requestAnimationFrame(function(){
+    rafPending=false;
+    dirtyCards.forEach(function(sym){
+      patchCardForSymbol(sym);
+    });
+    dirtyCards.clear();
+  });
+}
+
+function patchCardForSymbol(sym){
+  openTradesCache.forEach(function(t){
+    if(t.symbol!==sym)return;
+    var card=document.getElementById('pos-'+(t.id||t.symbol));
+    if(!card)return;
+    var lP=livePrices[sym];
     if(lP==null)return;
     var pnl=t.direction==='LONG'?(lP-t.entry)/t.entry*100:(t.entry-lP)/t.entry*100;
     var pr=pnl>0.01,isN=Math.abs(pnl)<0.01;
-    var pnlEl=card.querySelector('.pos-pnl');if(pnlEl){pnlEl.textContent=(pnl>=0?'+':'')+pnl.toFixed(2)+'%';pnlEl.className='pos-pnl '+(pr?'pos':isN?'ne':'neg')}
-    card.className='pos-c '+(pr?'profit':isN?'neu':'loss');
-    var ps=card.querySelector('.live-cur');if(ps)ps.textContent=fmt(lP);
-    var key=t.id||t.symbol,cached=scaleCache[key];if(!cached)return;
+    var pnlEl=card.querySelector('.pos-pnl');
+    if(pnlEl){
+      var newText=(pnl>=0?'+':'')+pnl.toFixed(2)+'%';
+      if(pnlEl.textContent!==newText){
+        pnlEl.textContent=newText;
+        var cls='pos-pnl '+(pr?'pos':isN?'ne':'neg');
+        if(pnlEl.className!==cls)pnlEl.className=cls;
+      }
+    }
+    var priceEl=card.querySelector('.live-cur');
+    if(priceEl){
+      var fmtd=fmt(lP);
+      if(priceEl.textContent!==fmtd)priceEl.textContent=fmtd;
+    }
+    var newCardCls='pos-c '+(pr?'profit':isN?'neu':'loss');
+    if(card.className!==newCardCls)card.className=newCardCls;
+    var key=t.id||t.symbol,cached=scaleCache[key];
+    if(!cached)return;
     var rng=cached.max-cached.min;if(rng<=0)return;
     function n(v){return Math.max(0,Math.min(100,(v-cached.min)/rng*100))}
-    var cp=n(lP),t1p=n(t.tp1_orig||t.tp1);
-    var bc=pnl>1?'#26A69A':pnl>0?'#66BB6A':pnl>-1?'#F7941D':'#EF5350';var mc=pnl>=0?'#26A69A':'#EF5350';
-    var fill=card.querySelector('.pb-fill');if(fill){fill.style.width=cp+'%';fill.style.background='linear-gradient(90deg,rgba(239,83,80,.15),'+bc+')'}
-    var t1l=card.querySelector('.pb-tp1');if(t1l)t1l.style.left=t1p+'%';
-    var mkr=card.querySelector('.pb-marker');if(mkr){mkr.style.left=cp+'%;';mkr.style.background=mc;mkr.style.boxShadow='0 0 5px '+mc}
-  })
+    var cp=n(lP);
+    var bc=pnl>1?'#26A69A':pnl>0?'#66BB6A':pnl>-1?'#F7941D':'#EF5350';
+    var mc=pnl>=0?'#26A69A':'#EF5350';
+    var fill=card.querySelector('.pb-fill');
+    if(fill){fill.style.width=cp+'%';fill.style.background='linear-gradient(90deg,rgba(239,83,80,.15),'+bc+')'}
+    var mkr=card.querySelector('.pb-marker');
+    if(mkr){mkr.style.left=cp+'%';mkr.style.background=mc}
+  });
 }
+
+var _prevSymList='';
+function syncPriceSubscription(){
+  var syms=getActiveSymbols();
+  var key=syms.sort().join(',');
+  if(key===_prevSymList)return;
+  _prevSymList=key;
+  subscribePrices(syms);
+}
+setInterval(syncPriceSubscription,5000);
 
 // ── WS + REST ──────────────────────────────────────────────────────────────────
 var ws=null,wsPT=null,wsRM=1000,wsRT=null,wsLM=0,restIF=false,btcIF=false;
@@ -1590,8 +1659,6 @@ async function fetchMLStats(){
 // ── INIT ───────────────────────────────────────────────────────────────────────
 fetchREST();connectWS();fetchBTC2();
 setInterval(function(){if(!ws||ws.readyState!==1||(Date.now()-wsLM)>45000)fetchREST()},15000);
-setInterval(fetchLP,1500);
-setInterval(function(){if(openTradesCache.length)patchCards()},1000);
 setInterval(function(){if(serverTime)serverTime=new Date(serverTime.getTime()+1000)},1000);
 setInterval(fetchBTC2,10000);
 setInterval(updateSession,60000);
