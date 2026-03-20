@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-20T19:25:43.225931+00:00",
+  "updated_at": "2026-03-20T19:26:49.088580+00:00",
   "publish_status": {
-    "last_ok": "2026-03-20T19:24:16Z",
+    "last_ok": "2026-03-20T19:25:49Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 60.5
   },
   "trade_stats": {
-    "open": 20,
+    "open": 19,
     "pending": 0,
-    "wins": 267,
+    "wins": 268,
     "losses": 283,
-    "total_pnl": 30.18,
-    "winrate": 48.5
+    "total_pnl": 30.36,
+    "winrate": 48.6
   },
   "fear_greed": {
     "value": 11,
@@ -699,32 +699,6 @@
   ],
   "trades_open": [
     {
-      "id": 591,
-      "symbol": "CELOUSDT",
-      "direction": "LONG",
-      "exchange": "bybit",
-      "entry": 0.0835,
-      "tp1": 0.08517,
-      "tp2": 0.08684,
-      "sl": 0.08183,
-      "entry_orig": 0.0835,
-      "tp1_orig": 0.08517,
-      "tp2_orig": 0.08684,
-      "sl_orig": 0.08183,
-      "strength": 55,
-      "taken_at": "2026-03-20T11:26:22.029437",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00022)",
-        "Цена выше EMA20",
-        "Объём x2.8 🔥🔥",
-        "Стакан: сильное давление покупки (+0.43)",
-        "МТФ: 5m, 1h, 4h согласны",
-        "OI растёт +0.5% + цена ↑",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 594,
       "symbol": "INJUSDT",
       "direction": "LONG",
@@ -1222,6 +1196,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "CELOUSDT",
+      "direction": "LONG",
+      "entry": 0.0835,
+      "tp1": 0.08517,
+      "tp2": 0.08684,
+      "sl": 0.08183,
+      "strength": 55,
+      "status": "TIMEOUT",
+      "pnl_pct": 0.18,
+      "close_price": 0.08365,
+      "taken_at": "2026-03-20T11:26:22.029437",
+      "closed_at": "2026-03-20 19:26:32"
+    },
     {
       "symbol": "DOTUSDT",
       "direction": "LONG",
@@ -4006,20 +3994,6 @@
       "pnl_pct": -1.48,
       "close_price": 0.00343,
       "taken_at": "2026-03-18T16:07:24.588625",
-      "closed_at": "2026-03-18 19:05:06"
-    },
-    {
-      "symbol": "GIGGLEUSDT",
-      "direction": "LONG",
-      "entry": 26.82,
-      "tp1": 27.48,
-      "tp2": 28.14,
-      "sl": 26.2836,
-      "strength": 31,
-      "status": "MANUAL",
-      "pnl_pct": -0.15,
-      "close_price": 26.78,
-      "taken_at": "2026-03-18T16:07:24.765439",
       "closed_at": "2026-03-18 19:05:06"
     }
   ]
