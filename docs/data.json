@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-21T23:47:32.689368+00:00",
+  "updated_at": "2026-03-21T23:48:27.183146+00:00",
   "publish_status": {
-    "last_ok": "2026-03-21T23:47:00Z",
+    "last_ok": "2026-03-21T23:47:38Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -12,17 +12,17 @@
   "stats": {
     "total": 900,
     "wins": 290,
-    "losses": 210,
-    "active": 8,
-    "winrate": 58.0
+    "losses": 211,
+    "active": 7,
+    "winrate": 57.9
   },
   "trade_stats": {
-    "open": 12,
+    "open": 11,
     "pending": 0,
     "wins": 343,
-    "losses": 356,
-    "total_pnl": 24.97,
-    "winrate": 49.1
+    "losses": 357,
+    "total_pnl": 22.85,
+    "winrate": 49.0
   },
   "fear_greed": {
     "value": 12,
@@ -177,30 +177,6 @@
       "status": "ACTIVE"
     },
     {
-      "id": 937,
-      "symbol": "LIGHTUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.2426,
-      "tp1": 0.248857,
-      "tp2": 0.255114,
-      "sl": 0.237594,
-      "strength": 50,
-      "reasons": [
-        "MACD бычий (hist=0.00014)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: давление покупки (+0.12)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +1.1% + цена ↑",
-        "CVD положительный (+3.5%)",
-        "⚠️ Funding через 52м",
-        "⚡ Рыночный вход (MTF сильный)"
-      ],
-      "news": null,
-      "created_at": "2026-03-21 23:08:09",
-      "status": "ACTIVE"
-    },
-    {
       "id": 938,
       "symbol": "IRYSUSDT",
       "direction": "LONG",
@@ -225,6 +201,27 @@
     }
   ],
   "history": [
+    {
+      "symbol": "LIGHTUSDT",
+      "direction": "LONG",
+      "entry": 0.2426,
+      "tp1": 0.248857,
+      "tp2": 0.255114,
+      "sl": 0.237594,
+      "strength": 50,
+      "status": "SL",
+      "created_at": "2026-03-21 23:08:09",
+      "reasons": [
+        "MACD бычий (hist=0.00014)",
+        "Цена > EMA20 > EMA50",
+        "Стакан: давление покупки (+0.12)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +1.1% + цена ↑",
+        "CVD положительный (+3.5%)",
+        "⚠️ Funding через 52м",
+        "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
     {
       "symbol": "PTBUSDT",
       "direction": "LONG",
@@ -605,26 +602,6 @@
         "CVD растёт (+8.0%) — покупки усиливаются 📈",
         "⚡ Рыночный вход (MTF сильный)"
       ]
-    },
-    {
-      "symbol": "LAUSDT",
-      "direction": "LONG",
-      "entry": 0.2254,
-      "tp1": 0.229908,
-      "tp2": 0.234416,
-      "sl": 0.220892,
-      "strength": 53,
-      "status": "EXPIRED",
-      "created_at": "2026-03-21 17:47:23",
-      "reasons": [
-        "RSI=16 (сильная перепроданность)",
-        "MACD бычий (hist=0.00010)",
-        "BB нижняя зона (24%)",
-        "Стакан: сильное давление покупки (+0.26)",
-        "МТФ: только 1 таймфрейм согласен",
-        "OI падает (шорты закрываются)",
-        "CVD положительный (-3.1%)"
-      ]
     }
   ],
   "trades_open": [
@@ -864,33 +841,6 @@
       ]
     },
     {
-      "id": 791,
-      "symbol": "LIGHTUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.2426,
-      "tp1": 0.248857,
-      "tp2": 0.255114,
-      "sl": 0.237594,
-      "entry_orig": 0.2426,
-      "tp1_orig": 0.248857,
-      "tp2_orig": 0.255114,
-      "sl_orig": 0.237594,
-      "strength": 50,
-      "taken_at": "2026-03-21T23:08:09.737190",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00014)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: давление покупки (+0.12)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +1.1% + цена ↑",
-        "CVD положительный (+3.5%)",
-        "⚠️ Funding через 52м",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 792,
       "symbol": "IRYSUSDT",
       "direction": "LONG",
@@ -945,6 +895,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "LIGHTUSDT",
+      "direction": "LONG",
+      "entry": 0.2426,
+      "tp1": 0.248857,
+      "tp2": 0.255114,
+      "sl": 0.237594,
+      "strength": 50,
+      "status": "SL",
+      "pnl_pct": -2.12,
+      "close_price": 0.23745,
+      "taken_at": "2026-03-21T23:08:09.737190",
+      "closed_at": "2026-03-21 23:48:26"
+    },
     {
       "symbol": "FILUSDT",
       "direction": "LONG",
@@ -3730,20 +3694,6 @@
       "close_price": null,
       "taken_at": "2026-03-20T11:36:21.785764",
       "closed_at": "2026-03-20 12:49:21"
-    },
-    {
-      "symbol": "STOUSDT",
-      "direction": "LONG",
-      "entry": 0.0991,
-      "tp1": 0.101562,
-      "tp2": 0.104024,
-      "sl": 0.097118,
-      "strength": 56,
-      "status": "SL",
-      "pnl_pct": -2.01,
-      "close_price": 0.09711,
-      "taken_at": "2026-03-20T11:43:27.592669",
-      "closed_at": "2026-03-20 11:48:52"
     }
   ]
 }
