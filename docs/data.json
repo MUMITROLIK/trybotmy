@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-21T11:42:30.024642+00:00",
+  "updated_at": "2026-03-21T11:43:36.192336+00:00",
   "publish_status": {
-    "last_ok": "2026-03-21T11:41:04Z",
+    "last_ok": "2026-03-21T11:42:36Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 835,
+    "total": 836,
     "wins": 263,
     "losses": 184,
-    "active": 12,
+    "active": 13,
     "winrate": 58.8
   },
   "trade_stats": {
-    "open": 12,
+    "open": 13,
     "pending": 0,
     "wins": 308,
     "losses": 326,
@@ -312,6 +312,28 @@
       ],
       "news": null,
       "created_at": "2026-03-21 11:40:57",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 874,
+      "symbol": "LAUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.25805,
+      "tp1": 0.263211,
+      "tp2": 0.268372,
+      "sl": 0.252889,
+      "strength": 54,
+      "reasons": [
+        "MACD бычий (hist=0.00021)",
+        "Цена > EMA20 > EMA50",
+        "Объём x6.4 🔥🔥🔥",
+        "Стакан: перевес bid (+0.08)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "⚡ Рыночный вход (MTF сильный)"
+      ],
+      "news": null,
+      "created_at": "2026-03-21 11:42:47",
       "status": "ACTIVE"
     }
   ],
@@ -1035,6 +1057,31 @@
         "Стакан: сильное давление покупки (+0.26)",
         "МТФ: 5m, 15m, 1h согласны",
         "OI растёт +0.9% + цена ↑",
+        "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
+    {
+      "id": 728,
+      "symbol": "LAUSDT",
+      "direction": "LONG",
+      "exchange": "bybit",
+      "entry": 0.25805,
+      "tp1": 0.263211,
+      "tp2": 0.268372,
+      "sl": 0.252889,
+      "entry_orig": 0.25805,
+      "tp1_orig": 0.263211,
+      "tp2_orig": 0.268372,
+      "sl_orig": 0.252889,
+      "strength": 54,
+      "taken_at": "2026-03-21T11:42:47.468094",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.00021)",
+        "Цена > EMA20 > EMA50",
+        "Объём x6.4 🔥🔥🔥",
+        "Стакан: перевес bid (+0.08)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
         "⚡ Рыночный вход (MTF сильный)"
       ]
     }
