@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-21T02:58:45.863618+00:00",
+  "updated_at": "2026-03-21T02:59:37.803394+00:00",
   "publish_status": {
-    "last_ok": "2026-03-21T02:57:45Z",
+    "last_ok": "2026-03-21T02:58:51Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 60.0
   },
   "trade_stats": {
-    "open": 13,
+    "open": 12,
     "pending": 0,
-    "wins": 291,
+    "wins": 292,
     "losses": 304,
-    "total_pnl": 29.73,
-    "winrate": 48.9
+    "total_pnl": 29.81,
+    "winrate": 49.0
   },
   "fear_greed": {
     "value": 12,
@@ -649,31 +649,6 @@
   ],
   "trades_open": [
     {
-      "id": 648,
-      "symbol": "XAUTUSDT",
-      "direction": "LONG",
-      "exchange": "bybit",
-      "entry": 4495.5,
-      "tp1": 4585.41,
-      "tp2": 4675.32,
-      "sl": 4405.59,
-      "entry_orig": 4495.5,
-      "tp1_orig": 4585.41,
-      "tp2_orig": 4675.32,
-      "sl_orig": 4405.59,
-      "strength": 55,
-      "taken_at": "2026-03-20T18:59:05.905295",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=28 (сильная перепроданность)",
-        "BB нижняя полоса (пробой)",
-        "Объём x4.2 🔥🔥🔥",
-        "Стакан: сильное давление покупки (+0.44)",
-        "OI падает (шорты закрываются)",
-        "Цена у поддержки 4479.9000"
-      ]
-    },
-    {
       "id": 662,
       "symbol": "XAGUSDT",
       "direction": "LONG",
@@ -1003,6 +978,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "XAUTUSDT",
+      "direction": "LONG",
+      "entry": 4495.5,
+      "tp1": 4585.41,
+      "tp2": 4675.32,
+      "sl": 4405.59,
+      "strength": 55,
+      "status": "TIMEOUT",
+      "pnl_pct": 0.08,
+      "close_price": 4499.3,
+      "taken_at": "2026-03-20T18:59:05.905295",
+      "closed_at": "2026-03-21 02:59:09"
+    },
     {
       "symbol": "HANAUSDT",
       "direction": "LONG",
@@ -3788,20 +3777,6 @@
       "close_price": 0.1596,
       "taken_at": "2026-03-19T12:43:33.887304",
       "closed_at": "2026-03-19 13:13:31"
-    },
-    {
-      "symbol": "ANIMEUSDT",
-      "direction": "LONG",
-      "entry": 0.004996,
-      "tp1": 0.005096,
-      "tp2": 0.005196,
-      "sl": 0.004896,
-      "strength": 45,
-      "status": "SL",
-      "pnl_pct": -2.13,
-      "close_price": 0.0048895,
-      "taken_at": "2026-03-19T12:03:35.413378",
-      "closed_at": "2026-03-19 13:11:18"
     }
   ]
 }
