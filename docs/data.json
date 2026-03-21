@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-21T20:07:16.562753+00:00",
+  "updated_at": "2026-03-21T20:08:23.174426+00:00",
   "publish_status": {
-    "last_ok": "2026-03-21T20:05:51Z",
+    "last_ok": "2026-03-21T20:07:23Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -33,7 +33,7 @@
     "model_name": "GradientBoosting-Deep",
     "roc_auc": 0.8171,
     "rows": 703,
-    "trained_at": "2026-03-21T11:41:36.038769+00:00"
+    "trained_at": "2026-03-21T20:07:52.476233+00:00"
   },
   "signals": [
     {
