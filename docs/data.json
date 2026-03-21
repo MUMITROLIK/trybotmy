@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-21T10:24:48.951737+00:00",
+  "updated_at": "2026-03-21T10:25:31.302665+00:00",
   "publish_status": {
-    "last_ok": "2026-03-21T10:23:48Z",
+    "last_ok": "2026-03-21T10:24:54Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 59.4
   },
   "trade_stats": {
-    "open": 12,
+    "open": 11,
     "pending": 0,
     "wins": 304,
-    "losses": 320,
-    "total_pnl": 27.45,
-    "winrate": 48.7
+    "losses": 321,
+    "total_pnl": 25.44,
+    "winrate": 48.6
   },
   "fear_greed": {
     "value": 12,
@@ -765,32 +765,6 @@
       ]
     },
     {
-      "id": 700,
-      "symbol": "SIRENUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.9259,
-      "tp1": 0.944418,
-      "tp2": 0.962936,
-      "sl": 0.907382,
-      "entry_orig": 0.9259,
-      "tp1_orig": 0.944418,
-      "tp2_orig": 0.962936,
-      "sl_orig": 0.907382,
-      "strength": 51,
-      "taken_at": "2026-03-21T08:49:47.952126",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00102)",
-        "EMA20 > EMA50 (golden cross) 🌟",
-        "Стакан: сильное давление покупки (+0.39)",
-        "МТФ: 5m, 15m, 1h согласны",
-        "OI растёт +1.2% + цена ↑",
-        "CVD положительный (+2.9%)",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 703,
       "symbol": "KASUSDT",
       "direction": "LONG",
@@ -1026,6 +1000,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "SIRENUSDT",
+      "direction": "LONG",
+      "entry": 0.9259,
+      "tp1": 0.944418,
+      "tp2": 0.962936,
+      "sl": 0.907382,
+      "strength": 51,
+      "status": "SL",
+      "pnl_pct": -2.01,
+      "close_price": 0.907335,
+      "taken_at": "2026-03-21T08:49:47.952126",
+      "closed_at": "2026-03-21 10:25:30"
+    },
     {
       "symbol": "EDGEUSDT",
       "direction": "LONG",
@@ -3811,20 +3799,6 @@
       "close_price": 0.16645,
       "taken_at": "2026-03-19T15:19:50.849586",
       "closed_at": "2026-03-19 15:41:56"
-    },
-    {
-      "symbol": "UAIUSDT",
-      "direction": "LONG",
-      "entry": 0.48139,
-      "tp1": 0.498042,
-      "tp2": 0.514694,
-      "sl": 0.4981,
-      "strength": 49,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 3.39,
-      "close_price": 0.4977,
-      "taken_at": "2026-03-19T15:18:01.328154",
-      "closed_at": "2026-03-19 15:41:20"
     }
   ]
 }
