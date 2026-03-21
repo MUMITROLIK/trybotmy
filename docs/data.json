@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-21T01:48:57.881222+00:00",
+  "updated_at": "2026-03-21T01:49:28.706638+00:00",
   "publish_status": {
-    "last_ok": "2026-03-21T01:47:57Z",
+    "last_ok": "2026-03-21T01:49:04Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -12,17 +12,17 @@
   "stats": {
     "total": 793,
     "wins": 250,
-    "losses": 165,
-    "active": 10,
-    "winrate": 60.2
+    "losses": 166,
+    "active": 9,
+    "winrate": 60.1
   },
   "trade_stats": {
-    "open": 13,
+    "open": 12,
     "pending": 0,
     "wins": 290,
-    "losses": 301,
-    "total_pnl": 35.67,
-    "winrate": 49.1
+    "losses": 302,
+    "total_pnl": 33.36,
+    "winrate": 49.0
   },
   "fear_greed": {
     "value": 12,
@@ -206,28 +206,6 @@
       "status": "ACTIVE"
     },
     {
-      "id": 829,
-      "symbol": "JCTUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.0026883,
-      "tp1": 0.002765,
-      "tp2": 0.002843,
-      "sl": 0.002627,
-      "strength": 57,
-      "reasons": [
-        "MACD бычий (hist=0.00001)",
-        "Цена > EMA20 > EMA50",
-        "Объём x4.2 🔥🔥🔥",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +2.0% + цена ↑",
-        "⚡ Рыночный вход (MTF сильный)"
-      ],
-      "news": null,
-      "created_at": "2026-03-21 01:22:41",
-      "status": "ACTIVE"
-    },
-    {
       "id": 830,
       "symbol": "EDGEUSDT",
       "direction": "LONG",
@@ -277,6 +255,25 @@
     }
   ],
   "history": [
+    {
+      "symbol": "JCTUSDT",
+      "direction": "LONG",
+      "entry": 0.0026883,
+      "tp1": 0.002765,
+      "tp2": 0.002843,
+      "sl": 0.002627,
+      "strength": 57,
+      "status": "SL",
+      "created_at": "2026-03-21 01:22:41",
+      "reasons": [
+        "MACD бычий (hist=0.00001)",
+        "Цена > EMA20 > EMA50",
+        "Объём x4.2 🔥🔥🔥",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +2.0% + цена ↑",
+        "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
     {
       "symbol": "ANKRUSDT",
       "direction": "LONG",
@@ -660,25 +657,6 @@
         "OI падает (шорты закрываются)",
         "CVD положительный (-1.9%)"
       ]
-    },
-    {
-      "symbol": "ANKRUSDT",
-      "direction": "LONG",
-      "entry": 0.005154,
-      "tp1": 0.005257,
-      "tp2": 0.00536,
-      "sl": 0.005051,
-      "strength": 57,
-      "status": "TP1",
-      "created_at": "2026-03-20 20:18:32",
-      "reasons": [
-        "MACD бычий (hist=0.00001)",
-        "Цена > EMA20 > EMA50",
-        "Объём x7.3 🔥🔥🔥",
-        "Стакан: давление покупки (+0.16)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
     }
   ],
   "trades_open": [
@@ -951,31 +929,6 @@
       ]
     },
     {
-      "id": 683,
-      "symbol": "JCTUSDT",
-      "direction": "LONG",
-      "exchange": "bybit",
-      "entry": 0.0026883,
-      "tp1": 0.002765,
-      "tp2": 0.002843,
-      "sl": 0.002627,
-      "entry_orig": 0.0026883,
-      "tp1_orig": 0.002765,
-      "tp2_orig": 0.002843,
-      "sl_orig": 0.002627,
-      "strength": 57,
-      "taken_at": "2026-03-21T01:22:41.628597",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00001)",
-        "Цена > EMA20 > EMA50",
-        "Объём x4.2 🔥🔥🔥",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +2.0% + цена ↑",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 684,
       "symbol": "EDGEUSDT",
       "direction": "LONG",
@@ -1031,6 +984,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "JCTUSDT",
+      "direction": "LONG",
+      "entry": 0.0026883,
+      "tp1": 0.002765,
+      "tp2": 0.002843,
+      "sl": 0.002627,
+      "strength": 57,
+      "status": "SL",
+      "pnl_pct": -2.31,
+      "close_price": 0.0026263,
+      "taken_at": "2026-03-21T01:22:41.628597",
+      "closed_at": "2026-03-21 01:49:28"
+    },
     {
       "symbol": "ANKRUSDT",
       "direction": "LONG",
@@ -3816,20 +3783,6 @@
       "close_price": 4516.365,
       "taken_at": "2026-03-19T12:15:29.942980",
       "closed_at": "2026-03-19 13:02:37"
-    },
-    {
-      "symbol": "XAUUSDT",
-      "direction": "LONG",
-      "entry": 4621.85,
-      "tp1": 4714.287,
-      "tp2": 4806.724,
-      "sl": 4529.413,
-      "strength": 49,
-      "status": "SL",
-      "pnl_pct": -2.1,
-      "close_price": 4524.925,
-      "taken_at": "2026-03-19T12:15:29.758408",
-      "closed_at": "2026-03-19 13:02:34"
     }
   ]
 }
