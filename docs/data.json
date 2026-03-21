@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-21T14:27:04.492438+00:00",
+  "updated_at": "2026-03-21T14:28:00.894168+00:00",
   "publish_status": {
-    "last_ok": "2026-03-21T14:26:04Z",
+    "last_ok": "2026-03-21T14:27:10Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 855,
+    "total": 856,
     "wins": 275,
     "losses": 190,
-    "active": 9,
+    "active": 10,
     "winrate": 59.1
   },
   "trade_stats": {
-    "open": 12,
+    "open": 13,
     "pending": 0,
     "wins": 322,
     "losses": 332,
@@ -243,6 +243,29 @@
       ],
       "news": null,
       "created_at": "2026-03-21 14:20:48",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 894,
+      "symbol": "ANKRUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.005666,
+      "tp1": 0.005787,
+      "tp2": 0.005908,
+      "sl": 0.005553,
+      "strength": 52,
+      "reasons": [
+        "MACD бычий (hist=0.00003)",
+        "Цена выше EMA20",
+        "Объём x2.9 🔥🔥",
+        "Стакан: перевес bid (+0.07)",
+        "МТФ: 5m, 1h, 4h согласны",
+        "CVD растёт (+6.4%) — покупки усиливаются 📈",
+        "⚡ Рыночный вход (MTF сильный)"
+      ],
+      "news": null,
+      "created_at": "2026-03-21 14:27:59",
       "status": "ACTIVE"
     }
   ],
@@ -962,6 +985,32 @@
         "МТФ: 5m, 1h, 4h согласны",
         "CVD растёт (+5.9%) — покупки усиливаются 📈",
         "Bullish Engulfing (1h) 🕯️",
+        "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
+    {
+      "id": 748,
+      "symbol": "ANKRUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.005666,
+      "tp1": 0.005787,
+      "tp2": 0.005908,
+      "sl": 0.005553,
+      "entry_orig": 0.005666,
+      "tp1_orig": 0.005787,
+      "tp2_orig": 0.005908,
+      "sl_orig": 0.005553,
+      "strength": 52,
+      "taken_at": "2026-03-21T14:27:59.537016",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.00003)",
+        "Цена выше EMA20",
+        "Объём x2.9 🔥🔥",
+        "Стакан: перевес bid (+0.07)",
+        "МТФ: 5m, 1h, 4h согласны",
+        "CVD растёт (+6.4%) — покупки усиливаются 📈",
         "⚡ Рыночный вход (MTF сильный)"
       ]
     }
