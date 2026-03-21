@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-21T13:11:50.137437+00:00",
+  "updated_at": "2026-03-21T13:13:16.559099+00:00",
   "publish_status": {
-    "last_ok": "2026-03-21T13:11:09Z",
+    "last_ok": "2026-03-21T13:11:56Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 845,
+    "total": 846,
     "wins": 270,
     "losses": 186,
-    "active": 11,
+    "active": 12,
     "winrate": 59.2
   },
   "trade_stats": {
-    "open": 12,
+    "open": 13,
     "pending": 0,
     "wins": 316,
     "losses": 328,
@@ -288,6 +288,29 @@
       ],
       "news": null,
       "created_at": "2026-03-21 12:44:22",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 884,
+      "symbol": "FOLKSUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 1.1424,
+      "tp1": 1.191664,
+      "tp2": 1.240929,
+      "sl": 1.102989,
+      "strength": 51,
+      "reasons": [
+        "MACD бычий (hist=0.02462)",
+        "Цена > EMA20 > EMA50",
+        "Объём x5.0 🔥🔥🔥",
+        "Стакан: перевес bid (+0.06)",
+        "МТФ: 5m, 15m согласны",
+        "OI растёт +3.0% + цена ↑",
+        "⚡ Рыночный вход (MTF 2+ ТФ)"
+      ],
+      "news": null,
+      "created_at": "2026-03-21 13:12:06",
       "status": "ACTIVE"
     }
   ],
@@ -1007,6 +1030,32 @@
         "МТФ: 5m, 15m, 4h согласны",
         "CVD растёт (+6.4%) — покупки усиливаются 📈",
         "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
+    {
+      "id": 738,
+      "symbol": "FOLKSUSDT",
+      "direction": "LONG",
+      "exchange": "bybit",
+      "entry": 1.1424,
+      "tp1": 1.191664,
+      "tp2": 1.240929,
+      "sl": 1.102989,
+      "entry_orig": 1.1424,
+      "tp1_orig": 1.191664,
+      "tp2_orig": 1.240929,
+      "sl_orig": 1.102989,
+      "strength": 51,
+      "taken_at": "2026-03-21T13:12:07.339579",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.02462)",
+        "Цена > EMA20 > EMA50",
+        "Объём x5.0 🔥🔥🔥",
+        "Стакан: перевес bid (+0.06)",
+        "МТФ: 5m, 15m согласны",
+        "OI растёт +3.0% + цена ↑",
+        "⚡ Рыночный вход (MTF 2+ ТФ)"
       ]
     }
   ],
