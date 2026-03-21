@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-21T14:41:18.871055+00:00",
+  "updated_at": "2026-03-21T14:42:01.719916+00:00",
   "publish_status": {
-    "last_ok": "2026-03-21T14:40:24Z",
+    "last_ok": "2026-03-21T14:41:24Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,11 +17,11 @@
     "winrate": 59.2
   },
   "trade_stats": {
-    "open": 13,
+    "open": 12,
     "pending": 0,
-    "wins": 322,
+    "wins": 323,
     "losses": 333,
-    "total_pnl": 36.57,
+    "total_pnl": 41.85,
     "winrate": 49.2
   },
   "fear_greed": {
@@ -760,32 +760,6 @@
       ]
     },
     {
-      "id": 739,
-      "symbol": "HANAUSDT",
-      "direction": "LONG",
-      "exchange": "bybit",
-      "entry": 0.042736,
-      "tp1": 0.043591,
-      "tp2": 0.044445,
-      "sl": 0.041881,
-      "entry_orig": 0.042736,
-      "tp1_orig": 0.043591,
-      "tp2_orig": 0.044445,
-      "sl_orig": 0.041881,
-      "strength": 58,
-      "taken_at": "2026-03-21T13:13:53.647482",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=40 (перепроданность)",
-        "MACD бычий (hist=0.00002)",
-        "BB ниже середины",
-        "Объём x2.8 🔥🔥",
-        "Стакан: сильное давление покупки (+0.38)",
-        "МТФ: только 1 таймфрейм согласен",
-        "OI растёт +0.6%"
-      ]
-    },
-    {
       "id": 743,
       "symbol": "FILUSDT",
       "direction": "LONG",
@@ -945,33 +919,47 @@
       ]
     },
     {
-      "id": 746,
-      "symbol": "SIRENUSDT",
+      "id": 739,
+      "symbol": "HANAUSDT",
       "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.93876,
-      "tp1": 0.957535,
-      "tp2": 0.97631,
-      "sl": 0.963855,
-      "entry_orig": 0.93876,
-      "tp1_orig": 0.957535,
-      "tp2_orig": 0.97631,
-      "sl_orig": 0.919985,
+      "exchange": "bybit",
+      "entry": 0.042736,
+      "tp1": 0.043591,
+      "tp2": 0.044445,
+      "sl": 0.043638,
+      "entry_orig": 0.042736,
+      "tp1_orig": 0.043591,
+      "tp2_orig": 0.044445,
+      "sl_orig": 0.041881,
       "strength": 58,
-      "taken_at": "2026-03-21T14:20:48.208958",
+      "taken_at": "2026-03-21T13:13:53.647482",
       "status": "TP1_HIT",
       "reasons": [
-        "MACD бычий (hist=0.00238)",
-        "EMA20 > EMA50 (golden cross) 🌟",
-        "Объём x4.1 🔥🔥🔥",
-        "МТФ: 5m, 15m согласны",
-        "OI растёт +1.9% + цена ↑",
-        "CVD растёт (+8.6%) — покупки усиливаются 📈",
-        "⚡ Рыночный вход (MTF 2+ ТФ)"
+        "RSI=40 (перепроданность)",
+        "MACD бычий (hist=0.00002)",
+        "BB ниже середины",
+        "Объём x2.8 🔥🔥",
+        "Стакан: сильное давление покупки (+0.38)",
+        "МТФ: только 1 таймфрейм согласен",
+        "OI растёт +0.6%"
       ]
     }
   ],
   "trades_history": [
+    {
+      "symbol": "SIRENUSDT",
+      "direction": "LONG",
+      "entry": 0.93876,
+      "tp1": 0.957535,
+      "tp2": 0.97631,
+      "sl": 0.963855,
+      "strength": 58,
+      "status": "TP2",
+      "pnl_pct": 5.28,
+      "close_price": 0.98831,
+      "taken_at": "2026-03-21T14:20:48.208958",
+      "closed_at": "2026-03-21 14:41:41"
+    },
     {
       "symbol": "AKTUSDT",
       "direction": "LONG",
@@ -3757,20 +3745,6 @@
       "close_price": 0.04995,
       "taken_at": "2026-03-19T12:55:34.531321",
       "closed_at": "2026-03-19 20:55:34"
-    },
-    {
-      "symbol": "ENJUSDT",
-      "direction": "LONG",
-      "entry": 0.02359,
-      "tp1": 0.024297,
-      "tp2": 0.025004,
-      "sl": 0.024364999999999998,
-      "strength": 45,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 3.2,
-      "close_price": 0.024345,
-      "taken_at": "2026-03-19T16:30:32.627541",
-      "closed_at": "2026-03-19 20:47:33"
     }
   ]
 }
