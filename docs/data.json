@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-21T00:34:30.166443+00:00",
+  "updated_at": "2026-03-21T00:35:05.058817+00:00",
   "publish_status": {
-    "last_ok": "2026-03-21T00:33:37Z",
+    "last_ok": "2026-03-21T00:34:36Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -11,18 +11,18 @@
   },
   "stats": {
     "total": 788,
-    "wins": 248,
+    "wins": 249,
     "losses": 164,
-    "active": 10,
-    "winrate": 60.2
+    "active": 9,
+    "winrate": 60.3
   },
   "trade_stats": {
-    "open": 15,
+    "open": 14,
     "pending": 0,
-    "wins": 286,
+    "wins": 287,
     "losses": 298,
-    "total_pnl": 34.47,
-    "winrate": 49.0
+    "total_pnl": 36.81,
+    "winrate": 49.1
   },
   "fear_greed": {
     "value": 12,
@@ -229,29 +229,6 @@
       "status": "ACTIVE"
     },
     {
-      "id": 823,
-      "symbol": "ANKRUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.005775,
-      "tp1": 0.005938,
-      "tp2": 0.006102,
-      "sl": 0.005644,
-      "strength": 55,
-      "reasons": [
-        "MACD бычий (hist=0.00004)",
-        "Цена > EMA20 > EMA50",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +12.8% + цена ↑",
-        "CVD растёт (+5.5%) — покупки усиливаются 📈",
-        "Bullish Engulfing (1h) 🕯️",
-        "⚡ Рыночный вход (MTF сильный)"
-      ],
-      "news": null,
-      "created_at": "2026-03-21 00:15:51",
-      "status": "ACTIVE"
-    },
-    {
       "id": 826,
       "symbol": "ZETAUSDT",
       "direction": "LONG",
@@ -315,6 +292,26 @@
         "Стакан: сильное давление покупки (+0.43)",
         "МТФ: 5m, 15m, 4h согласны",
         "OI растёт +8.0% + цена ↑",
+        "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
+    {
+      "symbol": "ANKRUSDT",
+      "direction": "LONG",
+      "entry": 0.005775,
+      "tp1": 0.005938,
+      "tp2": 0.006102,
+      "sl": 0.005644,
+      "strength": 55,
+      "status": "TP1",
+      "created_at": "2026-03-21 00:15:51",
+      "reasons": [
+        "MACD бычий (hist=0.00004)",
+        "Цена > EMA20 > EMA50",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +12.8% + цена ↑",
+        "CVD растёт (+5.5%) — покупки усиливаются 📈",
+        "Bullish Engulfing (1h) 🕯️",
         "⚡ Рыночный вход (MTF сильный)"
       ]
     },
@@ -658,27 +655,6 @@
         "CVD растёт (+5.5%) — покупки усиливаются 📈",
         "Цена у поддержки 0.1005",
         "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
-      "symbol": "WCTUSDT",
-      "direction": "LONG",
-      "entry": 0.06384,
-      "tp1": 0.065117,
-      "tp2": 0.066394,
-      "sl": 0.062563,
-      "strength": 51,
-      "status": "TP1",
-      "created_at": "2026-03-20 19:24:09",
-      "reasons": [
-        "RSI=29 (сильная перепроданность)",
-        "BB нижняя зона (6%)",
-        "EMA20 > EMA50",
-        "Объём x2.3 🔥",
-        "Стакан: сильное давление покупки (+0.49)",
-        "МТФ: 15m, 4h согласны",
-        "Цена у поддержки 0.0636",
-        "⚡ Рыночный вход (MTF 2+ ТФ)"
       ]
     }
   ],
@@ -1032,32 +1008,6 @@
       ]
     },
     {
-      "id": 677,
-      "symbol": "ANKRUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.005775,
-      "tp1": 0.005938,
-      "tp2": 0.006102,
-      "sl": 0.005644,
-      "entry_orig": 0.005775,
-      "tp1_orig": 0.005938,
-      "tp2_orig": 0.006102,
-      "sl_orig": 0.005644,
-      "strength": 55,
-      "taken_at": "2026-03-21T00:15:51.883310",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00004)",
-        "Цена > EMA20 > EMA50",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +12.8% + цена ↑",
-        "CVD растёт (+5.5%) — покупки усиливаются 📈",
-        "Bullish Engulfing (1h) 🕯️",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 680,
       "symbol": "ZETAUSDT",
       "direction": "LONG",
@@ -1087,6 +1037,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "ANKRUSDT",
+      "direction": "LONG",
+      "entry": 0.005775,
+      "tp1": 0.005938,
+      "tp2": 0.006102,
+      "sl": 0.005939,
+      "strength": 55,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 2.34,
+      "close_price": 0.00591,
+      "taken_at": "2026-03-21T00:15:51.883310",
+      "closed_at": "2026-03-21 00:35:04"
+    },
     {
       "symbol": "POLYXUSDT",
       "direction": "LONG",
@@ -3872,20 +3836,6 @@
       "close_price": 0.763,
       "taken_at": "2026-03-18T16:25:13.251200",
       "closed_at": "2026-03-19 06:28:57"
-    },
-    {
-      "symbol": "HANAUSDT",
-      "direction": "LONG",
-      "entry": 0.04838,
-      "tp1": 0.04934723,
-      "tp2": 0.0503157,
-      "sl": 0.04741232,
-      "strength": 40,
-      "status": "SL",
-      "pnl_pct": -2.0,
-      "close_price": 0.04741,
-      "taken_at": "2026-03-18T20:44:22.241240",
-      "closed_at": "2026-03-19 02:33:03"
     }
   ]
 }
