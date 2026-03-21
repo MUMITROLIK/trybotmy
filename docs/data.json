@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-21T15:29:55.266377+00:00",
+  "updated_at": "2026-03-21T15:30:26.107030+00:00",
   "publish_status": {
-    "last_ok": "2026-03-21T15:28:55Z",
+    "last_ok": "2026-03-21T15:30:01Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 58.9
   },
   "trade_stats": {
-    "open": 11,
+    "open": 10,
     "pending": 0,
-    "wins": 324,
+    "wins": 325,
     "losses": 337,
-    "total_pnl": 33.96,
-    "winrate": 49.0
+    "total_pnl": 35.64,
+    "winrate": 49.1
   },
   "fear_greed": {
     "value": 12,
@@ -691,33 +691,6 @@
       ]
     },
     {
-      "id": 743,
-      "symbol": "FILUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.923,
-      "tp1": 0.94146,
-      "tp2": 0.95992,
-      "sl": 0.90454,
-      "entry_orig": 0.923,
-      "tp1_orig": 0.94146,
-      "tp2_orig": 0.95992,
-      "sl_orig": 0.90454,
-      "strength": 56,
-      "taken_at": "2026-03-21T14:11:47.553535",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00135)",
-        "Цена > EMA20 > EMA50",
-        "Объём x2.1 🔥",
-        "Стакан: сильное давление покупки (+0.26)",
-        "МТФ: 5m, 15m согласны",
-        "OI растёт +4.6% + цена ↑",
-        "CVD растёт (+11.0%) — покупки усиливаются 📈",
-        "⚡ Рыночный вход (MTF 2+ ТФ)"
-      ]
-    },
-    {
       "id": 744,
       "symbol": "DASHUSDT",
       "direction": "LONG",
@@ -907,6 +880,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "FILUSDT",
+      "direction": "LONG",
+      "entry": 0.923,
+      "tp1": 0.94146,
+      "tp2": 0.95992,
+      "sl": 0.9435,
+      "strength": 56,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 1.68,
+      "close_price": 0.9384999999999999,
+      "taken_at": "2026-03-21T14:11:47.553535",
+      "closed_at": "2026-03-21 15:30:25"
+    },
     {
       "symbol": "PHAUSDT",
       "direction": "LONG",
@@ -3692,20 +3679,6 @@
       "close_price": 89.015,
       "taken_at": "2026-03-19T13:43:47.691008",
       "closed_at": "2026-03-19 21:43:49"
-    },
-    {
-      "symbol": "ETHUSDT",
-      "direction": "LONG",
-      "entry": 2130.83,
-      "tp1": 2173.4466,
-      "tp2": 2216.0632,
-      "sl": 2088.2134,
-      "strength": 49,
-      "status": "TIMEOUT",
-      "pnl_pct": 0.74,
-      "close_price": 2146.625,
-      "taken_at": "2026-03-19T13:23:17.686871",
-      "closed_at": "2026-03-19 21:23:20"
     }
   ]
 }
