@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-21T02:19:35.853960+00:00",
+  "updated_at": "2026-03-21T02:20:41.992129+00:00",
   "publish_status": {
-    "last_ok": "2026-03-21T02:18:35Z",
+    "last_ok": "2026-03-21T02:19:41Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 794,
+    "total": 795,
     "wins": 250,
     "losses": 167,
-    "active": 7,
+    "active": 8,
     "winrate": 60.0
   },
   "trade_stats": {
-    "open": 11,
+    "open": 12,
     "pending": 0,
     "wins": 290,
     "losses": 304,
@@ -204,6 +204,32 @@
       ],
       "news": null,
       "created_at": "2026-03-21 01:51:25",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 833,
+      "symbol": "ZECUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 234.51,
+      "tp1": 239.2002,
+      "tp2": 243.8904,
+      "sl": 229.8198,
+      "strength": 55,
+      "reasons": [
+        "RSI=37 (перепроданность)",
+        "BB ниже середины",
+        "Цена > EMA20 > EMA50",
+        "Стакан: сильное давление покупки (+0.33)",
+        "📰 Grayscale Predicts 18x Upside For Zcash If This Happens",
+        "МТФ: 15m, 4h согласны",
+        "CVD положительный (+3.6%)",
+        "Hammer (1h) 🔨",
+        "Цена у поддержки 233.5700",
+        "⚡ Рыночный вход (MTF 2+ ТФ)"
+      ],
+      "news": "Grayscale Predicts 18x Upside For Zcash If This Happens",
+      "created_at": "2026-03-21 02:19:43",
       "status": "ACTIVE"
     }
   ],
@@ -911,6 +937,35 @@
         "OI растёт +0.6% + цена ↑",
         "Цена у поддержки 0.1343",
         "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
+    {
+      "id": 687,
+      "symbol": "ZECUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 234.51,
+      "tp1": 239.2002,
+      "tp2": 243.8904,
+      "sl": 229.8198,
+      "entry_orig": 234.51,
+      "tp1_orig": 239.2002,
+      "tp2_orig": 243.8904,
+      "sl_orig": 229.8198,
+      "strength": 55,
+      "taken_at": "2026-03-21T02:19:43.353244",
+      "status": "OPEN",
+      "reasons": [
+        "RSI=37 (перепроданность)",
+        "BB ниже середины",
+        "Цена > EMA20 > EMA50",
+        "Стакан: сильное давление покупки (+0.33)",
+        "📰 Grayscale Predicts 18x Upside For Zcash If This Happens",
+        "МТФ: 15m, 4h согласны",
+        "CVD положительный (+3.6%)",
+        "Hammer (1h) 🔨",
+        "Цена у поддержки 233.5700",
+        "⚡ Рыночный вход (MTF 2+ ТФ)"
       ]
     }
   ],
