@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-21T10:48:55.389366+00:00",
+  "updated_at": "2026-03-21T10:49:41.305809+00:00",
   "publish_status": {
-    "last_ok": "2026-03-21T10:47:55Z",
+    "last_ok": "2026-03-21T10:49:01Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,11 +17,11 @@
     "winrate": 59.2
   },
   "trade_stats": {
-    "open": 12,
+    "open": 11,
     "pending": 0,
-    "wins": 304,
+    "wins": 305,
     "losses": 322,
-    "total_pnl": 23.28,
+    "total_pnl": 26.93,
     "winrate": 48.6
   },
   "fear_greed": {
@@ -945,32 +945,6 @@
       ]
     },
     {
-      "id": 718,
-      "symbol": "JCTUSDT",
-      "direction": "LONG",
-      "exchange": "bybit",
-      "entry": 0.002301,
-      "tp1": 0.002366,
-      "tp2": 0.002431,
-      "sl": 0.002249,
-      "entry_orig": 0.002301,
-      "tp1_orig": 0.002366,
-      "tp2_orig": 0.002431,
-      "sl_orig": 0.002249,
-      "strength": 54,
-      "taken_at": "2026-03-21T10:27:29.852886",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=15 (сильная перепроданность)",
-        "BB нижняя полоса (пробой)",
-        "Объём x2.7 🔥🔥",
-        "Стакан: сильное давление покупки (+0.26)",
-        "МТФ: 1h, 4h согласны",
-        "OI падает (шорты закрываются)",
-        "⚡ Рыночный вход (MTF 2+ ТФ)"
-      ]
-    },
-    {
       "id": 719,
       "symbol": "DEXEUSDT",
       "direction": "LONG",
@@ -998,6 +972,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "JCTUSDT",
+      "direction": "LONG",
+      "entry": 0.002301,
+      "tp1": 0.002366,
+      "tp2": 0.002431,
+      "sl": 0.0023849,
+      "strength": 54,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 3.65,
+      "close_price": 0.0023849,
+      "taken_at": "2026-03-21T10:27:29.852886",
+      "closed_at": "2026-03-21 10:49:40"
+    },
     {
       "symbol": "IRYSUSDT",
       "direction": "LONG",
@@ -3783,20 +3771,6 @@
       "close_price": 0.09204999999999999,
       "taken_at": "2026-03-19T12:55:34.195319",
       "closed_at": "2026-03-19 15:47:16"
-    },
-    {
-      "symbol": "EIGENUSDT",
-      "direction": "SHORT",
-      "entry": 0.19282,
-      "tp1": 0.188964,
-      "tp2": 0.185107,
-      "sl": 0.1889,
-      "strength": 47,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 1.93,
-      "close_price": 0.1891,
-      "taken_at": "2026-03-19T13:07:31.700059",
-      "closed_at": "2026-03-19 15:46:25"
     }
   ]
 }
