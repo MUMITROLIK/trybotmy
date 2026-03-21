@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-21T09:52:03.167926+00:00",
+  "updated_at": "2026-03-21T09:53:09.107321+00:00",
   "publish_status": {
-    "last_ok": "2026-03-21T09:50:48Z",
+    "last_ok": "2026-03-21T09:52:09Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 59.7
   },
   "trade_stats": {
-    "open": 12,
+    "open": 11,
     "pending": 0,
     "wins": 303,
-    "losses": 315,
-    "total_pnl": 35.63,
-    "winrate": 49.0
+    "losses": 316,
+    "total_pnl": 33.6,
+    "winrate": 48.9
   },
   "fear_greed": {
     "value": 12,
@@ -856,33 +856,6 @@
       ]
     },
     {
-      "id": 704,
-      "symbol": "STOUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.10017,
-      "tp1": 0.102173,
-      "tp2": 0.104177,
-      "sl": 0.098167,
-      "entry_orig": 0.10017,
-      "tp1_orig": 0.102173,
-      "tp2_orig": 0.104177,
-      "sl_orig": 0.098167,
-      "strength": 52,
-      "taken_at": "2026-03-21T09:10:44.423184",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=43 (нейтральный↓)",
-        "MACD бычий (hist=0.00002)",
-        "BB ниже середины",
-        "EMA20 > EMA50",
-        "Стакан: сильное давление покупки (+0.32)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "CVD положительный (+3.1%)",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 705,
       "symbol": "FARTCOINUSDT",
       "direction": "LONG",
@@ -986,6 +959,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "STOUSDT",
+      "direction": "LONG",
+      "entry": 0.10017,
+      "tp1": 0.102173,
+      "tp2": 0.104177,
+      "sl": 0.098167,
+      "strength": 52,
+      "status": "SL",
+      "pnl_pct": -2.03,
+      "close_price": 0.098135,
+      "taken_at": "2026-03-21T09:10:44.423184",
+      "closed_at": "2026-03-21 09:52:15"
+    },
     {
       "symbol": "AKTUSDT",
       "direction": "LONG",
@@ -3771,20 +3758,6 @@
       "close_price": 0.4842,
       "taken_at": "2026-03-19T14:59:12.390507",
       "closed_at": "2026-03-19 15:16:48"
-    },
-    {
-      "symbol": "SIRENUSDT",
-      "direction": "LONG",
-      "entry": 0.78932,
-      "tp1": 0.8238,
-      "tp2": 0.858279,
-      "sl": 0.82692,
-      "strength": 47,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 4.61,
-      "close_price": 0.8257,
-      "taken_at": "2026-03-19T15:01:14.370440",
-      "closed_at": "2026-03-19 15:15:40"
     }
   ]
 }
