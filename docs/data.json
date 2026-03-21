@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-21T14:47:55.440456+00:00",
+  "updated_at": "2026-03-21T14:48:51.473962+00:00",
   "publish_status": {
-    "last_ok": "2026-03-21T14:47:26Z",
+    "last_ok": "2026-03-21T14:48:01Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -13,16 +13,16 @@
     "total": 859,
     "wins": 277,
     "losses": 191,
-    "active": 10,
+    "active": 9,
     "winrate": 59.2
   },
   "trade_stats": {
-    "open": 13,
+    "open": 12,
     "pending": 0,
     "wins": 324,
-    "losses": 333,
-    "total_pnl": 43.96,
-    "winrate": 49.3
+    "losses": 334,
+    "total_pnl": 41.8,
+    "winrate": 49.2
   },
   "fear_greed": {
     "value": 12,
@@ -36,29 +36,6 @@
     "trained_at": "2026-03-21T11:41:36.038769+00:00"
   },
   "signals": [
-    {
-      "id": 865,
-      "symbol": "DEXEUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 6.0853,
-      "tp1": 6.207006,
-      "tp2": 6.328712,
-      "sl": 5.963594,
-      "strength": 51,
-      "reasons": [
-        "RSI=14 (сильная перепроданность)",
-        "BB нижняя полоса (пробой)",
-        "EMA20 > EMA50",
-        "Стакан: сильное давление покупки (+0.32)",
-        "МТФ: 15m, 1h, 4h согласны",
-        "Цена у поддержки 6.0842",
-        "⚡ Рыночный вход (MTF сильный)"
-      ],
-      "news": null,
-      "created_at": "2026-03-21 10:48:03",
-      "status": "ACTIVE"
-    },
     {
       "id": 872,
       "symbol": "RIVERUSDT",
@@ -731,31 +708,6 @@
       ]
     },
     {
-      "id": 715,
-      "symbol": "ROBOUSDT",
-      "direction": "LONG",
-      "exchange": "bybit",
-      "entry": 0.02542,
-      "tp1": 0.025928,
-      "tp2": 0.026437,
-      "sl": 0.024912,
-      "entry_orig": 0.02542,
-      "tp1_orig": 0.025928,
-      "tp2_orig": 0.026437,
-      "sl_orig": 0.024912,
-      "strength": 51,
-      "taken_at": "2026-03-21T09:57:43.805197",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=46 (нейтральный↓)",
-        "MACD бычий (hist=0.00002)",
-        "BB ниже середины",
-        "Объём x3.6 🔥🔥",
-        "Стакан: сильное давление покупки (+0.31)",
-        "OI растёт +0.7%"
-      ]
-    },
-    {
       "id": 719,
       "symbol": "DEXEUSDT",
       "direction": "LONG",
@@ -1022,6 +974,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "ROBOUSDT",
+      "direction": "LONG",
+      "entry": 0.02542,
+      "tp1": 0.025928,
+      "tp2": 0.026437,
+      "sl": 0.024912,
+      "strength": 51,
+      "status": "SL",
+      "pnl_pct": -2.16,
+      "close_price": 0.02487,
+      "taken_at": "2026-03-21T09:57:43.805197",
+      "closed_at": "2026-03-21 14:48:51"
+    },
     {
       "symbol": "HANAUSDT",
       "direction": "LONG",
@@ -3807,20 +3773,6 @@
       "close_price": 0.19088,
       "taken_at": "2026-03-19T18:00:33.844989",
       "closed_at": "2026-03-19 21:01:02"
-    },
-    {
-      "symbol": "GALAUSDT",
-      "direction": "LONG",
-      "entry": 0.00333,
-      "tp1": 0.003397,
-      "tp2": 0.003463,
-      "sl": 0.003263,
-      "strength": 47,
-      "status": "TIMEOUT",
-      "pnl_pct": 0.45,
-      "close_price": 0.003345,
-      "taken_at": "2026-03-19T12:57:20.266708",
-      "closed_at": "2026-03-19 20:57:25"
     }
   ]
 }
