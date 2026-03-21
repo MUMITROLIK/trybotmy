@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-21T13:41:57.684941+00:00",
+  "updated_at": "2026-03-21T13:42:54.348149+00:00",
   "publish_status": {
-    "last_ok": "2026-03-21T13:40:57Z",
+    "last_ok": "2026-03-21T13:42:03Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 848,
+    "total": 849,
     "wins": 272,
     "losses": 189,
-    "active": 7,
+    "active": 8,
     "winrate": 59.0
   },
   "trade_stats": {
-    "open": 10,
+    "open": 11,
     "pending": 0,
     "wins": 318,
     "losses": 331,
@@ -196,6 +196,29 @@
       ],
       "news": null,
       "created_at": "2026-03-21 13:13:53",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 887,
+      "symbol": "ANIMEUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.005322,
+      "tp1": 0.005428,
+      "tp2": 0.005535,
+      "sl": 0.005216,
+      "strength": 61,
+      "reasons": [
+        "MACD бычий (hist=0.00003)",
+        "Цена > EMA20 > EMA50",
+        "Объём x4.7 🔥🔥🔥",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +1.4% + цена ↑",
+        "CVD положительный (+2.0%)",
+        "⚡ Рыночный вход (MTF сильный)"
+      ],
+      "news": null,
+      "created_at": "2026-03-21 13:42:52",
       "status": "ACTIVE"
     }
   ],
@@ -861,6 +884,32 @@
         "Стакан: сильное давление покупки (+0.38)",
         "МТФ: только 1 таймфрейм согласен",
         "OI растёт +0.6%"
+      ]
+    },
+    {
+      "id": 741,
+      "symbol": "ANIMEUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.005322,
+      "tp1": 0.005428,
+      "tp2": 0.005535,
+      "sl": 0.005216,
+      "entry_orig": 0.005322,
+      "tp1_orig": 0.005428,
+      "tp2_orig": 0.005535,
+      "sl_orig": 0.005216,
+      "strength": 61,
+      "taken_at": "2026-03-21T13:42:52.832409",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.00003)",
+        "Цена > EMA20 > EMA50",
+        "Объём x4.7 🔥🔥🔥",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +1.4% + цена ↑",
+        "CVD положительный (+2.0%)",
+        "⚡ Рыночный вход (MTF сильный)"
       ]
     }
   ],
