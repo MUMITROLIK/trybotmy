@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-21T22:44:21.349041+00:00",
+  "updated_at": "2026-03-21T22:45:23.025943+00:00",
   "publish_status": {
-    "last_ok": "2026-03-21T22:43:09Z",
+    "last_ok": "2026-03-21T22:44:30Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -12,16 +12,16 @@
   "stats": {
     "total": 896,
     "wins": 289,
-    "losses": 208,
-    "active": 7,
-    "winrate": 58.1
+    "losses": 209,
+    "active": 6,
+    "winrate": 58.0
   },
   "trade_stats": {
-    "open": 11,
+    "open": 10,
     "pending": 0,
     "wins": 342,
-    "losses": 354,
-    "total_pnl": 29.72,
+    "losses": 355,
+    "total_pnl": 27.72,
     "winrate": 49.1
   },
   "fear_greed": {
@@ -131,29 +131,6 @@
       "status": "ACTIVE"
     },
     {
-      "id": 932,
-      "symbol": "AKTUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.6318,
-      "tp1": 0.644436,
-      "tp2": 0.657072,
-      "sl": 0.619164,
-      "strength": 61,
-      "reasons": [
-        "MACD бычий (hist=0.00297)",
-        "Цена > EMA20 > EMA50",
-        "Объём x3.3 🔥🔥",
-        "Стакан: сильное давление покупки (+0.36)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "CVD положительный (+2.3%)",
-        "⚡ Рыночный вход (MTF сильный)"
-      ],
-      "news": null,
-      "created_at": "2026-03-21 21:54:35",
-      "status": "ACTIVE"
-    },
-    {
       "id": 933,
       "symbol": "EDGEUSDT",
       "direction": "LONG",
@@ -202,6 +179,26 @@
     }
   ],
   "history": [
+    {
+      "symbol": "AKTUSDT",
+      "direction": "LONG",
+      "entry": 0.6318,
+      "tp1": 0.644436,
+      "tp2": 0.657072,
+      "sl": 0.619164,
+      "strength": 61,
+      "status": "SL",
+      "created_at": "2026-03-21 21:54:35",
+      "reasons": [
+        "MACD бычий (hist=0.00297)",
+        "Цена > EMA20 > EMA50",
+        "Объём x3.3 🔥🔥",
+        "Стакан: сильное давление покупки (+0.36)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "CVD положительный (+2.3%)",
+        "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
     {
       "symbol": "1000TURBOUSDT",
       "direction": "LONG",
@@ -579,27 +576,6 @@
         "CVD положительный (+1.8%)",
         "⚡ Рыночный вход (MTF сильный)"
       ]
-    },
-    {
-      "symbol": "RIVERUSDT",
-      "direction": "LONG",
-      "entry": 24.667,
-      "tp1": 25.298179,
-      "tp2": 25.929357,
-      "sl": 24.162057,
-      "strength": 51,
-      "status": "TP1",
-      "created_at": "2026-03-21 16:40:49",
-      "reasons": [
-        "RSI=28 (сильная перепроданность)",
-        "BB нижняя зона (3%)",
-        "EMA20 > EMA50",
-        "Стакан: давление покупки (+0.18)",
-        "МТФ: 15m, 1h, 4h согласны",
-        "OI растёт +2.2% + цена ↑",
-        "Цена у поддержки 24.5510",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
     }
   ],
   "trades_open": [
@@ -787,32 +763,6 @@
       ]
     },
     {
-      "id": 786,
-      "symbol": "AKTUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.6318,
-      "tp1": 0.644436,
-      "tp2": 0.657072,
-      "sl": 0.619164,
-      "entry_orig": 0.6318,
-      "tp1_orig": 0.644436,
-      "tp2_orig": 0.657072,
-      "sl_orig": 0.619164,
-      "strength": 61,
-      "taken_at": "2026-03-21T21:54:36.181017",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00297)",
-        "Цена > EMA20 > EMA50",
-        "Объём x3.3 🔥🔥",
-        "Стакан: сильное давление покупки (+0.36)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "CVD положительный (+2.3%)",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 787,
       "symbol": "EDGEUSDT",
       "direction": "LONG",
@@ -893,6 +843,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "AKTUSDT",
+      "direction": "LONG",
+      "entry": 0.6318,
+      "tp1": 0.644436,
+      "tp2": 0.657072,
+      "sl": 0.619164,
+      "strength": 61,
+      "status": "SL",
+      "pnl_pct": -2.0,
+      "close_price": 0.61915,
+      "taken_at": "2026-03-21T21:54:36.181017",
+      "closed_at": "2026-03-21 22:45:20"
+    },
     {
       "symbol": "BTRUSDT",
       "direction": "LONG",
@@ -3678,20 +3642,6 @@
       "close_price": 0.0999,
       "taken_at": "2026-03-20T07:25:51.371379",
       "closed_at": "2026-03-20 11:32:16"
-    },
-    {
-      "symbol": "ENJUSDT",
-      "direction": "LONG",
-      "entry": 0.02529,
-      "tp1": 0.025845,
-      "tp2": 0.0264,
-      "sl": 0.024784,
-      "strength": 51,
-      "status": "SL",
-      "pnl_pct": -2.35,
-      "close_price": 0.024695,
-      "taken_at": "2026-03-20T11:10:58.745638",
-      "closed_at": "2026-03-20 11:23:05"
     }
   ]
 }
