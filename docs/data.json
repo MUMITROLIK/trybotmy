@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-21T14:16:04.847948+00:00",
+  "updated_at": "2026-03-21T14:17:03.021480+00:00",
   "publish_status": {
-    "last_ok": "2026-03-21T14:15:04Z",
+    "last_ok": "2026-03-21T14:16:11Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 852,
+    "total": 853,
     "wins": 274,
     "losses": 190,
-    "active": 7,
+    "active": 8,
     "winrate": 59.1
   },
   "trade_stats": {
-    "open": 10,
+    "open": 11,
     "pending": 0,
     "wins": 321,
     "losses": 332,
@@ -198,6 +198,30 @@
       ],
       "news": null,
       "created_at": "2026-03-21 14:11:47",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 891,
+      "symbol": "KITEUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.21949,
+      "tp1": 0.22388,
+      "tp2": 0.22827,
+      "sl": 0.2151,
+      "strength": 58,
+      "reasons": [
+        "RSI=48 (нейтральный↓)",
+        "MACD бычий (hist=0.00017)",
+        "EMA20 > EMA50 (golden cross) 🌟",
+        "Стакан: сильное давление покупки (+0.55)",
+        "МТФ: 5m, 15m, 1h согласны",
+        "OI растёт +2.1% + цена ↑",
+        "CVD положительный (-0.8%)",
+        "⚡ Рыночный вход (MTF сильный)"
+      ],
+      "news": null,
+      "created_at": "2026-03-21 14:17:00",
       "status": "ACTIVE"
     }
   ],
@@ -864,6 +888,33 @@
         "МТФ: 5m, 15m, 1h согласны",
         "OI растёт +3.2% + цена ↑",
         "CVD растёт (+5.5%) — покупки усиливаются 📈",
+        "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
+    {
+      "id": 745,
+      "symbol": "KITEUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.21949,
+      "tp1": 0.22388,
+      "tp2": 0.22827,
+      "sl": 0.2151,
+      "entry_orig": 0.21949,
+      "tp1_orig": 0.22388,
+      "tp2_orig": 0.22827,
+      "sl_orig": 0.2151,
+      "strength": 58,
+      "taken_at": "2026-03-21T14:17:00.621258",
+      "status": "OPEN",
+      "reasons": [
+        "RSI=48 (нейтральный↓)",
+        "MACD бычий (hist=0.00017)",
+        "EMA20 > EMA50 (golden cross) 🌟",
+        "Стакан: сильное давление покупки (+0.55)",
+        "МТФ: 5m, 15m, 1h согласны",
+        "OI растёт +2.1% + цена ↑",
+        "CVD положительный (-0.8%)",
         "⚡ Рыночный вход (MTF сильный)"
       ]
     }
