@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-21T21:28:27.450420+00:00",
+  "updated_at": "2026-03-21T21:29:44.335748+00:00",
   "publish_status": {
-    "last_ok": "2026-03-21T21:27:36Z",
+    "last_ok": "2026-03-21T21:28:34Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -11,10 +11,10 @@
   },
   "stats": {
     "total": 891,
-    "wins": 287,
+    "wins": 288,
     "losses": 206,
-    "active": 12,
-    "winrate": 58.2
+    "active": 11,
+    "winrate": 58.3
   },
   "trade_stats": {
     "open": 17,
@@ -290,17 +290,19 @@
       "news": null,
       "created_at": "2026-03-21 21:11:52",
       "status": "ACTIVE"
-    },
+    }
+  ],
+  "history": [
     {
-      "id": 929,
       "symbol": "AKTUSDT",
       "direction": "LONG",
-      "exchange": "binance",
       "entry": 0.61,
       "tp1": 0.6222,
       "tp2": 0.6344,
       "sl": 0.5978,
       "strength": 50,
+      "status": "TP1",
+      "created_at": "2026-03-21 21:13:39",
       "reasons": [
         "MACD бычий (hist=0.00041)",
         "Цена > EMA20 > EMA50",
@@ -309,13 +311,8 @@
         "CVD положительный (+1.8%)",
         "Doji (1h) — нерешительность",
         "⚡ Рыночный вход (MTF сильный)"
-      ],
-      "news": null,
-      "created_at": "2026-03-21 21:13:39",
-      "status": "ACTIVE"
-    }
-  ],
-  "history": [
+      ]
+    },
     {
       "symbol": "ATHUSDT",
       "direction": "LONG",
@@ -695,28 +692,6 @@
         "⚠️ Funding через 61м",
         "⚡ Рыночный вход (MTF сильный)"
       ]
-    },
-    {
-      "symbol": "GUNUSDT",
-      "direction": "LONG",
-      "entry": 0.02113,
-      "tp1": 0.021627,
-      "tp2": 0.022124,
-      "sl": 0.020707,
-      "strength": 53,
-      "status": "SL",
-      "created_at": "2026-03-21 14:57:43",
-      "reasons": [
-        "MACD бычий (hist=0.00002)",
-        "Цена > EMA20 > EMA50",
-        "Объём x1.9 🔥",
-        "МТФ: 5m, 15m, 4h согласны",
-        "OI растёт +6.3% + цена ↑",
-        "CVD положительный (-0.7%)",
-        "Bullish Engulfing (1h) 🕯️",
-        "⚠️ Funding через 63м",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
     }
   ],
   "trades_open": [
@@ -1062,32 +1037,6 @@
       ]
     },
     {
-      "id": 783,
-      "symbol": "AKTUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.61,
-      "tp1": 0.6222,
-      "tp2": 0.6344,
-      "sl": 0.5978,
-      "entry_orig": 0.61,
-      "tp1_orig": 0.6222,
-      "tp2_orig": 0.6344,
-      "sl_orig": 0.5978,
-      "strength": 50,
-      "taken_at": "2026-03-21T21:13:39.365823",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00041)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: сильное давление покупки (+0.39)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "CVD положительный (+1.8%)",
-        "Doji (1h) — нерешительность",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 771,
       "symbol": "XANUSDT",
       "direction": "LONG",
@@ -1161,6 +1110,32 @@
         "Объём x6.4 🔥🔥🔥",
         "МТФ: 5m, 15m, 1h согласны",
         "OI растёт +4.8% + цена ↑",
+        "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
+    {
+      "id": 783,
+      "symbol": "AKTUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.61,
+      "tp1": 0.6222,
+      "tp2": 0.6344,
+      "sl": 0.61,
+      "entry_orig": 0.61,
+      "tp1_orig": 0.6222,
+      "tp2_orig": 0.6344,
+      "sl_orig": 0.5978,
+      "strength": 50,
+      "taken_at": "2026-03-21T21:13:39.365823",
+      "status": "TP1_HIT",
+      "reasons": [
+        "MACD бычий (hist=0.00041)",
+        "Цена > EMA20 > EMA50",
+        "Стакан: сильное давление покупки (+0.39)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "CVD положительный (+1.8%)",
+        "Doji (1h) — нерешительность",
         "⚡ Рыночный вход (MTF сильный)"
       ]
     }
