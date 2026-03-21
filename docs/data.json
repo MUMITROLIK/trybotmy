@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-21T10:26:59.024962+00:00",
+  "updated_at": "2026-03-21T10:27:31.302428+00:00",
   "publish_status": {
-    "last_ok": "2026-03-21T10:25:37Z",
+    "last_ok": "2026-03-21T10:27:05Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,18 +10,18 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 825,
+    "total": 826,
     "wins": 260,
     "losses": 179,
-    "active": 10,
+    "active": 11,
     "winrate": 59.2
   },
   "trade_stats": {
     "open": 11,
     "pending": 0,
     "wins": 304,
-    "losses": 321,
-    "total_pnl": 25.44,
+    "losses": 322,
+    "total_pnl": 23.28,
     "winrate": 48.6
   },
   "fear_greed": {
@@ -265,6 +265,29 @@
       ],
       "news": null,
       "created_at": "2026-03-21 10:22:13",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 864,
+      "symbol": "JCTUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.002301,
+      "tp1": 0.002366,
+      "tp2": 0.002431,
+      "sl": 0.002249,
+      "strength": 54,
+      "reasons": [
+        "RSI=15 (сильная перепроданность)",
+        "BB нижняя полоса (пробой)",
+        "Объём x2.7 🔥🔥",
+        "Стакан: сильное давление покупки (+0.26)",
+        "МТФ: 1h, 4h согласны",
+        "OI падает (шорты закрываются)",
+        "⚡ Рыночный вход (MTF 2+ ТФ)"
+      ],
+      "news": null,
+      "created_at": "2026-03-21 10:27:29",
       "status": "ACTIVE"
     }
   ],
@@ -817,31 +840,6 @@
       ]
     },
     {
-      "id": 708,
-      "symbol": "IRYSUSDT",
-      "direction": "LONG",
-      "exchange": "bybit",
-      "entry": 0.022599,
-      "tp1": 0.023166,
-      "tp2": 0.023733,
-      "sl": 0.022146,
-      "entry_orig": 0.022599,
-      "tp1_orig": 0.023166,
-      "tp2_orig": 0.023733,
-      "sl_orig": 0.022146,
-      "strength": 53,
-      "taken_at": "2026-03-21T09:23:10.823571",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00007)",
-        "Цена > EMA20 > EMA50",
-        "Объём x2.7 🔥🔥",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +1.7% + цена ↑",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 709,
       "symbol": "ALCHUSDT",
       "direction": "LONG",
@@ -971,9 +969,49 @@
         "CVD положительный (+2.4%)",
         "⚡ Рыночный вход (MTF 2+ ТФ)"
       ]
+    },
+    {
+      "id": 718,
+      "symbol": "JCTUSDT",
+      "direction": "LONG",
+      "exchange": "bybit",
+      "entry": 0.002301,
+      "tp1": 0.002366,
+      "tp2": 0.002431,
+      "sl": 0.002249,
+      "entry_orig": 0.002301,
+      "tp1_orig": 0.002366,
+      "tp2_orig": 0.002431,
+      "sl_orig": 0.002249,
+      "strength": 54,
+      "taken_at": "2026-03-21T10:27:29.852886",
+      "status": "OPEN",
+      "reasons": [
+        "RSI=15 (сильная перепроданность)",
+        "BB нижняя полоса (пробой)",
+        "Объём x2.7 🔥🔥",
+        "Стакан: сильное давление покупки (+0.26)",
+        "МТФ: 1h, 4h согласны",
+        "OI падает (шорты закрываются)",
+        "⚡ Рыночный вход (MTF 2+ ТФ)"
+      ]
     }
   ],
   "trades_history": [
+    {
+      "symbol": "IRYSUSDT",
+      "direction": "LONG",
+      "entry": 0.022599,
+      "tp1": 0.023166,
+      "tp2": 0.023733,
+      "sl": 0.022146,
+      "strength": 53,
+      "status": "SL",
+      "pnl_pct": -2.16,
+      "close_price": 0.02211,
+      "taken_at": "2026-03-21T09:23:10.823571",
+      "closed_at": "2026-03-21 10:27:06"
+    },
     {
       "symbol": "SIRENUSDT",
       "direction": "LONG",
@@ -3759,20 +3797,6 @@
       "close_price": 0.1891,
       "taken_at": "2026-03-19T13:07:31.700059",
       "closed_at": "2026-03-19 15:46:25"
-    },
-    {
-      "symbol": "THEUSDT",
-      "direction": "LONG",
-      "entry": 0.1613,
-      "tp1": 0.166218,
-      "tp2": 0.171136,
-      "sl": 0.16711025,
-      "strength": 49,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 3.19,
-      "close_price": 0.16645,
-      "taken_at": "2026-03-19T15:19:50.849586",
-      "closed_at": "2026-03-19 15:41:56"
     }
   ]
 }
