@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-21T20:16:58.214352+00:00",
+  "updated_at": "2026-03-21T20:17:43.370225+00:00",
   "publish_status": {
-    "last_ok": "2026-03-21T20:16:16Z",
+    "last_ok": "2026-03-21T20:17:07Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -12,16 +12,16 @@
   "stats": {
     "total": 884,
     "wins": 285,
-    "losses": 202,
-    "active": 13,
-    "winrate": 58.5
+    "losses": 203,
+    "active": 12,
+    "winrate": 58.4
   },
   "trade_stats": {
-    "open": 14,
+    "open": 13,
     "pending": 0,
     "wins": 334,
-    "losses": 347,
-    "total_pnl": 30.98,
+    "losses": 348,
+    "total_pnl": 28.67,
     "winrate": 49.0
   },
   "fear_greed": {
@@ -174,28 +174,6 @@
       "status": "ACTIVE"
     },
     {
-      "id": 916,
-      "symbol": "LIGHTUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.2402,
-      "tp1": 0.245236,
-      "tp2": 0.250271,
-      "sl": 0.235396,
-      "strength": 50,
-      "reasons": [
-        "MACD бычий (hist=0.00125)",
-        "Цена > EMA20 > EMA50",
-        "Объём x1.8 🔥",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "CVD растёт (+6.9%) — покупки усиливаются 📈",
-        "⚡ Рыночный вход (MTF сильный)"
-      ],
-      "news": null,
-      "created_at": "2026-03-21 19:33:26",
-      "status": "ACTIVE"
-    },
-    {
       "id": 917,
       "symbol": "XANUSDT",
       "direction": "LONG",
@@ -335,6 +313,25 @@
     }
   ],
   "history": [
+    {
+      "symbol": "LIGHTUSDT",
+      "direction": "LONG",
+      "entry": 0.2402,
+      "tp1": 0.245236,
+      "tp2": 0.250271,
+      "sl": 0.235396,
+      "strength": 50,
+      "status": "SL",
+      "created_at": "2026-03-21 19:33:26",
+      "reasons": [
+        "MACD бычий (hist=0.00125)",
+        "Цена > EMA20 > EMA50",
+        "Объём x1.8 🔥",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "CVD растёт (+6.9%) — покупки усиливаются 📈",
+        "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
     {
       "symbol": "STOUSDT",
       "direction": "LONG",
@@ -722,27 +719,6 @@
         "CVD положительный (-0.8%)",
         "⚡ Рыночный вход (MTF сильный)"
       ]
-    },
-    {
-      "symbol": "FILUSDT",
-      "direction": "LONG",
-      "entry": 0.923,
-      "tp1": 0.94146,
-      "tp2": 0.95992,
-      "sl": 0.90454,
-      "strength": 56,
-      "status": "TP1",
-      "created_at": "2026-03-21 14:11:47",
-      "reasons": [
-        "MACD бычий (hist=0.00135)",
-        "Цена > EMA20 > EMA50",
-        "Объём x2.1 🔥",
-        "Стакан: сильное давление покупки (+0.26)",
-        "МТФ: 5m, 15m согласны",
-        "OI растёт +4.6% + цена ↑",
-        "CVD растёт (+11.0%) — покупки усиливаются 📈",
-        "⚡ Рыночный вход (MTF 2+ ТФ)"
-      ]
     }
   ],
   "trades_open": [
@@ -928,31 +904,6 @@
       ]
     },
     {
-      "id": 770,
-      "symbol": "LIGHTUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.2402,
-      "tp1": 0.245236,
-      "tp2": 0.250271,
-      "sl": 0.235396,
-      "entry_orig": 0.2402,
-      "tp1_orig": 0.245236,
-      "tp2_orig": 0.250271,
-      "sl_orig": 0.235396,
-      "strength": 50,
-      "taken_at": "2026-03-21T19:33:27.324345",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00125)",
-        "Цена > EMA20 > EMA50",
-        "Объём x1.8 🔥",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "CVD растёт (+6.9%) — покупки усиливаются 📈",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 771,
       "symbol": "XANUSDT",
       "direction": "LONG",
@@ -1110,6 +1061,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "LIGHTUSDT",
+      "direction": "LONG",
+      "entry": 0.2402,
+      "tp1": 0.245236,
+      "tp2": 0.250271,
+      "sl": 0.235396,
+      "strength": 50,
+      "status": "SL",
+      "pnl_pct": -2.31,
+      "close_price": 0.23465,
+      "taken_at": "2026-03-21T19:33:27.324345",
+      "closed_at": "2026-03-21 20:17:43"
+    },
     {
       "symbol": "KITEUSDT",
       "direction": "LONG",
@@ -3895,20 +3860,6 @@
       "close_price": 0.0018565,
       "taken_at": "2026-03-19T13:07:31.539053",
       "closed_at": "2026-03-20 06:35:34"
-    },
-    {
-      "symbol": "MNTUSDT",
-      "direction": "LONG",
-      "entry": 0.7312,
-      "tp1": 0.745824,
-      "tp2": 0.760448,
-      "sl": 0.716576,
-      "strength": 47,
-      "status": "MANUAL",
-      "pnl_pct": 0,
-      "close_price": 0.7312,
-      "taken_at": "2026-03-19T16:05:15.842560",
-      "closed_at": "2026-03-20 06:35:23"
     }
   ]
 }
