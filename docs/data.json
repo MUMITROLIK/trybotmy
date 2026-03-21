@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-21T13:55:39.207347+00:00",
+  "updated_at": "2026-03-21T13:56:13.487187+00:00",
   "publish_status": {
-    "last_ok": "2026-03-21T13:55:13Z",
+    "last_ok": "2026-03-21T13:55:45Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,11 +17,11 @@
     "winrate": 59.2
   },
   "trade_stats": {
-    "open": 9,
+    "open": 8,
     "pending": 0,
-    "wins": 320,
+    "wins": 321,
     "losses": 331,
-    "total_pnl": 37.24,
+    "total_pnl": 39.29,
     "winrate": 49.2
   },
   "fear_greed": {
@@ -788,34 +788,23 @@
         "CVD положительный (+2.0%)",
         "⚡ Рыночный вход (MTF сильный)"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 706,
       "symbol": "VVVUSDT",
       "direction": "LONG",
-      "exchange": "bybit",
       "entry": 5.7978,
       "tp1": 5.913756,
       "tp2": 6.029712,
       "sl": 5.9164,
-      "entry_orig": 5.7978,
-      "tp1_orig": 5.913756,
-      "tp2_orig": 6.029712,
-      "sl_orig": 5.681844,
       "strength": 53,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 2.05,
+      "close_price": 5.9164,
       "taken_at": "2026-03-21T09:19:43.696558",
-      "status": "TP1_HIT",
-      "reasons": [
-        "MACD бычий (hist=0.02356)",
-        "Цена > EMA20 > EMA50",
-        "Объём x3.4 🔥🔥",
-        "Стакан: сильное давление покупки (+0.48)",
-        "МТФ: 5m, 15m, 1h согласны",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-21 13:56:06"
+    },
     {
       "symbol": "POWERUSDT",
       "direction": "LONG",
@@ -3601,20 +3590,6 @@
       "close_price": 1.1885,
       "taken_at": "2026-03-19T12:07:09.527953",
       "closed_at": "2026-03-19 20:07:23"
-    },
-    {
-      "symbol": "ZECUSDT",
-      "direction": "LONG",
-      "entry": 232.49,
-      "tp1": 237.1398,
-      "tp2": 241.7896,
-      "sl": 237.505,
-      "strength": 51,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 2.08,
-      "close_price": 237.315,
-      "taken_at": "2026-03-19T18:06:49.486227",
-      "closed_at": "2026-03-19 19:30:16"
     }
   ]
 }
