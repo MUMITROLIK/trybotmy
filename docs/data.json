@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-21T12:18:26.260823+00:00",
+  "updated_at": "2026-03-21T12:18:59.202168+00:00",
   "publish_status": {
-    "last_ok": "2026-03-21T12:17:07Z",
+    "last_ok": "2026-03-21T12:18:32Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 59.1
   },
   "trade_stats": {
-    "open": 13,
+    "open": 12,
     "pending": 0,
-    "wins": 311,
+    "wins": 312,
     "losses": 327,
-    "total_pnl": 28.64,
-    "winrate": 48.7
+    "total_pnl": 30.64,
+    "winrate": 48.8
   },
   "fear_greed": {
     "value": 12,
@@ -1032,35 +1032,23 @@
         "МТФ: все 4 таймфрейма согласны ✅✅",
         "⚡ Рыночный вход (MTF сильный)"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 725,
       "symbol": "MYXUSDT",
       "direction": "LONG",
-      "exchange": "bybit",
       "entry": 0.3345,
       "tp1": 0.34119,
       "tp2": 0.34788,
       "sl": 0.3412,
-      "entry_orig": 0.3345,
-      "tp1_orig": 0.34119,
-      "tp2_orig": 0.34788,
-      "sl_orig": 0.32781,
       "strength": 54,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 2.0,
+      "close_price": 0.3412,
       "taken_at": "2026-03-21T11:13:40.524684",
-      "status": "TP1_HIT",
-      "reasons": [
-        "RSI=28 (сильная перепроданность)",
-        "BB нижняя полоса (пробой)",
-        "Объём x2.6 🔥🔥",
-        "Стакан: давление покупки (+0.19)",
-        "МТФ: только 1 таймфрейм согласен",
-        "OI растёт +1.6% + цена ↑",
-        "Цена у поддержки 0.3343"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-21 12:18:58"
+    },
     {
       "symbol": "GUAUSDT",
       "direction": "LONG",
@@ -3846,20 +3834,6 @@
       "close_price": 0.003481,
       "taken_at": "2026-03-19T13:14:30.363468",
       "closed_at": "2026-03-19 17:32:57"
-    },
-    {
-      "symbol": "POWERUSDT",
-      "direction": "SHORT",
-      "entry": 0.09568,
-      "tp1": 0.093766,
-      "tp2": 0.091853,
-      "sl": 0.09373,
-      "strength": 47,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 1.99,
-      "close_price": 0.09378,
-      "taken_at": "2026-03-19T13:12:41.344920",
-      "closed_at": "2026-03-19 17:15:33"
     }
   ]
 }
