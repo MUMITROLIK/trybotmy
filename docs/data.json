@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-21T14:20:26.434139+00:00",
+  "updated_at": "2026-03-21T14:21:32.772706+00:00",
   "publish_status": {
-    "last_ok": "2026-03-21T14:19:34Z",
+    "last_ok": "2026-03-21T14:20:32Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 853,
+    "total": 855,
     "wins": 275,
     "losses": 190,
-    "active": 7,
+    "active": 9,
     "winrate": 59.1
   },
   "trade_stats": {
-    "open": 10,
+    "open": 12,
     "pending": 0,
     "wins": 322,
     "losses": 332,
@@ -197,6 +197,52 @@
       ],
       "news": null,
       "created_at": "2026-03-21 14:17:00",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 892,
+      "symbol": "SIRENUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.93876,
+      "tp1": 0.957535,
+      "tp2": 0.97631,
+      "sl": 0.919985,
+      "strength": 58,
+      "reasons": [
+        "MACD бычий (hist=0.00238)",
+        "EMA20 > EMA50 (golden cross) 🌟",
+        "Объём x4.1 🔥🔥🔥",
+        "МТФ: 5m, 15m согласны",
+        "OI растёт +1.9% + цена ↑",
+        "CVD растёт (+8.6%) — покупки усиливаются 📈",
+        "⚡ Рыночный вход (MTF 2+ ТФ)"
+      ],
+      "news": null,
+      "created_at": "2026-03-21 14:20:47",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 893,
+      "symbol": "GUAUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.30117,
+      "tp1": 0.307193,
+      "tp2": 0.313217,
+      "sl": 0.295147,
+      "strength": 53,
+      "reasons": [
+        "MACD бычий (hist=0.00063)",
+        "Цена выше EMA20",
+        "Стакан: сильное давление покупки (+0.47)",
+        "МТФ: 5m, 1h, 4h согласны",
+        "CVD растёт (+5.9%) — покупки усиливаются 📈",
+        "Bullish Engulfing (1h) 🕯️",
+        "⚡ Рыночный вход (MTF сильный)"
+      ],
+      "news": null,
+      "created_at": "2026-03-21 14:20:48",
       "status": "ACTIVE"
     }
   ],
@@ -864,6 +910,58 @@
         "МТФ: 5m, 15m, 1h согласны",
         "OI растёт +2.1% + цена ↑",
         "CVD положительный (-0.8%)",
+        "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
+    {
+      "id": 746,
+      "symbol": "SIRENUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.93876,
+      "tp1": 0.957535,
+      "tp2": 0.97631,
+      "sl": 0.919985,
+      "entry_orig": 0.93876,
+      "tp1_orig": 0.957535,
+      "tp2_orig": 0.97631,
+      "sl_orig": 0.919985,
+      "strength": 58,
+      "taken_at": "2026-03-21T14:20:48.208958",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.00238)",
+        "EMA20 > EMA50 (golden cross) 🌟",
+        "Объём x4.1 🔥🔥🔥",
+        "МТФ: 5m, 15m согласны",
+        "OI растёт +1.9% + цена ↑",
+        "CVD растёт (+8.6%) — покупки усиливаются 📈",
+        "⚡ Рыночный вход (MTF 2+ ТФ)"
+      ]
+    },
+    {
+      "id": 747,
+      "symbol": "GUAUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.30117,
+      "tp1": 0.307193,
+      "tp2": 0.313217,
+      "sl": 0.295147,
+      "entry_orig": 0.30117,
+      "tp1_orig": 0.307193,
+      "tp2_orig": 0.313217,
+      "sl_orig": 0.295147,
+      "strength": 53,
+      "taken_at": "2026-03-21T14:20:48.423649",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.00063)",
+        "Цена выше EMA20",
+        "Стакан: сильное давление покупки (+0.47)",
+        "МТФ: 5m, 1h, 4h согласны",
+        "CVD растёт (+5.9%) — покупки усиливаются 📈",
+        "Bullish Engulfing (1h) 🕯️",
         "⚡ Рыночный вход (MTF сильный)"
       ]
     }
