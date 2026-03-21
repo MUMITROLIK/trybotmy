@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-21T00:02:37.920383+00:00",
+  "updated_at": "2026-03-21T00:03:25.433508+00:00",
   "publish_status": {
-    "last_ok": "2026-03-21T00:02:05Z",
+    "last_ok": "2026-03-21T00:02:43Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -11,18 +11,18 @@
   },
   "stats": {
     "total": 782,
-    "wins": 246,
+    "wins": 247,
     "losses": 162,
-    "active": 8,
-    "winrate": 60.3
+    "active": 7,
+    "winrate": 60.4
   },
   "trade_stats": {
-    "open": 13,
+    "open": 12,
     "pending": 0,
-    "wins": 284,
+    "wins": 285,
     "losses": 296,
-    "total_pnl": 33.98,
-    "winrate": 49.0
+    "total_pnl": 37.13,
+    "winrate": 49.1
   },
   "fear_greed": {
     "value": 11,
@@ -201,17 +201,19 @@
       "news": "Grayscale files for HYPE ETF as Hyperliquid gains traction despite mixed ETF flows",
       "created_at": "2026-03-20 22:44:24",
       "status": "ACTIVE"
-    },
+    }
+  ],
+  "history": [
     {
-      "id": 820,
       "symbol": "ANKRUSDT",
       "direction": "LONG",
-      "exchange": "binance",
       "entry": 0.005461,
       "tp1": 0.005601,
       "tp2": 0.00574,
       "sl": 0.005349,
       "strength": 55,
+      "status": "TP1",
+      "created_at": "2026-03-21 00:01:02",
       "reasons": [
         "MACD бычий (hist=0.00000)",
         "Цена > EMA20 > EMA50",
@@ -220,13 +222,8 @@
         "CVD растёт (+6.7%) — покупки усиливаются 📈",
         "Bullish Engulfing (1h) 🕯️",
         "⚡ Рыночный вход (MTF сильный)"
-      ],
-      "news": null,
-      "created_at": "2026-03-21 00:01:02",
-      "status": "ACTIVE"
-    }
-  ],
-  "history": [
+      ]
+    },
     {
       "symbol": "KATUSDT",
       "direction": "LONG",
@@ -605,26 +602,6 @@
         "OI падает (шорты закрываются)",
         "Цена у поддержки 4479.9000"
       ]
-    },
-    {
-      "symbol": "WAXPUSDT",
-      "direction": "LONG",
-      "entry": 0.008124,
-      "tp1": 0.008363,
-      "tp2": 0.008601,
-      "sl": 0.007933,
-      "strength": 50,
-      "status": "SL",
-      "created_at": "2026-03-20 17:36:53",
-      "reasons": [
-        "MACD бычий (hist=0.00000)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: давление покупки (+0.15)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +12.2% + цена ↑",
-        "CVD положительный (+0.5%)",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
     }
   ],
   "trades_open": [
@@ -946,35 +923,23 @@
         "⚠️ Funding через 77м",
         "⚡ Рыночный вход (MTF сильный)"
       ]
-    },
-    {
-      "id": 674,
-      "symbol": "ANKRUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.005461,
-      "tp1": 0.005601,
-      "tp2": 0.00574,
-      "sl": 0.005349,
-      "entry_orig": 0.005461,
-      "tp1_orig": 0.005601,
-      "tp2_orig": 0.00574,
-      "sl_orig": 0.005349,
-      "strength": 55,
-      "taken_at": "2026-03-21T00:01:02.576957",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00000)",
-        "Цена > EMA20 > EMA50",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +12.1% + цена ↑",
-        "CVD растёт (+6.7%) — покупки усиливаются 📈",
-        "Bullish Engulfing (1h) 🕯️",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
     }
   ],
   "trades_history": [
+    {
+      "symbol": "ANKRUSDT",
+      "direction": "LONG",
+      "entry": 0.005461,
+      "tp1": 0.005601,
+      "tp2": 0.00574,
+      "sl": 0.005638,
+      "strength": 55,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 3.15,
+      "close_price": 0.005633,
+      "taken_at": "2026-03-21T00:01:02.576957",
+      "closed_at": "2026-03-21 00:03:25"
+    },
     {
       "symbol": "WCTUSDT",
       "direction": "LONG",
@@ -3760,20 +3725,6 @@
       "close_price": 0.15,
       "taken_at": "2026-03-18T23:15:09.738303",
       "closed_at": "2026-03-18 23:43:02"
-    },
-    {
-      "symbol": "SIRENUSDT",
-      "direction": "SHORT",
-      "entry": 0.90049,
-      "tp1": 0.874643,
-      "tp2": 0.848796,
-      "sl": 0.86905365,
-      "strength": 45,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 2.52,
-      "close_price": 0.87779,
-      "taken_at": "2026-03-18T23:26:29.871402",
-      "closed_at": "2026-03-18 23:33:29"
     }
   ]
 }
