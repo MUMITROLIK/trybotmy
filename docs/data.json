@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-21T11:56:38.735214+00:00",
+  "updated_at": "2026-03-21T11:57:26.200037+00:00",
   "publish_status": {
-    "last_ok": "2026-03-21T11:56:13Z",
+    "last_ok": "2026-03-21T11:56:44Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 59.0
   },
   "trade_stats": {
-    "open": 12,
+    "open": 11,
     "pending": 0,
-    "wins": 309,
+    "wins": 310,
     "losses": 327,
-    "total_pnl": 24.46,
-    "winrate": 48.6
+    "total_pnl": 26.5,
+    "winrate": 48.7
   },
   "fear_greed": {
     "value": 12,
@@ -960,36 +960,23 @@
         "Bullish Engulfing (1h) 🕯️",
         "⚡ Рыночный вход (MTF 2+ ТФ)"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 724,
       "symbol": "GUNUSDT",
       "direction": "LONG",
-      "exchange": "binance",
       "entry": 0.02058,
       "tp1": 0.020992,
       "tp2": 0.021403,
       "sl": 0.02101,
-      "entry_orig": 0.02058,
-      "tp1_orig": 0.020992,
-      "tp2_orig": 0.021403,
-      "sl_orig": 0.020168,
       "strength": 50,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 2.04,
+      "close_price": 0.021,
       "taken_at": "2026-03-21T11:13:40.343204",
-      "status": "TP1_HIT",
-      "reasons": [
-        "MACD бычий (hist=0.00002)",
-        "Цена > EMA20 > EMA50",
-        "Объём x1.9 🔥",
-        "Стакан: перевес bid (+0.08)",
-        "МТФ: 5m, 15m, 4h согласны",
-        "OI растёт +2.3% + цена ↑",
-        "CVD положительный (-2.7%)",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-21 11:57:25"
+    },
     {
       "symbol": "SIGNUSDT",
       "direction": "LONG",
@@ -3775,20 +3762,6 @@
       "close_price": 0.001275,
       "taken_at": "2026-03-19T16:11:06.979470",
       "closed_at": "2026-03-19 17:13:29"
-    },
-    {
-      "symbol": "KITEUSDT",
-      "direction": "LONG",
-      "entry": 0.19203,
-      "tp1": 0.195871,
-      "tp2": 0.199711,
-      "sl": 0.19611,
-      "strength": 45,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 2.07,
-      "close_price": 0.19600499999999998,
-      "taken_at": "2026-03-19T13:57:27.573213",
-      "closed_at": "2026-03-19 17:13:02"
     }
   ]
 }
