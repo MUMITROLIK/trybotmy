@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-21T11:30:21.281804+00:00",
+  "updated_at": "2026-03-21T11:30:52.771522+00:00",
   "publish_status": {
-    "last_ok": "2026-03-21T11:29:03Z",
+    "last_ok": "2026-03-21T11:30:27Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 58.9
   },
   "trade_stats": {
-    "open": 13,
+    "open": 12,
     "pending": 0,
-    "wins": 306,
+    "wins": 307,
     "losses": 325,
-    "total_pnl": 22.72,
-    "winrate": 48.5
+    "total_pnl": 26.85,
+    "winrate": 48.6
   },
   "fear_greed": {
     "value": 12,
@@ -1040,35 +1040,23 @@
         "OI растёт +1.6% + цена ↑",
         "Цена у поддержки 0.3343"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 723,
       "symbol": "RIVERUSDT",
       "direction": "LONG",
-      "exchange": "binance",
       "entry": 24.777,
       "tp1": 25.684821,
       "tp2": 26.592643,
       "sl": 25.929499999999997,
-      "entry_orig": 24.777,
-      "tp1_orig": 25.684821,
-      "tp2_orig": 26.592643,
-      "sl_orig": 24.050743,
       "strength": 50,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 4.13,
+      "close_price": 25.801000000000002,
       "taken_at": "2026-03-21T11:08:23.177390",
-      "status": "TP1_HIT",
-      "reasons": [
-        "RSI=49 (нейтральный↓)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: сильное давление покупки (+0.28)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +6.9% + цена ↑",
-        "CVD растёт (+9.6%) — покупки усиливаются 📈",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-21 11:30:52"
+    },
     {
       "symbol": "PLAYUSDT",
       "direction": "LONG",
@@ -3854,20 +3842,6 @@
       "close_price": 0.00335635,
       "taken_at": "2026-03-19T12:15:30.168587",
       "closed_at": "2026-03-19 16:36:12"
-    },
-    {
-      "symbol": "ENJUSDT",
-      "direction": "LONG",
-      "entry": 0.02399,
-      "tp1": 0.024549,
-      "tp2": 0.025109,
-      "sl": 0.02463122,
-      "strength": 47,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 2.27,
-      "close_price": 0.024535,
-      "taken_at": "2026-03-19T16:10:32.548034",
-      "closed_at": "2026-03-19 16:16:07"
     }
   ]
 }
