@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-21T09:22:22.105804+00:00",
+  "updated_at": "2026-03-21T09:23:12.340256+00:00",
   "publish_status": {
-    "last_ok": "2026-03-21T09:21:22Z",
+    "last_ok": "2026-03-21T09:22:28Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 815,
+    "total": 816,
     "wins": 258,
     "losses": 171,
-    "active": 10,
+    "active": 11,
     "winrate": 60.1
   },
   "trade_stats": {
-    "open": 12,
+    "open": 13,
     "pending": 0,
     "wins": 302,
     "losses": 312,
@@ -267,6 +267,28 @@
       ],
       "news": null,
       "created_at": "2026-03-21 09:21:30",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 854,
+      "symbol": "IRYSUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.022599,
+      "tp1": 0.023166,
+      "tp2": 0.023733,
+      "sl": 0.022146,
+      "strength": 53,
+      "reasons": [
+        "MACD бычий (hist=0.00007)",
+        "Цена > EMA20 > EMA50",
+        "Объём x2.7 🔥🔥",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +1.7% + цена ↑",
+        "⚡ Рыночный вход (MTF сильный)"
+      ],
+      "news": null,
+      "created_at": "2026-03-21 09:23:10",
       "status": "ACTIVE"
     }
   ],
@@ -1008,6 +1030,31 @@
         "Стакан: давление покупки (+0.21)",
         "МТФ: все 4 таймфрейма согласны ✅✅",
         "OI растёт +2.9% + цена ↑",
+        "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
+    {
+      "id": 708,
+      "symbol": "IRYSUSDT",
+      "direction": "LONG",
+      "exchange": "bybit",
+      "entry": 0.022599,
+      "tp1": 0.023166,
+      "tp2": 0.023733,
+      "sl": 0.022146,
+      "entry_orig": 0.022599,
+      "tp1_orig": 0.023166,
+      "tp2_orig": 0.023733,
+      "sl_orig": 0.022146,
+      "strength": 53,
+      "taken_at": "2026-03-21T09:23:10.823571",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.00007)",
+        "Цена > EMA20 > EMA50",
+        "Объём x2.7 🔥🔥",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +1.7% + цена ↑",
         "⚡ Рыночный вход (MTF сильный)"
       ]
     }
