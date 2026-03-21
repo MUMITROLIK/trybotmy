@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-21T10:19:22.685722+00:00",
+  "updated_at": "2026-03-21T10:20:11.967231+00:00",
   "publish_status": {
-    "last_ok": "2026-03-21T10:18:22Z",
+    "last_ok": "2026-03-21T10:19:28Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,11 +17,11 @@
     "winrate": 59.6
   },
   "trade_stats": {
-    "open": 15,
+    "open": 13,
     "pending": 0,
-    "wins": 303,
-    "losses": 317,
-    "total_pnl": 30.26,
+    "wins": 304,
+    "losses": 318,
+    "total_pnl": 31.77,
     "winrate": 48.9
   },
   "fear_greed": {
@@ -738,35 +738,6 @@
   ],
   "trades_open": [
     {
-      "id": 687,
-      "symbol": "ZECUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 234.51,
-      "tp1": 239.2002,
-      "tp2": 243.8904,
-      "sl": 229.8198,
-      "entry_orig": 234.51,
-      "tp1_orig": 239.2002,
-      "tp2_orig": 243.8904,
-      "sl_orig": 229.8198,
-      "strength": 55,
-      "taken_at": "2026-03-21T02:19:43.353244",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=37 (перепроданность)",
-        "BB ниже середины",
-        "Цена > EMA20 > EMA50",
-        "Стакан: сильное давление покупки (+0.33)",
-        "📰 Grayscale Predicts 18x Upside For Zcash If This Happens",
-        "МТФ: 15m, 4h согласны",
-        "CVD положительный (+3.6%)",
-        "Hammer (1h) 🔨",
-        "Цена у поддержки 233.5700",
-        "⚡ Рыночный вход (MTF 2+ ТФ)"
-      ]
-    },
-    {
       "id": 693,
       "symbol": "WLFIUSDT",
       "direction": "LONG",
@@ -1054,31 +1025,6 @@
       ]
     },
     {
-      "id": 714,
-      "symbol": "ARCUSDT",
-      "direction": "LONG",
-      "exchange": "bybit",
-      "entry": 0.0497,
-      "tp1": 0.050694,
-      "tp2": 0.051688,
-      "sl": 0.048706,
-      "entry_orig": 0.0497,
-      "tp1_orig": 0.050694,
-      "tp2_orig": 0.051688,
-      "sl_orig": 0.048706,
-      "strength": 53,
-      "taken_at": "2026-03-21T09:55:58.887927",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00001)",
-        "Цена > EMA20 > EMA50",
-        "Объём x3.9 🔥🔥",
-        "Стакан: перевес bid (+0.06)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 715,
       "symbol": "ROBOUSDT",
       "direction": "LONG",
@@ -1132,6 +1078,34 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "ARCUSDT",
+      "direction": "LONG",
+      "entry": 0.0497,
+      "tp1": 0.050694,
+      "tp2": 0.051688,
+      "sl": 0.05081,
+      "strength": 53,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 2.23,
+      "close_price": 0.05081,
+      "taken_at": "2026-03-21T09:55:58.887927",
+      "closed_at": "2026-03-21 10:20:11"
+    },
+    {
+      "symbol": "ZECUSDT",
+      "direction": "LONG",
+      "entry": 234.51,
+      "tp1": 239.2002,
+      "tp2": 243.8904,
+      "sl": 229.8198,
+      "strength": 55,
+      "status": "TIMEOUT",
+      "pnl_pct": -0.72,
+      "close_price": 232.825,
+      "taken_at": "2026-03-21T02:19:43.353244",
+      "closed_at": "2026-03-21 10:19:50"
+    },
     {
       "symbol": "PTBUSDT",
       "direction": "LONG",
@@ -3903,34 +3877,6 @@
       "close_price": 0.010105,
       "taken_at": "2026-03-19T15:28:48.780657",
       "closed_at": "2026-03-19 15:39:55"
-    },
-    {
-      "symbol": "1000BONKUSDT",
-      "direction": "SHORT",
-      "entry": 0.00597,
-      "tp1": 0.005851,
-      "tp2": 0.005731,
-      "sl": 0.0058505,
-      "strength": 47,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 1.97,
-      "close_price": 0.0058525,
-      "taken_at": "2026-03-19T12:34:35.542778",
-      "closed_at": "2026-03-19 15:23:47"
-    },
-    {
-      "symbol": "PUMPUSDT",
-      "direction": "LONG",
-      "entry": 0.001849,
-      "tp1": 0.001886,
-      "tp2": 0.001923,
-      "sl": 0.001812,
-      "strength": 46,
-      "status": "SL",
-      "pnl_pct": -2.03,
-      "close_price": 0.0018115,
-      "taken_at": "2026-03-19T13:11:05.806556",
-      "closed_at": "2026-03-19 15:21:06"
     }
   ]
 }
