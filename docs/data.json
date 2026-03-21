@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-21T12:21:46.684710+00:00",
+  "updated_at": "2026-03-21T12:22:17.730993+00:00",
   "publish_status": {
-    "last_ok": "2026-03-21T12:20:35Z",
+    "last_ok": "2026-03-21T12:21:52Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -13,16 +13,16 @@
     "total": 840,
     "wins": 268,
     "losses": 185,
-    "active": 11,
+    "active": 10,
     "winrate": 59.2
   },
   "trade_stats": {
-    "open": 12,
+    "open": 11,
     "pending": 0,
-    "wins": 312,
+    "wins": 313,
     "losses": 327,
-    "total_pnl": 30.64,
-    "winrate": 48.8
+    "total_pnl": 31.75,
+    "winrate": 48.9
   },
   "fear_greed": {
     "value": 12,
@@ -36,30 +36,6 @@
     "trained_at": "2026-03-21T11:41:36.038769+00:00"
   },
   "signals": [
-    {
-      "id": 845,
-      "symbol": "PIUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.1968,
-      "tp1": 0.200736,
-      "tp2": 0.204672,
-      "sl": 0.192864,
-      "strength": 52,
-      "reasons": [
-        "RSI=38 (перепроданность)",
-        "BB нижняя полоса (пробой)",
-        "EMA20 > EMA50",
-        "Объём x2.8 🔥🔥",
-        "Стакан: давление покупки (+0.12)",
-        "МТФ: 15m, 1h согласны",
-        "Цена у поддержки 0.1961",
-        "⚡ Рыночный вход (MTF 2+ ТФ)"
-      ],
-      "news": null,
-      "created_at": "2026-03-21 08:21:55",
-      "status": "ACTIVE"
-    },
     {
       "id": 849,
       "symbol": "KASUSDT",
@@ -699,32 +675,6 @@
   ],
   "trades_open": [
     {
-      "id": 693,
-      "symbol": "WLFIUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.0942,
-      "tp1": 0.096084,
-      "tp2": 0.097968,
-      "sl": 0.092316,
-      "entry_orig": 0.0942,
-      "tp1_orig": 0.096084,
-      "tp2_orig": 0.097968,
-      "sl_orig": 0.092316,
-      "strength": 57,
-      "taken_at": "2026-03-21T04:22:00.058366",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00005)",
-        "Цена > EMA20 > EMA50",
-        "Объём x4.7 🔥🔥🔥",
-        "Стакан: давление покупки (+0.11)",
-        "МТФ: 5m, 15m согласны",
-        "CVD растёт (+7.7%) — покупки усиливаются 📈",
-        "⚡ Рыночный вход (MTF 2+ ТФ)"
-      ]
-    },
-    {
       "id": 703,
       "symbol": "KASUSDT",
       "direction": "LONG",
@@ -880,32 +830,6 @@
       ]
     },
     {
-      "id": 727,
-      "symbol": "POWERUSDT",
-      "direction": "LONG",
-      "exchange": "bybit",
-      "entry": 0.10138,
-      "tp1": 0.103408,
-      "tp2": 0.105435,
-      "sl": 0.099352,
-      "entry_orig": 0.10138,
-      "tp1_orig": 0.103408,
-      "tp2_orig": 0.105435,
-      "sl_orig": 0.099352,
-      "strength": 58,
-      "taken_at": "2026-03-21T11:40:57.902306",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00032)",
-        "Цена > EMA20 > EMA50",
-        "Объём x3.1 🔥🔥",
-        "Стакан: сильное давление покупки (+0.26)",
-        "МТФ: 5m, 15m, 1h согласны",
-        "OI растёт +0.9% + цена ↑",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 729,
       "symbol": "SIRENUSDT",
       "direction": "LONG",
@@ -1010,9 +934,49 @@
         "МТФ: все 4 таймфрейма согласны ✅✅",
         "⚡ Рыночный вход (MTF сильный)"
       ]
+    },
+    {
+      "id": 727,
+      "symbol": "POWERUSDT",
+      "direction": "LONG",
+      "exchange": "bybit",
+      "entry": 0.10138,
+      "tp1": 0.103408,
+      "tp2": 0.105435,
+      "sl": 0.10381,
+      "entry_orig": 0.10138,
+      "tp1_orig": 0.103408,
+      "tp2_orig": 0.105435,
+      "sl_orig": 0.099352,
+      "strength": 58,
+      "taken_at": "2026-03-21T11:40:57.902306",
+      "status": "TP1_HIT",
+      "reasons": [
+        "MACD бычий (hist=0.00032)",
+        "Цена > EMA20 > EMA50",
+        "Объём x3.1 🔥🔥",
+        "Стакан: сильное давление покупки (+0.26)",
+        "МТФ: 5m, 15m, 1h согласны",
+        "OI растёт +0.9% + цена ↑",
+        "⚡ Рыночный вход (MTF сильный)"
+      ]
     }
   ],
   "trades_history": [
+    {
+      "symbol": "WLFIUSDT",
+      "direction": "LONG",
+      "entry": 0.0942,
+      "tp1": 0.096084,
+      "tp2": 0.097968,
+      "sl": 0.092316,
+      "strength": 57,
+      "status": "TIMEOUT",
+      "pnl_pct": 1.11,
+      "close_price": 0.09525,
+      "taken_at": "2026-03-21T04:22:00.058366",
+      "closed_at": "2026-03-21 12:22:12"
+    },
     {
       "symbol": "MYXUSDT",
       "direction": "LONG",
@@ -3798,20 +3762,6 @@
       "close_price": 39.8455,
       "taken_at": "2026-03-19T13:47:11.096597",
       "closed_at": "2026-03-19 17:33:19"
-    },
-    {
-      "symbol": "REZUSDT",
-      "direction": "LONG",
-      "entry": 0.003415,
-      "tp1": 0.003483,
-      "tp2": 0.003552,
-      "sl": 0.003483,
-      "strength": 49,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 1.93,
-      "close_price": 0.003481,
-      "taken_at": "2026-03-19T13:14:30.363468",
-      "closed_at": "2026-03-19 17:32:57"
     }
   ]
 }
