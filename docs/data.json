@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-21T00:36:12.609365+00:00",
+  "updated_at": "2026-03-21T00:36:47.333445+00:00",
   "publish_status": {
-    "last_ok": "2026-03-21T00:35:47Z",
+    "last_ok": "2026-03-21T00:36:18Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 60.3
   },
   "trade_stats": {
-    "open": 14,
+    "open": 13,
     "pending": 0,
     "wins": 287,
-    "losses": 298,
-    "total_pnl": 36.81,
-    "winrate": 49.1
+    "losses": 299,
+    "total_pnl": 35.72,
+    "winrate": 49.0
   },
   "fear_greed": {
     "value": 12,
@@ -660,33 +660,6 @@
   ],
   "trades_open": [
     {
-      "id": 638,
-      "symbol": "APTUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 1.0038,
-      "tp1": 1.023876,
-      "tp2": 1.043952,
-      "sl": 0.983724,
-      "entry_orig": 1.0038,
-      "tp1_orig": 1.023876,
-      "tp2_orig": 1.043952,
-      "sl_orig": 0.983724,
-      "strength": 51,
-      "taken_at": "2026-03-20T16:36:19.016809",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00010)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: давление покупки (+0.16)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +2.1% + цена ↑",
-        "CVD положительный (+1.5%)",
-        "Doji (1h) — нерешительность",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 639,
       "symbol": "TONUSDT",
       "direction": "LONG",
@@ -1037,6 +1010,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "APTUSDT",
+      "direction": "LONG",
+      "entry": 1.0038,
+      "tp1": 1.023876,
+      "tp2": 1.043952,
+      "sl": 0.983724,
+      "strength": 51,
+      "status": "TIMEOUT",
+      "pnl_pct": -1.09,
+      "close_price": 0.99285,
+      "taken_at": "2026-03-20T16:36:19.016809",
+      "closed_at": "2026-03-21 00:36:19"
+    },
     {
       "symbol": "ANKRUSDT",
       "direction": "LONG",
@@ -3822,20 +3809,6 @@
       "close_price": 0.26605,
       "taken_at": "2026-03-18T22:37:38.888791",
       "closed_at": "2026-03-19 06:37:43"
-    },
-    {
-      "symbol": "MNTUSDT",
-      "direction": "SHORT",
-      "entry": 0.763,
-      "tp1": 0.740639,
-      "tp2": 0.718279,
-      "sl": 0.780889,
-      "strength": 35,
-      "status": "MANUAL",
-      "pnl_pct": 0,
-      "close_price": 0.763,
-      "taken_at": "2026-03-18T16:25:13.251200",
-      "closed_at": "2026-03-19 06:28:57"
     }
   ]
 }
