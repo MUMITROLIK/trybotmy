@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-21T10:54:21.478931+00:00",
+  "updated_at": "2026-03-21T10:55:05.330258+00:00",
   "publish_status": {
-    "last_ok": "2026-03-21T10:53:11Z",
+    "last_ok": "2026-03-21T10:54:27Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,18 +10,18 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 828,
+    "total": 829,
     "wins": 261,
-    "losses": 180,
+    "losses": 181,
     "active": 11,
-    "winrate": 59.2
+    "winrate": 59.0
   },
   "trade_stats": {
     "open": 12,
     "pending": 0,
     "wins": 305,
-    "losses": 322,
-    "total_pnl": 26.93,
+    "losses": 323,
+    "total_pnl": 24.87,
     "winrate": 48.6
   },
   "fear_greed": {
@@ -82,29 +82,6 @@
       ],
       "news": null,
       "created_at": "2026-03-21 09:05:32",
-      "status": "ACTIVE"
-    },
-    {
-      "id": 851,
-      "symbol": "FARTCOINUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.2014,
-      "tp1": 0.205428,
-      "tp2": 0.209456,
-      "sl": 0.197372,
-      "strength": 56,
-      "reasons": [
-        "MACD бычий (hist=0.00061)",
-        "EMA20 > EMA50 (golden cross) 🌟",
-        "Объём x3.7 🔥🔥",
-        "МТФ: 5m, 15m, 4h согласны",
-        "OI растёт +2.2%",
-        "CVD растёт (+5.1%) — покупки усиливаются 📈",
-        "⚡ Рыночный вход (MTF сильный)"
-      ],
-      "news": null,
-      "created_at": "2026-03-21 09:14:10",
       "status": "ACTIVE"
     },
     {
@@ -290,6 +267,28 @@
       "news": null,
       "created_at": "2026-03-21 10:51:28",
       "status": "ACTIVE"
+    },
+    {
+      "id": 867,
+      "symbol": "AKTUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.5863,
+      "tp1": 0.601021,
+      "tp2": 0.615743,
+      "sl": 0.574523,
+      "strength": 50,
+      "reasons": [
+        "MACD бычий (hist=0.00234)",
+        "Цена > EMA20 > EMA50",
+        "Объём x2.7 🔥🔥",
+        "Стакан: перевес bid (+0.08)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "⚡ Рыночный вход (MTF сильный)"
+      ],
+      "news": null,
+      "created_at": "2026-03-21 10:54:47",
+      "status": "ACTIVE"
     }
   ],
   "history": [
@@ -430,6 +429,26 @@
         "Стакан: давление покупки (+0.21)",
         "МТФ: все 4 таймфрейма согласны ✅✅",
         "OI растёт +2.9% + цена ↑",
+        "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
+    {
+      "symbol": "FARTCOINUSDT",
+      "direction": "LONG",
+      "entry": 0.2014,
+      "tp1": 0.205428,
+      "tp2": 0.209456,
+      "sl": 0.197372,
+      "strength": 56,
+      "status": "SL",
+      "created_at": "2026-03-21 09:14:10",
+      "reasons": [
+        "MACD бычий (hist=0.00061)",
+        "EMA20 > EMA50 (golden cross) 🌟",
+        "Объём x3.7 🔥🔥",
+        "МТФ: 5m, 15m, 4h согласны",
+        "OI растёт +2.2%",
+        "CVD растёт (+5.1%) — покупки усиливаются 📈",
         "⚡ Рыночный вход (MTF сильный)"
       ]
     },
@@ -681,27 +700,6 @@
         "OI растёт +0.7% + цена ↑",
         "⚡ Рыночный вход (MTF сильный)"
       ]
-    },
-    {
-      "symbol": "PIXELUSDT",
-      "direction": "LONG",
-      "entry": 0.009937,
-      "tp1": 0.01014,
-      "tp2": 0.010343,
-      "sl": 0.009738,
-      "strength": 60,
-      "status": "TP1",
-      "created_at": "2026-03-21 03:06:18",
-      "reasons": [
-        "MACD бычий (hist=0.00006)",
-        "Цена > EMA20 > EMA50",
-        "Объём x2.0 🔥",
-        "Стакан: сильное давление покупки (+0.38)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +2.4% + цена ↑",
-        "CVD положительный (+2.6%)",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
     }
   ],
   "trades_open": [
@@ -783,32 +781,6 @@
         "OI растёт +1.7%",
         "CVD растёт (+9.6%) — покупки усиливаются 📈",
         "Bullish Engulfing (1h) 🕯️"
-      ]
-    },
-    {
-      "id": 705,
-      "symbol": "FARTCOINUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.2014,
-      "tp1": 0.205428,
-      "tp2": 0.209456,
-      "sl": 0.197372,
-      "entry_orig": 0.2014,
-      "tp1_orig": 0.205428,
-      "tp2_orig": 0.209456,
-      "sl_orig": 0.197372,
-      "strength": 56,
-      "taken_at": "2026-03-21T09:14:10.701995",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00061)",
-        "EMA20 > EMA50 (golden cross) 🌟",
-        "Объём x3.7 🔥🔥",
-        "МТФ: 5m, 15m, 4h согласны",
-        "OI растёт +2.2%",
-        "CVD растёт (+5.1%) — покупки усиливаются 📈",
-        "⚡ Рыночный вход (MTF сильный)"
       ]
     },
     {
@@ -1018,9 +990,48 @@
         "OI растёт +1.9% + цена ↑",
         "⚡ Рыночный вход (MTF сильный)"
       ]
+    },
+    {
+      "id": 721,
+      "symbol": "AKTUSDT",
+      "direction": "LONG",
+      "exchange": "bybit",
+      "entry": 0.5863,
+      "tp1": 0.601021,
+      "tp2": 0.615743,
+      "sl": 0.574523,
+      "entry_orig": 0.5863,
+      "tp1_orig": 0.601021,
+      "tp2_orig": 0.615743,
+      "sl_orig": 0.574523,
+      "strength": 50,
+      "taken_at": "2026-03-21T10:54:48.067371",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.00234)",
+        "Цена > EMA20 > EMA50",
+        "Объём x2.7 🔥🔥",
+        "Стакан: перевес bid (+0.08)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "⚡ Рыночный вход (MTF сильный)"
+      ]
     }
   ],
   "trades_history": [
+    {
+      "symbol": "FARTCOINUSDT",
+      "direction": "LONG",
+      "entry": 0.2014,
+      "tp1": 0.205428,
+      "tp2": 0.209456,
+      "sl": 0.197372,
+      "strength": 56,
+      "status": "SL",
+      "pnl_pct": -2.06,
+      "close_price": 0.19724999999999998,
+      "taken_at": "2026-03-21T09:14:10.701995",
+      "closed_at": "2026-03-21 10:55:05"
+    },
     {
       "symbol": "JCTUSDT",
       "direction": "LONG",
@@ -3806,20 +3817,6 @@
       "close_price": 1.1675,
       "taken_at": "2026-03-19T15:09:54.616995",
       "closed_at": "2026-03-19 15:51:29"
-    },
-    {
-      "symbol": "WLFIUSDT",
-      "direction": "SHORT",
-      "entry": 0.094,
-      "tp1": 0.09212,
-      "tp2": 0.09024,
-      "sl": 0.09204999999999999,
-      "strength": 47,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 2.07,
-      "close_price": 0.09204999999999999,
-      "taken_at": "2026-03-19T12:55:34.195319",
-      "closed_at": "2026-03-19 15:47:16"
     }
   ]
 }
