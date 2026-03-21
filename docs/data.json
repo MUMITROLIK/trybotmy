@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-21T11:46:52.359327+00:00",
+  "updated_at": "2026-03-21T11:47:51.114404+00:00",
   "publish_status": {
-    "last_ok": "2026-03-21T11:46:24Z",
+    "last_ok": "2026-03-21T11:46:58Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 836,
+    "total": 837,
     "wins": 264,
     "losses": 185,
-    "active": 11,
+    "active": 12,
     "winrate": 58.8
   },
   "trade_stats": {
-    "open": 12,
+    "open": 13,
     "pending": 0,
     "wins": 308,
     "losses": 327,
@@ -288,6 +288,31 @@
       ],
       "news": null,
       "created_at": "2026-03-21 11:40:57",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 875,
+      "symbol": "SIRENUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.91755,
+      "tp1": 0.935901,
+      "tp2": 0.954252,
+      "sl": 0.899199,
+      "strength": 51,
+      "reasons": [
+        "RSI=47 (нейтральный↓)",
+        "MACD бычий (hist=0.00006)",
+        "Цена выше EMA20",
+        "Стакан: сильное давление покупки (+0.38)",
+        "МТФ: 1h, 4h согласны",
+        "OI растёт +2.1%",
+        "CVD положительный (+4.4%)",
+        "Bullish Engulfing (1h) 🕯️",
+        "⚡ Рыночный вход (MTF 2+ ТФ)"
+      ],
+      "news": null,
+      "created_at": "2026-03-21 11:47:50",
       "status": "ACTIVE"
     }
   ],
@@ -981,6 +1006,34 @@
         "МТФ: 5m, 15m, 1h согласны",
         "OI растёт +0.9% + цена ↑",
         "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
+    {
+      "id": 729,
+      "symbol": "SIRENUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.91755,
+      "tp1": 0.935901,
+      "tp2": 0.954252,
+      "sl": 0.899199,
+      "entry_orig": 0.91755,
+      "tp1_orig": 0.935901,
+      "tp2_orig": 0.954252,
+      "sl_orig": 0.899199,
+      "strength": 51,
+      "taken_at": "2026-03-21T11:47:50.630885",
+      "status": "OPEN",
+      "reasons": [
+        "RSI=47 (нейтральный↓)",
+        "MACD бычий (hist=0.00006)",
+        "Цена выше EMA20",
+        "Стакан: сильное давление покупки (+0.38)",
+        "МТФ: 1h, 4h согласны",
+        "OI растёт +2.1%",
+        "CVD положительный (+4.4%)",
+        "Bullish Engulfing (1h) 🕯️",
+        "⚡ Рыночный вход (MTF 2+ ТФ)"
       ]
     },
     {
