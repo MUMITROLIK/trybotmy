@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-21T11:09:38.268924+00:00",
+  "updated_at": "2026-03-21T11:10:08.600729+00:00",
   "publish_status": {
-    "last_ok": "2026-03-21T11:08:29Z",
+    "last_ok": "2026-03-21T11:09:44Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 58.9
   },
   "trade_stats": {
-    "open": 13,
+    "open": 12,
     "pending": 0,
-    "wins": 305,
+    "wins": 306,
     "losses": 324,
-    "total_pnl": 22.64,
-    "winrate": 48.5
+    "total_pnl": 24.82,
+    "winrate": 48.6
   },
   "fear_greed": {
     "value": 12,
@@ -754,33 +754,6 @@
       ]
     },
     {
-      "id": 699,
-      "symbol": "PIUSDT",
-      "direction": "LONG",
-      "exchange": "okx",
-      "entry": 0.1968,
-      "tp1": 0.200736,
-      "tp2": 0.204672,
-      "sl": 0.192864,
-      "entry_orig": 0.1968,
-      "tp1_orig": 0.200736,
-      "tp2_orig": 0.204672,
-      "sl_orig": 0.192864,
-      "strength": 52,
-      "taken_at": "2026-03-21T08:21:56.118726",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=38 (перепроданность)",
-        "BB нижняя полоса (пробой)",
-        "EMA20 > EMA50",
-        "Объём x2.8 🔥🔥",
-        "Стакан: давление покупки (+0.12)",
-        "МТФ: 15m, 1h согласны",
-        "Цена у поддержки 0.1961",
-        "⚡ Рыночный вход (MTF 2+ ТФ)"
-      ]
-    },
-    {
       "id": 703,
       "symbol": "KASUSDT",
       "direction": "LONG",
@@ -1070,6 +1043,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "PIUSDT",
+      "direction": "LONG",
+      "entry": 0.1968,
+      "tp1": 0.200736,
+      "tp2": 0.204672,
+      "sl": 0.2011,
+      "strength": 52,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 2.18,
+      "close_price": 0.2011,
+      "taken_at": "2026-03-21T08:21:56.118726",
+      "closed_at": "2026-03-21 11:10:08"
+    },
     {
       "symbol": "AKTUSDT",
       "direction": "LONG",
@@ -3855,20 +3842,6 @@
       "close_price": 0.5278,
       "taken_at": "2026-03-19T16:04:20.144851",
       "closed_at": "2026-03-19 16:13:14"
-    },
-    {
-      "symbol": "ARCUSDT",
-      "direction": "LONG",
-      "entry": 0.04275,
-      "tp1": 0.043797,
-      "tp2": 0.044844,
-      "sl": 0.041895,
-      "strength": 45,
-      "status": "SL",
-      "pnl_pct": -2.0,
-      "close_price": 0.041895,
-      "taken_at": "2026-03-19T15:28:34.476897",
-      "closed_at": "2026-03-19 15:57:44"
     }
   ]
 }
