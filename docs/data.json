@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-21T16:41:31.819815+00:00",
+  "updated_at": "2026-03-21T16:44:00.472377+00:00",
   "publish_status": {
-    "last_ok": "2026-03-21T16:40:31Z",
+    "last_ok": "2026-03-21T16:41:37Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -12,16 +12,16 @@
   "stats": {
     "total": 870,
     "wins": 281,
-    "losses": 198,
-    "active": 9,
-    "winrate": 58.7
+    "losses": 199,
+    "active": 8,
+    "winrate": 58.5
   },
   "trade_stats": {
-    "open": 10,
+    "open": 9,
     "pending": 0,
     "wins": 329,
-    "losses": 342,
-    "total_pnl": 29.4,
+    "losses": 343,
+    "total_pnl": 27.3,
     "winrate": 49.0
   },
   "fear_greed": {
@@ -36,29 +36,6 @@
     "trained_at": "2026-03-21T11:41:36.038769+00:00"
   },
   "signals": [
-    {
-      "id": 890,
-      "symbol": "DASHUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 33.27,
-      "tp1": 33.9354,
-      "tp2": 34.6008,
-      "sl": 32.6046,
-      "strength": 51,
-      "reasons": [
-        "MACD бычий (hist=0.05442)",
-        "Цена > EMA20 > EMA50",
-        "Объём x1.9 🔥",
-        "МТФ: 5m, 15m, 1h согласны",
-        "OI растёт +3.2% + цена ↑",
-        "CVD растёт (+5.5%) — покупки усиливаются 📈",
-        "⚡ Рыночный вход (MTF сильный)"
-      ],
-      "news": null,
-      "created_at": "2026-03-21 14:11:47",
-      "status": "ACTIVE"
-    },
     {
       "id": 891,
       "symbol": "KITEUSDT",
@@ -476,6 +453,26 @@
       ]
     },
     {
+      "symbol": "DASHUSDT",
+      "direction": "LONG",
+      "entry": 33.27,
+      "tp1": 33.9354,
+      "tp2": 34.6008,
+      "sl": 32.6046,
+      "strength": 51,
+      "status": "SL",
+      "created_at": "2026-03-21 14:11:47",
+      "reasons": [
+        "MACD бычий (hist=0.05442)",
+        "Цена > EMA20 > EMA50",
+        "Объём x1.9 🔥",
+        "МТФ: 5m, 15m, 1h согласны",
+        "OI растёт +3.2% + цена ↑",
+        "CVD растёт (+5.5%) — покупки усиливаются 📈",
+        "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
+    {
       "symbol": "AKTUSDT",
       "direction": "LONG",
       "entry": 0.6216,
@@ -634,26 +631,6 @@
         "Цена у поддержки 0.6857",
         "⚡ Рыночный вход (MTF сильный)"
       ]
-    },
-    {
-      "symbol": "BTRUSDT",
-      "direction": "LONG",
-      "entry": 0.15325,
-      "tp1": 0.15664,
-      "tp2": 0.16003,
-      "sl": 0.150185,
-      "strength": 51,
-      "status": "SL",
-      "created_at": "2026-03-21 12:30:47",
-      "reasons": [
-        "MACD бычий (hist=0.00041)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: перевес bid (+0.06)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +6.1% + цена ↑",
-        "CVD растёт (+9.9%) — покупки усиливаются 📈",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
     }
   ],
   "trades_open": [
@@ -680,32 +657,6 @@
         "Стакан: сильное давление покупки (+0.32)",
         "МТФ: 15m, 1h, 4h согласны",
         "Цена у поддержки 6.0842",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
-      "id": 744,
-      "symbol": "DASHUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 33.27,
-      "tp1": 33.9354,
-      "tp2": 34.6008,
-      "sl": 32.6046,
-      "entry_orig": 33.27,
-      "tp1_orig": 33.9354,
-      "tp2_orig": 34.6008,
-      "sl_orig": 32.6046,
-      "strength": 51,
-      "taken_at": "2026-03-21T14:11:47.709962",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.05442)",
-        "Цена > EMA20 > EMA50",
-        "Объём x1.9 🔥",
-        "МТФ: 5m, 15m, 1h согласны",
-        "OI растёт +3.2% + цена ↑",
-        "CVD растёт (+5.5%) — покупки усиливаются 📈",
         "⚡ Рыночный вход (MTF сильный)"
       ]
     },
@@ -922,6 +873,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "DASHUSDT",
+      "direction": "LONG",
+      "entry": 33.27,
+      "tp1": 33.9354,
+      "tp2": 34.6008,
+      "sl": 32.6046,
+      "strength": 51,
+      "status": "SL",
+      "pnl_pct": -2.1,
+      "close_price": 32.57,
+      "taken_at": "2026-03-21T14:11:47.709962",
+      "closed_at": "2026-03-21 16:41:39"
+    },
     {
       "symbol": "GUNUSDT",
       "direction": "LONG",
@@ -3707,20 +3672,6 @@
       "close_price": 0.00341935,
       "taken_at": "2026-03-19T16:43:37.657582",
       "closed_at": "2026-03-19 23:30:16"
-    },
-    {
-      "symbol": "BTCUSDT",
-      "direction": "LONG",
-      "entry": 69667.3,
-      "tp1": 71060.646,
-      "tp2": 72453.992,
-      "sl": 68273.954,
-      "strength": 46,
-      "status": "TIMEOUT",
-      "pnl_pct": 0.79,
-      "close_price": 70214.65,
-      "taken_at": "2026-03-19T15:09:29.616921",
-      "closed_at": "2026-03-19 23:09:39"
     }
   ]
 }
