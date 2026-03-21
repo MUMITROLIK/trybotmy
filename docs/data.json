@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-21T17:41:02.175058+00:00",
+  "updated_at": "2026-03-21T17:41:44.398380+00:00",
   "publish_status": {
-    "last_ok": "2026-03-21T17:40:02Z",
+    "last_ok": "2026-03-21T17:41:08Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -12,17 +12,17 @@
   "stats": {
     "total": 872,
     "wins": 284,
-    "losses": 200,
-    "active": 6,
-    "winrate": 58.7
+    "losses": 201,
+    "active": 5,
+    "winrate": 58.6
   },
   "trade_stats": {
-    "open": 6,
+    "open": 5,
     "pending": 0,
     "wins": 333,
-    "losses": 344,
-    "total_pnl": 35.43,
-    "winrate": 49.2
+    "losses": 345,
+    "total_pnl": 33.08,
+    "winrate": 49.1
   },
   "fear_greed": {
     "value": 12,
@@ -150,17 +150,19 @@
       "news": null,
       "created_at": "2026-03-21 17:18:50",
       "status": "ACTIVE"
-    },
+    }
+  ],
+  "history": [
     {
-      "id": 910,
       "symbol": "BEATUSDT",
       "direction": "LONG",
-      "exchange": "binance",
       "entry": 0.6311,
       "tp1": 0.643722,
       "tp2": 0.656344,
       "sl": 0.618478,
       "strength": 50,
+      "status": "SL",
+      "created_at": "2026-03-21 17:25:59",
       "reasons": [
         "MACD бычий (hist=0.00193)",
         "EMA20 > EMA50 (golden cross) 🌟",
@@ -168,13 +170,8 @@
         "МТФ: все 4 таймфрейма согласны ✅✅",
         "CVD положительный (+2.2%)",
         "⚡ Рыночный вход (MTF сильный)"
-      ],
-      "news": null,
-      "created_at": "2026-03-21 17:25:59",
-      "status": "ACTIVE"
-    }
-  ],
-  "history": [
+      ]
+    },
     {
       "symbol": "RIVERUSDT",
       "direction": "LONG",
@@ -564,26 +561,6 @@
         "CVD положительный (+1.0%)",
         "⚡ Рыночный вход (MTF сильный)"
       ]
-    },
-    {
-      "symbol": "HANAUSDT",
-      "direction": "LONG",
-      "entry": 0.042736,
-      "tp1": 0.043591,
-      "tp2": 0.044445,
-      "sl": 0.041881,
-      "strength": 58,
-      "status": "TP1",
-      "created_at": "2026-03-21 13:13:53",
-      "reasons": [
-        "RSI=40 (перепроданность)",
-        "MACD бычий (hist=0.00002)",
-        "BB ниже середины",
-        "Объём x2.8 🔥🔥",
-        "Стакан: сильное давление покупки (+0.38)",
-        "МТФ: только 1 таймфрейм согласен",
-        "OI растёт +0.6%"
-      ]
     }
   ],
   "trades_open": [
@@ -716,34 +693,23 @@
         "CVD положительный (+1.8%)",
         "⚡ Рыночный вход (MTF сильный)"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 764,
       "symbol": "BEATUSDT",
       "direction": "LONG",
-      "exchange": "binance",
       "entry": 0.6311,
       "tp1": 0.643722,
       "tp2": 0.656344,
       "sl": 0.618478,
-      "entry_orig": 0.6311,
-      "tp1_orig": 0.643722,
-      "tp2_orig": 0.656344,
-      "sl_orig": 0.618478,
       "strength": 50,
+      "status": "SL",
+      "pnl_pct": -2.35,
+      "close_price": 0.61625,
       "taken_at": "2026-03-21T17:25:59.906958",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00193)",
-        "EMA20 > EMA50 (golden cross) 🌟",
-        "Стакан: сильное давление покупки (+0.31)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "CVD положительный (+2.2%)",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-21 17:41:43"
+    },
     {
       "symbol": "STOUSDT",
       "direction": "LONG",
@@ -3529,20 +3495,6 @@
       "close_price": 0.236,
       "taken_at": "2026-03-19T17:05:19.834151",
       "closed_at": "2026-03-20 01:05:34"
-    },
-    {
-      "symbol": "FILUSDT",
-      "direction": "LONG",
-      "entry": 0.882,
-      "tp1": 0.89964,
-      "tp2": 0.91728,
-      "sl": 0.9005000000000001,
-      "strength": 46,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 2.1,
-      "close_price": 0.9005000000000001,
-      "taken_at": "2026-03-19T17:03:25.509384",
-      "closed_at": "2026-03-20 01:02:50"
     }
   ]
 }
