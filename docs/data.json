@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-03-21T19:40:39.413498+00:00",
+  "updated_at": "2026-03-21T19:46:14.240344+00:00",
   "publish_status": {
     "last_ok": "2026-03-21T19:39:35Z",
-    "last_error": null,
+    "last_error": "fatal: unable to access 'https://github.com/MUMITROLIK/trybotmy.git/': Recv failure: Connection was reset\n",
     "min_push_interval_sec": 30
   },
   "settings": {
