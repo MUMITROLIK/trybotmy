@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-21T14:43:32.986218+00:00",
+  "updated_at": "2026-03-21T14:44:39.043340+00:00",
   "publish_status": {
-    "last_ok": "2026-03-21T14:42:07Z",
+    "last_ok": "2026-03-21T14:43:39Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 857,
+    "total": 859,
     "wins": 277,
     "losses": 191,
-    "active": 8,
+    "active": 10,
     "winrate": 59.2
   },
   "trade_stats": {
-    "open": 11,
+    "open": 13,
     "pending": 0,
     "wins": 324,
     "losses": 333,
@@ -221,6 +221,54 @@
       ],
       "news": null,
       "created_at": "2026-03-21 14:40:24",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 896,
+      "symbol": "SIRENUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.94977,
+      "tp1": 0.981522,
+      "tp2": 1.013274,
+      "sl": 0.924369,
+      "strength": 61,
+      "reasons": [
+        "MACD бычий (hist=0.00406)",
+        "Цена > EMA20 > EMA50",
+        "Объём x8.7 🔥🔥🔥",
+        "МТФ: 5m, 15m, 1h согласны",
+        "OI растёт +1.9% + цена ↑",
+        "CVD растёт (+11.2%) — покупки усиливаются 📈",
+        "⚠️ Funding через 77м",
+        "⚡ Рыночный вход (MTF сильный)"
+      ],
+      "news": null,
+      "created_at": "2026-03-21 14:43:55",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 897,
+      "symbol": "POWERUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.10872,
+      "tp1": 0.112186,
+      "tp2": 0.115652,
+      "sl": 0.105947,
+      "strength": 52,
+      "reasons": [
+        "MACD бычий (hist=0.00062)",
+        "Цена > EMA20 > EMA50",
+        "Объём x2.2 🔥",
+        "Стакан: сильное давление покупки (+0.39)",
+        "МТФ: 5m, 15m, 1h согласны",
+        "OI растёт +0.5% + цена ↑",
+        "⚠️ Funding через 77м",
+        "⚡ Рыночный вход (MTF сильный)"
+      ],
+      "news": null,
+      "created_at": "2026-03-21 14:43:55",
       "status": "ACTIVE"
     }
   ],
@@ -915,6 +963,60 @@
         "МТФ: все 4 таймфрейма согласны ✅✅",
         "CVD положительный (+1.4%)",
         "⚠️ Funding через 81м",
+        "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
+    {
+      "id": 750,
+      "symbol": "SIRENUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.94977,
+      "tp1": 0.981522,
+      "tp2": 1.013274,
+      "sl": 0.924369,
+      "entry_orig": 0.94977,
+      "tp1_orig": 0.981522,
+      "tp2_orig": 1.013274,
+      "sl_orig": 0.924369,
+      "strength": 61,
+      "taken_at": "2026-03-21T14:43:55.363686",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.00406)",
+        "Цена > EMA20 > EMA50",
+        "Объём x8.7 🔥🔥🔥",
+        "МТФ: 5m, 15m, 1h согласны",
+        "OI растёт +1.9% + цена ↑",
+        "CVD растёт (+11.2%) — покупки усиливаются 📈",
+        "⚠️ Funding через 77м",
+        "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
+    {
+      "id": 751,
+      "symbol": "POWERUSDT",
+      "direction": "LONG",
+      "exchange": "bybit",
+      "entry": 0.10872,
+      "tp1": 0.112186,
+      "tp2": 0.115652,
+      "sl": 0.105947,
+      "entry_orig": 0.10872,
+      "tp1_orig": 0.112186,
+      "tp2_orig": 0.115652,
+      "sl_orig": 0.105947,
+      "strength": 52,
+      "taken_at": "2026-03-21T14:43:55.568718",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.00062)",
+        "Цена > EMA20 > EMA50",
+        "Объём x2.2 🔥",
+        "Стакан: сильное давление покупки (+0.39)",
+        "МТФ: 5m, 15m, 1h согласны",
+        "OI растёт +0.5% + цена ↑",
+        "⚠️ Funding через 77м",
         "⚡ Рыночный вход (MTF сильный)"
       ]
     }
