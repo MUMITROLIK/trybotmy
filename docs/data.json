@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-21T17:18:32.892367+00:00",
+  "updated_at": "2026-03-21T17:19:04.142664+00:00",
   "publish_status": {
-    "last_ok": "2026-03-21T17:17:58Z",
+    "last_ok": "2026-03-21T17:18:39Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,18 +10,18 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 870,
+    "total": 871,
     "wins": 282,
     "losses": 199,
-    "active": 7,
+    "active": 8,
     "winrate": 58.6
   },
   "trade_stats": {
     "open": 8,
     "pending": 0,
     "wins": 330,
-    "losses": 343,
-    "total_pnl": 31.15,
+    "losses": 344,
+    "total_pnl": 29.14,
     "winrate": 49.0
   },
   "fear_greed": {
@@ -197,6 +197,29 @@
       ],
       "news": null,
       "created_at": "2026-03-21 16:29:49",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 909,
+      "symbol": "ANKRUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.005622,
+      "tp1": 0.005754,
+      "tp2": 0.005886,
+      "sl": 0.00551,
+      "strength": 50,
+      "reasons": [
+        "MACD бычий (hist=0.00000)",
+        "Цена > EMA20 > EMA50",
+        "Стакан: давление покупки (+0.11)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +2.7% + цена ↑",
+        "CVD положительный (+1.8%)",
+        "⚡ Рыночный вход (MTF сильный)"
+      ],
+      "news": null,
+      "created_at": "2026-03-21 17:18:50",
       "status": "ACTIVE"
     }
   ],
@@ -667,32 +690,6 @@
       ]
     },
     {
-      "id": 754,
-      "symbol": "FILUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.969,
-      "tp1": 0.98838,
-      "tp2": 1.00776,
-      "sl": 0.94962,
-      "entry_orig": 0.969,
-      "tp1_orig": 0.98838,
-      "tp2_orig": 1.00776,
-      "sl_orig": 0.94962,
-      "strength": 54,
-      "taken_at": "2026-03-21T16:01:55.970147",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00554)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: давление покупки (+0.13)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +5.1% + цена ↑",
-        "CVD растёт (+9.6%) — покупки усиливаются 📈",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 756,
       "symbol": "STOUSDT",
       "direction": "LONG",
@@ -796,6 +793,32 @@
       ]
     },
     {
+      "id": 763,
+      "symbol": "ANKRUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.005622,
+      "tp1": 0.005754,
+      "tp2": 0.005886,
+      "sl": 0.00551,
+      "entry_orig": 0.005622,
+      "tp1_orig": 0.005754,
+      "tp2_orig": 0.005886,
+      "sl_orig": 0.00551,
+      "strength": 50,
+      "taken_at": "2026-03-21T17:18:50.487932",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.00000)",
+        "Цена > EMA20 > EMA50",
+        "Стакан: давление покупки (+0.11)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +2.7% + цена ↑",
+        "CVD положительный (+1.8%)",
+        "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
+    {
       "id": 719,
       "symbol": "DEXEUSDT",
       "direction": "LONG",
@@ -823,6 +846,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "FILUSDT",
+      "direction": "LONG",
+      "entry": 0.969,
+      "tp1": 0.98838,
+      "tp2": 1.00776,
+      "sl": 0.94962,
+      "strength": 54,
+      "status": "SL",
+      "pnl_pct": -2.01,
+      "close_price": 0.9495,
+      "taken_at": "2026-03-21T16:01:55.970147",
+      "closed_at": "2026-03-21 17:19:03"
+    },
     {
       "symbol": "RIVERUSDT",
       "direction": "LONG",
@@ -3608,20 +3645,6 @@
       "close_price": 0.093495,
       "taken_at": "2026-03-19T16:03:34.546497",
       "closed_at": "2026-03-20 00:03:39"
-    },
-    {
-      "symbol": "TSLAUSDT",
-      "direction": "LONG",
-      "entry": 382.57,
-      "tp1": 390.2214,
-      "tp2": 397.8728,
-      "sl": 374.9186,
-      "strength": 45,
-      "status": "TIMEOUT",
-      "pnl_pct": 0.13,
-      "close_price": 383.075,
-      "taken_at": "2026-03-19T16:01:49.082364",
-      "closed_at": "2026-03-20 00:02:01"
     }
   ]
 }
