@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-21T04:51:05.292505+00:00",
+  "updated_at": "2026-03-21T04:51:48.893316+00:00",
   "publish_status": {
-    "last_ok": "2026-03-21T04:50:05Z",
+    "last_ok": "2026-03-21T04:51:11Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,11 +17,11 @@
     "winrate": 60.3
   },
   "trade_stats": {
-    "open": 12,
+    "open": 11,
     "pending": 0,
     "wins": 296,
-    "losses": 304,
-    "total_pnl": 39.62,
+    "losses": 305,
+    "total_pnl": 36.54,
     "winrate": 49.3
   },
   "fear_greed": {
@@ -785,33 +785,6 @@
       ]
     },
     {
-      "id": 685,
-      "symbol": "ANKRUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.006073,
-      "tp1": 0.006307,
-      "tp2": 0.006542,
-      "sl": 0.005886,
-      "entry_orig": 0.006073,
-      "tp1_orig": 0.006307,
-      "tp2_orig": 0.006542,
-      "sl_orig": 0.005886,
-      "strength": 55,
-      "taken_at": "2026-03-21T01:43:02.047130",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00007)",
-        "Цена > EMA20 > EMA50",
-        "Объём x3.6 🔥🔥",
-        "Стакан: давление покупки (+0.22)",
-        "МТФ: 15m, 1h, 4h согласны",
-        "OI растёт +46.0% + цена ↑",
-        "CVD положительный (+3.0%)",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 687,
       "symbol": "ZECUSDT",
       "direction": "LONG",
@@ -975,6 +948,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "ANKRUSDT",
+      "direction": "LONG",
+      "entry": 0.006073,
+      "tp1": 0.006307,
+      "tp2": 0.006542,
+      "sl": 0.005886,
+      "strength": 55,
+      "status": "SL",
+      "pnl_pct": -3.08,
+      "close_price": 0.005886,
+      "taken_at": "2026-03-21T01:43:02.047130",
+      "closed_at": "2026-03-21 04:51:48"
+    },
     {
       "symbol": "ENJUSDT",
       "direction": "LONG",
@@ -3760,20 +3747,6 @@
       "close_price": 126.11,
       "taken_at": "2026-03-19T12:45:36.053927",
       "closed_at": "2026-03-19 13:25:27"
-    },
-    {
-      "symbol": "XAGUSDT",
-      "direction": "LONG",
-      "entry": 66.9,
-      "tp1": 68.238,
-      "tp2": 69.576,
-      "sl": 68.445,
-      "strength": 48,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 2.25,
-      "close_price": 68.405,
-      "taken_at": "2026-03-19T13:07:31.132546",
-      "closed_at": "2026-03-19 13:21:11"
     }
   ]
 }
