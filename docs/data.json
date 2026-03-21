@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-21T14:56:38.892311+00:00",
+  "updated_at": "2026-03-21T14:57:44.599019+00:00",
   "publish_status": {
-    "last_ok": "2026-03-21T14:56:10Z",
+    "last_ok": "2026-03-21T14:56:45Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 859,
+    "total": 860,
     "wins": 277,
     "losses": 192,
-    "active": 8,
+    "active": 9,
     "winrate": 59.1
   },
   "trade_stats": {
-    "open": 11,
+    "open": 12,
     "pending": 0,
     "wins": 324,
     "losses": 335,
@@ -222,6 +222,31 @@
       ],
       "news": null,
       "created_at": "2026-03-21 14:43:55",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 898,
+      "symbol": "GUNUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.02113,
+      "tp1": 0.021627,
+      "tp2": 0.022124,
+      "sl": 0.020707,
+      "strength": 53,
+      "reasons": [
+        "MACD бычий (hist=0.00002)",
+        "Цена > EMA20 > EMA50",
+        "Объём x1.9 🔥",
+        "МТФ: 5m, 15m, 4h согласны",
+        "OI растёт +6.3% + цена ↑",
+        "CVD положительный (-0.7%)",
+        "Bullish Engulfing (1h) 🕯️",
+        "⚠️ Funding через 63м",
+        "⚡ Рыночный вход (MTF сильный)"
+      ],
+      "news": null,
+      "created_at": "2026-03-21 14:57:43",
       "status": "ACTIVE"
     }
   ],
@@ -919,6 +944,34 @@
         "МТФ: 5m, 15m, 1h согласны",
         "OI растёт +0.5% + цена ↑",
         "⚠️ Funding через 77м",
+        "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
+    {
+      "id": 752,
+      "symbol": "GUNUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.02113,
+      "tp1": 0.021627,
+      "tp2": 0.022124,
+      "sl": 0.020707,
+      "entry_orig": 0.02113,
+      "tp1_orig": 0.021627,
+      "tp2_orig": 0.022124,
+      "sl_orig": 0.020707,
+      "strength": 53,
+      "taken_at": "2026-03-21T14:57:43.937932",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.00002)",
+        "Цена > EMA20 > EMA50",
+        "Объём x1.9 🔥",
+        "МТФ: 5m, 15m, 4h согласны",
+        "OI растёт +6.3% + цена ↑",
+        "CVD положительный (-0.7%)",
+        "Bullish Engulfing (1h) 🕯️",
+        "⚠️ Funding через 63м",
         "⚡ Рыночный вход (MTF сильный)"
       ]
     }
