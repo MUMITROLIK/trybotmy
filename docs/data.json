@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-21T13:40:51.465362+00:00",
+  "updated_at": "2026-03-21T13:41:57.684941+00:00",
   "publish_status": {
-    "last_ok": "2026-03-21T13:39:30Z",
+    "last_ok": "2026-03-21T13:40:57Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -11,18 +11,18 @@
   },
   "stats": {
     "total": 848,
-    "wins": 271,
+    "wins": 272,
     "losses": 189,
-    "active": 8,
-    "winrate": 58.9
+    "active": 7,
+    "winrate": 59.0
   },
   "trade_stats": {
-    "open": 11,
+    "open": 10,
     "pending": 0,
-    "wins": 317,
+    "wins": 318,
     "losses": 331,
-    "total_pnl": 30.86,
-    "winrate": 48.9
+    "total_pnl": 33.04,
+    "winrate": 49.0
   },
   "fear_greed": {
     "value": 12,
@@ -197,17 +197,19 @@
       "news": null,
       "created_at": "2026-03-21 13:13:53",
       "status": "ACTIVE"
-    },
+    }
+  ],
+  "history": [
     {
-      "id": 886,
       "symbol": "ANIMEUSDT",
       "direction": "LONG",
-      "exchange": "binance",
       "entry": 0.005243,
       "tp1": 0.005348,
       "tp2": 0.005453,
       "sl": 0.005138,
       "strength": 50,
+      "status": "TP1",
+      "created_at": "2026-03-21 13:31:55",
       "reasons": [
         "MACD бычий (hist=0.00003)",
         "Цена > EMA20 > EMA50",
@@ -216,13 +218,8 @@
         "OI растёт +1.4% + цена ↑",
         "CVD положительный (+1.0%)",
         "⚡ Рыночный вход (MTF сильный)"
-      ],
-      "news": null,
-      "created_at": "2026-03-21 13:31:55",
-      "status": "ACTIVE"
-    }
-  ],
-  "history": [
+      ]
+    },
     {
       "symbol": "FOLKSUSDT",
       "direction": "LONG",
@@ -602,27 +599,6 @@
         "МТФ: все 4 таймфрейма согласны ✅✅",
         "⚡ Рыночный вход (MTF сильный)"
       ]
-    },
-    {
-      "symbol": "PLAYUSDT",
-      "direction": "LONG",
-      "entry": 0.03731,
-      "tp1": 0.038175,
-      "tp2": 0.039039,
-      "sl": 0.036564,
-      "strength": 55,
-      "status": "SL",
-      "created_at": "2026-03-21 09:54:07",
-      "reasons": [
-        "RSI=42 (нейтральный↓)",
-        "BB ниже середины",
-        "EMA20 > EMA50",
-        "Объём x2.7 🔥🔥",
-        "Стакан: сильное давление покупки (+0.31)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "CVD положительный (-3.1%)",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
     }
   ],
   "trades_open": [
@@ -886,35 +862,23 @@
         "МТФ: только 1 таймфрейм согласен",
         "OI растёт +0.6%"
       ]
-    },
-    {
-      "id": 740,
-      "symbol": "ANIMEUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.005243,
-      "tp1": 0.005348,
-      "tp2": 0.005453,
-      "sl": 0.005138,
-      "entry_orig": 0.005243,
-      "tp1_orig": 0.005348,
-      "tp2_orig": 0.005453,
-      "sl_orig": 0.005138,
-      "strength": 50,
-      "taken_at": "2026-03-21T13:31:55.848843",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00003)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: давление покупки (+0.13)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +1.4% + цена ↑",
-        "CVD положительный (+1.0%)",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
     }
   ],
   "trades_history": [
+    {
+      "symbol": "ANIMEUSDT",
+      "direction": "LONG",
+      "entry": 0.005243,
+      "tp1": 0.005348,
+      "tp2": 0.005453,
+      "sl": 0.0053845,
+      "strength": 50,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 2.18,
+      "close_price": 0.005357499999999999,
+      "taken_at": "2026-03-21T13:31:55.848843",
+      "closed_at": "2026-03-21 13:41:20"
+    },
     {
       "symbol": "FOLKSUSDT",
       "direction": "LONG",
@@ -3700,20 +3664,6 @@
       "close_price": 1.1985000000000001,
       "taken_at": "2026-03-19T17:13:22.536287",
       "closed_at": "2026-03-19 19:29:50"
-    },
-    {
-      "symbol": "AKTUSDT",
-      "direction": "LONG",
-      "entry": 0.5113,
-      "tp1": 0.521526,
-      "tp2": 0.531752,
-      "sl": 0.501074,
-      "strength": 46,
-      "status": "SL",
-      "pnl_pct": -2.03,
-      "close_price": 0.5009,
-      "taken_at": "2026-03-19T18:12:31.855596",
-      "closed_at": "2026-03-19 19:29:45"
     }
   ]
 }
