@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-21T21:54:05.809034+00:00",
+  "updated_at": "2026-03-21T21:54:37.900500+00:00",
   "publish_status": {
-    "last_ok": "2026-03-21T21:52:46Z",
+    "last_ok": "2026-03-21T21:54:12Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,19 +10,19 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 893,
+    "total": 894,
     "wins": 289,
     "losses": 207,
-    "active": 6,
+    "active": 7,
     "winrate": 58.3
   },
   "trade_stats": {
     "open": 12,
     "pending": 0,
-    "wins": 340,
+    "wins": 341,
     "losses": 352,
-    "total_pnl": 34.54,
-    "winrate": 49.1
+    "total_pnl": 34.21,
+    "winrate": 49.2
   },
   "fear_greed": {
     "value": 12,
@@ -174,6 +174,29 @@
       ],
       "news": null,
       "created_at": "2026-03-21 21:32:10",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 932,
+      "symbol": "AKTUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.6318,
+      "tp1": 0.644436,
+      "tp2": 0.657072,
+      "sl": 0.619164,
+      "strength": 61,
+      "reasons": [
+        "MACD бычий (hist=0.00297)",
+        "Цена > EMA20 > EMA50",
+        "Объём x3.3 🔥🔥",
+        "Стакан: сильное давление покупки (+0.36)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "CVD положительный (+2.3%)",
+        "⚡ Рыночный вход (MTF сильный)"
+      ],
+      "news": null,
+      "created_at": "2026-03-21 21:54:35",
       "status": "ACTIVE"
     }
   ],
@@ -843,29 +866,28 @@
       ]
     },
     {
-      "id": 771,
-      "symbol": "XANUSDT",
+      "id": 786,
+      "symbol": "AKTUSDT",
       "direction": "LONG",
       "exchange": "binance",
-      "entry": 0.011077,
-      "tp1": 0.011299,
-      "tp2": 0.01152,
-      "sl": 0.011077,
-      "entry_orig": 0.011077,
-      "tp1_orig": 0.011299,
-      "tp2_orig": 0.01152,
-      "sl_orig": 0.010855,
-      "strength": 60,
-      "taken_at": "2026-03-21T19:49:09.102745",
-      "status": "TP1_HIT",
+      "entry": 0.6318,
+      "tp1": 0.644436,
+      "tp2": 0.657072,
+      "sl": 0.619164,
+      "entry_orig": 0.6318,
+      "tp1_orig": 0.644436,
+      "tp2_orig": 0.657072,
+      "sl_orig": 0.619164,
+      "strength": 61,
+      "taken_at": "2026-03-21T21:54:36.181017",
+      "status": "OPEN",
       "reasons": [
-        "MACD бычий (hist=0.00004)",
-        "EMA20 > EMA50 (golden cross) 🌟",
-        "Объём x3.6 🔥🔥",
-        "Стакан: сильное давление покупки (+0.37)",
-        "МТФ: 5m, 15m, 4h согласны",
-        "OI падает (шорты закрываются)",
-        "CVD положительный (-2.7%)",
+        "MACD бычий (hist=0.00297)",
+        "Цена > EMA20 > EMA50",
+        "Объём x3.3 🔥🔥",
+        "Стакан: сильное давление покупки (+0.36)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "CVD положительный (+2.3%)",
         "⚡ Рыночный вход (MTF сильный)"
       ]
     },
@@ -898,6 +920,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "XANUSDT",
+      "direction": "LONG",
+      "entry": 0.011077,
+      "tp1": 0.011299,
+      "tp2": 0.01152,
+      "sl": 0.011077,
+      "strength": 60,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": -0.33,
+      "close_price": 0.0110405,
+      "taken_at": "2026-03-21T19:49:09.102745",
+      "closed_at": "2026-03-21 21:54:27"
+    },
     {
       "symbol": "AKTUSDT",
       "direction": "LONG",
@@ -3683,20 +3719,6 @@
       "close_price": 0.007332,
       "taken_at": "2026-03-20T09:01:47.139203",
       "closed_at": "2026-03-20 10:16:48"
-    },
-    {
-      "symbol": "ATHUSDT",
-      "direction": "LONG",
-      "entry": 0.007394,
-      "tp1": 0.007542,
-      "tp2": 0.00769,
-      "sl": 0.007572,
-      "strength": 55,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 2.41,
-      "close_price": 0.007572,
-      "taken_at": "2026-03-20T08:07:43.852660",
-      "closed_at": "2026-03-20 09:33:50"
     }
   ]
 }
