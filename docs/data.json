@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-21T14:42:01.719916+00:00",
+  "updated_at": "2026-03-21T14:43:32.986218+00:00",
   "publish_status": {
-    "last_ok": "2026-03-21T14:41:24Z",
+    "last_ok": "2026-03-21T14:42:07Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 59.2
   },
   "trade_stats": {
-    "open": 12,
+    "open": 11,
     "pending": 0,
-    "wins": 323,
+    "wins": 324,
     "losses": 333,
-    "total_pnl": 41.85,
-    "winrate": 49.2
+    "total_pnl": 43.96,
+    "winrate": 49.3
   },
   "fear_greed": {
     "value": 12,
@@ -917,35 +917,23 @@
         "⚠️ Funding через 81м",
         "⚡ Рыночный вход (MTF сильный)"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 739,
       "symbol": "HANAUSDT",
       "direction": "LONG",
-      "exchange": "bybit",
       "entry": 0.042736,
       "tp1": 0.043591,
       "tp2": 0.044445,
       "sl": 0.043638,
-      "entry_orig": 0.042736,
-      "tp1_orig": 0.043591,
-      "tp2_orig": 0.044445,
-      "sl_orig": 0.041881,
       "strength": 58,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 2.11,
+      "close_price": 0.043638,
       "taken_at": "2026-03-21T13:13:53.647482",
-      "status": "TP1_HIT",
-      "reasons": [
-        "RSI=40 (перепроданность)",
-        "MACD бычий (hist=0.00002)",
-        "BB ниже середины",
-        "Объём x2.8 🔥🔥",
-        "Стакан: сильное давление покупки (+0.38)",
-        "МТФ: только 1 таймфрейм согласен",
-        "OI растёт +0.6%"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-21 14:42:24"
+    },
     {
       "symbol": "SIRENUSDT",
       "direction": "LONG",
@@ -3731,20 +3719,6 @@
       "close_price": 0.003345,
       "taken_at": "2026-03-19T12:57:20.266708",
       "closed_at": "2026-03-19 20:57:25"
-    },
-    {
-      "symbol": "MOODENGUSDT",
-      "direction": "SHORT",
-      "entry": 0.04941,
-      "tp1": 0.048422,
-      "tp2": 0.047434,
-      "sl": 0.050398,
-      "strength": 45,
-      "status": "TIMEOUT",
-      "pnl_pct": -1.09,
-      "close_price": 0.04995,
-      "taken_at": "2026-03-19T12:55:34.531321",
-      "closed_at": "2026-03-19 20:55:34"
     }
   ]
 }
