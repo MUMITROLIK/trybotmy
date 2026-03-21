@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-21T00:00:53.471529+00:00",
+  "updated_at": "2026-03-21T00:01:59.346501+00:00",
   "publish_status": {
-    "last_ok": "2026-03-20T23:59:26Z",
+    "last_ok": "2026-03-21T00:00:59Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 781,
+    "total": 782,
     "wins": 246,
     "losses": 162,
-    "active": 7,
+    "active": 8,
     "winrate": 60.3
   },
   "trade_stats": {
-    "open": 12,
+    "open": 13,
     "pending": 0,
     "wins": 284,
     "losses": 296,
@@ -200,6 +200,29 @@
       ],
       "news": "Grayscale files for HYPE ETF as Hyperliquid gains traction despite mixed ETF flows",
       "created_at": "2026-03-20 22:44:24",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 820,
+      "symbol": "ANKRUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.005461,
+      "tp1": 0.005601,
+      "tp2": 0.00574,
+      "sl": 0.005349,
+      "strength": 55,
+      "reasons": [
+        "MACD бычий (hist=0.00000)",
+        "Цена > EMA20 > EMA50",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +12.1% + цена ↑",
+        "CVD растёт (+6.7%) — покупки усиливаются 📈",
+        "Bullish Engulfing (1h) 🕯️",
+        "⚡ Рыночный вход (MTF сильный)"
+      ],
+      "news": null,
+      "created_at": "2026-03-21 00:01:02",
       "status": "ACTIVE"
     }
   ],
@@ -921,6 +944,32 @@
         "МТФ: 5m, 15m, 4h согласны",
         "CVD положительный (+0.9%)",
         "⚠️ Funding через 77м",
+        "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
+    {
+      "id": 674,
+      "symbol": "ANKRUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.005461,
+      "tp1": 0.005601,
+      "tp2": 0.00574,
+      "sl": 0.005349,
+      "entry_orig": 0.005461,
+      "tp1_orig": 0.005601,
+      "tp2_orig": 0.00574,
+      "sl_orig": 0.005349,
+      "strength": 55,
+      "taken_at": "2026-03-21T00:01:02.576957",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.00000)",
+        "Цена > EMA20 > EMA50",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +12.1% + цена ↑",
+        "CVD растёт (+6.7%) — покупки усиливаются 📈",
+        "Bullish Engulfing (1h) 🕯️",
         "⚡ Рыночный вход (MTF сильный)"
       ]
     }
