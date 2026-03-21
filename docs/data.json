@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-21T23:22:42.932643+00:00",
+  "updated_at": "2026-03-21T23:23:37.309021+00:00",
   "publish_status": {
-    "last_ok": "2026-03-21T23:21:42Z",
+    "last_ok": "2026-03-21T23:22:49Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 899,
+    "total": 900,
     "wins": 290,
     "losses": 209,
-    "active": 8,
+    "active": 9,
     "winrate": 58.1
   },
   "trade_stats": {
-    "open": 12,
+    "open": 13,
     "pending": 0,
     "wins": 343,
     "losses": 355,
@@ -222,6 +222,29 @@
       ],
       "news": null,
       "created_at": "2026-03-21 23:08:09",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 938,
+      "symbol": "IRYSUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.020405,
+      "tp1": 0.020813,
+      "tp2": 0.021221,
+      "sl": 0.019997,
+      "strength": 53,
+      "reasons": [
+        "RSI=24 (сильная перепроданность)",
+        "BB нижняя полоса (пробой)",
+        "Объём x3.1 🔥🔥",
+        "Стакан: сильное давление покупки (+0.29)",
+        "МТФ: 1h, 4h согласны",
+        "⚠️ Funding через 37м",
+        "⚡ Рыночный вход (MTF 2+ ТФ)"
+      ],
+      "news": null,
+      "created_at": "2026-03-21 23:23:36",
       "status": "ACTIVE"
     }
   ],
@@ -914,6 +937,32 @@
         "CVD положительный (+3.5%)",
         "⚠️ Funding через 52м",
         "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
+    {
+      "id": 792,
+      "symbol": "IRYSUSDT",
+      "direction": "LONG",
+      "exchange": "bybit",
+      "entry": 0.020405,
+      "tp1": 0.020813,
+      "tp2": 0.021221,
+      "sl": 0.019997,
+      "entry_orig": 0.020405,
+      "tp1_orig": 0.020813,
+      "tp2_orig": 0.021221,
+      "sl_orig": 0.019997,
+      "strength": 53,
+      "taken_at": "2026-03-21T23:23:36.788141",
+      "status": "OPEN",
+      "reasons": [
+        "RSI=24 (сильная перепроданность)",
+        "BB нижняя полоса (пробой)",
+        "Объём x3.1 🔥🔥",
+        "Стакан: сильное давление покупки (+0.29)",
+        "МТФ: 1h, 4h согласны",
+        "⚠️ Funding через 37м",
+        "⚡ Рыночный вход (MTF 2+ ТФ)"
       ]
     },
     {
