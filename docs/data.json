@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-21T00:10:40.724389+00:00",
+  "updated_at": "2026-03-21T00:11:46.555675+00:00",
   "publish_status": {
-    "last_ok": "2026-03-21T00:09:21Z",
+    "last_ok": "2026-03-21T00:10:46Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 782,
+    "total": 783,
     "wins": 247,
     "losses": 162,
-    "active": 7,
+    "active": 8,
     "winrate": 60.4
   },
   "trade_stats": {
-    "open": 12,
+    "open": 13,
     "pending": 0,
     "wins": 285,
     "losses": 296,
@@ -25,7 +25,7 @@
     "winrate": 49.1
   },
   "fear_greed": {
-    "value": 11,
+    "value": 12,
     "label": "Extreme Fear",
     "emoji": "😱"
   },
@@ -200,6 +200,32 @@
       ],
       "news": "Grayscale files for HYPE ETF as Hyperliquid gains traction despite mixed ETF flows",
       "created_at": "2026-03-20 22:44:24",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 821,
+      "symbol": "SIGNUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.04533,
+      "tp1": 0.046237,
+      "tp2": 0.047143,
+      "sl": 0.044423,
+      "strength": 56,
+      "reasons": [
+        "RSI=41 (нейтральный↓)",
+        "MACD бычий (hist=0.00000)",
+        "BB нижняя зона (24%)",
+        "Объём x2.4 🔥",
+        "Стакан: перевес bid (+0.07)",
+        "МТФ: 1h, 4h согласны",
+        "OI растёт +2.0% + цена ↑",
+        "CVD положительный (-7.9%)",
+        "Doji (1h) — нерешительность",
+        "⚡ Рыночный вход (MTF 2+ ТФ)"
+      ],
+      "news": null,
+      "created_at": "2026-03-21 00:10:57",
       "status": "ACTIVE"
     }
   ],
@@ -922,6 +948,35 @@
         "CVD положительный (+0.9%)",
         "⚠️ Funding через 77м",
         "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
+    {
+      "id": 675,
+      "symbol": "SIGNUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.04533,
+      "tp1": 0.046237,
+      "tp2": 0.047143,
+      "sl": 0.044423,
+      "entry_orig": 0.04533,
+      "tp1_orig": 0.046237,
+      "tp2_orig": 0.047143,
+      "sl_orig": 0.044423,
+      "strength": 56,
+      "taken_at": "2026-03-21T00:10:58.118363",
+      "status": "OPEN",
+      "reasons": [
+        "RSI=41 (нейтральный↓)",
+        "MACD бычий (hist=0.00000)",
+        "BB нижняя зона (24%)",
+        "Объём x2.4 🔥",
+        "Стакан: перевес bid (+0.07)",
+        "МТФ: 1h, 4h согласны",
+        "OI растёт +2.0% + цена ↑",
+        "CVD положительный (-7.9%)",
+        "Doji (1h) — нерешительность",
+        "⚡ Рыночный вход (MTF 2+ ТФ)"
       ]
     }
   ],
