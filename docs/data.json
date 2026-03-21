@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-21T18:23:50.163336+00:00",
+  "updated_at": "2026-03-21T18:24:38.102249+00:00",
   "publish_status": {
-    "last_ok": "2026-03-21T18:22:50Z",
+    "last_ok": "2026-03-21T18:23:56Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 873,
+    "total": 874,
     "wins": 285,
     "losses": 201,
-    "active": 4,
+    "active": 5,
     "winrate": 58.6
   },
   "trade_stats": {
-    "open": 5,
+    "open": 6,
     "pending": 0,
     "wins": 334,
     "losses": 345,
@@ -126,6 +126,28 @@
       ],
       "news": null,
       "created_at": "2026-03-21 17:47:23",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 912,
+      "symbol": "SIGNUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.04796,
+      "tp1": 0.048919,
+      "tp2": 0.049878,
+      "sl": 0.047001,
+      "strength": 50,
+      "reasons": [
+        "MACD бычий (hist=0.00009)",
+        "Цена > EMA20 > EMA50",
+        "Объём x1.8 🔥",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "CVD растёт (+8.0%) — покупки усиливаются 📈",
+        "⚡ Рыночный вход (MTF сильный)"
+      ],
+      "news": null,
+      "created_at": "2026-03-21 18:24:37",
       "status": "ACTIVE"
     }
   ],
@@ -670,6 +692,31 @@
         "МТФ: только 1 таймфрейм согласен",
         "OI падает (шорты закрываются)",
         "CVD положительный (-3.1%)"
+      ]
+    },
+    {
+      "id": 766,
+      "symbol": "SIGNUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.04796,
+      "tp1": 0.048919,
+      "tp2": 0.049878,
+      "sl": 0.047001,
+      "entry_orig": 0.04796,
+      "tp1_orig": 0.048919,
+      "tp2_orig": 0.049878,
+      "sl_orig": 0.047001,
+      "strength": 50,
+      "taken_at": "2026-03-21T18:24:37.591781",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.00009)",
+        "Цена > EMA20 > EMA50",
+        "Объём x1.8 🔥",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "CVD растёт (+8.0%) — покупки усиливаются 📈",
+        "⚡ Рыночный вход (MTF сильный)"
       ]
     }
   ],
