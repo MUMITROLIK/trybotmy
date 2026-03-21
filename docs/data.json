@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-21T10:55:05.330258+00:00",
+  "updated_at": "2026-03-21T10:56:07.182247+00:00",
   "publish_status": {
-    "last_ok": "2026-03-21T10:54:27Z",
+    "last_ok": "2026-03-21T10:55:11Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -12,17 +12,17 @@
   "stats": {
     "total": 829,
     "wins": 261,
-    "losses": 181,
-    "active": 11,
-    "winrate": 59.0
+    "losses": 182,
+    "active": 10,
+    "winrate": 58.9
   },
   "trade_stats": {
-    "open": 12,
+    "open": 11,
     "pending": 0,
     "wins": 305,
-    "losses": 323,
-    "total_pnl": 24.87,
-    "winrate": 48.6
+    "losses": 324,
+    "total_pnl": 22.64,
+    "winrate": 48.5
   },
   "fear_greed": {
     "value": 12,
@@ -267,17 +267,19 @@
       "news": null,
       "created_at": "2026-03-21 10:51:28",
       "status": "ACTIVE"
-    },
+    }
+  ],
+  "history": [
     {
-      "id": 867,
       "symbol": "AKTUSDT",
       "direction": "LONG",
-      "exchange": "binance",
       "entry": 0.5863,
       "tp1": 0.601021,
       "tp2": 0.615743,
       "sl": 0.574523,
       "strength": 50,
+      "status": "SL",
+      "created_at": "2026-03-21 10:54:47",
       "reasons": [
         "MACD бычий (hist=0.00234)",
         "Цена > EMA20 > EMA50",
@@ -285,13 +287,8 @@
         "Стакан: перевес bid (+0.08)",
         "МТФ: все 4 таймфрейма согласны ✅✅",
         "⚡ Рыночный вход (MTF сильный)"
-      ],
-      "news": null,
-      "created_at": "2026-03-21 10:54:47",
-      "status": "ACTIVE"
-    }
-  ],
-  "history": [
+      ]
+    },
     {
       "symbol": "JCTUSDT",
       "direction": "LONG",
@@ -680,26 +677,6 @@
         "CVD положительный (+5.0%)",
         "⚡ Рыночный вход (MTF сильный)"
       ]
-    },
-    {
-      "symbol": "BTRUSDT",
-      "direction": "LONG",
-      "entry": 0.14235,
-      "tp1": 0.145197,
-      "tp2": 0.148044,
-      "sl": 0.139503,
-      "strength": 58,
-      "status": "TP1",
-      "created_at": "2026-03-21 04:10:09",
-      "reasons": [
-        "MACD бычий (hist=0.00042)",
-        "Цена > EMA20 > EMA50",
-        "Объём x3.7 🔥🔥",
-        "Стакан: давление покупки (+0.12)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +0.7% + цена ↑",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
     }
   ],
   "trades_open": [
@@ -990,34 +967,23 @@
         "OI растёт +1.9% + цена ↑",
         "⚡ Рыночный вход (MTF сильный)"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 721,
       "symbol": "AKTUSDT",
       "direction": "LONG",
-      "exchange": "bybit",
       "entry": 0.5863,
       "tp1": 0.601021,
       "tp2": 0.615743,
       "sl": 0.574523,
-      "entry_orig": 0.5863,
-      "tp1_orig": 0.601021,
-      "tp2_orig": 0.615743,
-      "sl_orig": 0.574523,
       "strength": 50,
+      "status": "SL",
+      "pnl_pct": -2.23,
+      "close_price": 0.5732,
       "taken_at": "2026-03-21T10:54:48.067371",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00234)",
-        "Цена > EMA20 > EMA50",
-        "Объём x2.7 🔥🔥",
-        "Стакан: перевес bid (+0.08)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-21 10:56:06"
+    },
     {
       "symbol": "FARTCOINUSDT",
       "direction": "LONG",
@@ -3803,20 +3769,6 @@
       "close_price": 0.041895,
       "taken_at": "2026-03-19T15:28:34.476897",
       "closed_at": "2026-03-19 15:57:44"
-    },
-    {
-      "symbol": "LITUSDT",
-      "direction": "LONG",
-      "entry": 1.1455,
-      "tp1": 1.16840996,
-      "tp2": 1.19131974,
-      "sl": 1.1684999999999999,
-      "strength": 51,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 1.92,
-      "close_price": 1.1675,
-      "taken_at": "2026-03-19T15:09:54.616995",
-      "closed_at": "2026-03-19 15:51:29"
     }
   ]
 }
