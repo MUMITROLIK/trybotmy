@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-21T07:09:10.634313+00:00",
+  "updated_at": "2026-03-21T07:09:41.636538+00:00",
   "publish_status": {
-    "last_ok": "2026-03-21T07:07:50Z",
+    "last_ok": "2026-03-21T07:09:16Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 801,
+    "total": 802,
     "wins": 257,
     "losses": 168,
-    "active": 1,
+    "active": 2,
     "winrate": 60.5
   },
   "trade_stats": {
-    "open": 3,
+    "open": 4,
     "pending": 0,
     "wins": 301,
     "losses": 308,
@@ -57,6 +57,30 @@
       ],
       "news": null,
       "created_at": "2026-03-21 04:21:59",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 840,
+      "symbol": "BEATUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.6612,
+      "tp1": 0.687225,
+      "tp2": 0.71325,
+      "sl": 0.64038,
+      "strength": 50,
+      "reasons": [
+        "MACD бычий (hist=0.00066)",
+        "Цена > EMA20 > EMA50",
+        "Стакан: сильное давление покупки (+0.27)",
+        "МТФ: 15m, 1h, 4h согласны",
+        "OI растёт +7.0% + цена ↑",
+        "CVD растёт (+6.0%) — покупки усиливаются 📈",
+        "⚠️ Funding через 51м",
+        "⚡ Рыночный вход (MTF сильный)"
+      ],
+      "news": null,
+      "created_at": "2026-03-21 07:09:37",
       "status": "ACTIVE"
     }
   ],
@@ -562,6 +586,33 @@
         "МТФ: 5m, 15m согласны",
         "CVD растёт (+7.7%) — покупки усиливаются 📈",
         "⚡ Рыночный вход (MTF 2+ ТФ)"
+      ]
+    },
+    {
+      "id": 694,
+      "symbol": "BEATUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.6612,
+      "tp1": 0.687225,
+      "tp2": 0.71325,
+      "sl": 0.64038,
+      "entry_orig": 0.6612,
+      "tp1_orig": 0.687225,
+      "tp2_orig": 0.71325,
+      "sl_orig": 0.64038,
+      "strength": 50,
+      "taken_at": "2026-03-21T07:09:40.224419",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.00066)",
+        "Цена > EMA20 > EMA50",
+        "Стакан: сильное давление покупки (+0.27)",
+        "МТФ: 15m, 1h, 4h согласны",
+        "OI растёт +7.0% + цена ↑",
+        "CVD растёт (+6.0%) — покупки усиливаются 📈",
+        "⚠️ Funding через 51м",
+        "⚡ Рыночный вход (MTF сильный)"
       ]
     }
   ],
