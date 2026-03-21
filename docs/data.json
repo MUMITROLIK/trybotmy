@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-21T04:21:37.888699+00:00",
+  "updated_at": "2026-03-21T04:22:43.763920+00:00",
   "publish_status": {
-    "last_ok": "2026-03-21T04:20:22Z",
+    "last_ok": "2026-03-21T04:21:43Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 800,
+    "total": 801,
     "wins": 254,
     "losses": 167,
-    "active": 7,
+    "active": 8,
     "winrate": 60.3
   },
   "trade_stats": {
-    "open": 11,
+    "open": 12,
     "pending": 0,
     "wins": 296,
     "losses": 304,
@@ -202,6 +202,29 @@
       ],
       "news": null,
       "created_at": "2026-03-21 04:15:20",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 839,
+      "symbol": "WLFIUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.0942,
+      "tp1": 0.096084,
+      "tp2": 0.097968,
+      "sl": 0.092316,
+      "strength": 57,
+      "reasons": [
+        "MACD бычий (hist=0.00005)",
+        "Цена > EMA20 > EMA50",
+        "Объём x4.7 🔥🔥🔥",
+        "Стакан: давление покупки (+0.11)",
+        "МТФ: 5m, 15m согласны",
+        "CVD растёт (+7.7%) — покупки усиливаются 📈",
+        "⚡ Рыночный вход (MTF 2+ ТФ)"
+      ],
+      "news": null,
+      "created_at": "2026-03-21 04:21:59",
       "status": "ACTIVE"
     }
   ],
@@ -922,6 +945,32 @@
         "OI растёт +1.2% + цена ↑",
         "CVD положительный (+5.0%)",
         "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
+    {
+      "id": 693,
+      "symbol": "WLFIUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.0942,
+      "tp1": 0.096084,
+      "tp2": 0.097968,
+      "sl": 0.092316,
+      "entry_orig": 0.0942,
+      "tp1_orig": 0.096084,
+      "tp2_orig": 0.097968,
+      "sl_orig": 0.092316,
+      "strength": 57,
+      "taken_at": "2026-03-21T04:22:00.058366",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.00005)",
+        "Цена > EMA20 > EMA50",
+        "Объём x4.7 🔥🔥🔥",
+        "Стакан: давление покупки (+0.11)",
+        "МТФ: 5m, 15m согласны",
+        "CVD растёт (+7.7%) — покупки усиливаются 📈",
+        "⚡ Рыночный вход (MTF 2+ ТФ)"
       ]
     }
   ],
