@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-21T13:29:52.316513+00:00",
+  "updated_at": "2026-03-21T13:30:58.605645+00:00",
   "publish_status": {
-    "last_ok": "2026-03-21T13:28:23Z",
+    "last_ok": "2026-03-21T13:29:58Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -13,16 +13,16 @@
     "total": 847,
     "wins": 271,
     "losses": 188,
-    "active": 9,
+    "active": 8,
     "winrate": 59.0
   },
   "trade_stats": {
-    "open": 12,
+    "open": 11,
     "pending": 0,
     "wins": 317,
-    "losses": 329,
-    "total_pnl": 39.42,
-    "winrate": 49.1
+    "losses": 330,
+    "total_pnl": 36.18,
+    "winrate": 49.0
   },
   "fear_greed": {
     "value": 12,
@@ -36,29 +36,6 @@
     "trained_at": "2026-03-21T11:41:36.038769+00:00"
   },
   "signals": [
-    {
-      "id": 855,
-      "symbol": "ALCHUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.0804,
-      "tp1": 0.082008,
-      "tp2": 0.083616,
-      "sl": 0.078792,
-      "strength": 50,
-      "reasons": [
-        "RSI=28 (сильная перепроданность)",
-        "BB нижняя зона (24%)",
-        "Объём x4.5 🔥🔥🔥",
-        "Стакан: перевес bid (+0.06)",
-        "МТФ: 1h, 4h согласны",
-        "Doji (1h) — нерешительность",
-        "⚡ Рыночный вход (MTF 2+ ТФ)"
-      ],
-      "news": null,
-      "created_at": "2026-03-21 09:30:13",
-      "status": "ACTIVE"
-    },
     {
       "id": 861,
       "symbol": "ROBOUSDT",
@@ -859,32 +836,6 @@
       ]
     },
     {
-      "id": 734,
-      "symbol": "BTRUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.15325,
-      "tp1": 0.15664,
-      "tp2": 0.16003,
-      "sl": 0.150185,
-      "entry_orig": 0.15325,
-      "tp1_orig": 0.15664,
-      "tp2_orig": 0.16003,
-      "sl_orig": 0.150185,
-      "strength": 51,
-      "taken_at": "2026-03-21T12:30:47.490735",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00041)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: перевес bid (+0.06)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +6.1% + цена ↑",
-        "CVD растёт (+9.9%) — покупки усиливаются 📈",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 735,
       "symbol": "EDGEUSDT",
       "direction": "LONG",
@@ -964,6 +915,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "BTRUSDT",
+      "direction": "LONG",
+      "entry": 0.15325,
+      "tp1": 0.15664,
+      "tp2": 0.16003,
+      "sl": 0.150185,
+      "strength": 51,
+      "status": "SL",
+      "pnl_pct": -3.24,
+      "close_price": 0.14829,
+      "taken_at": "2026-03-21T12:30:47.490735",
+      "closed_at": "2026-03-21 13:29:59"
+    },
     {
       "symbol": "ANIMEUSDT",
       "direction": "LONG",
@@ -3749,20 +3714,6 @@
       "close_price": 6.02,
       "taken_at": "2026-03-19T18:08:06.830183",
       "closed_at": "2026-03-19 19:29:39"
-    },
-    {
-      "symbol": "CRVUSDT",
-      "direction": "SHORT",
-      "entry": 0.23,
-      "tp1": 0.2254,
-      "tp2": 0.2208,
-      "sl": 0.2346,
-      "strength": 50,
-      "status": "SL",
-      "pnl_pct": -2.83,
-      "close_price": 0.2365,
-      "taken_at": "2026-03-19T13:14:30.025950",
-      "closed_at": "2026-03-19 19:21:23"
     }
   ]
 }
