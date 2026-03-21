@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-21T11:40:58.375234+00:00",
+  "updated_at": "2026-03-21T11:42:30.024642+00:00",
   "publish_status": {
-    "last_ok": "2026-03-21T11:40:25Z",
+    "last_ok": "2026-03-21T11:41:04Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -11,18 +11,18 @@
   },
   "stats": {
     "total": 835,
-    "wins": 262,
+    "wins": 263,
     "losses": 184,
-    "active": 13,
-    "winrate": 58.7
+    "active": 12,
+    "winrate": 58.8
   },
   "trade_stats": {
-    "open": 13,
+    "open": 12,
     "pending": 0,
-    "wins": 307,
+    "wins": 308,
     "losses": 326,
-    "total_pnl": 24.53,
-    "winrate": 48.5
+    "total_pnl": 26.56,
+    "winrate": 48.6
   },
   "fear_greed": {
     "value": 12,
@@ -31,9 +31,9 @@
   },
   "ml_info": {
     "model_name": "GradientBoosting-Deep",
-    "roc_auc": 0.8225,
-    "rows": 603,
-    "trained_at": "2026-03-20T16:54:05.838000+00:00"
+    "roc_auc": 0.8171,
+    "rows": 703,
+    "trained_at": "2026-03-21T11:41:36.038769+00:00"
   },
   "signals": [
     {
@@ -198,29 +198,6 @@
       "status": "ACTIVE"
     },
     {
-      "id": 866,
-      "symbol": "LAUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.25216,
-      "tp1": 0.257203,
-      "tp2": 0.262246,
-      "sl": 0.247117,
-      "strength": 50,
-      "reasons": [
-        "MACD бычий (hist=0.00021)",
-        "EMA20 > EMA50",
-        "Объём x3.5 🔥🔥",
-        "Стакан: давление покупки (+0.12)",
-        "МТФ: 5m, 1h, 4h согласны",
-        "OI растёт +1.9% + цена ↑",
-        "⚡ Рыночный вход (MTF сильный)"
-      ],
-      "news": null,
-      "created_at": "2026-03-21 10:51:28",
-      "status": "ACTIVE"
-    },
-    {
       "id": 868,
       "symbol": "SIGNUSDT",
       "direction": "LONG",
@@ -375,6 +352,26 @@
         "Объём x2.7 🔥🔥",
         "Стакан: перевес bid (+0.08)",
         "МТФ: все 4 таймфрейма согласны ✅✅",
+        "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
+    {
+      "symbol": "LAUSDT",
+      "direction": "LONG",
+      "entry": 0.25216,
+      "tp1": 0.257203,
+      "tp2": 0.262246,
+      "sl": 0.247117,
+      "strength": 50,
+      "status": "TP1",
+      "created_at": "2026-03-21 10:51:28",
+      "reasons": [
+        "MACD бычий (hist=0.00021)",
+        "EMA20 > EMA50",
+        "Объём x3.5 🔥🔥",
+        "Стакан: давление покупки (+0.12)",
+        "МТФ: 5m, 1h, 4h согласны",
+        "OI растёт +1.9% + цена ↑",
         "⚡ Рыночный вход (MTF сильный)"
       ]
     },
@@ -725,27 +722,6 @@
         "⚠️ Funding через 48м",
         "⚡ Рыночный вход (MTF 2+ ТФ)"
       ]
-    },
-    {
-      "symbol": "MYXUSDT",
-      "direction": "LONG",
-      "entry": 0.3412,
-      "tp1": 0.349568,
-      "tp2": 0.357936,
-      "sl": 0.334376,
-      "strength": 54,
-      "status": "TP1",
-      "created_at": "2026-03-21 07:13:06",
-      "reasons": [
-        "RSI=24 (сильная перепроданность)",
-        "BB нижняя полоса (пробой)",
-        "EMA20 > EMA50",
-        "Объём x2.7 🔥🔥",
-        "МТФ: 15m, 1h, 4h согласны",
-        "Цена у поддержки 0.3407",
-        "⚠️ Funding через 48м",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
     }
   ],
   "trades_open": [
@@ -1061,35 +1037,23 @@
         "OI растёт +0.9% + цена ↑",
         "⚡ Рыночный вход (MTF сильный)"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 720,
       "symbol": "LAUSDT",
       "direction": "LONG",
-      "exchange": "bybit",
       "entry": 0.25216,
       "tp1": 0.257203,
       "tp2": 0.262246,
       "sl": 0.25729,
-      "entry_orig": 0.25216,
-      "tp1_orig": 0.257203,
-      "tp2_orig": 0.262246,
-      "sl_orig": 0.247117,
       "strength": 50,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 2.03,
+      "close_price": 0.25729,
       "taken_at": "2026-03-21T10:51:29.015444",
-      "status": "TP1_HIT",
-      "reasons": [
-        "MACD бычий (hist=0.00021)",
-        "EMA20 > EMA50",
-        "Объём x3.5 🔥🔥",
-        "Стакан: давление покупки (+0.12)",
-        "МТФ: 5m, 1h, 4h согласны",
-        "OI растёт +1.9% + цена ↑",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-21 11:41:06"
+    },
     {
       "symbol": "TRIAUSDT",
       "direction": "LONG",
@@ -3875,20 +3839,6 @@
       "close_price": 0.687,
       "taken_at": "2026-03-19T12:59:00.012300",
       "closed_at": "2026-03-19 17:06:23"
-    },
-    {
-      "symbol": "RIVERUSDT",
-      "direction": "LONG",
-      "entry": 25.511,
-      "tp1": 26.350036,
-      "tp2": 27.189071,
-      "sl": 24.839771,
-      "strength": 48,
-      "status": "SL",
-      "pnl_pct": -3.08,
-      "close_price": 24.7265,
-      "taken_at": "2026-03-19T13:45:26.794974",
-      "closed_at": "2026-03-19 16:50:05"
     }
   ]
 }
