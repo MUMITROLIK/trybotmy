@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-21T15:31:01.654888+00:00",
+  "updated_at": "2026-03-21T15:31:53.667599+00:00",
   "publish_status": {
-    "last_ok": "2026-03-21T15:30:32Z",
+    "last_ok": "2026-03-21T15:31:08Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -12,17 +12,17 @@
   "stats": {
     "total": 861,
     "wins": 278,
-    "losses": 194,
-    "active": 7,
-    "winrate": 58.9
+    "losses": 195,
+    "active": 6,
+    "winrate": 58.8
   },
   "trade_stats": {
-    "open": 10,
+    "open": 9,
     "pending": 0,
     "wins": 325,
-    "losses": 337,
-    "total_pnl": 35.64,
-    "winrate": 49.1
+    "losses": 338,
+    "total_pnl": 33.55,
+    "winrate": 49.0
   },
   "fear_greed": {
     "value": 12,
@@ -105,29 +105,6 @@
       ],
       "news": null,
       "created_at": "2026-03-21 14:17:00",
-      "status": "ACTIVE"
-    },
-    {
-      "id": 893,
-      "symbol": "GUAUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.30117,
-      "tp1": 0.307193,
-      "tp2": 0.313217,
-      "sl": 0.295147,
-      "strength": 53,
-      "reasons": [
-        "MACD бычий (hist=0.00063)",
-        "Цена выше EMA20",
-        "Стакан: сильное давление покупки (+0.47)",
-        "МТФ: 5m, 1h, 4h согласны",
-        "CVD растёт (+5.9%) — покупки усиливаются 📈",
-        "Bullish Engulfing (1h) 🕯️",
-        "⚡ Рыночный вход (MTF сильный)"
-      ],
-      "news": null,
-      "created_at": "2026-03-21 14:20:48",
       "status": "ACTIVE"
     },
     {
@@ -265,6 +242,26 @@
         "МТФ: все 4 таймфрейма согласны ✅✅",
         "CVD положительный (+1.4%)",
         "⚠️ Funding через 81м",
+        "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
+    {
+      "symbol": "GUAUSDT",
+      "direction": "LONG",
+      "entry": 0.30117,
+      "tp1": 0.307193,
+      "tp2": 0.313217,
+      "sl": 0.295147,
+      "strength": 53,
+      "status": "SL",
+      "created_at": "2026-03-21 14:20:48",
+      "reasons": [
+        "MACD бычий (hist=0.00063)",
+        "Цена выше EMA20",
+        "Стакан: сильное давление покупки (+0.47)",
+        "МТФ: 5m, 1h, 4h согласны",
+        "CVD растёт (+5.9%) — покупки усиливаются 📈",
+        "Bullish Engulfing (1h) 🕯️",
         "⚡ Рыночный вход (MTF сильный)"
       ]
     },
@@ -588,26 +585,6 @@
         "МТФ: все 4 таймфрейма согласны ✅✅",
         "⚡ Рыночный вход (MTF сильный)"
       ]
-    },
-    {
-      "symbol": "POWERUSDT",
-      "direction": "LONG",
-      "entry": 0.10138,
-      "tp1": 0.103408,
-      "tp2": 0.105435,
-      "sl": 0.099352,
-      "strength": 58,
-      "status": "TP1",
-      "created_at": "2026-03-21 11:40:57",
-      "reasons": [
-        "MACD бычий (hist=0.00032)",
-        "Цена > EMA20 > EMA50",
-        "Объём x3.1 🔥🔥",
-        "Стакан: сильное давление покупки (+0.26)",
-        "МТФ: 5m, 15m, 1h согласны",
-        "OI растёт +0.9% + цена ↑",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
     }
   ],
   "trades_open": [
@@ -744,32 +721,6 @@
       ]
     },
     {
-      "id": 747,
-      "symbol": "GUAUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.30117,
-      "tp1": 0.307193,
-      "tp2": 0.313217,
-      "sl": 0.295147,
-      "entry_orig": 0.30117,
-      "tp1_orig": 0.307193,
-      "tp2_orig": 0.313217,
-      "sl_orig": 0.295147,
-      "strength": 53,
-      "taken_at": "2026-03-21T14:20:48.423649",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00063)",
-        "Цена выше EMA20",
-        "Стакан: сильное давление покупки (+0.47)",
-        "МТФ: 5m, 1h, 4h согласны",
-        "CVD растёт (+5.9%) — покупки усиливаются 📈",
-        "Bullish Engulfing (1h) 🕯️",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 748,
       "symbol": "ANKRUSDT",
       "direction": "LONG",
@@ -880,6 +831,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "GUAUSDT",
+      "direction": "LONG",
+      "entry": 0.30117,
+      "tp1": 0.307193,
+      "tp2": 0.313217,
+      "sl": 0.295147,
+      "strength": 53,
+      "status": "SL",
+      "pnl_pct": -2.09,
+      "close_price": 0.294865,
+      "taken_at": "2026-03-21T14:20:48.423649",
+      "closed_at": "2026-03-21 15:31:09"
+    },
     {
       "symbol": "FILUSDT",
       "direction": "LONG",
@@ -3665,20 +3630,6 @@
       "close_price": 4671.995,
       "taken_at": "2026-03-19T14:09:54.317851",
       "closed_at": "2026-03-19 22:09:58"
-    },
-    {
-      "symbol": "SOLUSDT",
-      "direction": "LONG",
-      "entry": 88.36,
-      "tp1": 90.1272,
-      "tp2": 91.8944,
-      "sl": 86.5928,
-      "strength": 46,
-      "status": "TIMEOUT",
-      "pnl_pct": 0.74,
-      "close_price": 89.015,
-      "taken_at": "2026-03-19T13:43:47.691008",
-      "closed_at": "2026-03-19 21:43:49"
     }
   ]
 }
