@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-21T09:57:29.386237+00:00",
+  "updated_at": "2026-03-21T09:58:35.561403+00:00",
   "publish_status": {
-    "last_ok": "2026-03-21T09:56:05Z",
+    "last_ok": "2026-03-21T09:57:35Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 822,
+    "total": 823,
     "wins": 259,
     "losses": 175,
-    "active": 12,
+    "active": 13,
     "winrate": 59.7
   },
   "trade_stats": {
-    "open": 14,
+    "open": 15,
     "pending": 0,
     "wins": 303,
     "losses": 316,
@@ -310,6 +310,28 @@
       ],
       "news": null,
       "created_at": "2026-03-21 09:55:58",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 861,
+      "symbol": "ROBOUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.02542,
+      "tp1": 0.025928,
+      "tp2": 0.026437,
+      "sl": 0.024912,
+      "strength": 51,
+      "reasons": [
+        "RSI=46 (нейтральный↓)",
+        "MACD бычий (hist=0.00002)",
+        "BB ниже середины",
+        "Объём x3.6 🔥🔥",
+        "Стакан: сильное давление покупки (+0.31)",
+        "OI растёт +0.7%"
+      ],
+      "news": null,
+      "created_at": "2026-03-21 09:57:43",
       "status": "ACTIVE"
     }
   ],
@@ -1102,6 +1124,31 @@
         "Стакан: перевес bid (+0.06)",
         "МТФ: все 4 таймфрейма согласны ✅✅",
         "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
+    {
+      "id": 715,
+      "symbol": "ROBOUSDT",
+      "direction": "LONG",
+      "exchange": "bybit",
+      "entry": 0.02542,
+      "tp1": 0.025928,
+      "tp2": 0.026437,
+      "sl": 0.024912,
+      "entry_orig": 0.02542,
+      "tp1_orig": 0.025928,
+      "tp2_orig": 0.026437,
+      "sl_orig": 0.024912,
+      "strength": 51,
+      "taken_at": "2026-03-21T09:57:43.805197",
+      "status": "OPEN",
+      "reasons": [
+        "RSI=46 (нейтральный↓)",
+        "MACD бычий (hist=0.00002)",
+        "BB ниже середины",
+        "Объём x3.6 🔥🔥",
+        "Стакан: сильное давление покупки (+0.31)",
+        "OI растёт +0.7%"
       ]
     }
   ],
