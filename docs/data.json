@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-21T07:50:21.723248+00:00",
+  "updated_at": "2026-03-21T07:50:52.974889+00:00",
   "publish_status": {
-    "last_ok": "2026-03-21T07:49:07Z",
+    "last_ok": "2026-03-21T07:50:27Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -12,17 +12,17 @@
   "stats": {
     "total": 805,
     "wins": 258,
-    "losses": 168,
-    "active": 4,
-    "winrate": 60.6
+    "losses": 169,
+    "active": 3,
+    "winrate": 60.4
   },
   "trade_stats": {
-    "open": 6,
+    "open": 5,
     "pending": 0,
     "wins": 302,
-    "losses": 308,
-    "total_pnl": 50.75,
-    "winrate": 49.5
+    "losses": 309,
+    "total_pnl": 48.61,
+    "winrate": 49.4
   },
   "fear_greed": {
     "value": 12,
@@ -107,17 +107,19 @@
       "news": null,
       "created_at": "2026-03-21 07:13:06",
       "status": "ACTIVE"
-    },
+    }
+  ],
+  "history": [
     {
-      "id": 843,
       "symbol": "ETHFIUSDT",
       "direction": "LONG",
-      "exchange": "binance",
       "entry": 0.6145,
       "tp1": 0.629339,
       "tp2": 0.644179,
       "sl": 0.60221,
       "strength": 53,
+      "status": "SL",
+      "created_at": "2026-03-21 07:14:53",
       "reasons": [
         "MACD бычий (hist=0.00161)",
         "Цена > EMA20 > EMA50",
@@ -128,13 +130,8 @@
         "CVD положительный (+2.8%)",
         "⚠️ Funding через 46м",
         "⚡ Рыночный вход (MTF сильный)"
-      ],
-      "news": null,
-      "created_at": "2026-03-21 07:14:53",
-      "status": "ACTIVE"
-    }
-  ],
-  "history": [
+      ]
+    },
     {
       "symbol": "MYXUSDT",
       "direction": "LONG",
@@ -535,26 +532,6 @@
         "Doji (1h) — нерешительность",
         "⚡ Рыночный вход (MTF 2+ ТФ)"
       ]
-    },
-    {
-      "symbol": "ANKRUSDT",
-      "direction": "LONG",
-      "entry": 0.005461,
-      "tp1": 0.005601,
-      "tp2": 0.00574,
-      "sl": 0.005349,
-      "strength": 55,
-      "status": "TP1",
-      "created_at": "2026-03-21 00:01:02",
-      "reasons": [
-        "MACD бычий (hist=0.00000)",
-        "Цена > EMA20 > EMA50",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +12.1% + цена ↑",
-        "CVD растёт (+6.7%) — покупки усиливаются 📈",
-        "Bullish Engulfing (1h) 🕯️",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
     }
   ],
   "trades_open": [
@@ -693,37 +670,23 @@
         "⚠️ Funding через 48м",
         "⚡ Рыночный вход (MTF 2+ ТФ)"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 697,
       "symbol": "ETHFIUSDT",
       "direction": "LONG",
-      "exchange": "binance",
       "entry": 0.6145,
       "tp1": 0.629339,
       "tp2": 0.644179,
       "sl": 0.60221,
-      "entry_orig": 0.6145,
-      "tp1_orig": 0.629339,
-      "tp2_orig": 0.644179,
-      "sl_orig": 0.60221,
       "strength": 53,
+      "status": "SL",
+      "pnl_pct": -2.14,
+      "close_price": 0.60135,
       "taken_at": "2026-03-21T07:14:53.741971",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00161)",
-        "Цена > EMA20 > EMA50",
-        "Объём x2.0 🔥",
-        "Стакан: давление покупки (+0.13)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +7.3% + цена ↑",
-        "CVD положительный (+2.8%)",
-        "⚠️ Funding через 46м",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-21 07:50:27"
+    },
     {
       "symbol": "MYXUSDT",
       "direction": "LONG",
@@ -3509,20 +3472,6 @@
       "close_price": 0.10105,
       "taken_at": "2026-03-19T12:21:48.755149",
       "closed_at": "2026-03-19 14:30:20"
-    },
-    {
-      "symbol": "BEATUSDT",
-      "direction": "LONG",
-      "entry": 0.6052,
-      "tp1": 0.617304,
-      "tp2": 0.629408,
-      "sl": 0.593096,
-      "strength": 45,
-      "status": "SL",
-      "pnl_pct": -2.19,
-      "close_price": 0.59195,
-      "taken_at": "2026-03-19T12:50:36.575263",
-      "closed_at": "2026-03-19 14:29:52"
     }
   ]
 }
