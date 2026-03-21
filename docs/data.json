@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-03-21T16:30:29.501442+00:00",
+  "updated_at": "2026-03-21T16:31:36.025615+00:00",
   "publish_status": {
-    "last_ok": "2026-03-21T16:29:29Z",
-    "last_error": "fatal: unable to access 'https://github.com/MUMITROLIK/trybotmy.git/': Could not resolve host: github.com\n",
+    "last_ok": "2026-03-21T16:30:35Z",
+    "last_error": null,
     "min_push_interval_sec": 30
   },
   "settings": {
