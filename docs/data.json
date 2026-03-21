@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-21T19:48:35.898540+00:00",
+  "updated_at": "2026-03-21T19:49:09.777475+00:00",
   "publish_status": {
-    "last_ok": "2026-03-21T19:47:31Z",
+    "last_ok": "2026-03-21T19:48:42Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 878,
+    "total": 879,
     "wins": 285,
     "losses": 202,
-    "active": 8,
+    "active": 9,
     "winrate": 58.5
   },
   "trade_stats": {
-    "open": 8,
+    "open": 9,
     "pending": 0,
     "wins": 334,
     "losses": 347,
@@ -216,6 +216,30 @@
       ],
       "news": null,
       "created_at": "2026-03-21 19:33:26",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 917,
+      "symbol": "XANUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.011077,
+      "tp1": 0.011299,
+      "tp2": 0.01152,
+      "sl": 0.010855,
+      "strength": 60,
+      "reasons": [
+        "MACD бычий (hist=0.00004)",
+        "EMA20 > EMA50 (golden cross) 🌟",
+        "Объём x3.6 🔥🔥",
+        "Стакан: сильное давление покупки (+0.37)",
+        "МТФ: 5m, 15m, 4h согласны",
+        "OI падает (шорты закрываются)",
+        "CVD положительный (-2.7%)",
+        "⚡ Рыночный вход (MTF сильный)"
+      ],
+      "news": null,
+      "created_at": "2026-03-21 19:49:08",
       "status": "ACTIVE"
     }
   ],
@@ -834,6 +858,33 @@
         "Объём x1.8 🔥",
         "МТФ: все 4 таймфрейма согласны ✅✅",
         "CVD растёт (+6.9%) — покупки усиливаются 📈",
+        "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
+    {
+      "id": 771,
+      "symbol": "XANUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.011077,
+      "tp1": 0.011299,
+      "tp2": 0.01152,
+      "sl": 0.010855,
+      "entry_orig": 0.011077,
+      "tp1_orig": 0.011299,
+      "tp2_orig": 0.01152,
+      "sl_orig": 0.010855,
+      "strength": 60,
+      "taken_at": "2026-03-21T19:49:09.102745",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.00004)",
+        "EMA20 > EMA50 (golden cross) 🌟",
+        "Объём x3.6 🔥🔥",
+        "Стакан: сильное давление покупки (+0.37)",
+        "МТФ: 5m, 15m, 4h согласны",
+        "OI падает (шорты закрываются)",
+        "CVD положительный (-2.7%)",
         "⚡ Рыночный вход (MTF сильный)"
       ]
     }
