@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-21T15:33:49.320909+00:00",
+  "updated_at": "2026-03-21T15:35:22.977163+00:00",
   "publish_status": {
-    "last_ok": "2026-03-21T15:33:18Z",
+    "last_ok": "2026-03-21T15:33:56Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 58.9
   },
   "trade_stats": {
-    "open": 9,
+    "open": 8,
     "pending": 0,
-    "wins": 325,
+    "wins": 326,
     "losses": 338,
-    "total_pnl": 33.55,
-    "winrate": 49.0
+    "total_pnl": 35.52,
+    "winrate": 49.1
   },
   "fear_greed": {
     "value": 12,
@@ -779,36 +779,23 @@
         "⚠️ Funding через 61м",
         "⚡ Рыночный вход (MTF сильный)"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 703,
       "symbol": "KASUSDT",
       "direction": "LONG",
-      "exchange": "binance",
       "entry": 0.03671,
       "tp1": 0.037444,
       "tp2": 0.038178,
       "sl": 0.037445,
-      "entry_orig": 0.03671,
-      "tp1_orig": 0.037444,
-      "tp2_orig": 0.038178,
-      "sl_orig": 0.035976,
       "strength": 57,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 1.97,
+      "close_price": 0.037434999999999996,
       "taken_at": "2026-03-21T09:05:32.932482",
-      "status": "TP1_HIT",
-      "reasons": [
-        "RSI=35 (перепроданность)",
-        "BB ниже середины",
-        "Объём x3.0 🔥🔥",
-        "Стакан: давление покупки (+0.14)",
-        "МТФ: только 1 таймфрейм согласен",
-        "OI растёт +1.7%",
-        "CVD растёт (+9.6%) — покупки усиливаются 📈",
-        "Bullish Engulfing (1h) 🕯️"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-21 15:33:57"
+    },
     {
       "symbol": "GUAUSDT",
       "direction": "LONG",
@@ -3594,20 +3581,6 @@
       "close_price": 0.9410499999999999,
       "taken_at": "2026-03-19T14:24:18.109371",
       "closed_at": "2026-03-19 22:24:22"
-    },
-    {
-      "symbol": "PAXGUSDT",
-      "direction": "LONG",
-      "entry": 4619.64,
-      "tp1": 4712.0328,
-      "tp2": 4804.4256,
-      "sl": 4527.2472,
-      "strength": 45,
-      "status": "TIMEOUT",
-      "pnl_pct": 1.13,
-      "close_price": 4671.995,
-      "taken_at": "2026-03-19T14:09:54.317851",
-      "closed_at": "2026-03-19 22:09:58"
     }
   ]
 }
