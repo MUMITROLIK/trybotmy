@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-03-21T17:00:11.567564+00:00",
+  "updated_at": "2026-03-21T17:01:04.587877+00:00",
   "publish_status": {
-    "last_ok": "2026-03-21T16:41:37Z",
-    "last_error": "fatal: unable to access 'https://github.com/MUMITROLIK/trybotmy.git/': Could not resolve host: github.com\n",
+    "last_ok": "2026-03-21T17:00:18Z",
+    "last_error": null,
     "min_push_interval_sec": 30
   },
   "settings": {
@@ -11,10 +11,10 @@
   },
   "stats": {
     "total": 870,
-    "wins": 281,
+    "wins": 282,
     "losses": 199,
-    "active": 8,
-    "winrate": 58.5
+    "active": 7,
+    "winrate": 58.6
   },
   "trade_stats": {
     "open": 9,
@@ -198,17 +198,19 @@
       "news": null,
       "created_at": "2026-03-21 16:29:49",
       "status": "ACTIVE"
-    },
+    }
+  ],
+  "history": [
     {
-      "id": 908,
       "symbol": "RIVERUSDT",
       "direction": "LONG",
-      "exchange": "binance",
       "entry": 24.667,
       "tp1": 25.298179,
       "tp2": 25.929357,
       "sl": 24.162057,
       "strength": 51,
+      "status": "TP1",
+      "created_at": "2026-03-21 16:40:49",
       "reasons": [
         "RSI=28 (сильная перепроданность)",
         "BB нижняя зона (3%)",
@@ -218,13 +220,8 @@
         "OI растёт +2.2% + цена ↑",
         "Цена у поддержки 24.5510",
         "⚡ Рыночный вход (MTF сильный)"
-      ],
-      "news": null,
-      "created_at": "2026-03-21 16:40:49",
-      "status": "ACTIVE"
-    }
-  ],
-  "history": [
+      ]
+    },
     {
       "symbol": "POWERUSDT",
       "direction": "LONG",
@@ -611,26 +608,6 @@
         "CVD растёт (+6.4%) — покупки усиливаются 📈",
         "⚡ Рыночный вход (MTF сильный)"
       ]
-    },
-    {
-      "symbol": "EDGEUSDT",
-      "direction": "LONG",
-      "entry": 0.6861,
-      "tp1": 0.699822,
-      "tp2": 0.713544,
-      "sl": 0.672378,
-      "strength": 51,
-      "status": "TP1",
-      "created_at": "2026-03-21 12:39:03",
-      "reasons": [
-        "RSI=27 (сильная перепроданность)",
-        "BB нижняя полоса (пробой)",
-        "EMA20 > EMA50",
-        "Стакан: сильное давление покупки (+0.46)",
-        "МТФ: 15m, 1h, 4h согласны",
-        "Цена у поддержки 0.6857",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
     }
   ],
   "trades_open": [
@@ -852,14 +829,14 @@
       "entry": 24.667,
       "tp1": 25.298179,
       "tp2": 25.929357,
-      "sl": 24.162057,
+      "sl": 25.668,
       "entry_orig": 24.667,
       "tp1_orig": 25.298179,
       "tp2_orig": 25.929357,
       "sl_orig": 24.162057,
       "strength": 51,
       "taken_at": "2026-03-21T16:40:50.141025",
-      "status": "OPEN",
+      "status": "TP1_HIT",
       "reasons": [
         "RSI=28 (сильная перепроданность)",
         "BB нижняя зона (3%)",
