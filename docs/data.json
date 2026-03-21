@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-21T17:25:32.437084+00:00",
+  "updated_at": "2026-03-21T17:26:38.901243+00:00",
   "publish_status": {
-    "last_ok": "2026-03-21T17:24:17Z",
+    "last_ok": "2026-03-21T17:25:38Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 871,
+    "total": 872,
     "wins": 282,
     "losses": 200,
-    "active": 7,
+    "active": 8,
     "winrate": 58.5
   },
   "trade_stats": {
-    "open": 7,
+    "open": 8,
     "pending": 0,
     "wins": 331,
     "losses": 344,
@@ -197,6 +197,28 @@
       ],
       "news": null,
       "created_at": "2026-03-21 17:18:50",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 910,
+      "symbol": "BEATUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.6311,
+      "tp1": 0.643722,
+      "tp2": 0.656344,
+      "sl": 0.618478,
+      "strength": 50,
+      "reasons": [
+        "MACD бычий (hist=0.00193)",
+        "EMA20 > EMA50 (golden cross) 🌟",
+        "Стакан: сильное давление покупки (+0.31)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "CVD положительный (+2.2%)",
+        "⚡ Рыночный вход (MTF сильный)"
+      ],
+      "news": null,
+      "created_at": "2026-03-21 17:25:59",
       "status": "ACTIVE"
     }
   ],
@@ -792,6 +814,31 @@
         "МТФ: все 4 таймфрейма согласны ✅✅",
         "OI растёт +2.7% + цена ↑",
         "CVD положительный (+1.8%)",
+        "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
+    {
+      "id": 764,
+      "symbol": "BEATUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.6311,
+      "tp1": 0.643722,
+      "tp2": 0.656344,
+      "sl": 0.618478,
+      "entry_orig": 0.6311,
+      "tp1_orig": 0.643722,
+      "tp2_orig": 0.656344,
+      "sl_orig": 0.618478,
+      "strength": 50,
+      "taken_at": "2026-03-21T17:25:59.906958",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.00193)",
+        "EMA20 > EMA50 (golden cross) 🌟",
+        "Стакан: сильное давление покупки (+0.31)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "CVD положительный (+2.2%)",
         "⚡ Рыночный вход (MTF сильный)"
       ]
     }
