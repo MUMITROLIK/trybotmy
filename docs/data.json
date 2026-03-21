@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-21T15:20:56.847776+00:00",
+  "updated_at": "2026-03-21T15:22:08.457574+00:00",
   "publish_status": {
-    "last_ok": "2026-03-21T15:19:56Z",
+    "last_ok": "2026-03-21T15:21:04Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -12,17 +12,17 @@
   "stats": {
     "total": 861,
     "wins": 278,
-    "losses": 193,
-    "active": 8,
-    "winrate": 59.0
+    "losses": 194,
+    "active": 7,
+    "winrate": 58.9
   },
   "trade_stats": {
-    "open": 12,
+    "open": 11,
     "pending": 0,
     "wins": 324,
-    "losses": 336,
-    "total_pnl": 36.58,
-    "winrate": 49.1
+    "losses": 337,
+    "total_pnl": 33.96,
+    "winrate": 49.0
   },
   "fear_greed": {
     "value": 12,
@@ -154,30 +154,6 @@
       "status": "ACTIVE"
     },
     {
-      "id": 895,
-      "symbol": "PHAUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.04223,
-      "tp1": 0.043329,
-      "tp2": 0.044429,
-      "sl": 0.041351,
-      "strength": 51,
-      "reasons": [
-        "MACD бычий (hist=0.00015)",
-        "Цена > EMA20 > EMA50",
-        "Объём x2.0 🔥",
-        "Стакан: давление покупки (+0.12)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "CVD положительный (+1.4%)",
-        "⚠️ Funding через 81м",
-        "⚡ Рыночный вход (MTF сильный)"
-      ],
-      "news": null,
-      "created_at": "2026-03-21 14:40:24",
-      "status": "ACTIVE"
-    },
-    {
       "id": 898,
       "symbol": "GUNUSDT",
       "direction": "LONG",
@@ -268,6 +244,27 @@
         "МТФ: 5m, 15m, 1h согласны",
         "OI растёт +0.5% + цена ↑",
         "⚠️ Funding через 77м",
+        "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
+    {
+      "symbol": "PHAUSDT",
+      "direction": "LONG",
+      "entry": 0.04223,
+      "tp1": 0.043329,
+      "tp2": 0.044429,
+      "sl": 0.041351,
+      "strength": 51,
+      "status": "SL",
+      "created_at": "2026-03-21 14:40:24",
+      "reasons": [
+        "MACD бычий (hist=0.00015)",
+        "Цена > EMA20 > EMA50",
+        "Объём x2.0 🔥",
+        "Стакан: давление покупки (+0.12)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "CVD положительный (+1.4%)",
+        "⚠️ Funding через 81м",
         "⚡ Рыночный вход (MTF сильный)"
       ]
     },
@@ -611,26 +608,6 @@
         "OI растёт +0.9% + цена ↑",
         "⚡ Рыночный вход (MTF сильный)"
       ]
-    },
-    {
-      "symbol": "RIVERUSDT",
-      "direction": "LONG",
-      "entry": 25.653,
-      "tp1": 26.643643,
-      "tp2": 27.634286,
-      "sl": 24.860486,
-      "strength": 57,
-      "status": "SL",
-      "created_at": "2026-03-21 11:35:43",
-      "reasons": [
-        "MACD бычий (hist=0.02915)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: сильное давление покупки (+0.26)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +6.9% + цена ↑",
-        "CVD растёт (+11.3%) — покупки усиливаются 📈",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
     }
   ],
   "trades_open": [
@@ -846,33 +823,6 @@
       ]
     },
     {
-      "id": 749,
-      "symbol": "PHAUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.04223,
-      "tp1": 0.043329,
-      "tp2": 0.044429,
-      "sl": 0.041351,
-      "entry_orig": 0.04223,
-      "tp1_orig": 0.043329,
-      "tp2_orig": 0.044429,
-      "sl_orig": 0.041351,
-      "strength": 51,
-      "taken_at": "2026-03-21T14:40:25.067635",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00015)",
-        "Цена > EMA20 > EMA50",
-        "Объём x2.0 🔥",
-        "Стакан: давление покупки (+0.12)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "CVD положительный (+1.4%)",
-        "⚠️ Funding через 81м",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 751,
       "symbol": "POWERUSDT",
       "direction": "LONG",
@@ -957,6 +907,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "PHAUSDT",
+      "direction": "LONG",
+      "entry": 0.04223,
+      "tp1": 0.043329,
+      "tp2": 0.044429,
+      "sl": 0.041351,
+      "strength": 51,
+      "status": "SL",
+      "pnl_pct": -2.62,
+      "close_price": 0.041124999999999995,
+      "taken_at": "2026-03-21T14:40:25.067635",
+      "closed_at": "2026-03-21 15:21:26"
+    },
     {
       "symbol": "ALCHUSDT",
       "direction": "LONG",
@@ -3742,20 +3706,6 @@
       "close_price": 2146.625,
       "taken_at": "2026-03-19T13:23:17.686871",
       "closed_at": "2026-03-19 21:23:20"
-    },
-    {
-      "symbol": "RENDERUSDT",
-      "direction": "LONG",
-      "entry": 1.642,
-      "tp1": 1.67484,
-      "tp2": 1.70768,
-      "sl": 1.6755,
-      "strength": 48,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 1.98,
-      "close_price": 1.6745,
-      "taken_at": "2026-03-19T16:02:40.523966",
-      "closed_at": "2026-03-19 21:08:08"
     }
   ]
 }
