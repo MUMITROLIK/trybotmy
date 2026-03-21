@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-21T20:42:22.794483+00:00",
+  "updated_at": "2026-03-21T20:43:17.083655+00:00",
   "publish_status": {
-    "last_ok": "2026-03-21T20:41:22Z",
+    "last_ok": "2026-03-21T20:42:29Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 886,
+    "total": 887,
     "wins": 287,
     "losses": 205,
-    "active": 9,
+    "active": 10,
     "winrate": 58.3
   },
   "trade_stats": {
-    "open": 13,
+    "open": 14,
     "pending": 0,
     "wins": 334,
     "losses": 350,
@@ -241,6 +241,28 @@
       ],
       "news": null,
       "created_at": "2026-03-21 20:41:35",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 925,
+      "symbol": "1000TURBOUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 1.1278,
+      "tp1": 1.152925,
+      "tp2": 1.17805,
+      "sl": 1.105244,
+      "strength": 53,
+      "reasons": [
+        "MACD бычий (hist=0.01105)",
+        "Цена > EMA20 > EMA50",
+        "Объём x6.4 🔥🔥🔥",
+        "МТФ: 5m, 15m, 1h согласны",
+        "OI растёт +4.8% + цена ↑",
+        "⚡ Рыночный вход (MTF сильный)"
+      ],
+      "news": null,
+      "created_at": "2026-03-21 20:43:15",
       "status": "ACTIVE"
     }
   ],
@@ -934,6 +956,31 @@
         "МТФ: 15m, 1h, 4h согласны",
         "OI растёт +0.7% + цена ↑",
         "Цена у поддержки 0.0230",
+        "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
+    {
+      "id": 779,
+      "symbol": "1000TURBOUSDT",
+      "direction": "LONG",
+      "exchange": "bybit",
+      "entry": 1.1278,
+      "tp1": 1.152925,
+      "tp2": 1.17805,
+      "sl": 1.105244,
+      "entry_orig": 1.1278,
+      "tp1_orig": 1.152925,
+      "tp2_orig": 1.17805,
+      "sl_orig": 1.105244,
+      "strength": 53,
+      "taken_at": "2026-03-21T20:43:15.475339",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.01105)",
+        "Цена > EMA20 > EMA50",
+        "Объём x6.4 🔥🔥🔥",
+        "МТФ: 5m, 15m, 1h согласны",
+        "OI растёт +4.8% + цена ↑",
         "⚡ Рыночный вход (MTF сильный)"
       ]
     },
