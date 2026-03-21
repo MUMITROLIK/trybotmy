@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-21T02:35:52.741792+00:00",
+  "updated_at": "2026-03-21T02:36:58.610579+00:00",
   "publish_status": {
-    "last_ok": "2026-03-21T02:34:38Z",
+    "last_ok": "2026-03-21T02:35:58Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 795,
+    "total": 796,
     "wins": 250,
     "losses": 167,
-    "active": 8,
+    "active": 9,
     "winrate": 60.0
   },
   "trade_stats": {
-    "open": 12,
+    "open": 13,
     "pending": 0,
     "wins": 290,
     "losses": 304,
@@ -230,6 +230,30 @@
       ],
       "news": "Grayscale Predicts 18x Upside For Zcash If This Happens",
       "created_at": "2026-03-21 02:19:43",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 834,
+      "symbol": "ETHFIUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.5857,
+      "tp1": 0.597414,
+      "tp2": 0.609128,
+      "sl": 0.573986,
+      "strength": 57,
+      "reasons": [
+        "MACD бычий (hist=0.00159)",
+        "Цена > EMA20 > EMA50",
+        "Объём x2.1 🔥",
+        "Стакан: давление покупки (+0.17)",
+        "МТФ: 5m, 15m, 1h согласны",
+        "OI растёт +1.1% + цена ↑",
+        "CVD растёт (+9.7%) — покупки усиливаются 📈",
+        "⚡ Рыночный вход (MTF сильный)"
+      ],
+      "news": null,
+      "created_at": "2026-03-21 02:36:16",
       "status": "ACTIVE"
     }
   ],
@@ -966,6 +990,33 @@
         "Hammer (1h) 🔨",
         "Цена у поддержки 233.5700",
         "⚡ Рыночный вход (MTF 2+ ТФ)"
+      ]
+    },
+    {
+      "id": 688,
+      "symbol": "ETHFIUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.5857,
+      "tp1": 0.597414,
+      "tp2": 0.609128,
+      "sl": 0.573986,
+      "entry_orig": 0.5857,
+      "tp1_orig": 0.597414,
+      "tp2_orig": 0.609128,
+      "sl_orig": 0.573986,
+      "strength": 57,
+      "taken_at": "2026-03-21T02:36:16.797443",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.00159)",
+        "Цена > EMA20 > EMA50",
+        "Объём x2.1 🔥",
+        "Стакан: давление покупки (+0.17)",
+        "МТФ: 5m, 15m, 1h согласны",
+        "OI растёт +1.1% + цена ↑",
+        "CVD растёт (+9.7%) — покупки усиливаются 📈",
+        "⚡ Рыночный вход (MTF сильный)"
       ]
     }
   ],
