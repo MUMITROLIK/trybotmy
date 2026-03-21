@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-21T15:35:22.977163+00:00",
+  "updated_at": "2026-03-21T15:36:03.093828+00:00",
   "publish_status": {
-    "last_ok": "2026-03-21T15:33:56Z",
+    "last_ok": "2026-03-21T15:35:29Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 58.9
   },
   "trade_stats": {
-    "open": 8,
+    "open": 7,
     "pending": 0,
     "wins": 326,
-    "losses": 338,
-    "total_pnl": 35.52,
-    "winrate": 49.1
+    "losses": 339,
+    "total_pnl": 32.08,
+    "winrate": 49.0
   },
   "fear_greed": {
     "value": 12,
@@ -593,32 +593,6 @@
       ]
     },
     {
-      "id": 726,
-      "symbol": "RIVERUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 25.653,
-      "tp1": 26.643643,
-      "tp2": 27.634286,
-      "sl": 24.860486,
-      "entry_orig": 25.653,
-      "tp1_orig": 26.643643,
-      "tp2_orig": 27.634286,
-      "sl_orig": 24.860486,
-      "strength": 57,
-      "taken_at": "2026-03-21T11:35:43.737375",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.02915)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: сильное давление покупки (+0.26)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +6.9% + цена ↑",
-        "CVD растёт (+11.3%) — покупки усиливаются 📈",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 744,
       "symbol": "DASHUSDT",
       "direction": "LONG",
@@ -782,6 +756,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "RIVERUSDT",
+      "direction": "LONG",
+      "entry": 25.653,
+      "tp1": 26.643643,
+      "tp2": 27.634286,
+      "sl": 24.860486,
+      "strength": 57,
+      "status": "SL",
+      "pnl_pct": -3.44,
+      "close_price": 24.77,
+      "taken_at": "2026-03-21T11:35:43.737375",
+      "closed_at": "2026-03-21 15:36:02"
+    },
     {
       "symbol": "KASUSDT",
       "direction": "LONG",
@@ -3567,20 +3555,6 @@
       "close_price": 0.093155,
       "taken_at": "2026-03-19T14:25:58.879217",
       "closed_at": "2026-03-19 22:26:00"
-    },
-    {
-      "symbol": "APTUSDT",
-      "direction": "SHORT",
-      "entry": 0.9348,
-      "tp1": 0.916104,
-      "tp2": 0.897408,
-      "sl": 0.953496,
-      "strength": 47,
-      "status": "TIMEOUT",
-      "pnl_pct": -0.67,
-      "close_price": 0.9410499999999999,
-      "taken_at": "2026-03-19T14:24:18.109371",
-      "closed_at": "2026-03-19 22:24:22"
     }
   ]
 }
