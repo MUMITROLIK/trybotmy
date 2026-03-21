@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-21T00:15:02.411516+00:00",
+  "updated_at": "2026-03-21T00:15:52.295104+00:00",
   "publish_status": {
-    "last_ok": "2026-03-21T00:14:02Z",
+    "last_ok": "2026-03-21T00:15:08Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 784,
+    "total": 785,
     "wins": 247,
     "losses": 162,
-    "active": 9,
+    "active": 10,
     "winrate": 60.4
   },
   "trade_stats": {
-    "open": 14,
+    "open": 15,
     "pending": 0,
     "wins": 285,
     "losses": 296,
@@ -252,6 +252,29 @@
       ],
       "news": null,
       "created_at": "2026-03-21 00:12:33",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 823,
+      "symbol": "ANKRUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.005775,
+      "tp1": 0.005938,
+      "tp2": 0.006102,
+      "sl": 0.005644,
+      "strength": 55,
+      "reasons": [
+        "MACD бычий (hist=0.00004)",
+        "Цена > EMA20 > EMA50",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +12.8% + цена ↑",
+        "CVD растёт (+5.5%) — покупки усиливаются 📈",
+        "Bullish Engulfing (1h) 🕯️",
+        "⚡ Рыночный вход (MTF сильный)"
+      ],
+      "news": null,
+      "created_at": "2026-03-21 00:15:51",
       "status": "ACTIVE"
     }
   ],
@@ -1032,6 +1055,32 @@
         "CVD положительный (+0.8%)",
         "Hammer (1h) 🔨",
         "⚡ Рыночный вход (MTF 2+ ТФ)"
+      ]
+    },
+    {
+      "id": 677,
+      "symbol": "ANKRUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.005775,
+      "tp1": 0.005938,
+      "tp2": 0.006102,
+      "sl": 0.005644,
+      "entry_orig": 0.005775,
+      "tp1_orig": 0.005938,
+      "tp2_orig": 0.006102,
+      "sl_orig": 0.005644,
+      "strength": 55,
+      "taken_at": "2026-03-21T00:15:51.883310",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.00004)",
+        "Цена > EMA20 > EMA50",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +12.8% + цена ↑",
+        "CVD растёт (+5.5%) — покупки усиливаются 📈",
+        "Bullish Engulfing (1h) 🕯️",
+        "⚡ Рыночный вход (MTF сильный)"
       ]
     }
   ],
