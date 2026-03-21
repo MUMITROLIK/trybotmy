@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-21T10:25:31.302665+00:00",
+  "updated_at": "2026-03-21T10:26:59.024962+00:00",
   "publish_status": {
-    "last_ok": "2026-03-21T10:24:54Z",
+    "last_ok": "2026-03-21T10:25:37Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -12,9 +12,9 @@
   "stats": {
     "total": 825,
     "wins": 260,
-    "losses": 178,
-    "active": 11,
-    "winrate": 59.4
+    "losses": 179,
+    "active": 10,
+    "winrate": 59.2
   },
   "trade_stats": {
     "open": 11,
@@ -58,29 +58,6 @@
       ],
       "news": null,
       "created_at": "2026-03-21 08:21:55",
-      "status": "ACTIVE"
-    },
-    {
-      "id": 846,
-      "symbol": "SIRENUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.9259,
-      "tp1": 0.944418,
-      "tp2": 0.962936,
-      "sl": 0.907382,
-      "strength": 51,
-      "reasons": [
-        "MACD бычий (hist=0.00102)",
-        "EMA20 > EMA50 (golden cross) 🌟",
-        "Стакан: сильное давление покупки (+0.39)",
-        "МТФ: 5m, 15m, 1h согласны",
-        "OI растёт +1.2% + цена ↑",
-        "CVD положительный (+2.9%)",
-        "⚡ Рыночный вход (MTF сильный)"
-      ],
-      "news": null,
-      "created_at": "2026-03-21 08:49:47",
       "status": "ACTIVE"
     },
     {
@@ -434,6 +411,26 @@
       ]
     },
     {
+      "symbol": "SIRENUSDT",
+      "direction": "LONG",
+      "entry": 0.9259,
+      "tp1": 0.944418,
+      "tp2": 0.962936,
+      "sl": 0.907382,
+      "strength": 51,
+      "status": "SL",
+      "created_at": "2026-03-21 08:49:47",
+      "reasons": [
+        "MACD бычий (hist=0.00102)",
+        "EMA20 > EMA50 (golden cross) 🌟",
+        "Стакан: сильное давление покупки (+0.39)",
+        "МТФ: 5m, 15m, 1h согласны",
+        "OI растёт +1.2% + цена ↑",
+        "CVD положительный (+2.9%)",
+        "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
+    {
       "symbol": "PIXELUSDT",
       "direction": "LONG",
       "entry": 0.009742,
@@ -684,29 +681,6 @@
         "OI растёт +1.1% + цена ↑",
         "CVD растёт (+9.7%) — покупки усиливаются 📈",
         "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
-      "symbol": "ZECUSDT",
-      "direction": "LONG",
-      "entry": 234.51,
-      "tp1": 239.2002,
-      "tp2": 243.8904,
-      "sl": 229.8198,
-      "strength": 55,
-      "status": "EXPIRED",
-      "created_at": "2026-03-21 02:19:43",
-      "reasons": [
-        "RSI=37 (перепроданность)",
-        "BB ниже середины",
-        "Цена > EMA20 > EMA50",
-        "Стакан: сильное давление покупки (+0.33)",
-        "📰 Grayscale Predicts 18x Upside For Zcash If This Happens",
-        "МТФ: 15m, 4h согласны",
-        "CVD положительный (+3.6%)",
-        "Hammer (1h) 🔨",
-        "Цена у поддержки 233.5700",
-        "⚡ Рыночный вход (MTF 2+ ТФ)"
       ]
     }
   ],
