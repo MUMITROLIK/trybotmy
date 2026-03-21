@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-21T01:24:57.629020+00:00",
+  "updated_at": "2026-03-21T01:25:56.614126+00:00",
   "publish_status": {
-    "last_ok": "2026-03-21T01:24:29Z",
+    "last_ok": "2026-03-21T01:25:03Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 60.1
   },
   "trade_stats": {
-    "open": 13,
+    "open": 12,
     "pending": 0,
     "wins": 289,
-    "losses": 300,
-    "total_pnl": 34.96,
-    "winrate": 49.1
+    "losses": 301,
+    "total_pnl": 32.92,
+    "winrate": 49.0
   },
   "fear_greed": {
     "value": 12,
@@ -760,32 +760,6 @@
       ]
     },
     {
-      "id": 663,
-      "symbol": "XTZUSDT",
-      "direction": "LONG",
-      "exchange": "bybit",
-      "entry": 0.4076,
-      "tp1": 0.415752,
-      "tp2": 0.423904,
-      "sl": 0.399448,
-      "entry_orig": 0.4076,
-      "tp1_orig": 0.415752,
-      "tp2_orig": 0.423904,
-      "sl_orig": 0.399448,
-      "strength": 59,
-      "taken_at": "2026-03-20T21:26:43.630282",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00103)",
-        "Цена > EMA20 > EMA50",
-        "Объём x4.5 🔥🔥🔥",
-        "Стакан: перевес bid (+0.06)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +0.7% + цена ↑",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 666,
       "symbol": "AVAXUSDT",
       "direction": "LONG",
@@ -1029,6 +1003,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "XTZUSDT",
+      "direction": "LONG",
+      "entry": 0.4076,
+      "tp1": 0.415752,
+      "tp2": 0.423904,
+      "sl": 0.399448,
+      "strength": 59,
+      "status": "SL",
+      "pnl_pct": -2.04,
+      "close_price": 0.3993,
+      "taken_at": "2026-03-20T21:26:43.630282",
+      "closed_at": "2026-03-21 01:25:56"
+    },
     {
       "symbol": "ADAUSDT",
       "direction": "LONG",
@@ -3814,20 +3802,6 @@
       "close_price": 0.013662,
       "taken_at": "2026-03-19T11:54:18.869357",
       "closed_at": "2026-03-19 12:40:40"
-    },
-    {
-      "symbol": "RIVERUSDT",
-      "direction": "LONG",
-      "entry": 27.548,
-      "tp1": 28.166857,
-      "tp2": 28.785714,
-      "sl": 26.99704,
-      "strength": 45,
-      "status": "SL",
-      "pnl_pct": -2.02,
-      "close_price": 26.9925,
-      "taken_at": "2026-03-19T11:54:18.605341",
-      "closed_at": "2026-03-19 12:34:37"
     }
   ]
 }
