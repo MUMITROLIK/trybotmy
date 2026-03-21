@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-21T00:44:31.337317+00:00",
+  "updated_at": "2026-03-21T00:45:37.289910+00:00",
   "publish_status": {
-    "last_ok": "2026-03-21T00:43:03Z",
+    "last_ok": "2026-03-21T00:44:37Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 60.1
   },
   "trade_stats": {
-    "open": 13,
+    "open": 12,
     "pending": 0,
-    "wins": 287,
+    "wins": 288,
     "losses": 300,
-    "total_pnl": 33.72,
-    "winrate": 48.9
+    "total_pnl": 34.6,
+    "winrate": 49.0
   },
   "fear_greed": {
     "value": 12,
@@ -660,32 +660,6 @@
   ],
   "trades_open": [
     {
-      "id": 639,
-      "symbol": "TONUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 1.236,
-      "tp1": 1.26072,
-      "tp2": 1.28544,
-      "sl": 1.21128,
-      "entry_orig": 1.236,
-      "tp1_orig": 1.26072,
-      "tp2_orig": 1.28544,
-      "sl_orig": 1.21128,
-      "strength": 52,
-      "taken_at": "2026-03-20T16:44:28.342532",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=43 (нейтральный↓)",
-        "MACD бычий (hist=0.00035)",
-        "Цена > EMA20 > EMA50",
-        "Объём x3.6 🔥🔥",
-        "МТФ: 5m, 15m согласны",
-        "CVD растёт (+9.6%) — покупки усиливаются 📈",
-        "⚡ Рыночный вход (MTF 2+ ТФ)"
-      ]
-    },
-    {
       "id": 643,
       "symbol": "ADAUSDT",
       "direction": "LONG",
@@ -1009,6 +983,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "TONUSDT",
+      "direction": "LONG",
+      "entry": 1.236,
+      "tp1": 1.26072,
+      "tp2": 1.28544,
+      "sl": 1.21128,
+      "strength": 52,
+      "status": "TIMEOUT",
+      "pnl_pct": 0.88,
+      "close_price": 1.2468499999999998,
+      "taken_at": "2026-03-20T16:44:28.342532",
+      "closed_at": "2026-03-21 00:44:45"
+    },
     {
       "symbol": "ZETAUSDT",
       "direction": "LONG",
@@ -3794,20 +3782,6 @@
       "close_price": 1.8763,
       "taken_at": "2026-03-19T11:59:59.445387",
       "closed_at": "2026-03-19 12:30:36"
-    },
-    {
-      "symbol": "BANANAS31USDT",
-      "direction": "LONG",
-      "entry": 0.009084,
-      "tp1": 0.00927,
-      "tp2": 0.009457,
-      "sl": 0.009312,
-      "strength": 45,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 2.28,
-      "close_price": 0.009291,
-      "taken_at": "2026-03-19T12:03:35.593372",
-      "closed_at": "2026-03-19 12:15:12"
     }
   ]
 }
