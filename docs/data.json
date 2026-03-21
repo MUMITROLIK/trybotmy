@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-21T19:10:49.152565+00:00",
+  "updated_at": "2026-03-21T19:11:29.501718+00:00",
   "publish_status": {
-    "last_ok": "2026-03-21T19:09:26Z",
+    "last_ok": "2026-03-21T19:10:55Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 58.5
   },
   "trade_stats": {
-    "open": 8,
+    "open": 7,
     "pending": 0,
     "wins": 334,
-    "losses": 346,
-    "total_pnl": 33.04,
-    "winrate": 49.1
+    "losses": 347,
+    "total_pnl": 30.98,
+    "winrate": 49.0
   },
   "fear_greed": {
     "value": 12,
@@ -610,33 +610,6 @@
   ],
   "trades_open": [
     {
-      "id": 745,
-      "symbol": "KITEUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.21949,
-      "tp1": 0.22388,
-      "tp2": 0.22827,
-      "sl": 0.2151,
-      "entry_orig": 0.21949,
-      "tp1_orig": 0.22388,
-      "tp2_orig": 0.22827,
-      "sl_orig": 0.2151,
-      "strength": 58,
-      "taken_at": "2026-03-21T14:17:00.621258",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=48 (нейтральный↓)",
-        "MACD бычий (hist=0.00017)",
-        "EMA20 > EMA50 (golden cross) 🌟",
-        "Стакан: сильное давление покупки (+0.55)",
-        "МТФ: 5m, 15m, 1h согласны",
-        "OI растёт +2.1% + цена ↑",
-        "CVD положительный (-0.8%)",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 759,
       "symbol": "CYSUSDT",
       "direction": "LONG",
@@ -819,6 +792,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "KITEUSDT",
+      "direction": "LONG",
+      "entry": 0.21949,
+      "tp1": 0.22388,
+      "tp2": 0.22827,
+      "sl": 0.2151,
+      "strength": 58,
+      "status": "SL",
+      "pnl_pct": -2.06,
+      "close_price": 0.21495999999999998,
+      "taken_at": "2026-03-21T14:17:00.621258",
+      "closed_at": "2026-03-21 19:11:29"
+    },
     {
       "symbol": "STOUSDT",
       "direction": "LONG",
@@ -3604,20 +3591,6 @@
       "close_price": 0.7312,
       "taken_at": "2026-03-19T16:05:15.842560",
       "closed_at": "2026-03-20 06:35:23"
-    },
-    {
-      "symbol": "AAVEUSDT",
-      "direction": "LONG",
-      "entry": 110.88,
-      "tp1": 113.0976,
-      "tp2": 115.3152,
-      "sl": 108.6624,
-      "strength": 45,
-      "status": "TIMEOUT",
-      "pnl_pct": 1.02,
-      "close_price": 112.015,
-      "taken_at": "2026-03-19T17:11:35.060630",
-      "closed_at": "2026-03-20 01:11:40"
     }
   ]
 }
