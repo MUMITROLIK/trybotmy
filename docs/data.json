@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-21T01:54:25.596492+00:00",
+  "updated_at": "2026-03-21T01:55:31.428611+00:00",
   "publish_status": {
-    "last_ok": "2026-03-21T01:53:09Z",
+    "last_ok": "2026-03-21T01:54:31Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 60.1
   },
   "trade_stats": {
-    "open": 13,
+    "open": 12,
     "pending": 0,
     "wins": 290,
-    "losses": 302,
-    "total_pnl": 33.36,
-    "winrate": 49.0
+    "losses": 303,
+    "total_pnl": 31.32,
+    "winrate": 48.9
   },
   "fear_greed": {
     "value": 12,
@@ -822,33 +822,6 @@
       ]
     },
     {
-      "id": 671,
-      "symbol": "ZBCNUSDT",
-      "direction": "LONG",
-      "exchange": "bybit",
-      "entry": 0.0026589,
-      "tp1": 0.002724,
-      "tp2": 0.002789,
-      "sl": 0.002606,
-      "entry_orig": 0.0026589,
-      "tp1_orig": 0.002724,
-      "tp2_orig": 0.002789,
-      "sl_orig": 0.002606,
-      "strength": 52,
-      "taken_at": "2026-03-20T22:37:44.914013",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00001)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: сильное давление покупки (+0.68)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +1.8% + цена ↑",
-        "BTC корреляция 0.70, BTC +1.3% 📈",
-        "⚠️ Funding через 83м",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 672,
       "symbol": "HYPEUSDT",
       "direction": "LONG",
@@ -1014,6 +987,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "ZBCNUSDT",
+      "direction": "LONG",
+      "entry": 0.0026589,
+      "tp1": 0.002724,
+      "tp2": 0.002789,
+      "sl": 0.002606,
+      "strength": 52,
+      "status": "SL",
+      "pnl_pct": -2.04,
+      "close_price": 0.0026046,
+      "taken_at": "2026-03-20T22:37:44.914013",
+      "closed_at": "2026-03-21 01:54:32"
+    },
     {
       "symbol": "JCTUSDT",
       "direction": "LONG",
@@ -3799,20 +3786,6 @@
       "close_price": 0.10025,
       "taken_at": "2026-03-19T12:27:24.057712",
       "closed_at": "2026-03-19 13:03:33"
-    },
-    {
-      "symbol": "PAXGUSDT",
-      "direction": "LONG",
-      "entry": 4611.12,
-      "tp1": 4703.3424,
-      "tp2": 4795.5648,
-      "sl": 4518.8976,
-      "strength": 47,
-      "status": "SL",
-      "pnl_pct": -2.05,
-      "close_price": 4516.365,
-      "taken_at": "2026-03-19T12:15:29.942980",
-      "closed_at": "2026-03-19 13:02:37"
     }
   ]
 }
