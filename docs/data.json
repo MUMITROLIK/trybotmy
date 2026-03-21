@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-21T12:02:54.479495+00:00",
+  "updated_at": "2026-03-21T12:03:26.686836+00:00",
   "publish_status": {
-    "last_ok": "2026-03-21T12:02:12Z",
+    "last_ok": "2026-03-21T12:03:00Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,11 +17,11 @@
     "winrate": 59.1
   },
   "trade_stats": {
-    "open": 13,
+    "open": 12,
     "pending": 0,
-    "wins": 310,
+    "wins": 311,
     "losses": 327,
-    "total_pnl": 26.5,
+    "total_pnl": 28.64,
     "winrate": 48.7
   },
   "fear_greed": {
@@ -1011,35 +1011,23 @@
         "CVD положительный (+0.1%)",
         "⚡ Рыночный вход (MTF сильный)"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 717,
       "symbol": "GUAUSDT",
       "direction": "LONG",
-      "exchange": "binance",
       "entry": 0.29578,
       "tp1": 0.301696,
       "tp2": 0.307611,
       "sl": 0.302275,
-      "entry_orig": 0.29578,
-      "tp1_orig": 0.301696,
-      "tp2_orig": 0.307611,
-      "sl_orig": 0.289864,
       "strength": 51,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": 2.14,
+      "close_price": 0.30212,
       "taken_at": "2026-03-21T10:22:13.850100",
-      "status": "TP1_HIT",
-      "reasons": [
-        "RSI=31 (перепроданность)",
-        "MACD бычий (hist=0.00009)",
-        "BB ниже середины",
-        "Стакан: сильное давление покупки (+0.32)",
-        "МТФ: 1h, 4h согласны",
-        "CVD положительный (+2.4%)",
-        "⚡ Рыночный вход (MTF 2+ ТФ)"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-21 12:03:19"
+    },
     {
       "symbol": "GUNUSDT",
       "direction": "LONG",
@@ -3825,20 +3813,6 @@
       "close_price": 0.09378,
       "taken_at": "2026-03-19T13:12:41.344920",
       "closed_at": "2026-03-19 17:15:33"
-    },
-    {
-      "symbol": "PTBUSDT",
-      "direction": "LONG",
-      "entry": 0.0013203,
-      "tp1": 0.001375,
-      "tp2": 0.001429,
-      "sl": 0.001277,
-      "strength": 47,
-      "status": "SL",
-      "pnl_pct": -3.43,
-      "close_price": 0.001275,
-      "taken_at": "2026-03-19T16:11:06.979470",
-      "closed_at": "2026-03-19 17:13:29"
     }
   ]
 }
