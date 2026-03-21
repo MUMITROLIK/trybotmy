@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-21T14:34:49.021050+00:00",
+  "updated_at": "2026-03-21T14:35:55.450764+00:00",
   "publish_status": {
-    "last_ok": "2026-03-21T14:33:24Z",
+    "last_ok": "2026-03-21T14:34:55Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,11 +17,11 @@
     "winrate": 59.1
   },
   "trade_stats": {
-    "open": 13,
+    "open": 12,
     "pending": 0,
     "wins": 322,
-    "losses": 332,
-    "total_pnl": 39.42,
+    "losses": 333,
+    "total_pnl": 36.57,
     "winrate": 49.2
   },
   "fear_greed": {
@@ -831,32 +831,6 @@
       ]
     },
     {
-      "id": 742,
-      "symbol": "AKTUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.6216,
-      "tp1": 0.643489,
-      "tp2": 0.665379,
-      "sl": 0.604089,
-      "entry_orig": 0.6216,
-      "tp1_orig": 0.643489,
-      "tp2_orig": 0.665379,
-      "sl_orig": 0.604089,
-      "strength": 50,
-      "taken_at": "2026-03-21T14:06:35.792641",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00172)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: давление покупки (+0.21)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +17.6% + цена ↑",
-        "CVD положительный (+2.6%)",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 743,
       "symbol": "FILUSDT",
       "direction": "LONG",
@@ -1016,6 +990,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "AKTUSDT",
+      "direction": "LONG",
+      "entry": 0.6216,
+      "tp1": 0.643489,
+      "tp2": 0.665379,
+      "sl": 0.604089,
+      "strength": 50,
+      "status": "SL",
+      "pnl_pct": -2.85,
+      "close_price": 0.6039,
+      "taken_at": "2026-03-21T14:06:35.792641",
+      "closed_at": "2026-03-21 14:35:14"
+    },
     {
       "symbol": "SIRENUSDT",
       "direction": "LONG",
@@ -3801,20 +3789,6 @@
       "close_price": 0.024345,
       "taken_at": "2026-03-19T16:30:32.627541",
       "closed_at": "2026-03-19 20:47:33"
-    },
-    {
-      "symbol": "ROBOUSDT",
-      "direction": "LONG",
-      "entry": 0.02527,
-      "tp1": 0.025775,
-      "tp2": 0.026281,
-      "sl": 0.02582523,
-      "strength": 47,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 2.08,
-      "close_price": 0.025795,
-      "taken_at": "2026-03-19T18:46:03.049826",
-      "closed_at": "2026-03-19 20:44:14"
     }
   ]
 }
