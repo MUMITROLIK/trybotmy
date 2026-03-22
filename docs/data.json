@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-22T05:58:31.856778+00:00",
+  "updated_at": "2026-03-22T05:59:09.780313+00:00",
   "publish_status": {
-    "last_ok": "2026-03-22T05:57:27Z",
+    "last_ok": "2026-03-22T05:58:37Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 922,
+    "total": 923,
     "wins": 302,
     "losses": 222,
-    "active": 2,
+    "active": 3,
     "winrate": 57.6
   },
   "trade_stats": {
-    "open": 9,
+    "open": 10,
     "pending": 0,
     "wins": 354,
     "losses": 370,
@@ -79,6 +79,30 @@
       ],
       "news": null,
       "created_at": "2026-03-22 05:46:50",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 961,
+      "symbol": "KATUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.01113,
+      "tp1": 0.011404,
+      "tp2": 0.011679,
+      "sl": 0.010907,
+      "strength": 59,
+      "reasons": [
+        "MACD бычий (hist=0.00009)",
+        "Цена > EMA20 > EMA50",
+        "Объём x2.5 🔥🔥",
+        "Стакан: давление покупки (+0.15)",
+        "МТФ: 5m, 15m согласны",
+        "CVD растёт (+15.0%) — покупки усиливаются 📈",
+        "Bullish Engulfing (1h) 🕯️",
+        "⚡ Рыночный вход (MTF 2+ ТФ)"
+      ],
+      "news": null,
+      "created_at": "2026-03-22 05:59:06",
       "status": "ACTIVE"
     }
   ],
@@ -615,6 +639,33 @@
         "МТФ: все 4 таймфрейма согласны ✅✅",
         "CVD растёт (+5.7%) — покупки усиливаются 📈",
         "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
+    {
+      "id": 815,
+      "symbol": "KATUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.01113,
+      "tp1": 0.011404,
+      "tp2": 0.011679,
+      "sl": 0.010907,
+      "entry_orig": 0.01113,
+      "tp1_orig": 0.011404,
+      "tp2_orig": 0.011679,
+      "sl_orig": 0.010907,
+      "strength": 59,
+      "taken_at": "2026-03-22T05:59:06.977873",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.00009)",
+        "Цена > EMA20 > EMA50",
+        "Объём x2.5 🔥🔥",
+        "Стакан: давление покупки (+0.15)",
+        "МТФ: 5m, 15m согласны",
+        "CVD растёт (+15.0%) — покупки усиливаются 📈",
+        "Bullish Engulfing (1h) 🕯️",
+        "⚡ Рыночный вход (MTF 2+ ТФ)"
       ]
     },
     {
