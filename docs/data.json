@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-22T06:54:37.152583+00:00",
+  "updated_at": "2026-03-22T06:55:32.333225+00:00",
   "publish_status": {
-    "last_ok": "2026-03-22T06:53:42Z",
+    "last_ok": "2026-03-22T06:54:43Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 925,
+    "total": 926,
     "wins": 303,
     "losses": 223,
-    "active": 3,
+    "active": 4,
     "winrate": 57.6
   },
   "trade_stats": {
-    "open": 10,
+    "open": 11,
     "pending": 0,
     "wins": 355,
     "losses": 371,
@@ -105,6 +105,31 @@
       ],
       "news": null,
       "created_at": "2026-03-22 06:52:08",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 964,
+      "symbol": "RIVERUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 26.355,
+      "tp1": 26.941607,
+      "tp2": 27.528214,
+      "sl": 25.8279,
+      "strength": 55,
+      "reasons": [
+        "MACD бычий (hist=0.09619)",
+        "Цена > EMA20 > EMA50",
+        "Объём x1.9 🔥",
+        "Стакан: перевес bid (+0.06)",
+        "МТФ: 5m, 15m, 4h согласны",
+        "CVD растёт (+5.0%) — покупки усиливаются 📈",
+        "Bullish Engulfing (1h) 🕯️",
+        "⚠️ Funding через 65м",
+        "⚡ Рыночный вход (MTF сильный)"
+      ],
+      "news": null,
+      "created_at": "2026-03-22 06:55:31",
       "status": "ACTIVE"
     }
   ],
@@ -643,6 +668,34 @@
         "CVD положительный (+2.2%)",
         "Bullish Engulfing (1h) 🕯️",
         "⚠️ Funding через 69м",
+        "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
+    {
+      "id": 818,
+      "symbol": "RIVERUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 26.355,
+      "tp1": 26.941607,
+      "tp2": 27.528214,
+      "sl": 25.8279,
+      "entry_orig": 26.355,
+      "tp1_orig": 26.941607,
+      "tp2_orig": 27.528214,
+      "sl_orig": 25.8279,
+      "strength": 55,
+      "taken_at": "2026-03-22T06:55:31.715704",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.09619)",
+        "Цена > EMA20 > EMA50",
+        "Объём x1.9 🔥",
+        "Стакан: перевес bid (+0.06)",
+        "МТФ: 5m, 15m, 4h согласны",
+        "CVD растёт (+5.0%) — покупки усиливаются 📈",
+        "Bullish Engulfing (1h) 🕯️",
+        "⚠️ Funding через 65м",
         "⚡ Рыночный вход (MTF сильный)"
       ]
     },
