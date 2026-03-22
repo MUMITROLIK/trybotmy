@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-22T21:29:24.744722+00:00",
+  "updated_at": "2026-03-22T21:30:30.462033+00:00",
   "publish_status": {
-    "last_ok": "2026-03-22T21:28:24Z",
+    "last_ok": "2026-03-22T21:29:30Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 1031,
+    "total": 1032,
     "wins": 340,
     "losses": 246,
-    "active": 38,
+    "active": 39,
     "winrate": 58.0
   },
   "trade_stats": {
-    "open": 39,
+    "open": 40,
     "pending": 0,
     "wins": 397,
     "losses": 406,
@@ -881,6 +881,29 @@
       ],
       "news": null,
       "created_at": "2026-03-22 21:28:30",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1070,
+      "symbol": "LINKUSDT",
+      "direction": "SHORT",
+      "exchange": "binance",
+      "entry": 8.645,
+      "tp1": 8.4721,
+      "tp2": 8.2992,
+      "sl": 8.8179,
+      "strength": 52,
+      "reasons": [
+        "MACD медвежий (hist=-0.00896)",
+        "Цена < EMA20 < EMA50",
+        "Объём x3.0 🔥🔥",
+        "Стакан: перевес ask (-0.10)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "CVD отрицательный (-2.9%)",
+        "BTC корреляция 0.88, BTC -1.3% 📉"
+      ],
+      "news": null,
+      "created_at": "2026-03-22 21:30:05",
       "status": "ACTIVE"
     }
   ],
@@ -2266,6 +2289,32 @@
         "Стакан: сильное давление продажи (-0.36)",
         "МТФ: 5m, 15m, 4h согласны",
         "BTC корреляция 0.69, BTC -1.3% 📉"
+      ]
+    },
+    {
+      "id": 924,
+      "symbol": "LINKUSDT",
+      "direction": "SHORT",
+      "exchange": "binance",
+      "entry": 8.645,
+      "tp1": 8.4721,
+      "tp2": 8.2992,
+      "sl": 8.8179,
+      "entry_orig": 8.645,
+      "tp1_orig": 8.4721,
+      "tp2_orig": 8.2992,
+      "sl_orig": 8.8179,
+      "strength": 52,
+      "taken_at": "2026-03-22T21:30:05.532299",
+      "status": "OPEN",
+      "reasons": [
+        "MACD медвежий (hist=-0.00896)",
+        "Цена < EMA20 < EMA50",
+        "Объём x3.0 🔥🔥",
+        "Стакан: перевес ask (-0.10)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "CVD отрицательный (-2.9%)",
+        "BTC корреляция 0.88, BTC -1.3% 📉"
       ]
     }
   ],
