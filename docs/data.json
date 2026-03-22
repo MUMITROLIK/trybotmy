@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-22T13:09:19.583443+00:00",
+  "updated_at": "2026-03-22T13:10:13.807731+00:00",
   "publish_status": {
-    "last_ok": "2026-03-22T13:08:19Z",
+    "last_ok": "2026-03-22T13:09:26Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -11,17 +11,17 @@
   },
   "stats": {
     "total": 965,
-    "wins": 320,
+    "wins": 321,
     "losses": 236,
-    "active": 9,
+    "active": 8,
     "winrate": 57.6
   },
   "trade_stats": {
-    "open": 15,
+    "open": 14,
     "pending": 0,
-    "wins": 375,
+    "wins": 376,
     "losses": 386,
-    "total_pnl": 49.82,
+    "total_pnl": 52.32,
     "winrate": 49.3
   },
   "fear_greed": {
@@ -198,29 +198,6 @@
       "status": "ACTIVE"
     },
     {
-      "id": 1002,
-      "symbol": "DEXEUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 6.5785,
-      "tp1": 6.71007,
-      "tp2": 6.84164,
-      "sl": 6.44693,
-      "strength": 52,
-      "reasons": [
-        "MACD бычий (hist=0.02883)",
-        "Цена выше EMA20",
-        "Объём x3.2 🔥🔥",
-        "Стакан: давление покупки (+0.20)",
-        "МТФ: 5m, 1h, 4h согласны",
-        "OI растёт +1.2% + цена ↑",
-        "⚡ Рыночный вход (MTF сильный)"
-      ],
-      "news": null,
-      "created_at": "2026-03-22 12:58:55",
-      "status": "ACTIVE"
-    },
-    {
       "id": 1003,
       "symbol": "DUSKUSDT",
       "direction": "LONG",
@@ -245,6 +222,26 @@
     }
   ],
   "history": [
+    {
+      "symbol": "DEXEUSDT",
+      "direction": "LONG",
+      "entry": 6.5785,
+      "tp1": 6.71007,
+      "tp2": 6.84164,
+      "sl": 6.44693,
+      "strength": 52,
+      "status": "TP1",
+      "created_at": "2026-03-22 12:58:55",
+      "reasons": [
+        "MACD бычий (hist=0.02883)",
+        "Цена выше EMA20",
+        "Объём x3.2 🔥🔥",
+        "Стакан: давление покупки (+0.20)",
+        "МТФ: 5m, 1h, 4h согласны",
+        "OI растёт +1.2% + цена ↑",
+        "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
     {
       "symbol": "EDGEUSDT",
       "direction": "LONG",
@@ -624,26 +621,6 @@
         "Цена у поддержки 271.5100",
         "⚡ Рыночный вход (MTF сильный)"
       ]
-    },
-    {
-      "symbol": "PUMPUSDT",
-      "direction": "LONG",
-      "entry": 0.001808,
-      "tp1": 0.001844,
-      "tp2": 0.00188,
-      "sl": 0.001772,
-      "strength": 53,
-      "status": "SL",
-      "created_at": "2026-03-22 08:12:15",
-      "reasons": [
-        "RSI=19 (сильная перепроданность)",
-        "BB нижняя зона (2%)",
-        "Объём x2.7 🔥🔥",
-        "Стакан: сильное давление покупки (+0.31)",
-        "CVD положительный (-13.5%)",
-        "Doji (1h) — нерешительность",
-        "Цена у поддержки 0.0018"
-      ]
     }
   ],
   "trades_open": [
@@ -910,32 +887,6 @@
       ]
     },
     {
-      "id": 856,
-      "symbol": "DEXEUSDT",
-      "direction": "LONG",
-      "exchange": "bybit",
-      "entry": 6.5785,
-      "tp1": 6.71007,
-      "tp2": 6.84164,
-      "sl": 6.44693,
-      "entry_orig": 6.5785,
-      "tp1_orig": 6.71007,
-      "tp2_orig": 6.84164,
-      "sl_orig": 6.44693,
-      "strength": 52,
-      "taken_at": "2026-03-22T12:58:56.038904",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.02883)",
-        "Цена выше EMA20",
-        "Объём x3.2 🔥🔥",
-        "Стакан: давление покупки (+0.20)",
-        "МТФ: 5m, 1h, 4h согласны",
-        "OI растёт +1.2% + цена ↑",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 857,
       "symbol": "DUSKUSDT",
       "direction": "LONG",
@@ -1044,6 +995,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "DEXEUSDT",
+      "direction": "LONG",
+      "entry": 6.5785,
+      "tp1": 6.71007,
+      "tp2": 6.84164,
+      "sl": 6.44693,
+      "strength": 52,
+      "status": "TP1",
+      "pnl_pct": 2.5,
+      "close_price": 6.7427,
+      "taken_at": "2026-03-22T12:58:56.038904",
+      "closed_at": "2026-03-22 13:09:48"
+    },
     {
       "symbol": "EDGEUSDT",
       "direction": "LONG",
@@ -3829,20 +3794,6 @@
       "close_price": 0.097945,
       "taken_at": "2026-03-20T19:31:01.439020",
       "closed_at": "2026-03-20 21:37:10"
-    },
-    {
-      "symbol": "ZBCNUSDT",
-      "direction": "LONG",
-      "entry": 0.002651,
-      "tp1": 0.002707,
-      "tp2": 0.002762,
-      "sl": 0.002598,
-      "strength": 51,
-      "status": "MANUAL",
-      "pnl_pct": 0,
-      "close_price": 0.002651,
-      "taken_at": "2026-03-20T21:31:49.551076",
-      "closed_at": "2026-03-20 21:34:08"
     }
   ]
 }
