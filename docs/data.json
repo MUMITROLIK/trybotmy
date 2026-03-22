@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-22T19:29:15.998299+00:00",
+  "updated_at": "2026-03-22T19:30:01.206973+00:00",
   "publish_status": {
-    "last_ok": "2026-03-22T19:28:15Z",
+    "last_ok": "2026-03-22T19:29:22Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 57.9
   },
   "trade_stats": {
-    "open": 8,
+    "open": 7,
     "pending": 0,
     "wins": 392,
-    "losses": 400,
-    "total_pnl": 71.5,
-    "winrate": 49.5
+    "losses": 401,
+    "total_pnl": 69.5,
+    "winrate": 49.4
   },
   "fear_greed": {
     "value": 10,
@@ -582,33 +582,6 @@
       ]
     },
     {
-      "id": 861,
-      "symbol": "APTUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.9307,
-      "tp1": 0.949314,
-      "tp2": 0.967928,
-      "sl": 0.912086,
-      "entry_orig": 0.9307,
-      "tp1_orig": 0.949314,
-      "tp2_orig": 0.967928,
-      "sl_orig": 0.912086,
-      "strength": 54,
-      "taken_at": "2026-03-22T13:34:33.970709",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=25 (сильная перепроданность)",
-        "MACD бычий (hist=0.00001)",
-        "BB нижняя зона (24%)",
-        "Стакан: сильное давление покупки (+0.30)",
-        "МТФ: только 1 таймфрейм согласен",
-        "OI растёт +1.7%",
-        "Doji (1h) — нерешительность",
-        "Цена у поддержки 0.9265"
-      ]
-    },
-    {
       "id": 863,
       "symbol": "BANUSDT",
       "direction": "LONG",
@@ -765,6 +738,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "APTUSDT",
+      "direction": "LONG",
+      "entry": 0.9307,
+      "tp1": 0.949314,
+      "tp2": 0.967928,
+      "sl": 0.912086,
+      "strength": 54,
+      "status": "SL",
+      "pnl_pct": -2.0,
+      "close_price": 0.91205,
+      "taken_at": "2026-03-22T13:34:33.970709",
+      "closed_at": "2026-03-22 19:30:00"
+    },
     {
       "symbol": "TURBOUSDT",
       "direction": "LONG",
@@ -3550,20 +3537,6 @@
       "close_price": 0.58485,
       "taken_at": "2026-03-20T22:07:48.632608",
       "closed_at": "2026-03-21 02:04:44"
-    },
-    {
-      "symbol": "ZBCNUSDT",
-      "direction": "LONG",
-      "entry": 0.0026589,
-      "tp1": 0.002724,
-      "tp2": 0.002789,
-      "sl": 0.002606,
-      "strength": 52,
-      "status": "SL",
-      "pnl_pct": -2.04,
-      "close_price": 0.0026046,
-      "taken_at": "2026-03-20T22:37:44.914013",
-      "closed_at": "2026-03-21 01:54:32"
     }
   ]
 }
