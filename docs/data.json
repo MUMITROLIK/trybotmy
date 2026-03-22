@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-22T08:04:19.825800+00:00",
+  "updated_at": "2026-03-22T08:04:53.283469+00:00",
   "publish_status": {
-    "last_ok": "2026-03-22T08:03:53Z",
+    "last_ok": "2026-03-22T08:04:26Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,10 +10,10 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 933,
+    "total": 934,
     "wins": 306,
     "losses": 225,
-    "active": 6,
+    "active": 7,
     "winrate": 57.6
   },
   "trade_stats": {
