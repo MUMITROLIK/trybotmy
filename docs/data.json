@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-22T16:42:44.420242+00:00",
+  "updated_at": "2026-03-22T16:43:40.879131+00:00",
   "publish_status": {
-    "last_ok": null,
+    "last_ok": "2026-03-22T16:42:52Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,11 +17,11 @@
     "winrate": 57.9
   },
   "trade_stats": {
-    "open": 13,
+    "open": 11,
     "pending": 0,
-    "wins": 387,
-    "losses": 394,
-    "total_pnl": 77.44,
+    "wins": 388,
+    "losses": 395,
+    "total_pnl": 66.91,
     "winrate": 49.6
   },
   "fear_greed": {
@@ -603,33 +603,6 @@
   ],
   "trades_open": [
     {
-      "id": 834,
-      "symbol": "FILUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.872,
-      "tp1": 0.88944,
-      "tp2": 0.90688,
-      "sl": 0.85456,
-      "entry_orig": 0.872,
-      "tp1_orig": 0.88944,
-      "tp2_orig": 0.90688,
-      "sl_orig": 0.85456,
-      "strength": 55,
-      "taken_at": "2026-03-22T08:30:03.719598",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=22 (сильная перепроданность)",
-        "MACD бычий (hist=0.00022)",
-        "BB нижняя полоса (пробой)",
-        "Объём x2.1 🔥",
-        "Стакан: давление покупки (+0.12)",
-        "OI растёт +2.8%",
-        "CVD положительный (-2.0%)",
-        "Цена у поддержки 0.8690"
-      ]
-    },
-    {
       "id": 835,
       "symbol": "HYPEUSDT",
       "direction": "LONG",
@@ -894,31 +867,6 @@
       ]
     },
     {
-      "id": 874,
-      "symbol": "JCTUSDT",
-      "direction": "LONG",
-      "exchange": "bybit",
-      "entry": 0.0032343,
-      "tp1": 0.003358,
-      "tp2": 0.003481,
-      "sl": 0.003136,
-      "entry_orig": 0.0032343,
-      "tp1_orig": 0.003358,
-      "tp2_orig": 0.003481,
-      "sl_orig": 0.003136,
-      "strength": 51,
-      "taken_at": "2026-03-22T16:19:06.320042",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00006)",
-        "Цена > EMA20 > EMA50",
-        "Объём x1.9 🔥",
-        "Стакан: сильное давление покупки (+0.57)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 875,
       "symbol": "KITEUSDT",
       "direction": "LONG",
@@ -946,6 +894,34 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "JCTUSDT",
+      "direction": "LONG",
+      "entry": 0.0032343,
+      "tp1": 0.003358,
+      "tp2": 0.003481,
+      "sl": 0.003136,
+      "strength": 51,
+      "status": "SL",
+      "pnl_pct": -10.93,
+      "close_price": 0.0028807,
+      "taken_at": "2026-03-22T16:19:06.320042",
+      "closed_at": "2026-03-22 16:43:00"
+    },
+    {
+      "symbol": "FILUSDT",
+      "direction": "LONG",
+      "entry": 0.872,
+      "tp1": 0.88944,
+      "tp2": 0.90688,
+      "sl": 0.85456,
+      "strength": 55,
+      "status": "TIMEOUT",
+      "pnl_pct": 0.4,
+      "close_price": 0.8755,
+      "taken_at": "2026-03-22T08:30:03.719598",
+      "closed_at": "2026-03-22 16:42:58"
+    },
     {
       "symbol": "GALAUSDT",
       "direction": "LONG",
@@ -3717,34 +3693,6 @@
       "close_price": 0.04826,
       "taken_at": "2026-03-21T00:22:31.698237",
       "closed_at": "2026-03-21 00:29:22"
-    },
-    {
-      "symbol": "WAXPUSDT",
-      "direction": "LONG",
-      "entry": 0.008088,
-      "tp1": 0.008333,
-      "tp2": 0.008578,
-      "sl": 0.007892,
-      "strength": 61,
-      "status": "SL",
-      "pnl_pct": -2.63,
-      "close_price": 0.0078755,
-      "taken_at": "2026-03-21T00:12:33.527114",
-      "closed_at": "2026-03-21 00:29:17"
-    },
-    {
-      "symbol": "ANIMEUSDT",
-      "direction": "LONG",
-      "entry": 0.005047,
-      "tp1": 0.005148,
-      "tp2": 0.005249,
-      "sl": 0.005165,
-      "strength": 62,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 2.34,
-      "close_price": 0.005165,
-      "taken_at": "2026-03-21T00:20:54.370418",
-      "closed_at": "2026-03-21 00:26:01"
     }
   ]
 }
