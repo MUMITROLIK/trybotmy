@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-22T06:57:57.492286+00:00",
+  "updated_at": "2026-03-22T06:58:56.641116+00:00",
   "publish_status": {
-    "last_ok": "2026-03-22T06:56:57Z",
+    "last_ok": "2026-03-22T06:58:03Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 926,
+    "total": 927,
     "wins": 303,
     "losses": 223,
-    "active": 4,
+    "active": 5,
     "winrate": 57.6
   },
   "trade_stats": {
-    "open": 11,
+    "open": 12,
     "pending": 0,
     "wins": 355,
     "losses": 371,
@@ -130,6 +130,32 @@
       ],
       "news": null,
       "created_at": "2026-03-22 06:55:31",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 965,
+      "symbol": "POWERUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.10665,
+      "tp1": 0.109929,
+      "tp2": 0.113207,
+      "sl": 0.104027,
+      "strength": 58,
+      "reasons": [
+        "RSI=38 (перепроданность)",
+        "BB нижняя полоса (пробой)",
+        "EMA20 > EMA50",
+        "Объём x2.6 🔥🔥",
+        "Стакан: давление покупки (+0.12)",
+        "МТФ: 15m, 1h согласны",
+        "OI растёт +2.2% + цена ↑",
+        "CVD положительный (-7.3%)",
+        "⚠️ Funding через 62м",
+        "⚡ Рыночный вход (MTF 2+ ТФ)"
+      ],
+      "news": null,
+      "created_at": "2026-03-22 06:58:54",
       "status": "ACTIVE"
     }
   ],
@@ -697,6 +723,35 @@
         "Bullish Engulfing (1h) 🕯️",
         "⚠️ Funding через 65м",
         "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
+    {
+      "id": 819,
+      "symbol": "POWERUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.10665,
+      "tp1": 0.109929,
+      "tp2": 0.113207,
+      "sl": 0.104027,
+      "entry_orig": 0.10665,
+      "tp1_orig": 0.109929,
+      "tp2_orig": 0.113207,
+      "sl_orig": 0.104027,
+      "strength": 58,
+      "taken_at": "2026-03-22T06:58:55.127455",
+      "status": "OPEN",
+      "reasons": [
+        "RSI=38 (перепроданность)",
+        "BB нижняя полоса (пробой)",
+        "EMA20 > EMA50",
+        "Объём x2.6 🔥🔥",
+        "Стакан: давление покупки (+0.12)",
+        "МТФ: 15m, 1h согласны",
+        "OI растёт +2.2% + цена ↑",
+        "CVD положительный (-7.3%)",
+        "⚠️ Funding через 62м",
+        "⚡ Рыночный вход (MTF 2+ ТФ)"
       ]
     },
     {
