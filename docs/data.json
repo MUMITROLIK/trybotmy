@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-22T04:47:15.109134+00:00",
+  "updated_at": "2026-03-22T04:48:21.316574+00:00",
   "publish_status": {
-    "last_ok": "2026-03-22T04:46:02Z",
+    "last_ok": "2026-03-22T04:47:21Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 57.6
   },
   "trade_stats": {
-    "open": 11,
+    "open": 10,
     "pending": 0,
-    "wins": 352,
+    "wins": 353,
     "losses": 368,
-    "total_pnl": 16.57,
-    "winrate": 48.9
+    "total_pnl": 16.72,
+    "winrate": 49.0
   },
   "fear_greed": {
     "value": 10,
@@ -489,34 +489,6 @@
   ],
   "trades_open": [
     {
-      "id": 780,
-      "symbol": "STOUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.10416,
-      "tp1": 0.106319,
-      "tp2": 0.108478,
-      "sl": 0.102077,
-      "entry_orig": 0.10416,
-      "tp1_orig": 0.106319,
-      "tp2_orig": 0.108478,
-      "sl_orig": 0.102077,
-      "strength": 53,
-      "taken_at": "2026-03-21T20:47:05.319761",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=32 (перепроданность)",
-        "BB нижняя зона (23%)",
-        "EMA20 > EMA50",
-        "Стакан: сильное давление покупки (+0.52)",
-        "МТФ: 15m, 1h, 4h согласны",
-        "OI растёт +3.1% + цена ↑",
-        "CVD положительный (+3.7%)",
-        "Doji (1h) — нерешительность",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 792,
       "symbol": "IRYSUSDT",
       "direction": "LONG",
@@ -780,6 +752,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "STOUSDT",
+      "direction": "LONG",
+      "entry": 0.10416,
+      "tp1": 0.106319,
+      "tp2": 0.108478,
+      "sl": 0.102077,
+      "strength": 53,
+      "status": "TIMEOUT",
+      "pnl_pct": 0.15,
+      "close_price": 0.10432,
+      "taken_at": "2026-03-21T20:47:05.319761",
+      "closed_at": "2026-03-22 04:47:21"
+    },
     {
       "symbol": "SIGNUSDT",
       "direction": "LONG",
@@ -3565,20 +3551,6 @@
       "close_price": 0.15155000000000002,
       "taken_at": "2026-03-20T12:30:09.855414",
       "closed_at": "2026-03-20 15:35:38"
-    },
-    {
-      "symbol": "PHAUSDT",
-      "direction": "LONG",
-      "entry": 0.03979,
-      "tp1": 0.040737,
-      "tp2": 0.041684,
-      "sl": 0.040775,
-      "strength": 51,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 2.07,
-      "close_price": 0.040615,
-      "taken_at": "2026-03-20T14:27:18.267152",
-      "closed_at": "2026-03-20 15:15:30"
     }
   ]
 }
