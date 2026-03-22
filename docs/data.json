@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-22T10:49:59.642275+00:00",
+  "updated_at": "2026-03-22T10:50:39.258307+00:00",
   "publish_status": {
-    "last_ok": "2026-03-22T10:48:55Z",
+    "last_ok": "2026-03-22T10:50:06Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,11 +17,11 @@
     "winrate": 57.8
   },
   "trade_stats": {
-    "open": 14,
+    "open": 13,
     "pending": 0,
-    "wins": 368,
+    "wins": 369,
     "losses": 379,
-    "total_pnl": 49.84,
+    "total_pnl": 55.16,
     "winrate": 49.3
   },
   "fear_greed": {
@@ -1037,35 +1037,23 @@
         "⚠️ Funding через 65м",
         "⚡ Рыночный вход (MTF сильный)"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 824,
       "symbol": "ARIAUSDT",
       "direction": "LONG",
-      "exchange": "bybit",
       "entry": 0.21537,
       "tp1": 0.221063,
       "tp2": 0.226755,
       "sl": 0.21537,
-      "entry_orig": 0.21537,
-      "tp1_orig": 0.221063,
-      "tp2_orig": 0.226755,
-      "sl_orig": 0.210816,
       "strength": 53,
+      "status": "TP2",
+      "pnl_pct": 5.32,
+      "close_price": 0.22682,
       "taken_at": "2026-03-22T07:14:38.315115",
-      "status": "TP1_HIT",
-      "reasons": [
-        "MACD бычий (hist=0.00126)",
-        "Цена > EMA20 > EMA50",
-        "Объём x3.6 🔥🔥",
-        "Стакан: сильное давление покупки (+0.28)",
-        "МТФ: 5m, 15m, 1h согласны",
-        "⚠️ Funding через 46м",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-22 10:50:16"
+    },
     {
       "symbol": "KATUSDT",
       "direction": "LONG",
@@ -3851,20 +3839,6 @@
       "close_price": 0.08729,
       "taken_at": "2026-03-20T17:28:00.670544",
       "closed_at": "2026-03-20 18:38:38"
-    },
-    {
-      "symbol": "XMRUSDT",
-      "direction": "LONG",
-      "entry": 344.5,
-      "tp1": 351.39,
-      "tp2": 358.28,
-      "sl": 337.61,
-      "strength": 50,
-      "status": "TIMEOUT",
-      "pnl_pct": 0.09,
-      "close_price": 344.815,
-      "taken_at": "2026-03-20T10:36:52.408982",
-      "closed_at": "2026-03-20 18:36:57"
     }
   ]
 }
