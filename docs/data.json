@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-22T15:18:53.578665+00:00",
+  "updated_at": "2026-03-22T15:19:59.885570+00:00",
   "publish_status": {
-    "last_ok": "2026-03-22T15:17:33Z",
+    "last_ok": "2026-03-22T15:18:59Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 975,
+    "total": 976,
     "wins": 327,
     "losses": 240,
-    "active": 5,
+    "active": 6,
     "winrate": 57.7
   },
   "trade_stats": {
-    "open": 13,
+    "open": 14,
     "pending": 0,
     "wins": 382,
     "losses": 391,
@@ -154,6 +154,29 @@
       ],
       "news": null,
       "created_at": "2026-03-22 15:13:45",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1014,
+      "symbol": "JCTUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.0028241,
+      "tp1": 0.002894,
+      "tp2": 0.002964,
+      "sl": 0.002768,
+      "strength": 53,
+      "reasons": [
+        "MACD бычий (hist=0.00002)",
+        "Цена > EMA20 > EMA50",
+        "Объём x2.7 🔥🔥",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +1.7% + цена ↑",
+        "⚠️ Funding через 42м",
+        "⚡ Рыночный вход (MTF сильный)"
+      ],
+      "news": null,
+      "created_at": "2026-03-22 15:19:15",
       "status": "ACTIVE"
     }
   ],
@@ -876,6 +899,32 @@
         "OI растёт +1.4% + цена ↑",
         "Цена у поддержки 0.0512",
         "⚠️ Funding через 47м",
+        "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
+    {
+      "id": 868,
+      "symbol": "JCTUSDT",
+      "direction": "LONG",
+      "exchange": "bybit",
+      "entry": 0.0028241,
+      "tp1": 0.002894,
+      "tp2": 0.002964,
+      "sl": 0.002768,
+      "entry_orig": 0.0028241,
+      "tp1_orig": 0.002894,
+      "tp2_orig": 0.002964,
+      "sl_orig": 0.002768,
+      "strength": 53,
+      "taken_at": "2026-03-22T15:19:15.865441",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.00002)",
+        "Цена > EMA20 > EMA50",
+        "Объём x2.7 🔥🔥",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +1.7% + цена ↑",
+        "⚠️ Funding через 42м",
         "⚡ Рыночный вход (MTF сильный)"
       ]
     },
