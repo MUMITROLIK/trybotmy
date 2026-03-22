@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-22T12:47:07.843648+00:00",
+  "updated_at": "2026-03-22T12:47:47.923802+00:00",
   "publish_status": {
-    "last_ok": "2026-03-22T12:46:07Z",
+    "last_ok": "2026-03-22T12:47:16Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -18,11 +18,11 @@
   },
   "trade_stats": {
     "open": 13,
-    "pending": 1,
-    "wins": 373,
+    "pending": 0,
+    "wins": 374,
     "losses": 386,
-    "total_pnl": 47.89,
-    "winrate": 49.1
+    "total_pnl": 47.28,
+    "winrate": 49.2
   },
   "fear_greed": {
     "value": 10,
@@ -914,17 +914,17 @@
       "symbol": "币安人生USDT",
       "direction": "LONG",
       "exchange": "binance",
-      "entry": 0.04665289,
-      "tp1": 0.047891,
-      "tp2": 0.04913,
-      "sl": 0.045662,
+      "entry": 0.047369999999999995,
+      "tp1": 0.04862714,
+      "tp2": 0.04988519,
+      "sl": 0.04636388,
       "entry_orig": 0.04665289,
       "tp1_orig": 0.047891,
       "tp2_orig": 0.04913,
       "sl_orig": 0.045662,
       "strength": 50,
       "taken_at": "2026-03-22T12:42:36.893266",
-      "status": "PENDING",
+      "status": "OPEN",
       "reasons": [
         "MACD бычий (hist=0.00020)",
         "Цена выше EMA20",
@@ -990,36 +990,23 @@
         "CVD положительный (+1.6%)",
         "⚡ Рыночный вход (MTF сильный)"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 852,
       "symbol": "PTBUSDT",
       "direction": "LONG",
-      "exchange": "bybit",
       "entry": 0.0016119,
       "tp1": 0.001674,
       "tp2": 0.001737,
       "sl": 0.0016119,
-      "entry_orig": 0.0016119,
-      "tp1_orig": 0.001674,
-      "tp2_orig": 0.001737,
-      "sl_orig": 0.001562,
       "strength": 50,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": -0.61,
+      "close_price": 0.001602,
       "taken_at": "2026-03-22T12:09:29.989760",
-      "status": "TP1_HIT",
-      "reasons": [
-        "RSI=32 (перепроданность)",
-        "BB нижняя полоса (пробой)",
-        "EMA20 > EMA50",
-        "Объём x3.2 🔥🔥",
-        "Стакан: давление покупки (+0.12)",
-        "МТФ: 15m, 4h согласны",
-        "Doji (1h) — нерешительность",
-        "⚡ Рыночный вход (MTF 2+ ТФ)"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-22 12:47:47"
+    },
     {
       "symbol": "TURBOUSDT",
       "direction": "LONG",
@@ -3805,20 +3792,6 @@
       "close_price": 0.0071015,
       "taken_at": "2026-03-20T19:37:53.456249",
       "closed_at": "2026-03-20 21:18:19"
-    },
-    {
-      "symbol": "ZETAUSDT",
-      "direction": "LONG",
-      "entry": 0.05771,
-      "tp1": 0.059112,
-      "tp2": 0.060515,
-      "sl": 0.056556,
-      "strength": 50,
-      "status": "SL",
-      "pnl_pct": -2.11,
-      "close_price": 0.056495000000000004,
-      "taken_at": "2026-03-20T16:01:03.921250",
-      "closed_at": "2026-03-20 21:14:10"
     }
   ]
 }
