@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-22T20:58:46.204081+00:00",
+  "updated_at": "2026-03-22T20:59:51.954041+00:00",
   "publish_status": {
-    "last_ok": "2026-03-22T20:57:46Z",
+    "last_ok": "2026-03-22T20:58:51Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -11,18 +11,18 @@
   },
   "stats": {
     "total": 996,
-    "wins": 337,
+    "wins": 338,
     "losses": 245,
-    "active": 7,
-    "winrate": 57.9
+    "active": 6,
+    "winrate": 58.0
   },
   "trade_stats": {
-    "open": 8,
+    "open": 7,
     "pending": 0,
-    "wins": 395,
+    "wins": 396,
     "losses": 404,
-    "total_pnl": 70.61,
-    "winrate": 49.4
+    "total_pnl": 74.58,
+    "winrate": 49.5
   },
   "fear_greed": {
     "value": 10,
@@ -104,28 +104,6 @@
       "status": "ACTIVE"
     },
     {
-      "id": 1031,
-      "symbol": "RIVERUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 29.777,
-      "tp1": 30.905214,
-      "tp2": 32.033429,
-      "sl": 28.874429,
-      "strength": 53,
-      "reasons": [
-        "MACD бычий (hist=0.06883)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: сильное давление покупки (+0.45)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "CVD растёт (+5.5%) — покупки усиливаются 📈",
-        "⚡ Рыночный вход (MTF сильный)"
-      ],
-      "news": null,
-      "created_at": "2026-03-22 19:56:19",
-      "status": "ACTIVE"
-    },
-    {
       "id": 1032,
       "symbol": "CYSUSDT",
       "direction": "LONG",
@@ -196,6 +174,25 @@
     }
   ],
   "history": [
+    {
+      "symbol": "RIVERUSDT",
+      "direction": "LONG",
+      "entry": 29.777,
+      "tp1": 30.905214,
+      "tp2": 32.033429,
+      "sl": 28.874429,
+      "strength": 53,
+      "status": "TP1",
+      "created_at": "2026-03-22 19:56:19",
+      "reasons": [
+        "MACD бычий (hist=0.06883)",
+        "Цена > EMA20 > EMA50",
+        "Стакан: сильное давление покупки (+0.45)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "CVD растёт (+5.5%) — покупки усиливаются 📈",
+        "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
     {
       "symbol": "CYSUSDT",
       "direction": "LONG",
@@ -576,26 +573,6 @@
         "OI растёт +1.0%",
         "⚠️ Funding через 67м"
       ]
-    },
-    {
-      "symbol": "GUNUSDT",
-      "direction": "LONG",
-      "entry": 0.021651,
-      "tp1": 0.02209,
-      "tp2": 0.022529,
-      "sl": 0.021218,
-      "strength": 57,
-      "status": "TP1",
-      "created_at": "2026-03-22 14:40:24",
-      "reasons": [
-        "MACD бычий (hist=0.00007)",
-        "Цена > EMA20 > EMA50",
-        "Объём x10.7 🔥🔥🔥",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +8.5% + цена ↑",
-        "⚠️ Funding через 80м",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
     }
   ],
   "trades_open": [
@@ -702,31 +679,6 @@
       ]
     },
     {
-      "id": 885,
-      "symbol": "RIVERUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 29.777,
-      "tp1": 30.905214,
-      "tp2": 32.033429,
-      "sl": 28.874429,
-      "entry_orig": 29.777,
-      "tp1_orig": 30.905214,
-      "tp2_orig": 32.033429,
-      "sl_orig": 28.874429,
-      "strength": 53,
-      "taken_at": "2026-03-22T19:56:20.253223",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.06883)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: сильное давление покупки (+0.45)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "CVD растёт (+5.5%) — покупки усиливаются 📈",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 886,
       "symbol": "CYSUSDT",
       "direction": "LONG",
@@ -806,6 +758,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "RIVERUSDT",
+      "direction": "LONG",
+      "entry": 29.777,
+      "tp1": 30.905214,
+      "tp2": 32.033429,
+      "sl": 28.874429,
+      "strength": 53,
+      "status": "TP1",
+      "pnl_pct": 3.97,
+      "close_price": 30.9605,
+      "taken_at": "2026-03-22T19:56:20.253223",
+      "closed_at": "2026-03-22 20:58:58"
+    },
     {
       "symbol": "币安人生USDT",
       "direction": "LONG",
@@ -3591,20 +3557,6 @@
       "close_price": 0.005886,
       "taken_at": "2026-03-21T01:43:02.047130",
       "closed_at": "2026-03-21 04:51:48"
-    },
-    {
-      "symbol": "ENJUSDT",
-      "direction": "LONG",
-      "entry": 0.02366,
-      "tp1": 0.024133,
-      "tp2": 0.024606,
-      "sl": 0.024145,
-      "strength": 56,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 1.71,
-      "close_price": 0.024065000000000003,
-      "taken_at": "2026-03-21T02:46:16.526002",
-      "closed_at": "2026-03-21 03:57:36"
     }
   ]
 }
