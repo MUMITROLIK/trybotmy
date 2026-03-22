@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-22T22:14:14.706220+00:00",
+  "updated_at": "2026-03-22T22:15:20.414545+00:00",
   "publish_status": {
-    "last_ok": "2026-03-22T22:13:14Z",
+    "last_ok": "2026-03-22T22:14:20Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 1033,
+    "total": 1034,
     "wins": 342,
     "losses": 248,
-    "active": 36,
+    "active": 37,
     "winrate": 58.0
   },
   "trade_stats": {
-    "open": 36,
+    "open": 37,
     "pending": 0,
     "wins": 400,
     "losses": 408,
@@ -839,6 +839,29 @@
       ],
       "news": null,
       "created_at": "2026-03-22 22:08:10",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1072,
+      "symbol": "BANANAS31USDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.01378,
+      "tp1": 0.014196,
+      "tp2": 0.014611,
+      "sl": 0.013447,
+      "strength": 52,
+      "reasons": [
+        "MACD бычий (hist=0.00000)",
+        "Цена > EMA20 > EMA50",
+        "Стакан: давление покупки (+0.17)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +1.3% + цена ↑",
+        "Bullish Engulfing (1h) 🕯️",
+        "⚡ Рыночный вход (MTF сильный)"
+      ],
+      "news": null,
+      "created_at": "2026-03-22 22:14:28",
       "status": "ACTIVE"
     }
   ],
@@ -2142,6 +2165,32 @@
         "МТФ: все 4 таймфрейма согласны ✅✅",
         "OI растёт +1.2% + цена ↑",
         "CVD растёт (+15.5%) — покупки усиливаются 📈",
+        "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
+    {
+      "id": 926,
+      "symbol": "BANANAS31USDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.01378,
+      "tp1": 0.014196,
+      "tp2": 0.014611,
+      "sl": 0.013447,
+      "entry_orig": 0.01378,
+      "tp1_orig": 0.014196,
+      "tp2_orig": 0.014611,
+      "sl_orig": 0.013447,
+      "strength": 52,
+      "taken_at": "2026-03-22T22:14:28.513935",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.00000)",
+        "Цена > EMA20 > EMA50",
+        "Стакан: давление покупки (+0.17)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +1.3% + цена ↑",
+        "Bullish Engulfing (1h) 🕯️",
         "⚡ Рыночный вход (MTF сильный)"
       ]
     }
