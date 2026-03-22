@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-22T09:39:37.562181+00:00",
+  "updated_at": "2026-03-22T09:40:23.596197+00:00",
   "publish_status": {
-    "last_ok": "2026-03-22T09:38:37Z",
+    "last_ok": "2026-03-22T09:39:44Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,18 +10,18 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 946,
+    "total": 947,
     "wins": 314,
     "losses": 229,
-    "active": 7,
+    "active": 8,
     "winrate": 57.8
   },
   "trade_stats": {
     "open": 14,
     "pending": 0,
     "wins": 365,
-    "losses": 378,
-    "total_pnl": 37.6,
+    "losses": 379,
+    "total_pnl": 35.46,
     "winrate": 49.1
   },
   "fear_greed": {
@@ -195,6 +195,29 @@
       ],
       "news": null,
       "created_at": "2026-03-22 09:36:50",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 985,
+      "symbol": "ANIMEUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.005161,
+      "tp1": 0.005264,
+      "tp2": 0.005367,
+      "sl": 0.005058,
+      "strength": 56,
+      "reasons": [
+        "MACD бычий (hist=0.00001)",
+        "Цена выше EMA20",
+        "Объём x5.3 🔥🔥🔥",
+        "Стакан: перевес bid (+0.07)",
+        "МТФ: 5m, 1h, 4h согласны",
+        "CVD растёт (+5.8%) — покупки усиливаются 📈",
+        "⚡ Рыночный вход (MTF сильный)"
+      ],
+      "news": null,
+      "created_at": "2026-03-22 09:40:21",
       "status": "ACTIVE"
     }
   ],
@@ -662,31 +685,6 @@
       ]
     },
     {
-      "id": 831,
-      "symbol": "BTRUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.17757,
-      "tp1": 0.181849,
-      "tp2": 0.186129,
-      "sl": 0.174019,
-      "entry_orig": 0.17757,
-      "tp1_orig": 0.181849,
-      "tp2_orig": 0.186129,
-      "sl_orig": 0.174019,
-      "strength": 50,
-      "taken_at": "2026-03-22T08:21:06.246969",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00233)",
-        "Цена > EMA20 > EMA50",
-        "Объём x2.0 🔥",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "CVD растёт (+16.4%) — покупки усиливаются 📈",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 832,
       "symbol": "GALAUSDT",
       "direction": "LONG",
@@ -812,6 +810,32 @@
         "Стакан: сильное давление покупки (+0.28)",
         "МТФ: все 4 таймфрейма согласны ✅✅",
         "CVD растёт (+5.5%) — покупки усиливаются 📈",
+        "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
+    {
+      "id": 839,
+      "symbol": "ANIMEUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.005161,
+      "tp1": 0.005264,
+      "tp2": 0.005367,
+      "sl": 0.005058,
+      "entry_orig": 0.005161,
+      "tp1_orig": 0.005264,
+      "tp2_orig": 0.005367,
+      "sl_orig": 0.005058,
+      "strength": 56,
+      "taken_at": "2026-03-22T09:40:21.938096",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.00001)",
+        "Цена выше EMA20",
+        "Объём x5.3 🔥🔥🔥",
+        "Стакан: перевес bid (+0.07)",
+        "МТФ: 5m, 1h, 4h согласны",
+        "CVD растёт (+5.8%) — покупки усиливаются 📈",
         "⚡ Рыночный вход (MTF сильный)"
       ]
     },
@@ -976,6 +1000,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "BTRUSDT",
+      "direction": "LONG",
+      "entry": 0.17757,
+      "tp1": 0.181849,
+      "tp2": 0.186129,
+      "sl": 0.174019,
+      "strength": 50,
+      "status": "SL",
+      "pnl_pct": -2.14,
+      "close_price": 0.17377,
+      "taken_at": "2026-03-22T08:21:06.246969",
+      "closed_at": "2026-03-22 09:39:46"
+    },
     {
       "symbol": "BRUSDT",
       "direction": "LONG",
@@ -3761,20 +3799,6 @@
       "close_price": 0.0079275,
       "taken_at": "2026-03-20T17:36:54.060446",
       "closed_at": "2026-03-20 18:20:16"
-    },
-    {
-      "symbol": "POLUSDT",
-      "direction": "LONG",
-      "entry": 0.10067,
-      "tp1": 0.102683,
-      "tp2": 0.104697,
-      "sl": 0.098657,
-      "strength": 53,
-      "status": "SL",
-      "pnl_pct": -2.3,
-      "close_price": 0.09835,
-      "taken_at": "2026-03-20T16:57:37.248760",
-      "closed_at": "2026-03-20 18:17:38"
     }
   ]
 }
