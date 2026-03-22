@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-22T07:23:18.015341+00:00",
+  "updated_at": "2026-03-22T07:24:24.326415+00:00",
   "publish_status": {
-    "last_ok": "2026-03-22T07:22:18Z",
+    "last_ok": "2026-03-22T07:23:24Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 57.7
   },
   "trade_stats": {
-    "open": 16,
+    "open": 15,
     "pending": 0,
     "wins": 356,
-    "losses": 372,
-    "total_pnl": 22.63,
-    "winrate": 48.9
+    "losses": 373,
+    "total_pnl": 21.95,
+    "winrate": 48.8
   },
   "fear_greed": {
     "value": 10,
@@ -637,32 +637,6 @@
   ],
   "trades_open": [
     {
-      "id": 792,
-      "symbol": "IRYSUSDT",
-      "direction": "LONG",
-      "exchange": "bybit",
-      "entry": 0.020405,
-      "tp1": 0.020813,
-      "tp2": 0.021221,
-      "sl": 0.019997,
-      "entry_orig": 0.020405,
-      "tp1_orig": 0.020813,
-      "tp2_orig": 0.021221,
-      "sl_orig": 0.019997,
-      "strength": 53,
-      "taken_at": "2026-03-21T23:23:36.788141",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=24 (сильная перепроданность)",
-        "BB нижняя полоса (пробой)",
-        "Объём x3.1 🔥🔥",
-        "Стакан: сильное давление покупки (+0.29)",
-        "МТФ: 1h, 4h согласны",
-        "⚠️ Funding через 37м",
-        "⚡ Рыночный вход (MTF 2+ ТФ)"
-      ]
-    },
-    {
       "id": 798,
       "symbol": "CELOUSDT",
       "direction": "LONG",
@@ -1061,6 +1035,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "IRYSUSDT",
+      "direction": "LONG",
+      "entry": 0.020405,
+      "tp1": 0.020813,
+      "tp2": 0.021221,
+      "sl": 0.019997,
+      "strength": 53,
+      "status": "TIMEOUT",
+      "pnl_pct": -0.68,
+      "close_price": 0.020266,
+      "taken_at": "2026-03-21T23:23:36.788141",
+      "closed_at": "2026-03-22 07:23:45"
+    },
     {
       "symbol": "BANANAS31USDT",
       "direction": "LONG",
@@ -3846,20 +3834,6 @@
       "close_price": 88.91499999999999,
       "taken_at": "2026-03-20T08:15:15.886899",
       "closed_at": "2026-03-20 16:15:23"
-    },
-    {
-      "symbol": "ATHUSDT",
-      "direction": "LONG",
-      "entry": 0.007916,
-      "tp1": 0.008111,
-      "tp2": 0.008307,
-      "sl": 0.008124,
-      "strength": 50,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 2.57,
-      "close_price": 0.0081195,
-      "taken_at": "2026-03-20T16:02:47.787665",
-      "closed_at": "2026-03-20 16:14:28"
     }
   ]
 }
