@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-22T13:12:36.920647+00:00",
+  "updated_at": "2026-03-22T13:13:43.597371+00:00",
   "publish_status": {
-    "last_ok": "2026-03-22T13:12:09Z",
+    "last_ok": "2026-03-22T13:12:43Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 57.7
   },
   "trade_stats": {
-    "open": 14,
+    "open": 13,
     "pending": 0,
-    "wins": 376,
+    "wins": 377,
     "losses": 386,
-    "total_pnl": 52.32,
-    "winrate": 49.3
+    "total_pnl": 57.13,
+    "winrate": 49.4
   },
   "fear_greed": {
     "value": 10,
@@ -889,34 +889,6 @@
       ]
     },
     {
-      "id": 818,
-      "symbol": "RIVERUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 26.355,
-      "tp1": 26.941607,
-      "tp2": 27.528214,
-      "sl": 26.355,
-      "entry_orig": 26.355,
-      "tp1_orig": 26.941607,
-      "tp2_orig": 27.528214,
-      "sl_orig": 25.8279,
-      "strength": 55,
-      "taken_at": "2026-03-22T06:55:31.715704",
-      "status": "TP1_HIT",
-      "reasons": [
-        "MACD бычий (hist=0.09619)",
-        "Цена > EMA20 > EMA50",
-        "Объём x1.9 🔥",
-        "Стакан: перевес bid (+0.06)",
-        "МТФ: 5m, 15m, 4h согласны",
-        "CVD растёт (+5.0%) — покупки усиливаются 📈",
-        "Bullish Engulfing (1h) 🕯️",
-        "⚠️ Funding через 65м",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 847,
       "symbol": "ARIAUSDT",
       "direction": "LONG",
@@ -971,6 +943,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "RIVERUSDT",
+      "direction": "LONG",
+      "entry": 26.355,
+      "tp1": 26.941607,
+      "tp2": 27.528214,
+      "sl": 26.355,
+      "strength": 55,
+      "status": "TP2",
+      "pnl_pct": 4.81,
+      "close_price": 27.622500000000002,
+      "taken_at": "2026-03-22T06:55:31.715704",
+      "closed_at": "2026-03-22 13:12:44"
+    },
     {
       "symbol": "DEXEUSDT",
       "direction": "LONG",
@@ -3756,20 +3742,6 @@
       "close_price": 0.022065,
       "taken_at": "2026-03-20T13:43:20.455471",
       "closed_at": "2026-03-20 21:43:22"
-    },
-    {
-      "symbol": "STOUSDT",
-      "direction": "LONG",
-      "entry": 0.10066,
-      "tp1": 0.103959,
-      "tp2": 0.107258,
-      "sl": 0.098021,
-      "strength": 50,
-      "status": "SL",
-      "pnl_pct": -2.7,
-      "close_price": 0.097945,
-      "taken_at": "2026-03-20T19:31:01.439020",
-      "closed_at": "2026-03-20 21:37:10"
     }
   ]
 }
