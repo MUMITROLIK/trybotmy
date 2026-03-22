@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-22T00:10:55.322257+00:00",
+  "updated_at": "2026-03-22T00:11:56.078604+00:00",
   "publish_status": {
-    "last_ok": "2026-03-22T00:09:55Z",
+    "last_ok": "2026-03-22T00:11:01Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,19 +10,19 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 908,
+    "total": 909,
     "wins": 292,
     "losses": 216,
-    "active": 8,
+    "active": 9,
     "winrate": 57.5
   },
   "trade_stats": {
     "open": 11,
     "pending": 0,
-    "wins": 345,
+    "wins": 346,
     "losses": 363,
-    "total_pnl": 12.33,
-    "winrate": 48.7
+    "total_pnl": 12.52,
+    "winrate": 48.8
   },
   "fear_greed": {
     "value": 12,
@@ -222,6 +222,31 @@
       ],
       "news": null,
       "created_at": "2026-03-22 00:10:13",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 947,
+      "symbol": "AKTUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.594,
+      "tp1": 0.608014,
+      "tp2": 0.622029,
+      "sl": 0.58212,
+      "strength": 60,
+      "reasons": [
+        "RSI=39 (перепроданность)",
+        "BB нижняя зона (17%)",
+        "EMA20 > EMA50",
+        "Объём x4.6 🔥🔥🔥",
+        "Стакан: давление покупки (+0.18)",
+        "МТФ: 15m, 4h согласны",
+        "CVD растёт (+6.6%) — покупки усиливаются 📈",
+        "Doji (1h) — нерешительность",
+        "⚡ Рыночный вход (MTF 2+ ТФ)"
+      ],
+      "news": null,
+      "created_at": "2026-03-22 00:11:55",
       "status": "ACTIVE"
     }
   ],
@@ -628,32 +653,6 @@
   ],
   "trades_open": [
     {
-      "id": 759,
-      "symbol": "CYSUSDT",
-      "direction": "LONG",
-      "exchange": "bybit",
-      "entry": 0.5681,
-      "tp1": 0.580196,
-      "tp2": 0.592293,
-      "sl": 0.556738,
-      "entry_orig": 0.5681,
-      "tp1_orig": 0.580196,
-      "tp2_orig": 0.592293,
-      "sl_orig": 0.556738,
-      "strength": 51,
-      "taken_at": "2026-03-21T16:11:20.827131",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00043)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: сильное давление покупки (+0.42)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +3.2% + цена ↑",
-        "Doji (1h) — нерешительность",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 766,
       "symbol": "SIGNUSDT",
       "direction": "LONG",
@@ -914,9 +913,51 @@
         "CVD положительный (-0.5%)",
         "Hammer (1h) 🔨"
       ]
+    },
+    {
+      "id": 801,
+      "symbol": "AKTUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.594,
+      "tp1": 0.608014,
+      "tp2": 0.622029,
+      "sl": 0.58212,
+      "entry_orig": 0.594,
+      "tp1_orig": 0.608014,
+      "tp2_orig": 0.622029,
+      "sl_orig": 0.58212,
+      "strength": 60,
+      "taken_at": "2026-03-22T00:11:55.546989",
+      "status": "OPEN",
+      "reasons": [
+        "RSI=39 (перепроданность)",
+        "BB нижняя зона (17%)",
+        "EMA20 > EMA50",
+        "Объём x4.6 🔥🔥🔥",
+        "Стакан: давление покупки (+0.18)",
+        "МТФ: 15m, 4h согласны",
+        "CVD растёт (+6.6%) — покупки усиливаются 📈",
+        "Doji (1h) — нерешительность",
+        "⚡ Рыночный вход (MTF 2+ ТФ)"
+      ]
     }
   ],
   "trades_history": [
+    {
+      "symbol": "CYSUSDT",
+      "direction": "LONG",
+      "entry": 0.5681,
+      "tp1": 0.580196,
+      "tp2": 0.592293,
+      "sl": 0.556738,
+      "strength": 51,
+      "status": "TIMEOUT",
+      "pnl_pct": 0.19,
+      "close_price": 0.5692,
+      "taken_at": "2026-03-21T16:11:20.827131",
+      "closed_at": "2026-03-22 00:11:27"
+    },
     {
       "symbol": "ORDERUSDT",
       "direction": "LONG",
@@ -3702,20 +3743,6 @@
       "close_price": 276.635,
       "taken_at": "2026-03-20T13:46:57.123941",
       "closed_at": "2026-03-20 14:00:20"
-    },
-    {
-      "symbol": "EDGEUSDT",
-      "direction": "LONG",
-      "entry": 0.661,
-      "tp1": 0.690539,
-      "tp2": 0.720079,
-      "sl": 0.637369,
-      "strength": 55,
-      "status": "SL",
-      "pnl_pct": -4.73,
-      "close_price": 0.62975,
-      "taken_at": "2026-03-20T13:39:42.941341",
-      "closed_at": "2026-03-20 13:59:18"
     }
   ]
 }
