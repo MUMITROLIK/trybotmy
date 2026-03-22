@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-22T08:56:42.437545+00:00",
+  "updated_at": "2026-03-22T08:57:22.501685+00:00",
   "publish_status": {
-    "last_ok": "2026-03-22T08:55:38Z",
+    "last_ok": "2026-03-22T08:56:48Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 942,
+    "total": 943,
     "wins": 310,
     "losses": 227,
-    "active": 9,
+    "active": 10,
     "winrate": 57.7
   },
   "trade_stats": {
-    "open": 12,
+    "open": 13,
     "pending": 0,
     "wins": 364,
     "losses": 377,
@@ -243,6 +243,29 @@
       ],
       "news": null,
       "created_at": "2026-03-22 08:30:03",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 981,
+      "symbol": "HYPEUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 38.171,
+      "tp1": 38.93442,
+      "tp2": 39.69784,
+      "sl": 37.40758,
+      "strength": 50,
+      "reasons": [
+        "RSI=33 (перепроданность)",
+        "MACD бычий (hist=0.00207)",
+        "BB ниже середины",
+        "Стакан: сильное давление покупки (+0.43)",
+        "МТФ: только 1 таймфрейм согласен",
+        "CVD положительный (-9.2%)",
+        "Hammer (1h) 🔨"
+      ],
+      "news": null,
+      "created_at": "2026-03-22 08:57:19",
       "status": "ACTIVE"
     }
   ],
@@ -682,32 +705,6 @@
       ]
     },
     {
-      "id": 824,
-      "symbol": "ARIAUSDT",
-      "direction": "LONG",
-      "exchange": "bybit",
-      "entry": 0.21537,
-      "tp1": 0.221063,
-      "tp2": 0.226755,
-      "sl": 0.210816,
-      "entry_orig": 0.21537,
-      "tp1_orig": 0.221063,
-      "tp2_orig": 0.226755,
-      "sl_orig": 0.210816,
-      "strength": 53,
-      "taken_at": "2026-03-22T07:14:38.315115",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00126)",
-        "Цена > EMA20 > EMA50",
-        "Объём x3.6 🔥🔥",
-        "Стакан: сильное давление покупки (+0.28)",
-        "МТФ: 5m, 15m, 1h согласны",
-        "⚠️ Funding через 46м",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 825,
       "symbol": "KITEUSDT",
       "direction": "LONG",
@@ -918,6 +915,32 @@
       ]
     },
     {
+      "id": 835,
+      "symbol": "HYPEUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 38.171,
+      "tp1": 38.93442,
+      "tp2": 39.69784,
+      "sl": 37.40758,
+      "entry_orig": 38.171,
+      "tp1_orig": 38.93442,
+      "tp2_orig": 39.69784,
+      "sl_orig": 37.40758,
+      "strength": 50,
+      "taken_at": "2026-03-22T08:57:19.843776",
+      "status": "OPEN",
+      "reasons": [
+        "RSI=33 (перепроданность)",
+        "MACD бычий (hist=0.00207)",
+        "BB ниже середины",
+        "Стакан: сильное давление покупки (+0.43)",
+        "МТФ: только 1 таймфрейм согласен",
+        "CVD положительный (-9.2%)",
+        "Hammer (1h) 🔨"
+      ]
+    },
+    {
       "id": 810,
       "symbol": "PTBUSDT",
       "direction": "LONG",
@@ -968,6 +991,32 @@
         "CVD растёт (+5.0%) — покупки усиливаются 📈",
         "Bullish Engulfing (1h) 🕯️",
         "⚠️ Funding через 65м",
+        "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
+    {
+      "id": 824,
+      "symbol": "ARIAUSDT",
+      "direction": "LONG",
+      "exchange": "bybit",
+      "entry": 0.21537,
+      "tp1": 0.221063,
+      "tp2": 0.226755,
+      "sl": 0.21537,
+      "entry_orig": 0.21537,
+      "tp1_orig": 0.221063,
+      "tp2_orig": 0.226755,
+      "sl_orig": 0.210816,
+      "strength": 53,
+      "taken_at": "2026-03-22T07:14:38.315115",
+      "status": "TP1_HIT",
+      "reasons": [
+        "MACD бычий (hist=0.00126)",
+        "Цена > EMA20 > EMA50",
+        "Объём x3.6 🔥🔥",
+        "Стакан: сильное давление покупки (+0.28)",
+        "МТФ: 5m, 15m, 1h согласны",
+        "⚠️ Funding через 46м",
         "⚡ Рыночный вход (MTF сильный)"
       ]
     }
