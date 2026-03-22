@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-22T12:14:56.649895+00:00",
+  "updated_at": "2026-03-22T12:15:32.677384+00:00",
   "publish_status": {
-    "last_ok": "2026-03-22T12:14:32Z",
+    "last_ok": "2026-03-22T12:15:05Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -11,10 +11,10 @@
   },
   "stats": {
     "total": 960,
-    "wins": 317,
+    "wins": 318,
     "losses": 235,
-    "active": 11,
-    "winrate": 57.4
+    "active": 10,
+    "winrate": 57.5
   },
   "trade_stats": {
     "open": 15,
@@ -265,17 +265,19 @@
       "news": null,
       "created_at": "2026-03-22 11:51:42",
       "status": "ACTIVE"
-    },
+    }
+  ],
+  "history": [
     {
-      "id": 998,
       "symbol": "PTBUSDT",
       "direction": "LONG",
-      "exchange": "binance",
       "entry": 0.0016119,
       "tp1": 0.001674,
       "tp2": 0.001737,
       "sl": 0.001562,
       "strength": 50,
+      "status": "TP1",
+      "created_at": "2026-03-22 12:09:29",
       "reasons": [
         "RSI=32 (перепроданность)",
         "BB нижняя полоса (пробой)",
@@ -285,13 +287,8 @@
         "МТФ: 15m, 4h согласны",
         "Doji (1h) — нерешительность",
         "⚡ Рыночный вход (MTF 2+ ТФ)"
-      ],
-      "news": null,
-      "created_at": "2026-03-22 12:09:29",
-      "status": "ACTIVE"
-    }
-  ],
-  "history": [
+      ]
+    },
     {
       "symbol": "BEATUSDT",
       "direction": "LONG",
@@ -668,26 +665,6 @@
         "Стакан: давление покупки (+0.13)",
         "МТФ: все 4 таймфрейма согласны ✅✅",
         "OI растёт +1.1% + цена ↑",
-        "⚠️ Funding через 52м",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
-      "symbol": "BANANAS31USDT",
-      "direction": "LONG",
-      "entry": 0.011463,
-      "tp1": 0.011878,
-      "tp2": 0.012294,
-      "sl": 0.011131,
-      "strength": 53,
-      "status": "SL",
-      "created_at": "2026-03-22 07:09:18",
-      "reasons": [
-        "MACD бычий (hist=0.00020)",
-        "Цена > EMA20 > EMA50",
-        "Объём x5.9 🔥🔥🔥",
-        "МТФ: 5m, 15m, 1h согласны",
-        "OI растёт +0.8% + цена ↑",
         "⚠️ Funding через 52м",
         "⚡ Рыночный вход (MTF сильный)"
       ]
