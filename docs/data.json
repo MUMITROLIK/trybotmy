@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-22T14:39:27.084920+00:00",
+  "updated_at": "2026-03-22T14:40:25.466387+00:00",
   "publish_status": {
-    "last_ok": "2026-03-22T14:38:27Z",
+    "last_ok": "2026-03-22T14:39:33Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 969,
+    "total": 970,
     "wins": 325,
     "losses": 239,
-    "active": 4,
+    "active": 5,
     "winrate": 57.6
   },
   "trade_stats": {
-    "open": 10,
+    "open": 11,
     "pending": 0,
     "wins": 380,
     "losses": 390,
@@ -126,6 +126,29 @@
       ],
       "news": null,
       "created_at": "2026-03-22 13:34:33",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1008,
+      "symbol": "GUNUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.021651,
+      "tp1": 0.02209,
+      "tp2": 0.022529,
+      "sl": 0.021218,
+      "strength": 57,
+      "reasons": [
+        "MACD бычий (hist=0.00007)",
+        "Цена > EMA20 > EMA50",
+        "Объём x10.7 🔥🔥🔥",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +8.5% + цена ↑",
+        "⚠️ Funding через 80м",
+        "⚡ Рыночный вход (MTF сильный)"
+      ],
+      "news": null,
+      "created_at": "2026-03-22 14:40:24",
       "status": "ACTIVE"
     }
   ],
@@ -765,6 +788,32 @@
         "OI растёт +1.7%",
         "Doji (1h) — нерешительность",
         "Цена у поддержки 0.9265"
+      ]
+    },
+    {
+      "id": 862,
+      "symbol": "GUNUSDT",
+      "direction": "LONG",
+      "exchange": "bybit",
+      "entry": 0.021651,
+      "tp1": 0.02209,
+      "tp2": 0.022529,
+      "sl": 0.021218,
+      "entry_orig": 0.021651,
+      "tp1_orig": 0.02209,
+      "tp2_orig": 0.022529,
+      "sl_orig": 0.021218,
+      "strength": 57,
+      "taken_at": "2026-03-22T14:40:24.758855",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.00007)",
+        "Цена > EMA20 > EMA50",
+        "Объём x10.7 🔥🔥🔥",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +8.5% + цена ↑",
+        "⚠️ Funding через 80м",
+        "⚡ Рыночный вход (MTF сильный)"
       ]
     },
     {
