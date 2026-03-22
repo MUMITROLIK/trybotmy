@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-22T11:41:15.422740+00:00",
+  "updated_at": "2026-03-22T11:42:36.315602+00:00",
   "publish_status": {
-    "last_ok": "2026-03-22T11:40:32Z",
+    "last_ok": "2026-03-22T11:41:21Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -12,17 +12,17 @@
   "stats": {
     "total": 958,
     "wins": 316,
-    "losses": 233,
-    "active": 13,
-    "winrate": 57.6
+    "losses": 234,
+    "active": 12,
+    "winrate": 57.5
   },
   "trade_stats": {
-    "open": 15,
+    "open": 14,
     "pending": 0,
     "wins": 371,
-    "losses": 383,
-    "total_pnl": 47.03,
-    "winrate": 49.2
+    "losses": 384,
+    "total_pnl": 44.9,
+    "winrate": 49.1
   },
   "fear_greed": {
     "value": 10,
@@ -36,29 +36,6 @@
     "trained_at": "2026-03-21T20:07:52.476233+00:00"
   },
   "signals": [
-    {
-      "id": 974,
-      "symbol": "PUMPUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.001808,
-      "tp1": 0.001844,
-      "tp2": 0.00188,
-      "sl": 0.001772,
-      "strength": 53,
-      "reasons": [
-        "RSI=19 (сильная перепроданность)",
-        "BB нижняя зона (2%)",
-        "Объём x2.7 🔥🔥",
-        "Стакан: сильное давление покупки (+0.31)",
-        "CVD положительный (-13.5%)",
-        "Doji (1h) — нерешительность",
-        "Цена у поддержки 0.0018"
-      ],
-      "news": null,
-      "created_at": "2026-03-22 08:12:15",
-      "status": "ACTIVE"
-    },
     {
       "id": 976,
       "symbol": "TAOUSDT",
@@ -516,6 +493,26 @@
       ]
     },
     {
+      "symbol": "PUMPUSDT",
+      "direction": "LONG",
+      "entry": 0.001808,
+      "tp1": 0.001844,
+      "tp2": 0.00188,
+      "sl": 0.001772,
+      "strength": 53,
+      "status": "SL",
+      "created_at": "2026-03-22 08:12:15",
+      "reasons": [
+        "RSI=19 (сильная перепроданность)",
+        "BB нижняя зона (2%)",
+        "Объём x2.7 🔥🔥",
+        "Стакан: сильное давление покупки (+0.31)",
+        "CVD положительный (-13.5%)",
+        "Doji (1h) — нерешительность",
+        "Цена у поддержки 0.0018"
+      ]
+    },
+    {
       "symbol": "TRIAUSDT",
       "direction": "LONG",
       "entry": 0.03942,
@@ -718,57 +715,9 @@
         "⚠️ Funding через 62м",
         "⚡ Рыночный вход (MTF 2+ ТФ)"
       ]
-    },
-    {
-      "symbol": "RIVERUSDT",
-      "direction": "LONG",
-      "entry": 26.355,
-      "tp1": 26.941607,
-      "tp2": 27.528214,
-      "sl": 25.8279,
-      "strength": 55,
-      "status": "TP1",
-      "created_at": "2026-03-22 06:55:31",
-      "reasons": [
-        "MACD бычий (hist=0.09619)",
-        "Цена > EMA20 > EMA50",
-        "Объём x1.9 🔥",
-        "Стакан: перевес bid (+0.06)",
-        "МТФ: 5m, 15m, 4h согласны",
-        "CVD растёт (+5.0%) — покупки усиливаются 📈",
-        "Bullish Engulfing (1h) 🕯️",
-        "⚠️ Funding через 65м",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
     }
   ],
   "trades_open": [
-    {
-      "id": 828,
-      "symbol": "PUMPUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.001808,
-      "tp1": 0.001844,
-      "tp2": 0.00188,
-      "sl": 0.001772,
-      "entry_orig": 0.001808,
-      "tp1_orig": 0.001844,
-      "tp2_orig": 0.00188,
-      "sl_orig": 0.001772,
-      "strength": 53,
-      "taken_at": "2026-03-22T08:12:15.441310",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=19 (сильная перепроданность)",
-        "BB нижняя зона (2%)",
-        "Объём x2.7 🔥🔥",
-        "Стакан: сильное давление покупки (+0.31)",
-        "CVD положительный (-13.5%)",
-        "Doji (1h) — нерешительность",
-        "Цена у поддержки 0.0018"
-      ]
-    },
     {
       "id": 830,
       "symbol": "TAOUSDT",
@@ -1139,6 +1088,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "PUMPUSDT",
+      "direction": "LONG",
+      "entry": 0.001808,
+      "tp1": 0.001844,
+      "tp2": 0.00188,
+      "sl": 0.001772,
+      "strength": 53,
+      "status": "SL",
+      "pnl_pct": -2.13,
+      "close_price": 0.0017695,
+      "taken_at": "2026-03-22T08:12:15.441310",
+      "closed_at": "2026-03-22 11:41:27"
+    },
     {
       "symbol": "EDGEUSDT",
       "direction": "LONG",
@@ -3924,20 +3887,6 @@
       "close_price": 0.7347,
       "taken_at": "2026-03-20T16:09:33.020593",
       "closed_at": "2026-03-20 20:34:08"
-    },
-    {
-      "symbol": "RENDERUSDT",
-      "direction": "LONG",
-      "entry": 1.707,
-      "tp1": 1.74114,
-      "tp2": 1.77528,
-      "sl": 1.67286,
-      "strength": 51,
-      "status": "SL",
-      "pnl_pct": -2.02,
-      "close_price": 1.6724999999999999,
-      "taken_at": "2026-03-20T14:30:43.361193",
-      "closed_at": "2026-03-20 20:32:34"
     }
   ]
 }
