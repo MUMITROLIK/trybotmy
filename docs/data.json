@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-22T21:21:44.458001+00:00",
+  "updated_at": "2026-03-22T21:22:50.205626+00:00",
   "publish_status": {
-    "last_ok": "2026-03-22T21:20:30Z",
+    "last_ok": "2026-03-22T21:21:50Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 1026,
+    "total": 1029,
     "wins": 340,
     "losses": 246,
-    "active": 33,
+    "active": 36,
     "winrate": 58.0
   },
   "trade_stats": {
-    "open": 34,
+    "open": 37,
     "pending": 0,
     "wins": 397,
     "losses": 406,
@@ -772,6 +772,72 @@
       ],
       "news": null,
       "created_at": "2026-03-22 21:20:35",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1065,
+      "symbol": "SOLUSDT",
+      "direction": "SHORT",
+      "exchange": "binance",
+      "entry": 85.32,
+      "tp1": 83.6136,
+      "tp2": 81.9072,
+      "sl": 87.0264,
+      "strength": 54,
+      "reasons": [
+        "MACD медвежий (hist=-0.14260)",
+        "Цена < EMA20 < EMA50",
+        "Объём x2.5 🔥🔥",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "CVD падает (-12.9%) — продажи усиливаются 📉",
+        "BTC корреляция 0.84, BTC -1.8% 📉"
+      ],
+      "news": null,
+      "created_at": "2026-03-22 21:22:12",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1066,
+      "symbol": "SEIUSDT",
+      "direction": "SHORT",
+      "exchange": "binance",
+      "entry": 0.0589,
+      "tp1": 0.057722,
+      "tp2": 0.056544,
+      "sl": 0.060078,
+      "strength": 53,
+      "reasons": [
+        "MACD медвежий (hist=-0.00003)",
+        "Цена < EMA20 < EMA50",
+        "Объём x5.4 🔥🔥🔥",
+        "Стакан: перевес ask (-0.08)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "BTC корреляция 0.74, BTC -1.7% 📉"
+      ],
+      "news": null,
+      "created_at": "2026-03-22 21:22:12",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1067,
+      "symbol": "ZROUSDT",
+      "direction": "SHORT",
+      "exchange": "binance",
+      "entry": 1.8943,
+      "tp1": 1.856414,
+      "tp2": 1.818528,
+      "sl": 1.932186,
+      "strength": 55,
+      "reasons": [
+        "MACD медвежий (hist=-0.00595)",
+        "Цена < EMA20 < EMA50",
+        "Объём x3.4 🔥🔥",
+        "Стакан: сильное давление продажи (-0.69)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "BTC корреляция 0.68, BTC -1.7% 📉"
+      ],
+      "news": null,
+      "created_at": "2026-03-22 21:22:13",
       "status": "ACTIVE"
     }
   ],
@@ -2033,6 +2099,81 @@
         "Стакан: давление продажи (-0.16)",
         "МТФ: все 4 таймфрейма согласны ✅✅",
         "BTC корреляция 0.74, BTC -1.9% 📉"
+      ]
+    },
+    {
+      "id": 919,
+      "symbol": "SOLUSDT",
+      "direction": "SHORT",
+      "exchange": "binance",
+      "entry": 85.32,
+      "tp1": 83.6136,
+      "tp2": 81.9072,
+      "sl": 87.0264,
+      "entry_orig": 85.32,
+      "tp1_orig": 83.6136,
+      "tp2_orig": 81.9072,
+      "sl_orig": 87.0264,
+      "strength": 54,
+      "taken_at": "2026-03-22T21:22:12.854312",
+      "status": "OPEN",
+      "reasons": [
+        "MACD медвежий (hist=-0.14260)",
+        "Цена < EMA20 < EMA50",
+        "Объём x2.5 🔥🔥",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "CVD падает (-12.9%) — продажи усиливаются 📉",
+        "BTC корреляция 0.84, BTC -1.8% 📉"
+      ]
+    },
+    {
+      "id": 920,
+      "symbol": "SEIUSDT",
+      "direction": "SHORT",
+      "exchange": "bybit",
+      "entry": 0.0589,
+      "tp1": 0.057722,
+      "tp2": 0.056544,
+      "sl": 0.060078,
+      "entry_orig": 0.0589,
+      "tp1_orig": 0.057722,
+      "tp2_orig": 0.056544,
+      "sl_orig": 0.060078,
+      "strength": 53,
+      "taken_at": "2026-03-22T21:22:13.060063",
+      "status": "OPEN",
+      "reasons": [
+        "MACD медвежий (hist=-0.00003)",
+        "Цена < EMA20 < EMA50",
+        "Объём x5.4 🔥🔥🔥",
+        "Стакан: перевес ask (-0.08)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "BTC корреляция 0.74, BTC -1.7% 📉"
+      ]
+    },
+    {
+      "id": 921,
+      "symbol": "ZROUSDT",
+      "direction": "SHORT",
+      "exchange": "bybit",
+      "entry": 1.8943,
+      "tp1": 1.856414,
+      "tp2": 1.818528,
+      "sl": 1.932186,
+      "entry_orig": 1.8943,
+      "tp1_orig": 1.856414,
+      "tp2_orig": 1.818528,
+      "sl_orig": 1.932186,
+      "strength": 55,
+      "taken_at": "2026-03-22T21:22:13.219002",
+      "status": "OPEN",
+      "reasons": [
+        "MACD медвежий (hist=-0.00595)",
+        "Цена < EMA20 < EMA50",
+        "Объём x3.4 🔥🔥",
+        "Стакан: сильное давление продажи (-0.69)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "BTC корреляция 0.68, BTC -1.7% 📉"
       ]
     }
   ],
