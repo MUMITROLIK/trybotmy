@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-22T15:31:32.825162+00:00",
+  "updated_at": "2026-03-22T15:32:54.325972+00:00",
   "publish_status": {
-    "last_ok": "2026-03-22T15:31:00Z",
+    "last_ok": "2026-03-22T15:31:39Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,11 +17,11 @@
     "winrate": 57.8
   },
   "trade_stats": {
-    "open": 14,
+    "open": 13,
     "pending": 0,
-    "wins": 383,
+    "wins": 384,
     "losses": 391,
-    "total_pnl": 59.12,
+    "total_pnl": 62.67,
     "winrate": 49.5
   },
   "fear_greed": {
@@ -854,32 +854,6 @@
       ]
     },
     {
-      "id": 868,
-      "symbol": "JCTUSDT",
-      "direction": "LONG",
-      "exchange": "bybit",
-      "entry": 0.0028241,
-      "tp1": 0.002894,
-      "tp2": 0.002964,
-      "sl": 0.002768,
-      "entry_orig": 0.0028241,
-      "tp1_orig": 0.002894,
-      "tp2_orig": 0.002964,
-      "sl_orig": 0.002768,
-      "strength": 53,
-      "taken_at": "2026-03-22T15:19:15.865441",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00002)",
-        "Цена > EMA20 > EMA50",
-        "Объём x2.7 🔥🔥",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +1.7% + цена ↑",
-        "⚠️ Funding через 42м",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 869,
       "symbol": "GUNUSDT",
       "direction": "LONG",
@@ -935,6 +909,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "JCTUSDT",
+      "direction": "LONG",
+      "entry": 0.0028241,
+      "tp1": 0.002894,
+      "tp2": 0.002964,
+      "sl": 0.002768,
+      "strength": 53,
+      "status": "TP1",
+      "pnl_pct": 3.55,
+      "close_price": 0.0029243,
+      "taken_at": "2026-03-22T15:19:15.865441",
+      "closed_at": "2026-03-22 15:32:53"
+    },
     {
       "symbol": "GUNUSDT",
       "direction": "LONG",
@@ -3720,20 +3708,6 @@
       "close_price": 0.3062,
       "taken_at": "2026-03-20T17:21:17.178653",
       "closed_at": "2026-03-20 22:51:13"
-    },
-    {
-      "symbol": "PAXGUSDT",
-      "direction": "LONG",
-      "entry": 4564.05,
-      "tp1": 4655.331,
-      "tp2": 4746.612,
-      "sl": 4472.769,
-      "strength": 56,
-      "status": "TIMEOUT",
-      "pnl_pct": -1.14,
-      "close_price": 4512.155,
-      "taken_at": "2026-03-20T14:30:43.109663",
-      "closed_at": "2026-03-20 22:30:58"
     }
   ]
 }
