@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-22T02:24:23.852077+00:00",
+  "updated_at": "2026-03-22T02:25:48.432393+00:00",
   "publish_status": {
-    "last_ok": "2026-03-22T02:23:44Z",
+    "last_ok": "2026-03-22T02:24:30Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,11 +17,11 @@
     "winrate": 57.3
   },
   "trade_stats": {
-    "open": 12,
+    "open": 11,
     "pending": 0,
-    "wins": 348,
+    "wins": 349,
     "losses": 367,
-    "total_pnl": 5.94,
+    "total_pnl": 7.54,
     "winrate": 48.7
   },
   "fear_greed": {
@@ -584,31 +584,6 @@
   ],
   "trades_open": [
     {
-      "id": 766,
-      "symbol": "SIGNUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.04796,
-      "tp1": 0.048919,
-      "tp2": 0.049878,
-      "sl": 0.047001,
-      "entry_orig": 0.04796,
-      "tp1_orig": 0.048919,
-      "tp2_orig": 0.049878,
-      "sl_orig": 0.047001,
-      "strength": 50,
-      "taken_at": "2026-03-21T18:24:37.591781",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00009)",
-        "Цена > EMA20 > EMA50",
-        "Объём x1.8 🔥",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "CVD растёт (+8.0%) — покупки усиливаются 📈",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 780,
       "symbol": "STOUSDT",
       "direction": "LONG",
@@ -899,6 +874,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "SIGNUSDT",
+      "direction": "LONG",
+      "entry": 0.04796,
+      "tp1": 0.048919,
+      "tp2": 0.049878,
+      "sl": 0.047001,
+      "strength": 50,
+      "status": "TIMEOUT",
+      "pnl_pct": 1.6,
+      "close_price": 0.048725000000000004,
+      "taken_at": "2026-03-21T18:24:37.591781",
+      "closed_at": "2026-03-22 02:24:50"
+    },
     {
       "symbol": "TAOUSDT",
       "direction": "LONG",
@@ -3684,20 +3673,6 @@
       "close_price": 0.10116,
       "taken_at": "2026-03-20T11:54:10.577616",
       "closed_at": "2026-03-20 14:50:18"
-    },
-    {
-      "symbol": "BTRUSDT",
-      "direction": "LONG",
-      "entry": 0.13044,
-      "tp1": 0.13367,
-      "tp2": 0.136901,
-      "sl": 0.13390000000000002,
-      "strength": 55,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 2.49,
-      "close_price": 0.133685,
-      "taken_at": "2026-03-20T14:34:04.669332",
-      "closed_at": "2026-03-20 14:46:29"
     }
   ]
 }
