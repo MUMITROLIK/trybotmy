@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-22T10:20:16.728390+00:00",
+  "updated_at": "2026-03-22T10:21:08.046890+00:00",
   "publish_status": {
-    "last_ok": "2026-03-22T10:19:16Z",
+    "last_ok": "2026-03-22T10:20:23Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 57.8
   },
   "trade_stats": {
-    "open": 15,
+    "open": 14,
     "pending": 0,
-    "wins": 366,
+    "wins": 367,
     "losses": 379,
-    "total_pnl": 42.37,
-    "winrate": 49.1
+    "total_pnl": 42.28,
+    "winrate": 49.2
   },
   "fear_greed": {
     "value": 10,
@@ -1016,32 +1016,6 @@
       ]
     },
     {
-      "id": 825,
-      "symbol": "KITEUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.21755,
-      "tp1": 0.221901,
-      "tp2": 0.226252,
-      "sl": 0.21755,
-      "entry_orig": 0.21755,
-      "tp1_orig": 0.221901,
-      "tp2_orig": 0.226252,
-      "sl_orig": 0.213199,
-      "strength": 54,
-      "taken_at": "2026-03-22T07:19:51.502269",
-      "status": "TP1_HIT",
-      "reasons": [
-        "MACD бычий (hist=0.00039)",
-        "EMA20 > EMA50 (golden cross) 🌟",
-        "Стакан: сильное давление покупки (+0.55)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "CVD растёт (+11.8%) — покупки усиливаются 📈",
-        "⚠️ Funding через 41м",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 836,
       "symbol": "KATUSDT",
       "direction": "LONG",
@@ -1069,6 +1043,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "KITEUSDT",
+      "direction": "LONG",
+      "entry": 0.21755,
+      "tp1": 0.221901,
+      "tp2": 0.226252,
+      "sl": 0.21755,
+      "strength": 54,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": -0.09,
+      "close_price": 0.217355,
+      "taken_at": "2026-03-22T07:19:51.502269",
+      "closed_at": "2026-03-22 10:20:44"
+    },
     {
       "symbol": "TRIAUSDT",
       "direction": "LONG",
@@ -3854,20 +3842,6 @@
       "close_price": 0.17675000000000002,
       "taken_at": "2026-03-20T15:29:58.823553",
       "closed_at": "2026-03-20 18:35:31"
-    },
-    {
-      "symbol": "TAOUSDT",
-      "direction": "LONG",
-      "entry": 275.93,
-      "tp1": 281.5025,
-      "tp2": 287.075,
-      "sl": 270.4114,
-      "strength": 50,
-      "status": "SL",
-      "pnl_pct": -2.01,
-      "close_price": 270.395,
-      "taken_at": "2026-03-20T16:54:14.011513",
-      "closed_at": "2026-03-20 18:30:37"
     }
   ]
 }
