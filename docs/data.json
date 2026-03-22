@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-22T19:05:08.229684+00:00",
+  "updated_at": "2026-03-22T19:06:14.160394+00:00",
   "publish_status": {
-    "last_ok": "2026-03-22T19:04:08Z",
+    "last_ok": "2026-03-22T19:05:14Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 986,
+    "total": 987,
     "wins": 335,
     "losses": 243,
-    "active": 3,
+    "active": 4,
     "winrate": 58.0
   },
   "trade_stats": {
-    "open": 6,
+    "open": 7,
     "pending": 0,
     "wins": 392,
     "losses": 399,
@@ -102,6 +102,28 @@
       ],
       "news": null,
       "created_at": "2026-03-22 19:01:36",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1025,
+      "symbol": "IPUSDT",
+      "direction": "SHORT",
+      "exchange": "binance",
+      "entry": 0.6719,
+      "tp1": 0.658462,
+      "tp2": 0.645024,
+      "sl": 0.685338,
+      "strength": 50,
+      "reasons": [
+        "MACD медвежий (hist=-0.00222)",
+        "Цена < EMA20 < EMA50",
+        "Объём x2.7 🔥🔥",
+        "Стакан: перевес ask (-0.10)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +0.8% + цена ↓"
+      ],
+      "news": null,
+      "created_at": "2026-03-22 19:05:21",
       "status": "ACTIVE"
     }
   ],
@@ -665,6 +687,31 @@
         "OI растёт +11.5% + цена ↑",
         "CVD положительный (-0.7%)",
         "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
+    {
+      "id": 879,
+      "symbol": "IPUSDT",
+      "direction": "SHORT",
+      "exchange": "bybit",
+      "entry": 0.6719,
+      "tp1": 0.658462,
+      "tp2": 0.645024,
+      "sl": 0.685338,
+      "entry_orig": 0.6719,
+      "tp1_orig": 0.658462,
+      "tp2_orig": 0.645024,
+      "sl_orig": 0.685338,
+      "strength": 50,
+      "taken_at": "2026-03-22T19:05:21.607828",
+      "status": "OPEN",
+      "reasons": [
+        "MACD медвежий (hist=-0.00222)",
+        "Цена < EMA20 < EMA50",
+        "Объём x2.7 🔥🔥",
+        "Стакан: перевес ask (-0.10)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +0.8% + цена ↓"
       ]
     }
   ],
