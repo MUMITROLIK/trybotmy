@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-22T14:20:50.593005+00:00",
+  "updated_at": "2026-03-22T14:21:35.710390+00:00",
   "publish_status": {
-    "last_ok": "2026-03-22T14:19:50Z",
+    "last_ok": "2026-03-22T14:20:56Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 57.5
   },
   "trade_stats": {
-    "open": 12,
+    "open": 11,
     "pending": 0,
-    "wins": 378,
+    "wins": 379,
     "losses": 390,
-    "total_pnl": 51.33,
-    "winrate": 49.2
+    "total_pnl": 50.69,
+    "winrate": 49.3
   },
   "fear_greed": {
     "value": 10,
@@ -837,32 +837,6 @@
       ]
     },
     {
-      "id": 847,
-      "symbol": "ARIAUSDT",
-      "direction": "LONG",
-      "exchange": "bybit",
-      "entry": 0.23137,
-      "tp1": 0.237848,
-      "tp2": 0.244326,
-      "sl": 0.23007444,
-      "entry_orig": 0.23137,
-      "tp1_orig": 0.237848,
-      "tp2_orig": 0.244326,
-      "sl_orig": 0.226188,
-      "strength": 56,
-      "taken_at": "2026-03-22T11:12:55.277952",
-      "status": "TP1_HIT",
-      "reasons": [
-        "MACD бычий (hist=0.00088)",
-        "Цена > EMA20 > EMA50",
-        "Объём x1.9 🔥",
-        "Стакан: сильное давление покупки (+0.37)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +1.3% + цена ↑",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 850,
       "symbol": "BEATUSDT",
       "direction": "LONG",
@@ -891,6 +865,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "ARIAUSDT",
+      "direction": "LONG",
+      "entry": 0.23137,
+      "tp1": 0.237848,
+      "tp2": 0.244326,
+      "sl": 0.23007444,
+      "strength": 56,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": -0.64,
+      "close_price": 0.2299,
+      "taken_at": "2026-03-22T11:12:55.277952",
+      "closed_at": "2026-03-22 14:21:05"
+    },
     {
       "symbol": "EDGEUSDT",
       "direction": "LONG",
@@ -3676,20 +3664,6 @@
       "close_price": 0.7404999999999999,
       "taken_at": "2026-03-20T21:43:45.276693",
       "closed_at": "2026-03-20 22:19:32"
-    },
-    {
-      "symbol": "ICPUSDT",
-      "direction": "LONG",
-      "entry": 2.468,
-      "tp1": 2.51736,
-      "tp2": 2.56672,
-      "sl": 2.518,
-      "strength": 51,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 2.03,
-      "close_price": 2.518,
-      "taken_at": "2026-03-20T20:45:11.476810",
-      "closed_at": "2026-03-20 22:06:18"
     }
   ]
 }
