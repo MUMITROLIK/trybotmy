@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-22T00:09:49.182006+00:00",
+  "updated_at": "2026-03-22T00:10:55.322257+00:00",
   "publish_status": {
-    "last_ok": "2026-03-22T00:08:31Z",
+    "last_ok": "2026-03-22T00:09:55Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,18 +10,18 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 907,
-    "wins": 291,
+    "total": 908,
+    "wins": 292,
     "losses": 216,
     "active": 8,
-    "winrate": 57.4
+    "winrate": 57.5
   },
   "trade_stats": {
     "open": 11,
     "pending": 0,
-    "wins": 344,
+    "wins": 345,
     "losses": 363,
-    "total_pnl": 7.58,
+    "total_pnl": 12.33,
     "winrate": 48.7
   },
   "fear_greed": {
@@ -132,28 +132,6 @@
       "status": "ACTIVE"
     },
     {
-      "id": 940,
-      "symbol": "WUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.016565,
-      "tp1": 0.016896,
-      "tp2": 0.017228,
-      "sl": 0.016234,
-      "strength": 51,
-      "reasons": [
-        "RSI=14 (сильная перепроданность)",
-        "BB нижняя полоса (пробой)",
-        "Объём x4.4 🔥🔥🔥",
-        "Стакан: давление покупки (+0.10)",
-        "МТФ: только 1 таймфрейм согласен",
-        "OI падает (шорты закрываются)"
-      ],
-      "news": null,
-      "created_at": "2026-03-22 00:03:09",
-      "status": "ACTIVE"
-    },
-    {
       "id": 943,
       "symbol": "PIUSDT",
       "direction": "LONG",
@@ -222,9 +200,51 @@
       "news": null,
       "created_at": "2026-03-22 00:06:47",
       "status": "ACTIVE"
+    },
+    {
+      "id": 946,
+      "symbol": "TAOUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 266.61,
+      "tp1": 271.9422,
+      "tp2": 277.2744,
+      "sl": 261.2778,
+      "strength": 58,
+      "reasons": [
+        "RSI=27 (сильная перепроданность)",
+        "BB нижняя полоса (пробой)",
+        "Объём x4.8 🔥🔥🔥",
+        "Стакан: давление покупки (+0.24)",
+        "OI растёт +1.0%",
+        "CVD положительный (-0.5%)",
+        "Hammer (1h) 🔨"
+      ],
+      "news": null,
+      "created_at": "2026-03-22 00:10:13",
+      "status": "ACTIVE"
     }
   ],
   "history": [
+    {
+      "symbol": "WUSDT",
+      "direction": "LONG",
+      "entry": 0.016565,
+      "tp1": 0.016896,
+      "tp2": 0.017228,
+      "sl": 0.016234,
+      "strength": 51,
+      "status": "TP1",
+      "created_at": "2026-03-22 00:03:09",
+      "reasons": [
+        "RSI=14 (сильная перепроданность)",
+        "BB нижняя полоса (пробой)",
+        "Объём x4.4 🔥🔥🔥",
+        "Стакан: давление покупки (+0.10)",
+        "МТФ: только 1 таймфрейм согласен",
+        "OI падает (шорты закрываются)"
+      ]
+    },
     {
       "symbol": "FLOCKUSDT",
       "direction": "LONG",
@@ -604,25 +624,6 @@
         "CVD растёт (+7.3%) — покупки усиливаются 📈",
         "⚡ Рыночный вход (MTF 2+ ТФ)"
       ]
-    },
-    {
-      "symbol": "ZBCNUSDT",
-      "direction": "LONG",
-      "entry": 0.0025756,
-      "tp1": 0.002627,
-      "tp2": 0.002679,
-      "sl": 0.002524,
-      "strength": 53,
-      "status": "EXPIRED",
-      "created_at": "2026-03-21 19:58:01",
-      "reasons": [
-        "MACD бычий (hist=0.00000)",
-        "Цена > EMA20 > EMA50",
-        "Объём x3.2 🔥🔥",
-        "Стакан: давление покупки (+0.23)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
     }
   ],
   "trades_open": [
@@ -810,31 +811,6 @@
       ]
     },
     {
-      "id": 796,
-      "symbol": "ORDERUSDT",
-      "direction": "LONG",
-      "exchange": "bybit",
-      "entry": 0.05391,
-      "tp1": 0.054988,
-      "tp2": 0.056066,
-      "sl": 0.052832,
-      "entry_orig": 0.05391,
-      "tp1_orig": 0.054988,
-      "tp2_orig": 0.056066,
-      "sl_orig": 0.052832,
-      "strength": 51,
-      "taken_at": "2026-03-22T00:03:09.807403",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=12 (сильная перепроданность)",
-        "BB нижняя полоса (пробой)",
-        "EMA20 > EMA50",
-        "Объём x3.0 🔥🔥",
-        "МТФ: 15m, 1h, 4h согласны",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 797,
       "symbol": "PIUSDT",
       "direction": "LONG",
@@ -912,9 +888,49 @@
         "CVD положительный (+4.4%)",
         "⚡ Рыночный вход (MTF сильный)"
       ]
+    },
+    {
+      "id": 800,
+      "symbol": "TAOUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 266.61,
+      "tp1": 271.9422,
+      "tp2": 277.2744,
+      "sl": 261.2778,
+      "entry_orig": 266.61,
+      "tp1_orig": 271.9422,
+      "tp2_orig": 277.2744,
+      "sl_orig": 261.2778,
+      "strength": 58,
+      "taken_at": "2026-03-22T00:10:13.404647",
+      "status": "OPEN",
+      "reasons": [
+        "RSI=27 (сильная перепроданность)",
+        "BB нижняя полоса (пробой)",
+        "Объём x4.8 🔥🔥🔥",
+        "Стакан: давление покупки (+0.24)",
+        "OI растёт +1.0%",
+        "CVD положительный (-0.5%)",
+        "Hammer (1h) 🔨"
+      ]
     }
   ],
   "trades_history": [
+    {
+      "symbol": "ORDERUSDT",
+      "direction": "LONG",
+      "entry": 0.05391,
+      "tp1": 0.054988,
+      "tp2": 0.056066,
+      "sl": 0.052832,
+      "strength": 51,
+      "status": "TP2",
+      "pnl_pct": 4.75,
+      "close_price": 0.05647,
+      "taken_at": "2026-03-22T00:03:09.807403",
+      "closed_at": "2026-03-22 00:10:00"
+    },
     {
       "symbol": "FLOCKUSDT",
       "direction": "LONG",
@@ -3700,20 +3716,6 @@
       "close_price": 0.62975,
       "taken_at": "2026-03-20T13:39:42.941341",
       "closed_at": "2026-03-20 13:59:18"
-    },
-    {
-      "symbol": "PIXELUSDT",
-      "direction": "LONG",
-      "entry": 0.009823,
-      "tp1": 0.010056,
-      "tp2": 0.010288,
-      "sl": 0.009627,
-      "strength": 51,
-      "status": "SL",
-      "pnl_pct": -2.1,
-      "close_price": 0.009617,
-      "taken_at": "2026-03-20T13:50:25.078317",
-      "closed_at": "2026-03-20 13:54:56"
     }
   ]
 }
