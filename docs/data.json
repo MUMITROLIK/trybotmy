@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-22T11:05:22.555400+00:00",
+  "updated_at": "2026-03-22T11:06:06.168404+00:00",
   "publish_status": {
-    "last_ok": "2026-03-22T11:04:18Z",
+    "last_ok": "2026-03-22T11:05:28Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 953,
+    "total": 954,
     "wins": 315,
     "losses": 230,
-    "active": 12,
+    "active": 13,
     "winrate": 57.8
   },
   "trade_stats": {
-    "open": 15,
+    "open": 16,
     "pending": 0,
     "wins": 369,
     "losses": 380,
@@ -311,6 +311,29 @@
       ],
       "news": null,
       "created_at": "2026-03-22 11:02:38",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 992,
+      "symbol": "ZECUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 217.08,
+      "tp1": 221.4216,
+      "tp2": 225.7632,
+      "sl": 212.7384,
+      "strength": 51,
+      "reasons": [
+        "RSI=37 (перепроданность)",
+        "MACD бычий (hist=0.00084)",
+        "BB нижняя полоса (пробой)",
+        "Объём x2.1 🔥",
+        "CVD положительный (-0.6%)",
+        "Hammer (1h) 🔨",
+        "Цена у поддержки 216.0200"
+      ],
+      "news": null,
+      "created_at": "2026-03-22 11:06:05",
       "status": "ACTIVE"
     }
   ],
@@ -1034,6 +1057,32 @@
         "МТФ: 5m, 15m, 1h согласны",
         "CVD положительный (-0.4%)",
         "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
+    {
+      "id": 846,
+      "symbol": "ZECUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 217.08,
+      "tp1": 221.4216,
+      "tp2": 225.7632,
+      "sl": 212.7384,
+      "entry_orig": 217.08,
+      "tp1_orig": 221.4216,
+      "tp2_orig": 225.7632,
+      "sl_orig": 212.7384,
+      "strength": 51,
+      "taken_at": "2026-03-22T11:06:05.458245",
+      "status": "OPEN",
+      "reasons": [
+        "RSI=37 (перепроданность)",
+        "MACD бычий (hist=0.00084)",
+        "BB нижняя полоса (пробой)",
+        "Объём x2.1 🔥",
+        "CVD положительный (-0.6%)",
+        "Hammer (1h) 🔨",
+        "Цена у поддержки 216.0200"
       ]
     },
     {
