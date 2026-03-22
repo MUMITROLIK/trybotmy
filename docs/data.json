@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-22T15:22:10.422219+00:00",
+  "updated_at": "2026-03-22T15:22:52.325366+00:00",
   "publish_status": {
-    "last_ok": "2026-03-22T15:21:04Z",
+    "last_ok": "2026-03-22T15:22:16Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,19 +10,19 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 976,
+    "total": 977,
     "wins": 328,
     "losses": 240,
-    "active": 5,
+    "active": 6,
     "winrate": 57.7
   },
   "trade_stats": {
     "open": 14,
     "pending": 0,
-    "wins": 382,
+    "wins": 383,
     "losses": 391,
-    "total_pnl": 56.35,
-    "winrate": 49.4
+    "total_pnl": 59.12,
+    "winrate": 49.5
   },
   "fear_greed": {
     "value": 10,
@@ -154,6 +154,30 @@
       ],
       "news": null,
       "created_at": "2026-03-22 15:19:15",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1015,
+      "symbol": "GUNUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.023262,
+      "tp1": 0.02388,
+      "tp2": 0.024498,
+      "sl": 0.022767,
+      "strength": 52,
+      "reasons": [
+        "MACD бычий (hist=0.00025)",
+        "Цена > EMA20 > EMA50",
+        "Объём x2.3 🔥",
+        "Стакан: давление покупки (+0.22)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +1.1% + цена ↑",
+        "⚠️ Funding через 38м",
+        "⚡ Рыночный вход (MTF сильный)"
+      ],
+      "news": null,
+      "created_at": "2026-03-22 15:22:50",
       "status": "ACTIVE"
     }
   ],
@@ -825,32 +849,6 @@
       ]
     },
     {
-      "id": 866,
-      "symbol": "GUNUSDT",
-      "direction": "LONG",
-      "exchange": "bybit",
-      "entry": 0.022634,
-      "tp1": 0.02316,
-      "tp2": 0.023686,
-      "sl": 0.022181,
-      "entry_orig": 0.022634,
-      "tp1_orig": 0.02316,
-      "tp2_orig": 0.023686,
-      "sl_orig": 0.022181,
-      "strength": 51,
-      "taken_at": "2026-03-22T15:11:57.162826",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00017)",
-        "Цена > EMA20 > EMA50",
-        "Объём x2.4 🔥",
-        "Стакан: сильное давление покупки (+0.55)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "⚠️ Funding через 49м",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 867,
       "symbol": "SIGNUSDT",
       "direction": "LONG",
@@ -905,6 +903,33 @@
       ]
     },
     {
+      "id": 869,
+      "symbol": "GUNUSDT",
+      "direction": "LONG",
+      "exchange": "bybit",
+      "entry": 0.023262,
+      "tp1": 0.02388,
+      "tp2": 0.024498,
+      "sl": 0.022767,
+      "entry_orig": 0.023262,
+      "tp1_orig": 0.02388,
+      "tp2_orig": 0.024498,
+      "sl_orig": 0.022767,
+      "strength": 52,
+      "taken_at": "2026-03-22T15:22:51.011082",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.00025)",
+        "Цена > EMA20 > EMA50",
+        "Объём x2.3 🔥",
+        "Стакан: давление покупки (+0.22)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +1.1% + цена ↑",
+        "⚠️ Funding через 38м",
+        "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
+    {
       "id": 850,
       "symbol": "BEATUSDT",
       "direction": "LONG",
@@ -933,6 +958,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "GUNUSDT",
+      "direction": "LONG",
+      "entry": 0.022634,
+      "tp1": 0.02316,
+      "tp2": 0.023686,
+      "sl": 0.022181,
+      "strength": 51,
+      "status": "TP1",
+      "pnl_pct": 2.77,
+      "close_price": 0.023262,
+      "taken_at": "2026-03-22T15:11:57.162826",
+      "closed_at": "2026-03-22 15:22:29"
+    },
     {
       "symbol": "JCTUSDT",
       "direction": "LONG",
@@ -3718,20 +3757,6 @@
       "close_price": 4512.155,
       "taken_at": "2026-03-20T14:30:43.109663",
       "closed_at": "2026-03-20 22:30:58"
-    },
-    {
-      "symbol": "EDGEUSDT",
-      "direction": "LONG",
-      "entry": 0.7446,
-      "tp1": 0.765246,
-      "tp2": 0.785893,
-      "sl": 0.728083,
-      "strength": 64,
-      "status": "SL",
-      "pnl_pct": -2.28,
-      "close_price": 0.7276,
-      "taken_at": "2026-03-20T22:24:20.463294",
-      "closed_at": "2026-03-20 22:29:40"
     }
   ]
 }
