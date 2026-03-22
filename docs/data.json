@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-22T11:08:39.117889+00:00",
+  "updated_at": "2026-03-22T11:09:24.507435+00:00",
   "publish_status": {
-    "last_ok": "2026-03-22T11:07:39Z",
+    "last_ok": "2026-03-22T11:08:45Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 57.7
   },
   "trade_stats": {
-    "open": 16,
+    "open": 15,
     "pending": 0,
     "wins": 369,
-    "losses": 380,
-    "total_pnl": 52.94,
-    "winrate": 49.3
+    "losses": 381,
+    "total_pnl": 50.71,
+    "winrate": 49.2
   },
   "fear_greed": {
     "value": 10,
@@ -908,31 +908,6 @@
       ]
     },
     {
-      "id": 841,
-      "symbol": "LABUSDT",
-      "direction": "LONG",
-      "exchange": "bybit",
-      "entry": 0.23198,
-      "tp1": 0.237972,
-      "tp2": 0.243965,
-      "sl": 0.227186,
-      "entry_orig": 0.23198,
-      "tp1_orig": 0.237972,
-      "tp2_orig": 0.243965,
-      "sl_orig": 0.227186,
-      "strength": 51,
-      "taken_at": "2026-03-22T09:59:38.667857",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00060)",
-        "Цена > EMA20 > EMA50",
-        "Объём x2.0 🔥",
-        "Стакан: сильное давление покупки (+0.51)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 842,
       "symbol": "STRKUSDT",
       "direction": "LONG",
@@ -1144,6 +1119,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "LABUSDT",
+      "direction": "LONG",
+      "entry": 0.23198,
+      "tp1": 0.237972,
+      "tp2": 0.243965,
+      "sl": 0.227186,
+      "strength": 51,
+      "status": "SL",
+      "pnl_pct": -2.23,
+      "close_price": 0.22681,
+      "taken_at": "2026-03-22T09:59:38.667857",
+      "closed_at": "2026-03-22 11:09:24"
+    },
     {
       "symbol": "ANIMEUSDT",
       "direction": "LONG",
@@ -3929,20 +3918,6 @@
       "close_price": 0.08365,
       "taken_at": "2026-03-20T11:26:22.029437",
       "closed_at": "2026-03-20 19:26:32"
-    },
-    {
-      "symbol": "DOTUSDT",
-      "direction": "LONG",
-      "entry": 1.531,
-      "tp1": 1.56162,
-      "tp2": 1.59224,
-      "sl": 1.50038,
-      "strength": 52,
-      "status": "SL",
-      "pnl_pct": -2.06,
-      "close_price": 1.4995,
-      "taken_at": "2026-03-20T11:29:54.216316",
-      "closed_at": "2026-03-20 19:11:22"
     }
   ]
 }
