@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-22T00:04:21.366844+00:00",
+  "updated_at": "2026-03-22T00:05:00.920416+00:00",
   "publish_status": {
-    "last_ok": "2026-03-22T00:02:57Z",
+    "last_ok": "2026-03-22T00:04:28Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,18 +10,18 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 905,
+    "total": 906,
     "wins": 290,
     "losses": 216,
-    "active": 7,
+    "active": 8,
     "winrate": 57.3
   },
   "trade_stats": {
     "open": 10,
     "pending": 0,
     "wins": 344,
-    "losses": 362,
-    "total_pnl": 9.89,
+    "losses": 363,
+    "total_pnl": 7.58,
     "winrate": 48.7
   },
   "fear_greed": {
@@ -197,6 +197,29 @@
       ],
       "news": null,
       "created_at": "2026-03-22 00:03:09",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 944,
+      "symbol": "CELOUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.08068,
+      "tp1": 0.082294,
+      "tp2": 0.083907,
+      "sl": 0.079066,
+      "strength": 55,
+      "reasons": [
+        "RSI=9 (сильная перепроданность)",
+        "BB нижняя полоса (пробой)",
+        "Объём x5.3 🔥🔥🔥",
+        "Стакан: давление покупки (+0.24)",
+        "МТФ: 1h, 4h согласны",
+        "OI падает (шорты закрываются)",
+        "⚡ Рыночный вход (MTF 2+ ТФ)"
+      ],
+      "news": null,
+      "created_at": "2026-03-22 00:05:00",
       "status": "ACTIVE"
     }
   ],
@@ -788,31 +811,6 @@
       ]
     },
     {
-      "id": 795,
-      "symbol": "FLOCKUSDT",
-      "direction": "LONG",
-      "exchange": "bybit",
-      "entry": 0.06006,
-      "tp1": 0.061261,
-      "tp2": 0.062462,
-      "sl": 0.058859,
-      "entry_orig": 0.06006,
-      "tp1_orig": 0.061261,
-      "tp2_orig": 0.062462,
-      "sl_orig": 0.058859,
-      "strength": 52,
-      "taken_at": "2026-03-22T00:03:09.628019",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=33 (перепроданность)",
-        "BB нижняя зона (9%)",
-        "Объём x8.4 🔥🔥🔥",
-        "Стакан: сильное давление покупки (+0.34)",
-        "МТФ: 1h, 4h согласны",
-        "⚡ Рыночный вход (MTF 2+ ТФ)"
-      ]
-    },
-    {
       "id": 796,
       "symbol": "ORDERUSDT",
       "direction": "LONG",
@@ -863,9 +861,49 @@
         "Цена у поддержки 0.1932",
         "⚡ Рыночный вход (MTF 2+ ТФ)"
       ]
+    },
+    {
+      "id": 798,
+      "symbol": "CELOUSDT",
+      "direction": "LONG",
+      "exchange": "bybit",
+      "entry": 0.08068,
+      "tp1": 0.082294,
+      "tp2": 0.083907,
+      "sl": 0.079066,
+      "entry_orig": 0.08068,
+      "tp1_orig": 0.082294,
+      "tp2_orig": 0.083907,
+      "sl_orig": 0.079066,
+      "strength": 55,
+      "taken_at": "2026-03-22T00:05:00.418445",
+      "status": "OPEN",
+      "reasons": [
+        "RSI=9 (сильная перепроданность)",
+        "BB нижняя полоса (пробой)",
+        "Объём x5.3 🔥🔥🔥",
+        "Стакан: давление покупки (+0.24)",
+        "МТФ: 1h, 4h согласны",
+        "OI падает (шорты закрываются)",
+        "⚡ Рыночный вход (MTF 2+ ТФ)"
+      ]
     }
   ],
   "trades_history": [
+    {
+      "symbol": "FLOCKUSDT",
+      "direction": "LONG",
+      "entry": 0.06006,
+      "tp1": 0.061261,
+      "tp2": 0.062462,
+      "sl": 0.058859,
+      "strength": 52,
+      "status": "SL",
+      "pnl_pct": -2.31,
+      "close_price": 0.05867,
+      "taken_at": "2026-03-22T00:03:09.628019",
+      "closed_at": "2026-03-22 00:04:47"
+    },
     {
       "symbol": "PTBUSDT",
       "direction": "LONG",
@@ -3651,20 +3689,6 @@
       "close_price": 0.009617,
       "taken_at": "2026-03-20T13:50:25.078317",
       "closed_at": "2026-03-20 13:54:56"
-    },
-    {
-      "symbol": "PIXELUSDT",
-      "direction": "LONG",
-      "entry": 0.009388,
-      "tp1": 0.00958,
-      "tp2": 0.009771,
-      "sl": 0.0096355,
-      "strength": 52,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 2.58,
-      "close_price": 0.0096305,
-      "taken_at": "2026-03-20T12:52:16.786041",
-      "closed_at": "2026-03-20 13:43:09"
     }
   ]
 }
