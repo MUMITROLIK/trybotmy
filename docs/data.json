@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-22T23:03:29.756075+00:00",
+  "updated_at": "2026-03-22T23:04:35.471305+00:00",
   "publish_status": {
-    "last_ok": "2026-03-22T23:02:29Z",
+    "last_ok": "2026-03-22T23:03:35Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -12,16 +12,16 @@
   "stats": {
     "total": 1037,
     "wins": 344,
-    "losses": 251,
-    "active": 35,
-    "winrate": 57.8
+    "losses": 252,
+    "active": 34,
+    "winrate": 57.7
   },
   "trade_stats": {
-    "open": 35,
+    "open": 34,
     "pending": 0,
     "wins": 402,
-    "losses": 411,
-    "total_pnl": 74.78,
+    "losses": 412,
+    "total_pnl": 72.57,
     "winrate": 49.4
   },
   "fear_greed": {
@@ -488,28 +488,6 @@
       "status": "ACTIVE"
     },
     {
-      "id": 1055,
-      "symbol": "FARTCOINUSDT",
-      "direction": "SHORT",
-      "exchange": "binance",
-      "entry": 0.1833,
-      "tp1": 0.179634,
-      "tp2": 0.175968,
-      "sl": 0.186966,
-      "strength": 52,
-      "reasons": [
-        "MACD медвежий (hist=-0.00028)",
-        "Цена < EMA20 < EMA50",
-        "Объём x4.4 🔥🔥🔥",
-        "МТФ: 5m, 15m, 1h согласны",
-        "OI растёт +1.8% + цена ↓",
-        "CVD отрицательный (+1.9%)"
-      ],
-      "news": null,
-      "created_at": "2026-03-22 21:12:36",
-      "status": "ACTIVE"
-    },
-    {
       "id": 1056,
       "symbol": "CRVUSDT",
       "direction": "LONG",
@@ -946,6 +924,25 @@
       ]
     },
     {
+      "symbol": "FARTCOINUSDT",
+      "direction": "SHORT",
+      "entry": 0.1833,
+      "tp1": 0.179634,
+      "tp2": 0.175968,
+      "sl": 0.186966,
+      "strength": 52,
+      "status": "SL",
+      "created_at": "2026-03-22 21:12:36",
+      "reasons": [
+        "MACD медвежий (hist=-0.00028)",
+        "Цена < EMA20 < EMA50",
+        "Объём x4.4 🔥🔥🔥",
+        "МТФ: 5m, 15m, 1h согласны",
+        "OI растёт +1.8% + цена ↓",
+        "CVD отрицательный (+1.9%)"
+      ]
+    },
+    {
       "symbol": "DASHUSDT",
       "direction": "SHORT",
       "entry": 31.45,
@@ -1192,26 +1189,6 @@
         "Объём x5.1 🔥🔥🔥",
         "МТФ: все 4 таймфрейма согласны ✅✅",
         "OI растёт +8.6% + цена ↑",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
-      "symbol": "KITEUSDT",
-      "direction": "LONG",
-      "entry": 0.21859,
-      "tp1": 0.222962,
-      "tp2": 0.227334,
-      "sl": 0.214218,
-      "strength": 51,
-      "status": "EXPIRED",
-      "created_at": "2026-03-22 16:22:53",
-      "reasons": [
-        "MACD бычий (hist=0.00053)",
-        "EMA20 > EMA50 (golden cross) 🌟",
-        "Стакан: сильное давление покупки (+0.39)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI падает (шорты закрываются)",
-        "CVD положительный (+4.8%)",
         "⚡ Рыночный вход (MTF сильный)"
       ]
     }
@@ -1728,31 +1705,6 @@
       ]
     },
     {
-      "id": 909,
-      "symbol": "FARTCOINUSDT",
-      "direction": "SHORT",
-      "exchange": "binance",
-      "entry": 0.1833,
-      "tp1": 0.179634,
-      "tp2": 0.175968,
-      "sl": 0.186966,
-      "entry_orig": 0.1833,
-      "tp1_orig": 0.179634,
-      "tp2_orig": 0.175968,
-      "sl_orig": 0.186966,
-      "strength": 52,
-      "taken_at": "2026-03-22T21:12:36.817397",
-      "status": "OPEN",
-      "reasons": [
-        "MACD медвежий (hist=-0.00028)",
-        "Цена < EMA20 < EMA50",
-        "Объём x4.4 🔥🔥🔥",
-        "МТФ: 5m, 15m, 1h согласны",
-        "OI растёт +1.8% + цена ↓",
-        "CVD отрицательный (+1.9%)"
-      ]
-    },
-    {
       "id": 910,
       "symbol": "CRVUSDT",
       "direction": "LONG",
@@ -2114,6 +2066,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "FARTCOINUSDT",
+      "direction": "SHORT",
+      "entry": 0.1833,
+      "tp1": 0.179634,
+      "tp2": 0.175968,
+      "sl": 0.186966,
+      "strength": 52,
+      "status": "SL",
+      "pnl_pct": -2.21,
+      "close_price": 0.18735000000000002,
+      "taken_at": "2026-03-22T21:12:36.817397",
+      "closed_at": "2026-03-22 23:03:45"
+    },
     {
       "symbol": "ZROUSDT",
       "direction": "SHORT",
@@ -4899,20 +4865,6 @@
       "close_price": 0.5863,
       "taken_at": "2026-03-21T09:21:31.250878",
       "closed_at": "2026-03-21 09:36:55"
-    },
-    {
-      "symbol": "BEATUSDT",
-      "direction": "LONG",
-      "entry": 0.6612,
-      "tp1": 0.687225,
-      "tp2": 0.71325,
-      "sl": 0.64038,
-      "strength": 50,
-      "status": "SL",
-      "pnl_pct": -3.74,
-      "close_price": 0.63645,
-      "taken_at": "2026-03-21T07:09:40.224419",
-      "closed_at": "2026-03-21 08:29:15"
     }
   ]
 }
