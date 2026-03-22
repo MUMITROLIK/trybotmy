@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-22T14:55:52.772374+00:00",
+  "updated_at": "2026-03-22T14:56:59.051408+00:00",
   "publish_status": {
-    "last_ok": "2026-03-22T14:54:52Z",
+    "last_ok": "2026-03-22T14:55:59Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 971,
+    "total": 972,
     "wins": 325,
     "losses": 239,
-    "active": 6,
+    "active": 7,
     "winrate": 57.6
   },
   "trade_stats": {
-    "open": 12,
+    "open": 13,
     "pending": 0,
     "wins": 380,
     "losses": 390,
@@ -173,6 +173,29 @@
       ],
       "news": null,
       "created_at": "2026-03-22 14:54:12",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1010,
+      "symbol": "JCTUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.0027179,
+      "tp1": 0.002781,
+      "tp2": 0.002843,
+      "sl": 0.002664,
+      "strength": 53,
+      "reasons": [
+        "MACD бычий (hist=0.00001)",
+        "Цена > EMA20 > EMA50",
+        "Объём x2.6 🔥🔥",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +1.4% + цена ↑",
+        "⚠️ Funding через 65м",
+        "⚡ Рыночный вход (MTF сильный)"
+      ],
+      "news": null,
+      "created_at": "2026-03-22 14:56:00",
       "status": "ACTIVE"
     }
   ],
@@ -865,6 +888,32 @@
         "МТФ: только 1 таймфрейм согласен",
         "OI растёт +1.0%",
         "⚠️ Funding через 67м"
+      ]
+    },
+    {
+      "id": 864,
+      "symbol": "JCTUSDT",
+      "direction": "LONG",
+      "exchange": "bybit",
+      "entry": 0.0027179,
+      "tp1": 0.002781,
+      "tp2": 0.002843,
+      "sl": 0.002664,
+      "entry_orig": 0.0027179,
+      "tp1_orig": 0.002781,
+      "tp2_orig": 0.002843,
+      "sl_orig": 0.002664,
+      "strength": 53,
+      "taken_at": "2026-03-22T14:56:01.198275",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.00001)",
+        "Цена > EMA20 > EMA50",
+        "Объём x2.6 🔥🔥",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +1.4% + цена ↑",
+        "⚠️ Funding через 65м",
+        "⚡ Рыночный вход (MTF сильный)"
       ]
     },
     {
