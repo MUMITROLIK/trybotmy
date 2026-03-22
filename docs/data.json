@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-22T12:30:27.126094+00:00",
+  "updated_at": "2026-03-22T12:31:47.525859+00:00",
   "publish_status": {
-    "last_ok": "2026-03-22T12:29:43Z",
+    "last_ok": "2026-03-22T12:30:33Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,11 +17,11 @@
     "winrate": 57.4
   },
   "trade_stats": {
-    "open": 13,
+    "open": 12,
     "pending": 0,
-    "wins": 372,
+    "wins": 373,
     "losses": 386,
-    "total_pnl": 43.72,
+    "total_pnl": 47.89,
     "winrate": 49.1
   },
   "fear_greed": {
@@ -865,32 +865,6 @@
       ]
     },
     {
-      "id": 845,
-      "symbol": "TURBOUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.0010769,
-      "tp1": 0.001098,
-      "tp2": 0.00112,
-      "sl": 0.0010769,
-      "entry_orig": 0.0010769,
-      "tp1_orig": 0.001098,
-      "tp2_orig": 0.00112,
-      "sl_orig": 0.001055,
-      "strength": 52,
-      "taken_at": "2026-03-22T11:02:38.692102",
-      "status": "TP1_HIT",
-      "reasons": [
-        "RSI=42 (нейтральный↓)",
-        "MACD бычий (hist=0.00000)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: сильное давление покупки (+0.25)",
-        "МТФ: 5m, 15m, 1h согласны",
-        "CVD положительный (-0.4%)",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 850,
       "symbol": "BEATUSDT",
       "direction": "LONG",
@@ -946,6 +920,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "TURBOUSDT",
+      "direction": "LONG",
+      "entry": 0.0010769,
+      "tp1": 0.001098,
+      "tp2": 0.00112,
+      "sl": 0.0010769,
+      "strength": 52,
+      "status": "TP2",
+      "pnl_pct": 4.17,
+      "close_price": 0.00112185,
+      "taken_at": "2026-03-22T11:02:38.692102",
+      "closed_at": "2026-03-22 12:30:48"
+    },
     {
       "symbol": "1000TURBOUSDT",
       "direction": "LONG",
@@ -3731,20 +3719,6 @@
       "close_price": 0.056495000000000004,
       "taken_at": "2026-03-20T16:01:03.921250",
       "closed_at": "2026-03-20 21:14:10"
-    },
-    {
-      "symbol": "PTBUSDT",
-      "direction": "LONG",
-      "entry": 0.0013985,
-      "tp1": 0.001426,
-      "tp2": 0.001454,
-      "sl": 0.001429,
-      "strength": 52,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 2.18,
-      "close_price": 0.001429,
-      "taken_at": "2026-03-20T19:05:47.920643",
-      "closed_at": "2026-03-20 20:56:00"
     }
   ]
 }
