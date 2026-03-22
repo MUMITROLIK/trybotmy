@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-22T07:09:01.466325+00:00",
+  "updated_at": "2026-03-22T07:10:07.804174+00:00",
   "publish_status": {
-    "last_ok": "2026-03-22T07:07:37Z",
+    "last_ok": "2026-03-22T07:09:07Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 929,
+    "total": 931,
     "wins": 305,
     "losses": 223,
-    "active": 5,
+    "active": 7,
     "winrate": 57.8
   },
   "trade_stats": {
-    "open": 13,
+    "open": 15,
     "pending": 0,
     "wins": 356,
     "losses": 371,
@@ -156,6 +156,53 @@
       ],
       "news": null,
       "created_at": "2026-03-22 07:05:53",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 968,
+      "symbol": "LIGHTUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.2543,
+      "tp1": 0.259386,
+      "tp2": 0.264472,
+      "sl": 0.249214,
+      "strength": 52,
+      "reasons": [
+        "MACD бычий (hist=0.00151)",
+        "Цена > EMA20 > EMA50",
+        "Объём x2.4 🔥",
+        "Стакан: давление покупки (+0.13)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +1.1% + цена ↑",
+        "⚠️ Funding через 52м",
+        "⚡ Рыночный вход (MTF сильный)"
+      ],
+      "news": null,
+      "created_at": "2026-03-22 07:09:18",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 969,
+      "symbol": "BANANAS31USDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.011463,
+      "tp1": 0.011878,
+      "tp2": 0.012294,
+      "sl": 0.011131,
+      "strength": 53,
+      "reasons": [
+        "MACD бычий (hist=0.00020)",
+        "Цена > EMA20 > EMA50",
+        "Объём x5.9 🔥🔥🔥",
+        "МТФ: 5m, 15m, 1h согласны",
+        "OI растёт +0.8% + цена ↑",
+        "⚠️ Funding через 52м",
+        "⚡ Рыночный вход (MTF сильный)"
+      ],
+      "news": null,
+      "created_at": "2026-03-22 07:09:18",
       "status": "ACTIVE"
     }
   ],
@@ -779,6 +826,59 @@
         "МТФ: 5m, 15m, 4h согласны",
         "CVD растёт (+13.1%) — покупки усиливаются 📈",
         "⚠️ Funding через 55м",
+        "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
+    {
+      "id": 822,
+      "symbol": "LIGHTUSDT",
+      "direction": "LONG",
+      "exchange": "bybit",
+      "entry": 0.2543,
+      "tp1": 0.259386,
+      "tp2": 0.264472,
+      "sl": 0.249214,
+      "entry_orig": 0.2543,
+      "tp1_orig": 0.259386,
+      "tp2_orig": 0.264472,
+      "sl_orig": 0.249214,
+      "strength": 52,
+      "taken_at": "2026-03-22T07:09:18.926263",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.00151)",
+        "Цена > EMA20 > EMA50",
+        "Объём x2.4 🔥",
+        "Стакан: давление покупки (+0.13)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +1.1% + цена ↑",
+        "⚠️ Funding через 52м",
+        "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
+    {
+      "id": 823,
+      "symbol": "BANANAS31USDT",
+      "direction": "LONG",
+      "exchange": "bybit",
+      "entry": 0.011463,
+      "tp1": 0.011878,
+      "tp2": 0.012294,
+      "sl": 0.011131,
+      "entry_orig": 0.011463,
+      "tp1_orig": 0.011878,
+      "tp2_orig": 0.012294,
+      "sl_orig": 0.011131,
+      "strength": 53,
+      "taken_at": "2026-03-22T07:09:19.106515",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.00020)",
+        "Цена > EMA20 > EMA50",
+        "Объём x5.9 🔥🔥🔥",
+        "МТФ: 5m, 15m, 1h согласны",
+        "OI растёт +0.8% + цена ↑",
+        "⚠️ Funding через 52м",
         "⚡ Рыночный вход (MTF сильный)"
       ]
     },
