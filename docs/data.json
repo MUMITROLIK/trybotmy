@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-22T00:17:03.299927+00:00",
+  "updated_at": "2026-03-22T00:18:34.838433+00:00",
   "publish_status": {
-    "last_ok": "2026-03-22T00:16:30Z",
+    "last_ok": "2026-03-22T00:17:09Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -25,7 +25,7 @@
     "winrate": 48.8
   },
   "fear_greed": {
-    "value": 12,
+    "value": 10,
     "label": "Extreme Fear",
     "emoji": "😱"
   },
