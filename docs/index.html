@@ -1652,7 +1652,10 @@ async function fetchMLStats(){
   try{
     var r=await fetch('/api/ml-stats');if(!r.ok)return;var d=await r.json();
     var el=document.getElementById('mClean2');
-    if(el&&d.clean2!=null)el.textContent=d.clean2+' / '+d.goal+' · WR '+d.winrate_clean2+'%';
+    if(el&&d.clean_new!=null){
+      var untilR = d.until_retrain != null ? d.until_retrain : '?';
+      el.textContent = d.clean_new + ' / ' + d.goal + ' · WR ' + d.winrate_clean_new + '% · обуч: ' + untilR;
+    }
   }catch(e){}
 }
 
