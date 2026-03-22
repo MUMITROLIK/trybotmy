@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-22T08:20:23.181603+00:00",
+  "updated_at": "2026-03-22T08:21:08.078155+00:00",
   "publish_status": {
-    "last_ok": "2026-03-22T08:19:23Z",
+    "last_ok": "2026-03-22T08:20:29Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 938,
+    "total": 939,
     "wins": 307,
     "losses": 226,
-    "active": 9,
+    "active": 10,
     "winrate": 57.6
   },
   "trade_stats": {
-    "open": 12,
+    "open": 13,
     "pending": 0,
     "wins": 362,
     "losses": 375,
@@ -248,6 +248,28 @@
       ],
       "news": null,
       "created_at": "2026-03-22 08:14:03",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 977,
+      "symbol": "BTRUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.17757,
+      "tp1": 0.181849,
+      "tp2": 0.186129,
+      "sl": 0.174019,
+      "strength": 50,
+      "reasons": [
+        "MACD бычий (hist=0.00233)",
+        "Цена > EMA20 > EMA50",
+        "Объём x2.0 🔥",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "CVD растёт (+16.4%) — покупки усиливаются 📈",
+        "⚡ Рыночный вход (MTF сильный)"
+      ],
+      "news": null,
+      "created_at": "2026-03-22 08:21:05",
       "status": "ACTIVE"
     }
   ],
@@ -924,6 +946,31 @@
         "МТФ: 15m, 1h, 4h согласны",
         "OI растёт +3.3% + цена ↑",
         "Цена у поддержки 271.5100",
+        "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
+    {
+      "id": 831,
+      "symbol": "BTRUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.17757,
+      "tp1": 0.181849,
+      "tp2": 0.186129,
+      "sl": 0.174019,
+      "entry_orig": 0.17757,
+      "tp1_orig": 0.181849,
+      "tp2_orig": 0.186129,
+      "sl_orig": 0.174019,
+      "strength": 50,
+      "taken_at": "2026-03-22T08:21:06.246969",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.00233)",
+        "Цена > EMA20 > EMA50",
+        "Объём x2.0 🔥",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "CVD растёт (+16.4%) — покупки усиливаются 📈",
         "⚡ Рыночный вход (MTF сильный)"
       ]
     },
