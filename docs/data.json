@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-22T12:35:04.722591+00:00",
+  "updated_at": "2026-03-22T12:35:42.437654+00:00",
   "publish_status": {
-    "last_ok": "2026-03-22T12:33:58Z",
+    "last_ok": "2026-03-22T12:35:11Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 960,
+    "total": 961,
     "wins": 318,
     "losses": 236,
-    "active": 7,
+    "active": 8,
     "winrate": 57.4
   },
   "trade_stats": {
-    "open": 12,
+    "open": 13,
     "pending": 0,
     "wins": 373,
     "losses": 386,
@@ -194,6 +194,29 @@
       ],
       "news": null,
       "created_at": "2026-03-22 11:51:42",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 999,
+      "symbol": "TURBOUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.0011224,
+      "tp1": 0.001145,
+      "tp2": 0.001167,
+      "sl": 0.0011,
+      "strength": 50,
+      "reasons": [
+        "MACD бычий (hist=0.00001)",
+        "Цена > EMA20 > EMA50",
+        "Стакан: сильное давление покупки (+0.35)",
+        "МТФ: 5m, 15m, 1h согласны",
+        "OI растёт +1.4% + цена ↑",
+        "CVD положительный (-0.5%)",
+        "⚡ Рыночный вход (MTF сильный)"
+      ],
+      "news": null,
+      "created_at": "2026-03-22 12:35:37",
       "status": "ACTIVE"
     }
   ],
@@ -833,6 +856,32 @@
         "МТФ: 15m, 1h, 4h согласны",
         "CVD растёт (+5.3%) — покупки усиливаются 📈",
         "Doji (1h) — нерешительность",
+        "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
+    {
+      "id": 853,
+      "symbol": "TURBOUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.0011224,
+      "tp1": 0.001145,
+      "tp2": 0.001167,
+      "sl": 0.0011,
+      "entry_orig": 0.0011224,
+      "tp1_orig": 0.001145,
+      "tp2_orig": 0.001167,
+      "sl_orig": 0.0011,
+      "strength": 50,
+      "taken_at": "2026-03-22T12:35:39.812966",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.00001)",
+        "Цена > EMA20 > EMA50",
+        "Стакан: сильное давление покупки (+0.35)",
+        "МТФ: 5m, 15m, 1h согласны",
+        "OI растёт +1.4% + цена ↑",
+        "CVD положительный (-0.5%)",
         "⚡ Рыночный вход (MTF сильный)"
       ]
     },
