@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-22T07:05:36.067689+00:00",
+  "updated_at": "2026-03-22T07:06:42.098404+00:00",
   "publish_status": {
-    "last_ok": "2026-03-22T07:04:15Z",
+    "last_ok": "2026-03-22T07:05:42Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 928,
+    "total": 929,
     "wins": 305,
     "losses": 223,
-    "active": 4,
+    "active": 5,
     "winrate": 57.8
   },
   "trade_stats": {
-    "open": 12,
+    "open": 13,
     "pending": 0,
     "wins": 356,
     "losses": 371,
@@ -133,6 +133,29 @@
       ],
       "news": null,
       "created_at": "2026-03-22 07:00:43",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 967,
+      "symbol": "BRUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.07307,
+      "tp1": 0.075748,
+      "tp2": 0.078425,
+      "sl": 0.070928,
+      "strength": 52,
+      "reasons": [
+        "MACD бычий (hist=0.00041)",
+        "Цена > EMA20 > EMA50",
+        "Объём x3.3 🔥🔥",
+        "МТФ: 5m, 15m, 4h согласны",
+        "CVD растёт (+13.1%) — покупки усиливаются 📈",
+        "⚠️ Funding через 55м",
+        "⚡ Рыночный вход (MTF сильный)"
+      ],
+      "news": null,
+      "created_at": "2026-03-22 07:05:53",
       "status": "ACTIVE"
     }
   ],
@@ -730,6 +753,32 @@
         "МТФ: все 4 таймфрейма согласны ✅✅",
         "CVD растёт (+9.0%) — покупки усиливаются 📈",
         "⚠️ Funding через 60м",
+        "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
+    {
+      "id": 821,
+      "symbol": "BRUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.07307,
+      "tp1": 0.075748,
+      "tp2": 0.078425,
+      "sl": 0.070928,
+      "entry_orig": 0.07307,
+      "tp1_orig": 0.075748,
+      "tp2_orig": 0.078425,
+      "sl_orig": 0.070928,
+      "strength": 52,
+      "taken_at": "2026-03-22T07:05:54.044814",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.00041)",
+        "Цена > EMA20 > EMA50",
+        "Объём x3.3 🔥🔥",
+        "МТФ: 5m, 15m, 4h согласны",
+        "CVD растёт (+13.1%) — покупки усиливаются 📈",
+        "⚠️ Funding через 55м",
         "⚡ Рыночный вход (MTF сильный)"
       ]
     },
