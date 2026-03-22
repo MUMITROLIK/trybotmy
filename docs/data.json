@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-22T22:51:29.827185+00:00",
+  "updated_at": "2026-03-22T22:52:19.960072+00:00",
   "publish_status": {
-    "last_ok": "2026-03-22T22:50:29Z",
+    "last_ok": "2026-03-22T22:51:35Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 57.9
   },
   "trade_stats": {
-    "open": 38,
+    "open": 37,
     "pending": 0,
     "wins": 401,
-    "losses": 409,
-    "total_pnl": 76.43,
-    "winrate": 49.5
+    "losses": 410,
+    "total_pnl": 74.38,
+    "winrate": 49.4
   },
   "fear_greed": {
     "value": 10,
@@ -1438,30 +1438,6 @@
       ]
     },
     {
-      "id": 893,
-      "symbol": "WIFUSDT",
-      "direction": "SHORT",
-      "exchange": "binance",
-      "entry": 0.1683,
-      "tp1": 0.164934,
-      "tp2": 0.161568,
-      "sl": 0.171666,
-      "entry_orig": 0.1683,
-      "tp1_orig": 0.164934,
-      "tp2_orig": 0.161568,
-      "sl_orig": 0.171666,
-      "strength": 51,
-      "taken_at": "2026-03-22T21:06:15.656685",
-      "status": "OPEN",
-      "reasons": [
-        "MACD медвежий (hist=-0.00033)",
-        "Цена < EMA20 < EMA50",
-        "Объём x6.3 🔥🔥🔥",
-        "МТФ: 5m, 15m, 1h согласны",
-        "CVD падает (-10.4%) — продажи усиливаются 📉"
-      ]
-    },
-    {
       "id": 894,
       "symbol": "PENGUUSDT",
       "direction": "SHORT",
@@ -2255,6 +2231,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "WIFUSDT",
+      "direction": "SHORT",
+      "entry": 0.1683,
+      "tp1": 0.164934,
+      "tp2": 0.161568,
+      "sl": 0.171666,
+      "strength": 51,
+      "status": "SL",
+      "pnl_pct": -2.05,
+      "close_price": 0.17175,
+      "taken_at": "2026-03-22T21:06:15.656685",
+      "closed_at": "2026-03-22 22:52:19"
+    },
     {
       "symbol": "HUMAUSDT",
       "direction": "SHORT",
@@ -5040,20 +5030,6 @@
       "close_price": 0.0074325,
       "taken_at": "2026-03-21T07:13:06.908837",
       "closed_at": "2026-03-21 08:00:19"
-    },
-    {
-      "symbol": "ETHFIUSDT",
-      "direction": "LONG",
-      "entry": 0.6145,
-      "tp1": 0.629339,
-      "tp2": 0.644179,
-      "sl": 0.60221,
-      "strength": 53,
-      "status": "SL",
-      "pnl_pct": -2.14,
-      "close_price": 0.60135,
-      "taken_at": "2026-03-21T07:14:53.741971",
-      "closed_at": "2026-03-21 07:50:27"
     }
   ]
 }
