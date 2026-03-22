@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-22T15:39:35.864090+00:00",
+  "updated_at": "2026-03-22T15:40:10.814350+00:00",
   "publish_status": {
-    "last_ok": "2026-03-22T15:38:22Z",
+    "last_ok": "2026-03-22T15:39:42Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 57.8
   },
   "trade_stats": {
-    "open": 13,
+    "open": 12,
     "pending": 0,
-    "wins": 384,
+    "wins": 385,
     "losses": 391,
-    "total_pnl": 62.67,
-    "winrate": 49.5
+    "total_pnl": 66.5,
+    "winrate": 49.6
   },
   "fear_greed": {
     "value": 10,
@@ -799,33 +799,6 @@
       ]
     },
     {
-      "id": 865,
-      "symbol": "EDGEUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.7319,
-      "tp1": 0.759875,
-      "tp2": 0.78785,
-      "sl": 0.70952,
-      "entry_orig": 0.7319,
-      "tp1_orig": 0.759875,
-      "tp2_orig": 0.78785,
-      "sl_orig": 0.70952,
-      "strength": 55,
-      "taken_at": "2026-03-22T15:08:20.263269",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00045)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: давление покупки (+0.18)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "CVD растёт (+9.2%) — покупки усиливаются 📈",
-        "Bullish Engulfing (1h) 🕯️",
-        "⚠️ Funding через 52м",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 867,
       "symbol": "SIGNUSDT",
       "direction": "LONG",
@@ -909,6 +882,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "EDGEUSDT",
+      "direction": "LONG",
+      "entry": 0.7319,
+      "tp1": 0.759875,
+      "tp2": 0.78785,
+      "sl": 0.70952,
+      "strength": 55,
+      "status": "TP1",
+      "pnl_pct": 3.83,
+      "close_price": 0.75995,
+      "taken_at": "2026-03-22T15:08:20.263269",
+      "closed_at": "2026-03-22 15:40:10"
+    },
     {
       "symbol": "JCTUSDT",
       "direction": "LONG",
@@ -3694,20 +3681,6 @@
       "close_price": 0.0014635,
       "taken_at": "2026-03-20T20:57:34.242055",
       "closed_at": "2026-03-20 23:39:58"
-    },
-    {
-      "symbol": "JTOUSDT",
-      "direction": "LONG",
-      "entry": 0.3001,
-      "tp1": 0.306102,
-      "tp2": 0.312104,
-      "sl": 0.3062,
-      "strength": 50,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 2.03,
-      "close_price": 0.3062,
-      "taken_at": "2026-03-20T17:21:17.178653",
-      "closed_at": "2026-03-20 22:51:13"
     }
   ]
 }
