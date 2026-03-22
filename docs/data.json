@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-22T15:40:42.219162+00:00",
+  "updated_at": "2026-03-22T15:41:18.040152+00:00",
   "publish_status": {
-    "last_ok": "2026-03-22T15:40:17Z",
+    "last_ok": "2026-03-22T15:40:48Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -12,17 +12,17 @@
   "stats": {
     "total": 977,
     "wins": 330,
-    "losses": 240,
-    "active": 4,
-    "winrate": 57.9
+    "losses": 241,
+    "active": 3,
+    "winrate": 57.8
   },
   "trade_stats": {
-    "open": 12,
+    "open": 11,
     "pending": 0,
     "wins": 385,
-    "losses": 391,
-    "total_pnl": 66.5,
-    "winrate": 49.6
+    "losses": 392,
+    "total_pnl": 64.13,
+    "winrate": 49.5
   },
   "fear_greed": {
     "value": 10,
@@ -108,17 +108,19 @@
       "news": null,
       "created_at": "2026-03-22 15:13:45",
       "status": "ACTIVE"
-    },
+    }
+  ],
+  "history": [
     {
-      "id": 1015,
       "symbol": "GUNUSDT",
       "direction": "LONG",
-      "exchange": "binance",
       "entry": 0.023262,
       "tp1": 0.02388,
       "tp2": 0.024498,
       "sl": 0.022767,
       "strength": 52,
+      "status": "SL",
+      "created_at": "2026-03-22 15:22:50",
       "reasons": [
         "MACD бычий (hist=0.00025)",
         "Цена > EMA20 > EMA50",
@@ -128,13 +130,8 @@
         "OI растёт +1.1% + цена ↑",
         "⚠️ Funding через 38м",
         "⚡ Рыночный вход (MTF сильный)"
-      ],
-      "news": null,
-      "created_at": "2026-03-22 15:22:50",
-      "status": "ACTIVE"
-    }
-  ],
-  "history": [
+      ]
+    },
     {
       "symbol": "JCTUSDT",
       "direction": "LONG",
@@ -513,26 +510,6 @@
         "OI растёт +1.3% + цена ↑",
         "⚡ Рыночный вход (MTF сильный)"
       ]
-    },
-    {
-      "symbol": "ZECUSDT",
-      "direction": "LONG",
-      "entry": 217.08,
-      "tp1": 221.4216,
-      "tp2": 225.7632,
-      "sl": 212.7384,
-      "strength": 51,
-      "status": "EXPIRED",
-      "created_at": "2026-03-22 11:06:05",
-      "reasons": [
-        "RSI=37 (перепроданность)",
-        "MACD бычий (hist=0.00084)",
-        "BB нижняя полоса (пробой)",
-        "Объём x2.1 🔥",
-        "CVD положительный (-0.6%)",
-        "Hammer (1h) 🔨",
-        "Цена у поддержки 216.0200"
-      ]
     }
   ],
   "trades_open": [
@@ -804,33 +781,6 @@
       ]
     },
     {
-      "id": 869,
-      "symbol": "GUNUSDT",
-      "direction": "LONG",
-      "exchange": "bybit",
-      "entry": 0.023262,
-      "tp1": 0.02388,
-      "tp2": 0.024498,
-      "sl": 0.022767,
-      "entry_orig": 0.023262,
-      "tp1_orig": 0.02388,
-      "tp2_orig": 0.024498,
-      "sl_orig": 0.022767,
-      "strength": 52,
-      "taken_at": "2026-03-22T15:22:51.011082",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00025)",
-        "Цена > EMA20 > EMA50",
-        "Объём x2.3 🔥",
-        "Стакан: давление покупки (+0.22)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +1.1% + цена ↑",
-        "⚠️ Funding через 38м",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 850,
       "symbol": "BEATUSDT",
       "direction": "LONG",
@@ -859,6 +809,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "GUNUSDT",
+      "direction": "LONG",
+      "entry": 0.023262,
+      "tp1": 0.02388,
+      "tp2": 0.024498,
+      "sl": 0.022767,
+      "strength": 52,
+      "status": "SL",
+      "pnl_pct": -2.37,
+      "close_price": 0.022711,
+      "taken_at": "2026-03-22T15:22:51.011082",
+      "closed_at": "2026-03-22 15:41:17"
+    },
     {
       "symbol": "EDGEUSDT",
       "direction": "LONG",
@@ -3644,20 +3608,6 @@
       "close_price": 0.31233,
       "taken_at": "2026-03-20T21:55:50.177698",
       "closed_at": "2026-03-20 23:42:54"
-    },
-    {
-      "symbol": "PTBUSDT",
-      "direction": "LONG",
-      "entry": 0.001428,
-      "tp1": 0.001457,
-      "tp2": 0.001485,
-      "sl": 0.0014635,
-      "strength": 52,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 2.49,
-      "close_price": 0.0014635,
-      "taken_at": "2026-03-20T20:57:34.242055",
-      "closed_at": "2026-03-20 23:39:58"
     }
   ]
 }
