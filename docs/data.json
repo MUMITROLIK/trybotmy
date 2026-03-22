@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-22T15:46:51.029372+00:00",
+  "updated_at": "2026-03-22T15:47:23.111118+00:00",
   "publish_status": {
-    "last_ok": "2026-03-22T15:46:23Z",
+    "last_ok": "2026-03-22T15:46:57Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
