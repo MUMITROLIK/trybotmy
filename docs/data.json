@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-22T13:03:47.398093+00:00",
+  "updated_at": "2026-03-22T13:04:37.810246+00:00",
   "publish_status": {
-    "last_ok": null,
+    "last_ok": "2026-03-22T13:03:55Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 964,
+    "total": 965,
     "wins": 319,
     "losses": 236,
-    "active": 9,
+    "active": 10,
     "winrate": 57.5
   },
   "trade_stats": {
-    "open": 15,
+    "open": 16,
     "pending": 0,
     "wins": 374,
     "losses": 386,
@@ -240,6 +240,29 @@
       ],
       "news": null,
       "created_at": "2026-03-22 12:58:55",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1003,
+      "symbol": "DUSKUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.10123,
+      "tp1": 0.1048,
+      "tp2": 0.10837,
+      "sl": 0.098374,
+      "strength": 50,
+      "reasons": [
+        "MACD бычий (hist=0.00047)",
+        "Цена > EMA20 > EMA50",
+        "Стакан: давление покупки (+0.16)",
+        "МТФ: 5m, 15m, 1h согласны",
+        "OI растёт +23.9% + цена ↑",
+        "CVD растёт (+5.4%) — покупки усиливаются 📈",
+        "⚡ Рыночный вход (MTF сильный)"
+      ],
+      "news": null,
+      "created_at": "2026-03-22 13:04:31",
       "status": "ACTIVE"
     }
   ],
@@ -958,6 +981,32 @@
         "Стакан: давление покупки (+0.20)",
         "МТФ: 5m, 1h, 4h согласны",
         "OI растёт +1.2% + цена ↑",
+        "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
+    {
+      "id": 857,
+      "symbol": "DUSKUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.10123,
+      "tp1": 0.1048,
+      "tp2": 0.10837,
+      "sl": 0.098374,
+      "entry_orig": 0.10123,
+      "tp1_orig": 0.1048,
+      "tp2_orig": 0.10837,
+      "sl_orig": 0.098374,
+      "strength": 50,
+      "taken_at": "2026-03-22T13:04:34.227194",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.00047)",
+        "Цена > EMA20 > EMA50",
+        "Стакан: давление покупки (+0.16)",
+        "МТФ: 5m, 15m, 1h согласны",
+        "OI растёт +23.9% + цена ↑",
+        "CVD растёт (+5.4%) — покупки усиливаются 📈",
         "⚡ Рыночный вход (MTF сильный)"
       ]
     },
