@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-22T22:59:58.481092+00:00",
+  "updated_at": "2026-03-22T23:01:18.297591+00:00",
   "publish_status": {
-    "last_ok": "2026-03-22T22:59:14Z",
+    "last_ok": "2026-03-22T23:00:04Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -11,10 +11,10 @@
   },
   "stats": {
     "total": 1037,
-    "wins": 343,
+    "wins": 344,
     "losses": 251,
-    "active": 36,
-    "winrate": 57.7
+    "active": 35,
+    "winrate": 57.8
   },
   "trade_stats": {
     "open": 36,
@@ -826,17 +826,19 @@
       "news": null,
       "created_at": "2026-03-22 22:22:20",
       "status": "ACTIVE"
-    },
+    }
+  ],
+  "history": [
     {
-      "id": 1075,
       "symbol": "BTRUSDT",
       "direction": "LONG",
-      "exchange": "binance",
       "entry": 0.18641,
       "tp1": 0.190881,
       "tp2": 0.195352,
       "sl": 0.182682,
       "strength": 57,
+      "status": "TP1",
+      "created_at": "2026-03-22 22:30:17",
       "reasons": [
         "MACD бычий (hist=0.00055)",
         "Цена > EMA20 > EMA50",
@@ -845,13 +847,8 @@
         "OI растёт +1.2% + цена ↑",
         "CVD растёт (+14.2%) — покупки усиливаются 📈",
         "⚡ Рыночный вход (MTF сильный)"
-      ],
-      "news": null,
-      "created_at": "2026-03-22 22:30:17",
-      "status": "ACTIVE"
-    }
-  ],
-  "history": [
+      ]
+    },
     {
       "symbol": "BTRUSDT",
       "direction": "LONG",
@@ -1215,25 +1212,6 @@
         "МТФ: все 4 таймфрейма согласны ✅✅",
         "OI падает (шорты закрываются)",
         "CVD положительный (+4.8%)",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
-      "symbol": "JCTUSDT",
-      "direction": "LONG",
-      "entry": 0.0032343,
-      "tp1": 0.003358,
-      "tp2": 0.003481,
-      "sl": 0.003136,
-      "strength": 51,
-      "status": "TP1",
-      "created_at": "2026-03-22 16:19:05",
-      "reasons": [
-        "MACD бычий (hist=0.00006)",
-        "Цена > EMA20 > EMA50",
-        "Объём x1.9 🔥",
-        "Стакан: сильное давление покупки (+0.57)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
         "⚡ Рыночный вход (MTF сильный)"
       ]
     }
