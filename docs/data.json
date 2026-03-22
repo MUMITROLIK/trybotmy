@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-22T16:57:07.363098+00:00",
+  "updated_at": "2026-03-22T16:57:51.903388+00:00",
   "publish_status": {
-    "last_ok": "2026-03-22T16:56:07Z",
+    "last_ok": null,
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 57.9
   },
   "trade_stats": {
-    "open": 12,
+    "open": 11,
     "pending": 0,
     "wins": 388,
-    "losses": 395,
-    "total_pnl": 66.91,
-    "winrate": 49.6
+    "losses": 396,
+    "total_pnl": 66.36,
+    "winrate": 49.5
   },
   "fear_greed": {
     "value": 10,
@@ -625,32 +625,6 @@
   ],
   "trades_open": [
     {
-      "id": 835,
-      "symbol": "HYPEUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 38.171,
-      "tp1": 38.93442,
-      "tp2": 39.69784,
-      "sl": 37.40758,
-      "entry_orig": 38.171,
-      "tp1_orig": 38.93442,
-      "tp2_orig": 39.69784,
-      "sl_orig": 37.40758,
-      "strength": 50,
-      "taken_at": "2026-03-22T08:57:19.843776",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=33 (перепроданность)",
-        "MACD бычий (hist=0.00207)",
-        "BB ниже середины",
-        "Стакан: сильное давление покупки (+0.43)",
-        "МТФ: только 1 таймфрейм согласен",
-        "CVD положительный (-9.2%)",
-        "Hammer (1h) 🔨"
-      ]
-    },
-    {
       "id": 842,
       "symbol": "STRKUSDT",
       "direction": "LONG",
@@ -941,6 +915,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "HYPEUSDT",
+      "direction": "LONG",
+      "entry": 38.171,
+      "tp1": 38.93442,
+      "tp2": 39.69784,
+      "sl": 37.40758,
+      "strength": 50,
+      "status": "TIMEOUT",
+      "pnl_pct": -0.55,
+      "close_price": 37.959500000000006,
+      "taken_at": "2026-03-22T08:57:19.843776",
+      "closed_at": "2026-03-22 16:57:24"
+    },
     {
       "symbol": "JCTUSDT",
       "direction": "LONG",
@@ -3726,20 +3714,6 @@
       "close_price": 0.00591,
       "taken_at": "2026-03-21T00:15:51.883310",
       "closed_at": "2026-03-21 00:35:04"
-    },
-    {
-      "symbol": "POLYXUSDT",
-      "direction": "LONG",
-      "entry": 0.04943,
-      "tp1": 0.050419,
-      "tp2": 0.051407,
-      "sl": 0.048441,
-      "strength": 58,
-      "status": "SL",
-      "pnl_pct": -2.37,
-      "close_price": 0.04826,
-      "taken_at": "2026-03-21T00:22:31.698237",
-      "closed_at": "2026-03-21 00:29:22"
     }
   ]
 }
