@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-22T01:18:34.618183+00:00",
+  "updated_at": "2026-03-22T01:19:33.751499+00:00",
   "publish_status": {
-    "last_ok": "2026-03-22T01:17:46Z",
+    "last_ok": "2026-03-22T01:18:40Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 57.4
   },
   "trade_stats": {
-    "open": 13,
+    "open": 12,
     "pending": 0,
-    "wins": 346,
+    "wins": 347,
     "losses": 366,
-    "total_pnl": 4.11,
-    "winrate": 48.6
+    "total_pnl": 3.83,
+    "winrate": 48.7
   },
   "fear_greed": {
     "value": 10,
@@ -875,34 +875,6 @@
       ]
     },
     {
-      "id": 789,
-      "symbol": "BEATUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.629,
-      "tp1": 0.64158,
-      "tp2": 0.65416,
-      "sl": 0.629,
-      "entry_orig": 0.629,
-      "tp1_orig": 0.64158,
-      "tp2_orig": 0.65416,
-      "sl_orig": 0.61642,
-      "strength": 52,
-      "taken_at": "2026-03-21T22:56:09.787670",
-      "status": "TP1_HIT",
-      "reasons": [
-        "RSI=34 (перепроданность)",
-        "BB нижняя зона (24%)",
-        "EMA20 > EMA50",
-        "Стакан: давление покупки (+0.23)",
-        "МТФ: 15m, 1h, 4h согласны",
-        "OI растёт +2.0% + цена ↑",
-        "CVD растёт (+7.9%) — покупки усиливаются 📈",
-        "⚠️ Funding через 65м",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 793,
       "symbol": "ETHFIUSDT",
       "direction": "LONG",
@@ -955,6 +927,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "BEATUSDT",
+      "direction": "LONG",
+      "entry": 0.629,
+      "tp1": 0.64158,
+      "tp2": 0.65416,
+      "sl": 0.629,
+      "strength": 52,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": -0.28,
+      "close_price": 0.62725,
+      "taken_at": "2026-03-21T22:56:09.787670",
+      "closed_at": "2026-03-22 01:19:33"
+    },
     {
       "symbol": "ANIMEUSDT",
       "direction": "LONG",
@@ -3740,20 +3726,6 @@
       "close_price": 0.5497,
       "taken_at": "2026-03-20T13:11:24.636471",
       "closed_at": "2026-03-20 14:23:33"
-    },
-    {
-      "symbol": "MYXUSDT",
-      "direction": "LONG",
-      "entry": 0.3395,
-      "tp1": 0.34629,
-      "tp2": 0.35308,
-      "sl": 0.347,
-      "strength": 50,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 2.21,
-      "close_price": 0.347,
-      "taken_at": "2026-03-20T13:55:43.945226",
-      "closed_at": "2026-03-20 14:18:32"
     }
   ]
 }
