@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-22T16:13:40.080620+00:00",
+  "updated_at": "2026-03-22T16:15:05.206748+00:00",
   "publish_status": {
-    "last_ok": "2026-03-22T16:13:05Z",
+    "last_ok": "2026-03-22T16:13:46Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -11,18 +11,18 @@
   },
   "stats": {
     "total": 981,
-    "wins": 330,
+    "wins": 331,
     "losses": 241,
-    "active": 7,
-    "winrate": 57.8
+    "active": 6,
+    "winrate": 57.9
   },
   "trade_stats": {
-    "open": 15,
+    "open": 13,
     "pending": 0,
-    "wins": 385,
-    "losses": 392,
-    "total_pnl": 64.13,
-    "winrate": 49.5
+    "wins": 386,
+    "losses": 393,
+    "total_pnl": 69.0,
+    "winrate": 49.6
   },
   "fear_greed": {
     "value": 10,
@@ -134,28 +134,6 @@
       "status": "ACTIVE"
     },
     {
-      "id": 1017,
-      "symbol": "JCTUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.0030225,
-      "tp1": 0.003119,
-      "tp2": 0.003216,
-      "sl": 0.002945,
-      "strength": 53,
-      "reasons": [
-        "MACD бычий (hist=0.00004)",
-        "Цена > EMA20 > EMA50",
-        "Объём x3.0 🔥🔥",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +3.6% + цена ↑",
-        "⚡ Рыночный вход (MTF сильный)"
-      ],
-      "news": null,
-      "created_at": "2026-03-22 16:08:08",
-      "status": "ACTIVE"
-    },
-    {
       "id": 1018,
       "symbol": "EDGEUSDT",
       "direction": "LONG",
@@ -201,6 +179,25 @@
     }
   ],
   "history": [
+    {
+      "symbol": "JCTUSDT",
+      "direction": "LONG",
+      "entry": 0.0030225,
+      "tp1": 0.003119,
+      "tp2": 0.003216,
+      "sl": 0.002945,
+      "strength": 53,
+      "status": "TP1",
+      "created_at": "2026-03-22 16:08:08",
+      "reasons": [
+        "MACD бычий (hist=0.00004)",
+        "Цена > EMA20 > EMA50",
+        "Объём x3.0 🔥🔥",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +3.6% + цена ↑",
+        "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
     {
       "symbol": "GUNUSDT",
       "direction": "LONG",
@@ -580,56 +577,9 @@
         "CVD положительный (-2.6%)",
         "⚡ Рыночный вход (MTF сильный)"
       ]
-    },
-    {
-      "symbol": "ARIAUSDT",
-      "direction": "LONG",
-      "entry": 0.23137,
-      "tp1": 0.237848,
-      "tp2": 0.244326,
-      "sl": 0.226188,
-      "strength": 56,
-      "status": "TP1",
-      "created_at": "2026-03-22 11:12:54",
-      "reasons": [
-        "MACD бычий (hist=0.00088)",
-        "Цена > EMA20 > EMA50",
-        "Объём x1.9 🔥",
-        "Стакан: сильное давление покупки (+0.37)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +1.3% + цена ↑",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
     }
   ],
   "trades_open": [
-    {
-      "id": 830,
-      "symbol": "TAOUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 272.24,
-      "tp1": 277.6848,
-      "tp2": 283.1296,
-      "sl": 266.7952,
-      "entry_orig": 272.24,
-      "tp1_orig": 277.6848,
-      "tp2_orig": 283.1296,
-      "sl_orig": 266.7952,
-      "strength": 52,
-      "taken_at": "2026-03-22T08:14:03.883754",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=43 (нейтральный↓)",
-        "BB нижняя полоса (пробой)",
-        "EMA20 > EMA50",
-        "Объём x2.5 🔥🔥",
-        "МТФ: 15m, 1h, 4h согласны",
-        "OI растёт +3.3% + цена ↑",
-        "Цена у поддержки 271.5100",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
     {
       "id": 832,
       "symbol": "GALAUSDT",
@@ -898,31 +848,6 @@
       ]
     },
     {
-      "id": 871,
-      "symbol": "JCTUSDT",
-      "direction": "LONG",
-      "exchange": "bybit",
-      "entry": 0.0030225,
-      "tp1": 0.003119,
-      "tp2": 0.003216,
-      "sl": 0.002945,
-      "entry_orig": 0.0030225,
-      "tp1_orig": 0.003119,
-      "tp2_orig": 0.003216,
-      "sl_orig": 0.002945,
-      "strength": 53,
-      "taken_at": "2026-03-22T16:08:08.829730",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00004)",
-        "Цена > EMA20 > EMA50",
-        "Объём x3.0 🔥🔥",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +3.6% + цена ↑",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 872,
       "symbol": "EDGEUSDT",
       "direction": "LONG",
@@ -1001,6 +926,34 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "JCTUSDT",
+      "direction": "LONG",
+      "entry": 0.0030225,
+      "tp1": 0.003119,
+      "tp2": 0.003216,
+      "sl": 0.002945,
+      "strength": 53,
+      "status": "TP1",
+      "pnl_pct": 5.24,
+      "close_price": 0.0031809,
+      "taken_at": "2026-03-22T16:08:08.829730",
+      "closed_at": "2026-03-22 16:15:04"
+    },
+    {
+      "symbol": "TAOUSDT",
+      "direction": "LONG",
+      "entry": 272.24,
+      "tp1": 277.6848,
+      "tp2": 283.1296,
+      "sl": 266.7952,
+      "strength": 52,
+      "status": "TIMEOUT",
+      "pnl_pct": -0.37,
+      "close_price": 271.245,
+      "taken_at": "2026-03-22T08:14:03.883754",
+      "closed_at": "2026-03-22 16:14:09"
+    },
     {
       "symbol": "GUNUSDT",
       "direction": "LONG",
@@ -3772,34 +3725,6 @@
       "close_price": 0.06515,
       "taken_at": "2026-03-20T19:24:10.143508",
       "closed_at": "2026-03-20 23:54:35"
-    },
-    {
-      "symbol": "KATUSDT",
-      "direction": "LONG",
-      "entry": 0.0103,
-      "tp1": 0.010506,
-      "tp2": 0.010712,
-      "sl": 0.010515,
-      "strength": 50,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 2.09,
-      "close_price": 0.010515,
-      "taken_at": "2026-03-20T22:49:27.521432",
-      "closed_at": "2026-03-20 23:50:44"
-    },
-    {
-      "symbol": "GUAUSDT",
-      "direction": "LONG",
-      "entry": 0.32131,
-      "tp1": 0.33225,
-      "tp2": 0.343191,
-      "sl": 0.312558,
-      "strength": 50,
-      "status": "SL",
-      "pnl_pct": -2.79,
-      "close_price": 0.31233,
-      "taken_at": "2026-03-20T21:55:50.177698",
-      "closed_at": "2026-03-20 23:42:54"
     }
   ]
 }
