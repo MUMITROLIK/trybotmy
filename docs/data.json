@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-22T14:53:40.152668+00:00",
+  "updated_at": "2026-03-22T14:54:14.520573+00:00",
   "publish_status": {
-    "last_ok": "2026-03-22T14:52:34Z",
+    "last_ok": "2026-03-22T14:53:46Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 970,
+    "total": 971,
     "wins": 325,
     "losses": 239,
-    "active": 5,
+    "active": 6,
     "winrate": 57.6
   },
   "trade_stats": {
-    "open": 11,
+    "open": 12,
     "pending": 0,
     "wins": 380,
     "losses": 390,
@@ -149,6 +149,30 @@
       ],
       "news": null,
       "created_at": "2026-03-22 14:40:24",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1009,
+      "symbol": "BANUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.05285,
+      "tp1": 0.054232,
+      "tp2": 0.055614,
+      "sl": 0.051744,
+      "strength": 56,
+      "reasons": [
+        "RSI=22 (сильная перепроданность)",
+        "BB нижняя зона (1%)",
+        "EMA20 > EMA50",
+        "Объём x4.0 🔥🔥🔥",
+        "Стакан: сильное давление покупки (+0.30)",
+        "МТФ: только 1 таймфрейм согласен",
+        "OI растёт +1.0%",
+        "⚠️ Funding через 67м"
+      ],
+      "news": null,
+      "created_at": "2026-03-22 14:54:12",
       "status": "ACTIVE"
     }
   ],
@@ -814,6 +838,33 @@
         "OI растёт +8.5% + цена ↑",
         "⚠️ Funding через 80м",
         "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
+    {
+      "id": 863,
+      "symbol": "BANUSDT",
+      "direction": "LONG",
+      "exchange": "bybit",
+      "entry": 0.05285,
+      "tp1": 0.054232,
+      "tp2": 0.055614,
+      "sl": 0.051744,
+      "entry_orig": 0.05285,
+      "tp1_orig": 0.054232,
+      "tp2_orig": 0.055614,
+      "sl_orig": 0.051744,
+      "strength": 56,
+      "taken_at": "2026-03-22T14:54:12.958149",
+      "status": "OPEN",
+      "reasons": [
+        "RSI=22 (сильная перепроданность)",
+        "BB нижняя зона (1%)",
+        "EMA20 > EMA50",
+        "Объём x4.0 🔥🔥🔥",
+        "Стакан: сильное давление покупки (+0.30)",
+        "МТФ: только 1 таймфрейм согласен",
+        "OI растёт +1.0%",
+        "⚠️ Funding через 67м"
       ]
     },
     {
