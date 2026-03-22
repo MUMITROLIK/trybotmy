@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-22T20:42:19.390546+00:00",
+  "updated_at": "2026-03-22T20:43:25.418186+00:00",
   "publish_status": {
-    "last_ok": "2026-03-22T20:41:19Z",
+    "last_ok": "2026-03-22T20:42:25Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,11 +17,11 @@
     "winrate": 57.9
   },
   "trade_stats": {
-    "open": 8,
+    "open": 7,
     "pending": 0,
-    "wins": 394,
+    "wins": 395,
     "losses": 404,
-    "total_pnl": 68.97,
+    "total_pnl": 70.61,
     "winrate": 49.4
   },
   "fear_greed": {
@@ -600,33 +600,6 @@
   ],
   "trades_open": [
     {
-      "id": 854,
-      "symbol": "币安人生USDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.047369999999999995,
-      "tp1": 0.04862714,
-      "tp2": 0.04988519,
-      "sl": 0.04636388,
-      "entry_orig": 0.04665289,
-      "tp1_orig": 0.047891,
-      "tp2_orig": 0.04913,
-      "sl_orig": 0.045662,
-      "strength": 50,
-      "taken_at": "2026-03-22T12:42:36.893266",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00020)",
-        "Цена выше EMA20",
-        "Объём x2.6 🔥🔥",
-        "Стакан: сильное давление покупки (+0.41)",
-        "МТФ: только 1 таймфрейм согласен",
-        "OI падает (шорты закрываются)",
-        "CVD положительный (-3.7%)",
-        "📌 Лимитный вход @ 0.0466529 (откат к EMA20)"
-      ]
-    },
-    {
       "id": 875,
       "symbol": "KITEUSDT",
       "direction": "LONG",
@@ -806,6 +779,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "币安人生USDT",
+      "direction": "LONG",
+      "entry": 0.047369999999999995,
+      "tp1": 0.04862714,
+      "tp2": 0.04988519,
+      "sl": 0.04636388,
+      "strength": 50,
+      "status": "TIMEOUT",
+      "pnl_pct": 1.64,
+      "close_price": 0.048145,
+      "taken_at": "2026-03-22T12:42:36.893266",
+      "closed_at": "2026-03-22 20:42:37"
+    },
     {
       "symbol": "BANUSDT",
       "direction": "LONG",
@@ -3591,20 +3578,6 @@
       "close_price": 0.024065000000000003,
       "taken_at": "2026-03-21T02:46:16.526002",
       "closed_at": "2026-03-21 03:57:36"
-    },
-    {
-      "symbol": "EDGEUSDT",
-      "direction": "LONG",
-      "entry": 0.6901,
-      "tp1": 0.7156,
-      "tp2": 0.7411,
-      "sl": 0.7162,
-      "strength": 55,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 3.75,
-      "close_price": 0.71595,
-      "taken_at": "2026-03-21T01:31:12.555664",
-      "closed_at": "2026-03-21 03:48:35"
     }
   ]
 }
