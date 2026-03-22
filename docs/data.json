@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-22T05:20:44.793255+00:00",
+  "updated_at": "2026-03-22T05:22:13.250540+00:00",
   "publish_status": {
-    "last_ok": "2026-03-22T05:20:09Z",
+    "last_ok": "2026-03-22T05:20:51Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 57.6
   },
   "trade_stats": {
-    "open": 9,
+    "open": 8,
     "pending": 0,
-    "wins": 353,
+    "wins": 354,
     "losses": 369,
-    "total_pnl": 14.34,
-    "winrate": 48.9
+    "total_pnl": 22.09,
+    "winrate": 49.0
   },
   "fear_greed": {
     "value": 10,
@@ -648,35 +648,23 @@
         "OI растёт +1.3% + цена ↑",
         "⚡ Рыночный вход (MTF сильный)"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 812,
       "symbol": "SIRENUSDT",
       "direction": "LONG",
-      "exchange": "binance",
       "entry": 1.08287,
       "tp1": 1.124767,
       "tp2": 1.166664,
       "sl": 1.08287,
-      "entry_orig": 1.08287,
-      "tp1_orig": 1.124767,
-      "tp2_orig": 1.166664,
-      "sl_orig": 1.049352,
       "strength": 61,
+      "status": "TP2",
+      "pnl_pct": 7.75,
+      "close_price": 1.166815,
       "taken_at": "2026-03-22T04:28:46.220086",
-      "status": "TP1_HIT",
-      "reasons": [
-        "MACD бычий (hist=0.01118)",
-        "Цена > EMA20 > EMA50",
-        "Объём x3.0 🔥🔥",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +5.8% + цена ↑",
-        "CVD растёт (+8.7%) — покупки усиливаются 📈",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-22 05:21:13"
+    },
     {
       "symbol": "PIUSDT",
       "direction": "LONG",
@@ -3462,20 +3450,6 @@
       "close_price": 0.14875,
       "taken_at": "2026-03-20T14:49:27.707279",
       "closed_at": "2026-03-20 15:56:48"
-    },
-    {
-      "symbol": "ENJUSDT",
-      "direction": "LONG",
-      "entry": 0.0258,
-      "tp1": 0.026398,
-      "tp2": 0.026996,
-      "sl": 0.025284,
-      "strength": 51,
-      "status": "SL",
-      "pnl_pct": -2.03,
-      "close_price": 0.025275,
-      "taken_at": "2026-03-20T15:04:52.808650",
-      "closed_at": "2026-03-20 15:43:58"
     }
   ]
 }
