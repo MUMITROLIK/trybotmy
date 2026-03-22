@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-22T23:12:16.164906+00:00",
+  "updated_at": "2026-03-22T23:12:57.155744+00:00",
   "publish_status": {
-    "last_ok": "2026-03-22T23:11:16Z",
+    "last_ok": "2026-03-22T23:12:21Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 57.8
   },
   "trade_stats": {
-    "open": 35,
+    "open": 34,
     "pending": 0,
     "wins": 402,
-    "losses": 412,
-    "total_pnl": 72.57,
-    "winrate": 49.4
+    "losses": 413,
+    "total_pnl": 70.53,
+    "winrate": 49.3
   },
   "fear_greed": {
     "value": 10,
@@ -1325,31 +1325,6 @@
       ]
     },
     {
-      "id": 892,
-      "symbol": "PUMPUSDT",
-      "direction": "SHORT",
-      "exchange": "binance",
-      "entry": 0.001744,
-      "tp1": 0.001709,
-      "tp2": 0.001674,
-      "sl": 0.001779,
-      "entry_orig": 0.001744,
-      "tp1_orig": 0.001709,
-      "tp2_orig": 0.001674,
-      "sl_orig": 0.001779,
-      "strength": 57,
-      "taken_at": "2026-03-22T21:06:15.515346",
-      "status": "OPEN",
-      "reasons": [
-        "MACD медвежий (hist=-0.00000)",
-        "Цена < EMA20 < EMA50",
-        "Объём x4.2 🔥🔥🔥",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "CVD падает (-19.4%) — продажи усиливаются 📉",
-        "BTC корреляция 0.82, BTC -1.4% 📉"
-      ]
-    },
-    {
       "id": 894,
       "symbol": "PENGUUSDT",
       "direction": "SHORT",
@@ -2093,6 +2068,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "PUMPUSDT",
+      "direction": "SHORT",
+      "entry": 0.001744,
+      "tp1": 0.001709,
+      "tp2": 0.001674,
+      "sl": 0.001779,
+      "strength": 57,
+      "status": "SL",
+      "pnl_pct": -2.04,
+      "close_price": 0.0017794999999999998,
+      "taken_at": "2026-03-22T21:06:15.515346",
+      "closed_at": "2026-03-22 23:12:56"
+    },
     {
       "symbol": "FARTCOINUSDT",
       "direction": "SHORT",
@@ -4878,20 +4867,6 @@
       "close_price": 0.009461,
       "taken_at": "2026-03-21T08:49:48.115445",
       "closed_at": "2026-03-21 09:38:06"
-    },
-    {
-      "symbol": "AKTUSDT",
-      "direction": "LONG",
-      "entry": 0.5744,
-      "tp1": 0.585888,
-      "tp2": 0.597376,
-      "sl": 0.5863,
-      "strength": 58,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 2.07,
-      "close_price": 0.5863,
-      "taken_at": "2026-03-21T09:21:31.250878",
-      "closed_at": "2026-03-21 09:36:55"
     }
   ]
 }
