@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-22T14:59:09.942929+00:00",
+  "updated_at": "2026-03-22T15:00:16.220143+00:00",
   "publish_status": {
-    "last_ok": "2026-03-22T14:57:48Z",
+    "last_ok": "2026-03-22T14:59:16Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,11 +17,11 @@
     "winrate": 57.6
   },
   "trade_stats": {
-    "open": 13,
+    "open": 12,
     "pending": 0,
-    "wins": 380,
+    "wins": 381,
     "losses": 390,
-    "total_pnl": 52.84,
+    "total_pnl": 55.06,
     "winrate": 49.4
   },
   "fear_greed": {
@@ -838,32 +838,6 @@
       ]
     },
     {
-      "id": 862,
-      "symbol": "GUNUSDT",
-      "direction": "LONG",
-      "exchange": "bybit",
-      "entry": 0.021651,
-      "tp1": 0.02209,
-      "tp2": 0.022529,
-      "sl": 0.021218,
-      "entry_orig": 0.021651,
-      "tp1_orig": 0.02209,
-      "tp2_orig": 0.022529,
-      "sl_orig": 0.021218,
-      "strength": 57,
-      "taken_at": "2026-03-22T14:40:24.758855",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00007)",
-        "Цена > EMA20 > EMA50",
-        "Объём x10.7 🔥🔥🔥",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +8.5% + цена ↑",
-        "⚠️ Funding через 80м",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 863,
       "symbol": "BANUSDT",
       "direction": "LONG",
@@ -945,6 +919,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "GUNUSDT",
+      "direction": "LONG",
+      "entry": 0.021651,
+      "tp1": 0.02209,
+      "tp2": 0.022529,
+      "sl": 0.021218,
+      "strength": 57,
+      "status": "TP1",
+      "pnl_pct": 2.22,
+      "close_price": 0.022131,
+      "taken_at": "2026-03-22T14:40:24.758855",
+      "closed_at": "2026-03-22 14:59:17"
+    },
     {
       "symbol": "JCTUSDT",
       "direction": "LONG",
@@ -3730,20 +3718,6 @@
       "close_price": 472.705,
       "taken_at": "2026-03-20T14:28:56.607225",
       "closed_at": "2026-03-20 22:29:06"
-    },
-    {
-      "symbol": "TRIAUSDT",
-      "direction": "LONG",
-      "entry": 0.03541,
-      "tp1": 0.036269,
-      "tp2": 0.037129,
-      "sl": 0.036275,
-      "strength": 52,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 2.25,
-      "close_price": 0.036205,
-      "taken_at": "2026-03-20T20:20:24.860925",
-      "closed_at": "2026-03-20 22:25:19"
     }
   ]
 }
