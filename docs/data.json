@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-22T04:40:41.340000+00:00",
+  "updated_at": "2026-03-22T04:41:47.655227+00:00",
   "publish_status": {
-    "last_ok": "2026-03-22T04:39:41Z",
+    "last_ok": "2026-03-22T04:40:47Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 57.6
   },
   "trade_stats": {
-    "open": 12,
+    "open": 11,
     "pending": 0,
-    "wins": 351,
+    "wins": 352,
     "losses": 368,
-    "total_pnl": 17.33,
-    "winrate": 48.8
+    "total_pnl": 16.57,
+    "winrate": 48.9
   },
   "fear_greed": {
     "value": 10,
@@ -753,32 +753,6 @@
       ]
     },
     {
-      "id": 809,
-      "symbol": "SIGNUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.04942,
-      "tp1": 0.050408,
-      "tp2": 0.051397,
-      "sl": 0.04942,
-      "entry_orig": 0.04942,
-      "tp1_orig": 0.050408,
-      "tp2_orig": 0.051397,
-      "sl_orig": 0.048432,
-      "strength": 65,
-      "taken_at": "2026-03-22T02:36:57.652570",
-      "status": "TP1_HIT",
-      "reasons": [
-        "MACD бычий (hist=0.00006)",
-        "Цена > EMA20 > EMA50",
-        "Объём x3.1 🔥🔥",
-        "Стакан: сильное давление покупки (+0.27)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "CVD растёт (+11.5%) — покупки усиливаются 📈",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 810,
       "symbol": "PTBUSDT",
       "direction": "LONG",
@@ -806,6 +780,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "SIGNUSDT",
+      "direction": "LONG",
+      "entry": 0.04942,
+      "tp1": 0.050408,
+      "tp2": 0.051397,
+      "sl": 0.04942,
+      "strength": 65,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": -0.76,
+      "close_price": 0.049045000000000005,
+      "taken_at": "2026-03-22T02:36:57.652570",
+      "closed_at": "2026-03-22 04:41:04"
+    },
     {
       "symbol": "SIRENUSDT",
       "direction": "LONG",
@@ -3591,20 +3579,6 @@
       "close_price": 0.040615,
       "taken_at": "2026-03-20T14:27:18.267152",
       "closed_at": "2026-03-20 15:15:30"
-    },
-    {
-      "symbol": "XANUSDT",
-      "direction": "LONG",
-      "entry": 0.012036,
-      "tp1": 0.012391,
-      "tp2": 0.012745,
-      "sl": 0.011752,
-      "strength": 54,
-      "status": "SL",
-      "pnl_pct": -2.43,
-      "close_price": 0.011743,
-      "taken_at": "2026-03-20T14:56:22.176251",
-      "closed_at": "2026-03-20 15:00:47"
     }
   ]
 }
