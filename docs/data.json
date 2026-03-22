@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-22T19:51:51.044675+00:00",
+  "updated_at": "2026-03-22T19:52:32.207404+00:00",
   "publish_status": {
-    "last_ok": "2026-03-22T19:50:51Z",
+    "last_ok": "2026-03-22T19:51:56Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,11 +17,11 @@
     "winrate": 57.9
   },
   "trade_stats": {
-    "open": 9,
+    "open": 8,
     "pending": 0,
-    "wins": 392,
+    "wins": 393,
     "losses": 402,
-    "total_pnl": 67.01,
+    "total_pnl": 71.68,
     "winrate": 49.4
   },
   "fear_greed": {
@@ -828,34 +828,23 @@
         "МТФ: 5m, 15m, 1h согласны",
         "CVD падает (-16.7%) — продажи усиливаются 📉"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 884,
       "symbol": "CYSUSDT",
       "direction": "LONG",
-      "exchange": "bybit",
       "entry": 0.6958,
       "tp1": 0.717261,
       "tp2": 0.738721,
       "sl": 0.678631,
-      "entry_orig": 0.6958,
-      "tp1_orig": 0.717261,
-      "tp2_orig": 0.738721,
-      "sl_orig": 0.678631,
       "strength": 51,
+      "status": "TP1",
+      "pnl_pct": 4.67,
+      "close_price": 0.7283,
       "taken_at": "2026-03-22T19:48:56.581749",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00606)",
-        "Цена > EMA20 > EMA50",
-        "Объём x2.0 🔥",
-        "Стакан: сильное давление покупки (+0.37)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-22 19:52:31"
+    },
     {
       "symbol": "1000TURBOUSDT",
       "direction": "LONG",
@@ -3641,20 +3630,6 @@
       "close_price": 4499.3,
       "taken_at": "2026-03-20T18:59:05.905295",
       "closed_at": "2026-03-21 02:59:09"
-    },
-    {
-      "symbol": "HANAUSDT",
-      "direction": "LONG",
-      "entry": 0.043081,
-      "tp1": 0.043943,
-      "tp2": 0.044804,
-      "sl": 0.043954,
-      "strength": 52,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 2.03,
-      "close_price": 0.043954,
-      "taken_at": "2026-03-20T19:10:52.106696",
-      "closed_at": "2026-03-21 02:51:30"
     }
   ]
 }
