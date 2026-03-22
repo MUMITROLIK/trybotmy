@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-22T05:11:11.271303+00:00",
+  "updated_at": "2026-03-22T05:11:57.732432+00:00",
   "publish_status": {
-    "last_ok": "2026-03-22T05:10:05Z",
+    "last_ok": "2026-03-22T05:11:17Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 57.6
   },
   "trade_stats": {
-    "open": 10,
+    "open": 9,
     "pending": 0,
     "wins": 353,
-    "losses": 368,
-    "total_pnl": 16.72,
-    "winrate": 49.0
+    "losses": 369,
+    "total_pnl": 14.34,
+    "winrate": 48.9
   },
   "fear_greed": {
     "value": 10,
@@ -467,33 +467,6 @@
       ]
     },
     {
-      "id": 797,
-      "symbol": "PIUSDT",
-      "direction": "LONG",
-      "exchange": "okx",
-      "entry": 0.1931,
-      "tp1": 0.196962,
-      "tp2": 0.200824,
-      "sl": 0.189238,
-      "entry_orig": 0.1931,
-      "tp1_orig": 0.196962,
-      "tp2_orig": 0.200824,
-      "sl_orig": 0.189238,
-      "strength": 56,
-      "taken_at": "2026-03-22T00:03:09.960081",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=32 (перепроданность)",
-        "BB нижняя полоса (пробой)",
-        "EMA20 > EMA50",
-        "Объём x4.6 🔥🔥🔥",
-        "Стакан: давление покупки (+0.12)",
-        "МТФ: 15m, 1h согласны",
-        "Цена у поддержки 0.1932",
-        "⚡ Рыночный вход (MTF 2+ ТФ)"
-      ]
-    },
-    {
       "id": 798,
       "symbol": "CELOUSDT",
       "direction": "LONG",
@@ -704,6 +677,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "PIUSDT",
+      "direction": "LONG",
+      "entry": 0.1931,
+      "tp1": 0.196962,
+      "tp2": 0.200824,
+      "sl": 0.189238,
+      "strength": 56,
+      "status": "SL",
+      "pnl_pct": -2.38,
+      "close_price": 0.1885,
+      "taken_at": "2026-03-22T00:03:09.960081",
+      "closed_at": "2026-03-22 05:11:32"
+    },
     {
       "symbol": "STOUSDT",
       "direction": "LONG",
@@ -3489,20 +3476,6 @@
       "close_price": 0.025275,
       "taken_at": "2026-03-20T15:04:52.808650",
       "closed_at": "2026-03-20 15:43:58"
-    },
-    {
-      "symbol": "CFGUSDT",
-      "direction": "LONG",
-      "entry": 0.1489,
-      "tp1": 0.151878,
-      "tp2": 0.154856,
-      "sl": 0.15195,
-      "strength": 50,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 1.78,
-      "close_price": 0.15155000000000002,
-      "taken_at": "2026-03-20T12:30:09.855414",
-      "closed_at": "2026-03-20 15:35:38"
     }
   ]
 }
