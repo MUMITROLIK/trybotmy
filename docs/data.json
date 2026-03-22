@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-22T17:06:34.611301+00:00",
+  "updated_at": "2026-03-22T17:07:35.066824+00:00",
   "publish_status": {
-    "last_ok": "2026-03-22T17:06:05Z",
+    "last_ok": "2026-03-22T17:06:40Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,11 +17,11 @@
     "winrate": 58.0
   },
   "trade_stats": {
-    "open": 11,
+    "open": 10,
     "pending": 0,
-    "wins": 389,
+    "wins": 390,
     "losses": 396,
-    "total_pnl": 68.61,
+    "total_pnl": 70.71,
     "winrate": 49.6
   },
   "fear_greed": {
@@ -654,32 +654,6 @@
       ]
     },
     {
-      "id": 846,
-      "symbol": "ZECUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 217.08,
-      "tp1": 221.4216,
-      "tp2": 225.7632,
-      "sl": 212.7384,
-      "entry_orig": 217.08,
-      "tp1_orig": 221.4216,
-      "tp2_orig": 225.7632,
-      "sl_orig": 212.7384,
-      "strength": 51,
-      "taken_at": "2026-03-22T11:06:05.458245",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=37 (перепроданность)",
-        "MACD бычий (hist=0.00084)",
-        "BB нижняя полоса (пробой)",
-        "Объём x2.1 🔥",
-        "CVD положительный (-0.6%)",
-        "Hammer (1h) 🔨",
-        "Цена у поддержки 216.0200"
-      ]
-    },
-    {
       "id": 854,
       "symbol": "币安人生USDT",
       "direction": "LONG",
@@ -917,6 +891,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "ZECUSDT",
+      "direction": "LONG",
+      "entry": 217.08,
+      "tp1": 221.4216,
+      "tp2": 225.7632,
+      "sl": 212.7384,
+      "strength": 51,
+      "status": "TP1",
+      "pnl_pct": 2.1,
+      "close_price": 221.64499999999998,
+      "taken_at": "2026-03-22T11:06:05.458245",
+      "closed_at": "2026-03-22 17:07:34"
+    },
     {
       "symbol": "SIGNUSDT",
       "direction": "LONG",
@@ -3702,20 +3690,6 @@
       "close_price": 0.054605,
       "taken_at": "2026-03-21T00:27:44.673263",
       "closed_at": "2026-03-21 00:38:50"
-    },
-    {
-      "symbol": "APTUSDT",
-      "direction": "LONG",
-      "entry": 1.0038,
-      "tp1": 1.023876,
-      "tp2": 1.043952,
-      "sl": 0.983724,
-      "strength": 51,
-      "status": "TIMEOUT",
-      "pnl_pct": -1.09,
-      "close_price": 0.99285,
-      "taken_at": "2026-03-20T16:36:19.016809",
-      "closed_at": "2026-03-21 00:36:19"
     }
   ]
 }
