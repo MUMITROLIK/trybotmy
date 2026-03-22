@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-22T06:05:46.270793+00:00",
+  "updated_at": "2026-03-22T06:07:17.882645+00:00",
   "publish_status": {
-    "last_ok": "2026-03-22T06:05:13Z",
+    "last_ok": "2026-03-22T06:05:52Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 57.6
   },
   "trade_stats": {
-    "open": 11,
+    "open": 10,
     "pending": 0,
-    "wins": 354,
+    "wins": 355,
     "losses": 370,
-    "total_pnl": 20.01,
-    "winrate": 48.9
+    "total_pnl": 19.98,
+    "winrate": 49.0
   },
   "fear_greed": {
     "value": 10,
@@ -768,32 +768,6 @@
       ]
     },
     {
-      "id": 802,
-      "symbol": "WIFUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.1728,
-      "tp1": 0.176256,
-      "tp2": 0.179712,
-      "sl": 0.1728,
-      "entry_orig": 0.1728,
-      "tp1_orig": 0.176256,
-      "tp2_orig": 0.179712,
-      "sl_orig": 0.169344,
-      "strength": 56,
-      "taken_at": "2026-03-22T00:13:40.694162",
-      "status": "TP1_HIT",
-      "reasons": [
-        "RSI=11 (сильная перепроданность)",
-        "BB нижняя полоса (пробой)",
-        "Объём x4.0 🔥🔥🔥",
-        "Стакан: давление покупки (+0.14)",
-        "МТФ: только 1 таймфрейм согласен",
-        "OI падает (шорты закрываются)",
-        "Hammer (1h) 🔨"
-      ]
-    },
-    {
       "id": 810,
       "symbol": "PTBUSDT",
       "direction": "LONG",
@@ -821,6 +795,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "WIFUSDT",
+      "direction": "LONG",
+      "entry": 0.1728,
+      "tp1": 0.176256,
+      "tp2": 0.179712,
+      "sl": 0.1728,
+      "strength": 56,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": -0.03,
+      "close_price": 0.17275000000000001,
+      "taken_at": "2026-03-22T00:13:40.694162",
+      "closed_at": "2026-03-22 06:05:54"
+    },
     {
       "symbol": "IPUSDT",
       "direction": "LONG",
@@ -3606,20 +3594,6 @@
       "close_price": 0.0060805,
       "taken_at": "2026-03-20T08:37:48.661723",
       "closed_at": "2026-03-20 16:02:03"
-    },
-    {
-      "symbol": "CRCLUSDT",
-      "direction": "LONG",
-      "entry": 127.48,
-      "tp1": 130.0296,
-      "tp2": 132.5792,
-      "sl": 130.245,
-      "strength": 50,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 2.1,
-      "close_price": 130.155,
-      "taken_at": "2026-03-20T14:09:53.996586",
-      "closed_at": "2026-03-20 16:01:42"
     }
   ]
 }
