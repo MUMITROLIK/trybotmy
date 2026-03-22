@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-22T21:50:12.198881+00:00",
+  "updated_at": "2026-03-22T21:51:17.863099+00:00",
   "publish_status": {
-    "last_ok": "2026-03-22T21:49:12Z",
+    "last_ok": "2026-03-22T21:50:17Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,11 +17,11 @@
     "winrate": 57.9
   },
   "trade_stats": {
-    "open": 39,
+    "open": 38,
     "pending": 0,
-    "wins": 397,
+    "wins": 398,
     "losses": 407,
-    "total_pnl": 70.03,
+    "total_pnl": 74.38,
     "winrate": 49.4
   },
   "fear_greed": {
@@ -1359,32 +1359,6 @@
       ]
     },
     {
-      "id": 887,
-      "symbol": "TRIAUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.04654,
-      "tp1": 0.048519,
-      "tp2": 0.050498,
-      "sl": 0.044957,
-      "entry_orig": 0.04654,
-      "tp1_orig": 0.048519,
-      "tp2_orig": 0.050498,
-      "sl_orig": 0.044957,
-      "strength": 50,
-      "taken_at": "2026-03-22T20:14:27.819321",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00004)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: давление покупки (+0.12)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +1.8% + цена ↑",
-        "CVD положительный (+3.4%)",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 888,
       "symbol": "XMRUSDT",
       "direction": "SHORT",
@@ -2272,6 +2246,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "TRIAUSDT",
+      "direction": "LONG",
+      "entry": 0.04654,
+      "tp1": 0.048519,
+      "tp2": 0.050498,
+      "sl": 0.044957,
+      "strength": 50,
+      "status": "TP1",
+      "pnl_pct": 4.35,
+      "close_price": 0.048565,
+      "taken_at": "2026-03-22T20:14:27.819321",
+      "closed_at": "2026-03-22 21:50:35"
+    },
     {
       "symbol": "DASHUSDT",
       "direction": "SHORT",
@@ -5057,20 +5045,6 @@
       "close_price": 0.62575,
       "taken_at": "2026-03-21T02:36:16.797443",
       "closed_at": "2026-03-21 06:56:09"
-    },
-    {
-      "symbol": "AVAXUSDT",
-      "direction": "LONG",
-      "entry": 9.549,
-      "tp1": 9.73998,
-      "tp2": 9.93096,
-      "sl": 9.35802,
-      "strength": 51,
-      "status": "TIMEOUT",
-      "pnl_pct": 0.7,
-      "close_price": 9.6155,
-      "taken_at": "2026-03-20T21:50:53.128711",
-      "closed_at": "2026-03-21 06:56:08"
     }
   ]
 }
