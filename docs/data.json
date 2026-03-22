@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-22T14:02:10.606127+00:00",
+  "updated_at": "2026-03-22T14:03:17.001172+00:00",
   "publish_status": {
-    "last_ok": "2026-03-22T14:01:10Z",
+    "last_ok": "2026-03-22T14:02:17Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 57.5
   },
   "trade_stats": {
-    "open": 13,
+    "open": 12,
     "pending": 0,
     "wins": 378,
-    "losses": 389,
-    "total_pnl": 53.34,
-    "winrate": 49.3
+    "losses": 390,
+    "total_pnl": 51.33,
+    "winrate": 49.2
   },
   "fear_greed": {
     "value": 10,
@@ -808,31 +808,6 @@
       ]
     },
     {
-      "id": 858,
-      "symbol": "EDGEUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.7338,
-      "tp1": 0.751864,
-      "tp2": 0.769929,
-      "sl": 0.719124,
-      "entry_orig": 0.7338,
-      "tp1_orig": 0.751864,
-      "tp2_orig": 0.769929,
-      "sl_orig": 0.719124,
-      "strength": 55,
-      "taken_at": "2026-03-22T13:13:50.584299",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00143)",
-        "Цена > EMA20 > EMA50",
-        "Объём x3.8 🔥🔥",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "CVD растёт (+11.2%) — покупки усиливаются 📈",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 859,
       "symbol": "RIVERUSDT",
       "direction": "LONG",
@@ -939,6 +914,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "EDGEUSDT",
+      "direction": "LONG",
+      "entry": 0.7338,
+      "tp1": 0.751864,
+      "tp2": 0.769929,
+      "sl": 0.719124,
+      "strength": 55,
+      "status": "SL",
+      "pnl_pct": -2.01,
+      "close_price": 0.71905,
+      "taken_at": "2026-03-22T13:13:50.584299",
+      "closed_at": "2026-03-22 14:02:39"
+    },
     {
       "symbol": "BTRUSDT",
       "direction": "LONG",
@@ -3724,20 +3713,6 @@
       "close_price": 2.518,
       "taken_at": "2026-03-20T20:45:11.476810",
       "closed_at": "2026-03-20 22:06:18"
-    },
-    {
-      "symbol": "COSUSDT",
-      "direction": "LONG",
-      "entry": 0.001597,
-      "tp1": 0.001629,
-      "tp2": 0.001661,
-      "sl": 0.0016294999999999999,
-      "strength": 53,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 2.04,
-      "close_price": 0.0016294999999999999,
-      "taken_at": "2026-03-20T20:34:39.365876",
-      "closed_at": "2026-03-20 22:05:52"
     }
   ]
 }
