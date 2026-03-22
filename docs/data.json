@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-22T21:19:34.740005+00:00",
+  "updated_at": "2026-03-22T21:20:24.839120+00:00",
   "publish_status": {
-    "last_ok": "2026-03-22T21:18:34Z",
+    "last_ok": "2026-03-22T21:19:40Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 58.0
   },
   "trade_stats": {
-    "open": 34,
+    "open": 33,
     "pending": 0,
     "wins": 397,
-    "losses": 405,
-    "total_pnl": 74.1,
-    "winrate": 49.5
+    "losses": 406,
+    "total_pnl": 72.08,
+    "winrate": 49.4
   },
   "fear_greed": {
     "value": 10,
@@ -1152,32 +1152,6 @@
   ],
   "trades_open": [
     {
-      "id": 875,
-      "symbol": "KITEUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.21859,
-      "tp1": 0.222962,
-      "tp2": 0.227334,
-      "sl": 0.214218,
-      "entry_orig": 0.21859,
-      "tp1_orig": 0.222962,
-      "tp2_orig": 0.227334,
-      "sl_orig": 0.214218,
-      "strength": 51,
-      "taken_at": "2026-03-22T16:22:53.350265",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00053)",
-        "EMA20 > EMA50 (golden cross) 🌟",
-        "Стакан: сильное давление покупки (+0.39)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI падает (шорты закрываются)",
-        "CVD положительный (+4.8%)",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 882,
       "symbol": "ENAUSDT",
       "direction": "SHORT",
@@ -2016,6 +1990,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "KITEUSDT",
+      "direction": "LONG",
+      "entry": 0.21859,
+      "tp1": 0.222962,
+      "tp2": 0.227334,
+      "sl": 0.214218,
+      "strength": 51,
+      "status": "SL",
+      "pnl_pct": -2.02,
+      "close_price": 0.21418500000000001,
+      "taken_at": "2026-03-22T16:22:53.350265",
+      "closed_at": "2026-03-22 21:20:24"
+    },
     {
       "symbol": "RIVERUSDT",
       "direction": "LONG",
@@ -4801,20 +4789,6 @@
       "close_price": 111.36500000000001,
       "taken_at": "2026-03-20T22:14:23.158945",
       "closed_at": "2026-03-21 06:56:08"
-    },
-    {
-      "symbol": "XAGUSDT",
-      "direction": "LONG",
-      "entry": 68.0,
-      "tp1": 69.36,
-      "tp2": 70.72,
-      "sl": 66.64,
-      "strength": 53,
-      "status": "TIMEOUT",
-      "pnl_pct": -0.01,
-      "close_price": 67.99,
-      "taken_at": "2026-03-20T21:14:47.105197",
-      "closed_at": "2026-03-21 06:56:06"
     }
   ]
 }
