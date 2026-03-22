@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-22T08:02:39.089216+00:00",
+  "updated_at": "2026-03-22T08:03:46.909197+00:00",
   "publish_status": {
-    "last_ok": "2026-03-22T08:01:20Z",
+    "last_ok": "2026-03-22T08:02:46Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 57.6
   },
   "trade_stats": {
-    "open": 12,
+    "open": 11,
     "pending": 0,
-    "wins": 358,
+    "wins": 359,
     "losses": 374,
-    "total_pnl": 25.07,
-    "winrate": 48.9
+    "total_pnl": 25.63,
+    "winrate": 49.0
   },
   "fear_greed": {
     "value": 10,
@@ -806,31 +806,6 @@
       ]
     },
     {
-      "id": 794,
-      "symbol": "WUSDT",
-      "direction": "LONG",
-      "exchange": "bybit",
-      "entry": 0.016565,
-      "tp1": 0.016896,
-      "tp2": 0.017228,
-      "sl": 0.016565,
-      "entry_orig": 0.016565,
-      "tp1_orig": 0.016896,
-      "tp2_orig": 0.017228,
-      "sl_orig": 0.016234,
-      "strength": 51,
-      "taken_at": "2026-03-22T00:03:09.460417",
-      "status": "TP1_HIT",
-      "reasons": [
-        "RSI=14 (сильная перепроданность)",
-        "BB нижняя полоса (пробой)",
-        "Объём x4.4 🔥🔥🔥",
-        "Стакан: давление покупки (+0.10)",
-        "МТФ: только 1 таймфрейм согласен",
-        "OI падает (шорты закрываются)"
-      ]
-    },
-    {
       "id": 810,
       "symbol": "PTBUSDT",
       "direction": "LONG",
@@ -912,6 +887,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "WUSDT",
+      "direction": "LONG",
+      "entry": 0.016565,
+      "tp1": 0.016896,
+      "tp2": 0.017228,
+      "sl": 0.016565,
+      "strength": 51,
+      "status": "TIMEOUT",
+      "pnl_pct": 0.56,
+      "close_price": 0.016657,
+      "taken_at": "2026-03-22T00:03:09.460417",
+      "closed_at": "2026-03-22 08:03:12"
+    },
     {
       "symbol": "BTRUSDT",
       "direction": "LONG",
@@ -3697,20 +3686,6 @@
       "close_price": 126.995,
       "taken_at": "2026-03-20T16:02:47.624456",
       "closed_at": "2026-03-20 16:48:57"
-    },
-    {
-      "symbol": "1000SHIBUSDT",
-      "direction": "LONG",
-      "entry": 0.006158,
-      "tp1": 0.006281,
-      "tp2": 0.006404,
-      "sl": 0.006035,
-      "strength": 50,
-      "status": "MANUAL",
-      "pnl_pct": 0,
-      "close_price": null,
-      "taken_at": "2026-03-20T16:24:32.447178",
-      "closed_at": "2026-03-20 16:41:34"
     }
   ]
 }
