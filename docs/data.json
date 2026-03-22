@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-22T21:20:24.839120+00:00",
+  "updated_at": "2026-03-22T21:21:44.458001+00:00",
   "publish_status": {
-    "last_ok": "2026-03-22T21:19:40Z",
+    "last_ok": "2026-03-22T21:20:30Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 1025,
+    "total": 1026,
     "wins": 340,
     "losses": 246,
-    "active": 32,
+    "active": 33,
     "winrate": 58.0
   },
   "trade_stats": {
-    "open": 33,
+    "open": 34,
     "pending": 0,
     "wins": 397,
     "losses": 406,
@@ -750,6 +750,28 @@
       ],
       "news": null,
       "created_at": "2026-03-22 21:18:57",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1064,
+      "symbol": "AXSUSDT",
+      "direction": "SHORT",
+      "exchange": "binance",
+      "entry": 1.0804,
+      "tp1": 1.058792,
+      "tp2": 1.037184,
+      "sl": 1.102008,
+      "strength": 52,
+      "reasons": [
+        "MACD медвежий (hist=-0.00164)",
+        "Цена < EMA20 < EMA50",
+        "Объём x3.0 🔥🔥",
+        "Стакан: давление продажи (-0.16)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "BTC корреляция 0.74, BTC -1.9% 📉"
+      ],
+      "news": null,
+      "created_at": "2026-03-22 21:20:35",
       "status": "ACTIVE"
     }
   ],
@@ -1986,6 +2008,31 @@
         "OI растёт +1.7% + цена ↓",
         "CVD падает (-5.5%) — продажи усиливаются 📉",
         "BTC корреляция 0.89, BTC -1.5% 📉"
+      ]
+    },
+    {
+      "id": 918,
+      "symbol": "AXSUSDT",
+      "direction": "SHORT",
+      "exchange": "bybit",
+      "entry": 1.0804,
+      "tp1": 1.058792,
+      "tp2": 1.037184,
+      "sl": 1.102008,
+      "entry_orig": 1.0804,
+      "tp1_orig": 1.058792,
+      "tp2_orig": 1.037184,
+      "sl_orig": 1.102008,
+      "strength": 52,
+      "taken_at": "2026-03-22T21:20:35.948805",
+      "status": "OPEN",
+      "reasons": [
+        "MACD медвежий (hist=-0.00164)",
+        "Цена < EMA20 < EMA50",
+        "Объём x3.0 🔥🔥",
+        "Стакан: давление продажи (-0.16)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "BTC корреляция 0.74, BTC -1.9% 📉"
       ]
     }
   ],
