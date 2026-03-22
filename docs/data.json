@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-22T13:13:43.597371+00:00",
+  "updated_at": "2026-03-22T13:14:50.158873+00:00",
   "publish_status": {
-    "last_ok": "2026-03-22T13:12:43Z",
+    "last_ok": "2026-03-22T13:13:50Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 965,
+    "total": 966,
     "wins": 322,
     "losses": 236,
-    "active": 7,
+    "active": 8,
     "winrate": 57.7
   },
   "trade_stats": {
-    "open": 13,
+    "open": 14,
     "pending": 0,
     "wins": 377,
     "losses": 386,
@@ -194,6 +194,28 @@
       ],
       "news": null,
       "created_at": "2026-03-22 13:04:31",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1004,
+      "symbol": "EDGEUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.7338,
+      "tp1": 0.751864,
+      "tp2": 0.769929,
+      "sl": 0.719124,
+      "strength": 55,
+      "reasons": [
+        "MACD бычий (hist=0.00143)",
+        "Цена > EMA20 > EMA50",
+        "Объём x3.8 🔥🔥",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "CVD растёт (+11.2%) — покупки усиливаются 📈",
+        "⚡ Рыночный вход (MTF сильный)"
+      ],
+      "news": null,
+      "created_at": "2026-03-22 13:13:50",
       "status": "ACTIVE"
     }
   ],
@@ -885,6 +907,31 @@
         "МТФ: 5m, 15m, 1h согласны",
         "OI растёт +23.9% + цена ↑",
         "CVD растёт (+5.4%) — покупки усиливаются 📈",
+        "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
+    {
+      "id": 858,
+      "symbol": "EDGEUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.7338,
+      "tp1": 0.751864,
+      "tp2": 0.769929,
+      "sl": 0.719124,
+      "entry_orig": 0.7338,
+      "tp1_orig": 0.751864,
+      "tp2_orig": 0.769929,
+      "sl_orig": 0.719124,
+      "strength": 55,
+      "taken_at": "2026-03-22T13:13:50.584299",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.00143)",
+        "Цена > EMA20 > EMA50",
+        "Объём x3.8 🔥🔥",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "CVD растёт (+11.2%) — покупки усиливаются 📈",
         "⚡ Рыночный вход (MTF сильный)"
       ]
     },
