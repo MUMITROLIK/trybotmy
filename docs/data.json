@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-22T19:47:55.040046+00:00",
+  "updated_at": "2026-03-22T19:49:00.997341+00:00",
   "publish_status": {
-    "last_ok": "2026-03-22T19:46:55Z",
+    "last_ok": "2026-03-22T19:48:00Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 991,
+    "total": 992,
     "wins": 335,
     "losses": 244,
-    "active": 7,
+    "active": 8,
     "winrate": 57.9
   },
   "trade_stats": {
-    "open": 8,
+    "open": 9,
     "pending": 0,
     "wins": 392,
     "losses": 402,
@@ -192,6 +192,28 @@
       ],
       "news": null,
       "created_at": "2026-03-22 19:40:44",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1030,
+      "symbol": "CYSUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.6958,
+      "tp1": 0.717261,
+      "tp2": 0.738721,
+      "sl": 0.678631,
+      "strength": 51,
+      "reasons": [
+        "MACD бычий (hist=0.00606)",
+        "Цена > EMA20 > EMA50",
+        "Объём x2.0 🔥",
+        "Стакан: сильное давление покупки (+0.37)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "⚡ Рыночный вход (MTF сильный)"
+      ],
+      "news": null,
+      "created_at": "2026-03-22 19:48:56",
       "status": "ACTIVE"
     }
   ],
@@ -805,6 +827,31 @@
         "Стакан: давление продажи (-0.21)",
         "МТФ: 5m, 15m, 1h согласны",
         "CVD падает (-16.7%) — продажи усиливаются 📉"
+      ]
+    },
+    {
+      "id": 884,
+      "symbol": "CYSUSDT",
+      "direction": "LONG",
+      "exchange": "bybit",
+      "entry": 0.6958,
+      "tp1": 0.717261,
+      "tp2": 0.738721,
+      "sl": 0.678631,
+      "entry_orig": 0.6958,
+      "tp1_orig": 0.717261,
+      "tp2_orig": 0.738721,
+      "sl_orig": 0.678631,
+      "strength": 51,
+      "taken_at": "2026-03-22T19:48:56.581749",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.00606)",
+        "Цена > EMA20 > EMA50",
+        "Объём x2.0 🔥",
+        "Стакан: сильное давление покупки (+0.37)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "⚡ Рыночный вход (MTF сильный)"
       ]
     }
   ],
