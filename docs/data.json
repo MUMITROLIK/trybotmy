@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-22T09:50:37.369177+00:00",
+  "updated_at": "2026-03-22T09:51:43.785582+00:00",
   "publish_status": {
-    "last_ok": "2026-03-22T09:49:18Z",
+    "last_ok": "2026-03-22T09:50:43Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,11 +17,11 @@
     "winrate": 57.8
   },
   "trade_stats": {
-    "open": 14,
+    "open": 13,
     "pending": 0,
-    "wins": 365,
+    "wins": 366,
     "losses": 379,
-    "total_pnl": 35.46,
+    "total_pnl": 42.37,
     "winrate": 49.1
   },
   "fear_greed": {
@@ -946,33 +946,6 @@
       ]
     },
     {
-      "id": 829,
-      "symbol": "TRIAUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.03942,
-      "tp1": 0.04072,
-      "tp2": 0.042019,
-      "sl": 0.03942,
-      "entry_orig": 0.03942,
-      "tp1_orig": 0.04072,
-      "tp2_orig": 0.042019,
-      "sl_orig": 0.03838,
-      "strength": 54,
-      "taken_at": "2026-03-22T08:12:15.628532",
-      "status": "TP1_HIT",
-      "reasons": [
-        "MACD бычий (hist=0.00037)",
-        "Цена > EMA20 > EMA50",
-        "Объём x2.0 🔥",
-        "Стакан: перевес bid (+0.07)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +3.5% + цена ↑",
-        "CVD растёт (+18.3%) — покупки усиливаются 📈",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 836,
       "symbol": "KATUSDT",
       "direction": "LONG",
@@ -1000,6 +973,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "TRIAUSDT",
+      "direction": "LONG",
+      "entry": 0.03942,
+      "tp1": 0.04072,
+      "tp2": 0.042019,
+      "sl": 0.03942,
+      "strength": 54,
+      "status": "TP2",
+      "pnl_pct": 6.91,
+      "close_price": 0.042145,
+      "taken_at": "2026-03-22T08:12:15.628532",
+      "closed_at": "2026-03-22 09:51:04"
+    },
     {
       "symbol": "BTRUSDT",
       "direction": "LONG",
@@ -3785,20 +3772,6 @@
       "close_price": 270.395,
       "taken_at": "2026-03-20T16:54:14.011513",
       "closed_at": "2026-03-20 18:30:37"
-    },
-    {
-      "symbol": "WAXPUSDT",
-      "direction": "LONG",
-      "entry": 0.008124,
-      "tp1": 0.008363,
-      "tp2": 0.008601,
-      "sl": 0.007933,
-      "strength": 50,
-      "status": "SL",
-      "pnl_pct": -2.42,
-      "close_price": 0.0079275,
-      "taken_at": "2026-03-20T17:36:54.060446",
-      "closed_at": "2026-03-20 18:20:16"
     }
   ]
 }
