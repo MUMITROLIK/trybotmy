@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-22T13:30:11.212344+00:00",
+  "updated_at": "2026-03-22T13:30:43.761700+00:00",
   "publish_status": {
-    "last_ok": "2026-03-22T13:29:13Z",
+    "last_ok": "2026-03-22T13:30:17Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -12,16 +12,16 @@
   "stats": {
     "total": 968,
     "wins": 322,
-    "losses": 237,
-    "active": 9,
-    "winrate": 57.6
+    "losses": 238,
+    "active": 8,
+    "winrate": 57.5
   },
   "trade_stats": {
-    "open": 15,
+    "open": 14,
     "pending": 0,
     "wins": 377,
-    "losses": 387,
-    "total_pnl": 53.71,
+    "losses": 388,
+    "total_pnl": 50.84,
     "winrate": 49.3
   },
   "fear_greed": {
@@ -216,17 +216,19 @@
       "news": null,
       "created_at": "2026-03-22 13:19:01",
       "status": "ACTIVE"
-    },
+    }
+  ],
+  "history": [
     {
-      "id": 1006,
       "symbol": "DEXEUSDT",
       "direction": "LONG",
-      "exchange": "binance",
       "entry": 6.892,
       "tp1": 7.02984,
       "tp2": 7.16768,
       "sl": 6.75416,
       "strength": 50,
+      "status": "SL",
+      "created_at": "2026-03-22 13:20:54",
       "reasons": [
         "MACD бычий (hist=0.06015)",
         "Цена > EMA20 > EMA50",
@@ -234,13 +236,8 @@
         "МТФ: все 4 таймфрейма согласны ✅✅",
         "CVD растёт (+18.4%) — покупки усиливаются 📈",
         "⚡ Рыночный вход (MTF сильный)"
-      ],
-      "news": null,
-      "created_at": "2026-03-22 13:20:54",
-      "status": "ACTIVE"
-    }
-  ],
-  "history": [
+      ]
+    },
     {
       "symbol": "DUSKUSDT",
       "direction": "LONG",
@@ -621,26 +618,6 @@
         "CVD положительный (-2.4%)",
         "Цена у поддержки 0.0526"
       ]
-    },
-    {
-      "symbol": "GALAUSDT",
-      "direction": "LONG",
-      "entry": 0.00313,
-      "tp1": 0.003193,
-      "tp2": 0.003255,
-      "sl": 0.003067,
-      "strength": 52,
-      "status": "EXPIRED",
-      "created_at": "2026-03-22 08:26:20",
-      "reasons": [
-        "RSI=17 (сильная перепроданность)",
-        "BB нижняя полоса (пробой)",
-        "Объём x2.5 🔥🔥",
-        "Стакан: давление покупки (+0.23)",
-        "OI растёт +4.2%",
-        "CVD положительный (-2.8%)",
-        "Цена у поддержки 0.0031"
-      ]
     }
   ],
   "trades_open": [
@@ -957,31 +934,6 @@
       ]
     },
     {
-      "id": 860,
-      "symbol": "DEXEUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 6.892,
-      "tp1": 7.02984,
-      "tp2": 7.16768,
-      "sl": 6.75416,
-      "entry_orig": 6.892,
-      "tp1_orig": 7.02984,
-      "tp2_orig": 7.16768,
-      "sl_orig": 6.75416,
-      "strength": 50,
-      "taken_at": "2026-03-22T13:20:54.415538",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.06015)",
-        "Цена > EMA20 > EMA50",
-        "Объём x2.0 🔥",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "CVD растёт (+18.4%) — покупки усиливаются 📈",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 847,
       "symbol": "ARIAUSDT",
       "direction": "LONG",
@@ -1036,6 +988,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "DEXEUSDT",
+      "direction": "LONG",
+      "entry": 6.892,
+      "tp1": 7.02984,
+      "tp2": 7.16768,
+      "sl": 6.75416,
+      "strength": 50,
+      "status": "SL",
+      "pnl_pct": -2.87,
+      "close_price": 6.694,
+      "taken_at": "2026-03-22T13:20:54.415538",
+      "closed_at": "2026-03-22 13:30:43"
+    },
     {
       "symbol": "DUSKUSDT",
       "direction": "LONG",
@@ -3821,20 +3787,6 @@
       "close_price": 0.10714,
       "taken_at": "2026-03-20T13:59:11.317448",
       "closed_at": "2026-03-20 21:59:21"
-    },
-    {
-      "symbol": "MSTRUSDT",
-      "direction": "LONG",
-      "entry": 136.24,
-      "tp1": 138.9648,
-      "tp2": 141.6896,
-      "sl": 133.5152,
-      "strength": 51,
-      "status": "TIMEOUT",
-      "pnl_pct": 0.21,
-      "close_price": 136.53,
-      "taken_at": "2026-03-20T13:55:43.766695",
-      "closed_at": "2026-03-20 21:55:58"
     }
   ]
 }
