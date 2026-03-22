@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-22T20:31:22.201196+00:00",
+  "updated_at": "2026-03-22T20:32:05.384029+00:00",
   "publish_status": {
-    "last_ok": "2026-03-22T20:30:22Z",
+    "last_ok": "2026-03-22T20:31:28Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,11 +17,11 @@
     "winrate": 57.9
   },
   "trade_stats": {
-    "open": 9,
+    "open": 8,
     "pending": 0,
     "wins": 394,
-    "losses": 403,
-    "total_pnl": 71.26,
+    "losses": 404,
+    "total_pnl": 68.97,
     "winrate": 49.4
   },
   "fear_greed": {
@@ -627,33 +627,6 @@
       ]
     },
     {
-      "id": 863,
-      "symbol": "BANUSDT",
-      "direction": "LONG",
-      "exchange": "bybit",
-      "entry": 0.05285,
-      "tp1": 0.054232,
-      "tp2": 0.055614,
-      "sl": 0.051744,
-      "entry_orig": 0.05285,
-      "tp1_orig": 0.054232,
-      "tp2_orig": 0.055614,
-      "sl_orig": 0.051744,
-      "strength": 56,
-      "taken_at": "2026-03-22T14:54:12.958149",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=22 (сильная перепроданность)",
-        "BB нижняя зона (1%)",
-        "EMA20 > EMA50",
-        "Объём x4.0 🔥🔥🔥",
-        "Стакан: сильное давление покупки (+0.30)",
-        "МТФ: только 1 таймфрейм согласен",
-        "OI растёт +1.0%",
-        "⚠️ Funding через 67м"
-      ]
-    },
-    {
       "id": 875,
       "symbol": "KITEUSDT",
       "direction": "LONG",
@@ -833,6 +806,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "BANUSDT",
+      "direction": "LONG",
+      "entry": 0.05285,
+      "tp1": 0.054232,
+      "tp2": 0.055614,
+      "sl": 0.051744,
+      "strength": 56,
+      "status": "SL",
+      "pnl_pct": -2.29,
+      "close_price": 0.05164,
+      "taken_at": "2026-03-22T14:54:12.958149",
+      "closed_at": "2026-03-22 20:32:04"
+    },
     {
       "symbol": "BTRUSDT",
       "direction": "LONG",
@@ -3618,20 +3605,6 @@
       "close_price": 0.71595,
       "taken_at": "2026-03-21T01:31:12.555664",
       "closed_at": "2026-03-21 03:48:35"
-    },
-    {
-      "symbol": "BTRUSDT",
-      "direction": "LONG",
-      "entry": 0.1349,
-      "tp1": 0.137598,
-      "tp2": 0.140296,
-      "sl": 0.13801,
-      "strength": 60,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 2.31,
-      "close_price": 0.13801,
-      "taken_at": "2026-03-21T01:51:25.562373",
-      "closed_at": "2026-03-21 03:34:47"
     }
   ]
 }
