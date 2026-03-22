@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-22T05:49:45.055638+00:00",
+  "updated_at": "2026-03-22T05:50:29.013490+00:00",
   "publish_status": {
-    "last_ok": "2026-03-22T05:48:40Z",
+    "last_ok": "2026-03-22T05:49:53Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 57.6
   },
   "trade_stats": {
-    "open": 10,
+    "open": 9,
     "pending": 0,
     "wins": 354,
-    "losses": 369,
-    "total_pnl": 22.09,
-    "winrate": 49.0
+    "losses": 370,
+    "total_pnl": 20.01,
+    "winrate": 48.9
   },
   "fear_greed": {
     "value": 10,
@@ -539,33 +539,6 @@
       ]
     },
     {
-      "id": 803,
-      "symbol": "IPUSDT",
-      "direction": "LONG",
-      "exchange": "bybit",
-      "entry": 0.7296,
-      "tp1": 0.744192,
-      "tp2": 0.758784,
-      "sl": 0.715008,
-      "entry_orig": 0.7296,
-      "tp1_orig": 0.744192,
-      "tp2_orig": 0.758784,
-      "sl_orig": 0.715008,
-      "strength": 56,
-      "taken_at": "2026-03-22T00:13:40.850615",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=24 (сильная перепроданность)",
-        "BB нижняя полоса (пробой)",
-        "EMA20 > EMA50",
-        "Объём x4.0 🔥🔥🔥",
-        "Стакан: давление покупки (+0.19)",
-        "МТФ: только 1 таймфрейм согласен",
-        "OI растёт +0.6%",
-        "Doji (1h) — нерешительность"
-      ]
-    },
-    {
       "id": 805,
       "symbol": "DEXEUSDT",
       "direction": "LONG",
@@ -748,6 +721,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "IPUSDT",
+      "direction": "LONG",
+      "entry": 0.7296,
+      "tp1": 0.744192,
+      "tp2": 0.758784,
+      "sl": 0.715008,
+      "strength": 56,
+      "status": "SL",
+      "pnl_pct": -2.08,
+      "close_price": 0.7144,
+      "taken_at": "2026-03-22T00:13:40.850615",
+      "closed_at": "2026-03-22 05:49:53"
+    },
     {
       "symbol": "SIRENUSDT",
       "direction": "LONG",
@@ -3533,20 +3520,6 @@
       "close_price": 130.155,
       "taken_at": "2026-03-20T14:09:53.996586",
       "closed_at": "2026-03-20 16:01:42"
-    },
-    {
-      "symbol": "BTRUSDT",
-      "direction": "LONG",
-      "entry": 0.13936,
-      "tp1": 0.143656,
-      "tp2": 0.147953,
-      "sl": 0.144095,
-      "strength": 53,
-      "status": "TP2",
-      "pnl_pct": 6.74,
-      "close_price": 0.14875,
-      "taken_at": "2026-03-20T14:49:27.707279",
-      "closed_at": "2026-03-20 15:56:48"
     }
   ]
 }
