@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-22T13:29:07.501905+00:00",
+  "updated_at": "2026-03-22T13:30:11.212344+00:00",
   "publish_status": {
-    "last_ok": "2026-03-22T13:27:49Z",
+    "last_ok": "2026-03-22T13:29:13Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -12,17 +12,17 @@
   "stats": {
     "total": 968,
     "wins": 322,
-    "losses": 236,
-    "active": 10,
-    "winrate": 57.7
+    "losses": 237,
+    "active": 9,
+    "winrate": 57.6
   },
   "trade_stats": {
-    "open": 16,
+    "open": 15,
     "pending": 0,
     "wins": 377,
-    "losses": 386,
-    "total_pnl": 57.13,
-    "winrate": 49.4
+    "losses": 387,
+    "total_pnl": 53.71,
+    "winrate": 49.3
   },
   "fear_greed": {
     "value": 10,
@@ -174,29 +174,6 @@
       "status": "ACTIVE"
     },
     {
-      "id": 1003,
-      "symbol": "DUSKUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.10123,
-      "tp1": 0.1048,
-      "tp2": 0.10837,
-      "sl": 0.098374,
-      "strength": 50,
-      "reasons": [
-        "MACD бычий (hist=0.00047)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: давление покупки (+0.16)",
-        "МТФ: 5m, 15m, 1h согласны",
-        "OI растёт +23.9% + цена ↑",
-        "CVD растёт (+5.4%) — покупки усиливаются 📈",
-        "⚡ Рыночный вход (MTF сильный)"
-      ],
-      "news": null,
-      "created_at": "2026-03-22 13:04:31",
-      "status": "ACTIVE"
-    },
-    {
       "id": 1004,
       "symbol": "EDGEUSDT",
       "direction": "LONG",
@@ -264,6 +241,26 @@
     }
   ],
   "history": [
+    {
+      "symbol": "DUSKUSDT",
+      "direction": "LONG",
+      "entry": 0.10123,
+      "tp1": 0.1048,
+      "tp2": 0.10837,
+      "sl": 0.098374,
+      "strength": 50,
+      "status": "SL",
+      "created_at": "2026-03-22 13:04:31",
+      "reasons": [
+        "MACD бычий (hist=0.00047)",
+        "Цена > EMA20 > EMA50",
+        "Стакан: давление покупки (+0.16)",
+        "МТФ: 5m, 15m, 1h согласны",
+        "OI растёт +23.9% + цена ↑",
+        "CVD растёт (+5.4%) — покупки усиливаются 📈",
+        "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
     {
       "symbol": "DEXEUSDT",
       "direction": "LONG",
@@ -644,25 +641,6 @@
         "CVD положительный (-2.8%)",
         "Цена у поддержки 0.0031"
       ]
-    },
-    {
-      "symbol": "BTRUSDT",
-      "direction": "LONG",
-      "entry": 0.17757,
-      "tp1": 0.181849,
-      "tp2": 0.186129,
-      "sl": 0.174019,
-      "strength": 50,
-      "status": "SL",
-      "created_at": "2026-03-22 08:21:05",
-      "reasons": [
-        "MACD бычий (hist=0.00233)",
-        "Цена > EMA20 > EMA50",
-        "Объём x2.0 🔥",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "CVD растёт (+16.4%) — покупки усиливаются 📈",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
     }
   ],
   "trades_open": [
@@ -929,32 +907,6 @@
       ]
     },
     {
-      "id": 857,
-      "symbol": "DUSKUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.10123,
-      "tp1": 0.1048,
-      "tp2": 0.10837,
-      "sl": 0.098374,
-      "entry_orig": 0.10123,
-      "tp1_orig": 0.1048,
-      "tp2_orig": 0.10837,
-      "sl_orig": 0.098374,
-      "strength": 50,
-      "taken_at": "2026-03-22T13:04:34.227194",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00047)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: давление покупки (+0.16)",
-        "МТФ: 5m, 15m, 1h согласны",
-        "OI растёт +23.9% + цена ↑",
-        "CVD растёт (+5.4%) — покупки усиливаются 📈",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 858,
       "symbol": "EDGEUSDT",
       "direction": "LONG",
@@ -1084,6 +1036,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "DUSKUSDT",
+      "direction": "LONG",
+      "entry": 0.10123,
+      "tp1": 0.1048,
+      "tp2": 0.10837,
+      "sl": 0.098374,
+      "strength": 50,
+      "status": "SL",
+      "pnl_pct": -3.42,
+      "close_price": 0.09776499999999999,
+      "taken_at": "2026-03-22T13:04:34.227194",
+      "closed_at": "2026-03-22 13:30:10"
+    },
     {
       "symbol": "RIVERUSDT",
       "direction": "LONG",
@@ -3869,20 +3835,6 @@
       "close_price": 136.53,
       "taken_at": "2026-03-20T13:55:43.766695",
       "closed_at": "2026-03-20 21:55:58"
-    },
-    {
-      "symbol": "MONUSDT",
-      "direction": "LONG",
-      "entry": 0.02219,
-      "tp1": 0.02263424,
-      "tp2": 0.02307809,
-      "sl": 0.02174654,
-      "strength": 54,
-      "status": "TIMEOUT",
-      "pnl_pct": -0.56,
-      "close_price": 0.022065,
-      "taken_at": "2026-03-20T13:43:20.455471",
-      "closed_at": "2026-03-20 21:43:22"
     }
   ]
 }
