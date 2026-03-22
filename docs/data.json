@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-22T03:31:40.801167+00:00",
+  "updated_at": "2026-03-22T03:32:46.942289+00:00",
   "publish_status": {
-    "last_ok": "2026-03-22T03:30:20Z",
+    "last_ok": "2026-03-22T03:31:47Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,11 +17,11 @@
     "winrate": 57.3
   },
   "trade_stats": {
-    "open": 13,
+    "open": 12,
     "pending": 0,
     "wins": 349,
-    "losses": 367,
-    "total_pnl": 7.54,
+    "losses": 368,
+    "total_pnl": 5.54,
     "winrate": 48.7
   },
   "fear_greed": {
@@ -769,32 +769,6 @@
       ]
     },
     {
-      "id": 808,
-      "symbol": "BRUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.06888,
-      "tp1": 0.070329,
-      "tp2": 0.071777,
-      "sl": 0.067502,
-      "entry_orig": 0.06888,
-      "tp1_orig": 0.070329,
-      "tp2_orig": 0.071777,
-      "sl_orig": 0.067502,
-      "strength": 56,
-      "taken_at": "2026-03-22T02:24:21.153524",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=47 (нейтральный↓)",
-        "MACD бычий (hist=0.00001)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: сильное давление покупки (+0.31)",
-        "МТФ: 5m, 15m, 4h согласны",
-        "CVD растёт (+7.0%) — покупки усиливаются 📈",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 809,
       "symbol": "SIGNUSDT",
       "direction": "LONG",
@@ -949,6 +923,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "BRUSDT",
+      "direction": "LONG",
+      "entry": 0.06888,
+      "tp1": 0.070329,
+      "tp2": 0.071777,
+      "sl": 0.067502,
+      "strength": 56,
+      "status": "SL",
+      "pnl_pct": -2.0,
+      "close_price": 0.0675,
+      "taken_at": "2026-03-22T02:24:21.153524",
+      "closed_at": "2026-03-22 03:32:46"
+    },
     {
       "symbol": "SIGNUSDT",
       "direction": "LONG",
@@ -3734,20 +3722,6 @@
       "close_price": 0.025645,
       "taken_at": "2026-03-20T13:39:43.151078",
       "closed_at": "2026-03-20 14:50:44"
-    },
-    {
-      "symbol": "AIAUSDT",
-      "direction": "LONG",
-      "entry": 0.10348,
-      "tp1": 0.106245,
-      "tp2": 0.109011,
-      "sl": 0.101268,
-      "strength": 50,
-      "status": "SL",
-      "pnl_pct": -2.24,
-      "close_price": 0.10116,
-      "taken_at": "2026-03-20T11:54:10.577616",
-      "closed_at": "2026-03-20 14:50:18"
     }
   ]
 }
