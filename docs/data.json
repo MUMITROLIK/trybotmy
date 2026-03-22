@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-22T08:53:24.676765+00:00",
+  "updated_at": "2026-03-22T08:54:31.013529+00:00",
   "publish_status": {
-    "last_ok": "2026-03-22T08:52:05Z",
+    "last_ok": "2026-03-22T08:53:31Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 57.6
   },
   "trade_stats": {
-    "open": 14,
+    "open": 13,
     "pending": 0,
-    "wins": 363,
+    "wins": 364,
     "losses": 376,
-    "total_pnl": 30.57,
-    "winrate": 49.1
+    "total_pnl": 30.31,
+    "winrate": 49.2
   },
   "fear_greed": {
     "value": 10,
@@ -1023,35 +1023,23 @@
         "⚠️ Funding через 65м",
         "⚡ Рыночный вход (MTF сильный)"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 826,
       "symbol": "BEATUSDT",
       "direction": "LONG",
-      "exchange": "binance",
       "entry": 0.7065,
       "tp1": 0.729557,
       "tp2": 0.752614,
       "sl": 0.7065,
-      "entry_orig": 0.7065,
-      "tp1_orig": 0.729557,
-      "tp2_orig": 0.752614,
-      "sl_orig": 0.688054,
       "strength": 51,
+      "status": "SL_AFTER_TP1",
+      "pnl_pct": -0.26,
+      "close_price": 0.70465,
       "taken_at": "2026-03-22T08:05:00.986197",
-      "status": "TP1_HIT",
-      "reasons": [
-        "MACD бычий (hist=0.00652)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: перевес bid (+0.09)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +5.9% + цена ↑",
-        "CVD растёт (+5.9%) — покупки усиливаются 📈",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-22 08:53:31"
+    },
     {
       "symbol": "CYSUSDT",
       "direction": "LONG",
@@ -3837,20 +3825,6 @@
       "close_price": 0.008161999999999999,
       "taken_at": "2026-03-20T13:00:54.882395",
       "closed_at": "2026-03-20 17:32:14"
-    },
-    {
-      "symbol": "ETHUSDT",
-      "direction": "LONG",
-      "entry": 2141.28,
-      "tp1": 2184.1056,
-      "tp2": 2226.9312,
-      "sl": 2098.4544,
-      "strength": 50,
-      "status": "TIMEOUT",
-      "pnl_pct": -0.48,
-      "close_price": 2131.0550000000003,
-      "taken_at": "2026-03-20T09:30:24.163622",
-      "closed_at": "2026-03-20 17:30:39"
     }
   ]
 }
