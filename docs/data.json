@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-22T12:23:24.689224+00:00",
+  "updated_at": "2026-03-22T12:24:03.285227+00:00",
   "publish_status": {
-    "last_ok": "2026-03-22T12:22:20Z",
+    "last_ok": "2026-03-22T12:23:30Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 57.4
   },
   "trade_stats": {
-    "open": 14,
+    "open": 13,
     "pending": 0,
-    "wins": 371,
+    "wins": 372,
     "losses": 386,
-    "total_pnl": 39.5,
-    "winrate": 49.0
+    "total_pnl": 43.72,
+    "winrate": 49.1
   },
   "fear_greed": {
     "value": 10,
@@ -911,32 +911,6 @@
       ]
     },
     {
-      "id": 844,
-      "symbol": "1000TURBOUSDT",
-      "direction": "LONG",
-      "exchange": "bybit",
-      "entry": 1.0771,
-      "tp1": 1.098642,
-      "tp2": 1.120184,
-      "sl": 1.0771,
-      "entry_orig": 1.0771,
-      "tp1_orig": 1.098642,
-      "tp2_orig": 1.120184,
-      "sl_orig": 1.055558,
-      "strength": 53,
-      "taken_at": "2026-03-22T11:00:48.330430",
-      "status": "TP1_HIT",
-      "reasons": [
-        "RSI=43 (нейтральный↓)",
-        "MACD бычий (hist=0.00056)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: сильное давление покупки (+0.39)",
-        "МТФ: 5m, 15m, 1h согласны",
-        "OI растёт +0.6% + цена ↑",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 845,
       "symbol": "TURBOUSDT",
       "direction": "LONG",
@@ -1018,6 +992,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "1000TURBOUSDT",
+      "direction": "LONG",
+      "entry": 1.0771,
+      "tp1": 1.098642,
+      "tp2": 1.120184,
+      "sl": 1.0771,
+      "strength": 53,
+      "status": "TP2",
+      "pnl_pct": 4.22,
+      "close_price": 1.1226,
+      "taken_at": "2026-03-22T11:00:48.330430",
+      "closed_at": "2026-03-22 12:23:37"
+    },
     {
       "symbol": "TRIAUSDT",
       "direction": "LONG",
@@ -3803,20 +3791,6 @@
       "close_price": 0.001429,
       "taken_at": "2026-03-20T19:05:47.920643",
       "closed_at": "2026-03-20 20:56:00"
-    },
-    {
-      "symbol": "ANKRUSDT",
-      "direction": "LONG",
-      "entry": 0.005269,
-      "tp1": 0.005374,
-      "tp2": 0.00548,
-      "sl": 0.005164,
-      "strength": 53,
-      "status": "SL",
-      "pnl_pct": -2.83,
-      "close_price": 0.00512,
-      "taken_at": "2026-03-20T20:39:54.975821",
-      "closed_at": "2026-03-20 20:50:05"
     }
   ]
 }
