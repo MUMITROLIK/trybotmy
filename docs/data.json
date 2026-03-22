@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-22T11:18:11.908228+00:00",
+  "updated_at": "2026-03-22T11:19:34.581631+00:00",
   "publish_status": {
-    "last_ok": "2026-03-22T11:17:30Z",
+    "last_ok": "2026-03-22T11:18:18Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,11 +17,11 @@
     "winrate": 57.7
   },
   "trade_stats": {
-    "open": 15,
+    "open": 14,
     "pending": 0,
     "wins": 371,
-    "losses": 381,
-    "total_pnl": 51.51,
+    "losses": 382,
+    "total_pnl": 49.17,
     "winrate": 49.3
   },
   "fear_greed": {
@@ -1111,32 +1111,6 @@
       ]
     },
     {
-      "id": 848,
-      "symbol": "FOLKSUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 1.173,
-      "tp1": 1.204071,
-      "tp2": 1.235143,
-      "sl": 1.148143,
-      "entry_orig": 1.173,
-      "tp1_orig": 1.204071,
-      "tp2_orig": 1.235143,
-      "sl_orig": 1.148143,
-      "strength": 53,
-      "taken_at": "2026-03-22T11:14:43.215976",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00485)",
-        "Цена > EMA20 > EMA50",
-        "Объём x2.7 🔥🔥",
-        "МТФ: 5m, 15m, 1h согласны",
-        "OI растёт +4.6% + цена ↑",
-        "CVD положительный (-2.6%)",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 818,
       "symbol": "RIVERUSDT",
       "direction": "LONG",
@@ -1166,6 +1140,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "FOLKSUSDT",
+      "direction": "LONG",
+      "entry": 1.173,
+      "tp1": 1.204071,
+      "tp2": 1.235143,
+      "sl": 1.148143,
+      "strength": 53,
+      "status": "SL",
+      "pnl_pct": -2.34,
+      "close_price": 1.1455,
+      "taken_at": "2026-03-22T11:14:43.215976",
+      "closed_at": "2026-03-22 11:18:19"
+    },
     {
       "symbol": "BRUSDT",
       "direction": "LONG",
@@ -3951,20 +3939,6 @@
       "close_price": 0.005321,
       "taken_at": "2026-03-20T20:18:34.447894",
       "closed_at": "2026-03-20 20:29:24"
-    },
-    {
-      "symbol": "PHAUSDT",
-      "direction": "LONG",
-      "entry": 0.0377,
-      "tp1": 0.038977,
-      "tp2": 0.040254,
-      "sl": 0.038985,
-      "strength": 50,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 3.38,
-      "close_price": 0.038974999999999996,
-      "taken_at": "2026-03-20T16:19:30.405515",
-      "closed_at": "2026-03-20 20:02:12"
     }
   ]
 }
