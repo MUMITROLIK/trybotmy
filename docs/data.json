@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-22T07:18:55.111123+00:00",
+  "updated_at": "2026-03-22T07:19:37.770874+00:00",
   "publish_status": {
-    "last_ok": "2026-03-22T07:17:55Z",
+    "last_ok": "2026-03-22T07:19:01Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -12,17 +12,17 @@
   "stats": {
     "total": 932,
     "wins": 305,
-    "losses": 223,
-    "active": 8,
-    "winrate": 57.8
+    "losses": 224,
+    "active": 7,
+    "winrate": 57.7
   },
   "trade_stats": {
-    "open": 16,
+    "open": 15,
     "pending": 0,
     "wins": 356,
-    "losses": 371,
-    "total_pnl": 25.53,
-    "winrate": 49.0
+    "losses": 372,
+    "total_pnl": 22.63,
+    "winrate": 48.9
   },
   "fear_greed": {
     "value": 10,
@@ -183,29 +183,6 @@
       "status": "ACTIVE"
     },
     {
-      "id": 969,
-      "symbol": "BANANAS31USDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.011463,
-      "tp1": 0.011878,
-      "tp2": 0.012294,
-      "sl": 0.011131,
-      "strength": 53,
-      "reasons": [
-        "MACD бычий (hist=0.00020)",
-        "Цена > EMA20 > EMA50",
-        "Объём x5.9 🔥🔥🔥",
-        "МТФ: 5m, 15m, 1h согласны",
-        "OI растёт +0.8% + цена ↑",
-        "⚠️ Funding через 52м",
-        "⚡ Рыночный вход (MTF сильный)"
-      ],
-      "news": null,
-      "created_at": "2026-03-22 07:09:18",
-      "status": "ACTIVE"
-    },
-    {
       "id": 970,
       "symbol": "ARIAUSDT",
       "direction": "LONG",
@@ -230,6 +207,26 @@
     }
   ],
   "history": [
+    {
+      "symbol": "BANANAS31USDT",
+      "direction": "LONG",
+      "entry": 0.011463,
+      "tp1": 0.011878,
+      "tp2": 0.012294,
+      "sl": 0.011131,
+      "strength": 53,
+      "status": "SL",
+      "created_at": "2026-03-22 07:09:18",
+      "reasons": [
+        "MACD бычий (hist=0.00020)",
+        "Цена > EMA20 > EMA50",
+        "Объём x5.9 🔥🔥🔥",
+        "МТФ: 5m, 15m, 1h согласны",
+        "OI растёт +0.8% + цена ↑",
+        "⚠️ Funding через 52м",
+        "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
     {
       "symbol": "CYSUSDT",
       "direction": "LONG",
@@ -613,25 +610,6 @@
         "OI падает (шорты закрываются)",
         "⚡ Рыночный вход (MTF 2+ ТФ)"
       ]
-    },
-    {
-      "symbol": "WUSDT",
-      "direction": "LONG",
-      "entry": 0.016565,
-      "tp1": 0.016896,
-      "tp2": 0.017228,
-      "sl": 0.016234,
-      "strength": 51,
-      "status": "TP1",
-      "created_at": "2026-03-22 00:03:09",
-      "reasons": [
-        "RSI=14 (сильная перепроданность)",
-        "BB нижняя полоса (пробой)",
-        "Объём x4.4 🔥🔥🔥",
-        "Стакан: давление покупки (+0.10)",
-        "МТФ: только 1 таймфрейм согласен",
-        "OI падает (шорты закрываются)"
-      ]
     }
   ],
   "trades_open": [
@@ -880,32 +858,6 @@
       ]
     },
     {
-      "id": 823,
-      "symbol": "BANANAS31USDT",
-      "direction": "LONG",
-      "exchange": "bybit",
-      "entry": 0.011463,
-      "tp1": 0.011878,
-      "tp2": 0.012294,
-      "sl": 0.011131,
-      "entry_orig": 0.011463,
-      "tp1_orig": 0.011878,
-      "tp2_orig": 0.012294,
-      "sl_orig": 0.011131,
-      "strength": 53,
-      "taken_at": "2026-03-22T07:09:19.106515",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00020)",
-        "Цена > EMA20 > EMA50",
-        "Объём x5.9 🔥🔥🔥",
-        "МТФ: 5m, 15m, 1h согласны",
-        "OI растёт +0.8% + цена ↑",
-        "⚠️ Funding через 52м",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 824,
       "symbol": "ARIAUSDT",
       "direction": "LONG",
@@ -1060,6 +1012,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "BANANAS31USDT",
+      "direction": "LONG",
+      "entry": 0.011463,
+      "tp1": 0.011878,
+      "tp2": 0.012294,
+      "sl": 0.011131,
+      "strength": 53,
+      "status": "SL",
+      "pnl_pct": -2.9,
+      "close_price": 0.011131,
+      "taken_at": "2026-03-22T07:09:19.106515",
+      "closed_at": "2026-03-22 07:19:37"
+    },
     {
       "symbol": "BRUSDT",
       "direction": "LONG",
@@ -3845,20 +3811,6 @@
       "close_price": 0.0081195,
       "taken_at": "2026-03-20T16:02:47.787665",
       "closed_at": "2026-03-20 16:14:28"
-    },
-    {
-      "symbol": "ANKRUSDT",
-      "direction": "LONG",
-      "entry": 0.004896,
-      "tp1": 0.004994,
-      "tp2": 0.005092,
-      "sl": 0.004997,
-      "strength": 54,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 2.06,
-      "close_price": 0.004997,
-      "taken_at": "2026-03-20T09:12:22.045782",
-      "closed_at": "2026-03-20 16:06:24"
     }
   ]
 }
