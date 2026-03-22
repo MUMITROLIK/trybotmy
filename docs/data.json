@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-22T15:16:43.055154+00:00",
+  "updated_at": "2026-03-22T15:17:27.344974+00:00",
   "publish_status": {
-    "last_ok": "2026-03-22T15:15:43Z",
+    "last_ok": "2026-03-22T15:16:49Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,11 +17,11 @@
     "winrate": 57.7
   },
   "trade_stats": {
-    "open": 14,
+    "open": 13,
     "pending": 0,
-    "wins": 381,
+    "wins": 382,
     "losses": 391,
-    "total_pnl": 53.02,
+    "total_pnl": 56.35,
     "winrate": 49.4
   },
   "fear_greed": {
@@ -799,32 +799,6 @@
       ]
     },
     {
-      "id": 864,
-      "symbol": "JCTUSDT",
-      "direction": "LONG",
-      "exchange": "bybit",
-      "entry": 0.0027179,
-      "tp1": 0.002781,
-      "tp2": 0.002843,
-      "sl": 0.002664,
-      "entry_orig": 0.0027179,
-      "tp1_orig": 0.002781,
-      "tp2_orig": 0.002843,
-      "sl_orig": 0.002664,
-      "strength": 53,
-      "taken_at": "2026-03-22T14:56:01.198275",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00001)",
-        "Цена > EMA20 > EMA50",
-        "Объём x2.6 🔥🔥",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +1.4% + цена ↑",
-        "⚠️ Funding через 65м",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 865,
       "symbol": "EDGEUSDT",
       "direction": "LONG",
@@ -934,6 +908,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "JCTUSDT",
+      "direction": "LONG",
+      "entry": 0.0027179,
+      "tp1": 0.002781,
+      "tp2": 0.002843,
+      "sl": 0.002664,
+      "strength": 53,
+      "status": "TP1",
+      "pnl_pct": 3.33,
+      "close_price": 0.0028084,
+      "taken_at": "2026-03-22T14:56:01.198275",
+      "closed_at": "2026-03-22 15:17:02"
+    },
     {
       "symbol": "RIVERUSDT",
       "direction": "LONG",
@@ -3719,20 +3707,6 @@
       "close_price": 0.7276,
       "taken_at": "2026-03-20T22:24:20.463294",
       "closed_at": "2026-03-20 22:29:40"
-    },
-    {
-      "symbol": "XAUUSDT",
-      "direction": "SHORT",
-      "entry": 4570.91,
-      "tp1": 4479.4918,
-      "tp2": 4388.0736,
-      "sl": 4662.3282,
-      "strength": 55,
-      "status": "TIMEOUT",
-      "pnl_pct": 1.54,
-      "close_price": 4500.545,
-      "taken_at": "2026-03-20T14:28:56.459712",
-      "closed_at": "2026-03-20 22:29:06"
     }
   ]
 }
