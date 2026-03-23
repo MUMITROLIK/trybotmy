@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-23T14:36:24.014719+00:00",
+  "updated_at": "2026-03-23T14:36:58.829169+00:00",
   "publish_status": {
-    "last_ok": "2026-03-23T14:35:23Z",
+    "last_ok": "2026-03-23T14:36:30Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,11 +17,11 @@
     "winrate": 55.2
   },
   "trade_stats": {
-    "open": 18,
+    "open": 17,
     "pending": 0,
     "wins": 441,
-    "losses": 491,
-    "total_pnl": -10.7,
+    "losses": 492,
+    "total_pnl": -12.93,
     "winrate": 47.3
   },
   "fear_greed": {
@@ -847,33 +847,6 @@
   ],
   "trades_open": [
     {
-      "id": 973,
-      "symbol": "DEXEUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 7.479,
-      "tp1": 7.677964,
-      "tp2": 7.876929,
-      "sl": 7.319829,
-      "entry_orig": 7.479,
-      "tp1_orig": 7.677964,
-      "tp2_orig": 7.876929,
-      "sl_orig": 7.319829,
-      "strength": 50,
-      "taken_at": "2026-03-23T08:51:00.795221",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=49 (нейтральный↓)",
-        "BB ниже середины",
-        "Цена > EMA20 > EMA50",
-        "Стакан: давление покупки (+0.14)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +3.1% + цена ↑",
-        "CVD растёт (+8.7%) — покупки усиливаются 📈",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 985,
       "symbol": "1000TURBOUSDT",
       "direction": "LONG",
@@ -1345,6 +1318,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "DEXEUSDT",
+      "direction": "LONG",
+      "entry": 7.479,
+      "tp1": 7.677964,
+      "tp2": 7.876929,
+      "sl": 7.319829,
+      "strength": 50,
+      "status": "SL",
+      "pnl_pct": -2.23,
+      "close_price": 7.3125,
+      "taken_at": "2026-03-23T08:51:00.795221",
+      "closed_at": "2026-03-23 14:36:58"
+    },
     {
       "symbol": "ZETAUSDT",
       "direction": "LONG",
@@ -4130,20 +4117,6 @@
       "close_price": 0.7098,
       "taken_at": "2026-03-22T06:52:08.709912",
       "closed_at": "2026-03-22 08:04:19"
-    },
-    {
-      "symbol": "WUSDT",
-      "direction": "LONG",
-      "entry": 0.016565,
-      "tp1": 0.016896,
-      "tp2": 0.017228,
-      "sl": 0.016565,
-      "strength": 51,
-      "status": "TIMEOUT",
-      "pnl_pct": 0.56,
-      "close_price": 0.016657,
-      "taken_at": "2026-03-22T00:03:09.460417",
-      "closed_at": "2026-03-22 08:03:12"
     }
   ]
 }
