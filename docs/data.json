@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-23T00:00:31.068023+00:00",
+  "updated_at": "2026-03-23T00:01:36.784520+00:00",
   "publish_status": {
-    "last_ok": "2026-03-22T23:59:31Z",
+    "last_ok": "2026-03-23T00:00:36Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 1039,
+    "total": 1040,
     "wins": 346,
     "losses": 256,
-    "active": 29,
+    "active": 30,
     "winrate": 57.5
   },
   "trade_stats": {
-    "open": 31,
+    "open": 32,
     "pending": 0,
     "wins": 403,
     "losses": 416,
@@ -25,7 +25,7 @@
     "winrate": 49.2
   },
   "fear_greed": {
-    "value": 10,
+    "value": 8,
     "label": "Extreme Fear",
     "emoji": "😱"
   },
@@ -691,6 +691,29 @@
       ],
       "news": null,
       "created_at": "2026-03-22 23:13:51",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1078,
+      "symbol": "TAOUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 262.53,
+      "tp1": 267.7806,
+      "tp2": 273.0312,
+      "sl": 257.2794,
+      "strength": 52,
+      "reasons": [
+        "RSI=35 (перепроданность)",
+        "MACD бычий (hist=0.05132)",
+        "BB нижняя зона (18%)",
+        "Стакан: сильное давление покупки (+0.36)",
+        "МТФ: только 1 таймфрейм согласен",
+        "OI падает (шорты закрываются)",
+        "CVD положительный (+1.2%)"
+      ],
+      "news": null,
+      "created_at": "2026-03-23 00:01:16",
       "status": "ACTIVE"
     }
   ],
@@ -1874,6 +1897,32 @@
         "CVD растёт (+10.5%) — покупки усиливаются 📈",
         "⚠️ Funding через 47м",
         "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
+    {
+      "id": 932,
+      "symbol": "TAOUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 262.53,
+      "tp1": 267.7806,
+      "tp2": 273.0312,
+      "sl": 257.2794,
+      "entry_orig": 262.53,
+      "tp1_orig": 267.7806,
+      "tp2_orig": 273.0312,
+      "sl_orig": 257.2794,
+      "strength": 52,
+      "taken_at": "2026-03-23T00:01:17.189853",
+      "status": "OPEN",
+      "reasons": [
+        "RSI=35 (перепроданность)",
+        "MACD бычий (hist=0.05132)",
+        "BB нижняя зона (18%)",
+        "Стакан: сильное давление покупки (+0.36)",
+        "МТФ: только 1 таймфрейм согласен",
+        "OI падает (шорты закрываются)",
+        "CVD положительный (+1.2%)"
       ]
     }
   ],
