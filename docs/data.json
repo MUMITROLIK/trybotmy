@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-23T01:03:58.141100+00:00",
+  "updated_at": "2026-03-23T01:05:03.883564+00:00",
   "publish_status": {
-    "last_ok": "2026-03-23T01:02:58Z",
+    "last_ok": "2026-03-23T01:04:03Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -11,18 +11,18 @@
   },
   "stats": {
     "total": 1045,
-    "wins": 348,
+    "wins": 349,
     "losses": 258,
-    "active": 30,
-    "winrate": 57.4
+    "active": 29,
+    "winrate": 57.5
   },
   "trade_stats": {
-    "open": 33,
+    "open": 32,
     "pending": 0,
-    "wins": 405,
+    "wins": 406,
     "losses": 418,
-    "total_pnl": 67.23,
-    "winrate": 49.2
+    "total_pnl": 70.59,
+    "winrate": 49.3
   },
   "fear_greed": {
     "value": 8,
@@ -690,17 +690,19 @@
       "news": null,
       "created_at": "2026-03-23 00:41:36",
       "status": "ACTIVE"
-    },
+    }
+  ],
+  "history": [
     {
-      "id": 1083,
       "symbol": "KATUSDT",
       "direction": "LONG",
-      "exchange": "binance",
       "entry": 0.01175,
       "tp1": 0.012127,
       "tp2": 0.012504,
       "sl": 0.011448,
       "strength": 58,
+      "status": "TP1",
+      "created_at": "2026-03-23 00:44:53",
       "reasons": [
         "RSI=47 (нейтральный↓)",
         "MACD бычий (hist=0.00005)",
@@ -710,13 +712,8 @@
         "МТФ: 5m, 15m, 1h согласны",
         "CVD положительный (+3.8%)",
         "⚡ Рыночный вход (MTF сильный)"
-      ],
-      "news": null,
-      "created_at": "2026-03-23 00:44:53",
-      "status": "ACTIVE"
-    }
-  ],
-  "history": [
+      ]
+    },
     {
       "symbol": "ATHUSDT",
       "direction": "LONG",
@@ -1087,27 +1084,6 @@
         "МТФ: все 4 таймфрейма согласны ✅✅",
         "CVD растёт (+9.2%) — покупки усиливаются 📈",
         "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
-      "symbol": "XMRUSDT",
-      "direction": "SHORT",
-      "entry": 360.29,
-      "tp1": 353.0842,
-      "tp2": 345.8784,
-      "sl": 367.4958,
-      "strength": 52,
-      "status": "EXPIRED",
-      "created_at": "2026-03-22 20:56:45",
-      "reasons": [
-        "RSI=62 (перекупленность)",
-        "MACD медвежий (hist=-0.02070)",
-        "BB верхняя зона (78%)",
-        "Стакан: сильное давление продажи (-0.44)",
-        "МТФ: только 1 таймфрейм согласен",
-        "CVD падает (-5.3%) — продажи усиливаются 📉",
-        "Doji (1h) — нерешительность",
-        "Цена у сопротивления 361.5700"
       ]
     }
   ],
@@ -1931,36 +1907,23 @@
         "CVD падает (-8.8%) — продажи усиливаются 📉",
         "BTC контекст: -1.7% за 12ч 📉"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 937,
       "symbol": "KATUSDT",
       "direction": "LONG",
-      "exchange": "binance",
       "entry": 0.01175,
       "tp1": 0.012127,
       "tp2": 0.012504,
       "sl": 0.011448,
-      "entry_orig": 0.01175,
-      "tp1_orig": 0.012127,
-      "tp2_orig": 0.012504,
-      "sl_orig": 0.011448,
       "strength": 58,
+      "status": "TP1",
+      "pnl_pct": 3.36,
+      "close_price": 0.012145,
       "taken_at": "2026-03-23T00:44:53.698940",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=47 (нейтральный↓)",
-        "MACD бычий (hist=0.00005)",
-        "Цена > EMA20 > EMA50",
-        "Объём x2.5 🔥🔥",
-        "Стакан: давление покупки (+0.16)",
-        "МТФ: 5m, 15m, 1h согласны",
-        "CVD положительный (+3.8%)",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-23 01:04:12"
+    },
     {
       "symbol": "ATHUSDT",
       "direction": "LONG",
@@ -4746,20 +4709,6 @@
       "close_price": 0.907335,
       "taken_at": "2026-03-21T08:49:47.952126",
       "closed_at": "2026-03-21 10:25:30"
-    },
-    {
-      "symbol": "EDGEUSDT",
-      "direction": "LONG",
-      "entry": 0.716,
-      "tp1": 0.732693,
-      "tp2": 0.749386,
-      "sl": 0.70168,
-      "strength": 53,
-      "status": "SL",
-      "pnl_pct": -2.05,
-      "close_price": 0.70135,
-      "taken_at": "2026-03-21T08:06:07.713730",
-      "closed_at": "2026-03-21 10:22:22"
     }
   ]
 }
