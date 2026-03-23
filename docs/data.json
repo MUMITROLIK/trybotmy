@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-23T05:55:20.792169+00:00",
+  "updated_at": "2026-03-23T05:56:26.592305+00:00",
   "publish_status": {
-    "last_ok": "2026-03-23T05:54:20Z",
+    "last_ok": "2026-03-23T05:55:26Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 1061,
+    "total": 1062,
     "wins": 354,
     "losses": 266,
-    "active": 9,
+    "active": 10,
     "winrate": 57.1
   },
   "trade_stats": {
-    "open": 10,
+    "open": 11,
     "pending": 0,
     "wins": 414,
     "losses": 448,
@@ -247,6 +247,29 @@
       ],
       "news": null,
       "created_at": "2026-03-23 05:14:46",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1100,
+      "symbol": "MYXUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.3206,
+      "tp1": 0.327012,
+      "tp2": 0.333424,
+      "sl": 0.314188,
+      "strength": 55,
+      "reasons": [
+        "MACD бычий (hist=0.00015)",
+        "Цена > EMA20 > EMA50",
+        "Объём x7.8 🔥🔥🔥",
+        "Стакан: давление покупки (+0.16)",
+        "МТФ: 5m, 15m, 1h согласны",
+        "OI падает (шорты закрываются)",
+        "⚡ Рыночный вход (MTF сильный)"
+      ],
+      "news": null,
+      "created_at": "2026-03-23 05:56:24",
       "status": "ACTIVE"
     }
   ],
@@ -931,6 +954,32 @@
         "CVD растёт (+12.4%) — покупки усиливаются 📈",
         "BTC корреляция 0.70, BTC +1.2% 📈",
         "⚡ Рыночный вход (MTF 2+ ТФ)"
+      ]
+    },
+    {
+      "id": 954,
+      "symbol": "MYXUSDT",
+      "direction": "LONG",
+      "exchange": "bybit",
+      "entry": 0.3206,
+      "tp1": 0.327012,
+      "tp2": 0.333424,
+      "sl": 0.314188,
+      "entry_orig": 0.3206,
+      "tp1_orig": 0.327012,
+      "tp2_orig": 0.333424,
+      "sl_orig": 0.314188,
+      "strength": 55,
+      "taken_at": "2026-03-23T05:56:24.513431",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.00015)",
+        "Цена > EMA20 > EMA50",
+        "Объём x7.8 🔥🔥🔥",
+        "Стакан: давление покупки (+0.16)",
+        "МТФ: 5m, 15m, 1h согласны",
+        "OI падает (шорты закрываются)",
+        "⚡ Рыночный вход (MTF сильный)"
       ]
     }
   ],
