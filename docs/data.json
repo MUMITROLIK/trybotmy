@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-23T14:05:24.931420+00:00",
+  "updated_at": "2026-03-23T14:06:31.193786+00:00",
   "publish_status": {
-    "last_ok": "2026-03-23T14:04:09Z",
+    "last_ok": "2026-03-23T14:05:31Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 1138,
+    "total": 1139,
     "wins": 375,
     "losses": 303,
-    "active": 18,
+    "active": 19,
     "winrate": 55.3
   },
   "trade_stats": {
-    "open": 20,
+    "open": 21,
     "pending": 0,
     "wins": 440,
     "losses": 489,
@@ -475,6 +475,30 @@
       ],
       "news": null,
       "created_at": "2026-03-23 14:04:02",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1177,
+      "symbol": "JTOUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.3089,
+      "tp1": 0.315746,
+      "tp2": 0.322593,
+      "sl": 0.302722,
+      "strength": 51,
+      "reasons": [
+        "MACD бычий (hist=0.00181)",
+        "Цена > EMA20 > EMA50",
+        "Объём x2.1 🔥",
+        "Стакан: сильное давление покупки (+0.39)",
+        "МТФ: 5m, 15m, 4h согласны",
+        "BTC корреляция 0.76, BTC +4.2% 📈",
+        "BTC контекст: +5.1% за 12ч 📈",
+        "⚡ Рыночный вход (MTF сильный)"
+      ],
+      "news": null,
+      "created_at": "2026-03-23 14:05:48",
       "status": "ACTIVE"
     }
   ],
@@ -1467,6 +1491,33 @@
         "CVD положительный (+2.5%)",
         "BTC контекст: +5.1% за 12ч 📈",
         "⚡ Рыночный вход (MTF 2+ ТФ)"
+      ]
+    },
+    {
+      "id": 1031,
+      "symbol": "JTOUSDT",
+      "direction": "LONG",
+      "exchange": "bybit",
+      "entry": 0.3089,
+      "tp1": 0.315746,
+      "tp2": 0.322593,
+      "sl": 0.302722,
+      "entry_orig": 0.3089,
+      "tp1_orig": 0.315746,
+      "tp2_orig": 0.322593,
+      "sl_orig": 0.302722,
+      "strength": 51,
+      "taken_at": "2026-03-23T14:05:48.477135",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.00181)",
+        "Цена > EMA20 > EMA50",
+        "Объём x2.1 🔥",
+        "Стакан: сильное давление покупки (+0.39)",
+        "МТФ: 5m, 15m, 4h согласны",
+        "BTC корреляция 0.76, BTC +4.2% 📈",
+        "BTC контекст: +5.1% за 12ч 📈",
+        "⚡ Рыночный вход (MTF сильный)"
       ]
     }
   ],
