@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-23T01:31:15.457926+00:00",
+  "updated_at": "2026-03-23T01:32:21.259809+00:00",
   "publish_status": {
-    "last_ok": "2026-03-23T01:30:15Z",
+    "last_ok": "2026-03-23T01:31:21Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 57.2
   },
   "trade_stats": {
-    "open": 23,
+    "open": 22,
     "pending": 0,
-    "wins": 407,
+    "wins": 408,
     "losses": 427,
-    "total_pnl": 54.57,
-    "winrate": 48.8
+    "total_pnl": 56.66,
+    "winrate": 48.9
   },
   "fear_greed": {
     "value": 8,
@@ -31,9 +31,9 @@
   },
   "ml_info": {
     "model_name": "GradientBoosting-Deep",
-    "roc_auc": 0.8455,
-    "rows": 803,
-    "trained_at": "2026-03-22T16:06:23.584833+00:00"
+    "roc_auc": 0.7096,
+    "rows": 904,
+    "trained_at": "2026-03-23T01:31:57.999531+00:00"
   },
   "signals": [
     {
@@ -839,33 +839,6 @@
       ]
     },
     {
-      "id": 910,
-      "symbol": "CRVUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.215,
-      "tp1": 0.2193,
-      "tp2": 0.2236,
-      "sl": 0.2107,
-      "entry_orig": 0.215,
-      "tp1_orig": 0.2193,
-      "tp2_orig": 0.2236,
-      "sl_orig": 0.2107,
-      "strength": 52,
-      "taken_at": "2026-03-22T21:12:36.970879",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=42 (нейтральный↓)",
-        "MACD бычий (hist=0.00013)",
-        "BB нижняя зона (9%)",
-        "Объём x2.5 🔥🔥",
-        "Стакан: давление покупки (+0.11)",
-        "МТФ: только 1 таймфрейм согласен",
-        "CVD положительный (+0.3%)",
-        "Цена у поддержки 0.2140"
-      ]
-    },
-    {
       "id": 912,
       "symbol": "PYTHUSDT",
       "direction": "LONG",
@@ -1125,6 +1098,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "CRVUSDT",
+      "direction": "LONG",
+      "entry": 0.215,
+      "tp1": 0.2193,
+      "tp2": 0.2236,
+      "sl": 0.2107,
+      "strength": 52,
+      "status": "TP1",
+      "pnl_pct": 2.09,
+      "close_price": 0.2195,
+      "taken_at": "2026-03-22T21:12:36.970879",
+      "closed_at": "2026-03-23 01:31:41"
+    },
     {
       "symbol": "JUPUSDT",
       "direction": "SHORT",
@@ -3910,20 +3897,6 @@
       "close_price": 0.046825,
       "taken_at": "2026-03-21T10:59:58.038025",
       "closed_at": "2026-03-21 11:51:48"
-    },
-    {
-      "symbol": "LAUSDT",
-      "direction": "LONG",
-      "entry": 0.25805,
-      "tp1": 0.263211,
-      "tp2": 0.268372,
-      "sl": 0.252889,
-      "strength": 54,
-      "status": "SL",
-      "pnl_pct": -3.63,
-      "close_price": 0.24868,
-      "taken_at": "2026-03-21T11:42:47.468094",
-      "closed_at": "2026-03-21 11:46:17"
     }
   ]
 }
