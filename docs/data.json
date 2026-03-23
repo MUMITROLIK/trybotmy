@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-23T22:04:28.414033+00:00",
+  "updated_at": "2026-03-23T22:05:19.497174+00:00",
   "publish_status": {
-    "last_ok": "2026-03-23T22:03:28Z",
+    "last_ok": "2026-03-23T22:04:34Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 54.7
   },
   "trade_stats": {
-    "open": 21,
+    "open": 20,
     "pending": 0,
     "wins": 460,
-    "losses": 515,
-    "total_pnl": -17.71,
-    "winrate": 47.2
+    "losses": 516,
+    "total_pnl": -19.76,
+    "winrate": 47.1
   },
   "fear_greed": {
     "value": 8,
@@ -966,34 +966,6 @@
       ]
     },
     {
-      "id": 1048,
-      "symbol": "VVVUSDT",
-      "direction": "LONG",
-      "exchange": "bybit",
-      "entry": 6.0582,
-      "tp1": 6.191732,
-      "tp2": 6.325264,
-      "sl": 5.937036,
-      "entry_orig": 6.0582,
-      "tp1_orig": 6.191732,
-      "tp2_orig": 6.325264,
-      "sl_orig": 5.937036,
-      "strength": 53,
-      "taken_at": "2026-03-23T17:14:53.944934",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00155)",
-        "Цена выше EMA20",
-        "Объём x3.1 🔥🔥",
-        "Стакан: давление покупки (+0.21)",
-        "МТФ: 5m, 1h, 4h согласны",
-        "OI растёт +0.8%",
-        "Doji (1h) — нерешительность",
-        "BTC контекст: +3.5% за 12ч 📈",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 1056,
       "symbol": "WAXPUSDT",
       "direction": "LONG",
@@ -1400,6 +1372,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "VVVUSDT",
+      "direction": "LONG",
+      "entry": 6.0582,
+      "tp1": 6.191732,
+      "tp2": 6.325264,
+      "sl": 5.937036,
+      "strength": 53,
+      "status": "SL",
+      "pnl_pct": -2.05,
+      "close_price": 5.9339,
+      "taken_at": "2026-03-23T17:14:53.944934",
+      "closed_at": "2026-03-23 22:04:42"
+    },
     {
       "symbol": "LIGHTUSDT",
       "direction": "LONG",
@@ -4185,20 +4171,6 @@
       "close_price": 0.022711,
       "taken_at": "2026-03-22T15:22:51.011082",
       "closed_at": "2026-03-22 15:41:17"
-    },
-    {
-      "symbol": "EDGEUSDT",
-      "direction": "LONG",
-      "entry": 0.7319,
-      "tp1": 0.759875,
-      "tp2": 0.78785,
-      "sl": 0.70952,
-      "strength": 55,
-      "status": "TP1",
-      "pnl_pct": 3.83,
-      "close_price": 0.75995,
-      "taken_at": "2026-03-22T15:08:20.263269",
-      "closed_at": "2026-03-22 15:40:10"
     }
   ]
 }
