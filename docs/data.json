@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-23T13:45:08.781356+00:00",
+  "updated_at": "2026-03-23T13:45:43.776408+00:00",
   "publish_status": {
-    "last_ok": "2026-03-23T13:44:43Z",
+    "last_ok": "2026-03-23T13:45:14Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -11,18 +11,18 @@
   },
   "stats": {
     "total": 1133,
-    "wins": 371,
+    "wins": 372,
     "losses": 302,
-    "active": 18,
-    "winrate": 55.1
+    "active": 17,
+    "winrate": 55.2
   },
   "trade_stats": {
-    "open": 19,
+    "open": 18,
     "pending": 0,
-    "wins": 437,
+    "wins": 438,
     "losses": 488,
-    "total_pnl": -13.44,
-    "winrate": 47.2
+    "total_pnl": -9.01,
+    "winrate": 47.3
   },
   "fear_greed": {
     "value": 8,
@@ -428,30 +428,6 @@
       "status": "ACTIVE"
     },
     {
-      "id": 1170,
-      "symbol": "LIGHTUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.323,
-      "tp1": 0.336468,
-      "tp2": 0.349936,
-      "sl": 0.312226,
-      "strength": 57,
-      "reasons": [
-        "MACD бычий (hist=0.00376)",
-        "Цена > EMA20 > EMA50",
-        "Объём x2.5 🔥🔥",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +3.9% + цена ↑",
-        "CVD положительный (+4.5%)",
-        "BTC контекст: +4.1% за 12ч 📈",
-        "⚡ Рыночный вход (MTF сильный)"
-      ],
-      "news": null,
-      "created_at": "2026-03-23 13:36:26",
-      "status": "ACTIVE"
-    },
-    {
       "id": 1171,
       "symbol": "CRCLUSDT",
       "direction": "LONG",
@@ -479,6 +455,27 @@
     }
   ],
   "history": [
+    {
+      "symbol": "LIGHTUSDT",
+      "direction": "LONG",
+      "entry": 0.323,
+      "tp1": 0.336468,
+      "tp2": 0.349936,
+      "sl": 0.312226,
+      "strength": 57,
+      "status": "TP1",
+      "created_at": "2026-03-23 13:36:26",
+      "reasons": [
+        "MACD бычий (hist=0.00376)",
+        "Цена > EMA20 > EMA50",
+        "Объём x2.5 🔥🔥",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +3.9% + цена ↑",
+        "CVD положительный (+4.5%)",
+        "BTC контекст: +4.1% за 12ч 📈",
+        "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
     {
       "symbol": "NIGHTUSDT",
       "direction": "LONG",
@@ -890,25 +887,6 @@
         "OI растёт +1.9% + цена ↑",
         "BTC контекст: +4.7% за 12ч 📈",
         "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
-      "symbol": "LITUSDT",
-      "direction": "SHORT",
-      "entry": 0.9469,
-      "tp1": 0.927962,
-      "tp2": 0.909024,
-      "sl": 0.965838,
-      "strength": 55,
-      "status": "TP1",
-      "created_at": "2026-03-23 11:10:37",
-      "reasons": [
-        "RSI=87 (сильная перекупленность)",
-        "BB верхняя полоса (пробой)",
-        "EMA20 < EMA50",
-        "Объём x4.1 🔥🔥🔥",
-        "Стакан: давление продажи (-0.17)",
-        "МТФ: 15m, 1h, 4h согласны"
       ]
     }
   ],
@@ -1380,33 +1358,6 @@
       ]
     },
     {
-      "id": 1024,
-      "symbol": "LIGHTUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.323,
-      "tp1": 0.336468,
-      "tp2": 0.349936,
-      "sl": 0.312226,
-      "entry_orig": 0.323,
-      "tp1_orig": 0.336468,
-      "tp2_orig": 0.349936,
-      "sl_orig": 0.312226,
-      "strength": 57,
-      "taken_at": "2026-03-23T13:36:26.686802",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00376)",
-        "Цена > EMA20 > EMA50",
-        "Объём x2.5 🔥🔥",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +3.9% + цена ↑",
-        "CVD положительный (+4.5%)",
-        "BTC контекст: +4.1% за 12ч 📈",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 1025,
       "symbol": "CRCLUSDT",
       "direction": "LONG",
@@ -1437,6 +1388,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "LIGHTUSDT",
+      "direction": "LONG",
+      "entry": 0.323,
+      "tp1": 0.336468,
+      "tp2": 0.349936,
+      "sl": 0.312226,
+      "strength": 57,
+      "status": "TP1",
+      "pnl_pct": 4.43,
+      "close_price": 0.3373,
+      "taken_at": "2026-03-23T13:36:26.686802",
+      "closed_at": "2026-03-23 13:45:34"
+    },
     {
       "symbol": "XLMUSDT",
       "direction": "LONG",
@@ -4222,20 +4187,6 @@
       "close_price": 0.07437,
       "taken_at": "2026-03-22T05:38:07.879549",
       "closed_at": "2026-03-22 07:03:51"
-    },
-    {
-      "symbol": "KATUSDT",
-      "direction": "LONG",
-      "entry": 0.01113,
-      "tp1": 0.011404,
-      "tp2": 0.011679,
-      "sl": 0.010907,
-      "strength": 59,
-      "status": "SL",
-      "pnl_pct": -2.47,
-      "close_price": 0.010855,
-      "taken_at": "2026-03-22T05:59:06.977873",
-      "closed_at": "2026-03-22 06:54:36"
     }
   ]
 }
