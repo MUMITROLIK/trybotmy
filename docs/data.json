@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-23T03:02:15.860093+00:00",
+  "updated_at": "2026-03-23T03:02:49.604069+00:00",
   "publish_status": {
-    "last_ok": "2026-03-23T03:01:15Z",
+    "last_ok": "2026-03-23T03:02:21Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 57.2
   },
   "trade_stats": {
-    "open": 21,
+    "open": 20,
     "pending": 0,
     "wins": 409,
-    "losses": 431,
-    "total_pnl": 50.12,
-    "winrate": 48.7
+    "losses": 432,
+    "total_pnl": 48.06,
+    "winrate": 48.6
   },
   "fear_greed": {
     "value": 8,
@@ -738,30 +738,6 @@
       ]
     },
     {
-      "id": 902,
-      "symbol": "OPUSDT",
-      "direction": "SHORT",
-      "exchange": "binance",
-      "entry": 0.114,
-      "tp1": 0.11172,
-      "tp2": 0.10944,
-      "sl": 0.11628,
-      "entry_orig": 0.114,
-      "tp1_orig": 0.11172,
-      "tp2_orig": 0.10944,
-      "sl_orig": 0.11628,
-      "strength": 50,
-      "taken_at": "2026-03-22T21:07:54.986052",
-      "status": "OPEN",
-      "reasons": [
-        "MACD медвежий (hist=-0.00003)",
-        "Цена < EMA20 < EMA50",
-        "Объём x3.1 🔥🔥",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "CVD падает (-10.6%) — продажи усиливаются 📉"
-      ]
-    },
-    {
       "id": 904,
       "symbol": "DOTUSDT",
       "direction": "SHORT",
@@ -1098,6 +1074,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "OPUSDT",
+      "direction": "SHORT",
+      "entry": 0.114,
+      "tp1": 0.11172,
+      "tp2": 0.10944,
+      "sl": 0.11628,
+      "strength": 50,
+      "status": "SL",
+      "pnl_pct": -2.06,
+      "close_price": 0.11635000000000001,
+      "taken_at": "2026-03-22T21:07:54.986052",
+      "closed_at": "2026-03-23 03:02:49"
+    },
     {
       "symbol": "ICPUSDT",
       "direction": "SHORT",
@@ -3883,20 +3873,6 @@
       "close_price": 0.15205,
       "taken_at": "2026-03-21T11:59:50.219596",
       "closed_at": "2026-03-21 12:29:46"
-    },
-    {
-      "symbol": "POWERUSDT",
-      "direction": "LONG",
-      "entry": 0.10138,
-      "tp1": 0.103408,
-      "tp2": 0.105435,
-      "sl": 0.10381,
-      "strength": 58,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 2.4,
-      "close_price": 0.10381,
-      "taken_at": "2026-03-21T11:40:57.902306",
-      "closed_at": "2026-03-21 12:22:40"
     }
   ]
 }
