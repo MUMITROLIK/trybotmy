@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-23T09:24:27.088010+00:00",
+  "updated_at": "2026-03-23T09:25:33.296496+00:00",
   "publish_status": {
-    "last_ok": "2026-03-23T09:23:27Z",
+    "last_ok": "2026-03-23T09:24:33Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 56.5
   },
   "trade_stats": {
-    "open": 15,
+    "open": 14,
     "pending": 0,
-    "wins": 422,
+    "wins": 423,
     "losses": 459,
-    "total_pnl": 22.89,
-    "winrate": 47.9
+    "total_pnl": 24.36,
+    "winrate": 48.0
   },
   "fear_greed": {
     "value": 8,
@@ -803,33 +803,6 @@
   ],
   "trades_open": [
     {
-      "id": 938,
-      "symbol": "1000SHIBUSDT",
-      "direction": "SHORT",
-      "exchange": "binance",
-      "entry": 0.005817,
-      "tp1": 0.005701,
-      "tp2": 0.005584,
-      "sl": 0.005933,
-      "entry_orig": 0.005817,
-      "tp1_orig": 0.005701,
-      "tp2_orig": 0.005584,
-      "sl_orig": 0.005933,
-      "strength": 56,
-      "taken_at": "2026-03-23T01:24:57.204012",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=79 (сильная перекупленность)",
-        "BB верхняя полоса (пробой)",
-        "EMA20 < EMA50",
-        "Стакан: давление продажи (-0.11)",
-        "МТФ: 15m, 1h, 4h согласны",
-        "OI растёт +1.6% + цена ↓",
-        "CVD падает (-10.7%) — продажи усиливаются 📉",
-        "Цена у сопротивления 0.0058"
-      ]
-    },
-    {
       "id": 951,
       "symbol": "NIGHTUSDT",
       "direction": "LONG",
@@ -1202,6 +1175,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "1000SHIBUSDT",
+      "direction": "SHORT",
+      "entry": 0.005817,
+      "tp1": 0.005701,
+      "tp2": 0.005584,
+      "sl": 0.005933,
+      "strength": 56,
+      "status": "TIMEOUT",
+      "pnl_pct": 1.47,
+      "close_price": 0.0057315000000000005,
+      "taken_at": "2026-03-23T01:24:57.204012",
+      "closed_at": "2026-03-23 09:25:02"
+    },
     {
       "symbol": "UAIUSDT",
       "direction": "LONG",
@@ -3987,20 +3974,6 @@
       "close_price": 0.29058,
       "taken_at": "2026-03-21T18:41:41.116368",
       "closed_at": "2026-03-21 20:21:14"
-    },
-    {
-      "symbol": "LIGHTUSDT",
-      "direction": "LONG",
-      "entry": 0.2402,
-      "tp1": 0.245236,
-      "tp2": 0.250271,
-      "sl": 0.235396,
-      "strength": 50,
-      "status": "SL",
-      "pnl_pct": -2.31,
-      "close_price": 0.23465,
-      "taken_at": "2026-03-21T19:33:27.324345",
-      "closed_at": "2026-03-21 20:17:43"
     }
   ]
 }
