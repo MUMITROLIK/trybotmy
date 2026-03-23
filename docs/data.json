@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-23T09:39:05.022694+00:00",
+  "updated_at": "2026-03-23T09:40:01.734895+00:00",
   "publish_status": {
-    "last_ok": "2026-03-23T09:38:05Z",
+    "last_ok": "2026-03-23T09:39:11Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 1086,
+    "total": 1087,
     "wins": 360,
     "losses": 277,
-    "active": 14,
+    "active": 15,
     "winrate": 56.5
   },
   "trade_stats": {
-    "open": 13,
+    "open": 14,
     "pending": 0,
     "wins": 424,
     "losses": 460,
@@ -361,6 +361,28 @@
       ],
       "news": "Crypto, stocks fall as oil whipsaws after Iran vows response to Trump threat",
       "created_at": "2026-03-23 09:36:20",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1125,
+      "symbol": "BEATUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.7219,
+      "tp1": 0.7468,
+      "tp2": 0.7717,
+      "sl": 0.70198,
+      "strength": 50,
+      "reasons": [
+        "MACD бычий (hist=0.00353)",
+        "EMA20 > EMA50 (golden cross) 🌟",
+        "Стакан: сильное давление покупки (+0.42)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "CVD положительный (+0.7%)",
+        "⚡ Рыночный вход (MTF сильный)"
+      ],
+      "news": null,
+      "created_at": "2026-03-23 09:40:01",
       "status": "ACTIVE"
     }
   ],
@@ -1120,6 +1142,31 @@
         "CVD отрицательный (-1.5%)",
         "Bearish Engulfing (1h) 🕯️",
         "BTC корреляция 1.00, BTC -1.4% 📉"
+      ]
+    },
+    {
+      "id": 979,
+      "symbol": "BEATUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.7219,
+      "tp1": 0.7468,
+      "tp2": 0.7717,
+      "sl": 0.70198,
+      "entry_orig": 0.7219,
+      "tp1_orig": 0.7468,
+      "tp2_orig": 0.7717,
+      "sl_orig": 0.70198,
+      "strength": 50,
+      "taken_at": "2026-03-23T09:40:01.628660",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.00353)",
+        "EMA20 > EMA50 (golden cross) 🌟",
+        "Стакан: сильное давление покупки (+0.42)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "CVD положительный (+0.7%)",
+        "⚡ Рыночный вход (MTF сильный)"
       ]
     }
   ],
