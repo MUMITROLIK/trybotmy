@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-23T09:09:06.949340+00:00",
+  "updated_at": "2026-03-23T09:10:02.734291+00:00",
   "publish_status": {
-    "last_ok": "2026-03-23T09:08:06Z",
+    "last_ok": null,
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 1081,
+    "total": 1082,
     "wins": 358,
     "losses": 276,
-    "active": 13,
+    "active": 14,
     "winrate": 56.5
   },
   "trade_stats": {
-    "open": 12,
+    "open": 13,
     "pending": 0,
     "wins": 421,
     "losses": 459,
@@ -340,6 +340,29 @@
       ],
       "news": null,
       "created_at": "2026-03-23 08:51:00",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1120,
+      "symbol": "UAIUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.3094,
+      "tp1": 0.319279,
+      "tp2": 0.329157,
+      "sl": 0.301497,
+      "strength": 50,
+      "reasons": [
+        "MACD бычий (hist=0.00325)",
+        "EMA20 > EMA50 (golden cross) 🌟",
+        "Объём x2.8 🔥🔥",
+        "Стакан: давление покупки (+0.11)",
+        "МТФ: 5m, 15m согласны",
+        "CVD положительный (-1.2%)",
+        "⚡ Рыночный вход (MTF 2+ ТФ)"
+      ],
+      "news": null,
+      "created_at": "2026-03-23 09:09:24",
       "status": "ACTIVE"
     }
   ],
@@ -1074,6 +1097,32 @@
         "OI растёт +3.1% + цена ↑",
         "CVD растёт (+8.7%) — покупки усиливаются 📈",
         "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
+    {
+      "id": 974,
+      "symbol": "UAIUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.3094,
+      "tp1": 0.319279,
+      "tp2": 0.329157,
+      "sl": 0.301497,
+      "entry_orig": 0.3094,
+      "tp1_orig": 0.319279,
+      "tp2_orig": 0.329157,
+      "sl_orig": 0.301497,
+      "strength": 50,
+      "taken_at": "2026-03-23T09:09:25.337334",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.00325)",
+        "EMA20 > EMA50 (golden cross) 🌟",
+        "Объём x2.8 🔥🔥",
+        "Стакан: давление покупки (+0.11)",
+        "МТФ: 5m, 15m согласны",
+        "CVD положительный (-1.2%)",
+        "⚡ Рыночный вход (MTF 2+ ТФ)"
       ]
     }
   ],
