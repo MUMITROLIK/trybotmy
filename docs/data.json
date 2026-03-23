@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-23T21:27:04.542349+00:00",
+  "updated_at": "2026-03-23T21:28:04.946478+00:00",
   "publish_status": {
-    "last_ok": "2026-03-23T21:25:37Z",
+    "last_ok": "2026-03-23T21:27:10Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -12,16 +12,16 @@
   "stats": {
     "total": 1179,
     "wins": 392,
-    "losses": 323,
-    "active": 10,
-    "winrate": 54.8
+    "losses": 324,
+    "active": 9,
+    "winrate": 54.7
   },
   "trade_stats": {
-    "open": 16,
+    "open": 15,
     "pending": 0,
     "wins": 460,
-    "losses": 514,
-    "total_pnl": -14.38,
+    "losses": 515,
+    "total_pnl": -17.71,
     "winrate": 47.2
   },
   "fear_greed": {
@@ -257,17 +257,19 @@
       "news": "Breaking Down The $100 XRP Prophecy: Is There A Timeline?",
       "created_at": "2026-03-23 21:06:21",
       "status": "ACTIVE"
-    },
+    }
+  ],
+  "history": [
     {
-      "id": 1217,
       "symbol": "LIGHTUSDT",
       "direction": "LONG",
-      "exchange": "binance",
       "entry": 0.383,
       "tp1": 0.398568,
       "tp2": 0.414136,
       "sl": 0.370546,
       "strength": 50,
+      "status": "SL",
+      "created_at": "2026-03-23 21:15:05",
       "reasons": [
         "MACD бычий (hist=0.00260)",
         "Цена > EMA20 > EMA50",
@@ -276,13 +278,8 @@
         "OI растёт +5.1% + цена ↑",
         "CVD положительный (+0.8%)",
         "⚡ Рыночный вход (MTF сильный)"
-      ],
-      "news": null,
-      "created_at": "2026-03-23 21:15:05",
-      "status": "ACTIVE"
-    }
-  ],
-  "history": [
+      ]
+    },
     {
       "symbol": "APTUSDT",
       "direction": "LONG",
@@ -690,26 +687,6 @@
         "Цена у поддержки 0.1678",
         "BTC контекст: +3.3% за 12ч 📈",
         "⚡ Рыночный вход (MTF 2+ ТФ)"
-      ]
-    },
-    {
-      "symbol": "JTOUSDT",
-      "direction": "LONG",
-      "entry": 0.3429,
-      "tp1": 0.356893,
-      "tp2": 0.370886,
-      "sl": 0.331706,
-      "strength": 53,
-      "status": "SL",
-      "created_at": "2026-03-23 16:44:00",
-      "reasons": [
-        "MACD бычий (hist=0.00313)",
-        "Цена > EMA20 > EMA50",
-        "Объём x2.6 🔥🔥",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +4.7% + цена ↑",
-        "BTC контекст: +3.1% за 12ч 📈",
-        "⚡ Рыночный вход (MTF сильный)"
       ]
     }
   ],
@@ -1126,35 +1103,23 @@
         "CVD положительный (-7.0%)",
         "⚡ Рыночный вход (MTF сильный)"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 1071,
       "symbol": "LIGHTUSDT",
       "direction": "LONG",
-      "exchange": "binance",
       "entry": 0.383,
       "tp1": 0.398568,
       "tp2": 0.414136,
       "sl": 0.370546,
-      "entry_orig": 0.383,
-      "tp1_orig": 0.398568,
-      "tp2_orig": 0.414136,
-      "sl_orig": 0.370546,
       "strength": 50,
+      "status": "SL",
+      "pnl_pct": -3.33,
+      "close_price": 0.37024999999999997,
       "taken_at": "2026-03-23T21:15:05.781966",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00260)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: давление покупки (+0.19)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +5.1% + цена ↑",
-        "CVD положительный (+0.8%)",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-23 21:28:04"
+    },
     {
       "symbol": "LIGHTUSDT",
       "direction": "LONG",
@@ -3940,20 +3905,6 @@
       "close_price": 0.75995,
       "taken_at": "2026-03-22T15:08:20.263269",
       "closed_at": "2026-03-22 15:40:10"
-    },
-    {
-      "symbol": "JCTUSDT",
-      "direction": "LONG",
-      "entry": 0.0028241,
-      "tp1": 0.002894,
-      "tp2": 0.002964,
-      "sl": 0.002768,
-      "strength": 53,
-      "status": "TP1",
-      "pnl_pct": 3.55,
-      "close_price": 0.0029243,
-      "taken_at": "2026-03-22T15:19:15.865441",
-      "closed_at": "2026-03-22 15:32:53"
     }
   ]
 }
