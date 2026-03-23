@@ -1134,42 +1134,8 @@ main {
   </div><!-- /main-grid -->
 
 
-    <div class="stat-card ca au d1">
-      <div class="stat-top">
-        <span class="stat-lbl">Всего сигналов</span>
-        <span class="stat-badge a" id="sBadge1">—</span>
-      </div>
-      <div class="stat-val a" id="statSignals">—</div>
-      <div class="stat-sub" id="statWL">—</div>
-    </div>
-    <div class="stat-card cb au d2">
-      <div class="stat-top">
-        <span class="stat-lbl">Открытые позиции</span>
-        <span class="stat-badge b" id="sBadge2">0 лимиток</span>
-      </div>
-      <div class="stat-val b" id="statPos">—</div>
-      <div class="stat-sub" id="statPend">—</div>
-    </div>
-    <div class="stat-card cg au d3">
-      <div class="stat-top">
-        <span class="stat-lbl">Винрейт</span>
-        <span class="stat-badge g" id="sBadge3">—</span>
-      </div>
-      <div class="stat-val g" id="statWR">—</div>
-      <div class="stat-sub" id="statWLT">—</div>
-    </div>
-    <div class="stat-card cg au d4" id="pnlCard">
-      <div class="stat-top">
-        <span class="stat-lbl">Общий P&amp;L</span>
-        <span class="stat-badge g">Суммарный</span>
-      </div>
-      <div class="stat-val g" id="statPnl">—</div>
-      <div class="stat-sub">За всё время торговли</div>
-    </div>
-  </div>
+</main>
 
-  <!-- ── MINI STATS ── -->
-  <div class="mini-stats">
     <div class="mini-card au d2">
       <div class="mini-icon g">🏆</div>
       <div class="mini-info">
@@ -1415,28 +1381,26 @@ function drawEquity(history){
   ctx.beginPath();ctx.arc(ex,ey,6,0,Math.PI*2);ctx.fillStyle=isPos?'rgba(38,166,154,.2)':'rgba(239,83,80,.2)';ctx.fill();
 }
 
-// ── DONUT ──────────────────────────────────────────────────────────────────────
-function drawDonut(wins,losses,other){
-  var c=document.getElementById('donutCanvas');if(!c)return;
-  var ctx=c.getContext('2d');ctx.clearRect(0,0,80,80);
-  var total=wins+losses+other;
-  if(total===0){ctx.beginPath();ctx.arc(40,40,28,0,Math.PI*2);ctx.strokeStyle='#2A2E39';ctx.lineWidth=7;ctx.stroke();return}
-  var data=[[wins,'#26A69A'],[losses,'#EF5350'],[other,'#5D606B']],start=-Math.PI/2;
-  data.forEach(function(d){if(!d[0])return;var arc=d[0]/total*Math.PI*2;ctx.beginPath();ctx.arc(40,40,28,start,start+arc);ctx.strokeStyle=d[1];ctx.lineWidth=7;ctx.lineCap='butt';ctx.stroke();start+=arc});
-}
-
-// ── ACTIVITY FEED ──────────────────────────────────────────────────────────────
-function renderActivity(history){
-  var list=document.getElementById('activityList');if(!list)return;
-  if(!history||!history.length){list.innerHTML='<div class="empty-txt" style="text-align:center;padding:.5rem;font-size:.68rem;color:var(--t3)">Нет данных</div>';return}
-  var recent=history.slice(0,8);
-  list.innerHTML=recent.map(function(x){
-    var pnl=x.pnl_pct||0;var pc=pnl>0?'pos':'neg';
-    var isWin=['TP2','TP1','SL_AFTER_TP1'].indexOf(x.status)!==-1;
-    var dotC=isWin?'#26A69A':'#EF5350';
-    return'<div class="act-item">'+
-      '<div class="act-dot" style="background:'+dotC+'"></div>'+
-      '<span class="act-sym">'+x.symbol+'</span>'+
+// ── DONUT ────────────────────────────�function rPos(t){
+  var lP=livePrices[t.symbol],pnl=0;
+  if(lP!=null&&t.entry)pnl=t.direction==='LONG'?(lP-t.entry)/t.entry*100:(t.entry-lP)/t.entry*100;
+  else pnl=t.pnl_pct||0;
+  var pr=pnl>0.01,isN=Math.abs(pnl)<0.01,pc=pr?'pos':isN?'ne':'neg';
+  var isL=t.direction==='LONG',sc=t.status==='TP1_HIT'?'tp1':t.status==='PENDING'?'pend':'open';
+  var rowCls=pr?'profit':isN?'neu':'loss';
+  return '<tr id="pos-'+(t.id||t.symbol)+'" class="'+rowCls+'" data-sym="'+t.symbol+'" onclick="loadChart(\''+t.symbol+'\')">' +
+    '<td><span class="tc-sym">'+t.symbol+'</span></td>'+
+    '<td><span class="dir-pill '+(isL?'long':'short')+'">'+(isL?'↑ L':'↓ S')+'</span></td>'+
+    '<td class="tc-price">'+fmt(t.entry)+'</td>'+
+    '<td class="tc-mark" data-price="'+(lP!=null?lP:t.entry)+'">'+fmt(lP!=null?lP:t.entry)+'</td>'+
+    '<td class="tc-green">'+fmt(t.tp1)+'</td>'+
+    '<td class="tc-green">'+fmt(t.tp2)+'</td>'+
+    '<td class="tc-red">'+fmt(t.sl)+'</td>'+
+    '<td class="tc-pnl"><span class="pnl-val '+pc+'">'+(pnl>=0?'+':'')+pnl.toFixed(2)+'%</span></td>'+
+    '<td><span class="pos-stat '+sc+'">'+stLbl(t.status)+'</span></td>'+
+    '<td class="tc-time live-dur">'+(t.status!=='PENDING'?durStr(t.taken_at):'—')+'</td>'+
+  '</tr>';
+}/span>'+
       '<span class="act-dir '+(x.direction==='LONG'?'long':'short')+'">'+(x.direction==='LONG'?'↑ L':'↓ S')+'</span>'+
       '<span class="act-stat">'+stLbl(x.status)+'</span>'+
       '<span class="act-pnl '+pc+'">'+(pnl>=0?'+':'')+pnl.toFixed(2)+'%</span>'+
@@ -1481,14 +1445,21 @@ function buildPB(t,pnl,cur){
 
 // ── RENDER CARDS ──────────────────────────────────────────────────────────────
 function rSig(s){
-  var wp=s.win_prob!=null?s.win_prob:null,mc=mlC(wp),isL=s.direction==='LONG',str=s.strength||0;
-  var h='<div class="sig-c au">';
-  h+='<div class="sig-top"><span class="sig-sym">'+s.symbol+'</span><span class="dir-pill '+(isL?'long':'short')+'">'+(isL?'↑ LONG':'↓ SHORT')+'</span></div>';
-  h+='<div class="lvl-grid"><div class="lvl"><span class="lvl-l">Вход</span><span class="lvl-v en">'+fmt(s.entry)+'</span></div><div class="lvl"><span class="lvl-l">ТП1</span><span class="lvl-v tp">'+fmt(s.tp1)+'</span></div><div class="lvl"><span class="lvl-l">ТП2</span><span class="lvl-v tp">'+fmt(s.tp2)+'</span></div><div class="lvl"><span class="lvl-l">СЛ</span><span class="lvl-v sl">'+fmt(s.sl)+'</span></div></div>';
-  h+='<div class="str-row"><div class="str-top"><span class="str-l">Сила сигнала</span><span class="str-v">'+str+'%</span></div><div class="str-bar"><div class="str-fill" style="width:'+str+'%;background:'+strGr(str)+'"></div></div></div>';
-  h+='<div class="sig-foot">'+(wp!=null?'<span class="ml-pill '+mc+'">🧠 '+Math.round(wp*100)+'%</span>':'<span class="ml-pill med">🧠 —</span>')+'<span class="sig-t">'+fmtT(s.created_at)+'</span></div>';
-  if(s.reasons&&s.reasons.length){h+='<div class="tags">';for(var j=0;j<Math.min(4,s.reasons.length);j++)h+='<span class="tag">'+s.reasons[j]+'</span>';h+='</div>'}
-  return h+'</div>'
+  var isL=s.direction==='LONG',str=s.strength||0;
+  var wp=s.win_prob!=null?s.win_prob:null,mc=mlC(wp);
+  var tags=(s.reasons||[]).slice(0,4).join(' · ');
+  return '<tr onclick="loadChart(\''+s.symbol+'\')" title="Открыть чарт">'+
+    '<td><span class="tc-sym">'+s.symbol+'</span></td>'+
+    '<td><span class="dir-pill '+(isL?'long':'short')+'">'+(isL?'↑ L':'↓ S')+'</span></td>'+
+    '<td class="tc-price">'+fmt(s.entry)+'</td>'+
+    '<td class="tc-green">'+fmt(s.tp1)+'</td>'+
+    '<td class="tc-green">'+fmt(s.tp2)+'</td>'+
+    '<td class="tc-red">'+fmt(s.sl)+'</td>'+
+    '<td><div class="str-mini"><div class="str-mini-bar"><div class="str-mini-fill" style="width:'+str+'%;background:'+strGr(str)+'"></div></div><span class="str-mini-v">'+str+'%</span></div></td>'+
+    '<td>'+(wp!=null?'<span class="ml-pill '+mc+'">🧠'+Math.round(wp*100)+'%</span>':'<span class="ml-pill med">—</span>')+'</td>'+
+    '<td class="tc-tags">'+tags+'</td>'+
+    '<td class="tc-time">'+fmtT(s.created_at)+'</td>'+
+  '</tr>';
 }
 
 function rPos(t){
@@ -1513,7 +1484,7 @@ function rHist(h){
     out+='<tr><td><span class="h-sym">'+x.symbol+'</span></td><td><span class="h-dir '+(x.direction==='LONG'?'long':'short')+'">'+(x.direction==='LONG'?'↑ Лонг':'↓ Шорт')+'</span></td><td class="h-price">'+fmt(x.entry)+'</td><td class="h-price">'+fmt(x.close_price)+'</td><td><span class="h-pnl '+pc+'">'+(pnl>=0?'+':'')+pnl.toFixed(2)+'%</span></td><td><span class="h-stat '+stCls(x.status)+'">'+stLbl(x.status)+'</span></td><td class="h-time">'+fmtT(x.closed_at)+'</td></tr>'}
   return out+'</tbody></table></div>'
 }
-function rEmpty(m){return'<div class="empty"><div class="empty-ico">◉</div><div class="empty-txt">'+m+'</div></div>'}
+function rEmpty2(msg){return'<div class="empty"><div class="empty-ico">◉</div><div class="empty-txt">'+msg+'</div></div>';}
 function rFgBars(v){var s=[0,25,50,75,100],h='';s.forEach(function(t,i){var m=fgM(t),a=v>=t;h+='<div class="fg-bar" style="height:'+(12+i*5)+'px;background:'+m.c+';opacity:'+(a?1:.1)+';box-shadow:'+(a?'0 0 4px '+m.c+'60':'none')+'"></div>'});return h}
 
 // ── STATE ──────────────────────────────────────────────────────────────────────
@@ -1594,14 +1565,15 @@ function updateUI(d){
 }
 
 function renderTab(sigs,opens,pends,hist){
-  ['signalsTab','positionsTab','pendingTab','historyTab'].forEach(function(id){var el=document.getElementById(id);el.classList.remove('active');el.innerHTML=''});
-  var tab=document.getElementById(activeTab+'Tab');tab.classList.add('active');
+  var btm=document.getElementById('btmBody');if(!btm)return;
+  var TH_POS='<table class="bybit-table"><thead><tr><th>Монета</th><th>Напр.</th><th>Вход</th><th>Марк цена</th><th>ТП1</th><th>ТП2</th><th>СЛ</th><th>PnL %</th><th>Статус</th><th>Длит.</th></tr></thead><tbody>';
+  var TH_SIG='<table class="bybit-table"><thead><tr><th>Монета</th><th>Напр.</th><th>Вход</th><th>ТП1</th><th>ТП2</th><th>СЛ</th><th>Сила</th><th>ML</th><th>Причины</th><th>Время</th></tr></thead><tbody>';
   var h='';
-  if(activeTab==='signals')h=sigs.length?sigs.map(rSig).join(''):rEmpty('Нет активных сигналов · Бот сканирует рынок');
-  else if(activeTab==='positions')h=opens.length?opens.map(rPos).join(''):rEmpty('Нет открытых позиций');
-  else if(activeTab==='pending')h=pends.length?pends.map(rPos).join(''):rEmpty('Нет ожидающих ордеров');
-  else if(activeTab==='history')h=rHist(hist);
-  tab.innerHTML=h;
+  if(activeTab==='positions'){h=opens.length?TH_POS+opens.map(rPos).join('')+'</tbody></table>':rEmpty2('Нет открытых позиций');}
+  else if(activeTab==='signals'){h=sigs.length?TH_SIG+sigs.map(rSig).join('')+'</tbody></table>':rEmpty2('Нет активных сигналов · Бот сканирует рынок');}
+  else if(activeTab==='pending'){h=pends.length?TH_POS+pends.map(rPos).join('')+'</tbody></table>':rEmpty2('Нет ожидающих ордеров');}
+  else if(activeTab==='history'){h=rHist(hist);}
+  btm.innerHTML=h;
 }
 
 // ── LIVE PRICES via Binance WebSocket ──────────────────────────────────────────
@@ -1666,41 +1638,22 @@ function scheduleRender(){
 }
 
 function patchCardForSymbol(sym){
+  var lP=livePrices[sym];if(lP==null)return;
   openTradesCache.forEach(function(t){
     if(t.symbol!==sym)return;
-    var card=document.getElementById('pos-'+(t.id||t.symbol));
-    if(!card)return;
-    var lP=livePrices[sym];
-    if(lP==null)return;
+    var row=document.getElementById('pos-'+(t.id||t.symbol));if(!row)return;
     var pnl=t.direction==='LONG'?(lP-t.entry)/t.entry*100:(t.entry-lP)/t.entry*100;
     var pr=pnl>0.01,isN=Math.abs(pnl)<0.01;
-    var pnlEl=card.querySelector('.pos-pnl');
-    if(pnlEl){
-      var newText=(pnl>=0?'+':'')+pnl.toFixed(2)+'%';
-      if(pnlEl.textContent!==newText){
-        pnlEl.textContent=newText;
-        var cls='pos-pnl '+(pr?'pos':isN?'ne':'neg');
-        if(pnlEl.className!==cls)pnlEl.className=cls;
-      }
+    var markEl=row.querySelector('.tc-mark');
+    if(markEl){
+      var oldP=parseFloat(markEl.getAttribute('data-price'));
+      markEl.textContent=fmt(lP);
+      markEl.setAttribute('data-price',lP);
+      if(!isNaN(oldP)&&oldP!==lP){var fc=lP>oldP?'flash-g':'flash-r';markEl.classList.remove('flash-g','flash-r');void markEl.offsetWidth;markEl.classList.add(fc);}
     }
-    var priceEl=card.querySelector('.live-cur');
-    if(priceEl){
-      var fmtd=fmt(lP);
-      if(priceEl.textContent!==fmtd)priceEl.textContent=fmtd;
-    }
-    var newCardCls='pos-c '+(pr?'profit':isN?'neu':'loss');
-    if(card.className!==newCardCls)card.className=newCardCls;
-    var key=t.id||t.symbol,cached=scaleCache[key];
-    if(!cached)return;
-    var rng=cached.max-cached.min;if(rng<=0)return;
-    function n(v){return Math.max(0,Math.min(100,(v-cached.min)/rng*100))}
-    var cp=n(lP);
-    var bc=pnl>1?'#26A69A':pnl>0?'#66BB6A':pnl>-1?'#F7941D':'#EF5350';
-    var mc=pnl>=0?'#26A69A':'#EF5350';
-    var fill=card.querySelector('.pb-fill');
-    if(fill){fill.style.width=cp+'%';fill.style.background='linear-gradient(90deg,rgba(239,83,80,.15),'+bc+')'}
-    var mkr=card.querySelector('.pb-marker');
-    if(mkr){mkr.style.left=cp+'%';mkr.style.background=mc}
+    var pnlEl=row.querySelector('.tc-pnl');
+    if(pnlEl){var pc=pr?'pos':isN?'ne':'neg';pnlEl.innerHTML='<span class="pnl-val '+pc+'">'+(pnl>=0?'+':'')+pnl.toFixed(2)+'%</span>';}
+    row.className=pr?'profit':isN?'neu':'loss';
   });
 }
 
@@ -1803,49 +1756,47 @@ function updateRegime(regime){
   el.className='regime-badge '+(regime||'flat');
 }
 
-// ── BTC CANDLESTICK ────────────────────────────────────────────────────────────
-var btcCandles=[];
-function drawBTCCandles(candles){
-  var c=document.getElementById('btcCandleCanvas');if(!c)return;
-  var w=c.parentElement.clientWidth-32||240;var DPR=window.devicePixelRatio||1;
-  c.width=w*DPR;c.height=76*DPR;c.style.width=w+'px';c.style.height='76px';
-  var ctx=c.getContext('2d');ctx.scale(DPR,DPR);
-  if(!candles||candles.length<2)return;
-  var data=candles.slice(-40);
-  var highs=data.map(function(d){return d[2]});var lows=data.map(function(d){return d[3]});
-  var mn=Math.min.apply(null,lows),mx=Math.max.apply(null,highs);var rng=mx-mn;if(rng===0)rng=1;
-  var pad={t:4,b:4,l:2,r:2};var cw=w-pad.l-pad.r,ch=76-pad.t-pad.b;
-  var cWidth=Math.max(1.5,(cw/data.length)-1);
-  function py(v){return pad.t+ch-(v-mn)/rng*ch}
-  data.forEach(function(d,i){
-    var o=parseFloat(d[1]),h2=parseFloat(d[2]),l=parseFloat(d[3]),cl=parseFloat(d[4]);
-    var isG=cl>=o;
-    var x=pad.l+i*(cw/data.length)+cWidth/2;
-    ctx.beginPath();ctx.moveTo(x,py(h2));ctx.lineTo(x,py(l));
-    ctx.strokeStyle=isG?'rgba(38,166,154,.5)':'rgba(239,83,80,.5)';ctx.lineWidth=1;ctx.stroke();
-    var bTop=py(Math.max(o,cl)),bBot=py(Math.min(o,cl)),bH=Math.max(1,bBot-bTop);
-    ctx.fillStyle=isG?'#26A69A':'#EF5350';ctx.fillRect(x-cWidth/2,bTop,cWidth,bH);
+// ── TV LIGHTWEIGHT CHART ────────────────────────────────────────────────────────
+var tvChart=null,candleSeries=null,chartTF='15m',chartSymActive='BTCUSDT';
+function initChart(){
+  var wrap=document.getElementById('tvChartWrap');
+  if(!wrap||typeof LightweightCharts==='undefined')return;
+  tvChart=LightweightCharts.createChart(wrap,{
+    width:wrap.clientWidth,height:280,
+    layout:{background:{color:'#131722'},textColor:'#9598A1'},
+    grid:{vertLines:{color:'#1E222D'},horzLines:{color:'#1E222D'}},
+    crosshair:{mode:LightweightCharts.CrosshairMode.Normal},
+    rightPriceScale:{borderColor:'#2A2E39'},
+    timeScale:{borderColor:'#2A2E39',timeVisible:true,secondsVisible:false},
   });
-  var lastClose=parseFloat(data[data.length-1][4]);
-  var lpy=py(lastClose);
-  var isUp=lastClose>=parseFloat(data[data.length-1][1]);
-  ctx.beginPath();ctx.setLineDash([3,4]);
-  ctx.moveTo(pad.l,lpy);ctx.lineTo(w-pad.r,lpy);
-  ctx.strokeStyle=isUp?'rgba(38,166,154,.35)':'rgba(239,83,80,.35)';ctx.lineWidth=1;ctx.stroke();
-  ctx.setLineDash([]);
+  candleSeries=tvChart.addCandlestickSeries({upColor:'#26A69A',downColor:'#EF5350',borderVisible:false,wickUpColor:'#26A69A',wickDownColor:'#EF5350'});
+  new ResizeObserver(function(){if(tvChart)tvChart.applyOptions({width:wrap.clientWidth})}).observe(wrap);
+  loadChart('BTCUSDT','15m');
+  // TF buttons
+  document.querySelectorAll('#chartTfBtns .tf-btn').forEach(function(b){
+    b.addEventListener('click',function(){
+      document.querySelectorAll('#chartTfBtns .tf-btn').forEach(function(x){x.classList.remove('active')});
+      b.classList.add('active');
+      loadChart(null,b.dataset.tf);
+    });
+  });
 }
-async function fetchBTCChart(){
+async function loadChart(sym,tf){
+  if(sym){chartSymActive=sym;var el=document.getElementById('chartSym');if(el)el.textContent=sym.replace('USDT','/USDT');}
+  if(tf)chartTF=tf;
+  if(!tvChart||!candleSeries)return;
   try{
-    var r=await fetch('/api/klines?symbol=BTCUSDT&interval=15m&limit=40');
+    var r=await fetch('/api/klines?symbol='+chartSymActive+'&interval='+chartTF+'&limit=200');
     if(!r.ok)return;var data=await r.json();if(!data||!data.length)return;
-    btcCandles=data;drawBTCCandles(data);
-    var last=data[data.length-1];var cl=parseFloat(last[4]),op=parseFloat(data[0][1]);
-    var chgPct=(cl-op)/op*100;
-    var prEl=document.getElementById('btcChartPrice');var chEl=document.getElementById('btcChartChg');
-    if(prEl)prEl.textContent='$'+fmt(cl);
-    if(chEl){chEl.textContent=(chgPct>=0?'+':'')+chgPct.toFixed(2)+'%';chEl.className='btc-chart-chg '+(chgPct>=0?'pos':'neg')}
+    var candles=data.map(function(d){return{time:Math.floor(parseInt(d[0])/1000),open:parseFloat(d[1]),high:parseFloat(d[2]),low:parseFloat(d[3]),close:parseFloat(d[4])};});
+    candleSeries.setData(candles);tvChart.timeScale().fitContent();
+    var last=candles[candles.length-1],first=candles[0];
+    var chg=(last.close-first.open)/first.open*100;
+    var pe=document.getElementById('chartPrice');if(pe)pe.textContent='$'+fmt(last.close);
+    var ce=document.getElementById('chartChg');if(ce){ce.textContent=(chg>=0?'+':'')+chg.toFixed(2)+'%';ce.className='chart-chg '+(chg>=0?'pos':'neg');}
   }catch(e){}
 }
+// (chart loaded via loadChart)
 
 // ── FUNDING ────────────────────────────────────────────────────────────────────
 function updateFundingDisplay(){
