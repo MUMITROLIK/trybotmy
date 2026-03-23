@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-23T03:02:49.604069+00:00",
+  "updated_at": "2026-03-23T03:03:21.599955+00:00",
   "publish_status": {
-    "last_ok": "2026-03-23T03:02:21Z",
+    "last_ok": "2026-03-23T03:02:55Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 57.2
   },
   "trade_stats": {
-    "open": 20,
+    "open": 18,
     "pending": 0,
     "wins": 409,
-    "losses": 432,
-    "total_pnl": 48.06,
-    "winrate": 48.6
+    "losses": 434,
+    "total_pnl": 43.94,
+    "winrate": 48.5
   },
   "fear_greed": {
     "value": 8,
@@ -738,31 +738,6 @@
       ]
     },
     {
-      "id": 904,
-      "symbol": "DOTUSDT",
-      "direction": "SHORT",
-      "exchange": "binance",
-      "entry": 1.408,
-      "tp1": 1.37984,
-      "tp2": 1.35168,
-      "sl": 1.43616,
-      "entry_orig": 1.408,
-      "tp1_orig": 1.37984,
-      "tp2_orig": 1.35168,
-      "sl_orig": 1.43616,
-      "strength": 53,
-      "taken_at": "2026-03-22T21:09:26.454535",
-      "status": "OPEN",
-      "reasons": [
-        "MACD медвежий (hist=-0.00128)",
-        "Цена < EMA20 < EMA50",
-        "Объём x2.5 🔥🔥",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "CVD падает (-9.0%) — продажи усиливаются 📉",
-        "BTC корреляция 0.72, BTC -1.1% 📉"
-      ]
-    },
-    {
       "id": 905,
       "symbol": "GALAUSDT",
       "direction": "SHORT",
@@ -860,31 +835,6 @@
         "Стакан: давление продажи (-0.16)",
         "МТФ: все 4 таймфрейма согласны ✅✅",
         "BTC корреляция 0.74, BTC -1.9% 📉"
-      ]
-    },
-    {
-      "id": 919,
-      "symbol": "SOLUSDT",
-      "direction": "SHORT",
-      "exchange": "binance",
-      "entry": 85.32,
-      "tp1": 83.6136,
-      "tp2": 81.9072,
-      "sl": 87.0264,
-      "entry_orig": 85.32,
-      "tp1_orig": 83.6136,
-      "tp2_orig": 81.9072,
-      "sl_orig": 87.0264,
-      "strength": 54,
-      "taken_at": "2026-03-22T21:22:12.854312",
-      "status": "OPEN",
-      "reasons": [
-        "MACD медвежий (hist=-0.14260)",
-        "Цена < EMA20 < EMA50",
-        "Объём x2.5 🔥🔥",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "CVD падает (-12.9%) — продажи усиливаются 📉",
-        "BTC корреляция 0.84, BTC -1.8% 📉"
       ]
     },
     {
@@ -1074,6 +1024,34 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "SOLUSDT",
+      "direction": "SHORT",
+      "entry": 85.32,
+      "tp1": 83.6136,
+      "tp2": 81.9072,
+      "sl": 87.0264,
+      "strength": 54,
+      "status": "SL",
+      "pnl_pct": -2.1,
+      "close_price": 87.11500000000001,
+      "taken_at": "2026-03-22T21:22:12.854312",
+      "closed_at": "2026-03-23 03:02:59"
+    },
+    {
+      "symbol": "DOTUSDT",
+      "direction": "SHORT",
+      "entry": 1.408,
+      "tp1": 1.37984,
+      "tp2": 1.35168,
+      "sl": 1.43616,
+      "strength": 53,
+      "status": "SL",
+      "pnl_pct": -2.02,
+      "close_price": 1.4365,
+      "taken_at": "2026-03-22T21:09:26.454535",
+      "closed_at": "2026-03-23 03:02:55"
+    },
     {
       "symbol": "OPUSDT",
       "direction": "SHORT",
@@ -3845,34 +3823,6 @@
       "close_price": 0.296505,
       "taken_at": "2026-03-21T12:44:22.416629",
       "closed_at": "2026-03-21 13:11:49"
-    },
-    {
-      "symbol": "AKTUSDT",
-      "direction": "LONG",
-      "entry": 0.5972,
-      "tp1": 0.614889,
-      "tp2": 0.632579,
-      "sl": 0.615,
-      "strength": 51,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 2.98,
-      "close_price": 0.615,
-      "taken_at": "2026-03-21T12:13:38.558119",
-      "closed_at": "2026-03-21 12:44:13"
-    },
-    {
-      "symbol": "BTRUSDT",
-      "direction": "LONG",
-      "entry": 0.14869,
-      "tp1": 0.151664,
-      "tp2": 0.154638,
-      "sl": 0.15227000000000002,
-      "strength": 54,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 2.26,
-      "close_price": 0.15205,
-      "taken_at": "2026-03-21T11:59:50.219596",
-      "closed_at": "2026-03-21 12:29:46"
     }
   ]
 }
