@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-23T21:36:56.675690+00:00",
+  "updated_at": "2026-03-23T21:37:37.499226+00:00",
   "publish_status": {
-    "last_ok": "2026-03-23T21:35:56Z",
+    "last_ok": "2026-03-23T21:37:02Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 1179,
+    "total": 1180,
     "wins": 392,
     "losses": 324,
-    "active": 9,
+    "active": 10,
     "winrate": 54.7
   },
   "trade_stats": {
-    "open": 15,
+    "open": 16,
     "pending": 0,
     "wins": 460,
     "losses": 515,
@@ -256,6 +256,30 @@
       ],
       "news": "Breaking Down The $100 XRP Prophecy: Is There A Timeline?",
       "created_at": "2026-03-23 21:06:21",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1218,
+      "symbol": "HANAUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.042633,
+      "tp1": 0.043486,
+      "tp2": 0.044338,
+      "sl": 0.04178,
+      "strength": 51,
+      "reasons": [
+        "RSI=14 (сильная перепроданность)",
+        "BB нижняя зона (13%)",
+        "EMA20 > EMA50",
+        "Объём x2.0 🔥",
+        "Стакан: сильное давление покупки (+0.30)",
+        "МТФ: 15m, 1h согласны",
+        "Цена у поддержки 0.0425",
+        "⚡ Рыночный вход (MTF 2+ ТФ)"
+      ],
+      "news": null,
+      "created_at": "2026-03-23 21:37:37",
       "status": "ACTIVE"
     }
   ],
@@ -1102,6 +1126,33 @@
         "OI растёт +1.4% + цена ↑",
         "CVD положительный (-7.0%)",
         "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
+    {
+      "id": 1072,
+      "symbol": "HANAUSDT",
+      "direction": "LONG",
+      "exchange": "bybit",
+      "entry": 0.042633,
+      "tp1": 0.043486,
+      "tp2": 0.044338,
+      "sl": 0.04178,
+      "entry_orig": 0.042633,
+      "tp1_orig": 0.043486,
+      "tp2_orig": 0.044338,
+      "sl_orig": 0.04178,
+      "strength": 51,
+      "taken_at": "2026-03-23T21:37:37.376432",
+      "status": "OPEN",
+      "reasons": [
+        "RSI=14 (сильная перепроданность)",
+        "BB нижняя зона (13%)",
+        "EMA20 > EMA50",
+        "Объём x2.0 🔥",
+        "Стакан: сильное давление покупки (+0.30)",
+        "МТФ: 15m, 1h согласны",
+        "Цена у поддержки 0.0425",
+        "⚡ Рыночный вход (MTF 2+ ТФ)"
       ]
     }
   ],
