@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-23T19:11:39.528105+00:00",
+  "updated_at": "2026-03-23T19:12:46.939427+00:00",
   "publish_status": {
-    "last_ok": "2026-03-23T19:10:54Z",
+    "last_ok": "2026-03-23T19:11:50Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 1171,
+    "total": 1172,
     "wins": 390,
     "losses": 318,
-    "active": 14,
+    "active": 15,
     "winrate": 55.1
   },
   "trade_stats": {
-    "open": 18,
+    "open": 19,
     "pending": 0,
     "wins": 457,
     "losses": 507,
@@ -384,6 +384,31 @@
       ],
       "news": null,
       "created_at": "2026-03-23 19:07:01",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1210,
+      "symbol": "LDOUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.2933,
+      "tp1": 0.299166,
+      "tp2": 0.305032,
+      "sl": 0.287434,
+      "strength": 52,
+      "reasons": [
+        "MACD бычий (hist=0.00016)",
+        "Цена > EMA20 > EMA50",
+        "Объём x2.6 🔥🔥",
+        "МТФ: 5m, 15m, 4h согласны",
+        "OI растёт +0.6% + цена ↑",
+        "Doji (1h) — нерешительность",
+        "BTC корреляция 0.89, BTC +1.2% 📈",
+        "BTC контекст: +4.1% за 12ч 📈",
+        "⚡ Рыночный вход (MTF сильный)"
+      ],
+      "news": null,
+      "created_at": "2026-03-23 19:12:45",
       "status": "ACTIVE"
     }
   ],
@@ -1320,6 +1345,34 @@
         "Doji (1h) — нерешительность",
         "BTC корреляция 0.70, BTC +1.4% 📈",
         "BTC контекст: +3.9% за 12ч 📈",
+        "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
+    {
+      "id": 1064,
+      "symbol": "LDOUSDT",
+      "direction": "LONG",
+      "exchange": "bybit",
+      "entry": 0.2933,
+      "tp1": 0.299166,
+      "tp2": 0.305032,
+      "sl": 0.287434,
+      "entry_orig": 0.2933,
+      "tp1_orig": 0.299166,
+      "tp2_orig": 0.305032,
+      "sl_orig": 0.287434,
+      "strength": 52,
+      "taken_at": "2026-03-23T19:12:46.014058",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.00016)",
+        "Цена > EMA20 > EMA50",
+        "Объём x2.6 🔥🔥",
+        "МТФ: 5m, 15m, 4h согласны",
+        "OI растёт +0.6% + цена ↑",
+        "Doji (1h) — нерешительность",
+        "BTC корреляция 0.89, BTC +1.2% 📈",
+        "BTC контекст: +4.1% за 12ч 📈",
         "⚡ Рыночный вход (MTF сильный)"
       ]
     }
