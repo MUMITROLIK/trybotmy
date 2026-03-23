@@ -1202,32 +1202,33 @@ function drawEquity(history){
   ctx.beginPath();ctx.arc(ex,ey,6,0,Math.PI*2);ctx.fillStyle=isPos?'rgba(38,166,154,.2)':'rgba(239,83,80,.2)';ctx.fill();
 }
 
-// ── DONUT ────────────────────────────�function rPos(t){
-  var lP=livePrices[t.symbol],pnl=0;
-  if(lP!=null&&t.entry)pnl=t.direction==='LONG'?(lP-t.entry)/t.entry*100:(t.entry-lP)/t.entry*100;
-  else pnl=t.pnl_pct||0;
-  var pr=pnl>0.01,isN=Math.abs(pnl)<0.01,pc=pr?'pos':isN?'ne':'neg';
-  var isL=t.direction==='LONG',sc=t.status==='TP1_HIT'?'tp1':t.status==='PENDING'?'pend':'open';
-  var rowCls=pr?'profit':isN?'neu':'loss';
-  return '<tr id="pos-'+(t.id||t.symbol)+'" class="'+rowCls+'" data-sym="'+t.symbol+'" onclick="loadChart(\''+t.symbol+'\')">' +
-    '<td><span class="tc-sym">'+t.symbol+'</span></td>'+
-    '<td><span class="dir-pill '+(isL?'long':'short')+'">'+(isL?'↑ L':'↓ S')+'</span></td>'+
-    '<td class="tc-price">'+fmt(t.entry)+'</td>'+
-    '<td class="tc-mark" data-price="'+(lP!=null?lP:t.entry)+'">'+fmt(lP!=null?lP:t.entry)+'</td>'+
-    '<td class="tc-green">'+fmt(t.tp1)+'</td>'+
-    '<td class="tc-green">'+fmt(t.tp2)+'</td>'+
-    '<td class="tc-red">'+fmt(t.sl)+'</td>'+
-    '<td class="tc-pnl"><span class="pnl-val '+pc+'">'+(pnl>=0?'+':'')+pnl.toFixed(2)+'%</span></td>'+
-    '<td><span class="pos-stat '+sc+'">'+stLbl(t.status)+'</span></td>'+
-    '<td class="tc-time live-dur">'+(t.status!=='PENDING'?durStr(t.taken_at):'—')+'</td>'+
-  '</tr>';
-}/span>'+
+// ── DONUT ──────────────────────────────────────────────────────────────────────
+function drawDonut(wins, losses, other){
+  var c=document.getElementById('donutCanvas');if(!c)return;
+  var ctx=c.getContext('2d'),DPR=window.devicePixelRatio||1;
+  var w=c.width/DPR,h=c.height/DPR,cx=w/2,cy=h/2,r=w/2-4;
+  ctx.clearRect(0,0,w,h);
+  var total=Math.max(wins+losses+other,1);
+  var start=0;
+  function drawSeg(val,col){if(val<=0)return;var ang=(val/total)*2*Math.PI;ctx.beginPath();ctx.arc(cx,cy,r,start,start+ang);ctx.lineTo(cx,cy);ctx.fillStyle=col;ctx.fill();start+=ang}
+  drawSeg(wins,'#26A69A');drawSeg(losses,'#EF5350');drawSeg(other,'#5D606B');
+}
+
+function renderActivity(hist){
+  var list=document.getElementById('activityList');if(!list)return;
+  if(!hist||!hist.length){list.innerHTML='<div class="empty-txt" style="text-align:center;padding:.5rem;font-size:.68rem;color:var(--t3)">Нет данных</div>';return;}
+  list.innerHTML=hist.slice(0,8).map(function(x){
+    var pnl=x.pnl_pct||0,pc=pnl>0?'pos':pnl<0?'neg':'ne';
+    return '<div class="act-item">'+
+      '<div class="act-dot" style="background:'+(['TP2','TP1','SL_AFTER_TP1'].indexOf(x.status)!==-1?'var(--G)':'var(--R)')+'"></div>'+
+      '<span class="act-sym">'+x.symbol+'</span>'+
       '<span class="act-dir '+(x.direction==='LONG'?'long':'short')+'">'+(x.direction==='LONG'?'↑ L':'↓ S')+'</span>'+
       '<span class="act-stat">'+stLbl(x.status)+'</span>'+
       '<span class="act-pnl '+pc+'">'+(pnl>=0?'+':'')+pnl.toFixed(2)+'%</span>'+
       '<span class="act-time" style="margin-left:.2rem">'+fmtT(x.closed_at)+'</span>'+
     '</div>'
   }).join('');
+}
 }
 
 // ── MINI STATS ─────────────────────────────────────────────────────────────────
