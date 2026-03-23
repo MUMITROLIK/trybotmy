@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-23T13:49:05.134933+00:00",
+  "updated_at": "2026-03-23T13:50:11.354221+00:00",
   "publish_status": {
-    "last_ok": "2026-03-23T13:48:40Z",
+    "last_ok": "2026-03-23T13:49:11Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -12,17 +12,17 @@
   "stats": {
     "total": 1135,
     "wins": 372,
-    "losses": 302,
-    "active": 19,
-    "winrate": 55.2
+    "losses": 303,
+    "active": 18,
+    "winrate": 55.1
   },
   "trade_stats": {
-    "open": 20,
+    "open": 19,
     "pending": 0,
     "wins": 438,
-    "losses": 488,
-    "total_pnl": -9.01,
-    "winrate": 47.3
+    "losses": 489,
+    "total_pnl": -14.2,
+    "winrate": 47.2
   },
   "fear_greed": {
     "value": 8,
@@ -476,17 +476,19 @@
       "news": null,
       "created_at": "2026-03-23 13:48:33",
       "status": "ACTIVE"
-    },
+    }
+  ],
+  "history": [
     {
-      "id": 1173,
       "symbol": "LIGHTUSDT",
       "direction": "LONG",
-      "exchange": "binance",
       "entry": 0.3428,
       "tp1": 0.358046,
       "tp2": 0.373293,
       "sl": 0.330603,
       "strength": 54,
+      "status": "SL",
+      "created_at": "2026-03-23 13:48:34",
       "reasons": [
         "MACD бычий (hist=0.00554)",
         "Цена > EMA20 > EMA50",
@@ -497,13 +499,8 @@
         "CVD положительный (+3.6%)",
         "BTC контекст: +4.6% за 12ч 📈",
         "⚡ Рыночный вход (MTF сильный)"
-      ],
-      "news": null,
-      "created_at": "2026-03-23 13:48:34",
-      "status": "ACTIVE"
-    }
-  ],
-  "history": [
+      ]
+    },
     {
       "symbol": "LIGHTUSDT",
       "direction": "LONG",
@@ -913,27 +910,6 @@
         "Объём x3.8 🔥🔥",
         "МТФ: 15m, 1h, 4h согласны",
         "Цена у поддержки 1.7624",
-        "BTC контекст: +4.7% за 12ч 📈",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
-      "symbol": "VVVUSDT",
-      "direction": "LONG",
-      "entry": 6.254,
-      "tp1": 6.396607,
-      "tp2": 6.539214,
-      "sl": 6.12892,
-      "strength": 55,
-      "status": "SL",
-      "created_at": "2026-03-23 11:10:37",
-      "reasons": [
-        "MACD бычий (hist=0.00298)",
-        "Цена > EMA20 > EMA50",
-        "Объём x4.5 🔥🔥🔥",
-        "Стакан: перевес bid (+0.07)",
-        "МТФ: 15m, 1h, 4h согласны",
-        "OI растёт +1.9% + цена ↑",
         "BTC контекст: +4.7% за 12ч 📈",
         "⚡ Рыночный вход (MTF сильный)"
       ]
@@ -1461,37 +1437,23 @@
         "BTC контекст: +4.6% за 12ч 📈",
         "⚡ Рыночный вход (MTF сильный)"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 1027,
       "symbol": "LIGHTUSDT",
       "direction": "LONG",
-      "exchange": "binance",
       "entry": 0.3428,
       "tp1": 0.358046,
       "tp2": 0.373293,
       "sl": 0.330603,
-      "entry_orig": 0.3428,
-      "tp1_orig": 0.358046,
-      "tp2_orig": 0.373293,
-      "sl_orig": 0.330603,
       "strength": 54,
+      "status": "SL",
+      "pnl_pct": -5.19,
+      "close_price": 0.325,
       "taken_at": "2026-03-23T13:48:34.463724",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00554)",
-        "Цена > EMA20 > EMA50",
-        "Объём x2.0 🔥",
-        "Стакан: перевес bid (+0.10)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +3.9% + цена ↑",
-        "CVD положительный (+3.6%)",
-        "BTC контекст: +4.6% за 12ч 📈",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-23 13:49:25"
+    },
     {
       "symbol": "LIGHTUSDT",
       "direction": "LONG",
@@ -4277,20 +4239,6 @@
       "close_price": 0.011131,
       "taken_at": "2026-03-22T07:09:19.106515",
       "closed_at": "2026-03-22 07:19:37"
-    },
-    {
-      "symbol": "BRUSDT",
-      "direction": "LONG",
-      "entry": 0.06885,
-      "tp1": 0.071122,
-      "tp2": 0.073395,
-      "sl": 0.06885,
-      "strength": 57,
-      "status": "TP2",
-      "pnl_pct": 8.02,
-      "close_price": 0.07437,
-      "taken_at": "2026-03-22T05:38:07.879549",
-      "closed_at": "2026-03-22 07:03:51"
     }
   ]
 }
