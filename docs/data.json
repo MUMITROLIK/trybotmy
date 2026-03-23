@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-23T05:20:18.710197+00:00",
+  "updated_at": "2026-03-23T05:21:24.604709+00:00",
   "publish_status": {
-    "last_ok": "2026-03-23T05:19:18Z",
+    "last_ok": "2026-03-23T05:20:24Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,11 +17,11 @@
     "winrate": 57.1
   },
   "trade_stats": {
-    "open": 12,
+    "open": 11,
     "pending": 0,
     "wins": 413,
-    "losses": 445,
-    "total_pnl": 30.91,
+    "losses": 446,
+    "total_pnl": 29.82,
     "winrate": 48.1
   },
   "fear_greed": {
@@ -685,31 +685,6 @@
   ],
   "trades_open": [
     {
-      "id": 918,
-      "symbol": "AXSUSDT",
-      "direction": "SHORT",
-      "exchange": "bybit",
-      "entry": 1.0804,
-      "tp1": 1.058792,
-      "tp2": 1.037184,
-      "sl": 1.102008,
-      "entry_orig": 1.0804,
-      "tp1_orig": 1.058792,
-      "tp2_orig": 1.037184,
-      "sl_orig": 1.102008,
-      "strength": 52,
-      "taken_at": "2026-03-22T21:20:35.948805",
-      "status": "OPEN",
-      "reasons": [
-        "MACD медвежий (hist=-0.00164)",
-        "Цена < EMA20 < EMA50",
-        "Объём x3.0 🔥🔥",
-        "Стакан: давление продажи (-0.16)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "BTC корреляция 0.74, BTC -1.9% 📉"
-      ]
-    },
-    {
       "id": 924,
       "symbol": "LINKUSDT",
       "direction": "SHORT",
@@ -1007,6 +982,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "AXSUSDT",
+      "direction": "SHORT",
+      "entry": 1.0804,
+      "tp1": 1.058792,
+      "tp2": 1.037184,
+      "sl": 1.102008,
+      "strength": 52,
+      "status": "TIMEOUT",
+      "pnl_pct": -1.09,
+      "close_price": 1.0922,
+      "taken_at": "2026-03-22T21:20:35.948805",
+      "closed_at": "2026-03-23 05:20:40"
+    },
     {
       "symbol": "JTOUSDT",
       "direction": "SHORT",
@@ -3792,20 +3781,6 @@
       "close_price": 0.07864,
       "taken_at": "2026-03-21T09:30:13.465977",
       "closed_at": "2026-03-21 15:16:56"
-    },
-    {
-      "symbol": "SIRENUSDT",
-      "direction": "LONG",
-      "entry": 0.94977,
-      "tp1": 0.981522,
-      "tp2": 1.013274,
-      "sl": 0.924369,
-      "strength": 61,
-      "status": "SL",
-      "pnl_pct": -3.03,
-      "close_price": 0.921015,
-      "taken_at": "2026-03-21T14:43:55.363686",
-      "closed_at": "2026-03-21 14:50:28"
     }
   ]
 }
