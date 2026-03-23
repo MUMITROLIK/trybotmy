@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-23T05:06:03.496831+00:00",
+  "updated_at": "2026-03-23T05:07:09.187672+00:00",
   "publish_status": {
-    "last_ok": "2026-03-23T05:05:03Z",
+    "last_ok": "2026-03-23T05:06:09Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 57.1
   },
   "trade_stats": {
-    "open": 15,
+    "open": 13,
     "pending": 0,
     "wins": 413,
-    "losses": 439,
-    "total_pnl": 38.41,
-    "winrate": 48.5
+    "losses": 441,
+    "total_pnl": 35.56,
+    "winrate": 48.4
   },
   "fear_greed": {
     "value": 8,
@@ -613,56 +613,6 @@
   ],
   "trades_open": [
     {
-      "id": 891,
-      "symbol": "FILUSDT",
-      "direction": "SHORT",
-      "exchange": "binance",
-      "entry": 0.854,
-      "tp1": 0.83692,
-      "tp2": 0.81984,
-      "sl": 0.87108,
-      "entry_orig": 0.854,
-      "tp1_orig": 0.83692,
-      "tp2_orig": 0.81984,
-      "sl_orig": 0.87108,
-      "strength": 54,
-      "taken_at": "2026-03-22T21:06:15.362145",
-      "status": "OPEN",
-      "reasons": [
-        "MACD медвежий (hist=-0.00099)",
-        "Цена < EMA20 < EMA50",
-        "Объём x3.5 🔥🔥",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "CVD падает (-16.3%) — продажи усиливаются 📉",
-        "BTC корреляция 0.74, BTC -1.6% 📉"
-      ]
-    },
-    {
-      "id": 897,
-      "symbol": "WUSDT",
-      "direction": "SHORT",
-      "exchange": "bybit",
-      "entry": 0.016126,
-      "tp1": 0.015803,
-      "tp2": 0.015481,
-      "sl": 0.016449,
-      "entry_orig": 0.016126,
-      "tp1_orig": 0.015803,
-      "tp2_orig": 0.015481,
-      "sl_orig": 0.016449,
-      "strength": 51,
-      "taken_at": "2026-03-22T21:06:16.275826",
-      "status": "OPEN",
-      "reasons": [
-        "MACD медвежий (hist=-0.00002)",
-        "Цена < EMA20 < EMA50",
-        "Объём x3.0 🔥🔥",
-        "Стакан: давление продажи (-0.22)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "BTC корреляция 0.82, BTC -1.4% 📉"
-      ]
-    },
-    {
       "id": 898,
       "symbol": "ETHUSDT",
       "direction": "SHORT",
@@ -1006,6 +956,34 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "FILUSDT",
+      "direction": "SHORT",
+      "entry": 0.854,
+      "tp1": 0.83692,
+      "tp2": 0.81984,
+      "sl": 0.87108,
+      "strength": 54,
+      "status": "TIMEOUT",
+      "pnl_pct": -1.23,
+      "close_price": 0.8645,
+      "taken_at": "2026-03-22T21:06:15.362145",
+      "closed_at": "2026-03-23 05:06:20"
+    },
+    {
+      "symbol": "WUSDT",
+      "direction": "SHORT",
+      "entry": 0.016126,
+      "tp1": 0.015803,
+      "tp2": 0.015481,
+      "sl": 0.016449,
+      "strength": 51,
+      "status": "TIMEOUT",
+      "pnl_pct": -1.62,
+      "close_price": 0.016388,
+      "taken_at": "2026-03-22T21:06:16.275826",
+      "closed_at": "2026-03-23 05:06:20"
+    },
     {
       "symbol": "XMRUSDT",
       "direction": "SHORT",
@@ -3777,34 +3755,6 @@
       "close_price": 0.6039,
       "taken_at": "2026-03-21T14:06:35.792641",
       "closed_at": "2026-03-21 14:35:14"
-    },
-    {
-      "symbol": "SIRENUSDT",
-      "direction": "LONG",
-      "entry": 0.91755,
-      "tp1": 0.935901,
-      "tp2": 0.954252,
-      "sl": 0.953665,
-      "strength": 51,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 2.24,
-      "close_price": 0.9381349999999999,
-      "taken_at": "2026-03-21T11:47:50.630885",
-      "closed_at": "2026-03-21 14:19:52"
-    },
-    {
-      "symbol": "ANIMEUSDT",
-      "direction": "LONG",
-      "entry": 0.005322,
-      "tp1": 0.005428,
-      "tp2": 0.005535,
-      "sl": 0.005216,
-      "strength": 61,
-      "status": "SL",
-      "pnl_pct": -2.11,
-      "close_price": 0.005209500000000001,
-      "taken_at": "2026-03-21T13:42:52.832409",
-      "closed_at": "2026-03-21 13:58:23"
     }
   ]
 }
