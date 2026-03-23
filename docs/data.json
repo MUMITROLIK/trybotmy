@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-23T06:28:37.656945+00:00",
+  "updated_at": "2026-03-23T06:29:13.954456+00:00",
   "publish_status": {
-    "last_ok": "2026-03-23T06:27:37Z",
+    "last_ok": "2026-03-23T06:28:43Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -11,18 +11,18 @@
   },
   "stats": {
     "total": 1065,
-    "wins": 356,
+    "wins": 357,
     "losses": 266,
-    "active": 10,
-    "winrate": 57.2
+    "active": 9,
+    "winrate": 57.3
   },
   "trade_stats": {
-    "open": 11,
+    "open": 10,
     "pending": 0,
-    "wins": 417,
+    "wins": 418,
     "losses": 448,
-    "total_pnl": 34.75,
-    "winrate": 48.2
+    "total_pnl": 36.83,
+    "winrate": 48.3
   },
   "fear_greed": {
     "value": 8,
@@ -228,30 +228,6 @@
       "status": "ACTIVE"
     },
     {
-      "id": 1102,
-      "symbol": "RESOLVUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.05524,
-      "tp1": 0.056345,
-      "tp2": 0.05745,
-      "sl": 0.054135,
-      "strength": 60,
-      "reasons": [
-        "RSI=38 (перепроданность)",
-        "BB нижняя зона (20%)",
-        "EMA20 > EMA50",
-        "Объём x5.3 🔥🔥🔥",
-        "Стакан: сильное давление покупки (+0.57)",
-        "МТФ: только 1 таймфрейм согласен",
-        "OI падает (шорты закрываются)",
-        "CVD растёт (+5.7%) — покупки усиливаются 📈"
-      ],
-      "news": null,
-      "created_at": "2026-03-23 06:14:32",
-      "status": "ACTIVE"
-    },
-    {
       "id": 1103,
       "symbol": "DEXEUSDT",
       "direction": "LONG",
@@ -276,6 +252,27 @@
     }
   ],
   "history": [
+    {
+      "symbol": "RESOLVUSDT",
+      "direction": "LONG",
+      "entry": 0.05524,
+      "tp1": 0.056345,
+      "tp2": 0.05745,
+      "sl": 0.054135,
+      "strength": 60,
+      "status": "TP1",
+      "created_at": "2026-03-23 06:14:32",
+      "reasons": [
+        "RSI=38 (перепроданность)",
+        "BB нижняя зона (20%)",
+        "EMA20 > EMA50",
+        "Объём x5.3 🔥🔥🔥",
+        "Стакан: сильное давление покупки (+0.57)",
+        "МТФ: только 1 таймфрейм согласен",
+        "OI падает (шорты закрываются)",
+        "CVD растёт (+5.7%) — покупки усиливаются 📈"
+      ]
+    },
     {
       "symbol": "MYXUSDT",
       "direction": "LONG",
@@ -660,28 +657,6 @@
         "CVD растёт (+14.2%) — покупки усиливаются 📈",
         "⚡ Рыночный вход (MTF сильный)"
       ]
-    },
-    {
-      "symbol": "HBARUSDT",
-      "direction": "LONG",
-      "entry": 0.08911,
-      "tp1": 0.090892,
-      "tp2": 0.092674,
-      "sl": 0.087328,
-      "strength": 60,
-      "status": "EXPIRED",
-      "created_at": "2026-03-22 22:22:20",
-      "reasons": [
-        "RSI=43 (нейтральный↓)",
-        "MACD бычий (hist=0.00000)",
-        "Цена выше EMA20",
-        "Объём x3.9 🔥🔥",
-        "Стакан: давление покупки (+0.19)",
-        "МТФ: только 1 таймфрейм согласен",
-        "OI растёт +5.1%",
-        "CVD растёт (+6.0%) — покупки усиливаются 📈",
-        "Bullish Engulfing (1h) 🕯️"
-      ]
     }
   ],
   "trades_open": [
@@ -928,33 +903,6 @@
       ]
     },
     {
-      "id": 956,
-      "symbol": "RESOLVUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.05524,
-      "tp1": 0.056345,
-      "tp2": 0.05745,
-      "sl": 0.054135,
-      "entry_orig": 0.05524,
-      "tp1_orig": 0.056345,
-      "tp2_orig": 0.05745,
-      "sl_orig": 0.054135,
-      "strength": 60,
-      "taken_at": "2026-03-23T06:14:33.273336",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=38 (перепроданность)",
-        "BB нижняя зона (20%)",
-        "EMA20 > EMA50",
-        "Объём x5.3 🔥🔥🔥",
-        "Стакан: сильное давление покупки (+0.57)",
-        "МТФ: только 1 таймфрейм согласен",
-        "OI падает (шорты закрываются)",
-        "CVD растёт (+5.7%) — покупки усиливаются 📈"
-      ]
-    },
-    {
       "id": 957,
       "symbol": "DEXEUSDT",
       "direction": "LONG",
@@ -982,6 +930,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "RESOLVUSDT",
+      "direction": "LONG",
+      "entry": 0.05524,
+      "tp1": 0.056345,
+      "tp2": 0.05745,
+      "sl": 0.054135,
+      "strength": 60,
+      "status": "TP1",
+      "pnl_pct": 2.08,
+      "close_price": 0.056389999999999996,
+      "taken_at": "2026-03-23T06:14:33.273336",
+      "closed_at": "2026-03-23 06:29:13"
+    },
     {
       "symbol": "HBARUSDT",
       "direction": "LONG",
@@ -3767,20 +3729,6 @@
       "close_price": 0.0055435,
       "taken_at": "2026-03-21T14:27:59.537016",
       "closed_at": "2026-03-21 16:05:29"
-    },
-    {
-      "symbol": "POWERUSDT",
-      "direction": "LONG",
-      "entry": 0.10872,
-      "tp1": 0.112186,
-      "tp2": 0.115652,
-      "sl": 0.105947,
-      "strength": 52,
-      "status": "MANUAL",
-      "pnl_pct": 0,
-      "close_price": 0.10872,
-      "taken_at": "2026-03-21T14:43:55.568718",
-      "closed_at": "2026-03-21 16:04:45"
     }
   ]
 }
