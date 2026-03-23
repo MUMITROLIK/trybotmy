@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-23T11:22:12.444936+00:00",
+  "updated_at": "2026-03-23T11:22:42.803081+00:00",
   "publish_status": {
-    "last_ok": "2026-03-23T11:21:03Z",
+    "last_ok": "2026-03-23T11:22:18Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 55.9
   },
   "trade_stats": {
-    "open": 13,
+    "open": 11,
     "pending": 1,
     "wins": 432,
-    "losses": 472,
-    "total_pnl": 16.59,
-    "winrate": 47.8
+    "losses": 474,
+    "total_pnl": 10.53,
+    "winrate": 47.7
   },
   "fear_greed": {
     "value": 8,
@@ -914,60 +914,6 @@
       ]
     },
     {
-      "id": 993,
-      "symbol": "MUSDT",
-      "direction": "LONG",
-      "exchange": "bybit",
-      "entry": 1.7663,
-      "tp1": 1.801626,
-      "tp2": 1.836952,
-      "sl": 1.730974,
-      "entry_orig": 1.7663,
-      "tp1_orig": 1.801626,
-      "tp2_orig": 1.836952,
-      "sl_orig": 1.730974,
-      "strength": 51,
-      "taken_at": "2026-03-23T11:12:20.087878",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=40 (перепроданность)",
-        "BB нижняя полоса (пробой)",
-        "EMA20 > EMA50",
-        "Объём x3.8 🔥🔥",
-        "МТФ: 15m, 1h, 4h согласны",
-        "Цена у поддержки 1.7624",
-        "BTC контекст: +4.7% за 12ч 📈",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
-      "id": 994,
-      "symbol": "PYTHUSDT",
-      "direction": "LONG",
-      "exchange": "bybit",
-      "entry": 0.04186,
-      "tp1": 0.042697,
-      "tp2": 0.043534,
-      "sl": 0.041023,
-      "entry_orig": 0.04186,
-      "tp1_orig": 0.042697,
-      "tp2_orig": 0.043534,
-      "sl_orig": 0.041023,
-      "strength": 50,
-      "taken_at": "2026-03-23T11:17:32.003537",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00020)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: сильное давление покупки (+0.68)",
-        "МТФ: 5m, 15m, 4h согласны",
-        "OI растёт +1.8% + цена ↑",
-        "BTC корреляция 0.79, BTC +3.9% 📈",
-        "BTC контекст: +4.9% за 12ч 📈",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 995,
       "symbol": "BNBUSDT",
       "direction": "LONG",
@@ -1110,6 +1056,34 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "MUSDT",
+      "direction": "LONG",
+      "entry": 1.7663,
+      "tp1": 1.801626,
+      "tp2": 1.836952,
+      "sl": 1.730974,
+      "strength": 51,
+      "status": "SL",
+      "pnl_pct": -3.81,
+      "close_price": 1.699,
+      "taken_at": "2026-03-23T11:12:20.087878",
+      "closed_at": "2026-03-23 11:22:42"
+    },
+    {
+      "symbol": "PYTHUSDT",
+      "direction": "LONG",
+      "entry": 0.04186,
+      "tp1": 0.042697,
+      "tp2": 0.043534,
+      "sl": 0.041023,
+      "strength": 50,
+      "status": "SL",
+      "pnl_pct": -2.25,
+      "close_price": 0.04092,
+      "taken_at": "2026-03-23T11:17:32.003537",
+      "closed_at": "2026-03-23 11:22:30"
+    },
     {
       "symbol": "HUMAUSDT",
       "direction": "LONG",
@@ -3881,34 +3855,6 @@
       "close_price": 0.05867,
       "taken_at": "2026-03-22T00:03:09.628019",
       "closed_at": "2026-03-22 00:04:47"
-    },
-    {
-      "symbol": "PTBUSDT",
-      "direction": "LONG",
-      "entry": 0.0015422,
-      "tp1": 0.001573,
-      "tp2": 0.001604,
-      "sl": 0.0015422,
-      "strength": 53,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": -0.03,
-      "close_price": 0.0015417,
-      "taken_at": "2026-03-21T22:12:06.351035",
-      "closed_at": "2026-03-22 00:02:50"
-    },
-    {
-      "symbol": "EDGEUSDT",
-      "direction": "LONG",
-      "entry": 0.7218,
-      "tp1": 0.736236,
-      "tp2": 0.750672,
-      "sl": 0.707364,
-      "strength": 55,
-      "status": "SL",
-      "pnl_pct": -3.91,
-      "close_price": 0.69355,
-      "taken_at": "2026-03-21T22:12:06.180132",
-      "closed_at": "2026-03-21 23:56:37"
     }
   ]
 }
