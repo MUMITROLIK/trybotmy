@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-23T15:32:00.527327+00:00",
+  "updated_at": "2026-03-23T15:32:47.061375+00:00",
   "publish_status": {
-    "last_ok": "2026-03-23T15:31:18Z",
+    "last_ok": "2026-03-23T15:32:06Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 55.3
   },
   "trade_stats": {
-    "open": 20,
+    "open": 19,
     "pending": 0,
     "wins": 444,
-    "losses": 493,
-    "total_pnl": -8.23,
-    "winrate": 47.4
+    "losses": 494,
+    "total_pnl": -10.31,
+    "winrate": 47.3
   },
   "fear_greed": {
     "value": 8,
@@ -851,34 +851,6 @@
       ]
     },
     {
-      "id": 997,
-      "symbol": "RESOLVUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.054735,
-      "tp1": 0.05583004,
-      "tp2": 0.0569241,
-      "sl": 0.05363992,
-      "entry_orig": 0.05453202,
-      "tp1_orig": 0.055623,
-      "tp2_orig": 0.056713,
-      "sl_orig": 0.053441,
-      "strength": 50,
-      "taken_at": "2026-03-23T11:20:56.791822",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=43 (нейтральный↓)",
-        "MACD бычий (hist=0.00005)",
-        "Цена выше EMA20",
-        "Стакан: сильное давление покупки (+0.50)",
-        "МТФ: только 1 таймфрейм согласен",
-        "OI растёт +1.2% + цена ↑",
-        "CVD растёт (+6.7%) — покупки усиливаются 📈",
-        "BTC контекст: +4.5% за 12ч 📈",
-        "📌 Лимитный вход @ 0.054532 (откат к EMA20)"
-      ]
-    },
-    {
       "id": 998,
       "symbol": "DYDXUSDT",
       "direction": "LONG",
@@ -1356,6 +1328,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "RESOLVUSDT",
+      "direction": "LONG",
+      "entry": 0.054735,
+      "tp1": 0.05583004,
+      "tp2": 0.0569241,
+      "sl": 0.05363992,
+      "strength": 50,
+      "status": "SL",
+      "pnl_pct": -2.08,
+      "close_price": 0.053595000000000004,
+      "taken_at": "2026-03-23T11:20:56.791822",
+      "closed_at": "2026-03-23 15:32:46"
+    },
     {
       "symbol": "SOLUSDT",
       "direction": "LONG",
@@ -4141,20 +4127,6 @@
       "close_price": 0.59965,
       "taken_at": "2026-03-22T06:05:45.407224",
       "closed_at": "2026-03-22 08:52:07"
-    },
-    {
-      "symbol": "POWERUSDT",
-      "direction": "LONG",
-      "entry": 0.10665,
-      "tp1": 0.109929,
-      "tp2": 0.113207,
-      "sl": 0.104027,
-      "strength": 58,
-      "status": "SL",
-      "pnl_pct": -2.8,
-      "close_price": 0.10366500000000001,
-      "taken_at": "2026-03-22T06:58:55.127455",
-      "closed_at": "2026-03-22 08:39:57"
     }
   ]
 }
