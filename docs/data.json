@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-23T13:50:11.354221+00:00",
+  "updated_at": "2026-03-23T13:51:10.965353+00:00",
   "publish_status": {
-    "last_ok": "2026-03-23T13:49:11Z",
+    "last_ok": "2026-03-23T13:50:17Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -11,18 +11,18 @@
   },
   "stats": {
     "total": 1135,
-    "wins": 372,
+    "wins": 373,
     "losses": 303,
-    "active": 18,
-    "winrate": 55.1
+    "active": 17,
+    "winrate": 55.2
   },
   "trade_stats": {
-    "open": 19,
+    "open": 18,
     "pending": 0,
-    "wins": 438,
+    "wins": 439,
     "losses": 489,
-    "total_pnl": -14.2,
-    "winrate": 47.2
+    "total_pnl": -12.14,
+    "winrate": 47.3
   },
   "fear_greed": {
     "value": 8,
@@ -57,30 +57,6 @@
       ],
       "news": null,
       "created_at": "2026-03-23 10:29:11",
-      "status": "ACTIVE"
-    },
-    {
-      "id": 1135,
-      "symbol": "PIXELUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.009043,
-      "tp1": 0.009224,
-      "tp2": 0.009405,
-      "sl": 0.008862,
-      "strength": 54,
-      "reasons": [
-        "MACD бычий (hist=0.00004)",
-        "EMA20 > EMA50 (golden cross) 🌟",
-        "Объём x4.1 🔥🔥🔥",
-        "МТФ: 5m, 15m согласны",
-        "OI растёт +2.5% + цена ↑",
-        "CVD положительный (+1.9%)",
-        "BTC контекст: +1.7% за 12ч 📈",
-        "⚡ Рыночный вход (MTF 2+ ТФ)"
-      ],
-      "news": null,
-      "created_at": "2026-03-23 11:08:46",
       "status": "ACTIVE"
     },
     {
@@ -970,33 +946,6 @@
       ]
     },
     {
-      "id": 989,
-      "symbol": "PIXELUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.009043,
-      "tp1": 0.009224,
-      "tp2": 0.009405,
-      "sl": 0.008862,
-      "entry_orig": 0.009043,
-      "tp1_orig": 0.009224,
-      "tp2_orig": 0.009405,
-      "sl_orig": 0.008862,
-      "strength": 54,
-      "taken_at": "2026-03-23T11:08:46.984684",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00004)",
-        "EMA20 > EMA50 (golden cross) 🌟",
-        "Объём x4.1 🔥🔥🔥",
-        "МТФ: 5m, 15m согласны",
-        "OI растёт +2.5% + цена ↑",
-        "CVD положительный (+1.9%)",
-        "BTC контекст: +1.7% за 12ч 📈",
-        "⚡ Рыночный вход (MTF 2+ ТФ)"
-      ]
-    },
-    {
       "id": 992,
       "symbol": "ZETAUSDT",
       "direction": "LONG",
@@ -1440,6 +1389,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "PIXELUSDT",
+      "direction": "LONG",
+      "entry": 0.009043,
+      "tp1": 0.009224,
+      "tp2": 0.009405,
+      "sl": 0.008862,
+      "strength": 54,
+      "status": "TP1",
+      "pnl_pct": 2.06,
+      "close_price": 0.0092295,
+      "taken_at": "2026-03-23T11:08:46.984684",
+      "closed_at": "2026-03-23 13:51:10"
+    },
     {
       "symbol": "LIGHTUSDT",
       "direction": "LONG",
@@ -4225,20 +4188,6 @@
       "close_price": 0.020266,
       "taken_at": "2026-03-21T23:23:36.788141",
       "closed_at": "2026-03-22 07:23:45"
-    },
-    {
-      "symbol": "BANANAS31USDT",
-      "direction": "LONG",
-      "entry": 0.011463,
-      "tp1": 0.011878,
-      "tp2": 0.012294,
-      "sl": 0.011131,
-      "strength": 53,
-      "status": "SL",
-      "pnl_pct": -2.9,
-      "close_price": 0.011131,
-      "taken_at": "2026-03-22T07:09:19.106515",
-      "closed_at": "2026-03-22 07:19:37"
     }
   ]
 }
