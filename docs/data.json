@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-23T19:20:59.855160+00:00",
+  "updated_at": "2026-03-23T19:22:15.338617+00:00",
   "publish_status": {
-    "last_ok": "2026-03-23T19:20:04Z",
+    "last_ok": "2026-03-23T19:21:07Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,11 +17,11 @@
     "winrate": 55.1
   },
   "trade_stats": {
-    "open": 19,
+    "open": 18,
     "pending": 0,
     "wins": 457,
-    "losses": 507,
-    "total_pnl": -8.3,
+    "losses": 508,
+    "total_pnl": -9.07,
     "winrate": 47.4
   },
   "fear_greed": {
@@ -848,34 +848,6 @@
   ],
   "trades_open": [
     {
-      "id": 998,
-      "symbol": "DYDXUSDT",
-      "direction": "LONG",
-      "exchange": "bybit",
-      "entry": 0.08413,
-      "tp1": 0.085813,
-      "tp2": 0.087495,
-      "sl": 0.082447,
-      "entry_orig": 0.08413,
-      "tp1_orig": 0.085813,
-      "tp2_orig": 0.087495,
-      "sl_orig": 0.082447,
-      "strength": 51,
-      "taken_at": "2026-03-23T11:20:57.035283",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00037)",
-        "EMA20 > EMA50 (golden cross) 🌟",
-        "Объём x2.0 🔥",
-        "Стакан: перевес bid (+0.09)",
-        "МТФ: 5m, 15m, 4h согласны",
-        "OI растёт +2.2% + цена ↑",
-        "BTC корреляция 0.81, BTC +3.8% 📈",
-        "BTC контекст: +4.9% за 12ч 📈",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 1004,
       "symbol": "LTCUSDT",
       "direction": "LONG",
@@ -1378,6 +1350,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "DYDXUSDT",
+      "direction": "LONG",
+      "entry": 0.08413,
+      "tp1": 0.085813,
+      "tp2": 0.087495,
+      "sl": 0.082447,
+      "strength": 51,
+      "status": "TIMEOUT",
+      "pnl_pct": -0.77,
+      "close_price": 0.08348,
+      "taken_at": "2026-03-23T11:20:57.035283",
+      "closed_at": "2026-03-23 19:21:14"
+    },
     {
       "symbol": "WIFUSDT",
       "direction": "LONG",
@@ -4163,20 +4149,6 @@
       "close_price": 0.0010993,
       "taken_at": "2026-03-22T12:35:39.812966",
       "closed_at": "2026-03-22 13:39:12"
-    },
-    {
-      "symbol": "DEXEUSDT",
-      "direction": "LONG",
-      "entry": 6.892,
-      "tp1": 7.02984,
-      "tp2": 7.16768,
-      "sl": 6.75416,
-      "strength": 50,
-      "status": "SL",
-      "pnl_pct": -2.87,
-      "close_price": 6.694,
-      "taken_at": "2026-03-22T13:20:54.415538",
-      "closed_at": "2026-03-22 13:30:43"
     }
   ]
 }
