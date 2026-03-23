@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-23T08:20:30.780476+00:00",
+  "updated_at": "2026-03-23T08:21:36.871327+00:00",
   "publish_status": {
-    "last_ok": "2026-03-23T08:19:30Z",
+    "last_ok": "2026-03-23T08:20:36Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,11 +17,11 @@
     "winrate": 56.6
   },
   "trade_stats": {
-    "open": 10,
+    "open": 9,
     "pending": 0,
-    "wins": 420,
+    "wins": 421,
     "losses": 457,
-    "total_pnl": 21.96,
+    "total_pnl": 24.07,
     "winrate": 47.9
   },
   "fear_greed": {
@@ -850,33 +850,6 @@
       ]
     },
     {
-      "id": 964,
-      "symbol": "1000TURBOUSDT",
-      "direction": "LONG",
-      "exchange": "bybit",
-      "entry": 1.1327,
-      "tp1": 1.155354,
-      "tp2": 1.178008,
-      "sl": 1.110046,
-      "entry_orig": 1.1327,
-      "tp1_orig": 1.155354,
-      "tp2_orig": 1.178008,
-      "sl_orig": 1.110046,
-      "strength": 51,
-      "taken_at": "2026-03-23T07:12:17.309447",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=25 (сильная перепроданность)",
-        "BB нижняя зона (21%)",
-        "EMA20 > EMA50",
-        "Стакан: сильное давление покупки (+0.32)",
-        "МТФ: 15m, 1h, 4h согласны",
-        "OI растёт +0.6% + цена ↑",
-        "⚠️ Funding через 49м",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 965,
       "symbol": "ANKRUSDT",
       "direction": "LONG",
@@ -957,6 +930,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "1000TURBOUSDT",
+      "direction": "LONG",
+      "entry": 1.1327,
+      "tp1": 1.155354,
+      "tp2": 1.178008,
+      "sl": 1.110046,
+      "strength": 51,
+      "status": "TP1",
+      "pnl_pct": 2.11,
+      "close_price": 1.1566,
+      "taken_at": "2026-03-23T07:12:17.309447",
+      "closed_at": "2026-03-23 08:20:38"
+    },
     {
       "symbol": "XAUTUSDT",
       "direction": "SHORT",
@@ -3742,20 +3729,6 @@
       "close_price": 0.04004,
       "taken_at": "2026-03-21T16:07:39.080341",
       "closed_at": "2026-03-21 17:56:30"
-    },
-    {
-      "symbol": "BEATUSDT",
-      "direction": "LONG",
-      "entry": 0.6311,
-      "tp1": 0.643722,
-      "tp2": 0.656344,
-      "sl": 0.618478,
-      "strength": 50,
-      "status": "SL",
-      "pnl_pct": -2.35,
-      "close_price": 0.61625,
-      "taken_at": "2026-03-21T17:25:59.906958",
-      "closed_at": "2026-03-21 17:41:43"
     }
   ]
 }
