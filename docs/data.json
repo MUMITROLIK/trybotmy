@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-23T09:35:44.782568+00:00",
+  "updated_at": "2026-03-23T09:36:23.335181+00:00",
   "publish_status": {
-    "last_ok": "2026-03-23T09:34:37Z",
+    "last_ok": "2026-03-23T09:35:52Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 1085,
+    "total": 1086,
     "wins": 360,
     "losses": 277,
-    "active": 13,
+    "active": 14,
     "winrate": 56.5
   },
   "trade_stats": {
-    "open": 12,
+    "open": 13,
     "pending": 0,
     "wins": 424,
     "losses": 460,
@@ -338,6 +338,29 @@
       ],
       "news": null,
       "created_at": "2026-03-23 09:14:20",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1124,
+      "symbol": "BTCUSDT",
+      "direction": "SHORT",
+      "exchange": "binance",
+      "entry": 67932.5,
+      "tp1": 66573.85,
+      "tp2": 65215.2,
+      "sl": 69291.15,
+      "strength": 56,
+      "reasons": [
+        "MACD медвежий (hist=-29.22287)",
+        "EMA20 < EMA50 (death cross) 💀",
+        "Стакан: сильное давление продажи (-0.46)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "CVD отрицательный (-1.5%)",
+        "Bearish Engulfing (1h) 🕯️",
+        "BTC корреляция 1.00, BTC -1.4% 📉"
+      ],
+      "news": "Crypto, stocks fall as oil whipsaws after Iran vows response to Trump threat",
+      "created_at": "2026-03-23 09:36:20",
       "status": "ACTIVE"
     }
   ],
@@ -1071,6 +1094,32 @@
         "МТФ: все 4 таймфрейма согласны ✅✅",
         "CVD падает (-10.8%) — продажи усиливаются 📉",
         "BTC корреляция 0.69, BTC -0.9% 📉"
+      ]
+    },
+    {
+      "id": 978,
+      "symbol": "BTCUSDT",
+      "direction": "SHORT",
+      "exchange": "binance",
+      "entry": 67932.5,
+      "tp1": 66573.85,
+      "tp2": 65215.2,
+      "sl": 69291.15,
+      "entry_orig": 67932.5,
+      "tp1_orig": 66573.85,
+      "tp2_orig": 65215.2,
+      "sl_orig": 69291.15,
+      "strength": 56,
+      "taken_at": "2026-03-23T09:36:23.234181",
+      "status": "OPEN",
+      "reasons": [
+        "MACD медвежий (hist=-29.22287)",
+        "EMA20 < EMA50 (death cross) 💀",
+        "Стакан: сильное давление продажи (-0.46)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "CVD отрицательный (-1.5%)",
+        "Bearish Engulfing (1h) 🕯️",
+        "BTC корреляция 1.00, BTC -1.4% 📉"
       ]
     }
   ],
