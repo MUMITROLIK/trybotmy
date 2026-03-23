@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-23T10:09:31.888104+00:00",
+  "updated_at": "2026-03-23T10:10:12.193069+00:00",
   "publish_status": {
-    "last_ok": "2026-03-23T10:08:46Z",
+    "last_ok": "2026-03-23T10:09:38Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 56.5
   },
   "trade_stats": {
-    "open": 17,
+    "open": 16,
     "pending": 0,
     "wins": 424,
-    "losses": 460,
-    "total_pnl": 24.05,
-    "winrate": 48.0
+    "losses": 461,
+    "total_pnl": 21.05,
+    "winrate": 47.9
   },
   "fear_greed": {
     "value": 8,
@@ -1136,32 +1136,6 @@
       ]
     },
     {
-      "id": 976,
-      "symbol": "CYSUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.6924,
-      "tp1": 0.718157,
-      "tp2": 0.743914,
-      "sl": 0.671794,
-      "entry_orig": 0.6924,
-      "tp1_orig": 0.718157,
-      "tp2_orig": 0.743914,
-      "sl_orig": 0.671794,
-      "strength": 54,
-      "taken_at": "2026-03-23T09:12:43.592415",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00403)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: сильное давление покупки (+0.26)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "CVD растёт (+7.0%) — покупки усиливаются 📈",
-        "Doji (1h) — нерешительность",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 977,
       "symbol": "DOGEUSDT",
       "direction": "SHORT",
@@ -1318,6 +1292,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "CYSUSDT",
+      "direction": "LONG",
+      "entry": 0.6924,
+      "tp1": 0.718157,
+      "tp2": 0.743914,
+      "sl": 0.671794,
+      "strength": 54,
+      "status": "SL",
+      "pnl_pct": -3.0,
+      "close_price": 0.6716500000000001,
+      "taken_at": "2026-03-23T09:12:43.592415",
+      "closed_at": "2026-03-23 10:10:11"
+    },
     {
       "symbol": "ANKRUSDT",
       "direction": "LONG",
@@ -4103,20 +4091,6 @@
       "close_price": 6.8751,
       "taken_at": "2026-03-21T20:11:14.041793",
       "closed_at": "2026-03-21 21:29:52"
-    },
-    {
-      "symbol": "BEATUSDT",
-      "direction": "LONG",
-      "entry": 0.645,
-      "tp1": 0.658929,
-      "tp2": 0.672857,
-      "sl": 0.6321,
-      "strength": 55,
-      "status": "SL",
-      "pnl_pct": -2.09,
-      "close_price": 0.6315500000000001,
-      "taken_at": "2026-03-21T18:57:08.492768",
-      "closed_at": "2026-03-21 20:59:16"
     }
   ]
 }
