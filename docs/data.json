@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-23T01:19:57.458893+00:00",
+  "updated_at": "2026-03-23T01:21:05.944376+00:00",
   "publish_status": {
-    "last_ok": "2026-03-23T01:19:23Z",
+    "last_ok": "2026-03-23T01:20:03Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -13,15 +13,15 @@
     "total": 1045,
     "wins": 350,
     "losses": 261,
-    "active": 8,
+    "active": 7,
     "winrate": 57.3
   },
   "trade_stats": {
-    "open": 26,
+    "open": 25,
     "pending": 0,
     "wins": 407,
-    "losses": 423,
-    "total_pnl": 63.1,
+    "losses": 424,
+    "total_pnl": 61.08,
     "winrate": 49.0
   },
   "fear_greed": {
@@ -36,28 +36,6 @@
     "trained_at": "2026-03-22T16:06:23.584833+00:00"
   },
   "signals": [
-    {
-      "id": 1064,
-      "symbol": "AXSUSDT",
-      "direction": "SHORT",
-      "exchange": "binance",
-      "entry": 1.0804,
-      "tp1": 1.058792,
-      "tp2": 1.037184,
-      "sl": 1.102008,
-      "strength": 52,
-      "reasons": [
-        "MACD медвежий (hist=-0.00164)",
-        "Цена < EMA20 < EMA50",
-        "Объём x3.0 🔥🔥",
-        "Стакан: давление продажи (-0.16)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "BTC корреляция 0.74, BTC -1.9% 📉"
-      ],
-      "news": null,
-      "created_at": "2026-03-22 21:20:35",
-      "status": "ACTIVE"
-    },
     {
       "id": 1065,
       "symbol": "SOLUSDT",
@@ -465,6 +443,25 @@
       ]
     },
     {
+      "symbol": "AXSUSDT",
+      "direction": "SHORT",
+      "entry": 1.0804,
+      "tp1": 1.058792,
+      "tp2": 1.037184,
+      "sl": 1.102008,
+      "strength": 52,
+      "status": "EXPIRED",
+      "created_at": "2026-03-22 21:20:35",
+      "reasons": [
+        "MACD медвежий (hist=-0.00164)",
+        "Цена < EMA20 < EMA50",
+        "Объём x3.0 🔥🔥",
+        "Стакан: давление продажи (-0.16)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "BTC корреляция 0.74, BTC -1.9% 📉"
+      ]
+    },
+    {
       "symbol": "AVAXUSDT",
       "direction": "SHORT",
       "entry": 8.918,
@@ -597,25 +594,6 @@
         "МТФ: все 4 таймфрейма согласны ✅✅",
         "CVD падает (-14.8%) — продажи усиливаются 📉",
         "Doji (1h) — нерешительность"
-      ]
-    },
-    {
-      "symbol": "FARTCOINUSDT",
-      "direction": "SHORT",
-      "entry": 0.1833,
-      "tp1": 0.179634,
-      "tp2": 0.175968,
-      "sl": 0.186966,
-      "strength": 52,
-      "status": "SL",
-      "created_at": "2026-03-22 21:12:36",
-      "reasons": [
-        "MACD медвежий (hist=-0.00028)",
-        "Цена < EMA20 < EMA50",
-        "Объём x4.4 🔥🔥🔥",
-        "МТФ: 5m, 15m, 1h согласны",
-        "OI растёт +1.8% + цена ↓",
-        "CVD отрицательный (+1.9%)"
       ]
     }
   ],
@@ -1103,31 +1081,6 @@
       ]
     },
     {
-      "id": 920,
-      "symbol": "SEIUSDT",
-      "direction": "SHORT",
-      "exchange": "bybit",
-      "entry": 0.0589,
-      "tp1": 0.057722,
-      "tp2": 0.056544,
-      "sl": 0.060078,
-      "entry_orig": 0.0589,
-      "tp1_orig": 0.057722,
-      "tp2_orig": 0.056544,
-      "sl_orig": 0.060078,
-      "strength": 53,
-      "taken_at": "2026-03-22T21:22:13.060063",
-      "status": "OPEN",
-      "reasons": [
-        "MACD медвежий (hist=-0.00003)",
-        "Цена < EMA20 < EMA50",
-        "Объём x5.4 🔥🔥🔥",
-        "Стакан: перевес ask (-0.08)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "BTC корреляция 0.74, BTC -1.7% 📉"
-      ]
-    },
-    {
       "id": 923,
       "symbol": "JUPUSDT",
       "direction": "SHORT",
@@ -1286,6 +1239,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "SEIUSDT",
+      "direction": "SHORT",
+      "entry": 0.0589,
+      "tp1": 0.057722,
+      "tp2": 0.056544,
+      "sl": 0.060078,
+      "strength": 53,
+      "status": "SL",
+      "pnl_pct": -2.02,
+      "close_price": 0.06009,
+      "taken_at": "2026-03-22T21:22:13.060063",
+      "closed_at": "2026-03-23 01:21:05"
+    },
     {
       "symbol": "BTRUSDT",
       "direction": "LONG",
@@ -4071,20 +4038,6 @@
       "close_price": 25.801000000000002,
       "taken_at": "2026-03-21T11:08:23.177390",
       "closed_at": "2026-03-21 11:30:52"
-    },
-    {
-      "symbol": "PLAYUSDT",
-      "direction": "LONG",
-      "entry": 0.03731,
-      "tp1": 0.038175,
-      "tp2": 0.039039,
-      "sl": 0.036564,
-      "strength": 55,
-      "status": "SL",
-      "pnl_pct": -2.1,
-      "close_price": 0.036525,
-      "taken_at": "2026-03-21T09:54:07.954247",
-      "closed_at": "2026-03-21 11:16:21"
     }
   ]
 }
