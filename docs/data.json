@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-23T01:29:04.088870+00:00",
+  "updated_at": "2026-03-23T01:30:09.783104+00:00",
   "publish_status": {
-    "last_ok": "2026-03-23T01:27:49Z",
+    "last_ok": "2026-03-23T01:29:09Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -13,16 +13,16 @@
     "total": 1046,
     "wins": 350,
     "losses": 262,
-    "active": 5,
+    "active": 4,
     "winrate": 57.2
   },
   "trade_stats": {
-    "open": 24,
+    "open": 23,
     "pending": 0,
     "wins": 407,
-    "losses": 426,
-    "total_pnl": 56.62,
-    "winrate": 48.9
+    "losses": 427,
+    "total_pnl": 54.57,
+    "winrate": 48.8
   },
   "fear_greed": {
     "value": 8,
@@ -36,29 +36,6 @@
     "trained_at": "2026-03-22T16:06:23.584833+00:00"
   },
   "signals": [
-    {
-      "id": 1070,
-      "symbol": "LINKUSDT",
-      "direction": "SHORT",
-      "exchange": "binance",
-      "entry": 8.645,
-      "tp1": 8.4721,
-      "tp2": 8.2992,
-      "sl": 8.8179,
-      "strength": 52,
-      "reasons": [
-        "MACD медвежий (hist=-0.00896)",
-        "Цена < EMA20 < EMA50",
-        "Объём x3.0 🔥🔥",
-        "Стакан: перевес ask (-0.10)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "CVD отрицательный (-2.9%)",
-        "BTC корреляция 0.88, BTC -1.3% 📉"
-      ],
-      "news": null,
-      "created_at": "2026-03-22 21:30:05",
-      "status": "ACTIVE"
-    },
     {
       "id": 1074,
       "symbol": "HBARUSDT",
@@ -364,6 +341,26 @@
       ]
     },
     {
+      "symbol": "LINKUSDT",
+      "direction": "SHORT",
+      "entry": 8.645,
+      "tp1": 8.4721,
+      "tp2": 8.2992,
+      "sl": 8.8179,
+      "strength": 52,
+      "status": "EXPIRED",
+      "created_at": "2026-03-22 21:30:05",
+      "reasons": [
+        "MACD медвежий (hist=-0.00896)",
+        "Цена < EMA20 < EMA50",
+        "Объём x3.0 🔥🔥",
+        "Стакан: перевес ask (-0.10)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "CVD отрицательный (-2.9%)",
+        "BTC корреляция 0.88, BTC -1.3% 📉"
+      ]
+    },
+    {
       "symbol": "JUPUSDT",
       "direction": "SHORT",
       "entry": 0.15157,
@@ -533,25 +530,6 @@
         "МТФ: 1h, 4h согласны",
         "Цена у поддержки 0.0075",
         "⚡ Рыночный вход (MTF 2+ ТФ)"
-      ]
-    },
-    {
-      "symbol": "PIXELUSDT",
-      "direction": "SHORT",
-      "entry": 0.008816,
-      "tp1": 0.00864,
-      "tp2": 0.008463,
-      "sl": 0.008992,
-      "strength": 56,
-      "status": "TP1",
-      "created_at": "2026-03-22 21:14:15",
-      "reasons": [
-        "MACD медвежий (hist=-0.00001)",
-        "Цена < EMA20 < EMA50",
-        "Объём x2.6 🔥🔥",
-        "Стакан: сильное давление продажи (-0.27)",
-        "МТФ: 5m, 15m, 4h согласны",
-        "CVD падает (-6.7%) — продажи усиливаются 📉"
       ]
     }
   ],
@@ -1013,31 +991,6 @@
       ]
     },
     {
-      "id": 923,
-      "symbol": "JUPUSDT",
-      "direction": "SHORT",
-      "exchange": "bybit",
-      "entry": 0.15157,
-      "tp1": 0.148539,
-      "tp2": 0.145507,
-      "sl": 0.154601,
-      "entry_orig": 0.15157,
-      "tp1_orig": 0.148539,
-      "tp2_orig": 0.145507,
-      "sl_orig": 0.154601,
-      "strength": 50,
-      "taken_at": "2026-03-22T21:28:31.233205",
-      "status": "OPEN",
-      "reasons": [
-        "MACD медвежий (hist=-0.00025)",
-        "Цена < EMA20 < EMA50",
-        "Объём x2.6 🔥🔥",
-        "Стакан: сильное давление продажи (-0.36)",
-        "МТФ: 5m, 15m, 4h согласны",
-        "BTC корреляция 0.69, BTC -1.3% 📉"
-      ]
-    },
-    {
       "id": 924,
       "symbol": "LINKUSDT",
       "direction": "SHORT",
@@ -1172,6 +1125,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "JUPUSDT",
+      "direction": "SHORT",
+      "entry": 0.15157,
+      "tp1": 0.148539,
+      "tp2": 0.145507,
+      "sl": 0.154601,
+      "strength": 50,
+      "status": "SL",
+      "pnl_pct": -2.05,
+      "close_price": 0.15467,
+      "taken_at": "2026-03-22T21:28:31.233205",
+      "closed_at": "2026-03-23 01:29:29"
+    },
     {
       "symbol": "BANANAS31USDT",
       "direction": "LONG",
@@ -3957,20 +3924,6 @@
       "close_price": 0.24868,
       "taken_at": "2026-03-21T11:42:47.468094",
       "closed_at": "2026-03-21 11:46:17"
-    },
-    {
-      "symbol": "LAUSDT",
-      "direction": "LONG",
-      "entry": 0.25216,
-      "tp1": 0.257203,
-      "tp2": 0.262246,
-      "sl": 0.25729,
-      "strength": 50,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 2.03,
-      "close_price": 0.25729,
-      "taken_at": "2026-03-21T10:51:29.015444",
-      "closed_at": "2026-03-21 11:41:06"
     }
   ]
 }
