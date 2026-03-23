@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-23T01:22:31.123405+00:00",
+  "updated_at": "2026-03-23T01:23:06.134445+00:00",
   "publish_status": {
-    "last_ok": "2026-03-23T01:21:11Z",
+    "last_ok": "2026-03-23T01:22:36Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 57.3
   },
   "trade_stats": {
-    "open": 25,
+    "open": 24,
     "pending": 0,
     "wins": 407,
-    "losses": 424,
-    "total_pnl": 61.08,
-    "winrate": 49.0
+    "losses": 425,
+    "total_pnl": 59.08,
+    "winrate": 48.9
   },
   "fear_greed": {
     "value": 8,
@@ -983,32 +983,6 @@
       ]
     },
     {
-      "id": 917,
-      "symbol": "AVAXUSDT",
-      "direction": "SHORT",
-      "exchange": "binance",
-      "entry": 8.918,
-      "tp1": 8.73964,
-      "tp2": 8.56128,
-      "sl": 9.09636,
-      "entry_orig": 8.918,
-      "tp1_orig": 8.73964,
-      "tp2_orig": 8.56128,
-      "sl_orig": 9.09636,
-      "strength": 52,
-      "taken_at": "2026-03-22T21:18:57.810533",
-      "status": "OPEN",
-      "reasons": [
-        "MACD медвежий (hist=-0.00743)",
-        "Цена < EMA20 < EMA50",
-        "Стакан: давление продажи (-0.18)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +1.7% + цена ↓",
-        "CVD падает (-5.5%) — продажи усиливаются 📉",
-        "BTC корреляция 0.89, BTC -1.5% 📉"
-      ]
-    },
-    {
       "id": 918,
       "symbol": "AXSUSDT",
       "direction": "SHORT",
@@ -1217,6 +1191,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "AVAXUSDT",
+      "direction": "SHORT",
+      "entry": 8.918,
+      "tp1": 8.73964,
+      "tp2": 8.56128,
+      "sl": 9.09636,
+      "strength": 52,
+      "status": "SL",
+      "pnl_pct": -2.0,
+      "close_price": 9.096499999999999,
+      "taken_at": "2026-03-22T21:18:57.810533",
+      "closed_at": "2026-03-23 01:23:05"
+    },
     {
       "symbol": "SEIUSDT",
       "direction": "SHORT",
@@ -4002,20 +3990,6 @@
       "close_price": 0.036915,
       "taken_at": "2026-03-21T10:14:50.531005",
       "closed_at": "2026-03-21 11:31:16"
-    },
-    {
-      "symbol": "RIVERUSDT",
-      "direction": "LONG",
-      "entry": 24.777,
-      "tp1": 25.684821,
-      "tp2": 26.592643,
-      "sl": 25.929499999999997,
-      "strength": 50,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 4.13,
-      "close_price": 25.801000000000002,
-      "taken_at": "2026-03-21T11:08:23.177390",
-      "closed_at": "2026-03-21 11:30:52"
     }
   ]
 }
