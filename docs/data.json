@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-23T12:00:15.075108+00:00",
+  "updated_at": "2026-03-23T12:01:09.774224+00:00",
   "publish_status": {
-    "last_ok": "2026-03-23T11:59:36Z",
+    "last_ok": "2026-03-23T12:00:21Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -12,17 +12,17 @@
   "stats": {
     "total": 1122,
     "wins": 369,
-    "losses": 293,
-    "active": 20,
+    "losses": 294,
+    "active": 19,
     "winrate": 55.7
   },
   "trade_stats": {
-    "open": 19,
+    "open": 18,
     "pending": 0,
     "wins": 435,
-    "losses": 479,
-    "total_pnl": 2.79,
-    "winrate": 47.6
+    "losses": 480,
+    "total_pnl": 0.36,
+    "winrate": 47.5
   },
   "fear_greed": {
     "value": 8,
@@ -225,32 +225,6 @@
       ],
       "news": null,
       "created_at": "2026-03-23 11:20:56",
-      "status": "ACTIVE"
-    },
-    {
-      "id": 1146,
-      "symbol": "CRVUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.226,
-      "tp1": 0.23052,
-      "tp2": 0.23504,
-      "sl": 0.22148,
-      "strength": 51,
-      "reasons": [
-        "MACD бычий (hist=0.00127)",
-        "EMA20 > EMA50 (golden cross) 🌟",
-        "Объём x2.1 🔥",
-        "Стакан: перевес bid (+0.08)",
-        "МТФ: 5m, 15m согласны",
-        "OI растёт +1.2% + цена ↑",
-        "CVD положительный (+1.9%)",
-        "BTC корреляция 0.82, BTC +3.4% 📈",
-        "BTC контекст: +4.5% за 12ч 📈",
-        "⚡ Рыночный вход (MTF 2+ ТФ)"
-      ],
-      "news": null,
-      "created_at": "2026-03-23 11:22:55",
       "status": "ACTIVE"
     },
     {
@@ -593,6 +567,29 @@
       ]
     },
     {
+      "symbol": "CRVUSDT",
+      "direction": "LONG",
+      "entry": 0.226,
+      "tp1": 0.23052,
+      "tp2": 0.23504,
+      "sl": 0.22148,
+      "strength": 51,
+      "status": "SL",
+      "created_at": "2026-03-23 11:22:55",
+      "reasons": [
+        "MACD бычий (hist=0.00127)",
+        "EMA20 > EMA50 (golden cross) 🌟",
+        "Объём x2.1 🔥",
+        "Стакан: перевес bid (+0.08)",
+        "МТФ: 5m, 15m согласны",
+        "OI растёт +1.2% + цена ↑",
+        "CVD положительный (+1.9%)",
+        "BTC корреляция 0.82, BTC +3.4% 📈",
+        "BTC контекст: +4.5% за 12ч 📈",
+        "⚡ Рыночный вход (MTF 2+ ТФ)"
+      ]
+    },
+    {
       "symbol": "KAITOUSDT",
       "direction": "LONG",
       "entry": 0.4142,
@@ -917,26 +914,6 @@
         "Bearish Engulfing (1h) 🕯️",
         "BTC корреляция 1.00, BTC -1.4% 📉"
       ]
-    },
-    {
-      "symbol": "DOGEUSDT",
-      "direction": "SHORT",
-      "entry": 0.08952,
-      "tp1": 0.08773,
-      "tp2": 0.085939,
-      "sl": 0.09131,
-      "strength": 55,
-      "status": "SL",
-      "created_at": "2026-03-23 09:14:20",
-      "reasons": [
-        "MACD медвежий (hist=-0.00009)",
-        "Цена < EMA20 < EMA50",
-        "Объём x2.7 🔥🔥",
-        "Стакан: перевес ask (-0.07)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "CVD падает (-10.8%) — продажи усиливаются 📉",
-        "BTC корреляция 0.69, BTC -0.9% 📉"
-      ]
     }
   ],
   "trades_open": [
@@ -1128,35 +1105,6 @@
         "BTC корреляция 0.81, BTC +3.8% 📈",
         "BTC контекст: +4.9% за 12ч 📈",
         "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
-      "id": 1000,
-      "symbol": "CRVUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.226,
-      "tp1": 0.23052,
-      "tp2": 0.23504,
-      "sl": 0.22148,
-      "entry_orig": 0.226,
-      "tp1_orig": 0.23052,
-      "tp2_orig": 0.23504,
-      "sl_orig": 0.22148,
-      "strength": 51,
-      "taken_at": "2026-03-23T11:22:55.940757",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00127)",
-        "EMA20 > EMA50 (golden cross) 🌟",
-        "Объём x2.1 🔥",
-        "Стакан: перевес bid (+0.08)",
-        "МТФ: 5m, 15m согласны",
-        "OI растёт +1.2% + цена ↑",
-        "CVD положительный (+1.9%)",
-        "BTC корреляция 0.82, BTC +3.4% 📈",
-        "BTC контекст: +4.5% за 12ч 📈",
-        "⚡ Рыночный вход (MTF 2+ ТФ)"
       ]
     },
     {
@@ -1465,6 +1413,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "CRVUSDT",
+      "direction": "LONG",
+      "entry": 0.226,
+      "tp1": 0.23052,
+      "tp2": 0.23504,
+      "sl": 0.22148,
+      "strength": 51,
+      "status": "SL",
+      "pnl_pct": -2.43,
+      "close_price": 0.2205,
+      "taken_at": "2026-03-23T11:22:55.940757",
+      "closed_at": "2026-03-23 12:01:09"
+    },
     {
       "symbol": "NIGHTUSDT",
       "direction": "LONG",
@@ -4250,20 +4212,6 @@
       "close_price": 0.048725000000000004,
       "taken_at": "2026-03-21T18:24:37.591781",
       "closed_at": "2026-03-22 02:24:50"
-    },
-    {
-      "symbol": "TAOUSDT",
-      "direction": "LONG",
-      "entry": 266.61,
-      "tp1": 271.9422,
-      "tp2": 277.2744,
-      "sl": 266.61,
-      "strength": 58,
-      "status": "TP2",
-      "pnl_pct": 4.24,
-      "close_price": 277.915,
-      "taken_at": "2026-03-22T00:10:13.404647",
-      "closed_at": "2026-03-22 02:02:59"
     }
   ]
 }
