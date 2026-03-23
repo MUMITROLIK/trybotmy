@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-23T06:22:02.021676+00:00",
+  "updated_at": "2026-03-23T06:23:07.987124+00:00",
   "publish_status": {
-    "last_ok": "2026-03-23T06:21:01Z",
+    "last_ok": "2026-03-23T06:22:07Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 57.2
   },
   "trade_stats": {
-    "open": 11,
+    "open": 10,
     "pending": 0,
-    "wins": 416,
+    "wins": 417,
     "losses": 448,
-    "total_pnl": 33.86,
-    "winrate": 48.1
+    "total_pnl": 34.75,
+    "winrate": 48.2
   },
   "fear_greed": {
     "value": 8,
@@ -663,34 +663,6 @@
   ],
   "trades_open": [
     {
-      "id": 928,
-      "symbol": "HBARUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.08911,
-      "tp1": 0.090892,
-      "tp2": 0.092674,
-      "sl": 0.087328,
-      "entry_orig": 0.08911,
-      "tp1_orig": 0.090892,
-      "tp2_orig": 0.092674,
-      "sl_orig": 0.087328,
-      "strength": 60,
-      "taken_at": "2026-03-22T22:22:20.745661",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=43 (нейтральный↓)",
-        "MACD бычий (hist=0.00000)",
-        "Цена выше EMA20",
-        "Объём x3.9 🔥🔥",
-        "Стакан: давление покупки (+0.19)",
-        "МТФ: только 1 таймфрейм согласен",
-        "OI растёт +5.1%",
-        "CVD растёт (+6.0%) — покупки усиливаются 📈",
-        "Bullish Engulfing (1h) 🕯️"
-      ]
-    },
-    {
       "id": 938,
       "symbol": "1000SHIBUSDT",
       "direction": "SHORT",
@@ -961,6 +933,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "HBARUSDT",
+      "direction": "LONG",
+      "entry": 0.08911,
+      "tp1": 0.090892,
+      "tp2": 0.092674,
+      "sl": 0.087328,
+      "strength": 60,
+      "status": "TIMEOUT",
+      "pnl_pct": 0.89,
+      "close_price": 0.089905,
+      "taken_at": "2026-03-22T22:22:20.745661",
+      "closed_at": "2026-03-23 06:22:22"
+    },
     {
       "symbol": "DEXEUSDT",
       "direction": "LONG",
@@ -3746,20 +3732,6 @@
       "close_price": 0.10872,
       "taken_at": "2026-03-21T14:43:55.568718",
       "closed_at": "2026-03-21 16:04:45"
-    },
-    {
-      "symbol": "RIVERUSDT",
-      "direction": "LONG",
-      "entry": 25.653,
-      "tp1": 26.643643,
-      "tp2": 27.634286,
-      "sl": 24.860486,
-      "strength": 57,
-      "status": "SL",
-      "pnl_pct": -3.44,
-      "close_price": 24.77,
-      "taken_at": "2026-03-21T11:35:43.737375",
-      "closed_at": "2026-03-21 15:36:02"
     }
   ]
 }
