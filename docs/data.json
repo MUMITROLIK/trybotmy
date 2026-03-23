@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-23T14:47:25.106363+00:00",
+  "updated_at": "2026-03-23T14:48:01.142740+00:00",
   "publish_status": {
-    "last_ok": "2026-03-23T14:46:20Z",
+    "last_ok": "2026-03-23T14:47:31Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -12,9 +12,9 @@
   "stats": {
     "total": 1140,
     "wins": 376,
-    "losses": 305,
-    "active": 16,
-    "winrate": 55.2
+    "losses": 306,
+    "active": 15,
+    "winrate": 55.1
   },
   "trade_stats": {
     "open": 18,
@@ -406,17 +406,19 @@
       "news": null,
       "created_at": "2026-03-23 14:04:02",
       "status": "ACTIVE"
-    },
+    }
+  ],
+  "history": [
     {
-      "id": 1178,
       "symbol": "AEROUSDT",
       "direction": "LONG",
-      "exchange": "binance",
       "entry": 0.3589,
       "tp1": 0.369218,
       "tp2": 0.379536,
       "sl": 0.350646,
       "strength": 58,
+      "status": "SL",
+      "created_at": "2026-03-23 14:44:33",
       "reasons": [
         "MACD бычий (hist=0.00417)",
         "Цена > EMA20 > EMA50",
@@ -427,13 +429,8 @@
         "⚠️ Funding через 77м",
         "BTC контекст: +4.9% за 12ч 📈",
         "⚡ Рыночный вход (MTF сильный)"
-      ],
-      "news": null,
-      "created_at": "2026-03-23 14:44:33",
-      "status": "ACTIVE"
-    }
-  ],
-  "history": [
+      ]
+    },
     {
       "symbol": "JTOUSDT",
       "direction": "LONG",
@@ -845,28 +842,6 @@
         "BTC корреляция 0.82, BTC +3.4% 📈",
         "BTC контекст: +4.5% за 12ч 📈",
         "⚡ Рыночный вход (MTF 2+ ТФ)"
-      ]
-    },
-    {
-      "symbol": "KAITOUSDT",
-      "direction": "LONG",
-      "entry": 0.4142,
-      "tp1": 0.423296,
-      "tp2": 0.432393,
-      "sl": 0.405916,
-      "strength": 60,
-      "status": "SL",
-      "created_at": "2026-03-23 11:20:57",
-      "reasons": [
-        "MACD бычий (hist=0.00194)",
-        "Цена > EMA20 > EMA50",
-        "Объём x2.1 🔥",
-        "Стакан: сильное давление покупки (+0.26)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +0.7% + цена ↑",
-        "BTC корреляция 0.83, BTC +3.8% 📈",
-        "BTC контекст: +4.9% за 12ч 📈",
-        "⚡ Рыночный вход (MTF сильный)"
       ]
     }
   ],
