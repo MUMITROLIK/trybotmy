@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-23T06:01:56.878232+00:00",
+  "updated_at": "2026-03-23T06:02:52.341208+00:00",
   "publish_status": {
-    "last_ok": "2026-03-23T06:00:56Z",
+    "last_ok": "2026-03-23T06:02:02Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -11,18 +11,18 @@
   },
   "stats": {
     "total": 1062,
-    "wins": 354,
+    "wins": 355,
     "losses": 266,
-    "active": 10,
-    "winrate": 57.1
+    "active": 9,
+    "winrate": 57.2
   },
   "trade_stats": {
-    "open": 11,
+    "open": 10,
     "pending": 0,
-    "wins": 414,
+    "wins": 415,
     "losses": 448,
-    "total_pnl": 29.07,
-    "winrate": 48.0
+    "total_pnl": 31.85,
+    "winrate": 48.1
   },
   "fear_greed": {
     "value": 8,
@@ -248,17 +248,19 @@
       "news": null,
       "created_at": "2026-03-23 05:14:46",
       "status": "ACTIVE"
-    },
+    }
+  ],
+  "history": [
     {
-      "id": 1100,
       "symbol": "MYXUSDT",
       "direction": "LONG",
-      "exchange": "binance",
       "entry": 0.3206,
       "tp1": 0.327012,
       "tp2": 0.333424,
       "sl": 0.314188,
       "strength": 55,
+      "status": "TP1",
+      "created_at": "2026-03-23 05:56:24",
       "reasons": [
         "MACD бычий (hist=0.00015)",
         "Цена > EMA20 > EMA50",
@@ -267,13 +269,8 @@
         "МТФ: 5m, 15m, 1h согласны",
         "OI падает (шорты закрываются)",
         "⚡ Рыночный вход (MTF сильный)"
-      ],
-      "news": null,
-      "created_at": "2026-03-23 05:56:24",
-      "status": "ACTIVE"
-    }
-  ],
-  "history": [
+      ]
+    },
     {
       "symbol": "BLUAIUSDT",
       "direction": "LONG",
@@ -663,26 +660,6 @@
         "Bullish Engulfing (1h) 🕯️",
         "⚡ Рыночный вход (MTF сильный)"
       ]
-    },
-    {
-      "symbol": "BTRUSDT",
-      "direction": "LONG",
-      "entry": 0.18437,
-      "tp1": 0.188538,
-      "tp2": 0.192706,
-      "sl": 0.180683,
-      "strength": 57,
-      "status": "TP1",
-      "created_at": "2026-03-22 22:08:10",
-      "reasons": [
-        "MACD бычий (hist=0.00004)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: сильное давление покупки (+0.34)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +1.2% + цена ↑",
-        "CVD растёт (+15.5%) — покупки усиливаются 📈",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
     }
   ],
   "trades_open": [
@@ -955,35 +932,23 @@
         "BTC корреляция 0.70, BTC +1.2% 📈",
         "⚡ Рыночный вход (MTF 2+ ТФ)"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 954,
       "symbol": "MYXUSDT",
       "direction": "LONG",
-      "exchange": "bybit",
       "entry": 0.3206,
       "tp1": 0.327012,
       "tp2": 0.333424,
       "sl": 0.314188,
-      "entry_orig": 0.3206,
-      "tp1_orig": 0.327012,
-      "tp2_orig": 0.333424,
-      "sl_orig": 0.314188,
       "strength": 55,
+      "status": "TP1",
+      "pnl_pct": 2.78,
+      "close_price": 0.3295,
       "taken_at": "2026-03-23T05:56:24.513431",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00015)",
-        "Цена > EMA20 > EMA50",
-        "Объём x7.8 🔥🔥🔥",
-        "Стакан: давление покупки (+0.16)",
-        "МТФ: 5m, 15m, 1h согласны",
-        "OI падает (шорты закрываются)",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-23 06:02:52"
+    },
     {
       "symbol": "BLUAIUSDT",
       "direction": "LONG",
@@ -3769,20 +3734,6 @@
       "close_price": 0.037434999999999996,
       "taken_at": "2026-03-21T09:05:32.932482",
       "closed_at": "2026-03-21 15:33:57"
-    },
-    {
-      "symbol": "GUAUSDT",
-      "direction": "LONG",
-      "entry": 0.30117,
-      "tp1": 0.307193,
-      "tp2": 0.313217,
-      "sl": 0.295147,
-      "strength": 53,
-      "status": "SL",
-      "pnl_pct": -2.09,
-      "close_price": 0.294865,
-      "taken_at": "2026-03-21T14:20:48.423649",
-      "closed_at": "2026-03-21 15:31:09"
     }
   ]
 }
