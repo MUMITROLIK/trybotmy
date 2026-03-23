@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-23T23:32:02.862504+00:00",
+  "updated_at": "2026-03-23T23:32:35.990862+00:00",
   "publish_status": {
-    "last_ok": "2026-03-23T23:30:54Z",
+    "last_ok": "2026-03-23T23:32:09Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -11,17 +11,17 @@
   },
   "stats": {
     "total": 1193,
-    "wins": 393,
+    "wins": 394,
     "losses": 327,
-    "active": 12,
+    "active": 11,
     "winrate": 54.6
   },
   "trade_stats": {
-    "open": 23,
+    "open": 22,
     "pending": 0,
-    "wins": 461,
+    "wins": 462,
     "losses": 520,
-    "total_pnl": -26.23,
+    "total_pnl": -22.41,
     "winrate": 47.0
   },
   "fear_greed": {
@@ -294,17 +294,19 @@
       "news": null,
       "created_at": "2026-03-23 22:52:28",
       "status": "ACTIVE"
-    },
+    }
+  ],
+  "history": [
     {
-      "id": 1231,
       "symbol": "CYSUSDT",
       "direction": "LONG",
-      "exchange": "binance",
       "entry": 0.6538,
       "tp1": 0.678443,
       "tp2": 0.703086,
       "sl": 0.634086,
       "strength": 54,
+      "status": "TP1",
+      "created_at": "2026-03-23 22:57:37",
       "reasons": [
         "MACD бычий (hist=0.00467)",
         "Цена выше EMA20",
@@ -314,13 +316,8 @@
         "OI падает (шорты закрываются)",
         "⚠️ Funding через 63м",
         "⚡ Рыночный вход (MTF сильный)"
-      ],
-      "news": null,
-      "created_at": "2026-03-23 22:57:37",
-      "status": "ACTIVE"
-    }
-  ],
-  "history": [
+      ]
+    },
     {
       "symbol": "APTUSDT",
       "direction": "LONG",
@@ -720,27 +717,6 @@
         "Объём x3.0 🔥🔥",
         "МТФ: 5m, 15m, 1h согласны",
         "CVD растёт (+7.6%) — покупки усиливаются 📈",
-        "BTC контекст: +3.9% за 12ч 📈",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
-      "symbol": "XPLUSDT",
-      "direction": "LONG",
-      "entry": 0.0971,
-      "tp1": 0.099042,
-      "tp2": 0.100984,
-      "sl": 0.095158,
-      "strength": 50,
-      "status": "TP1",
-      "created_at": "2026-03-23 17:46:36",
-      "reasons": [
-        "MACD бычий (hist=0.00004)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: давление покупки (+0.11)",
-        "МТФ: 5m, 15m, 1h согласны",
-        "OI растёт +2.4% + цена ↑",
-        "CVD растёт (+11.8%) — покупки усиливаются 📈",
         "BTC контекст: +3.9% за 12ч 📈",
         "⚡ Рыночный вход (MTF сильный)"
       ]
@@ -1342,36 +1318,23 @@
         "⚠️ Funding через 68м",
         "⚡ Рыночный вход (MTF сильный)"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 1085,
       "symbol": "CYSUSDT",
       "direction": "LONG",
-      "exchange": "bybit",
       "entry": 0.6538,
       "tp1": 0.678443,
       "tp2": 0.703086,
       "sl": 0.634086,
-      "entry_orig": 0.6538,
-      "tp1_orig": 0.678443,
-      "tp2_orig": 0.703086,
-      "sl_orig": 0.634086,
       "strength": 54,
+      "status": "TP1",
+      "pnl_pct": 3.82,
+      "close_price": 0.6788,
       "taken_at": "2026-03-23T22:57:38.279588",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00467)",
-        "Цена выше EMA20",
-        "Объём x2.9 🔥🔥",
-        "Стакан: сильное давление покупки (+0.34)",
-        "МТФ: 5m, 1h, 4h согласны",
-        "OI падает (шорты закрываются)",
-        "⚠️ Funding через 63м",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-23 23:32:16"
+    },
     {
       "symbol": "RDNTUSDT",
       "direction": "LONG",
@@ -4157,20 +4120,6 @@
       "close_price": 0.0028807,
       "taken_at": "2026-03-22T16:19:06.320042",
       "closed_at": "2026-03-22 16:43:00"
-    },
-    {
-      "symbol": "FILUSDT",
-      "direction": "LONG",
-      "entry": 0.872,
-      "tp1": 0.88944,
-      "tp2": 0.90688,
-      "sl": 0.85456,
-      "strength": 55,
-      "status": "TIMEOUT",
-      "pnl_pct": 0.4,
-      "close_price": 0.8755,
-      "taken_at": "2026-03-22T08:30:03.719598",
-      "closed_at": "2026-03-22 16:42:58"
     }
   ]
 }
