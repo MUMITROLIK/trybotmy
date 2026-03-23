@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-23T11:48:31.454735+00:00",
+  "updated_at": "2026-03-23T11:49:09.075410+00:00",
   "publish_status": {
-    "last_ok": "2026-03-23T11:47:59Z",
+    "last_ok": "2026-03-23T11:48:38Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 55.8
   },
   "trade_stats": {
-    "open": 21,
+    "open": 20,
     "pending": 0,
-    "wins": 433,
+    "wins": 434,
     "losses": 478,
-    "total_pnl": 0.55,
-    "winrate": 47.5
+    "total_pnl": 2.76,
+    "winrate": 47.6
   },
   "fear_greed": {
     "value": 8,
@@ -1043,31 +1043,6 @@
       ]
     },
     {
-      "id": 991,
-      "symbol": "LITUSDT",
-      "direction": "SHORT",
-      "exchange": "bybit",
-      "entry": 0.9469,
-      "tp1": 0.927962,
-      "tp2": 0.909024,
-      "sl": 0.965838,
-      "entry_orig": 0.9469,
-      "tp1_orig": 0.927962,
-      "tp2_orig": 0.909024,
-      "sl_orig": 0.965838,
-      "strength": 55,
-      "taken_at": "2026-03-23T11:10:37.539162",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=87 (сильная перекупленность)",
-        "BB верхняя полоса (пробой)",
-        "EMA20 < EMA50",
-        "Объём x4.1 🔥🔥🔥",
-        "Стакан: давление продажи (-0.17)",
-        "МТФ: 15m, 1h, 4h согласны"
-      ]
-    },
-    {
       "id": 992,
       "symbol": "ZETAUSDT",
       "direction": "LONG",
@@ -1542,6 +1517,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "LITUSDT",
+      "direction": "SHORT",
+      "entry": 0.9469,
+      "tp1": 0.927962,
+      "tp2": 0.909024,
+      "sl": 0.965838,
+      "strength": 55,
+      "status": "TP1",
+      "pnl_pct": 2.21,
+      "close_price": 0.926,
+      "taken_at": "2026-03-23T11:10:37.539162",
+      "closed_at": "2026-03-23 11:49:08"
+    },
     {
       "symbol": "TURBOUSDT",
       "direction": "LONG",
@@ -4327,20 +4316,6 @@
       "close_price": 0.62725,
       "taken_at": "2026-03-21T22:56:09.787670",
       "closed_at": "2026-03-22 01:19:33"
-    },
-    {
-      "symbol": "ANIMEUSDT",
-      "direction": "LONG",
-      "entry": 0.005311,
-      "tp1": 0.005417,
-      "tp2": 0.005523,
-      "sl": 0.005205,
-      "strength": 61,
-      "status": "SL",
-      "pnl_pct": -2.01,
-      "close_price": 0.005204500000000001,
-      "taken_at": "2026-03-22T00:06:48.313901",
-      "closed_at": "2026-03-22 00:41:10"
     }
   ]
 }
