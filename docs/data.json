@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-23T04:10:13.108438+00:00",
+  "updated_at": "2026-03-23T04:11:12.431255+00:00",
   "publish_status": {
-    "last_ok": "2026-03-23T04:09:13Z",
+    "last_ok": "2026-03-23T04:10:18Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,11 +17,11 @@
     "winrate": 57.2
   },
   "trade_stats": {
-    "open": 14,
+    "open": 13,
     "pending": 0,
-    "wins": 411,
+    "wins": 412,
     "losses": 437,
-    "total_pnl": 41.55,
+    "total_pnl": 43.6,
     "winrate": 48.5
   },
   "fear_greed": {
@@ -696,31 +696,6 @@
       ]
     },
     {
-      "id": 912,
-      "symbol": "PYTHUSDT",
-      "direction": "LONG",
-      "exchange": "bybit",
-      "entry": 0.03848,
-      "tp1": 0.03925,
-      "tp2": 0.040019,
-      "sl": 0.03771,
-      "entry_orig": 0.03848,
-      "tp1_orig": 0.03925,
-      "tp2_orig": 0.040019,
-      "sl_orig": 0.03771,
-      "strength": 50,
-      "taken_at": "2026-03-22T21:12:37.403418",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=36 (перепроданность)",
-        "MACD бычий (hist=0.00006)",
-        "BB нижняя зона (10%)",
-        "Объём x1.8 🔥",
-        "Стакан: сильное давление покупки (+0.26)",
-        "Цена у поддержки 0.0384"
-      ]
-    },
-    {
       "id": 913,
       "symbol": "JTOUSDT",
       "direction": "SHORT",
@@ -880,6 +855,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "PYTHUSDT",
+      "direction": "LONG",
+      "entry": 0.03848,
+      "tp1": 0.03925,
+      "tp2": 0.040019,
+      "sl": 0.03771,
+      "strength": 50,
+      "status": "TP1",
+      "pnl_pct": 2.05,
+      "close_price": 0.03927,
+      "taken_at": "2026-03-22T21:12:37.403418",
+      "closed_at": "2026-03-23 04:11:12"
+    },
     {
       "symbol": "CYSUSDT",
       "direction": "LONG",
@@ -3665,20 +3654,6 @@
       "close_price": 0.701,
       "taken_at": "2026-03-21T12:39:04.110557",
       "closed_at": "2026-03-21 13:47:30"
-    },
-    {
-      "symbol": "ANIMEUSDT",
-      "direction": "LONG",
-      "entry": 0.005243,
-      "tp1": 0.005348,
-      "tp2": 0.005453,
-      "sl": 0.0053845,
-      "strength": 50,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 2.18,
-      "close_price": 0.005357499999999999,
-      "taken_at": "2026-03-21T13:31:55.848843",
-      "closed_at": "2026-03-21 13:41:20"
     }
   ]
 }
