@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-23T01:26:54.264350+00:00",
+  "updated_at": "2026-03-23T01:27:43.602456+00:00",
   "publish_status": {
-    "last_ok": "2026-03-23T01:25:54Z",
+    "last_ok": "2026-03-23T01:27:00Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -12,16 +12,16 @@
   "stats": {
     "total": 1046,
     "wins": 350,
-    "losses": 261,
-    "active": 7,
-    "winrate": 57.3
+    "losses": 262,
+    "active": 6,
+    "winrate": 57.2
   },
   "trade_stats": {
-    "open": 25,
+    "open": 24,
     "pending": 0,
     "wins": 407,
-    "losses": 425,
-    "total_pnl": 59.08,
+    "losses": 426,
+    "total_pnl": 56.62,
     "winrate": 48.9
   },
   "fear_greed": {
@@ -79,29 +79,6 @@
       ],
       "news": null,
       "created_at": "2026-03-22 21:30:05",
-      "status": "ACTIVE"
-    },
-    {
-      "id": 1072,
-      "symbol": "BANANAS31USDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.01378,
-      "tp1": 0.014196,
-      "tp2": 0.014611,
-      "sl": 0.013447,
-      "strength": 52,
-      "reasons": [
-        "MACD бычий (hist=0.00000)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: давление покупки (+0.17)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +1.3% + цена ↑",
-        "Bullish Engulfing (1h) 🕯️",
-        "⚡ Рыночный вход (MTF сильный)"
-      ],
-      "news": null,
-      "created_at": "2026-03-22 22:14:28",
       "status": "ACTIVE"
     },
     {
@@ -369,6 +346,26 @@
       ]
     },
     {
+      "symbol": "BANANAS31USDT",
+      "direction": "LONG",
+      "entry": 0.01378,
+      "tp1": 0.014196,
+      "tp2": 0.014611,
+      "sl": 0.013447,
+      "strength": 52,
+      "status": "SL",
+      "created_at": "2026-03-22 22:14:28",
+      "reasons": [
+        "MACD бычий (hist=0.00000)",
+        "Цена > EMA20 > EMA50",
+        "Стакан: давление покупки (+0.17)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +1.3% + цена ↑",
+        "Bullish Engulfing (1h) 🕯️",
+        "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
+    {
       "symbol": "BTRUSDT",
       "direction": "LONG",
       "entry": 0.18437,
@@ -577,25 +574,6 @@
         "Объём x1.8 🔥",
         "Стакан: сильное давление покупки (+0.26)",
         "Цена у поддержки 0.0384"
-      ]
-    },
-    {
-      "symbol": "JTOUSDT",
-      "direction": "SHORT",
-      "entry": 0.2775,
-      "tp1": 0.27195,
-      "tp2": 0.2664,
-      "sl": 0.28305,
-      "strength": 54,
-      "status": "EXPIRED",
-      "created_at": "2026-03-22 21:12:37",
-      "reasons": [
-        "MACD медвежий (hist=-0.00031)",
-        "Цена < EMA20 < EMA50",
-        "Объём x6.9 🔥🔥🔥",
-        "Стакан: сильное давление продажи (-0.43)",
-        "МТФ: 5m, 15m, 1h согласны",
-        "BTC корреляция 0.79, BTC -1.3% 📉"
       ]
     }
   ],
@@ -1108,32 +1086,6 @@
       ]
     },
     {
-      "id": 926,
-      "symbol": "BANANAS31USDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.01378,
-      "tp1": 0.014196,
-      "tp2": 0.014611,
-      "sl": 0.013447,
-      "entry_orig": 0.01378,
-      "tp1_orig": 0.014196,
-      "tp2_orig": 0.014611,
-      "sl_orig": 0.013447,
-      "strength": 52,
-      "taken_at": "2026-03-22T22:14:28.513935",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00000)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: давление покупки (+0.17)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +1.3% + цена ↑",
-        "Bullish Engulfing (1h) 🕯️",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 928,
       "symbol": "HBARUSDT",
       "direction": "LONG",
@@ -1242,6 +1194,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "BANANAS31USDT",
+      "direction": "LONG",
+      "entry": 0.01378,
+      "tp1": 0.014196,
+      "tp2": 0.014611,
+      "sl": 0.013447,
+      "strength": 52,
+      "status": "SL",
+      "pnl_pct": -2.46,
+      "close_price": 0.013440500000000001,
+      "taken_at": "2026-03-22T22:14:28.513935",
+      "closed_at": "2026-03-23 01:27:43"
+    },
     {
       "symbol": "AVAXUSDT",
       "direction": "SHORT",
@@ -4027,20 +3993,6 @@
       "close_price": 0.25729,
       "taken_at": "2026-03-21T10:51:29.015444",
       "closed_at": "2026-03-21 11:41:06"
-    },
-    {
-      "symbol": "TRIAUSDT",
-      "direction": "LONG",
-      "entry": 0.03779,
-      "tp1": 0.038791,
-      "tp2": 0.039791,
-      "sl": 0.036989,
-      "strength": 50,
-      "status": "SL",
-      "pnl_pct": -2.32,
-      "close_price": 0.036915,
-      "taken_at": "2026-03-21T10:14:50.531005",
-      "closed_at": "2026-03-21 11:31:16"
     }
   ]
 }
