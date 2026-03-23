@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-23T13:29:15.528301+00:00",
+  "updated_at": "2026-03-23T13:30:18.859699+00:00",
   "publish_status": {
-    "last_ok": "2026-03-23T13:28:15Z",
+    "last_ok": "2026-03-23T13:29:21Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -12,16 +12,16 @@
   "stats": {
     "total": 1131,
     "wins": 369,
-    "losses": 300,
-    "active": 20,
-    "winrate": 55.2
+    "losses": 301,
+    "active": 19,
+    "winrate": 55.1
   },
   "trade_stats": {
-    "open": 21,
+    "open": 20,
     "pending": 0,
     "wins": 435,
-    "losses": 486,
-    "total_pnl": -15.16,
+    "losses": 487,
+    "total_pnl": -17.44,
     "winrate": 47.2
   },
   "fear_greed": {
@@ -477,31 +477,6 @@
       "status": "ACTIVE"
     },
     {
-      "id": 1168,
-      "symbol": "NIGHTUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.04941,
-      "tp1": 0.050716,
-      "tp2": 0.052022,
-      "sl": 0.048365,
-      "strength": 54,
-      "reasons": [
-        "MACD бычий (hist=0.00023)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: сильное давление покупки (+0.26)",
-        "МТФ: 5m, 15m, 1h согласны",
-        "OI растёт +5.5% + цена ↑",
-        "CVD положительный (+4.1%)",
-        "BTC корреляция 0.72, BTC +3.6% 📈",
-        "BTC контекст: +4.0% за 12ч 📈",
-        "⚡ Рыночный вход (MTF сильный)"
-      ],
-      "news": null,
-      "created_at": "2026-03-23 13:20:08",
-      "status": "ACTIVE"
-    },
-    {
       "id": 1169,
       "symbol": "TRIAUSDT",
       "direction": "LONG",
@@ -527,6 +502,28 @@
     }
   ],
   "history": [
+    {
+      "symbol": "NIGHTUSDT",
+      "direction": "LONG",
+      "entry": 0.04941,
+      "tp1": 0.050716,
+      "tp2": 0.052022,
+      "sl": 0.048365,
+      "strength": 54,
+      "status": "SL",
+      "created_at": "2026-03-23 13:20:08",
+      "reasons": [
+        "MACD бычий (hist=0.00023)",
+        "Цена > EMA20 > EMA50",
+        "Стакан: сильное давление покупки (+0.26)",
+        "МТФ: 5m, 15m, 1h согласны",
+        "OI растёт +5.5% + цена ↑",
+        "CVD положительный (+4.1%)",
+        "BTC корреляция 0.72, BTC +3.6% 📈",
+        "BTC контекст: +4.0% за 12ч 📈",
+        "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
     {
       "symbol": "BTRUSDT",
       "direction": "LONG",
@@ -930,27 +927,6 @@
         "Объём x2.7 🔥🔥",
         "Стакан: сильное давление продажи (-0.44)",
         "МТФ: все 4 таймфрейма согласны ✅✅"
-      ]
-    },
-    {
-      "symbol": "TURBOUSDT",
-      "direction": "LONG",
-      "entry": 0.0011591,
-      "tp1": 0.001186,
-      "tp2": 0.001212,
-      "sl": 0.001136,
-      "strength": 58,
-      "status": "TP1",
-      "created_at": "2026-03-23 10:27:33",
-      "reasons": [
-        "MACD бычий (hist=0.00000)",
-        "EMA20 > EMA50 (golden cross) 🌟",
-        "Объём x1.8 🔥",
-        "Стакан: сильное давление покупки (+0.30)",
-        "МТФ: 5m, 15m, 4h согласны",
-        "OI растёт +4.1% + цена ↑",
-        "CVD положительный (-3.4%)",
-        "⚡ Рыночный вход (MTF сильный)"
       ]
     }
   ],
@@ -1477,34 +1453,6 @@
       ]
     },
     {
-      "id": 1022,
-      "symbol": "NIGHTUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.04941,
-      "tp1": 0.050716,
-      "tp2": 0.052022,
-      "sl": 0.048365,
-      "entry_orig": 0.04941,
-      "tp1_orig": 0.050716,
-      "tp2_orig": 0.052022,
-      "sl_orig": 0.048365,
-      "strength": 54,
-      "taken_at": "2026-03-23T13:20:09.149158",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00023)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: сильное давление покупки (+0.26)",
-        "МТФ: 5m, 15m, 1h согласны",
-        "OI растёт +5.5% + цена ↑",
-        "CVD положительный (+4.1%)",
-        "BTC корреляция 0.72, BTC +3.6% 📈",
-        "BTC контекст: +4.0% за 12ч 📈",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 1023,
       "symbol": "TRIAUSDT",
       "direction": "LONG",
@@ -1533,6 +1481,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "NIGHTUSDT",
+      "direction": "LONG",
+      "entry": 0.04941,
+      "tp1": 0.050716,
+      "tp2": 0.052022,
+      "sl": 0.048365,
+      "strength": 54,
+      "status": "SL",
+      "pnl_pct": -2.28,
+      "close_price": 0.048285,
+      "taken_at": "2026-03-23T13:20:09.149158",
+      "closed_at": "2026-03-23 13:30:18"
+    },
     {
       "symbol": "BTRUSDT",
       "direction": "LONG",
@@ -4318,20 +4280,6 @@
       "close_price": 1.166815,
       "taken_at": "2026-03-22T04:28:46.220086",
       "closed_at": "2026-03-22 05:21:13"
-    },
-    {
-      "symbol": "PIUSDT",
-      "direction": "LONG",
-      "entry": 0.1931,
-      "tp1": 0.196962,
-      "tp2": 0.200824,
-      "sl": 0.189238,
-      "strength": 56,
-      "status": "SL",
-      "pnl_pct": -2.38,
-      "close_price": 0.1885,
-      "taken_at": "2026-03-22T00:03:09.960081",
-      "closed_at": "2026-03-22 05:11:32"
     }
   ]
 }
