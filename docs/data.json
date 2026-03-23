@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-23T22:46:10.585681+00:00",
+  "updated_at": "2026-03-23T22:46:53.518428+00:00",
   "publish_status": {
-    "last_ok": "2026-03-23T22:45:10Z",
+    "last_ok": "2026-03-23T22:46:16Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 54.7
   },
   "trade_stats": {
-    "open": 25,
+    "open": 24,
     "pending": 0,
     "wins": 461,
-    "losses": 516,
-    "total_pnl": -17.7,
-    "winrate": 47.2
+    "losses": 517,
+    "total_pnl": -19.72,
+    "winrate": 47.1
   },
   "fear_greed": {
     "value": 8,
@@ -1260,31 +1260,6 @@
       ]
     },
     {
-      "id": 1074,
-      "symbol": "MOODENGUSDT",
-      "direction": "LONG",
-      "exchange": "bybit",
-      "entry": 0.04959,
-      "tp1": 0.050582,
-      "tp2": 0.051574,
-      "sl": 0.048598,
-      "entry_orig": 0.04959,
-      "tp1_orig": 0.050582,
-      "tp2_orig": 0.051574,
-      "sl_orig": 0.048598,
-      "strength": 50,
-      "taken_at": "2026-03-23T21:39:25.293318",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00000)",
-        "Цена > EMA20 > EMA50",
-        "Объём x3.5 🔥🔥",
-        "Стакан: перевес bid (+0.09)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 1075,
       "symbol": "RDNTUSDT",
       "direction": "LONG",
@@ -1524,6 +1499,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "MOODENGUSDT",
+      "direction": "LONG",
+      "entry": 0.04959,
+      "tp1": 0.050582,
+      "tp2": 0.051574,
+      "sl": 0.048598,
+      "strength": 50,
+      "status": "SL",
+      "pnl_pct": -2.02,
+      "close_price": 0.04859,
+      "taken_at": "2026-03-23T21:39:25.293318",
+      "closed_at": "2026-03-23 22:46:53"
+    },
     {
       "symbol": "DEXEUSDT",
       "direction": "LONG",
@@ -4309,20 +4298,6 @@
       "close_price": 0.0031809,
       "taken_at": "2026-03-22T16:08:08.829730",
       "closed_at": "2026-03-22 16:15:04"
-    },
-    {
-      "symbol": "TAOUSDT",
-      "direction": "LONG",
-      "entry": 272.24,
-      "tp1": 277.6848,
-      "tp2": 283.1296,
-      "sl": 266.7952,
-      "strength": 52,
-      "status": "TIMEOUT",
-      "pnl_pct": -0.37,
-      "close_price": 271.245,
-      "taken_at": "2026-03-22T08:14:03.883754",
-      "closed_at": "2026-03-22 16:14:09"
     }
   ]
 }
