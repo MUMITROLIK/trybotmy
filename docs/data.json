@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-23T21:06:12.230253+00:00",
+  "updated_at": "2026-03-23T21:07:18.524930+00:00",
   "publish_status": {
-    "last_ok": "2026-03-23T21:05:12Z",
+    "last_ok": "2026-03-23T21:06:18Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 1177,
+    "total": 1178,
     "wins": 391,
     "losses": 322,
-    "active": 12,
+    "active": 13,
     "winrate": 54.8
   },
   "trade_stats": {
-    "open": 16,
+    "open": 17,
     "pending": 0,
     "wins": 459,
     "losses": 513,
@@ -328,6 +328,30 @@
       ],
       "news": null,
       "created_at": "2026-03-23 21:02:45",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1216,
+      "symbol": "NEARUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 1.322,
+      "tp1": 1.34844,
+      "tp2": 1.37488,
+      "sl": 1.29556,
+      "strength": 52,
+      "reasons": [
+        "MACD бычий (hist=0.00111)",
+        "Цена > EMA20 > EMA50",
+        "Стакан: давление покупки (+0.11)",
+        "📰 Breaking Down The $100 XRP Prophecy: Is There A Timeline?",
+        "МТФ: 5m, 15m, 1h согласны",
+        "OI растёт +1.4% + цена ↑",
+        "CVD положительный (-7.0%)",
+        "⚡ Рыночный вход (MTF сильный)"
+      ],
+      "news": "Breaking Down The $100 XRP Prophecy: Is There A Timeline?",
+      "created_at": "2026-03-23 21:06:21",
       "status": "ACTIVE"
     }
   ],
@@ -1198,6 +1222,33 @@
         "МТФ: все 4 таймфрейма согласны ✅✅",
         "CVD растёт (+8.5%) — покупки усиливаются 📈",
         "Hammer (1h) 🔨",
+        "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
+    {
+      "id": 1070,
+      "symbol": "NEARUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 1.322,
+      "tp1": 1.34844,
+      "tp2": 1.37488,
+      "sl": 1.29556,
+      "entry_orig": 1.322,
+      "tp1_orig": 1.34844,
+      "tp2_orig": 1.37488,
+      "sl_orig": 1.29556,
+      "strength": 52,
+      "taken_at": "2026-03-23T21:06:22.093450",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.00111)",
+        "Цена > EMA20 > EMA50",
+        "Стакан: давление покупки (+0.11)",
+        "📰 Breaking Down The $100 XRP Prophecy: Is There A Timeline?",
+        "МТФ: 5m, 15m, 1h согласны",
+        "OI растёт +1.4% + цена ↑",
+        "CVD положительный (-7.0%)",
         "⚡ Рыночный вход (MTF сильный)"
       ]
     }
