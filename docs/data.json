@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-23T02:28:19.337894+00:00",
+  "updated_at": "2026-03-23T02:29:25.055476+00:00",
   "publish_status": {
-    "last_ok": "2026-03-23T02:27:15Z",
+    "last_ok": "2026-03-23T02:28:25Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 1049,
+    "total": 1050,
     "wins": 351,
     "losses": 262,
-    "active": 5,
+    "active": 6,
     "winrate": 57.3
   },
   "trade_stats": {
-    "open": 22,
+    "open": 23,
     "pending": 0,
     "wins": 409,
     "losses": 429,
@@ -149,6 +149,30 @@
       ],
       "news": null,
       "created_at": "2026-03-23 02:18:06",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1088,
+      "symbol": "BEATUSDT",
+      "direction": "SHORT",
+      "exchange": "binance",
+      "entry": 0.6841,
+      "tp1": 0.666068,
+      "tp2": 0.648036,
+      "sl": 0.698526,
+      "strength": 60,
+      "reasons": [
+        "MACD медвежий (hist=-0.00038)",
+        "EMA20 < EMA50 (death cross) 💀",
+        "Объём x2.7 🔥🔥",
+        "Стакан: сильное давление продажи (-0.26)",
+        "МТФ: 5m, 15m согласны",
+        "OI падает (лонги закрываются)",
+        "CVD падает (-5.7%) — продажи усиливаются 📉",
+        "Bearish Engulfing (1h) 🕯️"
+      ],
+      "news": null,
+      "created_at": "2026-03-23 02:29:20",
       "status": "ACTIVE"
     }
   ],
@@ -1117,6 +1141,33 @@
         "Стакан: сильное давление покупки (+0.50)",
         "МТФ: все 4 таймфрейма согласны ✅✅",
         "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
+    {
+      "id": 942,
+      "symbol": "BEATUSDT",
+      "direction": "SHORT",
+      "exchange": "binance",
+      "entry": 0.6841,
+      "tp1": 0.666068,
+      "tp2": 0.648036,
+      "sl": 0.698526,
+      "entry_orig": 0.6841,
+      "tp1_orig": 0.666068,
+      "tp2_orig": 0.648036,
+      "sl_orig": 0.698526,
+      "strength": 60,
+      "taken_at": "2026-03-23T02:29:20.252199",
+      "status": "OPEN",
+      "reasons": [
+        "MACD медвежий (hist=-0.00038)",
+        "EMA20 < EMA50 (death cross) 💀",
+        "Объём x2.7 🔥🔥",
+        "Стакан: сильное давление продажи (-0.26)",
+        "МТФ: 5m, 15m согласны",
+        "OI падает (лонги закрываются)",
+        "CVD падает (-5.7%) — продажи усиливаются 📉",
+        "Bearish Engulfing (1h) 🕯️"
       ]
     }
   ],
