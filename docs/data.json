@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-23T23:40:48.533280+00:00",
+  "updated_at": "2026-03-23T23:41:32.376741+00:00",
   "publish_status": {
-    "last_ok": "2026-03-23T23:39:48Z",
+    "last_ok": "2026-03-23T23:40:54Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 54.6
   },
   "trade_stats": {
-    "open": 21,
+    "open": 20,
     "pending": 0,
-    "wins": 462,
+    "wins": 463,
     "losses": 521,
-    "total_pnl": -24.54,
-    "winrate": 47.0
+    "total_pnl": -22.38,
+    "winrate": 47.1
   },
   "fear_greed": {
     "value": 8,
@@ -945,34 +945,6 @@
       ]
     },
     {
-      "id": 1062,
-      "symbol": "TAOUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 288.35,
-      "tp1": 294.117,
-      "tp2": 299.884,
-      "sl": 282.583,
-      "entry_orig": 288.35,
-      "tp1_orig": 294.117,
-      "tp2_orig": 299.884,
-      "sl_orig": 282.583,
-      "strength": 57,
-      "taken_at": "2026-03-23T19:07:01.204609",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00608)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: сильное давление покупки (+0.45)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +2.7% + цена ↑",
-        "CVD положительный (+2.0%)",
-        "BTC корреляция 0.79, BTC +1.6% 📈",
-        "BTC контекст: +3.9% за 12ч 📈",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 1064,
       "symbol": "LDOUSDT",
       "direction": "LONG",
@@ -1294,6 +1266,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "TAOUSDT",
+      "direction": "LONG",
+      "entry": 288.35,
+      "tp1": 294.117,
+      "tp2": 299.884,
+      "sl": 282.583,
+      "strength": 57,
+      "status": "TP1",
+      "pnl_pct": 2.16,
+      "close_price": 294.575,
+      "taken_at": "2026-03-23T19:07:01.204609",
+      "closed_at": "2026-03-23 23:41:08"
+    },
     {
       "symbol": "HANAUSDT",
       "direction": "LONG",
@@ -4079,20 +4065,6 @@
       "close_price": 0.052465,
       "taken_at": "2026-03-22T15:13:46.161906",
       "closed_at": "2026-03-22 17:05:16"
-    },
-    {
-      "symbol": "HYPEUSDT",
-      "direction": "LONG",
-      "entry": 38.171,
-      "tp1": 38.93442,
-      "tp2": 39.69784,
-      "sl": 37.40758,
-      "strength": 50,
-      "status": "TIMEOUT",
-      "pnl_pct": -0.55,
-      "close_price": 37.959500000000006,
-      "taken_at": "2026-03-22T08:57:19.843776",
-      "closed_at": "2026-03-22 16:57:24"
     }
   ]
 }
