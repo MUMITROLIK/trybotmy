@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-23T16:31:12.939240+00:00",
+  "updated_at": "2026-03-23T16:31:49.221483+00:00",
   "publish_status": {
-    "last_ok": "2026-03-23T16:30:49Z",
+    "last_ok": "2026-03-23T16:31:21Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,11 +17,11 @@
     "winrate": 54.8
   },
   "trade_stats": {
-    "open": 11,
+    "open": 10,
     "pending": 0,
     "wins": 445,
-    "losses": 503,
-    "total_pnl": -26.27,
+    "losses": 504,
+    "total_pnl": -28.33,
     "winrate": 46.9
   },
   "fear_greed": {
@@ -626,34 +626,6 @@
   ],
   "trades_open": [
     {
-      "id": 995,
-      "symbol": "BNBUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 647.32,
-      "tp1": 660.2664,
-      "tp2": 673.2128,
-      "sl": 634.3736,
-      "entry_orig": 647.32,
-      "tp1_orig": 660.2664,
-      "tp2_orig": 673.2128,
-      "sl_orig": 634.3736,
-      "strength": 55,
-      "taken_at": "2026-03-23T11:20:56.427689",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=2.43317)",
-        "Цена > EMA20 > EMA50",
-        "Объём x2.4 🔥",
-        "Стакан: сильное давление покупки (+0.49)",
-        "МТФ: 5m, 15m согласны",
-        "CVD растёт (+6.9%) — покупки усиливаются 📈",
-        "BTC корреляция 0.98, BTC +3.6% 📈",
-        "BTC контекст: +4.9% за 12ч 📈",
-        "⚡ Рыночный вход (MTF 2+ ТФ)"
-      ]
-    },
-    {
       "id": 998,
       "symbol": "DYDXUSDT",
       "direction": "LONG",
@@ -935,6 +907,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "BNBUSDT",
+      "direction": "LONG",
+      "entry": 647.32,
+      "tp1": 660.2664,
+      "tp2": 673.2128,
+      "sl": 634.3736,
+      "strength": 55,
+      "status": "SL",
+      "pnl_pct": -2.06,
+      "close_price": 633.985,
+      "taken_at": "2026-03-23T11:20:56.427689",
+      "closed_at": "2026-03-23 16:31:26"
+    },
     {
       "symbol": "JTOUSDT",
       "direction": "LONG",
@@ -3720,20 +3706,6 @@
       "close_price": 0.22681,
       "taken_at": "2026-03-22T09:59:38.667857",
       "closed_at": "2026-03-22 11:09:24"
-    },
-    {
-      "symbol": "ANIMEUSDT",
-      "direction": "LONG",
-      "entry": 0.005161,
-      "tp1": 0.005264,
-      "tp2": 0.005367,
-      "sl": 0.005058,
-      "strength": 56,
-      "status": "SL",
-      "pnl_pct": -2.22,
-      "close_price": 0.005046500000000001,
-      "taken_at": "2026-03-22T09:40:21.938096",
-      "closed_at": "2026-03-22 11:04:11"
     }
   ]
 }
