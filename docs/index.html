@@ -1678,6 +1678,7 @@ async function fetchMLStats(){
 
 // ── INIT ───────────────────────────────────────────────────────────────────────
 fetchREST();connectWS();fetchBTC2();
+initChart();
 setInterval(function(){if(!ws||ws.readyState!==1||(Date.now()-wsLM)>45000)fetchREST()},15000);
 setInterval(function(){if(serverTime)serverTime=new Date(serverTime.getTime()+1000)},1000);
 setInterval(fetchBTC2,10000);
