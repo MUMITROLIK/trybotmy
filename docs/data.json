@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-23T08:27:06.989004+00:00",
+  "updated_at": "2026-03-23T08:28:12.899565+00:00",
   "publish_status": {
-    "last_ok": "2026-03-23T08:26:06Z",
+    "last_ok": "2026-03-23T08:27:12Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 1077,
+    "total": 1078,
     "wins": 358,
     "losses": 274,
-    "active": 11,
+    "active": 12,
     "winrate": 56.6
   },
   "trade_stats": {
-    "open": 10,
+    "open": 11,
     "pending": 0,
     "wins": 421,
     "losses": 457,
@@ -294,6 +294,29 @@
       ],
       "news": null,
       "created_at": "2026-03-23 08:26:10",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1116,
+      "symbol": "APRUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.14969,
+      "tp1": 0.154748,
+      "tp2": 0.159806,
+      "sl": 0.145643,
+      "strength": 54,
+      "reasons": [
+        "MACD бычий (hist=0.00058)",
+        "Цена > EMA20 > EMA50",
+        "Объём x2.9 🔥🔥",
+        "Стакан: давление покупки (+0.18)",
+        "МТФ: 5m, 15m, 1h согласны",
+        "OI растёт +0.9% + цена ↑",
+        "⚡ Рыночный вход (MTF сильный)"
+      ],
+      "news": null,
+      "created_at": "2026-03-23 08:27:47",
       "status": "ACTIVE"
     }
   ],
@@ -974,6 +997,32 @@
         "Стакан: сильное давление покупки (+0.39)",
         "МТФ: 5m, 1h, 4h согласны",
         "CVD положительный (-1.9%)",
+        "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
+    {
+      "id": 970,
+      "symbol": "APRUSDT",
+      "direction": "LONG",
+      "exchange": "bybit",
+      "entry": 0.14969,
+      "tp1": 0.154748,
+      "tp2": 0.159806,
+      "sl": 0.145643,
+      "entry_orig": 0.14969,
+      "tp1_orig": 0.154748,
+      "tp2_orig": 0.159806,
+      "sl_orig": 0.145643,
+      "strength": 54,
+      "taken_at": "2026-03-23T08:27:47.607463",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.00058)",
+        "Цена > EMA20 > EMA50",
+        "Объём x2.9 🔥🔥",
+        "Стакан: давление покупки (+0.18)",
+        "МТФ: 5m, 15m, 1h согласны",
+        "OI растёт +0.9% + цена ↑",
         "⚡ Рыночный вход (MTF сильный)"
       ]
     }
