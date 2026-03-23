@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-23T07:17:05.009203+00:00",
+  "updated_at": "2026-03-23T07:17:55.283132+00:00",
   "publish_status": {
-    "last_ok": "2026-03-23T07:16:04Z",
+    "last_ok": "2026-03-23T07:17:11Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 56.7
   },
   "trade_stats": {
-    "open": 11,
+    "open": 10,
     "pending": 0,
     "wins": 419,
-    "losses": 454,
-    "total_pnl": 25.91,
-    "winrate": 48.0
+    "losses": 455,
+    "total_pnl": 23.75,
+    "winrate": 47.9
   },
   "fear_greed": {
     "value": 8,
@@ -769,32 +769,6 @@
       ]
     },
     {
-      "id": 957,
-      "symbol": "DEXEUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 7.65,
-      "tp1": 7.803,
-      "tp2": 7.956,
-      "sl": 7.497,
-      "entry_orig": 7.65,
-      "tp1_orig": 7.803,
-      "tp2_orig": 7.956,
-      "sl_orig": 7.497,
-      "strength": 55,
-      "taken_at": "2026-03-23T06:25:50.325180",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.03820)",
-        "Цена > EMA20 > EMA50",
-        "Объём x2.2 🔥",
-        "Стакан: давление покупки (+0.18)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "CVD растёт (+14.6%) — покупки усиливаются 📈",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 959,
       "symbol": "CRCLUSDT",
       "direction": "LONG",
@@ -984,6 +958,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "DEXEUSDT",
+      "direction": "LONG",
+      "entry": 7.65,
+      "tp1": 7.803,
+      "tp2": 7.956,
+      "sl": 7.497,
+      "strength": 55,
+      "status": "SL",
+      "pnl_pct": -2.16,
+      "close_price": 7.484500000000001,
+      "taken_at": "2026-03-23T06:25:50.325180",
+      "closed_at": "2026-03-23 07:17:54"
+    },
     {
       "symbol": "PAXGUSDT",
       "direction": "LONG",
@@ -3769,20 +3757,6 @@
       "close_price": 6.2135,
       "taken_at": "2026-03-21T10:48:03.765255",
       "closed_at": "2026-03-21 17:19:10"
-    },
-    {
-      "symbol": "FILUSDT",
-      "direction": "LONG",
-      "entry": 0.969,
-      "tp1": 0.98838,
-      "tp2": 1.00776,
-      "sl": 0.94962,
-      "strength": 54,
-      "status": "SL",
-      "pnl_pct": -2.01,
-      "close_price": 0.9495,
-      "taken_at": "2026-03-21T16:01:55.970147",
-      "closed_at": "2026-03-21 17:19:03"
     }
   ]
 }
