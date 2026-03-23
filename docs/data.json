@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-23T11:06:42.229075+00:00",
+  "updated_at": "2026-03-23T11:08:03.621247+00:00",
   "publish_status": {
-    "last_ok": "2026-03-23T11:06:14Z",
+    "last_ok": "2026-03-23T11:06:48Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,18 +10,18 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 1094,
+    "total": 1095,
     "wins": 365,
     "losses": 285,
-    "active": 6,
+    "active": 7,
     "winrate": 56.2
   },
   "trade_stats": {
     "open": 7,
     "pending": 0,
-    "wins": 430,
+    "wins": 431,
     "losses": 468,
-    "total_pnl": 20.58,
+    "total_pnl": 23.59,
     "winrate": 47.9
   },
   "fear_greed": {
@@ -173,6 +173,30 @@
       ],
       "news": null,
       "created_at": "2026-03-23 10:29:11",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1133,
+      "symbol": "TURBOUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.0011852,
+      "tp1": 0.001216,
+      "tp2": 0.001247,
+      "sl": 0.001161,
+      "strength": 50,
+      "reasons": [
+        "MACD бычий (hist=0.00001)",
+        "Цена > EMA20 > EMA50",
+        "Стакан: сильное давление покупки (+0.51)",
+        "МТФ: 5m, 15m, 4h согласны",
+        "OI растёт +5.5% + цена ↑",
+        "CVD положительный (-1.9%)",
+        "BTC контекст: +1.7% за 12ч 📈",
+        "⚡ Рыночный вход (MTF сильный)"
+      ],
+      "news": null,
+      "created_at": "2026-03-23 11:07:03",
       "status": "ACTIVE"
     }
   ],
@@ -689,33 +713,6 @@
       ]
     },
     {
-      "id": 984,
-      "symbol": "TURBOUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.0011591,
-      "tp1": 0.001186,
-      "tp2": 0.001212,
-      "sl": 0.001136,
-      "entry_orig": 0.0011591,
-      "tp1_orig": 0.001186,
-      "tp2_orig": 0.001212,
-      "sl_orig": 0.001136,
-      "strength": 58,
-      "taken_at": "2026-03-23T10:27:34.126299",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00000)",
-        "EMA20 > EMA50 (golden cross) 🌟",
-        "Объём x1.8 🔥",
-        "Стакан: сильное давление покупки (+0.30)",
-        "МТФ: 5m, 15m, 4h согласны",
-        "OI растёт +4.1% + цена ↑",
-        "CVD положительный (-3.4%)",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 985,
       "symbol": "1000TURBOUSDT",
       "direction": "LONG",
@@ -764,9 +761,50 @@
         "Стакан: сильное давление продажи (-0.44)",
         "МТФ: все 4 таймфрейма согласны ✅✅"
       ]
+    },
+    {
+      "id": 987,
+      "symbol": "TURBOUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.0011852,
+      "tp1": 0.001216,
+      "tp2": 0.001247,
+      "sl": 0.001161,
+      "entry_orig": 0.0011852,
+      "tp1_orig": 0.001216,
+      "tp2_orig": 0.001247,
+      "sl_orig": 0.001161,
+      "strength": 50,
+      "taken_at": "2026-03-23T11:07:04.023839",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.00001)",
+        "Цена > EMA20 > EMA50",
+        "Стакан: сильное давление покупки (+0.51)",
+        "МТФ: 5m, 15m, 4h согласны",
+        "OI растёт +5.5% + цена ↑",
+        "CVD положительный (-1.9%)",
+        "BTC контекст: +1.7% за 12ч 📈",
+        "⚡ Рыночный вход (MTF сильный)"
+      ]
     }
   ],
   "trades_history": [
+    {
+      "symbol": "TURBOUSDT",
+      "direction": "LONG",
+      "entry": 0.0011591,
+      "tp1": 0.001186,
+      "tp2": 0.001212,
+      "sl": 0.001136,
+      "strength": 58,
+      "status": "TP1",
+      "pnl_pct": 3.01,
+      "close_price": 0.00119395,
+      "taken_at": "2026-03-23T10:27:34.126299",
+      "closed_at": "2026-03-23 11:06:48"
+    },
     {
       "symbol": "1000PEPEUSDT",
       "direction": "LONG",
@@ -3552,20 +3590,6 @@
       "close_price": 0.23745,
       "taken_at": "2026-03-21T23:08:09.737190",
       "closed_at": "2026-03-21 23:48:26"
-    },
-    {
-      "symbol": "FILUSDT",
-      "direction": "LONG",
-      "entry": 0.932,
-      "tp1": 0.95064,
-      "tp2": 0.96928,
-      "sl": 0.91336,
-      "strength": 51,
-      "status": "SL",
-      "pnl_pct": -2.74,
-      "close_price": 0.9065000000000001,
-      "taken_at": "2026-03-21T20:02:11.833453",
-      "closed_at": "2026-03-21 23:25:15"
     }
   ]
 }
