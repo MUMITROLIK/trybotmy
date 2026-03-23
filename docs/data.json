@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-23T08:13:54.716440+00:00",
+  "updated_at": "2026-03-23T08:15:00.736904+00:00",
   "publish_status": {
-    "last_ok": "2026-03-23T08:12:54Z",
+    "last_ok": "2026-03-23T08:14:00Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,11 +17,11 @@
     "winrate": 56.6
   },
   "trade_stats": {
-    "open": 11,
+    "open": 10,
     "pending": 0,
     "wins": 420,
-    "losses": 456,
-    "total_pnl": 24.04,
+    "losses": 457,
+    "total_pnl": 21.96,
     "winrate": 47.9
   },
   "fear_greed": {
@@ -850,32 +850,6 @@
       ]
     },
     {
-      "id": 963,
-      "symbol": "XAUTUSDT",
-      "direction": "SHORT",
-      "exchange": "bybit",
-      "entry": 4193.9,
-      "tp1": 4110.022,
-      "tp2": 4026.144,
-      "sl": 4277.778,
-      "entry_orig": 4193.9,
-      "tp1_orig": 4110.022,
-      "tp2_orig": 4026.144,
-      "sl_orig": 4277.778,
-      "strength": 56,
-      "taken_at": "2026-03-23T07:12:17.055659",
-      "status": "OPEN",
-      "reasons": [
-        "MACD медвежий (hist=-13.52592)",
-        "Цена < EMA20 < EMA50",
-        "Объём x3.8 🔥🔥",
-        "Стакан: сильное давление продажи (-0.35)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +3.7% + цена ↓",
-        "⚠️ Funding через 49м"
-      ]
-    },
-    {
       "id": 964,
       "symbol": "1000TURBOUSDT",
       "direction": "LONG",
@@ -983,6 +957,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "XAUTUSDT",
+      "direction": "SHORT",
+      "entry": 4193.9,
+      "tp1": 4110.022,
+      "tp2": 4026.144,
+      "sl": 4277.778,
+      "strength": 56,
+      "status": "SL",
+      "pnl_pct": -2.08,
+      "close_price": 4281.2,
+      "taken_at": "2026-03-23T07:12:17.055659",
+      "closed_at": "2026-03-23 08:14:08"
+    },
     {
       "symbol": "DUSKUSDT",
       "direction": "LONG",
@@ -3768,20 +3756,6 @@
       "close_price": 0.61625,
       "taken_at": "2026-03-21T17:25:59.906958",
       "closed_at": "2026-03-21 17:41:43"
-    },
-    {
-      "symbol": "STOUSDT",
-      "direction": "LONG",
-      "entry": 0.10553,
-      "tp1": 0.107641,
-      "tp2": 0.109751,
-      "sl": 0.107735,
-      "strength": 50,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": 2.08,
-      "close_price": 0.10772000000000001,
-      "taken_at": "2026-03-21T16:05:37.698275",
-      "closed_at": "2026-03-21 17:33:00"
     }
   ]
 }
