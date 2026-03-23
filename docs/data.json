@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-23T19:26:45.139607+00:00",
+  "updated_at": "2026-03-23T19:27:40.158789+00:00",
   "publish_status": {
-    "last_ok": "2026-03-23T19:25:40Z",
+    "last_ok": "2026-03-23T19:26:52Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,18 +10,18 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 1172,
+    "total": 1173,
     "wins": 391,
     "losses": 319,
-    "active": 13,
+    "active": 14,
     "winrate": 55.1
   },
   "trade_stats": {
     "open": 15,
     "pending": 0,
     "wins": 459,
-    "losses": 509,
-    "total_pnl": -8.69,
+    "losses": 510,
+    "total_pnl": -9.65,
     "winrate": 47.4
   },
   "fear_greed": {
@@ -359,6 +359,31 @@
       ],
       "news": null,
       "created_at": "2026-03-23 19:12:45",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1211,
+      "symbol": "ZROUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 2.168,
+      "tp1": 2.21136,
+      "tp2": 2.25472,
+      "sl": 2.12464,
+      "strength": 50,
+      "reasons": [
+        "MACD бычий (hist=0.01314)",
+        "Цена > EMA20 > EMA50",
+        "Объём x2.0 🔥",
+        "Стакан: давление покупки (+0.16)",
+        "МТФ: 5m, 15m, 1h согласны",
+        "CVD положительный (-2.6%)",
+        "BTC корреляция 0.66, BTC +1.3% 📈",
+        "BTC контекст: +3.9% за 12ч 📈",
+        "⚡ Рыночный вход (MTF сильный)"
+      ],
+      "news": null,
+      "created_at": "2026-03-23 19:27:39",
       "status": "ACTIVE"
     }
   ],
@@ -799,33 +824,6 @@
   ],
   "trades_open": [
     {
-      "id": 1008,
-      "symbol": "BCHUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 481.32,
-      "tp1": 490.9464,
-      "tp2": 500.5728,
-      "sl": 471.6936,
-      "entry_orig": 481.32,
-      "tp1_orig": 490.9464,
-      "tp2_orig": 500.5728,
-      "sl_orig": 471.6936,
-      "strength": 55,
-      "taken_at": "2026-03-23T11:26:38.995521",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=1.56278)",
-        "Цена > EMA20 > EMA50",
-        "Объём x2.0 🔥",
-        "Стакан: сильное давление покупки (+0.38)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "BTC корреляция 0.92, BTC +3.5% 📈",
-        "BTC контекст: +4.0% за 12ч 📈",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 1041,
       "symbol": "KITEUSDT",
       "direction": "LONG",
@@ -1214,9 +1212,51 @@
         "BTC контекст: +4.1% за 12ч 📈",
         "⚡ Рыночный вход (MTF сильный)"
       ]
+    },
+    {
+      "id": 1065,
+      "symbol": "ZROUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 2.168,
+      "tp1": 2.21136,
+      "tp2": 2.25472,
+      "sl": 2.12464,
+      "entry_orig": 2.168,
+      "tp1_orig": 2.21136,
+      "tp2_orig": 2.25472,
+      "sl_orig": 2.12464,
+      "strength": 50,
+      "taken_at": "2026-03-23T19:27:39.743633",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.01314)",
+        "Цена > EMA20 > EMA50",
+        "Объём x2.0 🔥",
+        "Стакан: давление покупки (+0.16)",
+        "МТФ: 5m, 15m, 1h согласны",
+        "CVD положительный (-2.6%)",
+        "BTC корреляция 0.66, BTC +1.3% 📈",
+        "BTC контекст: +3.9% за 12ч 📈",
+        "⚡ Рыночный вход (MTF сильный)"
+      ]
     }
   ],
   "trades_history": [
+    {
+      "symbol": "BCHUSDT",
+      "direction": "LONG",
+      "entry": 481.32,
+      "tp1": 490.9464,
+      "tp2": 500.5728,
+      "sl": 471.6936,
+      "strength": 55,
+      "status": "TIMEOUT",
+      "pnl_pct": -0.96,
+      "close_price": 476.685,
+      "taken_at": "2026-03-23T11:26:38.995521",
+      "closed_at": "2026-03-23 19:26:53"
+    },
     {
       "symbol": "LTCUSDT",
       "direction": "LONG",
@@ -4002,20 +4042,6 @@
       "close_price": 0.0026546,
       "taken_at": "2026-03-22T11:25:13.204044",
       "closed_at": "2026-03-22 14:36:38"
-    },
-    {
-      "symbol": "ARIAUSDT",
-      "direction": "LONG",
-      "entry": 0.23137,
-      "tp1": 0.237848,
-      "tp2": 0.244326,
-      "sl": 0.23007444,
-      "strength": 56,
-      "status": "SL_AFTER_TP1",
-      "pnl_pct": -0.64,
-      "close_price": 0.2299,
-      "taken_at": "2026-03-22T11:12:55.277952",
-      "closed_at": "2026-03-22 14:21:05"
     }
   ]
 }
