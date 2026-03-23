@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-23T11:08:03.621247+00:00",
+  "updated_at": "2026-03-23T11:08:47.064200+00:00",
   "publish_status": {
-    "last_ok": "2026-03-23T11:06:48Z",
+    "last_ok": "2026-03-23T11:08:09Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,18 +10,18 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 1095,
+    "total": 1097,
     "wins": 365,
     "losses": 285,
-    "active": 7,
+    "active": 9,
     "winrate": 56.2
   },
   "trade_stats": {
-    "open": 7,
+    "open": 8,
     "pending": 0,
     "wins": 431,
-    "losses": 468,
-    "total_pnl": 23.59,
+    "losses": 469,
+    "total_pnl": 21.07,
     "winrate": 47.9
   },
   "fear_greed": {
@@ -197,6 +197,53 @@
       ],
       "news": null,
       "created_at": "2026-03-23 11:07:03",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1134,
+      "symbol": "KITEUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.22895,
+      "tp1": 0.233529,
+      "tp2": 0.238108,
+      "sl": 0.224371,
+      "strength": 55,
+      "reasons": [
+        "RSI=49 (нейтральный↓)",
+        "MACD бычий (hist=0.00017)",
+        "Цена > EMA20 > EMA50",
+        "Объём x3.2 🔥🔥",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "BTC контекст: +1.7% за 12ч 📈",
+        "⚡ Рыночный вход (MTF сильный)"
+      ],
+      "news": null,
+      "created_at": "2026-03-23 11:08:46",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1135,
+      "symbol": "PIXELUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.009043,
+      "tp1": 0.009224,
+      "tp2": 0.009405,
+      "sl": 0.008862,
+      "strength": 54,
+      "reasons": [
+        "MACD бычий (hist=0.00004)",
+        "EMA20 > EMA50 (golden cross) 🌟",
+        "Объём x4.1 🔥🔥🔥",
+        "МТФ: 5m, 15m согласны",
+        "OI растёт +2.5% + цена ↑",
+        "CVD положительный (+1.9%)",
+        "BTC контекст: +1.7% за 12ч 📈",
+        "⚡ Рыночный вход (MTF 2+ ТФ)"
+      ],
+      "news": null,
+      "created_at": "2026-03-23 11:08:46",
       "status": "ACTIVE"
     }
   ],
@@ -739,30 +786,6 @@
       ]
     },
     {
-      "id": 986,
-      "symbol": "GRASSUSDT",
-      "direction": "SHORT",
-      "exchange": "bybit",
-      "entry": 0.3443,
-      "tp1": 0.334863,
-      "tp2": 0.325426,
-      "sl": 0.35185,
-      "entry_orig": 0.3443,
-      "tp1_orig": 0.334863,
-      "tp2_orig": 0.325426,
-      "sl_orig": 0.35185,
-      "strength": 52,
-      "taken_at": "2026-03-23T10:45:29.972064",
-      "status": "OPEN",
-      "reasons": [
-        "MACD медвежий (hist=-0.00144)",
-        "Цена < EMA20 < EMA50",
-        "Объём x2.7 🔥🔥",
-        "Стакан: сильное давление продажи (-0.44)",
-        "МТФ: все 4 таймфрейма согласны ✅✅"
-      ]
-    },
-    {
       "id": 987,
       "symbol": "TURBOUSDT",
       "direction": "LONG",
@@ -788,9 +811,76 @@
         "BTC контекст: +1.7% за 12ч 📈",
         "⚡ Рыночный вход (MTF сильный)"
       ]
+    },
+    {
+      "id": 988,
+      "symbol": "KITEUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.22895,
+      "tp1": 0.233529,
+      "tp2": 0.238108,
+      "sl": 0.224371,
+      "entry_orig": 0.22895,
+      "tp1_orig": 0.233529,
+      "tp2_orig": 0.238108,
+      "sl_orig": 0.224371,
+      "strength": 55,
+      "taken_at": "2026-03-23T11:08:46.773636",
+      "status": "OPEN",
+      "reasons": [
+        "RSI=49 (нейтральный↓)",
+        "MACD бычий (hist=0.00017)",
+        "Цена > EMA20 > EMA50",
+        "Объём x3.2 🔥🔥",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "BTC контекст: +1.7% за 12ч 📈",
+        "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
+    {
+      "id": 989,
+      "symbol": "PIXELUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.009043,
+      "tp1": 0.009224,
+      "tp2": 0.009405,
+      "sl": 0.008862,
+      "entry_orig": 0.009043,
+      "tp1_orig": 0.009224,
+      "tp2_orig": 0.009405,
+      "sl_orig": 0.008862,
+      "strength": 54,
+      "taken_at": "2026-03-23T11:08:46.984684",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.00004)",
+        "EMA20 > EMA50 (golden cross) 🌟",
+        "Объём x4.1 🔥🔥🔥",
+        "МТФ: 5m, 15m согласны",
+        "OI растёт +2.5% + цена ↑",
+        "CVD положительный (+1.9%)",
+        "BTC контекст: +1.7% за 12ч 📈",
+        "⚡ Рыночный вход (MTF 2+ ТФ)"
+      ]
     }
   ],
   "trades_history": [
+    {
+      "symbol": "GRASSUSDT",
+      "direction": "SHORT",
+      "entry": 0.3443,
+      "tp1": 0.334863,
+      "tp2": 0.325426,
+      "sl": 0.35185,
+      "strength": 52,
+      "status": "SL",
+      "pnl_pct": -2.52,
+      "close_price": 0.35299,
+      "taken_at": "2026-03-23T10:45:29.972064",
+      "closed_at": "2026-03-23 11:08:11"
+    },
     {
       "symbol": "TURBOUSDT",
       "direction": "LONG",
@@ -3576,20 +3666,6 @@
       "close_price": 0.010445,
       "taken_at": "2026-03-21T20:41:35.071588",
       "closed_at": "2026-03-21 23:48:49"
-    },
-    {
-      "symbol": "LIGHTUSDT",
-      "direction": "LONG",
-      "entry": 0.2426,
-      "tp1": 0.248857,
-      "tp2": 0.255114,
-      "sl": 0.237594,
-      "strength": 50,
-      "status": "SL",
-      "pnl_pct": -2.12,
-      "close_price": 0.23745,
-      "taken_at": "2026-03-21T23:08:09.737190",
-      "closed_at": "2026-03-21 23:48:26"
     }
   ]
 }
