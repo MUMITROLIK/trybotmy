@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-23T23:33:09.103385+00:00",
+  "updated_at": "2026-03-23T23:34:02.371390+00:00",
   "publish_status": {
-    "last_ok": "2026-03-23T23:32:42Z",
+    "last_ok": "2026-03-23T23:33:15Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,11 +17,11 @@
     "winrate": 54.6
   },
   "trade_stats": {
-    "open": 22,
+    "open": 21,
     "pending": 0,
     "wins": 462,
-    "losses": 520,
-    "total_pnl": -22.41,
+    "losses": 521,
+    "total_pnl": -24.54,
     "winrate": 47.0
   },
   "fear_greed": {
@@ -1055,33 +1055,6 @@
       ]
     },
     {
-      "id": 1072,
-      "symbol": "HANAUSDT",
-      "direction": "LONG",
-      "exchange": "bybit",
-      "entry": 0.042633,
-      "tp1": 0.043486,
-      "tp2": 0.044338,
-      "sl": 0.04178,
-      "entry_orig": 0.042633,
-      "tp1_orig": 0.043486,
-      "tp2_orig": 0.044338,
-      "sl_orig": 0.04178,
-      "strength": 51,
-      "taken_at": "2026-03-23T21:37:37.376432",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=14 (сильная перепроданность)",
-        "BB нижняя зона (13%)",
-        "EMA20 > EMA50",
-        "Объём x2.0 🔥",
-        "Стакан: сильное давление покупки (+0.30)",
-        "МТФ: 15m, 1h согласны",
-        "Цена у поддержки 0.0425",
-        "⚡ Рыночный вход (MTF 2+ ТФ)"
-      ]
-    },
-    {
       "id": 1073,
       "symbol": "FETUSDT",
       "direction": "LONG",
@@ -1321,6 +1294,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "HANAUSDT",
+      "direction": "LONG",
+      "entry": 0.042633,
+      "tp1": 0.043486,
+      "tp2": 0.044338,
+      "sl": 0.04178,
+      "strength": 51,
+      "status": "SL",
+      "pnl_pct": -2.13,
+      "close_price": 0.041726,
+      "taken_at": "2026-03-23T21:37:37.376432",
+      "closed_at": "2026-03-23 23:34:01"
+    },
     {
       "symbol": "CYSUSDT",
       "direction": "LONG",
@@ -4106,20 +4093,6 @@
       "close_price": 37.959500000000006,
       "taken_at": "2026-03-22T08:57:19.843776",
       "closed_at": "2026-03-22 16:57:24"
-    },
-    {
-      "symbol": "JCTUSDT",
-      "direction": "LONG",
-      "entry": 0.0032343,
-      "tp1": 0.003358,
-      "tp2": 0.003481,
-      "sl": 0.003136,
-      "strength": 51,
-      "status": "SL",
-      "pnl_pct": -10.93,
-      "close_price": 0.0028807,
-      "taken_at": "2026-03-22T16:19:06.320042",
-      "closed_at": "2026-03-22 16:43:00"
     }
   ]
 }
