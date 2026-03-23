@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-23T21:39:06.981306+00:00",
+  "updated_at": "2026-03-23T21:40:13.282147+00:00",
   "publish_status": {
-    "last_ok": "2026-03-23T21:37:43Z",
+    "last_ok": "2026-03-23T21:39:13Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 1180,
+    "total": 1182,
     "wins": 392,
     "losses": 324,
-    "active": 10,
+    "active": 12,
     "winrate": 54.7
   },
   "trade_stats": {
-    "open": 16,
+    "open": 18,
     "pending": 0,
     "wins": 460,
     "losses": 515,
@@ -280,6 +280,51 @@
       ],
       "news": null,
       "created_at": "2026-03-23 21:37:37",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1219,
+      "symbol": "FETUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.2259,
+      "tp1": 0.230418,
+      "tp2": 0.234936,
+      "sl": 0.221382,
+      "strength": 54,
+      "reasons": [
+        "MACD бычий (hist=0.00064)",
+        "Цена > EMA20 > EMA50",
+        "Объём x2.6 🔥🔥",
+        "Стакан: перевес bid (+0.07)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "CVD положительный (+4.4%)",
+        "⚡ Рыночный вход (MTF сильный)"
+      ],
+      "news": null,
+      "created_at": "2026-03-23 21:39:24",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1220,
+      "symbol": "MOODENGUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.04959,
+      "tp1": 0.050582,
+      "tp2": 0.051574,
+      "sl": 0.048598,
+      "strength": 50,
+      "reasons": [
+        "MACD бычий (hist=0.00000)",
+        "Цена > EMA20 > EMA50",
+        "Объём x3.5 🔥🔥",
+        "Стакан: перевес bid (+0.09)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "⚡ Рыночный вход (MTF сильный)"
+      ],
+      "news": null,
+      "created_at": "2026-03-23 21:39:25",
       "status": "ACTIVE"
     }
   ],
@@ -1153,6 +1198,57 @@
         "МТФ: 15m, 1h согласны",
         "Цена у поддержки 0.0425",
         "⚡ Рыночный вход (MTF 2+ ТФ)"
+      ]
+    },
+    {
+      "id": 1073,
+      "symbol": "FETUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.2259,
+      "tp1": 0.230418,
+      "tp2": 0.234936,
+      "sl": 0.221382,
+      "entry_orig": 0.2259,
+      "tp1_orig": 0.230418,
+      "tp2_orig": 0.234936,
+      "sl_orig": 0.221382,
+      "strength": 54,
+      "taken_at": "2026-03-23T21:39:25.093077",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.00064)",
+        "Цена > EMA20 > EMA50",
+        "Объём x2.6 🔥🔥",
+        "Стакан: перевес bid (+0.07)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "CVD положительный (+4.4%)",
+        "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
+    {
+      "id": 1074,
+      "symbol": "MOODENGUSDT",
+      "direction": "LONG",
+      "exchange": "bybit",
+      "entry": 0.04959,
+      "tp1": 0.050582,
+      "tp2": 0.051574,
+      "sl": 0.048598,
+      "entry_orig": 0.04959,
+      "tp1_orig": 0.050582,
+      "tp2_orig": 0.051574,
+      "sl_orig": 0.048598,
+      "strength": 50,
+      "taken_at": "2026-03-23T21:39:25.293318",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.00000)",
+        "Цена > EMA20 > EMA50",
+        "Объём x3.5 🔥🔥",
+        "Стакан: перевес bid (+0.09)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "⚡ Рыночный вход (MTF сильный)"
       ]
     }
   ],
