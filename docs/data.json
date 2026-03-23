@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-23T15:00:26.459491+00:00",
+  "updated_at": "2026-03-23T15:01:37.047228+00:00",
   "publish_status": {
-    "last_ok": "2026-03-23T14:59:31Z",
+    "last_ok": "2026-03-23T15:00:32Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -30,10 +30,10 @@
     "emoji": "😱"
   },
   "ml_info": {
-    "model_name": "GradientBoosting",
-    "roc_auc": 0.9585,
-    "rows": 375,
-    "trained_at": "2026-03-23T06:43:17.885041+00:00"
+    "model_name": "GradientBoosting-Deep",
+    "roc_auc": 0.6945,
+    "rows": 1005,
+    "trained_at": "2026-03-23T15:00:26.686298+00:00"
   },
   "signals": [
     {
