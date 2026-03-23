@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-23T10:27:20.639435+00:00",
+  "updated_at": "2026-03-23T10:28:26.678627+00:00",
   "publish_status": {
-    "last_ok": "2026-03-23T10:25:54Z",
+    "last_ok": "2026-03-23T10:27:26Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 1091,
+    "total": 1092,
     "wins": 361,
     "losses": 280,
-    "active": 15,
+    "active": 16,
     "winrate": 56.3
   },
   "trade_stats": {
-    "open": 13,
+    "open": 14,
     "pending": 0,
     "wins": 426,
     "losses": 463,
@@ -383,6 +383,30 @@
       ],
       "news": null,
       "created_at": "2026-03-23 10:14:50",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1130,
+      "symbol": "TURBOUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.0011591,
+      "tp1": 0.001186,
+      "tp2": 0.001212,
+      "sl": 0.001136,
+      "strength": 58,
+      "reasons": [
+        "MACD бычий (hist=0.00000)",
+        "EMA20 > EMA50 (golden cross) 🌟",
+        "Объём x1.8 🔥",
+        "Стакан: сильное давление покупки (+0.30)",
+        "МТФ: 5m, 15m, 4h согласны",
+        "OI растёт +4.1% + цена ↑",
+        "CVD положительный (-3.4%)",
+        "⚡ Рыночный вход (MTF сильный)"
+      ],
+      "news": null,
+      "created_at": "2026-03-23 10:27:33",
       "status": "ACTIVE"
     }
   ],
@@ -1136,6 +1160,33 @@
         "Стакан: сильное давление покупки (+0.34)",
         "МТФ: 5m, 15m, 4h согласны",
         "OI растёт +1.3% + цена ↑",
+        "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
+    {
+      "id": 984,
+      "symbol": "TURBOUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.0011591,
+      "tp1": 0.001186,
+      "tp2": 0.001212,
+      "sl": 0.001136,
+      "entry_orig": 0.0011591,
+      "tp1_orig": 0.001186,
+      "tp2_orig": 0.001212,
+      "sl_orig": 0.001136,
+      "strength": 58,
+      "taken_at": "2026-03-23T10:27:34.126299",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.00000)",
+        "EMA20 > EMA50 (golden cross) 🌟",
+        "Объём x1.8 🔥",
+        "Стакан: сильное давление покупки (+0.30)",
+        "МТФ: 5m, 15m, 4h согласны",
+        "OI растёт +4.1% + цена ↑",
+        "CVD положительный (-3.4%)",
         "⚡ Рыночный вход (MTF сильный)"
       ]
     }
