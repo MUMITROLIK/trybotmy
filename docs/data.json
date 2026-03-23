@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-23T17:41:01.408415+00:00",
+  "updated_at": "2026-03-23T17:41:32.615301+00:00",
   "publish_status": {
-    "last_ok": "2026-03-23T17:40:32Z",
+    "last_ok": "2026-03-23T17:41:07Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,11 +17,11 @@
     "winrate": 54.7
   },
   "trade_stats": {
-    "open": 19,
+    "open": 18,
     "pending": 0,
-    "wins": 447,
+    "wins": 448,
     "losses": 505,
-    "total_pnl": -24.57,
+    "total_pnl": -22.52,
     "winrate": 47.0
   },
   "fear_greed": {
@@ -854,34 +854,6 @@
       ]
     },
     {
-      "id": 1007,
-      "symbol": "XPLUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.095,
-      "tp1": 0.0969,
-      "tp2": 0.0988,
-      "sl": 0.0931,
-      "entry_orig": 0.095,
-      "tp1_orig": 0.0969,
-      "tp2_orig": 0.0988,
-      "sl_orig": 0.0931,
-      "strength": 54,
-      "taken_at": "2026-03-23T11:24:50.620627",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00047)",
-        "EMA20 > EMA50 (golden cross) 🌟",
-        "Объём x2.6 🔥🔥",
-        "Стакан: давление покупки (+0.17)",
-        "МТФ: 5m, 15m согласны",
-        "CVD положительный (+1.2%)",
-        "BTC корреляция 0.81, BTC +2.9% 📈",
-        "BTC контекст: +4.0% за 12ч 📈",
-        "⚡ Рыночный вход (MTF 2+ ТФ)"
-      ]
-    },
-    {
       "id": 1008,
       "symbol": "BCHUSDT",
       "direction": "LONG",
@@ -1323,6 +1295,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "XPLUSDT",
+      "direction": "LONG",
+      "entry": 0.095,
+      "tp1": 0.0969,
+      "tp2": 0.0988,
+      "sl": 0.0931,
+      "strength": 54,
+      "status": "TP1",
+      "pnl_pct": 2.05,
+      "close_price": 0.09695000000000001,
+      "taken_at": "2026-03-23T11:24:50.620627",
+      "closed_at": "2026-03-23 17:41:24"
+    },
     {
       "symbol": "MAGMAUSDT",
       "direction": "LONG",
@@ -4108,20 +4094,6 @@
       "close_price": 0.69275,
       "taken_at": "2026-03-22T09:36:51.181010",
       "closed_at": "2026-03-22 11:24:04"
-    },
-    {
-      "symbol": "FOLKSUSDT",
-      "direction": "LONG",
-      "entry": 1.173,
-      "tp1": 1.204071,
-      "tp2": 1.235143,
-      "sl": 1.148143,
-      "strength": 53,
-      "status": "SL",
-      "pnl_pct": -2.34,
-      "close_price": 1.1455,
-      "taken_at": "2026-03-22T11:14:43.215976",
-      "closed_at": "2026-03-22 11:18:19"
     }
   ]
 }
