@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-23T11:30:22.509444+00:00",
+  "updated_at": "2026-03-23T11:31:14.422911+00:00",
   "publish_status": {
-    "last_ok": "2026-03-23T11:29:25Z",
+    "last_ok": "2026-03-23T11:30:28Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -11,18 +11,18 @@
   },
   "stats": {
     "total": 1120,
-    "wins": 366,
+    "wins": 367,
     "losses": 289,
-    "active": 25,
+    "active": 24,
     "winrate": 55.9
   },
   "trade_stats": {
-    "open": 24,
+    "open": 23,
     "pending": 0,
-    "wins": 432,
+    "wins": 433,
     "losses": 475,
-    "total_pnl": 6.59,
-    "winrate": 47.6
+    "total_pnl": 8.82,
+    "winrate": 47.7
   },
   "fear_greed": {
     "value": 8,
@@ -452,31 +452,6 @@
       "status": "ACTIVE"
     },
     {
-      "id": 1151,
-      "symbol": "AAVEUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 109.6,
-      "tp1": 111.792,
-      "tp2": 113.984,
-      "sl": 107.408,
-      "strength": 53,
-      "reasons": [
-        "MACD бычий (hist=0.47545)",
-        "EMA20 > EMA50 (golden cross) 🌟",
-        "Объём x2.4 🔥",
-        "МТФ: 5m, 15m, 4h согласны",
-        "OI растёт +1.4% + цена ↑",
-        "CVD положительный (+1.6%)",
-        "BTC корреляция 0.90, BTC +3.0% 📈",
-        "BTC контекст: +4.0% за 12ч 📈",
-        "⚡ Рыночный вход (MTF сильный)"
-      ],
-      "news": null,
-      "created_at": "2026-03-23 11:24:50",
-      "status": "ACTIVE"
-    },
-    {
       "id": 1152,
       "symbol": "XLMUSDT",
       "direction": "LONG",
@@ -649,6 +624,28 @@
     }
   ],
   "history": [
+    {
+      "symbol": "AAVEUSDT",
+      "direction": "LONG",
+      "entry": 109.6,
+      "tp1": 111.792,
+      "tp2": 113.984,
+      "sl": 107.408,
+      "strength": 53,
+      "status": "TP1",
+      "created_at": "2026-03-23 11:24:50",
+      "reasons": [
+        "MACD бычий (hist=0.47545)",
+        "EMA20 > EMA50 (golden cross) 🌟",
+        "Объём x2.4 🔥",
+        "МТФ: 5m, 15m, 4h согласны",
+        "OI растёт +1.4% + цена ↑",
+        "CVD положительный (+1.6%)",
+        "BTC корреляция 0.90, BTC +3.0% 📈",
+        "BTC контекст: +4.0% за 12ч 📈",
+        "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
     {
       "symbol": "PYTHUSDT",
       "direction": "LONG",
@@ -1027,26 +1024,6 @@
         "Стакан: сильное давление покупки (+0.39)",
         "МТФ: 5m, 1h, 4h согласны",
         "CVD положительный (-1.9%)",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
-      "symbol": "WAXPUSDT",
-      "direction": "LONG",
-      "entry": 0.008139,
-      "tp1": 0.00842,
-      "tp2": 0.008702,
-      "sl": 0.007914,
-      "strength": 52,
-      "status": "SL",
-      "created_at": "2026-03-23 08:13:00",
-      "reasons": [
-        "MACD бычий (hist=0.00004)",
-        "Цена > EMA20 > EMA50",
-        "Объём x2.3 🔥",
-        "Стакан: сильное давление покупки (+0.27)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "Doji (1h) — нерешительность",
         "⚡ Рыночный вход (MTF сильный)"
       ]
     }
@@ -1494,34 +1471,6 @@
       ]
     },
     {
-      "id": 1005,
-      "symbol": "AAVEUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 109.6,
-      "tp1": 111.792,
-      "tp2": 113.984,
-      "sl": 107.408,
-      "entry_orig": 109.6,
-      "tp1_orig": 111.792,
-      "tp2_orig": 113.984,
-      "sl_orig": 107.408,
-      "strength": 53,
-      "taken_at": "2026-03-23T11:24:50.246568",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.47545)",
-        "EMA20 > EMA50 (golden cross) 🌟",
-        "Объём x2.4 🔥",
-        "МТФ: 5m, 15m, 4h согласны",
-        "OI растёт +1.4% + цена ↑",
-        "CVD положительный (+1.6%)",
-        "BTC корреляция 0.90, BTC +3.0% 📈",
-        "BTC контекст: +4.0% за 12ч 📈",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 1006,
       "symbol": "XLMUSDT",
       "direction": "LONG",
@@ -1715,6 +1664,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "AAVEUSDT",
+      "direction": "LONG",
+      "entry": 109.6,
+      "tp1": 111.792,
+      "tp2": 113.984,
+      "sl": 107.408,
+      "strength": 53,
+      "status": "TP1",
+      "pnl_pct": 2.23,
+      "close_price": 112.045,
+      "taken_at": "2026-03-23T11:24:50.246568",
+      "closed_at": "2026-03-23 11:31:14"
+    },
     {
       "symbol": "WAXPUSDT",
       "direction": "LONG",
@@ -4500,20 +4463,6 @@
       "close_price": 0.5692,
       "taken_at": "2026-03-21T16:11:20.827131",
       "closed_at": "2026-03-22 00:11:27"
-    },
-    {
-      "symbol": "ORDERUSDT",
-      "direction": "LONG",
-      "entry": 0.05391,
-      "tp1": 0.054988,
-      "tp2": 0.056066,
-      "sl": 0.052832,
-      "strength": 51,
-      "status": "TP2",
-      "pnl_pct": 4.75,
-      "close_price": 0.05647,
-      "taken_at": "2026-03-22T00:03:09.807403",
-      "closed_at": "2026-03-22 00:10:00"
     }
   ]
 }
