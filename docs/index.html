@@ -935,8 +935,205 @@ main {
 
 <main>
 
-  <!-- ── STATS ROW ── -->
-  <div class="stats-row">
+  <!-- ── CHART PANEL ── -->
+  <div class="chart-panel au d1">
+    <div class="chart-head">
+      <span class="chart-sym-badge" id="chartSym">BTC/USDT</span>
+      <span class="chart-price" id="chartPrice">—</span>
+      <span class="chart-chg" id="chartChg">—</span>
+      <div class="chart-tfs" id="chartTfBtns">
+        <button class="tf-btn active" data-tf="15m">15m</button>
+        <button class="tf-btn" data-tf="1h">1H</button>
+        <button class="tf-btn" data-tf="4h">4H</button>
+        <button class="tf-btn" data-tf="1d">1D</button>
+      </div>
+      <div style="display:flex;align-items:center;gap:.75rem;margin-left:auto;flex-wrap:wrap">
+        <div class="hseg" style="border:none;padding:0;gap:.35rem;flex-direction:column;align-items:flex-start">
+          <span class="hseg-lbl">Funding</span>
+          <div style="display:flex;gap:.35rem;align-items:center">
+            <span class="fund-time" id="fundTime" style="font-family:var(--mono);font-size:.78rem;font-weight:700;color:var(--A)">—</span>
+            <span class="fund-rate" id="fundRate">—</span>
+          </div>
+        </div>
+        <div class="vdiv"></div>
+        <div class="hseg au d2" style="gap:.4rem;border:none;padding:0">
+          <div class="live-dot off" id="statusDot"></div>
+          <span class="live-txt off" id="statusText">Подключение...</span>
+        </div>
+        <div class="vdiv"></div>
+        <div class="hseg au d4" style="gap:.5rem;border:none;padding:0">
+          <span class="hseg-lbl">Режим</span>
+          <span class="regime-badge flat" id="regimeBadge">● FLAT</span>
+        </div>
+        <div class="vdiv"></div>
+        <div class="hseg hseg-right au d5" style="gap:.5rem;border:none;padding:0">
+          <button class="icon-btn" id="soundBtn" title="Звук" onclick="toggleSound()">🔇</button>
+          <button class="icon-btn small" id="kbBtn" title="Горячие клавиши" onclick="toggleKB()">KB</button>
+          <span class="mode-btn manual" id="autoBadge">РУЧНОЙ</span>
+        </div>
+      </div>
+    </div>
+    <div id="tvChartWrap"></div>
+  </div>
+
+  <!-- ── STATS BAR ── -->
+  <div class="stats-bar">
+    <div class="sbar-item ca">
+      <span class="sbar-lbl">Всего сигналов</span>
+      <span class="sbar-val a" id="statSignals">—</span>
+      <span class="sbar-sub" id="statWL">—</span>
+    </div>
+    <div class="sbar-item cb">
+      <span class="sbar-lbl">Открытые позиции</span>
+      <span class="sbar-val b" id="statPos">—</span>
+      <span class="sbar-sub" id="statPend">—</span>
+    </div>
+    <div class="sbar-item cg">
+      <span class="sbar-lbl">Винрейт</span>
+      <span class="sbar-val g" id="statWR">—</span>
+      <span class="sbar-sub" id="statWLT">—</span>
+    </div>
+    <div class="sbar-item cg" id="pnlCard">
+      <span class="sbar-lbl">Общий P&amp;L</span>
+      <span class="sbar-val g" id="statPnl">—</span>
+      <span class="sbar-sub">Суммарно</span>
+    </div>
+    <div class="sbar-item">
+      <span class="sbar-lbl">Лучшая сделка</span>
+      <span class="sbar-val g" id="mBest">—</span>
+    </div>
+    <div class="sbar-item">
+      <span class="sbar-lbl">Худшая сделка</span>
+      <span class="sbar-val r" id="mWorst">—</span>
+    </div>
+    <div class="sbar-item">
+      <span class="sbar-lbl">Серия / Avg Win</span>
+      <span class="sbar-val a" id="mStreak">—</span>
+      <span class="sbar-sub" id="mAvgWin">—</span>
+    </div>
+    <div class="sbar-item">
+      <span class="sbar-lbl">ML Модель</span>
+      <span class="sbar-val" style="display:flex;align-items:center;gap:.3rem;font-size:.78rem">
+        <span class="model-name" id="modelName">—</span>
+        <span class="model-auc"  id="modelAuc">—</span>
+      </span>
+      <span class="sbar-sub" id="mClean2">—</span>
+    </div>
+  </div>
+
+  <!-- ── MAIN GRID ── -->
+  <div class="main-grid">
+
+    <!-- ── BOTTOM PANEL (tabs + table) ── -->
+    <div class="bottom-panel au d3">
+      <div class="tabs">
+        <button class="tab active" data-tab="positions">Позиции <span class="tab-n" id="cP">0</span></button>
+        <button class="tab" data-tab="signals">Сигналы <span class="tab-n" id="cS">0</span></button>
+        <button class="tab" data-tab="pending">Лимитки <span class="tab-n" id="cPe">0</span></button>
+        <button class="tab" data-tab="history">История <span class="tab-n" id="cH">0</span></button>
+      </div>
+      <div class="btm-body" id="btmBody"></div>
+    </div>
+
+    <!-- ── RIGHT SIDEBAR ── -->
+    <div class="right-col">
+
+      <!-- F&G -->
+      <div class="panel au d1">
+        <div class="panel-head">Страх &amp; Жадность</div>
+        <div class="panel-body">
+          <div class="fg-gauge-wrap">
+            <div class="fg-svg-wrap">
+              <svg viewBox="0 0 110 65" width="104" height="62">
+                <defs><linearGradient id="fgg" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#EF5350"/><stop offset="30%" stop-color="#FF8A65"/><stop offset="50%" stop-color="#F7941D"/><stop offset="70%" stop-color="#66BB6A"/><stop offset="100%" stop-color="#26A69A"/></linearGradient></defs>
+                <path d="M 10 60 A 45 45 0 0 1 100 60" fill="none" stroke="#252930" stroke-width="7" stroke-linecap="round"/>
+                <path id="gArc" d="M 10 60 A 45 45 0 0 1 100 60" fill="none" stroke="url(#fgg)" stroke-width="7" stroke-linecap="round" stroke-dasharray="142" stroke-dashoffset="71" style="transition:stroke-dashoffset 1.2s cubic-bezier(.2,1,.3,1)"/>
+              </svg>
+              <div class="fg-num" id="gVal">—</div>
+            </div>
+            <div class="fg-right">
+              <span class="fg-state" id="fgS">—</span>
+              <span class="fg-emoji" id="fgE">😐</span>
+              <div class="fg-bars" id="fgT"></div>
+            </div>
+          </div>
+          <div class="fg-upd" id="updInfo">—</div>
+        </div>
+      </div>
+
+      <!-- Winrate Donut -->
+      <div class="panel au d2">
+        <div class="panel-head">Распределение сделок</div>
+        <div class="panel-body">
+          <div class="wr-inner">
+            <div class="wr-donut">
+              <canvas id="donutCanvas" width="80" height="80"></canvas>
+              <div class="wr-center">
+                <span class="wr-pct" id="wrPct" style="color:var(--G)">—</span>
+                <span class="wr-lbl2">WIN</span>
+              </div>
+            </div>
+            <div class="wr-legend">
+              <div class="wr-legend-item"><div class="wr-dot" style="background:var(--G)"></div><span id="wrWins">— побед</span></div>
+              <div class="wr-legend-item"><div class="wr-dot" style="background:var(--R)"></div><span id="wrLoss">— потерь</span></div>
+              <div class="wr-legend-item"><div class="wr-dot" style="background:var(--t3)"></div><span id="wrOther">— нейтрально</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Equity Curve -->
+      <div class="panel au d3">
+        <div class="panel-head">
+          <span>Кривая эквити</span>
+          <span class="eq-pnl" id="eqPnl">—</span>
+        </div>
+        <div class="panel-body" style="padding:.5rem .875rem .625rem">
+          <canvas id="equityCanvas" style="width:100%;height:76px;display:block"></canvas>
+        </div>
+      </div>
+
+      <!-- Sessions + Scan -->
+      <div class="panel au d4">
+        <div class="panel-head">Сканер</div>
+        <div class="panel-body" style="display:flex;flex-direction:column;gap:.5rem">
+          <div style="display:flex;align-items:center;justify-content:space-between">
+            <span class="hseg-lbl">Сессия</span>
+            <div class="sess-block">
+              <span class="sess off" id="sessAsia">ASIA</span>
+              <span class="sess off" id="sessEur">EUR</span>
+              <span class="sess off" id="sessUS">US</span>
+            </div>
+          </div>
+          <div class="scan-timer" style="padding:0;height:auto;border:none">
+            <div class="scan-ring">
+              <svg width="26" height="26" viewBox="0 0 26 26">
+                <circle cx="13" cy="13" r="10" fill="none" stroke="var(--bg3)" stroke-width="2.5"/>
+                <circle id="scanArc" cx="13" cy="13" r="10" fill="none" stroke="var(--B)" stroke-width="2.5" stroke-dasharray="62.8" stroke-dashoffset="0" stroke-linecap="round" style="transition:stroke-dashoffset 1s linear"/>
+              </svg>
+              <div class="scan-ring-txt" id="scanSec">—</div>
+            </div>
+            <div class="scan-lbl">
+              <span>Скан через</span>
+              <span id="scanLabel">—</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Activity Feed -->
+      <div class="panel au d5 activity-card">
+        <div class="panel-head">Последние сделки</div>
+        <div class="activity-list" id="activityList">
+          <div class="empty-txt" style="text-align:center;padding:.5rem;font-size:.68rem;color:var(--t3)">Нет данных</div>
+        </div>
+      </div>
+
+    </div><!-- /right-col -->
+
+  </div><!-- /main-grid -->
+
+
     <div class="stat-card ca au d1">
       <div class="stat-top">
         <span class="stat-lbl">Всего сигналов</span>
