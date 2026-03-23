@@ -7,6 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/lightweight-charts@4.1.3/dist/lightweight-charts.standalone.production.js"></script>
 <style>
 /* ── DESIGN TOKENS ─────────────────────────────────────────────────────────── */
 :root {
@@ -755,20 +756,60 @@ main {
 .vdiv { width: 1px; height: 20px; background: var(--b1); flex-shrink: 0; }
 
 /* ── RESPONSIVE ────────────────────────────────────────────────────────────── */
-@media(max-width:1400px) { .tab-pane.grid-pane.active { grid-template-columns: repeat(2, 1fr); } }
-@media(max-width:1100px) {
-  .mid-row { grid-template-columns: 1fr; }
-  .sidebar { flex-direction: row; flex-wrap: wrap; }
-  .sidebar > * { flex: 1 1 240px; }
-}
-@media(max-width:900px) {
-  .stats-row { grid-template-columns: repeat(2, 1fr); }
-  .mini-stats { grid-template-columns: repeat(2, 1fr); }
-  .tab-pane.grid-pane.active { grid-template-columns: 1fr; }
-}
-@media(max-width:600px) {
-  .stats-row, .mini-stats { grid-template-columns: 1fr; }
-}
+/* ── CHART PANEL ─────────────────────────────────────────────────────────── */
+.chart-panel { background:var(--bg2); border:1px solid var(--b1); border-radius:4px; overflow:hidden; }
+.chart-head { display:flex; align-items:center; gap:.75rem; padding:.5rem .875rem; border-bottom:1px solid var(--b1); flex-wrap:wrap; background:var(--bg2); }
+.chart-sym-badge { font-family:var(--mono); font-size:.88rem; font-weight:700; color:var(--t1); }
+.chart-price { font-family:var(--mono); font-size:.92rem; font-weight:600; color:var(--t1); }
+.chart-chg { font-family:var(--mono); font-size:.7rem; font-weight:500; }
+.chart-chg.pos { color:var(--G); } .chart-chg.neg { color:var(--R); }
+.chart-tfs { display:flex; gap:.2rem; }
+.tf-btn { font-family:var(--mono); font-size:.6rem; font-weight:600; padding:.2rem .5rem; border-radius:2px; border:1px solid var(--b1); background:transparent; color:var(--t3); cursor:pointer; transition:all .15s; letter-spacing:.04em; }
+.tf-btn:hover { border-color:var(--b2); color:var(--t1); }
+.tf-btn.active { background:var(--B3); border-color:rgba(76,158,255,.35); color:var(--B); }
+#tvChartWrap { height:280px; }
+/* ── STATS BAR ────────────────────────────────────────────────────────────── */
+.stats-bar { display:flex; gap:.5rem; flex-wrap:nowrap; overflow-x:auto; }
+.sbar-item { background:var(--bg2); border:1px solid var(--b1); border-radius:4px; padding:.5rem .875rem; display:flex; flex-direction:column; gap:.12rem; flex:1; min-width:90px; position:relative; overflow:hidden; transition:border-color .2s; flex-shrink:0; }
+.sbar-item:hover { border-color:var(--b2); }
+.sbar-item::after { content:''; position:absolute; top:0; left:0; right:0; height:2px; border-radius:4px 4px 0 0; }
+.sbar-item.ca::after{background:var(--A)} .sbar-item.cb::after{background:var(--B)} .sbar-item.cg::after{background:var(--G)} .sbar-item.cr::after{background:var(--R)}
+.sbar-lbl { font-size:.58rem; letter-spacing:.08em; text-transform:uppercase; color:var(--t3); font-weight:500; white-space:nowrap; }
+.sbar-val { font-family:var(--mono); font-size:1.05rem; font-weight:700; line-height:1.2; white-space:nowrap; }
+.sbar-val.g{color:var(--G)} .sbar-val.r{color:var(--R)} .sbar-val.b{color:var(--B)} .sbar-val.a{color:var(--A)}
+.sbar-sub { font-size:.58rem; color:var(--t3); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+/* ── MAIN GRID ────────────────────────────────────────────────────────────── */
+.main-grid { display:grid; grid-template-columns:1fr 280px; gap:.625rem; }
+.bottom-panel { background:var(--bg2); border:1px solid var(--b1); border-radius:4px; overflow:hidden; display:flex; flex-direction:column; min-height:220px; }
+.btm-body { flex:1; overflow-y:auto; }
+.right-col { display:flex; flex-direction:column; gap:.625rem; overflow-y:auto; }
+/* ── BYBIT TABLE ──────────────────────────────────────────────────────────── */
+.bybit-table { width:100%; border-collapse:collapse; }
+.bybit-table th { padding:6px 10px; text-align:left; font-size:.6rem; font-weight:600; letter-spacing:.08em; text-transform:uppercase; color:var(--t3); border-bottom:1px solid var(--b1); white-space:nowrap; }
+.bybit-table td { padding:7px 10px; border-bottom:1px solid rgba(42,46,57,.5); vertical-align:middle; white-space:nowrap; font-size:.78rem; }
+.bybit-table tbody tr { transition:background .1s; cursor:pointer; }
+.bybit-table tbody tr:hover td { background:rgba(255,255,255,.025); }
+.bybit-table tbody tr:last-child td { border-bottom:none; }
+.bybit-table tbody tr.profit td:first-child { box-shadow:inset 3px 0 0 var(--G); }
+.bybit-table tbody tr.loss   td:first-child { box-shadow:inset 3px 0 0 var(--R); }
+.bybit-table tbody tr.neu    td:first-child { box-shadow:inset 3px 0 0 var(--b2); }
+.tc-sym  { font-family:var(--mono); font-weight:700; color:var(--t1); font-size:.82rem; }
+.tc-price{ font-family:var(--mono); color:var(--t2); }
+.tc-mark { font-family:var(--mono); color:var(--B); font-weight:600; }
+.tc-green{ font-family:var(--mono); color:var(--G); }
+.tc-red  { font-family:var(--mono); color:var(--R); }
+.tc-pnl  { font-family:var(--mono); font-size:.88rem; font-weight:700; }
+.pnl-val.pos{color:var(--G)} .pnl-val.neg{color:var(--R)} .pnl-val.ne{color:var(--t2)}
+.tc-tags { font-size:.65rem; color:var(--t3); max-width:160px; overflow:hidden; text-overflow:ellipsis; }
+.tc-time { font-family:var(--mono); color:var(--t3); font-size:.65rem; }
+.str-mini { display:flex; align-items:center; gap:5px; min-width:80px; }
+.str-mini-bar { flex:1; height:2px; background:var(--bg3); border-radius:1px; overflow:hidden; }
+.str-mini-fill { height:100%; border-radius:1px; }
+.str-mini-v { font-family:var(--mono); font-size:.7rem; font-weight:600; color:var(--t1); min-width:26px; text-align:right; }
+/* ── RESPONSIVE ───────────────────────────────────────────────────────────── */
+@media(max-width:1200px){.main-grid{grid-template-columns:1fr}.right-col{flex-direction:row;flex-wrap:wrap}.right-col>*{flex:1 1 220px}}
+@media(max-width:900px){.bybit-table th:nth-child(n+5),.bybit-table td:nth-child(n+5){display:none}}
+@media(max-width:600px){.stats-bar{flex-wrap:wrap}.chart-head{gap:.4rem}}
 </style>
 </head>
 <body>
