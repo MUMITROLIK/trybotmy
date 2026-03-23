@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-23T11:29:19.162313+00:00",
+  "updated_at": "2026-03-23T11:30:22.509444+00:00",
   "publish_status": {
-    "last_ok": "2026-03-23T11:28:19Z",
+    "last_ok": "2026-03-23T11:29:25Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 1118,
+    "total": 1120,
     "wins": 366,
     "losses": 289,
-    "active": 23,
+    "active": 25,
     "winrate": 55.9
   },
   "trade_stats": {
-    "open": 22,
+    "open": 24,
     "pending": 0,
     "wins": 432,
     "losses": 475,
@@ -597,6 +597,54 @@
       ],
       "news": null,
       "created_at": "2026-03-23 11:28:39",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1157,
+      "symbol": "SUIUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.9449,
+      "tp1": 0.963798,
+      "tp2": 0.982696,
+      "sl": 0.926002,
+      "strength": 53,
+      "reasons": [
+        "MACD бычий (hist=0.00525)",
+        "EMA20 > EMA50 (golden cross) 🌟",
+        "Объём x2.5 🔥🔥",
+        "МТФ: 5m, 15m согласны",
+        "CVD растёт (+5.6%) — покупки усиливаются 📈",
+        "BTC корреляция 0.92, BTC +3.4% 📈",
+        "BTC контекст: +4.2% за 12ч 📈",
+        "⚡ Рыночный вход (MTF 2+ ТФ)"
+      ],
+      "news": null,
+      "created_at": "2026-03-23 11:30:21",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1158,
+      "symbol": "POWERUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.09962,
+      "tp1": 0.101779,
+      "tp2": 0.103938,
+      "sl": 0.097628,
+      "strength": 52,
+      "reasons": [
+        "MACD бычий (hist=0.00019)",
+        "EMA20 > EMA50 (golden cross) 🌟",
+        "Объём x2.6 🔥🔥",
+        "Стакан: сильное давление покупки (+0.37)",
+        "МТФ: 5m, 15m согласны",
+        "OI растёт +1.1%",
+        "BTC контекст: +4.2% за 12ч 📈",
+        "⚡ Рыночный вход (MTF 2+ ТФ)"
+      ],
+      "news": null,
+      "created_at": "2026-03-23 11:30:22",
       "status": "ACTIVE"
     }
   ],
@@ -1609,6 +1657,60 @@
         "OI падает (шорты закрываются)",
         "BTC контекст: +4.0% за 12ч 📈",
         "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
+    {
+      "id": 1011,
+      "symbol": "SUIUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.9449,
+      "tp1": 0.963798,
+      "tp2": 0.982696,
+      "sl": 0.926002,
+      "entry_orig": 0.9449,
+      "tp1_orig": 0.963798,
+      "tp2_orig": 0.982696,
+      "sl_orig": 0.926002,
+      "strength": 53,
+      "taken_at": "2026-03-23T11:30:22.007356",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.00525)",
+        "EMA20 > EMA50 (golden cross) 🌟",
+        "Объём x2.5 🔥🔥",
+        "МТФ: 5m, 15m согласны",
+        "CVD растёт (+5.6%) — покупки усиливаются 📈",
+        "BTC корреляция 0.92, BTC +3.4% 📈",
+        "BTC контекст: +4.2% за 12ч 📈",
+        "⚡ Рыночный вход (MTF 2+ ТФ)"
+      ]
+    },
+    {
+      "id": 1012,
+      "symbol": "POWERUSDT",
+      "direction": "LONG",
+      "exchange": "bybit",
+      "entry": 0.09962,
+      "tp1": 0.101779,
+      "tp2": 0.103938,
+      "sl": 0.097628,
+      "entry_orig": 0.09962,
+      "tp1_orig": 0.101779,
+      "tp2_orig": 0.103938,
+      "sl_orig": 0.097628,
+      "strength": 52,
+      "taken_at": "2026-03-23T11:30:22.274585",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.00019)",
+        "EMA20 > EMA50 (golden cross) 🌟",
+        "Объём x2.6 🔥🔥",
+        "Стакан: сильное давление покупки (+0.37)",
+        "МТФ: 5m, 15m согласны",
+        "OI растёт +1.1%",
+        "BTC контекст: +4.2% за 12ч 📈",
+        "⚡ Рыночный вход (MTF 2+ ТФ)"
       ]
     }
   ],
