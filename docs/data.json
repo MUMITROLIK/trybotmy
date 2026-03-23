@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-23T00:40:59.223726+00:00",
+  "updated_at": "2026-03-23T00:42:04.975310+00:00",
   "publish_status": {
-    "last_ok": "2026-03-23T00:39:59Z",
+    "last_ok": "2026-03-23T00:41:04Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 1043,
+    "total": 1044,
     "wins": 348,
     "losses": 257,
-    "active": 30,
+    "active": 31,
     "winrate": 57.5
   },
   "trade_stats": {
-    "open": 32,
+    "open": 33,
     "pending": 0,
     "wins": 405,
     "losses": 417,
@@ -712,6 +712,30 @@
       ],
       "news": null,
       "created_at": "2026-03-23 00:39:59",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1082,
+      "symbol": "XAGUSDT",
+      "direction": "SHORT",
+      "exchange": "binance",
+      "entry": 65.74,
+      "tp1": 64.379286,
+      "tp2": 63.018571,
+      "sl": 67.0548,
+      "strength": 66,
+      "reasons": [
+        "MACD медвежий (hist=-0.22947)",
+        "EMA20 < EMA50 (death cross) 💀",
+        "Объём x5.3 🔥🔥🔥",
+        "Стакан: сильное давление продажи (-0.33)",
+        "МТФ: 5m, 15m, 1h согласны",
+        "OI растёт +4.9% + цена ↓",
+        "CVD падает (-8.8%) — продажи усиливаются 📉",
+        "BTC контекст: -1.7% за 12ч 📉"
+      ],
+      "news": null,
+      "created_at": "2026-03-23 00:41:36",
       "status": "ACTIVE"
     }
   ],
@@ -1926,6 +1950,33 @@
         "МТФ: только 1 таймфрейм согласен",
         "OI растёт +4.5%",
         "Цена у поддержки 0.0568"
+      ]
+    },
+    {
+      "id": 936,
+      "symbol": "XAGUSDT",
+      "direction": "SHORT",
+      "exchange": "binance",
+      "entry": 65.74,
+      "tp1": 64.379286,
+      "tp2": 63.018571,
+      "sl": 67.0548,
+      "entry_orig": 65.74,
+      "tp1_orig": 64.379286,
+      "tp2_orig": 63.018571,
+      "sl_orig": 67.0548,
+      "strength": 66,
+      "taken_at": "2026-03-23T00:41:36.668648",
+      "status": "OPEN",
+      "reasons": [
+        "MACD медвежий (hist=-0.22947)",
+        "EMA20 < EMA50 (death cross) 💀",
+        "Объём x5.3 🔥🔥🔥",
+        "Стакан: сильное давление продажи (-0.33)",
+        "МТФ: 5m, 15m, 1h согласны",
+        "OI растёт +4.9% + цена ↓",
+        "CVD падает (-8.8%) — продажи усиливаются 📉",
+        "BTC контекст: -1.7% за 12ч 📉"
       ]
     }
   ],
