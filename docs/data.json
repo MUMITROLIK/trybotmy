@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-23T05:12:38.099279+00:00",
+  "updated_at": "2026-03-23T05:13:43.861384+00:00",
   "publish_status": {
-    "last_ok": "2026-03-23T05:11:38Z",
+    "last_ok": "2026-03-23T05:12:43Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,19 +10,19 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 1057,
+    "total": 1058,
     "wins": 353,
     "losses": 265,
-    "active": 8,
+    "active": 9,
     "winrate": 57.1
   },
   "trade_stats": {
     "open": 11,
     "pending": 0,
     "wins": 413,
-    "losses": 444,
-    "total_pnl": 31.56,
-    "winrate": 48.2
+    "losses": 445,
+    "total_pnl": 30.91,
+    "winrate": 48.1
   },
   "fear_greed": {
     "value": 8,
@@ -224,6 +224,29 @@
       ],
       "news": null,
       "created_at": "2026-03-23 05:11:40",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1096,
+      "symbol": "DEXEUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 7.436,
+      "tp1": 7.58472,
+      "tp2": 7.73344,
+      "sl": 7.28728,
+      "strength": 61,
+      "reasons": [
+        "MACD бычий (hist=0.01606)",
+        "Цена > EMA20 > EMA50",
+        "Объём x3.7 🔥🔥",
+        "Стакан: давление покупки (+0.15)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "CVD растёт (+7.1%) — покупки усиливаются 📈",
+        "⚡ Рыночный вход (MTF сильный)"
+      ],
+      "news": null,
+      "created_at": "2026-03-23 05:13:14",
       "status": "ACTIVE"
     }
   ],
@@ -638,31 +661,6 @@
   ],
   "trades_open": [
     {
-      "id": 913,
-      "symbol": "JTOUSDT",
-      "direction": "SHORT",
-      "exchange": "bybit",
-      "entry": 0.2775,
-      "tp1": 0.27195,
-      "tp2": 0.2664,
-      "sl": 0.28305,
-      "entry_orig": 0.2775,
-      "tp1_orig": 0.27195,
-      "tp2_orig": 0.2664,
-      "sl_orig": 0.28305,
-      "strength": 54,
-      "taken_at": "2026-03-22T21:12:37.548327",
-      "status": "OPEN",
-      "reasons": [
-        "MACD медвежий (hist=-0.00031)",
-        "Цена < EMA20 < EMA50",
-        "Объём x6.9 🔥🔥🔥",
-        "Стакан: сильное давление продажи (-0.43)",
-        "МТФ: 5m, 15m, 1h согласны",
-        "BTC корреляция 0.79, BTC -1.3% 📉"
-      ]
-    },
-    {
       "id": 918,
       "symbol": "AXSUSDT",
       "direction": "SHORT",
@@ -929,9 +927,49 @@
         "BTC корреляция 0.74, BTC +1.2% 📈",
         "⚡ Рыночный вход (MTF 2+ ТФ)"
       ]
+    },
+    {
+      "id": 950,
+      "symbol": "DEXEUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 7.436,
+      "tp1": 7.58472,
+      "tp2": 7.73344,
+      "sl": 7.28728,
+      "entry_orig": 7.436,
+      "tp1_orig": 7.58472,
+      "tp2_orig": 7.73344,
+      "sl_orig": 7.28728,
+      "strength": 61,
+      "taken_at": "2026-03-23T05:13:14.294541",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.01606)",
+        "Цена > EMA20 > EMA50",
+        "Объём x3.7 🔥🔥",
+        "Стакан: давление покупки (+0.15)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "CVD растёт (+7.1%) — покупки усиливаются 📈",
+        "⚡ Рыночный вход (MTF сильный)"
+      ]
     }
   ],
   "trades_history": [
+    {
+      "symbol": "JTOUSDT",
+      "direction": "SHORT",
+      "entry": 0.2775,
+      "tp1": 0.27195,
+      "tp2": 0.2664,
+      "sl": 0.28305,
+      "strength": 54,
+      "status": "TIMEOUT",
+      "pnl_pct": -0.65,
+      "close_price": 0.2793,
+      "taken_at": "2026-03-22T21:12:37.548327",
+      "closed_at": "2026-03-23 05:12:44"
+    },
     {
       "symbol": "ADAUSDT",
       "direction": "SHORT",
@@ -3717,20 +3755,6 @@
       "close_price": 0.921015,
       "taken_at": "2026-03-21T14:43:55.363686",
       "closed_at": "2026-03-21 14:50:28"
-    },
-    {
-      "symbol": "ROBOUSDT",
-      "direction": "LONG",
-      "entry": 0.02542,
-      "tp1": 0.025928,
-      "tp2": 0.026437,
-      "sl": 0.024912,
-      "strength": 51,
-      "status": "SL",
-      "pnl_pct": -2.16,
-      "close_price": 0.02487,
-      "taken_at": "2026-03-21T09:57:43.805197",
-      "closed_at": "2026-03-21 14:48:51"
     }
   ]
 }
