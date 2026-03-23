@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-23T08:12:48.649646+00:00",
+  "updated_at": "2026-03-23T08:13:54.716440+00:00",
   "publish_status": {
-    "last_ok": "2026-03-23T08:11:48Z",
+    "last_ok": "2026-03-23T08:12:54Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 1075,
+    "total": 1076,
     "wins": 358,
     "losses": 274,
-    "active": 9,
+    "active": 10,
     "winrate": 56.6
   },
   "trade_stats": {
-    "open": 10,
+    "open": 11,
     "pending": 0,
     "wins": 420,
     "losses": 456,
@@ -248,6 +248,29 @@
       ],
       "news": null,
       "created_at": "2026-03-23 07:26:22",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1114,
+      "symbol": "WAXPUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.008139,
+      "tp1": 0.00842,
+      "tp2": 0.008702,
+      "sl": 0.007914,
+      "strength": 52,
+      "reasons": [
+        "MACD бычий (hist=0.00004)",
+        "Цена > EMA20 > EMA50",
+        "Объём x2.3 🔥",
+        "Стакан: сильное давление покупки (+0.27)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "Doji (1h) — нерешительность",
+        "⚡ Рыночный вход (MTF сильный)"
+      ],
+      "news": null,
+      "created_at": "2026-03-23 08:13:00",
       "status": "ACTIVE"
     }
   ],
@@ -930,6 +953,32 @@
         "МТФ: 5m, 15m, 4h согласны",
         "CVD падает (-13.7%) — продажи усиливаются 📉",
         "⚠️ Funding через 34м"
+      ]
+    },
+    {
+      "id": 968,
+      "symbol": "WAXPUSDT",
+      "direction": "LONG",
+      "exchange": "bybit",
+      "entry": 0.008139,
+      "tp1": 0.00842,
+      "tp2": 0.008702,
+      "sl": 0.007914,
+      "entry_orig": 0.008139,
+      "tp1_orig": 0.00842,
+      "tp2_orig": 0.008702,
+      "sl_orig": 0.007914,
+      "strength": 52,
+      "taken_at": "2026-03-23T08:13:03.254880",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.00004)",
+        "Цена > EMA20 > EMA50",
+        "Объём x2.3 🔥",
+        "Стакан: сильное давление покупки (+0.27)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "Doji (1h) — нерешительность",
+        "⚡ Рыночный вход (MTF сильный)"
       ]
     }
   ],
