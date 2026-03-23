@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-23T12:06:05.701308+00:00",
+  "updated_at": "2026-03-23T12:06:47.678913+00:00",
   "publish_status": {
-    "last_ok": "2026-03-23T12:05:05Z",
+    "last_ok": "2026-03-23T12:06:11Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -12,16 +12,16 @@
   "stats": {
     "total": 1122,
     "wins": 369,
-    "losses": 296,
-    "active": 17,
-    "winrate": 55.5
+    "losses": 297,
+    "active": 16,
+    "winrate": 55.4
   },
   "trade_stats": {
-    "open": 16,
+    "open": 15,
     "pending": 0,
     "wins": 435,
-    "losses": 482,
-    "total_pnl": -3.67,
+    "losses": 483,
+    "total_pnl": -5.68,
     "winrate": 47.4
   },
   "fear_greed": {
@@ -423,17 +423,19 @@
       "news": null,
       "created_at": "2026-03-23 11:30:22",
       "status": "ACTIVE"
-    },
+    }
+  ],
+  "history": [
     {
-      "id": 1160,
       "symbol": "NIGHTUSDT",
       "direction": "LONG",
-      "exchange": "binance",
       "entry": 0.04908,
       "tp1": 0.050062,
       "tp2": 0.051043,
       "sl": 0.048098,
       "strength": 50,
+      "status": "SL",
+      "created_at": "2026-03-23 11:54:51",
       "reasons": [
         "MACD бычий (hist=0.00042)",
         "Цена > EMA20 > EMA50",
@@ -443,13 +445,8 @@
         "BTC корреляция 0.86, BTC +3.2% 📈",
         "BTC контекст: +3.6% за 12ч 📈",
         "⚡ Рыночный вход (MTF сильный)"
-      ],
-      "news": null,
-      "created_at": "2026-03-23 11:54:51",
-      "status": "ACTIVE"
-    }
-  ],
-  "history": [
+      ]
+    },
     {
       "symbol": "NIGHTUSDT",
       "direction": "LONG",
@@ -849,25 +846,6 @@
         "CVD положительный (-5.0%)",
         "Bullish Engulfing (1h) 🕯️",
         "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
-      "symbol": "RENDERUSDT",
-      "direction": "SHORT",
-      "entry": 1.5792,
-      "tp1": 1.547616,
-      "tp2": 1.516032,
-      "sl": 1.610784,
-      "strength": 50,
-      "status": "SL",
-      "created_at": "2026-03-23 09:41:50",
-      "reasons": [
-        "MACD медвежий (hist=-0.00388)",
-        "Цена < EMA20 < EMA50",
-        "Объём x2.7 🔥🔥",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +2.4% + цена ↓",
-        "BTC корреляция 0.77, BTC -1.2% 📉"
       ]
     }
   ],
@@ -1282,36 +1260,23 @@
         "BTC контекст: +4.2% за 12ч 📈",
         "⚡ Рыночный вход (MTF 2+ ТФ)"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 1014,
       "symbol": "NIGHTUSDT",
       "direction": "LONG",
-      "exchange": "binance",
       "entry": 0.04908,
       "tp1": 0.050062,
       "tp2": 0.051043,
       "sl": 0.048098,
-      "entry_orig": 0.04908,
-      "tp1_orig": 0.050062,
-      "tp2_orig": 0.051043,
-      "sl_orig": 0.048098,
       "strength": 50,
+      "status": "SL",
+      "pnl_pct": -2.01,
+      "close_price": 0.048095,
       "taken_at": "2026-03-23T11:54:51.459276",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00042)",
-        "Цена > EMA20 > EMA50",
-        "Объём x1.9 🔥",
-        "МТФ: 5m, 15m, 1h согласны",
-        "CVD растёт (+5.4%) — покупки усиливаются 📈",
-        "BTC корреляция 0.86, BTC +3.2% 📈",
-        "BTC контекст: +3.6% за 12ч 📈",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-23 12:06:47"
+    },
     {
       "symbol": "MOODENGUSDT",
       "direction": "LONG",
@@ -4097,20 +4062,6 @@
       "close_price": 1.078815,
       "taken_at": "2026-03-22T03:38:50.400134",
       "closed_at": "2026-03-22 04:27:11"
-    },
-    {
-      "symbol": "SIRENUSDT",
-      "direction": "LONG",
-      "entry": 0.96838,
-      "tp1": 0.990166,
-      "tp2": 1.011953,
-      "sl": 0.96838,
-      "strength": 56,
-      "status": "TP2",
-      "pnl_pct": 4.95,
-      "close_price": 1.016275,
-      "taken_at": "2026-03-22T02:12:06.320164",
-      "closed_at": "2026-03-22 03:36:04"
     }
   ]
 }
