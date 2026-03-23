@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-23T09:26:39.778308+00:00",
+  "updated_at": "2026-03-23T09:27:15.121732+00:00",
   "publish_status": {
-    "last_ok": "2026-03-23T09:25:39Z",
+    "last_ok": "2026-03-23T09:26:46Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -12,17 +12,17 @@
   "stats": {
     "total": 1085,
     "wins": 359,
-    "losses": 276,
-    "active": 15,
-    "winrate": 56.5
+    "losses": 277,
+    "active": 14,
+    "winrate": 56.4
   },
   "trade_stats": {
-    "open": 14,
+    "open": 13,
     "pending": 0,
     "wins": 423,
-    "losses": 459,
-    "total_pnl": 24.36,
-    "winrate": 48.0
+    "losses": 460,
+    "total_pnl": 21.98,
+    "winrate": 47.9
   },
   "fear_greed": {
     "value": 8,
@@ -319,29 +319,6 @@
       "status": "ACTIVE"
     },
     {
-      "id": 1121,
-      "symbol": "PIPPINUSDT",
-      "direction": "SHORT",
-      "exchange": "binance",
-      "entry": 0.08517,
-      "tp1": 0.082912,
-      "tp2": 0.080655,
-      "sl": 0.086976,
-      "strength": 61,
-      "reasons": [
-        "MACD медвежий (hist=-0.00021)",
-        "Цена < EMA20 < EMA50",
-        "Объём x2.5 🔥🔥",
-        "Стакан: сильное давление продажи (-0.47)",
-        "МТФ: 5m, 15m, 1h согласны",
-        "OI растёт +3.6% + цена ↓",
-        "CVD падает (-5.5%) — продажи усиливаются 📉"
-      ],
-      "news": null,
-      "created_at": "2026-03-23 09:10:47",
-      "status": "ACTIVE"
-    },
-    {
       "id": 1122,
       "symbol": "CYSUSDT",
       "direction": "LONG",
@@ -389,6 +366,26 @@
     }
   ],
   "history": [
+    {
+      "symbol": "PIPPINUSDT",
+      "direction": "SHORT",
+      "entry": 0.08517,
+      "tp1": 0.082912,
+      "tp2": 0.080655,
+      "sl": 0.086976,
+      "strength": 61,
+      "status": "SL",
+      "created_at": "2026-03-23 09:10:47",
+      "reasons": [
+        "MACD медвежий (hist=-0.00021)",
+        "Цена < EMA20 < EMA50",
+        "Объём x2.5 🔥🔥",
+        "Стакан: сильное давление продажи (-0.47)",
+        "МТФ: 5m, 15m, 1h согласны",
+        "OI растёт +3.6% + цена ↓",
+        "CVD падает (-5.5%) — продажи усиливаются 📉"
+      ]
+    },
     {
       "symbol": "UAIUSDT",
       "direction": "LONG",
@@ -778,27 +775,6 @@
         "CVD растёт (+11.8%) — покупки усиливаются 📈",
         "⚡ Рыночный вход (MTF сильный)"
       ]
-    },
-    {
-      "symbol": "PUMPFUNUSDT",
-      "direction": "SHORT",
-      "entry": 0.0018003,
-      "tp1": 0.001764,
-      "tp2": 0.001728,
-      "sl": 0.001836,
-      "strength": 56,
-      "status": "EXPIRED",
-      "created_at": "2026-03-23 03:28:36",
-      "reasons": [
-        "RSI=75 (сильная перекупленность)",
-        "BB верхняя полоса (пробой)",
-        "EMA20 < EMA50",
-        "Объём x4.1 🔥🔥🔥",
-        "Стакан: перевес ask (-0.08)",
-        "МТФ: 15m, 4h согласны",
-        "OI растёт +0.8% + цена ↓",
-        "Цена у сопротивления 0.0018"
-      ]
     }
   ],
   "trades_open": [
@@ -1096,32 +1072,6 @@
       ]
     },
     {
-      "id": 975,
-      "symbol": "PIPPINUSDT",
-      "direction": "SHORT",
-      "exchange": "binance",
-      "entry": 0.08517,
-      "tp1": 0.082912,
-      "tp2": 0.080655,
-      "sl": 0.086976,
-      "entry_orig": 0.08517,
-      "tp1_orig": 0.082912,
-      "tp2_orig": 0.080655,
-      "sl_orig": 0.086976,
-      "strength": 61,
-      "taken_at": "2026-03-23T09:10:51.105758",
-      "status": "OPEN",
-      "reasons": [
-        "MACD медвежий (hist=-0.00021)",
-        "Цена < EMA20 < EMA50",
-        "Объём x2.5 🔥🔥",
-        "Стакан: сильное давление продажи (-0.47)",
-        "МТФ: 5m, 15m, 1h согласны",
-        "OI растёт +3.6% + цена ↓",
-        "CVD падает (-5.5%) — продажи усиливаются 📉"
-      ]
-    },
-    {
       "id": 976,
       "symbol": "CYSUSDT",
       "direction": "LONG",
@@ -1175,6 +1125,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "PIPPINUSDT",
+      "direction": "SHORT",
+      "entry": 0.08517,
+      "tp1": 0.082912,
+      "tp2": 0.080655,
+      "sl": 0.086976,
+      "strength": 61,
+      "status": "SL",
+      "pnl_pct": -2.38,
+      "close_price": 0.087195,
+      "taken_at": "2026-03-23T09:10:51.105758",
+      "closed_at": "2026-03-23 09:27:14"
+    },
     {
       "symbol": "1000SHIBUSDT",
       "direction": "SHORT",
@@ -3960,20 +3924,6 @@
       "close_price": 0.0083405,
       "taken_at": "2026-03-21T20:11:13.723105",
       "closed_at": "2026-03-21 20:26:01"
-    },
-    {
-      "symbol": "GUAUSDT",
-      "direction": "LONG",
-      "entry": 0.29707,
-      "tp1": 0.303011,
-      "tp2": 0.308953,
-      "sl": 0.291129,
-      "strength": 51,
-      "status": "SL",
-      "pnl_pct": -2.18,
-      "close_price": 0.29058,
-      "taken_at": "2026-03-21T18:41:41.116368",
-      "closed_at": "2026-03-21 20:21:14"
     }
   ]
 }
