@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-03-23T10:41:26.076033+00:00",
+  "updated_at": "2026-03-23T10:42:55.560027+00:00",
   "publish_status": {
     "last_ok": "2026-03-23T10:40:35Z",
-    "last_error": null,
+    "last_error": "fatal: unable to access 'https://github.com/MUMITROLIK/trybotmy.git/': Failed to connect to github.com port 443 after 21062 ms: Could not connect to server\n",
     "min_push_interval_sec": 30
   },
   "settings": {
