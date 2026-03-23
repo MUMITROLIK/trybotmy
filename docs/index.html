@@ -1329,17 +1329,17 @@ function updateUI(d){
 
   document.getElementById('statSignals').textContent=st.total||0;
   document.getElementById('statWL').textContent='✅'+(st.wins||0)+' ❌'+(st.losses||0)+' · сигналы';
-  document.getElementById('sBadge1').textContent=''+(st.wins||0)+'W/'+( st.losses||0)+'L';
+  var b1=document.getElementById('sBadge1'); if(b1) b1.textContent=''+(st.wins||0)+'W/'+(st.losses||0)+'L';
   document.getElementById('statPos').textContent=ts.open||0;
   document.getElementById('statPend').textContent=(ts.pending||0)+' лимиток ожидает';
-  document.getElementById('sBadge2').textContent=(ts.pending||0)+' лимиток';
+  var b2=document.getElementById('sBadge2'); if(b2) b2.textContent=(ts.pending||0)+' лимиток';
   document.getElementById('statWR').textContent=wr+'%';
   document.getElementById('statWLT').textContent='из '+tot+' завершённых сделок';
-  document.getElementById('sBadge3').textContent='✅'+tw+' / ❌'+tl;
+  var b3=document.getElementById('sBadge3'); if(b3) b3.textContent='✅'+tw+' / ❌'+tl;
 
   var pnl=ts.total_pnl||0;
   var pe=document.getElementById('statPnl');pe.textContent=(pnl>=0?'+':'')+pnl.toFixed(2)+'%';pe.className='stat-val '+(pnl>=0?'g':'r');
-  document.getElementById('pnlCard').className='stat-card '+(pnl>=0?'cg':'cr')+' au d4';
+  var pc=document.getElementById('pnlCard'); if(pc) pc.className='stat-card '+(pnl>=0?'cg':'cr')+' au d4';
 
   // F&G
   var fg=d.fear_greed||{value:50,label:'Нейтрально',emoji:'😐'};var fgm=fgM(fg.value);
