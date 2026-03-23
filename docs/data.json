@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-23T08:30:24.927690+00:00",
+  "updated_at": "2026-03-23T08:31:30.930689+00:00",
   "publish_status": {
-    "last_ok": "2026-03-23T08:29:24Z",
+    "last_ok": "2026-03-23T08:30:30Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 1078,
+    "total": 1079,
     "wins": 358,
     "losses": 274,
-    "active": 12,
+    "active": 13,
     "winrate": 56.6
   },
   "trade_stats": {
-    "open": 11,
+    "open": 12,
     "pending": 0,
     "wins": 421,
     "losses": 457,
@@ -317,6 +317,29 @@
       ],
       "news": null,
       "created_at": "2026-03-23 08:27:47",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1117,
+      "symbol": "PAXGUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 4252.93,
+      "tp1": 4337.9886,
+      "tp2": 4423.0472,
+      "sl": 4167.8714,
+      "strength": 53,
+      "reasons": [
+        "RSI=35 (перепроданность)",
+        "MACD бычий (hist=2.01171)",
+        "BB ниже середины",
+        "Стакан: сильное давление покупки (+0.73)",
+        "OI растёт +10.9%",
+        "CVD положительный (+2.1%)",
+        "Bullish Engulfing (1h) 🕯️"
+      ],
+      "news": null,
+      "created_at": "2026-03-23 08:31:06",
       "status": "ACTIVE"
     }
   ],
@@ -1024,6 +1047,32 @@
         "МТФ: 5m, 15m, 1h согласны",
         "OI растёт +0.9% + цена ↑",
         "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
+    {
+      "id": 971,
+      "symbol": "PAXGUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 4252.93,
+      "tp1": 4337.9886,
+      "tp2": 4423.0472,
+      "sl": 4167.8714,
+      "entry_orig": 4252.93,
+      "tp1_orig": 4337.9886,
+      "tp2_orig": 4423.0472,
+      "sl_orig": 4167.8714,
+      "strength": 53,
+      "taken_at": "2026-03-23T08:31:06.878221",
+      "status": "OPEN",
+      "reasons": [
+        "RSI=35 (перепроданность)",
+        "MACD бычий (hist=2.01171)",
+        "BB ниже середины",
+        "Стакан: сильное давление покупки (+0.73)",
+        "OI растёт +10.9%",
+        "CVD положительный (+2.1%)",
+        "Bullish Engulfing (1h) 🕯️"
       ]
     }
   ],
