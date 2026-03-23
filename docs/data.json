@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-23T14:03:14.701904+00:00",
+  "updated_at": "2026-03-23T14:04:02.919806+00:00",
   "publish_status": {
-    "last_ok": "2026-03-23T14:02:14Z",
+    "last_ok": "2026-03-23T14:03:20Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 1137,
+    "total": 1138,
     "wins": 375,
     "losses": 303,
-    "active": 17,
+    "active": 18,
     "winrate": 55.3
   },
   "trade_stats": {
-    "open": 19,
+    "open": 20,
     "pending": 0,
     "wins": 440,
     "losses": 489,
@@ -450,6 +450,31 @@
       ],
       "news": "‘Ethereum is in the final stages of mini-crypto winter,’ Tom Lee says as Bitmine adds another 65,341 ETH",
       "created_at": "2026-03-23 14:02:26",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1176,
+      "symbol": "KITEUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.2268,
+      "tp1": 0.231336,
+      "tp2": 0.235872,
+      "sl": 0.222264,
+      "strength": 52,
+      "reasons": [
+        "RSI=50 (нейтральный↓)",
+        "MACD бычий (hist=0.00000)",
+        "Цена > EMA20 > EMA50",
+        "Стакан: сильное давление покупки (+0.46)",
+        "МТФ: 15m, 4h согласны",
+        "OI растёт +1.4% + цена ↑",
+        "CVD положительный (+2.5%)",
+        "BTC контекст: +5.1% за 12ч 📈",
+        "⚡ Рыночный вход (MTF 2+ ТФ)"
+      ],
+      "news": null,
+      "created_at": "2026-03-23 14:04:02",
       "status": "ACTIVE"
     }
   ],
@@ -1412,6 +1437,34 @@
         "CVD растёт (+6.1%) — покупки усиливаются 📈",
         "Doji (1h) — нерешительность",
         "BTC корреляция 0.93, BTC +4.3% 📈",
+        "BTC контекст: +5.1% за 12ч 📈",
+        "⚡ Рыночный вход (MTF 2+ ТФ)"
+      ]
+    },
+    {
+      "id": 1030,
+      "symbol": "KITEUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.2268,
+      "tp1": 0.231336,
+      "tp2": 0.235872,
+      "sl": 0.222264,
+      "entry_orig": 0.2268,
+      "tp1_orig": 0.231336,
+      "tp2_orig": 0.235872,
+      "sl_orig": 0.222264,
+      "strength": 52,
+      "taken_at": "2026-03-23T14:04:02.823188",
+      "status": "OPEN",
+      "reasons": [
+        "RSI=50 (нейтральный↓)",
+        "MACD бычий (hist=0.00000)",
+        "Цена > EMA20 > EMA50",
+        "Стакан: сильное давление покупки (+0.46)",
+        "МТФ: 15m, 4h согласны",
+        "OI растёт +1.4% + цена ↑",
+        "CVD положительный (+2.5%)",
         "BTC контекст: +5.1% за 12ч 📈",
         "⚡ Рыночный вход (MTF 2+ ТФ)"
       ]
