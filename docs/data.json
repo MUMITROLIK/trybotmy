@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-23T10:13:03.172768+00:00",
+  "updated_at": "2026-03-23T10:14:04.860567+00:00",
   "publish_status": {
-    "last_ok": "2026-03-23T10:12:03Z",
+    "last_ok": "2026-03-23T10:13:09Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 56.4
   },
   "trade_stats": {
-    "open": 16,
+    "open": 15,
     "pending": 0,
-    "wins": 424,
+    "wins": 425,
     "losses": 461,
-    "total_pnl": 21.05,
-    "winrate": 47.9
+    "total_pnl": 23.12,
+    "winrate": 48.0
   },
   "fear_greed": {
     "value": 8,
@@ -846,33 +846,6 @@
   ],
   "trades_open": [
     {
-      "id": 951,
-      "symbol": "NIGHTUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.04473,
-      "tp1": 0.045625,
-      "tp2": 0.046519,
-      "sl": 0.043835,
-      "entry_orig": 0.04473,
-      "tp1_orig": 0.045625,
-      "tp2_orig": 0.046519,
-      "sl_orig": 0.043835,
-      "strength": 56,
-      "taken_at": "2026-03-23T05:14:47.112760",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00012)",
-        "Цена > EMA20 > EMA50",
-        "Объём x4.2 🔥🔥🔥",
-        "Стакан: перевес bid (+0.05)",
-        "МТФ: 5m, 15m согласны",
-        "CVD растёт (+12.4%) — покупки усиливаются 📈",
-        "BTC корреляция 0.70, BTC +1.2% 📈",
-        "⚡ Рыночный вход (MTF 2+ ТФ)"
-      ]
-    },
-    {
       "id": 959,
       "symbol": "CRCLUSDT",
       "direction": "LONG",
@@ -1268,6 +1241,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "NIGHTUSDT",
+      "direction": "LONG",
+      "entry": 0.04473,
+      "tp1": 0.045625,
+      "tp2": 0.046519,
+      "sl": 0.043835,
+      "strength": 56,
+      "status": "TP1",
+      "pnl_pct": 2.07,
+      "close_price": 0.045655,
+      "taken_at": "2026-03-23T05:14:47.112760",
+      "closed_at": "2026-03-23 10:14:04"
+    },
     {
       "symbol": "CYSUSDT",
       "direction": "LONG",
@@ -4053,20 +4040,6 @@
       "close_price": 0.044045,
       "taken_at": "2026-03-21T20:00:11.526738",
       "closed_at": "2026-03-21 21:32:10"
-    },
-    {
-      "symbol": "DEXEUSDT",
-      "direction": "LONG",
-      "entry": 6.5775,
-      "tp1": 6.70905,
-      "tp2": 6.8406,
-      "sl": 6.5775,
-      "strength": 53,
-      "status": "TP2",
-      "pnl_pct": 4.52,
-      "close_price": 6.8751,
-      "taken_at": "2026-03-21T20:11:14.041793",
-      "closed_at": "2026-03-21 21:29:52"
     }
   ]
 }
