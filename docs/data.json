@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-23T07:05:30.560851+00:00",
+  "updated_at": "2026-03-23T07:06:19.304460+00:00",
   "publish_status": {
-    "last_ok": "2026-03-23T07:04:30Z",
+    "last_ok": "2026-03-23T07:05:36Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 56.9
   },
   "trade_stats": {
-    "open": 10,
+    "open": 9,
     "pending": 0,
-    "wins": 418,
+    "wins": 419,
     "losses": 452,
-    "total_pnl": 28.64,
-    "winrate": 48.0
+    "total_pnl": 30.87,
+    "winrate": 48.1
   },
   "fear_greed": {
     "value": 8,
@@ -691,33 +691,6 @@
       ]
     },
     {
-      "id": 943,
-      "symbol": "PUMPFUNUSDT",
-      "direction": "SHORT",
-      "exchange": "bybit",
-      "entry": 0.0018003,
-      "tp1": 0.001764,
-      "tp2": 0.001728,
-      "sl": 0.001836,
-      "entry_orig": 0.0018003,
-      "tp1_orig": 0.001764,
-      "tp2_orig": 0.001728,
-      "sl_orig": 0.001836,
-      "strength": 56,
-      "taken_at": "2026-03-23T03:28:36.505710",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=75 (сильная перекупленность)",
-        "BB верхняя полоса (пробой)",
-        "EMA20 < EMA50",
-        "Объём x4.1 🔥🔥🔥",
-        "Стакан: перевес ask (-0.08)",
-        "МТФ: 15m, 4h согласны",
-        "OI растёт +0.8% + цена ↓",
-        "Цена у сопротивления 0.0018"
-      ]
-    },
-    {
       "id": 945,
       "symbol": "DUSKUSDT",
       "direction": "LONG",
@@ -933,6 +906,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "PUMPFUNUSDT",
+      "direction": "SHORT",
+      "entry": 0.0018003,
+      "tp1": 0.001764,
+      "tp2": 0.001728,
+      "sl": 0.001836,
+      "strength": 56,
+      "status": "TP1",
+      "pnl_pct": 2.23,
+      "close_price": 0.0017602,
+      "taken_at": "2026-03-23T03:28:36.505710",
+      "closed_at": "2026-03-23 07:06:19"
+    },
     {
       "symbol": "KITEUSDT",
       "direction": "LONG",
@@ -3718,20 +3705,6 @@
       "close_price": 32.57,
       "taken_at": "2026-03-21T14:11:47.709962",
       "closed_at": "2026-03-21 16:41:39"
-    },
-    {
-      "symbol": "GUNUSDT",
-      "direction": "LONG",
-      "entry": 0.02113,
-      "tp1": 0.021627,
-      "tp2": 0.022124,
-      "sl": 0.020707,
-      "strength": 53,
-      "status": "SL",
-      "pnl_pct": -2.08,
-      "close_price": 0.02069,
-      "taken_at": "2026-03-21T14:57:43.937932",
-      "closed_at": "2026-03-21 16:29:48"
     }
   ]
 }
