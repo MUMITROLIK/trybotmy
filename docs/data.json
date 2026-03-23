@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-23T17:58:50.192691+00:00",
+  "updated_at": "2026-03-23T17:59:30.409722+00:00",
   "publish_status": {
     "last_ok": "2026-03-23T17:48:21Z",
     "last_error": "fatal: unable to access 'https://github.com/MUMITROLIK/trybotmy.git/': Could not resolve host: github.com\n",
@@ -11,17 +11,17 @@
   },
   "stats": {
     "total": 1163,
-    "wins": 382,
+    "wins": 383,
     "losses": 317,
-    "active": 15,
-    "winrate": 54.6
+    "active": 14,
+    "winrate": 54.7
   },
   "trade_stats": {
-    "open": 20,
+    "open": 19,
     "pending": 0,
-    "wins": 448,
+    "wins": 449,
     "losses": 506,
-    "total_pnl": -26.18,
+    "total_pnl": -24.08,
     "winrate": 47.0
   },
   "fear_greed": {
@@ -234,31 +234,6 @@
       "status": "ACTIVE"
     },
     {
-      "id": 1195,
-      "symbol": "MSTRUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 134.59,
-      "tp1": 137.2818,
-      "tp2": 139.9736,
-      "sl": 131.8982,
-      "strength": 50,
-      "reasons": [
-        "RSI=28 (сильная перепроданность)",
-        "BB нижняя зона (11%)",
-        "EMA20 > EMA50",
-        "Стакан: давление покупки (+0.13)",
-        "МТФ: только 1 таймфрейм согласен",
-        "OI растёт +36.1% + цена ↑",
-        "CVD растёт (+14.4%) — покупки усиливаются 📈",
-        "Цена у поддержки 134.0900",
-        "BTC контекст: +3.0% за 12ч 📈"
-      ],
-      "news": null,
-      "created_at": "2026-03-23 17:26:19",
-      "status": "ACTIVE"
-    },
-    {
       "id": 1196,
       "symbol": "DEXEUSDT",
       "direction": "LONG",
@@ -405,6 +380,28 @@
     }
   ],
   "history": [
+    {
+      "symbol": "MSTRUSDT",
+      "direction": "LONG",
+      "entry": 134.59,
+      "tp1": 137.2818,
+      "tp2": 139.9736,
+      "sl": 131.8982,
+      "strength": 50,
+      "status": "TP1",
+      "created_at": "2026-03-23 17:26:19",
+      "reasons": [
+        "RSI=28 (сильная перепроданность)",
+        "BB нижняя зона (11%)",
+        "EMA20 > EMA50",
+        "Стакан: давление покупки (+0.13)",
+        "МТФ: только 1 таймфрейм согласен",
+        "OI растёт +36.1% + цена ↑",
+        "CVD растёт (+14.4%) — покупки усиливаются 📈",
+        "Цена у поддержки 134.0900",
+        "BTC контекст: +3.0% за 12ч 📈"
+      ]
+    },
     {
       "symbol": "BANANAS31USDT",
       "direction": "LONG",
@@ -818,28 +815,6 @@
         "BTC контекст: +4.0% за 12ч 📈",
         "⚡ Рыночный вход (MTF сильный)"
       ]
-    },
-    {
-      "symbol": "MAGMAUSDT",
-      "direction": "LONG",
-      "entry": 0.12926,
-      "tp1": 0.132891,
-      "tp2": 0.136522,
-      "sl": 0.126355,
-      "strength": 50,
-      "status": "SL",
-      "created_at": "2026-03-23 13:08:06",
-      "reasons": [
-        "MACD бычий (hist=0.00133)",
-        "Цена выше EMA20",
-        "Объём x1.8 🔥",
-        "Стакан: сильное давление покупки (+0.40)",
-        "МТФ: 5m, 1h, 4h согласны",
-        "CVD положительный (-1.6%)",
-        "Doji (1h) — нерешительность",
-        "BTC контекст: +3.9% за 12ч 📈",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
     }
   ],
   "trades_open": [
@@ -1202,34 +1177,6 @@
       ]
     },
     {
-      "id": 1049,
-      "symbol": "MSTRUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 134.59,
-      "tp1": 137.2818,
-      "tp2": 139.9736,
-      "sl": 131.8982,
-      "entry_orig": 134.59,
-      "tp1_orig": 137.2818,
-      "tp2_orig": 139.9736,
-      "sl_orig": 131.8982,
-      "strength": 50,
-      "taken_at": "2026-03-23T17:26:20.249825",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=28 (сильная перепроданность)",
-        "BB нижняя зона (11%)",
-        "EMA20 > EMA50",
-        "Стакан: давление покупки (+0.13)",
-        "МТФ: только 1 таймфрейм согласен",
-        "OI растёт +36.1% + цена ↑",
-        "CVD растёт (+14.4%) — покупки усиливаются 📈",
-        "Цена у поддержки 134.0900",
-        "BTC контекст: +3.0% за 12ч 📈"
-      ]
-    },
-    {
       "id": 1050,
       "symbol": "DEXEUSDT",
       "direction": "LONG",
@@ -1394,6 +1341,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "MSTRUSDT",
+      "direction": "LONG",
+      "entry": 134.59,
+      "tp1": 137.2818,
+      "tp2": 139.9736,
+      "sl": 131.8982,
+      "strength": 50,
+      "status": "TP1",
+      "pnl_pct": 2.1,
+      "close_price": 137.415,
+      "taken_at": "2026-03-23T17:26:20.249825",
+      "closed_at": "2026-03-23 17:59:30"
+    },
     {
       "symbol": "BANANAS31USDT",
       "direction": "LONG",
@@ -4179,20 +4140,6 @@
       "close_price": 0.05839,
       "taken_at": "2026-03-22T10:59:10.791278",
       "closed_at": "2026-03-22 12:05:22"
-    },
-    {
-      "symbol": "PUMPUSDT",
-      "direction": "LONG",
-      "entry": 0.001808,
-      "tp1": 0.001844,
-      "tp2": 0.00188,
-      "sl": 0.001772,
-      "strength": 53,
-      "status": "SL",
-      "pnl_pct": -2.13,
-      "close_price": 0.0017695,
-      "taken_at": "2026-03-22T08:12:15.441310",
-      "closed_at": "2026-03-22 11:41:27"
     }
   ]
 }
