@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-23T15:45:35.382257+00:00",
+  "updated_at": "2026-03-23T15:46:08.842153+00:00",
   "publish_status": {
-    "last_ok": "2026-03-23T15:44:26Z",
+    "last_ok": "2026-03-23T15:45:41Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,11 +17,11 @@
     "winrate": 54.9
   },
   "trade_stats": {
-    "open": 15,
+    "open": 14,
     "pending": 0,
     "wins": 444,
-    "losses": 498,
-    "total_pnl": -18.74,
+    "losses": 499,
+    "total_pnl": -21.28,
     "winrate": 47.1
   },
   "fear_greed": {
@@ -1009,35 +1009,6 @@
       ]
     },
     {
-      "id": 1036,
-      "symbol": "KASUSDT",
-      "direction": "LONG",
-      "exchange": "bybit",
-      "entry": 0.03619,
-      "tp1": 0.036914,
-      "tp2": 0.037638,
-      "sl": 0.035466,
-      "entry_orig": 0.03619,
-      "tp1_orig": 0.036914,
-      "tp2_orig": 0.037638,
-      "sl_orig": 0.035466,
-      "strength": 60,
-      "taken_at": "2026-03-23T15:12:40.825563",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00008)",
-        "EMA20 > EMA50 (golden cross) 🌟",
-        "Объём x4.2 🔥🔥🔥",
-        "Стакан: сильное давление покупки (+0.31)",
-        "МТФ: 5m, 15m согласны",
-        "OI растёт +3.3%",
-        "BTC корреляция 0.74, BTC +1.8% 📈",
-        "⚠️ Funding через 48м",
-        "BTC контекст: +4.9% за 12ч 📈",
-        "⚡ Рыночный вход (MTF 2+ ТФ)"
-      ]
-    },
-    {
       "id": 1037,
       "symbol": "MAGMAUSDT",
       "direction": "LONG",
@@ -1096,6 +1067,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "KASUSDT",
+      "direction": "LONG",
+      "entry": 0.03619,
+      "tp1": 0.036914,
+      "tp2": 0.037638,
+      "sl": 0.035466,
+      "strength": 60,
+      "status": "SL",
+      "pnl_pct": -2.54,
+      "close_price": 0.03527,
+      "taken_at": "2026-03-23T15:12:40.825563",
+      "closed_at": "2026-03-23 15:45:42"
+    },
     {
       "symbol": "TAOUSDT",
       "direction": "LONG",
@@ -3881,20 +3866,6 @@
       "close_price": 0.17377,
       "taken_at": "2026-03-22T08:21:06.246969",
       "closed_at": "2026-03-22 09:39:46"
-    },
-    {
-      "symbol": "BRUSDT",
-      "direction": "LONG",
-      "entry": 0.07307,
-      "tp1": 0.075748,
-      "tp2": 0.078425,
-      "sl": 0.07307,
-      "strength": 52,
-      "status": "TP2",
-      "pnl_pct": 11.56,
-      "close_price": 0.08152,
-      "taken_at": "2026-03-22T07:05:54.044814",
-      "closed_at": "2026-03-22 09:28:22"
     }
   ]
 }
