@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-23T21:14:58.333728+00:00",
+  "updated_at": "2026-03-23T21:16:04.655618+00:00",
   "publish_status": {
-    "last_ok": "2026-03-23T21:13:58Z",
+    "last_ok": "2026-03-23T21:15:04Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 1178,
+    "total": 1179,
     "wins": 392,
     "losses": 323,
-    "active": 9,
+    "active": 10,
     "winrate": 54.8
   },
   "trade_stats": {
-    "open": 15,
+    "open": 16,
     "pending": 0,
     "wins": 460,
     "losses": 514,
@@ -256,6 +256,29 @@
       ],
       "news": "Breaking Down The $100 XRP Prophecy: Is There A Timeline?",
       "created_at": "2026-03-23 21:06:21",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1217,
+      "symbol": "LIGHTUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.383,
+      "tp1": 0.398568,
+      "tp2": 0.414136,
+      "sl": 0.370546,
+      "strength": 50,
+      "reasons": [
+        "MACD бычий (hist=0.00260)",
+        "Цена > EMA20 > EMA50",
+        "Стакан: давление покупки (+0.19)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +5.1% + цена ↑",
+        "CVD положительный (+0.8%)",
+        "⚡ Рыночный вход (MTF сильный)"
+      ],
+      "news": null,
+      "created_at": "2026-03-23 21:15:05",
       "status": "ACTIVE"
     }
   ],
@@ -1101,6 +1124,32 @@
         "МТФ: 5m, 15m, 1h согласны",
         "OI растёт +1.4% + цена ↑",
         "CVD положительный (-7.0%)",
+        "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
+    {
+      "id": 1071,
+      "symbol": "LIGHTUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.383,
+      "tp1": 0.398568,
+      "tp2": 0.414136,
+      "sl": 0.370546,
+      "entry_orig": 0.383,
+      "tp1_orig": 0.398568,
+      "tp2_orig": 0.414136,
+      "sl_orig": 0.370546,
+      "strength": 50,
+      "taken_at": "2026-03-23T21:15:05.781966",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.00260)",
+        "Цена > EMA20 > EMA50",
+        "Стакан: давление покупки (+0.19)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +5.1% + цена ↑",
+        "CVD положительный (+0.8%)",
         "⚡ Рыночный вход (MTF сильный)"
       ]
     }
