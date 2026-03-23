@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-23T16:26:16.356532+00:00",
+  "updated_at": "2026-03-23T16:27:10.710467+00:00",
   "publish_status": {
-    "last_ok": "2026-03-23T16:25:11Z",
+    "last_ok": "2026-03-23T16:26:23Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,11 +17,11 @@
     "winrate": 54.7
   },
   "trade_stats": {
-    "open": 12,
+    "open": 11,
     "pending": 0,
     "wins": 444,
-    "losses": 502,
-    "total_pnl": -27.98,
+    "losses": 503,
+    "total_pnl": -30.11,
     "winrate": 46.9
   },
   "fear_greed": {
@@ -627,32 +627,6 @@
   ],
   "trades_open": [
     {
-      "id": 985,
-      "symbol": "1000TURBOUSDT",
-      "direction": "LONG",
-      "exchange": "bybit",
-      "entry": 1.1642,
-      "tp1": 1.190707,
-      "tp2": 1.217214,
-      "sl": 1.140916,
-      "entry_orig": 1.1642,
-      "tp1_orig": 1.190707,
-      "tp2_orig": 1.217214,
-      "sl_orig": 1.140916,
-      "strength": 54,
-      "taken_at": "2026-03-23T10:29:12.144778",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00277)",
-        "EMA20 > EMA50 (golden cross) 🌟",
-        "Объём x2.2 🔥",
-        "Стакан: сильное давление покупки (+0.34)",
-        "МТФ: 5m, 15m, 4h согласны",
-        "OI растёт +1.4% + цена ↑",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 995,
       "symbol": "BNBUSDT",
       "direction": "LONG",
@@ -963,6 +937,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "1000TURBOUSDT",
+      "direction": "LONG",
+      "entry": 1.1642,
+      "tp1": 1.190707,
+      "tp2": 1.217214,
+      "sl": 1.140916,
+      "strength": 54,
+      "status": "SL",
+      "pnl_pct": -2.13,
+      "close_price": 1.1394,
+      "taken_at": "2026-03-23T10:29:12.144778",
+      "closed_at": "2026-03-23 16:26:23"
+    },
     {
       "symbol": "1000PEPEUSDT",
       "direction": "LONG",
@@ -3748,20 +3736,6 @@
       "close_price": 0.22682,
       "taken_at": "2026-03-22T07:14:38.315115",
       "closed_at": "2026-03-22 10:50:16"
-    },
-    {
-      "symbol": "KATUSDT",
-      "direction": "LONG",
-      "entry": 0.01157,
-      "tp1": 0.011963,
-      "tp2": 0.012356,
-      "sl": 0.01157,
-      "strength": 54,
-      "status": "TP2",
-      "pnl_pct": 7.56,
-      "close_price": 0.012445,
-      "taken_at": "2026-03-22T09:00:47.444404",
-      "closed_at": "2026-03-22 10:28:11"
     }
   ]
 }
