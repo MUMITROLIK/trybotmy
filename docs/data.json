@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-23T08:32:36.970112+00:00",
+  "updated_at": "2026-03-23T08:33:43.060688+00:00",
   "publish_status": {
-    "last_ok": "2026-03-23T08:31:36Z",
+    "last_ok": "2026-03-23T08:32:43Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 1079,
+    "total": 1080,
     "wins": 358,
     "losses": 274,
-    "active": 13,
+    "active": 14,
     "winrate": 56.6
   },
   "trade_stats": {
-    "open": 12,
+    "open": 13,
     "pending": 0,
     "wins": 421,
     "losses": 457,
@@ -340,6 +340,28 @@
       ],
       "news": null,
       "created_at": "2026-03-23 08:31:06",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1118,
+      "symbol": "1000TURBOUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 1.1672,
+      "tp1": 1.190544,
+      "tp2": 1.213888,
+      "sl": 1.143856,
+      "strength": 51,
+      "reasons": [
+        "MACD бычий (hist=0.00257)",
+        "EMA20 > EMA50 (golden cross) 🌟",
+        "Стакан: сильное давление покупки (+0.30)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +0.7% + цена ↑",
+        "⚡ Рыночный вход (MTF сильный)"
+      ],
+      "news": null,
+      "created_at": "2026-03-23 08:32:47",
       "status": "ACTIVE"
     }
   ],
@@ -1073,6 +1095,31 @@
         "OI растёт +10.9%",
         "CVD положительный (+2.1%)",
         "Bullish Engulfing (1h) 🕯️"
+      ]
+    },
+    {
+      "id": 972,
+      "symbol": "1000TURBOUSDT",
+      "direction": "LONG",
+      "exchange": "bybit",
+      "entry": 1.1672,
+      "tp1": 1.190544,
+      "tp2": 1.213888,
+      "sl": 1.143856,
+      "entry_orig": 1.1672,
+      "tp1_orig": 1.190544,
+      "tp2_orig": 1.213888,
+      "sl_orig": 1.143856,
+      "strength": 51,
+      "taken_at": "2026-03-23T08:32:47.424381",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.00257)",
+        "EMA20 > EMA50 (golden cross) 🌟",
+        "Стакан: сильное давление покупки (+0.30)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +0.7% + цена ↑",
+        "⚡ Рыночный вход (MTF сильный)"
       ]
     }
   ],
