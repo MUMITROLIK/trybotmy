@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-03-23T10:42:55.560027+00:00",
+  "updated_at": "2026-03-23T10:43:39.770188+00:00",
   "publish_status": {
-    "last_ok": "2026-03-23T10:40:35Z",
-    "last_error": "fatal: unable to access 'https://github.com/MUMITROLIK/trybotmy.git/': Failed to connect to github.com port 443 after 21062 ms: Could not connect to server\n",
+    "last_ok": "2026-03-23T10:43:02Z",
+    "last_error": null,
     "min_push_interval_sec": 30
   },
   "settings": {
@@ -13,7 +13,7 @@
     "total": 1093,
     "wins": 361,
     "losses": 280,
-    "active": 17,
+    "active": 16,
     "winrate": 56.3
   },
   "trade_stats": {
@@ -36,31 +36,6 @@
     "trained_at": "2026-03-23T06:43:17.885041+00:00"
   },
   "signals": [
-    {
-      "id": 1105,
-      "symbol": "CRCLUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 120.13,
-      "tp1": 122.5326,
-      "tp2": 124.9352,
-      "sl": 117.7274,
-      "strength": 57,
-      "reasons": [
-        "RSI=32 (перепроданность)",
-        "MACD бычий (hist=0.00071)",
-        "BB нижняя полоса (пробой)",
-        "Объём x1.9 🔥",
-        "Стакан: сильное давление покупки (+0.31)",
-        "МТФ: только 1 таймфрейм согласен",
-        "OI растёт +1.3%",
-        "Цена у поддержки 120.1200",
-        "⚠️ Funding через 78м"
-      ],
-      "news": null,
-      "created_at": "2026-03-23 06:42:57",
-      "status": "ACTIVE"
-    },
     {
       "id": 1106,
       "symbol": "KASUSDT",
@@ -639,6 +614,28 @@
       ]
     },
     {
+      "symbol": "CRCLUSDT",
+      "direction": "LONG",
+      "entry": 120.13,
+      "tp1": 122.5326,
+      "tp2": 124.9352,
+      "sl": 117.7274,
+      "strength": 57,
+      "status": "EXPIRED",
+      "created_at": "2026-03-23 06:42:57",
+      "reasons": [
+        "RSI=32 (перепроданность)",
+        "MACD бычий (hist=0.00071)",
+        "BB нижняя полоса (пробой)",
+        "Объём x1.9 🔥",
+        "Стакан: сильное давление покупки (+0.31)",
+        "МТФ: только 1 таймфрейм согласен",
+        "OI растёт +1.3%",
+        "Цена у поддержки 120.1200",
+        "⚠️ Funding через 78м"
+      ]
+    },
+    {
       "symbol": "PAXGUSDT",
       "direction": "LONG",
       "entry": 4247.23,
@@ -818,28 +815,6 @@
         "МТФ: все 4 таймфрейма согласны ✅✅",
         "CVD растёт (+7.1%) — покупки усиливаются 📈",
         "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
-      "symbol": "PUMPUSDT",
-      "direction": "LONG",
-      "entry": 0.001814,
-      "tp1": 0.00185,
-      "tp2": 0.001887,
-      "sl": 0.001778,
-      "strength": 65,
-      "status": "SL",
-      "created_at": "2026-03-23 05:11:40",
-      "reasons": [
-        "MACD бычий (hist=0.00000)",
-        "Цена > EMA20 > EMA50",
-        "Объём x4.8 🔥🔥🔥",
-        "Стакан: сильное давление покупки (+0.27)",
-        "МТФ: 5m, 15m согласны",
-        "OI растёт +1.5%",
-        "CVD растёт (+18.2%) — покупки усиливаются 📈",
-        "BTC корреляция 0.74, BTC +1.2% 📈",
-        "⚡ Рыночный вход (MTF 2+ ТФ)"
       ]
     }
   ],
