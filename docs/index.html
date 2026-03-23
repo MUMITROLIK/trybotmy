@@ -1290,13 +1290,19 @@ function rPos(t){
   else pnl=t.pnl_pct||0;
   var pr=pnl>0.01,isN=Math.abs(pnl)<0.01,pc=pr?'pos':isN?'ne':'neg';
   var isL=t.direction==='LONG',sc=t.status==='TP1_HIT'?'tp1':t.status==='PENDING'?'pend':'open';
-  var h='<div class="pos-c '+(pr?'profit':isN?'neu':'loss')+'" id="pos-'+(t.id||t.symbol)+'">';
-  h+='<div class="pos-top"><div class="pos-sym-row"><span class="pos-sym">'+t.symbol+'</span><span class="pos-live-p live-cur" style="font-size:.82rem;font-weight:600;color:var(--B)">'+(lP!=null?fmt(lP):'—')+'</span></div><span class="dir-pill '+(isL?'long':'short')+'">'+(isL?'↑ LONG':'↓ SHORT')+'</span></div>';
-  h+='<div class="pos-pnl '+pc+'">'+(pnl>=0?'+':'')+pnl.toFixed(2)+'%</div>';
-  h+='<div class="pos-lvls"><div class="lvl"><span class="lvl-l">Вход</span><span class="lvl-v en">'+fmt(t.entry)+'</span></div><div class="lvl"><span class="lvl-l">ТП1</span><span class="lvl-v tp">'+fmt(t.tp1)+'</span></div><div class="lvl"><span class="lvl-l">ТП2</span><span class="lvl-v tp">'+fmt(t.tp2)+'</span></div><div class="lvl"><span class="lvl-l">СЛ</span><span class="lvl-v sl">'+fmt(t.sl)+'</span></div></div>';
-  h+='<div class="pb-wrap">'+buildPB(t,pnl,lP!=null?lP:t.entry)+'</div>';
-  h+='<div class="pos-foot"><span class="pos-stat '+sc+'">'+stLbl(t.status)+'</span><span class="pos-dur live-dur">'+(t.status!=='PENDING'?'⏱ '+durStr(t.taken_at):'')+'</span><span class="pos-ago live-ago">'+fmtT(t.taken_at)+'</span></div>';
-  return h+'</div>'
+  var rowCls=pr?'profit':isN?'neu':'loss';
+  return '<tr id="pos-'+(t.id||t.symbol)+'" class="'+rowCls+'" data-sym="'+t.symbol+'" onclick="loadChart(\''+t.symbol+'\')">' +
+    '<td><span class="tc-sym">'+t.symbol+'</span></td>'+
+    '<td><span class="dir-pill '+(isL?'long':'short')+'">'+(isL?'↑ L':'↓ S')+'</span></td>'+
+    '<td class="tc-price">'+fmt(t.entry)+'</td>'+
+    '<td class="tc-mark" data-price="'+(lP!=null?lP:t.entry)+'">'+fmt(lP!=null?lP:t.entry)+'</td>'+
+    '<td class="tc-green">'+fmt(t.tp1)+'</td>'+
+    '<td class="tc-green">'+fmt(t.tp2)+'</td>'+
+    '<td class="tc-red">'+fmt(t.sl)+'</td>'+
+    '<td class="tc-pnl"><span class="pnl-val '+pc+'">'+(pnl>=0?'+':'')+pnl.toFixed(2)+'%</span></td>'+
+    '<td><span class="pos-stat '+sc+'">'+stLbl(t.status)+'</span></td>'+
+    '<td class="tc-time live-dur">'+(t.status!=='PENDING'?durStr(t.taken_at):'—')+'</td>'+
+  '</tr>';
 }
 
 function rHist(h){
