@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-23T20:09:10.179854+00:00",
+  "updated_at": "2026-03-23T20:09:59.655556+00:00",
   "publish_status": {
-    "last_ok": "2026-03-23T20:08:16Z",
+    "last_ok": "2026-03-23T20:09:17Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -12,16 +12,16 @@
   "stats": {
     "total": 1174,
     "wins": 391,
-    "losses": 320,
-    "active": 14,
-    "winrate": 55.0
+    "losses": 321,
+    "active": 13,
+    "winrate": 54.9
   },
   "trade_stats": {
-    "open": 15,
+    "open": 14,
     "pending": 0,
     "wins": 459,
-    "losses": 511,
-    "total_pnl": -11.73,
+    "losses": 512,
+    "total_pnl": -13.74,
     "winrate": 47.3
   },
   "fear_greed": {
@@ -336,31 +336,6 @@
       "status": "ACTIVE"
     },
     {
-      "id": 1211,
-      "symbol": "ZROUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 2.168,
-      "tp1": 2.21136,
-      "tp2": 2.25472,
-      "sl": 2.12464,
-      "strength": 50,
-      "reasons": [
-        "MACD бычий (hist=0.01314)",
-        "Цена > EMA20 > EMA50",
-        "Объём x2.0 🔥",
-        "Стакан: давление покупки (+0.16)",
-        "МТФ: 5m, 15m, 1h согласны",
-        "CVD положительный (-2.6%)",
-        "BTC корреляция 0.66, BTC +1.3% 📈",
-        "BTC контекст: +3.9% за 12ч 📈",
-        "⚡ Рыночный вход (MTF сильный)"
-      ],
-      "news": null,
-      "created_at": "2026-03-23 19:27:39",
-      "status": "ACTIVE"
-    },
-    {
       "id": 1212,
       "symbol": "WLFIUSDT",
       "direction": "LONG",
@@ -386,6 +361,28 @@
     }
   ],
   "history": [
+    {
+      "symbol": "ZROUSDT",
+      "direction": "LONG",
+      "entry": 2.168,
+      "tp1": 2.21136,
+      "tp2": 2.25472,
+      "sl": 2.12464,
+      "strength": 50,
+      "status": "SL",
+      "created_at": "2026-03-23 19:27:39",
+      "reasons": [
+        "MACD бычий (hist=0.01314)",
+        "Цена > EMA20 > EMA50",
+        "Объём x2.0 🔥",
+        "Стакан: давление покупки (+0.16)",
+        "МТФ: 5m, 15m, 1h согласны",
+        "CVD положительный (-2.6%)",
+        "BTC корреляция 0.66, BTC +1.3% 📈",
+        "BTC контекст: +3.9% за 12ч 📈",
+        "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
     {
       "symbol": "XPLUSDT",
       "direction": "LONG",
@@ -797,28 +794,6 @@
         "BTC контекст: +5.0% за 12ч 📈",
         "⚡ Рыночный вход (MTF сильный)"
       ]
-    },
-    {
-      "symbol": "BANANAS31USDT",
-      "direction": "LONG",
-      "entry": 0.014997,
-      "tp1": 0.01566,
-      "tp2": 0.016323,
-      "sl": 0.014466,
-      "strength": 50,
-      "status": "TP1",
-      "created_at": "2026-03-23 14:53:18",
-      "reasons": [
-        "MACD бычий (hist=0.00007)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: сильное давление покупки (+0.25)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "CVD растёт (+6.2%) — покупки усиливаются 📈",
-        "Doji (1h) — нерешительность",
-        "⚠️ Funding через 68м",
-        "BTC контекст: +4.5% за 12ч 📈",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
     }
   ],
   "trades_open": [
@@ -1184,34 +1159,6 @@
       ]
     },
     {
-      "id": 1065,
-      "symbol": "ZROUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 2.168,
-      "tp1": 2.21136,
-      "tp2": 2.25472,
-      "sl": 2.12464,
-      "entry_orig": 2.168,
-      "tp1_orig": 2.21136,
-      "tp2_orig": 2.25472,
-      "sl_orig": 2.12464,
-      "strength": 50,
-      "taken_at": "2026-03-23T19:27:39.743633",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.01314)",
-        "Цена > EMA20 > EMA50",
-        "Объём x2.0 🔥",
-        "Стакан: давление покупки (+0.16)",
-        "МТФ: 5m, 15m, 1h согласны",
-        "CVD положительный (-2.6%)",
-        "BTC корреляция 0.66, BTC +1.3% 📈",
-        "BTC контекст: +3.9% за 12ч 📈",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 1066,
       "symbol": "WLFIUSDT",
       "direction": "LONG",
@@ -1240,6 +1187,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "ZROUSDT",
+      "direction": "LONG",
+      "entry": 2.168,
+      "tp1": 2.21136,
+      "tp2": 2.25472,
+      "sl": 2.12464,
+      "strength": 50,
+      "status": "SL",
+      "pnl_pct": -2.01,
+      "close_price": 2.1243499999999997,
+      "taken_at": "2026-03-23T19:27:39.743633",
+      "closed_at": "2026-03-23 20:09:59"
+    },
     {
       "symbol": "XPLUSDT",
       "direction": "LONG",
@@ -4025,20 +3986,6 @@
       "close_price": 27.2975,
       "taken_at": "2026-03-22T13:19:02.071033",
       "closed_at": "2026-03-22 15:13:04"
-    },
-    {
-      "symbol": "GUNUSDT",
-      "direction": "LONG",
-      "entry": 0.021651,
-      "tp1": 0.02209,
-      "tp2": 0.022529,
-      "sl": 0.021218,
-      "strength": 57,
-      "status": "TP1",
-      "pnl_pct": 2.22,
-      "close_price": 0.022131,
-      "taken_at": "2026-03-22T14:40:24.758855",
-      "closed_at": "2026-03-22 14:59:17"
     }
   ]
 }
