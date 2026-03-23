@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-23T10:19:35.460825+00:00",
+  "updated_at": "2026-03-23T10:20:20.275472+00:00",
   "publish_status": {
-    "last_ok": "2026-03-23T10:18:22Z",
+    "last_ok": "2026-03-23T10:19:41Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 56.3
   },
   "trade_stats": {
-    "open": 16,
+    "open": 15,
     "pending": 0,
     "wins": 425,
-    "losses": 461,
-    "total_pnl": 23.12,
-    "winrate": 48.0
+    "losses": 462,
+    "total_pnl": 20.33,
+    "winrate": 47.9
   },
   "fear_greed": {
     "value": 8,
@@ -1137,31 +1137,6 @@
       ]
     },
     {
-      "id": 979,
-      "symbol": "BEATUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.7219,
-      "tp1": 0.7468,
-      "tp2": 0.7717,
-      "sl": 0.70198,
-      "entry_orig": 0.7219,
-      "tp1_orig": 0.7468,
-      "tp2_orig": 0.7717,
-      "sl_orig": 0.70198,
-      "strength": 50,
-      "taken_at": "2026-03-23T09:40:01.628660",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00353)",
-        "EMA20 > EMA50 (golden cross) 🌟",
-        "Стакан: сильное давление покупки (+0.42)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "CVD положительный (+0.7%)",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 980,
       "symbol": "RENDERUSDT",
       "direction": "SHORT",
@@ -1267,6 +1242,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "BEATUSDT",
+      "direction": "LONG",
+      "entry": 0.7219,
+      "tp1": 0.7468,
+      "tp2": 0.7717,
+      "sl": 0.70198,
+      "strength": 50,
+      "status": "SL",
+      "pnl_pct": -2.79,
+      "close_price": 0.70175,
+      "taken_at": "2026-03-23T09:40:01.628660",
+      "closed_at": "2026-03-23 10:20:19"
+    },
     {
       "symbol": "NIGHTUSDT",
       "direction": "LONG",
@@ -4052,20 +4041,6 @@
       "close_price": 1.1912,
       "taken_at": "2026-03-21T20:43:15.475339",
       "closed_at": "2026-03-21 21:33:32"
-    },
-    {
-      "symbol": "NIGHTUSDT",
-      "direction": "LONG",
-      "entry": 0.04495,
-      "tp1": 0.045849,
-      "tp2": 0.046748,
-      "sl": 0.044051,
-      "strength": 54,
-      "status": "SL",
-      "pnl_pct": -2.01,
-      "close_price": 0.044045,
-      "taken_at": "2026-03-21T20:00:11.526738",
-      "closed_at": "2026-03-21 21:32:10"
     }
   ]
 }
