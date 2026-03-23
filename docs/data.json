@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-23T04:09:07.309962+00:00",
+  "updated_at": "2026-03-23T04:10:13.108438+00:00",
   "publish_status": {
-    "last_ok": "2026-03-23T04:08:07Z",
+    "last_ok": "2026-03-23T04:09:13Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,11 +17,11 @@
     "winrate": 57.2
   },
   "trade_stats": {
-    "open": 15,
+    "open": 14,
     "pending": 0,
     "wins": 411,
-    "losses": 436,
-    "total_pnl": 43.65,
+    "losses": 437,
+    "total_pnl": 41.55,
     "winrate": 48.5
   },
   "fear_greed": {
@@ -517,31 +517,6 @@
   ],
   "trades_open": [
     {
-      "id": 886,
-      "symbol": "CYSUSDT",
-      "direction": "LONG",
-      "exchange": "bybit",
-      "entry": 0.7178,
-      "tp1": 0.748443,
-      "tp2": 0.779086,
-      "sl": 0.693286,
-      "entry_orig": 0.7178,
-      "tp1_orig": 0.748443,
-      "tp2_orig": 0.779086,
-      "sl_orig": 0.693286,
-      "strength": 51,
-      "taken_at": "2026-03-22T20:09:35.300621",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00867)",
-        "Цена > EMA20 > EMA50",
-        "Объём x2.5 🔥",
-        "Стакан: сильное давление покупки (+0.37)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 888,
       "symbol": "XMRUSDT",
       "direction": "SHORT",
@@ -905,6 +880,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "CYSUSDT",
+      "direction": "LONG",
+      "entry": 0.7178,
+      "tp1": 0.748443,
+      "tp2": 0.779086,
+      "sl": 0.693286,
+      "strength": 51,
+      "status": "TIMEOUT",
+      "pnl_pct": -2.1,
+      "close_price": 0.7027,
+      "taken_at": "2026-03-22T20:09:35.300621",
+      "closed_at": "2026-03-23 04:09:39"
+    },
     {
       "symbol": "BEATUSDT",
       "direction": "SHORT",
@@ -3690,20 +3679,6 @@
       "close_price": 0.005357499999999999,
       "taken_at": "2026-03-21T13:31:55.848843",
       "closed_at": "2026-03-21 13:41:20"
-    },
-    {
-      "symbol": "FOLKSUSDT",
-      "direction": "LONG",
-      "entry": 1.1424,
-      "tp1": 1.191664,
-      "tp2": 1.240929,
-      "sl": 1.102989,
-      "strength": 51,
-      "status": "SL",
-      "pnl_pct": -5.32,
-      "close_price": 1.0816,
-      "taken_at": "2026-03-21T13:12:07.339579",
-      "closed_at": "2026-03-21 13:31:43"
     }
   ]
 }
