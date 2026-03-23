@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-23T03:27:31.007939+00:00",
+  "updated_at": "2026-03-23T03:28:36.745939+00:00",
   "publish_status": {
-    "last_ok": "2026-03-23T03:26:30Z",
+    "last_ok": "2026-03-23T03:27:36Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 1050,
+    "total": 1051,
     "wins": 352,
     "losses": 263,
-    "active": 4,
+    "active": 5,
     "winrate": 57.2
   },
   "trade_stats": {
-    "open": 16,
+    "open": 17,
     "pending": 0,
     "wins": 410,
     "losses": 435,
@@ -127,6 +127,30 @@
       ],
       "news": null,
       "created_at": "2026-03-23 02:29:20",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1089,
+      "symbol": "PUMPFUNUSDT",
+      "direction": "SHORT",
+      "exchange": "binance",
+      "entry": 0.0018003,
+      "tp1": 0.001764,
+      "tp2": 0.001728,
+      "sl": 0.001836,
+      "strength": 56,
+      "reasons": [
+        "RSI=75 (сильная перекупленность)",
+        "BB верхняя полоса (пробой)",
+        "EMA20 < EMA50",
+        "Объём x4.1 🔥🔥🔥",
+        "Стакан: перевес ask (-0.08)",
+        "МТФ: 15m, 4h согласны",
+        "OI растёт +0.8% + цена ↓",
+        "Цена у сопротивления 0.0018"
+      ],
+      "news": null,
+      "created_at": "2026-03-23 03:28:36",
       "status": "ACTIVE"
     }
   ],
@@ -947,6 +971,33 @@
         "OI падает (лонги закрываются)",
         "CVD падает (-5.7%) — продажи усиливаются 📉",
         "Bearish Engulfing (1h) 🕯️"
+      ]
+    },
+    {
+      "id": 943,
+      "symbol": "PUMPFUNUSDT",
+      "direction": "SHORT",
+      "exchange": "bybit",
+      "entry": 0.0018003,
+      "tp1": 0.001764,
+      "tp2": 0.001728,
+      "sl": 0.001836,
+      "entry_orig": 0.0018003,
+      "tp1_orig": 0.001764,
+      "tp2_orig": 0.001728,
+      "sl_orig": 0.001836,
+      "strength": 56,
+      "taken_at": "2026-03-23T03:28:36.505710",
+      "status": "OPEN",
+      "reasons": [
+        "RSI=75 (сильная перекупленность)",
+        "BB верхняя полоса (пробой)",
+        "EMA20 < EMA50",
+        "Объём x4.1 🔥🔥🔥",
+        "Стакан: перевес ask (-0.08)",
+        "МТФ: 15m, 4h согласны",
+        "OI растёт +0.8% + цена ↓",
+        "Цена у сопротивления 0.0018"
       ]
     }
   ],
