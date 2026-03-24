@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-24T00:33:20.196417+00:00",
+  "updated_at": "2026-03-24T00:33:51.310355+00:00",
   "publish_status": {
-    "last_ok": "2026-03-24T00:32:38Z",
+    "last_ok": "2026-03-24T00:33:26Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 54.3
   },
   "trade_stats": {
-    "open": 18,
+    "open": 17,
     "pending": 0,
     "wins": 465,
-    "losses": 527,
-    "total_pnl": -30.86,
-    "winrate": 46.9
+    "losses": 528,
+    "total_pnl": -33.33,
+    "winrate": 46.8
   },
   "fear_greed": {
     "value": 8,
@@ -1145,31 +1145,6 @@
       ]
     },
     {
-      "id": 1090,
-      "symbol": "ZETAUSDT",
-      "direction": "LONG",
-      "exchange": "bybit",
-      "entry": 0.05673,
-      "tp1": 0.057865,
-      "tp2": 0.058999,
-      "sl": 0.055595,
-      "entry_orig": 0.05673,
-      "tp1_orig": 0.057865,
-      "tp2_orig": 0.058999,
-      "sl_orig": 0.055595,
-      "strength": 58,
-      "taken_at": "2026-03-24T00:05:48.725707",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00015)",
-        "EMA20 > EMA50 (golden cross) 🌟",
-        "Объём x13.8 🔥🔥🔥",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +1.5% + цена ↑",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 1091,
       "symbol": "1000SHIBUSDT",
       "direction": "LONG",
@@ -1199,6 +1174,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "ZETAUSDT",
+      "direction": "LONG",
+      "entry": 0.05673,
+      "tp1": 0.057865,
+      "tp2": 0.058999,
+      "sl": 0.055595,
+      "strength": 58,
+      "status": "SL",
+      "pnl_pct": -2.47,
+      "close_price": 0.05533,
+      "taken_at": "2026-03-24T00:05:48.725707",
+      "closed_at": "2026-03-24 00:33:27"
+    },
     {
       "symbol": "GUSDT",
       "direction": "LONG",
@@ -3984,20 +3973,6 @@
       "close_price": 1.157,
       "taken_at": "2026-03-22T16:54:14.831164",
       "closed_at": "2026-03-22 19:31:51"
-    },
-    {
-      "symbol": "APTUSDT",
-      "direction": "LONG",
-      "entry": 0.9307,
-      "tp1": 0.949314,
-      "tp2": 0.967928,
-      "sl": 0.912086,
-      "strength": 54,
-      "status": "SL",
-      "pnl_pct": -2.0,
-      "close_price": 0.91205,
-      "taken_at": "2026-03-22T13:34:33.970709",
-      "closed_at": "2026-03-22 19:30:00"
     }
   ]
 }
