@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-24T14:19:36.063877+00:00",
+  "updated_at": "2026-03-24T14:20:24.102588+00:00",
   "publish_status": {
-    "last_ok": "2026-03-24T14:18:36Z",
+    "last_ok": "2026-03-24T14:19:42Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,11 +17,11 @@
     "winrate": 54.1
   },
   "trade_stats": {
-    "open": 22,
+    "open": 21,
     "pending": 0,
-    "wins": 500,
+    "wins": 501,
     "losses": 567,
-    "total_pnl": -33.62,
+    "total_pnl": -31.06,
     "winrate": 46.9
   },
   "fear_greed": {
@@ -1138,32 +1138,6 @@
       ]
     },
     {
-      "id": 1156,
-      "symbol": "PEAQUSDT",
-      "direction": "LONG",
-      "exchange": "bybit",
-      "entry": 0.017989,
-      "tp1": 0.018447,
-      "tp2": 0.018904,
-      "sl": 0.017623,
-      "entry_orig": 0.017989,
-      "tp1_orig": 0.018447,
-      "tp2_orig": 0.018904,
-      "sl_orig": 0.017623,
-      "strength": 50,
-      "taken_at": "2026-03-24T13:05:05.310645",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=16 (сильная перепроданность)",
-        "BB нижняя полоса (пробой)",
-        "EMA20 > EMA50",
-        "Объём x2.1 🔥",
-        "Стакан: сильное давление покупки (+0.35)",
-        "МТФ: 15m, 4h согласны",
-        "⚡ Рыночный вход (MTF 2+ ТФ)"
-      ]
-    },
-    {
       "id": 1157,
       "symbol": "XPLUSDT",
       "direction": "LONG",
@@ -1461,6 +1435,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "PEAQUSDT",
+      "direction": "LONG",
+      "entry": 0.017989,
+      "tp1": 0.018447,
+      "tp2": 0.018904,
+      "sl": 0.017623,
+      "strength": 50,
+      "status": "TP1",
+      "pnl_pct": 2.56,
+      "close_price": 0.01845,
+      "taken_at": "2026-03-24T13:05:05.310645",
+      "closed_at": "2026-03-24 14:20:01"
+    },
     {
       "symbol": "WLDUSDT",
       "direction": "LONG",
@@ -4246,20 +4234,6 @@
       "close_price": 4196.655,
       "taken_at": "2026-03-23T06:12:53.251619",
       "closed_at": "2026-03-23 06:45:00"
-    },
-    {
-      "symbol": "ZECUSDT",
-      "direction": "LONG",
-      "entry": 223.84,
-      "tp1": 228.3168,
-      "tp2": 232.7936,
-      "sl": 219.3632,
-      "strength": 60,
-      "status": "SL",
-      "pnl_pct": -2.02,
-      "close_price": 219.325,
-      "taken_at": "2026-03-23T05:05:26.034817",
-      "closed_at": "2026-03-23 06:42:58"
     }
   ]
 }
