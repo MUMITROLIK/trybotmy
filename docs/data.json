@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-24T15:11:53.376433+00:00",
+  "updated_at": "2026-03-24T15:13:18.803198+00:00",
   "publish_status": {
-    "last_ok": "2026-03-24T15:11:14Z",
+    "last_ok": "2026-03-24T15:11:59Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -13,16 +13,16 @@
     "total": 1284,
     "wins": 419,
     "losses": 358,
-    "active": 20,
+    "active": 18,
     "winrate": 53.9
   },
   "trade_stats": {
-    "open": 21,
+    "open": 20,
     "pending": 0,
-    "wins": 502,
+    "wins": 503,
     "losses": 572,
-    "total_pnl": -40.47,
-    "winrate": 46.7
+    "total_pnl": -38.72,
+    "winrate": 46.8
   },
   "fear_greed": {
     "value": 11,
@@ -36,53 +36,6 @@
     "trained_at": "2026-03-24T14:00:02.033093+00:00"
   },
   "signals": [
-    {
-      "id": 1288,
-      "symbol": "XPTUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 1894.6163409,
-      "tp1": 1932.508668,
-      "tp2": 1970.400995,
-      "sl": 1856.724014,
-      "strength": 50,
-      "reasons": [
-        "MACD бычий (hist=2.41522)",
-        "Цена > EMA20 > EMA50",
-        "Объём x2.6 🔥🔥",
-        "Стакан: сильное давление покупки (+0.61)",
-        "МТФ: только 1 таймфрейм согласен",
-        "OI растёт +5.2% + цена ↑",
-        "CVD положительный (-0.2%)",
-        "📌 Лимитный вход @ 1894.62 (откат к EMA20)"
-      ],
-      "news": null,
-      "created_at": "2026-03-24 11:13:05",
-      "status": "ACTIVE"
-    },
-    {
-      "id": 1289,
-      "symbol": "4USDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.010178,
-      "tp1": 0.010463,
-      "tp2": 0.010748,
-      "sl": 0.00995,
-      "strength": 50,
-      "reasons": [
-        "RSI=49 (нейтральный↓)",
-        "MACD бычий (hist=0.00000)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: давление покупки (+0.11)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "CVD положительный (-6.1%)",
-        "⚡ Рыночный вход (MTF сильный)"
-      ],
-      "news": null,
-      "created_at": "2026-03-24 11:13:05",
-      "status": "ACTIVE"
-    },
     {
       "id": 1290,
       "symbol": "1000TURBOUSDT",
@@ -820,6 +773,47 @@
       ]
     },
     {
+      "symbol": "XPTUSDT",
+      "direction": "LONG",
+      "entry": 1894.6163409,
+      "tp1": 1932.508668,
+      "tp2": 1970.400995,
+      "sl": 1856.724014,
+      "strength": 50,
+      "status": "EXPIRED",
+      "created_at": "2026-03-24 11:13:05",
+      "reasons": [
+        "MACD бычий (hist=2.41522)",
+        "Цена > EMA20 > EMA50",
+        "Объём x2.6 🔥🔥",
+        "Стакан: сильное давление покупки (+0.61)",
+        "МТФ: только 1 таймфрейм согласен",
+        "OI растёт +5.2% + цена ↑",
+        "CVD положительный (-0.2%)",
+        "📌 Лимитный вход @ 1894.62 (откат к EMA20)"
+      ]
+    },
+    {
+      "symbol": "4USDT",
+      "direction": "LONG",
+      "entry": 0.010178,
+      "tp1": 0.010463,
+      "tp2": 0.010748,
+      "sl": 0.00995,
+      "strength": 50,
+      "status": "EXPIRED",
+      "created_at": "2026-03-24 11:13:05",
+      "reasons": [
+        "RSI=49 (нейтральный↓)",
+        "MACD бычий (hist=0.00000)",
+        "Цена > EMA20 > EMA50",
+        "Стакан: давление покупки (+0.11)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "CVD положительный (-6.1%)",
+        "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
+    {
       "symbol": "ONTUSDT",
       "direction": "LONG",
       "entry": 0.054,
@@ -879,80 +873,9 @@
         "CVD положительный (+3.1%)",
         "⚡ Рыночный вход (MTF сильный)"
       ]
-    },
-    {
-      "symbol": "ONTUSDT",
-      "direction": "LONG",
-      "entry": 0.0513,
-      "tp1": 0.05295,
-      "tp2": 0.0546,
-      "sl": 0.04998,
-      "strength": 55,
-      "status": "TP1",
-      "created_at": "2026-03-24 10:54:19",
-      "reasons": [
-        "MACD бычий (hist=0.00085)",
-        "Цена > EMA20 > EMA50",
-        "Объём x3.0 🔥🔥",
-        "Стакан: перевес bid (+0.07)",
-        "МТФ: 5m, 15m, 1h согласны",
-        "OI растёт +50.8% + цена ↑",
-        "CVD положительный (+2.2%)",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
-      "symbol": "TAOUSDT",
-      "direction": "LONG",
-      "entry": 309.22,
-      "tp1": 315.4044,
-      "tp2": 321.5888,
-      "sl": 303.0356,
-      "strength": 50,
-      "status": "SL",
-      "created_at": "2026-03-24 10:17:02",
-      "reasons": [
-        "RSI=44 (нейтральный↓)",
-        "BB ниже середины",
-        "EMA20 > EMA50",
-        "Стакан: давление покупки (+0.25)",
-        "📰 Altcoins Post Double-Digit Gains as Bitcoin (BTC) Reclaims $70K: ...",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +6.1% + цена ↑",
-        "CVD положительный (+4.6%)",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
     }
   ],
   "trades_open": [
-    {
-      "id": 1110,
-      "symbol": "HYPEUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 38.352,
-      "tp1": 39.11904,
-      "tp2": 39.88608,
-      "sl": 37.58496,
-      "entry_orig": 38.352,
-      "tp1_orig": 39.11904,
-      "tp2_orig": 39.88608,
-      "sl_orig": 37.58496,
-      "strength": 52,
-      "taken_at": "2026-03-24T07:12:26.293447",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.02576)",
-        "Цена > EMA20 > EMA50",
-        "Объём x2.1 🔥",
-        "📰 Hyperliquid rallies 70% to $48, but THIS still blocks HYPE’s upsi...",
-        "МТФ: 5m, 15m согласны",
-        "OI растёт +1.6% + цена ↑",
-        "CVD растёт (+8.7%) — покупки усиливаются 📈",
-        "⚠️ Funding через 49м",
-        "⚡ Рыночный вход (MTF 2+ ТФ)"
-      ]
-    },
     {
       "id": 1113,
       "symbol": "WLFIUSDT",
@@ -1491,6 +1414,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "HYPEUSDT",
+      "direction": "LONG",
+      "entry": 38.352,
+      "tp1": 39.11904,
+      "tp2": 39.88608,
+      "sl": 37.58496,
+      "strength": 52,
+      "status": "TIMEOUT",
+      "pnl_pct": 1.75,
+      "close_price": 39.0225,
+      "taken_at": "2026-03-24T07:12:26.293447",
+      "closed_at": "2026-03-24 15:12:28"
+    },
     {
       "symbol": "OPENUSDT",
       "direction": "LONG",
@@ -4276,20 +4213,6 @@
       "close_price": 0.093945,
       "taken_at": "2026-03-23T04:25:54.669146",
       "closed_at": "2026-03-23 07:52:29"
-    },
-    {
-      "symbol": "RESOLVUSDT",
-      "direction": "LONG",
-      "entry": 0.05392,
-      "tp1": 0.05509,
-      "tp2": 0.05626,
-      "sl": 0.052842,
-      "strength": 51,
-      "status": "TP1",
-      "pnl_pct": 2.36,
-      "close_price": 0.055195,
-      "taken_at": "2026-03-23T07:26:28.254951",
-      "closed_at": "2026-03-23 07:49:00"
     }
   ]
 }
