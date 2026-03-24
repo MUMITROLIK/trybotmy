@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-24T21:42:27.023249+00:00",
+  "updated_at": "2026-03-24T21:43:32.329344+00:00",
   "publish_status": {
-    "last_ok": "2026-03-24T21:41:58Z",
+    "last_ok": "2026-03-24T21:42:33Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,11 +17,11 @@
     "winrate": 54.0
   },
   "trade_stats": {
-    "open": 20,
+    "open": 19,
     "pending": 0,
-    "wins": 524,
+    "wins": 525,
     "losses": 591,
-    "total_pnl": -27.77,
+    "total_pnl": -26.37,
     "winrate": 47.0
   },
   "fear_greed": {
@@ -810,32 +810,6 @@
   ],
   "trades_open": [
     {
-      "id": 1165,
-      "symbol": "EIGENUSDT",
-      "direction": "LONG",
-      "exchange": "bybit",
-      "entry": 0.19473,
-      "tp1": 0.198625,
-      "tp2": 0.202519,
-      "sl": 0.190835,
-      "entry_orig": 0.19473,
-      "tp1_orig": 0.198625,
-      "tp2_orig": 0.202519,
-      "sl_orig": 0.190835,
-      "strength": 50,
-      "taken_at": "2026-03-24T13:43:03.932474",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=28 (сильная перепроданность)",
-        "BB нижняя зона (7%)",
-        "EMA20 > EMA50",
-        "Объём x2.8 🔥🔥",
-        "Стакан: давление покупки (+0.11)",
-        "МТФ: 15m, 1h согласны",
-        "⚡ Рыночный вход (MTF 2+ ТФ)"
-      ]
-    },
-    {
       "id": 1168,
       "symbol": "ETHUSDT",
       "direction": "LONG",
@@ -1358,6 +1332,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "EIGENUSDT",
+      "direction": "LONG",
+      "entry": 0.19473,
+      "tp1": 0.198625,
+      "tp2": 0.202519,
+      "sl": 0.190835,
+      "strength": 50,
+      "status": "TIMEOUT",
+      "pnl_pct": 1.4,
+      "close_price": 0.19745,
+      "taken_at": "2026-03-24T13:43:03.932474",
+      "closed_at": "2026-03-24 21:43:05"
+    },
     {
       "symbol": "FETUSDT",
       "direction": "LONG",
@@ -4143,20 +4131,6 @@
       "close_price": 0.0484,
       "taken_at": "2026-03-23T11:26:39.278530",
       "closed_at": "2026-03-23 12:03:19"
-    },
-    {
-      "symbol": "ETHUSDT",
-      "direction": "LONG",
-      "entry": 2156.74,
-      "tp1": 2199.8748,
-      "tp2": 2243.0096,
-      "sl": 2113.6052,
-      "strength": 57,
-      "status": "SL",
-      "pnl_pct": -2.03,
-      "close_price": 2113.0150000000003,
-      "taken_at": "2026-03-23T11:24:49.497622",
-      "closed_at": "2026-03-23 12:02:54"
     }
   ]
 }
