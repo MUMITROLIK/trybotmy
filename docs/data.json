@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-24T14:54:32.295188+00:00",
+  "updated_at": "2026-03-24T14:55:49.848348+00:00",
   "publish_status": {
-    "last_ok": "2026-03-24T14:53:45Z",
+    "last_ok": "2026-03-24T14:54:38Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 53.9
   },
   "trade_stats": {
-    "open": 21,
+    "open": 20,
     "pending": 0,
-    "wins": 501,
+    "wins": 502,
     "losses": 571,
-    "total_pnl": -40.4,
-    "winrate": 46.7
+    "total_pnl": -38.3,
+    "winrate": 46.8
   },
   "fear_greed": {
     "value": 11,
@@ -1357,34 +1357,6 @@
       ]
     },
     {
-      "id": 1172,
-      "symbol": "GUNUSDT",
-      "direction": "SHORT",
-      "exchange": "bybit",
-      "entry": 0.023009,
-      "tp1": 0.022549,
-      "tp2": 0.022089,
-      "sl": 0.023469,
-      "entry_orig": 0.023009,
-      "tp1_orig": 0.022549,
-      "tp2_orig": 0.022089,
-      "sl_orig": 0.023469,
-      "strength": 52,
-      "taken_at": "2026-03-24T14:42:37.114991",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=69 (перекупленность)",
-        "BB верхняя полоса (пробой)",
-        "EMA20 < EMA50",
-        "Объём x3.3 🔥🔥",
-        "Стакан: сильное давление продажи (-0.58)",
-        "МТФ: 15m, 1h согласны",
-        "OI растёт +1.1% + цена ↓",
-        "⚠️ Funding через 78м",
-        "🤖 ML: 52% WIN"
-      ]
-    },
-    {
       "id": 1173,
       "symbol": "CRCLUSDT",
       "direction": "SHORT",
@@ -1440,6 +1412,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "GUNUSDT",
+      "direction": "SHORT",
+      "entry": 0.023009,
+      "tp1": 0.022549,
+      "tp2": 0.022089,
+      "sl": 0.023469,
+      "strength": 52,
+      "status": "TP1",
+      "pnl_pct": 2.1,
+      "close_price": 0.022525,
+      "taken_at": "2026-03-24T14:42:37.114991",
+      "closed_at": "2026-03-24 14:55:49"
+    },
     {
       "symbol": "GUSDT",
       "direction": "LONG",
@@ -4225,20 +4211,6 @@
       "close_price": 7.484500000000001,
       "taken_at": "2026-03-23T06:25:50.325180",
       "closed_at": "2026-03-23 07:17:54"
-    },
-    {
-      "symbol": "PAXGUSDT",
-      "direction": "LONG",
-      "entry": 4247.23,
-      "tp1": 4332.1746,
-      "tp2": 4417.1192,
-      "sl": 4162.2854,
-      "strength": 56,
-      "status": "SL",
-      "pnl_pct": -2.04,
-      "close_price": 4160.415,
-      "taken_at": "2026-03-23T06:38:08.211415",
-      "closed_at": "2026-03-23 07:15:05"
     }
   ]
 }
