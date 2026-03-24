@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-24T08:10:10.967936+00:00",
+  "updated_at": "2026-03-24T08:11:17.940691+00:00",
   "publish_status": {
-    "last_ok": "2026-03-24T08:09:10Z",
+    "last_ok": "2026-03-24T08:10:17Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 1229,
+    "total": 1230,
     "wins": 403,
     "losses": 338,
-    "active": 4,
+    "active": 5,
     "winrate": 54.4
   },
   "trade_stats": {
-    "open": 17,
+    "open": 18,
     "pending": 0,
     "wins": 480,
     "losses": 543,
@@ -127,6 +127,29 @@
       ],
       "news": null,
       "created_at": "2026-03-24 08:06:40",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1268,
+      "symbol": "VIRTUALUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.7213,
+      "tp1": 0.735726,
+      "tp2": 0.750152,
+      "sl": 0.706874,
+      "strength": 50,
+      "reasons": [
+        "MACD бычий (hist=0.00308)",
+        "Цена > EMA20 > EMA50",
+        "Объём x3.5 🔥🔥",
+        "МТФ: 5m, 15m, 1h согласны",
+        "CVD положительный (-1.6%)",
+        "BTC корреляция 0.72, BTC +1.1% 📈",
+        "⚡ Рыночный вход (MTF сильный)"
+      ],
+      "news": null,
+      "created_at": "2026-03-24 08:10:26",
       "status": "ACTIVE"
     }
   ],
@@ -1024,6 +1047,32 @@
         "МТФ: все 4 таймфрейма согласны ✅✅",
         "OI растёт +1.1% + цена ↑",
         "CVD положительный (+2.9%)",
+        "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
+    {
+      "id": 1122,
+      "symbol": "VIRTUALUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.7213,
+      "tp1": 0.735726,
+      "tp2": 0.750152,
+      "sl": 0.706874,
+      "entry_orig": 0.7213,
+      "tp1_orig": 0.735726,
+      "tp2_orig": 0.750152,
+      "sl_orig": 0.706874,
+      "strength": 50,
+      "taken_at": "2026-03-24T08:10:27.070616",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.00308)",
+        "Цена > EMA20 > EMA50",
+        "Объём x3.5 🔥🔥",
+        "МТФ: 5m, 15m, 1h согласны",
+        "CVD положительный (-1.6%)",
+        "BTC корреляция 0.72, BTC +1.1% 📈",
         "⚡ Рыночный вход (MTF сильный)"
       ]
     }
