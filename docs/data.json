@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-24T23:21:08.544564+00:00",
+  "updated_at": "2026-03-24T23:21:39.346742+00:00",
   "publish_status": {
-    "last_ok": "2026-03-24T23:20:00Z",
+    "last_ok": "2026-03-24T23:21:14Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 1331,
+    "total": 1332,
     "wins": 438,
     "losses": 372,
-    "active": 15,
+    "active": 16,
     "winrate": 54.1
   },
   "trade_stats": {
-    "open": 17,
+    "open": 18,
     "pending": 0,
     "wins": 533,
     "losses": 592,
@@ -405,6 +405,30 @@
       ],
       "news": null,
       "created_at": "2026-03-24 23:18:16",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1370,
+      "symbol": "LITUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 1.0079,
+      "tp1": 1.028058,
+      "tp2": 1.048216,
+      "sl": 0.987742,
+      "strength": 53,
+      "reasons": [
+        "MACD бычий (hist=0.00134)",
+        "Цена > EMA20 > EMA50",
+        "Объём x4.3 🔥🔥🔥",
+        "Стакан: давление покупки (+0.24)",
+        "МТФ: 5m, 15m, 1h согласны",
+        "⚠️ Funding через 39м",
+        "⚡ Рыночный вход (MTF сильный)",
+        "🤖 ML: 49% WIN"
+      ],
+      "news": null,
+      "created_at": "2026-03-24 23:21:38",
       "status": "ACTIVE"
     }
   ],
@@ -1304,6 +1328,33 @@
         "⚠️ Funding через 42м",
         "⚡ Рыночный вход (MTF сильный)",
         "🤖 ML: 47% WIN"
+      ]
+    },
+    {
+      "id": 1224,
+      "symbol": "LITUSDT",
+      "direction": "LONG",
+      "exchange": "bybit",
+      "entry": 1.0079,
+      "tp1": 1.028058,
+      "tp2": 1.048216,
+      "sl": 0.987742,
+      "entry_orig": 1.0079,
+      "tp1_orig": 1.028058,
+      "tp2_orig": 1.048216,
+      "sl_orig": 0.987742,
+      "strength": 53,
+      "taken_at": "2026-03-24T23:21:39.110460",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.00134)",
+        "Цена > EMA20 > EMA50",
+        "Объём x4.3 🔥🔥🔥",
+        "Стакан: давление покупки (+0.24)",
+        "МТФ: 5m, 15m, 1h согласны",
+        "⚠️ Funding через 39м",
+        "⚡ Рыночный вход (MTF сильный)",
+        "🤖 ML: 49% WIN"
       ]
     }
   ],
