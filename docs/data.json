@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-24T14:41:31.966162+00:00",
+  "updated_at": "2026-03-24T14:42:37.368797+00:00",
   "publish_status": {
-    "last_ok": "2026-03-24T14:41:05Z",
+    "last_ok": "2026-03-24T14:41:38Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 1279,
+    "total": 1280,
     "wins": 418,
     "losses": 356,
-    "active": 18,
+    "active": 19,
     "winrate": 54.0
   },
   "trade_stats": {
-    "open": 21,
+    "open": 22,
     "pending": 0,
     "wins": 501,
     "losses": 568,
@@ -460,6 +460,31 @@
       ],
       "news": null,
       "created_at": "2026-03-24 14:22:08",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1318,
+      "symbol": "GUNUSDT",
+      "direction": "SHORT",
+      "exchange": "binance",
+      "entry": 0.023009,
+      "tp1": 0.022549,
+      "tp2": 0.022089,
+      "sl": 0.023469,
+      "strength": 52,
+      "reasons": [
+        "RSI=69 (перекупленность)",
+        "BB верхняя полоса (пробой)",
+        "EMA20 < EMA50",
+        "Объём x3.3 🔥🔥",
+        "Стакан: сильное давление продажи (-0.58)",
+        "МТФ: 15m, 1h согласны",
+        "OI растёт +1.1% + цена ↓",
+        "⚠️ Funding через 78м",
+        "🤖 ML: 52% WIN"
+      ],
+      "news": null,
+      "created_at": "2026-03-24 14:42:36",
       "status": "ACTIVE"
     }
   ],
@@ -1433,6 +1458,34 @@
         "CVD положительный (+4.2%)",
         "⚡ Рыночный вход (MTF сильный)",
         "🤖 ML: 58% WIN"
+      ]
+    },
+    {
+      "id": 1172,
+      "symbol": "GUNUSDT",
+      "direction": "SHORT",
+      "exchange": "bybit",
+      "entry": 0.023009,
+      "tp1": 0.022549,
+      "tp2": 0.022089,
+      "sl": 0.023469,
+      "entry_orig": 0.023009,
+      "tp1_orig": 0.022549,
+      "tp2_orig": 0.022089,
+      "sl_orig": 0.023469,
+      "strength": 52,
+      "taken_at": "2026-03-24T14:42:37.114991",
+      "status": "OPEN",
+      "reasons": [
+        "RSI=69 (перекупленность)",
+        "BB верхняя полоса (пробой)",
+        "EMA20 < EMA50",
+        "Объём x3.3 🔥🔥",
+        "Стакан: сильное давление продажи (-0.58)",
+        "МТФ: 15m, 1h согласны",
+        "OI растёт +1.1% + цена ↓",
+        "⚠️ Funding через 78м",
+        "🤖 ML: 52% WIN"
       ]
     }
   ],
