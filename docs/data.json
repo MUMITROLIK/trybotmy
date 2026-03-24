@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-24T16:12:07.148593+00:00",
+  "updated_at": "2026-03-24T16:12:48.006709+00:00",
   "publish_status": {
-    "last_ok": "2026-03-24T16:11:03Z",
+    "last_ok": "2026-03-24T16:12:13Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 1288,
+    "total": 1289,
     "wins": 420,
     "losses": 359,
-    "active": 18,
+    "active": 19,
     "winrate": 53.9
   },
   "trade_stats": {
-    "open": 20,
+    "open": 21,
     "pending": 0,
     "wins": 505,
     "losses": 574,
@@ -471,6 +471,30 @@
       ],
       "news": null,
       "created_at": "2026-03-24 16:10:56",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1327,
+      "symbol": "DOTUSDT",
+      "direction": "SHORT",
+      "exchange": "binance",
+      "entry": 1.375,
+      "tp1": 1.3475,
+      "tp2": 1.32,
+      "sl": 1.4025,
+      "strength": 50,
+      "reasons": [
+        "MACD медвежий (hist=-0.00058)",
+        "Цена < EMA20 < EMA50",
+        "Объём x1.8 🔥",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +3.5% + цена ↓",
+        "CVD падает (-10.2%) — продажи усиливаются 📉",
+        "BTC контекст: -2.0% за 12ч 📉",
+        "🤖 ML: 46% WIN"
+      ],
+      "news": null,
+      "created_at": "2026-03-24 16:12:47",
       "status": "ACTIVE"
     }
   ],
@@ -1429,6 +1453,33 @@
         "Цена у сопротивления 5.8468",
         "BTC контекст: -2.0% за 12ч 📉",
         "🤖 ML: 58% WIN"
+      ]
+    },
+    {
+      "id": 1181,
+      "symbol": "DOTUSDT",
+      "direction": "SHORT",
+      "exchange": "binance",
+      "entry": 1.375,
+      "tp1": 1.3475,
+      "tp2": 1.32,
+      "sl": 1.4025,
+      "entry_orig": 1.375,
+      "tp1_orig": 1.3475,
+      "tp2_orig": 1.32,
+      "sl_orig": 1.4025,
+      "strength": 50,
+      "taken_at": "2026-03-24T16:12:47.667155",
+      "status": "OPEN",
+      "reasons": [
+        "MACD медвежий (hist=-0.00058)",
+        "Цена < EMA20 < EMA50",
+        "Объём x1.8 🔥",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +3.5% + цена ↓",
+        "CVD падает (-10.2%) — продажи усиливаются 📉",
+        "BTC контекст: -2.0% за 12ч 📉",
+        "🤖 ML: 46% WIN"
       ]
     }
   ],
