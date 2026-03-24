@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-24T09:01:59.502599+00:00",
+  "updated_at": "2026-03-24T09:02:52.762745+00:00",
   "publish_status": {
-    "last_ok": "2026-03-24T09:00:59Z",
+    "last_ok": "2026-03-24T09:02:08Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,11 +17,11 @@
     "winrate": 54.4
   },
   "trade_stats": {
-    "open": 19,
+    "open": 18,
     "pending": 0,
-    "wins": 487,
+    "wins": 488,
     "losses": 543,
-    "total_pnl": -12.67,
+    "total_pnl": -9.55,
     "winrate": 47.3
   },
   "fear_greed": {
@@ -868,33 +868,6 @@
       ]
     },
     {
-      "id": 1115,
-      "symbol": "PLAYSOUTUSDT",
-      "direction": "LONG",
-      "exchange": "bybit",
-      "entry": 0.04549,
-      "tp1": 0.046844,
-      "tp2": 0.048199,
-      "sl": 0.044407,
-      "entry_orig": 0.04549,
-      "tp1_orig": 0.046844,
-      "tp2_orig": 0.048199,
-      "sl_orig": 0.044407,
-      "strength": 55,
-      "taken_at": "2026-03-24T07:14:16.638535",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=40 (перепроданность)",
-        "MACD бычий (hist=0.00002)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: сильное давление покупки (+0.57)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "Doji (1h) — нерешительность",
-        "⚠️ Funding через 47м",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 1117,
       "symbol": "KASUSDT",
       "direction": "LONG",
@@ -1213,6 +1186,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "PLAYSOUTUSDT",
+      "direction": "LONG",
+      "entry": 0.04549,
+      "tp1": 0.046844,
+      "tp2": 0.048199,
+      "sl": 0.044407,
+      "strength": 55,
+      "status": "TP1",
+      "pnl_pct": 3.12,
+      "close_price": 0.04691,
+      "taken_at": "2026-03-24T07:14:16.638535",
+      "closed_at": "2026-03-24 09:02:52"
+    },
     {
       "symbol": "DUSKUSDT",
       "direction": "LONG",
@@ -3998,20 +3985,6 @@
       "close_price": 9.096499999999999,
       "taken_at": "2026-03-22T21:18:57.810533",
       "closed_at": "2026-03-23 01:23:05"
-    },
-    {
-      "symbol": "SEIUSDT",
-      "direction": "SHORT",
-      "entry": 0.0589,
-      "tp1": 0.057722,
-      "tp2": 0.056544,
-      "sl": 0.060078,
-      "strength": 53,
-      "status": "SL",
-      "pnl_pct": -2.02,
-      "close_price": 0.06009,
-      "taken_at": "2026-03-22T21:22:13.060063",
-      "closed_at": "2026-03-23 01:21:05"
     }
   ]
 }
