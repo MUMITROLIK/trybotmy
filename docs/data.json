@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-24T14:34:59.372296+00:00",
+  "updated_at": "2026-03-24T14:35:35.619286+00:00",
   "publish_status": {
-    "last_ok": "2026-03-24T14:33:59Z",
+    "last_ok": "2026-03-24T14:35:05Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,11 +17,11 @@
     "winrate": 54.0
   },
   "trade_stats": {
-    "open": 22,
+    "open": 21,
     "pending": 0,
     "wins": 501,
-    "losses": 567,
-    "total_pnl": -31.06,
+    "losses": 568,
+    "total_pnl": -33.76,
     "winrate": 46.9
   },
   "fear_greed": {
@@ -1301,32 +1301,6 @@
       ]
     },
     {
-      "id": 1166,
-      "symbol": "MAGMAUSDT",
-      "direction": "LONG",
-      "exchange": "bybit",
-      "entry": 0.14316,
-      "tp1": 0.147316,
-      "tp2": 0.151472,
-      "sl": 0.139835,
-      "entry_orig": 0.14316,
-      "tp1_orig": 0.147316,
-      "tp2_orig": 0.151472,
-      "sl_orig": 0.139835,
-      "strength": 56,
-      "taken_at": "2026-03-24T13:43:04.102606",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00001)",
-        "Цена > EMA20 > EMA50",
-        "Объём x2.1 🔥",
-        "Стакан: сильное давление покупки (+0.48)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +2.8% + цена ↑",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 1167,
       "symbol": "KATUSDT",
       "direction": "LONG",
@@ -1463,6 +1437,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "MAGMAUSDT",
+      "direction": "LONG",
+      "entry": 0.14316,
+      "tp1": 0.147316,
+      "tp2": 0.151472,
+      "sl": 0.139835,
+      "strength": 56,
+      "status": "SL",
+      "pnl_pct": -2.7,
+      "close_price": 0.13929,
+      "taken_at": "2026-03-24T13:43:04.102606",
+      "closed_at": "2026-03-24 14:35:35"
+    },
     {
       "symbol": "PEAQUSDT",
       "direction": "LONG",
@@ -4248,20 +4236,6 @@
       "close_price": 0.228035,
       "taken_at": "2026-03-23T04:19:36.103302",
       "closed_at": "2026-03-23 07:04:42"
-    },
-    {
-      "symbol": "XAUUSDT",
-      "direction": "LONG",
-      "entry": 4283.87,
-      "tp1": 4369.5474,
-      "tp2": 4455.2248,
-      "sl": 4198.1926,
-      "strength": 56,
-      "status": "SL",
-      "pnl_pct": -2.04,
-      "close_price": 4196.655,
-      "taken_at": "2026-03-23T06:12:53.251619",
-      "closed_at": "2026-03-23 06:45:00"
     }
   ]
 }
