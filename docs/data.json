@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-24T09:04:12.159297+00:00",
+  "updated_at": "2026-03-24T09:05:05.145637+00:00",
   "publish_status": {
-    "last_ok": "2026-03-24T09:03:00Z",
+    "last_ok": "2026-03-24T09:04:18Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 54.4
   },
   "trade_stats": {
-    "open": 18,
+    "open": 16,
     "pending": 0,
     "wins": 488,
-    "losses": 543,
-    "total_pnl": -9.55,
-    "winrate": 47.3
+    "losses": 545,
+    "total_pnl": -13.97,
+    "winrate": 47.2
   },
   "fear_greed": {
     "value": 11,
@@ -700,34 +700,6 @@
   ],
   "trades_open": [
     {
-      "id": 1102,
-      "symbol": "WAXPUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.007364,
-      "tp1": 0.007511,
-      "tp2": 0.007659,
-      "sl": 0.007217,
-      "entry_orig": 0.007364,
-      "tp1_orig": 0.007511,
-      "tp2_orig": 0.007659,
-      "sl_orig": 0.007217,
-      "strength": 55,
-      "taken_at": "2026-03-24T04:28:41.532832",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=36 (перепроданность)",
-        "MACD бычий (hist=0.00000)",
-        "BB ниже середины",
-        "Стакан: давление покупки (+0.11)",
-        "МТФ: 1h, 4h согласны",
-        "CVD положительный (-1.7%)",
-        "Bullish Engulfing (1h) 🕯️",
-        "Цена у поддержки 0.0073",
-        "⚡ Рыночный вход (MTF 2+ ТФ)"
-      ]
-    },
-    {
       "id": 1107,
       "symbol": "GUSDT",
       "direction": "LONG",
@@ -1053,33 +1025,6 @@
       ]
     },
     {
-      "id": 1125,
-      "symbol": "ATHUSDT",
-      "direction": "LONG",
-      "exchange": "bybit",
-      "entry": 0.007293,
-      "tp1": 0.007439,
-      "tp2": 0.007585,
-      "sl": 0.007147,
-      "entry_orig": 0.007293,
-      "tp1_orig": 0.007439,
-      "tp2_orig": 0.007585,
-      "sl_orig": 0.007147,
-      "strength": 55,
-      "taken_at": "2026-03-24T08:14:01.420831",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=46 (нейтральный↓)",
-        "MACD бычий (hist=0.00002)",
-        "EMA20 > EMA50 (golden cross) 🌟",
-        "Объём x2.0 🔥",
-        "Стакан: давление покупки (+0.12)",
-        "МТФ: 5m, 15m, 4h согласны",
-        "OI растёт +0.6% + цена ↑",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 1126,
       "symbol": "NEARUSDT",
       "direction": "LONG",
@@ -1186,6 +1131,34 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "WAXPUSDT",
+      "direction": "LONG",
+      "entry": 0.007364,
+      "tp1": 0.007511,
+      "tp2": 0.007659,
+      "sl": 0.007217,
+      "strength": 55,
+      "status": "SL",
+      "pnl_pct": -2.01,
+      "close_price": 0.007216,
+      "taken_at": "2026-03-24T04:28:41.532832",
+      "closed_at": "2026-03-24 09:05:04"
+    },
+    {
+      "symbol": "ATHUSDT",
+      "direction": "LONG",
+      "entry": 0.007293,
+      "tp1": 0.007439,
+      "tp2": 0.007585,
+      "sl": 0.007147,
+      "strength": 55,
+      "status": "SL",
+      "pnl_pct": -2.41,
+      "close_price": 0.007117,
+      "taken_at": "2026-03-24T08:14:01.420831",
+      "closed_at": "2026-03-24 09:04:30"
+    },
     {
       "symbol": "PLAYSOUTUSDT",
       "direction": "LONG",
@@ -3957,34 +3930,6 @@
       "close_price": 0.15467,
       "taken_at": "2026-03-22T21:28:31.233205",
       "closed_at": "2026-03-23 01:29:29"
-    },
-    {
-      "symbol": "BANANAS31USDT",
-      "direction": "LONG",
-      "entry": 0.01378,
-      "tp1": 0.014196,
-      "tp2": 0.014611,
-      "sl": 0.013447,
-      "strength": 52,
-      "status": "SL",
-      "pnl_pct": -2.46,
-      "close_price": 0.013440500000000001,
-      "taken_at": "2026-03-22T22:14:28.513935",
-      "closed_at": "2026-03-23 01:27:43"
-    },
-    {
-      "symbol": "AVAXUSDT",
-      "direction": "SHORT",
-      "entry": 8.918,
-      "tp1": 8.73964,
-      "tp2": 8.56128,
-      "sl": 9.09636,
-      "strength": 52,
-      "status": "SL",
-      "pnl_pct": -2.0,
-      "close_price": 9.096499999999999,
-      "taken_at": "2026-03-22T21:18:57.810533",
-      "closed_at": "2026-03-23 01:23:05"
     }
   ]
 }
