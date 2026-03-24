@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-24T07:58:04.062449+00:00",
+  "updated_at": "2026-03-24T07:58:54.092271+00:00",
   "publish_status": {
-    "last_ok": "2026-03-24T07:57:38Z",
+    "last_ok": "2026-03-24T07:58:10Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,11 +17,11 @@
     "winrate": 54.4
   },
   "trade_stats": {
-    "open": 16,
+    "open": 15,
     "pending": 0,
-    "wins": 477,
+    "wins": 478,
     "losses": 543,
-    "total_pnl": -32.27,
+    "total_pnl": -30.07,
     "winrate": 46.8
   },
   "fear_greed": {
@@ -550,32 +550,6 @@
       ]
     },
     {
-      "id": 1093,
-      "symbol": "MOODENGUSDT",
-      "direction": "LONG",
-      "exchange": "bybit",
-      "entry": 0.04826,
-      "tp1": 0.049225,
-      "tp2": 0.05019,
-      "sl": 0.047295,
-      "entry_orig": 0.04826,
-      "tp1_orig": 0.049225,
-      "tp2_orig": 0.05019,
-      "sl_orig": 0.047295,
-      "strength": 55,
-      "taken_at": "2026-03-24T00:42:30.678765",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=28 (сильная перепроданность)",
-        "BB нижняя зона (10%)",
-        "EMA20 > EMA50",
-        "Объём x2.6 🔥🔥",
-        "Стакан: сильное давление покупки (+0.31)",
-        "МТФ: только 1 таймфрейм согласен",
-        "OI растёт +1.7% + цена ↑"
-      ]
-    },
-    {
       "id": 1096,
       "symbol": "XPTUSDT",
       "direction": "LONG",
@@ -910,6 +884,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "MOODENGUSDT",
+      "direction": "LONG",
+      "entry": 0.04826,
+      "tp1": 0.049225,
+      "tp2": 0.05019,
+      "sl": 0.047295,
+      "strength": 55,
+      "status": "TP1",
+      "pnl_pct": 2.2,
+      "close_price": 0.04932,
+      "taken_at": "2026-03-24T00:42:30.678765",
+      "closed_at": "2026-03-24 07:58:53"
+    },
     {
       "symbol": "JTOUSDT",
       "direction": "LONG",
@@ -3695,20 +3683,6 @@
       "close_price": 0.052335,
       "taken_at": "2026-03-22T23:13:52.063883",
       "closed_at": "2026-03-23 00:36:11"
-    },
-    {
-      "symbol": "ORDERUSDT",
-      "direction": "LONG",
-      "entry": 0.0587,
-      "tp1": 0.059874,
-      "tp2": 0.061048,
-      "sl": 0.057526,
-      "strength": 55,
-      "status": "TP1",
-      "pnl_pct": 2.21,
-      "close_price": 0.06,
-      "taken_at": "2026-03-23T00:04:28.753789",
-      "closed_at": "2026-03-23 00:12:04"
     }
   ]
 }
