@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-24T11:51:34.115241+00:00",
+  "updated_at": "2026-03-24T11:52:39.836052+00:00",
   "publish_status": {
-    "last_ok": "2026-03-24T11:50:47Z",
+    "last_ok": "2026-03-24T11:51:39Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 1256,
+    "total": 1257,
     "wins": 411,
     "losses": 348,
-    "active": 13,
+    "active": 14,
     "winrate": 54.2
   },
   "trade_stats": {
-    "open": 18,
+    "open": 19,
     "pending": 0,
     "wins": 495,
     "losses": 554,
@@ -337,6 +337,28 @@
       ],
       "news": null,
       "created_at": "2026-03-24 11:46:46",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1295,
+      "symbol": "HUMAUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.017458,
+      "tp1": 0.017807,
+      "tp2": 0.018156,
+      "sl": 0.017109,
+      "strength": 50,
+      "reasons": [
+        "MACD бычий (hist=0.00005)",
+        "EMA20 > EMA50 (golden cross) 🌟",
+        "Стакан: давление покупки (+0.21)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "CVD растёт (+5.2%) — покупки усиливаются 📈",
+        "⚡ Рыночный вход (MTF сильный)"
+      ],
+      "news": null,
+      "created_at": "2026-03-24 11:51:50",
       "status": "ACTIVE"
     }
   ],
@@ -1229,6 +1251,31 @@
         "МТФ: 15m, 1h, 4h согласны",
         "OI растёт +1.1% + цена ↑",
         "CVD растёт (+7.6%) — покупки усиливаются 📈",
+        "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
+    {
+      "id": 1149,
+      "symbol": "HUMAUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.017458,
+      "tp1": 0.017807,
+      "tp2": 0.018156,
+      "sl": 0.017109,
+      "entry_orig": 0.017458,
+      "tp1_orig": 0.017807,
+      "tp2_orig": 0.018156,
+      "sl_orig": 0.017109,
+      "strength": 50,
+      "taken_at": "2026-03-24T11:51:50.675071",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.00005)",
+        "EMA20 > EMA50 (golden cross) 🌟",
+        "Стакан: давление покупки (+0.21)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "CVD растёт (+5.2%) — покупки усиливаются 📈",
         "⚡ Рыночный вход (MTF сильный)"
       ]
     }
