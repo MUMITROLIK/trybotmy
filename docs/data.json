@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-24T18:21:26.237665+00:00",
+  "updated_at": "2026-03-24T18:22:34.440651+00:00",
   "publish_status": {
-    "last_ok": "2026-03-24T18:20:58Z",
+    "last_ok": "2026-03-24T18:21:37Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 1302,
+    "total": 1303,
     "wins": 425,
     "losses": 365,
-    "active": 13,
+    "active": 14,
     "winrate": 53.8
   },
   "trade_stats": {
-    "open": 22,
+    "open": 23,
     "pending": 0,
     "wins": 510,
     "losses": 581,
@@ -350,6 +350,30 @@
       ],
       "news": null,
       "created_at": "2026-03-24 18:14:02",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1341,
+      "symbol": "OPENUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.17064,
+      "tp1": 0.174053,
+      "tp2": 0.177466,
+      "sl": 0.167227,
+      "strength": 50,
+      "reasons": [
+        "RSI=34 (перепроданность)",
+        "MACD бычий (hist=0.00000)",
+        "BB ниже середины",
+        "Стакан: сильное давление покупки (+0.33)",
+        "МТФ: 1h, 4h согласны",
+        "OI растёт +0.8% + цена ↑",
+        "⚡ Рыночный вход (MTF 2+ ТФ)",
+        "🤖 ML: 58% WIN"
+      ],
+      "news": null,
+      "created_at": "2026-03-24 18:22:33",
       "status": "ACTIVE"
     }
   ],
@@ -1374,6 +1398,33 @@
         "МТФ: 5m, 15m, 1h согласны",
         "OI растёт +1.4% + цена ↑",
         "⚡ Рыночный вход (MTF сильный)",
+        "🤖 ML: 58% WIN"
+      ]
+    },
+    {
+      "id": 1195,
+      "symbol": "OPENUSDT",
+      "direction": "LONG",
+      "exchange": "bybit",
+      "entry": 0.17064,
+      "tp1": 0.174053,
+      "tp2": 0.177466,
+      "sl": 0.167227,
+      "entry_orig": 0.17064,
+      "tp1_orig": 0.174053,
+      "tp2_orig": 0.177466,
+      "sl_orig": 0.167227,
+      "strength": 50,
+      "taken_at": "2026-03-24T18:22:34.186464",
+      "status": "OPEN",
+      "reasons": [
+        "RSI=34 (перепроданность)",
+        "MACD бычий (hist=0.00000)",
+        "BB ниже середины",
+        "Стакан: сильное давление покупки (+0.33)",
+        "МТФ: 1h, 4h согласны",
+        "OI растёт +0.8% + цена ↑",
+        "⚡ Рыночный вход (MTF 2+ ТФ)",
         "🤖 ML: 58% WIN"
       ]
     }
