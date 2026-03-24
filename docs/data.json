@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-24T19:36:28.523239+00:00",
+  "updated_at": "2026-03-24T19:37:17.478221+00:00",
   "publish_status": {
-    "last_ok": "2026-03-24T19:36:03Z",
+    "last_ok": "2026-03-24T19:36:34Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -11,17 +11,17 @@
   },
   "stats": {
     "total": 1308,
-    "wins": 427,
+    "wins": 428,
     "losses": 367,
-    "active": 12,
+    "active": 11,
     "winrate": 53.8
   },
   "trade_stats": {
-    "open": 22,
+    "open": 21,
     "pending": 0,
-    "wins": 513,
+    "wins": 514,
     "losses": 584,
-    "total_pnl": -40.86,
+    "total_pnl": -38.55,
     "winrate": 46.8
   },
   "fear_greed": {
@@ -255,29 +255,6 @@
       "status": "ACTIVE"
     },
     {
-      "id": 1343,
-      "symbol": "INITUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.08651,
-      "tp1": 0.08824,
-      "tp2": 0.08997,
-      "sl": 0.08478,
-      "strength": 53,
-      "reasons": [
-        "MACD бычий (hist=0.00049)",
-        "Цена > EMA20 > EMA50",
-        "Объём x4.0 🔥🔥🔥",
-        "МТФ: 5m, 15m, 1h согласны",
-        "OI растёт +2.7% + цена ↑",
-        "⚡ Рыночный вход (MTF сильный)",
-        "🤖 ML: 58% WIN"
-      ],
-      "news": null,
-      "created_at": "2026-03-24 18:29:43",
-      "status": "ACTIVE"
-    },
-    {
       "id": 1345,
       "symbol": "TAOUSDT",
       "direction": "LONG",
@@ -347,6 +324,26 @@
         "OI растёт +8.8% + цена ↑",
         "⚡ Рыночный вход (MTF сильный)",
         "🤖 ML: 52% WIN"
+      ]
+    },
+    {
+      "symbol": "INITUSDT",
+      "direction": "LONG",
+      "entry": 0.08651,
+      "tp1": 0.08824,
+      "tp2": 0.08997,
+      "sl": 0.08478,
+      "strength": 53,
+      "status": "TP1",
+      "created_at": "2026-03-24 18:29:43",
+      "reasons": [
+        "MACD бычий (hist=0.00049)",
+        "Цена > EMA20 > EMA50",
+        "Объём x4.0 🔥🔥🔥",
+        "МТФ: 5m, 15m, 1h согласны",
+        "OI растёт +2.7% + цена ↑",
+        "⚡ Рыночный вход (MTF сильный)",
+        "🤖 ML: 58% WIN"
       ]
     },
     {
@@ -739,27 +736,6 @@
         "CVD положительный (+1.2%)",
         "Цена у поддержки 0.6980",
         "🤖 ML: 49% WIN"
-      ]
-    },
-    {
-      "symbol": "SOLUSDT",
-      "direction": "LONG",
-      "entry": 89.72,
-      "tp1": 91.5144,
-      "tp2": 93.3088,
-      "sl": 87.9256,
-      "strength": 54,
-      "status": "EXPIRED",
-      "created_at": "2026-03-24 13:56:57",
-      "reasons": [
-        "RSI=15 (сильная перепроданность)",
-        "BB нижняя полоса (пробой)",
-        "EMA20 > EMA50",
-        "Объём x2.6 🔥🔥",
-        "📰 Solana lands Mastercard, Western Union on new dev platform",
-        "МТФ: 15m, 1h согласны",
-        "Цена у поддержки 89.4500",
-        "⚡ Рыночный вход (MTF 2+ ТФ)"
       ]
     }
   ],
@@ -1278,32 +1254,6 @@
       ]
     },
     {
-      "id": 1197,
-      "symbol": "INITUSDT",
-      "direction": "LONG",
-      "exchange": "bybit",
-      "entry": 0.08651,
-      "tp1": 0.08824,
-      "tp2": 0.08997,
-      "sl": 0.08478,
-      "entry_orig": 0.08651,
-      "tp1_orig": 0.08824,
-      "tp2_orig": 0.08997,
-      "sl_orig": 0.08478,
-      "strength": 53,
-      "taken_at": "2026-03-24T18:29:44.961015",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00049)",
-        "Цена > EMA20 > EMA50",
-        "Объём x4.0 🔥🔥🔥",
-        "МТФ: 5m, 15m, 1h согласны",
-        "OI растёт +2.7% + цена ↑",
-        "⚡ Рыночный вход (MTF сильный)",
-        "🤖 ML: 58% WIN"
-      ]
-    },
-    {
       "id": 1199,
       "symbol": "TAOUSDT",
       "direction": "LONG",
@@ -1361,6 +1311,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "INITUSDT",
+      "direction": "LONG",
+      "entry": 0.08651,
+      "tp1": 0.08824,
+      "tp2": 0.08997,
+      "sl": 0.08478,
+      "strength": 53,
+      "status": "TP1",
+      "pnl_pct": 2.31,
+      "close_price": 0.08851,
+      "taken_at": "2026-03-24T18:29:44.961015",
+      "closed_at": "2026-03-24 19:37:16"
+    },
     {
       "symbol": "PARTIUSDT",
       "direction": "LONG",
@@ -4146,20 +4110,6 @@
       "close_price": 0.00119395,
       "taken_at": "2026-03-23T10:27:34.126299",
       "closed_at": "2026-03-23 11:06:48"
-    },
-    {
-      "symbol": "1000PEPEUSDT",
-      "direction": "LONG",
-      "entry": 0.0032901,
-      "tp1": 0.003356,
-      "tp2": 0.003422,
-      "sl": 0.003224,
-      "strength": 51,
-      "status": "TP2",
-      "pnl_pct": 4.66,
-      "close_price": 0.00344335,
-      "taken_at": "2026-03-23T07:08:41.125064",
-      "closed_at": "2026-03-23 11:06:41"
     }
   ]
 }
