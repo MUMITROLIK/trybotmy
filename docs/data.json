@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-24T18:56:51.712960+00:00",
+  "updated_at": "2026-03-24T18:57:27.111201+00:00",
   "publish_status": {
-    "last_ok": "2026-03-24T18:55:43Z",
+    "last_ok": "2026-03-24T18:56:57Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,11 +17,11 @@
     "winrate": 53.8
   },
   "trade_stats": {
-    "open": 24,
+    "open": 23,
     "pending": 0,
     "wins": 512,
-    "losses": 582,
-    "total_pnl": -37.65,
+    "losses": 583,
+    "total_pnl": -39.86,
     "winrate": 46.8
   },
   "fear_greed": {
@@ -1357,32 +1357,6 @@
       ]
     },
     {
-      "id": 1198,
-      "symbol": "MAGMAUSDT",
-      "direction": "LONG",
-      "exchange": "bybit",
-      "entry": 0.1427,
-      "tp1": 0.146639,
-      "tp2": 0.150577,
-      "sl": 0.139549,
-      "entry_orig": 0.1427,
-      "tp1_orig": 0.146639,
-      "tp2_orig": 0.150577,
-      "sl_orig": 0.139549,
-      "strength": 53,
-      "taken_at": "2026-03-24T18:37:51.198109",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00015)",
-        "Цена > EMA20 > EMA50",
-        "Объём x3.1 🔥🔥",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +8.8% + цена ↑",
-        "⚡ Рыночный вход (MTF сильный)",
-        "🤖 ML: 52% WIN"
-      ]
-    },
-    {
       "id": 1199,
       "symbol": "TAOUSDT",
       "direction": "LONG",
@@ -1412,6 +1386,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "MAGMAUSDT",
+      "direction": "LONG",
+      "entry": 0.1427,
+      "tp1": 0.146639,
+      "tp2": 0.150577,
+      "sl": 0.139549,
+      "strength": 53,
+      "status": "SL",
+      "pnl_pct": -2.21,
+      "close_price": 0.13954,
+      "taken_at": "2026-03-24T18:37:51.198109",
+      "closed_at": "2026-03-24 18:57:06"
+    },
     {
       "symbol": "TAOUSDT",
       "direction": "LONG",
@@ -4197,20 +4185,6 @@
       "close_price": 0.04137,
       "taken_at": "2026-03-23T10:06:01.106215",
       "closed_at": "2026-03-23 11:06:26"
-    },
-    {
-      "symbol": "APTUSDT",
-      "direction": "SHORT",
-      "entry": 0.9101,
-      "tp1": 0.891898,
-      "tp2": 0.873696,
-      "sl": 0.928302,
-      "strength": 50,
-      "status": "SL",
-      "pnl_pct": -3.94,
-      "close_price": 0.946,
-      "taken_at": "2026-03-23T07:26:27.983092",
-      "closed_at": "2026-03-23 11:06:22"
     }
   ]
 }
