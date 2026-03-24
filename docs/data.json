@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-24T08:46:04.498186+00:00",
+  "updated_at": "2026-03-24T08:46:45.259116+00:00",
   "publish_status": {
-    "last_ok": "2026-03-24T08:45:28Z",
+    "last_ok": "2026-03-24T08:46:11Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -11,17 +11,17 @@
   },
   "stats": {
     "total": 1237,
-    "wins": 403,
+    "wins": 404,
     "losses": 338,
-    "active": 12,
+    "active": 11,
     "winrate": 54.4
   },
   "trade_stats": {
-    "open": 20,
+    "open": 19,
     "pending": 0,
-    "wins": 485,
+    "wins": 486,
     "losses": 543,
-    "total_pnl": -18.0,
+    "total_pnl": -15.82,
     "winrate": 47.2
   },
   "fear_greed": {
@@ -150,29 +150,6 @@
       ],
       "news": null,
       "created_at": "2026-03-24 08:10:26",
-      "status": "ACTIVE"
-    },
-    {
-      "id": 1269,
-      "symbol": "FETUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.2363,
-      "tp1": 0.241026,
-      "tp2": 0.245752,
-      "sl": 0.231574,
-      "strength": 50,
-      "reasons": [
-        "MACD бычий (hist=0.00049)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: давление покупки (+0.13)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +2.0% + цена ↑",
-        "CVD положительный (+0.1%)",
-        "⚡ Рыночный вход (MTF сильный)"
-      ],
-      "news": null,
-      "created_at": "2026-03-24 08:12:13",
       "status": "ACTIVE"
     },
     {
@@ -318,6 +295,26 @@
     }
   ],
   "history": [
+    {
+      "symbol": "FETUSDT",
+      "direction": "LONG",
+      "entry": 0.2363,
+      "tp1": 0.241026,
+      "tp2": 0.245752,
+      "sl": 0.231574,
+      "strength": 50,
+      "status": "TP1",
+      "created_at": "2026-03-24 08:12:13",
+      "reasons": [
+        "MACD бычий (hist=0.00049)",
+        "Цена > EMA20 > EMA50",
+        "Стакан: давление покупки (+0.13)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +2.0% + цена ↑",
+        "CVD положительный (+0.1%)",
+        "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
     {
       "symbol": "KASUSDT",
       "direction": "LONG",
@@ -726,27 +723,6 @@
         "Hammer (1h) 🔨",
         "⚡ Рыночный вход (MTF 2+ ТФ)"
       ]
-    },
-    {
-      "symbol": "4USDT",
-      "direction": "LONG",
-      "entry": 0.009825,
-      "tp1": 0.010146,
-      "tp2": 0.010466,
-      "sl": 0.009569,
-      "strength": 56,
-      "status": "TP1",
-      "created_at": "2026-03-24 01:38:34",
-      "reasons": [
-        "RSI=37 (перепроданность)",
-        "BB ниже середины",
-        "EMA20 > EMA50",
-        "Объём x4.4 🔥🔥🔥",
-        "Стакан: сильное давление покупки (+0.40)",
-        "МТФ: 15m, 4h согласны",
-        "OI растёт +2.2% + цена ↑",
-        "⚡ Рыночный вход (MTF 2+ ТФ)"
-      ]
     }
   ],
   "trades_open": [
@@ -1104,32 +1080,6 @@
       ]
     },
     {
-      "id": 1123,
-      "symbol": "FETUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.2363,
-      "tp1": 0.241026,
-      "tp2": 0.245752,
-      "sl": 0.231574,
-      "entry_orig": 0.2363,
-      "tp1_orig": 0.241026,
-      "tp2_orig": 0.245752,
-      "sl_orig": 0.231574,
-      "strength": 50,
-      "taken_at": "2026-03-24T08:12:14.184463",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00049)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: давление покупки (+0.13)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +2.0% + цена ↑",
-        "CVD положительный (+0.1%)",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 1124,
       "symbol": "ONDOUSDT",
       "direction": "LONG",
@@ -1290,6 +1240,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "FETUSDT",
+      "direction": "LONG",
+      "entry": 0.2363,
+      "tp1": 0.241026,
+      "tp2": 0.245752,
+      "sl": 0.231574,
+      "strength": 50,
+      "status": "TP1",
+      "pnl_pct": 2.18,
+      "close_price": 0.24145,
+      "taken_at": "2026-03-24T08:12:14.184463",
+      "closed_at": "2026-03-24 08:46:44"
+    },
     {
       "symbol": "XPTUSDT",
       "direction": "LONG",
@@ -4075,20 +4039,6 @@
       "close_price": 0.1963,
       "taken_at": "2026-03-22T23:10:28.924979",
       "closed_at": "2026-03-23 01:19:57"
-    },
-    {
-      "symbol": "1000PEPEUSDT",
-      "direction": "SHORT",
-      "entry": 0.0032434,
-      "tp1": 0.003179,
-      "tp2": 0.003114,
-      "sl": 0.003308,
-      "strength": 66,
-      "status": "SL",
-      "pnl_pct": -2.0,
-      "close_price": 0.00330815,
-      "taken_at": "2026-03-22T21:07:54.474417",
-      "closed_at": "2026-03-23 01:15:35"
     }
   ]
 }
