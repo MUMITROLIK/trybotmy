@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-24T22:34:57.421256+00:00",
+  "updated_at": "2026-03-24T22:35:36.902563+00:00",
   "publish_status": {
-    "last_ok": "2026-03-24T22:33:57Z",
+    "last_ok": "2026-03-24T22:35:03Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,11 +17,11 @@
     "winrate": 54.1
   },
   "trade_stats": {
-    "open": 17,
+    "open": 16,
     "pending": 0,
-    "wins": 531,
+    "wins": 532,
     "losses": 592,
-    "total_pnl": -19.58,
+    "total_pnl": -17.46,
     "winrate": 47.3
   },
   "fear_greed": {
@@ -1141,34 +1141,6 @@
       ]
     },
     {
-      "id": 1216,
-      "symbol": "PEAQUSDT",
-      "direction": "LONG",
-      "exchange": "bybit",
-      "entry": 0.0189,
-      "tp1": 0.019278,
-      "tp2": 0.019656,
-      "sl": 0.018522,
-      "entry_orig": 0.0189,
-      "tp1_orig": 0.019278,
-      "tp2_orig": 0.019656,
-      "sl_orig": 0.018522,
-      "strength": 50,
-      "taken_at": "2026-03-24T21:24:44.681725",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=37 (перепроданность)",
-        "BB нижняя полоса (пробой)",
-        "EMA20 > EMA50",
-        "Стакан: давление покупки (+0.14)",
-        "МТФ: 15m, 1h, 4h согласны",
-        "OI растёт +0.7% + цена ↑",
-        "Цена у поддержки 0.0188",
-        "⚡ Рыночный вход (MTF сильный)",
-        "🤖 ML: 58% WIN"
-      ]
-    },
-    {
       "id": 1217,
       "symbol": "BANANAS31USDT",
       "direction": "LONG",
@@ -1281,6 +1253,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "PEAQUSDT",
+      "direction": "LONG",
+      "entry": 0.0189,
+      "tp1": 0.019278,
+      "tp2": 0.019656,
+      "sl": 0.018522,
+      "strength": 50,
+      "status": "TP1",
+      "pnl_pct": 2.12,
+      "close_price": 0.019301,
+      "taken_at": "2026-03-24T21:24:44.681725",
+      "closed_at": "2026-03-24 22:35:36"
+    },
     {
       "symbol": "HUMAUSDT",
       "direction": "LONG",
@@ -4066,20 +4052,6 @@
       "close_price": 0.164595,
       "taken_at": "2026-03-23T11:24:50.432041",
       "closed_at": "2026-03-23 13:42:34"
-    },
-    {
-      "symbol": "LIGHTUSDT",
-      "direction": "LONG",
-      "entry": 0.2995,
-      "tp1": 0.311211,
-      "tp2": 0.322921,
-      "sl": 0.290131,
-      "strength": 54,
-      "status": "TP1",
-      "pnl_pct": 4.29,
-      "close_price": 0.31235,
-      "taken_at": "2026-03-23T12:58:03.301472",
-      "closed_at": "2026-03-23 13:30:49"
     }
   ]
 }
