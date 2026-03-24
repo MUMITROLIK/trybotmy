@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-24T14:13:24.122571+00:00",
+  "updated_at": "2026-03-24T14:14:04.677071+00:00",
   "publish_status": {
-    "last_ok": "2026-03-24T14:12:51Z",
+    "last_ok": "2026-03-24T14:13:30Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,11 +17,11 @@
     "winrate": 54.1
   },
   "trade_stats": {
-    "open": 23,
+    "open": 22,
     "pending": 0,
     "wins": 500,
-    "losses": 566,
-    "total_pnl": -31.62,
+    "losses": 567,
+    "total_pnl": -33.62,
     "winrate": 46.9
   },
   "fear_greed": {
@@ -978,32 +978,6 @@
       ]
     },
     {
-      "id": 1127,
-      "symbol": "WLDUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.3221,
-      "tp1": 0.328542,
-      "tp2": 0.334984,
-      "sl": 0.315658,
-      "entry_orig": 0.3221,
-      "tp1_orig": 0.328542,
-      "tp2_orig": 0.334984,
-      "sl_orig": 0.315658,
-      "strength": 50,
-      "taken_at": "2026-03-24T08:26:20.544959",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00010)",
-        "BB ниже середины",
-        "EMA20 > EMA50",
-        "Объём x2.8 🔥🔥",
-        "МТФ: 5m, 15m, 1h согласны",
-        "CVD растёт (+7.2%) — покупки усиливаются 📈",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 1136,
       "symbol": "OPENUSDT",
       "direction": "LONG",
@@ -1510,6 +1484,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "WLDUSDT",
+      "direction": "LONG",
+      "entry": 0.3221,
+      "tp1": 0.328542,
+      "tp2": 0.334984,
+      "sl": 0.315658,
+      "strength": 50,
+      "status": "SL",
+      "pnl_pct": -2.0,
+      "close_price": 0.31565,
+      "taken_at": "2026-03-24T08:26:20.544959",
+      "closed_at": "2026-03-24 14:13:32"
+    },
     {
       "symbol": "ONDOUSDT",
       "direction": "LONG",
@@ -4295,20 +4283,6 @@
       "close_price": 219.325,
       "taken_at": "2026-03-23T05:05:26.034817",
       "closed_at": "2026-03-23 06:42:58"
-    },
-    {
-      "symbol": "PUMPUSDT",
-      "direction": "LONG",
-      "entry": 0.001814,
-      "tp1": 0.00185,
-      "tp2": 0.001887,
-      "sl": 0.001778,
-      "strength": 65,
-      "status": "SL",
-      "pnl_pct": -2.12,
-      "close_price": 0.0017755000000000002,
-      "taken_at": "2026-03-23T05:11:41.006547",
-      "closed_at": "2026-03-23 06:37:38"
     }
   ]
 }
