@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-24T19:23:58.862029+00:00",
+  "updated_at": "2026-03-24T19:25:32.644423+00:00",
   "publish_status": {
-    "last_ok": "2026-03-24T19:23:28Z",
+    "last_ok": "2026-03-24T19:24:05Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,11 +17,11 @@
     "winrate": 53.8
   },
   "trade_stats": {
-    "open": 23,
+    "open": 22,
     "pending": 0,
     "wins": 513,
-    "losses": 583,
-    "total_pnl": -39.57,
+    "losses": 584,
+    "total_pnl": -40.86,
     "winrate": 46.8
   },
   "fear_greed": {
@@ -765,33 +765,6 @@
   ],
   "trades_open": [
     {
-      "id": 1146,
-      "symbol": "PARTIUSDT",
-      "direction": "LONG",
-      "exchange": "bybit",
-      "entry": 0.09594,
-      "tp1": 0.097859,
-      "tp2": 0.099778,
-      "sl": 0.094021,
-      "entry_orig": 0.09594,
-      "tp1_orig": 0.097859,
-      "tp2_orig": 0.099778,
-      "sl_orig": 0.094021,
-      "strength": 51,
-      "taken_at": "2026-03-24T11:24:53.446133",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=38 (перепроданность)",
-        "MACD бычий (hist=0.00000)",
-        "BB ниже середины",
-        "EMA20 > EMA50",
-        "Стакан: сильное давление покупки (+0.27)",
-        "МТФ: 15m, 4h согласны",
-        "Doji (1h) — нерешительность",
-        "⚡ Рыночный вход (MTF 2+ ТФ)"
-      ]
-    },
-    {
       "id": 1151,
       "symbol": "1000SHIBUSDT",
       "direction": "LONG",
@@ -1388,6 +1361,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "PARTIUSDT",
+      "direction": "LONG",
+      "entry": 0.09594,
+      "tp1": 0.097859,
+      "tp2": 0.099778,
+      "sl": 0.094021,
+      "strength": 51,
+      "status": "TIMEOUT",
+      "pnl_pct": -1.29,
+      "close_price": 0.0947,
+      "taken_at": "2026-03-24T11:24:53.446133",
+      "closed_at": "2026-03-24 19:24:53"
+    },
     {
       "symbol": "XPTUSDT",
       "direction": "LONG",
@@ -4173,20 +4160,6 @@
       "close_price": 0.00344335,
       "taken_at": "2026-03-23T07:08:41.125064",
       "closed_at": "2026-03-23 11:06:41"
-    },
-    {
-      "symbol": "CRCLUSDT",
-      "direction": "LONG",
-      "entry": 120.13,
-      "tp1": 122.5326,
-      "tp2": 124.9352,
-      "sl": 117.7274,
-      "strength": 57,
-      "status": "TP1",
-      "pnl_pct": 3.4,
-      "close_price": 124.22,
-      "taken_at": "2026-03-23T06:42:58.122759",
-      "closed_at": "2026-03-23 11:06:37"
     }
   ]
 }
