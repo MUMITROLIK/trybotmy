@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-24T21:56:42.902919+00:00",
+  "updated_at": "2026-03-24T21:57:15.841905+00:00",
   "publish_status": {
-    "last_ok": "2026-03-24T21:55:37Z",
+    "last_ok": "2026-03-24T21:56:49Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 54.0
   },
   "trade_stats": {
-    "open": 20,
+    "open": 18,
     "pending": 0,
-    "wins": 526,
+    "wins": 528,
     "losses": 591,
-    "total_pnl": -24.34,
-    "winrate": 47.1
+    "total_pnl": -23.58,
+    "winrate": 47.2
   },
   "fear_greed": {
     "value": 11,
@@ -836,60 +836,6 @@
   ],
   "trades_open": [
     {
-      "id": 1168,
-      "symbol": "ETHUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 2138.79,
-      "tp1": 2181.5658,
-      "tp2": 2224.3416,
-      "sl": 2096.0142,
-      "entry_orig": 2138.79,
-      "tp1_orig": 2181.5658,
-      "tp2_orig": 2224.3416,
-      "sl_orig": 2096.0142,
-      "strength": 50,
-      "taken_at": "2026-03-24T13:56:57.171987",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=37 (перепроданность)",
-        "BB нижняя полоса (пробой)",
-        "EMA20 > EMA50",
-        "Объём x2.3 🔥",
-        "Стакан: сильное давление покупки (+0.89)",
-        "МТФ: 15m, 1h согласны",
-        "Цена у поддержки 2129.0000",
-        "⚡ Рыночный вход (MTF 2+ ТФ)"
-      ]
-    },
-    {
-      "id": 1169,
-      "symbol": "SOLUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 89.72,
-      "tp1": 91.5144,
-      "tp2": 93.3088,
-      "sl": 87.9256,
-      "entry_orig": 89.72,
-      "tp1_orig": 91.5144,
-      "tp2_orig": 93.3088,
-      "sl_orig": 87.9256,
-      "strength": 54,
-      "taken_at": "2026-03-24T13:56:57.365466",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=15 (сильная перепроданность)",
-        "BB нижняя полоса (пробой)",
-        "EMA20 > EMA50",
-        "Объём x2.6 🔥🔥",
-        "📰 Solana lands Mastercard, Western Union on new dev platform",
-        "МТФ: 15m, 1h согласны",
-        "Цена у поддержки 89.4500",
-        "⚡ Рыночный вход (MTF 2+ ТФ)"
-      ]
-    },
-    {
       "id": 1175,
       "symbol": "TSLAUSDT",
       "direction": "LONG",
@@ -1387,6 +1333,34 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "ETHUSDT",
+      "direction": "LONG",
+      "entry": 2138.79,
+      "tp1": 2181.5658,
+      "tp2": 2224.3416,
+      "sl": 2096.0142,
+      "strength": 50,
+      "status": "TIMEOUT",
+      "pnl_pct": 0.25,
+      "close_price": 2144.205,
+      "taken_at": "2026-03-24T13:56:57.171987",
+      "closed_at": "2026-03-24 21:57:03"
+    },
+    {
+      "symbol": "SOLUSDT",
+      "direction": "LONG",
+      "entry": 89.72,
+      "tp1": 91.5144,
+      "tp2": 93.3088,
+      "sl": 87.9256,
+      "strength": 54,
+      "status": "TIMEOUT",
+      "pnl_pct": 0.51,
+      "close_price": 90.17500000000001,
+      "taken_at": "2026-03-24T13:56:57.365466",
+      "closed_at": "2026-03-24 21:57:03"
+    },
     {
       "symbol": "KITEUSDT",
       "direction": "LONG",
@@ -4158,34 +4132,6 @@
       "close_price": 0.71505,
       "taken_at": "2026-03-23T12:12:25.701738",
       "closed_at": "2026-03-23 12:33:54"
-    },
-    {
-      "symbol": "CYSUSDT",
-      "direction": "LONG",
-      "entry": 0.7313,
-      "tp1": 0.762275,
-      "tp2": 0.79325,
-      "sl": 0.70652,
-      "strength": 55,
-      "status": "SL",
-      "pnl_pct": -3.95,
-      "close_price": 0.70245,
-      "taken_at": "2026-03-23T12:12:25.876802",
-      "closed_at": "2026-03-23 12:17:53"
-    },
-    {
-      "symbol": "NIGHTUSDT",
-      "direction": "LONG",
-      "entry": 0.04908,
-      "tp1": 0.050062,
-      "tp2": 0.051043,
-      "sl": 0.048098,
-      "strength": 50,
-      "status": "SL",
-      "pnl_pct": -2.01,
-      "close_price": 0.048095,
-      "taken_at": "2026-03-23T11:54:51.459276",
-      "closed_at": "2026-03-23 12:06:47"
     }
   ]
 }
