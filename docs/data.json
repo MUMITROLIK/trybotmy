@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-24T20:25:50.471299+00:00",
+  "updated_at": "2026-03-24T20:26:53.674153+00:00",
   "publish_status": {
-    "last_ok": "2026-03-24T20:24:25Z",
+    "last_ok": "2026-03-24T20:25:56Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,19 +10,19 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 1312,
+    "total": 1313,
     "wins": 432,
     "losses": 369,
-    "active": 8,
+    "active": 9,
     "winrate": 53.9
   },
   "trade_stats": {
     "open": 16,
     "pending": 0,
     "wins": 520,
-    "losses": 587,
-    "total_pnl": -30.4,
-    "winrate": 47.0
+    "losses": 588,
+    "total_pnl": -32.57,
+    "winrate": 46.9
   },
   "fear_greed": {
     "value": 11,
@@ -229,6 +229,30 @@
       ],
       "news": null,
       "created_at": "2026-03-24 20:24:33",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1351,
+      "symbol": "TAOUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 337.82,
+      "tp1": 345.941429,
+      "tp2": 354.062857,
+      "sl": 331.0636,
+      "strength": 54,
+      "reasons": [
+        "MACD бычий (hist=1.64178)",
+        "Цена > EMA20 > EMA50",
+        "Стакан: давление покупки (+0.12)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +7.1% + цена ↑",
+        "CVD растёт (+9.4%) — покупки усиливаются 📈",
+        "⚡ Рыночный вход (MTF сильный)",
+        "🤖 ML: 47% WIN"
+      ],
+      "news": null,
+      "created_at": "2026-03-24 20:26:17",
       "status": "ACTIVE"
     }
   ],
@@ -691,32 +715,6 @@
       ]
     },
     {
-      "id": 1164,
-      "symbol": "PENGUUSDT",
-      "direction": "SHORT",
-      "exchange": "binance",
-      "entry": 0.006951,
-      "tp1": 0.006812,
-      "tp2": 0.006673,
-      "sl": 0.00709,
-      "entry_orig": 0.006951,
-      "tp1_orig": 0.006812,
-      "tp2_orig": 0.006673,
-      "sl_orig": 0.00709,
-      "strength": 55,
-      "taken_at": "2026-03-24T13:43:03.727245",
-      "status": "OPEN",
-      "reasons": [
-        "MACD медвежий (hist=-0.00000)",
-        "Цена < EMA20 < EMA50",
-        "Объём x3.0 🔥🔥",
-        "Стакан: давление продажи (-0.19)",
-        "МТФ: 5m, 15m, 4h согласны",
-        "CVD падает (-6.9%) — продажи усиливаются 📉",
-        "BTC корреляция 0.78, BTC -1.2% 📉"
-      ]
-    },
-    {
       "id": 1165,
       "symbol": "EIGENUSDT",
       "direction": "LONG",
@@ -1095,9 +1093,50 @@
         "⚡ Рыночный вход (MTF сильный)",
         "🤖 ML: 58% WIN"
       ]
+    },
+    {
+      "id": 1205,
+      "symbol": "TAOUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 337.82,
+      "tp1": 345.941429,
+      "tp2": 354.062857,
+      "sl": 331.0636,
+      "entry_orig": 337.82,
+      "tp1_orig": 345.941429,
+      "tp2_orig": 354.062857,
+      "sl_orig": 331.0636,
+      "strength": 54,
+      "taken_at": "2026-03-24T20:26:17.408570",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=1.64178)",
+        "Цена > EMA20 > EMA50",
+        "Стакан: давление покупки (+0.12)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +7.1% + цена ↑",
+        "CVD растёт (+9.4%) — покупки усиливаются 📈",
+        "⚡ Рыночный вход (MTF сильный)",
+        "🤖 ML: 47% WIN"
+      ]
     }
   ],
   "trades_history": [
+    {
+      "symbol": "PENGUUSDT",
+      "direction": "SHORT",
+      "entry": 0.006951,
+      "tp1": 0.006812,
+      "tp2": 0.006673,
+      "sl": 0.00709,
+      "strength": 55,
+      "status": "SL",
+      "pnl_pct": -2.17,
+      "close_price": 0.0071015,
+      "taken_at": "2026-03-24T13:43:03.727245",
+      "closed_at": "2026-03-24 20:26:53"
+    },
     {
       "symbol": "XAUUSDT",
       "direction": "LONG",
@@ -3883,20 +3922,6 @@
       "close_price": 0.0016335,
       "taken_at": "2026-03-23T11:28:39.998389",
       "closed_at": "2026-03-23 11:37:08"
-    },
-    {
-      "symbol": "AAVEUSDT",
-      "direction": "LONG",
-      "entry": 109.6,
-      "tp1": 111.792,
-      "tp2": 113.984,
-      "sl": 107.408,
-      "strength": 53,
-      "status": "TP1",
-      "pnl_pct": 2.23,
-      "close_price": 112.045,
-      "taken_at": "2026-03-23T11:24:50.246568",
-      "closed_at": "2026-03-23 11:31:14"
     }
   ]
 }
