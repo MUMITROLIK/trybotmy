@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-24T02:12:01.239542+00:00",
+  "updated_at": "2026-03-24T02:13:07.493134+00:00",
   "publish_status": {
-    "last_ok": "2026-03-24T02:11:33Z",
+    "last_ok": "2026-03-24T02:12:07Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,10 +10,10 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 1206,
+    "total": 1207,
     "wins": 397,
     "losses": 335,
-    "active": 8,
+    "active": 9,
     "winrate": 54.2
   },
   "trade_stats": {
@@ -221,6 +221,32 @@
       ],
       "news": null,
       "created_at": "2026-03-24 00:56:17",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1245,
+      "symbol": "ARIAUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.24649,
+      "tp1": 0.252254,
+      "tp2": 0.258019,
+      "sl": 0.24156,
+      "strength": 56,
+      "reasons": [
+        "RSI=20 (сильная перепроданность)",
+        "BB нижняя полоса (пробой)",
+        "EMA20 > EMA50",
+        "Объём x2.1 🔥",
+        "Стакан: давление покупки (+0.24)",
+        "МТФ: 15m, 4h согласны",
+        "OI падает (шорты закрываются)",
+        "CVD положительный (-1.2%)",
+        "Hammer (1h) 🔨",
+        "⚡ Рыночный вход (MTF 2+ ТФ)"
+      ],
+      "news": null,
+      "created_at": "2026-03-24 02:13:07",
       "status": "ACTIVE"
     }
   ],
