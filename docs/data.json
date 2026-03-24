@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-24T20:53:12.300407+00:00",
+  "updated_at": "2026-03-24T20:53:56.839734+00:00",
   "publish_status": {
-    "last_ok": "2026-03-24T20:52:12Z",
+    "last_ok": "2026-03-24T20:53:18Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,11 +17,11 @@
     "winrate": 53.9
   },
   "trade_stats": {
-    "open": 19,
+    "open": 18,
     "pending": 0,
     "wins": 522,
-    "losses": 590,
-    "total_pnl": -30.01,
+    "losses": 591,
+    "total_pnl": -32.24,
     "winrate": 46.9
   },
   "fear_greed": {
@@ -947,34 +947,6 @@
       ]
     },
     {
-      "id": 1192,
-      "symbol": "GRASSUSDT",
-      "direction": "SHORT",
-      "exchange": "bybit",
-      "entry": 0.33571,
-      "tp1": 0.328996,
-      "tp2": 0.322282,
-      "sl": 0.342424,
-      "entry_orig": 0.33571,
-      "tp1_orig": 0.328996,
-      "tp2_orig": 0.322282,
-      "sl_orig": 0.342424,
-      "strength": 55,
-      "taken_at": "2026-03-24T18:00:13.957256",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=51 (нейтральный↑)",
-        "MACD медвежий (hist=-0.00019)",
-        "Цена ниже EMA20",
-        "Объём x4.2 🔥🔥🔥",
-        "Стакан: сильное давление продажи (-0.29)",
-        "МТФ: 1h, 4h согласны",
-        "OI растёт +1.5% + цена ↓",
-        "BTC контекст: -2.9% за 12ч 📉",
-        "🤖 ML: 54% WIN"
-      ]
-    },
-    {
       "id": 1193,
       "symbol": "KITEUSDT",
       "direction": "LONG",
@@ -1304,6 +1276,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "GRASSUSDT",
+      "direction": "SHORT",
+      "entry": 0.33571,
+      "tp1": 0.328996,
+      "tp2": 0.322282,
+      "sl": 0.342424,
+      "strength": 55,
+      "status": "SL",
+      "pnl_pct": -2.23,
+      "close_price": 0.3432,
+      "taken_at": "2026-03-24T18:00:13.957256",
+      "closed_at": "2026-03-24 20:53:38"
+    },
     {
       "symbol": "BEATUSDT",
       "direction": "LONG",
@@ -4089,20 +4075,6 @@
       "close_price": 0.049065,
       "taken_at": "2026-03-23T11:37:26.545699",
       "closed_at": "2026-03-23 11:54:34"
-    },
-    {
-      "symbol": "CRCLUSDT",
-      "direction": "LONG",
-      "entry": 127.96,
-      "tp1": 130.5192,
-      "tp2": 133.0784,
-      "sl": 125.4008,
-      "strength": 53,
-      "status": "SL",
-      "pnl_pct": -2.06,
-      "close_price": 125.32,
-      "taken_at": "2026-03-23T11:20:56.612964",
-      "closed_at": "2026-03-23 11:52:21"
     }
   ]
 }
