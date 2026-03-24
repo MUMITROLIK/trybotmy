@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-24T01:27:06.966436+00:00",
+  "updated_at": "2026-03-24T01:27:52.249837+00:00",
   "publish_status": {
-    "last_ok": "2026-03-24T01:26:06Z",
+    "last_ok": "2026-03-24T01:27:13Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 54.2
   },
   "trade_stats": {
-    "open": 18,
+    "open": 17,
     "pending": 0,
     "wins": 466,
-    "losses": 532,
-    "total_pnl": -36.35,
-    "winrate": 46.7
+    "losses": 533,
+    "total_pnl": -38.37,
+    "winrate": 46.6
   },
   "fear_greed": {
     "value": 11,
@@ -974,34 +974,6 @@
       ]
     },
     {
-      "id": 1083,
-      "symbol": "PIXELUSDT",
-      "direction": "LONG",
-      "exchange": "bybit",
-      "entry": 0.009124,
-      "tp1": 0.009306,
-      "tp2": 0.009489,
-      "sl": 0.008942,
-      "entry_orig": 0.009124,
-      "tp1_orig": 0.009306,
-      "tp2_orig": 0.009489,
-      "sl_orig": 0.008942,
-      "strength": 50,
-      "taken_at": "2026-03-23T22:43:41.346039",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=16 (сильная перепроданность)",
-        "BB нижняя зона (1%)",
-        "EMA20 > EMA50",
-        "Объём x2.7 🔥🔥",
-        "Стакан: перевес bid (+0.09)",
-        "МТФ: 15m, 1h согласны",
-        "Цена у поддержки 0.0091",
-        "⚠️ Funding через 77м",
-        "⚡ Рыночный вход (MTF 2+ ТФ)"
-      ]
-    },
-    {
       "id": 1086,
       "symbol": "GALAUSDT",
       "direction": "LONG",
@@ -1241,6 +1213,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "PIXELUSDT",
+      "direction": "LONG",
+      "entry": 0.009124,
+      "tp1": 0.009306,
+      "tp2": 0.009489,
+      "sl": 0.008942,
+      "strength": 50,
+      "status": "SL",
+      "pnl_pct": -2.02,
+      "close_price": 0.00894,
+      "taken_at": "2026-03-23T22:43:41.346039",
+      "closed_at": "2026-03-24 01:27:27"
+    },
     {
       "symbol": "JTOUSDT",
       "direction": "LONG",
@@ -4026,20 +4012,6 @@
       "close_price": 30.9605,
       "taken_at": "2026-03-22T19:56:20.253223",
       "closed_at": "2026-03-22 20:58:58"
-    },
-    {
-      "symbol": "币安人生USDT",
-      "direction": "LONG",
-      "entry": 0.047369999999999995,
-      "tp1": 0.04862714,
-      "tp2": 0.04988519,
-      "sl": 0.04636388,
-      "strength": 50,
-      "status": "TIMEOUT",
-      "pnl_pct": 1.64,
-      "close_price": 0.048145,
-      "taken_at": "2026-03-22T12:42:36.893266",
-      "closed_at": "2026-03-22 20:42:37"
     }
   ]
 }
