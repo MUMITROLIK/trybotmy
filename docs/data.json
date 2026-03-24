@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-24T14:47:48.912401+00:00",
+  "updated_at": "2026-03-24T14:49:17.648116+00:00",
   "publish_status": {
-    "last_ok": "2026-03-24T14:47:04Z",
+    "last_ok": "2026-03-24T14:47:54Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 53.9
   },
   "trade_stats": {
-    "open": 20,
+    "open": 19,
     "pending": 0,
     "wins": 501,
-    "losses": 570,
-    "total_pnl": -39.24,
-    "winrate": 46.8
+    "losses": 571,
+    "total_pnl": -40.4,
+    "winrate": 46.7
   },
   "fear_greed": {
     "value": 11,
@@ -851,35 +851,6 @@
   ],
   "trades_open": [
     {
-      "id": 1107,
-      "symbol": "GUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.003889,
-      "tp1": 0.003967,
-      "tp2": 0.004045,
-      "sl": 0.003811,
-      "entry_orig": 0.003889,
-      "tp1_orig": 0.003967,
-      "tp2_orig": 0.004045,
-      "sl_orig": 0.003811,
-      "strength": 55,
-      "taken_at": "2026-03-24T06:48:22.850451",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=21 (сильная перепроданность)",
-        "MACD бычий (hist=0.00000)",
-        "BB нижняя зона (20%)",
-        "Стакан: перевес bid (+0.05)",
-        "📰 Ethereum Tops $2,100 As BitMine Ramps Up ETH Bet With $137M Purch...",
-        "МТФ: только 1 таймфрейм согласен",
-        "CVD положительный (+0.0%)",
-        "Doji (1h) — нерешительность",
-        "Цена у поддержки 0.0039",
-        "⚠️ Funding через 72м"
-      ]
-    },
-    {
       "id": 1110,
       "symbol": "HYPEUSDT",
       "direction": "LONG",
@@ -1389,6 +1360,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "GUSDT",
+      "direction": "LONG",
+      "entry": 0.003889,
+      "tp1": 0.003967,
+      "tp2": 0.004045,
+      "sl": 0.003811,
+      "strength": 55,
+      "status": "TIMEOUT",
+      "pnl_pct": -1.16,
+      "close_price": 0.003844,
+      "taken_at": "2026-03-24T06:48:22.850451",
+      "closed_at": "2026-03-24 14:48:27"
+    },
     {
       "symbol": "ARIAUSDT",
       "direction": "LONG",
@@ -4174,20 +4159,6 @@
       "close_price": 4160.415,
       "taken_at": "2026-03-23T06:38:08.211415",
       "closed_at": "2026-03-23 07:15:05"
-    },
-    {
-      "symbol": "KATUSDT",
-      "direction": "LONG",
-      "entry": 0.01216,
-      "tp1": 0.012597,
-      "tp2": 0.013034,
-      "sl": 0.01181,
-      "strength": 57,
-      "status": "SL",
-      "pnl_pct": -2.92,
-      "close_price": 0.011805,
-      "taken_at": "2026-03-23T04:43:23.429805",
-      "closed_at": "2026-03-23 07:06:31"
     }
   ]
 }
