@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-24T18:52:09.034819+00:00",
+  "updated_at": "2026-03-24T18:53:35.077544+00:00",
   "publish_status": {
-    "last_ok": "2026-03-24T18:51:30Z",
+    "last_ok": "2026-03-24T18:52:16Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -12,8 +12,8 @@
   "stats": {
     "total": 1307,
     "wins": 427,
-    "losses": 366,
-    "active": 15,
+    "losses": 367,
+    "active": 14,
     "winrate": 53.8
   },
   "trade_stats": {
@@ -352,29 +352,6 @@
       "status": "ACTIVE"
     },
     {
-      "id": 1344,
-      "symbol": "MAGMAUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.1427,
-      "tp1": 0.146639,
-      "tp2": 0.150577,
-      "sl": 0.139549,
-      "strength": 53,
-      "reasons": [
-        "MACD бычий (hist=0.00015)",
-        "Цена > EMA20 > EMA50",
-        "Объём x3.1 🔥🔥",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +8.8% + цена ↑",
-        "⚡ Рыночный вход (MTF сильный)",
-        "🤖 ML: 52% WIN"
-      ],
-      "news": null,
-      "created_at": "2026-03-24 18:37:50",
-      "status": "ACTIVE"
-    },
-    {
       "id": 1345,
       "symbol": "TAOUSDT",
       "direction": "LONG",
@@ -401,6 +378,26 @@
     }
   ],
   "history": [
+    {
+      "symbol": "MAGMAUSDT",
+      "direction": "LONG",
+      "entry": 0.1427,
+      "tp1": 0.146639,
+      "tp2": 0.150577,
+      "sl": 0.139549,
+      "strength": 53,
+      "status": "SL",
+      "created_at": "2026-03-24 18:37:50",
+      "reasons": [
+        "MACD бычий (hist=0.00015)",
+        "Цена > EMA20 > EMA50",
+        "Объём x3.1 🔥🔥",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +8.8% + цена ↑",
+        "⚡ Рыночный вход (MTF сильный)",
+        "🤖 ML: 52% WIN"
+      ]
+    },
     {
       "symbol": "INITUSDT",
       "direction": "LONG",
@@ -808,26 +805,6 @@
         "МТФ: 5m, 15m, 4h согласны",
         "CVD падает (-6.9%) — продажи усиливаются 📉",
         "BTC корреляция 0.78, BTC -1.2% 📉"
-      ]
-    },
-    {
-      "symbol": "EIGENUSDT",
-      "direction": "LONG",
-      "entry": 0.19473,
-      "tp1": 0.198625,
-      "tp2": 0.202519,
-      "sl": 0.190835,
-      "strength": 50,
-      "status": "EXPIRED",
-      "created_at": "2026-03-24 13:43:03",
-      "reasons": [
-        "RSI=28 (сильная перепроданность)",
-        "BB нижняя зона (7%)",
-        "EMA20 > EMA50",
-        "Объём x2.8 🔥🔥",
-        "Стакан: давление покупки (+0.11)",
-        "МТФ: 15m, 1h согласны",
-        "⚡ Рыночный вход (MTF 2+ ТФ)"
       ]
     }
   ],
