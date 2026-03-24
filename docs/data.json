@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-24T11:04:19.657569+00:00",
+  "updated_at": "2026-03-24T11:05:38.344351+00:00",
   "publish_status": {
-    "last_ok": "2026-03-24T11:03:36Z",
+    "last_ok": "2026-03-24T11:04:27Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -11,18 +11,18 @@
   },
   "stats": {
     "total": 1246,
-    "wins": 406,
+    "wins": 407,
     "losses": 345,
-    "active": 11,
+    "active": 10,
     "winrate": 54.1
   },
   "trade_stats": {
-    "open": 17,
+    "open": 16,
     "pending": 0,
-    "wins": 489,
+    "wins": 490,
     "losses": 551,
-    "total_pnl": -25.25,
-    "winrate": 47.0
+    "total_pnl": -21.94,
+    "winrate": 47.1
   },
   "fear_greed": {
     "value": 11,
@@ -269,17 +269,19 @@
       "news": "Altcoins Post Double-Digit Gains as Bitcoin (BTC) Reclaims $70K: Market Watch",
       "created_at": "2026-03-24 10:17:02",
       "status": "ACTIVE"
-    },
+    }
+  ],
+  "history": [
     {
-      "id": 1284,
       "symbol": "ONTUSDT",
       "direction": "LONG",
-      "exchange": "binance",
       "entry": 0.0513,
       "tp1": 0.05295,
       "tp2": 0.0546,
       "sl": 0.04998,
       "strength": 55,
+      "status": "TP1",
+      "created_at": "2026-03-24 10:54:19",
       "reasons": [
         "MACD бычий (hist=0.00085)",
         "Цена > EMA20 > EMA50",
@@ -289,13 +291,8 @@
         "OI растёт +50.8% + цена ↑",
         "CVD положительный (+2.2%)",
         "⚡ Рыночный вход (MTF сильный)"
-      ],
-      "news": null,
-      "created_at": "2026-03-24 10:54:19",
-      "status": "ACTIVE"
-    }
-  ],
-  "history": [
+      ]
+    },
     {
       "symbol": "APTUSDT",
       "direction": "LONG",
@@ -688,29 +685,6 @@
         "Цена у поддержки 0.0463",
         "⚠️ Funding через 55м",
         "⚡ Рыночный вход (MTF 2+ ТФ)"
-      ]
-    },
-    {
-      "symbol": "JTOUSDT",
-      "direction": "LONG",
-      "entry": 0.3298,
-      "tp1": 0.336957,
-      "tp2": 0.344114,
-      "sl": 0.323204,
-      "strength": 57,
-      "status": "EXPIRED",
-      "created_at": "2026-03-24 06:50:07",
-      "reasons": [
-        "RSI=43 (нейтральный↓)",
-        "MACD бычий (hist=0.00009)",
-        "BB ниже середины",
-        "EMA20 > EMA50",
-        "Стакан: давление покупки (+0.15)",
-        "МТФ: 15m, 1h, 4h согласны",
-        "CVD положительный (+2.1%)",
-        "Bullish Engulfing (1h) 🕯️",
-        "⚠️ Funding через 71м",
-        "⚡ Рыночный вход (MTF сильный)"
       ]
     }
   ],
@@ -1145,36 +1119,23 @@
         "CVD положительный (+4.6%)",
         "⚡ Рыночный вход (MTF сильный)"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 1138,
       "symbol": "ONTUSDT",
       "direction": "LONG",
-      "exchange": "binance",
       "entry": 0.0513,
       "tp1": 0.05295,
       "tp2": 0.0546,
       "sl": 0.04998,
-      "entry_orig": 0.0513,
-      "tp1_orig": 0.05295,
-      "tp2_orig": 0.0546,
-      "sl_orig": 0.04998,
       "strength": 55,
+      "status": "TP1",
+      "pnl_pct": 3.31,
+      "close_price": 0.053,
       "taken_at": "2026-03-24T10:54:19.358435",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00085)",
-        "Цена > EMA20 > EMA50",
-        "Объём x3.0 🔥🔥",
-        "Стакан: перевес bid (+0.07)",
-        "МТФ: 5m, 15m, 1h согласны",
-        "OI растёт +50.8% + цена ↑",
-        "CVD положительный (+2.2%)",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-24 11:05:37"
+    },
     {
       "symbol": "VIRTUALUSDT",
       "direction": "LONG",
@@ -3960,20 +3921,6 @@
       "close_price": 1.4365,
       "taken_at": "2026-03-22T21:09:26.454535",
       "closed_at": "2026-03-23 03:02:55"
-    },
-    {
-      "symbol": "OPUSDT",
-      "direction": "SHORT",
-      "entry": 0.114,
-      "tp1": 0.11172,
-      "tp2": 0.10944,
-      "sl": 0.11628,
-      "strength": 50,
-      "status": "SL",
-      "pnl_pct": -2.06,
-      "close_price": 0.11635000000000001,
-      "taken_at": "2026-03-22T21:07:54.986052",
-      "closed_at": "2026-03-23 03:02:49"
     }
   ]
 }
