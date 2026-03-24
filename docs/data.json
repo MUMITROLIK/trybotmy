@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-24T08:00:14.562036+00:00",
+  "updated_at": "2026-03-24T08:01:13.953312+00:00",
   "publish_status": {
-    "last_ok": "2026-03-24T07:59:00Z",
+    "last_ok": "2026-03-24T08:00:20Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,19 +10,19 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 1225,
+    "total": 1227,
     "wins": 403,
     "losses": 338,
-    "active": 0,
+    "active": 2,
     "winrate": 54.4
   },
   "trade_stats": {
-    "open": 15,
+    "open": 16,
     "pending": 0,
-    "wins": 478,
+    "wins": 479,
     "losses": 543,
-    "total_pnl": -30.07,
-    "winrate": 46.8
+    "total_pnl": -29.29,
+    "winrate": 46.9
   },
   "fear_greed": {
     "value": 11,
@@ -35,7 +35,54 @@
     "rows": 1005,
     "trained_at": "2026-03-23T15:00:26.686298+00:00"
   },
-  "signals": [],
+  "signals": [
+    {
+      "id": 1264,
+      "symbol": "TAOUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 318.1,
+      "tp1": 324.462,
+      "tp2": 330.824,
+      "sl": 311.738,
+      "strength": 51,
+      "reasons": [
+        "MACD бычий (hist=0.64056)",
+        "Цена > EMA20 > EMA50",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +8.1% + цена ↑",
+        "CVD растёт (+6.0%) — покупки усиливаются 📈",
+        "BTC корреляция 0.68, BTC +1.2% 📈",
+        "⚡ Рыночный вход (MTF сильный)"
+      ],
+      "news": null,
+      "created_at": "2026-03-24 08:01:06",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1265,
+      "symbol": "1000PEPEUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.003477,
+      "tp1": 0.003547,
+      "tp2": 0.003616,
+      "sl": 0.003407,
+      "strength": 51,
+      "reasons": [
+        "MACD бычий (hist=0.00001)",
+        "Цена > EMA20 > EMA50",
+        "Стакан: сильное давление покупки (+0.38)",
+        "МТФ: 5m, 15m, 1h согласны",
+        "CVD растёт (+6.3%) — покупки усиливаются 📈",
+        "BTC корреляция 0.71, BTC +1.2% 📈",
+        "⚡ Рыночный вход (MTF сильный)"
+      ],
+      "news": null,
+      "created_at": "2026-03-24 08:01:13",
+      "status": "ACTIVE"
+    }
+  ],
   "history": [
     {
       "symbol": "KASUSDT",
@@ -470,32 +517,6 @@
   ],
   "trades_open": [
     {
-      "id": 1086,
-      "symbol": "GALAUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.00321,
-      "tp1": 0.003274,
-      "tp2": 0.003338,
-      "sl": 0.003146,
-      "entry_orig": 0.00321,
-      "tp1_orig": 0.003274,
-      "tp2_orig": 0.003338,
-      "sl_orig": 0.003146,
-      "strength": 50,
-      "taken_at": "2026-03-24T00:00:40.078415",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00000)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: сильное давление покупки (+0.28)",
-        "МТФ: 5m, 15m, 4h согласны",
-        "CVD растёт (+6.8%) — покупки усиливаются 📈",
-        "Doji (1h) — нерешительность",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 1091,
       "symbol": "1000SHIBUSDT",
       "direction": "LONG",
@@ -881,9 +902,75 @@
         "⚠️ Funding через 42м",
         "⚡ Рыночный вход (MTF сильный)"
       ]
+    },
+    {
+      "id": 1118,
+      "symbol": "TAOUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 318.1,
+      "tp1": 324.462,
+      "tp2": 330.824,
+      "sl": 311.738,
+      "entry_orig": 318.1,
+      "tp1_orig": 324.462,
+      "tp2_orig": 330.824,
+      "sl_orig": 311.738,
+      "strength": 51,
+      "taken_at": "2026-03-24T08:01:13.269249",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.64056)",
+        "Цена > EMA20 > EMA50",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +8.1% + цена ↑",
+        "CVD растёт (+6.0%) — покупки усиливаются 📈",
+        "BTC корреляция 0.68, BTC +1.2% 📈",
+        "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
+    {
+      "id": 1119,
+      "symbol": "1000PEPEUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.003477,
+      "tp1": 0.003547,
+      "tp2": 0.003616,
+      "sl": 0.003407,
+      "entry_orig": 0.003477,
+      "tp1_orig": 0.003547,
+      "tp2_orig": 0.003616,
+      "sl_orig": 0.003407,
+      "strength": 51,
+      "taken_at": "2026-03-24T08:01:13.485532",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.00001)",
+        "Цена > EMA20 > EMA50",
+        "Стакан: сильное давление покупки (+0.38)",
+        "МТФ: 5m, 15m, 1h согласны",
+        "CVD растёт (+6.3%) — покупки усиливаются 📈",
+        "BTC корреляция 0.71, BTC +1.2% 📈",
+        "⚡ Рыночный вход (MTF сильный)"
+      ]
     }
   ],
   "trades_history": [
+    {
+      "symbol": "GALAUSDT",
+      "direction": "LONG",
+      "entry": 0.00321,
+      "tp1": 0.003274,
+      "tp2": 0.003338,
+      "sl": 0.003146,
+      "strength": 50,
+      "status": "TIMEOUT",
+      "pnl_pct": 0.78,
+      "close_price": 0.003235,
+      "taken_at": "2026-03-24T00:00:40.078415",
+      "closed_at": "2026-03-24 08:00:43"
+    },
     {
       "symbol": "MOODENGUSDT",
       "direction": "LONG",
@@ -3669,20 +3756,6 @@
       "close_price": 0.007222,
       "taken_at": "2026-03-23T00:14:15.560549",
       "closed_at": "2026-03-23 00:53:46"
-    },
-    {
-      "symbol": "SIGNUSDT",
-      "direction": "LONG",
-      "entry": 0.05346,
-      "tp1": 0.054529,
-      "tp2": 0.055598,
-      "sl": 0.052391,
-      "strength": 52,
-      "status": "SL",
-      "pnl_pct": -2.1,
-      "close_price": 0.052335,
-      "taken_at": "2026-03-22T23:13:52.063883",
-      "closed_at": "2026-03-23 00:36:11"
     }
   ]
 }
