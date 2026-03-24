@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-24T20:44:29.059144+00:00",
+  "updated_at": "2026-03-24T20:45:18.387082+00:00",
   "publish_status": {
-    "last_ok": "2026-03-24T20:43:29Z",
+    "last_ok": "2026-03-24T20:44:35Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,19 +10,19 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 1319,
+    "total": 1320,
     "wins": 432,
     "losses": 369,
-    "active": 15,
+    "active": 16,
     "winrate": 53.9
   },
   "trade_stats": {
     "open": 21,
     "pending": 0,
     "wins": 521,
-    "losses": 588,
-    "total_pnl": -30.46,
-    "winrate": 47.0
+    "losses": 589,
+    "total_pnl": -30.79,
+    "winrate": 46.9
   },
   "fear_greed": {
     "value": 11,
@@ -401,6 +401,30 @@
       ],
       "news": null,
       "created_at": "2026-03-24 20:39:57",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1358,
+      "symbol": "APTUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 1.0713,
+      "tp1": 1.092726,
+      "tp2": 1.114152,
+      "sl": 1.049874,
+      "strength": 54,
+      "reasons": [
+        "MACD бычий (hist=0.00366)",
+        "Цена > EMA20 > EMA50",
+        "Объём x2.6 🔥🔥",
+        "Стакан: перевес bid (+0.09)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "CVD положительный (+4.7%)",
+        "⚡ Рыночный вход (MTF сильный)",
+        "🤖 ML: 58% WIN"
+      ],
+      "news": null,
+      "created_at": "2026-03-24 20:45:17",
       "status": "ACTIVE"
     }
   ],
@@ -836,32 +860,6 @@
     }
   ],
   "trades_open": [
-    {
-      "id": 1154,
-      "symbol": "GASUSDT",
-      "direction": "LONG",
-      "exchange": "bybit",
-      "entry": 1.6777,
-      "tp1": 1.738525,
-      "tp2": 1.79935,
-      "sl": 1.62904,
-      "entry_orig": 1.6777,
-      "tp1_orig": 1.738525,
-      "tp2_orig": 1.79935,
-      "sl_orig": 1.62904,
-      "strength": 58,
-      "taken_at": "2026-03-24T12:44:25.720144",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.01448)",
-        "Цена > EMA20 > EMA50",
-        "Объём x6.8 🔥🔥🔥",
-        "Стакан: сильное давление покупки (+0.29)",
-        "МТФ: 5m, 15m, 1h согласны",
-        "OI растёт +4.5% + цена ↑",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
     {
       "id": 1165,
       "symbol": "EIGENUSDT",
@@ -1407,9 +1405,50 @@
         "Цена у поддержки 0.5752",
         "🤖 ML: 58% WIN"
       ]
+    },
+    {
+      "id": 1212,
+      "symbol": "APTUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 1.0713,
+      "tp1": 1.092726,
+      "tp2": 1.114152,
+      "sl": 1.049874,
+      "entry_orig": 1.0713,
+      "tp1_orig": 1.092726,
+      "tp2_orig": 1.114152,
+      "sl_orig": 1.049874,
+      "strength": 54,
+      "taken_at": "2026-03-24T20:45:18.015575",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.00366)",
+        "Цена > EMA20 > EMA50",
+        "Объём x2.6 🔥🔥",
+        "Стакан: перевес bid (+0.09)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "CVD положительный (+4.7%)",
+        "⚡ Рыночный вход (MTF сильный)",
+        "🤖 ML: 58% WIN"
+      ]
     }
   ],
   "trades_history": [
+    {
+      "symbol": "GASUSDT",
+      "direction": "LONG",
+      "entry": 1.6777,
+      "tp1": 1.738525,
+      "tp2": 1.79935,
+      "sl": 1.62904,
+      "strength": 58,
+      "status": "TIMEOUT",
+      "pnl_pct": -0.33,
+      "close_price": 1.6721,
+      "taken_at": "2026-03-24T12:44:25.720144",
+      "closed_at": "2026-03-24 20:44:36"
+    },
     {
       "symbol": "MOODENGUSDT",
       "direction": "LONG",
@@ -4195,20 +4234,6 @@
       "close_price": 0.0011589,
       "taken_at": "2026-03-23T11:07:04.023839",
       "closed_at": "2026-03-23 11:47:39"
-    },
-    {
-      "symbol": "KAITOUSDT",
-      "direction": "LONG",
-      "entry": 0.4142,
-      "tp1": 0.423296,
-      "tp2": 0.432393,
-      "sl": 0.405916,
-      "strength": 60,
-      "status": "SL",
-      "pnl_pct": -3.31,
-      "close_price": 0.4005,
-      "taken_at": "2026-03-23T11:20:57.321114",
-      "closed_at": "2026-03-23 11:47:20"
     }
   ]
 }
