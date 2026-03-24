@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-24T08:59:20.418217+00:00",
+  "updated_at": "2026-03-24T09:00:52.978851+00:00",
   "publish_status": {
-    "last_ok": "2026-03-24T08:58:47Z",
+    "last_ok": "2026-03-24T08:59:26Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -11,18 +11,18 @@
   },
   "stats": {
     "total": 1237,
-    "wins": 404,
+    "wins": 405,
     "losses": 338,
-    "active": 11,
-    "winrate": 54.4
+    "active": 10,
+    "winrate": 54.5
   },
   "trade_stats": {
-    "open": 19,
+    "open": 18,
     "pending": 0,
-    "wins": 486,
+    "wins": 487,
     "losses": 543,
-    "total_pnl": -15.82,
-    "winrate": 47.2
+    "total_pnl": -12.67,
+    "winrate": 47.3
   },
   "fear_greed": {
     "value": 11,
@@ -269,17 +269,19 @@
       "news": null,
       "created_at": "2026-03-24 08:29:48",
       "status": "ACTIVE"
-    },
+    }
+  ],
+  "history": [
     {
-      "id": 1275,
       "symbol": "DUSKUSDT",
       "direction": "LONG",
-      "exchange": "binance",
       "entry": 0.11934,
       "tp1": 0.122916,
       "tp2": 0.126493,
       "sl": 0.116479,
       "strength": 53,
+      "status": "TP1",
+      "created_at": "2026-03-24 08:31:42",
       "reasons": [
         "MACD бычий (hist=0.00029)",
         "Цена > EMA20 > EMA50",
@@ -288,13 +290,8 @@
         "OI растёт +5.6% + цена ↑",
         "CVD положительный (+1.1%)",
         "⚡ Рыночный вход (MTF сильный)"
-      ],
-      "news": null,
-      "created_at": "2026-03-24 08:31:42",
-      "status": "ACTIVE"
-    }
-  ],
-  "history": [
+      ]
+    },
     {
       "symbol": "FETUSDT",
       "direction": "LONG",
@@ -699,29 +696,6 @@
         "OI растёт +9.2% + цена ↑",
         "CVD положительный (+4.3%)",
         "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
-      "symbol": "ARIAUSDT",
-      "direction": "LONG",
-      "entry": 0.24649,
-      "tp1": 0.252254,
-      "tp2": 0.258019,
-      "sl": 0.24156,
-      "strength": 56,
-      "status": "TP1",
-      "created_at": "2026-03-24 02:13:07",
-      "reasons": [
-        "RSI=20 (сильная перепроданность)",
-        "BB нижняя полоса (пробой)",
-        "EMA20 > EMA50",
-        "Объём x2.1 🔥",
-        "Стакан: давление покупки (+0.24)",
-        "МТФ: 15m, 4h согласны",
-        "OI падает (шорты закрываются)",
-        "CVD положительный (-1.2%)",
-        "Hammer (1h) 🔨",
-        "⚡ Рыночный вход (MTF 2+ ТФ)"
       ]
     }
   ],
@@ -1211,35 +1185,23 @@
         "BTC корреляция 0.65, BTC +0.8% 📈",
         "⚡ Рыночный вход (MTF сильный)"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 1129,
       "symbol": "DUSKUSDT",
       "direction": "LONG",
-      "exchange": "binance",
       "entry": 0.11934,
       "tp1": 0.122916,
       "tp2": 0.126493,
       "sl": 0.116479,
-      "entry_orig": 0.11934,
-      "tp1_orig": 0.122916,
-      "tp2_orig": 0.126493,
-      "sl_orig": 0.116479,
       "strength": 53,
+      "status": "TP1",
+      "pnl_pct": 3.15,
+      "close_price": 0.12309999999999999,
       "taken_at": "2026-03-24T08:31:42.786899",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00029)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: сильное давление покупки (+0.33)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +5.6% + цена ↑",
-        "CVD положительный (+1.1%)",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-24 08:59:27"
+    },
     {
       "symbol": "FETUSDT",
       "direction": "LONG",
@@ -4025,20 +3987,6 @@
       "close_price": 0.06009,
       "taken_at": "2026-03-22T21:22:13.060063",
       "closed_at": "2026-03-23 01:21:05"
-    },
-    {
-      "symbol": "BTRUSDT",
-      "direction": "LONG",
-      "entry": 0.19041,
-      "tp1": 0.19611,
-      "tp2": 0.20181,
-      "sl": 0.18585,
-      "strength": 53,
-      "status": "TP1",
-      "pnl_pct": 3.09,
-      "close_price": 0.1963,
-      "taken_at": "2026-03-22T23:10:28.924979",
-      "closed_at": "2026-03-23 01:19:57"
     }
   ]
 }
