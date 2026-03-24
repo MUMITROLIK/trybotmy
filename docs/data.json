@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-24T22:55:52.215443+00:00",
+  "updated_at": "2026-03-24T22:56:58.398845+00:00",
   "publish_status": {
-    "last_ok": "2026-03-24T22:54:37Z",
+    "last_ok": "2026-03-24T22:55:58Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 54.1
   },
   "trade_stats": {
-    "open": 16,
+    "open": 15,
     "pending": 0,
-    "wins": 532,
+    "wins": 533,
     "losses": 592,
-    "total_pnl": -17.46,
-    "winrate": 47.3
+    "total_pnl": -17.36,
+    "winrate": 47.4
   },
   "fear_greed": {
     "value": 11,
@@ -811,34 +811,6 @@
   ],
   "trades_open": [
     {
-      "id": 1175,
-      "symbol": "TSLAUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 385.82,
-      "tp1": 393.5364,
-      "tp2": 401.2528,
-      "sl": 378.1036,
-      "entry_orig": 385.82,
-      "tp1_orig": 393.5364,
-      "tp2_orig": 401.2528,
-      "sl_orig": 378.1036,
-      "strength": 61,
-      "taken_at": "2026-03-24T14:56:22.140658",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.68143)",
-        "Цена > EMA20 > EMA50",
-        "Объём x2.7 🔥🔥",
-        "Стакан: сильное давление покупки (+0.35)",
-        "МТФ: 5m, 15m, 1h согласны",
-        "CVD растёт (+9.7%) — покупки усиливаются 📈",
-        "⚠️ Funding через 64м",
-        "⚡ Рыночный вход (MTF сильный)",
-        "🤖 ML: 51% WIN"
-      ]
-    },
-    {
       "id": 1181,
       "symbol": "DOTUSDT",
       "direction": "SHORT",
@@ -1253,6 +1225,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "TSLAUSDT",
+      "direction": "LONG",
+      "entry": 385.82,
+      "tp1": 393.5364,
+      "tp2": 401.2528,
+      "sl": 378.1036,
+      "strength": 61,
+      "status": "TIMEOUT",
+      "pnl_pct": 0.1,
+      "close_price": 386.21500000000003,
+      "taken_at": "2026-03-24T14:56:22.140658",
+      "closed_at": "2026-03-24 22:56:22"
+    },
     {
       "symbol": "PEAQUSDT",
       "direction": "LONG",
@@ -4038,20 +4024,6 @@
       "close_price": 0.3373,
       "taken_at": "2026-03-23T13:36:26.686802",
       "closed_at": "2026-03-23 13:45:34"
-    },
-    {
-      "symbol": "XLMUSDT",
-      "direction": "LONG",
-      "entry": 0.16131,
-      "tp1": 0.164536,
-      "tp2": 0.167762,
-      "sl": 0.158084,
-      "strength": 51,
-      "status": "TP1",
-      "pnl_pct": 2.04,
-      "close_price": 0.164595,
-      "taken_at": "2026-03-23T11:24:50.432041",
-      "closed_at": "2026-03-23 13:42:34"
     }
   ]
 }
