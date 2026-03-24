@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-24T07:55:44.335407+00:00",
+  "updated_at": "2026-03-24T07:56:53.787005+00:00",
   "publish_status": {
-    "last_ok": "2026-03-24T07:54:46Z",
+    "last_ok": "2026-03-24T07:55:50Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,11 +17,11 @@
     "winrate": 54.4
   },
   "trade_stats": {
-    "open": 17,
+    "open": 16,
     "pending": 0,
     "wins": 477,
-    "losses": 542,
-    "total_pnl": -30.25,
+    "losses": 543,
+    "total_pnl": -32.27,
     "winrate": 46.8
   },
   "fear_greed": {
@@ -688,35 +688,6 @@
       ]
     },
     {
-      "id": 1108,
-      "symbol": "JTOUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.3298,
-      "tp1": 0.336957,
-      "tp2": 0.344114,
-      "sl": 0.323204,
-      "entry_orig": 0.3298,
-      "tp1_orig": 0.336957,
-      "tp2_orig": 0.344114,
-      "sl_orig": 0.323204,
-      "strength": 57,
-      "taken_at": "2026-03-24T06:50:08.103069",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=43 (нейтральный↓)",
-        "MACD бычий (hist=0.00009)",
-        "BB ниже середины",
-        "EMA20 > EMA50",
-        "Стакан: давление покупки (+0.15)",
-        "МТФ: 15m, 1h, 4h согласны",
-        "CVD положительный (+2.1%)",
-        "Bullish Engulfing (1h) 🕯️",
-        "⚠️ Funding через 71м",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 1109,
       "symbol": "NIGHTUSDT",
       "direction": "LONG",
@@ -939,6 +910,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "JTOUSDT",
+      "direction": "LONG",
+      "entry": 0.3298,
+      "tp1": 0.336957,
+      "tp2": 0.344114,
+      "sl": 0.323204,
+      "strength": 57,
+      "status": "SL",
+      "pnl_pct": -2.02,
+      "close_price": 0.32315,
+      "taken_at": "2026-03-24T06:50:08.103069",
+      "closed_at": "2026-03-24 07:56:53"
+    },
     {
       "symbol": "BEATUSDT",
       "direction": "LONG",
@@ -3724,20 +3709,6 @@
       "close_price": 0.06,
       "taken_at": "2026-03-23T00:04:28.753789",
       "closed_at": "2026-03-23 00:12:04"
-    },
-    {
-      "symbol": "AKTUSDT",
-      "direction": "LONG",
-      "entry": 0.5729,
-      "tp1": 0.584358,
-      "tp2": 0.595816,
-      "sl": 0.561442,
-      "strength": 50,
-      "status": "TP1",
-      "pnl_pct": 2.13,
-      "close_price": 0.5851,
-      "taken_at": "2026-03-22T21:11:04.840414",
-      "closed_at": "2026-03-23 00:05:36"
     }
   ]
 }
