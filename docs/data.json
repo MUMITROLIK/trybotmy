@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-24T15:23:48.267169+00:00",
+  "updated_at": "2026-03-24T15:25:21.629978+00:00",
   "publish_status": {
-    "last_ok": "2026-03-24T15:23:17Z",
+    "last_ok": "2026-03-24T15:23:54Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 53.9
   },
   "trade_stats": {
-    "open": 21,
+    "open": 20,
     "pending": 0,
-    "wins": 503,
+    "wins": 504,
     "losses": 573,
-    "total_pnl": -39.43,
-    "winrate": 46.7
+    "total_pnl": -36.29,
+    "winrate": 46.8
   },
   "fear_greed": {
     "value": 11,
@@ -933,32 +933,6 @@
       ]
     },
     {
-      "id": 1143,
-      "symbol": "4USDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.010178,
-      "tp1": 0.010463,
-      "tp2": 0.010748,
-      "sl": 0.00995,
-      "entry_orig": 0.010178,
-      "tp1_orig": 0.010463,
-      "tp2_orig": 0.010748,
-      "sl_orig": 0.00995,
-      "strength": 50,
-      "taken_at": "2026-03-24T11:13:06.092666",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=49 (нейтральный↓)",
-        "MACD бычий (hist=0.00000)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: давление покупки (+0.11)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "CVD положительный (-6.1%)",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 1146,
       "symbol": "PARTIUSDT",
       "direction": "LONG",
@@ -1474,6 +1448,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "4USDT",
+      "direction": "LONG",
+      "entry": 0.010178,
+      "tp1": 0.010463,
+      "tp2": 0.010748,
+      "sl": 0.00995,
+      "strength": 50,
+      "status": "TP1",
+      "pnl_pct": 3.14,
+      "close_price": 0.010498,
+      "taken_at": "2026-03-24T11:13:06.092666",
+      "closed_at": "2026-03-24 15:23:54"
+    },
     {
       "symbol": "WLFIUSDT",
       "direction": "LONG",
@@ -4259,20 +4247,6 @@
       "close_price": 1.1566,
       "taken_at": "2026-03-23T07:12:17.309447",
       "closed_at": "2026-03-23 08:20:38"
-    },
-    {
-      "symbol": "XAUTUSDT",
-      "direction": "SHORT",
-      "entry": 4193.9,
-      "tp1": 4110.022,
-      "tp2": 4026.144,
-      "sl": 4277.778,
-      "strength": 56,
-      "status": "SL",
-      "pnl_pct": -2.08,
-      "close_price": 4281.2,
-      "taken_at": "2026-03-23T07:12:17.055659",
-      "closed_at": "2026-03-23 08:14:08"
     }
   ]
 }
