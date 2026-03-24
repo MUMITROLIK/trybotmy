@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-24T20:23:40.155962+00:00",
+  "updated_at": "2026-03-24T20:24:19.079753+00:00",
   "publish_status": {
-    "last_ok": "2026-03-24T20:22:40Z",
+    "last_ok": "2026-03-24T20:23:46Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,11 +17,11 @@
     "winrate": 53.9
   },
   "trade_stats": {
-    "open": 17,
+    "open": 15,
     "pending": 0,
-    "wins": 519,
-    "losses": 586,
-    "total_pnl": -29.8,
+    "wins": 520,
+    "losses": 587,
+    "total_pnl": -30.4,
     "winrate": 47.0
   },
   "fear_greed": {
@@ -667,32 +667,6 @@
       ]
     },
     {
-      "id": 1162,
-      "symbol": "XAUUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 4360.05,
-      "tp1": 4447.251,
-      "tp2": 4534.452,
-      "sl": 4272.849,
-      "entry_orig": 4360.05,
-      "tp1_orig": 4447.251,
-      "tp2_orig": 4534.452,
-      "sl_orig": 4272.849,
-      "strength": 50,
-      "taken_at": "2026-03-24T13:41:25.800669",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=29 (сильная перепроданность)",
-        "BB нижняя полоса (пробой)",
-        "Объём x1.8 🔥",
-        "Стакан: сильное давление покупки (+0.60)",
-        "OI растёт +2.9%",
-        "CVD положительный (+0.8%)",
-        "Цена у поддержки 4355.1900"
-      ]
-    },
-    {
       "id": 1164,
       "symbol": "PENGUUSDT",
       "direction": "SHORT",
@@ -1019,34 +993,6 @@
       ]
     },
     {
-      "id": 1200,
-      "symbol": "CLUSDT",
-      "direction": "LONG",
-      "exchange": "bybit",
-      "entry": 91.293,
-      "tp1": 93.11886,
-      "tp2": 94.94472,
-      "sl": 89.46714,
-      "entry_orig": 91.293,
-      "tp1_orig": 93.11886,
-      "tp2_orig": 94.94472,
-      "sl_orig": 89.46714,
-      "strength": 57,
-      "taken_at": "2026-03-24T19:11:27.197165",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=46 (нейтральный↓)",
-        "BB нижняя зона (15%)",
-        "EMA20 > EMA50",
-        "Объём x5.5 🔥🔥🔥",
-        "Стакан: сильное давление покупки (+0.58)",
-        "МТФ: 1h, 4h согласны",
-        "OI растёт +67.4% + цена ↑",
-        "⚡ Рыночный вход (MTF 2+ ТФ)",
-        "🤖 ML: 49% WIN"
-      ]
-    },
-    {
       "id": 1202,
       "symbol": "BPUSDT",
       "direction": "LONG",
@@ -1101,6 +1047,34 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "XAUUSDT",
+      "direction": "LONG",
+      "entry": 4360.05,
+      "tp1": 4447.251,
+      "tp2": 4534.452,
+      "sl": 4272.849,
+      "strength": 50,
+      "status": "TP1",
+      "pnl_pct": 2.02,
+      "close_price": 4448.165,
+      "taken_at": "2026-03-24T13:41:25.800669",
+      "closed_at": "2026-03-24 20:24:18"
+    },
+    {
+      "symbol": "CLUSDT",
+      "direction": "LONG",
+      "entry": 91.293,
+      "tp1": 93.11886,
+      "tp2": 94.94472,
+      "sl": 89.46714,
+      "strength": 57,
+      "status": "SL",
+      "pnl_pct": -2.62,
+      "close_price": 88.905,
+      "taken_at": "2026-03-24T19:11:27.197165",
+      "closed_at": "2026-03-24 20:24:07"
+    },
     {
       "symbol": "TAOUSDT",
       "direction": "LONG",
@@ -3872,34 +3846,6 @@
       "close_price": 112.045,
       "taken_at": "2026-03-23T11:24:50.246568",
       "closed_at": "2026-03-23 11:31:14"
-    },
-    {
-      "symbol": "WAXPUSDT",
-      "direction": "LONG",
-      "entry": 0.008139,
-      "tp1": 0.00842,
-      "tp2": 0.008702,
-      "sl": 0.007914,
-      "strength": 52,
-      "status": "SL",
-      "pnl_pct": -3.94,
-      "close_price": 0.007818,
-      "taken_at": "2026-03-23T08:13:03.254880",
-      "closed_at": "2026-03-23 11:24:04"
-    },
-    {
-      "symbol": "MUSDT",
-      "direction": "LONG",
-      "entry": 1.7663,
-      "tp1": 1.801626,
-      "tp2": 1.836952,
-      "sl": 1.730974,
-      "strength": 51,
-      "status": "SL",
-      "pnl_pct": -3.81,
-      "close_price": 1.699,
-      "taken_at": "2026-03-23T11:12:20.087878",
-      "closed_at": "2026-03-23 11:22:42"
     }
   ]
 }
