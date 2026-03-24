@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-24T17:36:27.242703+00:00",
+  "updated_at": "2026-03-24T17:37:21.996304+00:00",
   "publish_status": {
-    "last_ok": "2026-03-24T17:35:43Z",
+    "last_ok": "2026-03-24T17:36:33Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,19 +10,19 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 1297,
+    "total": 1298,
     "wins": 424,
-    "losses": 363,
+    "losses": 364,
     "active": 17,
-    "winrate": 53.9
+    "winrate": 53.8
   },
   "trade_stats": {
     "open": 20,
     "pending": 0,
     "wins": 509,
-    "losses": 579,
-    "total_pnl": -36.45,
-    "winrate": 46.8
+    "losses": 580,
+    "total_pnl": -40.37,
+    "winrate": 46.7
   },
   "fear_greed": {
     "value": 11,
@@ -421,15 +421,42 @@
       "status": "ACTIVE"
     },
     {
-      "id": 1335,
-      "symbol": "CUSDT",
+      "id": 1336,
+      "symbol": "POLYXUSDT",
       "direction": "LONG",
       "exchange": "binance",
+      "entry": 0.04666,
+      "tp1": 0.047593,
+      "tp2": 0.048526,
+      "sl": 0.045727,
+      "strength": 54,
+      "reasons": [
+        "RSI=26 (сильная перепроданность)",
+        "BB нижняя зона (10%)",
+        "EMA20 > EMA50",
+        "Стакан: сильное давление покупки (+0.43)",
+        "МТФ: 15m, 1h, 4h согласны",
+        "OI растёт +1.7% + цена ↑",
+        "Цена у поддержки 0.0466",
+        "⚡ Рыночный вход (MTF сильный)",
+        "🤖 ML: 54% WIN"
+      ],
+      "news": null,
+      "created_at": "2026-03-24 17:37:21",
+      "status": "ACTIVE"
+    }
+  ],
+  "history": [
+    {
+      "symbol": "CUSDT",
+      "direction": "LONG",
       "entry": 0.06787,
       "tp1": 0.070967,
       "tp2": 0.074065,
       "sl": 0.065392,
       "strength": 57,
+      "status": "SL",
+      "created_at": "2026-03-24 17:35:36",
       "reasons": [
         "MACD бычий (hist=0.00186)",
         "Цена > EMA20 > EMA50",
@@ -440,13 +467,8 @@
         "CVD положительный (+0.9%)",
         "⚡ Рыночный вход (MTF сильный)",
         "🤖 ML: 52% WIN"
-      ],
-      "news": "Ethereum Whales Are Making Money Again, But Will They Hold Or Sell?",
-      "created_at": "2026-03-24 17:35:36",
-      "status": "ACTIVE"
-    }
-  ],
-  "history": [
+      ]
+    },
     {
       "symbol": "CUSDT",
       "direction": "LONG",
@@ -847,25 +869,6 @@
         "МТФ: 5m, 15m, 1h согласны",
         "OI растёт +4.5% + цена ↑",
         "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
-      "symbol": "AEROUSDT",
-      "direction": "LONG",
-      "entry": 0.3217,
-      "tp1": 0.328134,
-      "tp2": 0.334568,
-      "sl": 0.315266,
-      "strength": 51,
-      "status": "TP1",
-      "created_at": "2026-03-24 12:42:37",
-      "reasons": [
-        "RSI=13 (сильная перепроданность)",
-        "BB нижняя полоса (пробой)",
-        "Объём x2.7 🔥🔥",
-        "МТФ: только 1 таймфрейм согласен",
-        "CVD растёт (+5.2%) — покупки усиливаются 📈",
-        "Цена у поддержки 0.3209"
       ]
     }
   ],
@@ -1382,35 +1385,49 @@
       ]
     },
     {
-      "id": 1189,
-      "symbol": "CUSDT",
+      "id": 1190,
+      "symbol": "POLYXUSDT",
       "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.06787,
-      "tp1": 0.070967,
-      "tp2": 0.074065,
-      "sl": 0.065392,
-      "entry_orig": 0.06787,
-      "tp1_orig": 0.070967,
-      "tp2_orig": 0.074065,
-      "sl_orig": 0.065392,
-      "strength": 57,
-      "taken_at": "2026-03-24T17:35:37.009808",
+      "exchange": "bybit",
+      "entry": 0.04666,
+      "tp1": 0.047593,
+      "tp2": 0.048526,
+      "sl": 0.045727,
+      "entry_orig": 0.04666,
+      "tp1_orig": 0.047593,
+      "tp2_orig": 0.048526,
+      "sl_orig": 0.045727,
+      "strength": 54,
+      "taken_at": "2026-03-24T17:37:21.721617",
       "status": "OPEN",
       "reasons": [
-        "MACD бычий (hist=0.00186)",
-        "Цена > EMA20 > EMA50",
-        "Объём x2.6 🔥🔥",
-        "📰 Ethereum Whales Are Making Money Again, But Will They Hold Or Sel...",
-        "МТФ: 5m, 15m, 1h согласны",
-        "OI растёт +42.8% + цена ↑",
-        "CVD положительный (+0.9%)",
+        "RSI=26 (сильная перепроданность)",
+        "BB нижняя зона (10%)",
+        "EMA20 > EMA50",
+        "Стакан: сильное давление покупки (+0.43)",
+        "МТФ: 15m, 1h, 4h согласны",
+        "OI растёт +1.7% + цена ↑",
+        "Цена у поддержки 0.0466",
         "⚡ Рыночный вход (MTF сильный)",
-        "🤖 ML: 52% WIN"
+        "🤖 ML: 54% WIN"
       ]
     }
   ],
   "trades_history": [
+    {
+      "symbol": "CUSDT",
+      "direction": "LONG",
+      "entry": 0.06787,
+      "tp1": 0.070967,
+      "tp2": 0.074065,
+      "sl": 0.065392,
+      "strength": 57,
+      "status": "SL",
+      "pnl_pct": -3.92,
+      "close_price": 0.06521,
+      "taken_at": "2026-03-24T17:35:37.009808",
+      "closed_at": "2026-03-24 17:36:56"
+    },
     {
       "symbol": "VVVUSDT",
       "direction": "SHORT",
@@ -4196,20 +4213,6 @@
       "close_price": 69299.35,
       "taken_at": "2026-03-23T09:36:23.234181",
       "closed_at": "2026-03-23 11:05:36"
-    },
-    {
-      "symbol": "TURBOUSDT",
-      "direction": "LONG",
-      "entry": 0.0011472,
-      "tp1": 0.001173,
-      "tp2": 0.001198,
-      "sl": 0.001124,
-      "strength": 50,
-      "status": "TP1",
-      "pnl_pct": 2.45,
-      "close_price": 0.0011753,
-      "taken_at": "2026-03-23T09:52:13.499435",
-      "closed_at": "2026-03-23 10:25:05"
     }
   ]
 }
