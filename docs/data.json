@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-24T18:03:36.368187+00:00",
+  "updated_at": "2026-03-24T18:04:55.823266+00:00",
   "publish_status": {
-    "last_ok": "2026-03-24T18:02:51Z",
+    "last_ok": "2026-03-24T18:03:42Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,11 +17,11 @@
     "winrate": 53.7
   },
   "trade_stats": {
-    "open": 22,
+    "open": 21,
     "pending": 0,
     "wins": 509,
-    "losses": 580,
-    "total_pnl": -40.37,
+    "losses": 581,
+    "total_pnl": -42.42,
     "winrate": 46.7
   },
   "fear_greed": {
@@ -1103,33 +1103,6 @@
       ]
     },
     {
-      "id": 1176,
-      "symbol": "STABLEUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.025378,
-      "tp1": 0.025996,
-      "tp2": 0.026615,
-      "sl": 0.02487,
-      "entry_orig": 0.025378,
-      "tp1_orig": 0.025996,
-      "tp2_orig": 0.026615,
-      "sl_orig": 0.02487,
-      "strength": 52,
-      "taken_at": "2026-03-24T14:59:48.074922",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=35 (перепроданность)",
-        "MACD бычий (hist=0.00000)",
-        "BB ниже середины",
-        "Стакан: сильное давление покупки (+0.70)",
-        "МТФ: только 1 таймфрейм согласен",
-        "CVD растёт (+8.6%) — покупки усиливаются 📈",
-        "⚠️ Funding через 61м",
-        "🤖 ML: 58% WIN"
-      ]
-    },
-    {
       "id": 1181,
       "symbol": "DOTUSDT",
       "direction": "SHORT",
@@ -1376,6 +1349,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "STABLEUSDT",
+      "direction": "LONG",
+      "entry": 0.025378,
+      "tp1": 0.025996,
+      "tp2": 0.026615,
+      "sl": 0.02487,
+      "strength": 52,
+      "status": "SL",
+      "pnl_pct": -2.05,
+      "close_price": 0.0248565,
+      "taken_at": "2026-03-24T14:59:48.074922",
+      "closed_at": "2026-03-24 18:03:43"
+    },
     {
       "symbol": "CUSDT",
       "direction": "LONG",
@@ -4161,20 +4148,6 @@
       "close_price": 0.692,
       "taken_at": "2026-03-23T07:05:13.861179",
       "closed_at": "2026-03-23 11:05:51"
-    },
-    {
-      "symbol": "BTCUSDT",
-      "direction": "SHORT",
-      "entry": 67932.5,
-      "tp1": 66573.85,
-      "tp2": 65215.2,
-      "sl": 69291.15,
-      "strength": 56,
-      "status": "SL",
-      "pnl_pct": -2.01,
-      "close_price": 69299.35,
-      "taken_at": "2026-03-23T09:36:23.234181",
-      "closed_at": "2026-03-23 11:05:36"
     }
   ]
 }
