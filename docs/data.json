@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-24T12:11:27.712492+00:00",
+  "updated_at": "2026-03-24T12:12:04.956230+00:00",
   "publish_status": {
-    "last_ok": "2026-03-24T12:10:23Z",
+    "last_ok": "2026-03-24T12:11:33Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,11 +17,11 @@
     "winrate": 54.0
   },
   "trade_stats": {
-    "open": 19,
+    "open": 18,
     "pending": 0,
     "wins": 495,
-    "losses": 556,
-    "total_pnl": -20.41,
+    "losses": 557,
+    "total_pnl": -22.41,
     "winrate": 47.1
   },
   "fear_greed": {
@@ -1101,32 +1101,6 @@
       ]
     },
     {
-      "id": 1144,
-      "symbol": "1000TURBOUSDT",
-      "direction": "LONG",
-      "exchange": "bybit",
-      "entry": 1.128,
-      "tp1": 1.15056,
-      "tp2": 1.17312,
-      "sl": 1.10544,
-      "entry_orig": 1.128,
-      "tp1_orig": 1.15056,
-      "tp2_orig": 1.17312,
-      "sl_orig": 1.10544,
-      "strength": 50,
-      "taken_at": "2026-03-24T11:14:50.276196",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=38 (перепроданность)",
-        "BB нижняя полоса (пробой)",
-        "Объём x2.5 🔥🔥",
-        "Стакан: давление покупки (+0.14)",
-        "МТФ: 1h, 4h согласны",
-        "Цена у поддержки 1.1272",
-        "⚡ Рыночный вход (MTF 2+ ТФ)"
-      ]
-    },
-    {
       "id": 1146,
       "symbol": "PARTIUSDT",
       "direction": "LONG",
@@ -1261,6 +1235,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "1000TURBOUSDT",
+      "direction": "LONG",
+      "entry": 1.128,
+      "tp1": 1.15056,
+      "tp2": 1.17312,
+      "sl": 1.10544,
+      "strength": 50,
+      "status": "SL",
+      "pnl_pct": -2.0,
+      "close_price": 1.1054,
+      "taken_at": "2026-03-24T11:14:50.276196",
+      "closed_at": "2026-03-24 12:11:51"
+    },
     {
       "symbol": "NEARUSDT",
       "direction": "LONG",
@@ -4046,20 +4034,6 @@
       "close_price": 0.016388,
       "taken_at": "2026-03-22T21:06:16.275826",
       "closed_at": "2026-03-23 05:06:20"
-    },
-    {
-      "symbol": "XMRUSDT",
-      "direction": "SHORT",
-      "entry": 360.29,
-      "tp1": 353.0842,
-      "tp2": 345.8784,
-      "sl": 367.4958,
-      "strength": 52,
-      "status": "TIMEOUT",
-      "pnl_pct": 0.33,
-      "close_price": 359.095,
-      "taken_at": "2026-03-22T20:56:45.500480",
-      "closed_at": "2026-03-23 04:56:47"
     }
   ]
 }
