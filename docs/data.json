@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-24T11:27:39.145777+00:00",
+  "updated_at": "2026-03-24T11:28:13.785556+00:00",
   "publish_status": {
-    "last_ok": "2026-03-24T11:26:34Z",
+    "last_ok": "2026-03-24T11:27:44Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 1254,
+    "total": 1255,
     "wins": 408,
     "losses": 347,
-    "active": 15,
+    "active": 16,
     "winrate": 54.0
   },
   "trade_stats": {
-    "open": 19,
+    "open": 20,
     "pending": 0,
     "wins": 493,
     "losses": 553,
@@ -385,6 +385,29 @@
       ],
       "news": null,
       "created_at": "2026-03-24 11:24:53",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1293,
+      "symbol": "DUSKUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.12812,
+      "tp1": 0.13355,
+      "tp2": 0.13898,
+      "sl": 0.123776,
+      "strength": 50,
+      "reasons": [
+        "MACD бычий (hist=0.00025)",
+        "Цена > EMA20 > EMA50",
+        "Стакан: давление покупки (+0.10)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +9.9% + цена ↑",
+        "CVD положительный (+2.7%)",
+        "⚡ Рыночный вход (MTF сильный)"
+      ],
+      "news": null,
+      "created_at": "2026-03-24 11:28:13",
       "status": "ACTIVE"
     }
   ],
@@ -1308,6 +1331,32 @@
         "МТФ: 15m, 4h согласны",
         "Doji (1h) — нерешительность",
         "⚡ Рыночный вход (MTF 2+ ТФ)"
+      ]
+    },
+    {
+      "id": 1147,
+      "symbol": "DUSKUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.12812,
+      "tp1": 0.13355,
+      "tp2": 0.13898,
+      "sl": 0.123776,
+      "entry_orig": 0.12812,
+      "tp1_orig": 0.13355,
+      "tp2_orig": 0.13898,
+      "sl_orig": 0.123776,
+      "strength": 50,
+      "taken_at": "2026-03-24T11:28:13.585785",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.00025)",
+        "Цена > EMA20 > EMA50",
+        "Стакан: давление покупки (+0.10)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +9.9% + цена ↑",
+        "CVD положительный (+2.7%)",
+        "⚡ Рыночный вход (MTF сильный)"
       ]
     }
   ],
