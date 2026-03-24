@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-24T12:01:11.865283+00:00",
+  "updated_at": "2026-03-24T12:01:55.718779+00:00",
   "publish_status": {
-    "last_ok": "2026-03-24T12:00:16Z",
+    "last_ok": "2026-03-24T12:01:17Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -12,16 +12,16 @@
   "stats": {
     "total": 1258,
     "wins": 411,
-    "losses": 349,
-    "active": 14,
-    "winrate": 54.1
+    "losses": 350,
+    "active": 13,
+    "winrate": 54.0
   },
   "trade_stats": {
-    "open": 19,
+    "open": 18,
     "pending": 0,
     "wins": 495,
-    "losses": 555,
-    "total_pnl": -18.33,
+    "losses": 556,
+    "total_pnl": -20.41,
     "winrate": 47.1
   },
   "fear_greed": {
@@ -58,29 +58,6 @@
       ],
       "news": null,
       "created_at": "2026-03-24 08:04:57",
-      "status": "ACTIVE"
-    },
-    {
-      "id": 1272,
-      "symbol": "NEARUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 1.321,
-      "tp1": 1.34742,
-      "tp2": 1.37384,
-      "sl": 1.29458,
-      "strength": 50,
-      "reasons": [
-        "MACD бычий (hist=0.00195)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: сильное давление покупки (+0.26)",
-        "МТФ: 5m, 15m, 1h согласны",
-        "CVD растёт (+10.1%) — покупки усиливаются 📈",
-        "BTC корреляция 0.69, BTC +0.8% 📈",
-        "⚡ Рыночный вход (MTF сильный)"
-      ],
-      "news": "Gold Crashes While Bitcoin Holds $71K: What This Rare Market Shift Means for BTC",
-      "created_at": "2026-03-24 08:20:57",
       "status": "ACTIVE"
     },
     {
@@ -610,6 +587,26 @@
       ]
     },
     {
+      "symbol": "NEARUSDT",
+      "direction": "LONG",
+      "entry": 1.321,
+      "tp1": 1.34742,
+      "tp2": 1.37384,
+      "sl": 1.29458,
+      "strength": 50,
+      "status": "SL",
+      "created_at": "2026-03-24 08:20:57",
+      "reasons": [
+        "MACD бычий (hist=0.00195)",
+        "Цена > EMA20 > EMA50",
+        "Стакан: сильное давление покупки (+0.26)",
+        "МТФ: 5m, 15m, 1h согласны",
+        "CVD растёт (+10.1%) — покупки усиливаются 📈",
+        "BTC корреляция 0.69, BTC +0.8% 📈",
+        "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
+    {
       "symbol": "ATHUSDT",
       "direction": "LONG",
       "entry": 0.007293,
@@ -748,27 +745,6 @@
         "OI растёт +8.1% + цена ↑",
         "CVD растёт (+6.0%) — покупки усиливаются 📈",
         "BTC корреляция 0.68, BTC +1.2% 📈",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
-      "symbol": "KASUSDT",
-      "direction": "LONG",
-      "entry": 0.03631,
-      "tp1": 0.037036,
-      "tp2": 0.037762,
-      "sl": 0.035584,
-      "strength": 59,
-      "status": "EXPIRED",
-      "created_at": "2026-03-24 07:19:23",
-      "reasons": [
-        "MACD бычий (hist=0.00018)",
-        "EMA20 > EMA50 (golden cross) 🌟",
-        "Объём x2.5 🔥🔥",
-        "Стакан: сильное давление покупки (+0.59)",
-        "МТФ: 5m, 15m, 4h согласны",
-        "OI растёт +2.5% + цена ↑",
-        "⚠️ Funding через 42м",
         "⚡ Рыночный вход (MTF сильный)"
       ]
     }
@@ -937,32 +913,6 @@
         "МТФ: 5m, 15m, 1h согласны",
         "CVD растёт (+16.9%) — покупки усиливаются 📈",
         "BTC корреляция 0.90, BTC +1.1% 📈",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
-      "id": 1126,
-      "symbol": "NEARUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 1.321,
-      "tp1": 1.34742,
-      "tp2": 1.37384,
-      "sl": 1.29458,
-      "entry_orig": 1.321,
-      "tp1_orig": 1.34742,
-      "tp2_orig": 1.37384,
-      "sl_orig": 1.29458,
-      "strength": 50,
-      "taken_at": "2026-03-24T08:20:58.091665",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00195)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: сильное давление покупки (+0.26)",
-        "МТФ: 5m, 15m, 1h согласны",
-        "CVD растёт (+10.1%) — покупки усиливаются 📈",
-        "BTC корреляция 0.69, BTC +0.8% 📈",
         "⚡ Рыночный вход (MTF сильный)"
       ]
     },
@@ -1283,6 +1233,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "NEARUSDT",
+      "direction": "LONG",
+      "entry": 1.321,
+      "tp1": 1.34742,
+      "tp2": 1.37384,
+      "sl": 1.29458,
+      "strength": 50,
+      "status": "SL",
+      "pnl_pct": -2.08,
+      "close_price": 1.2934999999999999,
+      "taken_at": "2026-03-24T08:20:58.091665",
+      "closed_at": "2026-03-24 12:01:24"
+    },
     {
       "symbol": "DUSKUSDT",
       "direction": "LONG",
@@ -4068,20 +4032,6 @@
       "close_price": 359.095,
       "taken_at": "2026-03-22T20:56:45.500480",
       "closed_at": "2026-03-23 04:56:47"
-    },
-    {
-      "symbol": "BANANAS31USDT",
-      "direction": "LONG",
-      "entry": 0.013888,
-      "tp1": 0.014371,
-      "tp2": 0.014854,
-      "sl": 0.013502,
-      "strength": 55,
-      "status": "SL",
-      "pnl_pct": -3.37,
-      "close_price": 0.0134205,
-      "taken_at": "2026-03-23T04:54:24.698628",
-      "closed_at": "2026-03-23 04:56:22"
     }
   ]
 }
