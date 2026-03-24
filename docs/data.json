@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-24T14:59:09.441355+00:00",
+  "updated_at": "2026-03-24T14:59:48.433987+00:00",
   "publish_status": {
-    "last_ok": "2026-03-24T14:58:09Z",
+    "last_ok": "2026-03-24T14:59:15Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 1283,
+    "total": 1284,
     "wins": 419,
     "losses": 358,
-    "active": 19,
+    "active": 20,
     "winrate": 53.9
   },
   "trade_stats": {
-    "open": 21,
+    "open": 22,
     "pending": 0,
     "wins": 502,
     "losses": 571,
@@ -484,6 +484,30 @@
       ],
       "news": null,
       "created_at": "2026-03-24 14:56:21",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1322,
+      "symbol": "STABLEUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.025378,
+      "tp1": 0.025996,
+      "tp2": 0.026615,
+      "sl": 0.02487,
+      "strength": 52,
+      "reasons": [
+        "RSI=35 (перепроданность)",
+        "MACD бычий (hist=0.00000)",
+        "BB ниже середины",
+        "Стакан: сильное давление покупки (+0.70)",
+        "МТФ: только 1 таймфрейм согласен",
+        "CVD растёт (+8.6%) — покупки усиливаются 📈",
+        "⚠️ Funding через 61м",
+        "🤖 ML: 58% WIN"
+      ],
+      "news": null,
+      "created_at": "2026-03-24 14:59:47",
       "status": "ACTIVE"
     }
   ],
@@ -1461,6 +1485,33 @@
         "⚠️ Funding через 64м",
         "⚡ Рыночный вход (MTF сильный)",
         "🤖 ML: 51% WIN"
+      ]
+    },
+    {
+      "id": 1176,
+      "symbol": "STABLEUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.025378,
+      "tp1": 0.025996,
+      "tp2": 0.026615,
+      "sl": 0.02487,
+      "entry_orig": 0.025378,
+      "tp1_orig": 0.025996,
+      "tp2_orig": 0.026615,
+      "sl_orig": 0.02487,
+      "strength": 52,
+      "taken_at": "2026-03-24T14:59:48.074922",
+      "status": "OPEN",
+      "reasons": [
+        "RSI=35 (перепроданность)",
+        "MACD бычий (hist=0.00000)",
+        "BB ниже середины",
+        "Стакан: сильное давление покупки (+0.70)",
+        "МТФ: только 1 таймфрейм согласен",
+        "CVD растёт (+8.6%) — покупки усиливаются 📈",
+        "⚠️ Funding через 61м",
+        "🤖 ML: 58% WIN"
       ]
     }
   ],
