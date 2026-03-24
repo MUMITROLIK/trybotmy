@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-24T17:59:29.276232+00:00",
+  "updated_at": "2026-03-24T18:00:14.208024+00:00",
   "publish_status": {
-    "last_ok": "2026-03-24T17:58:29Z",
+    "last_ok": "2026-03-24T17:59:35Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 1299,
+    "total": 1300,
     "wins": 424,
     "losses": 365,
-    "active": 12,
+    "active": 13,
     "winrate": 53.7
   },
   "trade_stats": {
-    "open": 21,
+    "open": 22,
     "pending": 0,
     "wins": 509,
     "losses": 580,
@@ -326,6 +326,31 @@
       ],
       "news": null,
       "created_at": "2026-03-24 17:53:20",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1338,
+      "symbol": "GRASSUSDT",
+      "direction": "SHORT",
+      "exchange": "binance",
+      "entry": 0.33571,
+      "tp1": 0.328996,
+      "tp2": 0.322282,
+      "sl": 0.342424,
+      "strength": 55,
+      "reasons": [
+        "RSI=51 (нейтральный↑)",
+        "MACD медвежий (hist=-0.00019)",
+        "Цена ниже EMA20",
+        "Объём x4.2 🔥🔥🔥",
+        "Стакан: сильное давление продажи (-0.29)",
+        "МТФ: 1h, 4h согласны",
+        "OI растёт +1.5% + цена ↓",
+        "BTC контекст: -2.9% за 12ч 📉",
+        "🤖 ML: 54% WIN"
+      ],
+      "news": null,
+      "created_at": "2026-03-24 18:00:13",
       "status": "ACTIVE"
     }
   ],
@@ -1319,6 +1344,34 @@
         "OI растёт +8.0% + цена ↑",
         "⚡ Рыночный вход (MTF сильный)",
         "🤖 ML: 58% WIN"
+      ]
+    },
+    {
+      "id": 1192,
+      "symbol": "GRASSUSDT",
+      "direction": "SHORT",
+      "exchange": "bybit",
+      "entry": 0.33571,
+      "tp1": 0.328996,
+      "tp2": 0.322282,
+      "sl": 0.342424,
+      "entry_orig": 0.33571,
+      "tp1_orig": 0.328996,
+      "tp2_orig": 0.322282,
+      "sl_orig": 0.342424,
+      "strength": 55,
+      "taken_at": "2026-03-24T18:00:13.957256",
+      "status": "OPEN",
+      "reasons": [
+        "RSI=51 (нейтральный↑)",
+        "MACD медвежий (hist=-0.00019)",
+        "Цена ниже EMA20",
+        "Объём x4.2 🔥🔥🔥",
+        "Стакан: сильное давление продажи (-0.29)",
+        "МТФ: 1h, 4h согласны",
+        "OI растёт +1.5% + цена ↓",
+        "BTC контекст: -2.9% за 12ч 📉",
+        "🤖 ML: 54% WIN"
       ]
     }
   ],
