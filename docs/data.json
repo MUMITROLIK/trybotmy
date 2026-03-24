@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-24T08:44:11.801267+00:00",
+  "updated_at": "2026-03-24T08:45:22.127575+00:00",
   "publish_status": {
-    "last_ok": "2026-03-24T08:43:15Z",
+    "last_ok": "2026-03-24T08:44:18Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 54.4
   },
   "trade_stats": {
-    "open": 21,
+    "open": 20,
     "pending": 0,
-    "wins": 484,
+    "wins": 485,
     "losses": 543,
-    "total_pnl": -19.04,
-    "winrate": 47.1
+    "total_pnl": -18.0,
+    "winrate": 47.2
   },
   "fear_greed": {
     "value": 11,
@@ -751,34 +751,6 @@
   ],
   "trades_open": [
     {
-      "id": 1096,
-      "symbol": "XPTUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 1866.2,
-      "tp1": 1903.524,
-      "tp2": 1940.848,
-      "sl": 1828.876,
-      "entry_orig": 1866.2,
-      "tp1_orig": 1903.524,
-      "tp2_orig": 1940.848,
-      "sl_orig": 1828.876,
-      "strength": 59,
-      "taken_at": "2026-03-24T00:44:10.718845",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=38 (перепроданность)",
-        "BB нижняя полоса (пробой)",
-        "EMA20 > EMA50",
-        "Объём x2.9 🔥🔥",
-        "Стакан: сильное давление покупки (+0.32)",
-        "МТФ: только 1 таймфрейм согласен",
-        "OI растёт +4.9%",
-        "CVD положительный (+4.3%)",
-        "Цена у поддержки 1862.7400"
-      ]
-    },
-    {
       "id": 1102,
       "symbol": "WAXPUSDT",
       "direction": "LONG",
@@ -1318,6 +1290,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "XPTUSDT",
+      "direction": "LONG",
+      "entry": 1866.2,
+      "tp1": 1903.524,
+      "tp2": 1940.848,
+      "sl": 1828.876,
+      "strength": 59,
+      "status": "TIMEOUT",
+      "pnl_pct": 1.04,
+      "close_price": 1885.53,
+      "taken_at": "2026-03-24T00:44:10.718845",
+      "closed_at": "2026-03-24 08:44:22"
+    },
     {
       "symbol": "PAXGUSDT",
       "direction": "LONG",
@@ -4103,20 +4089,6 @@
       "close_price": 0.00330815,
       "taken_at": "2026-03-22T21:07:54.474417",
       "closed_at": "2026-03-23 01:15:35"
-    },
-    {
-      "symbol": "PENGUUSDT",
-      "direction": "SHORT",
-      "entry": 0.006627,
-      "tp1": 0.006494,
-      "tp2": 0.006362,
-      "sl": 0.00676,
-      "strength": 58,
-      "status": "SL",
-      "pnl_pct": -2.03,
-      "close_price": 0.0067615,
-      "taken_at": "2026-03-22T21:06:15.813922",
-      "closed_at": "2026-03-23 01:09:05"
     }
   ]
 }
