@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-24T21:00:49.668584+00:00",
+  "updated_at": "2026-03-24T21:01:39.357767+00:00",
   "publish_status": {
-    "last_ok": "2026-03-24T21:00:20Z",
+    "last_ok": "2026-03-24T21:00:56Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -11,18 +11,18 @@
   },
   "stats": {
     "total": 1321,
-    "wins": 434,
+    "wins": 435,
     "losses": 371,
-    "active": 13,
-    "winrate": 53.9
+    "active": 12,
+    "winrate": 54.0
   },
   "trade_stats": {
-    "open": 18,
+    "open": 17,
     "pending": 0,
-    "wins": 523,
+    "wins": 524,
     "losses": 591,
-    "total_pnl": -30.03,
-    "winrate": 46.9
+    "total_pnl": -27.77,
+    "winrate": 47.0
   },
   "fear_greed": {
     "value": 11,
@@ -180,30 +180,6 @@
       ],
       "news": null,
       "created_at": "2026-03-24 20:02:02",
-      "status": "ACTIVE"
-    },
-    {
-      "id": 1350,
-      "symbol": "FETUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.2454,
-      "tp1": 0.250918,
-      "tp2": 0.256436,
-      "sl": 0.240492,
-      "strength": 50,
-      "reasons": [
-        "MACD бычий (hist=0.00142)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: давление покупки (+0.11)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +1.1% + цена ↑",
-        "CVD положительный (+0.2%)",
-        "⚡ Рыночный вход (MTF сильный)",
-        "🤖 ML: 58% WIN"
-      ],
-      "news": null,
-      "created_at": "2026-03-24 20:24:33",
       "status": "ACTIVE"
     },
     {
@@ -417,6 +393,27 @@
         "CVD растёт (+9.4%) — покупки усиливаются 📈",
         "⚡ Рыночный вход (MTF сильный)",
         "🤖 ML: 47% WIN"
+      ]
+    },
+    {
+      "symbol": "FETUSDT",
+      "direction": "LONG",
+      "entry": 0.2454,
+      "tp1": 0.250918,
+      "tp2": 0.256436,
+      "sl": 0.240492,
+      "strength": 50,
+      "status": "TP1",
+      "created_at": "2026-03-24 20:24:33",
+      "reasons": [
+        "MACD бычий (hist=0.00142)",
+        "Цена > EMA20 > EMA50",
+        "Стакан: давление покупки (+0.11)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +1.1% + цена ↑",
+        "CVD положительный (+0.2%)",
+        "⚡ Рыночный вход (MTF сильный)",
+        "🤖 ML: 58% WIN"
       ]
     },
     {
@@ -758,27 +755,6 @@
         "Hammer (1h) 🔨",
         "🤖 ML: 51% WIN"
       ]
-    },
-    {
-      "symbol": "DOTUSDT",
-      "direction": "SHORT",
-      "entry": 1.375,
-      "tp1": 1.3475,
-      "tp2": 1.32,
-      "sl": 1.4025,
-      "strength": 50,
-      "status": "EXPIRED",
-      "created_at": "2026-03-24 16:12:47",
-      "reasons": [
-        "MACD медвежий (hist=-0.00058)",
-        "Цена < EMA20 < EMA50",
-        "Объём x1.8 🔥",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +3.5% + цена ↓",
-        "CVD падает (-10.2%) — продажи усиливаются 📉",
-        "BTC контекст: -2.0% за 12ч 📉",
-        "🤖 ML: 46% WIN"
-      ]
     }
   ],
   "trades_open": [
@@ -1081,33 +1057,6 @@
       ]
     },
     {
-      "id": 1204,
-      "symbol": "FETUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.2454,
-      "tp1": 0.250918,
-      "tp2": 0.256436,
-      "sl": 0.240492,
-      "entry_orig": 0.2454,
-      "tp1_orig": 0.250918,
-      "tp2_orig": 0.256436,
-      "sl_orig": 0.240492,
-      "strength": 50,
-      "taken_at": "2026-03-24T20:24:34.161141",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00142)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: давление покупки (+0.11)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +1.1% + цена ↑",
-        "CVD положительный (+0.2%)",
-        "⚡ Рыночный вход (MTF сильный)",
-        "🤖 ML: 58% WIN"
-      ]
-    },
-    {
       "id": 1206,
       "symbol": "XAGUSDT",
       "direction": "LONG",
@@ -1274,6 +1223,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "FETUSDT",
+      "direction": "LONG",
+      "entry": 0.2454,
+      "tp1": 0.250918,
+      "tp2": 0.256436,
+      "sl": 0.240492,
+      "strength": 50,
+      "status": "TP1",
+      "pnl_pct": 2.26,
+      "close_price": 0.25095,
+      "taken_at": "2026-03-24T20:24:34.161141",
+      "closed_at": "2026-03-24 21:01:39"
+    },
     {
       "symbol": "ZECUSDT",
       "direction": "LONG",
@@ -4059,20 +4022,6 @@
       "close_price": 2113.0150000000003,
       "taken_at": "2026-03-23T11:24:49.497622",
       "closed_at": "2026-03-23 12:02:54"
-    },
-    {
-      "symbol": "CRVUSDT",
-      "direction": "LONG",
-      "entry": 0.226,
-      "tp1": 0.23052,
-      "tp2": 0.23504,
-      "sl": 0.22148,
-      "strength": 51,
-      "status": "SL",
-      "pnl_pct": -2.43,
-      "close_price": 0.2205,
-      "taken_at": "2026-03-23T11:22:55.940757",
-      "closed_at": "2026-03-23 12:01:09"
     }
   ]
 }
