@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-24T17:03:23.672237+00:00",
+  "updated_at": "2026-03-24T17:04:11.622171+00:00",
   "publish_status": {
-    "last_ok": "2026-03-24T17:02:39Z",
+    "last_ok": "2026-03-24T17:03:29Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,11 +17,11 @@
     "winrate": 53.9
   },
   "trade_stats": {
-    "open": 21,
+    "open": 20,
     "pending": 0,
-    "wins": 506,
+    "wins": 507,
     "losses": 576,
-    "total_pnl": -38.81,
+    "total_pnl": -35.45,
     "winrate": 46.8
   },
   "fear_greed": {
@@ -1207,33 +1207,6 @@
       ]
     },
     {
-      "id": 1173,
-      "symbol": "CRCLUSDT",
-      "direction": "SHORT",
-      "exchange": "binance",
-      "entry": 105.33,
-      "tp1": 101.818929,
-      "tp2": 98.307857,
-      "sl": 108.138857,
-      "entry_orig": 105.33,
-      "tp1_orig": 101.818929,
-      "tp2_orig": 98.307857,
-      "sl_orig": 108.138857,
-      "strength": 52,
-      "taken_at": "2026-03-24T14:52:55.768096",
-      "status": "OPEN",
-      "reasons": [
-        "MACD медвежий (hist=-2.42305)",
-        "Цена < EMA20 < EMA50",
-        "Объём x2.5 🔥🔥",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +10.2% + цена ↓",
-        "CVD отрицательный (-3.0%)",
-        "⚠️ Funding через 68м",
-        "🤖 ML: 54% WIN"
-      ]
-    },
-    {
       "id": 1174,
       "symbol": "MOODENGUSDT",
       "direction": "LONG",
@@ -1484,6 +1457,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "CRCLUSDT",
+      "direction": "SHORT",
+      "entry": 105.33,
+      "tp1": 101.818929,
+      "tp2": 98.307857,
+      "sl": 108.138857,
+      "strength": 52,
+      "status": "TP1",
+      "pnl_pct": 3.36,
+      "close_price": 101.795,
+      "taken_at": "2026-03-24T14:52:55.768096",
+      "closed_at": "2026-03-24 17:04:11"
+    },
     {
       "symbol": "PEAQUSDT",
       "direction": "LONG",
@@ -4269,20 +4256,6 @@
       "close_price": 0.005186,
       "taken_at": "2026-03-23T07:12:17.544653",
       "closed_at": "2026-03-23 09:30:45"
-    },
-    {
-      "symbol": "PIPPINUSDT",
-      "direction": "SHORT",
-      "entry": 0.08517,
-      "tp1": 0.082912,
-      "tp2": 0.080655,
-      "sl": 0.086976,
-      "strength": 61,
-      "status": "SL",
-      "pnl_pct": -2.38,
-      "close_price": 0.087195,
-      "taken_at": "2026-03-23T09:10:51.105758",
-      "closed_at": "2026-03-23 09:27:14"
     }
   ]
 }
