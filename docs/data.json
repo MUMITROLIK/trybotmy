@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-24T14:12:45.062256+00:00",
+  "updated_at": "2026-03-24T14:13:24.122571+00:00",
   "publish_status": {
-    "last_ok": "2026-03-24T14:11:35Z",
+    "last_ok": "2026-03-24T14:12:51Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,18 +10,18 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 1277,
+    "total": 1278,
     "wins": 418,
     "losses": 354,
-    "active": 18,
+    "active": 19,
     "winrate": 54.1
   },
   "trade_stats": {
     "open": 23,
     "pending": 0,
     "wins": 500,
-    "losses": 565,
-    "total_pnl": -29.59,
+    "losses": 566,
+    "total_pnl": -31.62,
     "winrate": 46.9
   },
   "fear_greed": {
@@ -458,6 +458,31 @@
       ],
       "news": "Solana lands Mastercard, Western Union on new dev platform",
       "created_at": "2026-03-24 13:56:57",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1316,
+      "symbol": "VIRTUALUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.6997,
+      "tp1": 0.713694,
+      "tp2": 0.727688,
+      "sl": 0.685706,
+      "strength": 60,
+      "reasons": [
+        "RSI=36 (перепроданность)",
+        "BB нижняя полоса (пробой)",
+        "EMA20 > EMA50",
+        "Объём x4.8 🔥🔥🔥",
+        "Стакан: сильное давление покупки (+0.33)",
+        "МТФ: только 1 таймфрейм согласен",
+        "CVD положительный (+1.2%)",
+        "Цена у поддержки 0.6980",
+        "🤖 ML: 49% WIN"
+      ],
+      "news": null,
+      "created_at": "2026-03-24 14:13:23",
       "status": "ACTIVE"
     }
   ],
@@ -949,33 +974,6 @@
         "МТФ: все 4 таймфрейма согласны ✅✅",
         "CVD растёт (+9.2%) — покупки усиливаются 📈",
         "⚠️ Funding через 47м",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
-      "id": 1124,
-      "symbol": "ONDOUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.258,
-      "tp1": 0.26316,
-      "tp2": 0.26832,
-      "sl": 0.25284,
-      "entry_orig": 0.258,
-      "tp1_orig": 0.26316,
-      "tp2_orig": 0.26832,
-      "sl_orig": 0.25284,
-      "strength": 57,
-      "taken_at": "2026-03-24T08:14:01.257510",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00060)",
-        "Цена > EMA20 > EMA50",
-        "Объём x2.7 🔥🔥",
-        "Стакан: перевес bid (+0.09)",
-        "МТФ: 5m, 15m, 1h согласны",
-        "CVD растёт (+16.9%) — покупки усиливаются 📈",
-        "BTC корреляция 0.90, BTC +1.1% 📈",
         "⚡ Рыночный вход (MTF сильный)"
       ]
     },
@@ -1481,9 +1479,51 @@
         "Цена у поддержки 89.4500",
         "⚡ Рыночный вход (MTF 2+ ТФ)"
       ]
+    },
+    {
+      "id": 1170,
+      "symbol": "VIRTUALUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.6997,
+      "tp1": 0.713694,
+      "tp2": 0.727688,
+      "sl": 0.685706,
+      "entry_orig": 0.6997,
+      "tp1_orig": 0.713694,
+      "tp2_orig": 0.727688,
+      "sl_orig": 0.685706,
+      "strength": 60,
+      "taken_at": "2026-03-24T14:13:23.820507",
+      "status": "OPEN",
+      "reasons": [
+        "RSI=36 (перепроданность)",
+        "BB нижняя полоса (пробой)",
+        "EMA20 > EMA50",
+        "Объём x4.8 🔥🔥🔥",
+        "Стакан: сильное давление покупки (+0.33)",
+        "МТФ: только 1 таймфрейм согласен",
+        "CVD положительный (+1.2%)",
+        "Цена у поддержки 0.6980",
+        "🤖 ML: 49% WIN"
+      ]
     }
   ],
   "trades_history": [
+    {
+      "symbol": "ONDOUSDT",
+      "direction": "LONG",
+      "entry": 0.258,
+      "tp1": 0.26316,
+      "tp2": 0.26832,
+      "sl": 0.25284,
+      "strength": 57,
+      "status": "SL",
+      "pnl_pct": -2.03,
+      "close_price": 0.25275000000000003,
+      "taken_at": "2026-03-24T08:14:01.257510",
+      "closed_at": "2026-03-24 14:13:09"
+    },
     {
       "symbol": "MONUSDT",
       "direction": "LONG",
@@ -4269,20 +4309,6 @@
       "close_price": 0.0017755000000000002,
       "taken_at": "2026-03-23T05:11:41.006547",
       "closed_at": "2026-03-23 06:37:38"
-    },
-    {
-      "symbol": "RESOLVUSDT",
-      "direction": "LONG",
-      "entry": 0.05524,
-      "tp1": 0.056345,
-      "tp2": 0.05745,
-      "sl": 0.054135,
-      "strength": 60,
-      "status": "TP1",
-      "pnl_pct": 2.08,
-      "close_price": 0.056389999999999996,
-      "taken_at": "2026-03-23T06:14:33.273336",
-      "closed_at": "2026-03-23 06:29:13"
     }
   ]
 }
