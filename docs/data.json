@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-24T07:11:46.083635+00:00",
+  "updated_at": "2026-03-24T07:12:27.125484+00:00",
   "publish_status": {
-    "last_ok": "2026-03-24T07:10:41Z",
+    "last_ok": "2026-03-24T07:11:52Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 1217,
+    "total": 1220,
     "wins": 401,
     "losses": 338,
-    "active": 6,
+    "active": 9,
     "winrate": 54.3
   },
   "trade_stats": {
-    "open": 11,
+    "open": 14,
     "pending": 0,
     "wins": 475,
     "losses": 542,
@@ -183,6 +183,81 @@
       ],
       "news": null,
       "created_at": "2026-03-24 07:05:27",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1256,
+      "symbol": "HYPEUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 38.352,
+      "tp1": 39.11904,
+      "tp2": 39.88608,
+      "sl": 37.58496,
+      "strength": 52,
+      "reasons": [
+        "MACD бычий (hist=0.02576)",
+        "Цена > EMA20 > EMA50",
+        "Объём x2.1 🔥",
+        "📰 Hyperliquid rallies 70% to $48, but THIS still blocks HYPE’s upsi...",
+        "МТФ: 5m, 15m согласны",
+        "OI растёт +1.6% + цена ↑",
+        "CVD растёт (+8.7%) — покупки усиливаются 📈",
+        "⚠️ Funding через 49м",
+        "⚡ Рыночный вход (MTF 2+ ТФ)"
+      ],
+      "news": "Hyperliquid rallies 70% to $48, but THIS still blocks HYPE’s upside",
+      "created_at": "2026-03-24 07:12:25",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1257,
+      "symbol": "ZECUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 232.0,
+      "tp1": 236.64,
+      "tp2": 241.28,
+      "sl": 227.36,
+      "strength": 50,
+      "reasons": [
+        "MACD бычий (hist=0.57520)",
+        "EMA20 > EMA50 (golden cross) 🌟",
+        "Объём x2.0 🔥",
+        "Стакан: давление покупки (+0.22)",
+        "МТФ: 5m, 15m, 1h согласны",
+        "CVD положительный (+1.6%)",
+        "BTC корреляция 0.80, BTC +0.4% 📈",
+        "⚠️ Funding через 49м",
+        "⚡ Рыночный вход (MTF сильный)"
+      ],
+      "news": null,
+      "created_at": "2026-03-24 07:12:26",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1258,
+      "symbol": "VIRTUALUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.7019,
+      "tp1": 0.715938,
+      "tp2": 0.729976,
+      "sl": 0.687862,
+      "strength": 52,
+      "reasons": [
+        "MACD бычий (hist=0.00106)",
+        "Цена > EMA20 > EMA50",
+        "Объём x2.1 🔥",
+        "Стакан: сильное давление покупки (+0.46)",
+        "МТФ: 5m, 15m, 1h согласны",
+        "CVD положительный (-2.1%)",
+        "BTC корреляция 0.76, BTC +0.4% 📈",
+        "⚠️ Funding через 48м",
+        "⚡ Рыночный вход (MTF сильный)"
+      ],
+      "news": null,
+      "created_at": "2026-03-24 07:12:26",
       "status": "ACTIVE"
     }
   ],
@@ -902,6 +977,90 @@
         "Цена у поддержки 0.0463",
         "⚠️ Funding через 55м",
         "⚡ Рыночный вход (MTF 2+ ТФ)"
+      ]
+    },
+    {
+      "id": 1110,
+      "symbol": "HYPEUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 38.352,
+      "tp1": 39.11904,
+      "tp2": 39.88608,
+      "sl": 37.58496,
+      "entry_orig": 38.352,
+      "tp1_orig": 39.11904,
+      "tp2_orig": 39.88608,
+      "sl_orig": 37.58496,
+      "strength": 52,
+      "taken_at": "2026-03-24T07:12:26.293447",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.02576)",
+        "Цена > EMA20 > EMA50",
+        "Объём x2.1 🔥",
+        "📰 Hyperliquid rallies 70% to $48, but THIS still blocks HYPE’s upsi...",
+        "МТФ: 5m, 15m согласны",
+        "OI растёт +1.6% + цена ↑",
+        "CVD растёт (+8.7%) — покупки усиливаются 📈",
+        "⚠️ Funding через 49м",
+        "⚡ Рыночный вход (MTF 2+ ТФ)"
+      ]
+    },
+    {
+      "id": 1111,
+      "symbol": "ZECUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 232.0,
+      "tp1": 236.64,
+      "tp2": 241.28,
+      "sl": 227.36,
+      "entry_orig": 232.0,
+      "tp1_orig": 236.64,
+      "tp2_orig": 241.28,
+      "sl_orig": 227.36,
+      "strength": 50,
+      "taken_at": "2026-03-24T07:12:26.504917",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.57520)",
+        "EMA20 > EMA50 (golden cross) 🌟",
+        "Объём x2.0 🔥",
+        "Стакан: давление покупки (+0.22)",
+        "МТФ: 5m, 15m, 1h согласны",
+        "CVD положительный (+1.6%)",
+        "BTC корреляция 0.80, BTC +0.4% 📈",
+        "⚠️ Funding через 49м",
+        "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
+    {
+      "id": 1112,
+      "symbol": "VIRTUALUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.7019,
+      "tp1": 0.715938,
+      "tp2": 0.729976,
+      "sl": 0.687862,
+      "entry_orig": 0.7019,
+      "tp1_orig": 0.715938,
+      "tp2_orig": 0.729976,
+      "sl_orig": 0.687862,
+      "strength": 52,
+      "taken_at": "2026-03-24T07:12:26.695819",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.00106)",
+        "Цена > EMA20 > EMA50",
+        "Объём x2.1 🔥",
+        "Стакан: сильное давление покупки (+0.46)",
+        "МТФ: 5m, 15m, 1h согласны",
+        "CVD положительный (-2.1%)",
+        "BTC корреляция 0.76, BTC +0.4% 📈",
+        "⚠️ Funding через 48м",
+        "⚡ Рыночный вход (MTF сильный)"
       ]
     }
   ],
