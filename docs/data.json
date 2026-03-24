@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-24T00:16:56.775248+00:00",
+  "updated_at": "2026-03-24T00:17:48.132521+00:00",
   "publish_status": {
-    "last_ok": "2026-03-24T00:16:29Z",
+    "last_ok": "2026-03-24T00:17:03Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,11 +17,11 @@
     "winrate": 54.6
   },
   "trade_stats": {
-    "open": 22,
+    "open": 21,
     "pending": 0,
     "wins": 465,
-    "losses": 522,
-    "total_pnl": -20.61,
+    "losses": 523,
+    "total_pnl": -22.69,
     "winrate": 47.1
   },
   "fear_greed": {
@@ -844,34 +844,6 @@
       ]
     },
     {
-      "id": 1045,
-      "symbol": "XMRUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 357.4,
-      "tp1": 364.548,
-      "tp2": 371.696,
-      "sl": 350.252,
-      "entry_orig": 357.4,
-      "tp1_orig": 364.548,
-      "tp2_orig": 371.696,
-      "sl_orig": 350.252,
-      "strength": 51,
-      "taken_at": "2026-03-23T16:54:50.920773",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=39 (перепроданность)",
-        "BB нижняя зона (23%)",
-        "EMA20 > EMA50",
-        "Стакан: сильное давление покупки (+0.58)",
-        "МТФ: только 1 таймфрейм согласен",
-        "OI растёт +3.4% + цена ↑",
-        "CVD растёт (+6.5%) — покупки усиливаются 📈",
-        "Цена у поддержки 356.2800",
-        "BTC контекст: +3.3% за 12ч 📈"
-      ]
-    },
-    {
       "id": 1056,
       "symbol": "WAXPUSDT",
       "direction": "LONG",
@@ -1356,6 +1328,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "XMRUSDT",
+      "direction": "LONG",
+      "entry": 357.4,
+      "tp1": 364.548,
+      "tp2": 371.696,
+      "sl": 350.252,
+      "strength": 51,
+      "status": "SL",
+      "pnl_pct": -2.08,
+      "close_price": 349.97,
+      "taken_at": "2026-03-23T16:54:50.920773",
+      "closed_at": "2026-03-24 00:17:47"
+    },
     {
       "symbol": "DUSKUSDT",
       "direction": "LONG",
@@ -4141,20 +4127,6 @@
       "close_price": 0.8351,
       "taken_at": "2026-03-22T16:09:57.236143",
       "closed_at": "2026-03-22 19:00:59"
-    },
-    {
-      "symbol": "CYSUSDT",
-      "direction": "LONG",
-      "entry": 0.6139,
-      "tp1": 0.630807,
-      "tp2": 0.647714,
-      "sl": 0.600374,
-      "strength": 56,
-      "status": "TP1",
-      "pnl_pct": 3.8,
-      "close_price": 0.6372,
-      "taken_at": "2026-03-22T16:08:08.626861",
-      "closed_at": "2026-03-22 19:00:55"
     }
   ]
 }
