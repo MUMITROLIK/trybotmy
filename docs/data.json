@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-24T23:25:06.813373+00:00",
+  "updated_at": "2026-03-24T23:25:49.199140+00:00",
   "publish_status": {
-    "last_ok": "2026-03-24T23:24:34Z",
+    "last_ok": "2026-03-24T23:25:13Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -11,18 +11,18 @@
   },
   "stats": {
     "total": 1333,
-    "wins": 438,
+    "wins": 439,
     "losses": 372,
-    "active": 17,
+    "active": 16,
     "winrate": 54.1
   },
   "trade_stats": {
-    "open": 18,
+    "open": 17,
     "pending": 0,
-    "wins": 533,
+    "wins": 534,
     "losses": 593,
-    "total_pnl": -19.43,
-    "winrate": 47.3
+    "total_pnl": -17.4,
+    "winrate": 47.4
   },
   "fear_greed": {
     "value": 11,
@@ -57,30 +57,6 @@
       ],
       "news": null,
       "created_at": "2026-03-24 19:58:34",
-      "status": "ACTIVE"
-    },
-    {
-      "id": 1352,
-      "symbol": "XAGUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 70.57,
-      "tp1": 71.9814,
-      "tp2": 73.3928,
-      "sl": 69.1586,
-      "strength": 53,
-      "reasons": [
-        "MACD бычий (hist=0.04247)",
-        "Цена > EMA20 > EMA50",
-        "Объём x3.1 🔥🔥",
-        "Стакан: давление покупки (+0.12)",
-        "МТФ: 5m, 15m, 1h согласны",
-        "CVD положительный (+2.0%)",
-        "⚡ Рыночный вход (MTF сильный)",
-        "🤖 ML: 58% WIN"
-      ],
-      "news": null,
-      "created_at": "2026-03-24 20:29:43",
       "status": "ACTIVE"
     },
     {
@@ -522,6 +498,27 @@
       ]
     },
     {
+      "symbol": "XAGUSDT",
+      "direction": "LONG",
+      "entry": 70.57,
+      "tp1": 71.9814,
+      "tp2": 73.3928,
+      "sl": 69.1586,
+      "strength": 53,
+      "status": "TP1",
+      "created_at": "2026-03-24 20:29:43",
+      "reasons": [
+        "MACD бычий (hist=0.04247)",
+        "Цена > EMA20 > EMA50",
+        "Объём x3.1 🔥🔥",
+        "Стакан: давление покупки (+0.12)",
+        "МТФ: 5m, 15m, 1h согласны",
+        "CVD положительный (+2.0%)",
+        "⚡ Рыночный вход (MTF сильный)",
+        "🤖 ML: 58% WIN"
+      ]
+    },
+    {
       "symbol": "ZECUSDT",
       "direction": "LONG",
       "entry": 230.29,
@@ -860,28 +857,6 @@
         "⚡ Рыночный вход (MTF сильный)",
         "🤖 ML: 54% WIN"
       ]
-    },
-    {
-      "symbol": "CUSDT",
-      "direction": "LONG",
-      "entry": 0.06787,
-      "tp1": 0.070967,
-      "tp2": 0.074065,
-      "sl": 0.065392,
-      "strength": 57,
-      "status": "SL",
-      "created_at": "2026-03-24 17:35:36",
-      "reasons": [
-        "MACD бычий (hist=0.00186)",
-        "Цена > EMA20 > EMA50",
-        "Объём x2.6 🔥🔥",
-        "📰 Ethereum Whales Are Making Money Again, But Will They Hold Or Sel...",
-        "МТФ: 5m, 15m, 1h согласны",
-        "OI растёт +42.8% + цена ↑",
-        "CVD положительный (+0.9%)",
-        "⚡ Рыночный вход (MTF сильный)",
-        "🤖 ML: 52% WIN"
-      ]
     }
   ],
   "trades_open": [
@@ -964,33 +939,6 @@
         "Стакан: сильное давление покупки (+0.28)",
         "OI растёт +3.2%",
         "🤖 ML: 54% WIN"
-      ]
-    },
-    {
-      "id": 1206,
-      "symbol": "XAGUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 70.57,
-      "tp1": 71.9814,
-      "tp2": 73.3928,
-      "sl": 69.1586,
-      "entry_orig": 70.57,
-      "tp1_orig": 71.9814,
-      "tp2_orig": 73.3928,
-      "sl_orig": 69.1586,
-      "strength": 53,
-      "taken_at": "2026-03-24T20:29:43.576717",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.04247)",
-        "Цена > EMA20 > EMA50",
-        "Объём x3.1 🔥🔥",
-        "Стакан: давление покупки (+0.12)",
-        "МТФ: 5m, 15m, 1h согласны",
-        "CVD положительный (+2.0%)",
-        "⚡ Рыночный вход (MTF сильный)",
-        "🤖 ML: 58% WIN"
       ]
     },
     {
@@ -1385,6 +1333,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "XAGUSDT",
+      "direction": "LONG",
+      "entry": 70.57,
+      "tp1": 71.9814,
+      "tp2": 73.3928,
+      "sl": 69.1586,
+      "strength": 53,
+      "status": "TP1",
+      "pnl_pct": 2.03,
+      "close_price": 72.005,
+      "taken_at": "2026-03-24T20:29:43.576717",
+      "closed_at": "2026-03-24 23:25:48"
+    },
     {
       "symbol": "DOTUSDT",
       "direction": "SHORT",
@@ -4170,20 +4132,6 @@
       "close_price": 0.0092295,
       "taken_at": "2026-03-23T11:08:46.984684",
       "closed_at": "2026-03-23 13:51:10"
-    },
-    {
-      "symbol": "LIGHTUSDT",
-      "direction": "LONG",
-      "entry": 0.3428,
-      "tp1": 0.358046,
-      "tp2": 0.373293,
-      "sl": 0.330603,
-      "strength": 54,
-      "status": "SL",
-      "pnl_pct": -5.19,
-      "close_price": 0.325,
-      "taken_at": "2026-03-23T13:48:34.463724",
-      "closed_at": "2026-03-23 13:49:25"
     }
   ]
 }
