@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-24T15:05:42.081759+00:00",
+  "updated_at": "2026-03-24T15:06:29.115259+00:00",
   "publish_status": {
-    "last_ok": "2026-03-24T15:04:42Z",
+    "last_ok": "2026-03-24T15:05:48Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 53.9
   },
   "trade_stats": {
-    "open": 22,
+    "open": 21,
     "pending": 0,
     "wins": 502,
-    "losses": 571,
-    "total_pnl": -38.3,
-    "winrate": 46.8
+    "losses": 572,
+    "total_pnl": -40.47,
+    "winrate": 46.7
   },
   "fear_greed": {
     "value": 11,
@@ -981,31 +981,6 @@
       ]
     },
     {
-      "id": 1136,
-      "symbol": "OPENUSDT",
-      "direction": "LONG",
-      "exchange": "bybit",
-      "entry": 0.1758,
-      "tp1": 0.179316,
-      "tp2": 0.182832,
-      "sl": 0.172284,
-      "entry_orig": 0.1758,
-      "tp1_orig": 0.179316,
-      "tp2_orig": 0.182832,
-      "sl_orig": 0.172284,
-      "strength": 51,
-      "taken_at": "2026-03-24T10:15:18.227166",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00017)",
-        "Цена > EMA20 > EMA50",
-        "Объём x1.9 🔥",
-        "Стакан: сильное давление покупки (+0.35)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 1142,
       "symbol": "XPTUSDT",
       "direction": "LONG",
@@ -1516,6 +1491,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "OPENUSDT",
+      "direction": "LONG",
+      "entry": 0.1758,
+      "tp1": 0.179316,
+      "tp2": 0.182832,
+      "sl": 0.172284,
+      "strength": 51,
+      "status": "SL",
+      "pnl_pct": -2.17,
+      "close_price": 0.17199,
+      "taken_at": "2026-03-24T10:15:18.227166",
+      "closed_at": "2026-03-24 15:06:28"
+    },
     {
       "symbol": "GUNUSDT",
       "direction": "SHORT",
@@ -4301,20 +4290,6 @@
       "close_price": 0.055195,
       "taken_at": "2026-03-23T07:26:28.254951",
       "closed_at": "2026-03-23 07:49:00"
-    },
-    {
-      "symbol": "DEXEUSDT",
-      "direction": "LONG",
-      "entry": 7.65,
-      "tp1": 7.803,
-      "tp2": 7.956,
-      "sl": 7.497,
-      "strength": 55,
-      "status": "SL",
-      "pnl_pct": -2.16,
-      "close_price": 7.484500000000001,
-      "taken_at": "2026-03-23T06:25:50.325180",
-      "closed_at": "2026-03-23 07:17:54"
     }
   ]
 }
