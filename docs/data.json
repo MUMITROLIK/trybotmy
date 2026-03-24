@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-24T19:58:22.414925+00:00",
+  "updated_at": "2026-03-24T19:59:28.566205+00:00",
   "publish_status": {
-    "last_ok": "2026-03-24T19:56:56Z",
+    "last_ok": "2026-03-24T19:58:28Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 1309,
+    "total": 1310,
     "wins": 429,
     "losses": 368,
-    "active": 10,
+    "active": 11,
     "winrate": 53.8
   },
   "trade_stats": {
-    "open": 20,
+    "open": 21,
     "pending": 0,
     "wins": 515,
     "losses": 585,
@@ -278,6 +278,29 @@
       ],
       "news": null,
       "created_at": "2026-03-24 19:11:26",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1348,
+      "symbol": "BPUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.19355,
+      "tp1": 0.201719,
+      "tp2": 0.209887,
+      "sl": 0.187015,
+      "strength": 52,
+      "reasons": [
+        "RSI=41 (нейтральный↓)",
+        "MACD бычий (hist=0.00020)",
+        "BB нижняя зона (17%)",
+        "Объём x5.9 🔥🔥🔥",
+        "Стакан: сильное давление покупки (+0.28)",
+        "OI растёт +3.2%",
+        "🤖 ML: 54% WIN"
+      ],
+      "news": null,
+      "created_at": "2026-03-24 19:58:34",
       "status": "ACTIVE"
     }
   ],
@@ -1255,6 +1278,32 @@
         "OI растёт +67.4% + цена ↑",
         "⚡ Рыночный вход (MTF 2+ ТФ)",
         "🤖 ML: 49% WIN"
+      ]
+    },
+    {
+      "id": 1202,
+      "symbol": "BPUSDT",
+      "direction": "LONG",
+      "exchange": "bybit",
+      "entry": 0.19355,
+      "tp1": 0.201719,
+      "tp2": 0.209887,
+      "sl": 0.187015,
+      "entry_orig": 0.19355,
+      "tp1_orig": 0.201719,
+      "tp2_orig": 0.209887,
+      "sl_orig": 0.187015,
+      "strength": 52,
+      "taken_at": "2026-03-24T19:58:34.552878",
+      "status": "OPEN",
+      "reasons": [
+        "RSI=41 (нейтральный↓)",
+        "MACD бычий (hist=0.00020)",
+        "BB нижняя зона (17%)",
+        "Объём x5.9 🔥🔥🔥",
+        "Стакан: сильное давление покупки (+0.28)",
+        "OI растёт +3.2%",
+        "🤖 ML: 54% WIN"
       ]
     }
   ],
