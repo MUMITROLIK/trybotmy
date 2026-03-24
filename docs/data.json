@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-24T01:06:13.205020+00:00",
+  "updated_at": "2026-03-24T01:07:19.330194+00:00",
   "publish_status": {
-    "last_ok": "2026-03-24T01:05:02Z",
+    "last_ok": "2026-03-24T01:06:19Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -13,7 +13,7 @@
     "total": 1205,
     "wins": 396,
     "losses": 333,
-    "active": 15,
+    "active": 14,
     "winrate": 54.3
   },
   "trade_stats": {
@@ -36,30 +36,6 @@
     "trained_at": "2026-03-23T15:00:26.686298+00:00"
   },
   "signals": [
-    {
-      "id": 1216,
-      "symbol": "NEARUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 1.322,
-      "tp1": 1.34844,
-      "tp2": 1.37488,
-      "sl": 1.29556,
-      "strength": 52,
-      "reasons": [
-        "MACD бычий (hist=0.00111)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: давление покупки (+0.11)",
-        "📰 Breaking Down The $100 XRP Prophecy: Is There A Timeline?",
-        "МТФ: 5m, 15m, 1h согласны",
-        "OI растёт +1.4% + цена ↑",
-        "CVD положительный (-7.0%)",
-        "⚡ Рыночный вход (MTF сильный)"
-      ],
-      "news": "Breaking Down The $100 XRP Prophecy: Is There A Timeline?",
-      "created_at": "2026-03-23 21:06:21",
-      "status": "ACTIVE"
-    },
     {
       "id": 1222,
       "symbol": "ONDOUSDT",
@@ -655,6 +631,27 @@
       ]
     },
     {
+      "symbol": "NEARUSDT",
+      "direction": "LONG",
+      "entry": 1.322,
+      "tp1": 1.34844,
+      "tp2": 1.37488,
+      "sl": 1.29556,
+      "strength": 52,
+      "status": "EXPIRED",
+      "created_at": "2026-03-23 21:06:21",
+      "reasons": [
+        "MACD бычий (hist=0.00111)",
+        "Цена > EMA20 > EMA50",
+        "Стакан: давление покупки (+0.11)",
+        "📰 Breaking Down The $100 XRP Prophecy: Is There A Timeline?",
+        "МТФ: 5m, 15m, 1h согласны",
+        "OI растёт +1.4% + цена ↑",
+        "CVD положительный (-7.0%)",
+        "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
+    {
       "symbol": "DEXEUSDT",
       "direction": "LONG",
       "entry": 7.507,
@@ -776,29 +773,6 @@
         "Doji (1h) — нерешительность",
         "BTC корреляция 0.89, BTC +1.2% 📈",
         "BTC контекст: +4.1% за 12ч 📈",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
-      "symbol": "XPLUSDT",
-      "direction": "LONG",
-      "entry": 0.0985,
-      "tp1": 0.10047,
-      "tp2": 0.10244,
-      "sl": 0.09653,
-      "strength": 54,
-      "status": "SL",
-      "created_at": "2026-03-23 19:07:01",
-      "reasons": [
-        "MACD бычий (hist=0.00017)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: давление покупки (+0.15)",
-        "МТФ: 5m, 15m, 1h согласны",
-        "OI растёт +2.9% + цена ↑",
-        "CVD растёт (+12.9%) — покупки усиливаются 📈",
-        "Doji (1h) — нерешительность",
-        "BTC корреляция 0.70, BTC +1.4% 📈",
-        "BTC контекст: +3.9% за 12ч 📈",
         "⚡ Рыночный вход (MTF сильный)"
       ]
     }
