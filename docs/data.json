@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-24T08:42:01.468464+00:00",
+  "updated_at": "2026-03-24T08:43:09.139913+00:00",
   "publish_status": {
-    "last_ok": "2026-03-24T08:40:41Z",
+    "last_ok": "2026-03-24T08:42:09Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,11 +17,11 @@
     "winrate": 54.4
   },
   "trade_stats": {
-    "open": 22,
+    "open": 21,
     "pending": 0,
-    "wins": 483,
+    "wins": 484,
     "losses": 543,
-    "total_pnl": -20.25,
+    "total_pnl": -19.04,
     "winrate": 47.1
   },
   "fear_greed": {
@@ -31,9 +31,9 @@
   },
   "ml_info": {
     "model_name": "GradientBoosting-Deep",
-    "roc_auc": 0.8161,
-    "rows": 561,
-    "trained_at": "2026-03-24T08:37:50.374134+00:00"
+    "roc_auc": 0.875,
+    "rows": 457,
+    "trained_at": "2026-03-24T08:43:04.224676+00:00"
   },
   "signals": [
     {
@@ -751,32 +751,6 @@
   ],
   "trades_open": [
     {
-      "id": 1092,
-      "symbol": "PAXGUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 4356.66,
-      "tp1": 4443.7932,
-      "tp2": 4530.9264,
-      "sl": 4269.5268,
-      "entry_orig": 4356.66,
-      "tp1_orig": 4443.7932,
-      "tp2_orig": 4530.9264,
-      "sl_orig": 4269.5268,
-      "strength": 58,
-      "taken_at": "2026-03-24T00:42:30.441905",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=33 (перепроданность)",
-        "BB нижняя полоса (пробой)",
-        "EMA20 > EMA50",
-        "Объём x4.5 🔥🔥🔥",
-        "Стакан: сильное давление покупки (+0.29)",
-        "МТФ: только 1 таймфрейм согласен",
-        "Цена у поддержки 4341.2200"
-      ]
-    },
-    {
       "id": 1096,
       "symbol": "XPTUSDT",
       "direction": "LONG",
@@ -1344,6 +1318,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "PAXGUSDT",
+      "direction": "LONG",
+      "entry": 4356.66,
+      "tp1": 4443.7932,
+      "tp2": 4530.9264,
+      "sl": 4269.5268,
+      "strength": 58,
+      "status": "TIMEOUT",
+      "pnl_pct": 1.21,
+      "close_price": 4409.335,
+      "taken_at": "2026-03-24T00:42:30.441905",
+      "closed_at": "2026-03-24 08:42:33"
+    },
     {
       "symbol": "RDNTUSDT",
       "direction": "LONG",
@@ -4129,20 +4117,6 @@
       "close_price": 0.0067615,
       "taken_at": "2026-03-22T21:06:15.813922",
       "closed_at": "2026-03-23 01:09:05"
-    },
-    {
-      "symbol": "VIRTUALUSDT",
-      "direction": "SHORT",
-      "entry": 0.6507,
-      "tp1": 0.637686,
-      "tp2": 0.624672,
-      "sl": 0.663714,
-      "strength": 53,
-      "status": "SL",
-      "pnl_pct": -2.13,
-      "close_price": 0.66455,
-      "taken_at": "2026-03-22T21:11:04.609771",
-      "closed_at": "2026-03-23 01:08:53"
     }
   ]
 }
