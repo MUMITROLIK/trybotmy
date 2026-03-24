@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-24T19:40:48.731376+00:00",
+  "updated_at": "2026-03-24T19:41:54.892930+00:00",
   "publish_status": {
-    "last_ok": "2026-03-24T19:39:29Z",
+    "last_ok": "2026-03-24T19:40:54Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 1308,
+    "total": 1309,
     "wins": 428,
     "losses": 367,
-    "active": 11,
+    "active": 12,
     "winrate": 53.8
   },
   "trade_stats": {
-    "open": 21,
+    "open": 22,
     "pending": 0,
     "wins": 514,
     "losses": 584,
@@ -302,6 +302,30 @@
       ],
       "news": null,
       "created_at": "2026-03-24 19:11:26",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1347,
+      "symbol": "INITUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.09069,
+      "tp1": 0.09313,
+      "tp2": 0.095569,
+      "sl": 0.088738,
+      "strength": 62,
+      "reasons": [
+        "MACD бычий (hist=0.00064)",
+        "Цена > EMA20 > EMA50",
+        "Объём x4.3 🔥🔥🔥",
+        "Стакан: сильное давление покупки (+0.32)",
+        "МТФ: 5m, 15m, 1h согласны",
+        "OI растёт +18.2% + цена ↑",
+        "⚡ Рыночный вход (MTF сильный)",
+        "🤖 ML: 54% WIN"
+      ],
+      "news": null,
+      "created_at": "2026-03-24 19:41:07",
       "status": "ACTIVE"
     }
   ],
@@ -1307,6 +1331,33 @@
         "OI растёт +67.4% + цена ↑",
         "⚡ Рыночный вход (MTF 2+ ТФ)",
         "🤖 ML: 49% WIN"
+      ]
+    },
+    {
+      "id": 1201,
+      "symbol": "INITUSDT",
+      "direction": "LONG",
+      "exchange": "bybit",
+      "entry": 0.09069,
+      "tp1": 0.09313,
+      "tp2": 0.095569,
+      "sl": 0.088738,
+      "entry_orig": 0.09069,
+      "tp1_orig": 0.09313,
+      "tp2_orig": 0.095569,
+      "sl_orig": 0.088738,
+      "strength": 62,
+      "taken_at": "2026-03-24T19:41:08.423932",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.00064)",
+        "Цена > EMA20 > EMA50",
+        "Объём x4.3 🔥🔥🔥",
+        "Стакан: сильное давление покупки (+0.32)",
+        "МТФ: 5m, 15m, 1h согласны",
+        "OI растёт +18.2% + цена ↑",
+        "⚡ Рыночный вход (MTF сильный)",
+        "🤖 ML: 54% WIN"
       ]
     }
   ],
