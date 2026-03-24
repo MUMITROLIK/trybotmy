@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-24T11:21:08.165077+00:00",
+  "updated_at": "2026-03-24T11:21:40.587714+00:00",
   "publish_status": {
-    "last_ok": "2026-03-24T11:19:55Z",
+    "last_ok": "2026-03-24T11:21:13Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,11 +17,11 @@
     "winrate": 54.0
   },
   "trade_stats": {
-    "open": 18,
+    "open": 17,
     "pending": 0,
-    "wins": 492,
+    "wins": 493,
     "losses": 553,
-    "total_pnl": -18.94,
+    "total_pnl": -16.78,
     "winrate": 47.1
   },
   "fear_greed": {
@@ -784,34 +784,6 @@
       ]
     },
     {
-      "id": 1109,
-      "symbol": "NIGHTUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.04653,
-      "tp1": 0.047461,
-      "tp2": 0.048391,
-      "sl": 0.045599,
-      "entry_orig": 0.04653,
-      "tp1_orig": 0.047461,
-      "tp2_orig": 0.048391,
-      "sl_orig": 0.045599,
-      "strength": 50,
-      "taken_at": "2026-03-24T07:05:28.150117",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=37 (перепроданность)",
-        "MACD бычий (hist=0.00000)",
-        "BB нижняя зона (18%)",
-        "Стакан: давление покупки (+0.20)",
-        "МТФ: 5m, 1h согласны",
-        "CVD положительный (+0.2%)",
-        "Цена у поддержки 0.0463",
-        "⚠️ Funding через 55м",
-        "⚡ Рыночный вход (MTF 2+ ТФ)"
-      ]
-    },
-    {
       "id": 1110,
       "symbol": "HYPEUSDT",
       "direction": "LONG",
@@ -1238,6 +1210,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "NIGHTUSDT",
+      "direction": "LONG",
+      "entry": 0.04653,
+      "tp1": 0.047461,
+      "tp2": 0.048391,
+      "sl": 0.045599,
+      "strength": 50,
+      "status": "TP1",
+      "pnl_pct": 2.16,
+      "close_price": 0.047535,
+      "taken_at": "2026-03-24T07:05:28.150117",
+      "closed_at": "2026-03-24 11:21:40"
+    },
     {
       "symbol": "ONTUSDT",
       "direction": "LONG",
@@ -4023,20 +4009,6 @@
       "close_price": 0.70205,
       "taken_at": "2026-03-23T02:29:20.252199",
       "closed_at": "2026-03-23 03:51:14"
-    },
-    {
-      "symbol": "ORDERUSDT",
-      "direction": "LONG",
-      "entry": 0.05695,
-      "tp1": 0.058322,
-      "tp2": 0.059695,
-      "sl": 0.055811,
-      "strength": 55,
-      "status": "TP1",
-      "pnl_pct": 2.44,
-      "close_price": 0.05834,
-      "taken_at": "2026-03-23T00:39:59.911053",
-      "closed_at": "2026-03-23 03:37:33"
     }
   ]
 }
