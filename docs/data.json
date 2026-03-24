@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-24T00:46:31.984971+00:00",
+  "updated_at": "2026-03-24T00:47:38.202328+00:00",
   "publish_status": {
-    "last_ok": "2026-03-24T00:46:03Z",
+    "last_ok": "2026-03-24T00:46:38Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,15 +17,15 @@
     "winrate": 54.3
   },
   "trade_stats": {
-    "open": 20,
+    "open": 19,
     "pending": 0,
     "wins": 465,
-    "losses": 530,
-    "total_pnl": -35.09,
+    "losses": 531,
+    "total_pnl": -36.34,
     "winrate": 46.7
   },
   "fear_greed": {
-    "value": 8,
+    "value": 11,
     "label": "Extreme Fear",
     "emoji": "😱"
   },
@@ -832,34 +832,6 @@
   ],
   "trades_open": [
     {
-      "id": 1043,
-      "symbol": "OPENUSDT",
-      "direction": "LONG",
-      "exchange": "bybit",
-      "entry": 0.16857,
-      "tp1": 0.171941,
-      "tp2": 0.175313,
-      "sl": 0.165199,
-      "entry_orig": 0.16857,
-      "tp1_orig": 0.171941,
-      "tp2_orig": 0.175313,
-      "sl_orig": 0.165199,
-      "strength": 50,
-      "taken_at": "2026-03-23T16:47:37.890822",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=26 (сильная перепроданность)",
-        "BB нижняя зона (19%)",
-        "EMA20 > EMA50",
-        "Стакан: сильное давление покупки (+0.38)",
-        "МТФ: 15m, 4h согласны",
-        "OI растёт +0.6% + цена ↑",
-        "Цена у поддержки 0.1678",
-        "BTC контекст: +3.3% за 12ч 📈",
-        "⚡ Рыночный вход (MTF 2+ ТФ)"
-      ]
-    },
-    {
       "id": 1057,
       "symbol": "TURBOUSDT",
       "direction": "LONG",
@@ -1373,6 +1345,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "OPENUSDT",
+      "direction": "LONG",
+      "entry": 0.16857,
+      "tp1": 0.171941,
+      "tp2": 0.175313,
+      "sl": 0.165199,
+      "strength": 50,
+      "status": "TIMEOUT",
+      "pnl_pct": -1.25,
+      "close_price": 0.16646,
+      "taken_at": "2026-03-23T16:47:37.890822",
+      "closed_at": "2026-03-24 00:47:37"
+    },
     {
       "symbol": "JTOUSDT",
       "direction": "LONG",
@@ -4158,20 +4144,6 @@
       "close_price": 0.17443,
       "taken_at": "2026-03-22T19:12:12.336779",
       "closed_at": "2026-03-22 20:08:37"
-    },
-    {
-      "symbol": "DEXEUSDT",
-      "direction": "SHORT",
-      "entry": 7.132,
-      "tp1": 6.985643,
-      "tp2": 6.839286,
-      "sl": 7.27464,
-      "strength": 51,
-      "status": "TP1",
-      "pnl_pct": 2.07,
-      "close_price": 6.984500000000001,
-      "taken_at": "2026-03-22T19:12:12.116721",
-      "closed_at": "2026-03-22 19:57:25"
     }
   ]
 }
