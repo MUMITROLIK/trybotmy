@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-24T20:58:39.014200+00:00",
+  "updated_at": "2026-03-24T20:59:15.767869+00:00",
   "publish_status": {
-    "last_ok": "2026-03-24T20:57:30Z",
+    "last_ok": "2026-03-24T20:58:45Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 1320,
+    "total": 1321,
     "wins": 433,
     "losses": 371,
-    "active": 13,
+    "active": 14,
     "winrate": 53.9
   },
   "trade_stats": {
-    "open": 18,
+    "open": 19,
     "pending": 0,
     "wins": 522,
     "losses": 591,
@@ -352,6 +352,30 @@
       ],
       "news": null,
       "created_at": "2026-03-24 20:45:17",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1359,
+      "symbol": "PAXGUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 4484.48,
+      "tp1": 4574.1696,
+      "tp2": 4663.8592,
+      "sl": 4394.7904,
+      "strength": 51,
+      "reasons": [
+        "MACD бычий (hist=7.94378)",
+        "Цена > EMA20 > EMA50",
+        "Объём x2.3 🔥",
+        "Стакан: сильное давление покупки (+0.29)",
+        "МТФ: 5m, 15m согласны",
+        "CVD растёт (+9.3%) — покупки усиливаются 📈",
+        "⚡ Рыночный вход (MTF 2+ ТФ)",
+        "🤖 ML: 51% WIN"
+      ],
+      "news": null,
+      "created_at": "2026-03-24 20:59:14",
       "status": "ACTIVE"
     }
   ],
@@ -1272,6 +1296,33 @@
         "CVD положительный (+4.7%)",
         "⚡ Рыночный вход (MTF сильный)",
         "🤖 ML: 58% WIN"
+      ]
+    },
+    {
+      "id": 1213,
+      "symbol": "PAXGUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 4484.48,
+      "tp1": 4574.1696,
+      "tp2": 4663.8592,
+      "sl": 4394.7904,
+      "entry_orig": 4484.48,
+      "tp1_orig": 4574.1696,
+      "tp2_orig": 4663.8592,
+      "sl_orig": 4394.7904,
+      "strength": 51,
+      "taken_at": "2026-03-24T20:59:15.109997",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=7.94378)",
+        "Цена > EMA20 > EMA50",
+        "Объём x2.3 🔥",
+        "Стакан: сильное давление покупки (+0.29)",
+        "МТФ: 5m, 15m согласны",
+        "CVD растёт (+9.3%) — покупки усиливаются 📈",
+        "⚡ Рыночный вход (MTF 2+ ТФ)",
+        "🤖 ML: 51% WIN"
       ]
     }
   ],
