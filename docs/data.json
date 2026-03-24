@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-24T14:11:29.398037+00:00",
+  "updated_at": "2026-03-24T14:12:45.062256+00:00",
   "publish_status": {
-    "last_ok": "2026-03-24T14:10:56Z",
+    "last_ok": "2026-03-24T14:11:35Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 54.1
   },
   "trade_stats": {
-    "open": 24,
+    "open": 23,
     "pending": 0,
     "wins": 500,
-    "losses": 564,
-    "total_pnl": -27.51,
-    "winrate": 47.0
+    "losses": 565,
+    "total_pnl": -29.59,
+    "winrate": 46.9
   },
   "fear_greed": {
     "value": 11,
@@ -1243,32 +1243,6 @@
       ]
     },
     {
-      "id": 1158,
-      "symbol": "MONUSDT",
-      "direction": "LONG",
-      "exchange": "bybit",
-      "entry": 0.022763,
-      "tp1": 0.023218,
-      "tp2": 0.023674,
-      "sl": 0.022308,
-      "entry_orig": 0.022763,
-      "tp1_orig": 0.023218,
-      "tp2_orig": 0.023674,
-      "sl_orig": 0.022308,
-      "strength": 58,
-      "taken_at": "2026-03-24T13:13:42.329161",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00005)",
-        "Цена > EMA20 > EMA50",
-        "Объём x4.3 🔥🔥🔥",
-        "Стакан: давление покупки (+0.14)",
-        "МТФ: 5m, 15m, 1h согласны",
-        "OI растёт +1.3% + цена ↑",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 1159,
       "symbol": "MSTRUSDT",
       "direction": "LONG",
@@ -1510,6 +1484,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "MONUSDT",
+      "direction": "LONG",
+      "entry": 0.022763,
+      "tp1": 0.023218,
+      "tp2": 0.023674,
+      "sl": 0.022308,
+      "strength": 58,
+      "status": "SL",
+      "pnl_pct": -2.08,
+      "close_price": 0.022289,
+      "taken_at": "2026-03-24T13:13:42.329161",
+      "closed_at": "2026-03-24 14:12:44"
+    },
     {
       "symbol": "KITEUSDT",
       "direction": "LONG",
@@ -4295,20 +4283,6 @@
       "close_price": 0.056389999999999996,
       "taken_at": "2026-03-23T06:14:33.273336",
       "closed_at": "2026-03-23 06:29:13"
-    },
-    {
-      "symbol": "HBARUSDT",
-      "direction": "LONG",
-      "entry": 0.08911,
-      "tp1": 0.090892,
-      "tp2": 0.092674,
-      "sl": 0.087328,
-      "strength": 60,
-      "status": "TIMEOUT",
-      "pnl_pct": 0.89,
-      "close_price": 0.089905,
-      "taken_at": "2026-03-22T22:22:20.745661",
-      "closed_at": "2026-03-23 06:22:22"
     }
   ]
 }
