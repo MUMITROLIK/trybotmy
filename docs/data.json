@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-24T20:48:42.648221+00:00",
+  "updated_at": "2026-03-24T20:49:44.726051+00:00",
   "publish_status": {
-    "last_ok": "2026-03-24T20:47:51Z",
+    "last_ok": "2026-03-24T20:48:49Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,11 +17,11 @@
     "winrate": 53.9
   },
   "trade_stats": {
-    "open": 21,
+    "open": 20,
     "pending": 0,
     "wins": 521,
-    "losses": 589,
-    "total_pnl": -30.79,
+    "losses": 590,
+    "total_pnl": -32.81,
     "winrate": 46.9
   },
   "fear_greed": {
@@ -1214,33 +1214,6 @@
       ]
     },
     {
-      "id": 1205,
-      "symbol": "TAOUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 337.82,
-      "tp1": 345.941429,
-      "tp2": 354.062857,
-      "sl": 331.0636,
-      "entry_orig": 337.82,
-      "tp1_orig": 345.941429,
-      "tp2_orig": 354.062857,
-      "sl_orig": 331.0636,
-      "strength": 54,
-      "taken_at": "2026-03-24T20:26:17.408570",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=1.64178)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: давление покупки (+0.12)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +7.1% + цена ↑",
-        "CVD растёт (+9.4%) — покупки усиливаются 📈",
-        "⚡ Рыночный вход (MTF сильный)",
-        "🤖 ML: 47% WIN"
-      ]
-    },
-    {
       "id": 1206,
       "symbol": "XAGUSDT",
       "direction": "LONG",
@@ -1435,6 +1408,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "TAOUSDT",
+      "direction": "LONG",
+      "entry": 337.82,
+      "tp1": 345.941429,
+      "tp2": 354.062857,
+      "sl": 331.0636,
+      "strength": 54,
+      "status": "SL",
+      "pnl_pct": -2.02,
+      "close_price": 330.985,
+      "taken_at": "2026-03-24T20:26:17.408570",
+      "closed_at": "2026-03-24 20:49:44"
+    },
     {
       "symbol": "GASUSDT",
       "direction": "LONG",
@@ -4220,20 +4207,6 @@
       "close_price": 0.926,
       "taken_at": "2026-03-23T11:10:37.539162",
       "closed_at": "2026-03-23 11:49:08"
-    },
-    {
-      "symbol": "TURBOUSDT",
-      "direction": "LONG",
-      "entry": 0.0011852,
-      "tp1": 0.001216,
-      "tp2": 0.001247,
-      "sl": 0.001161,
-      "strength": 50,
-      "status": "SL",
-      "pnl_pct": -2.22,
-      "close_price": 0.0011589,
-      "taken_at": "2026-03-23T11:07:04.023839",
-      "closed_at": "2026-03-23 11:47:39"
     }
   ]
 }
