@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-24T17:34:16.529013+00:00",
+  "updated_at": "2026-03-24T17:34:59.999376+00:00",
   "publish_status": {
-    "last_ok": "2026-03-24T17:33:52Z",
+    "last_ok": "2026-03-24T17:34:23Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -11,18 +11,18 @@
   },
   "stats": {
     "total": 1296,
-    "wins": 423,
+    "wins": 424,
     "losses": 363,
-    "active": 17,
-    "winrate": 53.8
+    "active": 16,
+    "winrate": 53.9
   },
   "trade_stats": {
-    "open": 21,
+    "open": 19,
     "pending": 0,
-    "wins": 507,
+    "wins": 509,
     "losses": 579,
-    "total_pnl": -43.69,
-    "winrate": 46.7
+    "total_pnl": -36.45,
+    "winrate": 46.8
   },
   "fear_greed": {
     "value": 11,
@@ -396,32 +396,6 @@
       "status": "ACTIVE"
     },
     {
-      "id": 1333,
-      "symbol": "CUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.0653,
-      "tp1": 0.067962,
-      "tp2": 0.070625,
-      "sl": 0.06317,
-      "strength": 67,
-      "reasons": [
-        "MACD бычий (hist=0.00159)",
-        "Цена > EMA20 > EMA50",
-        "Объём x4.1 🔥🔥🔥",
-        "Стакан: давление покупки (+0.20)",
-        "📰 3 Big Hyperliquid News You Might Have Missed This Week",
-        "МТФ: 5m, 15m, 1h согласны",
-        "OI растёт +42.8% + цена ↑",
-        "CVD положительный (+0.2%)",
-        "⚡ Рыночный вход (MTF сильный)",
-        "🤖 ML: 52% WIN"
-      ],
-      "news": "3 Big Hyperliquid News You Might Have Missed This Week",
-      "created_at": "2026-03-24 17:26:44",
-      "status": "ACTIVE"
-    },
-    {
       "id": 1334,
       "symbol": "FETUSDT",
       "direction": "SHORT",
@@ -448,6 +422,29 @@
     }
   ],
   "history": [
+    {
+      "symbol": "CUSDT",
+      "direction": "LONG",
+      "entry": 0.0653,
+      "tp1": 0.067962,
+      "tp2": 0.070625,
+      "sl": 0.06317,
+      "strength": 67,
+      "status": "TP1",
+      "created_at": "2026-03-24 17:26:44",
+      "reasons": [
+        "MACD бычий (hist=0.00159)",
+        "Цена > EMA20 > EMA50",
+        "Объём x4.1 🔥🔥🔥",
+        "Стакан: давление покупки (+0.20)",
+        "📰 3 Big Hyperliquid News You Might Have Missed This Week",
+        "МТФ: 5m, 15m, 1h согласны",
+        "OI растёт +42.8% + цена ↑",
+        "CVD положительный (+0.2%)",
+        "⚡ Рыночный вход (MTF сильный)",
+        "🤖 ML: 52% WIN"
+      ]
+    },
     {
       "symbol": "BANANAS31USDT",
       "direction": "LONG",
@@ -845,26 +842,6 @@
         "CVD растёт (+5.2%) — покупки усиливаются 📈",
         "Цена у поддержки 0.3209"
       ]
-    },
-    {
-      "symbol": "POLYXUSDT",
-      "direction": "LONG",
-      "entry": 0.04942,
-      "tp1": 0.051277,
-      "tp2": 0.053134,
-      "sl": 0.047935,
-      "strength": 51,
-      "status": "SL",
-      "created_at": "2026-03-24 12:13:48",
-      "reasons": [
-        "MACD бычий (hist=0.00035)",
-        "Цена > EMA20 > EMA50",
-        "Объём x3.5 🔥🔥",
-        "Стакан: давление покупки (+0.21)",
-        "МТФ: 15m, 1h, 4h согласны",
-        "OI растёт +5.9% + цена ↑",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
     }
   ],
   "trades_open": [
@@ -1218,34 +1195,6 @@
       ]
     },
     {
-      "id": 1180,
-      "symbol": "VVVUSDT",
-      "direction": "SHORT",
-      "exchange": "bybit",
-      "entry": 5.8301,
-      "tp1": 5.713498,
-      "tp2": 5.596896,
-      "sl": 5.946702,
-      "entry_orig": 5.8301,
-      "tp1_orig": 5.713498,
-      "tp2_orig": 5.596896,
-      "sl_orig": 5.946702,
-      "strength": 53,
-      "taken_at": "2026-03-24T16:10:56.499869",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=82 (сильная перекупленность)",
-        "BB верхняя полоса (пробой)",
-        "EMA20 < EMA50",
-        "Объём x2.2 🔥",
-        "Стакан: сильное давление продажи (-0.78)",
-        "МТФ: 15m, 1h, 4h согласны",
-        "Цена у сопротивления 5.8468",
-        "BTC контекст: -2.0% за 12ч 📉",
-        "🤖 ML: 58% WIN"
-      ]
-    },
-    {
       "id": 1181,
       "symbol": "DOTUSDT",
       "direction": "SHORT",
@@ -1380,35 +1329,6 @@
       ]
     },
     {
-      "id": 1187,
-      "symbol": "CUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.0653,
-      "tp1": 0.067962,
-      "tp2": 0.070625,
-      "sl": 0.06317,
-      "entry_orig": 0.0653,
-      "tp1_orig": 0.067962,
-      "tp2_orig": 0.070625,
-      "sl_orig": 0.06317,
-      "strength": 67,
-      "taken_at": "2026-03-24T17:26:44.501742",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00159)",
-        "Цена > EMA20 > EMA50",
-        "Объём x4.1 🔥🔥🔥",
-        "Стакан: давление покупки (+0.20)",
-        "📰 3 Big Hyperliquid News You Might Have Missed This Week",
-        "МТФ: 5m, 15m, 1h согласны",
-        "OI растёт +42.8% + цена ↑",
-        "CVD положительный (+0.2%)",
-        "⚡ Рыночный вход (MTF сильный)",
-        "🤖 ML: 52% WIN"
-      ]
-    },
-    {
       "id": 1188,
       "symbol": "FETUSDT",
       "direction": "SHORT",
@@ -1438,6 +1358,34 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "VVVUSDT",
+      "direction": "SHORT",
+      "entry": 5.8301,
+      "tp1": 5.713498,
+      "tp2": 5.596896,
+      "sl": 5.946702,
+      "strength": 53,
+      "status": "TP1",
+      "pnl_pct": 2.72,
+      "close_price": 5.6713,
+      "taken_at": "2026-03-24T16:10:56.499869",
+      "closed_at": "2026-03-24 17:34:59"
+    },
+    {
+      "symbol": "CUSDT",
+      "direction": "LONG",
+      "entry": 0.0653,
+      "tp1": 0.067962,
+      "tp2": 0.070625,
+      "sl": 0.06317,
+      "strength": 67,
+      "status": "TP1",
+      "pnl_pct": 4.52,
+      "close_price": 0.06825,
+      "taken_at": "2026-03-24T17:26:44.501742",
+      "closed_at": "2026-03-24 17:34:24"
+    },
     {
       "symbol": "BEATUSDT",
       "direction": "LONG",
@@ -4209,34 +4157,6 @@
       "close_price": 0.0011753,
       "taken_at": "2026-03-23T09:52:13.499435",
       "closed_at": "2026-03-23 10:25:05"
-    },
-    {
-      "symbol": "APRUSDT",
-      "direction": "LONG",
-      "entry": 0.14969,
-      "tp1": 0.154748,
-      "tp2": 0.159806,
-      "sl": 0.145643,
-      "strength": 54,
-      "status": "SL",
-      "pnl_pct": -2.87,
-      "close_price": 0.1454,
-      "taken_at": "2026-03-23T08:27:47.607463",
-      "closed_at": "2026-03-23 10:21:24"
-    },
-    {
-      "symbol": "BEATUSDT",
-      "direction": "LONG",
-      "entry": 0.7219,
-      "tp1": 0.7468,
-      "tp2": 0.7717,
-      "sl": 0.70198,
-      "strength": 50,
-      "status": "SL",
-      "pnl_pct": -2.79,
-      "close_price": 0.70175,
-      "taken_at": "2026-03-23T09:40:01.628660",
-      "closed_at": "2026-03-23 10:20:19"
     }
   ]
 }
