@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-24T13:04:32.982689+00:00",
+  "updated_at": "2026-03-24T13:05:05.557194+00:00",
   "publish_status": {
-    "last_ok": "2026-03-24T13:03:59Z",
+    "last_ok": "2026-03-24T13:04:38Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,18 +10,18 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 1263,
+    "total": 1264,
     "wins": 413,
     "losses": 351,
-    "active": 12,
+    "active": 13,
     "winrate": 54.1
   },
   "trade_stats": {
     "open": 21,
     "pending": 0,
     "wins": 496,
-    "losses": 557,
-    "total_pnl": -20.1,
+    "losses": 558,
+    "total_pnl": -23.24,
     "winrate": 47.1
   },
   "fear_greed": {
@@ -312,6 +312,29 @@
       ],
       "news": null,
       "created_at": "2026-03-24 12:58:02",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1302,
+      "symbol": "PEAQUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.017989,
+      "tp1": 0.018447,
+      "tp2": 0.018904,
+      "sl": 0.017623,
+      "strength": 50,
+      "reasons": [
+        "RSI=16 (сильная перепроданность)",
+        "BB нижняя полоса (пробой)",
+        "EMA20 > EMA50",
+        "Объём x2.1 🔥",
+        "Стакан: сильное давление покупки (+0.35)",
+        "МТФ: 15m, 4h согласны",
+        "⚡ Рыночный вход (MTF 2+ ТФ)"
+      ],
+      "news": null,
+      "created_at": "2026-03-24 13:05:05",
       "status": "ACTIVE"
     }
   ],
@@ -1183,32 +1206,6 @@
       ]
     },
     {
-      "id": 1152,
-      "symbol": "POLYXUSDT",
-      "direction": "LONG",
-      "exchange": "bybit",
-      "entry": 0.04942,
-      "tp1": 0.051277,
-      "tp2": 0.053134,
-      "sl": 0.047935,
-      "entry_orig": 0.04942,
-      "tp1_orig": 0.051277,
-      "tp2_orig": 0.053134,
-      "sl_orig": 0.047935,
-      "strength": 51,
-      "taken_at": "2026-03-24T12:13:48.848354",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00035)",
-        "Цена > EMA20 > EMA50",
-        "Объём x3.5 🔥🔥",
-        "Стакан: давление покупки (+0.21)",
-        "МТФ: 15m, 1h, 4h согласны",
-        "OI растёт +5.9% + цена ↑",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 1153,
       "symbol": "AEROUSDT",
       "direction": "LONG",
@@ -1284,9 +1281,49 @@
         "OI растёт +0.9% + цена ↑",
         "⚡ Рыночный вход (MTF сильный)"
       ]
+    },
+    {
+      "id": 1156,
+      "symbol": "PEAQUSDT",
+      "direction": "LONG",
+      "exchange": "bybit",
+      "entry": 0.017989,
+      "tp1": 0.018447,
+      "tp2": 0.018904,
+      "sl": 0.017623,
+      "entry_orig": 0.017989,
+      "tp1_orig": 0.018447,
+      "tp2_orig": 0.018904,
+      "sl_orig": 0.017623,
+      "strength": 50,
+      "taken_at": "2026-03-24T13:05:05.310645",
+      "status": "OPEN",
+      "reasons": [
+        "RSI=16 (сильная перепроданность)",
+        "BB нижняя полоса (пробой)",
+        "EMA20 > EMA50",
+        "Объём x2.1 🔥",
+        "Стакан: сильное давление покупки (+0.35)",
+        "МТФ: 15m, 4h согласны",
+        "⚡ Рыночный вход (MTF 2+ ТФ)"
+      ]
     }
   ],
   "trades_history": [
+    {
+      "symbol": "POLYXUSDT",
+      "direction": "LONG",
+      "entry": 0.04942,
+      "tp1": 0.051277,
+      "tp2": 0.053134,
+      "sl": 0.047935,
+      "strength": 51,
+      "status": "SL",
+      "pnl_pct": -3.14,
+      "close_price": 0.04787,
+      "taken_at": "2026-03-24T12:13:48.848354",
+      "closed_at": "2026-03-24 13:04:39"
+    },
     {
       "symbol": "MONUSDT",
       "direction": "LONG",
@@ -4072,20 +4109,6 @@
       "close_price": 2067.4849999999997,
       "taken_at": "2026-03-22T21:07:54.306918",
       "closed_at": "2026-03-23 05:07:57"
-    },
-    {
-      "symbol": "FILUSDT",
-      "direction": "SHORT",
-      "entry": 0.854,
-      "tp1": 0.83692,
-      "tp2": 0.81984,
-      "sl": 0.87108,
-      "strength": 54,
-      "status": "TIMEOUT",
-      "pnl_pct": -1.23,
-      "close_price": 0.8645,
-      "taken_at": "2026-03-22T21:06:15.362145",
-      "closed_at": "2026-03-23 05:06:20"
     }
   ]
 }
