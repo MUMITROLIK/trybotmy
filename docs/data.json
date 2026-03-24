@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-24T02:53:12.710951+00:00",
+  "updated_at": "2026-03-24T02:54:45.800407+00:00",
   "publish_status": {
-    "last_ok": "2026-03-24T02:52:41Z",
+    "last_ok": "2026-03-24T02:53:19Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 54.4
   },
   "trade_stats": {
-    "open": 12,
+    "open": 11,
     "pending": 0,
-    "wins": 471,
+    "wins": 472,
     "losses": 535,
-    "total_pnl": -29.54,
-    "winrate": 46.8
+    "total_pnl": -29.2,
+    "winrate": 46.9
   },
   "fear_greed": {
     "value": 11,
@@ -615,34 +615,6 @@
   ],
   "trades_open": [
     {
-      "id": 1059,
-      "symbol": "HBARUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.0923,
-      "tp1": 0.094146,
-      "tp2": 0.095992,
-      "sl": 0.090454,
-      "entry_orig": 0.0923,
-      "tp1_orig": 0.094146,
-      "tp2_orig": 0.095992,
-      "sl_orig": 0.090454,
-      "strength": 50,
-      "taken_at": "2026-03-23T18:54:04.138418",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=29 (сильная перепроданность)",
-        "BB ниже середины",
-        "EMA20 > EMA50",
-        "Стакан: сильное давление покупки (+0.28)",
-        "МТФ: 15m, 1h согласны",
-        "CVD растёт (+9.1%) — покупки усиливаются 📈",
-        "Цена у поддержки 0.0919",
-        "BTC контекст: +3.9% за 12ч 📈",
-        "⚡ Рыночный вход (MTF 2+ ТФ)"
-      ]
-    },
-    {
       "id": 1064,
       "symbol": "LDOUSDT",
       "direction": "LONG",
@@ -939,6 +911,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "HBARUSDT",
+      "direction": "LONG",
+      "entry": 0.0923,
+      "tp1": 0.094146,
+      "tp2": 0.095992,
+      "sl": 0.090454,
+      "strength": 50,
+      "status": "TIMEOUT",
+      "pnl_pct": 0.34,
+      "close_price": 0.092615,
+      "taken_at": "2026-03-23T18:54:04.138418",
+      "closed_at": "2026-03-24 02:54:08"
+    },
     {
       "symbol": "TAOUSDT",
       "direction": "LONG",
@@ -3724,20 +3710,6 @@
       "close_price": 0.007332,
       "taken_at": "2026-03-22T21:14:16.764037",
       "closed_at": "2026-03-22 22:02:50"
-    },
-    {
-      "symbol": "ETHFIUSDT",
-      "direction": "SHORT",
-      "entry": 0.5487,
-      "tp1": 0.537726,
-      "tp2": 0.526752,
-      "sl": 0.559674,
-      "strength": 52,
-      "status": "TP1",
-      "pnl_pct": 2.03,
-      "close_price": 0.53755,
-      "taken_at": "2026-03-22T19:40:45.036550",
-      "closed_at": "2026-03-22 22:02:35"
     }
   ]
 }
