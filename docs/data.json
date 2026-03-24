@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-24T09:33:47.209682+00:00",
+  "updated_at": "2026-03-24T09:34:49.393138+00:00",
   "publish_status": {
-    "last_ok": "2026-03-24T09:32:47Z",
+    "last_ok": "2026-03-24T09:33:53Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,18 +10,18 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 1239,
+    "total": 1241,
     "wins": 406,
     "losses": 340,
-    "active": 9,
+    "active": 11,
     "winrate": 54.4
   },
   "trade_stats": {
-    "open": 16,
+    "open": 17,
     "pending": 0,
-    "wins": 488,
+    "wins": 489,
     "losses": 546,
-    "total_pnl": -15.99,
+    "total_pnl": -13.99,
     "winrate": 47.2
   },
   "fear_greed": {
@@ -244,6 +244,52 @@
       ],
       "news": null,
       "created_at": "2026-03-24 09:23:18",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1278,
+      "symbol": "币安人生USDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.05167,
+      "tp1": 0.052705,
+      "tp2": 0.05374,
+      "sl": 0.050637,
+      "strength": 51,
+      "reasons": [
+        "MACD бычий (hist=0.00009)",
+        "Цена > EMA20 > EMA50",
+        "Объём x2.1 🔥",
+        "Стакан: сильное давление покупки (+0.30)",
+        "МТФ: 5m, 15m, 1h согласны",
+        "CVD положительный (-7.5%)",
+        "⚡ Рыночный вход (MTF сильный)"
+      ],
+      "news": null,
+      "created_at": "2026-03-24 09:34:48",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1279,
+      "symbol": "KITEUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.24102,
+      "tp1": 0.24584,
+      "tp2": 0.250661,
+      "sl": 0.2362,
+      "strength": 57,
+      "reasons": [
+        "MACD бычий (hist=0.00067)",
+        "Цена > EMA20 > EMA50",
+        "Стакан: сильное давление покупки (+0.49)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +1.6% + цена ↑",
+        "CVD растёт (+7.1%) — покупки усиливаются 📈",
+        "⚡ Рыночный вход (MTF сильный)"
+      ],
+      "news": null,
+      "created_at": "2026-03-24 09:34:48",
       "status": "ACTIVE"
     }
   ],
@@ -896,32 +942,6 @@
       ]
     },
     {
-      "id": 1121,
-      "symbol": "KITEUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.23718,
-      "tp1": 0.241924,
-      "tp2": 0.246667,
-      "sl": 0.232436,
-      "entry_orig": 0.23718,
-      "tp1_orig": 0.241924,
-      "tp2_orig": 0.246667,
-      "sl_orig": 0.232436,
-      "strength": 50,
-      "taken_at": "2026-03-24T08:06:40.962693",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00077)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: давление покупки (+0.11)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +1.1% + цена ↑",
-        "CVD положительный (+2.9%)",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 1122,
       "symbol": "VIRTUALUSDT",
       "direction": "LONG",
@@ -1104,9 +1124,75 @@
         "CVD положительный (+1.5%)",
         "⚡ Рыночный вход (MTF сильный)"
       ]
+    },
+    {
+      "id": 1132,
+      "symbol": "币安人生USDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.05167,
+      "tp1": 0.052705,
+      "tp2": 0.05374,
+      "sl": 0.050637,
+      "entry_orig": 0.05167,
+      "tp1_orig": 0.052705,
+      "tp2_orig": 0.05374,
+      "sl_orig": 0.050637,
+      "strength": 51,
+      "taken_at": "2026-03-24T09:34:48.616609",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.00009)",
+        "Цена > EMA20 > EMA50",
+        "Объём x2.1 🔥",
+        "Стакан: сильное давление покупки (+0.30)",
+        "МТФ: 5m, 15m, 1h согласны",
+        "CVD положительный (-7.5%)",
+        "⚡ Рыночный вход (MTF сильный)"
+      ]
+    },
+    {
+      "id": 1133,
+      "symbol": "KITEUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.24102,
+      "tp1": 0.24584,
+      "tp2": 0.250661,
+      "sl": 0.2362,
+      "entry_orig": 0.24102,
+      "tp1_orig": 0.24584,
+      "tp2_orig": 0.250661,
+      "sl_orig": 0.2362,
+      "strength": 57,
+      "taken_at": "2026-03-24T09:34:48.845137",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.00067)",
+        "Цена > EMA20 > EMA50",
+        "Стакан: сильное давление покупки (+0.49)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +1.6% + цена ↑",
+        "CVD растёт (+7.1%) — покупки усиливаются 📈",
+        "⚡ Рыночный вход (MTF сильный)"
+      ]
     }
   ],
   "trades_history": [
+    {
+      "symbol": "KITEUSDT",
+      "direction": "LONG",
+      "entry": 0.23718,
+      "tp1": 0.241924,
+      "tp2": 0.246667,
+      "sl": 0.232436,
+      "strength": 50,
+      "status": "TP1",
+      "pnl_pct": 2.0,
+      "close_price": 0.241935,
+      "taken_at": "2026-03-24T08:06:40.962693",
+      "closed_at": "2026-03-24 09:34:04"
+    },
     {
       "symbol": "TAOUSDT",
       "direction": "LONG",
@@ -3892,20 +3978,6 @@
       "close_price": 267.805,
       "taken_at": "2026-03-23T00:01:17.189853",
       "closed_at": "2026-03-23 01:45:00"
-    },
-    {
-      "symbol": "CRVUSDT",
-      "direction": "LONG",
-      "entry": 0.215,
-      "tp1": 0.2193,
-      "tp2": 0.2236,
-      "sl": 0.2107,
-      "strength": 52,
-      "status": "TP1",
-      "pnl_pct": 2.09,
-      "close_price": 0.2195,
-      "taken_at": "2026-03-22T21:12:36.970879",
-      "closed_at": "2026-03-23 01:31:41"
     }
   ]
 }
