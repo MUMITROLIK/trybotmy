@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-24T06:47:36.430718+00:00",
+  "updated_at": "2026-03-24T06:48:23.174053+00:00",
   "publish_status": {
-    "last_ok": "2026-03-24T06:46:36Z",
+    "last_ok": "2026-03-24T06:47:42Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 1214,
+    "total": 1215,
     "wins": 401,
     "losses": 338,
-    "active": 3,
+    "active": 4,
     "winrate": 54.3
   },
   "trade_stats": {
-    "open": 8,
+    "open": 9,
     "pending": 0,
     "wins": 475,
     "losses": 542,
@@ -106,6 +106,32 @@
       ],
       "news": null,
       "created_at": "2026-03-24 06:28:38",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1253,
+      "symbol": "GUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.003889,
+      "tp1": 0.003967,
+      "tp2": 0.004045,
+      "sl": 0.003811,
+      "strength": 55,
+      "reasons": [
+        "RSI=21 (сильная перепроданность)",
+        "MACD бычий (hist=0.00000)",
+        "BB нижняя зона (20%)",
+        "Стакан: перевес bid (+0.05)",
+        "📰 Ethereum Tops $2,100 As BitMine Ramps Up ETH Bet With $137M Purch...",
+        "МТФ: только 1 таймфрейм согласен",
+        "CVD положительный (+0.0%)",
+        "Doji (1h) — нерешительность",
+        "Цена у поддержки 0.0039",
+        "⚠️ Funding через 72м"
+      ],
+      "news": "Ethereum Tops $2,100 As BitMine Ramps Up ETH Bet With $137M Purchase",
+      "created_at": "2026-03-24 06:48:22",
       "status": "ACTIVE"
     }
   ],
@@ -739,6 +765,35 @@
         "Стакан: сильное давление покупки (+0.43)",
         "МТФ: 15m, 1h согласны",
         "⚡ Рыночный вход (MTF 2+ ТФ)"
+      ]
+    },
+    {
+      "id": 1107,
+      "symbol": "GUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.003889,
+      "tp1": 0.003967,
+      "tp2": 0.004045,
+      "sl": 0.003811,
+      "entry_orig": 0.003889,
+      "tp1_orig": 0.003967,
+      "tp2_orig": 0.004045,
+      "sl_orig": 0.003811,
+      "strength": 55,
+      "taken_at": "2026-03-24T06:48:22.850451",
+      "status": "OPEN",
+      "reasons": [
+        "RSI=21 (сильная перепроданность)",
+        "MACD бычий (hist=0.00000)",
+        "BB нижняя зона (20%)",
+        "Стакан: перевес bid (+0.05)",
+        "📰 Ethereum Tops $2,100 As BitMine Ramps Up ETH Bet With $137M Purch...",
+        "МТФ: только 1 таймфрейм согласен",
+        "CVD положительный (+0.0%)",
+        "Doji (1h) — нерешительность",
+        "Цена у поддержки 0.0039",
+        "⚠️ Funding через 72м"
       ]
     }
   ],
