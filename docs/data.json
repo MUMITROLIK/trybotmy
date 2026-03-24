@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-24T15:25:21.629978+00:00",
+  "updated_at": "2026-03-24T15:26:27.664781+00:00",
   "publish_status": {
-    "last_ok": "2026-03-24T15:23:54Z",
+    "last_ok": "2026-03-24T15:25:27Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 1286,
+    "total": 1287,
     "wins": 419,
     "losses": 358,
-    "active": 19,
+    "active": 20,
     "winrate": 53.9
   },
   "trade_stats": {
-    "open": 20,
+    "open": 21,
     "pending": 0,
     "wins": 504,
     "losses": 573,
@@ -490,6 +490,31 @@
       ],
       "news": null,
       "created_at": "2026-03-24 15:23:47",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1325,
+      "symbol": "NIGHTUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.04894,
+      "tp1": 0.049919,
+      "tp2": 0.050898,
+      "sl": 0.047961,
+      "strength": 50,
+      "reasons": [
+        "MACD бычий (hist=0.00000)",
+        "Цена > EMA20 > EMA50",
+        "Стакан: сильное давление покупки (+0.29)",
+        "МТФ: 5m, 15m, 1h согласны",
+        "OI растёт +2.0% + цена ↑",
+        "CVD положительный (-1.2%)",
+        "⚠️ Funding через 35м",
+        "⚡ Рыночный вход (MTF сильный)",
+        "🤖 ML: 58% WIN"
+      ],
+      "news": null,
+      "created_at": "2026-03-24 15:25:33",
       "status": "ACTIVE"
     }
   ],
@@ -1443,6 +1468,34 @@
         "CVD положительный (-3.8%)",
         "⚠️ Funding через 37м",
         "⚡ Рыночный вход (MTF 2+ ТФ)",
+        "🤖 ML: 58% WIN"
+      ]
+    },
+    {
+      "id": 1179,
+      "symbol": "NIGHTUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.04894,
+      "tp1": 0.049919,
+      "tp2": 0.050898,
+      "sl": 0.047961,
+      "entry_orig": 0.04894,
+      "tp1_orig": 0.049919,
+      "tp2_orig": 0.050898,
+      "sl_orig": 0.047961,
+      "strength": 50,
+      "taken_at": "2026-03-24T15:25:34.076924",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.00000)",
+        "Цена > EMA20 > EMA50",
+        "Стакан: сильное давление покупки (+0.29)",
+        "МТФ: 5m, 15m, 1h согласны",
+        "OI растёт +2.0% + цена ↑",
+        "CVD положительный (-1.2%)",
+        "⚠️ Funding через 35м",
+        "⚡ Рыночный вход (MTF сильный)",
         "🤖 ML: 58% WIN"
       ]
     }
