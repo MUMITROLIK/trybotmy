@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-24T16:16:14.812537+00:00",
+  "updated_at": "2026-03-24T16:17:02.341418+00:00",
   "publish_status": {
-    "last_ok": "2026-03-24T16:15:30Z",
+    "last_ok": "2026-03-24T16:16:20Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 53.9
   },
   "trade_stats": {
-    "open": 21,
+    "open": 20,
     "pending": 0,
-    "wins": 505,
+    "wins": 506,
     "losses": 574,
-    "total_pnl": -35.99,
-    "winrate": 46.8
+    "total_pnl": -33.95,
+    "winrate": 46.9
   },
   "fear_greed": {
     "value": 11,
@@ -1071,34 +1071,6 @@
       ]
     },
     {
-      "id": 1163,
-      "symbol": "CRVUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.221,
-      "tp1": 0.22542,
-      "tp2": 0.22984,
-      "sl": 0.21658,
-      "entry_orig": 0.221,
-      "tp1_orig": 0.22542,
-      "tp2_orig": 0.22984,
-      "sl_orig": 0.21658,
-      "strength": 53,
-      "taken_at": "2026-03-24T13:41:26.005266",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=38 (перепроданность)",
-        "BB нижняя полоса (пробой)",
-        "EMA20 > EMA50",
-        "Объём x2.7 🔥🔥",
-        "Стакан: перевес bid (+0.08)",
-        "МТФ: 15m, 1h согласны",
-        "CVD положительный (+1.8%)",
-        "Цена у поддержки 0.2210",
-        "⚡ Рыночный вход (MTF 2+ ТФ)"
-      ]
-    },
-    {
       "id": 1164,
       "symbol": "PENGUUSDT",
       "direction": "SHORT",
@@ -1484,6 +1456,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "CRVUSDT",
+      "direction": "LONG",
+      "entry": 0.221,
+      "tp1": 0.22542,
+      "tp2": 0.22984,
+      "sl": 0.21658,
+      "strength": 53,
+      "status": "TP1",
+      "pnl_pct": 2.04,
+      "close_price": 0.2255,
+      "taken_at": "2026-03-24T13:41:26.005266",
+      "closed_at": "2026-03-24 16:17:01"
+    },
     {
       "symbol": "KATUSDT",
       "direction": "LONG",
@@ -4269,20 +4255,6 @@
       "close_price": 0.31975,
       "taken_at": "2026-03-23T09:09:25.337334",
       "closed_at": "2026-03-23 09:19:04"
-    },
-    {
-      "symbol": "TURBOUSDT",
-      "direction": "LONG",
-      "entry": 0.0011566,
-      "tp1": 0.00118,
-      "tp2": 0.001203,
-      "sl": 0.001133,
-      "strength": 51,
-      "status": "SL",
-      "pnl_pct": -2.27,
-      "close_price": 0.00113035,
-      "taken_at": "2026-03-23T08:26:11.197161",
-      "closed_at": "2026-03-23 08:38:57"
     }
   ]
 }
