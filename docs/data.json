@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-24T20:08:15.966381+00:00",
+  "updated_at": "2026-03-24T20:08:57.515318+00:00",
   "publish_status": {
-    "last_ok": "2026-03-24T20:07:15Z",
+    "last_ok": "2026-03-24T20:08:22Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 53.8
   },
   "trade_stats": {
-    "open": 22,
+    "open": 21,
     "pending": 0,
-    "wins": 515,
+    "wins": 516,
     "losses": 585,
-    "total_pnl": -35.43,
-    "winrate": 46.8
+    "total_pnl": -34.6,
+    "winrate": 46.9
   },
   "fear_greed": {
     "value": 11,
@@ -763,33 +763,6 @@
   ],
   "trades_open": [
     {
-      "id": 1151,
-      "symbol": "1000SHIBUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.006088,
-      "tp1": 0.00621,
-      "tp2": 0.006332,
-      "sl": 0.005966,
-      "entry_orig": 0.006088,
-      "tp1_orig": 0.00621,
-      "tp2_orig": 0.006332,
-      "sl_orig": 0.005966,
-      "strength": 50,
-      "taken_at": "2026-03-24T12:08:39.676391",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=36 (перепроданность)",
-        "BB нижняя зона (10%)",
-        "EMA20 > EMA50",
-        "Стакан: сильное давление покупки (+0.29)",
-        "МТФ: 15m, 1h, 4h согласны",
-        "CVD положительный (+0.8%)",
-        "Цена у поддержки 0.0061",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
       "id": 1154,
       "symbol": "GASUSDT",
       "direction": "LONG",
@@ -1359,6 +1332,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "1000SHIBUSDT",
+      "direction": "LONG",
+      "entry": 0.006088,
+      "tp1": 0.00621,
+      "tp2": 0.006332,
+      "sl": 0.005966,
+      "strength": 50,
+      "status": "TIMEOUT",
+      "pnl_pct": 0.83,
+      "close_price": 0.0061385,
+      "taken_at": "2026-03-24T12:08:39.676391",
+      "closed_at": "2026-03-24 20:08:45"
+    },
     {
       "symbol": "INITUSDT",
       "direction": "LONG",
@@ -4144,20 +4131,6 @@
       "close_price": 0.22423500000000002,
       "taken_at": "2026-03-23T11:08:46.773636",
       "closed_at": "2026-03-23 11:13:10"
-    },
-    {
-      "symbol": "KASUSDT",
-      "direction": "SHORT",
-      "entry": 0.0344,
-      "tp1": 0.033712,
-      "tp2": 0.033024,
-      "sl": 0.035088,
-      "strength": 54,
-      "status": "SL",
-      "pnl_pct": -3.05,
-      "close_price": 0.03545,
-      "taken_at": "2026-03-23T07:01:34.309588",
-      "closed_at": "2026-03-23 11:10:04"
     }
   ]
 }
