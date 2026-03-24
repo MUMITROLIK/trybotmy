@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-24T18:23:44.804661+00:00",
+  "updated_at": "2026-03-24T18:24:24.161041+00:00",
   "publish_status": {
-    "last_ok": "2026-03-24T18:22:40Z",
+    "last_ok": "2026-03-24T18:23:51Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -11,18 +11,18 @@
   },
   "stats": {
     "total": 1303,
-    "wins": 425,
+    "wins": 426,
     "losses": 365,
-    "active": 14,
-    "winrate": 53.8
+    "active": 13,
+    "winrate": 53.9
   },
   "trade_stats": {
-    "open": 23,
+    "open": 22,
     "pending": 0,
-    "wins": 510,
+    "wins": 511,
     "losses": 581,
-    "total_pnl": -40.42,
-    "winrate": 46.7
+    "total_pnl": -38.37,
+    "winrate": 46.8
   },
   "fear_greed": {
     "value": 11,
@@ -329,30 +329,6 @@
       "status": "ACTIVE"
     },
     {
-      "id": 1340,
-      "symbol": "INITUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.08525,
-      "tp1": 0.086955,
-      "tp2": 0.08866,
-      "sl": 0.083545,
-      "strength": 54,
-      "reasons": [
-        "MACD бычий (hist=0.00037)",
-        "Цена > EMA20 > EMA50",
-        "Объём x2.7 🔥🔥",
-        "Стакан: давление покупки (+0.11)",
-        "МТФ: 5m, 15m, 1h согласны",
-        "OI растёт +1.4% + цена ↑",
-        "⚡ Рыночный вход (MTF сильный)",
-        "🤖 ML: 58% WIN"
-      ],
-      "news": null,
-      "created_at": "2026-03-24 18:14:02",
-      "status": "ACTIVE"
-    },
-    {
       "id": 1341,
       "symbol": "OPENUSDT",
       "direction": "LONG",
@@ -378,6 +354,27 @@
     }
   ],
   "history": [
+    {
+      "symbol": "INITUSDT",
+      "direction": "LONG",
+      "entry": 0.08525,
+      "tp1": 0.086955,
+      "tp2": 0.08866,
+      "sl": 0.083545,
+      "strength": 54,
+      "status": "TP1",
+      "created_at": "2026-03-24 18:14:02",
+      "reasons": [
+        "MACD бычий (hist=0.00037)",
+        "Цена > EMA20 > EMA50",
+        "Объём x2.7 🔥🔥",
+        "Стакан: давление покупки (+0.11)",
+        "МТФ: 5m, 15m, 1h согласны",
+        "OI растёт +1.4% + цена ↑",
+        "⚡ Рыночный вход (MTF сильный)",
+        "🤖 ML: 58% WIN"
+      ]
+    },
     {
       "symbol": "CUSDT",
       "direction": "LONG",
@@ -781,28 +778,6 @@
         "OI растёт +2.9%",
         "CVD положительный (+0.8%)",
         "Цена у поддержки 4355.1900"
-      ]
-    },
-    {
-      "symbol": "CRVUSDT",
-      "direction": "LONG",
-      "entry": 0.221,
-      "tp1": 0.22542,
-      "tp2": 0.22984,
-      "sl": 0.21658,
-      "strength": 53,
-      "status": "TP1",
-      "created_at": "2026-03-24 13:41:25",
-      "reasons": [
-        "RSI=38 (перепроданность)",
-        "BB нижняя полоса (пробой)",
-        "EMA20 > EMA50",
-        "Объём x2.7 🔥🔥",
-        "Стакан: перевес bid (+0.08)",
-        "МТФ: 15m, 1h согласны",
-        "CVD положительный (+1.8%)",
-        "Цена у поддержки 0.2210",
-        "⚡ Рыночный вход (MTF 2+ ТФ)"
       ]
     }
   ],
@@ -1375,33 +1350,6 @@
       ]
     },
     {
-      "id": 1194,
-      "symbol": "INITUSDT",
-      "direction": "LONG",
-      "exchange": "bybit",
-      "entry": 0.08525,
-      "tp1": 0.086955,
-      "tp2": 0.08866,
-      "sl": 0.083545,
-      "entry_orig": 0.08525,
-      "tp1_orig": 0.086955,
-      "tp2_orig": 0.08866,
-      "sl_orig": 0.083545,
-      "strength": 54,
-      "taken_at": "2026-03-24T18:14:03.297616",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00037)",
-        "Цена > EMA20 > EMA50",
-        "Объём x2.7 🔥🔥",
-        "Стакан: давление покупки (+0.11)",
-        "МТФ: 5m, 15m, 1h согласны",
-        "OI растёт +1.4% + цена ↑",
-        "⚡ Рыночный вход (MTF сильный)",
-        "🤖 ML: 58% WIN"
-      ]
-    },
-    {
       "id": 1195,
       "symbol": "OPENUSDT",
       "direction": "LONG",
@@ -1430,6 +1378,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "INITUSDT",
+      "direction": "LONG",
+      "entry": 0.08525,
+      "tp1": 0.086955,
+      "tp2": 0.08866,
+      "sl": 0.083545,
+      "strength": 54,
+      "status": "TP1",
+      "pnl_pct": 2.05,
+      "close_price": 0.087,
+      "taken_at": "2026-03-24T18:14:03.297616",
+      "closed_at": "2026-03-24 18:24:01"
+    },
     {
       "symbol": "KITEUSDT",
       "direction": "LONG",
@@ -4215,20 +4177,6 @@
       "close_price": 0.0917,
       "taken_at": "2026-03-23T09:14:21.311970",
       "closed_at": "2026-03-23 11:06:03"
-    },
-    {
-      "symbol": "PAXGUSDT",
-      "direction": "LONG",
-      "entry": 4252.93,
-      "tp1": 4337.9886,
-      "tp2": 4423.0472,
-      "sl": 4167.8714,
-      "strength": 53,
-      "status": "TP1",
-      "pnl_pct": 2.03,
-      "close_price": 4339.13,
-      "taken_at": "2026-03-23T08:31:06.878221",
-      "closed_at": "2026-03-23 11:05:55"
     }
   ]
 }
