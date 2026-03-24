@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-24T13:49:24.803758+00:00",
+  "updated_at": "2026-03-24T13:50:06.623154+00:00",
   "publish_status": {
-    "last_ok": "2026-03-24T13:48:49Z",
+    "last_ok": "2026-03-24T13:49:31Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,19 +10,19 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 1274,
+    "total": 1275,
     "wins": 416,
     "losses": 352,
-    "active": 19,
+    "active": 20,
     "winrate": 54.2
   },
   "trade_stats": {
     "open": 24,
     "pending": 0,
-    "wins": 498,
+    "wins": 499,
     "losses": 563,
-    "total_pnl": -29.81,
-    "winrate": 46.9
+    "total_pnl": -27.58,
+    "winrate": 47.0
   },
   "fear_greed": {
     "value": 11,
@@ -479,6 +479,29 @@
       ],
       "news": null,
       "created_at": "2026-03-24 13:43:03",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1313,
+      "symbol": "KATUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.01088,
+      "tp1": 0.011135,
+      "tp2": 0.01139,
+      "sl": 0.010662,
+      "strength": 50,
+      "reasons": [
+        "RSI=24 (сильная перепроданность)",
+        "BB нижняя полоса (пробой)",
+        "Объём x1.8 🔥",
+        "Стакан: сильное давление покупки (+0.26)",
+        "МТФ: только 1 таймфрейм согласен",
+        "OI растёт +2.1%",
+        "CVD положительный (-8.1%)"
+      ],
+      "news": null,
+      "created_at": "2026-03-24 13:50:06",
       "status": "ACTIVE"
     }
   ],
@@ -1346,31 +1369,6 @@
       ]
     },
     {
-      "id": 1160,
-      "symbol": "BANANAS31USDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.014145,
-      "tp1": 0.014453,
-      "tp2": 0.014762,
-      "sl": 0.013862,
-      "entry_orig": 0.014145,
-      "tp1_orig": 0.014453,
-      "tp2_orig": 0.014762,
-      "sl_orig": 0.013862,
-      "strength": 50,
-      "taken_at": "2026-03-24T13:36:16.486566",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=33 (перепроданность)",
-        "MACD бычий (hist=0.00000)",
-        "BB нижняя зона (22%)",
-        "Стакан: сильное давление покупки (+0.38)",
-        "МТФ: 1h, 4h согласны",
-        "⚡ Рыночный вход (MTF 2+ ТФ)"
-      ]
-    },
-    {
       "id": 1161,
       "symbol": "STABLEUSDT",
       "direction": "LONG",
@@ -1527,9 +1525,49 @@
         "OI растёт +2.8% + цена ↑",
         "⚡ Рыночный вход (MTF сильный)"
       ]
+    },
+    {
+      "id": 1167,
+      "symbol": "KATUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.01088,
+      "tp1": 0.011135,
+      "tp2": 0.01139,
+      "sl": 0.010662,
+      "entry_orig": 0.01088,
+      "tp1_orig": 0.011135,
+      "tp2_orig": 0.01139,
+      "sl_orig": 0.010662,
+      "strength": 50,
+      "taken_at": "2026-03-24T13:50:06.314516",
+      "status": "OPEN",
+      "reasons": [
+        "RSI=24 (сильная перепроданность)",
+        "BB нижняя полоса (пробой)",
+        "Объём x1.8 🔥",
+        "Стакан: сильное давление покупки (+0.26)",
+        "МТФ: только 1 таймфрейм согласен",
+        "OI растёт +2.1%",
+        "CVD положительный (-8.1%)"
+      ]
     }
   ],
   "trades_history": [
+    {
+      "symbol": "BANANAS31USDT",
+      "direction": "LONG",
+      "entry": 0.014145,
+      "tp1": 0.014453,
+      "tp2": 0.014762,
+      "sl": 0.013862,
+      "strength": 50,
+      "status": "TP1",
+      "pnl_pct": 2.23,
+      "close_price": 0.01446,
+      "taken_at": "2026-03-24T13:36:16.486566",
+      "closed_at": "2026-03-24 13:49:31"
+    },
     {
       "symbol": "KASUSDT",
       "direction": "LONG",
@@ -4315,20 +4353,6 @@
       "close_price": 0.3295,
       "taken_at": "2026-03-23T05:56:24.513431",
       "closed_at": "2026-03-23 06:02:52"
-    },
-    {
-      "symbol": "BLUAIUSDT",
-      "direction": "LONG",
-      "entry": 0.008696,
-      "tp1": 0.00896,
-      "tp2": 0.009225,
-      "sl": 0.008485,
-      "strength": 59,
-      "status": "SL",
-      "pnl_pct": -2.51,
-      "close_price": 0.008478,
-      "taken_at": "2026-03-23T05:43:49.283382",
-      "closed_at": "2026-03-23 05:48:39"
     }
   ]
 }
