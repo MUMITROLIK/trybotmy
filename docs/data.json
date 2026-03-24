@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-24T14:52:33.714461+00:00",
+  "updated_at": "2026-03-24T14:53:39.719832+00:00",
   "publish_status": {
-    "last_ok": "2026-03-24T14:51:16Z",
+    "last_ok": "2026-03-24T14:52:39Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 1280,
-    "wins": 418,
+    "total": 1281,
+    "wins": 419,
     "losses": 358,
     "active": 17,
     "winrate": 53.9
   },
   "trade_stats": {
-    "open": 19,
+    "open": 20,
     "pending": 0,
     "wins": 501,
     "losses": 571,
@@ -414,15 +414,41 @@
       "status": "ACTIVE"
     },
     {
-      "id": 1318,
-      "symbol": "GUNUSDT",
+      "id": 1319,
+      "symbol": "CRCLUSDT",
       "direction": "SHORT",
       "exchange": "binance",
+      "entry": 105.33,
+      "tp1": 101.818929,
+      "tp2": 98.307857,
+      "sl": 108.138857,
+      "strength": 52,
+      "reasons": [
+        "MACD медвежий (hist=-2.42305)",
+        "Цена < EMA20 < EMA50",
+        "Объём x2.5 🔥🔥",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +10.2% + цена ↓",
+        "CVD отрицательный (-3.0%)",
+        "⚠️ Funding через 68м",
+        "🤖 ML: 54% WIN"
+      ],
+      "news": null,
+      "created_at": "2026-03-24 14:52:55",
+      "status": "ACTIVE"
+    }
+  ],
+  "history": [
+    {
+      "symbol": "GUNUSDT",
+      "direction": "SHORT",
       "entry": 0.023009,
       "tp1": 0.022549,
       "tp2": 0.022089,
       "sl": 0.023469,
       "strength": 52,
+      "status": "TP1",
+      "created_at": "2026-03-24 14:42:36",
       "reasons": [
         "RSI=69 (перекупленность)",
         "BB верхняя полоса (пробой)",
@@ -433,13 +459,8 @@
         "OI растёт +1.1% + цена ↓",
         "⚠️ Funding через 78м",
         "🤖 ML: 52% WIN"
-      ],
-      "news": null,
-      "created_at": "2026-03-24 14:42:36",
-      "status": "ACTIVE"
-    }
-  ],
-  "history": [
+      ]
+    },
     {
       "symbol": "ARIAUSDT",
       "direction": "LONG",
@@ -826,25 +847,6 @@
         "МТФ: все 4 таймфрейма согласны ✅✅",
         "OI растёт +6.1% + цена ↑",
         "CVD положительный (+4.6%)",
-        "⚡ Рыночный вход (MTF сильный)"
-      ]
-    },
-    {
-      "symbol": "OPENUSDT",
-      "direction": "LONG",
-      "entry": 0.1758,
-      "tp1": 0.179316,
-      "tp2": 0.182832,
-      "sl": 0.172284,
-      "strength": 51,
-      "status": "TP1",
-      "created_at": "2026-03-24 10:15:16",
-      "reasons": [
-        "MACD бычий (hist=0.00017)",
-        "Цена > EMA20 > EMA50",
-        "Объём x1.9 🔥",
-        "Стакан: сильное давление покупки (+0.35)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
         "⚡ Рыночный вход (MTF сильный)"
       ]
     }
@@ -1356,6 +1358,33 @@
         "OI растёт +1.1% + цена ↓",
         "⚠️ Funding через 78м",
         "🤖 ML: 52% WIN"
+      ]
+    },
+    {
+      "id": 1173,
+      "symbol": "CRCLUSDT",
+      "direction": "SHORT",
+      "exchange": "binance",
+      "entry": 105.33,
+      "tp1": 101.818929,
+      "tp2": 98.307857,
+      "sl": 108.138857,
+      "entry_orig": 105.33,
+      "tp1_orig": 101.818929,
+      "tp2_orig": 98.307857,
+      "sl_orig": 108.138857,
+      "strength": 52,
+      "taken_at": "2026-03-24T14:52:55.768096",
+      "status": "OPEN",
+      "reasons": [
+        "MACD медвежий (hist=-2.42305)",
+        "Цена < EMA20 < EMA50",
+        "Объём x2.5 🔥🔥",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +10.2% + цена ↓",
+        "CVD отрицательный (-3.0%)",
+        "⚠️ Funding через 68м",
+        "🤖 ML: 54% WIN"
       ]
     }
   ],
