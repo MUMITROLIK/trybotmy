@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-24T06:13:16.217870+00:00",
+  "updated_at": "2026-03-24T06:14:17.862972+00:00",
   "publish_status": {
-    "last_ok": "2026-03-24T06:12:16Z",
+    "last_ok": "2026-03-24T06:13:22Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 1212,
+    "total": 1213,
     "wins": 401,
     "losses": 338,
-    "active": 1,
+    "active": 2,
     "winrate": 54.3
   },
   "trade_stats": {
-    "open": 6,
+    "open": 7,
     "pending": 0,
     "wins": 475,
     "losses": 542,
@@ -59,6 +59,30 @@
       ],
       "news": null,
       "created_at": "2026-03-24 04:28:41",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1251,
+      "symbol": "PARTIUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.09549,
+      "tp1": 0.0974,
+      "tp2": 0.09931,
+      "sl": 0.09358,
+      "strength": 56,
+      "reasons": [
+        "RSI=37 (перепроданность)",
+        "BB нижняя полоса (пробой)",
+        "EMA20 > EMA50",
+        "Объём x2.6 🔥🔥",
+        "Стакан: сильное давление покупки (+0.37)",
+        "МТФ: 15m, 4h согласны",
+        "Цена у поддержки 0.0952",
+        "⚡ Рыночный вход (MTF 2+ ТФ)"
+      ],
+      "news": null,
+      "created_at": "2026-03-24 06:14:17",
       "status": "ACTIVE"
     }
   ],
@@ -638,6 +662,33 @@
         "CVD положительный (-1.7%)",
         "Bullish Engulfing (1h) 🕯️",
         "Цена у поддержки 0.0073",
+        "⚡ Рыночный вход (MTF 2+ ТФ)"
+      ]
+    },
+    {
+      "id": 1105,
+      "symbol": "PARTIUSDT",
+      "direction": "LONG",
+      "exchange": "bybit",
+      "entry": 0.09549,
+      "tp1": 0.0974,
+      "tp2": 0.09931,
+      "sl": 0.09358,
+      "entry_orig": 0.09549,
+      "tp1_orig": 0.0974,
+      "tp2_orig": 0.09931,
+      "sl_orig": 0.09358,
+      "strength": 56,
+      "taken_at": "2026-03-24T06:14:17.448318",
+      "status": "OPEN",
+      "reasons": [
+        "RSI=37 (перепроданность)",
+        "BB нижняя полоса (пробой)",
+        "EMA20 > EMA50",
+        "Объём x2.6 🔥🔥",
+        "Стакан: сильное давление покупки (+0.37)",
+        "МТФ: 15m, 4h согласны",
+        "Цена у поддержки 0.0952",
         "⚡ Рыночный вход (MTF 2+ ТФ)"
       ]
     }
