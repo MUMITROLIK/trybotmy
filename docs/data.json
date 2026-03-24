@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-24T20:26:53.674153+00:00",
+  "updated_at": "2026-03-24T20:27:47.381297+00:00",
   "publish_status": {
-    "last_ok": "2026-03-24T20:25:56Z",
+    "last_ok": "2026-03-24T20:26:59Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 53.9
   },
   "trade_stats": {
-    "open": 16,
+    "open": 15,
     "pending": 0,
-    "wins": 520,
+    "wins": 521,
     "losses": 588,
-    "total_pnl": -32.57,
-    "winrate": 46.9
+    "total_pnl": -30.46,
+    "winrate": 47.0
   },
   "fear_greed": {
     "value": 11,
@@ -795,33 +795,6 @@
       ]
     },
     {
-      "id": 1174,
-      "symbol": "MOODENGUSDT",
-      "direction": "LONG",
-      "exchange": "bybit",
-      "entry": 0.04794,
-      "tp1": 0.048899,
-      "tp2": 0.049858,
-      "sl": 0.046981,
-      "entry_orig": 0.04794,
-      "tp1_orig": 0.048899,
-      "tp2_orig": 0.049858,
-      "sl_orig": 0.046981,
-      "strength": 53,
-      "taken_at": "2026-03-24T14:54:32.055658",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=27 (сильная перепроданность)",
-        "BB нижняя зона (12%)",
-        "Объём x4.2 🔥🔥🔥",
-        "Стакан: сильное давление покупки (+0.38)",
-        "МТФ: только 1 таймфрейм согласен",
-        "OI падает (шорты закрываются)",
-        "⚠️ Funding через 66м",
-        "🤖 ML: 49% WIN"
-      ]
-    },
-    {
       "id": 1175,
       "symbol": "TSLAUSDT",
       "direction": "LONG",
@@ -1123,6 +1096,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "MOODENGUSDT",
+      "direction": "LONG",
+      "entry": 0.04794,
+      "tp1": 0.048899,
+      "tp2": 0.049858,
+      "sl": 0.046981,
+      "strength": 53,
+      "status": "TP1",
+      "pnl_pct": 2.11,
+      "close_price": 0.04895,
+      "taken_at": "2026-03-24T14:54:32.055658",
+      "closed_at": "2026-03-24 20:27:46"
+    },
     {
       "symbol": "PENGUUSDT",
       "direction": "SHORT",
@@ -3908,20 +3895,6 @@
       "close_price": 0.4005,
       "taken_at": "2026-03-23T11:20:57.321114",
       "closed_at": "2026-03-23 11:47:20"
-    },
-    {
-      "symbol": "PTBUSDT",
-      "direction": "LONG",
-      "entry": 0.0016796,
-      "tp1": 0.001716,
-      "tp2": 0.001753,
-      "sl": 0.001646,
-      "strength": 57,
-      "status": "SL",
-      "pnl_pct": -2.74,
-      "close_price": 0.0016335,
-      "taken_at": "2026-03-23T11:28:39.998389",
-      "closed_at": "2026-03-23 11:37:08"
     }
   ]
 }
