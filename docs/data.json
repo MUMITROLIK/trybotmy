@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-25T01:12:57.545117+00:00",
+  "updated_at": "2026-03-25T01:13:31.045546+00:00",
   "publish_status": {
-    "last_ok": "2026-03-25T01:11:30Z",
+    "last_ok": "2026-03-25T01:13:04Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,18 +10,18 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 1343,
+    "total": 1344,
     "wins": 445,
     "losses": 378,
-    "active": 9,
+    "active": 10,
     "winrate": 54.1
   },
   "trade_stats": {
     "open": 15,
     "pending": 0,
     "wins": 541,
-    "losses": 598,
-    "total_pnl": -11.33,
+    "losses": 599,
+    "total_pnl": -13.55,
     "winrate": 47.5
   },
   "fear_greed": {
@@ -255,6 +255,32 @@
       ],
       "news": null,
       "created_at": "2026-03-25 00:49:37",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1382,
+      "symbol": "RIVERUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 23.486,
+      "tp1": 24.180071,
+      "tp2": 24.874143,
+      "sl": 22.930743,
+      "strength": 55,
+      "reasons": [
+        "MACD бычий (hist=0.11614)",
+        "Цена выше EMA20",
+        "Объём x3.3 🔥🔥",
+        "Стакан: сильное давление покупки (+0.39)",
+        "МТФ: 5m, 4h согласны",
+        "OI падает (шорты закрываются)",
+        "CVD растёт (+10.7%) — покупки усиливаются 📈",
+        "BTC контекст: +1.5% за 12ч 📈",
+        "⚡ Рыночный вход (MTF 2+ ТФ)",
+        "🤖 ML: 58% WIN"
+      ],
+      "news": null,
+      "created_at": "2026-03-25 01:13:30",
       "status": "ACTIVE"
     }
   ],
@@ -1075,34 +1101,50 @@
       ]
     },
     {
-      "id": 1234,
-      "symbol": "ONGUSDT",
+      "id": 1236,
+      "symbol": "RIVERUSDT",
       "direction": "LONG",
-      "exchange": "bybit",
-      "entry": 0.06753,
-      "tp1": 0.068881,
-      "tp2": 0.070231,
-      "sl": 0.066179,
-      "entry_orig": 0.06753,
-      "tp1_orig": 0.068881,
-      "tp2_orig": 0.070231,
-      "sl_orig": 0.066179,
-      "strength": 61,
-      "taken_at": "2026-03-25T00:54:44.995573",
+      "exchange": "binance",
+      "entry": 23.486,
+      "tp1": 24.180071,
+      "tp2": 24.874143,
+      "sl": 22.930743,
+      "entry_orig": 23.486,
+      "tp1_orig": 24.180071,
+      "tp2_orig": 24.874143,
+      "sl_orig": 22.930743,
+      "strength": 55,
+      "taken_at": "2026-03-25T01:13:30.406776",
       "status": "OPEN",
       "reasons": [
-        "MACD бычий (hist=0.00038)",
-        "Цена > EMA20 > EMA50",
-        "Объём x2.6 🔥🔥",
-        "Стакан: сильное давление покупки (+0.35)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +3.1% + цена ↑",
-        "⚡ Рыночный вход (MTF сильный)",
+        "MACD бычий (hist=0.11614)",
+        "Цена выше EMA20",
+        "Объём x3.3 🔥🔥",
+        "Стакан: сильное давление покупки (+0.39)",
+        "МТФ: 5m, 4h согласны",
+        "OI падает (шорты закрываются)",
+        "CVD растёт (+10.7%) — покупки усиливаются 📈",
+        "BTC контекст: +1.5% за 12ч 📈",
+        "⚡ Рыночный вход (MTF 2+ ТФ)",
         "🤖 ML: 58% WIN"
       ]
     }
   ],
   "trades_history": [
+    {
+      "symbol": "ONGUSDT",
+      "direction": "LONG",
+      "entry": 0.06753,
+      "tp1": 0.068881,
+      "tp2": 0.070231,
+      "sl": 0.066179,
+      "strength": 61,
+      "status": "SL",
+      "pnl_pct": -2.22,
+      "close_price": 0.06603,
+      "taken_at": "2026-03-25T00:54:44.995573",
+      "closed_at": "2026-03-25 01:13:13"
+    },
     {
       "symbol": "FETUSDT",
       "direction": "LONG",
@@ -3888,20 +3930,6 @@
       "close_price": 0.0070415,
       "taken_at": "2026-03-23T15:07:28.701019",
       "closed_at": "2026-03-23 15:43:10"
-    },
-    {
-      "symbol": "XMRUSDT",
-      "direction": "LONG",
-      "entry": 364.46,
-      "tp1": 371.7492,
-      "tp2": 379.0384,
-      "sl": 357.1708,
-      "strength": 52,
-      "status": "SL",
-      "pnl_pct": -2.06,
-      "close_price": 356.955,
-      "taken_at": "2026-03-23T12:54:40.809659",
-      "closed_at": "2026-03-23 15:37:03"
     }
   ]
 }
