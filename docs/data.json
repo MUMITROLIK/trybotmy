@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-25T00:20:23.523350+00:00",
+  "updated_at": "2026-03-25T00:21:01.261456+00:00",
   "publish_status": {
-    "last_ok": "2026-03-25T00:19:19Z",
+    "last_ok": "2026-03-25T00:20:29Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -11,18 +11,18 @@
   },
   "stats": {
     "total": 1336,
-    "wins": 441,
-    "losses": 373,
-    "active": 15,
+    "wins": 442,
+    "losses": 374,
+    "active": 13,
     "winrate": 54.2
   },
   "trade_stats": {
-    "open": 17,
+    "open": 16,
     "pending": 0,
-    "wins": 536,
+    "wins": 537,
     "losses": 594,
-    "total_pnl": -14.59,
-    "winrate": 47.4
+    "total_pnl": -11.76,
+    "winrate": 47.5
   },
   "fear_greed": {
     "value": 11,
@@ -333,29 +333,6 @@
       "status": "ACTIVE"
     },
     {
-      "id": 1372,
-      "symbol": "APTUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 1.1146,
-      "tp1": 1.136892,
-      "tp2": 1.159184,
-      "sl": 1.092308,
-      "strength": 55,
-      "reasons": [
-        "MACD бычий (hist=0.00299)",
-        "Цена > EMA20 > EMA50",
-        "Объём x3.1 🔥🔥",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "CVD растёт (+13.5%) — покупки усиливаются 📈",
-        "⚡ Рыночный вход (MTF сильный)",
-        "🤖 ML: 58% WIN"
-      ],
-      "news": null,
-      "created_at": "2026-03-25 00:00:28",
-      "status": "ACTIVE"
-    },
-    {
       "id": 1373,
       "symbol": "GASUSDT",
       "direction": "LONG",
@@ -378,17 +355,19 @@
       "news": null,
       "created_at": "2026-03-25 00:10:47",
       "status": "ACTIVE"
-    },
+    }
+  ],
+  "history": [
     {
-      "id": 1374,
       "symbol": "SIRENUSDT",
       "direction": "LONG",
-      "exchange": "binance",
       "entry": 1.03383,
       "tp1": 1.057183,
       "tp2": 1.080536,
       "sl": 1.013153,
       "strength": 56,
+      "status": "TP1",
+      "created_at": "2026-03-25 00:14:10",
       "reasons": [
         "MACD бычий (hist=0.00202)",
         "Цена выше EMA20",
@@ -399,13 +378,28 @@
         "Bullish Engulfing (1h) 🕯️",
         "⚡ Рыночный вход (MTF 2+ ТФ)",
         "🤖 ML: 58% WIN"
-      ],
-      "news": null,
-      "created_at": "2026-03-25 00:14:10",
-      "status": "ACTIVE"
-    }
-  ],
-  "history": [
+      ]
+    },
+    {
+      "symbol": "APTUSDT",
+      "direction": "LONG",
+      "entry": 1.1146,
+      "tp1": 1.136892,
+      "tp2": 1.159184,
+      "sl": 1.092308,
+      "strength": 55,
+      "status": "SL",
+      "created_at": "2026-03-25 00:00:28",
+      "reasons": [
+        "MACD бычий (hist=0.00299)",
+        "Цена > EMA20 > EMA50",
+        "Объём x3.1 🔥🔥",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "CVD растёт (+13.5%) — покупки усиливаются 📈",
+        "⚡ Рыночный вход (MTF сильный)",
+        "🤖 ML: 58% WIN"
+      ]
+    },
     {
       "symbol": "DUSKUSDT",
       "direction": "LONG",
@@ -787,48 +781,6 @@
         "OI падает (шорты закрываются)",
         "Doji (1h) — нерешительность",
         "⚡ Рыночный вход (MTF 2+ ТФ)",
-        "🤖 ML: 58% WIN"
-      ]
-    },
-    {
-      "symbol": "OPENUSDT",
-      "direction": "LONG",
-      "entry": 0.17064,
-      "tp1": 0.174053,
-      "tp2": 0.177466,
-      "sl": 0.167227,
-      "strength": 50,
-      "status": "TP1",
-      "created_at": "2026-03-24 18:22:33",
-      "reasons": [
-        "RSI=34 (перепроданность)",
-        "MACD бычий (hist=0.00000)",
-        "BB ниже середины",
-        "Стакан: сильное давление покупки (+0.33)",
-        "МТФ: 1h, 4h согласны",
-        "OI растёт +0.8% + цена ↑",
-        "⚡ Рыночный вход (MTF 2+ ТФ)",
-        "🤖 ML: 58% WIN"
-      ]
-    },
-    {
-      "symbol": "INITUSDT",
-      "direction": "LONG",
-      "entry": 0.08525,
-      "tp1": 0.086955,
-      "tp2": 0.08866,
-      "sl": 0.083545,
-      "strength": 54,
-      "status": "TP1",
-      "created_at": "2026-03-24 18:14:02",
-      "reasons": [
-        "MACD бычий (hist=0.00037)",
-        "Цена > EMA20 > EMA50",
-        "Объём x2.7 🔥🔥",
-        "Стакан: давление покупки (+0.11)",
-        "МТФ: 5m, 15m, 1h согласны",
-        "OI растёт +1.4% + цена ↑",
-        "⚡ Рыночный вход (MTF сильный)",
         "🤖 ML: 58% WIN"
       ]
     }
@@ -1271,37 +1223,23 @@
         "⚡ Рыночный вход (MTF сильный)",
         "🤖 ML: 47% WIN"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 1228,
       "symbol": "SIRENUSDT",
       "direction": "LONG",
-      "exchange": "binance",
       "entry": 1.03383,
       "tp1": 1.057183,
       "tp2": 1.080536,
       "sl": 1.013153,
-      "entry_orig": 1.03383,
-      "tp1_orig": 1.057183,
-      "tp2_orig": 1.080536,
-      "sl_orig": 1.013153,
       "strength": 56,
+      "status": "TP1",
+      "pnl_pct": 2.83,
+      "close_price": 1.063045,
       "taken_at": "2026-03-25T00:14:10.439450",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00202)",
-        "Цена выше EMA20",
-        "Объём x2.7 🔥🔥",
-        "Стакан: сильное давление покупки (+0.30)",
-        "МТФ: 5m, 4h согласны",
-        "CVD положительный (-0.0%)",
-        "Bullish Engulfing (1h) 🕯️",
-        "⚡ Рыночный вход (MTF 2+ ТФ)",
-        "🤖 ML: 58% WIN"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-25 00:20:45"
+    },
     {
       "symbol": "DUSKUSDT",
       "direction": "LONG",
@@ -4087,20 +4025,6 @@
       "close_price": 0.05527,
       "taken_at": "2026-03-23T11:10:37.696729",
       "closed_at": "2026-03-23 14:32:59"
-    },
-    {
-      "symbol": "TRIAUSDT",
-      "direction": "LONG",
-      "entry": 0.0397,
-      "tp1": 0.041341,
-      "tp2": 0.042983,
-      "sl": 0.038387,
-      "strength": 52,
-      "status": "TP1",
-      "pnl_pct": 4.16,
-      "close_price": 0.04135,
-      "taken_at": "2026-03-23T13:24:03.468216",
-      "closed_at": "2026-03-23 14:28:24"
     }
   ]
 }
