@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-25T02:12:17.394804+00:00",
+  "updated_at": "2026-03-25T02:13:00.165416+00:00",
   "publish_status": {
-    "last_ok": "2026-03-25T02:11:17Z",
+    "last_ok": "2026-03-25T02:12:23Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,11 +17,11 @@
     "winrate": 53.8
   },
   "trade_stats": {
-    "open": 12,
+    "open": 11,
     "pending": 0,
-    "wins": 543,
+    "wins": 544,
     "losses": 603,
-    "total_pnl": -17.7,
+    "total_pnl": -15.68,
     "winrate": 47.4
   },
   "fear_greed": {
@@ -677,33 +677,6 @@
       ]
     },
     {
-      "id": 1210,
-      "symbol": "AKTUSDT",
-      "direction": "LONG",
-      "exchange": "bybit",
-      "entry": 0.5402,
-      "tp1": 0.551004,
-      "tp2": 0.561808,
-      "sl": 0.529396,
-      "entry_orig": 0.5402,
-      "tp1_orig": 0.551004,
-      "tp2_orig": 0.561808,
-      "sl_orig": 0.529396,
-      "strength": 50,
-      "taken_at": "2026-03-24T20:29:44.369716",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00132)",
-        "Цена выше EMA20",
-        "Объём x3.6 🔥🔥",
-        "Стакан: сильное давление покупки (+0.43)",
-        "МТФ: 5m, 4h согласны",
-        "OI падает (шорты закрываются)",
-        "⚡ Рыночный вход (MTF 2+ ТФ)",
-        "🤖 ML: 52% WIN"
-      ]
-    },
-    {
       "id": 1215,
       "symbol": "BARDUSDT",
       "direction": "LONG",
@@ -927,6 +900,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "AKTUSDT",
+      "direction": "LONG",
+      "entry": 0.5402,
+      "tp1": 0.551004,
+      "tp2": 0.561808,
+      "sl": 0.529396,
+      "strength": 50,
+      "status": "TP1",
+      "pnl_pct": 2.02,
+      "close_price": 0.5511,
+      "taken_at": "2026-03-24T20:29:44.369716",
+      "closed_at": "2026-03-25 02:12:59"
+    },
     {
       "symbol": "MAGMAUSDT",
       "direction": "LONG",
@@ -3712,20 +3699,6 @@
       "close_price": 0.3323,
       "taken_at": "2026-03-23T15:30:24.313271",
       "closed_at": "2026-03-23 16:28:37"
-    },
-    {
-      "symbol": "1000TURBOUSDT",
-      "direction": "LONG",
-      "entry": 1.1642,
-      "tp1": 1.190707,
-      "tp2": 1.217214,
-      "sl": 1.140916,
-      "strength": 54,
-      "status": "SL",
-      "pnl_pct": -2.13,
-      "close_price": 1.1394,
-      "taken_at": "2026-03-23T10:29:12.144778",
-      "closed_at": "2026-03-23 16:26:23"
     }
   ]
 }
