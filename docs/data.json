@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-25T02:25:17.057086+00:00",
+  "updated_at": "2026-03-25T02:26:33.810527+00:00",
   "publish_status": {
-    "last_ok": "2026-03-25T02:24:29Z",
+    "last_ok": "2026-03-25T02:25:23Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 53.8
   },
   "trade_stats": {
-    "open": 10,
+    "open": 9,
     "pending": 0,
     "wins": 545,
-    "losses": 603,
-    "total_pnl": -14.85,
-    "winrate": 47.5
+    "losses": 604,
+    "total_pnl": -15.82,
+    "winrate": 47.4
   },
   "fear_greed": {
     "value": 14,
@@ -594,34 +594,6 @@
   ],
   "trades_open": [
     {
-      "id": 1196,
-      "symbol": "GWEIUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.039591,
-      "tp1": 0.041209,
-      "tp2": 0.042828,
-      "sl": 0.038296,
-      "entry_orig": 0.039591,
-      "tp1_orig": 0.041209,
-      "tp2_orig": 0.042828,
-      "sl_orig": 0.038296,
-      "strength": 51,
-      "taken_at": "2026-03-24T18:26:09.393798",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=27 (сильная перепроданность)",
-        "MACD бычий (hist=0.00007)",
-        "BB ниже середины",
-        "Стакан: сильное давление покупки (+0.54)",
-        "МТФ: 1h, 4h согласны",
-        "OI падает (шорты закрываются)",
-        "Doji (1h) — нерешительность",
-        "⚡ Рыночный вход (MTF 2+ ТФ)",
-        "🤖 ML: 58% WIN"
-      ]
-    },
-    {
       "id": 1208,
       "symbol": "ZROUSDT",
       "direction": "LONG",
@@ -873,6 +845,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "GWEIUSDT",
+      "direction": "LONG",
+      "entry": 0.039591,
+      "tp1": 0.041209,
+      "tp2": 0.042828,
+      "sl": 0.038296,
+      "strength": 51,
+      "status": "TIMEOUT",
+      "pnl_pct": -0.97,
+      "close_price": 0.0392065,
+      "taken_at": "2026-03-24T18:26:09.393798",
+      "closed_at": "2026-03-25 02:26:09"
+    },
     {
       "symbol": "OPENUSDT",
       "direction": "LONG",
@@ -3658,20 +3644,6 @@
       "close_price": 0.23139500000000002,
       "taken_at": "2026-03-23T14:04:02.823188",
       "closed_at": "2026-03-23 16:33:26"
-    },
-    {
-      "symbol": "BNBUSDT",
-      "direction": "LONG",
-      "entry": 647.32,
-      "tp1": 660.2664,
-      "tp2": 673.2128,
-      "sl": 634.3736,
-      "strength": 55,
-      "status": "SL",
-      "pnl_pct": -2.06,
-      "close_price": 633.985,
-      "taken_at": "2026-03-23T11:20:56.427689",
-      "closed_at": "2026-03-23 16:31:26"
     }
   ]
 }
