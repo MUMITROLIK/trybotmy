@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-25T00:25:53.491152+00:00",
+  "updated_at": "2026-03-25T00:26:59.642827+00:00",
   "publish_status": {
-    "last_ok": "2026-03-25T00:24:27Z",
+    "last_ok": "2026-03-25T00:25:59Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 1336,
+    "total": 1338,
     "wins": 442,
     "losses": 375,
-    "active": 12,
+    "active": 14,
     "winrate": 54.1
   },
   "trade_stats": {
-    "open": 14,
+    "open": 16,
     "pending": 0,
     "wins": 537,
     "losses": 596,
@@ -330,6 +330,54 @@
       ],
       "news": null,
       "created_at": "2026-03-24 23:25:05",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1375,
+      "symbol": "POLYXUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.04808,
+      "tp1": 0.049042,
+      "tp2": 0.050003,
+      "sl": 0.047118,
+      "strength": 62,
+      "reasons": [
+        "MACD бычий (hist=0.00005)",
+        "Цена > EMA20 > EMA50",
+        "Объём x4.7 🔥🔥🔥",
+        "Стакан: давление покупки (+0.22)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +1.2% + цена ↑",
+        "⚡ Рыночный вход (MTF сильный)",
+        "🤖 ML: 49% WIN"
+      ],
+      "news": null,
+      "created_at": "2026-03-25 00:26:05",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1376,
+      "symbol": "ONGUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.06623,
+      "tp1": 0.067555,
+      "tp2": 0.068879,
+      "sl": 0.064905,
+      "strength": 55,
+      "reasons": [
+        "MACD бычий (hist=0.00020)",
+        "Цена > EMA20 > EMA50",
+        "Объём x3.7 🔥🔥",
+        "Стакан: перевес bid (+0.10)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +0.7% + цена ↑",
+        "⚡ Рыночный вход (MTF сильный)",
+        "🤖 ML: 49% WIN"
+      ],
+      "news": null,
+      "created_at": "2026-03-25 00:26:06",
       "status": "ACTIVE"
     }
   ],
@@ -1144,6 +1192,60 @@
         "⚠️ Funding через 36м",
         "⚡ Рыночный вход (MTF сильный)",
         "🤖 ML: 52% WIN"
+      ]
+    },
+    {
+      "id": 1229,
+      "symbol": "POLYXUSDT",
+      "direction": "LONG",
+      "exchange": "bybit",
+      "entry": 0.04808,
+      "tp1": 0.049042,
+      "tp2": 0.050003,
+      "sl": 0.047118,
+      "entry_orig": 0.04808,
+      "tp1_orig": 0.049042,
+      "tp2_orig": 0.050003,
+      "sl_orig": 0.047118,
+      "strength": 62,
+      "taken_at": "2026-03-25T00:26:06.022747",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.00005)",
+        "Цена > EMA20 > EMA50",
+        "Объём x4.7 🔥🔥🔥",
+        "Стакан: давление покупки (+0.22)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +1.2% + цена ↑",
+        "⚡ Рыночный вход (MTF сильный)",
+        "🤖 ML: 49% WIN"
+      ]
+    },
+    {
+      "id": 1230,
+      "symbol": "ONGUSDT",
+      "direction": "LONG",
+      "exchange": "bybit",
+      "entry": 0.06623,
+      "tp1": 0.067555,
+      "tp2": 0.068879,
+      "sl": 0.064905,
+      "entry_orig": 0.06623,
+      "tp1_orig": 0.067555,
+      "tp2_orig": 0.068879,
+      "sl_orig": 0.064905,
+      "strength": 55,
+      "taken_at": "2026-03-25T00:26:06.182262",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.00020)",
+        "Цена > EMA20 > EMA50",
+        "Объём x3.7 🔥🔥",
+        "Стакан: перевес bid (+0.10)",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +0.7% + цена ↑",
+        "⚡ Рыночный вход (MTF сильный)",
+        "🤖 ML: 49% WIN"
       ]
     }
   ],
