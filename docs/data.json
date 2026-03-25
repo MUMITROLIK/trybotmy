@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-25T03:36:56.922001+00:00",
+  "updated_at": "2026-03-25T03:37:32.968556+00:00",
   "publish_status": {
-    "last_ok": "2026-03-25T03:35:56Z",
+    "last_ok": "2026-03-25T03:37:03Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 53.5
   },
   "trade_stats": {
-    "open": 8,
+    "open": 7,
     "pending": 0,
     "wins": 545,
-    "losses": 608,
-    "total_pnl": -24.37,
-    "winrate": 47.3
+    "losses": 609,
+    "total_pnl": -26.42,
+    "winrate": 47.2
   },
   "fear_greed": {
     "value": 14,
@@ -654,33 +654,6 @@
       ]
     },
     {
-      "id": 1240,
-      "symbol": "MYXUSDT",
-      "direction": "LONG",
-      "exchange": "bybit",
-      "entry": 0.3363,
-      "tp1": 0.343026,
-      "tp2": 0.349752,
-      "sl": 0.329574,
-      "entry_orig": 0.3363,
-      "tp1_orig": 0.343026,
-      "tp2_orig": 0.349752,
-      "sl_orig": 0.329574,
-      "strength": 60,
-      "taken_at": "2026-03-25T02:35:39.971317",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00127)",
-        "EMA20 > EMA50 (golden cross) 🌟",
-        "Объём x6.0 🔥🔥🔥",
-        "Стакан: давление покупки (+0.12)",
-        "МТФ: 5m, 15m, 1h согласны",
-        "OI растёт +1.4% + цена ↑",
-        "⚡ Рыночный вход (MTF сильный)",
-        "🤖 ML: 52% WIN"
-      ]
-    },
-    {
       "id": 1241,
       "symbol": "AKTUSDT",
       "direction": "LONG",
@@ -734,6 +707,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "MYXUSDT",
+      "direction": "LONG",
+      "entry": 0.3363,
+      "tp1": 0.343026,
+      "tp2": 0.349752,
+      "sl": 0.329574,
+      "strength": 60,
+      "status": "SL",
+      "pnl_pct": -2.05,
+      "close_price": 0.3294,
+      "taken_at": "2026-03-25T02:35:39.971317",
+      "closed_at": "2026-03-25 03:37:32"
+    },
     {
       "symbol": "RIVERUSDT",
       "direction": "LONG",
@@ -3519,20 +3506,6 @@
       "close_price": 137.415,
       "taken_at": "2026-03-23T17:26:20.249825",
       "closed_at": "2026-03-23 17:59:30"
-    },
-    {
-      "symbol": "BANANAS31USDT",
-      "direction": "LONG",
-      "entry": 0.015637,
-      "tp1": 0.016313,
-      "tp2": 0.016989,
-      "sl": 0.015096,
-      "strength": 50,
-      "status": "SL",
-      "pnl_pct": -3.66,
-      "close_price": 0.015065,
-      "taken_at": "2026-03-23T16:54:50.583501",
-      "closed_at": "2026-03-23 17:43:44"
     }
   ]
 }
