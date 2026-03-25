@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-25T01:39:06.739320+00:00",
+  "updated_at": "2026-03-25T01:40:21.267605+00:00",
   "publish_status": {
-    "last_ok": "2026-03-25T01:38:19Z",
+    "last_ok": "2026-03-25T01:39:13Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,11 +17,11 @@
     "winrate": 53.9
   },
   "trade_stats": {
-    "open": 13,
+    "open": 12,
     "pending": 0,
     "wins": 542,
-    "losses": 601,
-    "total_pnl": -13.46,
+    "losses": 602,
+    "total_pnl": -15.52,
     "winrate": 47.4
   },
   "fear_greed": {
@@ -896,33 +896,6 @@
       ]
     },
     {
-      "id": 1229,
-      "symbol": "POLYXUSDT",
-      "direction": "LONG",
-      "exchange": "bybit",
-      "entry": 0.04808,
-      "tp1": 0.049042,
-      "tp2": 0.050003,
-      "sl": 0.047118,
-      "entry_orig": 0.04808,
-      "tp1_orig": 0.049042,
-      "tp2_orig": 0.050003,
-      "sl_orig": 0.047118,
-      "strength": 62,
-      "taken_at": "2026-03-25T00:26:06.022747",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00005)",
-        "Цена > EMA20 > EMA50",
-        "Объём x4.7 🔥🔥🔥",
-        "Стакан: давление покупки (+0.22)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +1.2% + цена ↑",
-        "⚡ Рыночный вход (MTF сильный)",
-        "🤖 ML: 49% WIN"
-      ]
-    },
-    {
       "id": 1233,
       "symbol": "MAGMAUSDT",
       "direction": "LONG",
@@ -981,6 +954,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "POLYXUSDT",
+      "direction": "LONG",
+      "entry": 0.04808,
+      "tp1": 0.049042,
+      "tp2": 0.050003,
+      "sl": 0.047118,
+      "strength": 62,
+      "status": "SL",
+      "pnl_pct": -2.06,
+      "close_price": 0.04709,
+      "taken_at": "2026-03-25T00:26:06.022747",
+      "closed_at": "2026-03-25 01:40:20"
+    },
     {
       "symbol": "WLFIUSDT",
       "direction": "LONG",
@@ -3766,20 +3753,6 @@
       "close_price": 2138.1949999999997,
       "taken_at": "2026-03-23T14:02:26.759931",
       "closed_at": "2026-03-23 15:53:14"
-    },
-    {
-      "symbol": "CRCLUSDT",
-      "direction": "LONG",
-      "entry": 126.31,
-      "tp1": 130.098571,
-      "tp2": 133.887143,
-      "sl": 123.279143,
-      "strength": 51,
-      "status": "SL",
-      "pnl_pct": -2.55,
-      "close_price": 123.095,
-      "taken_at": "2026-03-23T13:39:48.814398",
-      "closed_at": "2026-03-23 15:46:26"
     }
   ]
 }
