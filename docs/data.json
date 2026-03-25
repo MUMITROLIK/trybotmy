@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-25T02:40:38.404915+00:00",
+  "updated_at": "2026-03-25T02:41:57.568992+00:00",
   "publish_status": {
-    "last_ok": "2026-03-25T02:39:53Z",
+    "last_ok": "2026-03-25T02:40:44Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -12,9 +12,9 @@
   "stats": {
     "total": 1348,
     "wins": 445,
-    "losses": 384,
-    "active": 4,
-    "winrate": 53.7
+    "losses": 385,
+    "active": 3,
+    "winrate": 53.6
   },
   "trade_stats": {
     "open": 8,
@@ -111,17 +111,19 @@
       "news": null,
       "created_at": "2026-03-25 01:13:30",
       "status": "ACTIVE"
-    },
+    }
+  ],
+  "history": [
     {
-      "id": 1386,
       "symbol": "MYXUSDT",
       "direction": "LONG",
-      "exchange": "binance",
       "entry": 0.3363,
       "tp1": 0.343026,
       "tp2": 0.349752,
       "sl": 0.329574,
       "strength": 60,
+      "status": "SL",
+      "created_at": "2026-03-25 02:35:39",
       "reasons": [
         "MACD бычий (hist=0.00127)",
         "EMA20 > EMA50 (golden cross) 🌟",
@@ -131,13 +133,8 @@
         "OI растёт +1.4% + цена ↑",
         "⚡ Рыночный вход (MTF сильный)",
         "🤖 ML: 52% WIN"
-      ],
-      "news": null,
-      "created_at": "2026-03-25 02:35:39",
-      "status": "ACTIVE"
-    }
-  ],
-  "history": [
+      ]
+    },
     {
       "symbol": "DUSKUSDT",
       "direction": "LONG",
@@ -541,29 +538,6 @@
         "CVD положительный (+2.8%)",
         "⚡ Рыночный вход (MTF сильный)",
         "🤖 ML: 47% WIN"
-      ]
-    },
-    {
-      "symbol": "BANANAS31USDT",
-      "direction": "LONG",
-      "entry": 0.013741,
-      "tp1": 0.014016,
-      "tp2": 0.014291,
-      "sl": 0.013466,
-      "strength": 54,
-      "status": "TP1",
-      "created_at": "2026-03-24 21:47:09",
-      "reasons": [
-        "RSI=37 (перепроданность)",
-        "MACD бычий (hist=0.00000)",
-        "BB ниже середины",
-        "Стакан: сильное давление покупки (+0.35)",
-        "МТФ: 1h, 4h согласны",
-        "OI падает (шорты закрываются)",
-        "CVD положительный (+2.2%)",
-        "Doji (1h) — нерешительность",
-        "⚡ Рыночный вход (MTF 2+ ТФ)",
-        "🤖 ML: 58% WIN"
       ]
     }
   ],
