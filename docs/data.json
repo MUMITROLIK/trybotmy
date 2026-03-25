@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-25T00:13:48.822791+00:00",
+  "updated_at": "2026-03-25T00:14:54.814238+00:00",
   "publish_status": {
-    "last_ok": "2026-03-25T00:12:32Z",
+    "last_ok": "2026-03-25T00:13:54Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 1335,
+    "total": 1336,
     "wins": 440,
     "losses": 372,
-    "active": 16,
+    "active": 17,
     "winrate": 54.2
   },
   "trade_stats": {
-    "open": 18,
+    "open": 19,
     "pending": 0,
     "wins": 535,
     "losses": 593,
@@ -428,6 +428,31 @@
       ],
       "news": null,
       "created_at": "2026-03-25 00:10:47",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1374,
+      "symbol": "SIRENUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 1.03383,
+      "tp1": 1.057183,
+      "tp2": 1.080536,
+      "sl": 1.013153,
+      "strength": 56,
+      "reasons": [
+        "MACD бычий (hist=0.00202)",
+        "Цена выше EMA20",
+        "Объём x2.7 🔥🔥",
+        "Стакан: сильное давление покупки (+0.30)",
+        "МТФ: 5m, 4h согласны",
+        "CVD положительный (-0.0%)",
+        "Bullish Engulfing (1h) 🕯️",
+        "⚡ Рыночный вход (MTF 2+ ТФ)",
+        "🤖 ML: 58% WIN"
+      ],
+      "news": null,
+      "created_at": "2026-03-25 00:14:10",
       "status": "ACTIVE"
     }
   ],
@@ -1351,6 +1376,34 @@
         "CVD положительный (+1.7%)",
         "⚡ Рыночный вход (MTF сильный)",
         "🤖 ML: 47% WIN"
+      ]
+    },
+    {
+      "id": 1228,
+      "symbol": "SIRENUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 1.03383,
+      "tp1": 1.057183,
+      "tp2": 1.080536,
+      "sl": 1.013153,
+      "entry_orig": 1.03383,
+      "tp1_orig": 1.057183,
+      "tp2_orig": 1.080536,
+      "sl_orig": 1.013153,
+      "strength": 56,
+      "taken_at": "2026-03-25T00:14:10.439450",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.00202)",
+        "Цена выше EMA20",
+        "Объём x2.7 🔥🔥",
+        "Стакан: сильное давление покупки (+0.30)",
+        "МТФ: 5m, 4h согласны",
+        "CVD положительный (-0.0%)",
+        "Bullish Engulfing (1h) 🕯️",
+        "⚡ Рыночный вход (MTF 2+ ТФ)",
+        "🤖 ML: 58% WIN"
       ]
     }
   ],
