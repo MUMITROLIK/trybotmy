@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-25T06:32:46.578082+00:00",
+  "updated_at": "2026-03-25T06:33:29.780924+00:00",
   "publish_status": {
-    "last_ok": "2026-03-25T06:31:46Z",
+    "last_ok": "2026-03-25T06:32:52Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -12,16 +12,16 @@
   "stats": {
     "total": 1359,
     "wins": 446,
-    "losses": 387,
-    "active": 9,
+    "losses": 388,
+    "active": 8,
     "winrate": 53.5
   },
   "trade_stats": {
-    "open": 11,
+    "open": 10,
     "pending": 0,
     "wins": 547,
-    "losses": 612,
-    "total_pnl": -28.82,
+    "losses": 613,
+    "total_pnl": -32.33,
     "winrate": 47.2
   },
   "fear_greed": {
@@ -166,33 +166,6 @@
       "status": "ACTIVE"
     },
     {
-      "id": 1394,
-      "symbol": "BEATUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.6345,
-      "tp1": 0.660643,
-      "tp2": 0.686786,
-      "sl": 0.613586,
-      "strength": 57,
-      "reasons": [
-        "RSI=46 (нейтральный↓)",
-        "MACD бычий (hist=0.00025)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: сильное давление покупки (+0.26)",
-        "МТФ: 5m, 15m, 4h согласны",
-        "OI падает (шорты закрываются)",
-        "CVD растёт (+6.7%) — покупки усиливаются 📈",
-        "Bullish Engulfing (1h) 🕯️",
-        "BTC контекст: +2.7% за 12ч 📈",
-        "⚡ Рыночный вход (MTF сильный)",
-        "🤖 ML: 56% WIN"
-      ],
-      "news": null,
-      "created_at": "2026-03-25 05:15:40",
-      "status": "ACTIVE"
-    },
-    {
       "id": 1395,
       "symbol": "CUSDT",
       "direction": "LONG",
@@ -275,6 +248,30 @@
     }
   ],
   "history": [
+    {
+      "symbol": "BEATUSDT",
+      "direction": "LONG",
+      "entry": 0.6345,
+      "tp1": 0.660643,
+      "tp2": 0.686786,
+      "sl": 0.613586,
+      "strength": 57,
+      "status": "SL",
+      "created_at": "2026-03-25 05:15:40",
+      "reasons": [
+        "RSI=46 (нейтральный↓)",
+        "MACD бычий (hist=0.00025)",
+        "Цена > EMA20 > EMA50",
+        "Стакан: сильное давление покупки (+0.26)",
+        "МТФ: 5m, 15m, 4h согласны",
+        "OI падает (шорты закрываются)",
+        "CVD растёт (+6.7%) — покупки усиливаются 📈",
+        "Bullish Engulfing (1h) 🕯️",
+        "BTC контекст: +2.7% за 12ч 📈",
+        "⚡ Рыночный вход (MTF сильный)",
+        "🤖 ML: 56% WIN"
+      ]
+    },
     {
       "symbol": "JTOUSDT",
       "direction": "LONG",
@@ -679,29 +676,6 @@
         "⚡ Рыночный вход (MTF сильный)",
         "🤖 ML: 49% WIN"
       ]
-    },
-    {
-      "symbol": "1000BONKUSDT",
-      "direction": "LONG",
-      "entry": 0.00617,
-      "tp1": 0.006293,
-      "tp2": 0.006417,
-      "sl": 0.006047,
-      "strength": 51,
-      "status": "EXPIRED",
-      "created_at": "2026-03-24 23:18:16",
-      "reasons": [
-        "MACD бычий (hist=0.00002)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: перевес bid (+0.10)",
-        "МТФ: 5m, 15m, 1h согласны",
-        "OI растёт +1.9% + цена ↑",
-        "CVD растёт (+15.1%) — покупки усиливаются 📈",
-        "BTC корреляция 0.77, BTC +1.7% 📈",
-        "⚠️ Funding через 42м",
-        "⚡ Рыночный вход (MTF сильный)",
-        "🤖 ML: 47% WIN"
-      ]
     }
   ],
   "trades_open": [
@@ -906,36 +880,6 @@
       ]
     },
     {
-      "id": 1248,
-      "symbol": "BEATUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.6345,
-      "tp1": 0.660643,
-      "tp2": 0.686786,
-      "sl": 0.613586,
-      "entry_orig": 0.6345,
-      "tp1_orig": 0.660643,
-      "tp2_orig": 0.686786,
-      "sl_orig": 0.613586,
-      "strength": 57,
-      "taken_at": "2026-03-25T05:15:40.754483",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=46 (нейтральный↓)",
-        "MACD бычий (hist=0.00025)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: сильное давление покупки (+0.26)",
-        "МТФ: 5m, 15m, 4h согласны",
-        "OI падает (шорты закрываются)",
-        "CVD растёт (+6.7%) — покупки усиливаются 📈",
-        "Bullish Engulfing (1h) 🕯️",
-        "BTC контекст: +2.7% за 12ч 📈",
-        "⚡ Рыночный вход (MTF сильный)",
-        "🤖 ML: 56% WIN"
-      ]
-    },
-    {
       "id": 1249,
       "symbol": "CUSDT",
       "direction": "LONG",
@@ -1027,6 +971,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "BEATUSDT",
+      "direction": "LONG",
+      "entry": 0.6345,
+      "tp1": 0.660643,
+      "tp2": 0.686786,
+      "sl": 0.613586,
+      "strength": 57,
+      "status": "SL",
+      "pnl_pct": -3.51,
+      "close_price": 0.61225,
+      "taken_at": "2026-03-25T05:15:40.754483",
+      "closed_at": "2026-03-25 06:33:29"
+    },
     {
       "symbol": "TAOUSDT",
       "direction": "LONG",
@@ -3812,20 +3770,6 @@
       "close_price": 0.73405,
       "taken_at": "2026-03-23T13:06:30.883405",
       "closed_at": "2026-03-23 18:56:58"
-    },
-    {
-      "symbol": "WLFIUSDT",
-      "direction": "LONG",
-      "entry": 0.1003,
-      "tp1": 0.102306,
-      "tp2": 0.104312,
-      "sl": 0.098294,
-      "strength": 52,
-      "status": "TP1",
-      "pnl_pct": 2.04,
-      "close_price": 0.10235,
-      "taken_at": "2026-03-23T17:46:36.520811",
-      "closed_at": "2026-03-23 18:54:15"
     }
   ]
 }
