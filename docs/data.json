@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-25T06:06:32.015515+00:00",
+  "updated_at": "2026-03-25T06:07:31.456213+00:00",
   "publish_status": {
-    "last_ok": "2026-03-25T06:05:31Z",
+    "last_ok": "2026-03-25T06:06:38Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,11 +17,11 @@
     "winrate": 53.5
   },
   "trade_stats": {
-    "open": 10,
+    "open": 9,
     "pending": 0,
     "wins": 546,
-    "losses": 611,
-    "total_pnl": -27.97,
+    "losses": 612,
+    "total_pnl": -29.76,
     "winrate": 47.2
   },
   "fear_greed": {
@@ -625,35 +625,6 @@
   ],
   "trades_open": [
     {
-      "id": 1219,
-      "symbol": "XPLUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.098,
-      "tp1": 0.09996,
-      "tp2": 0.10192,
-      "sl": 0.09604,
-      "entry_orig": 0.098,
-      "tp1_orig": 0.09996,
-      "tp2_orig": 0.10192,
-      "sl_orig": 0.09604,
-      "strength": 51,
-      "taken_at": "2026-03-24T22:07:25.765890",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00032)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: давление покупки (+0.10)",
-        "МТФ: 5m, 15m, 1h согласны",
-        "OI растёт +1.2% + цена ↑",
-        "CVD растёт (+7.9%) — покупки усиливаются 📈",
-        "Doji (1h) — нерешительность",
-        "BTC корреляция 0.89, BTC +1.4% 📈",
-        "⚡ Рыночный вход (MTF сильный)",
-        "🤖 ML: 52% WIN"
-      ]
-    },
-    {
       "id": 1220,
       "symbol": "TAOUSDT",
       "direction": "LONG",
@@ -911,6 +882,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "XPLUSDT",
+      "direction": "LONG",
+      "entry": 0.098,
+      "tp1": 0.09996,
+      "tp2": 0.10192,
+      "sl": 0.09604,
+      "strength": 51,
+      "status": "TIMEOUT",
+      "pnl_pct": -1.79,
+      "close_price": 0.09625,
+      "taken_at": "2026-03-24T22:07:25.765890",
+      "closed_at": "2026-03-25 06:07:26"
+    },
     {
       "symbol": "BARDUSDT",
       "direction": "LONG",
@@ -3696,20 +3681,6 @@
       "close_price": 0.19115,
       "taken_at": "2026-03-23T17:42:59.196533",
       "closed_at": "2026-03-23 18:37:08"
-    },
-    {
-      "symbol": "XPTUSDT",
-      "direction": "LONG",
-      "entry": 1851.22,
-      "tp1": 1888.2444,
-      "tp2": 1925.2688,
-      "sl": 1814.1956,
-      "strength": 52,
-      "status": "TP1",
-      "pnl_pct": 2.01,
-      "close_price": 1888.3600000000001,
-      "taken_at": "2026-03-23T16:19:17.784869",
-      "closed_at": "2026-03-23 18:36:51"
     }
   ]
 }
