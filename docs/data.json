@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-25T06:09:20.578296+00:00",
+  "updated_at": "2026-03-25T06:10:52.599297+00:00",
   "publish_status": {
-    "last_ok": "2026-03-25T06:08:48Z",
+    "last_ok": "2026-03-25T06:09:26Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,11 +17,11 @@
     "winrate": 53.5
   },
   "trade_stats": {
-    "open": 9,
+    "open": 8,
     "pending": 0,
-    "wins": 546,
+    "wins": 547,
     "losses": 612,
-    "total_pnl": -29.76,
+    "total_pnl": -28.82,
     "winrate": 47.2
   },
   "fear_greed": {
@@ -625,32 +625,6 @@
   ],
   "trades_open": [
     {
-      "id": 1220,
-      "symbol": "TAOUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 335.49,
-      "tp1": 343.791429,
-      "tp2": 352.092857,
-      "sl": 328.7802,
-      "entry_orig": 335.49,
-      "tp1_orig": 343.791429,
-      "tp2_orig": 352.092857,
-      "sl_orig": 328.7802,
-      "strength": 53,
-      "taken_at": "2026-03-24T22:10:46.434086",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.12473)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: сильное давление покупки (+0.27)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "CVD растёт (+7.0%) — покупки усиливаются 📈",
-        "⚡ Рыночный вход (MTF сильный)",
-        "🤖 ML: 47% WIN"
-      ]
-    },
-    {
       "id": 1223,
       "symbol": "1000BONKUSDT",
       "direction": "LONG",
@@ -882,6 +856,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "TAOUSDT",
+      "direction": "LONG",
+      "entry": 335.49,
+      "tp1": 343.791429,
+      "tp2": 352.092857,
+      "sl": 328.7802,
+      "strength": 53,
+      "status": "TIMEOUT",
+      "pnl_pct": 0.94,
+      "close_price": 338.635,
+      "taken_at": "2026-03-24T22:10:46.434086",
+      "closed_at": "2026-03-25 06:10:46"
+    },
     {
       "symbol": "XPLUSDT",
       "direction": "LONG",
@@ -3667,20 +3655,6 @@
       "close_price": 0.10235,
       "taken_at": "2026-03-23T17:46:36.520811",
       "closed_at": "2026-03-23 18:54:15"
-    },
-    {
-      "symbol": "WIFUSDT",
-      "direction": "LONG",
-      "entry": 0.1874,
-      "tp1": 0.191148,
-      "tp2": 0.194896,
-      "sl": 0.183652,
-      "strength": 55,
-      "status": "TP1",
-      "pnl_pct": 2.0,
-      "close_price": 0.19115,
-      "taken_at": "2026-03-23T17:42:59.196533",
-      "closed_at": "2026-03-23 18:37:08"
     }
   ]
 }
