@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-25T03:58:59.164403+00:00",
+  "updated_at": "2026-03-25T03:59:46.007171+00:00",
   "publish_status": {
-    "last_ok": "2026-03-25T03:58:35Z",
+    "last_ok": "2026-03-25T03:59:05Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -11,18 +11,18 @@
   },
   "stats": {
     "total": 1350,
-    "wins": 445,
+    "wins": 446,
     "losses": 386,
-    "active": 2,
-    "winrate": 53.5
+    "active": 1,
+    "winrate": 53.6
   },
   "trade_stats": {
-    "open": 7,
+    "open": 6,
     "pending": 0,
-    "wins": 545,
+    "wins": 546,
     "losses": 609,
-    "total_pnl": -26.42,
-    "winrate": 47.2
+    "total_pnl": -24.24,
+    "winrate": 47.3
   },
   "fear_greed": {
     "value": 14,
@@ -36,29 +36,6 @@
     "trained_at": "2026-03-25T03:42:26.536736+00:00"
   },
   "signals": [
-    {
-      "id": 1387,
-      "symbol": "AKTUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.5701,
-      "tp1": 0.581502,
-      "tp2": 0.592904,
-      "sl": 0.558698,
-      "strength": 58,
-      "reasons": [
-        "MACD бычий (hist=0.00355)",
-        "EMA20 > EMA50 (golden cross) 🌟",
-        "Объём x4.7 🔥🔥🔥",
-        "Стакан: сильное давление покупки (+0.36)",
-        "МТФ: 5m, 15m, 4h согласны",
-        "⚡ Рыночный вход (MTF сильный)",
-        "🤖 ML: 58% WIN"
-      ],
-      "news": null,
-      "created_at": "2026-03-25 02:43:59",
-      "status": "ACTIVE"
-    },
     {
       "id": 1388,
       "symbol": "TRUMPUSDT",
@@ -84,6 +61,26 @@
     }
   ],
   "history": [
+    {
+      "symbol": "AKTUSDT",
+      "direction": "LONG",
+      "entry": 0.5701,
+      "tp1": 0.581502,
+      "tp2": 0.592904,
+      "sl": 0.558698,
+      "strength": 58,
+      "status": "TP1",
+      "created_at": "2026-03-25 02:43:59",
+      "reasons": [
+        "MACD бычий (hist=0.00355)",
+        "EMA20 > EMA50 (golden cross) 🌟",
+        "Объём x4.7 🔥🔥🔥",
+        "Стакан: сильное давление покупки (+0.36)",
+        "МТФ: 5m, 15m, 4h согласны",
+        "⚡ Рыночный вход (MTF сильный)",
+        "🤖 ML: 58% WIN"
+      ]
+    },
     {
       "symbol": "MYXUSDT",
       "direction": "LONG",
@@ -491,27 +488,6 @@
         "⚡ Рыночный вход (MTF сильный)",
         "🤖 ML: 54% WIN"
       ]
-    },
-    {
-      "symbol": "WLFIUSDT",
-      "direction": "LONG",
-      "entry": 0.1048,
-      "tp1": 0.106896,
-      "tp2": 0.108992,
-      "sl": 0.102704,
-      "strength": 52,
-      "status": "SL",
-      "created_at": "2026-03-24 22:12:30",
-      "reasons": [
-        "MACD бычий (hist=0.00043)",
-        "Цена выше EMA20",
-        "Объём x2.8 🔥🔥",
-        "Стакан: перевес bid (+0.09)",
-        "МТФ: 5m, 1h, 4h согласны",
-        "CVD растёт (+12.7%) — покупки усиливаются 📈",
-        "⚡ Рыночный вход (MTF сильный)",
-        "🤖 ML: 49% WIN"
-      ]
     }
   ],
   "trades_open": [
@@ -654,32 +630,6 @@
       ]
     },
     {
-      "id": 1241,
-      "symbol": "AKTUSDT",
-      "direction": "LONG",
-      "exchange": "bybit",
-      "entry": 0.5701,
-      "tp1": 0.581502,
-      "tp2": 0.592904,
-      "sl": 0.558698,
-      "entry_orig": 0.5701,
-      "tp1_orig": 0.581502,
-      "tp2_orig": 0.592904,
-      "sl_orig": 0.558698,
-      "strength": 58,
-      "taken_at": "2026-03-25T02:43:59.980739",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00355)",
-        "EMA20 > EMA50 (golden cross) 🌟",
-        "Объём x4.7 🔥🔥🔥",
-        "Стакан: сильное давление покупки (+0.36)",
-        "МТФ: 5m, 15m, 4h согласны",
-        "⚡ Рыночный вход (MTF сильный)",
-        "🤖 ML: 58% WIN"
-      ]
-    },
-    {
       "id": 1242,
       "symbol": "TRUMPUSDT",
       "direction": "LONG",
@@ -707,6 +657,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "AKTUSDT",
+      "direction": "LONG",
+      "entry": 0.5701,
+      "tp1": 0.581502,
+      "tp2": 0.592904,
+      "sl": 0.558698,
+      "strength": 58,
+      "status": "TP1",
+      "pnl_pct": 2.18,
+      "close_price": 0.5825,
+      "taken_at": "2026-03-25T02:43:59.980739",
+      "closed_at": "2026-03-25 03:59:45"
+    },
     {
       "symbol": "MYXUSDT",
       "direction": "LONG",
@@ -3492,20 +3456,6 @@
       "close_price": 0.054650000000000004,
       "taken_at": "2026-03-23T16:29:15.095242",
       "closed_at": "2026-03-23 18:02:14"
-    },
-    {
-      "symbol": "MSTRUSDT",
-      "direction": "LONG",
-      "entry": 134.59,
-      "tp1": 137.2818,
-      "tp2": 139.9736,
-      "sl": 131.8982,
-      "strength": 50,
-      "status": "TP1",
-      "pnl_pct": 2.1,
-      "close_price": 137.415,
-      "taken_at": "2026-03-23T17:26:20.249825",
-      "closed_at": "2026-03-23 17:59:30"
     }
   ]
 }
