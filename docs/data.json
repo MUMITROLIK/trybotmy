@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-03-25T04:11:10.227688+00:00",
+  "updated_at": "2026-03-25T04:11:54.964861+00:00",
   "publish_status": {
-    "last_ok": "2026-03-25T04:07:25Z",
-    "last_error": "fatal: unable to access 'https://github.com/MUMITROLIK/trybotmy.git/': Could not resolve host: github.com\n",
+    "last_ok": "2026-03-25T04:11:16Z",
+    "last_error": null,
     "min_push_interval_sec": 30
   },
   "settings": {
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 1352,
+    "total": 1353,
     "wins": 446,
     "losses": 386,
-    "active": 3,
+    "active": 4,
     "winrate": 53.6
   },
   "trade_stats": {
-    "open": 8,
+    "open": 9,
     "pending": 0,
     "wins": 546,
     "losses": 609,
@@ -108,6 +108,32 @@
       ],
       "news": null,
       "created_at": "2026-03-25 04:05:39",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1391,
+      "symbol": "ONGUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.06299,
+      "tp1": 0.064496,
+      "tp2": 0.066003,
+      "sl": 0.06173,
+      "strength": 55,
+      "reasons": [
+        "RSI=17 (сильная перепроданность)",
+        "BB нижняя полоса (пробой)",
+        "EMA20 > EMA50",
+        "Объём x2.1 🔥",
+        "Стакан: сильное давление покупки (+0.38)",
+        "МТФ: 15m, 4h согласны",
+        "OI растёт +0.6% + цена ↑",
+        "BTC контекст: +2.1% за 12ч 📈",
+        "⚡ Рыночный вход (MTF 2+ ТФ)",
+        "🤖 ML: 55% WIN"
+      ],
+      "news": null,
+      "created_at": "2026-03-25 04:11:53",
       "status": "ACTIVE"
     }
   ],
@@ -761,6 +787,35 @@
         "BTC контекст: +1.9% за 12ч 📈",
         "⚡ Рыночный вход (MTF сильный)",
         "🤖 ML: 56% WIN"
+      ]
+    },
+    {
+      "id": 1245,
+      "symbol": "ONGUSDT",
+      "direction": "LONG",
+      "exchange": "bybit",
+      "entry": 0.06299,
+      "tp1": 0.064496,
+      "tp2": 0.066003,
+      "sl": 0.06173,
+      "entry_orig": 0.06299,
+      "tp1_orig": 0.064496,
+      "tp2_orig": 0.066003,
+      "sl_orig": 0.06173,
+      "strength": 55,
+      "taken_at": "2026-03-25T04:11:53.430312",
+      "status": "OPEN",
+      "reasons": [
+        "RSI=17 (сильная перепроданность)",
+        "BB нижняя полоса (пробой)",
+        "EMA20 > EMA50",
+        "Объём x2.1 🔥",
+        "Стакан: сильное давление покупки (+0.38)",
+        "МТФ: 15m, 4h согласны",
+        "OI растёт +0.6% + цена ↑",
+        "BTC контекст: +2.1% за 12ч 📈",
+        "⚡ Рыночный вход (MTF 2+ ТФ)",
+        "🤖 ML: 55% WIN"
       ]
     }
   ],
