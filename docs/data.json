@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-25T00:15:49.912536+00:00",
+  "updated_at": "2026-03-25T00:16:58.673968+00:00",
   "publish_status": {
-    "last_ok": "2026-03-25T00:15:00Z",
+    "last_ok": "2026-03-25T00:15:55Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -12,17 +12,17 @@
   "stats": {
     "total": 1336,
     "wins": 441,
-    "losses": 372,
-    "active": 16,
+    "losses": 373,
+    "active": 15,
     "winrate": 54.2
   },
   "trade_stats": {
-    "open": 18,
+    "open": 17,
     "pending": 0,
     "wins": 536,
-    "losses": 593,
-    "total_pnl": -12.58,
-    "winrate": 47.5
+    "losses": 594,
+    "total_pnl": -14.59,
+    "winrate": 47.4
   },
   "fear_greed": {
     "value": 11,
@@ -258,31 +258,6 @@
       "status": "ACTIVE"
     },
     {
-      "id": 1368,
-      "symbol": "DUSKUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.12832,
-      "tp1": 0.130886,
-      "tp2": 0.133453,
-      "sl": 0.125754,
-      "strength": 51,
-      "reasons": [
-        "MACD бычий (hist=0.00034)",
-        "Цена > EMA20 > EMA50",
-        "Объём x1.9 🔥",
-        "Стакан: сильное давление покупки (+0.30)",
-        "МТФ: 5m, 15m, 4h согласны",
-        "CVD положительный (+4.2%)",
-        "⚠️ Funding через 48м",
-        "⚡ Рыночный вход (MTF сильный)",
-        "🤖 ML: 54% WIN"
-      ],
-      "news": null,
-      "created_at": "2026-03-24 23:13:07",
-      "status": "ACTIVE"
-    },
-    {
       "id": 1369,
       "symbol": "1000BONKUSDT",
       "direction": "LONG",
@@ -431,6 +406,28 @@
     }
   ],
   "history": [
+    {
+      "symbol": "DUSKUSDT",
+      "direction": "LONG",
+      "entry": 0.12832,
+      "tp1": 0.130886,
+      "tp2": 0.133453,
+      "sl": 0.125754,
+      "strength": 51,
+      "status": "SL",
+      "created_at": "2026-03-24 23:13:07",
+      "reasons": [
+        "MACD бычий (hist=0.00034)",
+        "Цена > EMA20 > EMA50",
+        "Объём x1.9 🔥",
+        "Стакан: сильное давление покупки (+0.30)",
+        "МТФ: 5m, 15m, 4h согласны",
+        "CVD положительный (+4.2%)",
+        "⚠️ Funding через 48м",
+        "⚡ Рыночный вход (MTF сильный)",
+        "🤖 ML: 54% WIN"
+      ]
+    },
     {
       "symbol": "HUMAUSDT",
       "direction": "LONG",
@@ -834,27 +831,6 @@
         "⚡ Рыночный вход (MTF сильный)",
         "🤖 ML: 58% WIN"
       ]
-    },
-    {
-      "symbol": "KITEUSDT",
-      "direction": "LONG",
-      "entry": 0.24946,
-      "tp1": 0.254449,
-      "tp2": 0.259438,
-      "sl": 0.244471,
-      "strength": 54,
-      "status": "TP1",
-      "created_at": "2026-03-24 18:10:40",
-      "reasons": [
-        "MACD бычий (hist=0.00084)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: давление покупки (+0.10)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +1.9% + цена ↑",
-        "CVD растёт (+10.7%) — покупки усиливаются 📈",
-        "⚡ Рыночный вход (MTF сильный)",
-        "🤖 ML: 58% WIN"
-      ]
     }
   ],
   "trades_open": [
@@ -1160,34 +1136,6 @@
       ]
     },
     {
-      "id": 1222,
-      "symbol": "DUSKUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.12832,
-      "tp1": 0.130886,
-      "tp2": 0.133453,
-      "sl": 0.125754,
-      "entry_orig": 0.12832,
-      "tp1_orig": 0.130886,
-      "tp2_orig": 0.133453,
-      "sl_orig": 0.125754,
-      "strength": 51,
-      "taken_at": "2026-03-24T23:13:08.173900",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00034)",
-        "Цена > EMA20 > EMA50",
-        "Объём x1.9 🔥",
-        "Стакан: сильное давление покупки (+0.30)",
-        "МТФ: 5m, 15m, 4h согласны",
-        "CVD положительный (+4.2%)",
-        "⚠️ Funding через 48м",
-        "⚡ Рыночный вход (MTF сильный)",
-        "🤖 ML: 54% WIN"
-      ]
-    },
-    {
       "id": 1223,
       "symbol": "1000BONKUSDT",
       "direction": "LONG",
@@ -1354,6 +1302,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "DUSKUSDT",
+      "direction": "LONG",
+      "entry": 0.12832,
+      "tp1": 0.130886,
+      "tp2": 0.133453,
+      "sl": 0.125754,
+      "strength": 51,
+      "status": "SL",
+      "pnl_pct": -2.01,
+      "close_price": 0.12573499999999999,
+      "taken_at": "2026-03-24T23:13:08.173900",
+      "closed_at": "2026-03-25 00:16:58"
+    },
     {
       "symbol": "BANANAS31USDT",
       "direction": "LONG",
@@ -4139,20 +4101,6 @@
       "close_price": 0.04135,
       "taken_at": "2026-03-23T13:24:03.468216",
       "closed_at": "2026-03-23 14:28:24"
-    },
-    {
-      "symbol": "JTOUSDT",
-      "direction": "LONG",
-      "entry": 0.3089,
-      "tp1": 0.315746,
-      "tp2": 0.322593,
-      "sl": 0.302722,
-      "strength": 51,
-      "status": "SL",
-      "pnl_pct": -2.43,
-      "close_price": 0.3014,
-      "taken_at": "2026-03-23T14:05:48.477135",
-      "closed_at": "2026-03-23 14:24:36"
     }
   ]
 }
