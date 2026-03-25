@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-25T04:27:25.624159+00:00",
+  "updated_at": "2026-03-25T04:28:40.664679+00:00",
   "publish_status": {
-    "last_ok": "2026-03-25T04:26:36Z",
+    "last_ok": "2026-03-25T04:27:32Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -12,17 +12,17 @@
   "stats": {
     "total": 1353,
     "wins": 446,
-    "losses": 386,
-    "active": 4,
-    "winrate": 53.6
+    "losses": 387,
+    "active": 3,
+    "winrate": 53.5
   },
   "trade_stats": {
-    "open": 9,
+    "open": 8,
     "pending": 0,
     "wins": 546,
-    "losses": 609,
-    "total_pnl": -24.24,
-    "winrate": 47.3
+    "losses": 610,
+    "total_pnl": -26.72,
+    "winrate": 47.2
   },
   "fear_greed": {
     "value": 14,
@@ -86,31 +86,6 @@
       "status": "ACTIVE"
     },
     {
-      "id": 1390,
-      "symbol": "JTOUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.3736,
-      "tp1": 0.384464,
-      "tp2": 0.395329,
-      "sl": 0.364909,
-      "strength": 57,
-      "reasons": [
-        "MACD бычий (hist=0.00421)",
-        "Цена > EMA20 > EMA50",
-        "Объём x2.6 🔥🔥",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +4.5% + цена ↑",
-        "CVD положительный (+3.5%)",
-        "BTC контекст: +1.9% за 12ч 📈",
-        "⚡ Рыночный вход (MTF сильный)",
-        "🤖 ML: 56% WIN"
-      ],
-      "news": null,
-      "created_at": "2026-03-25 04:05:39",
-      "status": "ACTIVE"
-    },
-    {
       "id": 1391,
       "symbol": "ONGUSDT",
       "direction": "LONG",
@@ -138,6 +113,28 @@
     }
   ],
   "history": [
+    {
+      "symbol": "JTOUSDT",
+      "direction": "LONG",
+      "entry": 0.3736,
+      "tp1": 0.384464,
+      "tp2": 0.395329,
+      "sl": 0.364909,
+      "strength": 57,
+      "status": "SL",
+      "created_at": "2026-03-25 04:05:39",
+      "reasons": [
+        "MACD бычий (hist=0.00421)",
+        "Цена > EMA20 > EMA50",
+        "Объём x2.6 🔥🔥",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +4.5% + цена ↑",
+        "CVD положительный (+3.5%)",
+        "BTC контекст: +1.9% за 12ч 📈",
+        "⚡ Рыночный вход (MTF сильный)",
+        "🤖 ML: 56% WIN"
+      ]
+    },
     {
       "symbol": "AKTUSDT",
       "direction": "LONG",
@@ -543,28 +540,6 @@
         "⚡ Рыночный вход (MTF сильный)",
         "🤖 ML: 47% WIN"
       ]
-    },
-    {
-      "symbol": "DUSKUSDT",
-      "direction": "LONG",
-      "entry": 0.12832,
-      "tp1": 0.130886,
-      "tp2": 0.133453,
-      "sl": 0.125754,
-      "strength": 51,
-      "status": "SL",
-      "created_at": "2026-03-24 23:13:07",
-      "reasons": [
-        "MACD бычий (hist=0.00034)",
-        "Цена > EMA20 > EMA50",
-        "Объём x1.9 🔥",
-        "Стакан: сильное давление покупки (+0.30)",
-        "МТФ: 5m, 15m, 4h согласны",
-        "CVD положительный (+4.2%)",
-        "⚠️ Funding через 48м",
-        "⚡ Рыночный вход (MTF сильный)",
-        "🤖 ML: 54% WIN"
-      ]
     }
   ],
   "trades_open": [
@@ -762,34 +737,6 @@
       ]
     },
     {
-      "id": 1244,
-      "symbol": "JTOUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.3736,
-      "tp1": 0.384464,
-      "tp2": 0.395329,
-      "sl": 0.364909,
-      "entry_orig": 0.3736,
-      "tp1_orig": 0.384464,
-      "tp2_orig": 0.395329,
-      "sl_orig": 0.364909,
-      "strength": 57,
-      "taken_at": "2026-03-25T04:05:39.635026",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00421)",
-        "Цена > EMA20 > EMA50",
-        "Объём x2.6 🔥🔥",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +4.5% + цена ↑",
-        "CVD положительный (+3.5%)",
-        "BTC контекст: +1.9% за 12ч 📈",
-        "⚡ Рыночный вход (MTF сильный)",
-        "🤖 ML: 56% WIN"
-      ]
-    },
-    {
       "id": 1245,
       "symbol": "ONGUSDT",
       "direction": "LONG",
@@ -820,6 +767,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "JTOUSDT",
+      "direction": "LONG",
+      "entry": 0.3736,
+      "tp1": 0.384464,
+      "tp2": 0.395329,
+      "sl": 0.364909,
+      "strength": 57,
+      "status": "SL",
+      "pnl_pct": -2.48,
+      "close_price": 0.36435,
+      "taken_at": "2026-03-25T04:05:39.635026",
+      "closed_at": "2026-03-25 04:27:41"
+    },
     {
       "symbol": "AKTUSDT",
       "direction": "LONG",
@@ -3605,20 +3566,6 @@
       "close_price": 2.07905,
       "taken_at": "2026-03-23T17:33:18.843358",
       "closed_at": "2026-03-23 18:35:55"
-    },
-    {
-      "symbol": "SIGNUSDT",
-      "direction": "LONG",
-      "entry": 0.05356,
-      "tp1": 0.054631,
-      "tp2": 0.055702,
-      "sl": 0.052489,
-      "strength": 50,
-      "status": "TP1",
-      "pnl_pct": 2.04,
-      "close_price": 0.054650000000000004,
-      "taken_at": "2026-03-23T16:29:15.095242",
-      "closed_at": "2026-03-23 18:02:14"
     }
   ]
 }
