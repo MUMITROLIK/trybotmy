@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-25T04:05:32.900712+00:00",
+  "updated_at": "2026-03-25T04:06:39.260601+00:00",
   "publish_status": {
-    "last_ok": "2026-03-25T04:04:32Z",
+    "last_ok": "2026-03-25T04:05:39Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 1351,
+    "total": 1352,
     "wins": 446,
     "losses": 386,
-    "active": 2,
+    "active": 3,
     "winrate": 53.6
   },
   "trade_stats": {
-    "open": 7,
+    "open": 8,
     "pending": 0,
     "wins": 546,
     "losses": 609,
@@ -83,6 +83,31 @@
       ],
       "news": null,
       "created_at": "2026-03-25 04:02:00",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1390,
+      "symbol": "JTOUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.3736,
+      "tp1": 0.384464,
+      "tp2": 0.395329,
+      "sl": 0.364909,
+      "strength": 57,
+      "reasons": [
+        "MACD бычий (hist=0.00421)",
+        "Цена > EMA20 > EMA50",
+        "Объём x2.6 🔥🔥",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +4.5% + цена ↑",
+        "CVD положительный (+3.5%)",
+        "BTC контекст: +1.9% за 12ч 📈",
+        "⚡ Рыночный вход (MTF сильный)",
+        "🤖 ML: 56% WIN"
+      ],
+      "news": null,
+      "created_at": "2026-03-25 04:05:39",
       "status": "ACTIVE"
     }
   ],
@@ -708,6 +733,34 @@
         "Цена у поддержки 1.6160",
         "⚡ Рыночный вход (MTF сильный)",
         "🤖 ML: 58% WIN"
+      ]
+    },
+    {
+      "id": 1244,
+      "symbol": "JTOUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.3736,
+      "tp1": 0.384464,
+      "tp2": 0.395329,
+      "sl": 0.364909,
+      "entry_orig": 0.3736,
+      "tp1_orig": 0.384464,
+      "tp2_orig": 0.395329,
+      "sl_orig": 0.364909,
+      "strength": 57,
+      "taken_at": "2026-03-25T04:05:39.635026",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.00421)",
+        "Цена > EMA20 > EMA50",
+        "Объём x2.6 🔥🔥",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "OI растёт +4.5% + цена ↑",
+        "CVD положительный (+3.5%)",
+        "BTC контекст: +1.9% за 12ч 📈",
+        "⚡ Рыночный вход (MTF сильный)",
+        "🤖 ML: 56% WIN"
       ]
     }
   ],
