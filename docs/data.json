@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-25T07:18:11.851204+00:00",
+  "updated_at": "2026-03-25T07:18:45.635865+00:00",
   "publish_status": {
-    "last_ok": "2026-03-25T07:17:03Z",
+    "last_ok": "2026-03-25T07:18:17Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 53.4
   },
   "trade_stats": {
-    "open": 9,
+    "open": 8,
     "pending": 0,
-    "wins": 547,
+    "wins": 548,
     "losses": 614,
-    "total_pnl": -34.4,
-    "winrate": 47.1
+    "total_pnl": -32.75,
+    "winrate": 47.2
   },
   "fear_greed": {
     "value": 14,
@@ -656,35 +656,6 @@
   ],
   "trades_open": [
     {
-      "id": 1223,
-      "symbol": "1000BONKUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.00617,
-      "tp1": 0.006293,
-      "tp2": 0.006417,
-      "sl": 0.006047,
-      "entry_orig": 0.00617,
-      "tp1_orig": 0.006293,
-      "tp2_orig": 0.006417,
-      "sl_orig": 0.006047,
-      "strength": 51,
-      "taken_at": "2026-03-24T23:18:16.781498",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00002)",
-        "Цена > EMA20 > EMA50",
-        "Стакан: перевес bid (+0.10)",
-        "МТФ: 5m, 15m, 1h согласны",
-        "OI растёт +1.9% + цена ↑",
-        "CVD растёт (+15.1%) — покупки усиливаются 📈",
-        "BTC корреляция 0.77, BTC +1.7% 📈",
-        "⚠️ Funding через 42м",
-        "⚡ Рыночный вход (MTF сильный)",
-        "🤖 ML: 47% WIN"
-      ]
-    },
-    {
       "id": 1224,
       "symbol": "LITUSDT",
       "direction": "LONG",
@@ -918,6 +889,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "1000BONKUSDT",
+      "direction": "LONG",
+      "entry": 0.00617,
+      "tp1": 0.006293,
+      "tp2": 0.006417,
+      "sl": 0.006047,
+      "strength": 51,
+      "status": "TIMEOUT",
+      "pnl_pct": 1.65,
+      "close_price": 0.006271499999999999,
+      "taken_at": "2026-03-24T23:18:16.781498",
+      "closed_at": "2026-03-25 07:18:18"
+    },
     {
       "symbol": "GASUSDT",
       "direction": "LONG",
@@ -3703,20 +3688,6 @@
       "close_price": 2.13545,
       "taken_at": "2026-03-23T18:59:34.458641",
       "closed_at": "2026-03-23 19:06:42"
-    },
-    {
-      "symbol": "XPLUSDT",
-      "direction": "LONG",
-      "entry": 0.0971,
-      "tp1": 0.099042,
-      "tp2": 0.100984,
-      "sl": 0.095158,
-      "strength": 50,
-      "status": "TP1",
-      "pnl_pct": 2.01,
-      "close_price": 0.09905,
-      "taken_at": "2026-03-23T17:46:36.758513",
-      "closed_at": "2026-03-23 19:05:49"
     }
   ]
 }
