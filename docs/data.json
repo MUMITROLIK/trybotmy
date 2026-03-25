@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-25T02:09:00.633488+00:00",
+  "updated_at": "2026-03-25T02:09:38.342454+00:00",
   "publish_status": {
-    "last_ok": "2026-03-25T02:08:00Z",
+    "last_ok": "2026-03-25T02:09:06Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,11 +17,11 @@
     "winrate": 53.8
   },
   "trade_stats": {
-    "open": 12,
+    "open": 11,
     "pending": 0,
     "wins": 543,
-    "losses": 602,
-    "total_pnl": -13.5,
+    "losses": 603,
+    "total_pnl": -17.7,
     "winrate": 47.4
   },
   "fear_greed": {
@@ -844,34 +844,6 @@
       ]
     },
     {
-      "id": 1233,
-      "symbol": "MAGMAUSDT",
-      "direction": "LONG",
-      "exchange": "bybit",
-      "entry": 0.13868,
-      "tp1": 0.141631,
-      "tp2": 0.144581,
-      "sl": 0.135906,
-      "entry_orig": 0.13868,
-      "tp1_orig": 0.141631,
-      "tp2_orig": 0.144581,
-      "sl_orig": 0.135906,
-      "strength": 55,
-      "taken_at": "2026-03-25T00:49:38.097372",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=34 (перепроданность)",
-        "BB нижняя зона (23%)",
-        "EMA20 > EMA50",
-        "Объём x3.2 🔥🔥",
-        "Стакан: сильное давление покупки (+0.27)",
-        "МТФ: 15m, 1h, 4h согласны",
-        "BTC контекст: +1.6% за 12ч 📈",
-        "⚡ Рыночный вход (MTF сильный)",
-        "🤖 ML: 58% WIN"
-      ]
-    },
-    {
       "id": 1236,
       "symbol": "RIVERUSDT",
       "direction": "LONG",
@@ -930,6 +902,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "MAGMAUSDT",
+      "direction": "LONG",
+      "entry": 0.13868,
+      "tp1": 0.141631,
+      "tp2": 0.144581,
+      "sl": 0.135906,
+      "strength": 55,
+      "status": "SL",
+      "pnl_pct": -4.2,
+      "close_price": 0.13285,
+      "taken_at": "2026-03-25T00:49:38.097372",
+      "closed_at": "2026-03-25 02:09:37"
+    },
     {
       "symbol": "RENDERUSDT",
       "direction": "LONG",
@@ -3715,20 +3701,6 @@
       "close_price": 1.1394,
       "taken_at": "2026-03-23T10:29:12.144778",
       "closed_at": "2026-03-23 16:26:23"
-    },
-    {
-      "symbol": "1000PEPEUSDT",
-      "direction": "LONG",
-      "entry": 0.0035042,
-      "tp1": 0.003574,
-      "tp2": 0.003644,
-      "sl": 0.003434,
-      "strength": 53,
-      "status": "SL",
-      "pnl_pct": -2.07,
-      "close_price": 0.0034315500000000002,
-      "taken_at": "2026-03-23T15:02:16.258549",
-      "closed_at": "2026-03-23 16:21:15"
     }
   ]
 }
