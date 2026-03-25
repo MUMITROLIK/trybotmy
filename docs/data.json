@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-24T23:59:31.595382+00:00",
+  "updated_at": "2026-03-25T00:00:29.073726+00:00",
   "publish_status": {
-    "last_ok": "2026-03-24T23:58:31Z",
+    "last_ok": "2026-03-24T23:59:37Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 1333,
+    "total": 1334,
     "wins": 440,
     "losses": 372,
-    "active": 14,
+    "active": 15,
     "winrate": 54.2
   },
   "trade_stats": {
-    "open": 16,
+    "open": 17,
     "pending": 0,
     "wins": 535,
     "losses": 593,
@@ -381,6 +381,29 @@
       ],
       "news": null,
       "created_at": "2026-03-24 23:25:05",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1372,
+      "symbol": "APTUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 1.1146,
+      "tp1": 1.136892,
+      "tp2": 1.159184,
+      "sl": 1.092308,
+      "strength": 55,
+      "reasons": [
+        "MACD бычий (hist=0.00299)",
+        "Цена > EMA20 > EMA50",
+        "Объём x3.1 🔥🔥",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "CVD растёт (+13.5%) — покупки усиливаются 📈",
+        "⚡ Рыночный вход (MTF сильный)",
+        "🤖 ML: 58% WIN"
+      ],
+      "news": null,
+      "created_at": "2026-03-25 00:00:28",
       "status": "ACTIVE"
     }
   ],
@@ -1251,6 +1274,32 @@
         "⚠️ Funding через 36м",
         "⚡ Рыночный вход (MTF сильный)",
         "🤖 ML: 52% WIN"
+      ]
+    },
+    {
+      "id": 1226,
+      "symbol": "APTUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 1.1146,
+      "tp1": 1.136892,
+      "tp2": 1.159184,
+      "sl": 1.092308,
+      "entry_orig": 1.1146,
+      "tp1_orig": 1.136892,
+      "tp2_orig": 1.159184,
+      "sl_orig": 1.092308,
+      "strength": 55,
+      "taken_at": "2026-03-25T00:00:28.497659",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.00299)",
+        "Цена > EMA20 > EMA50",
+        "Объём x3.1 🔥🔥",
+        "МТФ: все 4 таймфрейма согласны ✅✅",
+        "CVD растёт (+13.5%) — покупки усиливаются 📈",
+        "⚡ Рыночный вход (MTF сильный)",
+        "🤖 ML: 58% WIN"
       ]
     }
   ],
