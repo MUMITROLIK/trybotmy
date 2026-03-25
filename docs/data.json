@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-25T03:22:45.604284+00:00",
+  "updated_at": "2026-03-25T03:23:51.931253+00:00",
   "publish_status": {
-    "last_ok": "2026-03-25T03:21:18Z",
+    "last_ok": "2026-03-25T03:22:51Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 1349,
+    "total": 1350,
     "wins": 445,
     "losses": 385,
-    "active": 2,
+    "active": 3,
     "winrate": 53.6
   },
   "trade_stats": {
-    "open": 8,
+    "open": 9,
     "pending": 0,
     "wins": 545,
     "losses": 607,
@@ -83,6 +83,29 @@
       ],
       "news": null,
       "created_at": "2026-03-25 02:43:59",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1388,
+      "symbol": "TRUMPUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 3.352,
+      "tp1": 3.41904,
+      "tp2": 3.48608,
+      "sl": 3.28496,
+      "strength": 56,
+      "reasons": [
+        "MACD бычий (hist=0.00515)",
+        "Цена > EMA20 > EMA50",
+        "Объём x7.8 🔥🔥🔥",
+        "МТФ: 5m, 15m, 1h согласны",
+        "CVD растёт (+7.8%) — покупки усиливаются 📈",
+        "⚡ Рыночный вход (MTF сильный)",
+        "🤖 ML: 52% WIN"
+      ],
+      "news": null,
+      "created_at": "2026-03-25 03:22:55",
       "status": "ACTIVE"
     }
   ],
@@ -733,6 +756,32 @@
         "МТФ: 5m, 15m, 4h согласны",
         "⚡ Рыночный вход (MTF сильный)",
         "🤖 ML: 58% WIN"
+      ]
+    },
+    {
+      "id": 1242,
+      "symbol": "TRUMPUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 3.352,
+      "tp1": 3.41904,
+      "tp2": 3.48608,
+      "sl": 3.28496,
+      "entry_orig": 3.352,
+      "tp1_orig": 3.41904,
+      "tp2_orig": 3.48608,
+      "sl_orig": 3.28496,
+      "strength": 56,
+      "taken_at": "2026-03-25T03:22:55.557129",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.00515)",
+        "Цена > EMA20 > EMA50",
+        "Объём x7.8 🔥🔥🔥",
+        "МТФ: 5m, 15m, 1h согласны",
+        "CVD растёт (+7.8%) — покупки усиливаются 📈",
+        "⚡ Рыночный вход (MTF сильный)",
+        "🤖 ML: 52% WIN"
       ]
     }
   ],
