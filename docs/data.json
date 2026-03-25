@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-25T07:21:29.916109+00:00",
+  "updated_at": "2026-03-25T07:22:15.309004+00:00",
   "publish_status": {
-    "last_ok": "2026-03-25T07:20:29Z",
+    "last_ok": "2026-03-25T07:21:35Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 53.4
   },
   "trade_stats": {
-    "open": 8,
+    "open": 7,
     "pending": 0,
     "wins": 548,
-    "losses": 614,
-    "total_pnl": -32.75,
-    "winrate": 47.2
+    "losses": 615,
+    "total_pnl": -34.03,
+    "winrate": 47.1
   },
   "fear_greed": {
     "value": 14,
@@ -656,33 +656,6 @@
   ],
   "trades_open": [
     {
-      "id": 1224,
-      "symbol": "LITUSDT",
-      "direction": "LONG",
-      "exchange": "bybit",
-      "entry": 1.0079,
-      "tp1": 1.028058,
-      "tp2": 1.048216,
-      "sl": 0.987742,
-      "entry_orig": 1.0079,
-      "tp1_orig": 1.028058,
-      "tp2_orig": 1.048216,
-      "sl_orig": 0.987742,
-      "strength": 53,
-      "taken_at": "2026-03-24T23:21:39.110460",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00134)",
-        "Цена > EMA20 > EMA50",
-        "Объём x4.3 🔥🔥🔥",
-        "Стакан: давление покупки (+0.24)",
-        "МТФ: 5m, 15m, 1h согласны",
-        "⚠️ Funding через 39м",
-        "⚡ Рыночный вход (MTF сильный)",
-        "🤖 ML: 49% WIN"
-      ]
-    },
-    {
       "id": 1242,
       "symbol": "TRUMPUSDT",
       "direction": "LONG",
@@ -889,6 +862,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "LITUSDT",
+      "direction": "LONG",
+      "entry": 1.0079,
+      "tp1": 1.028058,
+      "tp2": 1.048216,
+      "sl": 0.987742,
+      "strength": 53,
+      "status": "TIMEOUT",
+      "pnl_pct": -1.28,
+      "close_price": 0.995,
+      "taken_at": "2026-03-24T23:21:39.110460",
+      "closed_at": "2026-03-25 07:21:42"
+    },
     {
       "symbol": "1000BONKUSDT",
       "direction": "LONG",
@@ -3674,20 +3661,6 @@
       "close_price": 0.18955,
       "taken_at": "2026-03-23T19:01:30.179061",
       "closed_at": "2026-03-23 19:11:38"
-    },
-    {
-      "symbol": "ZROUSDT",
-      "direction": "LONG",
-      "entry": 2.0876,
-      "tp1": 2.129352,
-      "tp2": 2.171104,
-      "sl": 2.045848,
-      "strength": 56,
-      "status": "TP1",
-      "pnl_pct": 2.29,
-      "close_price": 2.13545,
-      "taken_at": "2026-03-23T18:59:34.458641",
-      "closed_at": "2026-03-23 19:06:42"
     }
   ]
 }
