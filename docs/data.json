@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-25T07:50:38.937855+00:00",
+  "updated_at": "2026-03-25T07:51:08.963476+00:00",
   "publish_status": {
-    "last_ok": "2026-03-25T07:49:38Z",
+    "last_ok": "2026-03-25T07:50:44Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -11,18 +11,18 @@
   },
   "stats": {
     "total": 1359,
-    "wins": 446,
+    "wins": 447,
     "losses": 389,
-    "active": 6,
-    "winrate": 53.4
+    "active": 5,
+    "winrate": 53.5
   },
   "trade_stats": {
-    "open": 7,
+    "open": 6,
     "pending": 0,
-    "wins": 548,
+    "wins": 549,
     "losses": 615,
-    "total_pnl": -34.03,
-    "winrate": 47.1
+    "total_pnl": -29.81,
+    "winrate": 47.2
   },
   "fear_greed": {
     "value": 14,
@@ -117,35 +117,6 @@
       "status": "ACTIVE"
     },
     {
-      "id": 1395,
-      "symbol": "CUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.05936,
-      "tp1": 0.061706,
-      "tp2": 0.064053,
-      "sl": 0.057483,
-      "strength": 62,
-      "reasons": [
-        "RSI=40 (нейтральный↓)",
-        "BB нижняя полоса (пробой)",
-        "EMA20 > EMA50",
-        "Объём x2.6 🔥🔥",
-        "Стакан: давление покупки (+0.10)",
-        "📰 Solana (SOL) Recovery Firms, Bulls Prepare for Stronger Upside Pu...",
-        "МТФ: 15m, 1h согласны",
-        "OI растёт +3.5% + цена ↑",
-        "CVD положительный (+2.6%)",
-        "Цена у поддержки 0.0591",
-        "BTC контекст: +2.4% за 12ч 📈",
-        "⚡ Рыночный вход (MTF 2+ ТФ)",
-        "🤖 ML: 54% WIN"
-      ],
-      "news": "Solana (SOL) Recovery Firms, Bulls Prepare for Stronger Upside Push",
-      "created_at": "2026-03-25 06:14:31",
-      "status": "ACTIVE"
-    },
-    {
       "id": 1396,
       "symbol": "PENGUUSDT",
       "direction": "LONG",
@@ -199,6 +170,32 @@
     }
   ],
   "history": [
+    {
+      "symbol": "CUSDT",
+      "direction": "LONG",
+      "entry": 0.05936,
+      "tp1": 0.061706,
+      "tp2": 0.064053,
+      "sl": 0.057483,
+      "strength": 62,
+      "status": "TP1",
+      "created_at": "2026-03-25 06:14:31",
+      "reasons": [
+        "RSI=40 (нейтральный↓)",
+        "BB нижняя полоса (пробой)",
+        "EMA20 > EMA50",
+        "Объём x2.6 🔥🔥",
+        "Стакан: давление покупки (+0.10)",
+        "📰 Solana (SOL) Recovery Firms, Bulls Prepare for Stronger Upside Pu...",
+        "МТФ: 15m, 1h согласны",
+        "OI растёт +3.5% + цена ↑",
+        "CVD положительный (+2.6%)",
+        "Цена у поддержки 0.0591",
+        "BTC контекст: +2.4% за 12ч 📈",
+        "⚡ Рыночный вход (MTF 2+ ТФ)",
+        "🤖 ML: 54% WIN"
+      ]
+    },
     {
       "symbol": "BEATUSDT",
       "direction": "LONG",
@@ -607,26 +604,6 @@
         "⚡ Рыночный вход (MTF сильный)",
         "🤖 ML: 47% WIN"
       ]
-    },
-    {
-      "symbol": "APTUSDT",
-      "direction": "LONG",
-      "entry": 1.1146,
-      "tp1": 1.136892,
-      "tp2": 1.159184,
-      "sl": 1.092308,
-      "strength": 55,
-      "status": "SL",
-      "created_at": "2026-03-25 00:00:28",
-      "reasons": [
-        "MACD бычий (hist=0.00299)",
-        "Цена > EMA20 > EMA50",
-        "Объём x3.1 🔥🔥",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "CVD растёт (+13.5%) — покупки усиливаются 📈",
-        "⚡ Рыночный вход (MTF сильный)",
-        "🤖 ML: 58% WIN"
-      ]
     }
   ],
   "trades_open": [
@@ -746,38 +723,6 @@
       ]
     },
     {
-      "id": 1249,
-      "symbol": "CUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.05936,
-      "tp1": 0.061706,
-      "tp2": 0.064053,
-      "sl": 0.057483,
-      "entry_orig": 0.05936,
-      "tp1_orig": 0.061706,
-      "tp2_orig": 0.064053,
-      "sl_orig": 0.057483,
-      "strength": 62,
-      "taken_at": "2026-03-25T06:14:31.536654",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=40 (нейтральный↓)",
-        "BB нижняя полоса (пробой)",
-        "EMA20 > EMA50",
-        "Объём x2.6 🔥🔥",
-        "Стакан: давление покупки (+0.10)",
-        "📰 Solana (SOL) Recovery Firms, Bulls Prepare for Stronger Upside Pu...",
-        "МТФ: 15m, 1h согласны",
-        "OI растёт +3.5% + цена ↑",
-        "CVD положительный (+2.6%)",
-        "Цена у поддержки 0.0591",
-        "BTC контекст: +2.4% за 12ч 📈",
-        "⚡ Рыночный вход (MTF 2+ ТФ)",
-        "🤖 ML: 54% WIN"
-      ]
-    },
-    {
       "id": 1250,
       "symbol": "PENGUUSDT",
       "direction": "LONG",
@@ -837,6 +782,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "CUSDT",
+      "direction": "LONG",
+      "entry": 0.05936,
+      "tp1": 0.061706,
+      "tp2": 0.064053,
+      "sl": 0.057483,
+      "strength": 62,
+      "status": "TP1",
+      "pnl_pct": 4.22,
+      "close_price": 0.061865,
+      "taken_at": "2026-03-25T06:14:31.536654",
+      "closed_at": "2026-03-25 07:51:07"
+    },
     {
       "symbol": "LITUSDT",
       "direction": "LONG",
@@ -3622,20 +3581,6 @@
       "close_price": 0.08348,
       "taken_at": "2026-03-23T11:20:57.035283",
       "closed_at": "2026-03-23 19:21:14"
-    },
-    {
-      "symbol": "WIFUSDT",
-      "direction": "LONG",
-      "entry": 0.1935,
-      "tp1": 0.19737,
-      "tp2": 0.20124,
-      "sl": 0.18963,
-      "strength": 55,
-      "status": "SL",
-      "pnl_pct": -2.04,
-      "close_price": 0.18955,
-      "taken_at": "2026-03-23T19:01:30.179061",
-      "closed_at": "2026-03-23 19:11:38"
     }
   ]
 }
