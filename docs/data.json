@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-25T05:14:56.037104+00:00",
+  "updated_at": "2026-03-25T05:15:45.925390+00:00",
   "publish_status": {
-    "last_ok": "2026-03-25T05:13:46Z",
+    "last_ok": "2026-03-25T05:15:02Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 1355,
+    "total": 1356,
     "wins": 446,
     "losses": 387,
-    "active": 5,
+    "active": 6,
     "winrate": 53.5
   },
   "trade_stats": {
-    "open": 10,
+    "open": 11,
     "pending": 0,
     "wins": 546,
     "losses": 610,
@@ -163,6 +163,33 @@
       ],
       "news": null,
       "created_at": "2026-03-25 05:13:38",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1394,
+      "symbol": "BEATUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.6345,
+      "tp1": 0.660643,
+      "tp2": 0.686786,
+      "sl": 0.613586,
+      "strength": 57,
+      "reasons": [
+        "RSI=46 (нейтральный↓)",
+        "MACD бычий (hist=0.00025)",
+        "Цена > EMA20 > EMA50",
+        "Стакан: сильное давление покупки (+0.26)",
+        "МТФ: 5m, 15m, 4h согласны",
+        "OI падает (шорты закрываются)",
+        "CVD растёт (+6.7%) — покупки усиливаются 📈",
+        "Bullish Engulfing (1h) 🕯️",
+        "BTC контекст: +2.7% за 12ч 📈",
+        "⚡ Рыночный вход (MTF сильный)",
+        "🤖 ML: 56% WIN"
+      ],
+      "news": null,
+      "created_at": "2026-03-25 05:15:40",
       "status": "ACTIVE"
     }
   ],
@@ -877,6 +904,36 @@
         "BTC контекст: +2.7% за 12ч 📈",
         "⚡ Рыночный вход (MTF сильный)",
         "🤖 ML: 53% WIN"
+      ]
+    },
+    {
+      "id": 1248,
+      "symbol": "BEATUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.6345,
+      "tp1": 0.660643,
+      "tp2": 0.686786,
+      "sl": 0.613586,
+      "entry_orig": 0.6345,
+      "tp1_orig": 0.660643,
+      "tp2_orig": 0.686786,
+      "sl_orig": 0.613586,
+      "strength": 57,
+      "taken_at": "2026-03-25T05:15:40.754483",
+      "status": "OPEN",
+      "reasons": [
+        "RSI=46 (нейтральный↓)",
+        "MACD бычий (hist=0.00025)",
+        "Цена > EMA20 > EMA50",
+        "Стакан: сильное давление покупки (+0.26)",
+        "МТФ: 5m, 15m, 4h согласны",
+        "OI падает (шорты закрываются)",
+        "CVD растёт (+6.7%) — покупки усиливаются 📈",
+        "Bullish Engulfing (1h) 🕯️",
+        "BTC контекст: +2.7% за 12ч 📈",
+        "⚡ Рыночный вход (MTF сильный)",
+        "🤖 ML: 56% WIN"
       ]
     }
   ],
