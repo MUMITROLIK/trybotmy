@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-25T01:38:13.080970+00:00",
+  "updated_at": "2026-03-25T01:39:06.739320+00:00",
   "publish_status": {
-    "last_ok": "2026-03-25T01:37:13Z",
+    "last_ok": "2026-03-25T01:38:19Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -12,17 +12,17 @@
   "stats": {
     "total": 1345,
     "wins": 445,
-    "losses": 380,
-    "active": 7,
+    "losses": 381,
+    "active": 6,
     "winrate": 53.9
   },
   "trade_stats": {
-    "open": 14,
+    "open": 13,
     "pending": 0,
     "wins": 542,
-    "losses": 600,
-    "total_pnl": -11.41,
-    "winrate": 47.5
+    "losses": 601,
+    "total_pnl": -13.46,
+    "winrate": 47.4
   },
   "fear_greed": {
     "value": 14,
@@ -83,30 +83,6 @@
       ],
       "news": null,
       "created_at": "2026-03-24 22:10:46",
-      "status": "ACTIVE"
-    },
-    {
-      "id": 1367,
-      "symbol": "WLFIUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.1048,
-      "tp1": 0.106896,
-      "tp2": 0.108992,
-      "sl": 0.102704,
-      "strength": 52,
-      "reasons": [
-        "MACD бычий (hist=0.00043)",
-        "Цена выше EMA20",
-        "Объём x2.8 🔥🔥",
-        "Стакан: перевес bid (+0.09)",
-        "МТФ: 5m, 1h, 4h согласны",
-        "CVD растёт (+12.7%) — покупки усиливаются 📈",
-        "⚡ Рыночный вход (MTF сильный)",
-        "🤖 ML: 49% WIN"
-      ],
-      "news": null,
-      "created_at": "2026-03-24 22:12:30",
       "status": "ACTIVE"
     },
     {
@@ -468,6 +444,27 @@
       ]
     },
     {
+      "symbol": "WLFIUSDT",
+      "direction": "LONG",
+      "entry": 0.1048,
+      "tp1": 0.106896,
+      "tp2": 0.108992,
+      "sl": 0.102704,
+      "strength": 52,
+      "status": "SL",
+      "created_at": "2026-03-24 22:12:30",
+      "reasons": [
+        "MACD бычий (hist=0.00043)",
+        "Цена выше EMA20",
+        "Объём x2.8 🔥🔥",
+        "Стакан: перевес bid (+0.09)",
+        "МТФ: 5m, 1h, 4h согласны",
+        "CVD растёт (+12.7%) — покупки усиливаются 📈",
+        "⚡ Рыночный вход (MTF сильный)",
+        "🤖 ML: 49% WIN"
+      ]
+    },
+    {
       "symbol": "HUMAUSDT",
       "direction": "LONG",
       "entry": 0.020358,
@@ -616,27 +613,6 @@
         "МТФ: все 4 таймфрейма согласны ✅✅",
         "CVD положительный (+4.7%)",
         "⚡ Рыночный вход (MTF сильный)",
-        "🤖 ML: 58% WIN"
-      ]
-    },
-    {
-      "symbol": "BEATUSDT",
-      "direction": "LONG",
-      "entry": 0.5772,
-      "tp1": 0.592832,
-      "tp2": 0.608464,
-      "sl": 0.564694,
-      "strength": 51,
-      "status": "TP1",
-      "created_at": "2026-03-24 20:39:57",
-      "reasons": [
-        "RSI=13 (сильная перепроданность)",
-        "BB нижняя полоса (пробой)",
-        "Объём x2.3 🔥",
-        "Стакан: сильное давление покупки (+0.35)",
-        "МТФ: только 1 таймфрейм согласен",
-        "CVD положительный (-6.2%)",
-        "Цена у поддержки 0.5752",
         "🤖 ML: 58% WIN"
       ]
     }
@@ -864,33 +840,6 @@
       ]
     },
     {
-      "id": 1221,
-      "symbol": "WLFIUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.1048,
-      "tp1": 0.106896,
-      "tp2": 0.108992,
-      "sl": 0.102704,
-      "entry_orig": 0.1048,
-      "tp1_orig": 0.106896,
-      "tp2_orig": 0.108992,
-      "sl_orig": 0.102704,
-      "strength": 52,
-      "taken_at": "2026-03-24T22:12:30.759987",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00043)",
-        "Цена выше EMA20",
-        "Объём x2.8 🔥🔥",
-        "Стакан: перевес bid (+0.09)",
-        "МТФ: 5m, 1h, 4h согласны",
-        "CVD растёт (+12.7%) — покупки усиливаются 📈",
-        "⚡ Рыночный вход (MTF сильный)",
-        "🤖 ML: 49% WIN"
-      ]
-    },
-    {
       "id": 1223,
       "symbol": "1000BONKUSDT",
       "direction": "LONG",
@@ -1032,6 +981,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "WLFIUSDT",
+      "direction": "LONG",
+      "entry": 0.1048,
+      "tp1": 0.106896,
+      "tp2": 0.108992,
+      "sl": 0.102704,
+      "strength": 52,
+      "status": "SL",
+      "pnl_pct": -2.05,
+      "close_price": 0.10264999999999999,
+      "taken_at": "2026-03-24T22:12:30.759987",
+      "closed_at": "2026-03-25 01:38:41"
+    },
     {
       "symbol": "CVCUSDT",
       "direction": "LONG",
@@ -3817,20 +3780,6 @@
       "close_price": 123.095,
       "taken_at": "2026-03-23T13:39:48.814398",
       "closed_at": "2026-03-23 15:46:26"
-    },
-    {
-      "symbol": "KASUSDT",
-      "direction": "LONG",
-      "entry": 0.03619,
-      "tp1": 0.036914,
-      "tp2": 0.037638,
-      "sl": 0.035466,
-      "strength": 60,
-      "status": "SL",
-      "pnl_pct": -2.54,
-      "close_price": 0.03527,
-      "taken_at": "2026-03-23T15:12:40.825563",
-      "closed_at": "2026-03-23 15:45:42"
     }
   ]
 }
