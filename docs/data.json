@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-25T02:35:24.091110+00:00",
+  "updated_at": "2026-03-25T02:36:30.392906+00:00",
   "publish_status": {
-    "last_ok": "2026-03-25T02:33:56Z",
+    "last_ok": "2026-03-25T02:35:30Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -10,14 +10,14 @@
     "limit_order_ttl_minutes": 60
   },
   "stats": {
-    "total": 1347,
+    "total": 1348,
     "wins": 445,
     "losses": 384,
-    "active": 3,
+    "active": 4,
     "winrate": 53.7
   },
   "trade_stats": {
-    "open": 7,
+    "open": 8,
     "pending": 0,
     "wins": 545,
     "losses": 606,
@@ -110,6 +110,30 @@
       ],
       "news": null,
       "created_at": "2026-03-25 01:13:30",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 1386,
+      "symbol": "MYXUSDT",
+      "direction": "LONG",
+      "exchange": "binance",
+      "entry": 0.3363,
+      "tp1": 0.343026,
+      "tp2": 0.349752,
+      "sl": 0.329574,
+      "strength": 60,
+      "reasons": [
+        "MACD бычий (hist=0.00127)",
+        "EMA20 > EMA50 (golden cross) 🌟",
+        "Объём x6.0 🔥🔥🔥",
+        "Стакан: давление покупки (+0.12)",
+        "МТФ: 5m, 15m, 1h согласны",
+        "OI растёт +1.4% + цена ↑",
+        "⚡ Рыночный вход (MTF сильный)",
+        "🤖 ML: 52% WIN"
+      ],
+      "news": null,
+      "created_at": "2026-03-25 02:35:39",
       "status": "ACTIVE"
     }
   ],
@@ -737,6 +761,33 @@
         "BTC контекст: +1.5% за 12ч 📈",
         "⚡ Рыночный вход (MTF 2+ ТФ)",
         "🤖 ML: 58% WIN"
+      ]
+    },
+    {
+      "id": 1240,
+      "symbol": "MYXUSDT",
+      "direction": "LONG",
+      "exchange": "bybit",
+      "entry": 0.3363,
+      "tp1": 0.343026,
+      "tp2": 0.349752,
+      "sl": 0.329574,
+      "entry_orig": 0.3363,
+      "tp1_orig": 0.343026,
+      "tp2_orig": 0.349752,
+      "sl_orig": 0.329574,
+      "strength": 60,
+      "taken_at": "2026-03-25T02:35:39.971317",
+      "status": "OPEN",
+      "reasons": [
+        "MACD бычий (hist=0.00127)",
+        "EMA20 > EMA50 (golden cross) 🌟",
+        "Объём x6.0 🔥🔥🔥",
+        "Стакан: давление покупки (+0.12)",
+        "МТФ: 5m, 15m, 1h согласны",
+        "OI растёт +1.4% + цена ↑",
+        "⚡ Рыночный вход (MTF сильный)",
+        "🤖 ML: 52% WIN"
       ]
     }
   ],
