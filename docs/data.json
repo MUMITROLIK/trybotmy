@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-25T02:21:54.059132+00:00",
+  "updated_at": "2026-03-25T02:23:17.013344+00:00",
   "publish_status": {
-    "last_ok": "2026-03-25T02:21:12Z",
+    "last_ok": "2026-03-25T02:22:00Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,12 +17,12 @@
     "winrate": 53.8
   },
   "trade_stats": {
-    "open": 11,
+    "open": 10,
     "pending": 0,
-    "wins": 544,
+    "wins": 545,
     "losses": 603,
-    "total_pnl": -15.68,
-    "winrate": 47.4
+    "total_pnl": -14.85,
+    "winrate": 47.5
   },
   "fear_greed": {
     "value": 14,
@@ -594,33 +594,6 @@
   ],
   "trades_open": [
     {
-      "id": 1195,
-      "symbol": "OPENUSDT",
-      "direction": "LONG",
-      "exchange": "bybit",
-      "entry": 0.17064,
-      "tp1": 0.174053,
-      "tp2": 0.177466,
-      "sl": 0.167227,
-      "entry_orig": 0.17064,
-      "tp1_orig": 0.174053,
-      "tp2_orig": 0.177466,
-      "sl_orig": 0.167227,
-      "strength": 50,
-      "taken_at": "2026-03-24T18:22:34.186464",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=34 (перепроданность)",
-        "MACD бычий (hist=0.00000)",
-        "BB ниже середины",
-        "Стакан: сильное давление покупки (+0.33)",
-        "МТФ: 1h, 4h согласны",
-        "OI растёт +0.8% + цена ↑",
-        "⚡ Рыночный вход (MTF 2+ ТФ)",
-        "🤖 ML: 58% WIN"
-      ]
-    },
-    {
       "id": 1196,
       "symbol": "GWEIUSDT",
       "direction": "LONG",
@@ -900,6 +873,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "OPENUSDT",
+      "direction": "LONG",
+      "entry": 0.17064,
+      "tp1": 0.174053,
+      "tp2": 0.177466,
+      "sl": 0.167227,
+      "strength": 50,
+      "status": "TIMEOUT",
+      "pnl_pct": 0.83,
+      "close_price": 0.17206,
+      "taken_at": "2026-03-24T18:22:34.186464",
+      "closed_at": "2026-03-25 02:22:34"
+    },
     {
       "symbol": "AKTUSDT",
       "direction": "LONG",
@@ -3685,20 +3672,6 @@
       "close_price": 633.985,
       "taken_at": "2026-03-23T11:20:56.427689",
       "closed_at": "2026-03-23 16:31:26"
-    },
-    {
-      "symbol": "JTOUSDT",
-      "direction": "LONG",
-      "entry": 0.32,
-      "tp1": 0.330007,
-      "tp2": 0.340014,
-      "sl": 0.311994,
-      "strength": 53,
-      "status": "TP1",
-      "pnl_pct": 3.84,
-      "close_price": 0.3323,
-      "taken_at": "2026-03-23T15:30:24.313271",
-      "closed_at": "2026-03-23 16:28:37"
     }
   ]
 }
