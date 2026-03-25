@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-25T01:29:29.181012+00:00",
+  "updated_at": "2026-03-25T01:30:18.556214+00:00",
   "publish_status": {
-    "last_ok": "2026-03-25T01:28:29Z",
+    "last_ok": "2026-03-25T01:29:35Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -12,16 +12,16 @@
   "stats": {
     "total": 1345,
     "wins": 445,
-    "losses": 378,
-    "active": 9,
-    "winrate": 54.1
+    "losses": 379,
+    "active": 8,
+    "winrate": 54.0
   },
   "trade_stats": {
-    "open": 15,
+    "open": 14,
     "pending": 0,
     "wins": 542,
-    "losses": 599,
-    "total_pnl": -8.85,
+    "losses": 600,
+    "total_pnl": -11.41,
     "winrate": 47.5
   },
   "fear_greed": {
@@ -233,17 +233,19 @@
       "news": null,
       "created_at": "2026-03-25 01:13:30",
       "status": "ACTIVE"
-    },
+    }
+  ],
+  "history": [
     {
-      "id": 1383,
       "symbol": "CVCUSDT",
       "direction": "LONG",
-      "exchange": "binance",
       "entry": 0.03483,
       "tp1": 0.03579,
       "tp2": 0.03675,
       "sl": 0.034062,
       "strength": 55,
+      "status": "SL",
+      "created_at": "2026-03-25 01:25:31",
       "reasons": [
         "MACD бычий (hist=0.00021)",
         "Цена > EMA20 > EMA50",
@@ -254,13 +256,8 @@
         "Doji (1h) — нерешительность",
         "⚡ Рыночный вход (MTF сильный)",
         "🤖 ML: 47% WIN"
-      ],
-      "news": null,
-      "created_at": "2026-03-25 01:25:31",
-      "status": "ACTIVE"
-    }
-  ],
-  "history": [
+      ]
+    },
     {
       "symbol": "FETUSDT",
       "direction": "LONG",
@@ -666,27 +663,6 @@
         "⚡ Рыночный вход (MTF 2+ ТФ)",
         "🤖 ML: 52% WIN"
       ]
-    },
-    {
-      "symbol": "XAGUSDT",
-      "direction": "LONG",
-      "entry": 70.57,
-      "tp1": 71.9814,
-      "tp2": 73.3928,
-      "sl": 69.1586,
-      "strength": 53,
-      "status": "TP1",
-      "created_at": "2026-03-24 20:29:43",
-      "reasons": [
-        "MACD бычий (hist=0.04247)",
-        "Цена > EMA20 > EMA50",
-        "Объём x3.1 🔥🔥",
-        "Стакан: давление покупки (+0.12)",
-        "МТФ: 5m, 15m, 1h согласны",
-        "CVD положительный (+2.0%)",
-        "⚡ Рыночный вход (MTF сильный)",
-        "🤖 ML: 58% WIN"
-      ]
     }
   ],
   "trades_open": [
@@ -1077,37 +1053,23 @@
         "⚡ Рыночный вход (MTF 2+ ТФ)",
         "🤖 ML: 58% WIN"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 1237,
       "symbol": "CVCUSDT",
       "direction": "LONG",
-      "exchange": "bybit",
       "entry": 0.03483,
       "tp1": 0.03579,
       "tp2": 0.03675,
       "sl": 0.034062,
-      "entry_orig": 0.03483,
-      "tp1_orig": 0.03579,
-      "tp2_orig": 0.03675,
-      "sl_orig": 0.034062,
       "strength": 55,
+      "status": "SL",
+      "pnl_pct": -2.56,
+      "close_price": 0.03394,
       "taken_at": "2026-03-25T01:25:31.746378",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00021)",
-        "Цена > EMA20 > EMA50",
-        "Объём x3.8 🔥🔥",
-        "Стакан: давление покупки (+0.11)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "OI растёт +10.1% + цена ↑",
-        "Doji (1h) — нерешительность",
-        "⚡ Рыночный вход (MTF сильный)",
-        "🤖 ML: 47% WIN"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-25 01:30:18"
+    },
     {
       "symbol": "BPUSDT",
       "direction": "LONG",
@@ -3893,20 +3855,6 @@
       "close_price": 0.03527,
       "taken_at": "2026-03-23T15:12:40.825563",
       "closed_at": "2026-03-23 15:45:42"
-    },
-    {
-      "symbol": "TAOUSDT",
-      "direction": "LONG",
-      "entry": 289.47,
-      "tp1": 297.5475,
-      "tp2": 305.625,
-      "sl": 283.008,
-      "strength": 53,
-      "status": "SL",
-      "pnl_pct": -2.3,
-      "close_price": 282.79999999999995,
-      "taken_at": "2026-03-23T13:53:45.578225",
-      "closed_at": "2026-03-23 15:43:43"
     }
   ]
 }
