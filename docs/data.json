@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-25T01:16:24.196446+00:00",
+  "updated_at": "2026-03-25T01:17:01.991161+00:00",
   "publish_status": {
-    "last_ok": "2026-03-25T01:15:20Z",
+    "last_ok": "2026-03-25T01:16:30Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,11 +17,11 @@
     "winrate": 54.1
   },
   "trade_stats": {
-    "open": 15,
+    "open": 14,
     "pending": 0,
-    "wins": 541,
+    "wins": 542,
     "losses": 599,
-    "total_pnl": -13.55,
+    "total_pnl": -8.85,
     "winrate": 47.5
   },
   "fear_greed": {
@@ -771,32 +771,6 @@
       ]
     },
     {
-      "id": 1202,
-      "symbol": "BPUSDT",
-      "direction": "LONG",
-      "exchange": "bybit",
-      "entry": 0.19355,
-      "tp1": 0.201719,
-      "tp2": 0.209887,
-      "sl": 0.187015,
-      "entry_orig": 0.19355,
-      "tp1_orig": 0.201719,
-      "tp2_orig": 0.209887,
-      "sl_orig": 0.187015,
-      "strength": 52,
-      "taken_at": "2026-03-24T19:58:34.552878",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=41 (нейтральный↓)",
-        "MACD бычий (hist=0.00020)",
-        "BB нижняя зона (17%)",
-        "Объём x5.9 🔥🔥🔥",
-        "Стакан: сильное давление покупки (+0.28)",
-        "OI растёт +3.2%",
-        "🤖 ML: 54% WIN"
-      ]
-    },
-    {
       "id": 1208,
       "symbol": "ZROUSDT",
       "direction": "LONG",
@@ -1131,6 +1105,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "BPUSDT",
+      "direction": "LONG",
+      "entry": 0.19355,
+      "tp1": 0.201719,
+      "tp2": 0.209887,
+      "sl": 0.187015,
+      "strength": 52,
+      "status": "TP1",
+      "pnl_pct": 4.7,
+      "close_price": 0.20265,
+      "taken_at": "2026-03-24T19:58:34.552878",
+      "closed_at": "2026-03-25 01:16:32"
+    },
     {
       "symbol": "ONGUSDT",
       "direction": "LONG",
@@ -3916,20 +3904,6 @@
       "close_price": 282.79999999999995,
       "taken_at": "2026-03-23T13:53:45.578225",
       "closed_at": "2026-03-23 15:43:43"
-    },
-    {
-      "symbol": "PENGUUSDT",
-      "direction": "LONG",
-      "entry": 0.007186,
-      "tp1": 0.00733,
-      "tp2": 0.007473,
-      "sl": 0.007042,
-      "strength": 52,
-      "status": "SL",
-      "pnl_pct": -2.01,
-      "close_price": 0.0070415,
-      "taken_at": "2026-03-23T15:07:28.701019",
-      "closed_at": "2026-03-23 15:43:10"
     }
   ]
 }
