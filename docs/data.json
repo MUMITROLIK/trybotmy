@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-25T01:10:47.244762+00:00",
+  "updated_at": "2026-03-25T01:11:24.365735+00:00",
   "publish_status": {
-    "last_ok": "2026-03-25T01:09:43Z",
+    "last_ok": "2026-03-25T01:10:53Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -11,17 +11,17 @@
   },
   "stats": {
     "total": 1343,
-    "wins": 444,
+    "wins": 445,
     "losses": 378,
-    "active": 10,
-    "winrate": 54.0
+    "active": 9,
+    "winrate": 54.1
   },
   "trade_stats": {
-    "open": 16,
+    "open": 15,
     "pending": 0,
-    "wins": 540,
+    "wins": 541,
     "losses": 598,
-    "total_pnl": -13.48,
+    "total_pnl": -11.33,
     "winrate": 47.5
   },
   "fear_greed": {
@@ -256,17 +256,19 @@
       "news": null,
       "created_at": "2026-03-25 00:49:37",
       "status": "ACTIVE"
-    },
+    }
+  ],
+  "history": [
     {
-      "id": 1381,
       "symbol": "FETUSDT",
       "direction": "LONG",
-      "exchange": "binance",
       "entry": 0.2487,
       "tp1": 0.253854,
       "tp2": 0.259007,
       "sl": 0.243726,
       "strength": 55,
+      "status": "TP1",
+      "created_at": "2026-03-25 00:59:42",
       "reasons": [
         "MACD бычий (hist=0.00013)",
         "Цена > EMA20 > EMA50",
@@ -277,13 +279,8 @@
         "BTC контекст: +1.5% за 12ч 📈",
         "⚡ Рыночный вход (MTF сильный)",
         "🤖 ML: 58% WIN"
-      ],
-      "news": null,
-      "created_at": "2026-03-25 00:59:42",
-      "status": "ACTIVE"
-    }
-  ],
-  "history": [
+      ]
+    },
     {
       "symbol": "ONGUSDT",
       "direction": "LONG",
@@ -688,29 +685,6 @@
         "Doji (1h) — нерешительность",
         "⚡ Рыночный вход (MTF сильный)",
         "🤖 ML: 58% WIN"
-      ]
-    },
-    {
-      "symbol": "RENDERUSDT",
-      "direction": "LONG",
-      "entry": 1.758,
-      "tp1": 1.79316,
-      "tp2": 1.82832,
-      "sl": 1.72284,
-      "strength": 53,
-      "status": "EXPIRED",
-      "created_at": "2026-03-24 20:29:43",
-      "reasons": [
-        "MACD бычий (hist=0.00685)",
-        "Цена выше EMA20",
-        "Объём x2.9 🔥🔥",
-        "Стакан: давление покупки (+0.20)",
-        "МТФ: 5m, 1h согласны",
-        "OI растёт +2.8% + цена ↑",
-        "CVD положительный (-0.5%)",
-        "BTC корреляция 0.70, BTC +0.7% 📈",
-        "⚡ Рыночный вход (MTF 2+ ТФ)",
-        "🤖 ML: 52% WIN"
       ]
     }
   ],
@@ -1126,37 +1100,23 @@
         "⚡ Рыночный вход (MTF сильный)",
         "🤖 ML: 58% WIN"
       ]
-    },
+    }
+  ],
+  "trades_history": [
     {
-      "id": 1235,
       "symbol": "FETUSDT",
       "direction": "LONG",
-      "exchange": "binance",
       "entry": 0.2487,
       "tp1": 0.253854,
       "tp2": 0.259007,
       "sl": 0.243726,
-      "entry_orig": 0.2487,
-      "tp1_orig": 0.253854,
-      "tp2_orig": 0.259007,
-      "sl_orig": 0.243726,
       "strength": 55,
+      "status": "TP1",
+      "pnl_pct": 2.15,
+      "close_price": 0.25405,
       "taken_at": "2026-03-25T00:59:43.009322",
-      "status": "OPEN",
-      "reasons": [
-        "MACD бычий (hist=0.00013)",
-        "Цена > EMA20 > EMA50",
-        "Объём x1.8 🔥",
-        "Стакан: сильное давление покупки (+0.27)",
-        "МТФ: все 4 таймфрейма согласны ✅✅",
-        "CVD положительный (+1.5%)",
-        "BTC контекст: +1.5% за 12ч 📈",
-        "⚡ Рыночный вход (MTF сильный)",
-        "🤖 ML: 58% WIN"
-      ]
-    }
-  ],
-  "trades_history": [
+      "closed_at": "2026-03-25 01:11:23"
+    },
     {
       "symbol": "PAXGUSDT",
       "direction": "LONG",
@@ -3942,20 +3902,6 @@
       "close_price": 356.955,
       "taken_at": "2026-03-23T12:54:40.809659",
       "closed_at": "2026-03-23 15:37:03"
-    },
-    {
-      "symbol": "TURBOUSDT",
-      "direction": "LONG",
-      "entry": 0.0011718,
-      "tp1": 0.001197,
-      "tp2": 0.001221,
-      "sl": 0.001148,
-      "strength": 50,
-      "status": "SL",
-      "pnl_pct": -2.06,
-      "close_price": 0.00114765,
-      "taken_at": "2026-03-23T13:48:34.269627",
-      "closed_at": "2026-03-23 15:33:29"
     }
   ]
 }
