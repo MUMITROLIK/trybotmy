@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-03-25T05:23:29.124059+00:00",
+  "updated_at": "2026-03-25T05:25:01.582715+00:00",
   "publish_status": {
-    "last_ok": "2026-03-25T05:22:57Z",
+    "last_ok": "2026-03-25T05:23:38Z",
     "last_error": null,
     "min_push_interval_sec": 30
   },
@@ -17,11 +17,11 @@
     "winrate": 53.5
   },
   "trade_stats": {
-    "open": 11,
+    "open": 10,
     "pending": 0,
     "wins": 546,
-    "losses": 610,
-    "total_pnl": -26.72,
+    "losses": 611,
+    "total_pnl": -27.97,
     "winrate": 47.2
   },
   "fear_greed": {
@@ -625,33 +625,6 @@
   ],
   "trades_open": [
     {
-      "id": 1215,
-      "symbol": "BARDUSDT",
-      "direction": "LONG",
-      "exchange": "binance",
-      "entry": 0.4596,
-      "tp1": 0.468792,
-      "tp2": 0.477984,
-      "sl": 0.450408,
-      "entry_orig": 0.4596,
-      "tp1_orig": 0.468792,
-      "tp2_orig": 0.477984,
-      "sl_orig": 0.450408,
-      "strength": 50,
-      "taken_at": "2026-03-24T21:24:44.511558",
-      "status": "OPEN",
-      "reasons": [
-        "RSI=38 (перепроданность)",
-        "MACD бычий (hist=0.00006)",
-        "BB нижняя зона (3%)",
-        "Стакан: сильное давление покупки (+0.36)",
-        "OI растёт +2.4%",
-        "CVD положительный (-11.2%)",
-        "Цена у поддержки 0.4586",
-        "🤖 ML: 51% WIN"
-      ]
-    },
-    {
       "id": 1219,
       "symbol": "XPLUSDT",
       "direction": "LONG",
@@ -938,6 +911,20 @@
     }
   ],
   "trades_history": [
+    {
+      "symbol": "BARDUSDT",
+      "direction": "LONG",
+      "entry": 0.4596,
+      "tp1": 0.468792,
+      "tp2": 0.477984,
+      "sl": 0.450408,
+      "strength": 50,
+      "status": "TIMEOUT",
+      "pnl_pct": -1.25,
+      "close_price": 0.45385,
+      "taken_at": "2026-03-24T21:24:44.511558",
+      "closed_at": "2026-03-25 05:24:54"
+    },
     {
       "symbol": "JTOUSDT",
       "direction": "LONG",
@@ -3723,20 +3710,6 @@
       "close_price": 1888.3600000000001,
       "taken_at": "2026-03-23T16:19:17.784869",
       "closed_at": "2026-03-23 18:36:51"
-    },
-    {
-      "symbol": "ZROUSDT",
-      "direction": "LONG",
-      "entry": 2.0381,
-      "tp1": 2.078862,
-      "tp2": 2.119624,
-      "sl": 1.997338,
-      "strength": 50,
-      "status": "TP1",
-      "pnl_pct": 2.01,
-      "close_price": 2.07905,
-      "taken_at": "2026-03-23T17:33:18.843358",
-      "closed_at": "2026-03-23 18:35:55"
     }
   ]
 }
