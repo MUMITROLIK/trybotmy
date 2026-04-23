@@ -1,0 +1,192 @@
+{
+  "model_name": "GradientBoosting-Deep",
+  "roc_auc": 0.6945,
+  "cv_auc_mean": 0.5321,
+  "cv_auc_std": 0.0548,
+  "threshold": 0.35,
+  "rows": 1005,
+  "features": [
+    "rsi",
+    "macd_hist",
+    "bb_position",
+    "ema20_50_ratio",
+    "volume_ratio",
+    "atr_pct",
+    "cvd_norm",
+    "oi_change_pct",
+    "ob_imbalance",
+    "btc_correlation",
+    "score_rsi",
+    "score_macd",
+    "score_bb",
+    "score_ema",
+    "score_volume",
+    "score_orderbook",
+    "score_news",
+    "score_mtf",
+    "score_oi",
+    "score_cvd",
+    "score_patterns",
+    "score_btc_corr",
+    "score_levels",
+    "strength",
+    "heavy_confirmed",
+    "fear_greed",
+    "funding_rate",
+    "btc_change_4h",
+    "hour_of_day",
+    "day_of_week",
+    "atr_percentile",
+    "btc_drawdown_pct",
+    "direction_LONG",
+    "direction_SHORT",
+    "session_american",
+    "session_asian",
+    "session_european",
+    "btc_trend_4h_bear",
+    "btc_trend_4h_bull",
+    "btc_trend_4h_neutral",
+    "btc_trend_1h_bear",
+    "btc_trend_1h_bull",
+    "btc_trend_1h_neutral",
+    "entry_type_limit",
+    "entry_type_market",
+    "market_regime_bear",
+    "market_regime_flat",
+    "market_regime_unknown"
+  ],
+  "numeric_features": [
+    "rsi",
+    "macd_hist",
+    "bb_position",
+    "ema20_50_ratio",
+    "volume_ratio",
+    "atr_pct",
+    "cvd_norm",
+    "oi_change_pct",
+    "ob_imbalance",
+    "btc_correlation",
+    "score_rsi",
+    "score_macd",
+    "score_bb",
+    "score_ema",
+    "score_volume",
+    "score_orderbook",
+    "score_news",
+    "score_mtf",
+    "score_oi",
+    "score_cvd",
+    "score_patterns",
+    "score_btc_corr",
+    "score_levels",
+    "strength",
+    "heavy_confirmed",
+    "fear_greed",
+    "funding_rate",
+    "btc_change_4h",
+    "hour_of_day",
+    "day_of_week",
+    "atr_percentile",
+    "btc_drawdown_pct"
+  ],
+  "categorical_features": [
+    "direction",
+    "session",
+    "btc_trend_4h",
+    "btc_trend_1h",
+    "entry_type",
+    "market_regime"
+  ],
+  "calibrated": true,
+  "sklearn_version": "1.8.0",
+  "trained_at": "2026-03-23T15:00:26.686298+00:00",
+  "data_path": "docs\\ml_dataset_clean2.json",
+  "feature_importance": [
+    {
+      "feature": "day_of_week",
+      "importance": 0.08992
+    },
+    {
+      "feature": "bb_position",
+      "importance": 0.08281
+    },
+    {
+      "feature": "oi_change_pct",
+      "importance": 0.06431
+    },
+    {
+      "feature": "btc_change_4h",
+      "importance": 0.05788
+    },
+    {
+      "feature": "ema20_50_ratio",
+      "importance": 0.05753
+    },
+    {
+      "feature": "macd_hist",
+      "importance": 0.05204
+    },
+    {
+      "feature": "rsi",
+      "importance": 0.05016
+    },
+    {
+      "feature": "entry_type_market",
+      "importance": 0.04881
+    },
+    {
+      "feature": "entry_type_limit",
+      "importance": 0.04679
+    },
+    {
+      "feature": "atr_pct",
+      "importance": 0.04643
+    },
+    {
+      "feature": "ob_imbalance",
+      "importance": 0.04634
+    },
+    {
+      "feature": "hour_of_day",
+      "importance": 0.04387
+    },
+    {
+      "feature": "cvd_norm",
+      "importance": 0.04279
+    },
+    {
+      "feature": "funding_rate",
+      "importance": 0.03633
+    },
+    {
+      "feature": "strength",
+      "importance": 0.03616
+    },
+    {
+      "feature": "btc_correlation",
+      "importance": 0.03476
+    },
+    {
+      "feature": "score_btc_corr",
+      "importance": 0.03082
+    },
+    {
+      "feature": "volume_ratio",
+      "importance": 0.02977
+    },
+    {
+      "feature": "score_mtf",
+      "importance": 0.02205
+    },
+    {
+      "feature": "score_macd",
+      "importance": 0.01735
+    }
+  ],
+  "class_balance": {
+    "win": 509,
+    "loss": 496,
+    "winrate": 50.6
+  },
+  "cv_folds": 5
+}
